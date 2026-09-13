@@ -1,78 +1,6 @@
 {
   "version": 1,
   "entries": {
-    "story_f5785a1c1f90|pragmatic|0a5c5b24": {
-      "score": 55,
-      "review": "模型贵不贵是选型硬指标，廉价替代能跑通就先用着。",
-      "title_hash": "15bd7f73",
-      "scored_at": "2026-08-23T20:58:43.853467Z"
-    },
-    "story_674b087cecd1|pragmatic|0a5c5b24": {
-      "score": 30,
-      "review": "宏观论调不写代码，就业影响等数据出来再定。",
-      "title_hash": "37cd7c2e",
-      "scored_at": "2026-08-23T20:58:45.268385Z"
-    },
-    "story_a648cb6edf34|pragmatic|0a5c5b24": {
-      "score": 58,
-      "review": "ASIC 和 GPU 对比看着热闹，没开放前只能围观。",
-      "title_hash": "21804940",
-      "scored_at": "2026-08-23T20:58:47.098011Z"
-    },
-    "story_512f418afc66|pragmatic|0a5c5b24": {
-      "score": 45,
-      "review": "趣味项目，做个终端聊天界面可以抄，但不算新工具，等真上生产再说。",
-      "title_hash": "68e3e1e4",
-      "scored_at": "2026-08-23T20:58:49.452798Z"
-    },
-    "story_40d699f454ea|pragmatic|0a5c5b24": {
-      "score": 75,
-      "review": "用agent.md给AI立项目上下文，今天就能写上，直接提升辅助编码质量。",
-      "title_hash": "042cdb5c",
-      "scored_at": "2026-08-23T20:58:55.030914Z"
-    },
-    "story_87449c42d39a|pragmatic|0a5c5b24": {
-      "score": 50,
-      "review": "统计预测模型发布日，参考价值有限，直接盯官方就好。",
-      "title_hash": "a4db9248",
-      "scored_at": "2026-08-23T20:58:57.237880Z"
-    },
-    "story_40d699f454ea|cynic|f4237a62": {
-      "score": 72,
-      "review": "把 agent 提示词当工程文档写，方向对，但别指望它万能。",
-      "title_hash": "042cdb5c",
-      "scored_at": "2026-08-23T20:58:59.421957Z"
-    },
-    "story_40d699f454ea|paper-police|966065bf": {
-      "score": 25,
-      "review": "仅个人经验分享，无评测数据，效果无法验证。",
-      "title_hash": "042cdb5c",
-      "scored_at": "2026-08-23T20:59:01.360003Z"
-    },
-    "story_a648cb6edf34|cynic|f4237a62": {
-      "score": 42,
-      "review": "专用芯片打通用GPU，赢在跑分输在生态，敢晒完整负载曲线吗？",
-      "title_hash": "21804940",
-      "scored_at": "2026-08-23T20:59:03.938481Z"
-    },
-    "story_a648cb6edf34|paper-police|966065bf": {
-      "score": 10,
-      "review": "仅新闻标题无论文代码，性能宣称无法验证，等实测。",
-      "title_hash": "21804940",
-      "scored_at": "2026-08-23T20:59:06.090870Z"
-    },
-    "story_de869c952dfe|pragmatic|0a5c5b24": {
-      "score": 45,
-      "review": "ASIC方案尚在路线图，离实际开发很远，短期选型不受影响，观望即可。",
-      "title_hash": "25e638f3",
-      "scored_at": "2026-08-23T21:49:32.856476Z"
-    },
-    "story_6f10fd227f6b|pragmatic|0a5c5b24": {
-      "score": 55,
-      "review": "标题太泛，没给具体仓库或教程，动手前先找细节。",
-      "title_hash": "e0822d6e",
-      "scored_at": "2026-08-23T22:50:14.797226Z"
-    },
     "story_bb414d880caa|pragmatic|0a5c5b24": {
       "score": 45,
       "review": "纯CMake跑GPT-2是个炫技玩具，生产用不上，了解即可。",
@@ -5550,6 +5478,30 @@
       "review": "私有代码库做基准，数据不公开，无论文无开源，无法复现。",
       "title_hash": "0d44f25b",
       "scored_at": "2026-09-13T19:41:27.985537Z"
+    },
+    "story_076542355556|pragmatic|0a5c5b24": {
+      "score": 45,
+      "review": "模型解个三百年前的密码只是能力演示，没有可用工具或接口，看完就忘。",
+      "title_hash": "49bb1662",
+      "scored_at": "2026-09-13T23:24:34.135261Z"
+    },
+    "story_ffdf3bb7485a|pragmatic|0a5c5b24": {
+      "score": 28,
+      "review": "纯观点推演，没有模型、没有代码、没有日期，看完不改变你今天写什么。",
+      "title_hash": "45ae04fa",
+      "scored_at": "2026-09-13T23:24:35.591459Z"
+    },
+    "story_86ff3d2b9b70|cynic|f4237a62": {
+      "score": 42,
+      "review": "信源只有OpenAI自己，跑分一个没放，「端到端」三个字顶替了全部数据。",
+      "title_hash": "114401d9",
+      "scored_at": "2026-09-13T23:24:38.066573Z"
+    },
+    "story_86ff3d2b9b70|paper-police|966065bf": {
+      "score": 32,
+      "review": "官方博客的单方客户案例，无论文无代码无第三方复现，性能说法只能算宣传。",
+      "title_hash": "114401d9",
+      "scored_at": "2026-09-13T23:24:40.367528Z"
     }
   }
 }

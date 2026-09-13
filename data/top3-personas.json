@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T19:41:27.985592Z",
+  "generated_at": "2026-09-13T23:24:40.367586Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -57,22 +57,22 @@
       }
     },
     {
-      "story_id": "story_4484533bd9b1",
-      "title": "Real-SWE：基于私有、真实世界的企业代码库对AI模型进行基准测试",
-      "url": "https://withspecific.com/benchmarks/real-swe",
+      "story_id": "story_86ff3d2b9b70",
+      "title": "Perplexity 把端到端系统交给 GPT-6 Astra / Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 55,
-          "review": "私有代码库谁都验不了，跑分只能听你念；倒是戳中了公开榜单被污染这块真伤。"
+          "score": 42,
+          "review": "信源只有OpenAI自己，跑分一个没放，「端到端」三个字顶替了全部数据。"
         },
         "paper-police": {
-          "score": 28,
-          "review": "私有代码库做基准，数据不公开，无论文无开源，无法复现。"
+          "score": 32,
+          "review": "官方博客的单方客户案例，无论文无代码无第三方复现，性能说法只能算宣传。"
         },
         "pragmatic": {
-          "score": 58,
-          "review": "提醒你别只看SWE-bench选模型，私有代码库上表现可能完全不同，但暂时改变不了你的选型。"
+          "score": 52,
+          "review": "客户案例文，说明能上生产，但没给定价、延迟和接入方式，先记着别急着迁。"
         }
       }
     }
