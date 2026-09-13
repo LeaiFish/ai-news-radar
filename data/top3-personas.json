@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T01:09:01.570370Z",
+  "generated_at": "2026-09-13T07:35:25.508545Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -57,22 +57,22 @@
       }
     },
     {
-      "story_id": "story_30eddadc9249",
-      "title": "Suno 发布 v6 音乐模型，推出 v6、v6-wild、v6-mini 三个版本 / Introducing v6",
-      "url": "https://suno.com/blog/introducing-v6",
+      "story_id": "story_1ab0f86554fa",
+      "title": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 / Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
+      "url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 50,
-          "review": "三档版本线摆得整齐，可升级在哪？通稿里只剩版本号和形容词。"
+          "score": 45,
+          "review": "预算、压缩、todo、记忆，四味旧药换个「上下文工程」招牌，宣称击败溢出的基准在哪？"
         },
         "paper-police": {
-          "score": 38,
-          "review": "官方博客发布，无论文无开源无第三方评测，demo好听不等于指标可复现。"
+          "score": 40,
+          "review": "只讲机制分类，无论文、代码与可复现评测，属科普解析而非证据。"
         },
         "pragmatic": {
-          "score": 58,
-          "review": "做音乐/音频 demo 的能直接上手试，但没提 API 和价格，先别动生产线。"
+          "score": 68,
+          "review": "长任务 Agent 的四个可落地套路，能照着改 harness；但没现成库，得自己实现。"
         }
       }
     }
