@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T23:24:40.367586Z",
+  "generated_at": "2026-09-14T01:19:34.365908Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,30 +17,10 @@
   ],
   "items": [
     {
-      "story_id": "story_b025ab79dc77",
-      "title": "OpenAI 将 GPT-Live-1 语音模型开放至 API / 📞 1-800-ChatGPT",
-      "url": "https://x.com/OpenAIDevs/status/2098913661993603215",
-      "rank": 1,
-      "reviews": {
-        "cynic": {
-          "score": 68,
-          "review": "实时语音接进 API 是真货，但 1-800 热线更像发布会的彩蛋，延迟和定价数据呢？"
-        },
-        "paper-police": {
-          "score": 42,
-          "review": "仅一条官方推文，无技术报告与评测数字，API 开放不等于可复现。"
-        },
-        "pragmatic": {
-          "score": 88,
-          "review": "语音模型进 API，实时语音对话今天就能接，做客服和语音助手的先跑通再说。"
-        }
-      }
-    },
-    {
       "story_id": "story_1ab0f86554fa",
       "title": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 / Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
       "url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks",
-      "rank": 2,
+      "rank": 1,
       "reviews": {
         "cynic": {
           "score": 45,
@@ -60,7 +40,7 @@
       "story_id": "story_86ff3d2b9b70",
       "title": "Perplexity 把端到端系统交给 GPT-6 Astra / Perplexity trusts GPT-6 Astra with end-to-end systems",
       "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "rank": 3,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 42,
@@ -73,6 +53,26 @@
         "pragmatic": {
           "score": 52,
           "review": "客户案例文，说明能上生产，但没给定价、延迟和接入方式，先记着别急着迁。"
+        }
+      }
+    },
+    {
+      "story_id": "story_076542355556",
+      "title": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
+      "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 42,
+          "review": "370年的密码多半是算力硬磨开的，AI 出了几分力，麻烦拆开算算。"
+        },
+        "paper-police": {
+          "score": 42,
+          "review": "仅vals.ai博客宣称破解，无论文、无代码、无第三方复现，HN讨论不算验证。"
+        },
+        "pragmatic": {
+          "score": 45,
+          "review": "模型解个三百年前的密码只是能力演示，没有可用工具或接口，看完就忘。"
         }
       }
     }
