@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T01:19:34.365908Z",
+  "generated_at": "2026-09-14T06:38:51.430505Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,62 +17,62 @@
   ],
   "items": [
     {
-      "story_id": "story_1ab0f86554fa",
-      "title": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 / Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-      "url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks",
+      "story_id": "story_b01914df6cf3",
+      "title": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+      "url": "https://www.aibase.com/news/31025",
       "rank": 1,
       "reviews": {
         "cynic": {
-          "score": 45,
-          "review": "预算、压缩、todo、记忆，四味旧药换个「上下文工程」招牌，宣称击败溢出的基准在哪？"
+          "score": 58,
+          "review": "API 一次调用能建出 Agent，但记忆、权限、token 账单，哪个是调用能解决的？"
         },
         "paper-police": {
-          "score": 40,
-          "review": "只讲机制分类，无论文、代码与可复现评测，属科普解析而非证据。"
+          "score": 24,
+          "review": "单一聚合源转述产品发布，无 API 文档实测、无跑分、无第三方复现，暂算说法。"
         },
         "pragmatic": {
-          "score": 68,
-          "review": "长任务 Agent 的四个可落地套路，能照着改 harness；但没现成库，得自己实现。"
+          "score": 86,
+          "review": "造 Agent 从自己搭框架变成调一次接口，做自动化的可以立刻上手试。"
         }
       }
     },
     {
-      "story_id": "story_86ff3d2b9b70",
-      "title": "Perplexity 把端到端系统交给 GPT-6 Astra / Perplexity trusts GPT-6 Astra with end-to-end systems",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "story_id": "story_55918f87707d",
+      "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+      "url": "https://www.aibase.com/news/31016",
       "rank": 2,
       "reviews": {
         "cynic": {
-          "score": 42,
-          "review": "信源只有OpenAI自己，跑分一个没放，「端到端」三个字顶替了全部数据。"
+          "score": 52,
+          "review": "「直逼旗舰」的对比表在哪？自家次旗舰复刻上一代，跑分口径全凭自己定。"
         },
         "paper-police": {
-          "score": 32,
-          "review": "官方博客的单方客户案例，无论文无代码无第三方复现，性能说法只能算宣传。"
+          "score": 22,
+          "review": "只有一句\"直逼旗舰\"，无论文无代码无评测基准，性能靠什么量出来的？"
         },
         "pragmatic": {
-          "score": 52,
-          "review": "客户案例文，说明能上生产，但没给定价、延迟和接入方式，先记着别急着迁。"
+          "score": 80,
+          "review": "新模型能直接调了，先拿现有评测集跑一遍对比K3再决定换不换。"
         }
       }
     },
     {
-      "story_id": "story_076542355556",
-      "title": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-      "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+      "story_id": "story_957795ac8f90",
+      "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+      "url": "https://www.aibase.com/news/31024",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 42,
-          "review": "370年的密码多半是算力硬磨开的，AI 出了几分力，麻烦拆开算算。"
+          "score": 63,
+          "review": "开源算诚意，但10分钟长视频没给分辨率和帧率，可交互环节敢不敢放全程不剪？"
         },
         "paper-police": {
-          "score": 42,
-          "review": "仅vals.ai博客宣称破解，无论文、无代码、无第三方复现，HN讨论不算验证。"
+          "score": 48,
+          "review": "宣称开源却未附仓库链接，10分钟时长无论文与第三方复现，先看到代码再说。"
         },
         "pragmatic": {
-          "score": 45,
-          "review": "模型解个三百年前的密码只是能力演示，没有可用工具或接口，看完就忘。"
+          "score": 72,
+          "review": "开源的视听世界模型，能 clone 就能跑 demo；但推理成本高，先看权重和显存要求再决定要不要接。"
         }
       }
     }
