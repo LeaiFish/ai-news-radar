@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T06:38:51.430505Z",
+  "generated_at": "2026-09-14T10:53:29.842080Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,62 +17,62 @@
   ],
   "items": [
     {
-      "story_id": "story_b01914df6cf3",
-      "title": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
-      "url": "https://www.aibase.com/news/31025",
+      "story_id": "story_4d83cdbfdee8",
+      "title": "ElevenLabs发布Music v2.5音频模型，同步开放APP与API访问",
+      "url": "https://www.aibase.com/news/31030",
       "rank": 1,
       "reviews": {
         "cynic": {
           "score": 58,
-          "review": "API 一次调用能建出 Agent，但记忆、权限、token 账单，哪个是调用能解决的？"
+          "review": "小数点后挪一位就叫新版本，好在App和API是真能打开的，不是PPT。"
         },
         "paper-police": {
-          "score": 24,
-          "review": "单一聚合源转述产品发布，无 API 文档实测、无跑分、无第三方复现，暂算说法。"
+          "score": 45,
+          "review": "API能实测算半个证据，但无评测基准、单源转载，跑分出来再谈。"
         },
         "pragmatic": {
-          "score": 86,
-          "review": "造 Agent 从自己搭框架变成调一次接口，做自动化的可以立刻上手试。"
+          "score": 87,
+          "review": "API和App都能直接用，做配乐/音效的今天就能接进去试试，先拿小样对比下版权条款。"
         }
       }
     },
     {
-      "story_id": "story_55918f87707d",
-      "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-      "url": "https://www.aibase.com/news/31016",
+      "story_id": "story_3a1702cd4763",
+      "title": "DeepSeek-V4.1-Flash上线千问AI平台，API与Token Plan同步开放",
+      "url": "https://www.aibase.com/news/31028",
       "rank": 2,
       "reviews": {
         "cynic": {
-          "score": 52,
-          "review": "「直逼旗舰」的对比表在哪？自家次旗舰复刻上一代，跑分口径全凭自己定。"
+          "score": 45,
+          "review": "版本号又跳一格，参数、评测、价格一个没给，先上架收Token费再说。"
         },
         "paper-police": {
-          "score": 22,
-          "review": "只有一句\"直逼旗舰\"，无论文无代码无评测基准，性能靠什么量出来的？"
+          "score": 42,
+          "review": "产品上线可调API，但无论文无跑分，第三方评测前只是通告。"
         },
         "pragmatic": {
-          "score": 80,
-          "review": "新模型能直接调了，先拿现有评测集跑一遍对比K3再决定换不换。"
+          "score": 86,
+          "review": "新模型 API 已开，今天就能接；先跑小批量比延迟和单价再决定换不换。"
         }
       }
     },
     {
-      "story_id": "story_957795ac8f90",
-      "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-      "url": "https://www.aibase.com/news/31024",
+      "story_id": "story_2268a781ebb4",
+      "title": "小红书 AllSpark 开源 Search Agent 模型 Iris，35B 与 397B 版本同量级成绩领先",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496383&idx=1&sn=2db8607f797615a3647d9fec7e54f448",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 63,
-          "review": "开源算诚意，但10分钟长视频没给分辨率和帧率，可交互环节敢不敢放全程不剪？"
+          "score": 60,
+          "review": "权重是真放出来了，可\"领先\"只在自己公众号里领先，第三方榜单那一栏还空着。"
         },
         "paper-police": {
-          "score": 48,
-          "review": "宣称开源却未附仓库链接，10分钟时长无论文与第三方复现，先看到代码再说。"
+          "score": 35,
+          "review": "公众号宣称开源领先，无代码链接无论文，等于只有说法。"
         },
         "pragmatic": {
-          "score": 72,
-          "review": "开源的视听世界模型，能 clone 就能跑 demo；但推理成本高，先看权重和显存要求再决定要不要接。"
+          "score": 76,
+          "review": "搜索 Agent 多一个开源基座，35B 能自己部署，397B 只有大厂跑得动。"
         }
       }
     }
