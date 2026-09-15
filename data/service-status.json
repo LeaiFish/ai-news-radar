@@ -1,30 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15T01:28:22.598110Z",
+  "generated_at": "2026-09-15T06:11:44.279075Z",
   "ok": true,
-  "active_count": 1,
+  "active_count": 0,
   "providers": [
     {
       "id": "openai",
       "name": "OpenAI",
       "status_url": "https://status.openai.com/",
       "ok": true,
-      "active_count": 1
+      "active_count": 0
     }
   ],
-  "incidents": [
-    {
-      "id": "01M2GA8XTS6VB3QCDEGZ0HNAQ5",
-      "provider": "OpenAI",
-      "title": "Elevated errors affecting Work Mode in ChatGPT",
-      "title_zh": "Work Mode in ChatGPT 错误率升高",
-      "status": "monitoring",
-      "impact": "minor",
-      "started_at": "2026-09-14T15:58:48Z",
-      "updated_at": "2026-09-14T19:42:08Z",
-      "message": "We have applied additional mitigations for Work Mode. We are monitoring to confirm that workspace tools and files are functioning normally for ChatGPT Plus users.",
-      "affected_components": [],
-      "url": "https://status.openai.com/incidents/01M2GA8XTS6VB3QCDEGZ0HNAQ5"
-    }
-  ]
+  "incidents": []
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T01:45:51.469958Z",
+  "generated_at": "2026-09-15T06:31:02.045194Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,50 +17,10 @@
   ],
   "items": [
     {
-      "story_id": "story_b4863055bc83",
-      "title": "蚂蚁开源 SingProbe：以轻量探针实现大模型生成风险实时拦截，计算开销不足 0.5%",
-      "url": "https://www.aibase.com/news/31042",
-      "rank": 1,
-      "reviews": {
-        "cynic": {
-          "score": 68,
-          "review": "0.5%只算了探针开销，漏检率和误杀率呢？省下的算力别让用户用风险来还。"
-        },
-        "paper-police": {
-          "score": 42,
-          "review": "称开源却无仓库链接与论文，0.5%开销缺第三方复现，单一二手来源待核。"
-        },
-        "pragmatic": {
-          "score": 82,
-          "review": "开源可直接clone，输出风控开销不到0.5%，做合规审核的业务今天就能接上试。"
-        }
-      }
-    },
-    {
-      "story_id": "story_207c93651c3e",
-      "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
-      "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
-      "rank": 2,
-      "reviews": {
-        "cynic": {
-          "score": 55,
-          "review": "770B 只报总参数不报激活量，1M 上下文不谈价格吞吐，所谓热点还是借 OpenRouter 的。"
-        },
-        "paper-police": {
-          "score": 22,
-          "review": "770B、1M上下文只是推文数字，论文仓库benchmark全无，开源二字拿证据来。"
-        },
-        "pragmatic": {
-          "score": 82,
-          "review": "770B、1M 上下文的开源模型已能直接调 API，长文档/代码库场景今天就能试。"
-        }
-      }
-    },
-    {
       "story_id": "story_c8036e0526ae",
       "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
       "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-      "rank": 3,
+      "rank": 1,
       "reviews": {
         "cynic": {
           "score": 62,
@@ -73,6 +33,46 @@
         "pragmatic": {
           "score": 76,
           "review": "YARD 生成文档会执行任意代码，Ruby 项目在 CI 里跑文档前先隔离，供应链风险是实打实的。"
+        }
+      }
+    },
+    {
+      "story_id": "story_e31e702be431",
+      "title": "在 Copilot 自动模型选择中配置成本与质量 / Configure cost and quality in Copilot auto model selection",
+      "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "rank": 2,
+      "reviews": {
+        "cynic": {
+          "score": 66,
+          "review": "一个成本/质量滑杆就当更新发布，到底能省多少账单，一个数字都没给。"
+        },
+        "paper-police": {
+          "score": 45,
+          "review": "官方 changelog 属实，功能可用，但成本与质量的权衡无任何评测数据，复现不了。"
+        },
+        "pragmatic": {
+          "score": 74,
+          "review": "Copilot 自动选模型现在能调成本质量比，团队可按任务设默认，账单和质量立刻可权衡。"
+        }
+      }
+    },
+    {
+      "story_id": "story_78a102a840ba",
+      "title": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index / OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
+      "url": "https://x.com/ArtificialAnlys/status/2099698254414029207",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 68,
+          "review": "新开的榜单第一天就有冠军，含金量得看榜上到底站了几个选手。"
+        },
+        "paper-police": {
+          "score": 45,
+          "review": "第三方榜单给了分数和方法论，但仅一条推文、无论文无代码，独立复现前只算口头排名。"
+        },
+        "pragmatic": {
+          "score": 70,
+          "review": "语音对话换新榜首，做语音Agent的可以先拿它做A/B对比，但定价和延迟没出，别急着换。"
         }
       }
     }
