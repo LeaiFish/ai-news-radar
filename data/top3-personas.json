@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T06:31:02.045194Z",
+  "generated_at": "2026-09-15T10:26:40.842463Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,10 +17,30 @@
   ],
   "items": [
     {
+      "story_id": "story_e73a75567feb",
+      "title": "上海 AI Lab 开源多模态基础大模型书生-S2：Memory Decoder 插拔记忆，科学长程任务对标顶尖闭源",
+      "url": "https://www.aibase.com/news/31056",
+      "rank": 1,
+      "reviews": {
+        "cynic": {
+          "score": 72,
+          "review": "开源插拔记忆是实招，“对标闭源”却只挑科学长程任务，评测集和复现细节敢全晒吗？"
+        },
+        "paper-police": {
+          "score": 35,
+          "review": "单篇媒体报道，无论文与代码链接，开源声明无法验证。"
+        },
+        "pragmatic": {
+          "score": 85,
+          "review": "开源权重能直接下，长任务和插拔记忆可上手试，科学场景先跑 benchmark 再选型。"
+        }
+      }
+    },
+    {
       "story_id": "story_c8036e0526ae",
       "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
       "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-      "rank": 1,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 62,
@@ -40,7 +60,7 @@
       "story_id": "story_e31e702be431",
       "title": "在 Copilot 自动模型选择中配置成本与质量 / Configure cost and quality in Copilot auto model selection",
       "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
-      "rank": 2,
+      "rank": 3,
       "reviews": {
         "cynic": {
           "score": 66,
@@ -53,26 +73,6 @@
         "pragmatic": {
           "score": 74,
           "review": "Copilot 自动选模型现在能调成本质量比，团队可按任务设默认，账单和质量立刻可权衡。"
-        }
-      }
-    },
-    {
-      "story_id": "story_78a102a840ba",
-      "title": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index / OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-      "url": "https://x.com/ArtificialAnlys/status/2099698254414029207",
-      "rank": 3,
-      "reviews": {
-        "cynic": {
-          "score": 68,
-          "review": "新开的榜单第一天就有冠军，含金量得看榜上到底站了几个选手。"
-        },
-        "paper-police": {
-          "score": 45,
-          "review": "第三方榜单给了分数和方法论，但仅一条推文、无论文无代码，独立复现前只算口头排名。"
-        },
-        "pragmatic": {
-          "score": 70,
-          "review": "语音对话换新榜首，做语音Agent的可以先拿它做A/B对比，但定价和延迟没出，别急着换。"
         }
       }
     }
