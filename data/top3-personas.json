@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T12:13:16.153932Z",
+  "generated_at": "2026-09-15T15:58:01.335979Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -37,30 +37,10 @@
       }
     },
     {
-      "story_id": "story_c8036e0526ae",
-      "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
-      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-      "rank": 2,
-      "reviews": {
-        "cynic": {
-          "score": 62,
-          "review": "漏洞链路写得扎实，可'恶意AI'这顶帽子，多半还是给老爬虫套了层赛博外衣。"
-        },
-        "paper-police": {
-          "score": 40,
-          "review": "漏洞链路有细节，但'AI 智能体'归因无证据，无 PoC 无复现，只能算自述。"
-        },
-        "pragmatic": {
-          "score": 76,
-          "review": "YARD 生成文档会执行任意代码，Ruby 项目在 CI 里跑文档前先隔离，供应链风险是实打实的。"
-        }
-      }
-    },
-    {
       "story_id": "story_e31e702be431",
       "title": "在 Copilot 自动模型选择中配置成本与质量 / Configure cost and quality in Copilot auto model selection",
       "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
-      "rank": 3,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 66,
@@ -73,6 +53,26 @@
         "pragmatic": {
           "score": 74,
           "review": "Copilot 自动选模型现在能调成本质量比，团队可按任务设默认，账单和质量立刻可权衡。"
+        }
+      }
+    },
+    {
+      "story_id": "story_53a811285ee1",
+      "title": "生数科技发布 Vidu S2：含 Avatar 与 Editing 双模型，探索空间视频",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDQ5NTQwMQ%3D%3D&mid=2247489246&idx=2&sn=b23b39da69f6c75594eccac11854111f",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 58,
+          "review": "自家公众号官宣双模型，空间视频只写\"探索\"，跑分和开放时间一个没给。"
+        },
+        "paper-police": {
+          "score": 28,
+          "review": "官方公众号单一信源，无论文无代码无第三方跑分，只是产品发布口径。"
+        },
+        "pragmatic": {
+          "score": 70,
+          "review": "视频生成多一个选项，但没说API价格和开放时间，先记着等实测。"
         }
       }
     }
