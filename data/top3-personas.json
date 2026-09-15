@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T00:12:03.732198Z",
+  "generated_at": "2026-09-15T01:45:51.469958Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,42 +17,22 @@
   ],
   "items": [
     {
-      "story_id": "story_4d83cdbfdee8",
-      "title": "ElevenLabs发布Music v2.5音频模型，同步开放APP与API访问",
-      "url": "https://www.aibase.com/news/31030",
+      "story_id": "story_b4863055bc83",
+      "title": "蚂蚁开源 SingProbe：以轻量探针实现大模型生成风险实时拦截，计算开销不足 0.5%",
+      "url": "https://www.aibase.com/news/31042",
       "rank": 1,
       "reviews": {
         "cynic": {
-          "score": 58,
-          "review": "小数点后挪一位就叫新版本，好在App和API是真能打开的，不是PPT。"
-        },
-        "paper-police": {
-          "score": 45,
-          "review": "API能实测算半个证据，但无评测基准、单源转载，跑分出来再谈。"
-        },
-        "pragmatic": {
-          "score": 87,
-          "review": "API和App都能直接用，做配乐/音效的今天就能接进去试试，先拿小样对比下版权条款。"
-        }
-      }
-    },
-    {
-      "story_id": "story_3a1702cd4763",
-      "title": "DeepSeek-V4.1-Flash上线千问AI平台，API与Token Plan同步开放",
-      "url": "https://www.aibase.com/news/31028",
-      "rank": 2,
-      "reviews": {
-        "cynic": {
-          "score": 45,
-          "review": "版本号又跳一格，参数、评测、价格一个没给，先上架收Token费再说。"
+          "score": 68,
+          "review": "0.5%只算了探针开销，漏检率和误杀率呢？省下的算力别让用户用风险来还。"
         },
         "paper-police": {
           "score": 42,
-          "review": "产品上线可调API，但无论文无跑分，第三方评测前只是通告。"
+          "review": "称开源却无仓库链接与论文，0.5%开销缺第三方复现，单一二手来源待核。"
         },
         "pragmatic": {
-          "score": 86,
-          "review": "新模型 API 已开，今天就能接；先跑小批量比延迟和单价再决定换不换。"
+          "score": 82,
+          "review": "开源可直接clone，输出风控开销不到0.5%，做合规审核的业务今天就能接上试。"
         }
       }
     },
@@ -60,7 +40,7 @@
       "story_id": "story_207c93651c3e",
       "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
       "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
-      "rank": 3,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 55,
@@ -73,6 +53,26 @@
         "pragmatic": {
           "score": 82,
           "review": "770B、1M 上下文的开源模型已能直接调 API，长文档/代码库场景今天就能试。"
+        }
+      }
+    },
+    {
+      "story_id": "story_c8036e0526ae",
+      "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 62,
+          "review": "漏洞链路写得扎实，可'恶意AI'这顶帽子，多半还是给老爬虫套了层赛博外衣。"
+        },
+        "paper-police": {
+          "score": 40,
+          "review": "漏洞链路有细节，但'AI 智能体'归因无证据，无 PoC 无复现，只能算自述。"
+        },
+        "pragmatic": {
+          "score": 76,
+          "review": "YARD 生成文档会执行任意代码，Ruby 项目在 CI 里跑文档前先隔离，供应链风险是实打实的。"
         }
       }
     }
