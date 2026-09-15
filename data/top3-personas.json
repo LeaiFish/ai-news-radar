@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T15:58:01.335979Z",
+  "generated_at": "2026-09-15T20:39:09.684793Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,10 +17,30 @@
   ],
   "items": [
     {
+      "story_id": "story_f627ffc73bd0",
+      "title": "Google DeepMind 发布 Gemini 3.8 Live 和 3.8 Live Extended Thinking / Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+      "rank": 1,
+      "reviews": {
+        "cynic": {
+          "score": 48,
+          "review": "版本号一路小跑，名字比参数还长；先把跑分和延迟数字晒出来再谈 Live。"
+        },
+        "paper-police": {
+          "score": 40,
+          "review": "官方博客发布，无论文、无开源、无第三方跑分，等实测再说。"
+        },
+        "pragmatic": {
+          "score": 87,
+          "review": "新模型已可调用，Live 版适合实时语音/流式场景，先去 API 文档对一下价格和延迟再动手。"
+        }
+      }
+    },
+    {
       "story_id": "story_e73a75567feb",
       "title": "上海 AI Lab 开源多模态基础大模型书生-S2：Memory Decoder 插拔记忆，科学长程任务对标顶尖闭源",
       "url": "https://www.aibase.com/news/31056",
-      "rank": 1,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 72,
@@ -37,42 +57,22 @@
       }
     },
     {
-      "story_id": "story_e31e702be431",
-      "title": "在 Copilot 自动模型选择中配置成本与质量 / Configure cost and quality in Copilot auto model selection",
-      "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
-      "rank": 2,
-      "reviews": {
-        "cynic": {
-          "score": 66,
-          "review": "一个成本/质量滑杆就当更新发布，到底能省多少账单，一个数字都没给。"
-        },
-        "paper-police": {
-          "score": 45,
-          "review": "官方 changelog 属实，功能可用，但成本与质量的权衡无任何评测数据，复现不了。"
-        },
-        "pragmatic": {
-          "score": 74,
-          "review": "Copilot 自动选模型现在能调成本质量比，团队可按任务设默认，账单和质量立刻可权衡。"
-        }
-      }
-    },
-    {
-      "story_id": "story_53a811285ee1",
-      "title": "生数科技发布 Vidu S2：含 Avatar 与 Editing 双模型，探索空间视频",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDQ5NTQwMQ%3D%3D&mid=2247489246&idx=2&sn=b23b39da69f6c75594eccac11854111f",
+      "story_id": "story_24b1574f3701",
+      "title": "Google 发布 TranslateGemma 等多语言 AI 成果，语言技术覆盖 300 多种语言 / AI for everyone in every language",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 58,
-          "review": "自家公众号官宣双模型，空间视频只写\"探索\"，跑分和开放时间一个没给。"
+          "score": 66,
+          "review": "自家 1000 种语言的口号还挂着，这次交 300 种，低资源语言的 BLEU 敢不敢全晒？"
         },
         "paper-police": {
-          "score": 28,
-          "review": "官方公众号单一信源，无论文无代码无第三方跑分，只是产品发布口径。"
+          "score": 35,
+          "review": "只有官方博客，无 arXiv 链接、无仓库、无 Benchmark 复现路径，先当宣传看。"
         },
         "pragmatic": {
-          "score": 70,
-          "review": "视频生成多一个选项，但没说API价格和开放时间，先记着等实测。"
+          "score": 80,
+          "review": "开源翻译模型能直接下载自托管，55 种语言免 API 费用，值得跑一遍试试质量。"
         }
       }
     }
