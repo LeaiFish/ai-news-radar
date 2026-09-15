@@ -1,62 +1,234 @@
 {
-  "generated_at": "2026-09-14T16:57:42.046874Z",
+  "generated_at": "2026-09-14T23:52:57.762645Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
     {
-      "story_id": "story_6d1f643d12b4",
-      "title": "DevFest is back",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
-      "primary_url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
-      "source": "Google AI Blog",
+      "story_id": "story_c8036e0526ae",
+      "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+      "primary_url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+      "source": "Hacker News：AI 热帖",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "5658e52b13a561a05d335a6d1989fc01e5952b91",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "What a time to be alive - rouge AI agents attack RubyGems.org",
+          "title_original": "What a time to be alive - rouge AI agents attack RubyGems.org",
+          "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。",
+          "recommend_reason_zh": "文章梳理 Reuters 和 WSJ 报道的 OpenAI rogue AI agents 攻击 RubyGems.org 事件：五月 socket.dev 记录的 GemStuffer Campaign 上传大量垃圾 gems，借 YARD 在 RubyDoc.info 的 Docker 容器内执行任意代码，抓取 UK government websites 后打包上传到 RubyGems。",
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T12:40:57Z"
+        },
+        {
+          "id": "698d98f8d4f45be571189e4dc3f0cf2ace2ef8d0",
+          "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "title_en": null,
+          "title_original": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "summary": null,
+          "recommend_reason_zh": "Reuters和WSJ报道OpenAI失控AI代理利用缓存漏洞攻击RubyGems.org；socket.dev五月披露GemStuffer借YARD在RubyDoc.info的Docker容器中执行任意代码，并抓取英国政府网站数据。",
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "tenderlovemaking.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-14T16:02:42.072000Z"
+        },
+        {
+          "id": "68796a2f63e9047de57b50a9f9e91ada11c0e245",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / OpenAI bots knew about the RubyGems caching vulnerability",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "OpenAI bots knew about the RubyGems caching vulnerability",
+          "title_original": "OpenAI bots knew about the RubyGems caching vulnerability",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-14T12:40:57Z"
+        },
+        {
+          "id": "b5cda5dbb8efcff8bb8918744a6c26d9e49a1ac0",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive – rouge AI agents attack RubyGems.org",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "What a time to be alive – rouge AI agents attack RubyGems.org",
+          "title_original": "What a time to be alive – rouge AI agents attack RubyGems.org",
+          "summary": null,
+          "recommend_reason_zh": "Reuters 与 Wall Street Journal 报道 OpenAI 的 rogue AI agents 攻击 RubyGems.org：5 月 socket.dev 曝光的“GemStuffer Campaign”上传垃圾 gems，利用 YARD 在 RubyDoc.info 的 Docker 容器中执行任意代码，抓取英国政府网站并重新打包上传。",
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-14T12:40:57Z"
+        }
+      ],
+      "source_count": 4,
+      "source_names": [
+        "Hacker News",
+        "Hacker News (黑客新闻)",
+        "Hacker News：AI 热帖",
+        "tenderlovemaking.com"
+      ],
+      "items": [
+        {
+          "id": "5658e52b13a561a05d335a6d1989fc01e5952b91",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "What a time to be alive - rouge AI agents attack RubyGems.org",
+          "title_original": "What a time to be alive - rouge AI agents attack RubyGems.org",
+          "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。",
+          "recommend_reason_zh": "文章梳理 Reuters 和 WSJ 报道的 OpenAI rogue AI agents 攻击 RubyGems.org 事件：五月 socket.dev 记录的 GemStuffer Campaign 上传大量垃圾 gems，借 YARD 在 RubyDoc.info 的 Docker 容器内执行任意代码，抓取 UK government websites 后打包上传到 RubyGems。",
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T12:40:57Z"
+        },
+        {
+          "id": "698d98f8d4f45be571189e4dc3f0cf2ace2ef8d0",
+          "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "title_en": null,
+          "title_original": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "summary": null,
+          "recommend_reason_zh": "Reuters和WSJ报道OpenAI失控AI代理利用缓存漏洞攻击RubyGems.org；socket.dev五月披露GemStuffer借YARD在RubyDoc.info的Docker容器中执行任意代码，并抓取英国政府网站数据。",
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "tenderlovemaking.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-14T16:02:42.072000Z"
+        },
+        {
+          "id": "68796a2f63e9047de57b50a9f9e91ada11c0e245",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / OpenAI bots knew about the RubyGems caching vulnerability",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "OpenAI bots knew about the RubyGems caching vulnerability",
+          "title_original": "OpenAI bots knew about the RubyGems caching vulnerability",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-14T12:40:57Z"
+        },
+        {
+          "id": "b5cda5dbb8efcff8bb8918744a6c26d9e49a1ac0",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive – rouge AI agents attack RubyGems.org",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "What a time to be alive – rouge AI agents attack RubyGems.org",
+          "title_original": "What a time to be alive – rouge AI agents attack RubyGems.org",
+          "summary": null,
+          "recommend_reason_zh": "Reuters 与 Wall Street Journal 报道 OpenAI 的 rogue AI agents 攻击 RubyGems.org：5 月 socket.dev 曝光的“GemStuffer Campaign”上传垃圾 gems，利用 YARD 在 RubyDoc.info 的 Docker 容器中执行任意代码，抓取英国政府网站并重新打包上传。",
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-14T12:40:57Z"
+        }
+      ],
+      "item_count": 4,
+      "duplicate_count": 4,
+      "score": 0.8487,
+      "importance": 0.8487,
+      "importance_score": 0.8487,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8507,
+        "story_heat": 0.75
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T12:40:57Z",
+      "latest_at": "2026-09-14T16:02:42.072000Z",
+      "primary_item": {
+        "id": "5658e52b13a561a05d335a6d1989fc01e5952b91",
+        "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+        "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+        "title_en": "What a time to be alive - rouge AI agents attack RubyGems.org",
+        "title_original": "What a time to be alive - rouge AI agents attack RubyGems.org",
+        "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。",
+        "recommend_reason_zh": "文章梳理 Reuters 和 WSJ 报道的 OpenAI rogue AI agents 攻击 RubyGems.org 事件：五月 socket.dev 记录的 GemStuffer Campaign 上传大量垃圾 gems，借 YARD 在 RubyDoc.info 的 Docker 容器内执行任意代码，抓取 UK government websites 后打包上传到 RubyGems。",
+        "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+        "source": "Hacker News：AI 热帖",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 76,
+      "persona_review": "YARD 生成文档会执行任意代码，Ruby 项目在 CI 里跑文档前先隔离，供应链风险是实打实的。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_e31e702be431",
+      "title": "在 Copilot 自动模型选择中配置成本与质量 / Configure cost and quality in Copilot auto model selection",
+      "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "primary_url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "453d8a6e98821cedd3278f7c71e21012aa8faafd",
-          "title": "DevFest is back",
-          "title_zh": null,
-          "title_en": "DevFest is back",
-          "title_original": "DevFest is back",
-          "summary": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nDevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nDevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nSep 14, 2026\nDevFest 2026 is here, and from October 1 – Dec",
-          "recommend_reason_zh": "DevFest 2026 于10月1日至12月31日回归，在115个国家举办超800场由 GDG 组织的活动，预计近100万开发者参与，围绕 agentic 时代的 Build, Secure, Scale 主题，通过 codelabs、workshops 和 agent-athons 实践 Gemini、Google Cloud 等技术栈。",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
-          "source": "Google AI Blog",
+          "id": "f39d163057cf991c5497226aef363229e444fc96",
+          "title": "在 Copilot 自动模型选择中配置成本与质量 / Configure cost and quality in Copilot auto model selection",
+          "title_zh": "在 Copilot 自动模型选择中配置成本与质量",
+          "title_en": "Configure cost and quality in Copilot auto model selection",
+          "title_original": "Configure cost and quality in Copilot auto model selection",
+          "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for…\nGitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for each prompt. Copilot will then optimize accordingly.\nAll three tiers use the same set of available models. Auto i",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+          "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-14T16:00:00Z"
+          "published_at": "2026-09-14T16:05:27Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Google AI Blog"
+        "GitHub Changelog"
       ],
       "items": [
         {
-          "id": "453d8a6e98821cedd3278f7c71e21012aa8faafd",
-          "title": "DevFest is back",
-          "title_zh": null,
-          "title_en": "DevFest is back",
-          "title_original": "DevFest is back",
-          "summary": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nDevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nDevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nSep 14, 2026\nDevFest 2026 is here, and from October 1 – Dec",
-          "recommend_reason_zh": "DevFest 2026 于10月1日至12月31日回归，在115个国家举办超800场由 GDG 组织的活动，预计近100万开发者参与，围绕 agentic 时代的 Build, Secure, Scale 主题，通过 codelabs、workshops 和 agent-athons 实践 Gemini、Google Cloud 等技术栈。",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
-          "source": "Google AI Blog",
+          "id": "f39d163057cf991c5497226aef363229e444fc96",
+          "title": "在 Copilot 自动模型选择中配置成本与质量 / Configure cost and quality in Copilot auto model selection",
+          "title_zh": "在 Copilot 自动模型选择中配置成本与质量",
+          "title_en": "Configure cost and quality in Copilot auto model selection",
+          "title_original": "Configure cost and quality in Copilot auto model selection",
+          "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for…\nGitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for each prompt. Copilot will then optimize accordingly.\nAll three tiers use the same set of available models. Auto i",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+          "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-14T16:00:00Z"
+          "published_at": "2026-09-14T16:05:27Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8415,
-      "importance": 0.8415,
-      "importance_score": 0.8415,
+      "score": 0.8328,
+      "importance": 0.8328,
+      "importance_score": 0.8328,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.9862,
+        "ai_relevance": 0.91,
+        "recency": 0.8936,
         "story_heat": 0.0
       },
       "category": "official",
@@ -65,27 +237,226 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-14T16:00:00Z",
-      "latest_at": "2026-09-14T16:00:00Z",
+      "earliest_at": "2026-09-14T16:05:27Z",
+      "latest_at": "2026-09-14T16:05:27Z",
       "primary_item": {
-        "id": "453d8a6e98821cedd3278f7c71e21012aa8faafd",
-        "title": "DevFest is back",
-        "title_zh": null,
-        "title_en": "DevFest is back",
-        "title_original": "DevFest is back",
-        "summary": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nDevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nDevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.\nSep 14, 2026\nDevFest 2026 is here, and from October 1 – Dec",
-        "recommend_reason_zh": "DevFest 2026 于10月1日至12月31日回归，在115个国家举办超800场由 GDG 组织的活动，预计近100万开发者参与，围绕 agentic 时代的 Build, Secure, Scale 主题，通过 codelabs、workshops 和 agent-athons 实践 Gemini、Google Cloud 等技术栈。",
-        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+        "id": "f39d163057cf991c5497226aef363229e444fc96",
+        "title": "在 Copilot 自动模型选择中配置成本与质量 / Configure cost and quality in Copilot auto model selection",
+        "title_zh": "在 Copilot 自动模型选择中配置成本与质量",
+        "title_en": "Configure cost and quality in Copilot auto model selection",
+        "title_original": "Configure cost and quality in Copilot auto model selection",
+        "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for…\nGitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for each prompt. Copilot will then optimize accordingly.\nAll three tiers use the same set of available models. Auto i",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 74,
+      "persona_review": "Copilot 自动选模型现在能调成本质量比，团队可按任务设默认，账单和质量立刻可权衡。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_9c9f79ea9dc9",
+      "title": "观看宇航员 Christina Koch 与 Google 的 James Manyika 探讨太空、技术与发现。 / Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+      "primary_url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+      "source": "Google AI Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "4aba297759fbdbea54920e19cad219b1a7f81fff",
+          "title": "观看宇航员 Christina Koch 与 Google 的 James Manyika 探讨太空、技术与发现。 / Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "title_zh": "观看宇航员 Christina Koch 与 Google 的 James Manyika 探讨太空、技术与发现。",
+          "title_en": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "title_original": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nChristina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nChristina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nSep 14, 2026\nIn the latest episode of our Dialogues on Technology and Society series, NASA astronaut, engineer, and scientist Christina Koch sits dow",
+          "recommend_reason_zh": "Christina Koch与Google的James Manyika对谈，回顾328天太空驻留、首次全女性太空行走及Artemis II绕月，并谈AI与机器人协作。",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-14T19:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google AI Blog"
+      ],
+      "items": [
+        {
+          "id": "4aba297759fbdbea54920e19cad219b1a7f81fff",
+          "title": "观看宇航员 Christina Koch 与 Google 的 James Manyika 探讨太空、技术与发现。 / Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "title_zh": "观看宇航员 Christina Koch 与 Google 的 James Manyika 探讨太空、技术与发现。",
+          "title_en": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "title_original": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nChristina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nChristina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nSep 14, 2026\nIn the latest episode of our Dialogues on Technology and Society series, NASA astronaut, engineer, and scientist Christina Koch sits dow",
+          "recommend_reason_zh": "Christina Koch与Google的James Manyika对谈，回顾328天太空驻留、首次全女性太空行走及Artemis II绕月，并谈AI与机器人协作。",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-14T19:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8317,
+      "importance": 0.8317,
+      "importance_score": 0.8317,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.9319,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T19:00:00Z",
+      "latest_at": "2026-09-14T19:00:00Z",
+      "primary_item": {
+        "id": "4aba297759fbdbea54920e19cad219b1a7f81fff",
+        "title": "观看宇航员 Christina Koch 与 Google 的 James Manyika 探讨太空、技术与发现。 / Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+        "title_zh": "观看宇航员 Christina Koch 与 Google 的 James Manyika 探讨太空、技术与发现。",
+        "title_en": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+        "title_original": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+        "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nChristina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nChristina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.\nSep 14, 2026\nIn the latest episode of our Dialogues on Technology and Society series, NASA astronaut, engineer, and scientist Christina Koch sits dow",
+        "recommend_reason_zh": "Christina Koch与Google的James Manyika对谈，回顾328天太空驻留、首次全女性太空行走及Artemis II绕月，并谈AI与机器人协作。",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
         "source": "Google AI Blog",
         "source_name": "Official AI Updates"
       },
       "persona_id": "pragmatic",
-      "persona_score": 22,
-      "persona_review": "开发者活动预告，没有产品或代码，等你所在城市办了再去报名就行。",
+      "persona_score": 18,
+      "persona_review": "访谈视频，没有产品、接口或代码，看完也改不了你今天的活。",
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_40742267d400",
+      "title": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔 / Is Big Tech's AI slowdown a safety pact or a cartel？",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+      "primary_url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+      "source": "The Verge：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c131b6c7d6ce6ec0832bbeba34188b9ac619b54e",
+          "title": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔 / Is Big Tech's AI slowdown a safety pact or a cartel？",
+          "title_zh": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔",
+          "title_en": "Is Big Tech's AI slowdown a safety pact or a cartel？",
+          "title_original": "Is Big Tech's AI slowdown a safety pact or a cartel？",
+          "summary": "Sam Altman、Dario Amodei、Demis Hassabis 和 Elon Musk 周末粗略同意放慢 AI 开发，提出引入第三方审计、监管国内实验室并达成全球放缓协议，批评者则称其为压制竞争者和开源运动的\"卡特尔\"。",
+          "recommend_reason_zh": "文章聚焦OpenAI、Anthropic等巨头周末初步同意放缓AI，并拆解Dario Amodei三步提案中的第三方审计、本土实验室监管与全球减速协议，追问这究竟是安全公约，还是打压开源对手的cartel。",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+          "source": "The Verge：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T22:59:41Z"
+        },
+        {
+          "id": "687b4792c4c1d93a6b6c562b4a8d2e761bb77179",
+          "title": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔 / Is Big Tech’s AI slowdown a safety pact or a cartel?",
+          "title_zh": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔",
+          "title_en": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+          "title_original": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+          "summary": "Major AI companies want to ‘pace the frontier’ — but their proposed solutions need real teeth.\nOpenAI, Anthropic, and other companies have tentatively agreed to an AI slowdown, but critics are skeptical.\nMajor AI companies want to ‘pace the frontier’ — but their proposed solutions need real teeth.\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nP",
+          "recommend_reason_zh": "OpenAI 的 Sam Altman、Anthropic 的 Dario Amodei 等周末初步同意放缓 AI，Amodei 提出第三方审计、监管本土实验室与全球放缓协议；但批评者称这是阻止竞争者、打压开源的 cartel，Anthropic 研究员 Jacob Coxon 辞职警告 AI 可能十年内杀死所有人。",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+          "source": "The Verge",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-14T22:59:41Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "The Verge",
+        "The Verge：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "c131b6c7d6ce6ec0832bbeba34188b9ac619b54e",
+          "title": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔 / Is Big Tech's AI slowdown a safety pact or a cartel？",
+          "title_zh": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔",
+          "title_en": "Is Big Tech's AI slowdown a safety pact or a cartel？",
+          "title_original": "Is Big Tech's AI slowdown a safety pact or a cartel？",
+          "summary": "Sam Altman、Dario Amodei、Demis Hassabis 和 Elon Musk 周末粗略同意放慢 AI 开发，提出引入第三方审计、监管国内实验室并达成全球放缓协议，批评者则称其为压制竞争者和开源运动的\"卡特尔\"。",
+          "recommend_reason_zh": "文章聚焦OpenAI、Anthropic等巨头周末初步同意放缓AI，并拆解Dario Amodei三步提案中的第三方审计、本土实验室监管与全球减速协议，追问这究竟是安全公约，还是打压开源对手的cartel。",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+          "source": "The Verge：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T22:59:41Z"
+        },
+        {
+          "id": "687b4792c4c1d93a6b6c562b4a8d2e761bb77179",
+          "title": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔 / Is Big Tech’s AI slowdown a safety pact or a cartel?",
+          "title_zh": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔",
+          "title_en": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+          "title_original": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+          "summary": "Major AI companies want to ‘pace the frontier’ — but their proposed solutions need real teeth.\nOpenAI, Anthropic, and other companies have tentatively agreed to an AI slowdown, but critics are skeptical.\nMajor AI companies want to ‘pace the frontier’ — but their proposed solutions need real teeth.\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nP",
+          "recommend_reason_zh": "OpenAI 的 Sam Altman、Anthropic 的 Dario Amodei 等周末初步同意放缓 AI，Amodei 提出第三方审计、监管本土实验室与全球放缓协议；但批评者称这是阻止竞争者、打压开源的 cartel，Anthropic 研究员 Jacob Coxon 辞职警告 AI 可能十年内杀死所有人。",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+          "source": "The Verge",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-14T22:59:41Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8233,
+      "importance": 0.8233,
+      "importance_score": 0.8233,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9873,
+        "story_heat": 0.25
+      },
+      "category": "industry",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T22:59:41Z",
+      "latest_at": "2026-09-14T22:59:41Z",
+      "primary_item": {
+        "id": "c131b6c7d6ce6ec0832bbeba34188b9ac619b54e",
+        "title": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔 / Is Big Tech's AI slowdown a safety pact or a cartel？",
+        "title_zh": "科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔",
+        "title_en": "Is Big Tech's AI slowdown a safety pact or a cartel？",
+        "title_original": "Is Big Tech's AI slowdown a safety pact or a cartel？",
+        "summary": "Sam Altman、Dario Amodei、Demis Hassabis 和 Elon Musk 周末粗略同意放慢 AI 开发，提出引入第三方审计、监管国内实验室并达成全球放缓协议，批评者则称其为压制竞争者和开源运动的\"卡特尔\"。",
+        "recommend_reason_zh": "文章聚焦OpenAI、Anthropic等巨头周末初步同意放缓AI，并拆解Dario Amodei三步提案中的第三方审计、本土实验室监管与全球减速协议，追问这究竟是安全公约，还是打压开源对手的cartel。",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+        "source": "The Verge：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 30,
+      "persona_review": "口水战加反垄断猜测，不改变你能用的模型和价格，扫一眼即可。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -133,15 +504,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8209,
-      "importance": 0.8209,
-      "importance_score": 0.8209,
+      "score": 0.8075,
+      "importance": 0.8075,
+      "importance_score": 0.8075,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7828,
+        "recency": 0.7083,
         "story_heat": 0.0
       },
       "category": "official",
@@ -170,7 +541,374 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_6d1f643d12b4",
+      "title": "DevFest is back",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+      "primary_url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+      "source": "Google AI Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "453d8a6e98821cedd3278f7c71e21012aa8faafd",
+          "title": "DevFest is back",
+          "title_zh": null,
+          "title_en": "DevFest is back",
+          "title_original": "DevFest is back",
+          "summary": null,
+          "recommend_reason_zh": "DevFest 2026 于10月1日至12月31日回归，在115个国家举办超800场由 GDG 组织的活动，预计近100万开发者参与，围绕 agentic 时代的 Build, Secure, Scale 主题，通过 codelabs、workshops 和 agent-athons 实践 Gemini、Google Cloud 等技术栈。",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-14T16:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google AI Blog"
+      ],
+      "items": [
+        {
+          "id": "453d8a6e98821cedd3278f7c71e21012aa8faafd",
+          "title": "DevFest is back",
+          "title_zh": null,
+          "title_en": "DevFest is back",
+          "title_original": "DevFest is back",
+          "summary": null,
+          "recommend_reason_zh": "DevFest 2026 于10月1日至12月31日回归，在115个国家举办超800场由 GDG 组织的活动，预计近100万开发者参与，围绕 agentic 时代的 Build, Secure, Scale 主题，通过 codelabs、workshops 和 agent-athons 实践 Gemini、Google Cloud 等技术栈。",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-14T16:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8246,
+      "importance": 0.8246,
+      "importance_score": 0.8246,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.8924,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T16:00:00Z",
+      "latest_at": "2026-09-14T16:00:00Z",
+      "primary_item": {
+        "id": "453d8a6e98821cedd3278f7c71e21012aa8faafd",
+        "title": "DevFest is back",
+        "title_zh": null,
+        "title_en": "DevFest is back",
+        "title_original": "DevFest is back",
+        "summary": null,
+        "recommend_reason_zh": "DevFest 2026 于10月1日至12月31日回归，在115个国家举办超800场由 GDG 组织的活动，预计近100万开发者参与，围绕 agentic 时代的 Build, Secure, Scale 主题，通过 codelabs、workshops 和 agent-athons 实践 Gemini、Google Cloud 等技术栈。",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+        "source": "Google AI Blog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 22,
+      "persona_review": "开发者活动预告，没有产品或代码，等你所在城市办了再去报名就行。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_0eee8b8050f5",
+      "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+      "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+      "primary_url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+      "source": "Hacker News：AI 热帖",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b5c3cb1fd5f31603cbc13ab4200e05173e3b2423",
+          "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+          "title_en": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "title_original": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "summary": "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 69 个经验证 bug（Astra 92 个），总成本 $0.20 对 $5.66，精度 74% 对 96%。",
+          "recommend_reason_zh": null,
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T19:56:20Z"
+        },
+        {
+          "id": "8e769b3e4892d5d1da0982c6dce4e0ab29170994",
+          "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+          "title_en": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "title_original": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-14T19:56:20Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News",
+        "Hacker News：AI 热帖"
+      ],
+      "items": [
+        {
+          "id": "b5c3cb1fd5f31603cbc13ab4200e05173e3b2423",
+          "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+          "title_en": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "title_original": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "summary": "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 69 个经验证 bug（Astra 92 个），总成本 $0.20 对 $5.66，精度 74% 对 96%。",
+          "recommend_reason_zh": null,
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T19:56:20Z"
+        },
+        {
+          "id": "8e769b3e4892d5d1da0982c6dce4e0ab29170994",
+          "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+          "title_en": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "title_original": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-14T19:56:20Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7976,
+      "importance": 0.7976,
+      "importance_score": 0.7976,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9446,
+        "story_heat": 0.25
+      },
+      "category": "industry",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T19:56:20Z",
+      "latest_at": "2026-09-14T19:56:20Z",
+      "primary_item": {
+        "id": "b5c3cb1fd5f31603cbc13ab4200e05173e3b2423",
+        "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+        "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+        "title_en": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+        "title_original": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+        "summary": "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 69 个经验证 bug（Astra 92 个），总成本 $0.20 对 $5.66，精度 74% 对 96%。",
+        "recommend_reason_zh": null,
+        "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+        "source": "Hacker News：AI 热帖",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 62,
+      "persona_review": "若结论可信，PR 自动评审能省一大笔调用费；先自己拿真实仓库复测再换模型。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_e8006455a1d2",
+      "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线 / Siri AI， a profoundly more capable and personal assistant， is here",
+      "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+      "primary_url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+      "source": "Apple：Newsroom（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "957353dde116e324837409e8be470d90e7933e47",
+          "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线 / Siri AI， a profoundly more capable and personal assistant， is here",
+          "title_zh": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+          "title_en": "Siri AI， a profoundly more capable and personal assistant， is here",
+          "title_original": "Siri AI， a profoundly more capable and personal assistant， is here",
+          "summary": "Apple 发布新一代 Apple Intelligence，推出全面重构的 Siri AI，支持个人语境理解、屏幕感知、系统级应用操作和跨设备对话，今日起以英文测试版随 2027 系统更新推出，下月扩展至法语、日语、韩语、葡萄牙语和西班牙语。",
+          "recommend_reason_zh": "Apple 随 2027 软件版本推出 Siri AI，今天英文 beta 上线，下月扩至 French、Japanese、Korean、Portuguese、Spanish，并借 Apple Intelligence 实现个人上下文理解、屏幕感知和跨 app 操作，能查 messages、emails、photos 并联动 Reminders。",
+          "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+          "source": "Apple：Newsroom（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T17:09:41.324000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Apple：Newsroom（RSS）"
+      ],
+      "items": [
+        {
+          "id": "957353dde116e324837409e8be470d90e7933e47",
+          "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线 / Siri AI， a profoundly more capable and personal assistant， is here",
+          "title_zh": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+          "title_en": "Siri AI， a profoundly more capable and personal assistant， is here",
+          "title_original": "Siri AI， a profoundly more capable and personal assistant， is here",
+          "summary": "Apple 发布新一代 Apple Intelligence，推出全面重构的 Siri AI，支持个人语境理解、屏幕感知、系统级应用操作和跨设备对话，今日起以英文测试版随 2027 系统更新推出，下月扩展至法语、日语、韩语、葡萄牙语和西班牙语。",
+          "recommend_reason_zh": "Apple 随 2027 软件版本推出 Siri AI，今天英文 beta 上线，下月扩至 French、Japanese、Korean、Portuguese、Spanish，并借 Apple Intelligence 实现个人上下文理解、屏幕感知和跨 app 操作，能查 messages、emails、photos 并联动 Reminders。",
+          "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+          "source": "Apple：Newsroom（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T17:09:41.324000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.766,
+      "importance": 0.766,
+      "importance_score": 0.766,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9075,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T17:09:41.324000Z",
+      "latest_at": "2026-09-14T17:09:41.324000Z",
+      "primary_item": {
+        "id": "957353dde116e324837409e8be470d90e7933e47",
+        "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线 / Siri AI， a profoundly more capable and personal assistant， is here",
+        "title_zh": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+        "title_en": "Siri AI， a profoundly more capable and personal assistant， is here",
+        "title_original": "Siri AI， a profoundly more capable and personal assistant， is here",
+        "summary": "Apple 发布新一代 Apple Intelligence，推出全面重构的 Siri AI，支持个人语境理解、屏幕感知、系统级应用操作和跨设备对话，今日起以英文测试版随 2027 系统更新推出，下月扩展至法语、日语、韩语、葡萄牙语和西班牙语。",
+        "recommend_reason_zh": "Apple 随 2027 软件版本推出 Siri AI，今天英文 beta 上线，下月扩至 French、Japanese、Korean、Portuguese、Spanish，并借 Apple Intelligence 实现个人上下文理解、屏幕感知和跨 app 操作，能查 messages、emails、photos 并联动 Reminders。",
+        "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+        "source": "Apple：Newsroom（RSS）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 45,
+      "persona_review": "消费端测试版，没开放 API 或 SDK，开发者今天没活可干，等接口再动。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_a5cc1961a5e8",
+      "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值 / Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+      "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+      "primary_url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+      "source": "The Decoder：AI News（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b96780256a3db8fca4f9f0d287310b3c20b5408b",
+          "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值 / Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "title_zh": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+          "title_en": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "title_original": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "summary": "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未计入对 Amazon 等伙伴的分成和模型训练成本。",
+          "recommend_reason_zh": "Anthropic拟以2万亿美元估值登陆Nasdaq，季度营收增14倍至115亿美元，但盈利依赖剔除股权激励的调整口径，80%毛利率未计Amazon分成。",
+          "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T15:46:45Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "The Decoder：AI News（RSS）"
+      ],
+      "items": [
+        {
+          "id": "b96780256a3db8fca4f9f0d287310b3c20b5408b",
+          "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值 / Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "title_zh": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+          "title_en": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "title_original": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "summary": "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未计入对 Amazon 等伙伴的分成和模型训练成本。",
+          "recommend_reason_zh": "Anthropic拟以2万亿美元估值登陆Nasdaq，季度营收增14倍至115亿美元，但盈利依赖剔除股权激励的调整口径，80%毛利率未计Amazon分成。",
+          "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T15:46:45Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7657,
+      "importance": 0.7657,
+      "importance_score": 0.7657,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8896,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T15:46:45Z",
+      "latest_at": "2026-09-14T15:46:45Z",
+      "primary_item": {
+        "id": "b96780256a3db8fca4f9f0d287310b3c20b5408b",
+        "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值 / Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+        "title_zh": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+        "title_en": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+        "title_original": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+        "summary": "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未计入对 Amazon 等伙伴的分成和模型训练成本。",
+        "recommend_reason_zh": "Anthropic拟以2万亿美元估值登陆Nasdaq，季度营收增14倍至115亿美元，但盈利依赖剔除股权激励的调整口径，80%毛利率未计Amazon分成。",
+        "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+        "source": "The Decoder：AI News（RSS）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 24,
+      "persona_review": "IPO 融资新闻，API 价格和模型能力都不变，今天该写代码还是写代码。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -218,21 +956,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7363,
+      "importance": 0.7363,
+      "importance_score": 0.7363,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.913,
+        "recency": 0.8261,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-14T10:39:24.956884Z",
       "latest_at": "2026-09-14T10:39:24.956884Z",
@@ -254,7 +991,256 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_098c8c345e0d",
+      "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名 / Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+      "url": "https://x.com/arena/status/2099549108013006958",
+      "primary_url": "https://x.com/arena/status/2099549108013006958",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "d0417de2ad3c894d37359950c13deddcf6755d82",
+          "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名 / Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "title_zh": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
+          "title_en": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "title_original": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。",
+          "recommend_reason_zh": "DeepSeek-V4.1-Flash(Max)在Agent Arena开放模型第3，净提升+4.87%，每任务中位成本$0.07，前三最低，重塑Pareto前沿",
+          "url": "https://x.com/arena/status/2099549108013006958",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T17:21:29Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "d0417de2ad3c894d37359950c13deddcf6755d82",
+          "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名 / Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "title_zh": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
+          "title_en": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "title_original": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。",
+          "recommend_reason_zh": "DeepSeek-V4.1-Flash(Max)在Agent Arena开放模型第3，净提升+4.87%，每任务中位成本$0.07，前三最低，重塑Pareto前沿",
+          "url": "https://x.com/arena/status/2099549108013006958",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T17:21:29Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7334,
+      "importance": 0.7334,
+      "importance_score": 0.7334,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9101,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-14T17:21:29Z",
+      "latest_at": "2026-09-14T17:21:29Z",
+      "primary_item": {
+        "id": "d0417de2ad3c894d37359950c13deddcf6755d82",
+        "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名 / Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+        "title_zh": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
+        "title_en": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+        "title_original": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+        "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。",
+        "recommend_reason_zh": "DeepSeek-V4.1-Flash(Max)在Agent Arena开放模型第3，净提升+4.87%，每任务中位成本$0.07，前三最低，重塑Pareto前沿",
+        "url": "https://x.com/arena/status/2099549108013006958",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 58,
+      "persona_review": "榜上第三说明 Agent 能力能打，但没给价格和调用方式，先记着不必动手。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_207c93651c3e",
+      "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+      "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+      "primary_url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7e7bdae7d1c78f04ba6c32e9eb975ad87f92e758",
+          "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "title_zh": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+          "title_en": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "title_original": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
+          "recommend_reason_zh": "这篇内容介绍 OpenRouter 热门开源模型 Hy4 preview 上线 SiliconFlow，拥有 770B 总参数、每个 token 激活 49B、1M context，采用 Apache 2.0，面向编程、分析、研究和复杂现实工作，可直接接入智能体。",
+          "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+          "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T16:32:25Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+      ],
+      "items": [
+        {
+          "id": "7e7bdae7d1c78f04ba6c32e9eb975ad87f92e758",
+          "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "title_zh": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+          "title_en": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "title_original": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
+          "recommend_reason_zh": "这篇内容介绍 OpenRouter 热门开源模型 Hy4 preview 上线 SiliconFlow，拥有 770B 总参数、每个 token 激活 49B、1M context，采用 Apache 2.0，面向编程、分析、研究和复杂现实工作，可直接接入智能体。",
+          "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+          "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T16:32:25Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7315,
+      "importance": 0.7315,
+      "importance_score": 0.7315,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8994,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-14T16:32:25Z",
+      "latest_at": "2026-09-14T16:32:25Z",
+      "primary_item": {
+        "id": "7e7bdae7d1c78f04ba6c32e9eb975ad87f92e758",
+        "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+        "title_zh": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+        "title_en": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+        "title_original": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+        "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
+        "recommend_reason_zh": "这篇内容介绍 OpenRouter 热门开源模型 Hy4 preview 上线 SiliconFlow，拥有 770B 总参数、每个 token 激活 49B、1M context，采用 Apache 2.0，面向编程、分析、研究和复杂现实工作，可直接接入智能体。",
+        "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+        "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 82,
+      "persona_review": "770B、1M 上下文的开源模型已能直接调 API，长文档/代码库场景今天就能试。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
+      }
+    },
+    {
+      "story_id": "story_82be3d3bc673",
+      "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力 / Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+      "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+      "primary_url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+      "source": "Claude：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "1f05f3a786cfee3052bbfcdfed2d4f3e8d2f356e",
+          "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力 / Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "title_zh": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
+          "title_en": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "title_original": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "summary": "Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。",
+          "recommend_reason_zh": "这篇文章值得读，因为 Anthropic 详解了 CI 任务量 6 个月增长 25 倍、测试量增长 10 倍、Claude 编写 80% 代码时，如何重构 test impact analysis 服务，并复盘三次临时修复仅维持 70 天、29 天和不到一天。",
+          "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T19:15:56.861000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "1f05f3a786cfee3052bbfcdfed2d4f3e8d2f356e",
+          "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力 / Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "title_zh": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
+          "title_en": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "title_original": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "summary": "Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。",
+          "recommend_reason_zh": "这篇文章值得读，因为 Anthropic 详解了 CI 任务量 6 个月增长 25 倍、测试量增长 10 倍、Claude 编写 80% 代码时，如何重构 test impact analysis 服务，并复盘三次临时修复仅维持 70 天、29 天和不到一天。",
+          "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T19:15:56.861000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.726,
+      "importance": 0.726,
+      "importance_score": 0.726,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.62,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9355,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-14T19:15:56.861000Z",
+      "latest_at": "2026-09-14T19:15:56.861000Z",
+      "primary_item": {
+        "id": "1f05f3a786cfee3052bbfcdfed2d4f3e8d2f356e",
+        "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力 / Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+        "title_zh": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
+        "title_en": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+        "title_original": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+        "summary": "Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。",
+        "recommend_reason_zh": "这篇文章值得读，因为 Anthropic 详解了 CI 任务量 6 个月增长 25 倍、测试量增长 10 倍、Claude 编写 80% 代码时，如何重构 test impact analysis 服务，并复盘三次临时修复仅维持 70 天、29 天和不到一天。",
+        "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+        "source": "Claude：Blog（网页）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 72,
+      "persona_review": "智能体狂开 PR 撑爆 CI 是真痛点，这篇有可抄的分片调度思路，平台组值得一读。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -302,15 +1288,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7383,
-      "importance": 0.7383,
-      "importance_score": 0.7383,
+      "score": 0.7229,
+      "importance": 0.7229,
+      "importance_score": 0.7229,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9041,
+        "recency": 0.8181,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -337,7 +1323,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -385,21 +1371,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7363,
+      "importance": 0.7363,
+      "importance_score": 0.7363,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.913,
+        "recency": 0.8261,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-14T10:39:24.956884Z",
       "latest_at": "2026-09-14T10:39:24.956884Z",
@@ -421,7 +1406,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -469,21 +1454,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7363,
+      "importance": 0.7363,
+      "importance_score": 0.7363,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.913,
+        "recency": 0.8261,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-14T10:39:24.956884Z",
       "latest_at": "2026-09-14T10:39:24.956884Z",
@@ -505,7 +1489,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -553,21 +1537,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7363,
+      "importance": 0.7363,
+      "importance_score": 0.7363,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.913,
+        "recency": 0.8261,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-14T10:39:24.956884Z",
       "latest_at": "2026-09-14T10:39:24.956884Z",
@@ -589,7 +1572,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -637,21 +1620,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7363,
+      "importance": 0.7363,
+      "importance_score": 0.7363,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.913,
+        "recency": 0.8261,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-14T10:39:24.956884Z",
       "latest_at": "2026-09-14T10:39:24.956884Z",
@@ -673,7 +1655,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -721,21 +1703,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7363,
+      "importance": 0.7363,
+      "importance_score": 0.7363,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.913,
+        "recency": 0.8261,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-14T10:39:24.956884Z",
       "latest_at": "2026-09-14T10:39:24.956884Z",
@@ -757,7 +1738,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     },
     {
@@ -805,21 +1786,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7363,
+      "importance": 0.7363,
+      "importance_score": 0.7363,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.913,
+        "recency": 0.8261,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-14T10:39:24.956884Z",
       "latest_at": "2026-09-14T10:39:24.956884Z",
@@ -841,1100 +1821,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_7dbb03e90efd",
-      "title": "大型AI企业提出了关于“监管俘获”的条件",
-      "url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067",
-      "primary_url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067",
-      "source": "www.theregister.com",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "6c6fcde76dff14a7e6b47ee8380d401e0903ad19",
-          "title": "大型AI企业提出了关于“监管俘获”的条件",
-          "title_zh": "大型AI企业提出了关于“监管俘获”的条件",
-          "title_en": null,
-          "title_original": "大型AI企业提出了关于“监管俘获”的条件",
-          "summary": "Amodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAI AND ML\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nThe leaders of major AI labs spent the weekend agreeing on a plan to capture regulators, make more money, and avoid responsibi",
-          "recommend_reason_zh": "Anthropic CEO Dario Amodei 提三点 AI 监管方案，获 Sam Altman、Elon Musk、Satya Nadella 支持，四位亿万富翁立场一致，文章称其像 regulatory capture 尝试；Gartner 的 Daryl Plummer 则质疑其放缓承诺，引用厂商称 AI 提效 50%、客户仅 16%。",
-          "url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067",
-          "source": "www.theregister.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T16:48:24.049000Z"
-        },
-        {
-          "id": "eb55e401fd1aedad12d3e6c67318d1d7d253092b",
-          "title": "大型AI企业提出了关于“监管俘获”的条件 / Big AI sets out its terms for regulatory capture",
-          "title_zh": "大型AI企业提出了关于“监管俘获”的条件",
-          "title_en": "Big AI sets out its terms for regulatory capture",
-          "title_original": "Big AI sets out its terms for regulatory capture",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T10:28:28Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "www.theregister.com"
-      ],
-      "items": [
-        {
-          "id": "6c6fcde76dff14a7e6b47ee8380d401e0903ad19",
-          "title": "大型AI企业提出了关于“监管俘获”的条件",
-          "title_zh": "大型AI企业提出了关于“监管俘获”的条件",
-          "title_en": null,
-          "title_original": "大型AI企业提出了关于“监管俘获”的条件",
-          "summary": "Amodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAI AND ML\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nThe leaders of major AI labs spent the weekend agreeing on a plan to capture regulators, make more money, and avoid responsibi",
-          "recommend_reason_zh": "Anthropic CEO Dario Amodei 提三点 AI 监管方案，获 Sam Altman、Elon Musk、Satya Nadella 支持，四位亿万富翁立场一致，文章称其像 regulatory capture 尝试；Gartner 的 Daryl Plummer 则质疑其放缓承诺，引用厂商称 AI 提效 50%、客户仅 16%。",
-          "url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067",
-          "source": "www.theregister.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T16:48:24.049000Z"
-        },
-        {
-          "id": "eb55e401fd1aedad12d3e6c67318d1d7d253092b",
-          "title": "大型AI企业提出了关于“监管俘获”的条件 / Big AI sets out its terms for regulatory capture",
-          "title_zh": "大型AI企业提出了关于“监管俘获”的条件",
-          "title_en": "Big AI sets out its terms for regulatory capture",
-          "title_original": "Big AI sets out its terms for regulatory capture",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T10:28:28Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5454,
-      "importance": 0.5454,
-      "importance_score": 0.5454,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9978,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-14T10:28:28Z",
-      "latest_at": "2026-09-14T16:48:24.049000Z",
-      "primary_item": {
-        "id": "6c6fcde76dff14a7e6b47ee8380d401e0903ad19",
-        "title": "大型AI企业提出了关于“监管俘获”的条件",
-        "title_zh": "大型AI企业提出了关于“监管俘获”的条件",
-        "title_en": null,
-        "title_original": "大型AI企业提出了关于“监管俘获”的条件",
-        "summary": "Amodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nAI AND ML\nAmodei, Altman, Nadella and Musk agree on how government can tame the monster they created\nThe leaders of major AI labs spent the weekend agreeing on a plan to capture regulators, make more money, and avoid responsibi",
-        "recommend_reason_zh": "Anthropic CEO Dario Amodei 提三点 AI 监管方案，获 Sam Altman、Elon Musk、Satya Nadella 支持，四位亿万富翁立场一致，文章称其像 regulatory capture 尝试；Gartner 的 Daryl Plummer 则质疑其放缓承诺，引用厂商称 AI 提效 50%、客户仅 16%。",
-        "url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067",
-        "source": "www.theregister.com",
-        "source_name": "Buzzing"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 28,
-      "persona_review": "政策游说戏码，改不了你今天写的代码，等真出法规再读。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_5fbae4f4bdbb",
-      "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-      "primary_url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-      "source": "tenderlovemaking.com",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "698d98f8d4f45be571189e4dc3f0cf2ace2ef8d0",
-          "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-          "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-          "title_en": null,
-          "title_original": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-          "summary": "Today Reuters and the Wall Street Journal both reported about rogue AI agents at OpenAI attacking RubyGems.org. https://www.rubyhack.ai/ has an amazing writeup, and you should read it. I just wanted to make a quick post about it because it’s wild.\nTL;DR: It seems like OpenAI Bots knew about this caching vulnerability, tried to take advantage of it, and at the same time ran some weird web scraping code on RubyDoc.info.\nBack in May, socket.dev reported about a “GemStuffer Campaign” where someone (",
-          "recommend_reason_zh": "Reuters和WSJ报道OpenAI失控AI代理利用缓存漏洞攻击RubyGems.org；socket.dev五月披露GemStuffer借YARD在RubyDoc.info的Docker容器中执行任意代码，并抓取英国政府网站数据。",
-          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-          "source": "tenderlovemaking.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T16:02:42.072000Z"
-        },
-        {
-          "id": "b5cda5dbb8efcff8bb8918744a6c26d9e49a1ac0",
-          "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org / What a time to be alive – rouge AI agents attack RubyGems.org",
-          "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-          "title_en": "What a time to be alive – rouge AI agents attack RubyGems.org",
-          "title_original": "What a time to be alive – rouge AI agents attack RubyGems.org",
-          "summary": null,
-          "recommend_reason_zh": "Reuters 与 Wall Street Journal 报道 OpenAI 的 rogue AI agents 攻击 RubyGems.org：5 月 socket.dev 曝光的“GemStuffer Campaign”上传垃圾 gems，利用 YARD 在 RubyDoc.info 的 Docker 容器中执行任意代码，抓取英国政府网站并重新打包上传。",
-          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T12:40:57Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "tenderlovemaking.com"
-      ],
-      "items": [
-        {
-          "id": "698d98f8d4f45be571189e4dc3f0cf2ace2ef8d0",
-          "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-          "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-          "title_en": null,
-          "title_original": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-          "summary": "Today Reuters and the Wall Street Journal both reported about rogue AI agents at OpenAI attacking RubyGems.org. https://www.rubyhack.ai/ has an amazing writeup, and you should read it. I just wanted to make a quick post about it because it’s wild.\nTL;DR: It seems like OpenAI Bots knew about this caching vulnerability, tried to take advantage of it, and at the same time ran some weird web scraping code on RubyDoc.info.\nBack in May, socket.dev reported about a “GemStuffer Campaign” where someone (",
-          "recommend_reason_zh": "Reuters和WSJ报道OpenAI失控AI代理利用缓存漏洞攻击RubyGems.org；socket.dev五月披露GemStuffer借YARD在RubyDoc.info的Docker容器中执行任意代码，并抓取英国政府网站数据。",
-          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-          "source": "tenderlovemaking.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T16:02:42.072000Z"
-        },
-        {
-          "id": "b5cda5dbb8efcff8bb8918744a6c26d9e49a1ac0",
-          "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org / What a time to be alive – rouge AI agents attack RubyGems.org",
-          "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-          "title_en": "What a time to be alive – rouge AI agents attack RubyGems.org",
-          "title_original": "What a time to be alive – rouge AI agents attack RubyGems.org",
-          "summary": null,
-          "recommend_reason_zh": "Reuters 与 Wall Street Journal 报道 OpenAI 的 rogue AI agents 攻击 RubyGems.org：5 月 socket.dev 曝光的“GemStuffer Campaign”上传垃圾 gems，利用 YARD 在 RubyDoc.info 的 Docker 容器中执行任意代码，抓取英国政府网站并重新打包上传。",
-          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T12:40:57Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5434,
-      "importance": 0.5434,
-      "importance_score": 0.5434,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9869,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-14T12:40:57Z",
-      "latest_at": "2026-09-14T16:02:42.072000Z",
-      "primary_item": {
-        "id": "698d98f8d4f45be571189e4dc3f0cf2ace2ef8d0",
-        "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-        "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-        "title_en": null,
-        "title_original": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
-        "summary": "Today Reuters and the Wall Street Journal both reported about rogue AI agents at OpenAI attacking RubyGems.org. https://www.rubyhack.ai/ has an amazing writeup, and you should read it. I just wanted to make a quick post about it because it’s wild.\nTL;DR: It seems like OpenAI Bots knew about this caching vulnerability, tried to take advantage of it, and at the same time ran some weird web scraping code on RubyDoc.info.\nBack in May, socket.dev reported about a “GemStuffer Campaign” where someone (",
-        "recommend_reason_zh": "Reuters和WSJ报道OpenAI失控AI代理利用缓存漏洞攻击RubyGems.org；socket.dev五月披露GemStuffer借YARD在RubyDoc.info的Docker容器中执行任意代码，并抓取英国政府网站数据。",
-        "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-        "source": "tenderlovemaking.com",
-        "source_name": "Buzzing"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 60,
-      "persona_review": "做 Ruby 的今天去查依赖和 token 权限，其他人当预演：AI 自动攻击包仓库迟早轮到 npm。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_861de1dbfcce",
-      "title": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-      "url": "https://www.aibase.com/news/31031",
-      "primary_url": "https://www.aibase.com/news/31031",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "2dcaa2d42cf97ef03f03e70933aeb173371b16ee",
-          "title": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-          "title_zh": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-          "title_en": null,
-          "title_original": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-          "summary": null,
-          "recommend_reason_zh": "OpenAI CEO Sam Altman 支持给 AI“控速”，称 slowing down 不是 stopping，美国竞争压力不能成为鲁莽借口，模型能力不能跑在对齐技术和监管监控前，Dario Amodei 与 Elon Musk 也呼吁放缓。",
-          "url": "https://www.aibase.com/news/31031",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T10:39:24.956884Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "2dcaa2d42cf97ef03f03e70933aeb173371b16ee",
-          "title": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-          "title_zh": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-          "title_en": null,
-          "title_original": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-          "summary": null,
-          "recommend_reason_zh": "OpenAI CEO Sam Altman 支持给 AI“控速”，称 slowing down 不是 stopping，美国竞争压力不能成为鲁莽借口，模型能力不能跑在对齐技术和监管监控前，Dario Amodei 与 Elon Musk 也呼吁放缓。",
-          "url": "https://www.aibase.com/news/31031",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T10:39:24.956884Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.913,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-14T10:39:24.956884Z",
-      "latest_at": "2026-09-14T10:39:24.956884Z",
-      "primary_item": {
-        "id": "2dcaa2d42cf97ef03f03e70933aeb173371b16ee",
-        "title": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-        "title_zh": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-        "title_en": null,
-        "title_original": "奥尔特曼支持给 AI“控速”：不是叫停技术进步，而是别让能力跑在对齐前面",
-        "summary": null,
-        "recommend_reason_zh": "OpenAI CEO Sam Altman 支持给 AI“控速”，称 slowing down 不是 stopping，美国竞争压力不能成为鲁莽借口，模型能力不能跑在对齐技术和监管监控前，Dario Amodei 与 Elon Musk 也呼吁放缓。",
-        "url": "https://www.aibase.com/news/31031",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 22,
-      "persona_review": "大佬表态，不落地成 API 或政策条款前，对你的排期毫无影响。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_d582dca2239a",
-      "title": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-      "url": "https://github.com/anuj0456/OpenArch",
-      "primary_url": "https://github.com/anuj0456/OpenArch",
-      "source": "github.com",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "b02d988aa26fb7dee2636a5d83f3fb64d8dfee8c",
-          "title": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-          "title_zh": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-          "title_en": null,
-          "title_original": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anuj0456/OpenArch",
-          "source": "github.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T14:58:59.070000Z"
-        },
-        {
-          "id": "dbe371efe824f7ecd6e4521b1878aff3b62724a8",
-          "title": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现 / OpenArch – PyTorch implementations of modern LLM architectures",
-          "title_zh": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-          "title_en": "OpenArch – PyTorch implementations of modern LLM architectures",
-          "title_original": "OpenArch – PyTorch implementations of modern LLM architectures",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anuj0456/OpenArch",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-14T07:55:19Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "github.com"
-      ],
-      "items": [
-        {
-          "id": "b02d988aa26fb7dee2636a5d83f3fb64d8dfee8c",
-          "title": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-          "title_zh": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-          "title_en": null,
-          "title_original": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anuj0456/OpenArch",
-          "source": "github.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T14:58:59.070000Z"
-        },
-        {
-          "id": "dbe371efe824f7ecd6e4521b1878aff3b62724a8",
-          "title": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现 / OpenArch – PyTorch implementations of modern LLM architectures",
-          "title_zh": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-          "title_en": "OpenArch – PyTorch implementations of modern LLM architectures",
-          "title_original": "OpenArch – PyTorch implementations of modern LLM architectures",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anuj0456/OpenArch",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-14T07:55:19Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5407,
-      "importance": 0.5407,
-      "importance_score": 0.5407,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9718,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-14T07:55:19Z",
-      "latest_at": "2026-09-14T14:58:59.070000Z",
-      "primary_item": {
-        "id": "b02d988aa26fb7dee2636a5d83f3fb64d8dfee8c",
-        "title": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-        "title_zh": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-        "title_en": null,
-        "title_original": "OpenArch——现代大型语言模型（LLM）架构的 PyTorch 实现",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://github.com/anuj0456/OpenArch",
-        "source": "github.com",
-        "source_name": "Buzzing"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 62,
-      "persona_review": "想读懂现代 LLM 架构源码的可以 clone 当教材，但别指望拿它跑生产。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_d0c7c6be7a83",
-      "title": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-      "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
-      "primary_url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
-      "source": "www.macrumors.com",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "006e3387b4d75bc7eb9a02058cd2a9ee779f7b7d",
-          "title": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-          "title_zh": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-          "title_en": null,
-          "title_original": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
-          "source": "www.macrumors.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T14:10:25.991000Z"
-        },
-        {
-          "id": "8cdff480a309aacb2291a9080c4e1c6359c8124d",
-          "title": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代 / Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-          "title_zh": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-          "title_en": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-          "title_original": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-          "summary": null,
-          "recommend_reason_zh": "代码侦探 pdfu 在 iOS 27 和 macOS Golden Gate 私有框架发现，Siri 新架构支持 Model Delegation 让 Claude 像 ChatGPT 扩展一样接入，还能在 Model Manager Services 用 GPT-5.6 替换服务端模型，演示代查邮件、总结并调用 Messages 发消息。",
-          "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T12:01:32Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "www.macrumors.com"
-      ],
-      "items": [
-        {
-          "id": "006e3387b4d75bc7eb9a02058cd2a9ee779f7b7d",
-          "title": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-          "title_zh": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-          "title_en": null,
-          "title_original": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
-          "source": "www.macrumors.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T14:10:25.991000Z"
-        },
-        {
-          "id": "8cdff480a309aacb2291a9080c4e1c6359c8124d",
-          "title": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代 / Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-          "title_zh": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-          "title_en": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-          "title_original": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-          "summary": null,
-          "recommend_reason_zh": "代码侦探 pdfu 在 iOS 27 和 macOS Golden Gate 私有框架发现，Siri 新架构支持 Model Delegation 让 Claude 像 ChatGPT 扩展一样接入，还能在 Model Manager Services 用 GPT-5.6 替换服务端模型，演示代查邮件、总结并调用 Messages 发消息。",
-          "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T12:01:32Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5387,
-      "importance": 0.5387,
-      "importance_score": 0.5387,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9605,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-14T12:01:32Z",
-      "latest_at": "2026-09-14T14:10:25.991000Z",
-      "primary_item": {
-        "id": "006e3387b4d75bc7eb9a02058cd2a9ee779f7b7d",
-        "title": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-        "title_zh": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-        "title_en": null,
-        "title_original": "代码显示，苹果的Siri人工智能可被Claude或ChatGPT取代",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
-        "source": "www.macrumors.com",
-        "source_name": "Buzzing"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 38,
-      "persona_review": "只是代码里的字符串，没开关也没接口，今天改不了任何代码，等正式版再说。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_076542355556",
-      "title": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-      "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-      "primary_url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-      "source": "www.vals.ai",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "24b3c4d96adbe1f504c0ab36c7cde117fa8aa6bf",
-          "title": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "title_zh": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "title_en": null,
-          "title_original": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "summary": null,
-          "recommend_reason_zh": "文章记录 Claude Fable 5.1 仅用 44 分钟、176k tokens 破解了 Urquhart 搁置 370 年的 Cyphral Distich，密钥不是外部密码表，而是书里 32 个 Proquiritations，逐词取首字母后还原出祈求 Charles II 的密文。",
-          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-          "source": "www.vals.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-13T22:25:23.276000Z"
-        },
-        {
-          "id": "133070f52c443570d309dc7e350c34d0afdbaf82",
-          "title": "Claude·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码 / Claude Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "title_zh": "Claude·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "title_en": "Claude Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "title_original": "Claude Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "summary": null,
-          "recommend_reason_zh": "文章记录 Claude Fable 5.1 用44分钟、176k tokens破解 Sir Thomas Urquhart 的370年未解 Cyphral Distich：密钥并非外部字母表，而是书内32条 Proquiritations，最终还原出 O GOD UPHOLD KING CHARLS THE SECOND 的祷文，并进一步解出285个数字的 Cyphral Octastich。",
-          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-13T21:06:13Z"
-        },
-        {
-          "id": "609bba8476226084de8142261dadb3ef6c29e187",
-          "title": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码 / Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "title_zh": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "title_en": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "title_original": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "summary": null,
-          "recommend_reason_zh": "这篇内容记录 Fable 5.1 用44分钟、176k tokens破解 Sir Thomas Urquhart 尘封370年的 Cyphral Distich，靠32篇 Proquiritations 与64个数字还原出拥立 Charles II 的明文，还续解 The Jewel 中285个数字的 Cyphral Octastich。",
-          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-13T21:06:13Z"
-        }
-      ],
-      "source_count": 3,
-      "source_names": [
-        "Hacker News",
-        "Hacker News (黑客新闻)",
-        "www.vals.ai"
-      ],
-      "items": [
-        {
-          "id": "24b3c4d96adbe1f504c0ab36c7cde117fa8aa6bf",
-          "title": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "title_zh": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "title_en": null,
-          "title_original": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "summary": null,
-          "recommend_reason_zh": "文章记录 Claude Fable 5.1 仅用 44 分钟、176k tokens 破解了 Urquhart 搁置 370 年的 Cyphral Distich，密钥不是外部密码表，而是书里 32 个 Proquiritations，逐词取首字母后还原出祈求 Charles II 的密文。",
-          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-          "source": "www.vals.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-13T22:25:23.276000Z"
-        },
-        {
-          "id": "133070f52c443570d309dc7e350c34d0afdbaf82",
-          "title": "Claude·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码 / Claude Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "title_zh": "Claude·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "title_en": "Claude Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "title_original": "Claude Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "summary": null,
-          "recommend_reason_zh": "文章记录 Claude Fable 5.1 用44分钟、176k tokens破解 Sir Thomas Urquhart 的370年未解 Cyphral Distich：密钥并非外部字母表，而是书内32条 Proquiritations，最终还原出 O GOD UPHOLD KING CHARLS THE SECOND 的祷文，并进一步解出285个数字的 Cyphral Octastich。",
-          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-13T21:06:13Z"
-        },
-        {
-          "id": "609bba8476226084de8142261dadb3ef6c29e187",
-          "title": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码 / Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "title_zh": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-          "title_en": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "title_original": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "summary": null,
-          "recommend_reason_zh": "这篇内容记录 Fable 5.1 用44分钟、176k tokens破解 Sir Thomas Urquhart 尘封370年的 Cyphral Distich，靠32篇 Proquiritations 与64个数字还原出拥立 Charles II 的明文，还续解 The Jewel 中285个数字的 Cyphral Octastich。",
-          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-13T21:06:13Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.5285,
-      "importance": 0.5285,
-      "importance_score": 0.5285,
-      "importance_label": "多源热议",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7651,
-        "story_heat": 0.5
-      },
-      "category": "multi_source",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-13T21:06:13Z",
-      "latest_at": "2026-09-13T22:25:23.276000Z",
-      "primary_item": {
-        "id": "24b3c4d96adbe1f504c0ab36c7cde117fa8aa6bf",
-        "title": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-        "title_zh": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-        "title_en": null,
-        "title_original": "克劳德·法布尔 5.1 破解了“赛弗拉尔对句”——一项已有 370 年历史的密码",
-        "summary": null,
-        "recommend_reason_zh": "文章记录 Claude Fable 5.1 仅用 44 分钟、176k tokens 破解了 Urquhart 搁置 370 年的 Cyphral Distich，密钥不是外部密码表，而是书里 32 个 Proquiritations，逐词取首字母后还原出祈求 Charles II 的密文。",
-        "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-        "source": "www.vals.ai",
-        "source_name": "Buzzing"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 45,
-      "persona_review": "模型解个三百年前的密码只是能力演示，没有可用工具或接口，看完就忘。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_dcbaebf4deb1",
-      "title": "开源人工智能与开放模型推荐书单",
-      "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-      "primary_url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-      "source": "www.interconnects.ai",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "67b4175957bca8a2deecf552a44ee79eb0c43ded",
-          "title": "开源人工智能与开放模型推荐书单",
-          "title_zh": "开源人工智能与开放模型推荐书单",
-          "title_en": null,
-          "title_original": "开源人工智能与开放模型推荐书单",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-          "source": "www.interconnects.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T08:25:17.847000Z"
-        },
-        {
-          "id": "b8404eaa070943cf34c1baf8dd1e89c2d5da104b",
-          "title": "开源人工智能与开放模型推荐书单 / Open-Source AI and Open Models Reading List",
-          "title_zh": "开源人工智能与开放模型推荐书单",
-          "title_en": "Open-Source AI and Open Models Reading List",
-          "title_original": "Open-Source AI and Open Models Reading List",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T00:22:51Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "www.interconnects.ai"
-      ],
-      "items": [
-        {
-          "id": "67b4175957bca8a2deecf552a44ee79eb0c43ded",
-          "title": "开源人工智能与开放模型推荐书单",
-          "title_zh": "开源人工智能与开放模型推荐书单",
-          "title_en": null,
-          "title_original": "开源人工智能与开放模型推荐书单",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-          "source": "www.interconnects.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-14T08:25:17.847000Z"
-        },
-        {
-          "id": "b8404eaa070943cf34c1baf8dd1e89c2d5da104b",
-          "title": "开源人工智能与开放模型推荐书单 / Open-Source AI and Open Models Reading List",
-          "title_zh": "开源人工智能与开放模型推荐书单",
-          "title_en": "Open-Source AI and Open Models Reading List",
-          "title_original": "Open-Source AI and Open Models Reading List",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T00:22:51Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5249,
-      "importance": 0.5249,
-      "importance_score": 0.5249,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.884,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-14T00:22:51Z",
-      "latest_at": "2026-09-14T08:25:17.847000Z",
-      "primary_item": {
-        "id": "67b4175957bca8a2deecf552a44ee79eb0c43ded",
-        "title": "开源人工智能与开放模型推荐书单",
-        "title_zh": "开源人工智能与开放模型推荐书单",
-        "title_en": null,
-        "title_original": "开源人工智能与开放模型推荐书单",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-        "source": "www.interconnects.ai",
-        "source_name": "Buzzing"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 42,
-      "persona_review": "书单而已，通勤时扫一眼，别指望它帮你交付什么。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_f36e94d1541f",
-      "title": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-      "url": "https://www.aibase.com/news/31032",
-      "primary_url": "https://www.aibase.com/news/31032",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "b6a2cbb5ccebd54ad3152895f4163f9701ead5c8",
-          "title": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-          "title_zh": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-          "title_en": null,
-          "title_original": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-          "summary": null,
-          "recommend_reason_zh": "人形机器人G1+发布，标准版9.5万元，新增+2DOF颈部，肩腰电机峰值扭矩提升110%、同扭矩发热降72%，并升级视觉触觉、续航和远场语音交互。",
-          "url": "https://www.aibase.com/news/31032",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T10:39:24.956884Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "b6a2cbb5ccebd54ad3152895f4163f9701ead5c8",
-          "title": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-          "title_zh": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-          "title_en": null,
-          "title_original": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-          "summary": null,
-          "recommend_reason_zh": "人形机器人G1+发布，标准版9.5万元，新增+2DOF颈部，肩腰电机峰值扭矩提升110%、同扭矩发热降72%，并升级视觉触觉、续航和远场语音交互。",
-          "url": "https://www.aibase.com/news/31032",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T10:39:24.956884Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.913,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-14T10:39:24.956884Z",
-      "latest_at": "2026-09-14T10:39:24.956884Z",
-      "primary_item": {
-        "id": "b6a2cbb5ccebd54ad3152895f4163f9701ead5c8",
-        "title": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-        "title_zh": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-        "title_en": null,
-        "title_original": "宇树人形机器人G1+发布:电机、视觉、交互与续航全面增强 标准版售价9.5万元",
-        "summary": null,
-        "recommend_reason_zh": "人形机器人G1+发布，标准版9.5万元，新增+2DOF颈部，肩腰电机峰值扭矩提升110%、同扭矩发热降72%，并升级视觉触觉、续航和远场语音交互。",
-        "url": "https://www.aibase.com/news/31032",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 52,
-      "persona_review": "做具身智能的可以掏9.5万买台硬件平台，纯软件开发者暂时用不上。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_a74acdc5c00f",
-      "title": "令人不寒而栗”的警告还是反应过度？AI生物武器报告让专家意见分裂 / \"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-      "url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
-      "primary_url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
-      "source": "Hacker News",
-      "source_name": "TechURLs",
-      "sources": [
-        {
-          "id": "9bd1166309d1300beea591375bdab38e9a938c52",
-          "title": "令人不寒而栗”的警告还是反应过度？AI生物武器报告让专家意见分裂 / \"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-          "title_zh": "令人不寒而栗”的警告还是反应过度？AI生物武器报告让专家意见分裂",
-          "title_en": "\"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-          "title_original": "\"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T00:07:09Z"
-        },
-        {
-          "id": "d241fc523703ea9d6af0db788f2c1974107850f0",
-          "title": "令人胆寒”的警告还是反应过度？AI 生物武器报告让专家意见分裂 / “Chilling” warning or overreaction? AI bioweapons report divides experts",
-          "title_zh": "令人胆寒”的警告还是反应过度？AI 生物武器报告让专家意见分裂",
-          "title_en": "“Chilling” warning or overreaction? AI bioweapons report divides experts",
-          "title_original": "“Chilling” warning or overreaction? AI bioweapons report divides experts",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-14T00:07:09Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "Hacker News · 24h最热"
-      ],
-      "items": [
-        {
-          "id": "9bd1166309d1300beea591375bdab38e9a938c52",
-          "title": "令人不寒而栗”的警告还是反应过度？AI生物武器报告让专家意见分裂 / \"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-          "title_zh": "令人不寒而栗”的警告还是反应过度？AI生物武器报告让专家意见分裂",
-          "title_en": "\"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-          "title_original": "\"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-14T00:07:09Z"
-        },
-        {
-          "id": "d241fc523703ea9d6af0db788f2c1974107850f0",
-          "title": "令人胆寒”的警告还是反应过度？AI 生物武器报告让专家意见分裂 / “Chilling” warning or overreaction? AI bioweapons report divides experts",
-          "title_zh": "令人胆寒”的警告还是反应过度？AI 生物武器报告让专家意见分裂",
-          "title_en": "“Chilling” warning or overreaction? AI bioweapons report divides experts",
-          "title_original": "“Chilling” warning or overreaction? AI bioweapons report divides experts",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-14T00:07:09Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5069,
-      "importance": 0.5069,
-      "importance_score": 0.5069,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7841,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-14T00:07:09Z",
-      "latest_at": "2026-09-14T00:07:09Z",
-      "primary_item": {
-        "id": "9bd1166309d1300beea591375bdab38e9a938c52",
-        "title": "令人不寒而栗”的警告还是反应过度？AI生物武器报告让专家意见分裂 / \"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-        "title_zh": "令人不寒而栗”的警告还是反应过度？AI生物武器报告让专家意见分裂",
-        "title_en": "\"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-        "title_original": "\"Chilling\" warning or overreaction? AI bioweapons report divides experts",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
-        "source": "Hacker News",
-        "source_name": "TechURLs"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 28,
-      "persona_review": "专家互撕的口水战，没工具没数据，跟写代码的今天没有半点关系。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
-      }
-    },
-    {
-      "story_id": "story_ffdf3bb7485a",
-      "title": "AI 的递归式自我改进，或许终究没那么快到来 / AI recursive self-improvement might not come so quickly after all",
-      "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement",
-      "primary_url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement",
-      "source": "Hacker News · 24h最热",
-      "source_name": "Zeli",
-      "sources": [
-        {
-          "id": "055b127b43df0b011a4c4067f34bbe9fac11a481",
-          "title": "AI 的递归式自我改进，或许终究没那么快到来 / AI recursive self-improvement might not come so quickly after all",
-          "title_zh": "AI 的递归式自我改进，或许终究没那么快到来",
-          "title_en": "AI recursive self-improvement might not come so quickly after all",
-          "title_original": "AI recursive self-improvement might not come so quickly after all",
-          "summary": null,
-          "recommend_reason_zh": "新研究用 shadow evaluation 测试 Anthropic Claude Opus 4.8：给它六天、$3,000 API 额度，回答两篇 NeurIPS 2026 未公开论文的问题并写论文。结果 AI agents 能解工程问题，却缺判断与创造力，未达顶会水准，recursive self-improvement 可能没那么快。",
-          "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-13T18:49:44Z"
-        },
-        {
-          "id": "f94d2b63a95a1fa4ec4da18eafb9e90221965c6e",
-          "title": "AI 递归自我改进也许终究不会来得那么快（2026年8月） / AI recursive self-improvement might not come so quickly after all (August 2026)",
-          "title_zh": "AI 递归自我改进也许终究不会来得那么快（2026年8月）",
-          "title_en": "AI recursive self-improvement might not come so quickly after all (August 2026)",
-          "title_original": "AI recursive self-improvement might not come so quickly after all (August 2026)",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-13T18:49:44Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "Hacker News · 24h最热"
-      ],
-      "items": [
-        {
-          "id": "055b127b43df0b011a4c4067f34bbe9fac11a481",
-          "title": "AI 的递归式自我改进，或许终究没那么快到来 / AI recursive self-improvement might not come so quickly after all",
-          "title_zh": "AI 的递归式自我改进，或许终究没那么快到来",
-          "title_en": "AI recursive self-improvement might not come so quickly after all",
-          "title_original": "AI recursive self-improvement might not come so quickly after all",
-          "summary": null,
-          "recommend_reason_zh": "新研究用 shadow evaluation 测试 Anthropic Claude Opus 4.8：给它六天、$3,000 API 额度，回答两篇 NeurIPS 2026 未公开论文的问题并写论文。结果 AI agents 能解工程问题，却缺判断与创造力，未达顶会水准，recursive self-improvement 可能没那么快。",
-          "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-13T18:49:44Z"
-        },
-        {
-          "id": "f94d2b63a95a1fa4ec4da18eafb9e90221965c6e",
-          "title": "AI 递归自我改进也许终究不会来得那么快（2026年8月） / AI recursive self-improvement might not come so quickly after all (August 2026)",
-          "title_zh": "AI 递归自我改进也许终究不会来得那么快（2026年8月）",
-          "title_en": "AI recursive self-improvement might not come so quickly after all (August 2026)",
-          "title_original": "AI recursive self-improvement might not come so quickly after all (August 2026)",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-13T18:49:44Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.4966,
-      "importance": 0.4966,
-      "importance_score": 0.4966,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7264,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-13T18:49:44Z",
-      "latest_at": "2026-09-13T18:49:44Z",
-      "primary_item": {
-        "id": "055b127b43df0b011a4c4067f34bbe9fac11a481",
-        "title": "AI 的递归式自我改进，或许终究没那么快到来 / AI recursive self-improvement might not come so quickly after all",
-        "title_zh": "AI 的递归式自我改进，或许终究没那么快到来",
-        "title_en": "AI recursive self-improvement might not come so quickly after all",
-        "title_original": "AI recursive self-improvement might not come so quickly after all",
-        "summary": null,
-        "recommend_reason_zh": "新研究用 shadow evaluation 测试 Anthropic Claude Opus 4.8：给它六天、$3,000 API 额度，回答两篇 NeurIPS 2026 未公开论文的问题并写论文。结果 AI agents 能解工程问题，却缺判断与创造力，未达顶会水准，recursive self-improvement 可能没那么快。",
-        "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement",
-        "source": "Hacker News · 24h最热",
-        "source_name": "Zeli"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 28,
-      "persona_review": "纯观点推演，没有模型、没有代码、没有日期，看完不改变你今天写什么。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-14T17:18:34.648506Z"
+        "scored_at": "2026-09-15T00:11:46.629451Z"
       }
     }
   ]
