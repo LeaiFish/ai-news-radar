@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T06:31:34.788441Z",
+  "generated_at": "2026-09-16T10:20:20.975164Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -37,10 +37,30 @@
       }
     },
     {
+      "story_id": "story_13603bf46f67",
+      "title": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
+      "url": "https://www.aibase.com/news/31098",
+      "rank": 2,
+      "reviews": {
+        "cynic": {
+          "score": 58,
+          "review": "一个开关就想把搜索和训练切开，可 Googlebot 自己都未必分得清。"
+        },
+        "paper-police": {
+          "score": 42,
+          "review": "功能已上线可自行验证，但仅单源转载、无官方文档链接，缺可查证据。"
+        },
+        "pragmatic": {
+          "score": 82,
+          "review": "用 Cloudflare 的站点今天可一键区分搜索和 AI 爬虫，保 SEO 同时防白嫖训练。"
+        }
+      }
+    },
+    {
       "story_id": "story_24b1574f3701",
       "title": "Google 发布 TranslateGemma 等多语言 AI 成果，语言技术覆盖 300 多种语言 / AI for everyone in every language",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language",
-      "rank": 2,
+      "rank": 3,
       "reviews": {
         "cynic": {
           "score": 66,
@@ -53,26 +73,6 @@
         "pragmatic": {
           "score": 80,
           "review": "开源翻译模型能直接下载自托管，55 种语言免 API 费用，值得跑一遍试试质量。"
-        }
-      }
-    },
-    {
-      "story_id": "story_9d2155aa5b6f",
-      "title": "强制执行 GitHub Advanced Security 配置 / Enforce GitHub Advanced Security configurations",
-      "url": "https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations",
-      "rank": 3,
-      "reviews": {
-        "cynic": {
-          "score": 72,
-          "review": "给企业管理员加了个强制开关，功能是真的，就是别指望这行 changelog 能上头条。"
-        },
-        "paper-police": {
-          "score": 38,
-          "review": "官方功能公告，无评测无代码，只能自行开仓库验证，缺公开基准。"
-        },
-        "pragmatic": {
-          "score": 74,
-          "review": "安全团队可在组织层强制下发扫描配置，管理员今天就能开；个人和小团队没买 GHAS 的用不上。"
         }
       }
     }
