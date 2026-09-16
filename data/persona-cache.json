@@ -5406,6 +5406,48 @@
       "review": "功能变更可查可用，但AI扫描检出率无benchmark，效果无从验证。",
       "title_hash": "4287c71a",
       "scored_at": "2026-09-16T20:33:46.219721Z"
+    },
+    "story_6210c4b108ab|pragmatic|0a5c5b24": {
+      "score": 68,
+      "review": "Copilot 预算不够可以正式申请提额了，管理员走流程即可，普通开发者用不上。",
+      "title_hash": "3b8d6e18",
+      "scored_at": "2026-09-16T23:49:29.127001Z"
+    },
+    "story_4b28983f879b|pragmatic|0a5c5b24": {
+      "score": 50,
+      "review": "只在用 SCIM 做 GitHub 用户同步时才相关，多一个 profileUrl 字段，映射能用但不必专门改。",
+      "title_hash": "a875ce64",
+      "scored_at": "2026-09-16T23:49:31.122035Z"
+    },
+    "story_76db13fd8fea|pragmatic|0a5c5b24": {
+      "score": 35,
+      "review": "安全框架和失准报告，不影响你今天调 API 写代码，等它变成合规要求再看。",
+      "title_hash": "2065e078",
+      "scored_at": "2026-09-16T23:49:32.936386Z"
+    },
+    "story_636869304a68|pragmatic|0a5c5b24": {
+      "score": 40,
+      "review": "报告框架没代码没接口，今天用不上；真担心就先去加固自家的 prompt 注入防护。",
+      "title_hash": "3ce80158",
+      "scored_at": "2026-09-16T23:49:35.053348Z"
+    },
+    "story_d6e73104d607|pragmatic|0a5c5b24": {
+      "score": 80,
+      "review": "SSO 组织里终于能自动授权 PAT 和 SSH key，管理员不用再手动逐个点，CI 场景直接受益。",
+      "title_hash": "a085da71",
+      "scored_at": "2026-09-16T23:49:36.734125Z"
+    },
+    "story_d6e73104d607|cynic|f4237a62": {
+      "score": 82,
+      "review": "省下了挨个点授权的机械劳动，只是这便利仍留给该淘汰的 classic PAT。",
+      "title_hash": "a085da71",
+      "scored_at": "2026-09-16T23:49:38.966072Z"
+    },
+    "story_d6e73104d607|paper-police|966065bf": {
+      "score": 58,
+      "review": "官方变更日志属实且功能可实测，但无论文无基准测试，只能算产品公告而非研究证据。",
+      "title_hash": "a085da71",
+      "scored_at": "2026-09-16T23:49:41.044397Z"
     }
   }
 }

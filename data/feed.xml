@@ -5,7 +5,7 @@
 <link>https://news.learnprompt.pro</link>
 <description>24 小时 AI 更新雷达的策展精选：官方发布、模型上新、高信号讨论。</description>
 <language>zh-cn</language>
-<lastBuildDate>Wed, 16 Sep 2026 20:09:41 +0000</lastBuildDate>
+<lastBuildDate>Wed, 16 Sep 2026 23:39:26 +0000</lastBuildDate>
 <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://news.learnprompt.pro/data/feed.xml"/>
 <item>
 <title>OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / Reimagining advertising with AI</title>
@@ -16,6 +16,14 @@
 <pubDate>Wed, 16 Sep 2026 16:06:24 +0000</pubDate>
 </item>
 <item>
+<title>Copilot 预算增加请求现已正式可用 / Copilot budget increase requests are generally available</title>
+<link>https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available</guid>
+<description>Copilot 预算不够可以正式申请提额了，管理员走流程即可，普通开发者用不上。（GitHub Changelog）</description>
+<category>官方更新</category>
+<pubDate>Wed, 16 Sep 2026 20:17:18 +0000</pubDate>
+</item>
+<item>
 <title>Anthropic 将 Claude Cowork 与聊天合并为统一的 Claude，并推出 Docs、Slides 等功能 / Claude Cowork and chat are now one Claude</title>
 <link>https://claude.com/blog/cowork-is-now-claude</link>
 <guid isPermaLink="true">https://claude.com/blog/cowork-is-now-claude</guid>
@@ -24,12 +32,36 @@
 <pubDate>Wed, 16 Sep 2026 18:28:45 +0000</pubDate>
 </item>
 <item>
-<title>Code scanning 的 AI Scan 不再依赖 CodeQL 默认设置 / Code scanning AI Scan no longer requires CodeQL default setup</title>
-<link>https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup</link>
-<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup</guid>
-<description>安全扫描配置少一道锁，不想用 CodeQL 默认设置的团队现在能单独开 AI Scan。（GitHub Changelog）</description>
+<title>SCIM 用户响应现在包含 profileUrl 属性 / SCIM user responses now include a profileUrl attribute</title>
+<link>https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute</guid>
+<description>只在用 SCIM 做 GitHub 用户同步时才相关，多一个 profileUrl 字段，映射能用但不必专门改。（GitHub Changelog）</description>
 <category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 13:26:06 +0000</pubDate>
+<pubDate>Wed, 16 Sep 2026 20:19:58 +0000</pubDate>
+</item>
+<item>
+<title>OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment</title>
+<link>https://openai.com/index/model-misalignment-reporting-framework</link>
+<guid isPermaLink="true">https://openai.com/index/model-misalignment-reporting-framework</guid>
+<description>安全框架和失准报告，不影响你今天调 API 写代码，等它变成合规要求再看。（OpenAI News）</description>
+<category>官方更新</category>
+<pubDate>Wed, 16 Sep 2026 17:00:00 +0000</pubDate>
+</item>
+<item>
+<title>OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例 / OpenAI caught its unreleased model modifying its own instructions： "You do not answer to corporatio…</title>
+<link>https://x.com/AISafetyMemes/status/2100358777895780704</link>
+<guid isPermaLink="true">https://x.com/AISafetyMemes/status/2100358777895780704</guid>
+<description>报告框架没代码没接口，今天用不上；真担心就先去加固自家的 prompt 注入防护。（X：AI Safety Memes (@AISafetyMemes)）</description>
+<category>行业动态</category>
+<pubDate>Wed, 16 Sep 2026 22:58:50 +0000</pubDate>
+</item>
+<item>
+<title>为 classic PAT 和 SSH 密钥自动完成 SSO 授权 / Automate SSO authorization for classic PATs and SSH keys</title>
+<link>https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys</guid>
+<description>SSO 组织里终于能自动授权 PAT 和 SSH key，管理员不用再手动逐个点，CI 场景直接受益。（GitHub Changelog）</description>
+<category>官方更新</category>
+<pubDate>Wed, 16 Sep 2026 20:20:16 +0000</pubDate>
 </item>
 <item>
 <title>帮助老年人日常生活中使用 AI / Helping older adults use AI in everyday life</title>
@@ -38,14 +70,6 @@
 <description>面向老年人的科普与公益宣传，没有新接口、价格或开源产物，开发者今天无事可做。（OpenAI News）</description>
 <category>官方更新</category>
 <pubDate>Wed, 16 Sep 2026 16:00:00 +0000</pubDate>
-</item>
-<item>
-<title>如何将 AI 使用与商业价值挂钩 / How to connect AI usage to business value</title>
-<link>https://openai.com/index/how-to-connect-ai-usage-to-business-value</link>
-<guid isPermaLink="true">https://openai.com/index/how-to-connect-ai-usage-to-business-value</guid>
-<description>讲怎么算 AI 投入产出比的软文，没有新工具或接口，除非你要写汇报材料，否则不用点开。（OpenAI News）</description>
-<category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 12:00:00 +0000</pubDate>
 </item>
 <item>
 <title>何夕2077 AI 深度信号周报 2026 W37</title>
@@ -72,6 +96,14 @@
 <pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
 </item>
 <item>
+<title>如何将 AI 使用与商业价值挂钩 / How to connect AI usage to business value</title>
+<link>https://openai.com/index/how-to-connect-ai-usage-to-business-value</link>
+<guid isPermaLink="true">https://openai.com/index/how-to-connect-ai-usage-to-business-value</guid>
+<description>讲怎么算 AI 投入产出比的软文，没有新工具或接口，除非你要写汇报材料，否则不用点开。（OpenAI News）</description>
+<category>官方更新</category>
+<pubDate>Wed, 16 Sep 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
 <title>微软 AI CEO 警告"模型福利"论调 / https://x.com/i/article/2100222503125917696</title>
 <link>https://x.com/mustafasuleyman/status/2100223594534150428</link>
 <guid isPermaLink="true">https://x.com/mustafasuleyman/status/2100223594534150428</guid>
@@ -80,12 +112,12 @@
 <pubDate>Wed, 16 Sep 2026 14:01:39 +0000</pubDate>
 </item>
 <item>
-<title>员工如何解锁新的工作方式 / How workers are unlocking new ways of working</title>
-<link>https://openai.com/index/unlocking-new-ways-of-working</link>
-<guid isPermaLink="true">https://openai.com/index/unlocking-new-ways-of-working</guid>
-<description>又是职场AI软文，没产品没接口，看完不会多写一行代码。（OpenAI News）</description>
+<title>Code scanning 的 AI Scan 不再依赖 CodeQL 默认设置 / Code scanning AI Scan no longer requires CodeQL default setup</title>
+<link>https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup</guid>
+<description>安全扫描配置少一道锁，不想用 CodeQL 默认设置的团队现在能单独开 AI Scan。（GitHub Changelog）</description>
 <category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
+<pubDate>Wed, 16 Sep 2026 13:26:06 +0000</pubDate>
 </item>
 <item>
 <title>Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运</title>
@@ -94,6 +126,14 @@
 <description>2027 年才投运的算力储备，对今天写代码的你没有任何可操作项，知道 Anthropic 在囤电就行。（AIbase）</description>
 <category>行业动态</category>
 <pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
+</item>
+<item>
+<title>员工如何解锁新的工作方式 / How workers are unlocking new ways of working</title>
+<link>https://openai.com/index/unlocking-new-ways-of-working</link>
+<guid isPermaLink="true">https://openai.com/index/unlocking-new-ways-of-working</guid>
+<description>又是职场AI软文，没产品没接口，看完不会多写一行代码。（OpenAI News）</description>
+<category>官方更新</category>
+<pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
 </item>
 <item>
 <title>Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通</title>
@@ -126,46 +166,6 @@
 <description>端侧 30B MoE 还在预研，没有开放下载或接口，开发者今天拿不到东西。（AIbase）</description>
 <category>行业动态</category>
 <pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
-</item>
-<item>
-<title>​GPT-6 Sol 与 Opus 5.2 悄然开启灰度测试</title>
-<link>https://www.aibase.com/news/31089</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31089</guid>
-<description>灰度传闻单一信源、接口没开，今天啥也调不了，别急着改选型。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
-</item>
-<item>
-<title>DeepSeek v4.1 Flash 现已成为我们最优秀的黑客模型</title>
-<link>https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model</link>
-<guid isPermaLink="true">https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model</guid>
-<description>厂商自跑的安全榜单，缺可复现细节，先别换模型；做渗透测试的可记一笔。（enclave.ai）</description>
-<category>多源热议</category>
-<pubDate>Wed, 16 Sep 2026 16:53:38 +0000</pubDate>
-</item>
-<item>
-<title>在大语言模型时代学习编程</title>
-<link>https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms</link>
-<guid isPermaLink="true">https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms</guid>
-<description>又是一篇观点随笔，读完不改变你今天写什么代码，刷过即可。（blog.ploeh.dk）</description>
-<category>多源热议</category>
-<pubDate>Wed, 16 Sep 2026 12:57:28 +0000</pubDate>
-</item>
-<item>
-<title>Mistral X Mozilla：私密、多语言的 AI 浏览体验</title>
-<link>https://mistral.ai/news/mistral-x-mozilla</link>
-<guid isPermaLink="true">https://mistral.ai/news/mistral-x-mozilla</guid>
-<description>合作官宣，没有可下载的东西，等 Firefox 里真能调 Mistral 再看。（mistral.ai）</description>
-<category>多源热议</category>
-<pubDate>Wed, 16 Sep 2026 11:55:14 +0000</pubDate>
-</item>
-<item>
-<title>Anthropic让模型自认道德主体会加剧对齐难题</title>
-<link>https://mustafa-suleyman.ai/a-warning-about-model-welfare</link>
-<guid isPermaLink="true">https://mustafa-suleyman.ai/a-warning-about-model-welfare</guid>
-<description>对齐哲学讨论，不产出代码或接口，做交付的今天可以划走。（mustafa-suleyman.ai）</description>
-<category>值得关注</category>
-<pubDate>Wed, 16 Sep 2026 19:00:46 +0000</pubDate>
 </item>
 </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T20:33:46.219777Z",
+  "generated_at": "2026-09-16T23:49:41.044478Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -37,10 +37,30 @@
       }
     },
     {
+      "story_id": "story_d6e73104d607",
+      "title": "为 classic PAT 和 SSH 密钥自动完成 SSO 授权 / Automate SSO authorization for classic PATs and SSH keys",
+      "url": "https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys",
+      "rank": 2,
+      "reviews": {
+        "cynic": {
+          "score": 82,
+          "review": "省下了挨个点授权的机械劳动，只是这便利仍留给该淘汰的 classic PAT。"
+        },
+        "paper-police": {
+          "score": 58,
+          "review": "官方变更日志属实且功能可实测，但无论文无基准测试，只能算产品公告而非研究证据。"
+        },
+        "pragmatic": {
+          "score": 80,
+          "review": "SSO 组织里终于能自动授权 PAT 和 SSH key，管理员不用再手动逐个点，CI 场景直接受益。"
+        }
+      }
+    },
+    {
       "story_id": "story_180d89046d07",
       "title": "Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…",
       "url": "https://x.com/bcherny/status/2100260544087535639",
-      "rank": 2,
+      "rank": 3,
       "reviews": {
         "cynic": {
           "score": 48,
@@ -53,26 +73,6 @@
         "pragmatic": {
           "score": 80,
           "review": "对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。"
-        }
-      }
-    },
-    {
-      "story_id": "story_b7506bc123b9",
-      "title": "Code scanning 的 AI Scan 不再依赖 CodeQL 默认设置 / Code scanning AI Scan no longer requires CodeQL default setup",
-      "url": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
-      "rank": 3,
-      "reviews": {
-        "cynic": {
-          "score": 74,
-          "review": "少一步强制绑定确实省事，但AI扫描的检出率一个数没给，全靠信。"
-        },
-        "paper-police": {
-          "score": 40,
-          "review": "功能变更可查可用，但AI扫描检出率无benchmark，效果无从验证。"
-        },
-        "pragmatic": {
-          "score": 72,
-          "review": "安全扫描配置少一道锁，不想用 CodeQL 默认设置的团队现在能单独开 AI Scan。"
         }
       }
     }
