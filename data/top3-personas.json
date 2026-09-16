@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T23:51:39.397194Z",
+  "generated_at": "2026-09-16T01:48:07.242550Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -37,30 +37,10 @@
       }
     },
     {
-      "story_id": "story_e73a75567feb",
-      "title": "上海 AI Lab 开源多模态基础大模型书生-S2：Memory Decoder 插拔记忆，科学长程任务对标顶尖闭源",
-      "url": "https://www.aibase.com/news/31056",
-      "rank": 2,
-      "reviews": {
-        "cynic": {
-          "score": 72,
-          "review": "开源插拔记忆是实招，“对标闭源”却只挑科学长程任务，评测集和复现细节敢全晒吗？"
-        },
-        "paper-police": {
-          "score": 35,
-          "review": "单篇媒体报道，无论文与代码链接，开源声明无法验证。"
-        },
-        "pragmatic": {
-          "score": 85,
-          "review": "开源权重能直接下，长任务和插拔记忆可上手试，科学场景先跑 benchmark 再选型。"
-        }
-      }
-    },
-    {
       "story_id": "story_24b1574f3701",
       "title": "Google 发布 TranslateGemma 等多语言 AI 成果，语言技术覆盖 300 多种语言 / AI for everyone in every language",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language",
-      "rank": 3,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 66,
@@ -73,6 +53,26 @@
         "pragmatic": {
           "score": 80,
           "review": "开源翻译模型能直接下载自托管，55 种语言免 API 费用，值得跑一遍试试质量。"
+        }
+      }
+    },
+    {
+      "story_id": "story_9d2155aa5b6f",
+      "title": "强制执行 GitHub Advanced Security 配置 / Enforce GitHub Advanced Security configurations",
+      "url": "https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 72,
+          "review": "给企业管理员加了个强制开关，功能是真的，就是别指望这行 changelog 能上头条。"
+        },
+        "paper-police": {
+          "score": 38,
+          "review": "官方功能公告，无评测无代码，只能自行开仓库验证，缺公开基准。"
+        },
+        "pragmatic": {
+          "score": 74,
+          "review": "安全团队可在组织层强制下发扫描配置，管理员今天就能开；个人和小团队没买 GHAS 的用不上。"
         }
       }
     }
