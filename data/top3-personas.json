@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T15:49:58.812742Z",
+  "generated_at": "2026-09-16T20:33:46.219777Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,30 +17,10 @@
   ],
   "items": [
     {
-      "story_id": "story_f627ffc73bd0",
-      "title": "Google DeepMind 发布 Gemini 3.8 Live 和 3.8 Live Extended Thinking / Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
-      "rank": 1,
-      "reviews": {
-        "cynic": {
-          "score": 48,
-          "review": "版本号一路小跑，名字比参数还长；先把跑分和延迟数字晒出来再谈 Live。"
-        },
-        "paper-police": {
-          "score": 40,
-          "review": "官方博客发布，无论文、无开源、无第三方跑分，等实测再说。"
-        },
-        "pragmatic": {
-          "score": 87,
-          "review": "新模型已可调用，Live 版适合实时语音/流式场景，先去 API 文档对一下价格和延迟再动手。"
-        }
-      }
-    },
-    {
       "story_id": "story_13603bf46f67",
       "title": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
       "url": "https://www.aibase.com/news/31098",
-      "rank": 2,
+      "rank": 1,
       "reviews": {
         "cynic": {
           "score": 58,
@@ -57,22 +37,42 @@
       }
     },
     {
-      "story_id": "story_24b1574f3701",
-      "title": "Google 发布 TranslateGemma 等多语言 AI 成果，语言技术覆盖 300 多种语言 / AI for everyone in every language",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language",
-      "rank": 3,
+      "story_id": "story_180d89046d07",
+      "title": "Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…",
+      "url": "https://x.com/bcherny/status/2100260544087535639",
+      "rank": 2,
       "reviews": {
         "cynic": {
-          "score": 66,
-          "review": "自家 1000 种语言的口号还挂着，这次交 300 种，低资源语言的 BLEU 敢不敢全晒？"
+          "score": 48,
+          "review": "生成幻灯片谁都能演示，导出的 PPTX 打开后排版还活着吗？"
         },
         "paper-police": {
-          "score": 35,
-          "review": "只有官方博客，无 arXiv 链接、无仓库、无 Benchmark 复现路径，先当宣传看。"
+          "score": 27,
+          "review": "仅一条推文宣告功能上线，无论文、代码与可复现评测，证据止于官方口径。"
         },
         "pragmatic": {
           "score": 80,
-          "review": "开源翻译模型能直接下载自托管，55 种语言免 API 费用，值得跑一遍试试质量。"
+          "review": "对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。"
+        }
+      }
+    },
+    {
+      "story_id": "story_b7506bc123b9",
+      "title": "Code scanning 的 AI Scan 不再依赖 CodeQL 默认设置 / Code scanning AI Scan no longer requires CodeQL default setup",
+      "url": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 74,
+          "review": "少一步强制绑定确实省事，但AI扫描的检出率一个数没给，全靠信。"
+        },
+        "paper-police": {
+          "score": 40,
+          "review": "功能变更可查可用，但AI扫描检出率无benchmark，效果无从验证。"
+        },
+        "pragmatic": {
+          "score": 72,
+          "review": "安全扫描配置少一道锁，不想用 CodeQL 默认设置的团队现在能单独开 AI Scan。"
         }
       }
     }
