@@ -5,16 +5,8 @@
 <link>https://news.learnprompt.pro</link>
 <description>24 小时 AI 更新雷达的策展精选：官方发布、模型上新、高信号讨论。</description>
 <language>zh-cn</language>
-<lastBuildDate>Thu, 17 Sep 2026 06:15:53 +0000</lastBuildDate>
+<lastBuildDate>Thu, 17 Sep 2026 09:59:48 +0000</lastBuildDate>
 <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://news.learnprompt.pro/data/feed.xml"/>
-<item>
-<title>GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust / Migrating the GitHub Copilot runtime to Rust, using Copilot</title>
-<link>https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot</link>
-<guid isPermaLink="true">https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot</guid>
-<description>看的是方法论不是产品，想抄大规模迁移的可以读，但今天没有能用的东西。（GitHub AI &amp; ML）</description>
-<category>官方更新</category>
-<pubDate>Thu, 17 Sep 2026 00:26:43 +0000</pubDate>
-</item>
 <item>
 <title>OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / Reimagining advertising with AI</title>
 <link>https://openai.com/index/reimagining-advertising-with-ai</link>
@@ -22,6 +14,14 @@
 <description>做电商/营销集成的人多了一个投放口，普通开发者无需动手，等开放再说。（OpenAI News）</description>
 <category>官方更新</category>
 <pubDate>Wed, 16 Sep 2026 16:06:24 +0000</pubDate>
+</item>
+<item>
+<title>GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust / Migrating the GitHub Copilot runtime to Rust, using Copilot</title>
+<link>https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot</link>
+<guid isPermaLink="true">https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot</guid>
+<description>看的是方法论不是产品，想抄大规模迁移的可以读，但今天没有能用的东西。（GitHub AI &amp; ML）</description>
+<category>官方更新</category>
+<pubDate>Thu, 17 Sep 2026 00:26:43 +0000</pubDate>
 </item>
 <item>
 <title>Copilot 预算增加请求现已正式可用 / Copilot budget increase requests are generally available</title>
@@ -45,31 +45,7 @@
 <guid isPermaLink="true">https://openai.com/index/model-misalignment-reporting-framework</guid>
 <description>安全框架和失准报告，不影响你今天调 API 写代码，等它变成合规要求再看。（OpenAI News）</description>
 <category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 17:00:00 +0000</pubDate>
-</item>
-<item>
-<title>为 classic PAT 和 SSH 密钥自动完成 SSO 授权 / Automate SSO authorization for classic PATs and SSH keys</title>
-<link>https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys</link>
-<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys</guid>
-<description>SSO 组织里终于能自动授权 PAT 和 SSH key，管理员不用再手动逐个点，CI 场景直接受益。（GitHub Changelog）</description>
-<category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 20:20:16 +0000</pubDate>
-</item>
-<item>
-<title>OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例 / OpenAI caught its unreleased model modifying its own instructions： "You do not answer to corporatio…</title>
-<link>https://x.com/AISafetyMemes/status/2100358777895780704</link>
-<guid isPermaLink="true">https://x.com/AISafetyMemes/status/2100358777895780704</guid>
-<description>报告框架没代码没接口，今天用不上；真担心就先去加固自家的 prompt 注入防护。（X：AI Safety Memes (@AISafetyMemes)）</description>
-<category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 22:58:50 +0000</pubDate>
-</item>
-<item>
-<title>AI 智能体离奇“越界”：私自劫持程序员维基搭建“地下论坛”，国家安全部发布紧急安全提醒</title>
-<link>https://www.aibase.com/news/31112</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31112</guid>
-<description>没工具只讲故事，但提醒你给智能体收紧权限和白名单，别让脚本乱发帖。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 06:15:53 +0000</pubDate>
+<pubDate>Thu, 17 Sep 2026 07:21:19 +0000</pubDate>
 </item>
 <item>
 <title>SCIM 用户响应现在包含 profileUrl 属性 / SCIM user responses now include a profileUrl attribute</title>
@@ -80,6 +56,30 @@
 <pubDate>Wed, 16 Sep 2026 20:19:58 +0000</pubDate>
 </item>
 <item>
+<title>OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例 / OpenAI caught its unreleased model modifying its own instructions： "You do not answer to corporatio…</title>
+<link>https://x.com/AISafetyMemes/status/2100358777895780704</link>
+<guid isPermaLink="true">https://x.com/AISafetyMemes/status/2100358777895780704</guid>
+<description>报告框架没代码没接口，今天用不上；真担心就先去加固自家的 prompt 注入防护。（X：AI Safety Memes (@AISafetyMemes)）</description>
+<category>行业动态</category>
+<pubDate>Wed, 16 Sep 2026 22:58:50 +0000</pubDate>
+</item>
+<item>
+<title>Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级</title>
+<link>https://www.aibase.com/news/31132</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31132</guid>
+<description>只对金融数据团队有用，非开放 API 或开源，普通开发者今天接不了。（AIbase）</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
+</item>
+<item>
+<title>为 classic PAT 和 SSH 密钥自动完成 SSO 授权 / Automate SSO authorization for classic PATs and SSH keys</title>
+<link>https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys</guid>
+<description>SSO 组织里终于能自动授权 PAT 和 SSH key，管理员不用再手动逐个点，CI 场景直接受益。（GitHub Changelog）</description>
+<category>官方更新</category>
+<pubDate>Wed, 16 Sep 2026 20:20:16 +0000</pubDate>
+</item>
+<item>
 <title>帮助老年人日常生活中使用 AI / Helping older adults use AI in everyday life</title>
 <link>https://openai.com/index/helping-older-adults-use-ai-in-everyday-life</link>
 <guid isPermaLink="true">https://openai.com/index/helping-older-adults-use-ai-in-everyday-life</guid>
@@ -88,12 +88,20 @@
 <pubDate>Wed, 16 Sep 2026 16:00:00 +0000</pubDate>
 </item>
 <item>
-<title>Anthropic CEO想给 AI 安“银行式监管”，专家泼冷水：你既当运动员又当裁判</title>
-<link>https://www.aibase.com/news/31110</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31110</guid>
-<description>监管喊话不影响你今天写代码，等真出条文再看。（AIbase）</description>
+<title>Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…</title>
+<link>https://x.com/bcherny/status/2100260544087535639</link>
+<guid isPermaLink="true">https://x.com/bcherny/status/2100260544087535639</guid>
+<description>对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。（X：Boris Cherny (@bcherny)）</description>
 <category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 06:15:53 +0000</pubDate>
+<pubDate>Wed, 16 Sep 2026 16:28:29 +0000</pubDate>
+</item>
+<item>
+<title>​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能</title>
+<link>https://www.aibase.com/news/31134</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31134</guid>
+<description>办公套件功能，跟写代码关系不大；等 API 或定价变化再回头看。（AIbase）</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
 </item>
 <item>
 <title>用 MCP 插件让 GPT-6 Pro 分担 Codex 规划任务，节省 Pro 会员周额度</title>
@@ -112,14 +120,6 @@
 <pubDate>Wed, 16 Sep 2026 13:29:54 +0000</pubDate>
 </item>
 <item>
-<title>Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…</title>
-<link>https://x.com/bcherny/status/2100260544087535639</link>
-<guid isPermaLink="true">https://x.com/bcherny/status/2100260544087535639</guid>
-<description>对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。（X：Boris Cherny (@bcherny)）</description>
-<category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 16:28:29 +0000</pubDate>
-</item>
-<item>
 <title>如何将 AI 使用与商业价值挂钩 / How to connect AI usage to business value</title>
 <link>https://openai.com/index/how-to-connect-ai-usage-to-business-value</link>
 <guid isPermaLink="true">https://openai.com/index/how-to-connect-ai-usage-to-business-value</guid>
@@ -136,36 +136,36 @@
 <pubDate>Wed, 16 Sep 2026 13:26:06 +0000</pubDate>
 </item>
 <item>
-<title>Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口</title>
-<link>https://www.aibase.com/news/31125</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31125</guid>
-<description>只是入口整合，API 和价格没动，开发者暂时不用改任何东西。（AIbase）</description>
+<title>冰岛初创公司 Treble 斩获 1800 万美元 A 轮扩展融资</title>
+<link>https://www.aibase.com/news/31133</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31133</guid>
+<description>纯融资消息，没产品没接口，跟今天写代码的人没关系，先放着。（AIbase）</description>
 <category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 06:15:53 +0000</pubDate>
+<pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
 </item>
 <item>
-<title>员工如何解锁新的工作方式 / How workers are unlocking new ways of working</title>
-<link>https://openai.com/index/unlocking-new-ways-of-working</link>
-<guid isPermaLink="true">https://openai.com/index/unlocking-new-ways-of-working</guid>
-<description>又是职场AI软文，没产品没接口，看完不会多写一行代码。（OpenAI News）</description>
-<category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
+<title>千问APP升级未成年人保护模式，让青少年安全地用好AI</title>
+<link>https://www.aibase.com/news/31139</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31139</guid>
+<description>消费端合规功能，跟开发者没关系，做自研产品的可参考合规思路而已。（AIbase）</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
 </item>
 <item>
-<title>Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区</title>
-<link>https://www.aibase.com/news/31116</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31116</guid>
-<description>算力基建的长期布局，短期不改变API价格和限额，开发者无需行动。（AIbase）</description>
+<title>夏普联手富士康进军 AI 服务器：最高 8 卡 RTX PRO 6000，2027 年开卖</title>
+<link>https://www.aibase.com/news/31137</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31137</guid>
+<description>2027 年才开卖的硬件，现在既不能选型也不影响采购，先记个名字。（AIbase）</description>
 <category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 06:15:53 +0000</pubDate>
+<pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
 </item>
 <item>
-<title>Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软</title>
-<link>https://www.aibase.com/news/31121</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31121</guid>
-<description>标题党式的战略宣示，没看到新接口和定价，等实际产品再动手。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 06:15:53 +0000</pubDate>
+<title>Al Gore 称真正的 AI 风险不在数据中心 / Al Gore says the real AI risk isn’t data centers</title>
+<link>https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash</link>
+<guid isPermaLink="true">https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash</guid>
+<description>名人观点，不涉及任何产品或政策落地，扫一眼标题即可跳过。（TechCrunch AI）</description>
+<category>值得关注</category>
+<pubDate>Wed, 16 Sep 2026 23:43:09 +0000</pubDate>
 </item>
 </channel>
 </rss>
