@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T12:11:25.164848Z",
+  "generated_at": "2026-09-17T15:56:28.454643Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,10 +17,30 @@
   ],
   "items": [
     {
+      "story_id": "story_b945fc9782d5",
+      "title": "Unsloth 发布 Docker 镜像与 Unsloth Desktop，本地训练运行 500+ 模型 / You can now train and run 500+ models locally with our Unsloth Docker image！ 🐳 Use our new GUI or …",
+      "url": "https://x.com/UnslothAI/status/2100601458458804381",
+      "rank": 1,
+      "reviews": {
+        "cynic": {
+          "score": 66,
+          "review": "500+ 只是支持的模型数，不是新突破；Docker 打包加 GUI 确实实用，但别拿数字当功劳。"
+        },
+        "paper-police": {
+          "score": 40,
+          "review": "只有一条推文，Docker 镜像和 GUI 未见评测数字或第三方复现，谈不上验证。"
+        },
+        "pragmatic": {
+          "score": 88,
+          "review": "Docker 拉下来就能微调 500+ 模型，加上 GUI 不用写脚本，本地党今天可试。"
+        }
+      }
+    },
+    {
       "story_id": "story_d6e73104d607",
       "title": "为 classic PAT 和 SSH 密钥自动完成 SSO 授权 / Automate SSO authorization for classic PATs and SSH keys",
       "url": "https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys",
-      "rank": 1,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 82,
@@ -40,7 +60,7 @@
       "story_id": "story_180d89046d07",
       "title": "Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…",
       "url": "https://x.com/bcherny/status/2100260544087535639",
-      "rank": 2,
+      "rank": 3,
       "reviews": {
         "cynic": {
           "score": 48,
@@ -53,26 +73,6 @@
         "pragmatic": {
           "score": 80,
           "review": "对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。"
-        }
-      }
-    },
-    {
-      "story_id": "story_b7506bc123b9",
-      "title": "Code scanning 的 AI Scan 不再依赖 CodeQL 默认设置 / Code scanning AI Scan no longer requires CodeQL default setup",
-      "url": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
-      "rank": 3,
-      "reviews": {
-        "cynic": {
-          "score": 74,
-          "review": "少一步强制绑定确实省事，但AI扫描的检出率一个数没给，全靠信。"
-        },
-        "paper-police": {
-          "score": 40,
-          "review": "功能变更可查可用，但AI扫描检出率无benchmark，效果无从验证。"
-        },
-        "pragmatic": {
-          "score": 72,
-          "review": "安全扫描配置少一道锁，不想用 CodeQL 默认设置的团队现在能单独开 AI Scan。"
         }
       }
     }
