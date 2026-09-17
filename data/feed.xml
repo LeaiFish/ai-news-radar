@@ -5,8 +5,16 @@
 <link>https://news.learnprompt.pro</link>
 <description>24 小时 AI 更新雷达的策展精选：官方发布、模型上新、高信号讨论。</description>
 <language>zh-cn</language>
-<lastBuildDate>Wed, 16 Sep 2026 23:39:26 +0000</lastBuildDate>
+<lastBuildDate>Thu, 17 Sep 2026 01:25:51 +0000</lastBuildDate>
 <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://news.learnprompt.pro/data/feed.xml"/>
+<item>
+<title>GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust / Migrating the GitHub Copilot runtime to Rust, using Copilot</title>
+<link>https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot</link>
+<guid isPermaLink="true">https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot</guid>
+<description>看的是方法论不是产品，想抄大规模迁移的可以读，但今天没有能用的东西。（GitHub AI &amp; ML）</description>
+<category>官方更新</category>
+<pubDate>Thu, 17 Sep 2026 00:26:43 +0000</pubDate>
+</item>
 <item>
 <title>OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / Reimagining advertising with AI</title>
 <link>https://openai.com/index/reimagining-advertising-with-ai</link>
@@ -32,20 +40,20 @@
 <pubDate>Wed, 16 Sep 2026 18:28:45 +0000</pubDate>
 </item>
 <item>
-<title>SCIM 用户响应现在包含 profileUrl 属性 / SCIM user responses now include a profileUrl attribute</title>
-<link>https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute</link>
-<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute</guid>
-<description>只在用 SCIM 做 GitHub 用户同步时才相关，多一个 profileUrl 字段，映射能用但不必专门改。（GitHub Changelog）</description>
-<category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 20:19:58 +0000</pubDate>
-</item>
-<item>
 <title>OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment</title>
 <link>https://openai.com/index/model-misalignment-reporting-framework</link>
 <guid isPermaLink="true">https://openai.com/index/model-misalignment-reporting-framework</guid>
 <description>安全框架和失准报告，不影响你今天调 API 写代码，等它变成合规要求再看。（OpenAI News）</description>
 <category>官方更新</category>
 <pubDate>Wed, 16 Sep 2026 17:00:00 +0000</pubDate>
+</item>
+<item>
+<title>SCIM 用户响应现在包含 profileUrl 属性 / SCIM user responses now include a profileUrl attribute</title>
+<link>https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute</guid>
+<description>只在用 SCIM 做 GitHub 用户同步时才相关，多一个 profileUrl 字段，映射能用但不必专门改。（GitHub Changelog）</description>
+<category>官方更新</category>
+<pubDate>Wed, 16 Sep 2026 20:19:58 +0000</pubDate>
 </item>
 <item>
 <title>OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例 / OpenAI caught its unreleased model modifying its own instructions： "You do not answer to corporatio…</title>
@@ -72,6 +80,22 @@
 <pubDate>Wed, 16 Sep 2026 16:00:00 +0000</pubDate>
 </item>
 <item>
+<title>Anthropic合并Claude Cowork与Chat，统一AI任务工作空间</title>
+<link>https://www.aibase.com/news/31106</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31106</guid>
+<description>只是入口合并，调用 API 的不用动；常用 Cowork 的留意功能搬家。（AIbase）</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 01:25:51 +0000</pubDate>
+</item>
+<item>
+<title>用 MCP 插件让 GPT-6 Pro 分担 Codex 规划任务，节省 Pro 会员周额度</title>
+<link>https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647686431&amp;idx=1&amp;sn=c1bfba7e0b5b7cf995e444daf79861a4</link>
+<guid isPermaLink="true">https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647686431&amp;idx=1&amp;sn=c1bfba7e0b5b7cf995e444daf79861a4</guid>
+<description>Codex 重度用户能照着搭 MCP 分流规划任务，省周额度；轻量用户没这个必要。（公众号：数字生命卡兹克）</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 00:09:06 +0000</pubDate>
+</item>
+<item>
 <title>何夕2077 AI 深度信号周报 2026 W37</title>
 <link>https://hex2077.dev/zh-CN/blog/weekly/2026-09-13-ai-weekly-2026-w37</link>
 <guid isPermaLink="true">https://hex2077.dev/zh-CN/blog/weekly/2026-09-13-ai-weekly-2026-w37</guid>
@@ -80,20 +104,20 @@
 <pubDate>Wed, 16 Sep 2026 13:29:54 +0000</pubDate>
 </item>
 <item>
+<title>Mozilla携手Mistral，将AI模型引入Firefox智能窗口</title>
+<link>https://www.aibase.com/news/31108</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31108</guid>
+<description>浏览器内置AI，对做Web集成的有意义，但现在还没开放接口，先观望。（AIbase）</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 01:25:51 +0000</pubDate>
+</item>
+<item>
 <title>Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…</title>
 <link>https://x.com/bcherny/status/2100260544087535639</link>
 <guid isPermaLink="true">https://x.com/bcherny/status/2100260544087535639</guid>
 <description>对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。（X：Boris Cherny (@bcherny)）</description>
 <category>行业动态</category>
 <pubDate>Wed, 16 Sep 2026 16:28:29 +0000</pubDate>
-</item>
-<item>
-<title>AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手</title>
-<link>https://www.aibase.com/news/31097</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31097</guid>
-<description>手机端Agent又多一个壳，没开放API，开发者暂时插不上手。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
 </item>
 <item>
 <title>如何将 AI 使用与商业价值挂钩 / How to connect AI usage to business value</title>
@@ -120,12 +144,12 @@
 <pubDate>Wed, 16 Sep 2026 13:26:06 +0000</pubDate>
 </item>
 <item>
-<title>Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运</title>
-<link>https://www.aibase.com/news/31099</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31099</guid>
-<description>2027 年才投运的算力储备，对今天写代码的你没有任何可操作项，知道 Anthropic 在囤电就行。（AIbase）</description>
+<title>微软AI主管公开炮轰：Anthropic灌输“类人意识”的做法，正在将人类推向灾难性失控的边缘！</title>
+<link>https://www.aibase.com/news/31105</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31105</guid>
+<description>大佬互喷路线之争，不产出代码也不改接口，等有论文或产品再回头看。（AIbase）</description>
 <category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
+<pubDate>Thu, 17 Sep 2026 01:25:51 +0000</pubDate>
 </item>
 <item>
 <title>员工如何解锁新的工作方式 / How workers are unlocking new ways of working</title>
@@ -136,36 +160,12 @@
 <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
 </item>
 <item>
-<title>Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通</title>
-<link>https://www.aibase.com/news/31092</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31092</guid>
-<description>通稿只有数字没有 API 和价格细节，等官方 changelog 再动手，现在改架构没必要。（AIbase）</description>
+<title>百度沈抖：产业智能体正在打通大模型变现的“最后一公里”</title>
+<link>https://www.aibase.com/news/31104</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31104</guid>
+<description>高管谈变现路径，没有新接口也没价格，开发者今天无事可做。（AIbase）</description>
 <category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
-</item>
-<item>
-<title>Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练</title>
-<link>https://www.aibase.com/news/31098</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31098</guid>
-<description>用 Cloudflare 的站点今天可一键区分搜索和 AI 爬虫，保 SEO 同时防白嫖训练。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
-</item>
-<item>
-<title>DeepSeek V4.1Flash助力《生化危机7》安卓模拟运行，帧率提升50%</title>
-<link>https://www.aibase.com/news/31095</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31095</guid>
-<description>单一演示、没开放工具和参数，看个热闹就行，帮不到你今天的活。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
-</item>
-<item>
-<title>vivo 正式发布智能体大模型矩阵，并重磅预研 30B MoE 端侧大模型</title>
-<link>https://www.aibase.com/news/31091</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31091</guid>
-<description>端侧 30B MoE 还在预研，没有开放下载或接口，开发者今天拿不到东西。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 09:57:21 +0000</pubDate>
+<pubDate>Thu, 17 Sep 2026 01:25:51 +0000</pubDate>
 </item>
 </channel>
 </rss>

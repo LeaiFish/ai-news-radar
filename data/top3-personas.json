@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T23:49:41.044478Z",
+  "generated_at": "2026-09-17T01:44:52.282332Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,30 +17,10 @@
   ],
   "items": [
     {
-      "story_id": "story_13603bf46f67",
-      "title": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
-      "url": "https://www.aibase.com/news/31098",
-      "rank": 1,
-      "reviews": {
-        "cynic": {
-          "score": 58,
-          "review": "一个开关就想把搜索和训练切开，可 Googlebot 自己都未必分得清。"
-        },
-        "paper-police": {
-          "score": 42,
-          "review": "功能已上线可自行验证，但仅单源转载、无官方文档链接，缺可查证据。"
-        },
-        "pragmatic": {
-          "score": 82,
-          "review": "用 Cloudflare 的站点今天可一键区分搜索和 AI 爬虫，保 SEO 同时防白嫖训练。"
-        }
-      }
-    },
-    {
       "story_id": "story_d6e73104d607",
       "title": "为 classic PAT 和 SSH 密钥自动完成 SSO 授权 / Automate SSO authorization for classic PATs and SSH keys",
       "url": "https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys",
-      "rank": 2,
+      "rank": 1,
       "reviews": {
         "cynic": {
           "score": 82,
@@ -60,7 +40,7 @@
       "story_id": "story_180d89046d07",
       "title": "Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…",
       "url": "https://x.com/bcherny/status/2100260544087535639",
-      "rank": 3,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 48,
@@ -73,6 +53,26 @@
         "pragmatic": {
           "score": 80,
           "review": "对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。"
+        }
+      }
+    },
+    {
+      "story_id": "story_b7506bc123b9",
+      "title": "Code scanning 的 AI Scan 不再依赖 CodeQL 默认设置 / Code scanning AI Scan no longer requires CodeQL default setup",
+      "url": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 74,
+          "review": "少一步强制绑定确实省事，但AI扫描的检出率一个数没给，全靠信。"
+        },
+        "paper-police": {
+          "score": 40,
+          "review": "功能变更可查可用，但AI扫描检出率无benchmark，效果无从验证。"
+        },
+        "pragmatic": {
+          "score": 72,
+          "review": "安全扫描配置少一道锁，不想用 CodeQL 默认设置的团队现在能单独开 AI Scan。"
         }
       }
     }
