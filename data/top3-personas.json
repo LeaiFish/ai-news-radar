@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T15:56:28.454643Z",
+  "generated_at": "2026-09-17T20:40:43.864581Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -37,42 +37,42 @@
       }
     },
     {
-      "story_id": "story_d6e73104d607",
-      "title": "为 classic PAT 和 SSH 密钥自动完成 SSO 授权 / Automate SSO authorization for classic PATs and SSH keys",
-      "url": "https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys",
+      "story_id": "story_4bc3dd239911",
+      "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
+      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
       "rank": 2,
       "reviews": {
         "cynic": {
-          "score": 82,
-          "review": "省下了挨个点授权的机械劳动，只是这便利仍留给该淘汰的 classic PAT。"
+          "score": 45,
+          "review": "标题里'全模态''交付'喊得响，榜单、时延、价格一个没见，先看能交付出什么。"
         },
         "paper-police": {
-          "score": 58,
-          "review": "官方变更日志属实且功能可实测，但无论文无基准测试，只能算产品公告而非研究证据。"
+          "score": 38,
+          "review": "仅官方博客自述，论文、权重下载、公开跑分三样都缺，复现无门，姑且记一笔。"
         },
         "pragmatic": {
           "score": 80,
-          "review": "SSO 组织里终于能自动授权 PAT 和 SSH key，管理员不用再手动逐个点，CI 场景直接受益。"
+          "review": "音视频 Agent 多了个能立刻试的底座，先查权重是否开源和 API 定价再动手。"
         }
       }
     },
     {
-      "story_id": "story_180d89046d07",
-      "title": "Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…",
-      "url": "https://x.com/bcherny/status/2100260544087535639",
+      "story_id": "story_3ecb4a7a0061",
+      "title": "GitHub Actions 工作流执行保护功能正式发布 / Workflow execution protections in GitHub Actions generally available",
+      "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 48,
-          "review": "生成幻灯片谁都能演示，导出的 PPTX 打开后排版还活着吗？"
+          "score": 72,
+          "review": "把环境审批那套规则挪到工作流层面，能挡误触发；但别把一块挡板叫成安全革命。"
         },
         "paper-police": {
-          "score": 27,
-          "review": "仅一条推文宣告功能上线，无论文、代码与可复现评测，证据止于官方口径。"
+          "score": 52,
+          "review": "官方changelog确认GA，功能可上手实测，但无数值指标也无第三方评测。"
         },
         "pragmatic": {
-          "score": 80,
-          "review": "对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。"
+          "score": 76,
+          "review": "CI 安全加固正式可用，赶紧给跑不可信 PR 的仓库开上，防注入。"
         }
       }
     }

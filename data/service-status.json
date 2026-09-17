@@ -1,16 +1,30 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17T15:32:32.854913Z",
+  "generated_at": "2026-09-17T20:20:47.379702Z",
   "ok": true,
-  "active_count": 0,
+  "active_count": 1,
   "providers": [
     {
       "id": "openai",
       "name": "OpenAI",
       "status_url": "https://status.openai.com/",
       "ok": true,
-      "active_count": 0
+      "active_count": 1
     }
   ],
-  "incidents": []
+  "incidents": [
+    {
+      "id": "01M2RC0WHGTX8EHDH7D60JJ7FC",
+      "provider": "OpenAI",
+      "title": "Elevated errors affecting ChatGPT Work mode",
+      "title_zh": "ChatGPT Work mode 错误率升高",
+      "status": "identified",
+      "impact": "major",
+      "started_at": "2026-09-17T19:03:17Z",
+      "updated_at": "2026-09-17T19:57:22Z",
+      "message": "We are still implementing the mitigation.",
+      "affected_components": [],
+      "url": "https://status.openai.com/incidents/01M2RC0WHGTX8EHDH7D60JJ7FC"
+    }
+  ]
 }

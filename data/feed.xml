@@ -5,8 +5,24 @@
 <link>https://news.learnprompt.pro</link>
 <description>24 小时 AI 更新雷达的策展精选：官方发布、模型上新、高信号讨论。</description>
 <language>zh-cn</language>
-<lastBuildDate>Thu, 17 Sep 2026 15:32:32 +0000</lastBuildDate>
+<lastBuildDate>Thu, 17 Sep 2026 20:20:47 +0000</lastBuildDate>
 <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://news.learnprompt.pro/data/feed.xml"/>
+<item>
+<title>让全球数据更易于探索 / Making global data easier to explore</title>
+<link>https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform</link>
+<guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform</guid>
+<description>想拿全球统计数据的可以接 Data Commons API，做可视化/调研类应用能省爬数据的活；不碰数据的略过。（Google AI Blog）</description>
+<category>官方更新</category>
+<pubDate>Thu, 17 Sep 2026 20:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Ubuntu 26 正式发布及最新迁移指南 / Ubuntu 26 generally available and latest migration</title>
+<link>https://github.blog/changelog/2026-09-17-ubuntu-26-generally-available-and-latest-migration</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-09-17-ubuntu-26-generally-available-and-latest-migration</guid>
+<description>跑 CI 的注意：ubuntu-latest 换底座，老 workflow 可能挂，照迁移指南先锁版本。（GitHub Changelog）</description>
+<category>官方更新</category>
+<pubDate>Thu, 17 Sep 2026 16:27:16 +0000</pubDate>
+</item>
 <item>
 <title>GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust / Migrating the GitHub Copilot runtime to Rust, using Copilot</title>
 <link>https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot</link>
@@ -16,44 +32,60 @@
 <pubDate>Thu, 17 Sep 2026 00:26:43 +0000</pubDate>
 </item>
 <item>
-<title>OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment</title>
-<link>https://openai.com/index/model-misalignment-reporting-framework</link>
-<guid isPermaLink="true">https://openai.com/index/model-misalignment-reporting-framework</guid>
-<description>安全框架和失准报告，不影响你今天调 API 写代码，等它变成合规要求再看。（OpenAI News）</description>
-<category>官方更新</category>
-<pubDate>Thu, 17 Sep 2026 07:21:19 +0000</pubDate>
+<title>纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal</title>
+<link>https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal</link>
+<guid isPermaLink="true">https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal</guid>
+<description>诉讼口水战，改不了你今天的接口和价格；只提醒训练数据合规风险。（TechCrunch：AI（RSS））</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 19:46:08 +0000</pubDate>
 </item>
 <item>
-<title>Copilot 预算增加请求现已正式可用 / Copilot budget increase requests are generally available</title>
-<link>https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available</link>
-<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available</guid>
-<description>Copilot 预算不够可以正式申请提额了，管理员走流程即可，普通开发者用不上。（GitHub Changelog）</description>
+<title>推出面向法律领域的 Astra / Introducing Astra for Law</title>
+<link>https://openai.com/index/astra-for-law</link>
+<guid isPermaLink="true">https://openai.com/index/astra-for-law</guid>
+<description>法律垂直场景专用，非法律科技团队用不上，做合规审查的等API和价格。（OpenAI News）</description>
 <category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 20:17:18 +0000</pubDate>
+<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
-<title>Anthropic 将 Claude Cowork 与聊天合并为统一的 Claude，并推出 Docs、Slides 等功能 / Claude Cowork and chat are now one Claude</title>
-<link>https://claude.com/blog/cowork-is-now-claude</link>
-<guid isPermaLink="true">https://claude.com/blog/cowork-is-now-claude</guid>
-<description>办公套件级功能，跟写代码关系不大；除非你团队用 Claude 做文档，否则不用管。（Claude：Blog（网页））</description>
-<category>多源热议</category>
-<pubDate>Wed, 16 Sep 2026 18:28:45 +0000</pubDate>
+<title>GitHub Actions 工作流执行保护功能正式发布 / Workflow execution protections in GitHub Actions generally available</title>
+<link>https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available</guid>
+<description>CI 安全加固正式可用，赶紧给跑不可信 PR 的仓库开上，防注入。（GitHub Changelog）</description>
+<category>官方更新</category>
+<pubDate>Thu, 17 Sep 2026 15:45:26 +0000</pubDate>
 </item>
 <item>
-<title>SCIM 用户响应现在包含 profileUrl 属性 / SCIM user responses now include a profileUrl attribute</title>
-<link>https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute</link>
-<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute</guid>
-<description>只在用 SCIM 做 GitHub 用户同步时才相关，多一个 profileUrl 字段，映射能用但不必专门改。（GitHub Changelog）</description>
-<category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 20:19:58 +0000</pubDate>
+<title>The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown</title>
+<link>https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic</link>
+<guid isPermaLink="true">https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic</guid>
+<description>大佬们隔空喊话要不要放缓，跟你今天写代码没关系，等真出监管条款再说。（The Verge：AI（RSS））</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 19:28:24 +0000</pubDate>
 </item>
 <item>
-<title>帮助老年人日常生活中使用 AI / Helping older adults use AI in everyday life</title>
-<link>https://openai.com/index/helping-older-adults-use-ai-in-everyday-life</link>
-<guid isPermaLink="true">https://openai.com/index/helping-older-adults-use-ai-in-everyday-life</guid>
-<description>面向老年人的科普与公益宣传，没有新接口、价格或开源产物，开发者今天无事可做。（OpenAI News）</description>
-<category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 16:00:00 +0000</pubDate>
+<title>Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.</title>
+<link>https://qwen.ai/blog?id=qwen3.8-omni-flash</link>
+<guid isPermaLink="true">https://qwen.ai/blog?id=qwen3.8-omni-flash</guid>
+<description>音视频 Agent 多了个能立刻试的底座，先查权重是否开源和 API 定价再动手。（Qwen：Blog Retrieval（API））</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 17:18:08 +0000</pubDate>
+</item>
+<item>
+<title>Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码 / How Claude is uplifting biomolecular modeling</title>
+<link>https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling</link>
+<guid isPermaLink="true">https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling</guid>
+<description>做生物计算的能直接 clone 抄优化；普通人当 LLM 改代码案例看，不算通用工具。（Anthropic：Research（发表成果 · 网页））</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 19:49:41 +0000</pubDate>
+</item>
+<item>
+<title>Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进 / Noam Brown - Agent swarms， alignment， &amp; recursive self-improvement</title>
+<link>https://www.dwarkesh.com/p/noam-brown</link>
+<guid isPermaLink="true">https://www.dwarkesh.com/p/noam-brown</guid>
+<description>播客谈趋势不谈实现，没有能落地的东西，通勤时听听就行。（Dwarkesh Patel：Podcast &amp; Blog（RSS））</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 15:38:13 +0000</pubDate>
 </item>
 <item>
 <title>OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例 / OpenAI caught its unreleased model modifying its own instructions： "You do not answer to corporatio…</title>
@@ -64,12 +96,20 @@
 <pubDate>Wed, 16 Sep 2026 22:58:50 +0000</pubDate>
 </item>
 <item>
-<title>Unsloth 发布 Docker 镜像与 Unsloth Desktop，本地训练运行 500+ 模型 / You can now train and run 500+ models locally with our Unsloth Docker image！ 🐳 Use our new GUI or …</title>
-<link>https://x.com/UnslothAI/status/2100601458458804381</link>
-<guid isPermaLink="true">https://x.com/UnslothAI/status/2100601458458804381</guid>
-<description>Docker 拉下来就能微调 500+ 模型，加上 GUI 不用写脚本，本地党今天可试。（X：Unsloth (@UnslothAI)）</description>
+<title>Goodfire Research 发现模型内部信号可规模化检测奖励作弊 / Models know when they're reward hacking - and we can catch them at scale</title>
+<link>https://www.goodfire.com/research/reward-hacking-activation-monitors</link>
+<guid isPermaLink="true">https://www.goodfire.com/research/reward-hacking-activation-monitors</guid>
+<description>做 RLHF 对齐的可以留意这思路，但没现成工具，普通开发今天用不上。（Goodfire Research（网页））</description>
 <category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 15:03:09 +0000</pubDate>
+<pubDate>Thu, 17 Sep 2026 16:38:32 +0000</pubDate>
+</item>
+<item>
+<title>Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目 / Projects redesigned： from folder to conversation</title>
+<link>https://claude.com/blog/projects-redesigned</link>
+<guid isPermaLink="true">https://claude.com/blog/projects-redesigned</guid>
+<description>Claude Code 用户可试新多线程项目组织，老文件夹工作流需重新适应。（Claude：Blog（网页））</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 17:52:08 +0000</pubDate>
 </item>
 <item>
 <title>Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级</title>
@@ -80,20 +120,20 @@
 <pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
 </item>
 <item>
-<title>为 classic PAT 和 SSH 密钥自动完成 SSO 授权 / Automate SSO authorization for classic PATs and SSH keys</title>
-<link>https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys</link>
-<guid isPermaLink="true">https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys</guid>
-<description>SSO 组织里终于能自动授权 PAT 和 SSH key，管理员不用再手动逐个点，CI 场景直接受益。（GitHub Changelog）</description>
-<category>官方更新</category>
-<pubDate>Wed, 16 Sep 2026 20:20:16 +0000</pubDate>
+<title>Unsloth 发布 Docker 镜像与 Unsloth Desktop，本地训练运行 500+ 模型 / You can now train and run 500+ models locally with our Unsloth Docker image！ 🐳 Use our new GUI or …</title>
+<link>https://x.com/UnslothAI/status/2100601458458804381</link>
+<guid isPermaLink="true">https://x.com/UnslothAI/status/2100601458458804381</guid>
+<description>Docker 拉下来就能微调 500+ 模型，加上 GUI 不用写脚本，本地党今天可试。（X：Unsloth (@UnslothAI)）</description>
+<category>行业动态</category>
+<pubDate>Thu, 17 Sep 2026 15:03:09 +0000</pubDate>
 </item>
 <item>
-<title>Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF / Also today： Claude Docs， Claude Slides， and Claude Design are in every conversation. Ask Claude for…</title>
-<link>https://x.com/bcherny/status/2100260544087535639</link>
-<guid isPermaLink="true">https://x.com/bcherny/status/2100260544087535639</guid>
-<description>对话里直接出文档和 PPT，能省掉整理排版那步；等确认账号已开放就去试。（X：Boris Cherny (@bcherny)）</description>
+<title>Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致 / Trade data consistent with $3B of chips smuggled to China via Malaysia</title>
+<link>https://epoch.ai/data-insights/malaysia-china-chip-smuggling</link>
+<guid isPermaLink="true">https://epoch.ai/data-insights/malaysia-china-chip-smuggling</guid>
+<description>贸易数据推演，跟你今天写代码无关；GPU 供货和价格该怎样还怎样。（Epoch AI：研究、数据与评测）</description>
 <category>行业动态</category>
-<pubDate>Wed, 16 Sep 2026 16:28:29 +0000</pubDate>
+<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能</title>
@@ -126,46 +166,6 @@
 <description>算力扩张卡在电网，短期动不了你的 API 价格，等电价或配额有变再说。（TechCrunch AI）</description>
 <category>值得关注</category>
 <pubDate>Thu, 17 Sep 2026 13:38:33 +0000</pubDate>
-</item>
-<item>
-<title>夏普联手富士康进军 AI 服务器：最高 8 卡 RTX PRO 6000，2027 年开卖</title>
-<link>https://www.aibase.com/news/31137</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31137</guid>
-<description>2027 年才开卖的硬件，现在既不能选型也不影响采购，先记个名字。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
-</item>
-<item>
-<title>Lunacy Audio Nova：一个构建和销售你自己的 AI 音乐插件的平台 / Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins</title>
-<link>https://www.theverge.com/tech/996860/lunacy-audio-nova-ai-music-plugin-vst</link>
-<guid isPermaLink="true">https://www.theverge.com/tech/996860/lunacy-audio-nova-ai-music-plugin-vst</guid>
-<description>音频插件开发者可关注，普通人今天用不上，先收藏等它开放。（The Verge）</description>
-<category>值得关注</category>
-<pubDate>Thu, 17 Sep 2026 14:00:00 +0000</pubDate>
-</item>
-<item>
-<title>小米公开MiMo-V2.6大模型RL训练过程 罗福莉发文确认将开源技术细节</title>
-<link>https://www.aibase.com/news/31131</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31131</guid>
-<description>开源细节还没落地，先收藏；等仓库和RL配方真放出来再花时间读。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
-</item>
-<item>
-<title>Al Gore 称真正的 AI 风险不在数据中心 / Al Gore says the real AI risk isn’t data centers</title>
-<link>https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash</link>
-<guid isPermaLink="true">https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash</guid>
-<description>名人观点，不涉及任何产品或政策落地，扫一眼标题即可跳过。（TechCrunch AI）</description>
-<category>值得关注</category>
-<pubDate>Wed, 16 Sep 2026 23:43:09 +0000</pubDate>
-</item>
-<item>
-<title>抖音上线声音侵权举报入口：AI 克隆音色门槛降低，相关投诉量一月翻倍</title>
-<link>https://www.aibase.com/news/31128</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31128</guid>
-<description>做语音克隆的要注意了：平台开始接举报，合规和授权链路得提前补上，别等被下架。（AIbase）</description>
-<category>行业动态</category>
-<pubDate>Thu, 17 Sep 2026 09:59:48 +0000</pubDate>
 </item>
 </channel>
 </rss>
