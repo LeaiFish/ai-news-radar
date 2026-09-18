@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:11:09.673794Z",
+  "generated_at": "2026-09-18T19:51:00.868064Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -57,22 +57,22 @@
       }
     },
     {
-      "story_id": "story_4bc3dd239911",
-      "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "story_id": "story_38f7cda29bd5",
+      "title": "仅限 Stage 环境的 npm 令牌，实现更安全的自动化 / Stage-only npm tokens for safer automation",
+      "url": "https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 45,
-          "review": "标题里'全模态''交付'喊得响，榜单、时延、价格一个没见，先看能交付出什么。"
+          "score": 74,
+          "review": "把令牌权限砍到 Stage 算真活儿，但泄露的锅最后还得自己背，别指望它救写死日志的手。"
         },
         "paper-police": {
-          "score": 38,
-          "review": "仅官方博客自述，论文、权重下载、公开跑分三样都缺，复现无门，姑且记一笔。"
+          "score": 50,
+          "review": "官方 changelog 属实、功能可查，但'更安全'无量化评测，无第三方复现验证。"
         },
         "pragmatic": {
-          "score": 80,
-          "review": "音视频 Agent 多了个能立刻试的底座，先查权重是否开源和 API 定价再动手。"
+          "score": 78,
+          "review": "发布流水线可换用受限令牌，泄露也炸不到正式包，今天就能改。"
         }
       }
     }
