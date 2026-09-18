@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T19:51:00.868064Z",
+  "generated_at": "2026-09-18T23:39:06.508014Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -37,42 +37,42 @@
       }
     },
     {
-      "story_id": "story_92529e02e542",
-      "title": "Meta 发布 Muse for Mac，个人智能体可直接在电脑上执行任务 / @Muse for Mac， rolling out today. 👇",
-      "url": "https://x.com/AIatMeta/status/2100714755568644409",
+      "story_id": "story_a5ec63464b54",
+      "title": "GitHub Copilot 部分模型将于 10 月中旬起逐步弃用 / Upcoming deprecation of selected GitHub Copilot models in mid-October",
+      "url": "https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october",
       "rank": 2,
       "reviews": {
         "cynic": {
-          "score": 42,
-          "review": "演示里任务一气呵成，权限、失败率、基准全缺席，等它点错一次按钮再吹。"
+          "score": 62,
+          "review": "弃用名单带日期，算老实；但被砍模型的用户迁移方案呢，通告里可没写。"
         },
         "paper-police": {
-          "score": 32,
-          "review": "只有一条官方推文，无论文、无开源、无评测跑分，能力宣称无法验证。"
+          "score": 72,
+          "review": "官方变更日志即一手信源，弃用时间明确可查；但仅单一来源，无迁移方案细节。"
         },
         "pragmatic": {
-          "score": 84,
-          "review": "Mac 上能直接代跑任务的智能体今天上线，值得装机试；但只有一条推文，细节得自己摸。"
+          "score": 74,
+          "review": "查一下你 Copilot 里锁的模型，10 月中前换掉，否则调用会直接报错。"
         }
       }
     },
     {
-      "story_id": "story_38f7cda29bd5",
-      "title": "仅限 Stage 环境的 npm 令牌，实现更安全的自动化 / Stage-only npm tokens for safer automation",
-      "url": "https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation",
+      "story_id": "story_48ff8a06680b",
+      "title": "使用 REST API 管理代码覆盖率规则集条件 / Manage the code coverage ruleset condition with the REST API",
+      "url": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 74,
-          "review": "把令牌权限砍到 Stage 算真活儿，但泄露的锅最后还得自己背，别指望它救写死日志的手。"
+          "score": 52,
+          "review": "多加一个 API 端点，省几次点鼠标而已，硬要算\"重要更新\"就有点抬举了。"
         },
         "paper-police": {
-          "score": 50,
-          "review": "官方 changelog 属实、功能可查，但'更安全'无量化评测，无第三方复现验证。"
+          "score": 62,
+          "review": "官方API文档可调用，功能属实；但无论文无benchmark，属产品更新而非成果。"
         },
         "pragmatic": {
-          "score": 78,
-          "review": "发布流水线可换用受限令牌，泄露也炸不到正式包，今天就能改。"
+          "score": 74,
+          "review": "覆盖率门禁能写进脚本了，多仓库统一配置不用再手点 UI，做 IaC 的可以接。"
         }
       }
     }
