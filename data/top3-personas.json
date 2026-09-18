@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T23:52:54.166926Z",
+  "generated_at": "2026-09-18T01:37:54.588624Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -57,22 +57,22 @@
       }
     },
     {
-      "story_id": "story_3ecb4a7a0061",
-      "title": "GitHub Actions 工作流执行保护功能正式发布 / Workflow execution protections in GitHub Actions generally available",
-      "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available",
+      "story_id": "story_6f86f224d94a",
+      "title": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686475&idx=1&sn=1d9d43036b6d72fd83b9d5658b351215",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 72,
-          "review": "把环境审批那套规则挪到工作流层面，能挡误触发；但别把一块挡板叫成安全革命。"
+          "score": 66,
+          "review": "敢把'万能'缩水成只做分类，算清醒；但实测拿谁当基线、省了几成成本，文中交代了吗？"
         },
         "paper-police": {
-          "score": 52,
-          "review": "官方changelog确认GA，功能可上手实测，但无数值指标也无第三方评测。"
+          "score": 38,
+          "review": "仅公众号作者自测，无论文、无开源代码、无公开评测集，数字不可复现。"
         },
         "pragmatic": {
-          "score": 76,
-          "review": "CI 安全加固正式可用，赶紧给跑不可信 PR 的仓库开上，防注入。"
+          "score": 75,
+          "review": "做分类和风控批量调用的可以试，先拿自己数据跑基准再决定换不换。"
         }
       }
     }
