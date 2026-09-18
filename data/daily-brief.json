@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-18T05:58:59.021119Z",
+  "generated_at": "2026-09-18T09:46:20.741257Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
     {
-      "story_id": "story_ad6315db9660",
+      "story_id": "story_0c1bd57d4904",
       "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
       "url": "https://www.hacktron.ai/blog/hacking-openai",
       "primary_url": "https://www.hacktron.ai/blog/hacking-openai",
@@ -31,13 +31,41 @@
           "title_zh": "攻击者串联堆溢出与SSO配置错误入侵OpenAI内部代码库",
           "title_en": null,
           "title_original": "入侵OpenAI",
-          "summary": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repositories\nA heap overflow and SSO misconfiguration to compromise OpenAI internal repositories\nA heap overflow and SSO misconfiguration to compromise OpenAI internal repositories\nA heap overflow and SSO misconfiguration to compromise OpenAI internal repositories\nOn July 25, 2026, we chained two critical vulnerabilities to compromise multiple OpenAI employees’ ChatGPT accounts. With these accounts, we could then access inter",
+          "summary": null,
           "recommend_reason_zh": "Hacktron披露通过community.openai.com的heap overflow和SSO misconfiguration，在2026年7月25日链式接管OpenAI员工ChatGPT账户，借Codex向内部monorepo openai/openai提交PR #1186742，全程不到72小时，OpenAI支付$6,500 bounty。",
           "url": "https://www.hacktron.ai/blog/hacking-openai",
           "source": "www.hacktron.ai",
           "source_name": "Buzzing",
           "site_id": "buzzing",
           "published_at": "2026-09-18T04:45:46.237000Z"
+        },
+        {
+          "id": "fc06b529e408a2880b0e1fe8642be63f6882ebbc",
+          "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号 / A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "title_zh": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "title_en": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "title_original": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-18T02:47:24Z"
+        },
+        {
+          "id": "090b80327fdc32560593d33a0b97ebda2909fffa",
+          "title": "堆溢出和SSO配置错误，攻破OpenAI内部代码仓库 / A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "title_zh": "堆溢出和SSO配置错误，攻破OpenAI内部代码仓库",
+          "title_en": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "title_original": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49749656",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-18T02:47:24Z"
         },
         {
           "id": "f1c9b0381aefb14e4c119c7114915aa4ed9c8f45",
@@ -52,12 +80,28 @@
           "source_name": "TechURLs",
           "site_id": "techurls",
           "published_at": "2026-09-18T02:47:24Z"
+        },
+        {
+          "id": "cc2f1ceed74f638baa5ff4123b148e3fa7e962f1",
+          "title": "AI agent 攻破 Discourse Cloud 后，OpenAI 实例遭 RCE",
+          "title_zh": "AI agent 攻破 Discourse Cloud 后，OpenAI 实例遭 RCE",
+          "title_en": "Hacking OpenAI",
+          "title_original": "Hacking OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49749656",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-18T02:47:24Z"
         }
       ],
-      "source_count": 3,
+      "source_count": 6,
       "source_names": [
         "Hacker News",
+        "Hacker News (黑客新闻)",
         "Hacker News 热门（buzzing.cc 中文翻译）",
+        "hackernews",
         "www.hacktron.ai"
       ],
       "items": [
@@ -81,13 +125,41 @@
           "title_zh": "攻击者串联堆溢出与SSO配置错误入侵OpenAI内部代码库",
           "title_en": null,
           "title_original": "入侵OpenAI",
-          "summary": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repositories\nA heap overflow and SSO misconfiguration to compromise OpenAI internal repositories\nA heap overflow and SSO misconfiguration to compromise OpenAI internal repositories\nA heap overflow and SSO misconfiguration to compromise OpenAI internal repositories\nOn July 25, 2026, we chained two critical vulnerabilities to compromise multiple OpenAI employees’ ChatGPT accounts. With these accounts, we could then access inter",
+          "summary": null,
           "recommend_reason_zh": "Hacktron披露通过community.openai.com的heap overflow和SSO misconfiguration，在2026年7月25日链式接管OpenAI员工ChatGPT账户，借Codex向内部monorepo openai/openai提交PR #1186742，全程不到72小时，OpenAI支付$6,500 bounty。",
           "url": "https://www.hacktron.ai/blog/hacking-openai",
           "source": "www.hacktron.ai",
           "source_name": "Buzzing",
           "site_id": "buzzing",
           "published_at": "2026-09-18T04:45:46.237000Z"
+        },
+        {
+          "id": "fc06b529e408a2880b0e1fe8642be63f6882ebbc",
+          "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号 / A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "title_zh": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "title_en": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "title_original": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-18T02:47:24Z"
+        },
+        {
+          "id": "090b80327fdc32560593d33a0b97ebda2909fffa",
+          "title": "堆溢出和SSO配置错误，攻破OpenAI内部代码仓库 / A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "title_zh": "堆溢出和SSO配置错误，攻破OpenAI内部代码仓库",
+          "title_en": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "title_original": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49749656",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-18T02:47:24Z"
         },
         {
           "id": "f1c9b0381aefb14e4c119c7114915aa4ed9c8f45",
@@ -102,20 +174,34 @@
           "source_name": "TechURLs",
           "site_id": "techurls",
           "published_at": "2026-09-18T02:47:24Z"
+        },
+        {
+          "id": "cc2f1ceed74f638baa5ff4123b148e3fa7e962f1",
+          "title": "AI agent 攻破 Discourse Cloud 后，OpenAI 实例遭 RCE",
+          "title_zh": "AI agent 攻破 Discourse Cloud 后，OpenAI 实例遭 RCE",
+          "title_en": "Hacking OpenAI",
+          "title_original": "Hacking OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49749656",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-18T02:47:24Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8505,
-      "importance": 0.8505,
-      "importance_score": 0.8505,
+      "item_count": 6,
+      "duplicate_count": 6,
+      "score": 0.891,
+      "importance": 0.891,
+      "importance_score": 0.891,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9825,
-        "story_heat": 0.5
+        "recency": 0.9302,
+        "story_heat": 1.0
       },
       "category": "multi_source",
       "reasons": [
@@ -139,11 +225,11 @@
       },
       "persona_id": "pragmatic",
       "persona_score": 72,
-      "persona_review": "图片解析加 SSO 是现成攻击面，照着这条链自查 libheif 版本和回调校验，比看热闹值。",
+      "persona_review": "处理 HEIC 图片的服务该查 libheif 版本了；SSO 回调校验逻辑也值得照着自己代码对一遍。",
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -191,15 +277,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8319,
-      "importance": 0.8319,
-      "importance_score": 0.8319,
+      "score": 0.8234,
+      "importance": 0.8234,
+      "importance_score": 0.8234,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8884,
+        "recency": 0.8411,
         "story_heat": 0.0
       },
       "category": "official",
@@ -228,7 +314,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -259,7 +345,7 @@
           "title_zh": "阿里巴巴发布Qwen 3.8 Omni Flash",
           "title_en": null,
           "title_original": "阿里巴巴发布Qwen 3.8 Omni Flash",
-          "summary": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts.",
+          "summary": null,
           "recommend_reason_zh": "阿里巴巴发布Qwen 3.8 Omni Flash，Qwen Studio已集成聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索、工具调用及artifacts等能力。",
           "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
           "source": "qwen.ai",
@@ -324,7 +410,7 @@
           "title_zh": "阿里巴巴发布Qwen 3.8 Omni Flash",
           "title_en": null,
           "title_original": "阿里巴巴发布Qwen 3.8 Omni Flash",
-          "summary": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts.",
+          "summary": null,
           "recommend_reason_zh": "阿里巴巴发布Qwen 3.8 Omni Flash，Qwen Studio已集成聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索、工具调用及artifacts等能力。",
           "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
           "source": "qwen.ai",
@@ -363,15 +449,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.8275,
-      "importance": 0.8275,
-      "importance_score": 0.8275,
+      "score": 0.8195,
+      "importance": 0.8195,
+      "importance_score": 0.8195,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8327,
+        "recency": 0.7883,
         "story_heat": 0.75
       },
       "category": "multi_source",
@@ -400,7 +486,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -448,15 +534,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8198,
-      "importance": 0.8198,
-      "importance_score": 0.8198,
+      "score": 0.8115,
+      "importance": 0.8115,
+      "importance_score": 0.8115,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8657,
+        "recency": 0.8196,
         "story_heat": 0.0
       },
       "category": "official",
@@ -485,7 +571,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -533,15 +619,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8188,
-      "importance": 0.8188,
-      "importance_score": 0.8188,
+      "score": 0.8114,
+      "importance": 0.8114,
+      "importance_score": 0.8114,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7713,
+        "recency": 0.7302,
         "story_heat": 0.0
       },
       "category": "official",
@@ -570,7 +656,150 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
+      }
+    },
+    {
+      "story_id": "story_ab92e74332cb",
+      "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+      "primary_url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+      "source": "TechCrunch：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
+          "recommend_reason_zh": "新解封文件显示，Microsoft高管称AI抓取是“人类历史上最大的劳动力盗窃”，私下称OpenAI数据做法为“盗窃”，两家公司抓取Times付费墙内容建数据集，警告掏空出版商。",
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T19:46:08Z"
+        },
+        {
+          "id": "4e1edba42df1e265ddffa29ab343f4eb5d23cbf0",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "title_original": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "summary": null,
+          "recommend_reason_zh": "新解封文件：Microsoft高管称AI抓取为“人类历史上最大的劳动力盗窃”，Microsoft与OpenAI抓取Times付费内容建数据集，警告会摧毁出版商。",
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-17T19:46:08Z"
+        },
+        {
+          "id": "07d88bec8b04480d277b16a8028de1e06f6a6dcd",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human",
+          "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-09-18T00:07:08Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "TechCrunch AI",
+        "TechCrunch：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
+          "recommend_reason_zh": "新解封文件显示，Microsoft高管称AI抓取是“人类历史上最大的劳动力盗窃”，私下称OpenAI数据做法为“盗窃”，两家公司抓取Times付费墙内容建数据集，警告掏空出版商。",
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T19:46:08Z"
+        },
+        {
+          "id": "4e1edba42df1e265ddffa29ab343f4eb5d23cbf0",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "title_original": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "summary": null,
+          "recommend_reason_zh": "新解封文件：Microsoft高管称AI抓取为“人类历史上最大的劳动力盗窃”，Microsoft与OpenAI抓取Times付费内容建数据集，警告会摧毁出版商。",
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-17T19:46:08Z"
+        },
+        {
+          "id": "07d88bec8b04480d277b16a8028de1e06f6a6dcd",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human",
+          "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-09-18T00:07:08Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8086,
+      "importance": 0.8086,
+      "importance_score": 0.8086,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8169,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T19:46:08Z",
+      "latest_at": "2026-09-18T00:07:08Z",
+      "primary_item": {
+        "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
+        "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+        "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+        "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+        "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+        "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
+        "recommend_reason_zh": "新解封文件显示，Microsoft高管称AI抓取是“人类历史上最大的劳动力盗窃”，私下称OpenAI数据做法为“盗窃”，两家公司抓取Times付费墙内容建数据集，警告掏空出版商。",
+        "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+        "source": "TechCrunch：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 32,
+      "persona_review": "诉讼口水战，改不了你今天的接口和价格；只提醒训练数据合规风险。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -618,15 +847,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8224,
-      "importance": 0.8224,
-      "importance_score": 0.8224,
+      "score": 0.814,
+      "importance": 0.814,
+      "importance_score": 0.814,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8802,
+        "recency": 0.8333,
         "story_heat": 0.0
       },
       "category": "official",
@@ -655,121 +884,175 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
-      "story_id": "story_ab92e74332cb",
-      "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
-      "primary_url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
-      "source": "TechCrunch：AI（RSS）",
+      "story_id": "story_2ce879cf976f",
+      "title": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户 / okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+      "url": "https://x.com/haider1/status/2100848578340220987",
+      "primary_url": "https://x.com/haider1/status/2100848578340220987",
+      "source": "X：Haider (@haider1)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
-          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
-          "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-          "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-          "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
-          "recommend_reason_zh": "新解封文件显示，Microsoft高管称AI抓取是“人类历史上最大的劳动力盗窃”，私下称OpenAI数据做法为“盗窃”，两家公司抓取Times付费墙内容建数据集，警告掏空出版商。",
-          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
-          "source": "TechCrunch：AI（RSS）",
+          "id": "f7b34c49943fa49cfbe8d0de303807e421679c05",
+          "title": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户 / okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+          "title_zh": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户",
+          "title_en": "okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+          "title_original": "okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+          "summary": "一个3人团队在7月25日利用两个漏洞接管了OpenAI员工的 ChatGPT/Codex 账户，并可访问 Outlook、Slack、GitHub 等关联服务，他们用向 OpenAI 内部代码库提交 PR 的方式证明了漏洞，全程不到72小时。",
+          "recommend_reason_zh": "3人用前沿模型搞安全行动，hacking openai，token不到$3k；opus 4.8吃力，opus 5数小时跑通exploit，gpt-5.6 sol跃升。",
+          "url": "https://x.com/haider1/status/2100848578340220987",
+          "source": "X：Haider (@haider1)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-17T19:46:08Z"
-        },
-        {
-          "id": "4e1edba42df1e265ddffa29ab343f4eb5d23cbf0",
-          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
-          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
-          "title_en": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
-          "title_original": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
-          "summary": null,
-          "recommend_reason_zh": "新解封文件：Microsoft高管称AI抓取为“人类历史上最大的劳动力盗窃”，Microsoft与OpenAI抓取Times付费内容建数据集，警告会摧毁出版商。",
-          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
-          "source": "TechCrunch AI",
-          "source_name": "Curated Media",
-          "site_id": "curated_media",
-          "published_at": "2026-09-17T19:46:08Z"
+          "published_at": "2026-09-18T07:25:07Z"
         }
       ],
-      "source_count": 2,
+      "source_count": 1,
       "source_names": [
-        "TechCrunch AI",
-        "TechCrunch：AI（RSS）"
+        "X：Haider (@haider1)"
       ],
       "items": [
         {
-          "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
-          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
-          "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-          "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-          "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
-          "recommend_reason_zh": "新解封文件显示，Microsoft高管称AI抓取是“人类历史上最大的劳动力盗窃”，私下称OpenAI数据做法为“盗窃”，两家公司抓取Times付费墙内容建数据集，警告掏空出版商。",
-          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
-          "source": "TechCrunch：AI（RSS）",
+          "id": "f7b34c49943fa49cfbe8d0de303807e421679c05",
+          "title": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户 / okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+          "title_zh": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户",
+          "title_en": "okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+          "title_original": "okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+          "summary": "一个3人团队在7月25日利用两个漏洞接管了OpenAI员工的 ChatGPT/Codex 账户，并可访问 Outlook、Slack、GitHub 等关联服务，他们用向 OpenAI 内部代码库提交 PR 的方式证明了漏洞，全程不到72小时。",
+          "recommend_reason_zh": "3人用前沿模型搞安全行动，hacking openai，token不到$3k；opus 4.8吃力，opus 5数小时跑通exploit，gpt-5.6 sol跃升。",
+          "url": "https://x.com/haider1/status/2100848578340220987",
+          "source": "X：Haider (@haider1)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-17T19:46:08Z"
-        },
-        {
-          "id": "4e1edba42df1e265ddffa29ab343f4eb5d23cbf0",
-          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
-          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
-          "title_en": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
-          "title_original": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
-          "summary": null,
-          "recommend_reason_zh": "新解封文件：Microsoft高管称AI抓取为“人类历史上最大的劳动力盗窃”，Microsoft与OpenAI抓取Times付费内容建数据集，警告会摧毁出版商。",
-          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
-          "source": "TechCrunch AI",
-          "source_name": "Curated Media",
-          "site_id": "curated_media",
-          "published_at": "2026-09-17T19:46:08Z"
+          "published_at": "2026-09-18T07:25:07Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7919,
-      "importance": 0.7919,
-      "importance_score": 0.7919,
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7736,
+      "importance": 0.7736,
+      "importance_score": 0.7736,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.8,
+        "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8629,
-        "story_heat": 0.25
+        "recency": 0.9666,
+        "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "multi_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-17T19:46:08Z",
-      "latest_at": "2026-09-17T19:46:08Z",
+      "earliest_at": "2026-09-18T07:25:07Z",
+      "latest_at": "2026-09-18T07:25:07Z",
       "primary_item": {
-        "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
-        "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-        "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
-        "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-        "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
-        "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
-        "recommend_reason_zh": "新解封文件显示，Microsoft高管称AI抓取是“人类历史上最大的劳动力盗窃”，私下称OpenAI数据做法为“盗窃”，两家公司抓取Times付费墙内容建数据集，警告掏空出版商。",
-        "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
-        "source": "TechCrunch：AI（RSS）",
+        "id": "f7b34c49943fa49cfbe8d0de303807e421679c05",
+        "title": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户 / okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+        "title_zh": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户",
+        "title_en": "okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+        "title_original": "okay this is actually INSANE a 3 person team used frontier models in a security campaign that inclu…",
+        "summary": "一个3人团队在7月25日利用两个漏洞接管了OpenAI员工的 ChatGPT/Codex 账户，并可访问 Outlook、Slack、GitHub 等关联服务，他们用向 OpenAI 内部代码库提交 PR 的方式证明了漏洞，全程不到72小时。",
+        "recommend_reason_zh": "3人用前沿模型搞安全行动，hacking openai，token不到$3k；opus 4.8吃力，opus 5数小时跑通exploit，gpt-5.6 sol跃升。",
+        "url": "https://x.com/haider1/status/2100848578340220987",
+        "source": "X：Haider (@haider1)",
         "source_name": "AI HOT"
       },
       "persona_id": "pragmatic",
-      "persona_score": 32,
-      "persona_review": "诉讼口水战，改不了你今天的接口和价格；只提醒训练数据合规风险。",
+      "persona_score": 55,
+      "persona_review": "攻击成本压到三千刀，防守方得重新算账；但仅一条推文无细节，先别急着改架构。",
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
+      }
+    },
+    {
+      "story_id": "story_498f79e7b42d",
+      "title": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+      "url": "https://www.aibase.com/news/31169",
+      "primary_url": "https://www.aibase.com/news/31169",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "994e38441a65fd36c1cbe96f47e7d708751aa006",
+          "title": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+          "title_zh": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+          "title_en": null,
+          "title_original": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+          "summary": "Anthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nAnthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nAnthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nExplore AI Fronti",
+          "recommend_reason_zh": "Anthropic披露Claude已主导26%的AI R&D任务，2月不足1%；30,000个Claude agents并行，8月产生超10亿次决策，但无任务达AL5全自主。",
+          "url": "https://www.aibase.com/news/31169",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-18T09:46:20.741257Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "994e38441a65fd36c1cbe96f47e7d708751aa006",
+          "title": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+          "title_zh": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+          "title_en": null,
+          "title_original": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+          "summary": "Anthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nAnthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nAnthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nExplore AI Fronti",
+          "recommend_reason_zh": "Anthropic披露Claude已主导26%的AI R&D任务，2月不足1%；30,000个Claude agents并行，8月产生超10亿次决策，但无任务达AL5全自主。",
+          "url": "https://www.aibase.com/news/31169",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-18T09:46:20.741257Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-18T09:46:20.741257Z",
+      "latest_at": "2026-09-18T09:46:20.741257Z",
+      "primary_item": {
+        "id": "994e38441a65fd36c1cbe96f47e7d708751aa006",
+        "title": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+        "title_zh": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+        "title_en": null,
+        "title_original": "Anthropic 用 AI 造 AI：Claude 已主导公司四分之一研发工作",
+        "summary": "Anthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nAnthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nAnthropic has disclosed internal data on AI-driven automation in its R&D. As of August this year, Claude has led 26% of the company's AI R&D tasks, while this s\nExplore AI Fronti",
+        "recommend_reason_zh": "Anthropic披露Claude已主导26%的AI R&D任务，2月不足1%；30,000个Claude agents并行，8月产生超10亿次决策，但无任务达AL5全自主。",
+        "url": "https://www.aibase.com/news/31169",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 34,
+      "persona_review": "内部效率PR，没给可复用的工具或方法，看完不用改一行代码。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -817,15 +1100,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7767,
-      "importance": 0.7767,
-      "importance_score": 0.7767,
+      "score": 0.7673,
+      "importance": 0.7673,
+      "importance_score": 0.7673,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9841,
+        "recency": 0.9317,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -853,7 +1136,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -901,15 +1184,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7707,
-      "importance": 0.7707,
-      "importance_score": 0.7707,
+      "score": 0.7621,
+      "importance": 0.7621,
+      "importance_score": 0.7621,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.63,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8983,
+        "recency": 0.8505,
         "story_heat": 0.0
       },
       "category": "official",
@@ -937,91 +1220,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
-      }
-    },
-    {
-      "story_id": "story_572ac9f647ce",
-      "title": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-      "url": "https://www.aibase.com/news/31152",
-      "primary_url": "https://www.aibase.com/news/31152",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "6ddf4bccfedf28761f7f3ec504b66c20cacc05d5",
-          "title": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-          "title_zh": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-          "title_en": null,
-          "title_original": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-          "summary": "Anthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nAnthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nAnthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nExplore AI Fronti",
-          "recommend_reason_zh": "Anthropic推出Life Sciences Certification Program，把Mythos 5.1、Opus 5、Sonnet 5三款模型纳入统一授权条款，明确药企、生物科技公司与科研机构在研发、文献综述、实验辅助中的合规路径。",
-          "url": "https://www.aibase.com/news/31152",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-18T05:58:59.021119Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "6ddf4bccfedf28761f7f3ec504b66c20cacc05d5",
-          "title": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-          "title_zh": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-          "title_en": null,
-          "title_original": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-          "summary": "Anthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nAnthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nAnthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nExplore AI Fronti",
-          "recommend_reason_zh": "Anthropic推出Life Sciences Certification Program，把Mythos 5.1、Opus 5、Sonnet 5三款模型纳入统一授权条款，明确药企、生物科技公司与科研机构在研发、文献综述、实验辅助中的合规路径。",
-          "url": "https://www.aibase.com/news/31152",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-18T05:58:59.021119Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-18T05:58:59.021119Z",
-      "latest_at": "2026-09-18T05:58:59.021119Z",
-      "primary_item": {
-        "id": "6ddf4bccfedf28761f7f3ec504b66c20cacc05d5",
-        "title": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-        "title_zh": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-        "title_en": null,
-        "title_original": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
-        "summary": "Anthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nAnthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nAnthropic has launched a Life Sciences Certification Program. According to this program, the three models Mythos 5.1, Opus 5, and Sonnet 5 are all subject to th\nExplore AI Fronti",
-        "recommend_reason_zh": "Anthropic推出Life Sciences Certification Program，把Mythos 5.1、Opus 5、Sonnet 5三款模型纳入统一授权条款，明确药企、生物科技公司与科研机构在研发、文献综述、实验辅助中的合规路径。",
-        "url": "https://www.aibase.com/news/31152",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 45,
-      "persona_review": "生命科学团队用 Claude 的授权与合规口径统一了，其他开发者暂时无感。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -1069,15 +1268,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7661,
-      "importance": 0.7661,
-      "importance_score": 0.7661,
+      "score": 0.7575,
+      "importance": 0.7575,
+      "importance_score": 0.7575,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8915,
+        "recency": 0.844,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1105,7 +1304,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -1153,15 +1352,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7603,
-      "importance": 0.7603,
-      "importance_score": 0.7603,
+      "score": 0.752,
+      "importance": 0.752,
+      "importance_score": 0.752,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8592,
+        "recency": 0.8134,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1189,7 +1388,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -1237,15 +1436,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8121,
-      "importance": 0.8121,
-      "importance_score": 0.8121,
+      "score": 0.8042,
+      "importance": 0.8042,
+      "importance_score": 0.8042,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8225,
+        "recency": 0.7787,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1274,7 +1473,91 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
+      }
+    },
+    {
+      "story_id": "story_4e4efe237fdf",
+      "title": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+      "url": "https://www.aibase.com/news/31162",
+      "primary_url": "https://www.aibase.com/news/31162",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "e40b3aae371e7140b6a1ae5928ae7d22ac835e6d",
+          "title": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+          "title_zh": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+          "title_en": null,
+          "title_original": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+          "summary": "On September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nOn September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nOn September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nExplore AI Fronti",
+          "recommend_reason_zh": "Anthropic在9月17日发帖首次量化公开内部AI研发自动化：截至今年8月，Claude主导26%研发工作，而2月不足1%，内部平台约3万AI agents在8月做出超10亿次决策，并采用Epoch AI的AL0至AL5分级，26%工作达AL4。",
+          "url": "https://www.aibase.com/news/31162",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-18T09:46:20.741257Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "e40b3aae371e7140b6a1ae5928ae7d22ac835e6d",
+          "title": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+          "title_zh": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+          "title_en": null,
+          "title_original": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+          "summary": "On September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nOn September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nOn September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nExplore AI Fronti",
+          "recommend_reason_zh": "Anthropic在9月17日发帖首次量化公开内部AI研发自动化：截至今年8月，Claude主导26%研发工作，而2月不足1%，内部平台约3万AI agents在8月做出超10亿次决策，并采用Epoch AI的AL0至AL5分级，26%工作达AL4。",
+          "url": "https://www.aibase.com/news/31162",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-18T09:46:20.741257Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-18T09:46:20.741257Z",
+      "latest_at": "2026-09-18T09:46:20.741257Z",
+      "primary_item": {
+        "id": "e40b3aae371e7140b6a1ae5928ae7d22ac835e6d",
+        "title": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+        "title_zh": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+        "title_en": null,
+        "title_original": "Anthropic 首次量化公开 AI 研发自动化进度：Claude 主导 26% 研发，压力甩给 OpenAI 等竞品",
+        "summary": "On September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nOn September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nOn September 17th local time, Anthropic published a post, revealing for the first time the internal AI research and development automation in a quantitative way\nExplore AI Fronti",
+        "recommend_reason_zh": "Anthropic在9月17日发帖首次量化公开内部AI研发自动化：截至今年8月，Claude主导26%研发工作，而2月不足1%，内部平台约3万AI agents在8月做出超10亿次决策，并采用Epoch AI的AL0至AL5分级，26%工作达AL4。",
+        "url": "https://www.aibase.com/news/31162",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 45,
+      "persona_review": "只是自家内部用量数字，没有新工具或接口；对选型和交付没影响，知道就行。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -1322,15 +1605,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7458,
-      "importance": 0.7458,
-      "importance_score": 0.7458,
+      "score": 0.737,
+      "importance": 0.737,
+      "importance_score": 0.737,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.912,
+        "recency": 0.8635,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1357,7 +1640,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -1405,15 +1688,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7453,
-      "importance": 0.7453,
-      "importance_score": 0.7453,
+      "score": 0.7369,
+      "importance": 0.7369,
+      "importance_score": 0.7369,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.876,
+        "recency": 0.8294,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1440,7 +1723,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -1488,15 +1771,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7687,
-      "importance": 0.7687,
-      "importance_score": 0.7687,
+      "score": 0.7604,
+      "importance": 0.7604,
+      "importance_score": 0.7604,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8729,
+        "recency": 0.8265,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1524,7 +1807,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -1572,15 +1855,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.738,
-      "importance": 0.738,
-      "importance_score": 0.738,
+      "score": 0.7292,
+      "importance": 0.7292,
+      "importance_score": 0.7292,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.919,
+        "recency": 0.8701,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1607,91 +1890,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
-      }
-    },
-    {
-      "story_id": "story_a88f3c82ba1e",
-      "title": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-      "url": "https://www.aibase.com/news/31145",
-      "primary_url": "https://www.aibase.com/news/31145",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "430c0b285ec2ba2c29719f9e89c3946554a6e250",
-          "title": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-          "title_zh": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-          "title_en": null,
-          "title_original": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-          "summary": "Anthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nAnthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nAnthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nExplore AI Fronti",
-          "recommend_reason_zh": "Anthropic 重构 Claude Code，加入多线程并行协作：用户只需描述项目目标，coordinator 会拆分任务并分配给多个独立 threads，各在单独 cloud session 运行，可独立提交 pull requests、运行测试，还能通过主聊天室或各 threads 实时追踪，移动端也支持；该 cloud session 正面向部分 Pro 和 Max 订阅者测试。",
-          "url": "https://www.aibase.com/news/31145",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-18T05:58:59.021119Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "430c0b285ec2ba2c29719f9e89c3946554a6e250",
-          "title": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-          "title_zh": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-          "title_en": null,
-          "title_original": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-          "summary": "Anthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nAnthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nAnthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nExplore AI Fronti",
-          "recommend_reason_zh": "Anthropic 重构 Claude Code，加入多线程并行协作：用户只需描述项目目标，coordinator 会拆分任务并分配给多个独立 threads，各在单独 cloud session 运行，可独立提交 pull requests、运行测试，还能通过主聊天室或各 threads 实时追踪，移动端也支持；该 cloud session 正面向部分 Pro 和 Max 订阅者测试。",
-          "url": "https://www.aibase.com/news/31145",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-18T05:58:59.021119Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-18T05:58:59.021119Z",
-      "latest_at": "2026-09-18T05:58:59.021119Z",
-      "primary_item": {
-        "id": "430c0b285ec2ba2c29719f9e89c3946554a6e250",
-        "title": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-        "title_zh": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-        "title_en": null,
-        "title_original": "Anthropic重构Claude Code项目功能，多线程并行执行任务",
-        "summary": "Anthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nAnthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nAnthropic has restructured the Claude Code project features, adding a multi-threaded parallel collaboration mechanism. Users need only describe the project goal\nExplore AI Fronti",
-        "recommend_reason_zh": "Anthropic 重构 Claude Code，加入多线程并行协作：用户只需描述项目目标，coordinator 会拆分任务并分配给多个独立 threads，各在单独 cloud session 运行，可独立提交 pull requests、运行测试，还能通过主聊天室或各 threads 实时追踪，移动端也支持；该 cloud session 正面向部分 Pro 和 Max 订阅者测试。",
-        "url": "https://www.aibase.com/news/31145",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 78,
-      "persona_review": "Claude Code 能多线程并行跑任务，少等串行时间，重度用户升级就试。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     },
     {
@@ -1739,15 +1938,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.737,
-      "importance": 0.737,
-      "importance_score": 0.737,
+      "score": 0.7288,
+      "importance": 0.7288,
+      "importance_score": 0.7288,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8636,
+        "recency": 0.8176,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1774,90 +1973,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
-      }
-    },
-    {
-      "story_id": "story_1bd0a7425a3c",
-      "title": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进 / Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-      "url": "https://www.dwarkesh.com/p/noam-brown",
-      "primary_url": "https://www.dwarkesh.com/p/noam-brown",
-      "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c33d2fa3dee69653b6e5935cd8adc2dc3f480701",
-          "title": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进 / Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-          "title_zh": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进",
-          "title_en": "Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-          "title_original": "Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-          "summary": "Dwarkesh Patel 采访 OpenAI 研究员 Noam Brown，谈多智能体系统、对齐与递归自我改进。",
-          "recommend_reason_zh": null,
-          "url": "https://www.dwarkesh.com/p/noam-brown",
-          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-17T15:38:13Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Dwarkesh Patel：Podcast & Blog（RSS）"
-      ],
-      "items": [
-        {
-          "id": "c33d2fa3dee69653b6e5935cd8adc2dc3f480701",
-          "title": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进 / Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-          "title_zh": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进",
-          "title_en": "Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-          "title_original": "Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-          "summary": "Dwarkesh Patel 采访 OpenAI 研究员 Noam Brown，谈多智能体系统、对齐与递归自我改进。",
-          "recommend_reason_zh": null,
-          "url": "https://www.dwarkesh.com/p/noam-brown",
-          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-17T15:38:13Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7309,
-      "importance": 0.7309,
-      "importance_score": 0.7309,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.71,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8129,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-17T15:38:13Z",
-      "latest_at": "2026-09-17T15:38:13Z",
-      "primary_item": {
-        "id": "c33d2fa3dee69653b6e5935cd8adc2dc3f480701",
-        "title": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进 / Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-        "title_zh": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进",
-        "title_en": "Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-        "title_original": "Noam Brown - Agent swarms， alignment， & recursive self-improvement",
-        "summary": "Dwarkesh Patel 采访 OpenAI 研究员 Noam Brown，谈多智能体系统、对齐与递归自我改进。",
-        "recommend_reason_zh": null,
-        "url": "https://www.dwarkesh.com/p/noam-brown",
-        "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 38,
-      "persona_review": "播客谈趋势不谈实现，没有能落地的东西，通勤时听听就行。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-18T06:20:47.170282Z"
+        "scored_at": "2026-09-18T09:58:05.189063Z"
       }
     }
   ]
