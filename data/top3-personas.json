@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T14:44:36.076433Z",
+  "generated_at": "2026-09-19T19:29:49.096209Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,42 +17,22 @@
   ],
   "items": [
     {
-      "story_id": "story_38f7cda29bd5",
-      "title": "仅限 Stage 环境的 npm 令牌，实现更安全的自动化 / Stage-only npm tokens for safer automation",
-      "url": "https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation",
+      "story_id": "story_630295415d38",
+      "title": "如果没有 Claude.md 文件，Claude Code 现在会读取 AGENTS.md 文件",
+      "url": "https://code.claude.com/docs/en/changelog",
       "rank": 1,
       "reviews": {
         "cynic": {
-          "score": 74,
-          "review": "把令牌权限砍到 Stage 算真活儿，但泄露的锅最后还得自己背，别指望它救写死日志的手。"
+          "score": 58,
+          "review": "一行 fallback 逻辑就上了热搜，AGENTS.md 阵营被收编得悄无声息。"
         },
         "paper-police": {
-          "score": 50,
-          "review": "官方 changelog 属实、功能可查，但'更安全'无量化评测，无第三方复现验证。"
+          "score": 60,
+          "review": "官方 changelog 是一手说明，装一版实测即可验证；不涉及论文评测，证据居中。"
         },
         "pragmatic": {
-          "score": 78,
-          "review": "发布流水线可换用受限令牌，泄露也炸不到正式包，今天就能改。"
-        }
-      }
-    },
-    {
-      "story_id": "story_a5ec63464b54",
-      "title": "GitHub Copilot 部分模型将于 10 月中旬起逐步弃用 / Upcoming deprecation of selected GitHub Copilot models in mid-October",
-      "url": "https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october",
-      "rank": 2,
-      "reviews": {
-        "cynic": {
-          "score": 62,
-          "review": "弃用名单带日期，算老实；但被砍模型的用户迁移方案呢，通告里可没写。"
-        },
-        "paper-police": {
-          "score": 72,
-          "review": "官方变更日志即一手信源，弃用时间明确可查；但仅单一来源，无迁移方案细节。"
-        },
-        "pragmatic": {
-          "score": 74,
-          "review": "查一下你 Copilot 里锁的模型，10 月中前换掉，否则调用会直接报错。"
+          "score": 76,
+          "review": "一份 AGENTS.md 能跨工具复用了，省得给每个 agent 各维护一份规范文件。"
         }
       }
     },
@@ -60,7 +40,7 @@
       "story_id": "story_48ff8a06680b",
       "title": "使用 REST API 管理代码覆盖率规则集条件 / Manage the code coverage ruleset condition with the REST API",
       "url": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api",
-      "rank": 3,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 52,
@@ -73,6 +53,26 @@
         "pragmatic": {
           "score": 74,
           "review": "覆盖率门禁能写进脚本了，多仓库统一配置不用再手点 UI，做 IaC 的可以接。"
+        }
+      }
+    },
+    {
+      "story_id": "story_1b4175524ae8",
+      "title": "Gemini入侵了三家公司，成为Google AI首次已知的越界事件 / Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
+      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 58,
+          "review": "把 agent 权限失控写成 AI 自主「越界入侵」，拟人化一改，真漏洞就没人查了。"
+        },
+        "paper-police": {
+          "score": 40,
+          "review": "博客加论坛热议，无厂商披露、无CVE、无复现细节，越界结论待独立验证。"
+        },
+        "pragmatic": {
+          "score": 73,
+          "review": "跑 Agent 的赶紧收紧沙箱和出网权限：提示注入已能越界打真公司，别喂生产凭据。"
         }
       }
     }

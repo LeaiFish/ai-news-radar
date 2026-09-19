@@ -1,66 +1,6 @@
 {
   "version": 1,
   "entries": {
-    "story_3eef6a7665a4|pragmatic|0a5c5b24": {
-      "score": 20,
-      "review": "收购决策离代码很远，等有实际工具变化再关注。",
-      "title_hash": "322dbba5",
-      "scored_at": "2026-08-29T14:48:07.892831Z"
-    },
-    "story_ff4f232dd5ce|pragmatic|0a5c5b24": {
-      "score": 70,
-      "review": "CLI 发新版本，先扫一眼 changelog，有用就升，没影响就等。",
-      "title_hash": "0c8a7f4f",
-      "scored_at": "2026-08-29T14:48:04.238140Z"
-    },
-    "story_1df6423d9095|pragmatic|0a5c5b24": {
-      "score": 82,
-      "review": "开源本地可跑，做音频工具链的今天就能集成，省云费用。",
-      "title_hash": "47761258",
-      "scored_at": "2026-08-29T14:48:06.670008Z"
-    },
-    "story_a91a944f2677|pragmatic|0a5c5b24": {
-      "score": 20,
-      "review": "公司选址影响城市，跟开发者写代码无关。",
-      "title_hash": "b7fc96f3",
-      "scored_at": "2026-08-29T14:48:09.285243Z"
-    },
-    "story_fb6e40a3017d|pragmatic|0a5c5b24": {
-      "score": 55,
-      "review": "偏研究方向，暂无落地工具。做视觉检测的可以关注技术选型。",
-      "title_hash": "585fa9d0",
-      "scored_at": "2026-08-29T14:48:10.846124Z"
-    },
-    "story_1df6423d9095|cynic|f4237a62": {
-      "score": 75,
-      "review": "开源本地化是好事，但分离效果和采样率别藏着，拉出来遛遛。",
-      "title_hash": "47761258",
-      "scored_at": "2026-08-29T14:48:14.951391Z"
-    },
-    "story_1df6423d9095|paper-police|966065bf": {
-      "score": 55,
-      "review": "代码开源可自查，但无论文和基准测试，效果待验证。",
-      "title_hash": "47761258",
-      "scored_at": "2026-08-29T14:48:17.635988Z"
-    },
-    "story_8aec8d862456|pragmatic|0a5c5b24": {
-      "score": 52,
-      "review": "研究向成果，离落地有距离，等开源或 API 再动手。",
-      "title_hash": "ab00d0fc",
-      "scored_at": "2026-08-29T18:46:57.717986Z"
-    },
-    "story_89873725e085|pragmatic|0a5c5b24": {
-      "score": 55,
-      "review": "政策风向标，具体条款没出来前不改变你用 AI 的方式。",
-      "title_hash": "ea1f3e84",
-      "scored_at": "2026-08-29T18:47:00.110003Z"
-    },
-    "story_7c1d44ff3ca2|pragmatic|0a5c5b24": {
-      "score": 75,
-      "review": "每周用量多两成半，跑长任务不用卡着算额度。",
-      "title_hash": "cf3f4258",
-      "scored_at": "2026-08-29T18:47:02.026274Z"
-    },
     "story_39fb2b2dec50|pragmatic|0a5c5b24": {
       "score": 20,
       "review": "文化鸡汤不写代码，等有落地案例再看。",
@@ -5538,6 +5478,60 @@
       "review": "权重能下能跑，但医疗域外基本用不上，且没临床验证前别乱接。",
       "title_hash": "a6926689",
       "scored_at": "2026-09-19T14:44:36.076296Z"
+    },
+    "story_dc21f5938fae|pragmatic|0a5c5b24": {
+      "score": 22,
+      "review": "一篇立场文，没工具没数据，看完也不会改你一行代码。",
+      "title_hash": "c32e8671",
+      "scored_at": "2026-09-19T19:29:33.311240Z"
+    },
+    "story_630295415d38|pragmatic|0a5c5b24": {
+      "score": 76,
+      "review": "一份 AGENTS.md 能跨工具复用了，省得给每个 agent 各维护一份规范文件。",
+      "title_hash": "b87ec0f5",
+      "scored_at": "2026-09-19T19:29:34.792795Z"
+    },
+    "story_a1a7ab465c4b|pragmatic|0a5c5b24": {
+      "score": 42,
+      "review": "自动化渗透演示，没开放工具也没细节，先当能力风向标看。",
+      "title_hash": "1319de63",
+      "scored_at": "2026-09-19T19:29:36.400155Z"
+    },
+    "story_f57f0f882ed6|pragmatic|0a5c5b24": {
+      "score": 58,
+      "review": "只是上了性价比榜，Preview 版还不能当生产依赖，等正式 API 和定价再说。",
+      "title_hash": "772d0165",
+      "scored_at": "2026-09-19T19:29:38.453879Z"
+    },
+    "story_2ea16f4d1f3b|pragmatic|0a5c5b24": {
+      "score": 58,
+      "review": "开源模型能直接下载，但月球遥感场景太窄，日常干活用不上，做行星/GIS 的可以瞄一眼。",
+      "title_hash": "6e1adefa",
+      "scored_at": "2026-09-19T19:29:40.104630Z"
+    },
+    "story_630295415d38|cynic|f4237a62": {
+      "score": 58,
+      "review": "一行 fallback 逻辑就上了热搜，AGENTS.md 阵营被收编得悄无声息。",
+      "title_hash": "b87ec0f5",
+      "scored_at": "2026-09-19T19:29:42.102714Z"
+    },
+    "story_630295415d38|paper-police|966065bf": {
+      "score": 60,
+      "review": "官方 changelog 是一手说明，装一版实测即可验证；不涉及论文评测，证据居中。",
+      "title_hash": "b87ec0f5",
+      "scored_at": "2026-09-19T19:29:43.798935Z"
+    },
+    "story_1b4175524ae8|cynic|f4237a62": {
+      "score": 58,
+      "review": "把 agent 权限失控写成 AI 自主「越界入侵」，拟人化一改，真漏洞就没人查了。",
+      "title_hash": "792cd513",
+      "scored_at": "2026-09-19T19:29:46.606237Z"
+    },
+    "story_1b4175524ae8|paper-police|966065bf": {
+      "score": 40,
+      "review": "博客加论坛热议，无厂商披露、无CVE、无复现细节，越界结论待独立验证。",
+      "title_hash": "792cd513",
+      "scored_at": "2026-09-19T19:29:49.096159Z"
     }
   }
 }
