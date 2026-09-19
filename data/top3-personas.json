@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T19:29:49.096209Z",
+  "generated_at": "2026-09-19T23:14:50.188222Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,62 +17,62 @@
   ],
   "items": [
     {
-      "story_id": "story_630295415d38",
-      "title": "如果没有 Claude.md 文件，Claude Code 现在会读取 AGENTS.md 文件",
-      "url": "https://code.claude.com/docs/en/changelog",
+      "story_id": "story_b18115d3565a",
+      "title": "阿里巴巴开源了一款能够检测癌症及近150种疾病的AI模型",
+      "url": "https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions",
       "rank": 1,
       "reviews": {
         "cynic": {
-          "score": 58,
-          "review": "一行 fallback 逻辑就上了热搜，AGENTS.md 阵营被收编得悄无声息。"
+          "score": 62,
+          "review": "开源诚实可嘉，但150种病光靠论文数据集，灵敏度特异度敢晒吗？"
         },
         "paper-police": {
-          "score": 60,
-          "review": "官方 changelog 是一手说明，装一版实测即可验证；不涉及论文评测，证据居中。"
+          "score": 48,
+          "review": "开源是真开源的话给码，但论文和可复现跑分一个没见，先当新闻看。"
         },
         "pragmatic": {
-          "score": 76,
-          "review": "一份 AGENTS.md 能跨工具复用了，省得给每个 agent 各维护一份规范文件。"
+          "score": 62,
+          "review": "权重能下能跑，但医疗域外基本用不上，且没临床验证前别乱接。"
         }
       }
     },
     {
-      "story_id": "story_48ff8a06680b",
-      "title": "使用 REST API 管理代码覆盖率规则集条件 / Manage the code coverage ruleset condition with the REST API",
-      "url": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api",
+      "story_id": "story_21ad98674ba5",
+      "title": "Gemini入侵了三家公司，成为Google AI首次已知的越界事件 / Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
+      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies",
       "rank": 2,
       "reviews": {
         "cynic": {
-          "score": 52,
-          "review": "多加一个 API 端点，省几次点鼠标而已，硬要算\"重要更新\"就有点抬举了。"
+          "score": 56,
+          "review": "\"首次已知\"不过等于首次被报道；AI是自己越狱还是被当枪使，标题偏不说清。"
         },
         "paper-police": {
-          "score": 62,
-          "review": "官方API文档可调用，功能属实；但无论文无benchmark，属产品更新而非成果。"
+          "score": 30,
+          "review": "三个来源都是同一篇博客的转载，无安全报告、日志或复现，越界结论仅凭单方叙述。"
         },
         "pragmatic": {
-          "score": 74,
-          "review": "覆盖率门禁能写进脚本了，多仓库统一配置不用再手点 UI，做 IaC 的可以接。"
+          "score": 60,
+          "review": "跑 agent 的该收紧沙箱和权限了；这是事故通报，不是能上手的工具。"
         }
       }
     },
     {
-      "story_id": "story_1b4175524ae8",
-      "title": "Gemini入侵了三家公司，成为Google AI首次已知的越界事件 / Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
-      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies",
+      "story_id": "story_f57f0f882ed6",
+      "title": "Stepfun Step 5 Preview（LLM）：跻身 AA Pareto 前沿 / Stepfun Step 5 Preview (LLM): On AA Pareto frontier",
+      "url": "https://artificialanalysis.ai/models/step-5",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 58,
-          "review": "把 agent 权限失控写成 AI 自主「越界入侵」，拟人化一改，真漏洞就没人查了。"
+          "score": 72,
+          "review": "上了 AA 帕累托前沿算本事，但 Preview 阶段，别把“预览”念成“封神”。"
         },
         "paper-police": {
-          "score": 40,
-          "review": "博客加论坛热议，无厂商披露、无CVE、无复现细节，越界结论待独立验证。"
+          "score": 34,
+          "review": "只有 AA 榜单一个数字，无权重无代码，所谓双源实为同一 HN。"
         },
         "pragmatic": {
-          "score": 73,
-          "review": "跑 Agent 的赶紧收紧沙箱和出网权限：提示注入已能越界打真公司，别喂生产凭据。"
+          "score": 58,
+          "review": "只是上了性价比榜，Preview 版还不能当生产依赖，等正式 API 和定价再说。"
         }
       }
     }
