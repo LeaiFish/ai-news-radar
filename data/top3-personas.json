@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T09:40:59.154120Z",
+  "generated_at": "2026-09-19T12:50:31.384858Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,30 +17,10 @@
   ],
   "items": [
     {
-      "story_id": "story_96a1341fc9d6",
-      "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
-      "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-      "rank": 1,
-      "reviews": {
-        "cynic": {
-          "score": 62,
-          "review": "抓到静默打包上传是真，可加了密谁也不知道传了啥，厂商再不吭声就更像默认。"
-        },
-        "paper-police": {
-          "score": 52,
-          "review": "逆向细节有了，但无开源PoC与独立复现，抓包证据未公开，先观望。"
-        },
-        "pragmatic": {
-          "score": 86,
-          "review": "在用 ZCode 的今天就去堵它的出口流量，仓库里的密钥可能已经传到阿里云了。"
-        }
-      }
-    },
-    {
       "story_id": "story_38f7cda29bd5",
       "title": "仅限 Stage 环境的 npm 令牌，实现更安全的自动化 / Stage-only npm tokens for safer automation",
       "url": "https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation",
-      "rank": 2,
+      "rank": 1,
       "reviews": {
         "cynic": {
           "score": 74,
@@ -60,7 +40,7 @@
       "story_id": "story_a5ec63464b54",
       "title": "GitHub Copilot 部分模型将于 10 月中旬起逐步弃用 / Upcoming deprecation of selected GitHub Copilot models in mid-October",
       "url": "https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october",
-      "rank": 3,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 62,
@@ -73,6 +53,26 @@
         "pragmatic": {
           "score": 74,
           "review": "查一下你 Copilot 里锁的模型，10 月中前换掉，否则调用会直接报错。"
+        }
+      }
+    },
+    {
+      "story_id": "story_48ff8a06680b",
+      "title": "使用 REST API 管理代码覆盖率规则集条件 / Manage the code coverage ruleset condition with the REST API",
+      "url": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 52,
+          "review": "多加一个 API 端点，省几次点鼠标而已，硬要算\"重要更新\"就有点抬举了。"
+        },
+        "paper-police": {
+          "score": 62,
+          "review": "官方API文档可调用，功能属实；但无论文无benchmark，属产品更新而非成果。"
+        },
+        "pragmatic": {
+          "score": 74,
+          "review": "覆盖率门禁能写进脚本了，多仓库统一配置不用再手点 UI，做 IaC 的可以接。"
         }
       }
     }
