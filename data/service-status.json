@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-18T23:19:25.009618Z",
+  "generated_at": "2026-09-19T01:10:03.436337Z",
   "ok": true,
   "active_count": 2,
   "providers": [
@@ -18,11 +18,11 @@
       "provider": "OpenAI",
       "title": "Overbilling for OpenAI-hosted containers in the Agent API",
       "title_zh": "Overbilling for OpenAI-hosted containers in the Agent API",
-      "status": "investigating",
+      "status": "identified",
       "impact": "none",
       "started_at": "2026-09-18T22:29:53Z",
-      "updated_at": "2026-09-18T22:29:53Z",
-      "message": "We’re investigating an issue causing higher-than-expected charges for OpenAI-hosted containers in the Agent API. We’re working on a fix and preparing refunds for affected customers. We’ll share further updates as we make progress.",
+      "updated_at": "2026-09-19T01:08:42Z",
+      "message": "We are still implementing the mitigation.",
       "affected_components": [],
       "url": "https://status.openai.com/incidents/01M2VA7X37P1ASADSNZ1CG4N4D"
     },
