@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T07:42:22.156853Z",
+  "generated_at": "2026-09-19T09:40:59.154120Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -37,10 +37,30 @@
       }
     },
     {
+      "story_id": "story_38f7cda29bd5",
+      "title": "仅限 Stage 环境的 npm 令牌，实现更安全的自动化 / Stage-only npm tokens for safer automation",
+      "url": "https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation",
+      "rank": 2,
+      "reviews": {
+        "cynic": {
+          "score": 74,
+          "review": "把令牌权限砍到 Stage 算真活儿，但泄露的锅最后还得自己背，别指望它救写死日志的手。"
+        },
+        "paper-police": {
+          "score": 50,
+          "review": "官方 changelog 属实、功能可查，但'更安全'无量化评测，无第三方复现验证。"
+        },
+        "pragmatic": {
+          "score": 78,
+          "review": "发布流水线可换用受限令牌，泄露也炸不到正式包，今天就能改。"
+        }
+      }
+    },
+    {
       "story_id": "story_a5ec63464b54",
       "title": "GitHub Copilot 部分模型将于 10 月中旬起逐步弃用 / Upcoming deprecation of selected GitHub Copilot models in mid-October",
       "url": "https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october",
-      "rank": 2,
+      "rank": 3,
       "reviews": {
         "cynic": {
           "score": 62,
@@ -53,26 +73,6 @@
         "pragmatic": {
           "score": 74,
           "review": "查一下你 Copilot 里锁的模型，10 月中前换掉，否则调用会直接报错。"
-        }
-      }
-    },
-    {
-      "story_id": "story_48ff8a06680b",
-      "title": "使用 REST API 管理代码覆盖率规则集条件 / Manage the code coverage ruleset condition with the REST API",
-      "url": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api",
-      "rank": 3,
-      "reviews": {
-        "cynic": {
-          "score": 52,
-          "review": "多加一个 API 端点，省几次点鼠标而已，硬要算\"重要更新\"就有点抬举了。"
-        },
-        "paper-police": {
-          "score": 62,
-          "review": "官方API文档可调用，功能属实；但无论文无benchmark，属产品更新而非成果。"
-        },
-        "pragmatic": {
-          "score": 74,
-          "review": "覆盖率门禁能写进脚本了，多仓库统一配置不用再手点 UI，做 IaC 的可以接。"
         }
       }
     }
