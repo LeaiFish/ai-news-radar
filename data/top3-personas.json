@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T23:14:50.188222Z",
+  "generated_at": "2026-09-20T01:15:02.209773Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,42 +17,22 @@
   ],
   "items": [
     {
-      "story_id": "story_b18115d3565a",
-      "title": "阿里巴巴开源了一款能够检测癌症及近150种疾病的AI模型",
-      "url": "https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions",
+      "story_id": "story_adc7678cfd9c",
+      "title": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台 / Show HN: I created an open source locally usable full fledged AI platform",
+      "url": "https://github.com/theguysudo/ENZO",
       "rank": 1,
       "reviews": {
         "cynic": {
-          "score": 62,
-          "review": "开源诚实可嘉，但150种病光靠论文数据集，灵敏度特异度敢晒吗？"
+          "score": 58,
+          "review": "「全功能」三字最贵，本地跑得动的版本通常只剩聊天框，其余等显卡补票。"
         },
         "paper-police": {
-          "score": 48,
-          "review": "开源是真开源的话给码，但论文和可复现跑分一个没见，先当新闻看。"
-        },
-        "pragmatic": {
-          "score": 62,
-          "review": "权重能下能跑，但医疗域外基本用不上，且没临床验证前别乱接。"
-        }
-      }
-    },
-    {
-      "story_id": "story_21ad98674ba5",
-      "title": "Gemini入侵了三家公司，成为Google AI首次已知的越界事件 / Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
-      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies",
-      "rank": 2,
-      "reviews": {
-        "cynic": {
-          "score": 56,
-          "review": "\"首次已知\"不过等于首次被报道；AI是自己越狱还是被当枪使，标题偏不说清。"
-        },
-        "paper-police": {
-          "score": 30,
-          "review": "三个来源都是同一篇博客的转载，无安全报告、日志或复现，越界结论仅凭单方叙述。"
-        },
-        "pragmatic": {
           "score": 60,
-          "review": "跑 agent 的该收紧沙箱和权限了；这是事故通报，不是能上手的工具。"
+          "review": "开源代码是实物，但无论文无benchmark，全功能仅自述，无法复现。"
+        },
+        "pragmatic": {
+          "score": 66,
+          "review": "clone 就能本地跑，可以试；但同类自托管平台已多，先扫文档和 star 再决定投不投入。"
         }
       }
     },
@@ -60,7 +40,7 @@
       "story_id": "story_f57f0f882ed6",
       "title": "Stepfun Step 5 Preview（LLM）：跻身 AA Pareto 前沿 / Stepfun Step 5 Preview (LLM): On AA Pareto frontier",
       "url": "https://artificialanalysis.ai/models/step-5",
-      "rank": 3,
+      "rank": 2,
       "reviews": {
         "cynic": {
           "score": 72,
@@ -73,6 +53,26 @@
         "pragmatic": {
           "score": 58,
           "review": "只是上了性价比榜，Preview 版还不能当生产依赖，等正式 API 和定价再说。"
+        }
+      }
+    },
+    {
+      "story_id": "story_2ea16f4d1f3b",
+      "title": "NASA-IBM 月球基础开源地理空间 AI 模型 / NASA-IBM Lunar Foundation open-Source Geospatial AI Model",
+      "url": "https://newsroom.usra.edu/usra-contributes-planetary-science-expertise-to-nasa-ibm-lunar-foundation-model",
+      "rank": 3,
+      "reviews": {
+        "cynic": {
+          "score": 63,
+          "review": "NASA 加 IBM 牌子够硬，开源也真；就是没见基准，这模型的月球通用性拿什么证明？"
+        },
+        "paper-police": {
+          "score": 35,
+          "review": "标题称开源却无代码仓库、论文和评测，先给链接再谈。"
+        },
+        "pragmatic": {
+          "score": 58,
+          "review": "开源模型能直接下载，但月球遥感场景太窄，日常干活用不上，做行星/GIS 的可以瞄一眼。"
         }
       }
     }
