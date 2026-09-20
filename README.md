@@ -129,6 +129,7 @@ AI News Radar从来都不是单纯把信息抓回来，
 ### 给普通读者
 
 - 打开在线页面，用「全部/模型/产品/开发者/行业/论文/社区/自媒体」栏目 tab 快速定位关心的方向
+- 用「主题」入口按公司（OpenAI、Claude、Qwen…）或技术方向（Agent、编码、多模态…）浏览跨时间的匹配故事，和栏目 tab 是两层不同的分类
 - 用「精选/全量」全局开关切换：精选看高价值故事线，需要补盲或检索时切到全量的广义AI相关原始池
 - 主列表按时间倒序、按日分组，一屏看清楚今天/昨天分别更新了什么；「当前热点」榜单独看当下最热，不设固定条数
 - 每条精选卡片带一句话「推荐理由」（管线侧真实生成，没有理由时这块不显示）
@@ -212,6 +213,7 @@ AI News Radar学习了现代新闻学的技术，不是简单堆信息源，一�
 - `data/source-status.json`：来源抓取状态、成功率、站点覆盖和源健康
 - `data/stories-merged.json`：故事合并后的完整事件集合
 - `data/merge-log.json`：故事合并过程和命中记录，方便调试与审计
+- `data/topics.json`：主题索引（名称、简介、条数、最新标题）；`data/topics/<id>.json` 是每个主题的条目列表
 
 如果 `daily-brief.json` 暂时不存在，页面会回退到候选信号列表；如果 `stories-merged.json` 存在，页面会用完整故事池补齐后续故事线，避免只有少量精选故事被接入。
 
@@ -223,7 +225,7 @@ AI News Radar学习了现代新闻学的技术，不是简单堆信息源，一�
 4. **开 GitHub Pages**：Settings → Pages，选 master 分支根目录。几分钟后你的雷达就活了。
 5. **改 skill 一行**：把 `skills/radar/SKILL.md` 顶部的 `BASE_URL` 换成 `https://<你的用户名>.github.io/ai-news-radar/data`，你的 Agent 从此读你自己的数据。
 
-想换信源：把订阅写进 `feeds/follow.opml`（参考 `feeds/follow.example.opml`），或让内置[伯乐Skill](skills/ai-news-radar/README.md)帮你判断和录入。想换口味：改 `personas/` 下的 markdown 文件。翻译不满意：改根目录 `translation-glossary.txt`（保护术语 + 修正规则，文件内有格式说明），下次管线运行自动生效。想要自己的域名：（可选）把仓库 import 进 Vercel，仓库里的 `vercel.json` 已配好，零构建直接上线。想在验证阶段临时看另一份数据（比如自己分支跑出来的 `data/`）：给页面 URL 加 `?data=<data目录地址>` 即可，不用改代码。
+想换信源：把订阅写进 `feeds/follow.opml`（参考 `feeds/follow.example.opml`），或让内置[伯乐Skill](skills/ai-news-radar/README.md)帮你判断和录入。想换口味：改 `personas/` 下的 markdown 文件。想加主题：编辑 `config/topics.json`（id、中文名、简介、关键词/别名），然后跑一次更新管线或 `python scripts/build_topics.py --data-dir data --write-pages`。翻译不满意：改根目录 `translation-glossary.txt`（保护术语 + 修正规则，文件内有格式说明），下次管线运行自动生效。想要自己的域名：（可选）把仓库 import 进 Vercel，仓库里的 `vercel.json` 已配好，零构建直接上线。想在验证阶段临时看另一份数据（比如自己分支跑出来的 `data/`）：给页面 URL 加 `?data=<data目录地址>` 即可，不用改代码。
 
 ## 快速开始（本地运行）
 
@@ -247,6 +249,8 @@ python -m http.server 8080
 http://localhost:8080
 ```
 
+主题列表：`http://localhost:8080/topics/` ；某个主题例如：`http://localhost:8080/topics/openai/`。
+
 如果你有自己的 OPML：
 
 ```bash
@@ -254,6 +258,21 @@ cp feeds/follow.example.opml feeds/follow.opml
 # 把自己的订阅源写进 feeds/follow.opml，不提交这个文件
 python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.opml
 ```
+
+## 主题（Topics）
+
+主题是**另一层浏览入口**，不是顶部「全部/模型/产品/…」栏目 tab。栏目 tab 切的是当天时间轴里的内容类型；主题页按公司、产品或技术方向，把匹配到的故事收成一张可配置的卡片墙，再点进去看该主题的条目列表（默认精选/合并故事优先，时间倒序）。
+
+- 前端只读 `data/topics.json` 和 `data/topics/<id>.json`，不内置主题名单。
+- 维护者改 `config/topics.json`：`id`、`name`、`description`、`group`、`keywords` / `exclude` / 可选 `patterns`。公司主题默认还会扫 `archive.json` 做更长窗口；偏宽的技术主题默认只用 24h 故事池，减少误伤。
+- 匹配是标题/摘要/来源/标签上的关键词启发式，**不是分类模型**。一条新闻可以同时出现在多个主题里；短英文词走词边界，中文走子串。限制说明写在生成出的 JSON 和主题页脚注里。
+- 更新管线（`scripts/update_news.py`）会顺带重写主题 JSON。只改了主题定义、想补静态页时：
+
+```bash
+python scripts/build_topics.py --data-dir data --write-pages
+```
+
+GitHub Pages 上请用相对链接。项目站路径是 `/ai-news-radar/topics/`；没有对应文件夹时，根目录 `404.html` 会把 `/topics/<id>/` 回退到 `/topics/?id=<id>`。
 
 ## 给Agent看的教程
 

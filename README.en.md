@@ -129,6 +129,7 @@ It is closer to a lightweight news pipeline: source judgement, fetching, dedupli
 ### For readers
 
 - Use the "All/Models/Products/Devtools/Industry/Research/Community/Creator" category tabs to jump straight to what you care about
+- Use **Topics** to browse company/product/tech-direction hubs (OpenAI, Claude, Qwen, Agent, coding tools, multimodal, …). This is a separate layer from the category tabs
 - Use the curated/all global toggle: curated shows high-value story timelines; switch to all when you need to backfill or search the broader AI-relevant pool
 - The main list is sorted newest-first and grouped by day, so you can scan what happened today vs. yesterday at a glance; "current hotspots" is a separate, uncapped board for what's hottest right now
 - Every curated card carries a one-line "why it matters" review, written by the pipeline itself — the block is simply hidden when there's no real review
@@ -212,6 +213,7 @@ Core files include:
 - `data/source-status.json`: source fetch status, success rate, site coverage, and source health
 - `data/stories-merged.json`: the complete merged story set
 - `data/merge-log.json`: story-merge matches and debug records for auditing
+- `data/topics.json`: topic index (name, blurb, count, latest headline); `data/topics/<id>.json` lists matching items for each topic
 
 If `daily-brief.json` is not available yet, the page falls back to candidate Scout signals; if `stories-merged.json` exists, the page uses the full story pool to extend the timeline beyond the picks.
 
@@ -247,12 +249,27 @@ Open:
 http://localhost:8080
 ```
 
+Topics hub: `http://localhost:8080/topics/` — a topic page, e.g. `http://localhost:8080/topics/openai/`.
+
 If you have your own OPML:
 
 ```bash
 cp feeds/follow.example.opml feeds/follow.opml
 # Put your own subscriptions into feeds/follow.opml. Do not commit this file.
 python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.opml
+```
+
+## Topics
+
+Topics are a **separate browsing layer** from the All/Models/Products/… category tabs. Tabs filter today's timeline by content type; topic pages group matching stories by company, product, or technical direction.
+
+- The static frontend only reads `data/topics.json` and `data/topics/<id>.json`.
+- Maintainers edit `config/topics.json` (`id`, `name`, `description`, `group`, `keywords` / `exclude` / optional `patterns`) without changing frontend JS. Company topics also scan `archive.json` for a longer window; broader tech topics default to the 24h story pool to limit noise.
+- Matching is a keyword/alias heuristic on title, summary, source, and tags — not a classifier. One story may appear in several topics. Limitations are documented in the generated JSON and on the topic pages.
+- `scripts/update_news.py` regenerates the topic JSON. After editing definitions, also run:
+
+```bash
+python scripts/build_topics.py --data-dir data --write-pages
 ```
 
 ## Tutorial for agents

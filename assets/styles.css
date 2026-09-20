@@ -222,6 +222,18 @@ button {
   display: none;
 }
 
+.topics-entry {
+  justify-self: start;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 740;
+  text-decoration: none;
+}
+
+.topics-entry:hover {
+  text-decoration: underline;
+}
+
 .section-tab {
   flex: 0 0 auto;
   min-height: 40px;

@@ -51,6 +51,14 @@ def test_both_pages_expose_bidirectional_view_switch():
         assert "assets/view-mode.js" in source
 
 
+def test_both_homepages_link_to_topics_hub():
+    for path in ("index.html", "classic/index.html"):
+        source = read(path)
+        assert 'href="./topics/"' in source
+        assert "主题" in source
+        assert 'class="topics-entry"' in source
+
+
 def test_view_switch_follows_update_time_in_both_headers():
     for path in ("index.html", "classic/index.html"):
         source = read(path)
