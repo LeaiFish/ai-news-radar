@@ -129,6 +129,11 @@
     return empty;
   }
 
+  function topicsForGroup(topics, groupId) {
+    // Preserve config/topics.json array order. Do not sort by name or item count.
+    return (Array.isArray(topics) ? topics : []).filter((topic) => topic.group === groupId);
+  }
+
   function renderHub(index) {
     document.title = "主题 · AI News Radar";
     if (titleEl) titleEl.textContent = "按主题看 AI";
@@ -151,7 +156,7 @@
       head.append(heading, desc);
       const grid = document.createElement("div");
       grid.className = "topics-grid";
-      topics.filter((topic) => topic.group === group.id).forEach((topic) => {
+      topicsForGroup(topics, group.id).forEach((topic) => {
         const card = document.createElement("a");
         card.className = "topic-card";
         card.href = safeTopicHref(topic.id);
@@ -343,6 +348,6 @@
     }
   }
 
-  window.AINewsRadarTopics = { topicIdFromLocation, dataUrl, homeUrl };
+  window.AINewsRadarTopics = { topicIdFromLocation, dataUrl, homeUrl, topicsForGroup };
   init();
 })();

@@ -39,10 +39,71 @@ def test_default_config_loads():
     assert "anthropic" in ids
     assert "agent" in ids
     assert "model-releases" in ids
+    assert "doubao" in ids
+    assert "quark" in ids
+    assert "hunyuan" in ids
     assert len(ids) == len(set(ids))
     group_ids = {item["id"] for item in config["groups"]}
     for item in config["topics"]:
         assert item["group"] in group_ids
+
+
+def test_company_topics_lead_with_domestic_products():
+    config = load_topic_config(ROOT / "config" / "topics.json")
+    company_ids = [item["id"] for item in config["topics"] if item["group"] == "company"]
+    assert company_ids[:4] == ["doubao", "qwen", "quark", "hunyuan"]
+    assert company_ids[4] == "openai"
+    assert "deepseek" in company_ids[4:]
+
+
+def _config_topic(topic_id: str) -> dict:
+    config = load_topic_config(ROOT / "config" / "topics.json")
+    for item in config["topics"]:
+        if item["id"] == topic_id:
+            return item
+    raise AssertionError(f"missing topic {topic_id}")
+
+
+def test_domestic_product_keywords_match_expected_aliases():
+    doubao = _config_topic("doubao")
+    qwen = _config_topic("qwen")
+    quark = _config_topic("quark")
+    hunyuan = _config_topic("hunyuan")
+
+    assert record_matches_topic({"title": "豆包发布新模型"}, doubao)
+    assert record_matches_topic({"title": "ByteDance Doubao update"}, doubao)
+    assert record_matches_topic({"title": "火山引擎上线 Volcengine Ark"}, doubao)
+
+    assert record_matches_topic({"title": "通义千问发布 Qwen3"}, qwen)
+    assert record_matches_topic({"title": "DashScope 上架新千问模型"}, qwen)
+    assert not record_matches_topic({"title": "夸克AI 上线浏览器助手"}, qwen)
+
+    assert record_matches_topic({"title": "夸克AI 上线浏览器助手"}, quark)
+    assert record_matches_topic({"title": "Alibaba Quark adds AI search"}, quark)
+    assert not record_matches_topic({"title": "通义千问发布 Qwen3"}, quark)
+    assert not record_matches_topic({"title": "Qwen2.5-VL 开源"}, quark)
+    assert not record_matches_topic({"title": "资源直达：夸克网盘 https://example.com"}, quark)
+
+    assert record_matches_topic({"title": "腾讯混元发布新模型"}, hunyuan)
+    assert record_matches_topic({"title": "Tencent Yuanbao desktop app"}, hunyuan)
+    assert record_matches_topic({"title": "元宝接入混元大模型"}, hunyuan)
+
+
+def test_topics_payload_preserves_config_array_order(tmp_path: Path):
+    config = load_topic_config(ROOT / "config" / "topics.json")
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    (data_dir / "stories-merged.json").write_text(
+        json.dumps({"generated_at": "2026-09-20T00:00:00Z", "stories": []}),
+        encoding="utf-8",
+    )
+    payload = write_topics_payload(data_dir, config_path=ROOT / "config" / "topics.json")
+    index = json.loads((data_dir / "topics.json").read_text(encoding="utf-8"))
+    config_ids = [item["id"] for item in config["topics"]]
+    assert [item["id"] for item in index["topics"]] == config_ids
+    assert [item["id"] for item in payload["topics"]] == config_ids
+    company_ids = [item["id"] for item in index["topics"] if item["group"] == "company"]
+    assert company_ids[:4] == ["doubao", "qwen", "quark", "hunyuan"]
 
 
 def test_ascii_keywords_use_word_boundaries():

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "max_items_per_topic": 80,
-  "notes": "Keyword/alias matching on title, summary, source and tags. Not a classifier. An item may appear in multiple topics. Edit this file to add a topic, then rerun the update pipeline (or python scripts/build_topics.py --data-dir data --write-pages).",
+  "notes": "Keyword/alias matching on title, summary, source and tags. Not a classifier. An item may appear in multiple topics. The hub lists topics in this array order within each group (do not sort by name or count). Edit this file to add a topic, then rerun the update pipeline (or python scripts/build_topics.py --data-dir data --write-pages).",
   "groups": [
     {
       "id": "company",
@@ -15,6 +15,79 @@
     }
   ],
   "topics": [
+    {
+      "id": "doubao",
+      "name": "豆包",
+      "description": "字节跳动豆包与火山引擎：豆包产品、Doubao 模型、火山方舟 / Volcengine Ark。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": [
+        "豆包",
+        "Doubao",
+        "字节跳动",
+        "ByteDance",
+        "火山引擎",
+        "Volcengine",
+        "Volc Engine",
+        "火山方舟",
+        "Volcengine Ark",
+        "ByteDance Ark"
+      ]
+    },
+    {
+      "id": "qwen",
+      "name": "通义千问 / Qwen",
+      "description": "阿里通义千问 Qwen 系列：旗舰模型、开源权重、端侧与多模态迭代。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": [
+        "Qwen",
+        "通义千问",
+        "千问",
+        "Qwen2",
+        "Qwen2.5",
+        "Qwen3",
+        "Qwen-VL",
+        "Qwen-Image",
+        "Alibaba Qwen",
+        "DashScope"
+      ]
+    },
+    {
+      "id": "quark",
+      "name": "夸克",
+      "description": "阿里夸克：夸克 App / 夸克 AI 产品动态，与通义千问模型系列分开追踪。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": [
+        "夸克",
+        "夸克AI",
+        "夸克 AI",
+        "Quark",
+        "Quark AI",
+        "Alibaba Quark",
+        "阿里夸克"
+      ],
+      "exclude": ["夸克网盘"]
+    },
+    {
+      "id": "hunyuan",
+      "name": "混元 / 元宝",
+      "description": "腾讯混元模型与元宝产品：Hunyuan 发布、腾讯元宝客户端与相关能力。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": [
+        "混元",
+        "Hunyuan",
+        "元宝",
+        "Yuanbao",
+        "腾讯混元",
+        "Tencent Hunyuan",
+        "腾讯元宝",
+        "Tencent Yuanbao",
+        "混元大模型"
+      ]
+    },
     {
       "id": "openai",
       "name": "OpenAI / ChatGPT",
@@ -90,14 +163,6 @@
       "group": "company",
       "pools": ["stories", "brief", "latest", "archive"],
       "keywords": ["DeepSeek", "深度求索", "DeepSeek-V3", "DeepSeek-V4", "DeepSeek-R1", "DeepSeek-V2"]
-    },
-    {
-      "id": "qwen",
-      "name": "通义千问 / Qwen",
-      "description": "阿里通义千问 Qwen 系列：旗舰模型、开源权重、端侧与多模态迭代。",
-      "group": "company",
-      "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": ["Qwen", "通义千问", "通义", "Qwen2", "Qwen3", "Qwen-VL", "Alibaba Qwen", "DashScope"]
     },
     {
       "id": "kimi",

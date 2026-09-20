@@ -381,6 +381,7 @@ def build_topics_payload(
     topic_rows: list[dict[str, Any]] = []
     detail_by_id: dict[str, dict[str, Any]] = {}
 
+    # Hub cards follow this array order within each group. Do not sort by name or count.
     for topic in config.get("topics") or []:
         items, total = match_topic_items(topic, pools, curated_ids, max_items)
         latest = items[0] if items else {}
