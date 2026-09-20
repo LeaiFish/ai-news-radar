@@ -267,6 +267,18 @@ button {
   overflow-wrap: anywhere;
 }
 
+.topics-entry {
+  justify-self: start;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 740;
+  text-decoration: none;
+}
+
+.topics-entry:hover {
+  text-decoration: underline;
+}
+
 .stat {
   min-width: 0;
   display: inline-flex;

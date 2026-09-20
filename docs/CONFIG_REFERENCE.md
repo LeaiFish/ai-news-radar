@@ -168,6 +168,7 @@ AgentMail 另有本地/私有运行变量：`EMAIL_DIGEST_ENABLED=1` 打开邮�
 | **临时关掉**某个付费源 | GitHub Variables 把对应 `*_ENABLED` 设 `0` |
 | 改**运行频率** | workflow 第 6 行 `cron` |
 | 改**付费源每天跑几次** | `PAID_SOURCE_DEFAULT_INTERVAL_HOURS`(约 188 行) |
+| 加/改**主题**(Topics，不是栏目 tab) | `config/topics.json`，然后 `python scripts/build_topics.py --data-dir data --write-pages` |
 
 ---
 

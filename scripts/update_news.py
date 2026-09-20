@@ -7199,6 +7199,13 @@ def main() -> int:
     waytoagi_path.write_text(json.dumps(sanitize_public_payload(waytoagi_payload), ensure_ascii=False, indent=2), encoding="utf-8")
     title_cache_path.write_text(json.dumps(sanitize_public_payload(title_cache), ensure_ascii=False, indent=2), encoding="utf-8")
 
+    try:
+        from scripts.build_topics import write_topics_payload
+    except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
+        from build_topics import write_topics_payload
+    topics_payload = write_topics_payload(output_dir, generated_at=generated_at)
+    topics_payload.pop("_details", None)
+
     print(f"Wrote: {latest_path} ({len(latest_items)} items)")
     print(f"Wrote: {latest_all_path} ({len(latest_items_all_dedup)} all-mode items)")
     print(f"Wrote: {latest_all_raw_path} ({len(latest_items_all_raw_dedup)} raw items, dev-only)")
@@ -7213,6 +7220,7 @@ def main() -> int:
         print(f"Wrote: {email_digest_path} ({email_digest_payload.get('total_messages', 0)} email items)")
     print(f"Wrote: {waytoagi_path} ({waytoagi_payload.get('count_7d', 0)} items)")
     print(f"Wrote: {title_cache_path} ({len(title_cache)} entries)")
+    print(f"Wrote: {output_dir / 'topics.json'} ({topics_payload.get('topic_count', 0)} topics)")
 
     return 0
 

@@ -1,0 +1,155 @@
+.topics-shell {
+  padding-bottom: 72px;
+}
+
+.topics-kicker {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0.02em;
+}
+
+.topics-kicker a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topics-kicker a:hover {
+  text-decoration: underline;
+}
+
+.topics-home-logo {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.topics-lead {
+  margin: 8px 0 0;
+  max-width: 46rem;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.topics-status {
+  margin: 18px 0 0;
+  color: var(--muted);
+}
+
+.topics-group {
+  margin-top: 28px;
+}
+
+.topics-group-head h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.topics-group-head p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.topic-card {
+  display: grid;
+  gap: 8px;
+  min-height: 148px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  padding: 16px 16px 14px;
+  color: inherit;
+  background: var(--surface);
+  text-decoration: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.topic-card:hover {
+  border-color: rgba(18, 106, 115, 0.32);
+}
+
+.topic-card h3 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.topic-card-blurb {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.topic-card-meta {
+  display: grid;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.topic-card-meta strong {
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.topic-card-meta span {
+  color: var(--muted-soft);
+  font-size: 12px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.topics-footnote {
+  margin: 22px 0 0;
+  color: var(--muted-soft);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.topics-footnote a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.topics-detail-wrap {
+  margin-top: 18px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.topics-hero {
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero.topics-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .topics-hero .hero-meta {
+    min-width: 0;
+    justify-self: start;
+  }
+
+  .topics-hero .hero-links {
+    justify-content: flex-start;
+  }
+}
