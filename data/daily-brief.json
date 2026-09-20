@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T09:49:14.368921Z",
+  "generated_at": "2026-09-20T13:02:32.339914Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -135,15 +135,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.8337,
-      "importance": 0.8337,
-      "importance_score": 0.8337,
+      "score": 0.8266,
+      "importance": 0.8266,
+      "importance_score": 0.8266,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8674,
+        "recency": 0.828,
         "story_heat": 0.75
       },
       "category": "multi_source",
@@ -172,7 +172,91 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
+      }
+    },
+    {
+      "story_id": "story_67bbb2f19d0e",
+      "title": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像 / Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "primary_url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "source": "Qwen：Blog Retrieval（API）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ab009f5e270bc93f5a1e3a6f05778a2fa8b64c49",
+          "title": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像 / Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+          "title_zh": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像",
+          "title_en": "Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+          "title_original": "Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+          "summary": "Qwen 团队开源 Qwen-Image-2.1，将文生图与图像编辑统一到一个模型中，视觉生成组件仅 7B 参数，并原生支持生成和编辑透明图像。模型支持最多 10 张参考图、圆形/涂鸦/独立蒙版指定局部编辑，通过混合粒度注意力架构和 KV cache 复用提升推理效率，同时改进文字渲染、人像光照与人物产品保真度，并覆盖全景图、信息图和分镜等任务。",
+          "recommend_reason_zh": "Qwen-Image-2.1 以紧凑、高效、统一为方向做图像创作，正文还列出 Qwen 已覆盖 chatbot、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用与 artifacts 等完整功能。",
+          "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+          "source": "Qwen：Blog Retrieval（API）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-20T12:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Qwen：Blog Retrieval（API）"
+      ],
+      "items": [
+        {
+          "id": "ab009f5e270bc93f5a1e3a6f05778a2fa8b64c49",
+          "title": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像 / Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+          "title_zh": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像",
+          "title_en": "Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+          "title_original": "Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+          "summary": "Qwen 团队开源 Qwen-Image-2.1，将文生图与图像编辑统一到一个模型中，视觉生成组件仅 7B 参数，并原生支持生成和编辑透明图像。模型支持最多 10 张参考图、圆形/涂鸦/独立蒙版指定局部编辑，通过混合粒度注意力架构和 KV cache 复用提升推理效率，同时改进文字渲染、人像光照与人物产品保真度，并覆盖全景图、信息图和分镜等任务。",
+          "recommend_reason_zh": "Qwen-Image-2.1 以紧凑、高效、统一为方向做图像创作，正文还列出 Qwen 已覆盖 chatbot、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用与 artifacts 等完整功能。",
+          "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+          "source": "Qwen：Blog Retrieval（API）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-20T12:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7649,
+      "importance": 0.7649,
+      "importance_score": 0.7649,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9851,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-20T12:00:00Z",
+      "latest_at": "2026-09-20T12:00:00Z",
+      "primary_item": {
+        "id": "ab009f5e270bc93f5a1e3a6f05778a2fa8b64c49",
+        "title": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像 / Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+        "title_zh": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像",
+        "title_en": "Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+        "title_original": "Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
+        "summary": "Qwen 团队开源 Qwen-Image-2.1，将文生图与图像编辑统一到一个模型中，视觉生成组件仅 7B 参数，并原生支持生成和编辑透明图像。模型支持最多 10 张参考图、圆形/涂鸦/独立蒙版指定局部编辑，通过混合粒度注意力架构和 KV cache 复用提升推理效率，同时改进文字渲染、人像光照与人物产品保真度，并覆盖全景图、信息图和分镜等任务。",
+        "recommend_reason_zh": "Qwen-Image-2.1 以紧凑、高效、统一为方向做图像创作，正文还列出 Qwen 已覆盖 chatbot、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用与 artifacts 等完整功能。",
+        "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+        "source": "Qwen：Blog Retrieval（API）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 86,
+      "persona_review": "7B 权重能本地跑，原生透明通道省掉抠图，做电商图和素材的今天就能试。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -189,7 +273,7 @@
           "title_zh": "一颗 260 克的\"鸡蛋关节\"：稚晖君发布启元 Q1、T1 人形机器人",
           "title_en": null,
           "title_original": "一颗 260 克的\"鸡蛋关节\"：稚晖君发布启元 Q1、T1 人形机器人",
-          "summary": "On September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nOn September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nOn September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nExplore AI Fronti",
+          "summary": null,
           "recommend_reason_zh": "这篇内容讲 Peng Zhihui 发布两款人形机器人 Qiyuan Q1 与 Qiyuan T1：Q1 高 88 厘米、可折叠进背包，T1 能轮足与四足切换，均于 8 月 23 日开启预购，Qiyuan 还自研行业最小量产 260 克 egg joint。",
           "url": "https://www.aibase.com/news/31205",
           "source": "AIbase",
@@ -209,7 +293,7 @@
           "title_zh": "一颗 260 克的\"鸡蛋关节\"：稚晖君发布启元 Q1、T1 人形机器人",
           "title_en": null,
           "title_original": "一颗 260 克的\"鸡蛋关节\"：稚晖君发布启元 Q1、T1 人形机器人",
-          "summary": "On September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nOn September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nOn September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nExplore AI Fronti",
+          "summary": null,
           "recommend_reason_zh": "这篇内容讲 Peng Zhihui 发布两款人形机器人 Qiyuan Q1 与 Qiyuan T1：Q1 高 88 厘米、可折叠进背包，T1 能轮足与四足切换，均于 8 月 23 日开启预购，Qiyuan 还自研行业最小量产 260 克 egg joint。",
           "url": "https://www.aibase.com/news/31205",
           "source": "AIbase",
@@ -220,15 +304,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7594,
+      "importance": 0.7594,
+      "importance_score": 0.7594,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9545,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -244,7 +328,7 @@
         "title_zh": "一颗 260 克的\"鸡蛋关节\"：稚晖君发布启元 Q1、T1 人形机器人",
         "title_en": null,
         "title_original": "一颗 260 克的\"鸡蛋关节\"：稚晖君发布启元 Q1、T1 人形机器人",
-        "summary": "On September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nOn September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nOn September 20, during the 2026 Qiyuan Robotics Global Product Launch Event, Qiyuan, a consumer-grade humanoid robot brand under Shangwei New Materials, offici\nExplore AI Fronti",
+        "summary": null,
         "recommend_reason_zh": "这篇内容讲 Peng Zhihui 发布两款人形机器人 Qiyuan Q1 与 Qiyuan T1：Q1 高 88 厘米、可折叠进背包，T1 能轮足与四足切换，均于 8 月 23 日开启预购，Qiyuan 还自研行业最小量产 260 克 egg joint。",
         "url": "https://www.aibase.com/news/31205",
         "source": "AIbase",
@@ -256,7 +340,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -273,7 +357,7 @@
           "title_zh": "东风人形机器人\"小东\"下月进厂：汽车大模型给具身智能当\"师傅\"，年底要和真人掰手腕",
           "title_en": null,
           "title_original": "东风人形机器人\"小东\"下月进厂：汽车大模型给具身智能当\"师傅\"，年底要和真人掰手腕",
-          "summary": "Dongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nDongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nDongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nExplore AI Fronti",
+          "summary": null,
           "recommend_reason_zh": "Dongfeng Automobile 的 humanoid robot 小东将于10月进厂，先做分拣和质量检测，年底小批量、限定区域试运行；Zhang Zhenlin 称其明年年底目标达人类水平，并复用汽车大模型与自动驾驶的感知决策能力。",
           "url": "https://www.aibase.com/news/31204",
           "source": "AIbase",
@@ -293,7 +377,7 @@
           "title_zh": "东风人形机器人\"小东\"下月进厂：汽车大模型给具身智能当\"师傅\"，年底要和真人掰手腕",
           "title_en": null,
           "title_original": "东风人形机器人\"小东\"下月进厂：汽车大模型给具身智能当\"师傅\"，年底要和真人掰手腕",
-          "summary": "Dongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nDongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nDongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nExplore AI Fronti",
+          "summary": null,
           "recommend_reason_zh": "Dongfeng Automobile 的 humanoid robot 小东将于10月进厂，先做分拣和质量检测，年底小批量、限定区域试运行；Zhang Zhenlin 称其明年年底目标达人类水平，并复用汽车大模型与自动驾驶的感知决策能力。",
           "url": "https://www.aibase.com/news/31204",
           "source": "AIbase",
@@ -304,15 +388,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7594,
+      "importance": 0.7594,
+      "importance_score": 0.7594,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9545,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -328,7 +412,7 @@
         "title_zh": "东风人形机器人\"小东\"下月进厂：汽车大模型给具身智能当\"师傅\"，年底要和真人掰手腕",
         "title_en": null,
         "title_original": "东风人形机器人\"小东\"下月进厂：汽车大模型给具身智能当\"师傅\"，年底要和真人掰手腕",
-        "summary": "Dongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nDongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nDongfeng Automobile is about to move robots from the exhibition stand into the workshop. On September 20, it was reported that Zhang Zhenlin, chief general engi\nExplore AI Fronti",
+        "summary": null,
         "recommend_reason_zh": "Dongfeng Automobile 的 humanoid robot 小东将于10月进厂，先做分拣和质量检测，年底小批量、限定区域试运行；Zhang Zhenlin 称其明年年底目标达人类水平，并复用汽车大模型与自动驾驶的感知决策能力。",
         "url": "https://www.aibase.com/news/31204",
         "source": "AIbase",
@@ -340,7 +424,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -388,15 +472,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7304,
-      "importance": 0.7304,
-      "importance_score": 0.7304,
+      "score": 0.7231,
+      "importance": 0.7231,
+      "importance_score": 0.7231,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8932,
+        "recency": 0.8526,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -423,7 +507,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -440,7 +524,7 @@
           "title_zh": "剪映发布全新 AI 能力：专业版上线“剪映 Hub”，移动端推 AI 助手“小映”",
           "title_en": null,
           "title_original": "剪映发布全新 AI 能力：专业版上线“剪映 Hub”，移动端推 AI 助手“小映”",
-          "summary": "CapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nCapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nCapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nExplore AI Fronti",
+          "summary": null,
           "recommend_reason_zh": "CapCut 在 AI New Creation Launch Event 发布移动端 AI 助手 Xiaoying，并为 CapCut Pro 上线 CapCut Hub 与 AI Ultra Membership，同时升级创作者生态，覆盖从新手到专业创作场景，并推出激励计划与创作者服务。",
           "url": "https://www.aibase.com/news/31206",
           "source": "AIbase",
@@ -460,7 +544,7 @@
           "title_zh": "剪映发布全新 AI 能力：专业版上线“剪映 Hub”，移动端推 AI 助手“小映”",
           "title_en": null,
           "title_original": "剪映发布全新 AI 能力：专业版上线“剪映 Hub”，移动端推 AI 助手“小映”",
-          "summary": "CapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nCapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nCapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nExplore AI Fronti",
+          "summary": null,
           "recommend_reason_zh": "CapCut 在 AI New Creation Launch Event 发布移动端 AI 助手 Xiaoying，并为 CapCut Pro 上线 CapCut Hub 与 AI Ultra Membership，同时升级创作者生态，覆盖从新手到专业创作场景，并推出激励计划与创作者服务。",
           "url": "https://www.aibase.com/news/31206",
           "source": "AIbase",
@@ -471,15 +555,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7594,
+      "importance": 0.7594,
+      "importance_score": 0.7594,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9545,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -495,7 +579,7 @@
         "title_zh": "剪映发布全新 AI 能力：专业版上线“剪映 Hub”，移动端推 AI 助手“小映”",
         "title_en": null,
         "title_original": "剪映发布全新 AI 能力：专业版上线“剪映 Hub”，移动端推 AI 助手“小映”",
-        "summary": "CapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nCapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nCapCut held the \"AI New Creation Launch Event,\" introducing multiple AI new features such as CapCut Hub and the AI creation assistant \"Xiaoying,\" and upgraded t\nExplore AI Fronti",
+        "summary": null,
         "recommend_reason_zh": "CapCut 在 AI New Creation Launch Event 发布移动端 AI 助手 Xiaoying，并为 CapCut Pro 上线 CapCut Hub 与 AI Ultra Membership，同时升级创作者生态，覆盖从新手到专业创作场景，并推出激励计划与创作者服务。",
         "url": "https://www.aibase.com/news/31206",
         "source": "AIbase",
@@ -507,7 +591,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -524,7 +608,7 @@
           "title_zh": "双节前后 10 多款大模型蓄势待发：GPT-6 全系、Opus 5.2、V4.1 Pro 领衔",
           "title_en": null,
           "title_original": "双节前后 10 多款大模型蓄势待发：GPT-6 全系、Opus 5.2、V4.1 Pro 领衔",
-          "summary": "As the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nAs the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nAs the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nExplore AI Fronti",
+          "summary": null,
           "recommend_reason_zh": "双节前后至少 10 款大模型集中发布：OpenAI 将补齐 GPT-6 Sol、Terra、Luna 全系，Anthropic 跳过 5.1 直发 Opus 5.2。",
           "url": "https://www.aibase.com/news/31200",
           "source": "AIbase",
@@ -544,7 +628,7 @@
           "title_zh": "双节前后 10 多款大模型蓄势待发：GPT-6 全系、Opus 5.2、V4.1 Pro 领衔",
           "title_en": null,
           "title_original": "双节前后 10 多款大模型蓄势待发：GPT-6 全系、Opus 5.2、V4.1 Pro 领衔",
-          "summary": "As the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nAs the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nAs the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nExplore AI Fronti",
+          "summary": null,
           "recommend_reason_zh": "双节前后至少 10 款大模型集中发布：OpenAI 将补齐 GPT-6 Sol、Terra、Luna 全系，Anthropic 跳过 5.1 直发 Opus 5.2。",
           "url": "https://www.aibase.com/news/31200",
           "source": "AIbase",
@@ -555,15 +639,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7594,
+      "importance": 0.7594,
+      "importance_score": 0.7594,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9545,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -579,7 +663,7 @@
         "title_zh": "双节前后 10 多款大模型蓄势待发：GPT-6 全系、Opus 5.2、V4.1 Pro 领衔",
         "title_en": null,
         "title_original": "双节前后 10 多款大模型蓄势待发：GPT-6 全系、Opus 5.2、V4.1 Pro 领衔",
-        "summary": "As the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nAs the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nAs the Mid-Autumn Festival and National Day approach, the AI industry is also about to witness a major wave — at least 10 large models are expected to be launch\nExplore AI Fronti",
+        "summary": null,
         "recommend_reason_zh": "双节前后至少 10 款大模型集中发布：OpenAI 将补齐 GPT-6 Sol、Terra、Luna 全系，Anthropic 跳过 5.1 直发 Opus 5.2。",
         "url": "https://www.aibase.com/news/31200",
         "source": "AIbase",
@@ -591,7 +675,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -608,7 +692,7 @@
           "title_zh": "微信 AI 团队开源 WeKnora：知识库不再只“动嘴”，还能在沙箱里“动手”",
           "title_en": null,
           "title_original": "微信 AI 团队开源 WeKnora：知识库不再只“动嘴”，还能在沙箱里“动手”",
-          "summary": "WeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nWeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nWeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nExplore AI Frontiers",
+          "summary": null,
           "recommend_reason_zh": "WeChat AI 团队开源知识管理框架 WeKnora 0.8.0，anydoc 可直接解析 PDF、Word、Markdown 与网页，Wiki 模式整理文档；GraphRAG 抽取实体关系建图，Skill Sandbox Runtime 让知识库在沙箱里动手执行。",
           "url": "https://www.aibase.com/news/31201",
           "source": "AIbase",
@@ -628,7 +712,7 @@
           "title_zh": "微信 AI 团队开源 WeKnora：知识库不再只“动嘴”，还能在沙箱里“动手”",
           "title_en": null,
           "title_original": "微信 AI 团队开源 WeKnora：知识库不再只“动嘴”，还能在沙箱里“动手”",
-          "summary": "WeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nWeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nWeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nExplore AI Frontiers",
+          "summary": null,
           "recommend_reason_zh": "WeChat AI 团队开源知识管理框架 WeKnora 0.8.0，anydoc 可直接解析 PDF、Word、Markdown 与网页，Wiki 模式整理文档；GraphRAG 抽取实体关系建图，Skill Sandbox Runtime 让知识库在沙箱里动手执行。",
           "url": "https://www.aibase.com/news/31201",
           "source": "AIbase",
@@ -639,15 +723,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7594,
+      "importance": 0.7594,
+      "importance_score": 0.7594,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9545,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -663,7 +747,7 @@
         "title_zh": "微信 AI 团队开源 WeKnora：知识库不再只“动嘴”，还能在沙箱里“动手”",
         "title_en": null,
         "title_original": "微信 AI 团队开源 WeKnora：知识库不再只“动嘴”，还能在沙箱里“动手”",
-        "summary": "WeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nWeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nWeChat AI team has officially open-sourced the knowledge management framework WeKnora (Vinerah). The latest 0.8.0 version is now fully available to the public.\nExplore AI Frontiers",
+        "summary": null,
         "recommend_reason_zh": "WeChat AI 团队开源知识管理框架 WeKnora 0.8.0，anydoc 可直接解析 PDF、Word、Markdown 与网页，Wiki 模式整理文档；GraphRAG 抽取实体关系建图，Skill Sandbox Runtime 让知识库在沙箱里动手执行。",
         "url": "https://www.aibase.com/news/31201",
         "source": "AIbase",
@@ -675,91 +759,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
-      }
-    },
-    {
-      "story_id": "story_6bc1ec806a2b",
-      "title": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-      "url": "https://www.aibase.com/news/31203",
-      "primary_url": "https://www.aibase.com/news/31203",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "1402a6e61563686b89d31bcad99e60c2b51f8857",
-          "title": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-          "title_zh": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-          "title_en": null,
-          "title_original": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-          "summary": "President Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nPresident Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nPresident Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nExplore AI Fronti",
-          "recommend_reason_zh": "Trump 在 Truth Social 和 X 发起为 AI 改名的投票，超18万人参与，Superior Intelligence 以40.4%暂时领先。",
-          "url": "https://www.aibase.com/news/31203",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-20T09:49:14.368921Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "1402a6e61563686b89d31bcad99e60c2b51f8857",
-          "title": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-          "title_zh": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-          "title_en": null,
-          "title_original": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-          "summary": "President Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nPresident Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nPresident Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nExplore AI Fronti",
-          "recommend_reason_zh": "Trump 在 Truth Social 和 X 发起为 AI 改名的投票，超18万人参与，Superior Intelligence 以40.4%暂时领先。",
-          "url": "https://www.aibase.com/news/31203",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-20T09:49:14.368921Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-20T09:49:14.368921Z",
-      "latest_at": "2026-09-20T09:49:14.368921Z",
-      "primary_item": {
-        "id": "1402a6e61563686b89d31bcad99e60c2b51f8857",
-        "title": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-        "title_zh": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-        "title_en": null,
-        "title_original": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
-        "summary": "President Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nPresident Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nPresident Donald Trump has once again responded to the recent discussions around AI safety in his trademark style—claiming that concerns about AI risks are simp\nExplore AI Fronti",
-        "recommend_reason_zh": "Trump 在 Truth Social 和 X 发起为 AI 改名的投票，超18万人参与，Superior Intelligence 以40.4%暂时领先。",
-        "url": "https://www.aibase.com/news/31203",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 10,
-      "persona_review": "改个名字不影响任何API调用，纯口水，划走。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -836,15 +836,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.6161,
-      "importance": 0.6161,
-      "importance_score": 0.6161,
+      "score": 0.6094,
+      "importance": 0.6094,
+      "importance_score": 0.6094,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.5472,
         "source_tier": 0.58,
         "ai_relevance": 0.76,
-        "recency": 0.8186,
+        "recency": 0.7814,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -871,7 +871,91 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
+      }
+    },
+    {
+      "story_id": "story_6bc1ec806a2b",
+      "title": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+      "url": "https://www.aibase.com/news/31203",
+      "primary_url": "https://www.aibase.com/news/31203",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "1402a6e61563686b89d31bcad99e60c2b51f8857",
+          "title": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+          "title_zh": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+          "title_en": null,
+          "title_original": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+          "summary": null,
+          "recommend_reason_zh": "Trump 在 Truth Social 和 X 发起为 AI 改名的投票，超18万人参与，Superior Intelligence 以40.4%暂时领先。",
+          "url": "https://www.aibase.com/news/31203",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-20T09:49:14.368921Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "1402a6e61563686b89d31bcad99e60c2b51f8857",
+          "title": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+          "title_zh": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+          "title_en": null,
+          "title_original": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+          "summary": null,
+          "recommend_reason_zh": "Trump 在 Truth Social 和 X 发起为 AI 改名的投票，超18万人参与，Superior Intelligence 以40.4%暂时领先。",
+          "url": "https://www.aibase.com/news/31203",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-20T09:49:14.368921Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7594,
+      "importance": 0.7594,
+      "importance_score": 0.7594,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9545,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-20T09:49:14.368921Z",
+      "latest_at": "2026-09-20T09:49:14.368921Z",
+      "primary_item": {
+        "id": "1402a6e61563686b89d31bcad99e60c2b51f8857",
+        "title": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+        "title_zh": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+        "title_en": null,
+        "title_original": "特朗普要给“人工智能”改名：18 万人投票，“卓越智能”暂时领先",
+        "summary": null,
+        "recommend_reason_zh": "Trump 在 Truth Social 和 X 发起为 AI 改名的投票，超18万人参与，Superior Intelligence 以40.4%暂时领先。",
+        "url": "https://www.aibase.com/news/31203",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 10,
+      "persona_review": "改个名字不影响任何API调用，纯口水，划走。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -1034,15 +1118,15 @@
       ],
       "item_count": 5,
       "duplicate_count": 5,
-      "score": 0.5884,
-      "importance": 0.5884,
-      "importance_score": 0.5884,
+      "score": 0.5817,
+      "importance": 0.5817,
+      "importance_score": 0.5817,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8198,
+        "recency": 0.7825,
         "story_heat": 1.0
       },
       "category": "multi_source",
@@ -1069,7 +1153,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -1117,15 +1201,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7623,
-      "importance": 0.7623,
-      "importance_score": 0.7623,
+      "score": 0.7543,
+      "importance": 0.7543,
+      "importance_score": 0.7543,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9703,
+        "recency": 0.9262,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1153,7 +1237,148 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
+      }
+    },
+    {
+      "story_id": "story_59e8eb3eb9e5",
+      "title": "人工智能与“知识共享”的瓦解",
+      "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons",
+      "primary_url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons",
+      "source": "www.chesterwisniewski.com",
+      "source_name": "Buzzing",
+      "sources": [
+        {
+          "id": "1479d0bb44615475dc260d7847b1ebe331ca711e",
+          "title": "人工智能与“知识共享”的瓦解",
+          "title_zh": "人工智能与“知识共享”的瓦解",
+          "title_en": null,
+          "title_original": "人工智能与“知识共享”的瓦解",
+          "summary": "The balance of software copyright protection and openness has always been fraught with minutiae and detail that bores all but the most nerdy of pedants. Yet, through much effort and 40 years of debate we had reached an equilibrium. Now AI has thrown that out the window.\nWhen I was young I remember typing in BASIC programs from magazines into my Commodore 64 and later teaching myself REXX to write games for a BBS I ran. Without these “open” examples, I would never have been empowered to teach mys",
+          "recommend_reason_zh": "作者从在 Commodore 64 上输入 BASIC、自学 REXX 为 BBS 写游戏讲起，回顾 40 年软件版权与开放平衡，指出 AI/LLM 无视 GPL、CC-SA 等许可吞噬内容，使 GitHub 分享者被 AI bot 的 pull request 淹没。",
+          "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons",
+          "source": "www.chesterwisniewski.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-20T12:50:12.972000Z"
+        },
+        {
+          "id": "510bc5f41a64af0dcb1125f4de5b403c68eed0c3",
+          "title": "人工智能与“知识共享”的瓦解 / AI and the Destruction of the Creative Commons",
+          "title_zh": "人工智能与“知识共享”的瓦解",
+          "title_en": "AI and the Destruction of the Creative Commons",
+          "title_original": "AI and the Destruction of the Creative Commons",
+          "summary": "The balance of software copyright protection and openness has always been fraught with minutiae and detail that bores all but the most nerdy of pedants. Yet, through much effort and 40 years of debate we had reached an equilibrium. Now AI has thrown that out the window.\nWhen I was young I remember typing in BASIC programs from magazines into my Commodore 64 and later teaching myself REXX to write games for a BBS I ran. Without these “open” examples, I would never have been empowered to teach mys",
+          "recommend_reason_zh": "文章从作者在 Commodore 64 上敲 BASIC、自学 REXX 写 BBS 游戏，到 GPL/MPL/CC-SA 和 Doom shareware 形成的开放平衡，揭示 LLM 无视版权与 license 吞噬网络内容，使 GitHub 被 AI 生成的 pull request 淹没，开源从礼物变负债。",
+          "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-20T10:07:51Z"
+        },
+        {
+          "id": "2f14c09bbcc2c0bbbcc43982591753c4c9f214b9",
+          "title": "AI 与 Creative Commons 的毁灭 / AI and the Destruction of the Creative Commons",
+          "title_zh": "AI 与 Creative Commons 的毁灭",
+          "title_en": "AI and the Destruction of the Creative Commons",
+          "title_original": "AI and the Destruction of the Creative Commons",
+          "summary": "Is a social contract being broken? Yeah, kind of, but the problems that that contract existed to solve are no longer a thing. Creation is now easy and commodified. We finally have computer we can interact with in natural language, something people tried to do for at least 70 years and never made any significant progress on until LLM arrived. If you want to gatekeep or only create stuff to boost your own ego or portfolio, then AI might be an issue, if you actually want to build stuff, AI is godse",
+          "recommend_reason_zh": "这篇讨论 AI 与 Creative Commons 的文章称创作已容易且商品化，LLM 实现了70年未成的自然语言交互，并引 GPL 支持者担忧 AI 削弱署名和强制共享，最终 free software 会随软件之死消亡。",
+          "url": "https://news.ycombinator.com/item?id=49774329",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-20T10:07:51Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "Hacker News",
+        "hackernews",
+        "www.chesterwisniewski.com"
+      ],
+      "items": [
+        {
+          "id": "1479d0bb44615475dc260d7847b1ebe331ca711e",
+          "title": "人工智能与“知识共享”的瓦解",
+          "title_zh": "人工智能与“知识共享”的瓦解",
+          "title_en": null,
+          "title_original": "人工智能与“知识共享”的瓦解",
+          "summary": "The balance of software copyright protection and openness has always been fraught with minutiae and detail that bores all but the most nerdy of pedants. Yet, through much effort and 40 years of debate we had reached an equilibrium. Now AI has thrown that out the window.\nWhen I was young I remember typing in BASIC programs from magazines into my Commodore 64 and later teaching myself REXX to write games for a BBS I ran. Without these “open” examples, I would never have been empowered to teach mys",
+          "recommend_reason_zh": "作者从在 Commodore 64 上输入 BASIC、自学 REXX 为 BBS 写游戏讲起，回顾 40 年软件版权与开放平衡，指出 AI/LLM 无视 GPL、CC-SA 等许可吞噬内容，使 GitHub 分享者被 AI bot 的 pull request 淹没。",
+          "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons",
+          "source": "www.chesterwisniewski.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-20T12:50:12.972000Z"
+        },
+        {
+          "id": "510bc5f41a64af0dcb1125f4de5b403c68eed0c3",
+          "title": "人工智能与“知识共享”的瓦解 / AI and the Destruction of the Creative Commons",
+          "title_zh": "人工智能与“知识共享”的瓦解",
+          "title_en": "AI and the Destruction of the Creative Commons",
+          "title_original": "AI and the Destruction of the Creative Commons",
+          "summary": "The balance of software copyright protection and openness has always been fraught with minutiae and detail that bores all but the most nerdy of pedants. Yet, through much effort and 40 years of debate we had reached an equilibrium. Now AI has thrown that out the window.\nWhen I was young I remember typing in BASIC programs from magazines into my Commodore 64 and later teaching myself REXX to write games for a BBS I ran. Without these “open” examples, I would never have been empowered to teach mys",
+          "recommend_reason_zh": "文章从作者在 Commodore 64 上敲 BASIC、自学 REXX 写 BBS 游戏，到 GPL/MPL/CC-SA 和 Doom shareware 形成的开放平衡，揭示 LLM 无视版权与 license 吞噬网络内容，使 GitHub 被 AI 生成的 pull request 淹没，开源从礼物变负债。",
+          "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-20T10:07:51Z"
+        },
+        {
+          "id": "2f14c09bbcc2c0bbbcc43982591753c4c9f214b9",
+          "title": "AI 与 Creative Commons 的毁灭 / AI and the Destruction of the Creative Commons",
+          "title_zh": "AI 与 Creative Commons 的毁灭",
+          "title_en": "AI and the Destruction of the Creative Commons",
+          "title_original": "AI and the Destruction of the Creative Commons",
+          "summary": "Is a social contract being broken? Yeah, kind of, but the problems that that contract existed to solve are no longer a thing. Creation is now easy and commodified. We finally have computer we can interact with in natural language, something people tried to do for at least 70 years and never made any significant progress on until LLM arrived. If you want to gatekeep or only create stuff to boost your own ego or portfolio, then AI might be an issue, if you actually want to build stuff, AI is godse",
+          "recommend_reason_zh": "这篇讨论 AI 与 Creative Commons 的文章称创作已容易且商品化，LLM 实现了70年未成的自然语言交互，并引 GPL 支持者担忧 AI 削弱署名和强制共享，最终 free software 会随软件之死消亡。",
+          "url": "https://news.ycombinator.com/item?id=49774329",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-20T10:07:51Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5703,
+      "importance": 0.5703,
+      "importance_score": 0.5703,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.997,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-09-20T10:07:51Z",
+      "latest_at": "2026-09-20T12:50:12.972000Z",
+      "primary_item": {
+        "id": "1479d0bb44615475dc260d7847b1ebe331ca711e",
+        "title": "人工智能与“知识共享”的瓦解",
+        "title_zh": "人工智能与“知识共享”的瓦解",
+        "title_en": null,
+        "title_original": "人工智能与“知识共享”的瓦解",
+        "summary": "The balance of software copyright protection and openness has always been fraught with minutiae and detail that bores all but the most nerdy of pedants. Yet, through much effort and 40 years of debate we had reached an equilibrium. Now AI has thrown that out the window.\nWhen I was young I remember typing in BASIC programs from magazines into my Commodore 64 and later teaching myself REXX to write games for a BBS I ran. Without these “open” examples, I would never have been empowered to teach mys",
+        "recommend_reason_zh": "作者从在 Commodore 64 上输入 BASIC、自学 REXX 为 BBS 写游戏讲起，回顾 40 年软件版权与开放平衡，指出 AI/LLM 无视 GPL、CC-SA 等许可吞噬内容，使 GitHub 分享者被 AI bot 的 pull request 淹没。",
+        "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons",
+        "source": "www.chesterwisniewski.com",
+        "source_name": "Buzzing"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 30,
+      "persona_review": "又一篇AI与版权的观点文，没方案没数据，扫一眼标题就够了。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -1201,15 +1426,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7623,
-      "importance": 0.7623,
-      "importance_score": 0.7623,
+      "score": 0.7543,
+      "importance": 0.7543,
+      "importance_score": 0.7543,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9703,
+        "recency": 0.9262,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1237,44 +1462,44 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
-      "story_id": "story_2a34a5394301",
-      "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
-      "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
-      "primary_url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+      "story_id": "story_d33cb89128f1",
+      "title": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对 / If AI coding is lowering your code quality, you're not managing quality right",
+      "url": "https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code",
+      "primary_url": "https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code",
       "source": "Hacker News",
       "source_name": "TechURLs",
       "sources": [
         {
-          "id": "00cfbfd1df3d0c8f23a73ce6cc21dfd6d0e3f7b6",
-          "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
-          "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "summary": "Akademy talk imagines Plasma assembling itself around a personal model of each user\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nsoftware\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nKDE's annual conference takes place this weekend at Graz University of Technology in Austria, with an AI-native desktop proposal likely to divide attendees",
-          "recommend_reason_zh": "KDE30周年Akademy上由资深贡献者主讲AI-native演讲提出，用加密个人内核让桌面按用户组装，并回顾2003年KDE3.1测试中60人87%满意",
-          "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+          "id": "c7024b8c75b3bc78856d913f02bf0ed94317d5e3",
+          "title": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对 / If AI coding is lowering your code quality, you're not managing quality right",
+          "title_zh": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对",
+          "title_en": "If AI coding is lowering your code quality, you're not managing quality right",
+          "title_original": "If AI coding is lowering your code quality, you're not managing quality right",
+          "summary": "One common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like thi",
+          "recommend_reason_zh": "文章称盲目合并 AI coding agents 的 PRs 并上 prod 会伤质量，但 spec-driven development、AI 审查需求和 TDD 等分层防御能让 bug 不增甚至减少，同时产出提高 2-2x，人工试用仍不可替代。",
+          "url": "https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-09-20T07:38:37Z"
+          "published_at": "2026-09-20T11:37:10Z"
         },
         {
-          "id": "bc21a632a40e1f97e732039b46c29ee009726253",
-          "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
-          "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "summary": "Sounds like a gimmick that will be annoying after a week. Users who aren’t KDE developers don’t want a desktop to love them back, in fact they don’t care or want to think about their desktop beyond launching their apps and window management.\nreply\nreply\nI kind of understand the intention like show a custom compiled widget stuff, but then that would be a custom dashboard and not a desktop. Even if it was a dashboard, I don’t wanna burn tokens to create gimmicky widgets\nreply\nreply\nSorry to be ann",
-          "recommend_reason_zh": "KDE 30周年有人提出 AI-native 桌面提案，评论者一边嫌烧 token 造 widget 是噱头，一边说若本地 AI 能解决 KDE Wallet 忘 WiFi 密码就愿试。",
-          "url": "https://news.ycombinator.com/item?id=49773439",
+          "id": "a0cc66d677a58ada0048da67d0529cb6cb96621a",
+          "title": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对 / If AI coding is lowering your code quality, you're not managing quality right",
+          "title_zh": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对",
+          "title_en": "If AI coding is lowering your code quality, you're not managing quality right",
+          "title_original": "If AI coding is lowering your code quality, you're not managing quality right",
+          "summary": "However, I just don't think that's realistic. It's asking an author to suddenly become an editor. It's asking somebody who writes code to now read and debug others code. It can actually be harder to find the the bug in a tricky piece of code than it can be to write your own correct code from scratch. I see AI introduce all sorts of bugs all the time in my personal projects that I would never introduce, and would never think to test for, especially around anything graphical.\nIt can actually be ha",
+          "recommend_reason_zh": "文章称 AI 编码下人人输出都像 Ferrari，难知内部质量；作者说 AI 常引入他想不到、尤其图形相关的 bug，审查 AI 代码是 soul crushing 的工作，这本质是管理问题。",
+          "url": "https://news.ycombinator.com/item?id=49774795",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-09-20T07:38:37Z"
+          "published_at": "2026-09-20T11:37:10Z"
         }
       ],
       "source_count": 2,
@@ -1284,72 +1509,72 @@
       ],
       "items": [
         {
-          "id": "00cfbfd1df3d0c8f23a73ce6cc21dfd6d0e3f7b6",
-          "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
-          "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "summary": "Akademy talk imagines Plasma assembling itself around a personal model of each user\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nsoftware\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nKDE's annual conference takes place this weekend at Graz University of Technology in Austria, with an AI-native desktop proposal likely to divide attendees",
-          "recommend_reason_zh": "KDE30周年Akademy上由资深贡献者主讲AI-native演讲提出，用加密个人内核让桌面按用户组装，并回顾2003年KDE3.1测试中60人87%满意",
-          "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+          "id": "c7024b8c75b3bc78856d913f02bf0ed94317d5e3",
+          "title": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对 / If AI coding is lowering your code quality, you're not managing quality right",
+          "title_zh": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对",
+          "title_en": "If AI coding is lowering your code quality, you're not managing quality right",
+          "title_original": "If AI coding is lowering your code quality, you're not managing quality right",
+          "summary": "One common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like thi",
+          "recommend_reason_zh": "文章称盲目合并 AI coding agents 的 PRs 并上 prod 会伤质量，但 spec-driven development、AI 审查需求和 TDD 等分层防御能让 bug 不增甚至减少，同时产出提高 2-2x，人工试用仍不可替代。",
+          "url": "https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-09-20T07:38:37Z"
+          "published_at": "2026-09-20T11:37:10Z"
         },
         {
-          "id": "bc21a632a40e1f97e732039b46c29ee009726253",
-          "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
-          "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-          "summary": "Sounds like a gimmick that will be annoying after a week. Users who aren’t KDE developers don’t want a desktop to love them back, in fact they don’t care or want to think about their desktop beyond launching their apps and window management.\nreply\nreply\nI kind of understand the intention like show a custom compiled widget stuff, but then that would be a custom dashboard and not a desktop. Even if it was a dashboard, I don’t wanna burn tokens to create gimmicky widgets\nreply\nreply\nSorry to be ann",
-          "recommend_reason_zh": "KDE 30周年有人提出 AI-native 桌面提案，评论者一边嫌烧 token 造 widget 是噱头，一边说若本地 AI 能解决 KDE Wallet 忘 WiFi 密码就愿试。",
-          "url": "https://news.ycombinator.com/item?id=49773439",
+          "id": "a0cc66d677a58ada0048da67d0529cb6cb96621a",
+          "title": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对 / If AI coding is lowering your code quality, you're not managing quality right",
+          "title_zh": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对",
+          "title_en": "If AI coding is lowering your code quality, you're not managing quality right",
+          "title_original": "If AI coding is lowering your code quality, you're not managing quality right",
+          "summary": "However, I just don't think that's realistic. It's asking an author to suddenly become an editor. It's asking somebody who writes code to now read and debug others code. It can actually be harder to find the the bug in a tricky piece of code than it can be to write your own correct code from scratch. I see AI introduce all sorts of bugs all the time in my personal projects that I would never introduce, and would never think to test for, especially around anything graphical.\nIt can actually be ha",
+          "recommend_reason_zh": "文章称 AI 编码下人人输出都像 Ferrari，难知内部质量；作者说 AI 常引入他想不到、尤其图形相关的 bug，审查 AI 代码是 soul crushing 的工作，这本质是管理问题。",
+          "url": "https://news.ycombinator.com/item?id=49774795",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-09-20T07:38:37Z"
+          "published_at": "2026-09-20T11:37:10Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5402,
-      "importance": 0.5402,
-      "importance_score": 0.5402,
+      "score": 0.5421,
+      "importance": 0.5421,
+      "importance_score": 0.5421,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9691,
+        "recency": 0.9797,
         "story_heat": 0.25
       },
       "category": "watch",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-09-20T07:38:37Z",
-      "latest_at": "2026-09-20T07:38:37Z",
+      "earliest_at": "2026-09-20T11:37:10Z",
+      "latest_at": "2026-09-20T11:37:10Z",
       "primary_item": {
-        "id": "00cfbfd1df3d0c8f23a73ce6cc21dfd6d0e3f7b6",
-        "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
-        "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
-        "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-        "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-        "summary": "Akademy talk imagines Plasma assembling itself around a personal model of each user\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nsoftware\nAkademy talk imagines Plasma assembling itself around a personal model of each user\nKDE's annual conference takes place this weekend at Graz University of Technology in Austria, with an AI-native desktop proposal likely to divide attendees",
-        "recommend_reason_zh": "KDE30周年Akademy上由资深贡献者主讲AI-native演讲提出，用加密个人内核让桌面按用户组装，并回顾2003年KDE3.1测试中60人87%满意",
-        "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+        "id": "c7024b8c75b3bc78856d913f02bf0ed94317d5e3",
+        "title": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对 / If AI coding is lowering your code quality, you're not managing quality right",
+        "title_zh": "如果 AI 编程正在拉低你的代码质量，那说明你的质量管理方式不对",
+        "title_en": "If AI coding is lowering your code quality, you're not managing quality right",
+        "title_original": "If AI coding is lowering your code quality, you're not managing quality right",
+        "summary": "One common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like this: “Sure, AI helps you output more code, but won’t the quality suffer?”\nOne common take on the coding agents that I see goes something like thi",
+        "recommend_reason_zh": "文章称盲目合并 AI coding agents 的 PRs 并上 prod 会伤质量，但 spec-driven development、AI 审查需求和 TDD 等分层防御能让 bug 不增甚至减少，同时产出提高 2-2x，人工试用仍不可替代。",
+        "url": "https://www.i-kh.net/p/if-ai-coding-is-lowering-your-code",
         "source": "Hacker News",
         "source_name": "TechURLs"
       },
       "persona_id": "pragmatic",
-      "persona_score": 27,
-      "persona_review": "桌面 AI 提案阶段，没代码没路线图，装不了也不用改配置，扫过即可。",
+      "persona_score": 42,
+      "persona_review": "又一篇管理视角的观点文，没有可抄的流程和工具，扫眼标题即可。",
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -1426,15 +1651,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5356,
-      "importance": 0.5356,
-      "importance_score": 0.5356,
+      "score": 0.5279,
+      "importance": 0.5279,
+      "importance_score": 0.5279,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9432,
+        "recency": 0.9003,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1461,7 +1686,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -1509,15 +1734,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7623,
-      "importance": 0.7623,
-      "importance_score": 0.7623,
+      "score": 0.7543,
+      "importance": 0.7543,
+      "importance_score": 0.7543,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9703,
+        "recency": 0.9262,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1545,7 +1770,231 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
+      }
+    },
+    {
+      "story_id": "story_fc0b2a01d33a",
+      "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
+      "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
+      "primary_url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
+      "sources": [
+        {
+          "id": "9da649dafa4b5f5196ef314e323cfe253aa0fa62",
+          "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
+          "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
+          "title_en": "Can you tell which images are AI-generated?",
+          "title_original": "Can you tell which images are AI-generated?",
+          "summary": null,
+          "recommend_reason_zh": "60秒判断图片是真实照片还是AI生成，答对+100分、答错−100分，3×连击+150、5×+200、10×及以上+300，答错或超时连击清零，每图最多10秒。",
+          "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-09-19T23:02:34Z"
+        },
+        {
+          "id": "31ce996fefc7b9388c866d8a7b7e3142648ee1ad",
+          "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
+          "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
+          "title_en": "Can you tell which images are AI-generated?",
+          "title_original": "Can you tell which images are AI-generated?",
+          "summary": null,
+          "recommend_reason_zh": "这篇内容介绍一个辨别 AI 生成图的限时游戏，作者称 AI 图常有明显中心主体且景深、bokeh 不自然，评论提到 90s round、10s per image 并呼吁无计时模式。",
+          "url": "https://news.ycombinator.com/item?id=49770847",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-19T23:02:34Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "9da649dafa4b5f5196ef314e323cfe253aa0fa62",
+          "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
+          "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
+          "title_en": "Can you tell which images are AI-generated?",
+          "title_original": "Can you tell which images are AI-generated?",
+          "summary": null,
+          "recommend_reason_zh": "60秒判断图片是真实照片还是AI生成，答对+100分、答错−100分，3×连击+150、5×+200、10×及以上+300，答错或超时连击清零，每图最多10秒。",
+          "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-09-19T23:02:34Z"
+        },
+        {
+          "id": "31ce996fefc7b9388c866d8a7b7e3142648ee1ad",
+          "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
+          "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
+          "title_en": "Can you tell which images are AI-generated?",
+          "title_original": "Can you tell which images are AI-generated?",
+          "summary": null,
+          "recommend_reason_zh": "这篇内容介绍一个辨别 AI 生成图的限时游戏，作者称 AI 图常有明显中心主体且景深、bokeh 不自然，评论提到 90s round、10s per image 并呼吁无计时模式。",
+          "url": "https://news.ycombinator.com/item?id=49770847",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-19T23:02:34Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5129,
+      "importance": 0.5129,
+      "importance_score": 0.5129,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.817,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-09-19T23:02:34Z",
+      "latest_at": "2026-09-19T23:02:34Z",
+      "primary_item": {
+        "id": "9da649dafa4b5f5196ef314e323cfe253aa0fa62",
+        "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
+        "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
+        "title_en": "Can you tell which images are AI-generated?",
+        "title_original": "Can you tell which images are AI-generated?",
+        "summary": null,
+        "recommend_reason_zh": "60秒判断图片是真实照片还是AI生成，答对+100分、答错−100分，3×连击+150、5×+200、10×及以上+300，答错或超时连击清零，每图最多10秒。",
+        "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
+        "source": "Hacker News · 24h最热",
+        "source_name": "Zeli"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 35,
+      "persona_review": "网页小游戏，玩两分钟图个乐，对交付代码没帮助。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-20T13:11:59.790574Z"
+      }
+    },
+    {
+      "story_id": "story_2a34a5394301",
+      "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
+      "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+      "primary_url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+      "source": "Hacker News",
+      "source_name": "TechURLs",
+      "sources": [
+        {
+          "id": "00cfbfd1df3d0c8f23a73ce6cc21dfd6d0e3f7b6",
+          "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
+          "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "summary": null,
+          "recommend_reason_zh": "KDE30周年Akademy上由资深贡献者主讲AI-native演讲提出，用加密个人内核让桌面按用户组装，并回顾2003年KDE3.1测试中60人87%满意",
+          "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-20T07:38:37Z"
+        },
+        {
+          "id": "bc21a632a40e1f97e732039b46c29ee009726253",
+          "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
+          "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "summary": null,
+          "recommend_reason_zh": "KDE 30周年有人提出 AI-native 桌面提案，评论者一边嫌烧 token 造 widget 是噱头，一边说若本地 AI 能解决 KDE Wallet 忘 WiFi 密码就愿试。",
+          "url": "https://news.ycombinator.com/item?id=49773439",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-20T07:38:37Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "00cfbfd1df3d0c8f23a73ce6cc21dfd6d0e3f7b6",
+          "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
+          "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "summary": null,
+          "recommend_reason_zh": "KDE30周年Akademy上由资深贡献者主讲AI-native演讲提出，用加密个人内核让桌面按用户组装，并回顾2003年KDE3.1测试中60人87%满意",
+          "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-20T07:38:37Z"
+        },
+        {
+          "id": "bc21a632a40e1f97e732039b46c29ee009726253",
+          "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
+          "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+          "summary": null,
+          "recommend_reason_zh": "KDE 30周年有人提出 AI-native 桌面提案，评论者一边嫌烧 token 造 widget 是噱头，一边说若本地 AI 能解决 KDE Wallet 忘 WiFi 密码就愿试。",
+          "url": "https://news.ycombinator.com/item?id=49773439",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-20T07:38:37Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5323,
+      "importance": 0.5323,
+      "importance_score": 0.5323,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.925,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-09-20T07:38:37Z",
+      "latest_at": "2026-09-20T07:38:37Z",
+      "primary_item": {
+        "id": "00cfbfd1df3d0c8f23a73ce6cc21dfd6d0e3f7b6",
+        "title": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案 / KDE turns 30 and someone's brought an AI-native desktop proposal",
+        "title_zh": "KDE 迎来 30 周年，有人提出了 AI 原生桌面方案",
+        "title_en": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+        "title_original": "KDE turns 30 and someone's brought an AI-native desktop proposal",
+        "summary": null,
+        "recommend_reason_zh": "KDE30周年Akademy上由资深贡献者主讲AI-native演讲提出，用加密个人内核让桌面按用户组装，并回顾2003年KDE3.1测试中60人87%满意",
+        "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
+        "source": "Hacker News",
+        "source_name": "TechURLs"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 27,
+      "persona_review": "桌面 AI 提案阶段，没代码没路线图，装不了也不用改配置，扫过即可。",
+      "persona_meta": {
+        "mode": "llm",
+        "model": "deepseek-v4-flash",
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     },
     {
@@ -1593,15 +2042,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7623,
-      "importance": 0.7623,
-      "importance_score": 0.7623,
+      "score": 0.7543,
+      "importance": 0.7543,
+      "importance_score": 0.7543,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9703,
+        "recency": 0.9262,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1629,399 +2078,7 @@
       "persona_meta": {
         "mode": "llm",
         "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
-      }
-    },
-    {
-      "story_id": "story_adc7678cfd9c",
-      "title": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台 / Show HN: I created an open source locally usable full fledged AI platform",
-      "url": "https://github.com/theguysudo/ENZO",
-      "primary_url": "https://github.com/theguysudo/ENZO",
-      "source": "Hacker News",
-      "source_name": "TechURLs",
-      "sources": [
-        {
-          "id": "b47217b4c029b973886670ffddeeb9a209d8a78c",
-          "title": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台 / Show HN: I created an open source locally usable full fledged AI platform",
-          "title_zh": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台",
-          "title_en": "Show HN: I created an open source locally usable full fledged AI platform",
-          "title_original": "Show HN: I created an open source locally usable full fledged AI platform",
-          "summary": null,
-          "recommend_reason_zh": "ENZO 是开源自托管 AI 工作台，支持 300+ 模型与 Gmail、Calendar，BYOK 直连 Groq，无账号无订阅，Colab 可一键部署。",
-          "url": "https://github.com/theguysudo/ENZO",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-19T23:47:35Z"
-        },
-        {
-          "id": "1693ba4b22de4899bb95f498140994964b3b5132",
-          "title": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台 / Show HN: I created an open source locally usable full fledged AI platform",
-          "title_zh": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台",
-          "title_en": "Show HN: I created an open source locally usable full fledged AI platform",
-          "title_original": "Show HN: I created an open source locally usable full fledged AI platform",
-          "summary": null,
-          "recommend_reason_zh": "enzo 是开源本地 AI 平台，聚合 2000 多个模型的免费 API，能创建专用 agent、连接 Gmail/Calendar 读重要邮件，并用 AES 256 位加密保管 API key，但作者提醒第三方扩展仍可能窃取浏览器登录令牌。",
-          "url": "https://news.ycombinator.com/item?id=49771118",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-19T23:47:35Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "b47217b4c029b973886670ffddeeb9a209d8a78c",
-          "title": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台 / Show HN: I created an open source locally usable full fledged AI platform",
-          "title_zh": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台",
-          "title_en": "Show HN: I created an open source locally usable full fledged AI platform",
-          "title_original": "Show HN: I created an open source locally usable full fledged AI platform",
-          "summary": null,
-          "recommend_reason_zh": "ENZO 是开源自托管 AI 工作台，支持 300+ 模型与 Gmail、Calendar，BYOK 直连 Groq，无账号无订阅，Colab 可一键部署。",
-          "url": "https://github.com/theguysudo/ENZO",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-19T23:47:35Z"
-        },
-        {
-          "id": "1693ba4b22de4899bb95f498140994964b3b5132",
-          "title": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台 / Show HN: I created an open source locally usable full fledged AI platform",
-          "title_zh": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台",
-          "title_en": "Show HN: I created an open source locally usable full fledged AI platform",
-          "title_original": "Show HN: I created an open source locally usable full fledged AI platform",
-          "summary": null,
-          "recommend_reason_zh": "enzo 是开源本地 AI 平台，聚合 2000 多个模型的免费 API，能创建专用 agent、连接 Gmail/Calendar 读重要邮件，并用 AES 256 位加密保管 API key，但作者提醒第三方扩展仍可能窃取浏览器登录令牌。",
-          "url": "https://news.ycombinator.com/item?id=49771118",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-19T23:47:35Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5215,
-      "importance": 0.5215,
-      "importance_score": 0.5215,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.8652,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-19T23:47:35Z",
-      "latest_at": "2026-09-19T23:47:35Z",
-      "primary_item": {
-        "id": "b47217b4c029b973886670ffddeeb9a209d8a78c",
-        "title": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台 / Show HN: I created an open source locally usable full fledged AI platform",
-        "title_zh": "Show HN：我打造了一个开源、可在本地运行的全功能 AI 平台",
-        "title_en": "Show HN: I created an open source locally usable full fledged AI platform",
-        "title_original": "Show HN: I created an open source locally usable full fledged AI platform",
-        "summary": null,
-        "recommend_reason_zh": "ENZO 是开源自托管 AI 工作台，支持 300+ 模型与 Gmail、Calendar，BYOK 直连 Groq，无账号无订阅，Colab 可一键部署。",
-        "url": "https://github.com/theguysudo/ENZO",
-        "source": "Hacker News",
-        "source_name": "TechURLs"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 66,
-      "persona_review": "clone 就能本地跑，可以试；但同类自托管平台已多，先扫文档和 star 再决定投不投入。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
-      }
-    },
-    {
-      "story_id": "story_2cfaa4801b8e",
-      "title": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-      "url": "https://www.aibase.com/news/31184",
-      "primary_url": "https://www.aibase.com/news/31184",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "d90342d5cace8758cb65582174d867ec5a6896f2",
-          "title": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-          "title_zh": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-          "title_en": null,
-          "title_original": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-          "summary": null,
-          "recommend_reason_zh": "OpenAI上线ChatGPT的Word官方插件，免费用户也能直接用，可整理零散笔记成初稿、提炼长报告；但配额与Codex共享，且只读取当前文档。",
-          "url": "https://www.aibase.com/news/31184",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-20T07:44:09.675567Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "d90342d5cace8758cb65582174d867ec5a6896f2",
-          "title": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-          "title_zh": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-          "title_en": null,
-          "title_original": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-          "summary": null,
-          "recommend_reason_zh": "OpenAI上线ChatGPT的Word官方插件，免费用户也能直接用，可整理零散笔记成初稿、提炼长报告；但配额与Codex共享，且只读取当前文档。",
-          "url": "https://www.aibase.com/news/31184",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-20T07:44:09.675567Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7623,
-      "importance": 0.7623,
-      "importance_score": 0.7623,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9703,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-20T07:44:09.675567Z",
-      "latest_at": "2026-09-20T07:44:09.675567Z",
-      "primary_item": {
-        "id": "d90342d5cace8758cb65582174d867ec5a6896f2",
-        "title": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-        "title_zh": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-        "title_en": null,
-        "title_original": "ChatGPT 正式入驻 Word：免费用户也能用，办公文档里三套 AI 同台厮杀",
-        "summary": null,
-        "recommend_reason_zh": "OpenAI上线ChatGPT的Word官方插件，免费用户也能直接用，可整理零散笔记成初稿、提炼长报告；但配额与Codex共享，且只读取当前文档。",
-        "url": "https://www.aibase.com/news/31184",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 66,
-      "persona_review": "写文档能白嫖，办公党今天可用；做开发的不用改代码，知道就行。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
-      }
-    },
-    {
-      "story_id": "story_fc0b2a01d33a",
-      "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
-      "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
-      "primary_url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
-      "source": "Hacker News",
-      "source_name": "TechURLs",
-      "sources": [
-        {
-          "id": "01123abf2193f80954e3b75ef7c7a9c0c60c8104",
-          "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
-          "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
-          "title_en": "Can you tell which images are AI-generated?",
-          "title_original": "Can you tell which images are AI-generated?",
-          "summary": null,
-          "recommend_reason_zh": "60秒判断图片是真实照片还是AI生成，答对+100分、答错−100分，3×连击+150、5×+200、10×及以上+300，答错或超时连击清零，每图最多10秒。",
-          "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-19T23:02:34Z"
-        },
-        {
-          "id": "31ce996fefc7b9388c866d8a7b7e3142648ee1ad",
-          "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
-          "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
-          "title_en": "Can you tell which images are AI-generated?",
-          "title_original": "Can you tell which images are AI-generated?",
-          "summary": null,
-          "recommend_reason_zh": "这篇内容介绍一个辨别 AI 生成图的限时游戏，作者称 AI 图常有明显中心主体且景深、bokeh 不自然，评论提到 90s round、10s per image 并呼吁无计时模式。",
-          "url": "https://news.ycombinator.com/item?id=49770847",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-19T23:02:34Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "01123abf2193f80954e3b75ef7c7a9c0c60c8104",
-          "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
-          "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
-          "title_en": "Can you tell which images are AI-generated?",
-          "title_original": "Can you tell which images are AI-generated?",
-          "summary": null,
-          "recommend_reason_zh": "60秒判断图片是真实照片还是AI生成，答对+100分、答错−100分，3×连击+150、5×+200、10×及以上+300，答错或超时连击清零，每图最多10秒。",
-          "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-19T23:02:34Z"
-        },
-        {
-          "id": "31ce996fefc7b9388c866d8a7b7e3142648ee1ad",
-          "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
-          "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
-          "title_en": "Can you tell which images are AI-generated?",
-          "title_original": "Can you tell which images are AI-generated?",
-          "summary": null,
-          "recommend_reason_zh": "这篇内容介绍一个辨别 AI 生成图的限时游戏，作者称 AI 图常有明显中心主体且景深、bokeh 不自然，评论提到 90s round、10s per image 并呼吁无计时模式。",
-          "url": "https://news.ycombinator.com/item?id=49770847",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-19T23:02:34Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5199,
-      "importance": 0.5199,
-      "importance_score": 0.5199,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.8559,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-19T23:02:34Z",
-      "latest_at": "2026-09-19T23:02:34Z",
-      "primary_item": {
-        "id": "01123abf2193f80954e3b75ef7c7a9c0c60c8104",
-        "title": "你能分辨哪些图片是 AI 生成的吗？ / Can you tell which images are AI-generated?",
-        "title_zh": "你能分辨哪些图片是 AI 生成的吗？",
-        "title_en": "Can you tell which images are AI-generated?",
-        "title_original": "Can you tell which images are AI-generated?",
-        "summary": null,
-        "recommend_reason_zh": "60秒判断图片是真实照片还是AI生成，答对+100分、答错−100分，3×连击+150、5×+200、10×及以上+300，答错或超时连击清零，每图最多10秒。",
-        "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai",
-        "source": "Hacker News",
-        "source_name": "TechURLs"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 35,
-      "persona_review": "网页小游戏，玩两分钟图个乐，对交付代码没帮助。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
-      }
-    },
-    {
-      "story_id": "story_919e226efbae",
-      "title": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-      "url": "https://www.aibase.com/news/31191",
-      "primary_url": "https://www.aibase.com/news/31191",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "153c2fdd94c035054d3218ec0941a6dd0e4421f5",
-          "title": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-          "title_zh": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-          "title_en": null,
-          "title_original": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-          "summary": null,
-          "recommend_reason_zh": "DeepSeek在9月19日补充说明API计费，明确9月20日、10月10日调休周末及中秋3天、国庆7天均按非高峰价收费，工作日高峰价为低谷两倍。",
-          "url": "https://www.aibase.com/news/31191",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-20T07:44:09.675567Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "153c2fdd94c035054d3218ec0941a6dd0e4421f5",
-          "title": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-          "title_zh": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-          "title_en": null,
-          "title_original": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-          "summary": null,
-          "recommend_reason_zh": "DeepSeek在9月19日补充说明API计费，明确9月20日、10月10日调休周末及中秋3天、国庆7天均按非高峰价收费，工作日高峰价为低谷两倍。",
-          "url": "https://www.aibase.com/news/31191",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-20T07:44:09.675567Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7623,
-      "importance": 0.7623,
-      "importance_score": 0.7623,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9703,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-20T07:44:09.675567Z",
-      "latest_at": "2026-09-20T07:44:09.675567Z",
-      "primary_item": {
-        "id": "153c2fdd94c035054d3218ec0941a6dd0e4421f5",
-        "title": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-        "title_zh": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-        "title_en": null,
-        "title_original": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
-        "summary": null,
-        "recommend_reason_zh": "DeepSeek在9月19日补充说明API计费，明确9月20日、10月10日调休周末及中秋3天、国庆7天均按非高峰价收费，工作日高峰价为低谷两倍。",
-        "url": "https://www.aibase.com/news/31191",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 84,
-      "persona_review": "调休日也算半价，把批量任务排到这段窗口跑，账单直接砍一半。",
-      "persona_meta": {
-        "mode": "llm",
-        "model": "deepseek-v4-flash",
-        "scored_at": "2026-09-20T09:57:29.128336Z"
+        "scored_at": "2026-09-20T13:11:59.790574Z"
       }
     }
   ]
