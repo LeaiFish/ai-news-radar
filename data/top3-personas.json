@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T07:54:43.138760Z",
+  "generated_at": "2026-09-20T09:58:01.971957Z",
   "model": "deepseek-v4-flash",
   "personas": [
     {
@@ -17,30 +17,10 @@
   ],
   "items": [
     {
-      "story_id": "story_9e712b92557c",
-      "title": "SpaceXAI 推出 Grok Voice Transcribe 2.0：错误率砍半、价格纹丝不动，流式语音识别登顶榜单",
-      "url": "https://www.aibase.com/news/31183",
-      "rank": 1,
-      "reviews": {
-        "cynic": {
-          "score": 58,
-          "review": "错误率砍半是跟哪版比、登的是谁家榜，全没说；不涨价这句倒实在。"
-        },
-        "paper-police": {
-          "score": 32,
-          "review": "榜单名称、测试集、对比基线都没给，错误率砍半是自报数字，无代码无可复现证据。"
-        },
-        "pragmatic": {
-          "score": 85,
-          "review": "做语音转写的今天就能换，错误率减半不加价，先拿自家音频跑一遍对比。"
-        }
-      }
-    },
-    {
       "story_id": "story_919e226efbae",
       "title": "DeepSeek明确调休日计费规则，中秋国庆迎来十天\"半价窗口\"",
       "url": "https://www.aibase.com/news/31191",
-      "rank": 2,
+      "rank": 1,
       "reviews": {
         "cynic": {
           "score": 62,
@@ -57,22 +37,42 @@
       }
     },
     {
-      "story_id": "story_e1fd0d999371",
-      "title": "MiniMax 开源 Code CLI：命令行编程工具亮出 76.7% 通过率，把企业级 harness 摊在阳光下",
-      "url": "https://www.aibase.com/news/31189",
+      "story_id": "story_99589b68f290",
+      "title": "微信 AI 团队开源 WeKnora：知识库不再只“动嘴”，还能在沙箱里“动手”",
+      "url": "https://www.aibase.com/news/31201",
+      "rank": 2,
+      "reviews": {
+        "cynic": {
+          "score": 67,
+          "review": "开源是真，但沙箱“动手”没给隔离、成本和评测；先别让知识库把宿主给动没了。"
+        },
+        "paper-police": {
+          "score": 58,
+          "review": "开源仓库算一块证据，但仅单一新闻源，无论文无公开 benchmark，等实测跑分。"
+        },
+        "pragmatic": {
+          "score": 80,
+          "review": "开源可 clone，RAG 加沙箱能动手；先跑通再评，别急着上生产。"
+        }
+      }
+    },
+    {
+      "story_id": "story_79fe487188c4",
+      "title": "编排 Claude Code Agent：幕僚长模式 / Orchestrating Claude Code Agents: The Chief of Staff Pattern",
+      "url": "https://asyncdot.com/blog/chief-of-staff-pattern-orchestrating-claude-code-sessions",
       "rank": 3,
       "reviews": {
         "cynic": {
-          "score": 74,
-          "review": "开源代码是真加分，但76.7%不交代是哪张榜、什么配置，半张答卷就想收满分？"
+          "score": 52,
+          "review": "多开几个 agent 就叫幕僚长模式，命名满分、数据零；多源核实是 HN 给自己投了两票。"
         },
         "paper-police": {
-          "score": 54,
-          "review": "虽称开源，但仅一条聚合稿，仓库与评测细节无链接，跑分无法复核。"
+          "score": 40,
+          "review": "博客只讲编排思路，无代码无基准，两个来源都是 HN 同一条，复现无从谈起。"
         },
         "pragmatic": {
-          "score": 82,
-          "review": "开源 CLI 加评测 harness 可 clone，自建编码 agent 的直接抄这套跑分基线。"
+          "score": 72,
+          "review": "多开 Claude Code 会话的编排套路，照抄就能用，省得自己踩坑。"
         }
       }
     }
