@@ -108,6 +108,47 @@ def test_topics_hub_keeps_group_filter():
     assert 'id="topicsPane"' in home
     assert 'next === "topics"' in app
     assert "AINewsRadarTopics" in app
+    assert 'if (group.filter === "topics")' not in js
+    assert "kind: \"topic\"" not in js
+    assert "按哪一个主题" not in js
+
+
+def test_topics_hub_chips_stay_group_level():
+    js = read("assets/topics.js")
+    assert "function hubFilterOptions(" in js
+    assert 'label: "全部"' in js
+    assert 'kind: "group"' in js
+    assert 'if (group.filter === "topics")' not in js
+    hub_fn = js.split("function hubFilterOptions(")[1].split("function resolveHubFilter(")[0]
+    assert "topicsForGroup" not in hub_fn
+    config = read("config/topics.json")
+    assert '"id": "lens"' in config
+    assert '"id": "company"' in config
+    assert '"id": "tech"' in config
+
+
+def test_topics_nav_hides_entry_cta_and_empty_chrome():
+    css = read("assets/styles.css")
+    classic_css = read("classic/assets/styles.css")
+    app = read("assets/app.js")
+    classic = read("classic/assets/app.js")
+    topics_css = read("assets/topics.css")
+    assert ".brief-wrap[hidden]" in css
+    assert ".section-nav-wrap[hidden]" in css
+    assert ".topics-entry[hidden]" in css
+    assert "body.is-topics-nav .topics-entry" in css
+    assert "body.is-topics-nav .brief-wrap" in css
+    assert "body.is-topics-nav .topics-entry" in classic_css
+    assert "body.is-topics-nav .section-nav-wrap" in classic_css
+    assert 'classList.toggle("is-topics-nav"' in app
+    assert 'el.hidden = nav === "topics"' in app
+    assert 'el.hidden = next === "topics"' in classic
+    assert ".topics-filter:empty" in topics_css
+    home = read("index.html")
+    classic_html = read("classic/index.html")
+    assert 'class="topics-entry"' in home
+    assert 'href="./topics/"' in home
+    assert 'class="topics-entry"' in classic_html
 
 
 def test_sidebar_topics_stays_in_shell():
@@ -135,3 +176,5 @@ def test_classic_unhides_embedded_topics_pane():
     source = read("classic/assets/app.js")
     assert "topicsPane.hidden = next !== \"topics\"" in source
     assert 'body.classList.toggle("is-topics-nav"' in source or "is-topics-nav" in source
+    assert 'a.topics-entry' in source
+    assert 'section-nav-wrap' in source

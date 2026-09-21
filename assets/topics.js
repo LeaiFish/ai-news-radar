@@ -165,7 +165,6 @@
 
   function hubFilterOptions(index) {
     const groups = Array.isArray(index.groups) ? index.groups : [];
-    const topics = Array.isArray(index.topics) ? index.topics : [];
     const options = [{ id: "all", label: "全部", kind: "all" }];
     groups.forEach((group) => {
       options.push({
@@ -174,16 +173,6 @@
         kind: "group",
         groupId: group.id,
       });
-      if (group.filter === "topics") {
-        topicsForGroup(topics, group.id).forEach((topic) => {
-          options.push({
-            id: topic.id,
-            label: topic.name,
-            kind: "topic",
-            groupId: group.id,
-          });
-        });
-      }
     });
     return options;
   }
@@ -191,7 +180,13 @@
   function resolveHubFilter(index) {
     const raw = hubFilterFromLocation();
     const options = hubFilterOptions(index);
-    return options.find((option) => option.id === raw) || options[0];
+    const direct = options.find((option) => option.id === raw);
+    if (direct) return direct;
+    const topic = (Array.isArray(index.topics) ? index.topics : []).find((item) => item.id === raw);
+    if (topic) {
+      return options.find((option) => option.id === topic.group) || options[0];
+    }
+    return options[0];
   }
 
   function applyHubFilter(index, selected) {
@@ -225,14 +220,11 @@
     const selected = resolveHubFilter(index);
     filterEl.hidden = false;
     filterEl.replaceChildren();
-    const label = document.createElement("p");
-    label.className = "topics-filter-label";
-    label.id = "topicsFilterLabel";
-    label.textContent = "按哪一个主题";
+    filterEl.setAttribute("aria-label", "按组别筛选");
     const chips = document.createElement("div");
     chips.className = "topics-filter-chips";
     chips.setAttribute("role", "group");
-    chips.setAttribute("aria-labelledby", "topicsFilterLabel");
+    chips.setAttribute("aria-label", "按组别筛选");
     hubFilterOptions(index).forEach((option) => {
       const btn = document.createElement("button");
       btn.type = "button";
@@ -247,7 +239,7 @@
       });
       chips.appendChild(btn);
     });
-    filterEl.append(label, chips);
+    filterEl.append(chips);
   }
 
   function renderHub(index) {

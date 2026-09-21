@@ -2425,3 +2425,41 @@ html[data-theme="system"] .pane-toolbar {
   margin: 4px 0 32px;
 }
 
+/* [hidden] loses to author display:grid/flex; keep leftover chrome out of 主题. */
+.section-nav-wrap[hidden],
+.topics-entry[hidden],
+.brief-wrap[hidden],
+.hot-strip-wrap[hidden],
+.list-wrap[hidden],
+.waytoagi-wrap[hidden],
+.advanced-panel[hidden] {
+  display: none;
+}
+
+body.is-topics-nav .topics-entry,
+body.is-topics-nav .section-nav-wrap,
+body[data-radar-nav="topics"] .topics-entry,
+body[data-radar-nav="topics"] .section-nav-wrap,
+body.is-topics-nav a.hero-link[href="./topics/"],
+body[data-radar-nav="topics"] a.hero-link[href="./topics/"],
+body.is-topics-nav .pane-toolbar,
+body.is-topics-nav .pane-meta,
+body.is-topics-nav .hot-strip-wrap,
+body.is-topics-nav .advanced-panel,
+body.is-topics-nav .hot-board-wrap,
+body.is-topics-nav .brief-wrap,
+body.is-topics-nav .top3-board-wrap,
+body.is-topics-nav .waytoagi-wrap,
+body.is-topics-nav #newsListWrap,
+body[data-radar-nav="topics"] .pane-toolbar,
+body[data-radar-nav="topics"] .pane-meta,
+body[data-radar-nav="topics"] .hot-strip-wrap,
+body[data-radar-nav="topics"] .advanced-panel,
+body[data-radar-nav="topics"] #hotBoardWrap,
+body[data-radar-nav="topics"] #briefWrap,
+body[data-radar-nav="topics"] #top3BoardWrap,
+body[data-radar-nav="topics"] .waytoagi-wrap,
+body[data-radar-nav="topics"] #newsListWrap {
+  display: none;
+}
+

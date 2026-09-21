@@ -2954,6 +2954,11 @@ async function loadStoriesData() {
 async function applyRadarNav(nav, { scroll = true } = {}) {
   const next = RADAR_NAVS.has(nav) ? nav : "selected";
   document.body.classList.toggle("is-topics-nav", next === "topics");
+  document.querySelectorAll("a.topics-entry").forEach((el) => {
+    el.hidden = next === "topics";
+  });
+  const sectionNavWrap = document.querySelector(".section-nav-wrap");
+  if (sectionNavWrap) sectionNavWrap.hidden = next === "topics";
   const topicsPane = document.getElementById("topicsPane");
   if (topicsPane) topicsPane.hidden = next !== "topics";
   if (next === "favorites") {

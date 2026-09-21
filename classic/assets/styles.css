@@ -2799,6 +2799,20 @@ summary:focus-visible {
   display: none;
 }
 
+.section-nav-wrap[hidden],
+.topics-entry[hidden] {
+  display: none;
+}
+
 body.is-topics-nav main.shell > :not(.hero):not(#topicsPane):not(.service-status-panel) {
+  display: none;
+}
+
+body.is-topics-nav .topics-entry,
+body.is-topics-nav .section-nav-wrap,
+body[data-radar-nav="topics"] .topics-entry,
+body[data-radar-nav="topics"] .section-nav-wrap,
+body.is-topics-nav a.hero-link[href="./topics/"],
+body[data-radar-nav="topics"] a.hero-link[href="./topics/"] {
   display: none;
 }

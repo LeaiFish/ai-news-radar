@@ -37,7 +37,8 @@
   color: var(--muted);
 }
 
-.topics-filter[hidden] {
+.topics-filter[hidden],
+.topics-filter:empty {
   display: none;
 }
 

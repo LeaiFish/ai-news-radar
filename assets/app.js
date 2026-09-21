@@ -626,6 +626,10 @@ function renderPaneChrome() {
   }
   const sectionNavWrap = document.querySelector(".section-nav-wrap");
   if (sectionNavWrap) sectionNavWrap.hidden = nav === "topics";
+  document.body.classList.toggle("is-topics-nav", nav === "topics");
+  document.querySelectorAll("a.topics-entry").forEach((el) => {
+    el.hidden = nav === "topics";
+  });
 }
 
 

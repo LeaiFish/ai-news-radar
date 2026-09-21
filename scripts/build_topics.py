@@ -460,7 +460,7 @@ PAGE_TEMPLATE = """<!doctype html>
     <meta name="description" content="{description}" />
     <link rel="icon" href="{root}assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="{root}assets/styles.css?v=topics-2" />
-    <link rel="stylesheet" href="{root}assets/topics.css?v=topics-3" />
+    <link rel="stylesheet" href="{root}assets/topics.css?v=topics-4" />
     <link rel="stylesheet" href="{root}assets/sidebar.css?v=pane-3" />
     <script src="{root}assets/sidebar.js?v=pane-3"></script>
   </head>
@@ -492,7 +492,7 @@ PAGE_TEMPLATE = """<!doctype html>
           </nav>
         </div>
       </header>
-      <nav class="topics-filter" id="topicsFilter" aria-label="按主题筛选" hidden></nav>
+      <nav class="topics-filter" id="topicsFilter" aria-label="按组别筛选" hidden></nav>
       <section id="topicsMain" class="topics-main" aria-live="polite">
         <p class="topics-status" id="topicsStatus">正在加载主题…</p>
       </section>
@@ -514,7 +514,7 @@ PAGE_TEMPLATE = """<!doctype html>
         </div>
       </article>
     </template>
-    <script src="{root}assets/topics.js?v=topics-4" defer></script>
+    <script src="{root}assets/topics.js?v=topics-5" defer></script>
   </body>
 </html>
 """
