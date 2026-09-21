@@ -396,6 +396,8 @@ def build_topics_payload(
             "latest_published_at": latest.get("published_at") or "",
             "items_url": f"data/topics/{topic['id']}.json",
         }
+        if topic.get("filter"):
+            summary["filter"] = topic["filter"]
         topic_rows.append(summary)
         detail_by_id[topic["id"]] = {
             **summary,
@@ -457,8 +459,8 @@ PAGE_TEMPLATE = """<!doctype html>
     <title>{title}</title>
     <meta name="description" content="{description}" />
     <link rel="icon" href="{root}assets/logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="{root}assets/styles.css?v=topics-1" />
-    <link rel="stylesheet" href="{root}assets/topics.css?v=topics-1" />
+    <link rel="stylesheet" href="{root}assets/styles.css?v=topics-2" />
+    <link rel="stylesheet" href="{root}assets/topics.css?v=topics-2" />
   </head>
   <body>
     <a class="skip-link" href="#topicsMain">跳到主题内容</a>
@@ -488,6 +490,7 @@ PAGE_TEMPLATE = """<!doctype html>
           </nav>
         </div>
       </header>
+      <nav class="topics-filter" id="topicsFilter" aria-label="按主题筛选" hidden></nav>
       <section id="topicsMain" class="topics-main" aria-live="polite">
         <p class="topics-status" id="topicsStatus">正在加载主题…</p>
       </section>
@@ -509,7 +512,7 @@ PAGE_TEMPLATE = """<!doctype html>
         </div>
       </article>
     </template>
-    <script src="{root}assets/topics.js?v=topics-1" defer></script>
+    <script src="{root}assets/topics.js?v=topics-2" defer></script>
   </body>
 </html>
 """
@@ -529,7 +532,7 @@ def render_topic_page(*, topic_id: str = "", name: str = "", description: str = 
     else:
         title = "主题 · AI News Radar"
         heading = "按主题看 AI"
-        lead = "按公司与模型、技术方向浏览主题，持续汇集雷达里匹配到的故事。"
+        lead = "按产业透镜、公司与模型、技术方向浏览主题。顶部可筛选要看的主题。"
         topic_attr = ""
         topics_current = "page"
     return PAGE_TEMPLATE.format(

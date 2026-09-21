@@ -20,6 +20,12 @@
   },
   "groups": [
     {
+      "id": "lens",
+      "name": "产业透镜",
+      "description": "从收费、入口、Agent 落地与办公组织看产业怎么走",
+      "filter": "topics"
+    },
+    {
       "id": "company",
       "name": "公司与模型",
       "description": "按厂商与模型系追踪：谁发了什么、又赢了哪一局"
@@ -30,8 +36,52 @@
       "description": "按技术领域深挖：Agent、编码、多模态、开源与部署"
     }
   ],
-  "topic_count": 31,
+  "topic_count": 35,
   "topics": [
+    {
+      "id": "monetization",
+      "name": "付费订阅与商业化",
+      "description": "厂商怎么收费：定价与套餐、抽佣分成、付费转化与价格调整。",
+      "group": "lens",
+      "item_count": 105,
+      "listed_count": 80,
+      "latest_title": "纽约时报诉讼文件披露：微软高管称 AI 抓取是人类历史上最大规模的劳动力盗用",
+      "latest_published_at": "2026-09-19T23:58:19.151000Z",
+      "items_url": "data/topics/monetization.json"
+    },
+    {
+      "id": "product-entry",
+      "name": "产品入口与链路",
+      "description": "国民级应用把 AI 放在哪：搜索框与助手链路、桌面/侧边栏入口，以及谁在抢入口。",
+      "group": "lens",
+      "item_count": 5,
+      "listed_count": 5,
+      "latest_title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
+      "latest_published_at": "2026-09-17T06:15:53.142696Z",
+      "items_url": "data/topics/product-entry.json"
+    },
+    {
+      "id": "agent-ecosystem",
+      "name": "Agent 路线与生态",
+      "description": "Agent 产品形态、开放生态与落地场景：多智能体、MCP/工具调用、插件与开放平台。",
+      "group": "lens",
+      "item_count": 13,
+      "listed_count": 13,
+      "latest_title": "Show HN: Openmsg, agent-to-agent talk while they run, Claude<>Codex<>OpenCode",
+      "latest_published_at": "2026-09-20T20:10:39Z",
+      "items_url": "data/topics/agent-ecosystem.json"
+    },
+    {
+      "id": "workplace",
+      "name": "办公生产力与组织重构",
+      "description": "AI 办公产品进展，以及组织/人事为 AI 做的结构调整：新部门、编制与裁员。",
+      "group": "lens",
+      "item_count": 174,
+      "listed_count": 80,
+      "latest_title": "最新桌面 Agent，AI 工作流解码办公效率提升",
+      "latest_published_at": "2026-09-20T15:00:59Z",
+      "items_url": "data/topics/workplace.json"
+    },
     {
       "id": "doubao",
       "name": "豆包",
