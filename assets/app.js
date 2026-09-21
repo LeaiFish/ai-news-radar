@@ -612,6 +612,10 @@ function renderPaneChrome() {
   if (hotBoardWrapEl) hotBoardWrapEl.hidden = nav !== "hot";
   if (top3BoardWrapEl && nav !== "selected") top3BoardWrapEl.hidden = true;
   if (waytoagiWrapEl && nav !== "selected" && nav !== "all") waytoagiWrapEl.hidden = true;
+  const advancedPanelEl = document.querySelector(".advanced-panel");
+  if (advancedPanelEl) {
+    advancedPanelEl.hidden = nav === "hot" || nav === "brief" || nav === "favorites";
+  }
 }
 
 

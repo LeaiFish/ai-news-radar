@@ -2214,8 +2214,7 @@ summary:focus-visible {
 }
 
 .hot-strip-item {
-  display: grid;
-  grid-template-columns: 22px minmax(0, 1fr) auto;
+  display: flex;
   gap: 8px;
   align-items: center;
   padding: 8px 12px;
@@ -2240,6 +2239,7 @@ summary:focus-visible {
 }
 
 .hot-strip-title {
+  flex: 1 1 auto;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
