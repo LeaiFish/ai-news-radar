@@ -39,14 +39,14 @@
     <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" sizes="180x180" />
     <link rel="manifest" href="./site.webmanifest" />
     <script src="./assets/view-mode.js?v=dual-view-0713c" data-root="./"></script>
-    <link rel="stylesheet" href="./assets/styles.css?v=topics-1" />
+    <link rel="stylesheet" href="./assets/styles.css?v=pane-1" />
     <link rel="stylesheet" href="./assets/view-switch.css?v=dual-view-0713b" />
     <link rel="stylesheet" href="./assets/service-status.css?v=20260909" />
-    <link rel="stylesheet" href="./assets/sidebar.css?v=sidebar-1" />
-    <script src="./assets/sidebar.js?v=sidebar-1" data-root="./"></script>
+    <link rel="stylesheet" href="./assets/sidebar.css?v=pane-1" />
+    <script src="./assets/sidebar.js?v=pane-1" data-root="./"></script>
   </head>
   <body>
-    <a class="skip-link" href="#hotBoardWrap">跳到当前热点</a>
+    <a class="skip-link" href="#paneTop">跳到内容</a>
     <main class="shell">
       <header class="hero">
         <div class="hero-main">
@@ -92,26 +92,44 @@
         </div>
 
         <section class="section-nav-wrap" aria-label="内容栏目">
-          <div class="section-tabs" id="sectionTabs" role="tablist" aria-label="AI 新闻栏目"></div>
-          <div class="section-scroll-hint" aria-hidden="true">左右滑动，查看更多栏目 →</div>
           <a class="topics-entry" href="./topics/">主题 · 按公司、技术方向与产业透镜浏览 →</a>
         </section>
       </header>
 
       <section class="service-status-panel" id="serviceStatusPanel" aria-live="polite" hidden></section>
 
-      <section class="primary-controls">
-        <div class="mode-switch curation-mode-switch" role="group" aria-label="精选/全量切换">
-          <button id="modeSelectedBtn" class="mode-btn active" type="button" aria-pressed="true">
-            <span class="mode-btn-icon" aria-hidden="true">&#10022;</span>精选
-          </button>
-          <button id="modeAllBtn" class="mode-btn" type="button" aria-pressed="false">
-            <span class="mode-btn-icon" aria-hidden="true">&#9776;</span>全量
-          </button>
+      <section class="pane-top" id="paneTop">
+        <div class="pane-heading">
+          <p class="pane-kicker" id="paneKicker">精选</p>
+          <h2 class="pane-title" id="paneTitle">今日精选</h2>
+          <p class="pane-lead" id="paneLead">按栏目筛选，先看当前热点再读精选时间轴。</p>
         </div>
-        <input id="searchInput" type="search" placeholder="搜索 AI 信号 / 来源" aria-label="搜索 AI 信号或来源" />
-        <div class="mode-hint" id="modeHint">精选加载中</div>
-        <button class="clear-filters-btn" id="clearFiltersBtn" type="button" hidden>清除筛选</button>
+        <div class="pane-toolbar" id="paneToolbar">
+          <div class="pane-chip-row section-tabs" id="sectionTabs" role="tablist" aria-label="内容分类"></div>
+          <div class="pane-chip-row section-tabs" id="sourceKindChips" role="tablist" aria-label="来源类型" hidden></div>
+          <div class="pane-search-row primary-controls" id="paneSearchRow">
+            <div class="mode-switch curation-mode-switch" role="group" aria-label="精选/全量切换" hidden>
+              <button id="modeSelectedBtn" class="mode-btn active" type="button" aria-pressed="true">
+                <span class="mode-btn-icon" aria-hidden="true">&#10022;</span>精选
+              </button>
+              <button id="modeAllBtn" class="mode-btn" type="button" aria-pressed="false">
+                <span class="mode-btn-icon" aria-hidden="true">&#9776;</span>全量
+              </button>
+            </div>
+            <input id="searchInput" type="search" placeholder="搜索标题 / 摘要" aria-label="搜索标题或摘要" />
+            <div class="mode-hint" id="modeHint">精选加载中</div>
+            <button class="clear-filters-btn" id="clearFiltersBtn" type="button" hidden>清除筛选</button>
+          </div>
+        </div>
+        <div class="pane-meta" id="paneMeta" hidden></div>
+      </section>
+
+      <section class="hot-strip-wrap" id="hotStripWrap" aria-label="当前热点速览" hidden>
+        <div class="hot-strip-head">
+          <h3>当前热点</h3>
+          <button class="hot-strip-more" id="hotStripMoreBtn" type="button">热点榜 →</button>
+        </div>
+        <div id="hotStripList" class="hot-strip-list"></div>
       </section>
 
       <details class="advanced-panel">
@@ -141,12 +159,17 @@
           </div>
       </details>
 
-      <section class="list-wrap hot-board-wrap" id="hotBoardWrap" aria-label="当前热点">
+      <section class="list-wrap hot-board-wrap" id="hotBoardWrap" aria-label="热点榜" hidden>
         <div class="list-head">
-          <h2>当前热点</h2>
+          <h2>热点榜</h2>
           <span id="hotBoardMeta">按热度排序</span>
         </div>
         <div id="hotBoardList" class="hot-board-list"></div>
+      </section>
+
+      <section class="brief-wrap" id="briefWrap" aria-label="AI 日报" hidden>
+        <div class="brief-digest" id="briefDigest"></div>
+        <ol class="brief-list" id="briefList"></ol>
       </section>
 
       <section class="list-wrap top3-board-wrap" id="top3BoardWrap" aria-label="今日 TOP3 · 三口味锐评" hidden>
@@ -211,7 +234,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
     <script src="./assets/motion.js?v=aihot-0715b" defer></script>
-    <script src="./assets/app.js?v=sidebar-1" defer></script>
+    <script src="./assets/app.js?v=pane-1" defer></script>
     <script src="./assets/service-status.js?v=20260909" defer></script>
   </body>
 </html>

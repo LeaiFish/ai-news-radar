@@ -264,6 +264,14 @@ html[data-theme="light"] {
   padding: 28px 22px 48px;
 }
 
+.radar-fav-inner .pane-kicker {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 760;
+  letter-spacing: 0.04em;
+}
+
 .radar-fav-inner h2 {
   margin: 0;
   font-size: 28px;
@@ -374,7 +382,10 @@ html[data-theme="light"] {
   margin-left: 4px;
 }
 
-.hot-row .radar-fav-btn {
+.hot-row .radar-fav-btn,
+.hot-card .radar-fav-btn,
+.brief-item .radar-fav-btn,
+.hot-strip-item .radar-fav-btn {
   margin-left: 2px;
 }
 
