@@ -33,6 +33,9 @@ def test_sidebar_maps_to_existing_radar_features_not_aihot_products():
     assert "更新日志" not in js
     assert "关于" not in js
     assert "反馈" not in js
+    assert "github.com/LearnPrompt" not in js
+    assert "function githubRepo" not in js
+    assert "function githubUrl" not in js
     assert "aria-label=\"更多\"" not in js
     assert 'data-radar-nav="selected"' in js
     assert 'data-radar-nav="all"' in js

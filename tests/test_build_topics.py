@@ -42,6 +42,8 @@ def test_default_config_loads():
     assert "doubao" in ids
     assert "quark" in ids
     assert "hunyuan" in ids
+    assert "perplexity" in ids
+    assert "apple" in ids
     assert "monetization" in ids
     assert "product-entry" in ids
     assert "agent-ecosystem" in ids
@@ -64,12 +66,67 @@ def test_lens_group_leads_hub_filter_contract():
     assert lens_ids == ["monetization", "product-entry", "agent-ecosystem", "workplace"]
 
 
-def test_company_topics_lead_with_domestic_products():
+def test_company_topics_follow_lea_override_order():
     config = load_topic_config(ROOT / "config" / "topics.json")
     company_ids = [item["id"] for item in config["topics"] if item["group"] == "company"]
-    assert company_ids[:4] == ["doubao", "qwen", "quark", "hunyuan"]
-    assert company_ids[4] == "openai"
-    assert "deepseek" in company_ids[4:]
+    assert company_ids[:7] == [
+        "doubao",
+        "qwen",
+        "hunyuan",
+        "quark",
+        "kimi",
+        "deepseek",
+        "minimax",
+    ]
+    assert company_ids[7:15] == [
+        "openai",
+        "anthropic",
+        "google-gemini",
+        "meta-llama",
+        "xai",
+        "perplexity",
+        "apple",
+        "microsoft",
+    ]
+    assert company_ids[15] == "nvidia"
+    for tid in ("zhipu", "huggingface", "cursor", "openrouter"):
+        assert company_ids.index(tid) > company_ids.index("nvidia")
+    assert company_ids[-4:] == ["zhipu", "huggingface", "cursor", "openrouter"]
+
+
+def test_tech_topics_lead_with_direction_priorities():
+    config = load_topic_config(ROOT / "config" / "topics.json")
+    tech_ids = [item["id"] for item in config["topics"] if item["group"] == "tech"]
+    assert tech_ids[:7] == [
+        "agent",
+        "coding",
+        "multimodal",
+        "on-device",
+        "open-source",
+        "mcp",
+        "model-releases",
+    ]
+    assert tech_ids[7:] == [
+        "image-gen",
+        "video",
+        "audio",
+        "embodied",
+        "reasoning",
+        "inference",
+    ]
+
+
+def test_lens_copy_asks_business_questions():
+    monetization = _config_topic("monetization")
+    product_entry = _config_topic("product-entry")
+    agent_ecosystem = _config_topic("agent-ecosystem")
+    workplace = _config_topic("workplace")
+    assert monetization["description"] == "各家怎么收费、谁在抽佣、付费转化与定价在怎么变？"
+    assert product_entry["description"] == "国民级 App 的 AI 入口在哪、搜索与助手链路怎么接、谁在抢入口？"
+    assert agent_ecosystem["description"] == "各家 Agent 的产品形态、开放生态与落地场景在怎么演进？"
+    assert workplace["description"] == "AI 办公产品的进展，以及各家为 AI 做的组织与人事调整？"
+    config = load_topic_config(ROOT / "config" / "topics.json")
+    assert config["groups"][0]["name"] == "产业透镜"
 
 
 def _config_topic(topic_id: str) -> dict:
@@ -103,6 +160,18 @@ def test_domestic_product_keywords_match_expected_aliases():
     assert record_matches_topic({"title": "腾讯混元发布新模型"}, hunyuan)
     assert record_matches_topic({"title": "Tencent Yuanbao desktop app"}, hunyuan)
     assert record_matches_topic({"title": "元宝接入混元大模型"}, hunyuan)
+
+    perplexity = _config_topic("perplexity")
+    apple = _config_topic("apple")
+    assert record_matches_topic({"title": "Perplexity launches Computer agent"}, perplexity)
+    assert record_matches_topic({"title": "Aravind Srinivas on Perplexity Comet"}, perplexity)
+    assert not record_matches_topic({"title": "A perplexing GPU pricing chart"}, perplexity)
+
+    assert record_matches_topic({"title": "Apple Intelligence adds on-device writing tools"}, apple)
+    assert record_matches_topic({"title": "苹果AI 更新 Siri"}, apple)
+    assert record_matches_topic({"title": "Siri gets a fully revamped assistant"}, apple)
+    assert not record_matches_topic({"title": "iPhone 17 Pro Max camera review"}, apple)
+    assert not record_matches_topic({"title": "apples to apples comparison of GPUs"}, apple)
 
 
 def test_lens_topic_keywords_match_business_and_product_stories():
@@ -157,7 +226,17 @@ def test_topics_payload_preserves_config_array_order(tmp_path: Path):
     assert [item["id"] for item in index["topics"]] == config_ids
     assert [item["id"] for item in payload["topics"]] == config_ids
     company_ids = [item["id"] for item in index["topics"] if item["group"] == "company"]
-    assert company_ids[:4] == ["doubao", "qwen", "quark", "hunyuan"]
+    assert company_ids[:4] == ["doubao", "qwen", "hunyuan", "quark"]
+    tech_ids = [item["id"] for item in index["topics"] if item["group"] == "tech"]
+    assert tech_ids[:7] == [
+        "agent",
+        "coding",
+        "multimodal",
+        "on-device",
+        "open-source",
+        "mcp",
+        "model-releases",
+    ]
     assert index["groups"][0]["id"] == "lens"
     assert index["groups"][0]["filter"] == "topics"
     lens_ids = [item["id"] for item in index["topics"] if item["group"] == "lens"]

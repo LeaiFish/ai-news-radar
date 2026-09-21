@@ -33,15 +33,15 @@
     {
       "id": "tech",
       "name": "技术方向",
-      "description": "按技术领域深挖：Agent、编码、多模态、开源与部署"
+      "description": "按技术领域深挖：Agent、编码、多模态、端侧与开源"
     }
   ],
-  "topic_count": 35,
+  "topic_count": 37,
   "topics": [
     {
       "id": "monetization",
       "name": "付费订阅与商业化",
-      "description": "厂商怎么收费：定价与套餐、抽佣分成、付费转化与价格调整。",
+      "description": "各家怎么收费、谁在抽佣、付费转化与定价在怎么变？",
       "group": "lens",
       "item_count": 107,
       "listed_count": 80,
@@ -52,7 +52,7 @@
     {
       "id": "product-entry",
       "name": "产品入口与链路",
-      "description": "国民级应用把 AI 放在哪：搜索框与助手链路、桌面/侧边栏入口，以及谁在抢入口。",
+      "description": "国民级 App 的 AI 入口在哪、搜索与助手链路怎么接、谁在抢入口？",
       "group": "lens",
       "item_count": 5,
       "listed_count": 5,
@@ -63,7 +63,7 @@
     {
       "id": "agent-ecosystem",
       "name": "Agent 路线与生态",
-      "description": "Agent 产品形态、开放生态与落地场景：多智能体、MCP/工具调用、插件与开放平台。",
+      "description": "各家 Agent 的产品形态、开放生态与落地场景在怎么演进？",
       "group": "lens",
       "item_count": 15,
       "listed_count": 15,
@@ -74,7 +74,7 @@
     {
       "id": "workplace",
       "name": "办公生产力与组织重构",
-      "description": "AI 办公产品进展，以及组织/人事为 AI 做的结构调整：新部门、编制与裁员。",
+      "description": "AI 办公产品的进展，以及各家为 AI 做的组织与人事调整？",
       "group": "lens",
       "item_count": 175,
       "listed_count": 80,
@@ -105,6 +105,17 @@
       "items_url": "data/topics/qwen.json"
     },
     {
+      "id": "hunyuan",
+      "name": "混元 / 元宝",
+      "description": "腾讯混元模型与元宝产品：Hunyuan 发布、腾讯元宝客户端与相关能力。",
+      "group": "company",
+      "item_count": 10,
+      "listed_count": 10,
+      "latest_title": "腾讯推出“混元智囊团”专家平台，AI行业竞争转向外部人才生态",
+      "latest_published_at": "2026-09-21T01:09:42.151785Z",
+      "items_url": "data/topics/hunyuan.json"
+    },
+    {
       "id": "quark",
       "name": "夸克",
       "description": "阿里夸克：夸克 App / 夸克 AI 产品动态，与通义千问模型系列分开追踪。",
@@ -116,15 +127,37 @@
       "items_url": "data/topics/quark.json"
     },
     {
-      "id": "hunyuan",
-      "name": "混元 / 元宝",
-      "description": "腾讯混元模型与元宝产品：Hunyuan 发布、腾讯元宝客户端与相关能力。",
+      "id": "kimi",
+      "name": "Kimi / 月之暗面",
+      "description": "月之暗面 Kimi 系列：长上下文、K 系列开源模型与产品演进。",
       "group": "company",
-      "item_count": 10,
-      "listed_count": 10,
-      "latest_title": "腾讯推出“混元智囊团”专家平台，AI行业竞争转向外部人才生态",
-      "latest_published_at": "2026-09-21T01:09:42.151785Z",
-      "items_url": "data/topics/hunyuan.json"
+      "item_count": 43,
+      "listed_count": 43,
+      "latest_title": "Looks like today may be a record day for token volume % of open models on Vercel AI Gateway: 🟦 Open 78.4% 🟨 Closed 21.6% While spend 💲 usually tells a different story, #3 and #4 today are Moonshot AI & DeepSeek. Addin...",
+      "latest_published_at": "2026-09-19T05:48:51Z",
+      "items_url": "data/topics/kimi.json"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "description": "DeepSeek（深度求索）的模型发布、开源权重、推理成本与技术报告。",
+      "group": "company",
+      "item_count": 127,
+      "listed_count": 80,
+      "latest_title": "也许我们误解了DeepSeek-V4.1-Flash，罪魁祸首其实是它",
+      "latest_published_at": "2026-09-21T06:05:30.850000Z",
+      "items_url": "data/topics/deepseek.json"
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "description": "MiniMax 的模型与产品：M 系列、语音与多模态、海螺视频与商业化进展。",
+      "group": "company",
+      "item_count": 22,
+      "listed_count": 22,
+      "latest_title": "MiniMax 开源 Code CLI：命令行编程工具亮出 76.7% 通过率，把企业级 harness 摊在阳光下",
+      "latest_published_at": "2026-09-20T07:44:09.675567Z",
+      "items_url": "data/topics/minimax.json"
     },
     {
       "id": "openai",
@@ -160,48 +193,15 @@
       "items_url": "data/topics/google-gemini.json"
     },
     {
-      "id": "deepseek",
-      "name": "DeepSeek",
-      "description": "DeepSeek（深度求索）的模型发布、开源权重、推理成本与技术报告。",
+      "id": "meta-llama",
+      "name": "Meta / Llama",
+      "description": "Meta 的开源模型与 AI 实验室：Llama 系列、PyTorch 周边与超级智能布局。",
       "group": "company",
-      "item_count": 127,
-      "listed_count": 80,
-      "latest_title": "也许我们误解了DeepSeek-V4.1-Flash，罪魁祸首其实是它",
-      "latest_published_at": "2026-09-21T06:05:30.850000Z",
-      "items_url": "data/topics/deepseek.json"
-    },
-    {
-      "id": "kimi",
-      "name": "Kimi / 月之暗面",
-      "description": "月之暗面 Kimi 系列：长上下文、K 系列开源模型与产品演进。",
-      "group": "company",
-      "item_count": 43,
-      "listed_count": 43,
-      "latest_title": "Looks like today may be a record day for token volume % of open models on Vercel AI Gateway: 🟦 Open 78.4% 🟨 Closed 21.6% While spend 💲 usually tells a different story, #3 and #4 today are Moonshot AI & DeepSeek. Addin...",
-      "latest_published_at": "2026-09-19T05:48:51Z",
-      "items_url": "data/topics/kimi.json"
-    },
-    {
-      "id": "minimax",
-      "name": "MiniMax",
-      "description": "MiniMax 的模型与产品：M 系列、语音与多模态、海螺视频与商业化进展。",
-      "group": "company",
-      "item_count": 22,
-      "listed_count": 22,
-      "latest_title": "MiniMax 开源 Code CLI：命令行编程工具亮出 76.7% 通过率，把企业级 harness 摊在阳光下",
-      "latest_published_at": "2026-09-20T07:44:09.675567Z",
-      "items_url": "data/topics/minimax.json"
-    },
-    {
-      "id": "zhipu",
-      "name": "智谱 / GLM",
-      "description": "智谱 GLM 系列：开源发布、代码与推理能力、ChatGLM 与生态进展。",
-      "group": "company",
-      "item_count": 30,
-      "listed_count": 30,
-      "latest_title": "智谱MaaS将上线\"数据不留存\"机制，用户调用内容用完即焚",
-      "latest_published_at": "2026-09-21T01:09:42.151785Z",
-      "items_url": "data/topics/zhipu.json"
+      "item_count": 32,
+      "listed_count": 32,
+      "latest_title": "Meta rolls out its Meta One subscription bundle globally, with expanded Meta AI capabilities powered by Muse, and $7.99/month and $19.99/month individual plans (Stevie Bonifield/The Verge)",
+      "latest_published_at": "2026-09-15T15:18:52Z",
+      "items_url": "data/topics/meta-llama.json"
     },
     {
       "id": "xai",
@@ -215,15 +215,26 @@
       "items_url": "data/topics/xai.json"
     },
     {
-      "id": "meta-llama",
-      "name": "Meta / Llama",
-      "description": "Meta 的开源模型与 AI 实验室：Llama 系列、PyTorch 周边与超级智能布局。",
+      "id": "perplexity",
+      "name": "Perplexity",
+      "description": "Perplexity 的搜索、订阅与 Agent 产品：问答、Comet 浏览器与 Computer 助手。",
       "group": "company",
-      "item_count": 32,
-      "listed_count": 32,
-      "latest_title": "Meta rolls out its Meta One subscription bundle globally, with expanded Meta AI capabilities powered by Muse, and $7.99/month and $19.99/month individual plans (Stevie Bonifield/The Verge)",
-      "latest_published_at": "2026-09-15T15:18:52Z",
-      "items_url": "data/topics/meta-llama.json"
+      "item_count": 15,
+      "listed_count": 15,
+      "latest_title": "Perplexity 自研 CobbleDB 替代 AWS DynamoDB，每年最多可节省一亿美元",
+      "latest_published_at": "2026-09-15T20:23:34Z",
+      "items_url": "data/topics/perplexity.json"
+    },
+    {
+      "id": "apple",
+      "name": "Apple / Apple Intelligence",
+      "description": "苹果的设备端与系统级 AI：Apple Intelligence、Siri、Core ML 与端侧模型。",
+      "group": "company",
+      "item_count": 86,
+      "listed_count": 80,
+      "latest_title": "Siri AI 和解开放申请：符合条件的美国 iPhone 用户每台可领 25 美元",
+      "latest_published_at": "2026-09-21T06:21:41.799068Z",
+      "items_url": "data/topics/apple.json"
     },
     {
       "id": "microsoft",
@@ -246,6 +257,17 @@
       "latest_title": "黄仁勋驳斥 AI 末日叙事：吓唬人不负责任，2030 年是世界末日概率为 0%",
       "latest_published_at": "2026-09-21T06:21:41.799068Z",
       "items_url": "data/topics/nvidia.json"
+    },
+    {
+      "id": "zhipu",
+      "name": "智谱 / GLM",
+      "description": "智谱 GLM 系列：开源发布、代码与推理能力、ChatGLM 与生态进展。",
+      "group": "company",
+      "item_count": 30,
+      "listed_count": 30,
+      "latest_title": "智谱MaaS将上线\"数据不留存\"机制，用户调用内容用完即焚",
+      "latest_published_at": "2026-09-21T01:09:42.151785Z",
+      "items_url": "data/topics/zhipu.json"
     },
     {
       "id": "huggingface",
@@ -303,17 +325,6 @@
       "items_url": "data/topics/coding.json"
     },
     {
-      "id": "reasoning",
-      "name": "推理能力",
-      "description": "模型推理与思维链：推理模型、数学/逻辑基准、test-time compute。",
-      "group": "tech",
-      "item_count": 0,
-      "listed_count": 0,
-      "latest_title": "",
-      "latest_published_at": "",
-      "items_url": "data/topics/reasoning.json"
-    },
-    {
       "id": "multimodal",
       "name": "多模态",
       "description": "文本之外的能力：视觉理解、图文混合、音视频输入输出。",
@@ -323,6 +334,50 @@
       "latest_title": "我国首款藏语多语言全模态 AI 输入法发布：覆盖手机电脑，支持三大方言语音输入",
       "latest_published_at": "2026-09-21T06:21:41.799068Z",
       "items_url": "data/topics/multimodal.json"
+    },
+    {
+      "id": "on-device",
+      "name": "端侧 AI",
+      "description": "跑在手机、电脑与边缘设备上的小模型、本地推理与端侧芯片。",
+      "group": "tech",
+      "item_count": 0,
+      "listed_count": 0,
+      "latest_title": "",
+      "latest_published_at": "",
+      "items_url": "data/topics/on-device.json"
+    },
+    {
+      "id": "open-source",
+      "name": "开源生态",
+      "description": "开源模型、框架与仓库：权重开放、社区爆火、开源与闭源消长。",
+      "group": "tech",
+      "item_count": 13,
+      "listed_count": 13,
+      "latest_title": "ZCode 道歉并开源:阿里云 OSS 已清空，Repo Wiki 功能已下线",
+      "latest_published_at": "2026-09-21T06:21:41.799068Z",
+      "items_url": "data/topics/open-source.json"
+    },
+    {
+      "id": "mcp",
+      "name": "MCP 与工具调用",
+      "description": "模型连接外部世界：MCP 生态、function calling 与工具链集成。",
+      "group": "tech",
+      "item_count": 2,
+      "listed_count": 2,
+      "latest_title": "Why MCP Was Always a Bad Idea",
+      "latest_published_at": "2026-09-20T19:44:40Z",
+      "items_url": "data/topics/mcp.json"
+    },
+    {
+      "id": "model-releases",
+      "name": "模型发布",
+      "description": "新模型的发布、开源与迭代：旗舰更新、权重放出、性能与价格变化。",
+      "group": "tech",
+      "item_count": 5,
+      "listed_count": 5,
+      "latest_title": "TypeSafe AI 推出决策专用模型 Jev：比大语言模型快 10 倍、成本仅十分之一",
+      "latest_published_at": "2026-09-21T06:21:41.799068Z",
+      "items_url": "data/topics/model-releases.json"
     },
     {
       "id": "image-gen",
@@ -369,26 +424,15 @@
       "items_url": "data/topics/embodied.json"
     },
     {
-      "id": "on-device",
-      "name": "端侧 AI",
-      "description": "跑在手机、电脑与边缘设备上的小模型、本地推理与端侧芯片。",
+      "id": "reasoning",
+      "name": "推理能力",
+      "description": "模型推理与思维链：推理模型、数学/逻辑基准、test-time compute。",
       "group": "tech",
       "item_count": 0,
       "listed_count": 0,
       "latest_title": "",
       "latest_published_at": "",
-      "items_url": "data/topics/on-device.json"
-    },
-    {
-      "id": "open-source",
-      "name": "开源生态",
-      "description": "开源模型、框架与仓库：权重开放、社区爆火、开源与闭源消长。",
-      "group": "tech",
-      "item_count": 13,
-      "listed_count": 13,
-      "latest_title": "ZCode 道歉并开源:阿里云 OSS 已清空，Repo Wiki 功能已下线",
-      "latest_published_at": "2026-09-21T06:21:41.799068Z",
-      "items_url": "data/topics/open-source.json"
+      "items_url": "data/topics/reasoning.json"
     },
     {
       "id": "inference",
@@ -400,28 +444,6 @@
       "latest_title": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像 / Qwen-Image-2.1： Compact， Efficient， and Unified Image Creation",
       "latest_published_at": "2026-09-20T14:40:14.401000Z",
       "items_url": "data/topics/inference.json"
-    },
-    {
-      "id": "mcp",
-      "name": "MCP 与工具调用",
-      "description": "模型连接外部世界：MCP 生态、function calling 与工具链集成。",
-      "group": "tech",
-      "item_count": 2,
-      "listed_count": 2,
-      "latest_title": "Why MCP Was Always a Bad Idea",
-      "latest_published_at": "2026-09-20T19:44:40Z",
-      "items_url": "data/topics/mcp.json"
-    },
-    {
-      "id": "model-releases",
-      "name": "模型发布",
-      "description": "新模型的发布、开源与迭代：旗舰更新、权重放出、性能与价格变化。",
-      "group": "tech",
-      "item_count": 5,
-      "listed_count": 5,
-      "latest_title": "TypeSafe AI 推出决策专用模型 Jev：比大语言模型快 10 倍、成本仅十分之一",
-      "latest_published_at": "2026-09-21T06:21:41.799068Z",
-      "items_url": "data/topics/model-releases.json"
     }
   ]
 }

@@ -26,6 +26,8 @@ def test_home_markup_has_distinct_pane_regions():
     assert 'id="topicsMain"' in source
     assert 'class="topics-entry"' in source
     assert 'href="./topics/"' in source
+    assert "GitHub 与接入指南" not in source
+    assert "github.com/LearnPrompt/ai-news-radar" not in source
     assert "模型榜" not in source
     assert "Tibo" not in source
 
