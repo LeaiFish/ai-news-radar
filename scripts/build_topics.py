@@ -461,6 +461,8 @@ PAGE_TEMPLATE = """<!doctype html>
     <link rel="icon" href="{root}assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="{root}assets/styles.css?v=topics-2" />
     <link rel="stylesheet" href="{root}assets/topics.css?v=topics-2" />
+    <link rel="stylesheet" href="{root}assets/sidebar.css?v=sidebar-1" />
+    <script src="{root}assets/sidebar.js?v=sidebar-1"></script>
   </head>
   <body>
     <a class="skip-link" href="#topicsMain">跳到主题内容</a>

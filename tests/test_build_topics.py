@@ -361,10 +361,13 @@ def test_topic_pages_use_relative_roots(tmp_path: Path):
     assert 'data-root="../"' in hub
     assert 'href="../"' in hub
     assert 'src="../assets/topics.js' in hub
+    assert 'href="../assets/sidebar.css' in hub
+    assert 'src="../assets/sidebar.js' in hub
     assert 'data-topic-id="openai"' in detail
     assert 'data-root="../../"' in detail
     assert 'href="../../"' in detail
     assert 'src="../../assets/topics.js' in detail
+    assert 'src="../../assets/sidebar.js' in detail
     assert len(written) == 2
 
 
@@ -385,3 +388,4 @@ def test_committed_topic_pages_cover_config():
         html = page.read_text(encoding="utf-8")
         assert f'data-topic-id="{topic["id"]}"' in html
         assert 'src="../../assets/topics.js' in html
+        assert 'src="../../assets/sidebar.js' in html
