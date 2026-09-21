@@ -21,7 +21,9 @@ def test_home_markup_has_distinct_pane_regions():
     assert 'id="hotBoardWrap"' in source
     assert 'id="briefWrap"' in source
     assert 'id="briefDigest"' in source
-    assert 'id="newsListWrap"' in source
+    assert 'id="topicsPane"' in source
+    assert 'id="topicsFilter"' in source
+    assert 'id="topicsMain"' in source
     assert 'class="topics-entry"' in source
     assert 'href="./topics/"' in source
     assert "模型榜" not in source
@@ -93,7 +95,41 @@ def test_favorites_pane_stays_localstorage_only():
 def test_topics_hub_keeps_group_filter():
     hub = read("topics/index.html")
     js = read("assets/topics.js")
+    home = read("index.html")
+    app = read("assets/app.js")
     assert 'id="topicsFilter"' in hub
     assert "topics-filter" in hub
     assert "function renderGroupFilter" in js or "topicsFilter" in js
     assert "data-radar-surface=\"topics\"" in hub
+    assert "function showHub(" in js
+    assert "function isEmbeddedHub(" in js
+    assert 'id="topicsPane"' in home
+    assert 'next === "topics"' in app
+    assert "AINewsRadarTopics" in app
+
+
+def test_sidebar_topics_stays_in_shell():
+    js = read("assets/sidebar.js")
+    assert "homeHref(\"topics\")" in js
+    assert "if (nav === \"topics\") return" not in js
+    assert "aria-label=\"更多\"" not in js
+    assert "Agent 接入" not in js
+    assert "关于" not in js
+    assert "反馈" not in js
+
+
+def test_embedded_topics_hub_does_not_steal_document_title():
+    js = read("assets/topics.js")
+    assert "if (!isEmbeddedHub())" in js
+    assert 'document.title = "主题 · AI News Radar"' in js
+    home = read("assets/app.js")
+    classic = read("classic/assets/app.js")
+    for source in (home, classic):
+        assert 'a.hero-link[href="./topics/"]' in source
+        assert 'topicsPane.hidden' in source or 'topicsPaneEl.hidden' in source
+
+
+def test_classic_unhides_embedded_topics_pane():
+    source = read("classic/assets/app.js")
+    assert "topicsPane.hidden = next !== \"topics\"" in source
+    assert 'body.classList.toggle("is-topics-nav"' in source or "is-topics-nav" in source

@@ -4,7 +4,7 @@
   const THEME_KEY = "aiNewsRadarTheme";
   const FAV_KEY = "aiNewsRadarFavorites";
   const THEMES = ["dark", "system", "light"];
-  const PAGE_NAVS = new Set(["selected", "all", "hot", "brief", "favorites"]);
+  const PAGE_NAVS = new Set(["selected", "all", "hot", "brief", "favorites", "topics"]);
   const ICONS = {
     spark: '<path d="M12 3v4M12 17v4M4.9 7.5l3.1 2.2M16 14.3l3.1 2.2M4.9 16.5 8 14.3M16 9.7l3.1-2.2"/><path d="m12 8 1.4 2.8L16.5 12 13.4 13.2 12 16l-1.4-2.8L7.5 12l3.1-1.2Z"/>',
     list: '<path d="M8 7h12M8 12h12M8 17h12"/><path d="M4 7h.01M4 12h.01M4 17h.01"/>',
@@ -139,6 +139,7 @@
     const params = currentSearch();
     if (!nav || nav === "selected") params.delete("nav");
     else params.set("nav", nav);
+    if (nav !== "topics") params.delete("group");
     const hash = nav === "hot" ? "hotBoardWrap" : "";
     return siteHref(radarHomePath(), params.toString(), hash);
   }
@@ -329,7 +330,6 @@
       return;
     }
     setFavoritesOpen(false);
-    if (nav === "topics") return;
     if (!isRadarHome()) {
       window.location.assign(homeHref(nav));
       return;
@@ -347,11 +347,6 @@
     const target = event.currentTarget;
     const nav = target.dataset.radarNav || "";
     if (target.target === "_blank") return;
-    if (nav === "topics") {
-      closeDrawer();
-      setFavoritesOpen(false);
-      return;
-    }
     event.preventDefault();
     requestNav(nav);
   }
@@ -361,7 +356,6 @@
     document.body.classList.add("has-radar-sidebar");
 
     const repo = githubRepo();
-    const topicsHref = siteHref("topics/");
     const homeSelected = homeHref("selected");
 
     const aside = document.createElement("aside");
@@ -383,16 +377,8 @@
           <a class="radar-nav-link" data-radar-nav="all" href="${homeHref("all")}">${svg("list")}全部 AI 动态</a>
           <a class="radar-nav-link" data-radar-nav="hot" href="${homeHref("hot")}">${svg("flame")}热点榜</a>
           <a class="radar-nav-link" data-radar-nav="brief" href="${homeHref("brief")}">${svg("calendar")}AI 日报</a>
-          <a class="radar-nav-link" data-radar-nav="topics" href="${topicsHref}">${svg("grid")}主题</a>
+          <a class="radar-nav-link" data-radar-nav="topics" href="${homeHref("topics")}">${svg("grid")}主题</a>
           <button class="radar-nav-link" type="button" data-radar-nav="favorites">${svg("heart")}收藏</button>
-        </div>
-        <div class="radar-nav-divider" role="presentation"></div>
-        <div class="radar-nav-group" aria-label="更多">
-          <div class="radar-nav-label">更多</div>
-          <a class="radar-nav-link" href="${githubUrl("/blob/master/skills/radar/README.md")}" target="_blank" rel="noopener noreferrer">${svg("puzzle")}Agent 接入</a>
-          <a class="radar-nav-link" href="${githubUrl("/blob/master/README.md")}" target="_blank" rel="noopener noreferrer">${svg("info")}关于</a>
-          <a class="radar-nav-link" href="${githubUrl("/releases")}" target="_blank" rel="noopener noreferrer">${svg("clock")}更新日志</a>
-          <a class="radar-nav-link" href="${githubUrl("/issues")}" target="_blank" rel="noopener noreferrer">${svg("chat")}反馈</a>
         </div>
       </nav>
       <div class="radar-sidebar-footer">

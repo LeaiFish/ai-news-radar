@@ -460,9 +460,9 @@ PAGE_TEMPLATE = """<!doctype html>
     <meta name="description" content="{description}" />
     <link rel="icon" href="{root}assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="{root}assets/styles.css?v=topics-2" />
-    <link rel="stylesheet" href="{root}assets/topics.css?v=topics-2" />
-    <link rel="stylesheet" href="{root}assets/sidebar.css?v=pane-1" />
-    <script src="{root}assets/sidebar.js?v=pane-1"></script>
+    <link rel="stylesheet" href="{root}assets/topics.css?v=topics-3" />
+    <link rel="stylesheet" href="{root}assets/sidebar.css?v=pane-3" />
+    <script src="{root}assets/sidebar.js?v=pane-3"></script>
   </head>
   <body>
     <a class="skip-link" href="#topicsMain">跳到主题内容</a>
@@ -514,7 +514,7 @@ PAGE_TEMPLATE = """<!doctype html>
         </div>
       </article>
     </template>
-    <script src="{root}assets/topics.js?v=topics-2" defer></script>
+    <script src="{root}assets/topics.js?v=topics-4" defer></script>
   </body>
 </html>
 """

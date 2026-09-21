@@ -72,7 +72,7 @@ function dataUrl(path) {
   return `${base}/${file}`;
 }
 
-const RADAR_NAVS = new Set(["selected", "all", "hot", "brief", "favorites"]);
+const RADAR_NAVS = new Set(["selected", "all", "hot", "brief", "favorites", "topics"]);
 
 function readRequestedNav() {
   try {
@@ -90,6 +90,7 @@ function syncNavUrl(nav) {
   const url = new URL(window.location.href);
   if (!nav || nav === "selected") url.searchParams.delete("nav");
   else url.searchParams.set("nav", nav);
+  if (nav !== "topics") url.searchParams.delete("group");
   url.hash = nav === "hot" ? "hotBoardWrap" : "";
   const next = `${url.pathname}${url.search}${url.hash}`;
   const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
@@ -152,6 +153,7 @@ const hotStripMoreBtnEl = document.getElementById("hotStripMoreBtn");
 const briefWrapEl = document.getElementById("briefWrap");
 const briefDigestEl = document.getElementById("briefDigest");
 const briefListEl = document.getElementById("briefList");
+const topicsPaneEl = document.getElementById("topicsPane");
 
 const SOURCE_KINDS = {
   official_ai: { label: "官方", tone: "official" },
@@ -248,6 +250,11 @@ const PANE_COPY = {
     kicker: "收藏",
     title: "本机收藏",
     lead: "保存在这台浏览器的 localStorage，不会上传或跨设备同步。",
+  },
+  topics: {
+    kicker: "主题",
+    title: "按主题看 AI",
+    lead: "按产业透镜、公司与模型、技术方向浏览。匹配来自标题/摘要/来源的关键词。",
   },
 };
 
@@ -610,12 +617,15 @@ function renderPaneChrome() {
   if (briefWrapEl) briefWrapEl.hidden = nav !== "brief";
   if (hotStripWrapEl) hotStripWrapEl.hidden = nav !== "selected";
   if (hotBoardWrapEl) hotBoardWrapEl.hidden = nav !== "hot";
+  if (topicsPaneEl) topicsPaneEl.hidden = nav !== "topics";
   if (top3BoardWrapEl && nav !== "selected") top3BoardWrapEl.hidden = true;
   if (waytoagiWrapEl && nav !== "selected" && nav !== "all") waytoagiWrapEl.hidden = true;
   const advancedPanelEl = document.querySelector(".advanced-panel");
   if (advancedPanelEl) {
-    advancedPanelEl.hidden = nav === "hot" || nav === "brief" || nav === "favorites";
+    advancedPanelEl.hidden = nav === "hot" || nav === "brief" || nav === "favorites" || nav === "topics";
   }
+  const sectionNavWrap = document.querySelector(".section-nav-wrap");
+  if (sectionNavWrap) sectionNavWrap.hidden = nav === "topics";
 }
 
 
@@ -2044,7 +2054,7 @@ function renderMainList() {
     modeHintEl.setAttribute("aria-label", `当前${modeLabelText()}模式，${fmtNumber(entries.length)} 条`);
   }
 
-  if (state.nav === "brief" || state.nav === "hot" || state.nav === "favorites") {
+  if (state.nav === "brief" || state.nav === "hot" || state.nav === "favorites" || state.nav === "topics") {
     if (newsListEl) newsListEl.innerHTML = "";
     return;
   }
@@ -2618,6 +2628,33 @@ async function applyRadarNav(nav, { scroll = true } = {}) {
     return;
   }
 
+  if (next === "topics") {
+    state.nav = "topics";
+    state.mode = "selected";
+    syncNavUrl(next);
+    renderPaneChrome();
+    if (window.AINewsRadarTopics && typeof window.AINewsRadarTopics.showHub === "function") {
+      try {
+        await window.AINewsRadarTopics.showHub();
+      } catch (err) {
+        if (topicsPaneEl) {
+          topicsPaneEl.hidden = false;
+          const main = document.getElementById("topicsMain");
+          if (main) {
+            main.innerHTML = "";
+            const empty = document.createElement("div");
+            empty.className = "empty";
+            empty.textContent = err.message || "主题数据加载失败";
+            main.appendChild(empty);
+          }
+        }
+      }
+    }
+    emitNavChange();
+    if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
   const switchingToAll = next === "all";
   state.nav = next;
   state.mode = switchingToAll ? "all" : "selected";
@@ -2735,25 +2772,32 @@ async function init() {
       } catch (err) {
         newsListEl.innerHTML = `<div class="empty">${err.message}</div>`;
       }
-    } else if (requestedNav !== "favorites") {
+    } else if (requestedNav !== "favorites" && requestedNav !== "topics") {
       state.mode = "selected";
     }
 
-    renderPaneChrome();
-    renderSectionTabs();
-    renderSourceKindChips();
-    renderModeSwitch();
-    renderSiteFilters();
-    renderHotBoard();
-    renderMainList();
     updatedAtEl.textContent = fmtTime(state.generatedAt);
-    emitNavChange();
-    if (requestedNav === "hot" || requestedNav === "brief") {
-      requestAnimationFrame(() => paneTopEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    if (requestedNav === "topics") {
+      await applyRadarNav("topics", { scroll: false });
+    } else {
+      renderPaneChrome();
+      renderSectionTabs();
+      renderSourceKindChips();
+      renderModeSwitch();
+      renderSiteFilters();
+      renderHotBoard();
+      renderMainList();
+      emitNavChange();
+      if (requestedNav === "hot" || requestedNav === "brief") {
+        requestAnimationFrame(() => paneTopEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
+      }
     }
   } else {
     updatedAtEl.textContent = "新闻数据加载失败";
     newsListEl.innerHTML = `<div class="empty">${newsResult.reason.message}</div>`;
+    if (readRequestedNav() === "topics") {
+      await applyRadarNav("topics", { scroll: false });
+    }
   }
 
   if (statusResult.status === "fulfilled") {
@@ -2815,6 +2859,13 @@ if (modeAllBtnEl) {
     applyRadarNav("all");
   });
 }
+
+document.querySelectorAll('a.topics-entry, a.hero-link[href="./topics/"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    applyRadarNav("topics");
+  });
+});
 
 if (hotStripMoreBtnEl) {
   hotStripMoreBtnEl.addEventListener("click", () => {

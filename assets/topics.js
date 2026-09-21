@@ -96,13 +96,26 @@
     const params = new URLSearchParams(window.location.search);
     params.delete("id");
     params.delete("topic");
+    params.delete("nav");
+    params.delete("group");
     const query = params.toString();
     const currentId = topicIdFromLocation();
-    const base = currentId
-      ? new URL(`../${topicId}/`, window.location.href)
-      : new URL(`./${topicId}/`, window.location.href);
+    let base;
+    if (isEmbeddedHub()) {
+      const rootHint = document.documentElement.dataset.root || "./";
+      const root = new URL(rootHint.endsWith("/") ? rootHint : `${rootHint}/`, window.location.href);
+      base = new URL(`topics/${encodeURIComponent(topicId)}/`, root);
+    } else if (currentId) {
+      base = new URL(`../${topicId}/`, window.location.href);
+    } else {
+      base = new URL(`./${topicId}/`, window.location.href);
+    }
     if (query) base.search = query;
     return base.href;
+  }
+
+  function isEmbeddedHub() {
+    return Boolean(document.getElementById("topicsPane")) && document.documentElement.dataset.radarSurface !== "topics";
   }
 
   const mainEl = document.getElementById("topicsMain");
@@ -238,10 +251,12 @@
   }
 
   function renderHub(index) {
-    document.title = "主题 · AI News Radar";
-    if (titleEl) titleEl.textContent = "按主题看 AI";
-    if (leadEl) {
-      leadEl.textContent = "按产业透镜、公司与模型、技术方向浏览主题。匹配来自标题/摘要/来源的关键词，不是分类模型。";
+    if (!isEmbeddedHub()) {
+      document.title = "主题 · AI News Radar";
+      if (titleEl) titleEl.textContent = "按主题看 AI";
+      if (leadEl) {
+        leadEl.textContent = "按产业透镜、公司与模型、技术方向浏览主题。匹配来自标题/摘要/来源的关键词，不是分类模型。";
+      }
     }
     renderHubFilter(index);
     const selected = resolveHubFilter(index);
@@ -429,11 +444,34 @@
     return response.json();
   }
 
+  let hubIndexCache = null;
+  let hubIndexPromise = null;
+
+  async function showHub() {
+    if (!mainEl) throw new Error("缺少主题容器");
+    const pane = document.getElementById("topicsPane");
+    if (pane) pane.hidden = false;
+    setStatus("正在加载主题…");
+    if (!hubIndexPromise) {
+      hubIndexPromise = loadJson("data/topics.json").then((index) => {
+        hubIndexCache = index;
+        return index;
+      }).catch((error) => {
+        hubIndexPromise = null;
+        throw error;
+      });
+    }
+    const index = await hubIndexPromise;
+    setStatus("");
+    renderHub(index);
+    return index;
+  }
+
   async function init() {
     const topicId = topicIdFromLocation();
     try {
       const index = await loadJson("data/topics.json");
-      if (updatedAtEl) updatedAtEl.textContent = fmtTime(index.generated_at);
+      if (updatedAtEl && !isEmbeddedHub()) updatedAtEl.textContent = fmtTime(index.generated_at);
       if (!topicId) {
         setStatus("");
         renderHub(index);
@@ -453,8 +491,10 @@
     } catch (error) {
       setStatus("");
       hideHubFilter();
-      mainEl.innerHTML = "";
-      mainEl.appendChild(renderEmpty("主题数据加载失败", "确认 data/topics.json 已生成，或用 python scripts/build_topics.py --data-dir data 重建。"));
+      if (mainEl) {
+        mainEl.innerHTML = "";
+        mainEl.appendChild(renderEmpty("主题数据加载失败", "确认 data/topics.json 已生成，或用 python scripts/build_topics.py --data-dir data 重建。"));
+      }
       console.error(error);
     }
   }
@@ -467,6 +507,9 @@
     hubFilterOptions,
     applyHubFilter,
     hubFilterFromLocation,
+    showHub,
+    isEmbeddedHub,
   };
-  init();
+
+  if (!isEmbeddedHub()) init();
 })();

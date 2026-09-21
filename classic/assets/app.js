@@ -67,7 +67,7 @@ function dataUrl(path) {
   return `${base}/${file}`;
 }
 
-const RADAR_NAVS = new Set(["selected", "all", "hot", "brief", "favorites"]);
+const RADAR_NAVS = new Set(["selected", "all", "hot", "brief", "favorites", "topics"]);
 
 function readRequestedNav() {
   try {
@@ -85,6 +85,7 @@ function syncNavUrl(nav) {
   const url = new URL(window.location.href);
   if (!nav || nav === "selected") url.searchParams.delete("nav");
   else url.searchParams.set("nav", nav);
+  if (nav !== "topics") url.searchParams.delete("group");
   url.hash = nav === "hot" ? "bolePicksWrap" : "";
   const next = `${url.pathname}${url.search}${url.hash}`;
   const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
@@ -2952,10 +2953,31 @@ async function loadStoriesData() {
 
 async function applyRadarNav(nav, { scroll = true } = {}) {
   const next = RADAR_NAVS.has(nav) ? nav : "selected";
+  document.body.classList.toggle("is-topics-nav", next === "topics");
+  const topicsPane = document.getElementById("topicsPane");
+  if (topicsPane) topicsPane.hidden = next !== "topics";
   if (next === "favorites") {
     state.nav = "favorites";
     syncNavUrl(next);
     emitNavChange();
+    return;
+  }
+
+  if (next === "topics") {
+    state.nav = "topics";
+    syncNavUrl(next);
+    if (window.AINewsRadarTopics && typeof window.AINewsRadarTopics.showHub === "function") {
+      try {
+        await window.AINewsRadarTopics.showHub();
+      } catch (err) {
+        const main = document.getElementById("topicsMain");
+        if (main) {
+          main.innerHTML = `<div class="empty">${err.message || "主题数据加载失败"}</div>`;
+        }
+      }
+    }
+    emitNavChange();
+    if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
     return;
   }
 
@@ -3063,24 +3085,29 @@ async function init() {
       } catch (err) {
         newsListEl.innerHTML = `<div class="empty">${err.message}</div>`;
       }
-    } else if (requestedNav !== "favorites") {
+    } else if (requestedNav !== "favorites" && requestedNav !== "topics") {
       state.mode = "ai";
     }
     if (requestedNav === "hot") state.boleView = "hot";
     else if (requestedNav === "brief") state.boleView = "timeline";
 
-    setStats();
-    renderSectionTabs();
-    renderModeSwitch();
-    renderListSortTools();
-    renderCoverageStrip();
-    renderSiteFilters();
-    renderBolePicks();
-    renderList();
-    updatedAtEl.textContent = fmtTime(state.generatedAt);
-    emitNavChange();
-    if (requestedNav === "hot" || requestedNav === "brief") {
-      requestAnimationFrame(() => bolePicksWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    if (requestedNav === "topics") {
+      await applyRadarNav("topics", { scroll: false });
+      updatedAtEl.textContent = fmtTime(state.generatedAt);
+    } else {
+      setStats();
+      renderSectionTabs();
+      renderModeSwitch();
+      renderListSortTools();
+      renderCoverageStrip();
+      renderSiteFilters();
+      renderBolePicks();
+      renderList();
+      updatedAtEl.textContent = fmtTime(state.generatedAt);
+      emitNavChange();
+      if (requestedNav === "hot" || requestedNav === "brief") {
+        requestAnimationFrame(() => bolePicksWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
+      }
     }
   } else {
     updatedAtEl.textContent = "新闻数据加载失败";
@@ -3211,6 +3238,13 @@ if (dataSourceResetBtnEl) {
     window.location.href = window.location.pathname;
   });
 }
+
+document.querySelectorAll('a.topics-entry, a.hero-link[href="./topics/"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    applyRadarNav("topics");
+  });
+});
 
 function renderDataSourceIndicator() {
   if (!dataSourceIndicatorEl) return;
