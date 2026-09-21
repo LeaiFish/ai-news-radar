@@ -514,7 +514,7 @@ PAGE_TEMPLATE = """<!doctype html>
         </div>
       </article>
     </template>
-    <script src="{root}assets/topics.js?v=topics-3" defer></script>
+    <script src="{root}assets/topics.js?v=topics-4" defer></script>
   </body>
 </html>
 """

@@ -114,3 +114,22 @@ def test_sidebar_topics_stays_in_shell():
     assert "if (nav === \"topics\") return" not in js
     assert "aria-label=\"更多\"" not in js
     assert "Agent 接入" not in js
+    assert "关于" not in js
+    assert "反馈" not in js
+
+
+def test_embedded_topics_hub_does_not_steal_document_title():
+    js = read("assets/topics.js")
+    assert "if (!isEmbeddedHub())" in js
+    assert 'document.title = "主题 · AI News Radar"' in js
+    home = read("assets/app.js")
+    classic = read("classic/assets/app.js")
+    for source in (home, classic):
+        assert 'a.hero-link[href="./topics/"]' in source
+        assert 'topicsPane.hidden' in source or 'topicsPaneEl.hidden' in source
+
+
+def test_classic_unhides_embedded_topics_pane():
+    source = read("classic/assets/app.js")
+    assert "topicsPane.hidden = next !== \"topics\"" in source
+    assert 'body.classList.toggle("is-topics-nav"' in source or "is-topics-nav" in source

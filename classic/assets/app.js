@@ -2954,6 +2954,8 @@ async function loadStoriesData() {
 async function applyRadarNav(nav, { scroll = true } = {}) {
   const next = RADAR_NAVS.has(nav) ? nav : "selected";
   document.body.classList.toggle("is-topics-nav", next === "topics");
+  const topicsPane = document.getElementById("topicsPane");
+  if (topicsPane) topicsPane.hidden = next !== "topics";
   if (next === "favorites") {
     state.nav = "favorites";
     syncNavUrl(next);
@@ -3237,7 +3239,7 @@ if (dataSourceResetBtnEl) {
   });
 }
 
-document.querySelectorAll(".topics-entry").forEach((link) => {
+document.querySelectorAll('a.topics-entry, a.hero-link[href="./topics/"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
     applyRadarNav("topics");

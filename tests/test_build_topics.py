@@ -376,7 +376,7 @@ def test_hub_template_does_not_hardcode_a_topic_id():
     assert "data-topic-id" not in html
     assert "按主题看 AI" in html
     assert 'id="topicsFilter"' in html
-    assert "assets/topics.js?v=topics-3" in html
+    assert "assets/topics.js?v=topics-4" in html
 
 
 def test_committed_topic_pages_cover_config():

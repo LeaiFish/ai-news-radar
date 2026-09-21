@@ -2651,7 +2651,7 @@ async function applyRadarNav(nav, { scroll = true } = {}) {
       }
     }
     emitNavChange();
-    if (scroll) paneTopEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (scroll) window.scrollTo({ top: 0, behavior: "smooth" });
     return;
   }
 
@@ -2860,7 +2860,7 @@ if (modeAllBtnEl) {
   });
 }
 
-document.querySelectorAll(".topics-entry").forEach((link) => {
+document.querySelectorAll('a.topics-entry, a.hero-link[href="./topics/"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
     applyRadarNav("topics");

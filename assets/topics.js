@@ -251,10 +251,12 @@
   }
 
   function renderHub(index) {
-    document.title = "主题 · AI News Radar";
-    if (titleEl) titleEl.textContent = "按主题看 AI";
-    if (leadEl) {
-      leadEl.textContent = "按产业透镜、公司与模型、技术方向浏览主题。匹配来自标题/摘要/来源的关键词，不是分类模型。";
+    if (!isEmbeddedHub()) {
+      document.title = "主题 · AI News Radar";
+      if (titleEl) titleEl.textContent = "按主题看 AI";
+      if (leadEl) {
+        leadEl.textContent = "按产业透镜、公司与模型、技术方向浏览主题。匹配来自标题/摘要/来源的关键词，不是分类模型。";
+      }
     }
     renderHubFilter(index);
     const selected = resolveHubFilter(index);
@@ -447,6 +449,8 @@
 
   async function showHub() {
     if (!mainEl) throw new Error("缺少主题容器");
+    const pane = document.getElementById("topicsPane");
+    if (pane) pane.hidden = false;
     setStatus("正在加载主题…");
     if (!hubIndexPromise) {
       hubIndexPromise = loadJson("data/topics.json").then((index) => {
