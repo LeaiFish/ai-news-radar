@@ -30,9 +30,11 @@ const state = {
   storiesDataUrl: "data/stories-merged.json",
   // 内容 tab：单值，默认 "all"（全部，无过滤）
   activeSection: "all",
+  // 全部 AI 动态的来源分桶：all / primary / media / social
+  sourceKind: "all",
   mainListVisibleCount: 0,
   xAuthorsExpanded: false,
-  // 左侧栏导航：selected / all / hot / brief / favorites。hot 仍是精选数据，只是滚到热点榜。
+  // 左侧栏导航：selected / all / hot / brief / favorites。hot 是独立热点榜，不再只是滚动。
   nav: "selected",
 };
 
@@ -136,6 +138,20 @@ const waytoagiListEl = document.getElementById("waytoagiList");
 const waytoagiTodayBtnEl = document.getElementById("waytoagiTodayBtn");
 const waytoagi7dBtnEl = document.getElementById("waytoagi7dBtn");
 const sectionTabsEl = document.getElementById("sectionTabs");
+const paneTopEl = document.getElementById("paneTop");
+const paneKickerEl = document.getElementById("paneKicker");
+const paneTitleEl = document.getElementById("paneTitle");
+const paneLeadEl = document.getElementById("paneLead");
+const paneToolbarEl = document.getElementById("paneToolbar");
+const paneSearchRowEl = document.getElementById("paneSearchRow");
+const paneMetaEl = document.getElementById("paneMeta");
+const sourceKindChipsEl = document.getElementById("sourceKindChips");
+const hotStripWrapEl = document.getElementById("hotStripWrap");
+const hotStripListEl = document.getElementById("hotStripList");
+const hotStripMoreBtnEl = document.getElementById("hotStripMoreBtn");
+const briefWrapEl = document.getElementById("briefWrap");
+const briefDigestEl = document.getElementById("briefDigest");
+const briefListEl = document.getElementById("briefList");
 
 const SOURCE_KINDS = {
   official_ai: { label: "官方", tone: "official" },
@@ -177,6 +193,63 @@ const SECTION_DEFS = [
 ];
 
 const SECTION_BY_ID = Object.fromEntries(SECTION_DEFS.map((section) => [section.id, section]));
+
+// 精选/全部顶栏芯片：对齐 aihot 的栏目名，只保留仓库数据能撑住的分类。
+// 教程/观点不是 SECTION_DEFS 里的独立栏目，按标题/摘要关键词做 overlay 过滤；0 条则不渲染芯片。
+const PANE_CATEGORY_DEFS = [
+  { id: "all", label: "全部" },
+  { id: "models", label: "模型" },
+  { id: "products", label: "产品" },
+  { id: "industry", label: "行业" },
+  { id: "research", label: "论文" },
+  {
+    id: "tutorials",
+    label: "教程",
+    overlay: true,
+    patterns: [/教程|指南|入门|保姆级|how[\s-]?to|tutorial|guide|playbook|cookbook|手把手|here's how|heres how/i],
+  },
+  {
+    id: "opinion",
+    label: "观点",
+    overlay: true,
+    patterns: [/观点|评论|专栏|锐评|opinion|commentary|essay|op-ed|我认为|我看/i],
+  },
+];
+
+const SOURCE_KIND_FILTERS = [
+  { id: "all", label: "全部" },
+  { id: "primary", label: "一手信源" },
+  { id: "media", label: "资讯" },
+  { id: "social", label: "推文" },
+];
+
+const PANE_COPY = {
+  selected: {
+    kicker: "精选",
+    title: "今日精选",
+    lead: "按栏目筛选，先看当前热点再读精选时间轴。",
+  },
+  all: {
+    kicker: "全部 AI 动态",
+    title: "全部 AI 动态",
+    lead: "按栏目和来源筛选全量更新，列表更密、按日分组。",
+  },
+  hot: {
+    kicker: "热点榜",
+    title: "热点榜",
+    lead: "按合并故事的交叉报道热度排序，不是独立热度接口。",
+  },
+  brief: {
+    kicker: "AI 日报",
+    title: "AI 日报",
+    lead: "来自 daily-brief.json 的当日大事，按编号速览。",
+  },
+  favorites: {
+    kicker: "收藏",
+    title: "本机收藏",
+    lead: "保存在这台浏览器的 localStorage，不会上传或跨设备同步。",
+  },
+};
 
 function fmtNumber(n) {
   return new Intl.NumberFormat("zh-CN").format(n || 0);
@@ -365,6 +438,7 @@ function activeAdjustmentCount() {
     Boolean(state.query.trim()),
     state.activeSection !== "all",
     Boolean(state.siteFilter || state.authorFilter),
+    state.nav === "all" && state.sourceKind !== "all",
     state.mode !== "selected" || (state.nav !== "selected" && state.nav !== "hot"),
     state.mode === "all" && !state.allDedup,
   ].filter(Boolean).length;
@@ -394,6 +468,7 @@ function clearAllFilters() {
   state.authorFilter = "";
   state.mode = "selected";
   state.nav = "selected";
+  state.sourceKind = "all";
   state.allDedup = true;
   state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
   state.waytoagiMode = "today";
@@ -441,36 +516,106 @@ function isHighPriorityItem(item) {
 function sectionTabCount(sectionId) {
   if (state.mode === "all") {
     const pool = mainListRawItemsBase();
-    return sectionId === "all" ? pool.length : pool.filter((item) => itemSection(item) === sectionId).length;
+    return sectionId === "all" ? pool.length : pool.filter((item) => itemMatchesSection(item, sectionId)).length;
   }
   const pool = mainListStoriesBase();
-  return sectionId === "all" ? pool.length : pool.filter((story) => storySectionOf(story) === sectionId).length;
+  return sectionId === "all" ? pool.length : pool.filter((story) => storyMatchesSection(story, sectionId)).length;
 }
 
 function renderSectionTabs() {
   if (!sectionTabsEl) return;
+  const show = state.nav === "selected" || state.nav === "all";
+  sectionTabsEl.hidden = !show;
   sectionTabsEl.innerHTML = "";
-  SECTION_DEFS.forEach((section) => {
+  if (!show) return;
+  PANE_CATEGORY_DEFS.forEach((section) => {
+    const count = sectionTabCount(section.id);
+    if (section.overlay && count === 0 && state.activeSection !== section.id) return;
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = `section-tab ${state.activeSection === section.id ? "active" : ""}`;
     btn.setAttribute("role", "tab");
     btn.setAttribute("aria-selected", state.activeSection === section.id ? "true" : "false");
     btn.dataset.section = section.id;
-    btn.innerHTML = `<span>${section.label}</span><strong>${fmtNumber(sectionTabCount(section.id))}</strong>`;
+    btn.innerHTML = `<span>${section.label}</span><strong>${fmtNumber(count)}</strong>`;
     btn.addEventListener("click", () => {
       if (state.activeSection === section.id) return;
       state.activeSection = section.id;
       state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
-      renderSectionTabs();
-      renderModeSwitch();
-      renderSiteFilters();
-      renderHotBoard();
-      if (state.waytoagiData) renderWaytoagi(state.waytoagiData);
-      renderMainList();
+      rerenderCurrentView();
     });
     sectionTabsEl.appendChild(btn);
   });
+}
+
+function sourceKindCount(kindId) {
+  const pool = allModeItemsForKindCount();
+  if (kindId === "all") return pool.length;
+  return pool.filter((item) => itemSourceKindBucket(item) === kindId).length;
+}
+
+function renderSourceKindChips() {
+  if (!sourceKindChipsEl) return;
+  const show = state.nav === "all";
+  sourceKindChipsEl.hidden = !show;
+  if (!show) return;
+  sourceKindChipsEl.innerHTML = "";
+  SOURCE_KIND_FILTERS.forEach((kind) => {
+    const count = sourceKindCount(kind.id);
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = `section-tab source-kind-chip ${state.sourceKind === kind.id ? "active" : ""}`;
+    btn.setAttribute("role", "tab");
+    btn.setAttribute("aria-selected", state.sourceKind === kind.id ? "true" : "false");
+    btn.dataset.sourceKind = kind.id;
+    btn.innerHTML = `<span>${kind.label}</span><strong>${fmtNumber(count)}</strong>`;
+    btn.addEventListener("click", () => {
+      if (state.sourceKind === kind.id) return;
+      state.sourceKind = kind.id;
+      state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
+      rerenderCurrentView();
+    });
+    sourceKindChipsEl.appendChild(btn);
+  });
+}
+
+function renderPaneChrome() {
+  const nav = state.nav === "favorites" ? "favorites" : state.nav;
+  const copy = PANE_COPY[nav] || PANE_COPY.selected;
+  if (paneKickerEl) paneKickerEl.textContent = copy.kicker;
+  if (paneTitleEl) paneTitleEl.textContent = copy.title;
+  if (paneLeadEl) {
+    paneLeadEl.textContent = copy.lead;
+    paneLeadEl.hidden = !copy.lead;
+  }
+  const showToolbar = nav === "selected" || nav === "all";
+  const showSearch = nav === "selected" || nav === "all";
+  const showMeta = nav === "hot" || nav === "brief";
+  if (paneToolbarEl) paneToolbarEl.hidden = !showToolbar;
+  if (paneSearchRowEl) paneSearchRowEl.hidden = !showSearch;
+  if (sectionTabsEl) sectionTabsEl.hidden = !showToolbar;
+  if (sourceKindChipsEl) sourceKindChipsEl.hidden = nav !== "all";
+  if (paneMetaEl) {
+    paneMetaEl.hidden = !showMeta;
+    if (nav === "hot") {
+      paneMetaEl.textContent = `过去${fmtNumber(dataWindowHours())}小时 · 更新于 ${fmtTime(state.generatedAt || state.storiesMerged?.generated_at)} · 按热度排序`;
+    } else if (nav === "brief") {
+      paneMetaEl.textContent = `过去${fmtNumber(dataWindowHours())}小时 · 更新于 ${fmtTime(state.dailyBrief?.generated_at || state.generatedAt)}`;
+    }
+  }
+  if (newsListWrapEl) {
+    newsListWrapEl.hidden = nav !== "selected" && nav !== "all";
+    newsListWrapEl.classList.toggle("is-dense", nav === "all");
+  }
+  if (briefWrapEl) briefWrapEl.hidden = nav !== "brief";
+  if (hotStripWrapEl) hotStripWrapEl.hidden = nav !== "selected";
+  if (hotBoardWrapEl) hotBoardWrapEl.hidden = nav !== "hot";
+  if (top3BoardWrapEl && nav !== "selected") top3BoardWrapEl.hidden = true;
+  if (waytoagiWrapEl && nav !== "selected" && nav !== "all") waytoagiWrapEl.hidden = true;
+  const advancedPanelEl = document.querySelector(".advanced-panel");
+  if (advancedPanelEl) {
+    advancedPanelEl.hidden = nav === "hot" || nav === "brief" || nav === "favorites";
+  }
 }
 
 
@@ -510,13 +655,10 @@ function renderModeSwitch() {
     modeAllBtnEl.classList.toggle("active", state.mode === "all");
     modeAllBtnEl.setAttribute("aria-pressed", state.mode === "all" ? "true" : "false");
   }
-  if (hotBoardWrapEl) {
-    hotBoardWrapEl.hidden = state.mode !== "selected" || state.nav === "brief" || state.nav === "favorites";
-  }
-  if (allDedupeWrapEl) allDedupeWrapEl.classList.toggle("show", state.mode === "all");
+  if (allDedupeWrapEl) allDedupeWrapEl.classList.toggle("show", state.mode === "all" && state.nav === "all");
   if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
   if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
-  const count = mainListEntries().length;
+  const count = state.nav === "brief" ? briefListStories().length : mainListEntries().length;
   if (modeHintEl) {
     modeHintEl.textContent = `${modeLabelText()} ${fmtNumber(count)} 条`;
     modeHintEl.setAttribute("aria-label", `当前${modeLabelText()}模式，${fmtNumber(count)} 条`);
@@ -526,10 +668,13 @@ function renderModeSwitch() {
 }
 
 function listTitleText() {
-  const section = state.activeSection !== "all" ? SECTION_BY_ID[state.activeSection] : null;
+  const pane = paneCategoryDef(state.activeSection);
+  const section = pane && pane.id !== "all" ? pane : (state.activeSection !== "all" ? SECTION_BY_ID[state.activeSection] : null);
   const label = modeLabelText();
-  if (state.nav === "brief") return section ? `${section.label} · 日报` : "AI 日报";
-  return section ? `${section.label} · ${label}` : label;
+  if (state.nav === "brief") return "AI 日报";
+  if (state.nav === "hot") return "热点榜";
+  if (state.nav === "all") return section ? `${section.label} · 全量` : "全部 AI 动态";
+  return section ? `${section.label} · 精选` : "精选";
 }
 
 // 全量模式条目池：去重开=itemsAll（已去重），去重关=itemsAllRaw（原始单条池）
@@ -711,6 +856,7 @@ function itemHaystack(item) {
     item.title_zh,
     item.title_en,
     item.title_original,
+    item.summary,
     item.source,
     item.site_name,
     item.site_id,
@@ -845,8 +991,82 @@ function itemSection(item) {
   return "all";
 }
 
+function paneCategoryDef(sectionId) {
+  return PANE_CATEGORY_DEFS.find((section) => section.id === sectionId) || null;
+}
+
+function overlayHaystack(item) {
+  return itemHaystack(item);
+}
+
+function itemMatchesOverlay(item, sectionId) {
+  const def = paneCategoryDef(sectionId);
+  if (!def?.overlay || !Array.isArray(def.patterns)) return true;
+  return matchesAny(overlayHaystack(item), def.patterns);
+}
+
+function storyOverlayHaystack(story) {
+  const refs = [
+    story,
+    story?.primary_item,
+    ...(Array.isArray(story?.sources) ? story.sources : []),
+  ].filter(Boolean);
+  return refs.map((ref) => overlayHaystack(ref)).join(" ");
+}
+
+function storyMatchesOverlay(story, sectionId) {
+  const def = paneCategoryDef(sectionId);
+  if (!def?.overlay || !Array.isArray(def.patterns)) return true;
+  return matchesAny(storyOverlayHaystack(story), def.patterns);
+}
+
+function itemSourceKindBucket(item) {
+  if (!item) return "media";
+  const siteId = item.site_id || "";
+  const sub = aihotSubSource(item);
+  const tier = String(item.source_tier || "").toLowerCase();
+  const label = String(item.source_tier_label || "");
+  if (
+    siteId === "official_ai" ||
+    tier === "official" ||
+    label.includes("官方")
+  ) return "primary";
+  if (
+    sub === "x" ||
+    siteId === "followbuilders" ||
+    siteId === "xapi" ||
+    siteId === "socialdata_x" ||
+    tier === "advanced"
+  ) return "social";
+  return "media";
+}
+
+function itemMatchesSourceKind(item, kind = state.sourceKind) {
+  if (!kind || kind === "all" || state.nav !== "all") return true;
+  return itemSourceKindBucket(item) === kind;
+}
+
+function storyMatchesSourceKind(story, kind = state.sourceKind) {
+  if (!kind || kind === "all" || state.nav !== "all") return true;
+  const refs = [
+    storyRepresentativeItem(story),
+    ...(Array.isArray(story?.sources) ? story.sources : []),
+  ].filter(Boolean);
+  return refs.some((ref) => itemSourceKindBucket(ref) === kind);
+}
+
+function dataWindowHours() {
+  return Number(
+    state.storiesMerged?.window_hours ||
+    state.dailyBrief?.window_hours ||
+    24,
+  ) || 24;
+}
+
 function itemMatchesSection(item, sectionId = state.activeSection) {
-  return !sectionId || sectionId === "all" || itemSection(item) === sectionId;
+  if (!sectionId || sectionId === "all") return true;
+  if (paneCategoryDef(sectionId)?.overlay) return itemMatchesOverlay(item, sectionId);
+  return itemSection(item) === sectionId;
 }
 
 function sectionBadgeLabel(sectionId) {
@@ -875,7 +1095,9 @@ function storySectionOf(story) {
 }
 
 function storyMatchesSection(story, sectionId = state.activeSection) {
-  return !sectionId || sectionId === "all" || storySectionOf(story) === sectionId;
+  if (!sectionId || sectionId === "all") return true;
+  if (paneCategoryDef(sectionId)?.overlay) return storyMatchesOverlay(story, sectionId);
+  return storySectionOf(story) === sectionId;
 }
 
 function storyMatchesQuery(story, query = state.query.trim().toLowerCase()) {
@@ -886,7 +1108,7 @@ function storyMatchesQuery(story, query = state.query.trim().toLowerCase()) {
     ...(Array.isArray(story.sources) ? story.sources : []),
   ].filter(Boolean);
   return refs.some((ref) => {
-    const hay = `${ref.title || ""} ${ref.title_zh || ""} ${ref.title_en || ""} ${ref.source || ""} ${ref.source_name || ""} ${ref.site_name || ""}`.toLowerCase();
+    const hay = `${ref.title || ""} ${ref.title_zh || ""} ${ref.title_en || ""} ${ref.summary || ""} ${ref.source || ""} ${ref.source_name || ""} ${ref.site_name || ""}`.toLowerCase();
     return hay.includes(query);
   });
 }
@@ -1251,21 +1473,34 @@ function hotBoardStories() {
     storyMatchesQuery(story)));
 }
 
-function hotBoardEntries() {
-  if (state.mode !== "selected") return [];
+function hotBoardEntries(limit = HOT_BOARD_LIMIT, { applySection = true } = {}) {
   return hotBoardStories()
-    .filter((story) => storyMatchesSection(story))
-    .slice(0, HOT_BOARD_LIMIT)
+    .filter((story) => !applySection || storyMatchesSection(story))
+    .slice(0, limit)
     .map((story, index) => storyToRow(story, index));
 }
 
 // ---- 主列表数据池：精选模式=mergedStories() 全量（纯时间倒序），全量模式=原始条目池 ----
 
 function mainListStoriesBase() {
-  return mergedStories().filter((story) => storyMatchesSiteFilter(story) && storyMatchesQuery(story));
+  return mergedStories().filter((story) =>
+    storyMatchesSiteFilter(story) &&
+    storyMatchesQuery(story) &&
+    storyMatchesSourceKind(story));
 }
 
 function mainListRawItemsBase() {
+  const q = state.query.trim().toLowerCase();
+  return effectiveAllItems().filter((item) => {
+    if (state.siteFilter && item.site_id !== state.siteFilter) return false;
+    if (state.authorFilter && itemXAuthor(item) !== state.authorFilter) return false;
+    if (!itemMatchesSourceKind(item)) return false;
+    if (!q) return true;
+    return itemHaystack(item).includes(q);
+  });
+}
+
+function allModeItemsForKindCount() {
   const q = state.query.trim().toLowerCase();
   return effectiveAllItems().filter((item) => {
     if (state.siteFilter && item.site_id !== state.siteFilter) return false;
@@ -1329,13 +1564,14 @@ function briefListStories() {
 }
 
 function mainListEntries() {
+  if (state.nav === "brief" || state.nav === "hot" || state.nav === "favorites") return [];
   if (state.mode === "all") {
     return mainListRawItems().map((item, index) => {
       const ms = timelineMs(item);
       return { row: itemToRow(item, index), timeMs: ms };
     }).sort((a, b) => b.timeMs - a.timeMs);
   }
-  const stories = state.nav === "brief" ? briefListStories() : mainListStories();
+  const stories = mainListStories();
   return stories.map((story, index) => {
     const ms = storyTimeMs(story, "latest_at") || storyTimeMs(story, "earliest_at");
     return { row: storyToRow(story, index), timeMs: ms };
@@ -1663,14 +1899,156 @@ const MAIN_LIST_PAGE_SIZE = 60;
 state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
 
 // 主列表：纯时间倒序 + 按日期分组渲染，精选/全量两种模式共用同一套模板。
+function buildHotCard(row, rank) {
+  const item = row.item || {};
+  const card = document.createElement("article");
+  card.className = "hot-card";
+
+  const rankEl = document.createElement("span");
+  rankEl.className = "hot-card-rank";
+  rankEl.textContent = String(rank).padStart(2, "0");
+
+  const body = document.createElement("div");
+  body.className = "hot-card-body";
+
+  const titleEl = document.createElement("a");
+  titleEl.className = "hot-card-title";
+  titleEl.target = "_blank";
+  titleEl.rel = "noopener noreferrer";
+  const displayTitle = row.story ? storyPrimaryTitleText(row.story) : itemTitleText(item);
+  titleEl.textContent = displayTitle;
+  titleEl.title = displayTitle;
+  titleEl.href = item.url || row.story?.primary_url || row.story?.url || "#";
+
+  const summaryText = signalSummaryText(row);
+  const summaryEl = document.createElement("p");
+  summaryEl.className = "hot-card-summary";
+  summaryEl.textContent = summaryText;
+  summaryEl.hidden = !summaryText;
+
+  const metaEl = document.createElement("div");
+  metaEl.className = "hot-card-meta";
+  const sourceCount = rowSourceCount(row);
+  const heat = row.story ? storyHotScore(row.story) : 0;
+  const relTime = fmtRelativeTime(timelineMs(item) || storyTimeMs(row.story, "latest_at"));
+  const parts = [`${fmtNumber(sourceCount)} 家报道`];
+  if (heat > 0) parts.push(`热度 ${fmtNumber(heat)}`);
+  parts.push(relTime);
+  metaEl.textContent = parts.join(" · ");
+
+  body.append(titleEl, summaryEl, metaEl);
+  card.append(rankEl, body);
+  return card;
+}
+
+const HOT_STRIP_LIMIT = 5;
+
+function renderHotStrip() {
+  if (!hotStripListEl) return;
+  const show = state.nav === "selected";
+  if (hotStripWrapEl) hotStripWrapEl.hidden = !show;
+  if (!show) return;
+  hotStripListEl.innerHTML = "";
+  const rows = hotBoardEntries(HOT_STRIP_LIMIT, { applySection: true });
+  if (!rows.length) {
+    const empty = document.createElement("div");
+    empty.className = "hot-strip-empty";
+    empty.textContent = "当前栏目暂无交叉报道热点。";
+    hotStripListEl.appendChild(empty);
+    return;
+  }
+  rows.forEach((row, index) => {
+    const item = row.item || {};
+    const el = document.createElement("a");
+    el.className = "hot-strip-item";
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+    el.href = item.url || row.story?.primary_url || row.story?.url || "#";
+    const rank = document.createElement("span");
+    rank.className = "hot-strip-rank";
+    rank.textContent = String(index + 1);
+    const title = document.createElement("span");
+    title.className = "hot-strip-title";
+    const displayTitle = row.story ? storyPrimaryTitleText(row.story) : itemTitleText(item);
+    title.textContent = displayTitle;
+    title.title = displayTitle;
+    const heat = row.story ? storyHotScore(row.story) : 0;
+    const score = document.createElement("span");
+    score.className = "hot-strip-heat";
+    score.textContent = heat > 0 ? String(heat) : "";
+    el.append(rank, title);
+    if (heat > 0) el.appendChild(score);
+    hotStripListEl.appendChild(el);
+  });
+}
+
+function renderBriefPane() {
+  if (!briefListEl) return;
+  const show = state.nav === "brief";
+  if (briefWrapEl) briefWrapEl.hidden = !show;
+  if (!show) return;
+  const stories = briefListStories();
+  if (briefDigestEl) {
+    briefDigestEl.textContent = stories.length
+      ? `这一天的 ${fmtNumber(stories.length)} 件大事`
+      : "这一天还没有日报条目";
+  }
+  briefListEl.innerHTML = "";
+  if (!stories.length) {
+    const empty = document.createElement("div");
+    empty.className = "empty";
+    empty.textContent = "daily-brief.json 暂无可用条目。";
+    briefListEl.appendChild(empty);
+    document.dispatchEvent(new CustomEvent("aiRadar:listRendered"));
+    return;
+  }
+  stories.forEach((story, index) => {
+    const row = storyToRow(story, index);
+    const item = row.item || {};
+    const li = document.createElement("li");
+    li.className = "brief-item";
+    const rank = document.createElement("span");
+    rank.className = "brief-item-rank";
+    rank.textContent = String(index + 1).padStart(2, "0");
+    const body = document.createElement("div");
+    body.className = "brief-item-body";
+    const title = document.createElement("a");
+    title.className = "brief-item-title";
+    title.target = "_blank";
+    title.rel = "noopener noreferrer";
+    title.href = item.url || story.primary_url || story.url || "#";
+    title.textContent = storyPrimaryTitleText(story);
+    const summaryText = signalSummaryText(row);
+    const summary = document.createElement("p");
+    summary.className = "brief-item-summary";
+    summary.textContent = summaryText;
+    summary.hidden = !summaryText;
+    const meta = document.createElement("div");
+    meta.className = "brief-item-meta";
+    const sourceCount = rowSourceCount(row);
+    meta.textContent = `${item.source || item.site_name || "来源"} · ${fmtNumber(sourceCount)} 家报道`;
+    body.append(title, summary, meta);
+    li.append(rank, body);
+    briefListEl.appendChild(li);
+  });
+  document.dispatchEvent(new CustomEvent("aiRadar:listRendered"));
+}
+
 function renderMainList() {
+  renderPaneChrome();
   const entries = mainListEntries();
-  resultCountEl.textContent = `${fmtNumber(entries.length)} 条`;
+  if (resultCountEl) resultCountEl.textContent = `${fmtNumber(entries.length)} 条`;
   renderClearFiltersButton();
   if (modeHintEl) {
     modeHintEl.textContent = `${modeLabelText()} ${fmtNumber(entries.length)} 条`;
     modeHintEl.setAttribute("aria-label", `当前${modeLabelText()}模式，${fmtNumber(entries.length)} 条`);
   }
+
+  if (state.nav === "brief" || state.nav === "hot" || state.nav === "favorites") {
+    if (newsListEl) newsListEl.innerHTML = "";
+    return;
+  }
+  if (!newsListEl) return;
 
   newsListEl.innerHTML = "";
   _renderListToken += 1;
@@ -1784,35 +2162,42 @@ function renderTop3Board() {
 // 热点排行区：不设固定条数，展示条数取决于当前有多少条满足多信源热度阈值（HOT_BOARD_LIMIT 只是技术兜底）。
 function renderHotBoard() {
   renderTop3Board();
+  renderHotStrip();
+  renderBriefPane();
   if (!hotBoardListEl) return;
-  const show = state.mode === "selected" && state.nav !== "brief" && state.nav !== "favorites";
+  const show = state.nav === "hot";
   if (hotBoardWrapEl) hotBoardWrapEl.hidden = !show;
   if (!show) return;
   hotBoardListEl.innerHTML = "";
+  hotBoardListEl.classList.add("hot-card-list");
 
-  const rows = hotBoardEntries();
+  const rows = hotBoardEntries(HOT_BOARD_LIMIT, { applySection: false });
   if (hotBoardMetaEl) {
     hotBoardMetaEl.textContent = rows.length
-      ? `当前 ${fmtNumber(rows.length)} 条热点 · 按热度降序`
+      ? `过去${fmtNumber(dataWindowHours())}小时 · ${fmtNumber(rows.length)} 条 · 按热度降序`
       : "按热度排序";
   }
 
   if (!rows.length) {
     const empty = document.createElement("div");
     empty.className = "bole-empty";
-    empty.textContent = "当前筛选下没有 2 个以上信源交叉的热点，可切换筛选或查看全量。";
+    empty.textContent = "当前窗口没有 2 个以上信源交叉的热点。";
     hotBoardListEl.appendChild(empty);
+    document.dispatchEvent(new CustomEvent("aiRadar:listRendered"));
     return;
   }
 
   rows.forEach((row, index) => {
-    hotBoardListEl.appendChild(buildHotRow(row, index + 1));
+    hotBoardListEl.appendChild(buildHotCard(row, index + 1));
   });
+  document.dispatchEvent(new CustomEvent("aiRadar:listRendered"));
 }
 
 function rerenderCurrentView() {
   state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
+  renderPaneChrome();
   renderSectionTabs();
+  renderSourceKindChips();
   renderModeSwitch();
   renderSiteFilters();
   renderHotBoard();
@@ -1830,11 +2215,11 @@ function waytoagiViews(waytoagi) {
 }
 
 function renderWaytoagi(waytoagi) {
-  // 内容 tab 已收敛为单层：WaytoAGI 面板跟随「社区」tab 显示（合并了原来源形态 cn 分组）
+  // WaytoAGI 仍跟随社区栏目；新顶栏芯片不含「社区」，所以默认隐藏。
   if (waytoagiWrapEl) {
-    waytoagiWrapEl.hidden = state.activeSection !== "community";
+    waytoagiWrapEl.hidden = state.nav !== "selected" && state.nav !== "all" || state.activeSection !== "community";
   }
-  if (state.activeSection !== "community") return;
+  if (state.activeSection !== "community" || (state.nav !== "selected" && state.nav !== "all")) return;
   const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
   if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
   if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
@@ -2228,6 +2613,7 @@ async function applyRadarNav(nav, { scroll = true } = {}) {
   if (next === "favorites") {
     state.nav = "favorites";
     syncNavUrl(next);
+    renderPaneChrome();
     emitNavChange();
     return;
   }
@@ -2235,8 +2621,10 @@ async function applyRadarNav(nav, { scroll = true } = {}) {
   const switchingToAll = next === "all";
   state.nav = next;
   state.mode = switchingToAll ? "all" : "selected";
+  if (next !== "all") state.sourceKind = "all";
   state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
   syncNavUrl(next);
+  renderPaneChrome();
 
   if (switchingToAll) {
     renderModeSwitch();
@@ -2266,10 +2654,10 @@ async function applyRadarNav(nav, { scroll = true } = {}) {
   emitNavChange();
   if (!scroll) return;
   if (next === "hot") {
-    hotBoardWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+    paneTopEl?.scrollIntoView({ behavior: "smooth", block: "start" });
   } else if (next === "brief") {
-    newsListWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" });
-  } else if (next === "selected") {
+    paneTopEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else if (next === "selected" || next === "all") {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 }
@@ -2351,17 +2739,17 @@ async function init() {
       state.mode = "selected";
     }
 
+    renderPaneChrome();
     renderSectionTabs();
+    renderSourceKindChips();
     renderModeSwitch();
     renderSiteFilters();
     renderHotBoard();
     renderMainList();
     updatedAtEl.textContent = fmtTime(state.generatedAt);
     emitNavChange();
-    if (requestedNav === "hot") {
-      requestAnimationFrame(() => hotBoardWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
-    } else if (requestedNav === "brief") {
-      requestAnimationFrame(() => newsListWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    if (requestedNav === "hot" || requestedNav === "brief") {
+      requestAnimationFrame(() => paneTopEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
     }
   } else {
     updatedAtEl.textContent = "新闻数据加载失败";
@@ -2392,6 +2780,7 @@ searchInputEl.addEventListener("input", (e) => {
   state.query = e.target.value;
   state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
   renderSectionTabs();
+  renderSourceKindChips();
   renderModeSwitch();
   renderHotBoard();
   renderMainList();
@@ -2424,6 +2813,12 @@ if (modeSelectedBtnEl) {
 if (modeAllBtnEl) {
   modeAllBtnEl.addEventListener("click", () => {
     applyRadarNav("all");
+  });
+}
+
+if (hotStripMoreBtnEl) {
+  hotStripMoreBtnEl.addEventListener("click", () => {
+    applyRadarNav("hot");
   });
 }
 

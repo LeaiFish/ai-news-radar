@@ -34,7 +34,7 @@ npx skills add LearnPrompt/ai-news-radar -s ai-radar -g
 
 ![ai-radar demo](skills/radar/assets/demo.gif)
 
-**② 直接看网页** → 打开 [news.learnprompt.pro](https://news.learnprompt.pro)。默认是手机版视图，右上角「视角」开关能切到经典版（旧版桌面界面，路径 `/classic/`），也可以直接用 `?view=mobile` / `?view=classic` / `?view=auto` 指定，两个视图读同一份 `data/` 目录数据。桌面端左侧是固定导航（精选 / 全量 / 热点 / 日报 / 主题 / 收藏），窄屏收成抽屉。v0.9 起是单层信息架构：顶部「全部/模型/产品/开发者/行业/论文/社区/自媒体」栏目 tab + 「精选/全量」全局开关，主列表按时间倒序、按日分组，「当前热点」榜不设固定条数单独看当下最热。每条精选卡片自带一句话「推荐理由」；同一事件被多家信源报道时会折叠成「多源 N」标签，点开看每家独立标题。
+**② 直接看网页** → 打开 [news.learnprompt.pro](https://news.learnprompt.pro)。默认是手机版视图，右上角「视角」开关能切到经典版（旧版桌面界面，路径 `/classic/`），也可以直接用 `?view=mobile` / `?view=classic` / `?view=auto` 指定，两个视图读同一份 `data/` 目录数据。桌面端左侧是固定导航（精选 / 全量 / 热点 / 日报 / 主题 / 收藏），窄屏收成抽屉。每个内容栏有自己的顶区：精选带栏目芯片和「当前热点」速览，全量加来源筛选，热点榜是排名卡片，日报是编号大事。v0.9 起主列表按时间倒序、按日分组。每条精选卡片自带一句话「推荐理由」；同一事件被多家信源报道时会折叠成「多源 N」标签，点开看每家独立标题。
 
 **③ fork 拥有自己的筛子** → fork本仓库，信源换成你自己的 OPML，口味改 `personas/` 下的 markdown 文件，数据长在你自己的 GitHub Pages 上。跳到[fork 指南](#fork-指南五步拥有自己的雷达)。
 

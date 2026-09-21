@@ -1,0 +1,99 @@
+"""Per-tab inner layout: filter + 速览, backed by existing radar data."""
+
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def read(relative_path: str) -> str:
+    return (ROOT / relative_path).read_text(encoding="utf-8")
+
+
+def test_home_markup_has_distinct_pane_regions():
+    source = read("index.html")
+    assert 'id="paneTop"' in source
+    assert 'id="paneKicker"' in source
+    assert 'id="sectionTabs"' in source
+    assert 'id="sourceKindChips"' in source
+    assert 'id="hotStripWrap"' in source
+    assert "当前热点" in source
+    assert 'id="hotBoardWrap"' in source
+    assert 'id="briefWrap"' in source
+    assert 'id="briefDigest"' in source
+    assert 'id="newsListWrap"' in source
+    assert 'class="topics-entry"' in source
+    assert 'href="./topics/"' in source
+    assert "模型榜" not in source
+    assert "Tibo" not in source
+
+
+def test_home_keeps_pages_relative_links():
+    source = read("index.html")
+    assert 'href="/ai-news-radar/' not in source
+    assert 'src="/ai-news-radar/' not in source
+    assert 'href="./topics/"' in source
+    assert 'src="./assets/app.js' in source
+
+
+def test_app_maps_real_filters_and_omits_unbacked_invented_heat_api():
+    source = read("assets/app.js")
+    assert "PANE_CATEGORY_DEFS" in source
+    for label in ("全部", "模型", "产品", "行业", "论文", "教程", "观点"):
+        assert label in source
+    assert "一手信源" in source
+    assert "资讯" in source
+    assert "推文" in source
+    assert "这一天的" in source
+    assert "daily-brief.json" in source
+    assert "HOT_STRIP_LIMIT = 5" in source
+    assert "function buildHotCard(" in source
+    assert "function renderHotStrip(" in source
+    assert "function renderBriefPane(" in source
+    assert "function renderSourceKindChips(" in source
+    assert "item.summary" in source
+    assert "heat.api" not in source.lower()
+    assert "fetch(" in source
+    assert "aihot.news/api" not in source
+    assert "模型榜" not in source
+    assert "Tibo" not in source
+
+
+def test_overlay_chips_are_data_backed_not_required():
+    source = read("assets/app.js")
+    assert "overlay: true" in source
+    assert "section.overlay && count === 0" in source
+    assert 'id: "tutorials"' in source
+    assert 'id: "opinion"' in source
+    assert 'id: "devtools"' in source  # still used for card badges
+    assert "PANE_CATEGORY_DEFS" in source
+    assert "devtools" not in source.split("PANE_CATEGORY_DEFS")[1].split("SOURCE_KIND_FILTERS")[0]
+
+
+def test_hot_and_brief_use_existing_json_signals():
+    source = read("assets/app.js")
+    assert "storyHotScore" in source
+    assert "hotBoardStories" in source
+    assert "briefStories" in source
+    assert "dataWindowHours" in source
+    assert "window_hours" in source
+    assert "function renderPaneChrome(" in source
+    assert 'nav !== "hot"' in source or 'nav === "hot"' in source
+    assert 'nav === "brief"' in source
+
+
+def test_favorites_pane_stays_localstorage_only():
+    source = read("assets/sidebar.js")
+    assert "本机收藏" in source
+    assert "localStorage" in source
+    assert "aiNewsRadarFavorites" in source
+    assert "不会上传" in source
+
+
+def test_topics_hub_keeps_group_filter():
+    hub = read("topics/index.html")
+    js = read("assets/topics.js")
+    assert 'id="topicsFilter"' in hub
+    assert "topics-filter" in hub
+    assert "function renderGroupFilter" in js or "topicsFilter" in js
+    assert "data-radar-surface=\"topics\"" in hub

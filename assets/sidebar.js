@@ -286,25 +286,28 @@
   }
 
   function recordFromCard(card) {
-    const titleEl = card.querySelector("a.title, a.hot-row-title") || card.querySelector("a[href]");
+    const titleEl = card.matches?.("a[href]")
+      ? card
+      : (card.querySelector("a.title, a.hot-row-title, a.hot-card-title, a.brief-item-title") || card.querySelector("a[href]"));
     if (!titleEl || !titleEl.href || titleEl.getAttribute("href") === "#") return null;
-    const title = (titleEl.getAttribute("title") || titleEl.textContent || "").replace(/\s+/g, " ").trim();
-    const source = (card.querySelector(".site")?.textContent || "").replace(/\s+/g, " ").trim();
+    const nestedTitle = card.querySelector(".hot-strip-title, .hot-card-title, .brief-item-title, a.title");
+    const title = (titleEl.getAttribute("title") || nestedTitle?.textContent || titleEl.textContent || "").replace(/\s+/g, " ").trim();
+    const source = (card.querySelector(".site, .hot-card-meta, .brief-item-meta")?.textContent || "").replace(/\s+/g, " ").trim();
     return { id: titleEl.href, url: titleEl.href, title, source };
   }
 
   function decorateFavoriteButtons(root) {
     const scope = root || document;
-    scope.querySelectorAll(".news-card, .hot-row").forEach((card) => {
+    scope.querySelectorAll(".news-card, .hot-row, .hot-card, .hot-strip-item, .brief-item").forEach((card) => {
       const record = recordFromCard(card);
       if (!record) return;
-      let btn = card.querySelector(":scope > .radar-fav-btn, .meta-row > .radar-fav-btn, .radar-fav-btn");
+      let btn = card.querySelector(":scope > .radar-fav-btn, .meta-row > .radar-fav-btn, .hot-card-body > .radar-fav-btn, .brief-item-body > .radar-fav-btn, .radar-fav-btn");
       if (!btn) {
         btn = document.createElement("button");
         btn.type = "button";
         btn.className = "radar-fav-btn";
         btn.innerHTML = svg("star");
-        const meta = card.querySelector(".meta-row") || card;
+        const meta = card.querySelector(".meta-row, .hot-card-body, .brief-item-body") || card;
         meta.appendChild(btn);
       }
       btn.dataset.favId = record.id;
@@ -429,8 +432,9 @@
     favPanelEl.setAttribute("aria-label", "收藏");
     favPanelEl.innerHTML = `
       <div class="radar-fav-inner">
-        <h2>收藏</h2>
-        <p class="radar-fav-note">保存在这台浏览器的 localStorage，不会上传或跨设备同步。</p>
+        <p class="pane-kicker">收藏</p>
+        <h2>本机收藏</h2>
+        <p class="radar-fav-note">保存在这台浏览器的 localStorage，不会上传或跨设备同步。点卡片或热点右侧的星标即可加入。</p>
         <div class="radar-fav-list"></div>
       </div>
     `;
@@ -483,7 +487,7 @@
     if (!btn) return;
     event.preventDefault();
     event.stopPropagation();
-    const card = btn.closest(".news-card, .hot-row");
+    const card = btn.closest(".news-card, .hot-row, .hot-card, .hot-strip-item, .brief-item");
     const record = {
       id: btn.dataset.favId || btn.dataset.favUrl,
       url: btn.dataset.favUrl,
