@@ -286,10 +286,10 @@
   }
 
   function recordFromCard(card) {
-    const titleEl = card.querySelector("a.title, a.hot-row-title, a[href]");
-    if (!titleEl || !titleEl.href) return null;
+    const titleEl = card.querySelector("a.title, a.hot-row-title") || card.querySelector("a[href]");
+    if (!titleEl || !titleEl.href || titleEl.getAttribute("href") === "#") return null;
     const title = (titleEl.getAttribute("title") || titleEl.textContent || "").replace(/\s+/g, " ").trim();
-    const source = (card.querySelector(".site, .hot-row-meta")?.textContent || "").replace(/\s+/g, " ").trim();
+    const source = (card.querySelector(".site")?.textContent || "").replace(/\s+/g, " ").trim();
     return { id: titleEl.href, url: titleEl.href, title, source };
   }
 
@@ -298,21 +298,19 @@
     scope.querySelectorAll(".news-card, .hot-row").forEach((card) => {
       const record = recordFromCard(card);
       if (!record) return;
-      let btn = card.querySelector(".radar-fav-btn");
+      let btn = card.querySelector(":scope > .radar-fav-btn, .meta-row > .radar-fav-btn, .radar-fav-btn");
       if (!btn) {
         btn = document.createElement("button");
         btn.type = "button";
         btn.className = "radar-fav-btn";
         btn.innerHTML = svg("star");
-        btn.addEventListener("click", (event) => {
-          event.preventDefault();
-          event.stopPropagation();
-          const next = recordFromCard(card);
-          toggleFavorite(next);
-        });
         const meta = card.querySelector(".meta-row") || card;
         meta.appendChild(btn);
       }
+      btn.dataset.favId = record.id;
+      btn.dataset.favUrl = record.url;
+      btn.dataset.favTitle = record.title || "";
+      btn.dataset.favSource = record.source || "";
       const saved = isSaved(record);
       btn.classList.toggle("is-saved", saved);
       btn.setAttribute("aria-pressed", saved ? "true" : "false");
@@ -479,6 +477,25 @@
   } catch {
     // matchMedia can be missing in very old environments.
   }
+
+  document.addEventListener("click", (event) => {
+    const btn = event.target.closest(".radar-fav-btn");
+    if (!btn) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const card = btn.closest(".news-card, .hot-row");
+    const record = {
+      id: btn.dataset.favId || btn.dataset.favUrl,
+      url: btn.dataset.favUrl,
+      title: btn.dataset.favTitle,
+      source: btn.dataset.favSource,
+    };
+    if (!record.url && card) {
+      const parsed = recordFromCard(card);
+      if (parsed) Object.assign(record, parsed);
+    }
+    toggleFavorite(record);
+  });
 
   window.AINewsRadarSidebar = {
     applyTheme,
