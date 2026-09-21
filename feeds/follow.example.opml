@@ -13,6 +13,41 @@
         htmlUrl="https://openai.com/news"
       />
       <outline
+        text="OpenRouter Blog"
+        title="OpenRouter Blog"
+        type="rss"
+        xmlUrl="https://openrouter.ai/blog/feed.xml"
+        htmlUrl="https://openrouter.ai/blog"
+      />
+      <!--
+        Cloudflare's unfiltered blog RSS (https://blog.cloudflare.com/rss/) is
+        stable (HTTP 200) but mixed CDN/security/Workers posts. The AI tag feed
+        below is the default. To follow the full blog in a private OPML, copy:
+
+        xmlUrl="https://blog.cloudflare.com/rss/"
+        htmlUrl="https://blog.cloudflare.com/"
+      -->
+      <outline
+        text="Cloudflare Blog"
+        title="Cloudflare Blog"
+        type="rss"
+        xmlUrl="https://blog.cloudflare.com/tag/ai/rss/"
+        htmlUrl="https://blog.cloudflare.com/"
+      />
+      <!--
+        Apple Developer News RSS exists (https://developer.apple.com/news/rss/news.rss)
+        but is general SDK/App Store news, not Core AI / Apple Intelligence.
+        Apple Intelligence and Core ML developer pages have no RSS. The research
+        feed below is the stable public Apple Core AI source.
+      -->
+      <outline
+        text="Apple Machine Learning Research"
+        title="Apple Machine Learning Research"
+        type="rss"
+        xmlUrl="https://machinelearning.apple.com/rss.xml"
+        htmlUrl="https://machinelearning.apple.com/"
+      />
+      <outline
         text="Hugging Face Blog"
         title="Hugging Face Blog"
         type="rss"

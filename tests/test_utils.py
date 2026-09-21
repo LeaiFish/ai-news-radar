@@ -77,6 +77,17 @@ class UtilsTests(unittest.TestCase):
         self.assertEqual(feeds[0]["title"], "A")
         self.assertEqual(feeds[1]["title"], "B")
 
+    def test_example_opml_includes_openrouter_cloudflare_and_apple_ml(self):
+        example = Path(__file__).resolve().parents[1] / "feeds" / "follow.example.opml"
+        feeds = parse_opml_subscriptions(example)
+        by_title = {feed["title"]: feed["xml_url"] for feed in feeds}
+        self.assertEqual(by_title["OpenRouter Blog"], "https://openrouter.ai/blog/feed.xml")
+        self.assertEqual(by_title["Cloudflare Blog"], "https://blog.cloudflare.com/tag/ai/rss/")
+        self.assertEqual(
+            by_title["Apple Machine Learning Research"],
+            "https://machinelearning.apple.com/rss.xml",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

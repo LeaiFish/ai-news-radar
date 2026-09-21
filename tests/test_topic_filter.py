@@ -19,7 +19,9 @@ from scripts.update_news import (
     fetch_agentmail_digest_via_cli,
     fetch_aihot,
     fetch_ai_hubtoday,
+    fetch_feed_as_official_items,
     fetch_hacker_news_algolia,
+    OFFICIAL_AI_FEEDS,
     fetch_socialdata_list_tweets,
     fetch_tikhub_search,
     hn_algolia_keyword_score,
@@ -527,6 +529,56 @@ class TopicFilterTests(unittest.TestCase):
         self.assertEqual(items[0].site_id, "curated_media")
         self.assertEqual(items[0].source, "The Verge")
         self.assertIn("OpenAI", items[0].title)
+
+    def test_official_ai_feeds_include_openrouter_cloudflare_and_apple_ml(self):
+        by_title = {feed["title"]: feed for feed in OFFICIAL_AI_FEEDS}
+        self.assertEqual(by_title["OpenRouter Blog"]["xml_url"], "https://openrouter.ai/blog/feed.xml")
+        self.assertEqual(by_title["Cloudflare Blog"]["xml_url"], "https://blog.cloudflare.com/tag/ai/rss/")
+        self.assertEqual(
+            by_title["Apple Machine Learning Research"]["xml_url"],
+            "https://machinelearning.apple.com/rss.xml",
+        )
+
+    def test_fetch_feed_as_official_items_parses_openrouter_style_rss(self):
+        xml = """<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>OpenRouter Blog</title>
+<item>
+<title>Does DeepSeek V4 Have Vision?</title>
+<link>https://openrouter.ai/blog/insights/deepseek-v4-vision/</link>
+<pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Stale post from last year</title>
+<link>https://openrouter.ai/blog/insights/old/</link>
+<pubDate>Wed, 16 Sep 2025 00:00:00 GMT</pubDate>
+</item>
+</channel></rss>""".encode("utf-8")
+
+        class FakeResponse:
+            def __init__(self, content):
+                self.content = content
+
+            def raise_for_status(self):
+                return None
+
+        class FakeSession:
+            def get(self, url, **kwargs):
+                self.url = url
+                return FakeResponse(xml)
+
+        feed = {
+            "title": "OpenRouter Blog",
+            "xml_url": "https://openrouter.ai/blog/feed.xml",
+            "html_url": "https://openrouter.ai/blog",
+        }
+        now = datetime(2026, 9, 21, tzinfo=timezone.utc)
+        items = fetch_feed_as_official_items(FakeSession(), feed, now)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0].site_id, "official_ai")
+        self.assertEqual(items[0].source, "OpenRouter Blog")
+        self.assertEqual(items[0].title, "Does DeepSeek V4 Have Vision?")
+        self.assertEqual(items[0].url, "https://openrouter.ai/blog/insights/deepseek-v4-vision/")
 
     def test_parse_follow_builders_items(self):
         feeds = {

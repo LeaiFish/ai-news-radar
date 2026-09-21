@@ -303,7 +303,7 @@ When a new agent takes over validation, read these first:
 - With `DEEPSEEK_API_KEY` set, scores the daily picks with the default persona, generates the three-persona TOP3 reviews, enables title enhancement, generates real pipeline-written review lines for curated items, and gives better translation (refusal text and degenerate output fall back to the original title automatically); without it, falls back to rule-based scores, original titles, and Google Translate, and the review block doesn't render — the core pipeline still runs
 - Default DeepSeek model is `deepseek-v4-flash` (DeepSeek is retiring the `deepseek-chat` alias on 2026-07-24); set a repo Variable `DEEPSEEK_MODEL` to override it
 - With `TITLE_ENHANCE_MAX_PER_RUN` set, caps how many titles get rewritten per run; defaults to 30
-- Uses public demo `feeds/follow.example.opml` when `FOLLOW_OPML_B64` is not configured, so the hosted page can show the RSS/OPML path working
+- Uses public demo `feeds/follow.example.opml` when `FOLLOW_OPML_B64` is not configured, so the hosted page can show the RSS/OPML path working. The example now includes OpenRouter Blog, Cloudflare Blog (AI tag), and Apple Machine Learning Research; the same three feeds are also built-in official sources, so they ingest even without a private OPML secret
 - Decodes `FOLLOW_OPML_B64` into private `feeds/follow.opml` when configured
 - Generates a redacted email summary when `EMAIL_DIGEST_ENABLED=1`, `AGENTMAIL_API_KEY`, and `AGENTMAIL_INBOX_ID` are set
 - Commits `data/email-digest.json` only when `EMAIL_DIGEST_PUBLISH=1` is also explicitly set

@@ -123,6 +123,23 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
         "html_url": "https://github.com/openai/skills",
         "include_keywords": "hatch,pet,migrate-to-codex",
     },
+    {
+        "title": "OpenRouter Blog",
+        "xml_url": "https://openrouter.ai/blog/feed.xml",
+        "html_url": "https://openrouter.ai/blog",
+    },
+    {
+        # Full https://blog.cloudflare.com/rss/ is stable but mixed CDN/security.
+        # The AI tag feed is the same official blog, already labeled by Cloudflare.
+        "title": "Cloudflare Blog",
+        "xml_url": "https://blog.cloudflare.com/tag/ai/rss/",
+        "html_url": "https://blog.cloudflare.com/",
+    },
+    {
+        "title": "Apple Machine Learning Research",
+        "xml_url": "https://machinelearning.apple.com/rss.xml",
+        "html_url": "https://machinelearning.apple.com/",
+    },
 )
 OFFICIAL_AI_MAX_AGE_DAYS = 45
 CURATED_AI_MEDIA_MAX_AGE_DAYS = 30

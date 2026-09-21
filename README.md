@@ -305,7 +305,7 @@ GitHub Pages 上请用相对链接。项目站路径是 `/ai-news-radar/topics/`
 - 如果设置 `DEEPSEEK_API_KEY`，会给每日精选打 persona 分、生成三口味 TOP3 点评、启用标题增强、生成精选条目的真实推荐理由，并给出更可靠的中文翻译（拒答文案和退化输出会自动回退原标题）；不设置时自动降级为规则分、原始标题和谷歌翻译，推荐理由区块不显示，核心流程照样跑
 - 默认 DeepSeek 模型是 `deepseek-v4-flash`（DeepSeek 官方将于 2026-07-24 弃用 `deepseek-chat` 别名），可以设置仓库 Variable `DEEPSEEK_MODEL` 覆盖
 - 如果设置 `TITLE_ENHANCE_MAX_PER_RUN`，会限制每次运行最多改写的标题条数；不设置默认 30
-- 如果没有设置 `FOLLOW_OPML_B64`，线上工作流会自动使用公开示例 `feeds/follow.example.opml`，让页面展示 RSS/OPML 能力
+- 如果没有设置 `FOLLOW_OPML_B64`，线上工作流会自动使用公开示例 `feeds/follow.example.opml`，让页面展示 RSS/OPML 能力；示例里现已包含 OpenRouter Blog、Cloudflare Blog（AI 标签）和 Apple Machine Learning Research，内置官方抓取也会拉这三路，不依赖私有 OPML secret
 - 如果设置 `FOLLOW_OPML_B64`，会优先自动解码为私有 `feeds/follow.opml`
 - 如果设置 `EMAIL_DIGEST_ENABLED=1`，会生成脱敏邮箱摘要；`AGENTMAIL_PROVIDER=agently_cli` 通过已授权的 QQ Agent Mail CLI 读取 `message +list` 元数据，`AGENTMAIL_PROVIDER=api` 兼容旧 `AGENTMAIL_API_KEY` / `AGENTMAIL_INBOX_ID` 模式
 - 如果额外设置 `AGENTMAIL_RESOLVE_PUBLIC_URLS=1`，QQ Agent Mail CLI 模式会对每封候选邮件执行一次 `message +read`，只抽取 `Read online` / `View in browser` 这类公开 newsletter 链接；正文不会写入任何 JSON。没有公开链接的邮件不会进入 Radar 主列表，避免跳到私有邮箱首页
