@@ -43,6 +43,7 @@ def test_sidebar_links_are_root_relative_not_pages_absolute():
     assert "'/topics/'" not in js
     assert "siteHref(" in js
     assert "dataset.root" in js
+    assert "aiNewsRadarViewV2" in js
 
 
 def test_home_and_classic_load_shared_sidebar():

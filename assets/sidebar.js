@@ -69,8 +69,8 @@
 
   function siteHref(path, search, hash) {
     const url = new URL(path || "./", ROOT);
-    if (search) url.search = search;
-    if (hash) url.hash = hash;
+    if (search) url.search = search.startsWith("?") ? search : `?${search}`;
+    if (hash) url.hash = hash.startsWith("#") ? hash : `#${hash}`;
     return url.href;
   }
 
@@ -126,7 +126,13 @@
   }
 
   function radarHomePath() {
-    return currentSurface() === "classic" ? "classic/" : "./";
+    if (currentSurface() === "classic") return "classic/";
+    try {
+      if (window.localStorage.getItem("aiNewsRadarViewV2") === "classic") return "classic/";
+    } catch {
+      // Storage can be unavailable in private or hardened browser contexts.
+    }
+    return "./";
   }
 
   function homeHref(nav) {
