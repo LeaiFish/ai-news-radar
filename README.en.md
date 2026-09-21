@@ -261,10 +261,10 @@ python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml fee
 
 ## Topics
 
-Topics are a **separate browsing layer** from the All/Models/Products/… category tabs. Tabs filter today's timeline by content type; topic pages group matching stories by company, product, or technical direction.
+Topics are a **separate browsing layer** from the All/Models/Products/… category tabs. Tabs filter today's timeline by content type; topic pages group matching stories by company, product, technical direction, or business/product lenses. The `/topics/` hub has a top chip filter for “which theme” (All, the four industry lenses, Companies & models, Technical directions).
 
 - The static frontend only reads `data/topics.json` and `data/topics/<id>.json`.
-- Maintainers edit `config/topics.json` (`id`, `name`, `description`, `group`, `keywords` / `exclude` / optional `patterns`) without changing frontend JS. Company topics also scan `archive.json` for a longer window; broader tech topics default to the 24h story pool to limit noise.
+- Maintainers edit `config/topics.json` (`id`, `name`, `description`, `group`, `keywords` / `exclude` / optional `patterns`) without changing frontend JS. A group may set `filter: "topics"` so the hub expands that group into theme chips. Company topics and industry lenses also scan `archive.json` for a longer window; broader tech topics default to the 24h story pool to limit noise.
 - Matching is a keyword/alias heuristic on title, summary, source, and tags — not a classifier. One story may appear in several topics. Limitations are documented in the generated JSON and on the topic pages.
 - `scripts/update_news.py` regenerates the topic JSON. After editing definitions, also run:
 

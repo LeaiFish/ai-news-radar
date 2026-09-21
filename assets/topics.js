@@ -110,6 +110,7 @@
   const titleEl = document.getElementById("topicsTitle");
   const leadEl = document.getElementById("topicsLead");
   const updatedAtEl = document.getElementById("updatedAt");
+  const filterEl = document.getElementById("topicsFilter");
   const itemTpl = document.getElementById("itemTpl");
 
   function setStatus(text) {
@@ -134,14 +135,119 @@
     return (Array.isArray(topics) ? topics : []).filter((topic) => topic.group === groupId);
   }
 
+  function hubFilterFromLocation() {
+    try {
+      return (new URLSearchParams(window.location.search).get("group") || "").trim();
+    } catch {
+      return "";
+    }
+  }
+
+  function setHubFilter(id) {
+    const url = new URL(window.location.href);
+    if (!id || id === "all") url.searchParams.delete("group");
+    else url.searchParams.set("group", id);
+    history.replaceState({}, "", url);
+  }
+
+  function hubFilterOptions(index) {
+    const groups = Array.isArray(index.groups) ? index.groups : [];
+    const topics = Array.isArray(index.topics) ? index.topics : [];
+    const options = [{ id: "all", label: "全部", kind: "all" }];
+    groups.forEach((group) => {
+      options.push({
+        id: group.id,
+        label: group.name || group.id,
+        kind: "group",
+        groupId: group.id,
+      });
+      if (group.filter === "topics") {
+        topicsForGroup(topics, group.id).forEach((topic) => {
+          options.push({
+            id: topic.id,
+            label: topic.name,
+            kind: "topic",
+            groupId: group.id,
+          });
+        });
+      }
+    });
+    return options;
+  }
+
+  function resolveHubFilter(index) {
+    const raw = hubFilterFromLocation();
+    const options = hubFilterOptions(index);
+    return options.find((option) => option.id === raw) || options[0];
+  }
+
+  function applyHubFilter(index, selected) {
+    const groups = Array.isArray(index.groups) ? index.groups : [];
+    const topics = Array.isArray(index.topics) ? index.topics : [];
+    if (!selected || selected.kind === "all") {
+      return { groups, topics };
+    }
+    if (selected.kind === "group") {
+      return {
+        groups: groups.filter((group) => group.id === selected.id),
+        topics: topics.filter((topic) => topic.group === selected.id),
+      };
+    }
+    const topic = topics.find((item) => item.id === selected.id);
+    if (!topic) return { groups, topics };
+    return {
+      groups: groups.filter((group) => group.id === topic.group),
+      topics: [topic],
+    };
+  }
+
+  function hideHubFilter() {
+    if (!filterEl) return;
+    filterEl.hidden = true;
+    filterEl.replaceChildren();
+  }
+
+  function renderHubFilter(index) {
+    if (!filterEl) return;
+    const selected = resolveHubFilter(index);
+    filterEl.hidden = false;
+    filterEl.replaceChildren();
+    const label = document.createElement("p");
+    label.className = "topics-filter-label";
+    label.id = "topicsFilterLabel";
+    label.textContent = "按哪一个主题";
+    const chips = document.createElement("div");
+    chips.className = "topics-filter-chips";
+    chips.setAttribute("role", "group");
+    chips.setAttribute("aria-labelledby", "topicsFilterLabel");
+    hubFilterOptions(index).forEach((option) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "topics-filter-chip";
+      btn.textContent = option.label;
+      const pressed = option.id === selected.id;
+      btn.setAttribute("aria-pressed", pressed ? "true" : "false");
+      if (pressed) btn.classList.add("active");
+      btn.addEventListener("click", () => {
+        setHubFilter(option.id);
+        renderHub(index);
+      });
+      chips.appendChild(btn);
+    });
+    filterEl.append(label, chips);
+  }
+
   function renderHub(index) {
     document.title = "主题 · AI News Radar";
     if (titleEl) titleEl.textContent = "按主题看 AI";
     if (leadEl) {
-      leadEl.textContent = "按公司与模型、技术方向浏览主题。匹配来自标题/摘要/来源的关键词，不是分类模型。";
+      leadEl.textContent = "按产业透镜、公司与模型、技术方向浏览主题。匹配来自标题/摘要/来源的关键词，不是分类模型。";
     }
-    const groups = Array.isArray(index.groups) ? index.groups : [];
-    const topics = Array.isArray(index.topics) ? index.topics : [];
+    renderHubFilter(index);
+    const selected = resolveHubFilter(index);
+    const filtered = applyHubFilter(index, selected);
+    const groups = filtered.groups;
+    const topics = filtered.topics;
     const frag = document.createDocumentFragment();
 
     groups.forEach((group) => {
@@ -310,6 +416,7 @@
       back.append(document.createTextNode(" · " + index.matching.limitations));
     }
 
+    hideHubFilter();
     mainEl.innerHTML = "";
     mainEl.append(wrap, back);
   }
@@ -333,6 +440,7 @@
       const summary = (index.topics || []).find((topic) => topic.id === topicId);
       if (!summary) {
         setStatus("");
+        hideHubFilter();
         mainEl.innerHTML = "";
         mainEl.appendChild(renderEmpty("没有这个主题", "请回到主题列表，或检查 config/topics.json 里的 id。"));
         return;
@@ -342,12 +450,21 @@
       renderDetail(detail, index);
     } catch (error) {
       setStatus("");
+      hideHubFilter();
       mainEl.innerHTML = "";
       mainEl.appendChild(renderEmpty("主题数据加载失败", "确认 data/topics.json 已生成，或用 python scripts/build_topics.py --data-dir data 重建。"));
       console.error(error);
     }
   }
 
-  window.AINewsRadarTopics = { topicIdFromLocation, dataUrl, homeUrl, topicsForGroup };
+  window.AINewsRadarTopics = {
+    topicIdFromLocation,
+    dataUrl,
+    homeUrl,
+    topicsForGroup,
+    hubFilterOptions,
+    applyHubFilter,
+    hubFilterFromLocation,
+  };
   init();
 })();

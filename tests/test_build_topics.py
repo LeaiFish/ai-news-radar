@@ -42,10 +42,26 @@ def test_default_config_loads():
     assert "doubao" in ids
     assert "quark" in ids
     assert "hunyuan" in ids
+    assert "monetization" in ids
+    assert "product-entry" in ids
+    assert "agent-ecosystem" in ids
+    assert "workplace" in ids
     assert len(ids) == len(set(ids))
     group_ids = {item["id"] for item in config["groups"]}
+    assert "lens" in group_ids
     for item in config["topics"]:
         assert item["group"] in group_ids
+
+
+def test_lens_group_leads_hub_filter_contract():
+    config = load_topic_config(ROOT / "config" / "topics.json")
+    group_ids = [item["id"] for item in config["groups"]]
+    assert group_ids[0] == "lens"
+    assert group_ids[1:] == ["company", "tech"]
+    lens = config["groups"][0]
+    assert lens["filter"] == "topics"
+    lens_ids = [item["id"] for item in config["topics"] if item["group"] == "lens"]
+    assert lens_ids == ["monetization", "product-entry", "agent-ecosystem", "workplace"]
 
 
 def test_company_topics_lead_with_domestic_products():
@@ -89,6 +105,44 @@ def test_domestic_product_keywords_match_expected_aliases():
     assert record_matches_topic({"title": "元宝接入混元大模型"}, hunyuan)
 
 
+def test_lens_topic_keywords_match_business_and_product_stories():
+    monetization = _config_topic("monetization")
+    product_entry = _config_topic("product-entry")
+    agent_ecosystem = _config_topic("agent-ecosystem")
+    workplace = _config_topic("workplace")
+
+    assert record_matches_topic({"title": "OpenAI pauses $200 ChatGPT Pro sign-ups"}, monetization)
+    assert record_matches_topic({"title": "DeepSeek 下调 API 定价"}, monetization)
+    assert record_matches_topic({"title": "大模型服务上线个人套餐，付费转化看 ARPU"}, monetization)
+    assert record_matches_topic({"title": "应用商店抽佣与分成比例上调"}, monetization)
+    assert not record_matches_topic({"title": "新学期正版软件付费栏目限时优惠"}, monetization)
+    assert not record_matches_topic({"title": "Winamp plans 2027 return with a new streaming subscription"}, monetization)
+    assert not record_matches_topic({"title": "Memory pricing suggests iPhones could get even more expensive in 2027"}, monetization)
+    assert record_matches_topic({"title": "Qwen3.8-Omni-Flash undercuts Google's Gemini Flash pricing"}, monetization)
+    assert not record_matches_topic({"title": "The DJI Mini 5 Pro gets a rare price cut at Amazon"}, monetization)
+
+    assert record_matches_topic({"title": "微信搜索框接入 AI 助手，抢超级入口"}, product_entry)
+    assert record_matches_topic({"title": "Anthropic 合并聊天，打造统一办公入口"}, product_entry)
+    assert record_matches_topic({"title": "侧边栏助手接入搜索，桌面入口开战"}, product_entry)
+    assert not record_matches_topic({"title": "抖音新增冒用声音专属举报入口"}, product_entry)
+    assert not record_matches_topic({"title": "机构有了合规入口"}, product_entry)
+    assert not record_matches_topic({"title": "也门胡塞武装抵达位于重要航道入口处的战略要岛"}, product_entry)
+    assert not record_matches_topic({"title": "PC 网站接入微信登录，这 10 个坑我替你踩完了"}, product_entry)
+
+    assert record_matches_topic({"title": "Agent 落地场景与开放平台插件生态"}, agent_ecosystem)
+    assert record_matches_topic({"title": "多智能体通过 MCP 做工具调用"}, agent_ecosystem)
+    assert record_matches_topic({"title": "智能体平台开放生态上线"}, agent_ecosystem)
+
+    assert record_matches_topic({"title": "ChatGPT 正式入驻 Word：办公文档里三套 AI"}, workplace)
+    assert record_matches_topic({"title": "飞书引入团队智能体，钉钉和 Notion 也在跟"}, workplace)
+    assert record_matches_topic({"title": "百度AI底层架构再迎重磅人事变动，新设AI部门"}, workplace)
+    assert record_matches_topic({"title": "裁员潮将持续，直到我们学会发掘 AI 的商业价值"}, workplace)
+    assert not record_matches_topic(
+        {"title": "Big Tech uses guarantees to keep $300B AI exposure off balance sheets"},
+        workplace,
+    )
+
+
 def test_topics_payload_preserves_config_array_order(tmp_path: Path):
     config = load_topic_config(ROOT / "config" / "topics.json")
     data_dir = tmp_path / "data"
@@ -104,6 +158,10 @@ def test_topics_payload_preserves_config_array_order(tmp_path: Path):
     assert [item["id"] for item in payload["topics"]] == config_ids
     company_ids = [item["id"] for item in index["topics"] if item["group"] == "company"]
     assert company_ids[:4] == ["doubao", "qwen", "quark", "hunyuan"]
+    assert index["groups"][0]["id"] == "lens"
+    assert index["groups"][0]["filter"] == "topics"
+    lens_ids = [item["id"] for item in index["topics"] if item["group"] == "lens"]
+    assert lens_ids == ["monetization", "product-entry", "agent-ecosystem", "workplace"]
 
 
 def test_ascii_keywords_use_word_boundaries():
@@ -314,6 +372,8 @@ def test_hub_template_does_not_hardcode_a_topic_id():
     html = render_topic_page(depth=1)
     assert "data-topic-id" not in html
     assert "按主题看 AI" in html
+    assert 'id="topicsFilter"' in html
+    assert "assets/topics.js?v=topics-2" in html
 
 
 def test_committed_topic_pages_cover_config():
