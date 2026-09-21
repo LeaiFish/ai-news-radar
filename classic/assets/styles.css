@@ -2794,3 +2794,11 @@ summary:focus-visible {
     box-shadow: none;
   }
 }
+
+.topics-pane[hidden] {
+  display: none;
+}
+
+body.is-topics-nav main.shell > :not(.hero):not(#topicsPane):not(.service-status-panel) {
+  display: none;
+}
