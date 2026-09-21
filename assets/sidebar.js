@@ -80,24 +80,6 @@
     return params;
   }
 
-  function githubRepo() {
-    const explicit = document.documentElement.dataset.githubRepo;
-    if (explicit) return explicit;
-    const host = window.location.hostname;
-    const pages = host.match(/^([a-z0-9-]+)\.github\.io$/i);
-    if (pages) {
-      const segs = window.location.pathname.split("/").filter(Boolean);
-      const repo = segs[0] && !segs[0].includes(".") ? segs[0] : "ai-news-radar";
-      return `${pages[1]}/${repo}`;
-    }
-    if (/learnprompt/i.test(host)) return "LearnPrompt/ai-news-radar";
-    return "LearnPrompt/ai-news-radar";
-  }
-
-  function githubUrl(suffix) {
-    return `https://github.com/${githubRepo()}${suffix || ""}`;
-  }
-
   function currentSurface() {
     const html = document.documentElement;
     if (html.dataset.radarSurface === "topics") return "topics";
@@ -355,7 +337,6 @@
     if (document.querySelector(".radar-sidebar")) return;
     document.body.classList.add("has-radar-sidebar");
 
-    const repo = githubRepo();
     const homeSelected = homeHref("selected");
 
     const aside = document.createElement("aside");
@@ -391,7 +372,6 @@
     `;
     document.body.prepend(aside);
     sidebarEl = aside;
-    aside.dataset.githubRepo = repo;
 
     const backdrop = document.createElement("div");
     backdrop.className = "radar-nav-backdrop";

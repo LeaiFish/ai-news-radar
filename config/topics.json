@@ -17,14 +17,14 @@
     {
       "id": "tech",
       "name": "技术方向",
-      "description": "按技术领域深挖：Agent、编码、多模态、开源与部署"
+      "description": "按技术领域深挖：Agent、编码、多模态、端侧与开源"
     }
   ],
   "topics": [
     {
       "id": "monetization",
       "name": "付费订阅与商业化",
-      "description": "厂商怎么收费：定价与套餐、抽佣分成、付费转化与价格调整。",
+      "description": "各家怎么收费、谁在抽佣、付费转化与定价在怎么变？",
       "group": "lens",
       "pools": ["stories", "brief", "latest", "archive"],
       "keywords": [
@@ -82,7 +82,7 @@
     {
       "id": "product-entry",
       "name": "产品入口与链路",
-      "description": "国民级应用把 AI 放在哪：搜索框与助手链路、桌面/侧边栏入口，以及谁在抢入口。",
+      "description": "国民级 App 的 AI 入口在哪、搜索与助手链路怎么接、谁在抢入口？",
       "group": "lens",
       "pools": ["stories", "brief", "latest", "archive"],
       "keywords": [
@@ -116,17 +116,13 @@
         "国民级",
         "超级 App"
       ],
-      "patterns": [
-        "(搜索|助手|对话|聊天|办公|产品|超级|桌面|系统).{0,8}(入口|搜索框|侧边栏)",
-        "(接入|嵌入|进驻|入驻).{0,8}(搜索|搜一搜|支付宝|浏览器|桌面)",
-        "(入口).{0,6}(争夺|之争|大战)"
-      ],
+      "patterns": ["(搜索|助手|对话|聊天|办公|产品|超级|桌面|系统).{0,8}(入口|搜索框|侧边栏)", "(接入|嵌入|进驻|入驻).{0,8}(搜索|搜一搜|支付宝|浏览器|桌面)", "(入口).{0,6}(争夺|之争|大战)"],
       "exclude": ["举报入口", "合规入口", "航道入口"]
     },
     {
       "id": "agent-ecosystem",
       "name": "Agent 路线与生态",
-      "description": "Agent 产品形态、开放生态与落地场景：多智能体、MCP/工具调用、插件与开放平台。",
+      "description": "各家 Agent 的产品形态、开放生态与落地场景在怎么演进？",
       "group": "lens",
       "pools": ["stories", "brief", "latest"],
       "keywords": [
@@ -159,15 +155,12 @@
         "computer use",
         "Computer Use"
       ],
-      "patterns": [
-        "(Agent|智能体).{0,12}(生态|落地|开放|平台|产品|路线|场景)",
-        "(开放|插件).{0,8}(平台|生态|商店)"
-      ]
+      "patterns": ["(Agent|智能体).{0,12}(生态|落地|开放|平台|产品|路线|场景)", "(开放|插件).{0,8}(平台|生态|商店)"]
     },
     {
       "id": "workplace",
       "name": "办公生产力与组织重构",
-      "description": "AI 办公产品进展，以及组织/人事为 AI 做的结构调整：新部门、编制与裁员。",
+      "description": "AI 办公产品的进展，以及各家为 AI 做的组织与人事调整？",
       "group": "lens",
       "pools": ["stories", "brief", "latest", "archive"],
       "keywords": [
@@ -204,32 +197,16 @@
         "Slack",
         "Docs"
       ],
-      "patterns": [
-        "(组织|人事|编制).{0,8}(调整|重构|变动|优化)",
-        "(设立|新设|组建|成立).{0,10}AI.{0,8}(部门|团队|中心)",
-        "(办公|文档|表格|幻灯).{0,8}(AI|Copilot|助手)"
-      ],
+      "patterns": ["(组织|人事|编制).{0,8}(调整|重构|变动|优化)", "(设立|新设|组建|成立).{0,10}AI.{0,8}(部门|团队|中心)", "(办公|文档|表格|幻灯).{0,8}(AI|Copilot|助手)"],
       "exclude": ["balance sheet", "balance sheets"]
     },
-
     {
       "id": "doubao",
       "name": "豆包",
       "description": "字节跳动豆包与火山引擎：豆包产品、Doubao 模型、火山方舟 / Volcengine Ark。",
       "group": "company",
       "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": [
-        "豆包",
-        "Doubao",
-        "字节跳动",
-        "ByteDance",
-        "火山引擎",
-        "Volcengine",
-        "Volc Engine",
-        "火山方舟",
-        "Volcengine Ark",
-        "ByteDance Ark"
-      ]
+      "keywords": ["豆包", "Doubao", "字节跳动", "ByteDance", "火山引擎", "Volcengine", "Volc Engine", "火山方舟", "Volcengine Ark", "ByteDance Ark"]
     },
     {
       "id": "qwen",
@@ -237,35 +214,7 @@
       "description": "阿里通义千问 Qwen 系列：旗舰模型、开源权重、端侧与多模态迭代。",
       "group": "company",
       "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": [
-        "Qwen",
-        "通义千问",
-        "千问",
-        "Qwen2",
-        "Qwen2.5",
-        "Qwen3",
-        "Qwen-VL",
-        "Qwen-Image",
-        "Alibaba Qwen",
-        "DashScope"
-      ]
-    },
-    {
-      "id": "quark",
-      "name": "夸克",
-      "description": "阿里夸克：夸克 App / 夸克 AI 产品动态，与通义千问模型系列分开追踪。",
-      "group": "company",
-      "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": [
-        "夸克",
-        "夸克AI",
-        "夸克 AI",
-        "Quark",
-        "Quark AI",
-        "Alibaba Quark",
-        "阿里夸克"
-      ],
-      "exclude": ["夸克网盘"]
+      "keywords": ["Qwen", "通义千问", "千问", "Qwen2", "Qwen2.5", "Qwen3", "Qwen-VL", "Qwen-Image", "Alibaba Qwen", "DashScope"]
     },
     {
       "id": "hunyuan",
@@ -273,17 +222,40 @@
       "description": "腾讯混元模型与元宝产品：Hunyuan 发布、腾讯元宝客户端与相关能力。",
       "group": "company",
       "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": [
-        "混元",
-        "Hunyuan",
-        "元宝",
-        "Yuanbao",
-        "腾讯混元",
-        "Tencent Hunyuan",
-        "腾讯元宝",
-        "Tencent Yuanbao",
-        "混元大模型"
-      ]
+      "keywords": ["混元", "Hunyuan", "元宝", "Yuanbao", "腾讯混元", "Tencent Hunyuan", "腾讯元宝", "Tencent Yuanbao", "混元大模型"]
+    },
+    {
+      "id": "quark",
+      "name": "夸克",
+      "description": "阿里夸克：夸克 App / 夸克 AI 产品动态，与通义千问模型系列分开追踪。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": ["夸克", "夸克AI", "夸克 AI", "Quark", "Quark AI", "Alibaba Quark", "阿里夸克"],
+      "exclude": ["夸克网盘"]
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi / 月之暗面",
+      "description": "月之暗面 Kimi 系列：长上下文、K 系列开源模型与产品演进。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": ["Kimi", "月之暗面", "Moonshot", "moonshot.ai", "Kimi Chat"]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "description": "DeepSeek（深度求索）的模型发布、开源权重、推理成本与技术报告。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": ["DeepSeek", "深度求索", "DeepSeek-V3", "DeepSeek-V4", "DeepSeek-R1", "DeepSeek-V2"]
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "description": "MiniMax 的模型与产品：M 系列、语音与多模态、海螺视频与商业化进展。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": ["MiniMax", "Hailuo", "海螺", "稀宇科技"]
     },
     {
       "id": "openai",
@@ -354,36 +326,12 @@
       ]
     },
     {
-      "id": "deepseek",
-      "name": "DeepSeek",
-      "description": "DeepSeek（深度求索）的模型发布、开源权重、推理成本与技术报告。",
+      "id": "meta-llama",
+      "name": "Meta / Llama",
+      "description": "Meta 的开源模型与 AI 实验室：Llama 系列、PyTorch 周边与超级智能布局。",
       "group": "company",
       "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": ["DeepSeek", "深度求索", "DeepSeek-V3", "DeepSeek-V4", "DeepSeek-R1", "DeepSeek-V2"]
-    },
-    {
-      "id": "kimi",
-      "name": "Kimi / 月之暗面",
-      "description": "月之暗面 Kimi 系列：长上下文、K 系列开源模型与产品演进。",
-      "group": "company",
-      "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": ["Kimi", "月之暗面", "Moonshot", "moonshot.ai", "Kimi Chat"]
-    },
-    {
-      "id": "minimax",
-      "name": "MiniMax",
-      "description": "MiniMax 的模型与产品：M 系列、语音与多模态、海螺视频与商业化进展。",
-      "group": "company",
-      "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": ["MiniMax", "Hailuo", "海螺", "稀宇科技"]
-    },
-    {
-      "id": "zhipu",
-      "name": "智谱 / GLM",
-      "description": "智谱 GLM 系列：开源发布、代码与推理能力、ChatGLM 与生态进展。",
-      "group": "company",
-      "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": ["智谱", "Zhipu", "ChatGLM", "GLM-4", "GLM-4.5", "GLM-5", "GLM-4V", "BigModel"]
+      "keywords": ["Llama", "LLaMA", "Meta AI", "Llama 3", "Llama 4", "Llama3", "Llama4"]
     },
     {
       "id": "xai",
@@ -394,12 +342,39 @@
       "keywords": ["xAI", "Grok", "grok.com", "Colossus"]
     },
     {
-      "id": "meta-llama",
-      "name": "Meta / Llama",
-      "description": "Meta 的开源模型与 AI 实验室：Llama 系列、PyTorch 周边与超级智能布局。",
+      "id": "perplexity",
+      "name": "Perplexity",
+      "description": "Perplexity 的搜索、订阅与 Agent 产品：问答、Comet 浏览器与 Computer 助手。",
       "group": "company",
       "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": ["Llama", "LLaMA", "Meta AI", "Llama 3", "Llama 4", "Llama3", "Llama4"]
+      "keywords": ["Perplexity", "Perplexity AI", "perplexity.ai", "Aravind Srinivas", "Perplexity Computer", "Perplexity Comet"]
+    },
+    {
+      "id": "apple",
+      "name": "Apple / Apple Intelligence",
+      "description": "苹果的设备端与系统级 AI：Apple Intelligence、Siri、Core ML 与端侧模型。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": [
+        "Apple Intelligence",
+        "Apple ML",
+        "Apple Machine Learning",
+        "Core ML",
+        "CoreML",
+        "苹果智能",
+        "苹果 AI",
+        "苹果AI",
+        "Apple Foundation Models",
+        "Private Cloud Compute",
+        "Siri",
+        "Siri AI",
+        "machinelearning.apple.com"
+      ],
+      "patterns": [
+        "Apple.{0,24}(Intelligence|Foundation Model|Core ?ML|on-device)",
+        "(苹果).{0,8}(智能|AI|大模型)"
+      ],
+      "exclude": ["apple pie", "apples to apples"]
     },
     {
       "id": "microsoft",
@@ -407,16 +382,7 @@
       "description": "微软 AI 布局：Copilot 全家桶、Azure OpenAI、GitHub Copilot 与合作关系。",
       "group": "company",
       "pools": ["stories", "brief", "latest", "archive"],
-      "keywords": [
-        "Copilot",
-        "GitHub Copilot",
-        "Microsoft Copilot",
-        "Azure OpenAI",
-        "Azure AI",
-        "微软 Copilot",
-        "微软 AI",
-        "Satya Nadella"
-      ]
+      "keywords": ["Copilot", "GitHub Copilot", "Microsoft Copilot", "Azure OpenAI", "Azure AI", "微软 Copilot", "微软 AI", "Satya Nadella"]
     },
     {
       "id": "nvidia",
@@ -425,6 +391,14 @@
       "group": "company",
       "pools": ["stories", "brief", "latest", "archive"],
       "keywords": ["NVIDIA", "Nvidia", "英伟达", "CUDA", "Blackwell", "Hopper", "TensorRT", "Jensen Huang", "黄仁勋", "DGX"]
+    },
+    {
+      "id": "zhipu",
+      "name": "智谱 / GLM",
+      "description": "智谱 GLM 系列：开源发布、代码与推理能力、ChatGLM 与生态进展。",
+      "group": "company",
+      "pools": ["stories", "brief", "latest", "archive"],
+      "keywords": ["智谱", "Zhipu", "ChatGLM", "GLM-4", "GLM-4.5", "GLM-5", "GLM-4V", "BigModel"]
     },
     {
       "id": "huggingface",
@@ -456,18 +430,7 @@
       "description": "让模型规划、调用工具、完成多步任务：Agent 框架、评测与产品形态。",
       "group": "tech",
       "pools": ["stories", "brief", "latest"],
-      "keywords": [
-        "Agent",
-        "Agents",
-        "智能体",
-        "multi-agent",
-        "Multi-agent",
-        "agentic",
-        "Manus",
-        "AutoGPT",
-        "OpenClaw",
-        "computer use"
-      ]
+      "keywords": ["Agent", "Agents", "智能体", "multi-agent", "Multi-agent", "agentic", "Manus", "AutoGPT", "OpenClaw", "computer use"]
     },
     {
       "id": "coding",
@@ -492,30 +455,45 @@
       ]
     },
     {
-      "id": "reasoning",
-      "name": "推理能力",
-      "description": "模型推理与思维链：推理模型、数学/逻辑基准、test-time compute。",
-      "group": "tech",
-      "pools": ["stories", "brief", "latest"],
-      "keywords": [
-        "reasoning",
-        "chain of thought",
-        "Chain-of-Thought",
-        "思维链",
-        "推理模型",
-        "test-time compute",
-        "inference-time",
-        "o1-preview",
-        "DeepSeek-R1"
-      ]
-    },
-    {
       "id": "multimodal",
       "name": "多模态",
       "description": "文本之外的能力：视觉理解、图文混合、音视频输入输出。",
       "group": "tech",
       "pools": ["stories", "brief", "latest"],
       "keywords": ["multimodal", "多模态", "vision-language", "VL model", "omni", "全模态"]
+    },
+    {
+      "id": "on-device",
+      "name": "端侧 AI",
+      "description": "跑在手机、电脑与边缘设备上的小模型、本地推理与端侧芯片。",
+      "group": "tech",
+      "pools": ["stories", "brief", "latest"],
+      "keywords": ["on-device", "端侧", "端侧模型", "本地部署", "local LLM", "on device", "NPU", "小模型"]
+    },
+    {
+      "id": "open-source",
+      "name": "开源生态",
+      "description": "开源模型、框架与仓库：权重开放、社区爆火、开源与闭源消长。",
+      "group": "tech",
+      "pools": ["stories", "brief", "latest"],
+      "keywords": ["开源", "open source", "open-source", "open weights", "开源权重", "Apache 2.0", "MIT 许可"]
+    },
+    {
+      "id": "mcp",
+      "name": "MCP 与工具调用",
+      "description": "模型连接外部世界：MCP 生态、function calling 与工具链集成。",
+      "group": "tech",
+      "pools": ["stories", "brief", "latest"],
+      "keywords": ["MCP", "Model Context Protocol", "function calling", "tool use", "工具调用", "function-calling"]
+    },
+    {
+      "id": "model-releases",
+      "name": "模型发布",
+      "description": "新模型的发布、开源与迭代：旗舰更新、权重放出、性能与价格变化。",
+      "group": "tech",
+      "pools": ["stories", "brief", "latest"],
+      "keywords": ["模型发布", "发布模型", "开源权重", "weights released", "model release"],
+      "patterns": ["(发布|推出|上线|开源).{0,12}(模型|Model)", "(model|models).{0,16}(release|released|launches|launch)"]
     },
     {
       "id": "image-gen",
@@ -544,20 +522,7 @@
       "description": "AI 视频生成与理解：文生视频、剪辑工具与影视创作。",
       "group": "tech",
       "pools": ["stories", "brief", "latest"],
-      "keywords": [
-        "text-to-video",
-        "文生视频",
-        "视频生成",
-        "Sora",
-        "Veo",
-        "Runway",
-        "Kling",
-        "可灵",
-        "Hailuo",
-        "海螺",
-        "Pika",
-        "Vidu"
-      ]
+      "keywords": ["text-to-video", "文生视频", "视频生成", "Sora", "Veo", "Runway", "Kling", "可灵", "Hailuo", "海螺", "Pika", "Vidu"]
     },
     {
       "id": "audio",
@@ -588,20 +553,22 @@
       "keywords": ["具身", "人形机器人", "humanoid", "robotics foundation", "Figure AI", "Boston Dynamics", "启元", "Unitree", "宇树"]
     },
     {
-      "id": "on-device",
-      "name": "端侧 AI",
-      "description": "跑在手机、电脑与边缘设备上的小模型、本地推理与端侧芯片。",
+      "id": "reasoning",
+      "name": "推理能力",
+      "description": "模型推理与思维链：推理模型、数学/逻辑基准、test-time compute。",
       "group": "tech",
       "pools": ["stories", "brief", "latest"],
-      "keywords": ["on-device", "端侧", "端侧模型", "本地部署", "local LLM", "on device", "NPU", "小模型"]
-    },
-    {
-      "id": "open-source",
-      "name": "开源生态",
-      "description": "开源模型、框架与仓库：权重开放、社区爆火、开源与闭源消长。",
-      "group": "tech",
-      "pools": ["stories", "brief", "latest"],
-      "keywords": ["开源", "open source", "open-source", "open weights", "开源权重", "Apache 2.0", "MIT 许可"]
+      "keywords": [
+        "reasoning",
+        "chain of thought",
+        "Chain-of-Thought",
+        "思维链",
+        "推理模型",
+        "test-time compute",
+        "inference-time",
+        "o1-preview",
+        "DeepSeek-R1"
+      ]
     },
     {
       "id": "inference",
@@ -609,44 +576,7 @@
       "description": "把模型跑起来：推理优化、显存与成本、Serving 与基础设施。",
       "group": "tech",
       "pools": ["stories", "brief", "latest"],
-      "keywords": [
-        "inference",
-        "vLLM",
-        "TensorRT",
-        "SGLang",
-        "KV cache",
-        "推理优化",
-        "部署",
-        "serving",
-        "显存"
-      ]
-    },
-    {
-      "id": "mcp",
-      "name": "MCP 与工具调用",
-      "description": "模型连接外部世界：MCP 生态、function calling 与工具链集成。",
-      "group": "tech",
-      "pools": ["stories", "brief", "latest"],
-      "keywords": [
-        "MCP",
-        "Model Context Protocol",
-        "function calling",
-        "tool use",
-        "工具调用",
-        "function-calling"
-      ]
-    },
-    {
-      "id": "model-releases",
-      "name": "模型发布",
-      "description": "新模型的发布、开源与迭代：旗舰更新、权重放出、性能与价格变化。",
-      "group": "tech",
-      "pools": ["stories", "brief", "latest"],
-      "keywords": ["模型发布", "发布模型", "开源权重", "weights released", "model release"],
-      "patterns": [
-        "(发布|推出|上线|开源).{0,12}(模型|Model)",
-        "(model|models).{0,16}(release|released|launches|launch)"
-      ]
+      "keywords": ["inference", "vLLM", "TensorRT", "SGLang", "KV cache", "推理优化", "部署", "serving", "显存"]
     }
   ]
 }
