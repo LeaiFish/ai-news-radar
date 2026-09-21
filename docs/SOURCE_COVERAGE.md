@@ -40,7 +40,7 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 | Source type | Current support | Recommended path | Notes |
 | --- | --- | --- | --- |
 | Official RSS / Atom | Supported through OPML | Add to `feeds/follow.opml` locally, or `FOLLOW_OPML_B64` in GitHub Actions | Best default for personal customization. |
-| Official AI vendor updates | Built in for selected high-signal sources | Keep OpenAI, Anthropic, Google DeepMind/AI, Hugging Face, and GitHub AI/Changelog as first-class sources | These should not depend only on aggregator coverage. |
+| Official AI vendor updates | Built in for selected high-signal sources | Keep OpenAI, Anthropic, Google DeepMind/AI, Hugging Face, GitHub AI/Changelog, OpenRouter, Cloudflare Blog (AI tag), and Apple ML Research as first-class sources | These should not depend only on aggregator coverage. |
 | Curated AI media RSS | Built in for selected high-signal public feeds | Keep source-specific caps and AI/research filters so media breadth does not drown the default view | Useful for product, industry, model, and research coverage. |
 | OPML collections | Supported | Export from RSS reader, copy from `feeds/follow.example.opml`, keep private file out of git | Good for cross-device and multi-agent workflows. |
 | Public JSON APIs | Supported by custom Python fetchers | Add a `fetch_*` function in `scripts/update_news.py` and register it in the task list | Use only stable APIs with timestamps. |
@@ -74,6 +74,9 @@ The public site should directly track these high-signal official sources:
 - Hugging Face Blog RSS
 - GitHub AI & ML RSS
 - GitHub Changelog RSS
+- OpenRouter Blog RSS
+- Cloudflare Blog AI-tag RSS
+- Apple Machine Learning Research RSS
 
 Aggregator sites may already surface some of these updates, but they are not
 guaranteed to be complete or timely. Keep these official sources as a stable
@@ -199,10 +202,21 @@ and AgentMail budget notes.
 `feeds/follow.example.opml` contains a public, low-risk demo set that is expected
 to pass through the real project fetch path on GitHub Actions:
 
-- **Official examples**: OpenAI News, Hugging Face Blog, Google DeepMind Blog,
+- **Official examples**: OpenAI News, OpenRouter Blog, Cloudflare Blog (AI tag),
+  Apple Machine Learning Research, Hugging Face Blog, Google DeepMind Blog,
   Google AI Blog, and Microsoft AI Blog.
 - **AI media / builder feeds**: Wired AI, InfoQ CN, NVIDIA Generative AI Blog,
   宝玉, and Simon Willison.
+
+This fork's GitHub Actions currently loads the public demo OPML when
+`FOLLOW_OPML_B64` is not set (confirmed by `data/source-status.json`: 10 OPML
+feeds matching `feeds/follow.example.opml`). Built-in official fetchers always
+run regardless of that secret. OpenRouter, Cloudflare Blog (AI tag), and Apple
+ML Research are registered in `OFFICIAL_AI_FEEDS` so they ingest even when the
+OPML cap or a private follow list omits them. Copy them into a private
+`feeds/follow.opml` (or `FOLLOW_OPML_B64`) if you want the OPML path to fetch
+them too. The workflow default `RSS_MAX_FEEDS` is 20 so the expanded example
+file still loads in full.
 
 In GitHub Actions, `feeds/follow.example.opml` is also used as the public demo
 fallback when no private `FOLLOW_OPML_B64` secret is configured. This keeps the
@@ -218,8 +232,17 @@ the extra filtering and maintenance risk.
 
 Recent candidates skipped from the built-in default set:
 
-- **OpenRouter Announcements**: the public page advertises an RSS alternate, but
-  the observed `/blog/feed.xml` target returned a Not Found page during intake.
+- **Apple Developer News / Core AI product pages**:
+  `https://developer.apple.com/news/rss/news.rss` is a stable public RSS
+  (HTTP 200, recent items) but it is general SDK, App Store, and device news,
+  not an Apple Intelligence or Core ML changelog. The Apple Intelligence and
+  Core ML developer pages have no RSS or timestamped news index worth scraping.
+  Best-effort links for maintainers: [Apple Developer News](https://developer.apple.com/news/),
+  [Apple Intelligence](https://developer.apple.com/apple-intelligence/),
+  [AI & Machine Learning](https://developer.apple.com/machine-learning/).
+  The built-in Apple coverage uses
+  [Apple Machine Learning Research RSS](https://machinelearning.apple.com/rss.xml)
+  instead.
 - **LMSYS Blog**: probed feed endpoints redirected or returned 404.
 - **Hugging Face Daily Papers**: probed RSS-style endpoints returned 401/404;
   keep it out of the default set until a stable public feed is available.
