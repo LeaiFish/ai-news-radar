@@ -293,6 +293,7 @@
     frag.appendChild(note);
     mainEl.innerHTML = "";
     mainEl.appendChild(frag);
+    document.dispatchEvent(new CustomEvent("aiRadar:topicsRendered"));
   }
 
   function renderItemCard(item) {
@@ -419,6 +420,7 @@
     hideHubFilter();
     mainEl.innerHTML = "";
     mainEl.append(wrap, back);
+    document.dispatchEvent(new CustomEvent("aiRadar:topicsRendered"));
   }
 
   async function loadJson(path) {

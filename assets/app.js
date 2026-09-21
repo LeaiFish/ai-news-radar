@@ -32,6 +32,8 @@ const state = {
   activeSection: "all",
   mainListVisibleCount: 0,
   xAuthorsExpanded: false,
+  // 左侧栏导航：selected / all / hot / brief / favorites。hot 仍是精选数据，只是滚到热点榜。
+  nav: "selected",
 };
 
 // DATA_BASE_URL 数据同源开关：优先级 ?data= 查询参数 > localStorage("dataBaseUrl") > "" (相对路径，原行为)
@@ -66,6 +68,36 @@ function dataUrl(path) {
   if (!base) return path;
   const file = String(path || "").split("/").pop();
   return `${base}/${file}`;
+}
+
+const RADAR_NAVS = new Set(["selected", "all", "hot", "brief", "favorites"]);
+
+function readRequestedNav() {
+  try {
+    const nav = new URLSearchParams(window.location.search).get("nav") || "";
+    if (RADAR_NAVS.has(nav)) return nav;
+  } catch {
+    // Ignore malformed query strings.
+  }
+  const hash = (window.location.hash || "").replace(/^#/, "");
+  if (hash === "hotBoardWrap" || hash === "hot") return "hot";
+  return "selected";
+}
+
+function syncNavUrl(nav) {
+  const url = new URL(window.location.href);
+  if (!nav || nav === "selected") url.searchParams.delete("nav");
+  else url.searchParams.set("nav", nav);
+  url.hash = nav === "hot" ? "hotBoardWrap" : "";
+  const next = `${url.pathname}${url.search}${url.hash}`;
+  const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+  if (next !== current) window.history.replaceState(null, "", next);
+}
+
+function emitNavChange() {
+  document.dispatchEvent(new CustomEvent("aiRadar:navchange", {
+    detail: { nav: state.nav, mode: state.mode, surface: "mobile" },
+  }));
 }
 
 const siteSelectEl = document.getElementById("siteSelect");
@@ -262,8 +294,9 @@ function renderSourceStatusPill(errorMessage = "") {
   if (failed) sourceStatusPillEl.classList.add("warn");
 }
 
-// 模式文案：精选（AI 相关合并事件池，纯时间序）/ 全量（原始条目池）
+// 模式文案：精选（AI 相关合并事件池，纯时间序）/ 全量（原始条目池）/ 日报（daily-brief.json）
 function modeLabelText() {
+  if (state.nav === "brief") return "日报";
   return state.mode === "all" ? "全量" : "精选";
 }
 
@@ -332,7 +365,7 @@ function activeAdjustmentCount() {
     Boolean(state.query.trim()),
     state.activeSection !== "all",
     Boolean(state.siteFilter || state.authorFilter),
-    state.mode !== "selected",
+    state.mode !== "selected" || (state.nav !== "selected" && state.nav !== "hot"),
     state.mode === "all" && !state.allDedup,
   ].filter(Boolean).length;
 }
@@ -360,13 +393,16 @@ function clearAllFilters() {
   state.siteFilter = "";
   state.authorFilter = "";
   state.mode = "selected";
+  state.nav = "selected";
   state.allDedup = true;
   state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
   state.waytoagiMode = "today";
   state.xAuthorsExpanded = false;
   if (searchInputEl) searchInputEl.value = "";
   if (siteSelectEl) siteSelectEl.value = "";
+  syncNavUrl("selected");
   rerenderCurrentView();
+  emitNavChange();
 }
 
 function computeSiteStats(items) {
@@ -474,7 +510,9 @@ function renderModeSwitch() {
     modeAllBtnEl.classList.toggle("active", state.mode === "all");
     modeAllBtnEl.setAttribute("aria-pressed", state.mode === "all" ? "true" : "false");
   }
-  if (hotBoardWrapEl) hotBoardWrapEl.hidden = state.mode !== "selected";
+  if (hotBoardWrapEl) {
+    hotBoardWrapEl.hidden = state.mode !== "selected" || state.nav === "brief" || state.nav === "favorites";
+  }
   if (allDedupeWrapEl) allDedupeWrapEl.classList.toggle("show", state.mode === "all");
   if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
   if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
@@ -490,6 +528,7 @@ function renderModeSwitch() {
 function listTitleText() {
   const section = state.activeSection !== "all" ? SECTION_BY_ID[state.activeSection] : null;
   const label = modeLabelText();
+  if (state.nav === "brief") return section ? `${section.label} · 日报` : "AI 日报";
   return section ? `${section.label} · ${label}` : label;
 }
 
@@ -1282,6 +1321,13 @@ function itemToRow(item, index = 0) {
   };
 }
 
+function briefListStories() {
+  return briefStories().filter((story) =>
+    storyMatchesSiteFilter(story) &&
+    storyMatchesQuery(story) &&
+    storyMatchesSection(story));
+}
+
 function mainListEntries() {
   if (state.mode === "all") {
     return mainListRawItems().map((item, index) => {
@@ -1289,7 +1335,8 @@ function mainListEntries() {
       return { row: itemToRow(item, index), timeMs: ms };
     }).sort((a, b) => b.timeMs - a.timeMs);
   }
-  return mainListStories().map((story, index) => {
+  const stories = state.nav === "brief" ? briefListStories() : mainListStories();
+  return stories.map((story, index) => {
     const ms = storyTimeMs(story, "latest_at") || storyTimeMs(story, "earliest_at");
     return { row: storyToRow(story, index), timeMs: ms };
   }).sort((a, b) => b.timeMs - a.timeMs);
@@ -1738,7 +1785,7 @@ function renderTop3Board() {
 function renderHotBoard() {
   renderTop3Board();
   if (!hotBoardListEl) return;
-  const show = state.mode === "selected";
+  const show = state.mode === "selected" && state.nav !== "brief" && state.nav !== "favorites";
   if (hotBoardWrapEl) hotBoardWrapEl.hidden = !show;
   if (!show) return;
   hotBoardListEl.innerHTML = "";
@@ -1886,6 +1933,7 @@ function selectSocialdataAuthor(author) {
   // 博主筛选是条目级过滤：切到全量模式浏览该博主的原始条目池，并清空栏目选择
   state.activeSection = "all";
   state.mode = "all";
+  state.nav = "all";
   state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
   state.xAuthorsExpanded = false;
   renderSectionTabs();
@@ -1894,6 +1942,8 @@ function selectSocialdataAuthor(author) {
   renderHotBoard();
   renderMainList();
   renderSourceHealth();
+  syncNavUrl("all");
+  emitNavChange();
   document.querySelector(".list-wrap")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
@@ -2173,6 +2223,62 @@ async function loadStoriesData() {
   return res.json();
 }
 
+async function applyRadarNav(nav, { scroll = true } = {}) {
+  const next = RADAR_NAVS.has(nav) ? nav : "selected";
+  if (next === "favorites") {
+    state.nav = "favorites";
+    syncNavUrl(next);
+    emitNavChange();
+    return;
+  }
+
+  const switchingToAll = next === "all";
+  state.nav = next;
+  state.mode = switchingToAll ? "all" : "selected";
+  state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
+  syncNavUrl(next);
+
+  if (switchingToAll) {
+    renderModeSwitch();
+    if (newsListEl && !state.allDataLoaded) {
+      newsListEl.innerHTML = "";
+      const loading = document.createElement("div");
+      loading.className = "empty";
+      loading.textContent = "正在加载全量更新...";
+      newsListEl.appendChild(loading);
+    }
+    try {
+      await loadAllModeData();
+    } catch (err) {
+      if (newsListEl) {
+        newsListEl.innerHTML = "";
+        const failed = document.createElement("div");
+        failed.className = "empty";
+        failed.textContent = err.message;
+        newsListEl.appendChild(failed);
+      }
+      emitNavChange();
+      return;
+    }
+  }
+
+  rerenderCurrentView();
+  emitNavChange();
+  if (!scroll) return;
+  if (next === "hot") {
+    hotBoardWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else if (next === "brief") {
+    newsListWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else if (next === "selected") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}
+
+window.AINewsRadarNav = {
+  apply: applyRadarNav,
+  current: () => state.nav,
+};
+
 async function init() {
   const [newsResult, waytoagiResult, statusResult, briefResult, storiesResult, personasResult] = await Promise.allSettled([
     loadNewsData(),
@@ -2232,12 +2338,31 @@ async function init() {
     state.allDataLoaded = Boolean(payload.items_all || payload.items_all_raw);
     state.generatedAt = payload.generated_at;
 
+    const requestedNav = readRequestedNav();
+    state.nav = requestedNav;
+    if (requestedNav === "all") {
+      state.mode = "all";
+      try {
+        await loadAllModeData();
+      } catch (err) {
+        newsListEl.innerHTML = `<div class="empty">${err.message}</div>`;
+      }
+    } else if (requestedNav !== "favorites") {
+      state.mode = "selected";
+    }
+
     renderSectionTabs();
     renderModeSwitch();
     renderSiteFilters();
     renderHotBoard();
     renderMainList();
     updatedAtEl.textContent = fmtTime(state.generatedAt);
+    emitNavChange();
+    if (requestedNav === "hot") {
+      requestAnimationFrame(() => hotBoardWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    } else if (requestedNav === "brief") {
+      requestAnimationFrame(() => newsListWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    }
   } else {
     updatedAtEl.textContent = "新闻数据加载失败";
     newsListEl.innerHTML = `<div class="empty">${newsResult.reason.message}</div>`;
@@ -2285,37 +2410,20 @@ siteSelectEl.addEventListener("change", (e) => {
   renderMainList();
 });
 
+document.addEventListener("aiRadar:navigate", (event) => {
+  applyRadarNav(event.detail?.nav, { scroll: true });
+});
+
 // 全局 精选/全量 开关：替代旧的三视图切换（精选/热点榜/时间线）
 if (modeSelectedBtnEl) {
   modeSelectedBtnEl.addEventListener("click", () => {
-    if (state.mode === "selected") return;
-    state.mode = "selected";
-    state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
-    rerenderCurrentView();
+    applyRadarNav("selected");
   });
 }
 
 if (modeAllBtnEl) {
-  modeAllBtnEl.addEventListener("click", async () => {
-    if (state.mode === "all") return;
-    state.mode = "all";
-    state.mainListVisibleCount = MAIN_LIST_PAGE_SIZE;
-    renderModeSwitch();
-    newsListEl.innerHTML = "";
-    const loading = document.createElement("div");
-    loading.className = "empty";
-    loading.textContent = "正在加载全量更新...";
-    newsListEl.appendChild(loading);
-    try {
-      await loadAllModeData();
-      rerenderCurrentView();
-    } catch (err) {
-      newsListEl.innerHTML = "";
-      const failed = document.createElement("div");
-      failed.className = "empty";
-      failed.textContent = err.message;
-      newsListEl.appendChild(failed);
-    }
+  modeAllBtnEl.addEventListener("click", () => {
+    applyRadarNav("all");
   });
 }
 

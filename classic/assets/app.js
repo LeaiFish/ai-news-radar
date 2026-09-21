@@ -32,6 +32,7 @@ const state = {
   signalLevelFilter: "",
   siteGroupsExpanded: false,
   xAuthorsExpanded: false,
+  nav: "selected",
 };
 
 // Keep both UI surfaces on the same snapshot. The query/local-storage contract
@@ -64,6 +65,36 @@ function dataUrl(path) {
   if (!base) return path;
   const file = String(path || "").split("/").pop();
   return `${base}/${file}`;
+}
+
+const RADAR_NAVS = new Set(["selected", "all", "hot", "brief", "favorites"]);
+
+function readRequestedNav() {
+  try {
+    const nav = new URLSearchParams(window.location.search).get("nav") || "";
+    if (RADAR_NAVS.has(nav)) return nav;
+  } catch {
+    // Ignore malformed query strings.
+  }
+  const hash = (window.location.hash || "").replace(/^#/, "");
+  if (hash === "hotBoardWrap" || hash === "hot") return "hot";
+  return "selected";
+}
+
+function syncNavUrl(nav) {
+  const url = new URL(window.location.href);
+  if (!nav || nav === "selected") url.searchParams.delete("nav");
+  else url.searchParams.set("nav", nav);
+  url.hash = nav === "hot" ? "bolePicksWrap" : "";
+  const next = `${url.pathname}${url.search}${url.hash}`;
+  const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+  if (next !== current) window.history.replaceState(null, "", next);
+}
+
+function emitNavChange() {
+  document.dispatchEvent(new CustomEvent("aiRadar:navchange", {
+    detail: { nav: state.nav, mode: state.mode, surface: "classic" },
+  }));
 }
 
 const statsEl = document.getElementById("stats");
@@ -2919,6 +2950,64 @@ async function loadStoriesData() {
   return res.json();
 }
 
+async function applyRadarNav(nav, { scroll = true } = {}) {
+  const next = RADAR_NAVS.has(nav) ? nav : "selected";
+  if (next === "favorites") {
+    state.nav = "favorites";
+    syncNavUrl(next);
+    emitNavChange();
+    return;
+  }
+
+  state.nav = next;
+  if (next === "all") {
+    state.mode = "all";
+  } else {
+    state.mode = "ai";
+  }
+  if (next === "hot") state.boleView = "hot";
+  else if (next === "brief" || next === "selected") state.boleView = "timeline";
+  syncNavUrl(next);
+
+  if (next === "all") {
+    renderModeSwitch();
+    if (newsListEl && !state.allDataLoaded) {
+      newsListEl.innerHTML = "";
+      const loading = document.createElement("div");
+      loading.className = "empty";
+      loading.textContent = "正在加载全量更新...";
+      newsListEl.appendChild(loading);
+    }
+    try {
+      await loadAllModeData();
+    } catch (err) {
+      if (newsListEl) {
+        newsListEl.innerHTML = "";
+        const failed = document.createElement("div");
+        failed.className = "empty";
+        failed.textContent = err.message;
+        newsListEl.appendChild(failed);
+      }
+      emitNavChange();
+      return;
+    }
+  }
+
+  rerenderCurrentView();
+  emitNavChange();
+  if (!scroll) return;
+  if (next === "hot" || next === "brief") {
+    bolePicksWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else if (next === "selected") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}
+
+window.AINewsRadarNav = {
+  apply: applyRadarNav,
+  current: () => state.nav,
+};
+
 async function init() {
   const [newsResult, waytoagiResult, statusResult, briefResult, storiesResult] = await Promise.allSettled([
     loadNewsData(),
@@ -2965,6 +3054,21 @@ async function init() {
     state.allDataLoaded = Boolean(payload.items_all || payload.items_all_raw);
     state.generatedAt = payload.generated_at;
 
+    const requestedNav = readRequestedNav();
+    state.nav = requestedNav;
+    if (requestedNav === "all") {
+      state.mode = "all";
+      try {
+        await loadAllModeData();
+      } catch (err) {
+        newsListEl.innerHTML = `<div class="empty">${err.message}</div>`;
+      }
+    } else if (requestedNav !== "favorites") {
+      state.mode = "ai";
+    }
+    if (requestedNav === "hot") state.boleView = "hot";
+    else if (requestedNav === "brief") state.boleView = "timeline";
+
     setStats();
     renderSectionTabs();
     renderModeSwitch();
@@ -2974,6 +3078,10 @@ async function init() {
     renderBolePicks();
     renderList();
     updatedAtEl.textContent = fmtTime(state.generatedAt);
+    emitNavChange();
+    if (requestedNav === "hot" || requestedNav === "brief") {
+      requestAnimationFrame(() => bolePicksWrapEl?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    }
   } else {
     updatedAtEl.textContent = "新闻数据加载失败";
     newsListEl.innerHTML = `<div class="empty">${newsResult.reason.message}</div>`;
@@ -3000,6 +3108,10 @@ async function init() {
 
   document.dispatchEvent(new CustomEvent("aiRadar:ready"));
 }
+
+document.addEventListener("aiRadar:navigate", (event) => {
+  applyRadarNav(event.detail?.nav, { scroll: true });
+});
 
 searchInputEl.addEventListener("input", (e) => {
   state.query = e.target.value;
@@ -3040,28 +3152,11 @@ if (signalLevelSelectEl) {
 }
 
 modeAiBtnEl.addEventListener("click", () => {
-  state.mode = "ai";
-  rerenderCurrentView();
+  applyRadarNav("selected");
 });
 
-modeAllBtnEl.addEventListener("click", async () => {
-  state.mode = "all";
-  renderModeSwitch();
-  newsListEl.innerHTML = "";
-  const loading = document.createElement("div");
-  loading.className = "empty";
-  loading.textContent = "正在加载全量更新...";
-  newsListEl.appendChild(loading);
-  try {
-    await loadAllModeData();
-    rerenderCurrentView();
-  } catch (err) {
-    newsListEl.innerHTML = "";
-    const failed = document.createElement("div");
-    failed.className = "empty";
-    failed.textContent = err.message;
-    newsListEl.appendChild(failed);
-  }
+modeAllBtnEl.addEventListener("click", () => {
+  applyRadarNav("all");
 });
 
 if (allDedupeToggleEl) {
@@ -3100,17 +3195,13 @@ if (waytoagi7dBtnEl) {
 
 if (boleHotBtnEl) {
   boleHotBtnEl.addEventListener("click", () => {
-    state.boleView = "hot";
-    state.boleExpanded = false;
-    renderBolePicks();
+    applyRadarNav("hot");
   });
 }
 
 if (boleTimelineBtnEl) {
   boleTimelineBtnEl.addEventListener("click", () => {
-    state.boleView = "timeline";
-    state.boleExpanded = false;
-    renderBolePicks();
+    applyRadarNav("selected");
   });
 }
 
