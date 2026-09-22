@@ -31,14 +31,27 @@ def test_perspective_home_is_the_new_shell_with_relative_links():
     assert 'href="./feed/"' in page
     assert 'src="./assets/perspective.js' in page
     assert 'href="./assets/perspective.css' in page
+    assert 'href="./assets/styles.css' in page
+    assert 'href="./assets/sidebar.css' in page
+    assert "aiNewsRadarTheme" in page
+    assert "aiNewsRadarTheme" in js
+    assert 'data-radar-theme="dark"' in page
+    assert 'data-radar-theme="system"' in page
+    assert 'data-radar-theme="light"' in page
     assert 'href="/ai-news-radar/' not in page
     assert 'src="/ai-news-radar/' not in page
     assert '"/ai-news-radar/' not in js
     for retired in ("精选", "热点榜", "全部 AI 动态", "data-radar-nav"):
         assert retired not in page
     assert "assets/sidebar.js" not in page
-    assert "--teal" in css
-    assert "12b5a9" in css or "--teal:" in css
+    for token in ("var(--bg)", "var(--surface)", "var(--surface-soft)", "var(--ink)", "var(--accent)", "var(--radius)", "var(--line-soft)"):
+        assert token in css
+    assert "news-card" in js
+    assert "section-tab" in page
+    assert "Avenir Next" not in css
+    assert "#12b5a9" not in css
+    assert "--teal" not in css
+    assert "color-scheme: light" not in css
 
 
 def test_competition_overview_matches_mock_structure_and_marks_placeholders():
