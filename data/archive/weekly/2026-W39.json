@@ -4,52 +4,122 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-22T15:32:10.029113Z",
+  "generated_at": "2026-09-22T20:12:48.182379Z",
   "daily_dates": [
-    "2026-09-22"
+    "2026-09-22",
+    "2026-09-23"
   ],
-  "story_count": 261,
-  "unique_story_count": 261,
+  "story_count": 558,
+  "unique_story_count": 358,
   "counts": {
     "by_company_topic": {
-      "anthropic": 19,
-      "apple": 4,
+      "anthropic": 56,
+      "apple": 8,
       "cursor": 1,
-      "deepseek": 4,
+      "deepseek": 9,
       "doubao": 2,
-      "google-gemini": 5,
-      "huggingface": 4,
-      "hunyuan": 1,
-      "kimi": 5,
-      "meta-llama": 2,
-      "minimax": 1,
-      "nvidia": 7,
-      "openai": 38,
-      "openrouter": 2,
-      "perplexity": 2,
-      "qwen": 5,
-      "xai": 21,
-      "zhipu": 2
+      "google-gemini": 11,
+      "huggingface": 8,
+      "hunyuan": 2,
+      "kimi": 11,
+      "meta-llama": 3,
+      "microsoft": 1,
+      "minimax": 2,
+      "nvidia": 15,
+      "openai": 90,
+      "openrouter": 7,
+      "perplexity": 3,
+      "qwen": 10,
+      "xai": 31,
+      "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 35,
-      "monetization": 1,
-      "product-entry": 1,
-      "workplace": 2
+      "agent-ecosystem": 67,
+      "monetization": 10,
+      "product-entry": 2,
+      "workplace": 5
     },
     "by_importance_label": {
-      "值得关注": 205,
-      "多源热议": 6,
-      "官方更新": 7,
-      "行业动态": 43
+      "值得关注": 422,
+      "多源热议": 12,
+      "官方更新": 25,
+      "行业动态": 99
     },
     "by_source_count_bucket": {
-      "1": 245,
-      "2": 10,
-      "3+": 6
+      "1": 522,
+      "2": 22,
+      "3+": 14
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_3c48d5bb2a9e",
+      "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50% / Introducing GPT-6 Sol and Luna",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "importance_score": 0.9043,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b742684d2aef",
+      "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "importance_score": 0.8996,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6bb8789d9f07",
+      "title": "Claude Opus 5.5 is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot",
+      "importance_score": 0.8523,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "anthropic",
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_a3e9511a3b71",
+      "title": "OpenAI’s GPT-6 Sol and GPT-6 Luna now available",
+      "url": "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available",
+      "importance_score": 0.8518,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_00b9cbed60be",
+      "title": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
+      "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+      "importance_score": 0.8367,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-09-23",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
     {
       "story_id": "story_1f10ad842f68",
       "title": "OpenRouter 推出 Batch API，批量推理可享半价 / Batch API: half-price inference by bundling requests",
@@ -80,6 +150,28 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_f9845f56532f",
+      "title": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡 / Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
+      "url": "https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477",
+      "importance_score": 0.8316,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-09-23",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3ff4f6d8ac89",
+      "title": "Security improvements for SSH",
+      "url": "https://github.blog/changelog/2026-09-22-security-improvements-for-ssh",
+      "importance_score": 0.829,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_a2908ae72b38",
       "title": "弃用通知：全平台 CodeQL 捆绑包 / Deprecation notice: All-platform CodeQL bundle",
       "url": "https://github.blog/changelog/2026-09-22-deprecation-notice-all-platform-codeql-bundle",
@@ -88,6 +180,48 @@
       "source_count": 1,
       "archive_date": "2026-09-22",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dd6c00c25605",
+      "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+      "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+      "importance_score": 0.8252,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_80632919d614",
+      "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "importance_score": 0.8244,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3de84024ac7c",
+      "title": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8244,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
@@ -100,6 +234,46 @@
       "archive_date": "2026-09-22",
       "company_topics": [
         "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2ef03ba27137",
+      "title": "OpenRouter 实测 Jev 1.13 与 Claude Opus 5 在 Banking77 分类任务上的准确率、延迟与成本 / Is Jev as Accurate as Frontier Models at Classification?",
+      "url": "https://openrouter.ai/blog/insights/jev-vs-claude-opus-5-classification",
+      "importance_score": 0.8234,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "anthropic",
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6fb704b5b9b3",
+      "title": "Codex CLI 0.156.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8204,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b46d415284c7",
+      "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+      "importance_score": 0.8199,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "anthropic"
       ],
       "lens_topics": []
     },
@@ -131,6 +305,19 @@
       ]
     },
     {
+      "story_id": "story_d73345def75c",
+      "title": "Priorities and principles for effective third party assessments",
+      "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "importance_score": 0.8064,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_b01d49929f03",
       "title": "GitHub Enterprise 添加凭证库存导出 / GitHub Enterprise adds credential inventory exports",
       "url": "https://github.blog/changelog/2026-09-21-github-enterprise-adds-credential-inventory-exports",
@@ -139,6 +326,91 @@
       "source_count": 1,
       "archive_date": "2026-09-22",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cb40729325c2",
+      "title": "Anthropic 发布 Claude Opus 5.5：性能对标 Fable 5.1，运行成本比 Opus 5 低 40% / Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
+      "url": "https://www.marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
+      "importance_score": 0.8005,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_366b9b129591",
+      "title": "Artificial Analysis 评测 GPT-6 Sol 与 Luna：成本减半，智能指数持平 / GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
+      "url": "https://x.com/ArtificialAnlys/status/2102462962758033624",
+      "importance_score": 0.7988,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_ae0ae182296f",
+      "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
+      "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+      "importance_score": 0.7933,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_2281eae9bc24",
+      "title": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter / GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
+      "url": "https://x.com/OpenRouter/status/2102463839283617992",
+      "importance_score": 0.7779,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai",
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_73d2d693822d",
+      "title": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50% / GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
+      "url": "https://x.com/sherwinwu/status/2102462783707344907",
+      "importance_score": 0.7778,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_a4d49cf0b546",
+      "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
+      "url": "https://x.com/ChatGPT/status/2102462020339613966",
+      "importance_score": 0.7776,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
@@ -151,6 +423,66 @@
       "archive_date": "2026-09-22",
       "company_topics": [
         "qwen"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f1545268658e",
+      "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格比 GPT-5.6 促销价低 50% / GPT-6 Sol and Luna are great models but also these characters are so cute",
+      "url": "https://x.com/sama/status/2102464201335984392",
+      "importance_score": 0.763,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_beeb9d5822be",
+      "title": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode / Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+      "url": "https://x.com/arena/status/2102454952576868638",
+      "importance_score": 0.7614,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_26a88cfe2029",
+      "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+      "url": "https://x.com/OpenRouter/status/2102438921213014078",
+      "importance_score": 0.7588,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "anthropic",
+        "openrouter"
+      ],
+      "lens_topics": [
+        "monetization",
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_acb3fe8a3aa9",
+      "title": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51% / Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+      "url": "https://x.com/bcherny/status/2102439069053747549",
+      "importance_score": 0.7558,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "anthropic"
       ],
       "lens_topics": []
     },
@@ -252,296 +584,6 @@
       "archive_date": "2026-09-22",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_485b4bae70f2",
-      "title": "硅谷 AI“黑客屋”乱象：月租 1 万美元的豪宅，留下 37 次警方记录",
-      "url": "https://www.aibase.com/news/31266",
-      "importance_score": 0.7538,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0e138a3d3e7b",
-      "title": "月之暗面推出Kimi Code桌面版：Plan、目标、Swarm三种模式齐发，AI编程搬进图形界面",
-      "url": "https://www.aibase.com/news/31269",
-      "importance_score": 0.7538,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d28e7788d36a",
-      "title": "何夕2077 AI 深度信号周报 2026 W38",
-      "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-20-ai-weekly-2026-w38",
-      "importance_score": 0.7473,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1dd4b02f1969",
-      "title": "Kimi 发布浏览器扩展，由 Kimi WebBridge 更名而来 / Meet the new Kimi Browser Extension， formerly Kimi WebBridge. From your browser sidebar， you can ch…",
-      "url": "https://x.com/Kimi_Moonshot/status/2102352211988865456",
-      "importance_score": 0.7472,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": [
-        "product-entry"
-      ]
-    },
-    {
-      "story_id": "story_f17ea0af323f",
-      "title": "腾讯混元图像3.5来了:画字更准、修图更强、一张2K图只要一毛五",
-      "url": "https://www.aibase.com/news/31258",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "hunyuan"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e414b8861921",
-      "title": "韩国 FuriosaAI 公布第三代推理加速器：算力与内存带宽均提升 32 倍",
-      "url": "https://www.aibase.com/news/31255",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c3fc257dc5ed",
-      "title": "SpaceXAI发布Grok 4.7：推理速度翻倍、价格砍半，每百万Token输入仅 2 美元",
-      "url": "https://www.aibase.com/news/31251",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "xai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c1aae2763094",
-      "title": "福布斯美国最年轻 10 位亿万富豪：7 人靠 AI 上榜，4 人来自 Anthropic",
-      "url": "https://www.aibase.com/news/31254",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ac9cced20eed",
-      "title": "消息称高瓴创投合伙人严文韬加入DeepSeek，担任CFO",
-      "url": "https://www.aibase.com/news/31265",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_aa9b65801865",
-      "title": "阿里云栖大会亮出最激进AI蓝图： 5 万亿至 10 万亿参数模型在途，自研真武V900 芯片算力翻三倍",
-      "url": "https://www.aibase.com/news/31263",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a456736fb399",
-      "title": "阿里平头哥发布AI芯片真武V900，算力达M890三倍",
-      "url": "https://www.aibase.com/news/31260",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a3622f2e9d93",
-      "title": "纯Go Agent框架covonaut v1.1. 4 发布：滚动并行池提速、多模态读取全开，误删也能进回收站",
-      "url": "https://www.aibase.com/news/31253",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_992af2931b9c",
-      "title": "苹果零售先驱质疑AI代理购物:消费者不会完全交给机器",
-      "url": "https://www.aibase.com/news/31262",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_93ae6596d014",
-      "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-      "url": "https://www.aibase.com/news/31252",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7578ec92efbd",
-      "title": "阿里巴巴任命刘大一恒担任Qwen项目负责人",
-      "url": "https://www.aibase.com/news/31256",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6d1dd7f0b34b",
-      "title": "华为云码道全面升级：全球首个鸿蒙专属AI编码智能体登场，从想法到上架一条龙",
-      "url": "https://www.aibase.com/news/31261",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_2e1abb5f9e0d",
-      "title": "Qwen4已投入训练，阿里公布10万亿参数模型演进路线",
-      "url": "https://www.aibase.com/news/31264",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_297f0b86dc9f",
-      "title": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
-      "url": "https://www.aibase.com/news/31259",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0635bf20b475",
-      "title": "上海AI Lab与上交大抛出NCP预训练新范式，8.9B隐空间模型用一半Token追平对手",
-      "url": "https://www.aibase.com/news/31257",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_040232f36ea3",
-      "title": "小米MiMo-V2. 6 发布： 46 分登顶开源之巅，把性价比砍成一道斩杀线",
-      "url": "https://www.aibase.com/news/31250",
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c6f7482433a4",
-      "title": "LiteParse 9 月更新：PDFium 提速 20-25%，新增视觉定位与 is-complex 路由 API / LiteParse Updates： September 2026",
-      "url": "https://www.llamaindex.ai/blog/liteparse-updates-september-2026",
-      "importance_score": 0.7443,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_666ff01c3033",
-      "title": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方 / Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
-      "url": "https://x.com/rohanpaul_ai/status/2102128625126605059",
-      "importance_score": 0.7417,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ed275edd4f01",
-      "title": "Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售 / The new Mac mini and Mac Studio are available today",
-      "url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today",
-      "importance_score": 0.7371,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f8d02811f102",
-      "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
-      "importance_score": 0.7357,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-22",
-      "company_topics": [
-        "xai"
       ],
       "lens_topics": []
     }
