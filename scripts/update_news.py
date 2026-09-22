@@ -3039,6 +3039,7 @@ SOURCE_TIER_BY_SITE: dict[str, tuple[str, str, int]] = {
     "tikhub_xiaohongshu": ("self_media", "自媒体源", 4),
     "xapi": ("advanced", "高级源", 4),
     "socialdata_x": ("advanced", "高级源", 4),
+    "x_bridge": ("advanced", "高级源", 4),
     "techurls": ("discussion", "热议参考", 5),
     "buzzing": ("discussion", "热议参考", 5),
     "iris": ("discussion", "热议参考", 5),
@@ -4077,6 +4078,153 @@ def maybe_fetch_x_api_updates(
     except Exception as exc:
         status["ok"] = False
         status["error"] = type(exc).__name__
+        return [], status
+
+
+X_BRIDGE_SCHEMA = "x_bridge_v1"
+X_BRIDGE_SITE_ID = "x_bridge"
+X_BRIDGE_SITE_NAME = "X（私有桥）"
+X_BRIDGE_DEFAULT_PATH = Path("data/bridge/x-items.json")
+X_BRIDGE_ALLOWED_ITEM_KEYS = frozenset(
+    {"id", "url", "username", "text", "published", "likes", "retweets"}
+)
+X_BRIDGE_FORBIDDEN_KEY_RE = re.compile(
+    r"(cookie|auth_token|\bauth\b|ct0|storage_state|bearer|password|secret|token)",
+    re.I,
+)
+
+
+def x_bridge_key_is_forbidden(key: str) -> bool:
+    """True when a JSON key name looks like credentials / session material."""
+    return bool(X_BRIDGE_FORBIDDEN_KEY_RE.search(str(key or "")))
+
+
+def sanitize_x_bridge_mapping(value: Any) -> Any:
+    """Drop forbidden credential-like keys; keep only public bridge fields."""
+    if isinstance(value, list):
+        return [sanitize_x_bridge_mapping(item) for item in value]
+    if isinstance(value, dict):
+        cleaned: dict[str, Any] = {}
+        for key, val in value.items():
+            key_str = str(key)
+            if x_bridge_key_is_forbidden(key_str):
+                continue
+            cleaned[key_str] = sanitize_x_bridge_mapping(val)
+        return cleaned
+    return value
+
+
+def parse_x_bridge_items(
+    payload: dict[str, Any] | None,
+    now: datetime,
+    window_hours: int = 24,
+) -> list[RawItem]:
+    """Map sanitized x_bridge_v1 JSON into RawItem rows inside the time window."""
+    if not isinstance(payload, dict):
+        raise ValueError("x_bridge_payload_not_object")
+    cleaned = sanitize_x_bridge_mapping(payload)
+    if not isinstance(cleaned, dict):
+        raise ValueError("x_bridge_payload_not_object")
+    schema = str(cleaned.get("schema") or "").strip()
+    if schema and schema != X_BRIDGE_SCHEMA:
+        raise ValueError(f"x_bridge_unsupported_schema:{schema}")
+
+    raw_items = cleaned.get("items")
+    if raw_items is None:
+        return []
+    if not isinstance(raw_items, list):
+        raise ValueError("x_bridge_items_not_list")
+
+    window_start = now - timedelta(hours=max(1, int(window_hours)))
+    out: list[RawItem] = []
+    seen_ids: set[str] = set()
+    for entry in raw_items:
+        if not isinstance(entry, dict):
+            continue
+        item = {k: entry.get(k) for k in X_BRIDGE_ALLOWED_ITEM_KEYS if k in entry}
+        tweet_id = str(item.get("id") or "").strip()
+        username = str(item.get("username") or "").strip().lstrip("@")
+        text = compact_public_snippet(str(item.get("text") or ""), max_chars=220)
+        url = str(item.get("url") or "").strip()
+        if not url and tweet_id and username:
+            url = f"https://x.com/{username}/status/{tweet_id}"
+        if not (tweet_id and text and url and username):
+            continue
+        if tweet_id in seen_ids:
+            continue
+        seen_ids.add(tweet_id)
+        published = parse_iso(str(item.get("published") or ""))
+        if not published or published < window_start:
+            continue
+        likes = item.get("likes")
+        retweets = item.get("retweets")
+        meta: dict[str, Any] = {
+            "post_id": tweet_id,
+            "bridge": "private_x_cookie_bridge",
+            "public_metrics": {
+                "like_count": likes if isinstance(likes, int) else None,
+                "retweet_count": retweets if isinstance(retweets, int) else None,
+            },
+        }
+        out.append(
+            RawItem(
+                site_id=X_BRIDGE_SITE_ID,
+                site_name=X_BRIDGE_SITE_NAME,
+                source=f"@{username}",
+                title=text,
+                url=url,
+                published_at=published,
+                meta=meta,
+            )
+        )
+    return out
+
+
+def load_x_bridge_items(
+    path: Path | str | None,
+    now: datetime,
+    window_hours: int = 24,
+) -> tuple[list[RawItem], dict[str, Any]]:
+    """Load data/bridge/x-items.json when present; never crash on a missing file."""
+    status: dict[str, Any] = {
+        "site_id": X_BRIDGE_SITE_ID,
+        "site_name": X_BRIDGE_SITE_NAME,
+        "ok": True,
+        "item_count": 0,
+        "duration_ms": 0,
+        "error": None,
+        "skipped": False,
+        "skip_reason": None,
+        "path": str(path) if path else str(X_BRIDGE_DEFAULT_PATH),
+    }
+    started = time.perf_counter()
+    bridge_path = Path(path) if path else X_BRIDGE_DEFAULT_PATH
+    status["path"] = str(bridge_path)
+    if not bridge_path.exists():
+        status["skipped"] = True
+        status["skip_reason"] = "no_x_bridge_items_file"
+        status["duration_ms"] = int((time.perf_counter() - started) * 1000)
+        return [], status
+    try:
+        payload = json.loads(bridge_path.read_text(encoding="utf-8"))
+        if payload == {} or payload is None:
+            status["item_count"] = 0
+            status["duration_ms"] = int((time.perf_counter() - started) * 1000)
+            return [], status
+        if not isinstance(payload, dict):
+            raise ValueError("x_bridge_payload_not_object")
+        if not payload:
+            status["duration_ms"] = int((time.perf_counter() - started) * 1000)
+            return [], status
+        items = parse_x_bridge_items(payload, now=now, window_hours=window_hours)
+        status["ok"] = True
+        status["item_count"] = len(items)
+        status["duration_ms"] = int((time.perf_counter() - started) * 1000)
+        return items, status
+    except Exception as exc:
+        status["ok"] = False
+        status["error"] = str(exc) if str(exc) else type(exc).__name__
+        status["duration_ms"] = int((time.perf_counter() - started) * 1000)
         return [], status
 
 
@@ -6824,6 +6972,26 @@ def main() -> int:
                 "error": x_api_status.get("error"),
                 "skipped": bool(x_api_status.get("skipped")),
                 "skip_reason": x_api_status.get("skip_reason"),
+            }
+        )
+    x_bridge_path = output_dir / "bridge" / "x-items.json"
+    x_bridge_items, x_bridge_status = load_x_bridge_items(
+        x_bridge_path,
+        now=now,
+        window_hours=args.window_hours,
+    )
+    if not x_bridge_status.get("skipped"):
+        raw_items.extend(x_bridge_items)
+        statuses.append(
+            {
+                "site_id": X_BRIDGE_SITE_ID,
+                "site_name": X_BRIDGE_SITE_NAME,
+                "ok": bool(x_bridge_status.get("ok")) if x_bridge_status.get("ok") is not None else True,
+                "item_count": int(x_bridge_status.get("item_count") or 0),
+                "duration_ms": int(x_bridge_status.get("duration_ms") or 0),
+                "error": x_bridge_status.get("error"),
+                "skipped": False,
+                "skip_reason": None,
             }
         )
     socialdata_items, socialdata_status = maybe_fetch_socialdata_updates(session, now, paid_source_state)

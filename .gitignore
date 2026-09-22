@@ -26,6 +26,9 @@ feeds/private*.opml
 # Optional private/generated digests
 data/email-digest.json
 
+# Private X bridge ingress (sanitized public posts only; never cookies)
+data/bridge/x-items.json
+
 # Local OS/editor noise
 .DS_Store
 .idea/

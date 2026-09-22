@@ -48,7 +48,7 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 | Public static pages | Supported by custom Python fetchers | Parse with `requests` + BeautifulSoup and normalize titles/URLs/times | Avoid fragile selectors when possible. |
 | GitHub releases/blogs | Usually supported through Atom/RSS | Prefer GitHub Atom feeds or official blog RSS | Useful for model/platform/tool release tracking. |
 | Newsletters | Partially supported | Prefer public archive RSS or stable archive pages | Do not scrape private inboxes. |
-| X / Twitter | Supported only through curated central feeds or opt-in API adapters | Prefer public generated feeds that already use official X API; keep direct X API optional and secret-backed | Following a person often imports noise; public bridge routes can be unstable. |
+| X / Twitter | Supported through curated central feeds, opt-in API adapters, or a private sanitized items-file bridge | Prefer public generated feeds that already use official X API; keep direct X API optional and secret-backed; private cookie scrapes stay off-repo and ingest only via `data/bridge/x-items.json` / `X_BRIDGE_ITEMS_B64` (see `docs/X_PRIVATE_BRIDGE.md`) | Following a person often imports noise; public bridge routes can be unstable; cookies must never enter this repo. |
 | WeChat public accounts | Not recommended as a default | Use stable third-party RSS only if the maintainer accepts breakage risk | Login/copyright/bridge stability can be poor. |
 | Telegram / Bilibili / Zhihu / podcasts | Skipped by default when feeds are unreliable | Add only as opt-in OPML entries | These can be noisy or bridge-dependent. |
 
@@ -125,6 +125,11 @@ baseline, then let the aggregator layer add breadth.
   current official X API docs describe paid read credits rather than a free daily
   read quota. Use `X_API_MAX_RESULTS`, `X_API_DAILY_POST_LIMIT`, and
   `X_API_RUN_UTC_HOUR` to cap usage.
+- **Private X cookie bridge**: supported as an advanced file/secret ingress only.
+  An external private scraper may write sanitized public tweet metadata to
+  `data/bridge/x-items.json` or supply the same JSON via `X_BRIDGE_ITEMS_B64`.
+  Cookies, `auth_token`, `ct0`, and Playwright `storage_state` must never enter
+  this repository. Details: `docs/X_PRIVATE_BRIDGE.md`.
 - **SocialData.tools X search**: supported as an advanced, secret-backed adapter
   through `SOCIALDATA_ENABLED=1` and `SOCIALDATA_API_KEY`, but disabled by
   default. It reads public X/Twitter search results from the third-party
