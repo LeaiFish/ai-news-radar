@@ -1,0 +1,227 @@
+{
+  "date": "2026-06-25",
+  "signal_count": 10,
+  "raw_item_count": 156,
+  "insights": [
+    {
+      "title": "OpenAI 自研推理芯片 Jalapeño 亮相，押注每瓦性能",
+      "signal_text": "OpenAI 总裁 Greg Brockman 发布专为 LLM 推理从零设计、历时九个月打造的自研芯片 Jalapeño，称设计过程由自家模型加速、每瓦性能表现亮眼（官方推文获 1600+ likes、15 万次浏览）。",
+      "signal_strength": 0.82,
+      "insight": "头部模型公司从「买算力」转向「造算力」，推理成本进入自研芯片竞赛。",
+      "implication": "推理芯片自研正成大厂卡位点，值得关注上游 EDA/封装与替代 GPU 的推理芯片初创机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "@gdb (Greg Brockman, OpenAI)",
+          "url": "https://x.com/gdb/status/2069809298612621629"
+        }
+      ],
+      "tags": [
+        "AI芯片",
+        "推理",
+        "OpenAI",
+        "算力"
+      ]
+    },
+    {
+      "title": "OpenAI 全量推送新版 GPT-5.5 Instant，主打更懂意图、更好聊",
+      "signal_text": "OpenAI 升级其使用量最大的 GPT-5.5 Instant，称模型更擅长理解提问背后的意图、处理复杂约束、对话更自然，已向 Pro/Plus 用户推送、次日覆盖免费用户（官方推文获 4300+ likes、39 万次浏览）。",
+      "signal_strength": 0.78,
+      "insight": "旗舰之外的「主力日常模型」成主战场，体验与意图理解直接影响留存。",
+      "implication": "高频对话模型的「情商」正成差异点，值得关注消费级 AI 的留存与日活打法。",
+      "category": "",
+      "sources": [
+        {
+          "name": "@OpenAI",
+          "url": "https://x.com/OpenAI/status/2069843083701915755"
+        },
+        {
+          "name": "@ChatGPTapp",
+          "url": "https://x.com/ChatGPTapp/status/2069851262498291919"
+        }
+      ],
+      "tags": [
+        "GPT-5.5",
+        "OpenAI",
+        "模型体验",
+        "消费AI"
+      ]
+    },
+    {
+      "title": "阿里 Qwen 发布 AgentWorld：不训练做 agent，而是预测环境会返回什么",
+      "signal_text": "阿里 Qwen 团队发布 Qwen-AgentWorld，两款模型不在 agent 环境里直接行动，而是预测环境的返回结果，单一架构覆盖 MCP、Search、Terminal、软件工程、Android、Web、OS 七个领域，并提升了 agent 在这七个基准上的表现。",
+      "signal_strength": 0.8,
+      "insight": "用「世界模型」预测环境反馈，为 agent 训练与评测提供更便宜的模拟器。",
+      "implication": "环境模拟正成 agent 能力的关键底座，值得关注 agent 仿真/合成数据这一早期方向。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/alibabas-model-never-trained-as-an-agent-and-improved-agent-performance-across-seven-benchmarks"
+        }
+      ],
+      "tags": [
+        "Agent",
+        "世界模型",
+        "Qwen",
+        "阿里"
+      ]
+    },
+    {
+      "title": "小米 HarnessX：让 agent 在任务中自我改写脚手架，小模型受益最大",
+      "signal_text": "小米研究者提出 HarnessX，针对长时程 agent 任务中「harness（连接 LLM 与环境的软件脚手架）静态、靠人工调」的瓶颈，让系统在执行中依据运行数据自动改写脚手架；实验显示模型越小、提升越明显。",
+      "signal_strength": 0.78,
+      "insight": "agent 性能瓶颈从模型转向脚手架，自改进 harness 把小模型抬到可用线。",
+      "implication": "自优化的工作流编排成新护城河，利好做 agent 运行时与可观测/自调优工具层的团队。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/xiaomis-harnessx-rewrites-its-own-ai-scaffolding-mid-task-and-smaller-models-gain-the-most"
+        }
+      ],
+      "tags": [
+        "Agent",
+        "Harness",
+        "小米",
+        "编排"
+      ]
+    },
+    {
+      "title": "Mistral 发布 OCR 4，把文档抽取做成完整的企业 AI 入口",
+      "signal_text": "Mistral AI 发布第四代 OCR 模型 OCR 4，从纯文本抽取升级为输出整篇文档的结构化表示，含 bounding box、块类型分类与逐词置信度，定位企业级文档智能（15 个月内第四代）。",
+      "signal_strength": 0.78,
+      "insight": "OCR 从「识字」走向「读懂版式」，文档智能成 RAG 与企业自动化的入口争夺。",
+      "implication": "结构化文档解析是企业知识库的咽喉，值得关注合同/财报/票据等垂直文档解析的创业窗口。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/data/mistral-launches-ocr-4-turning-document-extraction-into-a-full-enterprise-ai-play"
+        }
+      ],
+      "tags": [
+        "OCR",
+        "文档智能",
+        "Mistral",
+        "RAG"
+      ]
+    },
+    {
+      "title": "a16z 领投 Mirendil $200M 种子轮，押注「会做 AI 研发的 AI」",
+      "signal_text": "a16z 领投 AI 初创 Mirendil 2 亿美元种子轮；Mirendil 训练擅长 AI R&D 的前沿模型并围绕其做产品，联创兼 CEO Behnam Neyshabur 称要实现「自加速 AI」——让模型像科学家一样在领域内积累专长。",
+      "signal_strength": 0.76,
+      "insight": "「让 AI 加速 AI 研发」成新叙事，2 亿美元种子轮显资本对自加速路线的下注。",
+      "implication": "自动化 AI 研发若跑通将大幅压缩研发周期，值得关注 AI-for-AI-research 这一新兴赛道。",
+      "category": "",
+      "sources": [
+        {
+          "name": "@a16z",
+          "url": "https://x.com/a16z/status/2069869327411749012"
+        },
+        {
+          "name": "@a16z (Neyshabur 访谈)",
+          "url": "https://x.com/a16z/status/2069880861017973149"
+        }
+      ],
+      "tags": [
+        "融资",
+        "a16z",
+        "AI研发",
+        "自加速"
+      ]
+    },
+    {
+      "title": "[Update] Qualcomm 收购 Modular 落定，Mojo 开源前景引发社区担忧",
+      "signal_text": "继此前传出 Qualcomm 洽购 AI 软件公司 Modular，社区反应显示交易已落定：tinygrad 称「Mojo 已无前途、Qualcomm 不是开源好管家」，HuggingFace CEO Clement Delangue 公开向 Qualcomm CEO Cristiano Amon 致意。",
+      "signal_strength": 0.72,
+      "insight": "芯片巨头收编 AI 编译/软件栈，开源社区担心商业化吞掉中立性。",
+      "implication": "底层 AI 编译栈加速整合进硬件阵营，值得关注异构推理软件栈的开源替代机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "@__tinygrad__",
+          "url": "https://x.com/__tinygrad__/status/2069899144966312043"
+        },
+        {
+          "name": "@ClementDelangue",
+          "url": "https://x.com/ClementDelangue/status/2069903426654212447"
+        }
+      ],
+      "tags": [
+        "Qualcomm",
+        "Modular",
+        "Mojo",
+        "收购"
+      ]
+    },
+    {
+      "title": "SignalFire 数据：AI 没杀死工程岗，工程师反成最具韧性的岗位",
+      "signal_text": "据 TechCrunch 报道，SignalFire 数据显示，尽管裁员叙事被 AI 主导，工程师实际在新增招聘中占比反而上升，是更具韧性的岗位。",
+      "signal_strength": 0.7,
+      "insight": "AI 提效没削减工程需求，反而抬高了会用 AI 的工程师的价值。",
+      "implication": "「AI 替代程序员」叙事被数据证伪，值得关注放大工程师杠杆、而非替代他们的工具方向。",
+      "category": "",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/"
+        }
+      ],
+      "tags": [
+        "就业",
+        "工程师",
+        "AI影响"
+      ]
+    },
+    {
+      "title": "[Update] GLM-5.2 创开源 ARC-AGI-2 最佳成绩，闭源-开源差距约 8-12 月",
+      "signal_text": "François Chollet 称中国 GLM-5.2 创下开源模型在 ARC-AGI-2 上的最佳成绩；Ethan Mollick 指闭源 Gemini 3 Pro 早在 2025 年 11 月已达 31%，闭源与开源约 8-12 个月差距仍成立；Nathan Lambert 称 GLM-5.2 以接近 Opus 的能力、低成本拉低前沿实验室利润率。",
+      "signal_strength": 0.74,
+      "insight": "开源在硬推理基准上的追赶差距收窄到不足一年，并直接压缩闭源的利润空间。",
+      "implication": "开源逼近前沿正改写性价比曲线，利好以开源模型自托管、按任务路由的应用层团队。",
+      "category": "",
+      "sources": [
+        {
+          "name": "@fchollet",
+          "url": "https://x.com/fchollet/status/2069858556552298519"
+        },
+        {
+          "name": "@emollick",
+          "url": "https://x.com/emollick/status/2069857050016776227"
+        },
+        {
+          "name": "@natolambert",
+          "url": "https://x.com/natolambert/status/2069908195611726251"
+        }
+      ],
+      "tags": [
+        "GLM",
+        "ARC-AGI",
+        "开源",
+        "闭源差距"
+      ]
+    },
+    {
+      "title": "Meta 推出 $299 AI 智能眼镜，押注 AI 眼镜成大众设备",
+      "signal_text": "据 The Information，Meta 发布售价 299 美元的新款智能眼镜，押注搭载 AI 的眼镜可成大众消费设备；近期更实际的卖点是免耳机/手机即可通话、听音乐、拍照。",
+      "signal_strength": 0.7,
+      "insight": "AI 眼镜靠压价冲大众市场，硬件入口之争从手机外延到面部。",
+      "implication": "可穿戴 AI 入口下沉到三百美元价位，值得关注面向眼镜形态的轻应用与语音交互机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2069824140945539435"
+        }
+      ],
+      "tags": [
+        "智能眼镜",
+        "Meta",
+        "可穿戴",
+        "消费AI"
+      ]
+    }
+  ],
+  "trend_summary": "今日三条主线交叉：一是算力自研与开源同时压成本——OpenAI 端出自研推理芯片 Jalapeño 主打每瓦性能，SambaNova 拟以 100 亿美元估值募资、力推推理芯片做 Nvidia 的低价补充，GLM-5.2 又创开源 ARC-AGI-2 最佳成绩、以接近 Opus 的能力低价拉低前沿实验室利润，闭源性价比护城河持续被侵蚀（闭源-开源差距仍约 8-12 月）。二是 agent 底座从「调模型」转向「调环境与脚手架」——阿里 Qwen-AgentWorld 用世界模型预测七类环境的返回、小米 HarnessX 让 agent 任务中自改写脚手架且小模型受益最大，Mistral OCR 4 把文档抽取升级为结构化版式理解、做企业 RAG 入口。三是资本与叙事换挡——a16z 以 2 亿美元种子押注「会做 AI 研发的 AI」，Qualcomm 收编 Modular 引发开源社区对中立性的担忧，Runpod 拒绝 5 亿美元以上收购；与此同时 SignalFire 数据显示工程岗不降反升，给「AI 取代程序员」叙事降温。"
+}

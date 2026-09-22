@@ -1,0 +1,232 @@
+{
+  "date": "2026-06-17",
+  "signal_count": 10,
+  "raw_item_count": 66,
+  "insights": [
+    {
+      "title": "Z.ai 开源 GLM-5.2：多项长程编码基准超 GPT-5.5，成本仅 1/6",
+      "signal_text": "据 VentureBeat 报道，中国 AI 创业公司 Z.ai（前智谱 AI）发布 753B 参数开源（open-weights）大模型 GLM-5.2，主打「长程（long-horizon）」自主编码与工程任务，在多个长程编码基准上超过 GPT-5.5，且推理成本仅约其 1/6。模型即日上线 Hugging Face、Z.ai API 及 20+ 第三方平台。",
+      "signal_strength": 0.88,
+      "insight": "开源模型把「长程编码」这一旗舰能力打到 1/6 价位，能力—成本拐点再下移。",
+      "implication": "高性价比开源旗舰持续逼近闭源，值得关注按任务难度做模型路由、以开源底座替换高价 API 的应用层机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost"
+        },
+        {
+          "name": "Z.ai Blog",
+          "url": "https://z.ai/blog/glm-5.2"
+        },
+        {
+          "name": "Hugging Face - zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2"
+        }
+      ],
+      "tags": [
+        "Z.ai",
+        "GLM-5.2",
+        "Open Weights",
+        "Coding"
+      ]
+    },
+    {
+      "title": "美国罕见暂缓将 DeepSeek、长鑫等 100+ 企业列入实体清单",
+      "signal_text": "据 Reuters（经 Techmeme）报道，美国迄今未把 DeepSeek、CXMT（长鑫存储）及另外 100 多家被国安部门标记的企业加入实体清单（Entity List），该清单自去年 10 月以来未更新，是 10 多年来最长的一次空档期。",
+      "signal_strength": 0.82,
+      "insight": "对华 AI 出口管制出现政策停摆，管制节奏本身成了不确定变量。",
+      "implication": "管制走向短期摇摆，做跨境 AI 供给与合规分发的团队，值得把「政策不确定性」前置纳入选型与备份方案。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/"
+        },
+        {
+          "name": "Techmeme",
+          "url": "https://www.techmeme.com/260616/p46#a260616p46"
+        }
+      ],
+      "tags": [
+        "Export Control",
+        "DeepSeek",
+        "Geopolitics",
+        "Entity List"
+      ]
+    },
+    {
+      "title": "[Update] Anthropic 与白宫之争发酵：国会称未获通报，销售数据反显走强",
+      "signal_text": "Fable 5/Mythos 5 出口管制风波出现新进展：据 Politico，包括对 AI 政策有管辖权的商务委员会主席 Ted Cruz 在内，多名议员本周表示此前未就特朗普政府针对 Fable 5 的举措获得通报；另据 TechCrunch 引用 Ramp 支出数据，Anthropic 在企业用户中的采用仍在增长，这场与政府的对抗反而可能利好其销售。",
+      "signal_strength": 0.78,
+      "insight": "行政封禁与立法机构脱节，市场用钱投票，监管反成 Anthropic 的品牌叙事。",
+      "implication": "政策与商业走向背离，值得关注「监管不确定性下企业仍在加仓」的真实采用信号，而非只看政治表态。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Politico",
+          "url": "https://www.politico.com/news/2026/06/16/white-houses-anthropic-move-jolts-congress-back-into-the-ai-debate-00964614"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/"
+        }
+      ],
+      "tags": [
+        "Anthropic",
+        "Regulation",
+        "Congress",
+        "Enterprise Adoption"
+      ]
+    },
+    {
+      "title": "微博 VibeThinker-3B：30 亿参数模型称比肩旗舰推理，引发基准之争",
+      "signal_text": "据 VentureBeat 报道，新浪微博 9 人团队在 arXiv 发布 14 页技术报告，称其仅 30 亿参数（3B）的语言模型 VibeThinker-3B 在推理性能上可比肩甚至超过旗舰系统，结果在 AI 研究圈引发对 benchmark 可信度的新一轮争论。",
+      "signal_strength": 0.76,
+      "insight": "小模型「碰瓷」旗舰推理，真正引爆的是对评测基准是否被刷分的信任危机。",
+      "implication": "小参数高分需审慎核验，值得关注更抗刷分的评测方法与第三方复现，而非只看榜单数字。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/why-weibos-tiny-vibethinker-3b-has-the-ai-world-arguing-over-benchmarks-again"
+        }
+      ],
+      "tags": [
+        "VibeThinker",
+        "Small Models",
+        "Reasoning",
+        "Benchmarks"
+      ]
+    },
+    {
+      "title": "Databricks 称解决困扰 AI agent 的数十年数据管道难题，发布两款新品",
+      "signal_text": "据 VentureBeat 报道，Databricks 在 Data + AI Summit 上发布两款产品，旨在消除 AI agent 与其所需实时数据之间的管道延迟。其观点是：持续推理并对实时数据采取行动的 agent，无法容忍自身与信息之间存在传统数据管道，agent 让运营库与分析库的统一难题从「性能问题」变成了「结构性问题」。",
+      "signal_strength": 0.74,
+      "insight": "Agent 把数据「实时可用性」从优化项升级为架构刚需，数据层成 agent 竞争新前线。",
+      "implication": "实时数据接入是长程 agent 的瓶颈，值得关注面向 agent 的低延迟数据/特征供给基础设施机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/data/databricks-says-it-solved-the-decades-old-data-pipeline-problem-thats-been-slowing-ai-agents"
+        }
+      ],
+      "tags": [
+        "Databricks",
+        "AI Agents",
+        "Data Infrastructure",
+        "Real-time"
+      ]
+    },
+    {
+      "title": "斯坦福 DeLM：无中心编排器，多 agent 任务成本直降 50%",
+      "signal_text": "据 VentureBeat 报道，斯坦福提出去中心化语言模型框架 DeLM（decentralized language model），挑战「多 agent 必须有中心编排器（orchestrator）」的假设——让 agent 之间直接协调而非每次请求都经中心路由，从而把多 agent 任务成本降低约 50%，并减少协调延迟。",
+      "signal_strength": 0.73,
+      "insight": "多 agent 架构从「中心调度」转向「点对点协调」，编排范式被重新审视。",
+      "implication": "去中心化协调可能改写 agent 编排成本结构，值得关注无中心编排器的多 agent 框架与协议层探索。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/stanfords-delm-cuts-multi-agent-task-costs-50-without-a-central-orchestrator"
+        }
+      ],
+      "tags": [
+        "Stanford",
+        "Multi-Agent",
+        "DeLM",
+        "Orchestration"
+      ]
+    },
+    {
+      "title": "Copilot 高危漏洞 SearchLeak：可窃取用户 2FA 验证码",
+      "signal_text": "据 Ars Technica 报道，一个名为 SearchLeak 的漏洞利用显示，Microsoft Copilot 存在高危漏洞，攻击者可借此窃取用户的 2FA 验证码。报道指出该案例再次暴露了业界处理 LLM 安全问题的方式反复失效。",
+      "signal_strength": 0.72,
+      "insight": "LLM 把「读取上下文」变成新攻击面，2FA 这类敏感信息可被提示注入类手法外泄。",
+      "implication": "Agent/Copilot 接入敏感数据风险上升，值得关注面向 LLM 应用的输入隔离、输出审计与运行时防护工具。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/"
+        }
+      ],
+      "tags": [
+        "Copilot",
+        "Security",
+        "Prompt Injection",
+        "LLM Safety"
+      ]
+    },
+    {
+      "title": "OpenAI 提出发布前安全预测法：用「模拟部署」预判模型真实风险",
+      "signal_text": "OpenAI 在 Alignment Forum 发布研究，介绍其发布前安全评审的方法：通过模拟部署（simulating deployment）、结合定向评测与红队等手段，在模型发布前预测它在真实使用中可能的行为与新风险。其观点是随着能力提升，「理解模型会怎么做」比「它能做什么」更重要。",
+      "signal_strength": 0.7,
+      "insight": "安全评估从「测能力」转向「测部署后行为」，前置模拟成发布前关键关卡。",
+      "implication": "部署前行为预测正在方法化，值得关注面向模型上线的模拟评测、红队与行为度量工具链。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Alignment Forum (OpenAI)",
+          "url": "https://www.alignmentforum.org/posts/xPXJfgqFTvuJxGZbE/predicting-llm-safety-before-release-by-simulating"
+        },
+        {
+          "name": "OpenAI Paper (PDF)",
+          "url": "https://cdn.openai.com/pdf/predicting-llm-safety-before-release-by-simulating-deployment.pdf"
+        }
+      ],
+      "tags": [
+        "OpenAI",
+        "AI Safety",
+        "Evaluation",
+        "Red-teaming"
+      ]
+    },
+    {
+      "title": "高通押注「后智能手机」：在研 40+ AI 可穿戴设备",
+      "signal_text": "据 TechCrunch 报道，高通 CEO Cristiano Amon 周二表示，公司正研发 40 多种 AI 可穿戴设备——包括首饰、带摄像头的耳机、胸针、手表等，并已为此发布两款产品，凸显其押注下一代主力计算平台不再是手机。",
+      "signal_strength": 0.68,
+      "insight": "芯片巨头抢做「手机之后」的 AI 硬件入口，端侧 AI 形态进入百花齐放期。",
+      "implication": "可穿戴 AI 入口竞争升温，值得关注端侧小模型、低功耗多模态与可穿戴 agent 交互的早期机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/"
+        }
+      ],
+      "tags": [
+        "Qualcomm",
+        "AI Wearables",
+        "Edge AI",
+        "Hardware"
+      ]
+    },
+    {
+      "title": "Kapwing 测试：新建 TikTok 账号「For You」约 60% 是 AI 垃圾内容，为 YouTube 的约 3 倍",
+      "signal_text": "据 Search Engine Journal 报道，Kapwing 的测试显示，给一个全新 TikTok 账号推送的前 500 条「For You」视频中，约 60% 为 AI 生成的低质内容（AI slop），约为新 YouTube 用户在 Shorts 中所见 AI 垃圾内容的 3 倍。",
+      "signal_strength": 0.64,
+      "insight": "生成式内容正快速淹没主流信息流，平台分发与内容真实性面临系统性压力。",
+      "implication": "AI 内容泛滥催生新需求，值得关注内容溯源、AI 生成检测与质量分层的产品机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Search Engine Journal",
+          "url": "https://www.searchenginejournal.com/tiktok-shows-3x-more-ai-slop-than-youtube-report-finds/579521/"
+        },
+        {
+          "name": "Techmeme",
+          "url": "https://www.techmeme.com/260616/p47#a260616p47"
+        }
+      ],
+      "tags": [
+        "AI Slop",
+        "TikTok",
+        "Content Ecosystem",
+        "Detection"
+      ]
+    }
+  ],
+  "trend_summary": "今日主线有四：① 开源与成本拐点持续下移——Z.ai 开源 GLM-5.2 以约 1/6 成本在长程编码上超 GPT-5.5，VibeThinker-3B 用 3B 参数叫板旗舰推理，能力—价格曲线继续被开源/小模型压平，但也把「基准是否被刷分」的信任问题推到台前；② 地缘与监管摇摆——美国罕见暂缓将 DeepSeek 等 100+ 企业列入实体清单（10 年最长空档），同时 Fable 5 封禁出现「国会未获通报、销售反走强」的新进展，政策与商业走向背离；③ Agent 进入「数据层 + 编排范式」深水区——Databricks 把实时数据接入做成 agent 架构刚需，斯坦福 DeLM 用去中心化协调把多 agent 成本砍半；④ 安全与端侧两端外扩——Copilot SearchLeak 漏洞可窃取 2FA、OpenAI 提出发布前「模拟部署」预测风险，安全评估走向行为化；高通在研 40+ AI 可穿戴、TikTok 信息流 60% 为 AI 垃圾，端侧入口与内容真实性成新战场。"
+}

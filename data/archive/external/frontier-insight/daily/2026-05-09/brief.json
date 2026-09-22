@@ -1,0 +1,206 @@
+{
+  "date": "2026-05-09",
+  "signal_count": 10,
+  "raw_item_count": 103,
+  "insights": [
+    {
+      "title": "Peekaboo 3.0 Launches Action-First macOS Computer Use Agent",
+      "signal_text": "由独立开发者 steipete 发布的 Peekaboo 3.0 是面向 macOS 的 action-first 计算机使用代理，集成了统一截图与 UI 检测、更干净的 JSON CLI/MCP 输出。开发者称去年模型能力不足，现在已足够成熟。据社交平台数据，该发布获得 3071 likes 和 294k+ views，反映社区对端侧 GUI Agent 的高度关注。",
+      "signal_strength": 0.72,
+      "insight": "端侧GUI Agent从实验室走向实用，内容创作者可绕过API直接操控本地工具链。",
+      "implication": "内容平台的创作者工具可探索集成Peekaboo-like Agent，实现一键式图文编辑、跨平台发布、批量素材管理。",
+      "category": "ecosystem_shift",
+      "sources": [
+        {
+          "name": "Twitter/steipete (独立开发者)",
+          "url": "https://x.com/steipete/status/2053114837698249190"
+        }
+      ],
+      "tags": [
+        "AI Agent",
+        "Computer Use",
+        "macOS",
+        "MCP"
+      ]
+    },
+    {
+      "title": "ByteDance Seed Proposes Continuous Latent Diffusion Language Model (Cola DLM)",
+      "signal_text": "字节跳动 Seed 团队提出 Cola DLM，一种层次化潜在扩散语言模型，通过 text-to-latent 映射、全局语义先验建模和条件解码实现高效文本生成。来自字节跳动（优先机构），对内容生成和创作工具有直接参考价值。",
+      "signal_strength": 0.7,
+      "insight": "扩散模型进入语言生成领域，打破自回归垄断，降低AI文本同质化风险。",
+      "implication": "内容平台的长文生成/文案改写/多风格迁移场景可评估Cola DLM方案，提升内容多样性与可控性。",
+      "category": "research_breakthrough",
+      "sources": [
+        {
+          "name": "arXiv (ByteDance Seed)",
+          "url": "https://huggingface.co/papers/2605.06548"
+        }
+      ],
+      "tags": [
+        "Diffusion Model",
+        "Language Model",
+        "Content Generation",
+        "ByteDance"
+      ]
+    },
+    {
+      "title": "Enterprise Token Budgeting Emerges as Key Trend for AI Agent Deployment",
+      "signal_text": "Box CEO Aaron Levie 指出，大型企业开始将 token 预算管理作为关键议题——随着 Agent 任务变长、消耗算力激增，跨团队的 token 分配成为企业管理现实。推文获 464 likes、125k views，反映企业 AI 基础设施层的新痛点。",
+      "signal_strength": 0.7,
+      "insight": "Agent规模化部署催生基础设施管控需求，token成为新型计量货币。",
+      "implication": "电商/内容平台接入AI Agent服务时，可自建token监控与配额系统，防止算力滥用。",
+      "category": "infrastructure",
+      "sources": [
+        {
+          "name": "Twitter/Aaron Levie (Box CEO)",
+          "url": "https://x.com/levie/status/2052903105256382679"
+        }
+      ],
+      "tags": [
+        "Enterprise AI",
+        "Agent",
+        "Token Budget",
+        "Infrastructure"
+      ]
+    },
+    {
+      "title": "Apple Researchers Propose TIDE to Address LLM Token Collapse via Embedding Memory",
+      "signal_text": "Apple 团队提出 TIDE，通过 EmbeddingMemory 克服 LLM 中罕见 token 和上下文塌陷问题，利用上下文无关语义向量和深度条件处理。Apple MLR 为优先机构，该技术可改善 AI 内容理解与生成的稳定性。",
+      "signal_strength": 0.68,
+      "insight": "长尾语义丢失是搜索/推荐系统的隐性瓶颈，TIDE从Embedding层修复。",
+      "implication": "搜索产品的查询分词与语义匹配模块可测试TIDE的EmbeddingMemory组件，改善低频意图召回。",
+      "category": "research_breakthrough",
+      "sources": [
+        {
+          "name": "arXiv (Apple MLR, authors: Ajay Jaiswal, Lauren Hannah, Han-Byul Kim et al.)",
+          "url": "https://huggingface.co/papers/2605.06216"
+        }
+      ],
+      "tags": [
+        "LLM",
+        "Token Embedding",
+        "Content Understanding",
+        "Apple"
+      ]
+    },
+    {
+      "title": "OpenAI Reports 46 Million Daily Codex Installs; Agent Usage Exploding",
+      "signal_text": "据推文引述数据，5月2日单日 Codex 安装量达4600万，上周总计8600万安装。OpenAI CEO Sam Altman 表达对 Codex 任务自动化的乐观看法。安装在社交媒体引发广泛关注（Sam Altman 推文获7269 likes）。",
+      "signal_strength": 0.68,
+      "insight": "Codex单日4600万安装验证Agent开发工具已成为主流入口。",
+      "implication": "内容/电商平台可考虑开放标准化Agent API，允许Codex类Agent安全执行发布/编辑/数据分析操作。",
+      "category": "strategic_move",
+      "sources": [
+        {
+          "name": "Twitter/DeryaTR_ (引用数据) 及 Sam Altman",
+          "url": "https://x.com/DeryaTR_/status/2052936808623935959"
+        }
+      ],
+      "tags": [
+        "Codex",
+        "Agent",
+        "Adoption",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Alibaba Proposes Continuous-Time Distribution Matching for Few-Step Diffusion Distillation",
+      "signal_text": "阿里巴巴团队将扩散模型蒸馏从离散优化推向连续优化，支持采样轨迹任意点并保留高质量生成，GitHub 77 stars。对高效图像/视频生成有直接意义。",
+      "signal_strength": 0.66,
+      "insight": "连续时间蒸馏将成扩散模型落地的通行方案，秒级生成可期。",
+      "implication": "电商平台的快速图像生成管线可评估此方法，实现秒级商品图定制，降低AIGC算力成本。",
+      "category": "research_breakthrough",
+      "sources": [
+        {
+          "name": "arXiv (alibaba-inc)",
+          "url": "https://huggingface.co/papers/2605.06376"
+        }
+      ],
+      "tags": [
+        "Diffusion Distillation",
+        "Efficiency",
+        "Content Generation",
+        "Alibaba"
+      ]
+    },
+    {
+      "title": "Tencent Proposes MiA-Signature for Efficient Long-Context Understanding",
+      "signal_text": "腾讯研究团队提出 MiA-Signature，一种压缩全局激活模式的表示方法，在保持计算效率的同时提升长上下文理解能力。对搜索增强、RAG 等场景有应用潜力。",
+      "signal_strength": 0.65,
+      "insight": "长上下文压缩方案让RAG在低算力设备上也能高效运行。",
+      "implication": "社区平台的用户历史总结、商品长评摘要、客服对话记忆可优先评估此压缩方案。",
+      "category": "research_breakthrough",
+      "sources": [
+        {
+          "name": "arXiv (Tencent, authors: Yuqing Li, Jiangnan Li, Mo Yu et al.)",
+          "url": "https://huggingface.co/papers/2605.06416"
+        }
+      ],
+      "tags": [
+        "Long Context",
+        "LLM",
+        "Efficiency",
+        "Tencent"
+      ]
+    },
+    {
+      "title": "MiniCPM-o 4.5: Real-Time Full-Duplex Omni-Modal Interaction Model Released",
+      "signal_text": "MiniCPM-o 4.5 发布，支持实时全双工全模态交互（文本/语音/图像等）。由 OpenBMB 社区维护，论文已公开。对多模态内容创作与交互有参考价值。",
+      "signal_strength": 0.6,
+      "insight": "全双工多模态开源模型降低实时交互产品的自研门槛。",
+      "implication": "社区平台的直播互动、语音创作助手可基于MiniCPM-o快速原型，缩短从Demo到上线的周期。",
+      "category": "open_source",
+      "sources": [
+        {
+          "name": "Twitter/akhaliq (AI news curator, 原始来源: MiniCPM 团队)",
+          "url": "https://x.com/_akhaliq/status/2053177981401510270"
+        }
+      ],
+      "tags": [
+        "Multimodal",
+        "Real-time",
+        "Open Source"
+      ]
+    },
+    {
+      "title": "KernelBench-X: Tsinghua Benchmark Reveals LLM-Generated GPU Kernel Correctness Depends on Task Structure",
+      "signal_text": "清华大学发布 KernelBench-X 基准，评估 LLM 生成的 Triton GPU 内核正确性，发现任务结构对正确性影响大于方法设计，迭代精炼能提升性能。对 AI 推理效率优化有参考价值。",
+      "signal_strength": 0.58,
+      "insight": "LLM生成GPU内核的正确性瓶颈在任务结构而非算法，迭代精炼是优化方向。",
+      "implication": "AI推理平台可参考KernelBench-X的迭代精炼方法，降低自研算子部署时的正确性风险。",
+      "category": "research_breakthrough",
+      "sources": [
+        {
+          "name": "arXiv (Tsinghua University)",
+          "url": "https://huggingface.co/papers/2605.04956"
+        }
+      ],
+      "tags": [
+        "GPU Kernels",
+        "Benchmark",
+        "Efficiency",
+        "Tsinghua"
+      ]
+    },
+    {
+      "title": "Google I/O 2026 Livestream Schedule Released – AI Focus Expected",
+      "signal_text": "Google Developers 官方宣布 I/O 2026 直播时间表，537 likes。预计将有大量 AI 产品发布（Gemini、搜索、Agent 等），值得跟踪后续具体发布内容。",
+      "signal_strength": 0.55,
+      "insight": "Google I/O AI主题明确，或预示搜索与Agent深度融合的新范式。",
+      "implication": "搜索/内容平台可密切关注Gemini Agent发布，提前适配其可能的开放搜索API标准。",
+      "category": "strategic_move",
+      "sources": [
+        {
+          "name": "Google Developers 官方 Twitter",
+          "url": "https://x.com/googledevs/status/2052916462805766614"
+        }
+      ],
+      "tags": [
+        "Google I/O",
+        "Strategy",
+        "Product Launch"
+      ]
+    }
+  ],
+  "trend_summary": "今日核心趋势观察：\n- **趋势要点1**：企业AI Agent部署从概念验证进入“成本核算”阶段，token预算管理成为落地瓶颈，标志着Agent经济性成为关键议题。\n- **趋势要点2**：扩散模型与语言模型的融合加速——从连续扩散（Alibaba）到潜在扩散（ByteDance），生成模型架构正在从离散生成向量化、连续化演进。\n- **趋势要点3**：AI Agent生态进入“平台化安装爆发期”，Codex单日安装量达4600万，同时Peekaboo等本地化action-first Agent涌现，预示Agent将从云端扩展到端侧。\n- **趋势要点4**：长上下文与效率优化成为共识——腾讯MiA-Signature与Apple TIDE分别从压缩与记忆角度解决LLM的上下文塌陷问题，推动模型理解能力实用化。\n- **趋势要点5**：全双工多模态交互成熟（MiniCPM-o 4.5），结合Agent框架与扩散模型，实时语音/图像/文本融合生成正从研究走向产品基线。"
+}

@@ -1,0 +1,215 @@
+{
+  "week": "2026-W20",
+  "date_range": "2026-05-05 ~ 2026-05-11",
+  "generated_at": "2026-05-12T11:00:00+08:00",
+  "type_tag": "Runtime层迁移 / Runtime Layer Migration",
+  "theme": "本周一组同时发生的信号显示，AI从'住进设备'向'成为设备'的迁移正在加速。W14那一周Agent拿到了操控你Mac的外部权限，本质上是一个外部住户；W20这一周多个独立动作把Agent进一步推向runtime的内嵌位置——Excel单元格里训练带attention/SGD的mini GPT（Nadella发推认可Henley演示）、Chrome+Codex插件（'hello chrome, i am codex'）、Mac mini定位为Perplexity 24/7 Agent（Aravind：'AI OS takes objectives, not instructions'）、Android系统层能力或正向Agent方向重组（Cosmo泄露，未经官方确认）、Adobe CX Coworker运行于NVIDIA NemoClaw runtime。这条迁移如果继续推进，竞争优势会逐步向已经拥有通用工作面的公司（Microsoft Excel、Apple Mac、Google Android/Chrome）倾斜，没有runtime的模型实验室会越来越多面对两条路：嵌进别人的runtime，或者自己造一个。",
+  "key_signals": [
+    {
+      "title": "Excel 'edging toward AI-Complete'——Nadella发推认可Henley单元格内训练mini GPT演示",
+      "signal_strength": 0.92,
+      "category": "strategic_move",
+      "dates_appeared": ["2026-05-10"],
+      "sources": [
+        {"name": "Satya Nadella 推特", "url": "https://x.com/satyanadella/status/2053334532666081624"},
+        {"name": "Blockchain.news 报道", "url": "https://blockchain.news/ainews/excel-copilot-builds-mini-gpt-model-in-cells"}
+      ],
+      "relevance_to_thesis": "最强信号——Excel单元格本身能跑神经网络核心运算（embeddings/attention/SGD/next-token），AI不再是Excel之外的服务，而是Excel能做的事的一部分"
+    },
+    {
+      "title": "Codex Chrome插件——'hello chrome, i am codex'",
+      "signal_strength": 0.88,
+      "category": "ecosystem_shift",
+      "dates_appeared": ["2026-05-08"],
+      "sources": [
+        {"name": "OpenAI Devs 推特", "url": "https://x.com/OpenAIDevs/status/2052481136971125158"}
+      ],
+      "relevance_to_thesis": "Codex不再'使用'浏览器，而是'成为'浏览器的一种新能力——能后台多Tab并行驱动、跨标签收集上下文、调DevTools"
+    },
+    {
+      "title": "Perplexity Personal Computer正式开放给所有Mac用户加嵌入Microsoft Teams",
+      "signal_strength": 0.9,
+      "category": "product_launch",
+      "dates_appeared": ["2026-05-07", "2026-05-08"],
+      "sources": [
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/05/07/perplexitys-personal-computer-is-now-available-everyone-on-mac/"},
+        {"name": "9to5Mac", "url": "https://9to5mac.com/2026/05/07/perplexity-ai-app-introduces-all-new-native-mac-experience-for-personal-computer/"},
+        {"name": "Twitter @AravSrinivas", "url": "https://x.com/AravSrinivas/status/2052469406232658001"}
+      ],
+      "relevance_to_thesis": "Aravind定调'AI OS takes objectives, not instructions'——Mac mini从'等命令的硬件'变成'接收目标后自主推进的Agent runtime'，且能力可移植到Teams"
+    },
+    {
+      "title": "Google Cosmo泄露（未经官方确认）——Android系统层能力或在向Agent方向重组",
+      "signal_strength": 0.78,
+      "category": "strategic_move",
+      "dates_appeared": ["2026-05-07"],
+      "sources": [
+        {"name": "X 社区讨论（截图）", "url": "https://x.com/search?q=cosmo%20android%20gemini%20nano"}
+      ],
+      "relevance_to_thesis": "如属实，Google准备把整个Android重新定义为AI Agent OS——本地Gemini Nano+屏幕访问+声纹+recall+浏览器Agent全部系统级化"
+    },
+    {
+      "title": "Adobe CX Enterprise Coworker运行于NVIDIA NemoClaw（agentic skills通过MCP暴露给五大平台）",
+      "signal_strength": 0.82,
+      "category": "strategic_move",
+      "dates_appeared": ["2026-04-20", "2026-05-07"],
+      "sources": [
+        {"name": "Adobe 官方公告", "url": "https://news.adobe.com/news/2026/04/adobe-unveils-cx-enterprise-coworker"},
+        {"name": "NVIDIA 官方博客", "url": "https://blogs.nvidia.com/blog/adobe-ai-agents-nvidia-wpp/"},
+        {"name": "NVIDIA 推特", "url": "https://x.com/nvidia/status/2052067248857084091"}
+      ],
+      "relevance_to_thesis": "Adobe把自己能力通过MCP暴露给Claude/Gemini/Copilot/ChatGPT/NemoClaw五大Agent平台——示范'被任何runtime调用'的产品形态"
+    },
+    {
+      "title": "gog 0.16——Workspace CLI明确'for humans and agents'",
+      "signal_strength": 0.65,
+      "category": "open_source",
+      "dates_appeared": ["2026-05-05"],
+      "sources": [
+        {"name": "GitHub Release（社区项目）", "url": "https://github.com/"}
+      ],
+      "relevance_to_thesis": "API层在被重新设计把Agent当作一等公民用户，鉴权/错误处理/命令语法面向'Agent要怎么用'做权衡"
+    },
+    {
+      "title": "Cursor 3.3加入Agent context可观测面板",
+      "signal_strength": 0.62,
+      "category": "product_launch",
+      "dates_appeared": ["2026-05-07"],
+      "sources": [
+        {"name": "Cursor 官方推特", "url": "https://x.com/cursor_ai/status/2052052109290569810"}
+      ],
+      "relevance_to_thesis": "IDE作为开发者runtime，把Agent行为（rules/skills/MCP/subagents）暴露在UI里——承认Agent是一等公民功能"
+    },
+    {
+      "title": "Apple Research：实时工具调用监督机制",
+      "signal_strength": 0.72,
+      "category": "research_breakthrough",
+      "dates_appeared": ["2026-05-10"],
+      "sources": [
+        {"name": "Apple Research (via @omarsar0)", "url": "https://x.com/omarsar0/status/2053559715289047280"}
+      ],
+      "relevance_to_thesis": "runtime层为Agent定制安全边界的早期工程信号——Apple在为iOS/macOS定义'Agent runtime的安全准则'"
+    },
+    {
+      "title": "Agent工具中毒漏洞（CoSAI Issue #141）",
+      "signal_strength": 0.78,
+      "category": "infrastructure",
+      "dates_appeared": ["2026-05-11"],
+      "sources": [
+        {"name": "VentureBeat 安全报道", "url": "https://venturebeat.com/security/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security"}
+      ],
+      "relevance_to_thesis": "runtime层迁移过程中暴露的协议级缺陷——Agent依据NLP描述选工具但无签名验证"
+    },
+    {
+      "title": "Peekaboo 3.0——action-first macOS computer use Agent",
+      "signal_strength": 0.68,
+      "category": "open_source",
+      "dates_appeared": ["2026-05-09"],
+      "sources": [
+        {"name": "Twitter @steipete", "url": "https://x.com/steipete/status/2053114837698249190"}
+      ],
+      "relevance_to_thesis": "端侧GUI Agent成熟度提升，独立开发者也能在Mac上构建runtime级Agent"
+    },
+    {
+      "title": "GPT-5.5 Instant设为ChatGPT默认加ChatGPT-Excel/Sheets深度集成",
+      "signal_strength": 0.85,
+      "category": "model_release",
+      "dates_appeared": ["2026-05-06"],
+      "sources": [
+        {"name": "OpenAI 官方博客", "url": "https://openai.com/index/gpt-5-5-instant"},
+        {"name": "VentureBeat", "url": "https://venturebeat.com/orchestration/gpt-5-5-instant-shows-you-what-it-remembered-just-not-all-of-it"}
+      ],
+      "relevance_to_thesis": "ChatGPT与Excel/Sheets深度集成是OpenAI'嵌进别人runtime'路径的具体执行"
+    },
+    {
+      "title": "Anthropic包下xAI整套Colossus 1集群（约50亿美元年费）",
+      "signal_strength": 0.85,
+      "category": "strategic_move",
+      "dates_appeared": ["2026-05-06", "2026-05-07"],
+      "sources": [
+        {"name": "NVIDIA 官方推特", "url": "https://x.com/nvidia/status/2052091408643756296"},
+        {"name": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-spacex-has-rented-out-access-to-its-supercomputers-220-000-nvidia-gpus-and-300-megawatts-of-ai-compute-power-to-rival-anthropic-musk-says-no-one-set-off-my-evil-detector-antrhropic-also-interested-in-orbital-data-centers"},
+        {"name": "xAI 官方公告", "url": "https://x.ai/news/anthropic-compute-partnership"}
+      ],
+      "relevance_to_thesis": "runtime下沉伴随的算力底座加固，22万GPU为Anthropic嵌入多个runtime（Mythos in Firefox/Petri/Claude in Excel）提供计算支撑"
+    },
+    {
+      "title": "Codex单日4600万次安装",
+      "signal_strength": 0.78,
+      "category": "ecosystem_shift",
+      "dates_appeared": ["2026-05-08", "2026-05-09"],
+      "sources": [
+        {"name": "Twitter @DeryaTR_", "url": "https://x.com/DeryaTR_/status/2052936808623935959"}
+      ],
+      "relevance_to_thesis": "Codex作为Chrome内置能力的分发底座——4600万次单日安装意味着开发者runtime已被改写"
+    },
+    {
+      "title": "Google AlphaEvolve——Gemini编程Agent嵌进Google自身AI系统优化",
+      "signal_strength": 0.7,
+      "category": "research_breakthrough",
+      "dates_appeared": ["2026-05-08"],
+      "sources": [
+        {"name": "Twitter @GoogleDeepMind", "url": "https://x.com/GoogleDeepMind/status/2052403306257940967"}
+      ],
+      "relevance_to_thesis": "Agent作为Google自身研究runtime的内嵌组件——已应用于量子计算、生物技术、物流和Google内部AI系统优化"
+    }
+  ],
+  "trend_context": [
+    {
+      "trend_name": "Autonomous AI Agent Development Ecosystem Growth",
+      "trajectory": "accelerating",
+      "this_week_signals": 5,
+      "relationship_to_thesis": "本周Agent从'外部操作者'升级为'runtime内嵌组件'——这是该趋势的关键质变节点。"
+    },
+    {
+      "trend_name": "Enterprise AI Agent Adoption and Product Launches",
+      "trajectory": "accelerating",
+      "this_week_signals": 4,
+      "relationship_to_thesis": "Adobe CX Coworker、Perplexity Computer in Teams、Excel AI-Complete共同证明企业级Agent部署正在以runtime嵌入而非应用集成的形态展开。"
+    },
+    {
+      "trend_name": "AI Infrastructure Optimization and Open Source Tools",
+      "trajectory": "accelerating",
+      "this_week_signals": 3,
+      "relationship_to_thesis": "NVIDIA NemoClaw、Apple实时工具调用监督、gog CLI for agents构成runtime层基础设施的早期工程实践。"
+    },
+    {
+      "trend_name": "AI Hardware Competition and Nvidia Challengers",
+      "trajectory": "accelerating",
+      "this_week_signals": 2,
+      "relationship_to_thesis": "Anthropic-xAI Colossus 1协议是runtime下沉所需算力底座的具体例证。"
+    }
+  ],
+  "prediction_review": [
+    {
+      "previous_prediction": "W14：操作系统厂商（Apple、Google、Microsoft）将发布专门的Agent权限管理API或框架",
+      "evidence_this_week": "Apple Research论文（运行时工具调用监督机制）是早期工程信号；Google Cosmo泄露是更直接的印证（如属实）；Microsoft的Excel AI-Complete是Microsoft层面的间接回应。",
+      "assessment": "方向已明确得到弱印证，正式发布形态仍待Apple WWDC 2026和Google I/O 2026后续发布验证。"
+    }
+  ],
+  "new_predictions": [
+    {
+      "prediction": "Apple将在2026年WWDC（六月初）发布某种形式的'系统级Agent runtime'——可能形态包括iOS/macOS的Agent API、设备级rerouter（决定Agent调用走本地还是云端）、或Apple Intelligence的'目标式接口'。",
+      "confidence_level": "中",
+      "timeframe": "WWDC 2026（六月初）",
+      "basis": "Apple本周Research论文已展示'运行时工具调用监督'机制；Cosmo泄露后Google可能抢跑Android端，Apple有强动机响应；Apple自2024年起在Apple Intelligence上的累积已具备发布条件。但具体形态仍可能保守。"
+    },
+    {
+      "prediction": "至少一家头部企业SaaS公司将在本季度内宣布'runtime化'战略——明确把自己的核心产品定位为'AI runtime'而非'with AI feature'，形态可能包括：开放MCP端点给多个Agent平台、重新设计API面向Agent优先、推出'产品内嵌Agent'功能。",
+      "confidence_level": "中",
+      "timeframe": "本季度内（约3个月）",
+      "basis": "Adobe已示范该路径；Cursor、Notion、Linear等开发者向SaaS有清晰意愿；CoSAI关于工具中毒的Issue #141会迫使SaaS方主动控制Agent接入。但具体哪家公司先官宣仍取决于市场反应速度。"
+    },
+    {
+      "prediction": "在未来数月，至少一起'runtime层'商业冲突会公开化——形态可能是OS厂商对模型实验室征收Agent调用抽成、或者runtime owner拒绝/限制某个模型平台接入。",
+      "confidence_level": "低",
+      "timeframe": "未来数月，时间窗口较宽",
+      "basis": "当runtime成为稀缺资源，类似iOS App Store抽税的商业模型会自然涌现；历史上每一次新的分发层崛起都伴随类似冲突（30%税、独家协议、限流等）。但具体时间窗口与对象难以精确预测。"
+    }
+  ],
+  "watchlist": [
+    "Apple WWDC 2026（公开日历显示在六月初）的Agent runtime定位——Apple是否会把Apple Intelligence从'feature'升级为'OS级runtime'？",
+    "Google Cosmo（如泄露属实）的正式发布——如Android整体被重写为AI Agent OS，会重新定义30亿移动用户的Agent入口。",
+    "头部企业SaaS的'runtime化'信号——Salesforce、ServiceNow、SAP、Notion、Linear、Figma是否跟进Adobe的MCP多平台暴露策略。"
+  ]
+}
