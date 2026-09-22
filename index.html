@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
       (function () {
-        var space = "";
+        var params;
         try {
-          space = new URLSearchParams(window.location.search).get("space") || "";
+          params = new URLSearchParams(window.location.search);
         } catch (err) {
-          space = "";
+          params = new URLSearchParams();
         }
+        var space = params.get("space") || "";
         if (space !== "research" && space !== "workbench") space = "overview";
         document.documentElement.setAttribute("data-space", space);
+        var tab = params.get("tab") || "org";
+        if (tab !== "event" && tab !== "trend") tab = "org";
+        document.documentElement.setAttribute("data-research-tab", tab);
+        var kind = params.get("kind") || "";
+        var id = params.get("id") || "";
+        var pack = id && (kind === "org" || kind === "event" || kind === "trend");
+        document.documentElement.setAttribute("data-research-view", pack ? "pack" : "catalog");
       })();
     </script>
     <title>竞争概览 · AI Perspective</title>
     <meta
       name="description"
-      content="AI Perspective 竞争概览：本月核心判断，以及国内与海外产品的近窗追踪。主题研究与工作台即将推出。"
+      content="AI Perspective：竞争概览，以及主题研究里的机构、事件与趋势目录。"
     />
     <meta name="theme-color" content="#f7f8f7" />
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./assets/perspective.css?v=perspective-1" />
+    <link rel="stylesheet" href="./assets/perspective.css?v=perspective-3" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到内容</a>
@@ -169,15 +177,79 @@
         </section>
 
         <section class="space-panel" data-space-panel="research" aria-label="主题研究">
-          <div class="empty-state">
-            <p class="empty-kicker">即将推出</p>
-            <h1>主题研究</h1>
-            <p>机构、事件和趋势的长期目录还在整理。竞争概览先看这个月的变化。</p>
-            <p class="empty-links">
-              <a class="text-link" href="./">回到竞争概览</a>
-              <a class="text-link" href="./topics/">打开现有主题库</a>
-            </p>
+          <div id="researchCatalog">
+            <header class="page-head">
+              <div>
+                <h1>主题研究</h1>
+                <p class="lede">机构、事件与趋势目录</p>
+                <p class="window-note" id="researchNote">正在整理目录…</p>
+              </div>
+            </header>
+            <div class="catalog-tabs" role="tablist" aria-label="目录分类">
+              <button class="catalog-tab" type="button" role="tab" data-research-tab="org">机构</button>
+              <button class="catalog-tab" type="button" role="tab" data-research-tab="event">事件</button>
+              <button class="catalog-tab" type="button" role="tab" data-research-tab="trend">趋势</button>
+            </div>
+            <div class="catalog-tools">
+              <input id="researchSearch" type="search" placeholder="搜索名称或说明" aria-label="搜索名称或说明" />
+              <label class="filter-field">
+                <span class="sr-only">筛选</span>
+                <select id="researchFilter" aria-label="筛选">
+                  <option value="all">全部</option>
+                  <option value="active">近窗有更新</option>
+                  <option value="quiet">本窗口无故事</option>
+                  <option value="domestic">国内</option>
+                  <option value="overseas">海外</option>
+                </select>
+              </label>
+            </div>
+            <div id="researchList" class="catalog-list" aria-live="polite">
+              <p class="placeholder-line">正在整理目录…</p>
+            </div>
           </div>
+
+          <article id="researchPack" aria-label="事实包">
+            <div class="pack-layout">
+              <div class="pack-main">
+                <p class="pack-back-row"><a class="pack-back" id="packBack" href="./?space=research">返回目录</a></p>
+                <h1 id="packTitle">主题研究</h1>
+                <p class="lede" id="packLede"></p>
+
+                <section class="pack-section" id="pack-judgment">
+                  <h2>当前判断</h2>
+                  <div id="packJudgment"><p class="placeholder-line">正在整理…</p></div>
+                </section>
+                <section class="pack-section" id="pack-delta">
+                  <h2>本期变化</h2>
+                  <div id="packDelta"></div>
+                </section>
+                <section class="pack-section" id="pack-facts">
+                  <h2>事实与阐述</h2>
+                  <div id="packFacts"></div>
+                </section>
+                <section class="pack-section" id="pack-open">
+                  <h2>待验证</h2>
+                  <div id="packOpen"></div>
+                </section>
+                <section class="pack-section" id="pack-sources">
+                  <h2>信源索引</h2>
+                  <div id="packSources"></div>
+                </section>
+              </div>
+              <aside class="pack-toc" aria-label="本页目录">
+                <p class="nav-label">本页目录</p>
+                <a href="#pack-judgment">当前判断</a>
+                <a href="#pack-delta">本期变化</a>
+                <a href="#pack-facts">事实与阐述</a>
+                <a href="#pack-open">待验证</a>
+                <a href="#pack-sources">信源索引</a>
+                <p class="nav-label">相关研究</p>
+                <div class="toc-links" id="packRelated"></div>
+                <p class="nav-label">相关材料</p>
+                <div class="toc-links" id="packMaterials"></div>
+              </aside>
+            </div>
+          </article>
         </section>
 
         <section class="space-panel" data-space-panel="workbench" aria-label="工作台">
@@ -192,6 +264,6 @@
         </section>
       </main>
     </div>
-    <script src="./assets/perspective.js?v=perspective-2"></script>
+    <script src="./assets/perspective.js?v=perspective-4"></script>
   </body>
 </html>
