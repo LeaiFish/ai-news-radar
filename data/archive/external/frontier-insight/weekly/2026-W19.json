@@ -1,0 +1,129 @@
+{
+  "week": "W19",
+  "date_range": "2026-04-28 to 2026-05-04",
+  "type_tag": "商业模式转换",
+  "theme": "本周OpenAI和Anthropic同时宣布与PE巨头成立企业AI部署合资公司（合计估值$115亿），正式从'卖模型'进入'卖实施'。当开源每一代追平闭源、企业RAG撞上规模墙、编码Agent被凭证而非模型本身攻破——AI落地的瓶颈已经不在技术，在最后一公里。模型公司选择自己下场做实施，本质上是用服务锁定取代模型锁定。",
+  "key_signals": [
+    {
+      "signal": "OpenAI成立The Deployment Company：$100亿估值，19家PE投资者，17.5%保底年化回报",
+      "source": "Bloomberg / TechCrunch",
+      "importance": 3,
+      "category": "strategic_move"
+    },
+    {
+      "signal": "Anthropic联合Goldman Sachs、Blackstone成立$15亿企业AI部署合资公司",
+      "source": "CNBC / TechCrunch",
+      "importance": 3,
+      "category": "strategic_move"
+    },
+    {
+      "signal": "微软与OpenAI解除独家云协议，OpenAI可在AWS/Google Cloud销售",
+      "source": "VentureBeat / TechCrunch",
+      "importance": 3,
+      "category": "strategic_move"
+    },
+    {
+      "signal": "Enterprise RAG撞上'规模墙'：混合检索意图一季度从10.3%飙至33.3%",
+      "source": "VentureBeat（VB Pulse Q1）",
+      "importance": 3,
+      "category": "ecosystem_shift"
+    },
+    {
+      "signal": "David Silver创立Ineffable Intelligence，融资$11亿建不依赖人类数据的RL超学习器",
+      "source": "TechCrunch",
+      "importance": 3,
+      "category": "research_breakthrough"
+    },
+    {
+      "signal": "编码Agent（Codex/Claude Code/Copilot）被凭证窃取攻破，OpenAI列为Critical P1",
+      "source": "VentureBeat",
+      "importance": 2,
+      "category": "ecosystem_shift"
+    },
+    {
+      "signal": "Redis研究：RAG微调可将检索精度降低40%",
+      "source": "VentureBeat",
+      "importance": 2,
+      "category": "research_breakthrough"
+    },
+    {
+      "signal": "Mistral Medium 3.5：128B MoE开放视觉推理模型，比肩6倍规模闭源",
+      "source": "Mistral AI",
+      "importance": 2,
+      "category": "open_source"
+    },
+    {
+      "signal": "NVIDIA Nemotron 3 Nano Omni：30B四模态开源模型，25GB RAM可运行",
+      "source": "NVIDIA / HuggingFace",
+      "importance": 2,
+      "category": "open_source"
+    },
+    {
+      "signal": "Alibaba Metis Agent：冗余工具调用从98%降至2%，准确率同步提升",
+      "source": "VentureBeat",
+      "importance": 2,
+      "category": "research_breakthrough"
+    }
+  ],
+  "trend_context": [
+    {
+      "trend_name": "模型公司下沉到服务层",
+      "trajectory": "emerging",
+      "this_week_signals": 3,
+      "relationship_to_thesis": "OpenAI和Anthropic同日宣布PE合资部署公司，合计估值$115亿，标志着从'卖模型'到'卖实施'的战略转向。驱动力是模型层的商品化和企业部署的最后一公里瓶颈。"
+    },
+    {
+      "trend_name": "开源追平闭源",
+      "trajectory": "accelerating",
+      "this_week_signals": 2,
+      "relationship_to_thesis": "Mistral Medium 3.5比肩6倍规模闭源模型、NVIDIA Nemotron 3 Nano Omni在25GB RAM上实现四模态。开源模型的'慢一拍'间隔继续缩短，进一步侵蚀模型层的定价权。"
+    },
+    {
+      "trend_name": "企业AI部署瓶颈从技术转向实施",
+      "trajectory": "accelerating",
+      "this_week_signals": 3,
+      "relationship_to_thesis": "Enterprise RAG撞上规模墙（混合检索意图一季度翻三倍）、RAG微调反降精度40%、编码Agent凭证漏洞。技术成熟但实施脆弱的矛盾在加剧。"
+    },
+    {
+      "trend_name": "Agent基础设施工程化",
+      "trajectory": "accelerating",
+      "this_week_signals": 2,
+      "relationship_to_thesis": "LangGraph引入HITL中间件和节点级错误处理、Mistral发布Temporal驱动的Agent编排引擎。Agent从原型走向生产级的工具链正在成熟。"
+    }
+  ],
+  "prediction_review": [
+    {
+      "original_prediction": "未来数月内，至少一家主要AI公司将发布'模型行为变更通知'机制",
+      "from_week": "W18",
+      "status": "观察中",
+      "evidence": "本周无直接证据。但GPT-5.5 Instant新增记忆可追溯功能是透明度方向的初步动作。",
+      "confidence_change": "↑"
+    },
+    {
+      "original_prediction": "头部Agent产品将在未来半年内从'优化prompt体验'转向'优化context积累'",
+      "from_week": "W18",
+      "status": "部分验证",
+      "evidence": "合资公司的成立从另一个角度验证了这个方向：模型公司不再依赖用户写更好的prompt来提升体验，而是直接派工程师去帮企业搭建完整的Agent系统。",
+      "confidence_change": "↑"
+    }
+  ],
+  "new_predictions": [
+    {
+      "prediction": "未来12个月内，至少一家主要管理咨询公司（如McKinsey、BCG、Accenture）将与AI模型公司建立深度战略合作或被合资公司直接竞争迫使调整AI业务定位。",
+      "confidence_level": "中高",
+      "timeframe": "12个月",
+      "basis": "OpenAI和Anthropic的驻场工程师模式直接侵入了传统咨询公司的领地。咨询公司的AI实践部门面临根本性劣势：它们不控制模型。"
+    },
+    {
+      "prediction": "PE投资组合将成为AI Agent大规模部署的第一批真实测试场——未来两到三个季度内，我们将看到第一批来自PE合资部署的成功或失败案例报告。",
+      "confidence_level": "高",
+      "timeframe": "6-9个月",
+      "basis": "这些案例将成为判断Agent生产可靠性的最重要数据点，因为它们涉及真实企业、真实工作流、真实资金。"
+    }
+  ],
+  "watchlist": [
+    "PE合资部署公司的第一批客户案例——部署到哪些行业、用了哪些Agent、成功率如何——将成为判断'最后一公里'价值的关键数据",
+    "传统咨询公司（McKinsey、Accenture、Deloitte）是否公开回应模型公司进入实施领域的竞争威胁",
+    "Enterprise RAG的混合检索方案是否在Q2继续增长——如果是，则验证企业自主部署的困难在加深而非缓解"
+  ]
+}

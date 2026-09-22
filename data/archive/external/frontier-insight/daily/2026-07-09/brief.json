@@ -1,0 +1,206 @@
+{
+  "date": "2026-07-09",
+  "signal_count": 10,
+  "raw_item_count": 103,
+  "insights": [
+    {
+      "title": "Cognition 发布 SWE-1.7：从 Kimi K2.7 训练而来，1000 tokens/秒逼近旗舰",
+      "signal_text": "AI 编程公司 Cognition（Devin 开发商）发布 SWE-1.7：基于月之暗面开源模型 Kimi K2.7 训练，推理速度达 1,000 tokens/秒，官方称在编码基准上接近 GPT-5.5 与 Claude Opus 4.8、成本更低。The Information 同日评论称，下半年可能属于「压推理运行成本」而非「堆更大模型」的公司。",
+      "signal_strength": 0.9,
+      "insight": "编码模型竞争进入「蒸馏开源底座、卖速度和成本」阶段，模型层护城河变薄。",
+      "implication": "「开源底座 + 垂直蒸馏」的应用层打法值得关注，速度与单位成本正成为新的差异化窗口。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Cognition",
+          "url": "https://cognition.com/blog/swe-1-7"
+        },
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2074584267263271106"
+        }
+      ],
+      "tags": [
+        "coding-agent",
+        "distillation",
+        "inference-cost",
+        "open-source"
+      ]
+    },
+    {
+      "title": "OpenAI 审计发现 SWE-Bench Pro 约 30% 任务损坏，撤回采用建议",
+      "signal_text": "OpenAI 官方博客称在编码基准 SWE-Bench Pro 中发现大范围任务缺陷，估计约 30% 的任务本身已损坏，并撤回此前建议业界采用该基准的表态。",
+      "signal_strength": 0.85,
+      "insight": "头部实验室公开打假主流基准，评测公信力成为行业基础设施级缺口。",
+      "implication": "可信评测与基准审计（「评测的评测」）是值得探索的创业与投资方向。",
+      "category": "",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations"
+        }
+      ],
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "SWE-Bench"
+      ]
+    },
+    {
+      "title": "DeepSeek-V4 已可本地运行：168GB 内存无损、110GB 的 Mac 可跑 3-bit",
+      "signal_text": "开源微调/量化框架 Unsloth（官方推文获 400+ likes）发布 DeepSeek-V4 的 GGUF 量化版本：DeepSeek-V4-Flash 在 168GB 内存上可无损运行，3-bit 版本可在 110GB 内存/显存的 Mac 等设备上跑，支持经 Unsloth Studio 或 llama.cpp 部署。",
+      "signal_strength": 0.8,
+      "insight": "旗舰级开源模型量化后进入「单机可跑」区间，私有化与端侧推理成本骤降。",
+      "implication": "本地推理工具链与数据驻留场景的解决方案生意值得关注。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Unsloth",
+          "url": "https://x.com/UnslothAI/status/2074509042341576977"
+        }
+      ],
+      "tags": [
+        "open-source",
+        "quantization",
+        "local-inference",
+        "DeepSeek"
+      ]
+    },
+    {
+      "title": "AI 推理芯片公司 Positron 洽谈融资约 7.5 亿美元，估值最高 50 亿美元",
+      "signal_text": "据 Bloomberg，被视为英伟达挑战者的美国 AI 推理芯片创业公司 Positron 正洽谈分两阶段融资约 7.5 亿美元：第一批按 35 亿美元估值、第二批按约 50 亿美元估值。",
+      "signal_strength": 0.75,
+      "insight": "推理侧算力的资本热度外溢到英伟达之外，专用推理芯片赛道被重估。",
+      "implication": "投资视角可关注推理性价比芯片及其配套软件栈的生态位。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-08/nvidia-rival-positron-holds-talks-to-raise-funds-at-5-billion-valuation"
+        }
+      ],
+      "tags": [
+        "funding",
+        "AI-chip",
+        "inference"
+      ]
+    },
+    {
+      "title": "Pika 与 Higgsfield 就高度相似的 AI 营销视频互撕，创意模仿难以监管",
+      "signal_text": "据 The Information，AI 视频公司 Pika 与 Higgsfield 正因高度相似的 AI 生成营销视频发生纠纷；随着视频生成工具变得更便宜更快，「模仿」正变得越来越难以监管，给创意工作带来新风险。",
+      "signal_strength": 0.7,
+      "insight": "AI 视频生成同质化后，风格与创意不再构成可防守的壁垒。",
+      "implication": "创意工具的护城河转向分发、工作流与品牌资产，纯生成能力难守。",
+      "category": "",
+      "sources": [
+        {
+          "name": "The Information",
+          "url": "https://x.com/theinformation/status/2074561604453036161"
+        }
+      ],
+      "tags": [
+        "AI-video",
+        "IP",
+        "creative-tools"
+      ]
+    },
+    {
+      "title": "SkillCenter 论文：21.7 万条可溯源技能，号称最大的开源 agent 技能库",
+      "signal_text": "研究者 Tianming Sha、Yue Zhao、Lichao Sun 等发布 SkillCenter，称是目前总量最大的开源 agent 技能库：216,938 条结构化技能、覆盖 24 个领域包，经 SkillGate 过滤管线保证技能可溯源（source-grounded），目标是让 agent 产出不止可执行，还要正确、安全、可维护。",
+      "signal_strength": 0.68,
+      "insight": "agent 技能从作坊式手写走向规模化、可溯源的公共资产。",
+      "implication": "技能治理、审核与分发——agent 生态的「App Store 层」——值得创业者关注。",
+      "category": "",
+      "sources": [
+        {
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.07676v1"
+        }
+      ],
+      "tags": [
+        "agent",
+        "skill-library",
+        "open-source"
+      ]
+    },
+    {
+      "title": "康奈尔团队提出 Co-LMLM：把事实知识外置到知识库，生成时按需取用",
+      "signal_text": "康奈尔大学知名学者 Kilian Weinberger、Yoav Artzi 等团队发布 Co-LMLM 论文：LMLM（limited memory LM）范式在预训练阶段把事实知识外置到外部知识库、而非记进权重，生成时按需检索，带来常规 LLM 做不到的知识可控性（可更新、可删改），该工作进一步提出连续查询机制。",
+      "signal_strength": 0.7,
+      "insight": "把事实知识外置出权重，让「知识更新」与「能力训练」彻底解耦。",
+      "implication": "知识可控性（可删、可更新、可审计）可能成为企业级 LLM 的合规卖点，值得跟踪。",
+      "category": "",
+      "sources": [
+        {
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.07707v1"
+        }
+      ],
+      "tags": [
+        "research",
+        "knowledge-base",
+        "RAG",
+        "architecture"
+      ]
+    },
+    {
+      "title": "LeRobot 0.6 集成英伟达 GR00T 1.7 与 Isaac Teleop，开源机器人栈升级",
+      "signal_text": "英伟达官方宣布与 HuggingFace 扩大合作：LeRobot 0.6 集成 Isaac GR00T 1.7（面向人形机器人的开源 VLA 模型）与 Isaac Teleop 遥操作框架，让 1,900 万开发者可直接使用前沿具身智能工具，并提供安装、数据采集的分步指南。",
+      "signal_strength": 0.7,
+      "insight": "开源机器人栈补齐「模型 + 遥操作 + 社区」闭环，具身智能开发门槛快速下降。",
+      "implication": "具身智能的数据采集与仿真工具链存在早期机会，值得关注。",
+      "category": "",
+      "sources": [
+        {
+          "name": "NVIDIA Robotics",
+          "url": "https://x.com/NVIDIARobotics/status/2074380795855147072"
+        }
+      ],
+      "tags": [
+        "robotics",
+        "embodied-AI",
+        "open-source",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "HuggingFace 开讲模型蒸馏：手把手教开发者训练定制 agent 模型",
+      "signal_text": "HuggingFace 官方推出「Training Agents」系列第二讲，以直播教程形式讲解如何用 model distillation 训练定制化的 agent 模型。",
+      "signal_strength": 0.6,
+      "insight": "蒸馏定制专属 agent 小模型，正被平民化成标准开发工作流。",
+      "implication": "面向中小团队的「蒸馏即服务」与配套数据管线工具值得探索。",
+      "category": "",
+      "sources": [
+        {
+          "name": "HuggingFace",
+          "url": "https://x.com/huggingface/status/2074508881984934265"
+        }
+      ],
+      "tags": [
+        "distillation",
+        "agent",
+        "developer-tools"
+      ]
+    },
+    {
+      "title": "中国队夺得 RoboCup 2026：AI 人形机器人自主踢完整场足球",
+      "signal_text": "科技博主 Min Choi 报道，中国队伍凭借 AI 驱动的人形机器人夺得 RoboCup 2026 冠军：机器人自主完成看球、决策、队内协作与射门，展现出团队级协作能力。",
+      "signal_strength": 0.55,
+      "insight": "自主人形机器人已能完成感知—决策—协作的整队比赛，具身协作在提速。",
+      "implication": "多机协同与团队级策略学习或是具身智能的下一个技术叙事，值得留意。",
+      "category": "",
+      "sources": [
+        {
+          "name": "@minchoi",
+          "url": "https://x.com/minchoi/status/2074495082389033157"
+        }
+      ],
+      "tags": [
+        "robotics",
+        "embodied-AI",
+        "China"
+      ]
+    }
+  ],
+  "trend_summary": "今天的主旋律是「成本与信任」。成本侧：Cognition 用开源 Kimi K2.7 蒸馏出 1,000 tokens/秒 的 SWE-1.7、DeepSeek-V4 量化后单机可跑、The Information 判断下半年属于「砍推理成本」的公司——推理成本战全面开打，模型层护城河进一步变薄。信任侧：OpenAI 公开打假 SWE-Bench Pro（约 30% 任务损坏）并撤回推荐，评测公信力暴露为行业基础设施缺口。中间层基建密集落子：最大开源 agent 技能库 SkillCenter、康奈尔的知识外置范式 Co-LMLM、英伟达 GR00T 进 LeRobot，agent 生态的「地基件」正在标准化。资本面，推理芯片挑战者 Positron 以最高 50 亿美元估值洽谈融资；应用面，Pika 与 Higgsfield 互撕暴露「生成内容风格无壁垒」的新风险。"
+}

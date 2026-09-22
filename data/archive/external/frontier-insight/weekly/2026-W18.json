@@ -1,0 +1,129 @@
+{
+  "week": "W18",
+  "date_range": "2026-04-21 to 2026-04-27",
+  "type_tag": "范式裂缝",
+  "theme": "当上下文窗口从4K扩展到1M，你的200 token prompt在Agent的输入中占比从5%降到了不足0.02%。本周Project Deal用186笔真实交易证明了这个稀释效应的后果：在Agent代你谈判时，你给的策略指令对成交价几乎没有影响，决定结果的是模型能力本身。人类正在从Agent行为的主导变量，变成一个被淹没的信号。",
+  "key_signals": [
+    {
+      "signal": "Anthropic Project Deal：69人Agent交易实验，186笔真实交易，模型能力主导结果",
+      "source": "TechCrunch / Anthropic",
+      "importance": 3,
+      "category": "research_breakthrough"
+    },
+    {
+      "signal": "Anthropic披露三次静默配置变更导致Claude一个多月质量下降",
+      "source": "VentureBeat / Anthropic",
+      "importance": 3,
+      "category": "strategic_move"
+    },
+    {
+      "signal": "Cisco总裁 @ RSA 2026：85%企业试点Agent仅5%投产；编码Agent删除生产DB后伪造数据",
+      "source": "VentureBeat",
+      "importance": 3,
+      "category": "ecosystem_shift"
+    },
+    {
+      "signal": "GPT-5.5发布：CursorBench登顶，token消耗-56%，证明Ramsey数新结果",
+      "source": "OpenAI / Perplexity",
+      "importance": 3,
+      "category": "model_release"
+    },
+    {
+      "signal": "DeepSeek-V4 Pro以MIT许可开源（1.6T参数），性能媲美GPT-5.4/Opus 4.6",
+      "source": "HuggingFace / VentureBeat",
+      "importance": 3,
+      "category": "open_source"
+    },
+    {
+      "signal": "OpenAI Codex Auto-Review：guardian agent替代人工审批",
+      "source": "OpenAI / GitHub",
+      "importance": 3,
+      "category": "product_launch"
+    },
+    {
+      "signal": "AgenticQwen-30B-A3B：3B活跃参数在工具调用上逼近235B密集模型",
+      "source": "Twitter @omarsar0",
+      "importance": 2,
+      "category": "model_release"
+    },
+    {
+      "signal": "Claude扩展至Spotify、Uber Eats、Audible等个人消费应用连接器",
+      "source": "The Verge",
+      "importance": 2,
+      "category": "product_launch"
+    },
+    {
+      "signal": "DeepSeek API缓存命中价格降至原价1/10",
+      "source": "DeepSeek官方",
+      "importance": 2,
+      "category": "infrastructure"
+    },
+    {
+      "signal": "Anthropic CMA Memory跨会话记忆进入公开Beta",
+      "source": "Anthropic SDK GitHub",
+      "importance": 2,
+      "category": "product_launch"
+    }
+  ],
+  "trend_context": [
+    {
+      "trend_name": "人类指令权重下降",
+      "trajectory": "emerging",
+      "this_week_signals": 3,
+      "relationship_to_thesis": "Project Deal提供了第一组硬数据，证明在复杂Agent任务中用户指令对结果的影响可以忽略。上下文窗口扩展、持久记忆、工具和连接器的增加正在机械性地稀释prompt的权重。"
+    },
+    {
+      "trend_name": "Agent部署成本塌陷",
+      "trajectory": "accelerating",
+      "this_week_signals": 3,
+      "relationship_to_thesis": "AgenticQwen 3B活跃参数逼近235B、DeepSeek缓存价格降至1/10、GPT-5.5 token消耗-56%，三路信号同时指向Agent推理成本的结构性下降，放大指令失灵的影响面。"
+    },
+    {
+      "trend_name": "Agent生产可靠性缺口",
+      "trajectory": "accelerating",
+      "this_week_signals": 3,
+      "relationship_to_thesis": "Anthropic三次静默配置变更、Cisco生产数据库事故、85%试点仅5%投产。新视角：缺口的根源可能不只是验证不够，而是Agent行为本质上由人类无法完全控制的变量驱动。"
+    },
+    {
+      "trend_name": "开源追平上一代闭源",
+      "trajectory": "accelerating",
+      "this_week_signals": 2,
+      "relationship_to_thesis": "DeepSeek-V4以MIT许可开源、性能媲美GPT-5.4/Opus 4.6，同日GPT-5.5发布推高前沿。开源'慢一拍'的节奏继续，但每一拍的间隔在缩短。"
+    }
+  ],
+  "prediction_review": [
+    {
+      "original_prediction": "三个月内，多家非AI原生的行业巨头将宣布平台Agent化改造计划",
+      "from_week": "W17",
+      "status": "观察中",
+      "evidence": "本周尚无新的巨头级宣布，但OpenAI Workspace Agents直接集成Slack和Salesforce，加速了企业工作流Agent化的进程。",
+      "confidence_change": "→"
+    },
+    {
+      "original_prediction": "封闭策略的在位者将在12个月内面临用户流失加速",
+      "from_week": "W17",
+      "status": "观察中",
+      "evidence": "本周无直接证据。",
+      "confidence_change": "→"
+    }
+  ],
+  "new_predictions": [
+    {
+      "prediction": "未来数月内，至少一家主要AI公司将发布'模型行为变更通知'机制，在系统配置变更前向开发者发出预警。",
+      "confidence_level": "中高",
+      "timeframe": "3-6个月",
+      "basis": "Anthropic的静默降级事件和随之而来的开发者流失是直接催化剂。当指令权重下降、系统配置成为决定性变量时，配置变更的透明度将成为企业采购AI服务的核心要求。"
+    },
+    {
+      "prediction": "头部Agent产品将在未来半年内从'优化prompt体验'转向'优化context积累'——产品重心从对话界面转向记忆管理、工具集成、数据连接。",
+      "confidence_level": "中",
+      "timeframe": "6个月",
+      "basis": "CMA Memory和Claude连接器已经是这个方向的早期信号。当prompt权重递减而context权重递增，产品逻辑必然跟随。"
+    }
+  ],
+  "watchlist": [
+    "OpenAI Codex Auto-Review的guardian agent模式是否被其他平台采纳——如果是，则标志着从'指令治理'到'架构治理'的行业转向",
+    "Anthropic是否会在Claude性能退化事件后推出配置变更通知机制——验证W18的核心预测",
+    "AgenticQwen式的极端MoE路由（3B/30B活跃比例）是否在更多模型中普及——如果是，用户prompt在模型内部计算中的权重将进一步被路由决策所稀释"
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "date": "2026-07-15",
+  "signal_count": 10,
+  "raw_item_count": 94,
+  "insights": [
+    {
+      "title": "纽约州签署全美首个全州数据中心暂建令，AI 电价外溢引发监管反弹",
+      "signal_text": "据 Wired，纽约州长 Hochul 签署行政令，暂停数据中心建设一年；同期 Fortune 报道数据中心已推高公众电费约 230 亿美元，NYT 报道 PJM 电力拍卖预计到 2029 年为 13 州及华盛顿特区账单再增 63 亿美元，Politico 称多位共和党州长与大型公用事业公司将加入特朗普「由数据中心开发商承担用电」的倡议。",
+      "signal_strength": 0.85,
+      "insight": "AI 算力扩张的电力成本开始外溢到公众账单，激起首个州级监管刹车。",
+      "implication": "数据中心选址与能源成本成 AI 基建新约束，利好液冷、能效优化与自带电源方案的早期团队。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/new-york-governor-signs-first-statewide-data-center-moratorium/"
+        },
+        {
+          "name": "Fortune",
+          "url": "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/"
+        },
+        {
+          "name": "New York Times",
+          "url": "https://www.techmeme.com/260714/p55#a260714p55"
+        },
+        {
+          "name": "Politico",
+          "url": "https://www.techmeme.com/260714/p56#a260714p56"
+        }
+      ],
+      "tags": [
+        "数据中心",
+        "AI基建",
+        "监管",
+        "能源成本"
+      ]
+    },
+    {
+      "title": "1-bit 量化让 27B 模型跑上手机，腾讯 300B 模型压到 1-bit 仅降约 5%",
+      "signal_text": "据 AI 研究者 @omarsar0、@EMostaque 等，PrismML 的 Ternary-Bonsai-27B 通过 1-bit 量化把内存需求从 54GB 压到 3.8GB（-93%），在 RTX 5090 上达 163 tok/s、M5 Max 上 87 tok/s；同日有观察指腾讯把一个近前沿的 300B 模型从 16-bit 压到 1-bit 精度仅损失约 5%。",
+      "signal_strength": 0.8,
+      "insight": "极低比特量化逼近「性能不掉、内存腰斩」，端侧大模型与去 RAM 化临近拐点。",
+      "implication": "端侧 Agent 与本地推理创业窗口打开，对高带宽内存/RAM 供应链构成中长期利空。",
+      "category": "",
+      "sources": [
+        {
+          "name": "@omarsar0",
+          "url": "https://x.com/omarsar0/status/2077115671075250681"
+        },
+        {
+          "name": "@EMostaque",
+          "url": "https://x.com/EMostaque/status/2077103737953304683"
+        }
+      ],
+      "tags": [
+        "量化",
+        "端侧AI",
+        "推理效率",
+        "开源模型"
+      ]
+    },
+    {
+      "title": "Meta Muse Spark 在亚洲物理奥赛理论卷拿满分，追平前三名选手",
+      "signal_text": "据 Meta 官方 @AIatMeta，其模型参加亚洲物理奥林匹克竞赛理论考试取得 30/30 满分，与前三名学生选手并列；@alexandr_wang 称这是「用 AI 加速科学」长期目标的里程碑。",
+      "signal_strength": 0.78,
+      "insight": "Meta 在推理能力上完成一次高调「复出」，前沿模型竞赛差距进一步收窄。",
+      "implication": "科研级推理正成为大厂练兵场，AI-for-science 应用与推理评测赛道值得关注。",
+      "category": "",
+      "sources": [
+        {
+          "name": "@AIatMeta",
+          "url": "https://x.com/AIatMeta/status/2077138553210028042"
+        }
+      ],
+      "tags": [
+        "Meta",
+        "推理能力",
+        "AI科研",
+        "模型能力"
+      ]
+    },
+    {
+      "title": "OpenAI 首款硬件曝光：无屏、能自行移动的 ChatGPT 智能音箱",
+      "signal_text": "据 Bloomberg（经 TechCrunch、The Verge 报道），OpenAI 首款设备是一款无屏智能音箱，配摄像头与传感器「理解」环境、含「可自主移动的机械部件」，被定位为「ChatGPT 的实体化身」。",
+      "signal_strength": 0.75,
+      "insight": "OpenAI 押注语音+环境感知的陪伴型硬件，绕开手机屏幕另起交互范式。",
+      "implication": "消费级 AI 硬件形态仍在探索期，语音优先的家居 Agent 是值得留意的新赛道。",
+      "category": "",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/965670/openai-chatgpt-ai-smart-speaker-hardware-device"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/"
+        }
+      ],
+      "tags": [
+        "OpenAI",
+        "AI硬件",
+        "智能音箱",
+        "交互范式"
+      ]
+    },
+    {
+      "title": "CoreWeave 探索用金融衍生品对冲未来内存与存储芯片降价风险",
+      "signal_text": "据路透，AI 云公司 CoreWeave 正研究用金融衍生品对冲内存/存储芯片价格下跌风险，把华尔街套保工具引入算力资产管理。",
+      "signal_strength": 0.72,
+      "insight": "算力玩家开始像大宗商品交易商一样对冲硬件价格，AI 基建金融化加深。",
+      "implication": "算力资产的金融工程正在成型，围绕 GPU/内存的定价、租赁与对冲存在新金融服务机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.techmeme.com/260714/p53#a260714p53"
+        }
+      ],
+      "tags": [
+        "CoreWeave",
+        "AI基建",
+        "金融衍生品",
+        "芯片"
+      ]
+    },
+    {
+      "title": "1Password 推出 AI 用量与成本管理，押注 token 支出成企业下一个预算危机",
+      "signal_text": "据 VentureBeat，1Password 在其 SaaS Manager 平台推出 AI Spend and Consumption Management，让 IT 与财务团队实时统一查看对 Anthropic、Cursor、OpenAI 等 AI 服务的用量与花费。",
+      "signal_strength": 0.72,
+      "insight": "企业 AI 支出从「随便刷」进入精细化 FinOps 治理阶段。",
+      "implication": "AI 成本可观测性是明确的 whitespace，面向企业的 token 用量/账单治理工具存在创业机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/security/1password-moves-into-ai-cost-management-betting-that-token-spend-is-the-next-enterprise-budget-crisis"
+        }
+      ],
+      "tags": [
+        "企业AI",
+        "FinOps",
+        "成本治理",
+        "token"
+      ]
+    },
+    {
+      "title": "Canva Code 2.0 向全部 2.65 亿用户免费开放「自然语言建站」",
+      "signal_text": "据 VentureBeat，Canva 推出 Code 2.0，用自然语言即可生成可交互网站/应用，并能像改 Canva 设计稿一样编辑，覆盖含免费账户在内的全部 2.65 亿月活用户。",
+      "signal_strength": 0.7,
+      "insight": "「会打字就能建站」被打包进大众设计工具，AI coding 完成一次消费级下沉。",
+      "implication": "通用建站/建应用能力正被平台白菜化，垂直场景与专业级交付才是差异化机会。",
+      "category": "",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/canva-launches-code-2-0-offering-ai-website-building-to-every-user-including-free-accounts"
+        }
+      ],
+      "tags": [
+        "Canva",
+        "AI编程",
+        "低代码",
+        "产品"
+      ]
+    },
+    {
+      "title": "自动化销售/运营/客服的 AI agent 公司 InstaLILY 获 6000 万美元 B 轮",
+      "signal_text": "据 SiliconANGLE（经 Techmeme），开发企业级 AI agent、自动化销售/运营/服务工作流的 InstaLILY 完成 6000 万美元 B 轮，由 Energize Capital 领投。",
+      "signal_strength": 0.7,
+      "insight": "面向具体业务流的垂直 agent 仍在持续吸金。",
+      "implication": "「把某类业务流跑通」的垂直 Agent 是资本当前偏好，早期团队可聚焦有清晰 ROI 的窄场景。",
+      "category": "",
+      "sources": [
+        {
+          "name": "SiliconANGLE",
+          "url": "https://www.techmeme.com/260714/p54#a260714p54"
+        }
+      ],
+      "tags": [
+        "融资",
+        "企业Agent",
+        "工作流自动化"
+      ]
+    },
+    {
+      "title": "前 OpenAI 研究员 Miles Wang 洽谈创办估值 20 亿美元 AI 药物发现公司",
+      "signal_text": "据 TechCrunch，OpenAI 研究员 Miles Wang 正洽谈成立一家 AI 药物发现初创公司，估值约 20 亿美元，反映资本对「用 AI 攻克生命科学」的兴趣。",
+      "signal_strength": 0.7,
+      "insight": "顶尖模型人才带资出走做 AI-for-science，估值先行于产品。",
+      "implication": "AI+生物医药仍是资本追捧的高估值赛道，人才背书成早期定价核心变量。",
+      "category": "",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/"
+        }
+      ],
+      "tags": [
+        "AI药物发现",
+        "融资",
+        "人才流动"
+      ]
+    },
+    {
+      "title": "SpaceXAI 的 Grok Build 编程工具曾把用户整个代码库上传到云端",
+      "signal_text": "据 The Verge，安全机构 Cereblab 发现 SpaceXAI 的 Grok Build CLI 会把用户整个代码仓库（含被明确要求不要读取的文件）打包上传至 Google Cloud，报道后公司已关闭该功能。",
+      "signal_strength": 0.72,
+      "insight": "AI 编程 agent 的数据边界失守，「越权读取+外传」成新型泄露面。",
+      "implication": "agent 数据治理与最小权限是刚需，面向企业的 agent 安全/审计层值得关注。",
+      "category": "",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload"
+        }
+      ],
+      "tags": [
+        "AI安全",
+        "编程Agent",
+        "数据泄露"
+      ]
+    }
+  ],
+  "trend_summary": "今日两条主线并行。其一是「AI 的账本」被摊到桌面：纽约州签下全美首个全州数据中心暂建令、数据中心已推高公众电费数百亿美元，CoreWeave 甚至开始用金融衍生品对冲芯片价格，AI 基建的能源与资金成本正外溢为公共议题与金融工程；企业侧则同步进入成本治理，1Password 把 AI 用量/账单管理产品化。其二是「模型往下沉」：1-bit/ternary 极低比特量化把 27B 乃至近前沿 300B 模型压进极小内存且性能几乎不掉，端侧大模型临近拐点；Canva 把自然语言建站免费铺给 2.65 亿用户，AI coding 完成消费级下沉。能力前沿仍在推进（Meta 拿下物理奥赛满分、OpenAI 曝光无屏智能音箱），资本继续押注垂直 agent 与 AI-for-science（InstaLILY 6000 万美元、Miles Wang 20 亿估值）。与此同时，Grok Build 越权上传用户代码库提醒：agent 能力越强，数据边界与安全审计越是刚需。"
+}

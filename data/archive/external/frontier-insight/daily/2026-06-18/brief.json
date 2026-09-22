@@ -1,0 +1,231 @@
+{
+  "date": "2026-06-18",
+  "signal_count": 10,
+  "raw_item_count": 65,
+  "insights": [
+    {
+      "title": "Noam Shazeer 离开 Google 重回 OpenAI，出任架构研究负责人",
+      "signal_text": "据 The Information 报道，Transformer 论文作者之一、Google Gemini 联合负责人 Noam Shazeer 离开 Google 加入 OpenAI，出任架构研究（architecture research）负责人。他曾于 2024 年随 Character.AI 交易回归 Google。",
+      "signal_strength": 0.85,
+      "insight": "顶级架构科学家从 Gemini 核心流向 OpenAI，模型架构竞赛的人才天平再次倾斜。",
+      "implication": "架构创新仍是前沿模型的胜负手，可以关注 OpenAI 下一代架构路线与 Google 的人才补位节奏。",
+      "category": "strategic_move",
+      "sources": [
+        {
+          "name": "Techmeme",
+          "url": "https://www.techmeme.com/260617/p52#a260617p52"
+        },
+        {
+          "name": "The Information",
+          "url": "https://www.theinformation.com/articles/star-google-ai-researcher-shazeer-joins-openai"
+        }
+      ],
+      "tags": [
+        "人才流动",
+        "OpenAI",
+        "模型架构"
+      ]
+    },
+    {
+      "title": "AWS 推出 Context 知识图谱服务，为 AI agent 构建会自学的上下文层",
+      "signal_text": "据 VentureBeat 报道，Amazon 发布面向 AI agent 的「上下文智能」三件套，核心是 AWS Context——一个随 agent 使用而持续变聪明的知识图谱服务，免去人工维护图谱，直指企业数据与 agent 之间的上下文中间层。",
+      "signal_strength": 0.82,
+      "insight": "巨头把 agent 上下文/记忆层产品化，争夺 RAG 之上的新基础设施层。",
+      "implication": "上下文/记忆中间层正从自研走向标准服务，利好做 agent memory、知识图谱的早期基础设施团队。",
+      "category": "infrastructure",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/data/aws-enters-the-context-layer-race-with-a-graph-that-learns-from-agents-not-manual-curation"
+        }
+      ],
+      "tags": [
+        "AI Agent",
+        "知识图谱",
+        "上下文层",
+        "AWS"
+      ]
+    },
+    {
+      "title": "Google 医疗 AI AMIE 登 Nature：复杂慢病管理比肩全科医生",
+      "signal_text": "据 Google 官方博客，发表于《Nature》的研究显示其对话式医疗 AI 系统 AMIE 在复杂疾病的长期管理上可与全科医生（primary care physicians）相当。",
+      "signal_strength": 0.8,
+      "insight": "对话式 AI 在高门槛慢病管理上达到医生水平，医疗垂直应用进入临床级讨论。",
+      "implication": "医疗等强监管垂直场景的 AI 落地窗口正在打开，可以关注合规化的临床决策辅助创业方向。",
+      "category": "research_breakthrough",
+      "sources": [
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+        }
+      ],
+      "tags": [
+        "医疗AI",
+        "Google",
+        "Nature",
+        "垂直应用"
+      ]
+    },
+    {
+      "title": "Anthropic 大改版 Claude Design：导入设计系统、代码往返，并修复烧 token 顽疾",
+      "signal_text": "据 VentureBeat 报道，Anthropic 对今年 4 月作为研究预览推出、首周即破百万用户的 Claude Design 做了重大升级，新增设计系统导入、代码 round-trip，并修复了此前被诟病的 token 消耗过高问题。",
+      "signal_strength": 0.72,
+      "insight": "设计/前端生成工具从惊艳但烧钱走向可用，token 效率成为 AI 产品留存关键。",
+      "implication": "AI 生成类产品的成本可控性正成为竞争点，做垂直生成工具的团队可把 token 效率当一等公民。",
+      "category": "model_release",
+      "sources": [
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem"
+        }
+      ],
+      "tags": [
+        "Anthropic",
+        "设计工具",
+        "token成本",
+        "产品"
+      ]
+    },
+    {
+      "title": "[Update] Anthropic 出口管制风波：SK Telecom 成导火索，白宫要求堵死所有越狱",
+      "signal_text": "据 Wired 报道，白宫限制 Claude Mythos 5 之举，源于此前要求 Anthropic 以「涉嫌与中国有关联」为由撤销韩国 SK Telecom 的访问权限；官员还表示，若 Anthropic 想重新上线 Fable 5，须确保模型护栏无法被绕过，而安全专家认为这在技术上做不到。",
+      "signal_strength": 0.8,
+      "insight": "模型出口管制从国家细化到具体企业关联，监管诉求与越狱不可消除的技术现实正面冲突。",
+      "implication": "前沿模型的合规边界正被地缘政治重塑，跨境部署的访问控制与可审计性将成硬约束，出海团队可提前布局。",
+      "category": "strategic_move",
+      "sources": [
+        {
+          "name": "Wired (SK Telecom)",
+          "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/"
+        },
+        {
+          "name": "Wired (jailbreaks)",
+          "url": "https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls"
+        }
+      ],
+      "tags": [
+        "出口管制",
+        "Anthropic",
+        "地缘政治",
+        "合规"
+      ]
+    },
+    {
+      "title": "模型公司集体组建部署公司，前线部署工程师 FDE 成硅谷最火新岗",
+      "signal_text": "据《硅谷101》播客，OpenAI 联合包括一家 PE 在内砸下约 40 亿美元成立 Deployment Company（部署公司），Anthropic 也与 Blackstone 等金融机构合资；这些头部模型公司不再只卖工具，而是深入企业把 AI 真正部署落地，催生了 Forward Deployment Engineer（FDE）这一既懂模型又懂客户业务的新工种。",
+      "signal_strength": 0.75,
+      "insight": "模型层趋同后，价值正向把 AI 装进企业业务的部署/交付侧迁移。",
+      "implication": "AI 落地的瓶颈从模型转向交付，做行业 know-how + 部署服务的团队迎来窗口，可关注 FDE 化的服务型创业。",
+      "category": "ecosystem_shift",
+      "sources": [
+        {
+          "name": "硅谷101",
+          "url": "https://sv101.fireside.fm/253"
+        }
+      ],
+      "tags": [
+        "部署公司",
+        "FDE",
+        "AI商业化",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Pew 调研：美国成年人 chatbot 使用率升至 49%，但 63% 觉得 AI 发展太快",
+      "signal_text": "据 Pew Research Center，2026 年 49% 的美国成年人报告使用过 chatbot（2024 年为 33%），24% 每天使用，44% 用过 ChatGPT；同时 63% 认为 AI 进展过快。",
+      "signal_strength": 0.68,
+      "insight": "chatbot 渗透两年翻倍逼近半数，但公众焦虑同步走高，普及与信任出现剪刀差。",
+      "implication": "大众市场已过早期采用临界点，做面向 C 端的可信/可控（透明、可关闭）AI 产品存在差异化机会。",
+      "category": "ecosystem_shift",
+      "sources": [
+        {
+          "name": "Pew Research Center / Techmeme",
+          "url": "https://www.techmeme.com/260617/p56#a260617p56"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly"
+        }
+      ],
+      "tags": [
+        "AI采用",
+        "Pew",
+        "C端",
+        "信任"
+      ]
+    },
+    {
+      "title": "内存涨价压力下 Apple 将提价，Tim Cook 称成本不可持续",
+      "signal_text": "据《华尔街日报》采访，Apple CEO Tim Cook 称当前 RAM/内存成本「不可持续」、涨价「不可避免」，公司正设法缓冲但难以完全为消费者屏蔽；TechCrunch 指出 AI 需求推高的内存短缺正多方面冲击 Apple。",
+      "signal_strength": 0.66,
+      "insight": "AI 算力争抢传导到消费电子，内存短缺开始改写终端硬件定价。",
+      "implication": "AI 引发的内存/算力涨价正外溢到全产业链，硬件成本结构变化值得端侧 AI 与硬件创业者纳入测算。",
+      "category": "ecosystem_shift",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/951948/apple-tim-cook-price-increases-ram"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/06/17/ai-is-hurting-apple-in-more-ways-than-one-it-may-force-iphone-price-increases/"
+        }
+      ],
+      "tags": [
+        "内存短缺",
+        "Apple",
+        "算力成本",
+        "供应链"
+      ]
+    },
+    {
+      "title": "Gemini 加持的 Google Home 智能音箱终于发布",
+      "signal_text": "据 Wired 报道，Google 时隔约六年推出新款智能音箱，重新设计为承载 Gemini 聊天机器人的 HomePod 风格设备；同时 Google 确认停产 Nest Mini 与 Nest Audio（老设备继续支持）。",
+      "signal_strength": 0.6,
+      "insight": "大模型重新激活智能音箱品类，环境式（ambient）AI 入口之争重启。",
+      "implication": "语音/环境入口成为大模型分发新战场，做家庭场景 AI 交互与硬件的团队可关注这波品类重置。",
+      "category": "model_release",
+      "sources": [
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/the-gemini-powered-google-home-speaker-is-finally-here/"
+        },
+        {
+          "name": "Techmeme",
+          "url": "https://www.techmeme.com/260617/p53#a260617p53"
+        }
+      ],
+      "tags": [
+        "智能音箱",
+        "Gemini",
+        "环境AI",
+        "Google"
+      ]
+    },
+    {
+      "title": "Midjourney 上线医疗方向 Midjourney Medical",
+      "signal_text": "Midjourney 推出 Midjourney Medical（midjourney.com/medical），在 Hacker News 获 95 points / 106 评论，标志这家图像生成公司向医疗影像/医疗场景延伸。",
+      "signal_strength": 0.58,
+      "insight": "头部生图公司切入医疗垂直，生成式 AI 从通用创意走向专业高价值场景。",
+      "implication": "通用生成模型公司正寻找高客单的垂直变现，医疗影像等专业生成赛道值得关注新进入者动向。",
+      "category": "strategic_move",
+      "sources": [
+        {
+          "name": "Midjourney / Hacker News",
+          "url": "https://news.ycombinator.com/item?id=48579650"
+        }
+      ],
+      "tags": [
+        "Midjourney",
+        "医疗AI",
+        "生成式AI",
+        "垂直化"
+      ]
+    }
+  ],
+  "trend_summary": "顶级架构人才（Shazeer）回流 OpenAI、模型公司集体组建「部署公司」催生 FDE 新工种，标志竞争从模型层向人才与交付层迁移；AWS 把 agent 上下文/记忆层产品化，RAG 之上的新基础设施层成为巨头战场；Google AMIE 登 Nature、Midjourney Medical 上线，显示生成与对话 AI 加速攻入医疗等高价值垂直；Anthropic 出口管制风波细化到 SK Telecom 个案，叠加 AI 引发的内存涨价传导至 Apple 终端定价，地缘政治与算力成本正同时重塑前沿 AI 的供给与合规边界。"
+}

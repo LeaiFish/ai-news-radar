@@ -90,3 +90,32 @@ python scripts/update_news.py --output-dir data --window-hours 24 --force-archiv
 
 GitHub Actions (`update-news.yml`) already runs `git add data/`, so new files
 under `data/archive/` commit with the live snapshot.
+
+## External corpus: frontier-insight
+
+Historical **third-party** daily briefs and weekly reports imported from
+[Amb2rZhou/ai-frontier-insight](https://github.com/Amb2rZhou/ai-frontier-insight)
+for internal trend / AI-context work. Full attribution and product rules:
+`data/archive/external/frontier-insight/SOURCE.md`.
+
+```text
+data/archive/external/frontier-insight/
+  SOURCE.md
+  manifest.json                 # date/week index + import byte totals
+  daily/YYYY-MM-DD/brief.json   # (+ optional *_daily.md)
+  weekly/YYYY-Www.json
+  weekly/YYYY-Www.md
+```
+
+### How to read alongside first-party archives
+
+1. **Radar native** (`data/archive/daily|weekly`): compact story projections from
+   this repo’s merge pipeline — use for Lea trend charts and story_id continuity.
+2. **External frontier-insight** (`data/archive/external/frontier-insight/`):
+   upstream analyst briefs (`insights`, `trend_summary`, weekly themes / watchlists).
+   Join to native archives by Shanghai calendar date or ISO week key only; schemas
+   and authorship differ.
+3. Use `manifest.json` → `daily.dates` / `weekly.weeks` to discover what was
+   imported; skip missing paths rather than inventing placeholders.
+4. **Do not** expose this corpus in the UI as native 「竞争概览」 judgments.
+   Archive / docs / offline analysis only (no UI charts required for the import).
