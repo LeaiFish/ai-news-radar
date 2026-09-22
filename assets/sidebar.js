@@ -114,7 +114,7 @@
     } catch {
       // Storage can be unavailable in private or hardened browser contexts.
     }
-    return "./";
+    return "feed/";
   }
 
   function homeHref(nav) {

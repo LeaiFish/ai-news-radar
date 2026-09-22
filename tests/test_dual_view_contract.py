@@ -44,7 +44,7 @@ def test_both_views_apply_same_last_mile_content_safety_gate():
 
 
 def test_both_pages_expose_bidirectional_view_switch():
-    for path in ("index.html", "classic/index.html"):
+    for path in ("feed/index.html", "classic/index.html"):
         source = read(path)
         assert 'data-radar-view-target="mobile"' in source
         assert 'data-radar-view-target="classic"' in source
@@ -52,7 +52,7 @@ def test_both_pages_expose_bidirectional_view_switch():
 
 
 def test_both_homepages_link_to_topics_hub():
-    for path in ("index.html", "classic/index.html"):
+    for path in ("feed/index.html", "classic/index.html"):
         source = read(path)
         assert 'href="./topics/"' in source
         assert "主题" in source
@@ -60,7 +60,7 @@ def test_both_homepages_link_to_topics_hub():
 
 
 def test_view_switch_follows_update_time_in_both_headers():
-    for path in ("index.html", "classic/index.html"):
+    for path in ("feed/index.html", "classic/index.html"):
         source = read(path)
         updated_position = source.index('id="updatedAt"')
         switch_position = source.index('class="view-switch"')
@@ -71,7 +71,7 @@ def test_view_switch_follows_update_time_in_both_headers():
 
 
 def test_both_headers_keep_time_and_switch_inside_the_headline():
-    for path in ("index.html", "classic/index.html"):
+    for path in ("feed/index.html", "classic/index.html"):
         source = read(path)
         headline_position = source.index('class="hero-headline"')
         updated_position = source.index('id="updatedAt"')

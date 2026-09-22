@@ -11,7 +11,7 @@ def read(relative_path: str) -> str:
 
 
 def test_home_markup_has_distinct_pane_regions():
-    source = read("index.html")
+    source = read("feed/index.html")
     assert 'id="paneTop"' in source
     assert 'id="paneKicker"' in source
     assert 'id="sectionTabs"' in source
@@ -33,7 +33,7 @@ def test_home_markup_has_distinct_pane_regions():
 
 
 def test_home_keeps_pages_relative_links():
-    source = read("index.html")
+    source = read("feed/index.html")
     assert 'href="/ai-news-radar/' not in source
     assert 'src="/ai-news-radar/' not in source
     assert 'href="./topics/"' in source
@@ -97,7 +97,7 @@ def test_favorites_pane_stays_localstorage_only():
 def test_topics_hub_keeps_group_filter():
     hub = read("topics/index.html")
     js = read("assets/topics.js")
-    home = read("index.html")
+    home = read("feed/index.html")
     app = read("assets/app.js")
     assert 'id="topicsFilter"' in hub
     assert "topics-filter" in hub
@@ -144,7 +144,7 @@ def test_topics_nav_hides_entry_cta_and_empty_chrome():
     assert 'el.hidden = nav === "topics"' in app
     assert 'el.hidden = next === "topics"' in classic
     assert ".topics-filter:empty" in topics_css
-    home = read("index.html")
+    home = read("feed/index.html")
     classic_html = read("classic/index.html")
     assert 'class="topics-entry"' in home
     assert 'href="./topics/"' in home

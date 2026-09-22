@@ -80,7 +80,7 @@
   const targetView = preference || deviceDefault;
 
   function destination(view) {
-    const url = new URL(view === "classic" ? "classic/" : "./", rootUrl);
+    const url = new URL(view === "classic" ? "classic/" : "feed/", rootUrl);
     const passthrough = new URLSearchParams(window.location.search);
     passthrough.delete("view");
     url.search = passthrough.toString();
