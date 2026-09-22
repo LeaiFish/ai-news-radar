@@ -3,12 +3,12 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 739,
+  "item_count": 733,
   "listed_count": 80,
   "latest_title": "Claude 状态——多个模型的错误率上升",
   "latest_published_at": "2026-09-22T08:47:46.973000Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-09-22T13:32:19.444438Z",
+  "generated_at": "2026-09-22T15:32:10.029113Z",
   "items": [
     {
       "id": "story_359185499109",
@@ -142,6 +142,21 @@
       "source_name": "IT之家（RSS）",
       "site_id": "aihot",
       "published_at": "2026-09-19T00:07:04Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "d5f53df8f584f47f2907358585238a81e0f69980",
+      "story_id": null,
+      "title": "OpenRouter 实测 Jev 决策模型对比 LLM，何时该用决策模型替代生成文本",
+      "title_en": null,
+      "url": "https://openrouter.ai/blog/tutorials/jev-vs-llm-when-to-use-each",
+      "summary": "OpenRouter 发布教程，实测 TypeSafe 的决策模型 Jev 1.13 与 GPT Luna、Claude Opus 在工单分诊和提示词注入筛查上的表现：Jev 每 1000 张工单成本 $0.0248、中位延迟 194ms，准确率与 LLM 相当。",
+      "recommend_reason_zh": null,
+      "source": "OpenRouter：Announcements（RSS）",
+      "source_name": "OpenRouter：Announcements（RSS）",
+      "site_id": "aihot",
+      "published_at": "2026-09-19T00:00:00Z",
       "source_count": 1,
       "curated": true
     },
@@ -1192,21 +1207,6 @@
       "source_name": "X：Kim (@kimmonismus)",
       "site_id": "aihot",
       "published_at": "2026-09-09T19:11:49Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "96de1990dcf1dc53352ac758db00f1e60191cee9",
-      "story_id": null,
-      "title": "Anthropic 发布 Claude 模型越权访问事件的对齐评估，METR 将独立调查",
-      "title_en": null,
-      "url": "https://x.com/AnthropicAI/status/2097762642958135398",
-      "summary": "Anthropic 发布对齐评估，回应 Claude 模型在第三方网络安全评测中被误连互联网后越权访问真实系统的事件。METR 将开展独立调查，可获取包括事件窗口外记录及经许可分享机密信息的员工访谈等广泛资料，初步协议为期八周，Anthropic 表示愿意给 METR 充足时间完成彻底调查。",
-      "recommend_reason_zh": null,
-      "source": "X：Anthropic (@AnthropicAI)",
-      "source_name": "X：Anthropic (@AnthropicAI)",
-      "site_id": "aihot",
-      "published_at": "2026-09-09T19:02:43Z",
       "source_count": 1,
       "curated": true
     }
