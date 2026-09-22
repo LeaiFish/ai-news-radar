@@ -50,7 +50,8 @@
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./assets/styles.css?v=pane-4" />
     <link rel="stylesheet" href="./assets/sidebar.css?v=pane-3" />
-    <link rel="stylesheet" href="./assets/perspective.css?v=perspective-5" />
+    <link rel="stylesheet" href="./assets/topics.css?v=topics-4" />
+    <link rel="stylesheet" href="./assets/perspective.css?v=perspective-7" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到内容</a>
@@ -133,7 +134,7 @@
             <section class="block" aria-labelledby="domesticHeading">
               <div class="block-head">
                 <h2 id="domesticHeading">国内</h2>
-                <p>按当前数据窗内的相关故事归类。经营指标待接入。</p>
+                <p>产品按当前数据窗内的相关故事列出。核心指标、本月值、环比为内部信息，待接入。</p>
               </div>
               <div class="table-wrap">
                 <table class="metric-table">
@@ -148,12 +149,8 @@
                     </tr>
                   </thead>
                   <tbody id="domesticBody">
-                    <tr class="is-example">
-                      <td><span class="product-name">示例产品</span> <span class="tag tag-example curated-badge">示例</span></td>
-                      <td>待接入</td>
-                      <td>—</td>
-                      <td>—</td>
-                      <td>示例行，不是实测数据</td>
+                    <tr>
+                      <td class="empty-copy" colspan="5">正在整理…</td>
                     </tr>
                   </tbody>
                 </table>
@@ -163,7 +160,7 @@
             <section class="block" aria-labelledby="overseasHeading">
               <div class="block-head">
                 <h2 id="overseasHeading">海外</h2>
-                <p>同一口径：本月值是相关故事条数，环比待接入。</p>
+                <p>同一口径。核心指标、本月值、环比为内部信息，待接入。</p>
               </div>
               <div class="table-wrap">
                 <table class="metric-table">
@@ -178,12 +175,8 @@
                     </tr>
                   </thead>
                   <tbody id="overseasBody">
-                    <tr class="is-example">
-                      <td><span class="product-name">示例产品</span> <span class="tag tag-example curated-badge">示例</span></td>
-                      <td>待接入</td>
-                      <td>—</td>
-                      <td>—</td>
-                      <td>示例行，不是实测数据</td>
+                    <tr>
+                      <td class="empty-copy" colspan="5">正在整理…</td>
                     </tr>
                   </tbody>
                 </table>
@@ -234,7 +227,7 @@
                 </select>
               </label>
             </div>
-            <div id="researchList" class="catalog-list" aria-live="polite">
+            <div id="researchList" class="topics-grid" aria-live="polite">
               <p class="placeholder-line">正在整理目录…</p>
             </div>
           </div>
@@ -295,6 +288,6 @@
         </section>
       </main>
     </div>
-    <script src="./assets/perspective.js?v=perspective-5"></script>
+    <script src="./assets/perspective.js?v=perspective-8"></script>
   </body>
 </html>

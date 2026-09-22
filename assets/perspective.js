@@ -301,19 +301,7 @@
     return node;
   }
 
-  function renderExampleRow() {
-    const row = el("tr", "is-example");
-    const product = el("td");
-    product.append(el("span", "product-name", "示例产品"), el("span", "tag tag-example curated-badge", "示例"));
-    row.append(
-      product,
-      el("td", "metric-pending", "待接入"),
-      el("td", "metric-pending", "—"),
-      el("td", "metric-pending", "—"),
-      el("td", null, "示例行，不是实测数据"),
-    );
-    return row;
-  }
+  const INTERNAL_METRIC = "内部信息，待接入";
 
   function renderMetricRow(row) {
     const tr = document.createElement("tr");
@@ -332,9 +320,9 @@
     }
     tr.append(
       product,
-      el("td", null, "近窗相关故事"),
-      el("td", null, `${row.count} 条`),
-      el("td", "metric-pending", "待接入"),
+      el("td", "metric-pending", INTERNAL_METRIC),
+      el("td", "metric-pending", INTERNAL_METRIC),
+      el("td", "metric-pending", INTERNAL_METRIC),
       noteCell,
     );
     return tr;
@@ -348,10 +336,9 @@
       td.colSpan = 5;
       tr.append(td);
       body.append(tr);
-    } else {
-      rows.forEach((row) => body.append(renderMetricRow(row)));
+      return;
     }
-    body.append(renderExampleRow());
+    rows.forEach((row) => body.append(renderMetricRow(row)));
   }
 
   function renderJudgments() {
@@ -398,7 +385,7 @@
   function renderWindowNote() {
     const stamp = formatStamp(state.generatedAt);
     const when = stamp ? `更新于 ${stamp}` : "更新时间待接入";
-    windowNote.textContent = `${when} · 数据窗 ${state.windowHours} 小时 · 本月值是故事条数，环比待接入`;
+    windowNote.textContent = `${when} · 数据窗 ${state.windowHours} 小时 · 核心指标、本月值与环比为内部信息，待接入`;
   }
 
   function renderMonthSelect() {
@@ -681,24 +668,20 @@
     return `${row.name} ${row.blurb} ${row.id}`.toLowerCase().includes(query);
   }
 
-  function renderCatalogRow(row) {
-    const article = el("article", "catalog-row");
-    const body = el("div");
-    body.append(el("h2", null, row.name));
-    if (row.blurb) body.append(el("p", "catalog-blurb", row.blurb));
-    const tags = el("div", "catalog-tags");
-    row.tags.forEach((tag) => {
-      const quiet = tag === "本窗口无故事" || tag === "单源";
-      const live = tag.startsWith("近窗") || tag.startsWith("多源");
-      tags.append(el("span", quiet ? "tag tag-quiet ai-tag watch" : (live ? "tag tag-live ai-tag" : "tag tag-meta ai-tag watch"), tag));
-    });
-    body.append(tags);
-    const link = el("a", "catalog-open", "打开 →");
-    link.href = researchHref({ tab: currentTab(), kind: row.kind, id: row.id });
-    link.dataset.packKind = row.kind;
-    link.dataset.packId = row.id;
-    article.append(body, link);
-    return article;
+  function renderCatalogCard(row) {
+    const card = el("a", "topic-card");
+    card.href = researchHref({ tab: currentTab(), kind: row.kind, id: row.id });
+    card.dataset.packKind = row.kind;
+    card.dataset.packId = row.id;
+    card.append(el("h3", null, row.name));
+    if (row.blurb) card.append(el("p", "topic-card-blurb", row.blurb));
+    const countTag = row.tags.find((tag) => tag.startsWith("近窗") || tag === "本窗口无故事" || tag === "单源" || /^多源 \d+$/.test(tag));
+    const rest = row.tags.filter((tag) => tag !== countTag);
+    const meta = el("div", "topic-card-meta");
+    if (countTag) meta.append(el("strong", null, countTag));
+    if (rest.length) meta.append(el("span", null, rest.join(" · ")));
+    if (meta.childNodes.length) card.append(meta);
+    return card;
   }
 
   function renderCatalog() {
@@ -725,7 +708,7 @@
       list.append(el("p", "placeholder-line", "没有匹配的条目。"));
       return;
     }
-    rows.forEach((row) => list.append(renderCatalogRow(row)));
+    rows.forEach((row) => list.append(renderCatalogCard(row)));
   }
 
   function setResearchTab(tab, { push = false } = {}) {
@@ -1227,7 +1210,7 @@
     const requestedMonth = readParam("month");
     state.month = /^\d{4}-\d{2}$/.test(requestedMonth) ? requestedMonth : state.currentMonth;
     if (!state.generatedAt && briefResult.status !== "fulfilled" && storiesResult.status !== "fulfilled") {
-      windowNote.textContent = "数据没有载入。下面先保留示例行。";
+      windowNote.textContent = "数据没有载入。核心指标、本月值与环比先标为内部信息，待接入。";
       state.currentMonth = monthKey(new Date().toISOString());
       state.month = state.currentMonth;
     }

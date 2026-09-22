@@ -66,10 +66,13 @@ def test_competition_overview_matches_mock_structure_and_marks_placeholders():
     for column in ("产品", "核心指标", "本月值", "环比", "追踪备注"):
         assert column in page
     assert "关联研究" in page
-    assert "示例" in page
-    assert "待接入" in page
+    assert "内部信息，待接入" in page
+    assert "内部信息，待接入" in js
+    assert "示例产品" not in page
+    assert "示例行" not in page
+    assert "近窗相关故事" not in js
+    assert "${row.count} 条" not in js
     assert "AI 草稿" in js
-    assert "近窗相关故事" in js
     assert "daily-brief.json" in js
     assert "stories-merged.json" in js
     assert "topics.json" in js
@@ -103,7 +106,13 @@ def test_research_catalog_and_workbench_placeholder():
     assert "即将推出" in page
     assert "工作台" in page
     assert "时间线、AIHOT 简报" in page
-    assert "打开 →" in js
+    assert 'class="topics-grid"' in page
+    assert 'href="./assets/topics.css' in page
+    assert 'class="topic-card"' in js or 'el("a", "topic-card"' in js
+    assert "topic-card-blurb" in js
+    assert "topic-card-meta" in js
+    assert "/^多源 \\d+$/" in js
+    assert "data-pack-kind" in js or "dataset.packKind" in js
     assert "config/topics.json" in js
     assert "AI 草稿" in js
     assert 'topic.group === "company"' in js
