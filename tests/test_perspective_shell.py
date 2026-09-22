@@ -111,6 +111,7 @@ def test_research_catalog_and_workbench_placeholder():
     assert 'class="topic-card"' in js or 'el("a", "topic-card"' in js
     assert "topic-card-blurb" in js
     assert "topic-card-meta" in js
+    assert "/^多源 \\d+$/" in js
     assert "data-pack-kind" in js or "dataset.packKind" in js
     assert "config/topics.json" in js
     assert "AI 草稿" in js

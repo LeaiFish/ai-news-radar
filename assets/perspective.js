@@ -675,7 +675,7 @@
     card.dataset.packId = row.id;
     card.append(el("h3", null, row.name));
     if (row.blurb) card.append(el("p", "topic-card-blurb", row.blurb));
-    const countTag = row.tags.find((tag) => tag.startsWith("近窗") || tag === "本窗口无故事" || tag.startsWith("多源") || tag === "单源");
+    const countTag = row.tags.find((tag) => tag.startsWith("近窗") || tag === "本窗口无故事" || tag === "单源" || /^多源 \d+$/.test(tag));
     const rest = row.tags.filter((tag) => tag !== countTag);
     const meta = el("div", "topic-card-meta");
     if (countTag) meta.append(el("strong", null, countTag));
