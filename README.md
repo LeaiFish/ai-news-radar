@@ -211,9 +211,13 @@ AI News Radar学习了现代新闻学的技术，不是简单堆信息源，一�
 - `data/latest-24h-all.json`：最近24小时广义AI相关消息（score >= 0.3）
 - `data/latest-24h-all-raw.json`：最近24小时零过滤全量消息（dev-only，不接入前端UI）
 - `data/source-status.json`：来源抓取状态、成功率、站点覆盖和源健康
-- `data/stories-merged.json`：故事合并后的完整事件集合
+- `data/stories-merged.json`：故事合并后的完整事件集合（滚动窗口「今日」快照）
+- `data/archive/daily/YYYY-MM-DD.json`：按上海日历日落盘的故事归档（compact，不覆盖往日除非 `--force-archive`）
+- `data/archive/weekly/YYYY-Www.json`：由每日归档重建的 ISO 周汇总（公司/透镜主题与重要性计数）
 - `data/merge-log.json`：故事合并过程和命中记录，方便调试与审计
 - `data/topics.json`：主题索引（名称、简介、条数、最新标题）；`data/topics/<id>.json` 是每个主题的条目列表
+
+历史归档说明见 [docs/ARCHIVE.md](docs/ARCHIVE.md)。
 
 如果 `daily-brief.json` 暂时不存在，页面会回退到候选信号列表；如果 `stories-merged.json` 存在，页面会用完整故事池补齐后续故事线，避免只有少量精选故事被接入。
 

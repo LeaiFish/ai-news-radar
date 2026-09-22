@@ -211,9 +211,13 @@ Core files include:
 - `data/latest-24h-all.json`: broadly AI-relevant updates from the last 24 hours (score >= 0.3)
 - `data/latest-24h-all-raw.json`: unfiltered raw items from the last 24 hours (dev-only, not wired into the frontend)
 - `data/source-status.json`: source fetch status, success rate, site coverage, and source health
-- `data/stories-merged.json`: the complete merged story set
+- `data/stories-merged.json`: the complete merged story set (live rolling "today" window)
+- `data/archive/daily/YYYY-MM-DD.json`: Shanghai calendar-day story archive (compact; past days immutable unless `--force-archive`)
+- `data/archive/weekly/YYYY-Www.json`: ISO-week rollup rebuilt from daily files (company/lens/importance counts)
 - `data/merge-log.json`: story-merge matches and debug records for auditing
 - `data/topics.json`: topic index (name, blurb, count, latest headline); `data/topics/<id>.json` lists matching items for each topic
+
+See [docs/ARCHIVE.md](docs/ARCHIVE.md) for the historical archive layout.
 
 If `daily-brief.json` is not available yet, the page falls back to candidate Scout signals; if `stories-merged.json` exists, the page uses the full story pool to extend the timeline beyond the picks.
 

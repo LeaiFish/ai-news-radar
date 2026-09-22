@@ -35,6 +35,11 @@ except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_
     from ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
 
 try:
+    from scripts.story_archive import update_story_archives
+except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
+    from story_archive import update_story_archives
+
+try:
     import feedparser
 except ModuleNotFoundError:
     feedparser = None
@@ -6747,6 +6752,11 @@ def main() -> int:
     )
     parser.add_argument("--rss-opml", default="", help="Optional OPML file path to include RSS sources")
     parser.add_argument("--rss-max-feeds", type=int, default=0, help="Optional max OPML RSS feeds to fetch (0 means all)")
+    parser.add_argument(
+        "--force-archive",
+        action="store_true",
+        help="Overwrite past-day story archives under data/archive/daily/ (same-day refresh is always allowed)",
+    )
     args = parser.parse_args()
 
     now = utc_now()
@@ -7191,6 +7201,12 @@ def main() -> int:
         json.dumps(sanitize_public_payload(stories_merged_payload), ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8",
     )
+    story_archive_result = update_story_archives(
+        output_dir,
+        sanitize_public_payload(stories_merged_payload),
+        now=now,
+        force=bool(args.force_archive),
+    )
     merge_log_path.write_text(
         json.dumps(sanitize_public_payload(merge_log_payload), ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -7228,6 +7244,20 @@ def main() -> int:
     print(f"Wrote: {latest_all_raw_path} ({len(latest_items_all_raw_dedup)} raw items, dev-only)")
     print(f"Wrote: {daily_brief_path} ({daily_brief_payload.get('total_items', 0)} brief items)")
     print(f"Wrote: {stories_merged_path} ({stories_merged_payload.get('total_stories', 0)} stories)")
+    daily_arch = story_archive_result.get("daily") or {}
+    weekly_arch = story_archive_result.get("weekly") or {}
+    if daily_arch.get("written"):
+        print(
+            f"Wrote: {daily_arch.get('path')} "
+            f"({daily_arch.get('story_count', 0)} archived stories, {daily_arch.get('reason')})"
+        )
+    else:
+        print(f"Skipped daily archive: {daily_arch.get('path')} ({daily_arch.get('reason')})")
+    if weekly_arch.get("written"):
+        print(
+            f"Wrote: {weekly_arch.get('path')} "
+            f"(week {weekly_arch.get('iso_week')}, {weekly_arch.get('story_count', 0)} story rows)"
+        )
     print(f"Wrote: {merge_log_path} ({len(merge_events)} merge events)")
     print(f"Wrote: {archive_path} ({len(archive)} items)")
     print(f"Wrote: {status_path}")

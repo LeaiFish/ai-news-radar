@@ -136,7 +136,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Stage the whole data dir so newly added output files can never be
           # silently dropped again (the daily-brief/stories-merged freeze was
-          # caused by a stale filename whitelist here). .gitignore keeps
+          # caused by a stale filename whitelist here). Also picks up
+          # data/archive/daily|weekly story archives. .gitignore keeps
           # data/email-digest.json out of this add.
           git add data/
           if [ -f data/email-digest.json ] && [ "$EMAIL_DIGEST_PUBLISH" = "1" ]; then
