@@ -1,6 +1,50 @@
 (function () {
   "use strict";
 
+  const THEME_KEY = "aiNewsRadarTheme";
+  const THEMES = ["dark", "system", "light"];
+
+  function readTheme() {
+    try {
+      const value = window.localStorage.getItem(THEME_KEY) || "system";
+      return THEMES.includes(value) ? value : "system";
+    } catch {
+      return "system";
+    }
+  }
+
+  function resolvedTheme(theme) {
+    if (theme === "dark" || theme === "light") return theme;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function applyTheme(theme) {
+    const next = THEMES.includes(theme) ? theme : "system";
+    document.documentElement.dataset.theme = next;
+    const resolved = resolvedTheme(next);
+    document.documentElement.style.colorScheme = resolved;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === "dark" ? "#161513" : "#f6f6f2";
+    document.querySelectorAll("[data-radar-theme]").forEach((button) => {
+      const active = button.dataset.radarTheme === next;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+    try {
+      window.localStorage.setItem(THEME_KEY, next);
+    } catch {
+      // Storage can be unavailable in private or hardened browser contexts.
+    }
+  }
+
+  applyTheme(readTheme());
+  document.querySelectorAll("[data-radar-theme]").forEach((button) => {
+    button.addEventListener("click", () => applyTheme(button.dataset.radarTheme || "system"));
+  });
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+    if (readTheme() === "system") applyTheme("system");
+  });
+
   const ROOT = new URL(document.documentElement.dataset.root || "./", window.location.href);
   const LENSES = {
     community: "社区 x AI 应用",
@@ -260,7 +304,7 @@
   function renderExampleRow() {
     const row = el("tr", "is-example");
     const product = el("td");
-    product.append(el("span", "product-name", "示例产品"), el("span", "tag tag-example", "示例"));
+    product.append(el("span", "product-name", "示例产品"), el("span", "tag tag-example curated-badge", "示例"));
     row.append(
       product,
       el("td", "metric-pending", "待接入"),
@@ -318,10 +362,10 @@
       return;
     }
     items.forEach((item) => {
-      const card = el("article", "judgment-card");
+      const card = el("article", "judgment-card news-card");
       const top = el("div", "judgment-top");
       top.append(el("h3", null, preferZh(item.title)));
-      top.append(el("span", "tag tag-draft", "AI 草稿"));
+      top.append(el("span", "tag tag-draft ai-tag", "AI 草稿"));
       card.append(top);
       const summary = String(item.primary_item?.summary || item.summary || "").trim();
       if (summary) card.append(el("p", "judgment-summary", summary));
@@ -345,7 +389,7 @@
     if (!lensTopics.length || !relatedList) return;
     clear(relatedList);
     lensTopics.forEach((topic) => {
-      const link = el("a", null, topic.name || topic.id);
+      const link = el("a", "ai-tag", topic.name || topic.id);
       link.href = new URL(`topics/${encodeURIComponent(topic.id)}/`, ROOT).href;
       relatedList.append(link);
     });
@@ -561,7 +605,9 @@
     const tab = currentTab();
     document.documentElement.dataset.researchTab = tab;
     document.querySelectorAll(".catalog-tab").forEach((button) => {
-      button.setAttribute("aria-selected", button.dataset.researchTab === tab ? "true" : "false");
+      const selected = button.dataset.researchTab === tab;
+      button.setAttribute("aria-selected", selected ? "true" : "false");
+      button.classList.toggle("active", selected);
     });
     fillFilterOptions(tab);
   }
@@ -644,7 +690,7 @@
     row.tags.forEach((tag) => {
       const quiet = tag === "本窗口无故事" || tag === "单源";
       const live = tag.startsWith("近窗") || tag.startsWith("多源");
-      tags.append(el("span", quiet ? "tag tag-quiet" : (live ? "tag tag-live" : "tag tag-meta"), tag));
+      tags.append(el("span", quiet ? "tag tag-quiet ai-tag watch" : (live ? "tag tag-live ai-tag" : "tag tag-meta ai-tag watch"), tag));
     });
     body.append(tags);
     const link = el("a", "catalog-open", "打开 →");
@@ -773,9 +819,9 @@
   }
 
   function appendJudgmentCard(slot, title, meta, url) {
-    const card = el("article", "judgment-card");
+    const card = el("article", "judgment-card news-card");
     const top = el("div", "judgment-top");
-    top.append(el("h3", null, title), el("span", "tag tag-draft", "AI 草稿"));
+    top.append(el("h3", null, title), el("span", "tag tag-draft ai-tag", "AI 草稿"));
     card.append(top, el("p", "judgment-meta", meta));
     const href = safeHttpUrl(url);
     if (href) {
@@ -1092,6 +1138,7 @@
   });
   scrim.addEventListener("click", () => setMenu(false));
   sidebar.addEventListener("click", (event) => {
+    if (event.target.closest("[data-radar-theme]")) return;
     if (event.target.closest("a, button")) setMenu(false);
   });
 
