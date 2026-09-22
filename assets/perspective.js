@@ -301,19 +301,7 @@
     return node;
   }
 
-  function renderExampleRow() {
-    const row = el("tr", "is-example");
-    const product = el("td");
-    product.append(el("span", "product-name", "示例产品"), el("span", "tag tag-example curated-badge", "示例"));
-    row.append(
-      product,
-      el("td", "metric-pending", "待接入"),
-      el("td", "metric-pending", "—"),
-      el("td", "metric-pending", "—"),
-      el("td", null, "示例行，不是实测数据"),
-    );
-    return row;
-  }
+  const INTERNAL_METRIC = "内部信息，待接入";
 
   function renderMetricRow(row) {
     const tr = document.createElement("tr");
@@ -332,9 +320,9 @@
     }
     tr.append(
       product,
-      el("td", null, "近窗相关故事"),
-      el("td", null, `${row.count} 条`),
-      el("td", "metric-pending", "待接入"),
+      el("td", "metric-pending", INTERNAL_METRIC),
+      el("td", "metric-pending", INTERNAL_METRIC),
+      el("td", "metric-pending", INTERNAL_METRIC),
       noteCell,
     );
     return tr;
@@ -348,10 +336,9 @@
       td.colSpan = 5;
       tr.append(td);
       body.append(tr);
-    } else {
-      rows.forEach((row) => body.append(renderMetricRow(row)));
+      return;
     }
-    body.append(renderExampleRow());
+    rows.forEach((row) => body.append(renderMetricRow(row)));
   }
 
   function renderJudgments() {
@@ -398,7 +385,7 @@
   function renderWindowNote() {
     const stamp = formatStamp(state.generatedAt);
     const when = stamp ? `更新于 ${stamp}` : "更新时间待接入";
-    windowNote.textContent = `${when} · 数据窗 ${state.windowHours} 小时 · 本月值是故事条数，环比待接入`;
+    windowNote.textContent = `${when} · 数据窗 ${state.windowHours} 小时 · 核心指标、本月值与环比为内部信息，待接入`;
   }
 
   function renderMonthSelect() {
@@ -1227,7 +1214,7 @@
     const requestedMonth = readParam("month");
     state.month = /^\d{4}-\d{2}$/.test(requestedMonth) ? requestedMonth : state.currentMonth;
     if (!state.generatedAt && briefResult.status !== "fulfilled" && storiesResult.status !== "fulfilled") {
-      windowNote.textContent = "数据没有载入。下面先保留示例行。";
+      windowNote.textContent = "数据没有载入。核心指标、本月值与环比先标为内部信息，待接入。";
       state.currentMonth = monthKey(new Date().toISOString());
       state.month = state.currentMonth;
     }
