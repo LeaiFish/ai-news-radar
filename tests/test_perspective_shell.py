@@ -71,6 +71,14 @@ def test_competition_overview_matches_mock_structure_and_marks_placeholders():
     assert "示例产品" not in page
     assert "示例行" not in page
     assert "近窗相关故事" not in js
+    assert "近窗" not in js
+    assert "近窗" not in page
+    assert "本窗口无故事" not in js
+    assert "本窗口无故事" not in page
+    assert "今日 ${count} 条" in js
+    assert "今日无故事" in js
+    assert "今日无故事" in page
+    assert "今日有更新" in page
     assert "${row.count} 条" not in js
     assert "AI 草稿" in js
     assert "daily-brief.json" in js
@@ -106,8 +114,13 @@ def test_research_catalog_and_workbench_placeholder():
     assert "即将推出" in page
     assert "工作台" in page
     assert "时间线、AIHOT 简报" in page
-    assert 'class="topics-grid"' in page
+    assert 'class="catalog-groups"' in page
     assert 'href="./assets/topics.css' in page
+    assert "topics-group-head" in js
+    assert "topics-grid" in js
+    assert "产业透镜" in js
+    assert "公司与模型" in js
+    assert "技术方向" in js
     assert 'class="topic-card"' in js or 'el("a", "topic-card"' in js
     assert "topic-card-blurb" in js
     assert "topic-card-meta" in js
