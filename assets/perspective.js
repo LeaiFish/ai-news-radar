@@ -668,24 +668,20 @@
     return `${row.name} ${row.blurb} ${row.id}`.toLowerCase().includes(query);
   }
 
-  function renderCatalogRow(row) {
-    const article = el("article", "catalog-row");
-    const body = el("div");
-    body.append(el("h2", null, row.name));
-    if (row.blurb) body.append(el("p", "catalog-blurb", row.blurb));
-    const tags = el("div", "catalog-tags");
-    row.tags.forEach((tag) => {
-      const quiet = tag === "本窗口无故事" || tag === "单源";
-      const live = tag.startsWith("近窗") || tag.startsWith("多源");
-      tags.append(el("span", quiet ? "tag tag-quiet ai-tag watch" : (live ? "tag tag-live ai-tag" : "tag tag-meta ai-tag watch"), tag));
-    });
-    body.append(tags);
-    const link = el("a", "catalog-open", "打开 →");
-    link.href = researchHref({ tab: currentTab(), kind: row.kind, id: row.id });
-    link.dataset.packKind = row.kind;
-    link.dataset.packId = row.id;
-    article.append(body, link);
-    return article;
+  function renderCatalogCard(row) {
+    const card = el("a", "topic-card");
+    card.href = researchHref({ tab: currentTab(), kind: row.kind, id: row.id });
+    card.dataset.packKind = row.kind;
+    card.dataset.packId = row.id;
+    card.append(el("h3", null, row.name));
+    if (row.blurb) card.append(el("p", "topic-card-blurb", row.blurb));
+    const countTag = row.tags.find((tag) => tag.startsWith("近窗") || tag === "本窗口无故事" || tag.startsWith("多源") || tag === "单源");
+    const rest = row.tags.filter((tag) => tag !== countTag);
+    const meta = el("div", "topic-card-meta");
+    if (countTag) meta.append(el("strong", null, countTag));
+    if (rest.length) meta.append(el("span", null, rest.join(" · ")));
+    if (meta.childNodes.length) card.append(meta);
+    return card;
   }
 
   function renderCatalog() {
@@ -712,7 +708,7 @@
       list.append(el("p", "placeholder-line", "没有匹配的条目。"));
       return;
     }
-    rows.forEach((row) => list.append(renderCatalogRow(row)));
+    rows.forEach((row) => list.append(renderCatalogCard(row)));
   }
 
   function setResearchTab(tab, { push = false } = {}) {

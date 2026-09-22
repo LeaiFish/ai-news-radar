@@ -106,7 +106,12 @@ def test_research_catalog_and_workbench_placeholder():
     assert "即将推出" in page
     assert "工作台" in page
     assert "时间线、AIHOT 简报" in page
-    assert "打开 →" in js
+    assert 'class="topics-grid"' in page
+    assert 'href="./assets/topics.css' in page
+    assert 'class="topic-card"' in js or 'el("a", "topic-card"' in js
+    assert "topic-card-blurb" in js
+    assert "topic-card-meta" in js
+    assert "data-pack-kind" in js or "dataset.packKind" in js
     assert "config/topics.json" in js
     assert "AI 草稿" in js
     assert 'topic.group === "company"' in js
