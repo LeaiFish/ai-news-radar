@@ -14,8 +14,8 @@
         var space = params.get("space") || "";
         if (space !== "research" && space !== "workbench") space = "overview";
         document.documentElement.setAttribute("data-space", space);
-        var tab = params.get("tab") || "org";
-        if (tab !== "event" && tab !== "trend") tab = "org";
+        var tab = params.get("tab") || "all";
+        if (tab !== "org" && tab !== "event" && tab !== "trend") tab = "all";
         document.documentElement.setAttribute("data-research-tab", tab);
         var kind = params.get("kind") || "";
         var id = params.get("id") || "";
@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="./assets/styles.css?v=pane-4" />
     <link rel="stylesheet" href="./assets/sidebar.css?v=pane-3" />
     <link rel="stylesheet" href="./assets/topics.css?v=topics-4" />
-    <link rel="stylesheet" href="./assets/perspective.css?v=perspective-7" />
+    <link rel="stylesheet" href="./assets/perspective.css?v=perspective-9" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到内容</a>
@@ -220,14 +220,12 @@
                 <span class="sr-only">筛选</span>
                 <select id="researchFilter" aria-label="筛选">
                   <option value="all">全部</option>
-                  <option value="active">近窗有更新</option>
-                  <option value="quiet">本窗口无故事</option>
-                  <option value="domestic">国内</option>
-                  <option value="overseas">海外</option>
+                  <option value="active">今日有更新</option>
+                  <option value="quiet">今日无故事</option>
                 </select>
               </label>
             </div>
-            <div id="researchList" class="topics-grid" aria-live="polite">
+            <div id="researchList" class="catalog-groups" aria-live="polite">
               <p class="placeholder-line">正在整理目录…</p>
             </div>
           </div>
@@ -288,6 +286,6 @@
         </section>
       </main>
     </div>
-    <script src="./assets/perspective.js?v=perspective-8"></script>
+    <script src="./assets/perspective.js?v=perspective-9"></script>
   </body>
 </html>

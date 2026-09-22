@@ -93,6 +93,7 @@
     stories: [],
     topics: [],
     topicConfig: [],
+    topicGroups: [],
     topicItems: {},
     storyIndex: [],
     researchReady: false,
@@ -446,17 +447,23 @@
     renderRelated();
   }
 
-  const RESEARCH_TABS = new Set(["org", "event", "trend"]);
+  const RESEARCH_TABS = new Set(["all", "org", "event", "trend"]);
   const TAB_NOTES = {
-    org: "机构按主题配置的顺序排列。近窗条数来自当前故事窗。",
+    all: "按产业透镜、公司与模型、技术方向浏览。今日条数来自当前故事窗。",
+    org: "公司与模型按主题配置的顺序排列。今日条数来自当前故事窗。",
     event: "事件来自当前故事窗里的多源、官方或高重要度条目。",
-    trend: "趋势先列产业透镜，再列技术方向。近窗条数来自当前故事窗。",
+    trend: "产业透镜与技术方向分开排列。今日条数来自当前故事窗。",
   };
+  const TOPIC_GROUP_FALLBACK = [
+    { id: "lens", name: "产业透镜", description: "从收费、入口、Agent 落地与办公组织看产业怎么走" },
+    { id: "company", name: "公司与模型", description: "按厂商与模型系追踪：谁发了什么、又赢了哪一局" },
+    { id: "tech", name: "技术方向", description: "按技术领域深挖：Agent、编码、多模态、端侧与开源" },
+  ];
   let packToken = 0;
 
   function currentTab() {
-    const tab = document.documentElement.dataset.researchTab || "org";
-    return RESEARCH_TABS.has(tab) ? tab : "org";
+    const tab = document.documentElement.dataset.researchTab || "all";
+    return RESEARCH_TABS.has(tab) ? tab : "all";
   }
 
   function escapeRegExp(value) {
@@ -540,7 +547,7 @@
     const params = new URLSearchParams(window.location.search);
     params.set("space", "research");
     params.delete("month");
-    if (tab && tab !== "org") params.set("tab", tab);
+    if (tab && tab !== "all") params.set("tab", tab);
     else params.delete("tab");
     if (kind && id) {
       params.set("kind", kind);
@@ -574,9 +581,10 @@
     const select = document.getElementById("researchFilter");
     if (!select) return;
     const options = {
-      org: [["all", "全部"], ["active", "近窗有更新"], ["quiet", "本窗口无故事"], ["domestic", "国内"], ["overseas", "海外"]],
+      all: [["all", "全部"], ["active", "今日有更新"], ["quiet", "今日无故事"]],
+      org: [["all", "全部"], ["active", "今日有更新"], ["quiet", "今日无故事"], ["domestic", "国内"], ["overseas", "海外"]],
       event: [["all", "全部"], ["multi", "多源"], ["official", "官方更新"]],
-      trend: [["all", "全部"], ["lens", "产业透镜"], ["tech", "技术方向"], ["active", "近窗有更新"]],
+      trend: [["all", "全部"], ["lens", "产业透镜"], ["tech", "技术方向"], ["active", "今日有更新"]],
     }[tab] || [["all", "全部"]];
     const previous = select.value;
     clear(select);
@@ -604,7 +612,7 @@
     const tags = [];
     if (kind === "org") tags.push(DOMESTIC.some((item) => item.id === topic.id) ? "国内" : "海外");
     else tags.push(topic.group === "lens" ? "产业透镜" : "技术方向");
-    tags.push(count > 0 ? `近窗 ${count} 条` : "本窗口无故事");
+    tags.push(count > 0 ? `今日 ${count} 条` : "今日无故事");
     return {
       kind,
       id: topic.id,
@@ -675,13 +683,37 @@
     card.dataset.packId = row.id;
     card.append(el("h3", null, row.name));
     if (row.blurb) card.append(el("p", "topic-card-blurb", row.blurb));
-    const countTag = row.tags.find((tag) => tag.startsWith("近窗") || tag === "本窗口无故事" || tag === "单源" || /^多源 \d+$/.test(tag));
+    const countTag = row.tags.find((tag) => tag.startsWith("今日") || tag === "单源" || /^多源 \d+$/.test(tag));
     const rest = row.tags.filter((tag) => tag !== countTag);
     const meta = el("div", "topic-card-meta");
     if (countTag) meta.append(el("strong", null, countTag));
     if (rest.length) meta.append(el("span", null, rest.join(" · ")));
     if (meta.childNodes.length) card.append(meta);
     return card;
+  }
+
+  function configuredGroups() {
+    const fromConfig = (state.topicGroups || []).filter((group) => group && group.id);
+    return fromConfig.length ? fromConfig : TOPIC_GROUP_FALLBACK;
+  }
+
+  function groupsForTab(tab) {
+    const groups = configuredGroups();
+    if (tab === "org") return groups.filter((group) => group.id === "company");
+    if (tab === "trend") return groups.filter((group) => group.id === "lens" || group.id === "tech");
+    if (tab === "event") return [];
+    return groups;
+  }
+
+  function renderGroupSection(group, rows) {
+    const section = el("section", "topics-group");
+    const head = el("div", "topics-group-head");
+    head.append(el("h2", null, group.name || group.id));
+    if (group.description) head.append(el("p", null, group.description));
+    const grid = el("div", "topics-grid");
+    rows.forEach((row) => grid.append(renderCatalogCard(row)));
+    section.append(head, grid);
+    return section;
   }
 
   function renderCatalog() {
@@ -703,12 +735,30 @@
       list.append(el("p", "placeholder-line", "当前故事窗没有载入。"));
       return;
     }
-    const rows = catalogRows(tab).filter(passesFilter).filter(passesQuery);
-    if (!rows.length) {
-      list.append(el("p", "placeholder-line", "没有匹配的条目。"));
+    if (tab === "event") {
+      const rows = catalogRows("event").filter(passesFilter).filter(passesQuery);
+      if (!rows.length) {
+        list.append(el("p", "placeholder-line", "没有匹配的条目。"));
+        return;
+      }
+      const grid = el("div", "topics-grid");
+      rows.forEach((row) => grid.append(renderCatalogCard(row)));
+      list.append(grid);
       return;
     }
-    rows.forEach((row) => list.append(renderCatalogCard(row)));
+    const groups = groupsForTab(tab);
+    let shown = 0;
+    groups.forEach((group) => {
+      const rows = state.topicConfig
+        .filter((topic) => topic.group === group.id)
+        .map((topic) => topicRow(topic, group.id === "company" ? "org" : "trend"))
+        .filter(passesFilter)
+        .filter(passesQuery);
+      if (!rows.length) return;
+      shown += rows.length;
+      list.append(renderGroupSection(group, rows));
+    });
+    if (!shown) list.append(el("p", "placeholder-line", "没有匹配的条目。"));
   }
 
   function setResearchTab(tab, { push = false } = {}) {
@@ -717,7 +767,7 @@
     syncResearchChrome();
     const select = document.getElementById("researchFilter");
     if (select) select.value = "all";
-    writeResearchParams({ tab: next === "org" ? "" : next, kind: "", id: "" }, { push });
+    writeResearchParams({ tab: next === "all" ? "" : next, kind: "", id: "" }, { push });
     document.documentElement.dataset.researchView = "catalog";
     document.title = "主题研究 · AI Perspective";
     const main = document.getElementById("main");
@@ -1071,10 +1121,12 @@
   }
 
   function openResearchPack(kind, id, { push = true } = {}) {
-    const tab = kind === "event" ? "event" : (kind === "trend" ? "trend" : "org");
+    const tab = currentTab() === "all"
+      ? "all"
+      : (kind === "event" ? "event" : (kind === "trend" ? "trend" : "org"));
     document.documentElement.dataset.researchTab = tab;
     syncResearchChrome();
-    writeResearchParams({ tab: tab === "org" ? "" : tab, kind, id }, { push });
+    writeResearchParams({ tab: tab === "all" ? "" : tab, kind, id }, { push });
     document.documentElement.dataset.researchView = "pack";
     const main = document.getElementById("main");
     if (main) main.scrollTop = 0;
@@ -1148,7 +1200,7 @@
     if (!isPlainClick(event)) return;
     event.preventDefault();
     const tab = currentTab();
-    writeResearchParams({ tab: tab === "org" ? "" : tab, kind: "", id: "" }, { push: true });
+    writeResearchParams({ tab: tab === "all" ? "" : tab, kind: "", id: "" }, { push: true });
     document.documentElement.dataset.researchView = "catalog";
     document.title = "主题研究 · AI Perspective";
     const main = document.getElementById("main");
@@ -1164,7 +1216,7 @@
   window.addEventListener("popstate", () => {
     applySpace(readParam("space") || "overview");
     const tab = readParam("tab");
-    document.documentElement.dataset.researchTab = tab === "event" || tab === "trend" ? tab : "org";
+    document.documentElement.dataset.researchTab = tab === "org" || tab === "event" || tab === "trend" ? tab : "all";
     syncResearchChrome();
     applyLens(readParam("lens") || "product");
     const month = readParam("month");
@@ -1203,6 +1255,7 @@
     }
     if (configResult.status === "fulfilled") {
       state.topicConfig = configResult.value.topics || [];
+      state.topicGroups = configResult.value.groups || [];
     }
     rebuildStoryIndex();
     state.researchReady = true;
