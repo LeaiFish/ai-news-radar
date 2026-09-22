@@ -58,6 +58,20 @@ jobs:
             echo "No OPML file available; RSS OPML is optional"
           fi
 
+      - name: Prepare X bridge items
+        env:
+          X_BRIDGE_ITEMS_B64: ${{ secrets.X_BRIDGE_ITEMS_B64 }}
+        run: |
+          mkdir -p data/bridge
+          if [ -n "$X_BRIDGE_ITEMS_B64" ]; then
+            echo "$X_BRIDGE_ITEMS_B64" | base64 --decode > data/bridge/x-items.json
+            echo "Loaded data/bridge/x-items.json from X_BRIDGE_ITEMS_B64 secret"
+          elif [ -f data/bridge/x-items.json ]; then
+            echo "Using committed data/bridge/x-items.json"
+          else
+            echo "No X bridge items file; private X cookie bridge is optional"
+          fi
+
       - name: Update data
         env:
           EMAIL_DIGEST_ENABLED: ${{ secrets.EMAIL_DIGEST_ENABLED || vars.EMAIL_DIGEST_ENABLED }}
