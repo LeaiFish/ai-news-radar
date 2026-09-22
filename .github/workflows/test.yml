@@ -31,4 +31,4 @@ jobs:
       - run: python -m pip install -r requirements.txt pytest==8.3.4
       - run: python -m pytest -q
       - run: node --test tests/service-status.test.mjs
-      - run: node --check assets/app.js && node --check classic/assets/app.js && node --check assets/service-status.js && node --check assets/topics.js
+      - run: node --check assets/app.js && node --check classic/assets/app.js && node --check assets/service-status.js && node --check assets/topics.js && node --check assets/perspective.js && node --check assets/sidebar.js && node --check assets/view-mode.js

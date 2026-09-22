@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>主题研究 · AI Perspective</title>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        params.set("space", "research");
+        var path = window.location.pathname || "/";
+        var rootPath = path.replace(/\/research\/?(?:index\.html)?$/, "/");
+        if (rootPath === path) rootPath = "../";
+        var target = new URL(rootPath, window.location.href);
+        target.search = params.toString();
+        target.hash = window.location.hash;
+        window.location.replace(target.href);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>正在打开主题研究… <a href="../?space=research">继续</a></p>
+  </body>
+</html>
