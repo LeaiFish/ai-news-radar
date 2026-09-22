@@ -48,6 +48,10 @@
     briefItems: [],
     stories: [],
     topics: [],
+    topicConfig: [],
+    topicItems: {},
+    storyIndex: [],
+    researchReady: false,
   };
 
   const monthSelect = document.getElementById("monthSelect");
@@ -109,6 +113,12 @@
 
   async function loadJson(path) {
     const response = await fetch(`${dataUrl(path)}?t=${Date.now()}`);
+    if (!response.ok) throw new Error(`${path} ${response.status}`);
+    return response.json();
+  }
+
+  async function loadSiteJson(path) {
+    const response = await fetch(`${new URL(path, ROOT).href}?t=${Date.now()}`);
     if (!response.ok) throw new Error(`${path} ${response.status}`);
     return response.json();
   }
@@ -385,8 +395,7 @@
 
   function preserveNavLinks() {
     const params = new URLSearchParams(window.location.search);
-    params.delete("space");
-    params.delete("month");
+    ["space", "month", "tab", "kind", "id"].forEach((key) => params.delete(key));
     document.querySelectorAll("[data-space-link]").forEach((link) => {
       const next = new URLSearchParams(params);
       const space = link.dataset.spaceLink;
@@ -404,6 +413,657 @@
     renderTable(domesticBody, collectRows(DOMESTIC));
     renderTable(overseasBody, collectRows(OVERSEAS));
     renderRelated();
+  }
+
+  const RESEARCH_TABS = new Set(["org", "event", "trend"]);
+  const TAB_NOTES = {
+    org: "机构按主题配置的顺序排列。近窗条数来自当前故事窗。",
+    event: "事件来自当前故事窗里的多源、官方或高重要度条目。",
+    trend: "趋势先列产业透镜，再列技术方向。近窗条数来自当前故事窗。",
+  };
+  let packToken = 0;
+
+  function currentTab() {
+    const tab = document.documentElement.dataset.researchTab || "org";
+    return RESEARCH_TABS.has(tab) ? tab : "org";
+  }
+
+  function escapeRegExp(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function termMatches(term, text) {
+    const needle = String(term || "").trim();
+    if (!needle || !text) return false;
+    if (/[\u4e00-\u9fff]/.test(needle)) return text.toLowerCase().includes(needle.toLowerCase());
+    return new RegExp(`(?<![A-Za-z0-9])${escapeRegExp(needle)}(?![A-Za-z0-9])`, "i").test(text);
+  }
+
+  function storyText(story) {
+    const parts = [];
+    const pushRecord = (record) => {
+      if (!record || typeof record !== "object") return;
+      ["title", "title_zh", "title_en", "title_original", "summary", "source", "source_name", "site_name"].forEach((key) => {
+        if (record[key]) parts.push(String(record[key]));
+      });
+    };
+    pushRecord(story);
+    pushRecord(story.primary_item);
+    (story.sources || []).forEach(pushRecord);
+    (story.items || []).forEach(pushRecord);
+    return parts.join("\n");
+  }
+
+  function matchesTopic(text, topic) {
+    const excludes = topic.exclude || [];
+    if (excludes.some((term) => termMatches(term, text))) return false;
+    const keywords = topic.keywords || [];
+    if (keywords.some((term) => termMatches(term, text))) return true;
+    const patterns = topic.patterns || [];
+    return patterns.some((pattern) => {
+      try {
+        return new RegExp(pattern, "i").test(text);
+      } catch {
+        return false;
+      }
+    });
+  }
+
+  function rebuildStoryIndex() {
+    state.storyIndex = state.stories.map((story) => ({ story, text: storyText(story) }));
+  }
+
+  function storiesForTopic(topic) {
+    return state.storyIndex
+      .filter((entry) => matchesTopic(entry.text, topic))
+      .map((entry) => entry.story);
+  }
+
+  function companyTopics() {
+    return state.topicConfig.filter((topic) => topic.group === "company");
+  }
+
+  function trendTopics() {
+    const lens = state.topicConfig.filter((topic) => topic.group === "lens");
+    const tech = state.topicConfig.filter((topic) => topic.group === "tech");
+    return lens.concat(tech);
+  }
+
+  function isNotableEvent(story) {
+    const sources = Number(story.source_count || (story.sources || []).length || 1);
+    const label = String(story.importance_label || "");
+    const importance = Number(story.importance_score || story.importance || 0);
+    return sources >= 2 || /高|官方|重要/.test(label) || importance >= 0.8;
+  }
+
+  function notableEvents() {
+    return state.stories
+      .filter((story) => story.story_id && isNotableEvent(story))
+      .map((story, index) => ({ story, index, score: judgmentScore(story) }))
+      .sort((a, b) => b.score - a.score || a.index - b.index)
+      .slice(0, 24)
+      .map((entry) => entry.story);
+  }
+
+  function researchHref({ tab, kind, id } = {}) {
+    const params = new URLSearchParams(window.location.search);
+    params.set("space", "research");
+    params.delete("month");
+    if (tab && tab !== "org") params.set("tab", tab);
+    else params.delete("tab");
+    if (kind && id) {
+      params.set("kind", kind);
+      params.set("id", id);
+    } else {
+      params.delete("kind");
+      params.delete("id");
+    }
+    return `./?${params.toString()}`;
+  }
+
+  function writeResearchParams(updates, { push = false } = {}) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("space", "research");
+    Object.entries(updates).forEach(([key, value]) => {
+      if (!value) url.searchParams.delete(key);
+      else url.searchParams.set(key, value);
+    });
+    const next = `${url.pathname}${url.search}${url.hash}`;
+    const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+    if (next === current) return;
+    if (push) window.history.pushState({ research: true }, "", next);
+    else window.history.replaceState({ research: true }, "", next);
+  }
+
+  function isPlainClick(event) {
+    return event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
+  }
+
+  function fillFilterOptions(tab) {
+    const select = document.getElementById("researchFilter");
+    if (!select) return;
+    const options = {
+      org: [["all", "全部"], ["active", "近窗有更新"], ["quiet", "本窗口无故事"], ["domestic", "国内"], ["overseas", "海外"]],
+      event: [["all", "全部"], ["multi", "多源"], ["official", "官方更新"]],
+      trend: [["all", "全部"], ["lens", "产业透镜"], ["tech", "技术方向"], ["active", "近窗有更新"]],
+    }[tab] || [["all", "全部"]];
+    const previous = select.value;
+    clear(select);
+    options.forEach(([value, label]) => {
+      const option = el("option", null, label);
+      option.value = value;
+      select.append(option);
+    });
+    select.value = options.some(([value]) => value === previous) ? previous : "all";
+  }
+
+  function syncResearchChrome() {
+    const tab = currentTab();
+    document.documentElement.dataset.researchTab = tab;
+    document.querySelectorAll(".catalog-tab").forEach((button) => {
+      button.setAttribute("aria-selected", button.dataset.researchTab === tab ? "true" : "false");
+    });
+    fillFilterOptions(tab);
+  }
+
+  function topicRow(topic, kind) {
+    const count = storiesForTopic(topic).length;
+    const tags = [];
+    if (kind === "org") tags.push(DOMESTIC.some((item) => item.id === topic.id) ? "国内" : "海外");
+    else tags.push(topic.group === "lens" ? "产业透镜" : "技术方向");
+    tags.push(count > 0 ? `近窗 ${count} 条` : "本窗口无故事");
+    return {
+      kind,
+      id: topic.id,
+      name: topic.name || topic.id,
+      blurb: topic.description || "",
+      tags,
+      count,
+      group: topic.group,
+      multi: false,
+      official: false,
+    };
+  }
+
+  function eventRow(story) {
+    const sources = Number(story.source_count || 1);
+    const label = story.importance_label || "";
+    const summary = String(story.primary_item?.summary || story.summary || "").trim();
+    const names = (story.source_names || []).slice(0, 3).join("、");
+    const blurb = summary
+      ? shortText(summary, 96)
+      : (names || "当前窗口里的一条故事");
+    const tags = [];
+    if (label) tags.push(label);
+    tags.push(sources >= 2 ? `多源 ${sources}` : "单源");
+    return {
+      kind: "event",
+      id: story.story_id,
+      name: preferZh(story.title),
+      blurb,
+      tags,
+      count: sources,
+      group: "",
+      multi: sources >= 2,
+      official: /官方/.test(label),
+    };
+  }
+
+  function catalogRows(tab) {
+    if (tab === "event") return notableEvents().map(eventRow);
+    if (tab === "trend") return trendTopics().map((topic) => topicRow(topic, "trend"));
+    return companyTopics().map((topic) => topicRow(topic, "org"));
+  }
+
+  function passesFilter(row) {
+    const filter = document.getElementById("researchFilter")?.value || "all";
+    if (filter === "all") return true;
+    if (filter === "active") return row.count > 0;
+    if (filter === "quiet") return row.count === 0;
+    if (filter === "domestic") return DOMESTIC.some((item) => item.id === row.id);
+    if (filter === "overseas") return row.kind === "org" && !DOMESTIC.some((item) => item.id === row.id);
+    if (filter === "multi") return row.multi;
+    if (filter === "official") return row.official;
+    if (filter === "lens") return row.group === "lens";
+    if (filter === "tech") return row.group === "tech";
+    return true;
+  }
+
+  function passesQuery(row) {
+    const query = (document.getElementById("researchSearch")?.value || "").trim().toLowerCase();
+    if (!query) return true;
+    return `${row.name} ${row.blurb} ${row.id}`.toLowerCase().includes(query);
+  }
+
+  function renderCatalogRow(row) {
+    const article = el("article", "catalog-row");
+    const body = el("div");
+    body.append(el("h2", null, row.name));
+    if (row.blurb) body.append(el("p", "catalog-blurb", row.blurb));
+    const tags = el("div", "catalog-tags");
+    row.tags.forEach((tag) => {
+      const quiet = tag === "本窗口无故事" || tag === "单源";
+      const live = tag.startsWith("近窗") || tag.startsWith("多源");
+      tags.append(el("span", quiet ? "tag tag-quiet" : (live ? "tag tag-live" : "tag tag-meta"), tag));
+    });
+    body.append(tags);
+    const link = el("a", "catalog-open", "打开 →");
+    link.href = researchHref({ tab: currentTab(), kind: row.kind, id: row.id });
+    link.dataset.packKind = row.kind;
+    link.dataset.packId = row.id;
+    article.append(body, link);
+    return article;
+  }
+
+  function renderCatalog() {
+    const list = document.getElementById("researchList");
+    const note = document.getElementById("researchNote");
+    if (!list) return;
+    const tab = currentTab();
+    if (note) note.textContent = TAB_NOTES[tab];
+    clear(list);
+    if (!state.researchReady) {
+      list.append(el("p", "placeholder-line", "正在整理目录…"));
+      return;
+    }
+    if (!state.topicConfig.length && tab !== "event") {
+      list.append(el("p", "placeholder-line", "主题配置没有载入。"));
+      return;
+    }
+    if (tab === "event" && !state.stories.length) {
+      list.append(el("p", "placeholder-line", "当前故事窗没有载入。"));
+      return;
+    }
+    const rows = catalogRows(tab).filter(passesFilter).filter(passesQuery);
+    if (!rows.length) {
+      list.append(el("p", "placeholder-line", "没有匹配的条目。"));
+      return;
+    }
+    rows.forEach((row) => list.append(renderCatalogRow(row)));
+  }
+
+  function setResearchTab(tab, { push = false } = {}) {
+    const next = RESEARCH_TABS.has(tab) ? tab : "org";
+    document.documentElement.dataset.researchTab = next;
+    syncResearchChrome();
+    const select = document.getElementById("researchFilter");
+    if (select) select.value = "all";
+    writeResearchParams({ tab: next === "org" ? "" : next, kind: "", id: "" }, { push });
+    document.documentElement.dataset.researchView = "catalog";
+    document.title = "主题研究 · AI Perspective";
+    const main = document.getElementById("main");
+    if (main) main.scrollTop = 0;
+    renderCatalog();
+  }
+
+  function lookupRecord(kind, id) {
+    if (kind === "event") {
+      const story = state.stories.find((item) => item.story_id === id);
+      if (!story) return null;
+      return {
+        kind,
+        id,
+        name: preferZh(story.title),
+        description: "",
+        group: "",
+        windowStories: [story],
+        story,
+      };
+    }
+    const pool = kind === "trend" ? trendTopics() : companyTopics();
+    const topic = pool.find((item) => item.id === id);
+    if (!topic) return null;
+    return {
+      kind,
+      id: topic.id,
+      name: topic.name || topic.id,
+      description: topic.description || "",
+      group: topic.group,
+      windowStories: storiesForTopic(topic).sort((a, b) => String(b.latest_at || "").localeCompare(String(a.latest_at || ""))),
+      story: null,
+    };
+  }
+
+  function topicItemBeat(item) {
+    return {
+      title: item.title || "",
+      url: safeHttpUrl(item.url),
+      source: item.source || item.source_name || "",
+      published_at: item.published_at || "",
+      summary: item.summary || "",
+      sourceCount: Number(item.source_count || 1),
+    };
+  }
+
+  function storyBeat(story) {
+    return {
+      title: story.title || "",
+      url: storyUrl(story),
+      source: story.source || (story.source_names || [])[0] || "",
+      published_at: story.latest_at || story.earliest_at || "",
+      summary: story.primary_item?.summary || story.summary || "",
+      sourceCount: Number(story.source_count || 1),
+    };
+  }
+
+  function eventBeats(story) {
+    const rows = Array.isArray(story.items) && story.items.length ? story.items : (story.sources || []);
+    const beats = rows.map((item) => ({
+      title: item.title || story.title || "",
+      url: safeHttpUrl(item.url),
+      source: item.source || item.source_name || "",
+      published_at: item.published_at || story.latest_at || "",
+      summary: item.summary || "",
+      sourceCount: 1,
+    }));
+    if (!beats.length) beats.push(storyBeat(story));
+    beats.sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
+    return beats;
+  }
+
+  async function loadTopicItems(id) {
+    if (Object.prototype.hasOwnProperty.call(state.topicItems, id)) return state.topicItems[id];
+    try {
+      const payload = await loadJson(`data/topics/${id}.json`);
+      state.topicItems[id] = Array.isArray(payload.items) ? payload.items : [];
+    } catch {
+      state.topicItems[id] = [];
+    }
+    return state.topicItems[id];
+  }
+
+  function appendJudgmentCard(slot, title, meta, url) {
+    const card = el("article", "judgment-card");
+    const top = el("div", "judgment-top");
+    top.append(el("h3", null, title), el("span", "tag tag-draft", "AI 草稿"));
+    card.append(top, el("p", "judgment-meta", meta));
+    const href = safeHttpUrl(url);
+    if (href) {
+      const link = el("a", "source-link", "查看来源");
+      link.href = href;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      card.append(link);
+    }
+    slot.append(card);
+  }
+
+  function renderJudgment(record, beats) {
+    const slot = document.getElementById("packJudgment");
+    clear(slot);
+    const top = record.windowStories
+      .map((story, index) => ({ story, index, score: judgmentScore(story) }))
+      .sort((a, b) => b.score - a.score || a.index - b.index)[0]?.story;
+    if (top) {
+      const brief = state.briefItems.find((item) => item.story_id === top.story_id);
+      const label = brief?.importance_label || top.importance_label || "未分级";
+      const sources = Number(top.source_count || brief?.source_count || 1);
+      appendJudgmentCard(
+        slot,
+        preferZh(brief?.title || top.title),
+        `依据当前数据窗 · ${label} · ${sources} 家信源`,
+        storyUrl(top),
+      );
+      return;
+    }
+    const beat = beats[0];
+    if (beat && beat.title) {
+      appendJudgmentCard(slot, preferZh(beat.title), "依据主题目录最近一条。这条不在当前数据窗里。", beat.url);
+      return;
+    }
+    slot.append(el("p", "placeholder-line", "当前窗口和主题目录里都没有足够信号，判断先留白。"));
+  }
+
+  function deltaItem(title, url, published) {
+    const li = el("li");
+    const href = safeHttpUrl(url);
+    const label = preferZh(title);
+    if (href) {
+      const link = el("a", "note-link", label);
+      link.href = href;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      li.append(link);
+    } else {
+      li.append(document.createTextNode(label));
+    }
+    li.append(el("span", "delta-meta", ` · ${formatStamp(published) || "时间待补充"}`));
+    return li;
+  }
+
+  function renderDelta(record) {
+    const slot = document.getElementById("packDelta");
+    clear(slot);
+    if (record.kind === "event") {
+      const beats = eventBeats(record.story);
+      if (beats.length <= 1) {
+        slot.append(el("p", "placeholder-line", "本期报道集中在这一条。"));
+        return;
+      }
+      const list = el("ul", "delta-list");
+      beats.slice(0, 6).forEach((beat) => list.append(deltaItem(beat.title, beat.url, beat.published_at)));
+      slot.append(list);
+      return;
+    }
+    const stories = record.windowStories.slice(0, 4);
+    if (!stories.length) {
+      slot.append(el("p", "placeholder-line", "这个数据窗里没有新的匹配故事。"));
+      return;
+    }
+    const list = el("ul", "delta-list");
+    stories.forEach((story) => list.append(deltaItem(story.title, storyUrl(story), story.latest_at || story.earliest_at)));
+    slot.append(list);
+  }
+
+  function renderTimeline(beats) {
+    const slot = document.getElementById("packFacts");
+    clear(slot);
+    if (!beats.length) {
+      slot.append(el("p", "placeholder-line", "还没有可排列的相关故事。"));
+      return;
+    }
+    const shown = beats.slice(0, 12);
+    const list = el("ol", "timeline");
+    shown.forEach((beat) => {
+      const li = el("li");
+      li.append(el("time", null, formatStamp(beat.published_at) || "时间待补充"));
+      const body = el("div");
+      const label = preferZh(beat.title);
+      if (beat.url) {
+        const link = el("a", "note-link", label);
+        link.href = beat.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        body.append(link);
+      } else {
+        body.append(el("p", "timeline-title", label));
+      }
+      const meta = [beat.source, beat.sourceCount > 1 ? `${beat.sourceCount} 家信源` : ""].filter(Boolean).join(" · ");
+      if (meta) body.append(el("p", "timeline-meta", meta));
+      const summary = String(beat.summary || "").trim();
+      if (summary) body.append(el("p", "timeline-summary", shortText(summary, 140)));
+      li.append(body);
+      list.append(li);
+    });
+    slot.append(list);
+    if (beats.length > shown.length) {
+      slot.append(el("p", "timeline-more", `目录里还有 ${beats.length - shown.length} 条，这里先列最近 12 条。`));
+    }
+  }
+
+  function renderOpenQuestions(record, beats) {
+    const slot = document.getElementById("packOpen");
+    clear(slot);
+    const notes = [];
+    const top = record.windowStories[0];
+    const sources = Number(top?.source_count || beats[0]?.sourceCount || 0);
+    if (!top && !beats.length) notes.push("信号不足，待验证先留白。");
+    else if (sources && sources < 2) notes.push("目前主要是单源，交叉验证待接入。");
+    if (top && !String(top.primary_item?.summary || top.summary || "").trim()) {
+      notes.push("摘要字段为空，阐述先用标题。");
+    }
+    notes.push("人工确认与 Rubric 打分待接入。");
+    const list = el("ul", "open-list");
+    notes.forEach((note) => list.append(el("li", null, note)));
+    slot.append(list);
+  }
+
+  function renderSourceIndex(beats) {
+    const slot = document.getElementById("packSources");
+    clear(slot);
+    const seen = new Set();
+    const rows = [];
+    beats.forEach((beat) => {
+      const key = beat.url || beat.source;
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      rows.push(beat);
+    });
+    if (!rows.length) {
+      slot.append(el("p", "placeholder-line", "信源索引待补充。"));
+      return;
+    }
+    const list = el("ul", "source-index");
+    rows.slice(0, 10).forEach((beat) => {
+      const li = el("li");
+      const label = beat.source || "来源";
+      if (beat.url) {
+        const link = el("a", null, label);
+        link.href = beat.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        li.append(link);
+        if (beat.title) li.append(el("span", "source-title", ` · ${shortText(preferZh(beat.title), 36)}`));
+      } else {
+        li.textContent = label;
+      }
+      list.append(li);
+    });
+    slot.append(list);
+  }
+
+  function renderPackRail(record, beats) {
+    const related = document.getElementById("packRelated");
+    const materials = document.getElementById("packMaterials");
+    clear(related);
+    clear(materials);
+    let topics = [];
+    if (record.kind === "event") {
+      const text = storyText(record.story);
+      topics = companyTopics().filter((topic) => matchesTopic(text, topic)).slice(0, 4);
+    } else {
+      const siblings = state.topicConfig.filter((topic) => topic.group === record.group && topic.id !== record.id);
+      const active = siblings.filter((topic) => storiesForTopic(topic).length > 0);
+      topics = (active.length ? active : siblings).slice(0, 4);
+    }
+    if (!topics.length) related.append(el("p", "toc-empty", "暂无"));
+    topics.forEach((topic) => {
+      const kind = record.kind === "trend" ? "trend" : "org";
+      const link = el("a", null, topic.name || topic.id);
+      link.href = researchHref({ tab: kind === "trend" ? "trend" : "org", kind, id: topic.id });
+      link.dataset.packKind = kind;
+      link.dataset.packId = topic.id;
+      related.append(link);
+    });
+    if (record.kind !== "event") {
+      const library = el("a", null, "主题库页面");
+      library.href = new URL(`topics/${encodeURIComponent(record.id)}/`, ROOT).href;
+      materials.append(library);
+    }
+    const sourceUrl = record.kind === "event" ? storyUrl(record.story) : (beats[0] && beats[0].url);
+    if (sourceUrl) {
+      const link = el("a", null, "最新来源");
+      link.href = sourceUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      materials.append(link);
+    }
+    if (!materials.childNodes.length) materials.append(el("p", "toc-empty", "暂无"));
+  }
+
+  function clearPackSlots(message) {
+    ["packJudgment", "packDelta", "packFacts", "packOpen", "packSources"].forEach((id) => {
+      const slot = document.getElementById(id);
+      if (!slot) return;
+      clear(slot);
+      if (message) slot.append(el("p", "placeholder-line", message));
+    });
+  }
+
+  async function renderPack(kind, id) {
+    const title = document.getElementById("packTitle");
+    const lede = document.getElementById("packLede");
+    const back = document.getElementById("packBack");
+    if (back) back.href = researchHref({ tab: currentTab() });
+    if (!state.researchReady) {
+      if (title) title.textContent = "正在打开";
+      if (lede) lede.textContent = "正在读取目录…";
+      clearPackSlots("正在整理…");
+      return;
+    }
+    const token = ++packToken;
+    const record = lookupRecord(kind, id);
+    if (!record) {
+      if (title) title.textContent = "未找到条目";
+      if (lede) lede.textContent = "这个条目不在当前目录里。";
+      document.title = "未找到条目 · 主题研究 · AI Perspective";
+      clearPackSlots("这个条目没有事实包。");
+      clear(document.getElementById("packRelated"));
+      clear(document.getElementById("packMaterials"));
+      return;
+    }
+    if (title) title.textContent = record.name;
+    if (lede) {
+      if (record.kind === "event") {
+        const names = (record.story.source_names || []).join("、");
+        lede.textContent = [record.story.importance_label, names].filter(Boolean).join(" · ");
+      } else {
+        lede.textContent = record.description;
+      }
+    }
+    document.title = `${record.name} · 主题研究 · AI Perspective`;
+    clearPackSlots("正在整理相关故事…");
+    let beats = [];
+    if (record.kind === "event") {
+      beats = eventBeats(record.story);
+    } else {
+      const items = await loadTopicItems(record.id);
+      if (token !== packToken) return;
+      beats = items.map(topicItemBeat).sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
+      if (!beats.length) beats = record.windowStories.map(storyBeat);
+    }
+    if (token !== packToken) return;
+    renderJudgment(record, beats);
+    renderDelta(record);
+    renderTimeline(beats);
+    renderOpenQuestions(record, beats);
+    renderSourceIndex(beats);
+    renderPackRail(record, beats);
+  }
+
+  function openResearchPack(kind, id, { push = true } = {}) {
+    const tab = kind === "event" ? "event" : (kind === "trend" ? "trend" : "org");
+    document.documentElement.dataset.researchTab = tab;
+    syncResearchChrome();
+    writeResearchParams({ tab: tab === "org" ? "" : tab, kind, id }, { push });
+    document.documentElement.dataset.researchView = "pack";
+    const main = document.getElementById("main");
+    if (main) main.scrollTop = 0;
+    renderPack(kind, id);
+  }
+
+  function renderResearch() {
+    if (state.space !== "research") return;
+    const kind = readParam("kind");
+    const id = readParam("id");
+    if (id && RESEARCH_TABS.has(kind)) {
+      document.documentElement.dataset.researchView = "pack";
+      renderPack(kind, id);
+      return;
+    }
+    document.documentElement.dataset.researchView = "catalog";
+    if (state.space === "research") document.title = "主题研究 · AI Perspective";
+    renderCatalog();
   }
 
   function setMenu(open) {
@@ -435,15 +1095,68 @@
     if (event.target.closest("a, button")) setMenu(false);
   });
 
+  document.querySelectorAll(".catalog-tab").forEach((button) => {
+    button.addEventListener("click", () => setResearchTab(button.dataset.researchTab || "org", { push: true }));
+  });
+  document.getElementById("researchSearch")?.addEventListener("input", () => {
+    if (document.documentElement.dataset.researchView !== "pack") renderCatalog();
+  });
+  document.getElementById("researchFilter")?.addEventListener("change", () => renderCatalog());
+  document.getElementById("researchList")?.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-pack-kind]");
+    if (!link || !isPlainClick(event)) return;
+    event.preventDefault();
+    openResearchPack(link.dataset.packKind, link.dataset.packId);
+  });
+  document.getElementById("packRelated")?.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-pack-kind]");
+    if (!link || !isPlainClick(event)) return;
+    event.preventDefault();
+    openResearchPack(link.dataset.packKind, link.dataset.packId);
+  });
+  document.getElementById("packBack")?.addEventListener("click", (event) => {
+    if (!isPlainClick(event)) return;
+    event.preventDefault();
+    const tab = currentTab();
+    writeResearchParams({ tab: tab === "org" ? "" : tab, kind: "", id: "" }, { push: true });
+    document.documentElement.dataset.researchView = "catalog";
+    document.title = "主题研究 · AI Perspective";
+    const main = document.getElementById("main");
+    if (main) main.scrollTop = 0;
+    renderCatalog();
+  });
+  document.querySelector(".pack-toc")?.addEventListener("click", (event) => {
+    const link = event.target.closest("a[href^='#pack-']");
+    if (!link) return;
+    event.preventDefault();
+    document.getElementById(link.getAttribute("href").slice(1))?.scrollIntoView({ block: "start" });
+  });
+  window.addEventListener("popstate", () => {
+    applySpace(readParam("space") || "overview");
+    const tab = readParam("tab");
+    document.documentElement.dataset.researchTab = tab === "event" || tab === "trend" ? tab : "org";
+    syncResearchChrome();
+    applyLens(readParam("lens") || "product");
+    const month = readParam("month");
+    if (/^\d{4}-\d{2}$/.test(month)) state.month = month;
+    else if (state.currentMonth) state.month = state.currentMonth;
+    if (monthSelect && monthSelect.options.length) monthSelect.value = state.month;
+    applyMonth();
+    renderResearch();
+  });
+
   applySpace(state.space);
   applyLens(readParam("lens") || "product");
   preserveNavLinks();
+  syncResearchChrome();
+  if (state.space === "research") renderResearch();
 
   Promise.allSettled([
     loadJson("data/daily-brief.json"),
     loadJson("data/stories-merged.json"),
     loadJson("data/topics.json"),
-  ]).then(([briefResult, storiesResult, topicsResult]) => {
+    loadSiteJson("config/topics.json"),
+  ]).then(([briefResult, storiesResult, topicsResult, configResult]) => {
     if (briefResult.status === "fulfilled") {
       state.briefItems = briefResult.value.items || [];
       state.generatedAt = briefResult.value.generated_at || state.generatedAt;
@@ -458,6 +1171,11 @@
       state.topics = topicsResult.value.topics || [];
       state.generatedAt = state.generatedAt || topicsResult.value.generated_at || "";
     }
+    if (configResult.status === "fulfilled") {
+      state.topicConfig = configResult.value.topics || [];
+    }
+    rebuildStoryIndex();
+    state.researchReady = true;
     state.currentMonth = monthKey(state.generatedAt) || monthKey(new Date().toISOString());
     const requestedMonth = readParam("month");
     state.month = /^\d{4}-\d{2}$/.test(requestedMonth) ? requestedMonth : state.currentMonth;
@@ -468,5 +1186,6 @@
     }
     renderMonthSelect();
     renderOverview();
+    renderResearch();
   });
 })();

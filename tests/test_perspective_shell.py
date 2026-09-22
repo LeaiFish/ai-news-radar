@@ -65,18 +65,42 @@ def test_competition_overview_matches_mock_structure_and_marks_placeholders():
     assert "mau" not in js.lower()
 
 
-def test_research_and_workbench_are_reachable_placeholders():
+def test_research_catalog_and_workbench_placeholder():
     page = read("index.html")
+    js = read("assets/perspective.js")
     research = read("research/index.html")
     workbench = read("workbench/index.html")
 
-    assert "即将推出" in page
     assert 'data-space-panel="research"' in page
     assert 'data-space-panel="workbench"' in page
+    assert "机构、事件与趋势目录" in page
+    for label in ("机构", "事件", "趋势"):
+        assert f'data-research-tab="{label}"' in page or f">{label}<" in page
+    assert 'id="researchSearch"' in page
+    assert 'id="researchFilter"' in page
+    assert "当前判断" in page
+    assert "本期变化" in page
+    assert "事实与阐述" in page
+    assert "待验证" in page
+    assert "信源索引" in page
+    assert "本页目录" in page
+    assert "相关研究" in page
+    assert "相关材料" in page
+    assert "返回目录" in page
+    assert "即将推出" in page
+    assert "工作台" in page
+    assert "时间线、AIHOT 简报" in page
+    assert "打开 →" in js
+    assert "config/topics.json" in js
+    assert "AI 草稿" in js
+    assert 'topic.group === "company"' in js
+    company = js.split("function companyTopics()")[1].split("function trendTopics()")[0]
+    assert ".sort(" not in company
     assert 'params.set("space", "research")' in research
     assert 'params.set("space", "workbench")' in workbench
     assert "/ai-news-radar/" not in research
     assert "/ai-news-radar/" not in workbench
+    assert "mau" not in js.lower()
 
 
 def test_old_radar_home_moves_to_feed_without_absolute_pages_paths():
