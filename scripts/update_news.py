@@ -40,6 +40,11 @@ except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_
     from story_archive import update_story_archives
 
 try:
+    from scripts.story_select import assign_selection_tiers
+except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
+    from story_select import assign_selection_tiers
+
+try:
     import feedparser
 except ModuleNotFoundError:
     feedparser = None
@@ -7211,7 +7216,10 @@ def main() -> int:
     stories, merge_events = merge_story_items(latest_items_ai_dedup, now=now, window_hours=args.window_hours)
     generated_at = iso(now)
     daily_brief_payload = build_daily_brief_payload(stories, generated_at=generated_at, window_hours=args.window_hours)
-    stories_merged_payload = build_stories_payload(stories, generated_at=generated_at, window_hours=args.window_hours)
+    # Copy before tagging so daily-brief items, which share these dicts, stay unchanged.
+    stories_for_feed = [dict(story) for story in stories]
+    assign_selection_tiers(stories_for_feed)
+    stories_merged_payload = build_stories_payload(stories_for_feed, generated_at=generated_at, window_hours=args.window_hours)
     merge_log_payload = build_merge_log_payload(merge_events, generated_at=generated_at)
 
     # site stats
@@ -7411,7 +7419,13 @@ def main() -> int:
     print(f"Wrote: {latest_all_path} ({len(latest_items_all_dedup)} all-mode items)")
     print(f"Wrote: {latest_all_raw_path} ({len(latest_items_all_raw_dedup)} raw items, dev-only)")
     print(f"Wrote: {daily_brief_path} ({daily_brief_payload.get('total_items', 0)} brief items)")
-    print(f"Wrote: {stories_merged_path} ({stories_merged_payload.get('total_stories', 0)} stories)")
+    selected_story_count = sum(
+        1 for story in stories_merged_payload.get("stories") or [] if story.get("tier") == "selected"
+    )
+    print(
+        f"Wrote: {stories_merged_path} "
+        f"({stories_merged_payload.get('total_stories', 0)} stories, {selected_story_count} selected)"
+    )
     daily_arch = story_archive_result.get("daily") or {}
     weekly_arch = story_archive_result.get("weekly") or {}
     if daily_arch.get("written"):

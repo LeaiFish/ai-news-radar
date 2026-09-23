@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="./assets/styles.css?v=ui20260923a" />
     <link rel="stylesheet" href="./assets/sidebar.css?v=ui20260923a" />
     <link rel="stylesheet" href="./assets/topics.css?v=ui20260923a" />
-    <link rel="stylesheet" href="./assets/perspective.css?v=ui20260923a" />
+    <link rel="stylesheet" href="./assets/perspective.css?v=ui20260923b" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到内容</a>
@@ -275,17 +275,20 @@
         </section>
 
         <section class="space-panel" data-space-panel="workbench" aria-label="工作台">
-          <div class="empty-state">
-            <p class="empty-kicker mode-hint">即将推出</p>
-            <h1>工作台</h1>
-            <p>时间线、AIHOT 简报和轻量阅读会放在这里。这一期先把入口留出来。</p>
-            <p class="empty-links">
-              <a class="text-link" href="./">回到竞争概览</a>
-            </p>
-          </div>
+          <header class="page-head">
+            <div>
+              <h1>今日时间线</h1>
+              <p class="lede">今天先看的更新，按时间排列。</p>
+              <p class="window-note" id="workbenchNote">正在整理今日时间线…</p>
+            </div>
+          </header>
+          <ol class="timeline" id="workbenchTimeline" aria-live="polite"></ol>
+          <p class="empty-links">
+            <a class="text-link" href="./feed/">打开完整雷达</a>
+          </p>
         </section>
       </main>
     </div>
-    <script src="./assets/perspective.js?v=ui20260923a"></script>
+    <script src="./assets/perspective.js?v=ui20260923b"></script>
   </body>
 </html>

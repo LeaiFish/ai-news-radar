@@ -318,6 +318,8 @@ def test_update_news_main_calls_story_archive(monkeypatch, tmp_path: Path):
 
     fake_build_topics = types.ModuleType("scripts.build_topics")
     fake_build_topics.write_topics_payload = lambda output_dir, generated_at=None: {"topic_count": 0}
+    fake_build_topics.load_topic_config = lambda _path: {"topics": []}
+    fake_build_topics.record_matches_topic = lambda _record, _topic: False
     monkeypatch.setitem(sys.modules, "scripts.build_topics", fake_build_topics)
     monkeypatch.setitem(sys.modules, "build_topics", fake_build_topics)
 
