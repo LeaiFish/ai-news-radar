@@ -3,13 +3,28 @@
   "name": "付费订阅与商业化",
   "description": "各家怎么收费、谁在抽佣、付费转化与定价在怎么变？",
   "group": "lens",
-  "item_count": 115,
+  "item_count": 113,
   "listed_count": 80,
-  "latest_title": "Claude Opus 5.5 与 GPT-6 Sol/Luna 发布，Simon Willison 详解新一轮价格战 / Claude Opus 5.5， GPT-6 Sol， GPT-6 Luna， and a new price war",
-  "latest_published_at": "2026-09-22T23:46:41Z",
+  "latest_title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩 / OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+  "latest_published_at": "2026-09-23T05:18:36Z",
   "items_url": "data/topics/monetization.json",
-  "generated_at": "2026-09-23T01:33:12.741963Z",
+  "generated_at": "2026-09-23T05:59:24.951939Z",
   "items": [
+    {
+      "id": "story_8270efdbfdab",
+      "story_id": "story_8270efdbfdab",
+      "title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩 / OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+      "title_en": "OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+      "url": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks",
+      "summary": "OpenAI 发布 GPT-6 系列两款新模型 GPT-6 Sol 与 Luna，API 定价相比 GPT-5.6 促销价下调约 50%，Sol 为每 1M tokens 输入 $2、输出 $10，Luna 为 $0.10、$0.50，两者已上线 API。",
+      "recommend_reason_zh": null,
+      "source": "MarkTechPost（RSS）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-23T05:18:36Z",
+      "source_count": 1,
+      "curated": true
+    },
     {
       "id": "story_f7f4cf21d48a",
       "story_id": "story_f7f4cf21d48a",
@@ -143,7 +158,7 @@
       "site_id": "",
       "published_at": "2026-09-22T18:19:24Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_dd6c00c25605",
@@ -986,6 +1001,21 @@
       "curated": false
     },
     {
+      "id": "9793e85bf1dbd033901279dbffd1a87ff798f3e4",
+      "story_id": null,
+      "title": "DeepSeek 明天又降价（涵历史价格对比）",
+      "title_en": null,
+      "url": "https://juejin.cn/post/7683347149876051977",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "juejin",
+      "source_name": "juejin",
+      "site_id": "newsnow",
+      "published_at": "2026-09-10T05:50:03.670000Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
       "id": "fd465ec7bb37863901e6f1092e6bb1b9d73368c7",
       "story_id": null,
       "title": "OpenAI 在 API 中推出全双工语音模型 GPT-Live-1",
@@ -1177,36 +1207,6 @@
       "source_name": "Simon Willison 博客",
       "site_id": "aihot",
       "published_at": "2026-08-30T23:59:47Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "2a56b9a1d4c0f7eb496a4c3f9cb9d16edeac8570",
-      "story_id": null,
-      "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
-      "title_en": null,
-      "url": "https://x.com/Alibaba_Qwen/status/2092636376990990503",
-      "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
-      "recommend_reason_zh": null,
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "source_name": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "site_id": "aihot",
-      "published_at": "2026-08-26T15:32:46Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "e05b38c8560ddcfbc674c05784f27b593f8764d6",
-      "story_id": null,
-      "title": "GLM-5.3-Flash：前沿智能进入普惠时代",
-      "title_en": null,
-      "url": "https://www.zhipuai.cn/zh/research/163",
-      "summary": "智谱上线并开源GLM-5.3-Flash（320B-A18B），这是GLM-5系列首个原生多模态模型，在AA综合智能指数取得57分，与Claude Opus 4.8持平。其定价为GLM-5.3的1/10（限时1/20），为Opus 4.8的1/40，并首次在大规模流量中由国产芯片集群提供算力支持。模型已接入ZCode等平台，同步开放API调用。",
-      "recommend_reason_zh": null,
-      "source": "智谱：研究（网页内嵌数据）",
-      "source_name": "智谱：研究（网页内嵌数据）",
-      "site_id": "aihot",
-      "published_at": "2026-08-26T14:00:00Z",
       "source_count": 1,
       "curated": true
     }
