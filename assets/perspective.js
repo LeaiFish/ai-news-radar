@@ -91,6 +91,7 @@
     windowHours: 24,
     briefItems: [],
     stories: [],
+    storiesLoaded: false,
     topics: [],
     topicConfig: [],
     topicGroups: [],
@@ -532,6 +533,94 @@
     const label = String(story.importance_label || "");
     const importance = Number(story.importance_score || story.importance || 0);
     return sources >= 2 || /高|官方|重要/.test(label) || importance >= 0.8;
+  }
+
+  const WORKBENCH_STORY_LIMIT = 15;
+
+  function storySourceCount(story) {
+    const count = Number(story?.source_count);
+    return Number.isFinite(count) ? count : 0;
+  }
+
+  function storyImportanceScore(story) {
+    const raw = story?.importance_score ?? story?.importance ?? story?.score ?? 0;
+    const score = Number(raw);
+    return Number.isFinite(score) ? score : 0;
+  }
+
+  function workbenchTimelineStories() {
+    const stories = state.stories.filter((story) => story && typeof story === "object");
+    const tiered = stories.some((story) => story.tier === "selected" || story.tier === "all");
+    if (tiered) {
+      return {
+        stories: stories.filter((story) => story.tier === "selected"),
+        fallback: false,
+      };
+    }
+    const ranked = stories.slice().sort((a, b) => {
+      const bySources = storySourceCount(b) - storySourceCount(a);
+      if (bySources) return bySources;
+      const byScore = storyImportanceScore(b) - storyImportanceScore(a);
+      if (byScore) return byScore;
+      return String(a.story_id || "").localeCompare(String(b.story_id || ""));
+    });
+    return { stories: ranked.slice(0, WORKBENCH_STORY_LIMIT), fallback: true };
+  }
+
+  function storySourceLabel(story) {
+    const primary = story.primary_item || {};
+    const name = story.source_name || story.source || primary.source_name || primary.source || "";
+    const count = storySourceCount(story);
+    if (count > 1) return [name, `${count} 家信源`].filter(Boolean).join(" · ");
+    return name;
+  }
+
+  function renderWorkbench() {
+    const note = document.getElementById("workbenchNote");
+    const list = document.getElementById("workbenchTimeline");
+    if (!list) return;
+    clear(list);
+    if (!state.storiesLoaded) {
+      if (note) note.textContent = "时间线没有载入。可以先打开完整雷达。";
+      list.append(el("li", null, "时间线没有载入。"));
+      return;
+    }
+    const { stories, fallback } = workbenchTimelineStories();
+    const ordered = stories.slice().sort((a, b) => String(b.latest_at || b.earliest_at || "").localeCompare(String(a.latest_at || a.earliest_at || "")));
+    if (note) {
+      if (!ordered.length) {
+        note.textContent = "今天还没有精选故事。";
+      } else if (fallback) {
+        note.textContent = `这份数据还没有精选标记，先按多源和重要度列出 ${ordered.length} 条。`;
+      } else {
+        note.textContent = `精选 ${ordered.length} 条`;
+      }
+    }
+    if (!ordered.length) {
+      list.append(el("li", null, "今天还没有精选故事。"));
+      return;
+    }
+    ordered.forEach((story) => {
+      const item = el("li");
+      const when = story.latest_at || story.earliest_at || "";
+      item.append(el("time", null, formatStamp(when) || "时间待补充"));
+      const body = el("div");
+      const title = preferZh(story.title || story.primary_item?.title);
+      const href = storyUrl(story);
+      if (href) {
+        const link = el("a", "note-link", title);
+        link.href = href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        body.append(link);
+      } else {
+        body.append(el("p", "timeline-title", title));
+      }
+      const source = storySourceLabel(story);
+      if (source) body.append(el("p", "timeline-meta", source));
+      item.append(body);
+      list.append(item);
+    });
   }
 
   function notableEvents() {
@@ -1244,6 +1333,7 @@
       state.generatedAt = briefResult.value.generated_at || state.generatedAt;
       state.windowHours = briefResult.value.window_hours || state.windowHours;
     }
+    state.storiesLoaded = storiesResult.status === "fulfilled";
     if (storiesResult.status === "fulfilled") {
       state.stories = storiesResult.value.stories || [];
       state.generatedAt = state.generatedAt || storiesResult.value.generated_at || "";
@@ -1270,5 +1360,6 @@
     renderMonthSelect();
     renderOverview();
     renderResearch();
+    renderWorkbench();
   });
 })();

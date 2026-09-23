@@ -17,7 +17,7 @@ const state = {
   authorFilter: "",
   query: "",
   // 单层信息架构：category（内容 tab） x mode（精选/全量全局开关）两个维度。
-  // mode=selected 主列表读 mergedStories()（AI 相关合并事件池，纯时间倒序）；
+  // mode=selected 主列表只读 mergedStories() 里 tier==="selected" 的故事（每日最多 15 条，纯时间倒序）；
   // mode=all 主列表读 itemsAllRaw/itemsAll（全量原始条目池）。
   mode: "selected",
   waytoagiMode: "today",
@@ -1494,10 +1494,15 @@ function hotBoardEntries(limit = HOT_BOARD_LIMIT, { applySection = true } = {}) 
     .map((story, index) => storyToRow(story, index));
 }
 
-// ---- 主列表数据池：精选模式=mergedStories() 全量（纯时间倒序），全量模式=原始条目池 ----
+// ---- 主列表数据池：精选模式=tier==="selected"（纯时间倒序），全量模式=原始条目池 ----
+
+function storyHasSelectedTier(story) {
+  return String(story?.tier || "") === "selected";
+}
 
 function mainListStoriesBase() {
   return mergedStories().filter((story) =>
+    storyHasSelectedTier(story) &&
     storyMatchesSiteFilter(story) &&
     storyMatchesQuery(story) &&
     storyMatchesSourceKind(story));

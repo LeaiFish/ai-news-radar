@@ -113,7 +113,16 @@ def test_research_catalog_and_workbench_placeholder():
     assert "返回目录" in page
     assert "即将推出" in page
     assert "工作台" in page
-    assert "时间线、AIHOT 简报" in page
+    workbench_panel = page.split('data-space-panel="workbench"', 1)[1]
+    assert "即将推出" not in workbench_panel
+    assert "时间线、AIHOT 简报" not in workbench_panel
+    assert "今日时间线" in workbench_panel
+    assert 'id="workbenchTimeline"' in workbench_panel
+    assert 'id="workbenchNote"' in workbench_panel
+    assert 'href="./feed/"' in workbench_panel
+    assert "function renderWorkbench()" in js
+    assert 'story.tier === "selected"' in js
+    assert "WORKBENCH_STORY_LIMIT = 15" in js
     assert 'class="catalog-groups"' in page
     assert 'href="./assets/topics.css' in page
     assert "topics-group-head" in js
