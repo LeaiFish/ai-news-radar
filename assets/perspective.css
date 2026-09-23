@@ -665,3 +665,205 @@ html[data-research-view="pack"] #researchCatalog {
     transition: none;
   }
 }
+
+/* ============================================================
+   UI refinement (2026-09-23): calmer rail, clearer hierarchy.
+   Unified with the radar refinement language in styles.css /
+   sidebar.css / topics.css. Palette and typeface unchanged.
+   ============================================================ */
+
+:root {
+  --sidebar-w: 216px;
+  --p-content-max: 1140px;
+  --p-radius-card: 12px;
+}
+
+/* Reading width: keep the content column composed on wide screens */
+.space-panel {
+  max-width: var(--p-content-max);
+  margin: 0 auto;
+}
+
+/* Sidebar rail */
+.sidebar {
+  gap: 20px;
+  padding: 14px 12px 16px;
+  border-right-color: var(--line);
+  background: color-mix(in srgb, var(--surface-soft) 92%, var(--accent) 8%);
+}
+
+.brand {
+  padding: 6px 8px 14px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.brand-logo {
+  border-radius: 9px;
+}
+
+.nav-label {
+  margin: 16px 10px 7px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  position: relative;
+  min-height: 38px;
+  padding: 0 11px;
+  border-radius: 9px;
+}
+
+.nav-link:hover {
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+}
+
+html[data-space="overview"] a[data-space-link="overview"],
+html[data-space="research"] a[data-space-link="research"],
+html[data-space="workbench"] a[data-space-link="workbench"] {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 13%, var(--surface));
+}
+
+html[data-space="overview"] a[data-space-link="overview"]::before,
+html[data-space="research"] a[data-space-link="research"]::before,
+html[data-space="workbench"] a[data-space-link="workbench"]::before {
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 18px;
+  border-radius: 0 3px 3px 0;
+  background: var(--accent);
+  content: "";
+}
+
+.lens-block {
+  padding: 0 2px;
+}
+
+.lens-chip {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.lens-note {
+  margin: 12px 2px 0;
+}
+
+.sidebar-foot {
+  padding: 14px 6px 2px;
+}
+
+.quiet-link:hover {
+  color: var(--accent);
+}
+
+/* Content hierarchy */
+.page-head {
+  margin-bottom: 24px;
+}
+
+.page-head h1 {
+  letter-spacing: -0.01em;
+}
+
+.block + .block {
+  margin-top: 34px;
+}
+
+.judgment-grid {
+  gap: 14px;
+}
+
+.judgment-card {
+  border-radius: var(--p-radius-card);
+  padding: 18px;
+  box-shadow: var(--radar-shadow-soft);
+}
+
+.judgment-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+}
+
+.table-wrap {
+  border-radius: var(--p-radius-card);
+  box-shadow: var(--radar-shadow-soft);
+}
+
+.metric-table tbody tr {
+  transition: background 120ms ease;
+}
+
+.metric-table tbody tr:hover {
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+}
+
+.related {
+  margin-top: 30px;
+  padding: 14px 18px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--p-radius-card);
+  background: var(--surface-soft);
+}
+
+/* Research pack */
+.pack-layout {
+  gap: 44px;
+}
+
+.pack-toc {
+  border-left: 1px solid var(--line-soft);
+  padding-left: 18px;
+}
+
+/* Empty states */
+.empty-state {
+  max-width: 480px;
+  margin-top: 8vh;
+  padding: 26px 28px 28px;
+  border: 1px solid var(--line-soft);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--radar-shadow-soft);
+}
+
+#overviewEmpty.empty-state {
+  margin-top: 4vh;
+  padding-top: 26px;
+}
+
+/* Focus & selection */
+::selection {
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 68%, var(--surface));
+  outline-offset: 2px;
+}
+
+/* Smooth anchor scrolling inside the main column (pack toc) */
+@media (prefers-reduced-motion: no-preference) {
+  .main {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 760px) {
+  .sidebar.is-open {
+    border-radius: 0 14px 14px 0;
+  }
+
+  .empty-state {
+    margin-top: 4vh;
+    padding: 22px 20px 24px;
+  }
+
+  #overviewEmpty.empty-state {
+    padding-top: 22px;
+  }
+}

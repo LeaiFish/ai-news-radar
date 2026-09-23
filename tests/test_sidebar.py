@@ -57,15 +57,15 @@ def test_sidebar_links_are_root_relative_not_pages_absolute():
 def test_home_and_classic_load_shared_sidebar():
     for path, root in (("feed/index.html", "./"), ("classic/index.html", "./")):
         source = read(path)
-        assert f"{root}assets/sidebar.css?v=pane-3" in source
-        assert f"{root}assets/sidebar.js?v=pane-3" in source
+        assert f"{root}assets/sidebar.css?v=ui20260923a" in source
+        assert f"{root}assets/sidebar.js?v=ui20260923a" in source
         assert "data-radar-nav" not in source  # injected by shared JS, not duplicated markup
 
 
 def test_topic_template_loads_sidebar_with_depth_root():
     source = read("scripts/build_topics.py")
-    assert "{root}assets/sidebar.css?v=pane-3" in source
-    assert "{root}assets/sidebar.js?v=pane-3" in source
+    assert "{root}assets/sidebar.css?v=ui20260923a" in source
+    assert "{root}assets/sidebar.js?v=ui20260923a" in source
     assert "Tibo" not in source
 
 

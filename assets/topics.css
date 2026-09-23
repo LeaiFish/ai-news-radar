@@ -196,3 +196,73 @@
     justify-content: flex-start;
   }
 }
+
+/* UI refinement: topic index and detail pages share one browsing rhythm */
+.topics-shell {
+  padding-bottom: 84px;
+}
+
+.topics-filter {
+  margin-top: 22px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-soft);
+}
+
+.topics-filter-label {
+  color: var(--ink-soft);
+}
+
+.topics-grid {
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.topic-card {
+  min-height: 164px;
+  border-color: var(--line);
+  border-radius: 12px;
+  padding: 18px 18px 16px;
+  box-shadow: var(--radar-shadow-soft);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.topic-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 48%, var(--line));
+  box-shadow: var(--radar-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.topic-card h3 {
+  letter-spacing: -0.015em;
+}
+
+.topics-group {
+  margin-top: 34px;
+}
+
+.topics-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+@media (max-width: 760px) {
+  .topics-filter {
+    margin-top: 16px;
+    padding: 12px;
+  }
+
+  .topics-grid {
+    gap: 12px;
+  }
+
+  .topics-group-head {
+    display: block;
+  }
+}

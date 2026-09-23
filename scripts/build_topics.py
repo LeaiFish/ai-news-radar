@@ -459,10 +459,10 @@ PAGE_TEMPLATE = """<!doctype html>
     <title>{title}</title>
     <meta name="description" content="{description}" />
     <link rel="icon" href="{root}assets/logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="{root}assets/styles.css?v=topics-2" />
-    <link rel="stylesheet" href="{root}assets/topics.css?v=topics-4" />
-    <link rel="stylesheet" href="{root}assets/sidebar.css?v=pane-3" />
-    <script src="{root}assets/sidebar.js?v=pane-3"></script>
+    <link rel="stylesheet" href="{root}assets/styles.css?v=ui20260923a" />
+    <link rel="stylesheet" href="{root}assets/topics.css?v=ui20260923a" />
+    <link rel="stylesheet" href="{root}assets/sidebar.css?v=ui20260923a" />
+    <script src="{root}assets/sidebar.js?v=ui20260923a"></script>
   </head>
   <body>
     <a class="skip-link" href="#topicsMain">跳到主题内容</a>
