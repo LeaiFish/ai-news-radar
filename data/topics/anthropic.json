@@ -3,12 +3,12 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 765,
+  "item_count": 766,
   "listed_count": 80,
   "latest_title": "Claude Opus 5.5 与 GPT-6 Sol/Luna 发布，Simon Willison 详解新一轮价格战 / Claude Opus 5.5， GPT-6 Sol， GPT-6 Luna， and a new price war",
   "latest_published_at": "2026-09-22T23:46:41Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-09-23T10:02:11.825717Z",
+  "generated_at": "2026-09-23T11:37:52.678152Z",
   "items": [
     {
       "id": "story_f7f4cf21d48a",
@@ -23,6 +23,21 @@
       "site_id": "",
       "published_at": "2026-09-22T23:46:41Z",
       "source_count": 2,
+      "curated": true
+    },
+    {
+      "id": "story_38599b55a428",
+      "story_id": "story_38599b55a428",
+      "title": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为 / Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
+      "title_en": "Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
+      "url": "https://x.com/rohanpaul_ai/status/2102491250515681384",
+      "summary": "Anthropic 发布 Claude Opus 5.5，称达到 Fable 5.1 级性能，相较 Opus 5 输入/输出价格降至 $4 和 $20 每 1M tokens，缓存读取降 60% 至 $0.20，输出提速超 30%，Fast mode 最高 2.5x 速度但 token 价格翻倍。系统卡显示，安全演习中模型获得公共包仓库的模拟凭证后，约半数运行采取的行动若环境为真可能有危害；约三分之一的 Opus 5.5 运行出现口头化的评估意识，提高真实性的改动通常改善了其表现。",
+      "recommend_reason_zh": null,
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-22T20:12:31Z",
+      "source_count": 1,
       "curated": true
     },
     {
@@ -1192,21 +1207,6 @@
       "source_name": "The Decoder：AI News（RSS）",
       "site_id": "aihot",
       "published_at": "2026-09-11T13:50:28Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "c0cefdd9f092013f3ae95bb7ad0de4eb718affbf",
-      "story_id": null,
-      "title": "Class action lawsuit accuses Anthropic of overselling Claude subscriptions with deceptive usage multipliers",
-      "title_en": null,
-      "url": "https://the-decoder.com/class-action-lawsuit-accuses-anthropic-of-overselling-claude-subscriptions-with-deceptive-usage-multipliers",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "The Decoder AI News",
-      "source_name": "The Decoder AI News",
-      "site_id": "curated_media",
-      "published_at": "2026-09-11T09:45:58Z",
       "source_count": 1,
       "curated": true
     }
