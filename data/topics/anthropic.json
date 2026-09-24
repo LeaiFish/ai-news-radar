@@ -3,12 +3,12 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 788,
+  "item_count": 795,
   "listed_count": 80,
   "latest_title": "Anthropic 团队详解如何用 Claude 在两周内把 claude.ai 提速约 3 倍 / How we made claude.ai 3x faster in two weeks",
   "latest_published_at": "2026-09-23T21:34:38.801000Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-09-23T23:44:09.970363Z",
+  "generated_at": "2026-09-24T01:28:13.122563Z",
   "items": [
     {
       "id": "story_acfff9ac525d",
@@ -71,18 +71,33 @@
       "curated": true
     },
     {
-      "id": "story_f7f4cf21d48a",
-      "story_id": "story_f7f4cf21d48a",
-      "title": "Claude Opus 5.5 与 GPT-6 Sol/Luna 发布，Simon Willison 详解新一轮价格战 / Claude Opus 5.5， GPT-6 Sol， GPT-6 Luna， and a new price war",
-      "title_en": "Claude Opus 5.5， GPT-6 Sol， GPT-6 Luna， and a new price war",
+      "id": "42a0eb9bbfe6ee62e03b2b6c1c568dd04d36c089",
+      "story_id": null,
+      "title": "Tomer Tunguz：AI 最重要的市场在中段而非前沿模型",
+      "title_en": null,
+      "url": "https://tomtunguz.com/the-most-important-market-in-ai-is-the-middle",
+      "summary": "Tomer Tunguz 分析认为企业 AI 用量集中在需要足够智能且价格可负担的多步骤工作流中段市场，降价竞争正是证据。Anthropic 前沿模型 Fable 5.1 上线前十二天仅占网关支出的 3.7%，大型企业账户的前沿模型 token 消耗占比从 8 月初的 53% 降至 9 月的 45%；Cursor 用微调 Kimi K2.5 将成本降低 86%。",
+      "recommend_reason_zh": null,
+      "source": "Tomer Tunguz 博客（VC 分析）",
+      "source_name": "Tomer Tunguz 博客（VC 分析）",
+      "site_id": "aihot",
+      "published_at": "2026-09-23T00:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "9204435b1d9bad52b3dc5a56fedd93081b256c33",
+      "story_id": null,
+      "title": "Claude Opus 5.5 与 GPT-6 Sol/Luna 发布，Simon Willison 详解新一轮价格战",
+      "title_en": null,
       "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna",
       "summary": "Anthropic 发布 Claude Opus 5.5，OpenAI 随后发布 GPT-6 Sol 和 GPT-6 Luna。GPT-6 两款价格为其 GPT-5.6 对应型号的一半，GPT-6 Luna 低至 $0.10/M 输入、$0.50/M 输出；Opus 5.5 降价 20% 至 $4/$20，缓存读取降 60%。",
       "recommend_reason_zh": null,
       "source": "Simon Willison 博客",
-      "source_name": "AI HOT",
-      "site_id": "",
+      "source_name": "Simon Willison 博客",
+      "site_id": "aihot",
       "published_at": "2026-09-22T23:46:41Z",
-      "source_count": 2,
+      "source_count": 1,
       "curated": true
     },
     {
@@ -1192,21 +1207,6 @@
       "source_name": "Claude：Blog（网页）",
       "site_id": "aihot",
       "published_at": "2026-09-13T16:00:00Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "233ba3a473d4d2792fa6ebaf00eff4c46865c136",
-      "story_id": null,
-      "title": "Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件",
-      "title_en": null,
-      "url": "https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo",
-      "summary": "Anthropic 9 月威胁报告披露，据评估极可能关联胡塞组织的也门小组使用 Claude Code 开发制导火箭、射程超 2，000 公里弹道导弹及名为 R2000 的高超声速滑翔载具概念的相关软件。",
-      "recommend_reason_zh": null,
-      "source": "Hacker News：AI 热帖",
-      "source_name": "Hacker News：AI 热帖",
-      "site_id": "aihot",
-      "published_at": "2026-09-13T14:15:40Z",
       "source_count": 1,
       "curated": true
     }
