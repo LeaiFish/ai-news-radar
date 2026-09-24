@@ -3,12 +3,12 @@
   "name": "AI 编码",
   "description": "AI 写代码的一切：编码助手、代码模型、Vibe Coding 与开发工作流。",
   "group": "tech",
-  "item_count": 12,
-  "listed_count": 12,
+  "item_count": 15,
+  "listed_count": 15,
   "latest_title": "开源微信流，微信聊天记录，可以直接给 Codex 和 Obsidan 了",
   "latest_published_at": "2026-09-23T20:25:23.578305Z",
   "items_url": "data/topics/coding.json",
-  "generated_at": "2026-09-23T20:25:23.578305Z",
+  "generated_at": "2026-09-23T23:44:09.970363Z",
   "items": [
     {
       "id": "story_f0484200a40d",
@@ -24,6 +24,21 @@
       "published_at": "2026-09-23T20:25:23.578305Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "story_76e284c5a332",
+      "story_id": "story_76e284c5a332",
+      "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+      "title_en": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+      "url": "https://x.com/ericzakariasson/status/2102853511637774551",
+      "summary": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。",
+      "recommend_reason_zh": null,
+      "source": "X：Eric Zakariasson (@ericzakariasson)",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-23T20:12:00Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "story_30a5bdf6ff69",
@@ -43,7 +58,7 @@
     {
       "id": "story_a6ca8561303e",
       "story_id": "story_a6ca8561303e",
-      "title": "Rendering huge pull requests in the GitHub Copilot app",
+      "title": "在 GitHub Copilot 应用程序中呈现巨大的拉取请求 / Rendering huge pull requests in the GitHub Copilot app",
       "title_en": "Rendering huge pull requests in the GitHub Copilot app",
       "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
       "summary": "",
@@ -84,6 +99,36 @@
       "published_at": "2026-09-23T12:15:33Z",
       "source_count": 2,
       "curated": true
+    },
+    {
+      "id": "story_a4ca33445f72",
+      "story_id": "story_a4ca33445f72",
+      "title": "Cursor 发布 Rollouts 和 Security Reviewer 开发机器人 / Bots for the last mile： Rollouts， Security Review",
+      "title_en": "Bots for the last mile： Rollouts， Security Review",
+      "url": "https://cursor.com/blog/rollouts-and-security-reviewer",
+      "summary": "Cursor 发布两款软件开发机器人 Rollouts 和 Security Reviewer，帮助团队更快把安全可靠的代码送入生产环境。",
+      "recommend_reason_zh": null,
+      "source": "Cursor Blog",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-23T12:00:00Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "story_456affa4ca03",
+      "story_id": "story_456affa4ca03",
+      "title": "Cursor 提升 agent 长时运行 token 效率，用户成本降低 7% / Improved token efficiency for longer agent runs",
+      "title_en": "Improved token efficiency for longer agent runs",
+      "url": "https://cursor.com/blog/improved-token-efficiency",
+      "summary": "Cursor 通过改进 agent harness，在不降低 agent 质量的情况下将用户 token 成本降低 7%。",
+      "recommend_reason_zh": null,
+      "source": "Cursor Blog",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-23T12:00:00Z",
+      "source_count": 1,
+      "curated": false
     },
     {
       "id": "story_87e6c2a66472",
@@ -143,7 +188,7 @@
       "site_id": "",
       "published_at": "2026-09-23T02:14:54Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_bf530929af3e",
