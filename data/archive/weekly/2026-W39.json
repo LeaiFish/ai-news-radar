@@ -4,52 +4,53 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-24T15:50:03.714050Z",
+  "generated_at": "2026-09-24T20:31:37.456756Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
-    "2026-09-24"
+    "2026-09-24",
+    "2026-09-25"
   ],
-  "story_count": 956,
-  "unique_story_count": 909,
+  "story_count": 1285,
+  "unique_story_count": 982,
   "counts": {
     "by_company_topic": {
-      "anthropic": 125,
-      "apple": 14,
-      "cursor": 4,
-      "deepseek": 12,
-      "doubao": 11,
-      "google-gemini": 33,
-      "huggingface": 13,
-      "hunyuan": 3,
-      "kimi": 11,
-      "meta-llama": 3,
-      "microsoft": 10,
-      "minimax": 2,
-      "nvidia": 17,
-      "openai": 180,
-      "openrouter": 10,
+      "anthropic": 158,
+      "apple": 20,
+      "cursor": 5,
+      "deepseek": 16,
+      "doubao": 14,
+      "google-gemini": 56,
+      "huggingface": 21,
+      "hunyuan": 5,
+      "kimi": 15,
+      "meta-llama": 4,
+      "microsoft": 13,
+      "minimax": 3,
+      "nvidia": 22,
+      "openai": 248,
+      "openrouter": 12,
       "perplexity": 6,
-      "qwen": 17,
-      "xai": 33,
-      "zhipu": 3
+      "qwen": 19,
+      "xai": 34,
+      "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 142,
-      "monetization": 23,
+      "agent-ecosystem": 205,
+      "monetization": 28,
       "product-entry": 1,
-      "workplace": 28
+      "workplace": 39
     },
     "by_importance_label": {
-      "值得关注": 744,
-      "多源热议": 21,
-      "官方更新": 35,
-      "行业动态": 156
+      "值得关注": 1004,
+      "多源热议": 30,
+      "官方更新": 46,
+      "行业动态": 205
     },
     "by_source_count_bucket": {
-      "1": 894,
-      "2": 38,
-      "3+": 24
+      "1": 1206,
+      "2": 46,
+      "3+": 33
     }
   },
   "top_stories": [
@@ -93,6 +94,20 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_aae1244e06d2",
+      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+      "importance_score": 0.8465,
+      "importance_label": "多源热议",
+      "source_count": 4,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "openai",
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_7725937fd90b",
       "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school - Pentagon",
       "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
@@ -101,6 +116,30 @@
       "source_count": 4,
       "archive_date": "2026-09-23",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_edc9f4dfe188",
+      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
+      "importance_score": 0.8426,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c5257387fdcf",
+      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "importance_score": 0.8414,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "google-gemini"
+      ],
       "lens_topics": []
     },
     {
@@ -114,6 +153,19 @@
       "company_topics": [
         "anthropic"
       ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_66517b370dff",
+      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+      "importance_score": 0.8386,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
       ]
@@ -511,6 +563,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_6063593db67c",
+      "title": "A Practical Recipe for Semi-Supervised Federated ASR: Online Pseudo-Labels with Server Update Stabilization",
+      "url": "https://machinelearning.apple.com/research/practical-recipe-federated-asr",
+      "importance_score": 0.7978,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_f9845f56532f",
       "title": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡 / Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
       "url": "https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477",
@@ -520,75 +585,6 @@
       "archive_date": "2026-09-23",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_3ff4f6d8ac89",
-      "title": "SSH 的安全性改进 / Security improvements for SSH",
-      "url": "https://github.blog/changelog/2026-09-22-security-improvements-for-ssh",
-      "importance_score": 0.7961,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-23",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3afb84085368",
-      "title": "Google Beam 不断拓展新的地区、合作伙伴和客户 / Google Beam expands with new regions, partners, and customers",
-      "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
-      "importance_score": 0.7953,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-24",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9326fab27bb2",
-      "title": "通过安全的服务器端内存推进私有人工智能计算 / Advancing Private AI Compute with secure, server-side memory",
-      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
-      "importance_score": 0.7916,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-24",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f7f4cf21d48a",
-      "title": "Claude Opus 5.5 与 GPT-6 Sol/Luna 发布，Simon Willison 详解新一轮价格战 / Claude Opus 5.5， GPT-6 Sol， GPT-6 Luna， and a new price war",
-      "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna",
-      "importance_score": 0.7913,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-09-23",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_1c02ab45228c",
-      "title": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动 / this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-      "url": "https://x.com/Thom_Wolf/status/2103054896438136973",
-      "importance_score": 0.791,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-24",
-      "company_topics": [
-        "openai",
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }

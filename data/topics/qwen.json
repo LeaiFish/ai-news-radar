@@ -8,7 +8,7 @@
   "latest_title": "Introducing Qwen Intelligence, bringing personal intelligence within everyone's reach. 📱✨ It launches with three SOTA agents: 🥳 - Mobile Planner Agent: plans, decomposes &amp; orchestrates complex tasks. #1 on MobilePA-…",
   "latest_published_at": "2026-09-24T06:31:55Z",
   "items_url": "data/topics/qwen.json",
-  "generated_at": "2026-09-24T15:50:03.714050Z",
+  "generated_at": "2026-09-24T20:31:37.456756Z",
   "items": [
     {
       "id": "story_cc56fd66bbbf",
@@ -56,16 +56,16 @@
       "curated": false
     },
     {
-      "id": "story_f0484200a40d",
-      "story_id": "story_f0484200a40d",
+      "id": "0748dfdf36ebe3201c37858deb3981a86ef4582f",
+      "story_id": null,
       "title": "开源微信流，微信聊天记录，可以直接给 Codex 和 Obsidan 了",
       "title_en": null,
       "url": "https://waytoagi.feishu.cn/wiki/W4A8wRWa2iXFyrkVWrrcXRUgnLg?from=from_copylink",
       "summary": "微信聊天里其实藏着很多高价值信息：客户需求、群聊共识、文章链接、项目讨论，但大多数时候都散在记录里，想交给 AI 处理还得手动复制粘贴。苍何开源了一个 WeChatBridge（微信流），它像一个微信和 AI 工具之间的“转发桥”：可以把聊天记录一键送到 Codex、Claude、WorkBuddy、豆包、千问办公等 Agent，也能沉淀到 Obsidian 里变成个人知识库，还能结合 Skill 解析公众号、视频号、PDF 等内容。",
       "recommend_reason_zh": null,
       "source": "社区更新 · 2026-09-22",
-      "source_name": "WaytoAGI",
-      "site_id": "",
+      "source_name": "社区更新 · 2026-09-22",
+      "site_id": "waytoagi",
       "published_at": "2026-09-23T20:25:23.578305Z",
       "source_count": 1,
       "curated": false
@@ -626,6 +626,21 @@
       "curated": false
     },
     {
+      "id": "d907b5933a2452eb2e9b90d441cd40832fa56fb2",
+      "story_id": null,
+      "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
+      "title_en": null,
+      "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
+      "summary": "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。",
+      "recommend_reason_zh": null,
+      "source": "Qwen：Blog Retrieval（API）",
+      "source_name": "Qwen：Blog Retrieval（API）",
+      "site_id": "aihot",
+      "published_at": "2026-09-18T09:30:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
       "id": "c78fa9f04a309e950a0d7b727ff83d9748392361",
       "story_id": null,
       "title": "我的天哪。 重磅消息，Qwen3.8-27B 本地部署大模型再降配置。 PrismML 基于 Qwen3.8-27B 做成了真三值模型 Ternary Bonsai 2 27B，27B 参数只剩 5.9GB，性能还能保留约 98.2%。 核心亮点： 1、 27B 模型压到约 5.9GB，相比 FP16 的约 54GB 缩小约 9 倍 2、 权重只有 1、0、+1 三种值，平均 1.72 bit/weight 3、 官方称可保留约 98…",
@@ -699,21 +714,6 @@
       "published_at": "2026-09-17T19:46:57Z",
       "source_count": 1,
       "curated": false
-    },
-    {
-      "id": "5d8ede19dc693db11ad653c8305b3412ee6fe9da",
-      "story_id": null,
-      "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-      "title_en": null,
-      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-      "summary": "Qwen 发布下一代原生全模态模型 Qwen3.8-Omni-Flash，支持文本、图像、音频和视频输入及 1M token 上下文窗口，29 项评测平均分较 Qwen3.5-Omni-Plus 提升超过 25%，音频输入每小时价格下降超过 98%，音视频输入每小时价格下降超过 93%。",
-      "recommend_reason_zh": null,
-      "source": "Qwen：Blog Retrieval（API）",
-      "source_name": "Qwen：Blog Retrieval（API）",
-      "site_id": "aihot",
-      "published_at": "2026-09-17T17:18:08.568000Z",
-      "source_count": 1,
-      "curated": true
     },
     {
       "id": "ff98997944f33ed147fc95f1c65d810deaa26a99",
