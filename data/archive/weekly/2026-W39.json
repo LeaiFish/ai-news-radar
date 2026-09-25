@@ -4,51 +4,51 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-25T06:10:16.156952Z",
+  "generated_at": "2026-09-25T07:14:02.910349Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
     "2026-09-24",
     "2026-09-25"
   ],
-  "story_count": 1223,
-  "unique_story_count": 1040,
+  "story_count": 1214,
+  "unique_story_count": 1061,
   "counts": {
     "by_company_topic": {
-      "anthropic": 146,
+      "anthropic": 145,
       "apple": 15,
       "cursor": 5,
-      "deepseek": 16,
-      "doubao": 13,
-      "google-gemini": 52,
+      "deepseek": 15,
+      "doubao": 11,
+      "google-gemini": 51,
       "huggingface": 20,
-      "hunyuan": 5,
-      "kimi": 13,
+      "hunyuan": 4,
+      "kimi": 12,
       "meta-llama": 4,
-      "microsoft": 14,
+      "microsoft": 12,
       "minimax": 2,
-      "nvidia": 20,
-      "openai": 223,
+      "nvidia": 21,
+      "openai": 221,
       "openrouter": 11,
       "perplexity": 10,
-      "qwen": 19,
-      "xai": 33,
+      "qwen": 18,
+      "xai": 34,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 190,
-      "monetization": 25,
+      "agent-ecosystem": 184,
+      "monetization": 24,
       "product-entry": 1,
-      "workplace": 36
+      "workplace": 34
     },
     "by_importance_label": {
-      "值得关注": 980,
+      "值得关注": 971,
       "多源热议": 26,
       "官方更新": 43,
       "行业动态": 174
     },
     "by_source_count_bucket": {
-      "1": 1151,
+      "1": 1142,
       "2": 43,
       "3+": 29
     }
@@ -97,7 +97,7 @@
       "story_id": "story_7625d6ca7283",
       "title": "Codex CLI 0.157.0",
       "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.8507,
+      "importance_score": 0.8481,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-25",
@@ -121,7 +121,7 @@
       "story_id": "story_adf2dec60ff2",
       "title": "默认启用 Copilot Business 和 Enterprise 的 Copilot 功能 / Default Enablement of Copilot Features for Copilot Business and Enterprise",
       "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
-      "importance_score": 0.8445,
+      "importance_score": 0.8419,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-25",
@@ -246,19 +246,6 @@
       ]
     },
     {
-      "story_id": "story_9ccba3a0e82c",
-      "title": "Is Seedance Open Source?",
-      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
-      "importance_score": 0.8287,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_a2908ae72b38",
       "title": "弃用通知：全平台 CodeQL 捆绑包 / Deprecation notice: All-platform CodeQL bundle",
       "url": "https://github.blog/changelog/2026-09-22-deprecation-notice-all-platform-codeql-bundle",
@@ -267,6 +254,19 @@
       "source_count": 1,
       "archive_date": "2026-09-22",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9ccba3a0e82c",
+      "title": "Is Seedance Open Source?",
+      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
+      "importance_score": 0.8261,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "openrouter"
+      ],
       "lens_topics": []
     },
     {
@@ -298,20 +298,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_aae1244e06d2",
-      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-      "importance_score": 0.8241,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openai",
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_ac443b4e8681",
       "title": "oMLX 创建者和维护者 Jun Kim 加入 Hugging Face 以支持 MLX 社区 / Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
       "url": "https://huggingface.co/blog/omlx",
@@ -339,38 +325,28 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_aae1244e06d2",
+      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+      "importance_score": 0.8218,
+      "importance_label": "多源热议",
+      "source_count": 4,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "openai",
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_3bb099e6ac71",
       "title": "需要提供存在证明才能进行高影响力的行动 / Require proof of presence for high-impact actions",
       "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
-      "importance_score": 0.8205,
+      "importance_score": 0.8181,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-25",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_edc9f4dfe188",
-      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-      "importance_score": 0.8194,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c5257387fdcf",
-      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
-      "importance_score": 0.8194,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "google-gemini"
-      ],
       "lens_topics": []
     },
     {
@@ -403,6 +379,30 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_c5257387fdcf",
+      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "importance_score": 0.8172,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_edc9f4dfe188",
+      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
+      "importance_score": 0.817,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c2767647a96e",
       "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
       "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
@@ -416,19 +416,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_66517b370dff",
-      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
-      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
-      "importance_score": 0.8159,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_4731b1d29236",
       "title": "阿尔巴内塞披露 OpenAI 智能体未经授权访问澳大利亚 Medicare 系统",
       "url": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html",
@@ -439,6 +426,19 @@
       "company_topics": [
         "openai"
       ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_66517b370dff",
+      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+      "importance_score": 0.8136,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
       ]
