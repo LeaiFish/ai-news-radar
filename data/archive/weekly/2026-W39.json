@@ -4,53 +4,53 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-24T23:53:41.083604Z",
+  "generated_at": "2026-09-25T01:13:59.561861Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
     "2026-09-24",
     "2026-09-25"
   ],
-  "story_count": 1247,
-  "unique_story_count": 1001,
+  "story_count": 1255,
+  "unique_story_count": 1027,
   "counts": {
     "by_company_topic": {
-      "anthropic": 149,
-      "apple": 19,
+      "anthropic": 153,
+      "apple": 15,
       "cursor": 5,
       "deepseek": 16,
       "doubao": 14,
       "google-gemini": 56,
-      "huggingface": 20,
+      "huggingface": 19,
       "hunyuan": 5,
-      "kimi": 14,
+      "kimi": 13,
       "meta-llama": 4,
       "microsoft": 12,
       "minimax": 3,
       "nvidia": 21,
-      "openai": 233,
-      "openrouter": 12,
-      "perplexity": 6,
+      "openai": 234,
+      "openrouter": 11,
+      "perplexity": 10,
       "qwen": 19,
       "xai": 33,
-      "zhipu": 4
+      "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 196,
+      "agent-ecosystem": 200,
       "monetization": 27,
       "product-entry": 1,
       "workplace": 37
     },
     "by_importance_label": {
-      "值得关注": 978,
-      "多源热议": 28,
-      "官方更新": 44,
-      "行业动态": 197
+      "值得关注": 990,
+      "多源热议": 27,
+      "官方更新": 42,
+      "行业动态": 196
     },
     "by_source_count_bucket": {
-      "1": 1170,
-      "2": 46,
-      "3+": 31
+      "1": 1180,
+      "2": 45,
+      "3+": 30
     }
   },
   "top_stories": [
@@ -105,6 +105,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_9ccba3a0e82c",
+      "title": "Is Seedance Open Source?",
+      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
+      "importance_score": 0.8408,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_2f7e483f74c2",
       "title": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART / Claude discovers a novel enzyme system with CRISPR-like repeats",
       "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
@@ -118,20 +131,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_aae1244e06d2",
-      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-      "importance_score": 0.8383,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openai",
-        "google-gemini"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_bf530929af3e",
@@ -160,25 +159,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3bb099e6ac71",
-      "title": "Require proof of presence for high-impact actions",
-      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
-      "importance_score": 0.8353,
-      "importance_label": "官方更新",
-      "source_count": 1,
+      "story_id": "story_aae1244e06d2",
+      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+      "importance_score": 0.8352,
+      "importance_label": "多源热议",
+      "source_count": 4,
       "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_edc9f4dfe188",
-      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-      "importance_score": 0.8342,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
+      "company_topics": [
+        "openai",
+        "google-gemini"
+      ],
       "lens_topics": []
     },
     {
@@ -191,19 +182,6 @@
       "archive_date": "2026-09-23",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c5257387fdcf",
-      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
-      "importance_score": 0.8334,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -238,6 +216,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_3bb099e6ac71",
+      "title": "Require proof of presence for high-impact actions",
+      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
+      "importance_score": 0.832,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_9bf1a94971e8",
       "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
       "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
@@ -252,17 +241,28 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_66517b370dff",
-      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
-      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
-      "importance_score": 0.8304,
+      "story_id": "story_edc9f4dfe188",
+      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
+      "importance_score": 0.8309,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-25",
       "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c5257387fdcf",
+      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "importance_score": 0.8303,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_ad197486825e",
@@ -289,6 +289,19 @@
       "archive_date": "2026-09-22",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_66517b370dff",
+      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+      "importance_score": 0.8272,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_59c62b9a8263",
@@ -571,17 +584,6 @@
       "company_topics": [
         "openai"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f9845f56532f",
-      "title": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡 / Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-      "url": "https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477",
-      "importance_score": 0.7963,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-09-23",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
