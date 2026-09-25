@@ -4,53 +4,53 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-24T20:31:37.456756Z",
+  "generated_at": "2026-09-24T23:53:41.083604Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
     "2026-09-24",
     "2026-09-25"
   ],
-  "story_count": 1285,
-  "unique_story_count": 982,
+  "story_count": 1247,
+  "unique_story_count": 1001,
   "counts": {
     "by_company_topic": {
-      "anthropic": 158,
-      "apple": 20,
+      "anthropic": 149,
+      "apple": 19,
       "cursor": 5,
       "deepseek": 16,
       "doubao": 14,
       "google-gemini": 56,
-      "huggingface": 21,
+      "huggingface": 20,
       "hunyuan": 5,
-      "kimi": 15,
+      "kimi": 14,
       "meta-llama": 4,
-      "microsoft": 13,
+      "microsoft": 12,
       "minimax": 3,
-      "nvidia": 22,
-      "openai": 248,
+      "nvidia": 21,
+      "openai": 233,
       "openrouter": 12,
       "perplexity": 6,
       "qwen": 19,
-      "xai": 34,
+      "xai": 33,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 205,
-      "monetization": 28,
+      "agent-ecosystem": 196,
+      "monetization": 27,
       "product-entry": 1,
-      "workplace": 39
+      "workplace": 37
     },
     "by_importance_label": {
-      "值得关注": 1004,
-      "多源热议": 30,
-      "官方更新": 46,
-      "行业动态": 205
+      "值得关注": 978,
+      "多源热议": 28,
+      "官方更新": 44,
+      "行业动态": 197
     },
     "by_source_count_bucket": {
-      "1": 1206,
+      "1": 1170,
       "2": 46,
-      "3+": 33
+      "3+": 31
     }
   },
   "top_stories": [
@@ -94,20 +94,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_aae1244e06d2",
-      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-      "importance_score": 0.8465,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openai",
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7725937fd90b",
       "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school - Pentagon",
       "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
@@ -116,30 +102,6 @@
       "source_count": 4,
       "archive_date": "2026-09-23",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_edc9f4dfe188",
-      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-      "importance_score": 0.8426,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c5257387fdcf",
-      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
-      "importance_score": 0.8414,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "google-gemini"
-      ],
       "lens_topics": []
     },
     {
@@ -158,17 +120,18 @@
       ]
     },
     {
-      "story_id": "story_66517b370dff",
-      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
-      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
-      "importance_score": 0.8386,
-      "importance_label": "官方更新",
-      "source_count": 1,
+      "story_id": "story_aae1244e06d2",
+      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+      "importance_score": 0.8383,
+      "importance_label": "多源热议",
+      "source_count": 4,
       "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "company_topics": [
+        "openai",
+        "google-gemini"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_bf530929af3e",
@@ -197,6 +160,28 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_3bb099e6ac71",
+      "title": "Require proof of presence for high-impact actions",
+      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
+      "importance_score": 0.8353,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_edc9f4dfe188",
+      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
+      "importance_score": 0.8342,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_a809a02e7e68",
       "title": "OpenAI 为 GPT-6 推出改进的提示词缓存系统与诊断工具 / Better prompt caching for GPT-6",
       "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
@@ -206,6 +191,19 @@
       "archive_date": "2026-09-23",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c5257387fdcf",
+      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "importance_score": 0.8334,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -252,6 +250,19 @@
         "huggingface"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_66517b370dff",
+      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+      "importance_score": 0.8304,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_ad197486825e",
@@ -559,19 +570,6 @@
       "archive_date": "2026-09-24",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6063593db67c",
-      "title": "A Practical Recipe for Semi-Supervised Federated ASR: Online Pseudo-Labels with Server Update Stabilization",
-      "url": "https://machinelearning.apple.com/research/practical-recipe-federated-asr",
-      "importance_score": 0.7978,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "apple"
       ],
       "lens_topics": []
     },
