@@ -4,31 +4,31 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-25T11:51:47.012785Z",
+  "generated_at": "2026-09-25T15:50:24.530804Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
     "2026-09-24",
     "2026-09-25"
   ],
-  "story_count": 1192,
-  "unique_story_count": 1102,
+  "story_count": 1183,
+  "unique_story_count": 1130,
   "counts": {
     "by_company_topic": {
-      "anthropic": 150,
-      "apple": 15,
+      "anthropic": 149,
+      "apple": 14,
       "cursor": 4,
       "deepseek": 13,
       "doubao": 11,
-      "google-gemini": 50,
-      "huggingface": 17,
+      "google-gemini": 47,
+      "huggingface": 14,
       "hunyuan": 3,
       "kimi": 11,
       "meta-llama": 3,
-      "microsoft": 13,
+      "microsoft": 19,
       "minimax": 2,
-      "nvidia": 23,
-      "openai": 214,
+      "nvidia": 21,
+      "openai": 203,
       "openrouter": 11,
       "perplexity": 10,
       "qwen": 17,
@@ -36,21 +36,21 @@
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 178,
+      "agent-ecosystem": 180,
       "monetization": 24,
       "product-entry": 1,
-      "workplace": 34
+      "workplace": 38
     },
     "by_importance_label": {
-      "值得关注": 962,
-      "多源热议": 25,
-      "官方更新": 44,
-      "行业动态": 161
+      "值得关注": 954,
+      "多源热议": 22,
+      "官方更新": 45,
+      "行业动态": 162
     },
     "by_source_count_bucket": {
-      "1": 1123,
+      "1": 1117,
       "2": 41,
-      "3+": 28
+      "3+": 25
     }
   },
   "top_stories": [
@@ -105,6 +105,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_4a359665fbcd",
+      "title": "Agents can now set up your website’s security with Turnstile Spin",
+      "url": "https://blog.cloudflare.com/turnstile-spin",
+      "importance_score": 0.8428,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_2f7e483f74c2",
       "title": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART / Claude discovers a novel enzyme system with CRISPR-like repeats",
       "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
@@ -120,17 +133,6 @@
       ]
     },
     {
-      "story_id": "story_c64a4fb7a68e",
-      "title": "CodeQL 2.27.1 添加了 C 和 C++ 查询以及 Kotlin 2.4.20 支持 / CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support",
-      "url": "https://github.blog/changelog/2026-09-25-codeql-2-27-1-adds-c-and-c-query-and-kotlin-2-4-20-support",
-      "importance_score": 0.839,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_bf530929af3e",
       "title": "Codex CLI 0.156.1",
       "url": "https://developers.openai.com/codex/changelog",
@@ -138,19 +140,6 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-23",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7625d6ca7283",
-      "title": "Codex CLI 0.157.0",
-      "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.8377,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
       "company_topics": [
         "openai"
       ],
@@ -227,19 +216,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_adf2dec60ff2",
-      "title": "默认启用 Copilot Business 和 Enterprise 的 Copilot 功能 / Default Enablement of Copilot Features for Copilot Business and Enterprise",
-      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
-      "importance_score": 0.8309,
+      "story_id": "story_c64a4fb7a68e",
+      "title": "CodeQL 2.27.1 添加了 C 和 C++ 查询以及 Kotlin 2.4.20 支持 / CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support",
+      "url": "https://github.blog/changelog/2026-09-25-codeql-2-27-1-adds-c-and-c-query-and-kotlin-2-4-20-support",
+      "importance_score": 0.8293,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-25",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_ad197486825e",
@@ -255,6 +240,19 @@
       "lens_topics": [
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_7625d6ca7283",
+      "title": "Codex CLI 0.157.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8292,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_a2908ae72b38",
@@ -323,6 +321,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_adf2dec60ff2",
+      "title": "默认启用 Copilot Business 和 Enterprise 的 Copilot 功能 / Default Enablement of Copilot Features for Copilot Business and Enterprise",
+      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
+      "importance_score": 0.822,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_6bb8789d9f07",
       "title": "Claude Opus 5.5 现已在 GitHub Copilot 中提供 / Claude Opus 5.5 is now available in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot",
@@ -365,19 +378,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_9ccba3a0e82c",
-      "title": "Is Seedance Open Source?",
-      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
-      "importance_score": 0.8157,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_4731b1d29236",
       "title": "阿尔巴内塞披露 OpenAI 智能体未经授权访问澳大利亚 Medicare 系统",
       "url": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html",
@@ -401,20 +401,6 @@
       "source_count": 1,
       "archive_date": "2026-09-23",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_aae1244e06d2",
-      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-      "importance_score": 0.8123,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openai",
-        "google-gemini"
-      ],
       "lens_topics": []
     },
     {
@@ -473,17 +459,6 @@
       ]
     },
     {
-      "story_id": "story_3bb099e6ac71",
-      "title": "需要提供存在证明才能进行高影响力的行动 / Require proof of presence for high-impact actions",
-      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
-      "importance_score": 0.8081,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_8242d9eaeeac",
       "title": "使用 GPT-6 Astra 并行将研究时间和成本减少一半 / Parallel cut research time and cost in half with GPT‑6 Astra",
       "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
@@ -493,19 +468,6 @@
       "archive_date": "2026-09-23",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c5257387fdcf",
-      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
-      "importance_score": 0.8078,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -526,14 +488,16 @@
       ]
     },
     {
-      "story_id": "story_f0b280c7fe21",
-      "title": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议 / Trump admin using AI to deny medical care for seniors in disastrous experiment",
-      "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment",
-      "importance_score": 0.8074,
-      "importance_label": "行业动态",
+      "story_id": "story_9ccba3a0e82c",
+      "title": "Is Seedance Open Source?",
+      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
+      "importance_score": 0.8072,
+      "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-25",
-      "company_topics": [],
+      "company_topics": [
+        "openrouter"
+      ],
       "lens_topics": []
     },
     {
@@ -547,17 +511,6 @@
       "company_topics": [
         "apple"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_edc9f4dfe188",
-      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-      "importance_score": 0.8071,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -576,17 +529,63 @@
       ]
     },
     {
-      "story_id": "story_66517b370dff",
-      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
-      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
-      "importance_score": 0.804,
+      "story_id": "story_b01d49929f03",
+      "title": "GitHub Enterprise 添加凭证库存导出 / GitHub Enterprise adds credential inventory exports",
+      "url": "https://github.blog/changelog/2026-09-21-github-enterprise-adds-credential-inventory-exports",
+      "importance_score": 0.8022,
       "importance_label": "官方更新",
       "source_count": 1,
-      "archive_date": "2026-09-25",
+      "archive_date": "2026-09-22",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_00b9cbed60be",
+      "title": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
+      "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+      "importance_score": 0.8012,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-09-23",
       "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_e8c6ef86f111",
+      "title": "Node 20 在 GitHub Actions 中不再可用 / Node 20 is no longer available in GitHub Actions",
+      "url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions",
+      "importance_score": 0.8007,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-24",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c5257387fdcf",
+      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "importance_score": 0.8002,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3bb099e6ac71",
+      "title": "需要提供存在证明才能进行高影响力的行动 / Require proof of presence for high-impact actions",
+      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
+      "importance_score": 0.8001,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
+      "lens_topics": []
     }
   ]
 }
