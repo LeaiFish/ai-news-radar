@@ -8,19 +8,19 @@
   "latest_title": "Can open source make AI more accessible? At #ApsaraConference2026, Huping Ding, Principal Engineer, Qwen AI Platform, MaaS Business Line, Alibaba Token Hub, highlighted how open source can address cost challenges and ex…",
   "latest_published_at": "2026-09-24T09:35:25Z",
   "items_url": "data/topics/qwen.json",
-  "generated_at": "2026-09-25T07:14:02.910349Z",
+  "generated_at": "2026-09-25T10:14:18.865610Z",
   "items": [
     {
-      "id": "story_b31765e2c4bd",
-      "story_id": "story_b31765e2c4bd",
+      "id": "d53a9750d290ac1156cc7554915f0bed70f81794",
+      "story_id": null,
       "title": "Can open source make AI more accessible? At #ApsaraConference2026, Huping Ding, Principal Engineer, Qwen AI Platform, MaaS Business Line, Alibaba Token Hub, highlighted how open source can address cost challenges and ex…",
-      "title_en": "Can open source make AI more accessible? At #ApsaraConference2026, Huping Ding, Principal Engineer, Qwen AI Platform, MaaS Business Line, Alibaba Token Hub, highlighted how open source can address cost challenges and ex…",
+      "title_en": null,
       "url": "https://x.com/alibaba_cloud/status/2103055695511724154",
       "summary": "",
       "recommend_reason_zh": null,
       "source": "@alibaba_cloud",
-      "source_name": "X（私有桥）",
-      "site_id": "",
+      "source_name": "@alibaba_cloud",
+      "site_id": "x_bridge",
       "published_at": "2026-09-24T09:35:25Z",
       "source_count": 1,
       "curated": false
@@ -566,6 +566,21 @@
       "curated": true
     },
     {
+      "id": "ab009f5e270bc93f5a1e3a6f05778a2fa8b64c49",
+      "story_id": null,
+      "title": "Qwen 开源 Qwen-Image-2.1：7B 统一生成与编辑并原生支持透明图像",
+      "title_en": null,
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "summary": "Qwen 团队开源 Qwen-Image-2.1，将文生图与图像编辑统一到一个模型中，视觉生成组件仅 7B 参数，并原生支持生成和编辑透明图像。模型支持最多 10 张参考图、圆形/涂鸦/独立蒙版指定局部编辑，通过混合粒度注意力架构和 KV cache 复用提升推理效率，同时改进文字渲染、人像光照与人物产品保真度，并覆盖全景图、信息图和分镜等任务。",
+      "recommend_reason_zh": null,
+      "source": "Qwen：Blog Retrieval（API）",
+      "source_name": "Qwen：Blog Retrieval（API）",
+      "site_id": "aihot",
+      "published_at": "2026-09-20T12:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
       "id": "4b688ff41821d920cce657e199a68248e2d32044",
       "story_id": null,
       "title": "千问发布 Qwen3.8-LiveTranslate 同声传译大模型：原文译文同屏出，字均延迟压到 2.3 秒",
@@ -639,21 +654,6 @@
       "published_at": "2026-09-18T09:46:20.741257Z",
       "source_count": 1,
       "curated": false
-    },
-    {
-      "id": "d907b5933a2452eb2e9b90d441cd40832fa56fb2",
-      "story_id": null,
-      "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
-      "title_en": null,
-      "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
-      "summary": "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。",
-      "recommend_reason_zh": null,
-      "source": "Qwen：Blog Retrieval（API）",
-      "source_name": "Qwen：Blog Retrieval（API）",
-      "site_id": "aihot",
-      "published_at": "2026-09-18T09:30:00Z",
-      "source_count": 1,
-      "curated": true
     },
     {
       "id": "c78fa9f04a309e950a0d7b727ff83d9748392361",

@@ -4,53 +4,53 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-25T07:14:02.910349Z",
+  "generated_at": "2026-09-25T10:14:18.865610Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
     "2026-09-24",
     "2026-09-25"
   ],
-  "story_count": 1214,
-  "unique_story_count": 1061,
+  "story_count": 1185,
+  "unique_story_count": 1077,
   "counts": {
     "by_company_topic": {
-      "anthropic": 145,
+      "anthropic": 146,
       "apple": 15,
-      "cursor": 5,
-      "deepseek": 15,
+      "cursor": 4,
+      "deepseek": 13,
       "doubao": 11,
-      "google-gemini": 51,
-      "huggingface": 20,
-      "hunyuan": 4,
-      "kimi": 12,
+      "google-gemini": 48,
+      "huggingface": 17,
+      "hunyuan": 3,
+      "kimi": 11,
       "meta-llama": 4,
-      "microsoft": 12,
+      "microsoft": 13,
       "minimax": 2,
       "nvidia": 21,
-      "openai": 221,
+      "openai": 216,
       "openrouter": 11,
       "perplexity": 10,
-      "qwen": 18,
+      "qwen": 17,
       "xai": 34,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 184,
+      "agent-ecosystem": 177,
       "monetization": 24,
       "product-entry": 1,
-      "workplace": 34
+      "workplace": 35
     },
     "by_importance_label": {
-      "值得关注": 971,
-      "多源热议": 26,
+      "值得关注": 957,
+      "多源热议": 25,
       "官方更新": 43,
-      "行业动态": 174
+      "行业动态": 160
     },
     "by_source_count_bucket": {
-      "1": 1142,
-      "2": 43,
-      "3+": 29
+      "1": 1115,
+      "2": 42,
+      "3+": 28
     }
   },
   "top_stories": [
@@ -94,19 +94,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7625d6ca7283",
-      "title": "Codex CLI 0.157.0",
-      "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.8481,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7725937fd90b",
       "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school - Pentagon",
       "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
@@ -118,19 +105,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_adf2dec60ff2",
-      "title": "默认启用 Copilot Business 和 Enterprise 的 Copilot 功能 / Default Enablement of Copilot Features for Copilot Business and Enterprise",
-      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
-      "importance_score": 0.8419,
+      "story_id": "story_7625d6ca7283",
+      "title": "Codex CLI 0.157.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8413,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-25",
       "company_topics": [
-        "microsoft"
+        "openai"
       ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_2f7e483f74c2",
@@ -172,6 +157,21 @@
         "anthropic"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_adf2dec60ff2",
+      "title": "默认启用 Copilot Business 和 Enterprise 的 Copilot 功能 / Default Enablement of Copilot Features for Copilot Business and Enterprise",
+      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
+      "importance_score": 0.8347,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_a809a02e7e68",
@@ -257,19 +257,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_9ccba3a0e82c",
-      "title": "Is Seedance Open Source?",
-      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
-      "importance_score": 0.8261,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_59c62b9a8263",
       "title": "Copilot for JetBrains 的新功能和改进 / New features and improvements in Copilot for JetBrains",
       "url": "https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains",
@@ -325,28 +312,16 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_aae1244e06d2",
-      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-      "importance_score": 0.8218,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openai",
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3bb099e6ac71",
-      "title": "需要提供存在证明才能进行高影响力的行动 / Require proof of presence for high-impact actions",
-      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
-      "importance_score": 0.8181,
+      "story_id": "story_9ccba3a0e82c",
+      "title": "Is Seedance Open Source?",
+      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
+      "importance_score": 0.8193,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-25",
-      "company_topics": [],
+      "company_topics": [
+        "openrouter"
+      ],
       "lens_topics": []
     },
     {
@@ -379,30 +354,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_c5257387fdcf",
-      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
-      "importance_score": 0.8172,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_edc9f4dfe188",
-      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-      "importance_score": 0.817,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_c2767647a96e",
       "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
       "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
@@ -412,6 +363,20 @@
       "archive_date": "2026-09-23",
       "company_topics": [
         "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_aae1244e06d2",
+      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+      "importance_score": 0.8156,
+      "importance_label": "多源热议",
+      "source_count": 4,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "openai",
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -431,19 +396,6 @@
       ]
     },
     {
-      "story_id": "story_66517b370dff",
-      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
-      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
-      "importance_score": 0.8136,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_5d947096dc73",
       "title": "通过整个代码库索引加快 C++ 代码智能 / Faster C++ code intelligence with whole codebase indexing",
       "url": "https://github.blog/changelog/2026-09-22-faster-c-code-intelligence-with-whole-codebase-indexing",
@@ -451,6 +403,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-23",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3bb099e6ac71",
+      "title": "需要提供存在证明才能进行高影响力的行动 / Require proof of presence for high-impact actions",
+      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
+      "importance_score": 0.8116,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
       "company_topics": [],
       "lens_topics": []
     },
@@ -464,6 +427,19 @@
       "archive_date": "2026-09-24",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c5257387fdcf",
+      "title": "隆重推出 Gemini 3.8 Live with Live Avatar / Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "importance_score": 0.811,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -491,6 +467,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-22",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_edc9f4dfe188",
+      "title": "当聊天是错误的 UI 时 / When chat is the wrong UI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
+      "importance_score": 0.8105,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
       "company_topics": [],
       "lens_topics": []
     },
@@ -534,6 +521,19 @@
         "nvidia",
         "openrouter"
       ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_66517b370dff",
+      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程 / AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+      "importance_score": 0.8073,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
       ]
