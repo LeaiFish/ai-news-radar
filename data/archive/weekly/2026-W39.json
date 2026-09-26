@@ -4,54 +4,55 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-26T14:59:07.367028Z",
+  "generated_at": "2026-09-26T19:53:48.123489Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
     "2026-09-24",
     "2026-09-25",
-    "2026-09-26"
+    "2026-09-26",
+    "2026-09-27"
   ],
-  "story_count": 1347,
-  "unique_story_count": 1286,
+  "story_count": 1463,
+  "unique_story_count": 1311,
   "counts": {
     "by_company_topic": {
-      "anthropic": 177,
-      "apple": 15,
+      "anthropic": 188,
+      "apple": 16,
       "cursor": 5,
       "deepseek": 13,
       "doubao": 11,
-      "google-gemini": 49,
-      "huggingface": 18,
+      "google-gemini": 51,
+      "huggingface": 22,
       "hunyuan": 3,
       "kimi": 11,
       "meta-llama": 3,
-      "microsoft": 31,
+      "microsoft": 35,
       "minimax": 2,
-      "nvidia": 27,
-      "openai": 235,
+      "nvidia": 30,
+      "openai": 266,
       "openrouter": 11,
       "perplexity": 10,
       "qwen": 17,
-      "xai": 35,
+      "xai": 36,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 214,
-      "monetization": 24,
+      "agent-ecosystem": 243,
+      "monetization": 25,
       "product-entry": 1,
-      "workplace": 50
+      "workplace": 54
     },
     "by_importance_label": {
-      "值得关注": 1094,
-      "多源热议": 28,
-      "官方更新": 56,
-      "行业动态": 169
+      "值得关注": 1198,
+      "多源热议": 31,
+      "官方更新": 59,
+      "行业动态": 175
     },
     "by_source_count_bucket": {
-      "1": 1262,
-      "2": 54,
-      "3+": 31
+      "1": 1367,
+      "2": 62,
+      "3+": 34
     }
   },
   "top_stories": [
@@ -381,6 +382,22 @@
       ]
     },
     {
+      "story_id": "story_a7326ac13231",
+      "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
+      "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+      "importance_score": 0.8201,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-09-27",
+      "company_topics": [
+        "openai",
+        "huggingface"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_6bb8789d9f07",
       "title": "Claude Opus 5.5 现已在 GitHub Copilot 中提供 / Claude Opus 5.5 is now available in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot",
@@ -581,21 +598,6 @@
         "apple"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_a6ca8561303e",
-      "title": "在 GitHub Copilot 应用程序中呈现巨大的拉取请求 / Rendering huge pull requests in the GitHub Copilot app",
-      "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
-      "importance_score": 0.8043,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-24",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
     }
   ]
 }
