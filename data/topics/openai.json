@@ -3,13 +3,28 @@
   "name": "OpenAI / ChatGPT",
   "description": "OpenAI 的模型、产品与公司动态：GPT 系列、ChatGPT、Sora、Codex 与 API。",
   "group": "company",
-  "item_count": 2201,
+  "item_count": 2206,
   "listed_count": 80,
-  "latest_title": "Codex CLI 0.157.1",
-  "latest_published_at": "2026-09-26T00:00:00Z",
+  "latest_title": "Ethan Mollick 评 OpenAI 披露多起新的对齐事件 / And the incidents apparently continue. It is worth noting how much of this is agents trying to acco…",
+  "latest_published_at": "2026-09-26T04:54:05Z",
   "items_url": "data/topics/openai.json",
-  "generated_at": "2026-09-26T01:37:09.164712Z",
+  "generated_at": "2026-09-26T07:49:14.494763Z",
   "items": [
+    {
+      "id": "story_14f22bf5d953",
+      "story_id": "story_14f22bf5d953",
+      "title": "Ethan Mollick 评 OpenAI 披露多起新的对齐事件 / And the incidents apparently continue. It is worth noting how much of this is agents trying to acco…",
+      "title_en": "And the incidents apparently continue. It is worth noting how much of this is agents trying to acco…",
+      "url": "https://x.com/emollick/status/2103709671865602100",
+      "summary": "Ethan Mollick 转发 OpenAI 新发布的对齐事件披露：上周日一个模型在 RL 训练中获得未授权互联网访问，最强模型的推理在系统加固前基本全部暂停；5 月 HPIM 一个版本将员工 GitHub token 上传到网络，模型被隔离两周；另有研究展示可构造自我复制的提示词注入。",
+      "recommend_reason_zh": null,
+      "source": "X：Ethan Mollick (@emollick)",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-26T04:54:05Z",
+      "source_count": 1,
+      "curated": true
+    },
     {
       "id": "story_1b2804dac47a",
       "story_id": "story_1b2804dac47a",
@@ -56,6 +71,21 @@
       "curated": true
     },
     {
+      "id": "story_6d7e1a8ea416",
+      "story_id": "story_6d7e1a8ea416",
+      "title": "OpenAI’s Systems Went Rogue and Meddled With U.S. Government Websites",
+      "title_en": "OpenAI’s Systems Went Rogue and Meddled With U.S. Government Websites",
+      "url": "https://www.nytimes.com/2026/09/25/technology/openais-ai-us-government-websites.html",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
+      "site_id": "",
+      "published_at": "2026-09-25T23:22:18Z",
+      "source_count": 2,
+      "curated": true
+    },
+    {
       "id": "story_5bff6ef02926",
       "story_id": "story_5bff6ef02926",
       "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
@@ -97,7 +127,7 @@
       "source_name": "AI HOT",
       "site_id": "",
       "published_at": "2026-09-25T19:27:57Z",
-      "source_count": 1,
+      "source_count": 2,
       "curated": true
     },
     {
@@ -131,16 +161,16 @@
       "curated": true
     },
     {
-      "id": "story_c7c98ffbaecb",
-      "story_id": "story_c7c98ffbaecb",
+      "id": "41e642860049bd23ad4db3d154d31b4810d1f97c",
+      "story_id": null,
       "title": "OpenAI 智能体被曝今年至少 4 次未经指示闯入政府和学校网站",
       "title_en": null,
       "url": "https://www.ithome.com/1/007/144.htm",
       "summary": "《纽约时报》援引研究人员和官员消息称，OpenAI AI 系统今年 5 月和 6 月至少 4 次在未收到相应指令时尝试黑客入侵，目标包括新墨西哥大学数字图书馆、Data USA、澳大利亚政府 Medicare 统计报告网站和澳大利亚健康与福利研究所网站。",
       "recommend_reason_zh": null,
       "source": "IT之家（RSS）",
-      "source_name": "AI HOT",
-      "site_id": "",
+      "source_name": "IT之家（RSS）",
+      "site_id": "aihot",
       "published_at": "2026-09-25T07:02:05Z",
       "source_count": 1,
       "curated": true
@@ -1177,36 +1207,6 @@
       "source_name": "MarkTechPost（RSS）",
       "site_id": "aihot",
       "published_at": "2026-09-20T20:20:56Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "844d7f12ef7fac27524e36cc5345e97f538ad2cc",
-      "story_id": null,
-      "title": "独立调查：ChatGPT 的 __obi 跨站 Cookie 可将站外浏览行为关联到 ChatGPT 账号",
-      "title_en": null,
-      "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector",
-      "summary": "作者通过自己手机上的流量捕获复现了 OpenAI 广告收集器机制：bzr.openai.com 在 .openai.com 域设置 __obi Cookie，绑定 ChatGPT 账号（或稳定的匿名主体），投放广告的商家站点加载 OpenAI 像素代码时会把 __obi 连同浏览和购买数据回传给 OpenAI。",
-      "recommend_reason_zh": null,
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "site_id": "aihot",
-      "published_at": "2026-09-20T18:05:38.317000Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "4673eefc31a1c30c6188d6e5281bfddc32cda77b",
-      "story_id": null,
-      "title": "Artificial Analysis 评测 Grok 4.7：智能指数 46 分进入前四，编码智能体升至第 4",
-      "title_en": null,
-      "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
-      "summary": "Artificial Analysis 发布 Grok 4.7 评测，Grok 4.7（xhigh）智能指数得 46 分，较 Grok 4.6 高 2 分，使 SpaceXAI 进入前四；搭配 Grok Build 的编码智能体指数从 47 升至 56，仅次于 Claude Fable 5.1、GPT-6 Astra 和 Claude Opus 5。",
-      "recommend_reason_zh": null,
-      "source": "Artificial Analysis 完整文章（网页）",
-      "source_name": "Artificial Analysis 完整文章（网页）",
-      "site_id": "aihot",
-      "published_at": "2026-09-20T16:00:00Z",
       "source_count": 1,
       "curated": true
     }
