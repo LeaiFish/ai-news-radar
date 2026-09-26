@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-26T09:55:09.388653Z",
+  "generated_at": "2026-09-26T13:11:17.337333Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
@@ -12,24 +12,24 @@
     "2026-09-25",
     "2026-09-26"
   ],
-  "story_count": 1374,
-  "unique_story_count": 1267,
+  "story_count": 1350,
+  "unique_story_count": 1279,
   "counts": {
     "by_company_topic": {
-      "anthropic": 181,
+      "anthropic": 179,
       "apple": 14,
       "cursor": 5,
-      "deepseek": 14,
+      "deepseek": 13,
       "doubao": 11,
-      "google-gemini": 53,
+      "google-gemini": 49,
       "huggingface": 18,
       "hunyuan": 3,
       "kimi": 11,
       "meta-llama": 3,
-      "microsoft": 34,
+      "microsoft": 32,
       "minimax": 2,
-      "nvidia": 27,
-      "openai": 234,
+      "nvidia": 26,
+      "openai": 235,
       "openrouter": 11,
       "perplexity": 10,
       "qwen": 17,
@@ -37,21 +37,21 @@
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 221,
+      "agent-ecosystem": 216,
       "monetization": 24,
       "product-entry": 1,
-      "workplace": 53
+      "workplace": 51
     },
     "by_importance_label": {
-      "值得关注": 1118,
-      "多源热议": 27,
-      "官方更新": 58,
-      "行业动态": 171
+      "值得关注": 1097,
+      "多源热议": 28,
+      "官方更新": 56,
+      "行业动态": 169
     },
     "by_source_count_bucket": {
-      "1": 1290,
+      "1": 1265,
       "2": 54,
-      "3+": 30
+      "3+": 31
     }
   },
   "top_stories": [
@@ -95,22 +95,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_5b20c5b40350",
-      "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-      "url": "https://swarmtraces.org",
-      "importance_score": 0.8486,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "openai",
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_7725937fd90b",
       "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school - Pentagon",
       "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
@@ -135,31 +119,19 @@
       ]
     },
     {
-      "story_id": "story_1b2804dac47a",
-      "title": "Codex CLI 0.157.1",
-      "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.842,
-      "importance_label": "官方更新",
-      "source_count": 1,
+      "story_id": "story_5b20c5b40350",
+      "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+      "url": "https://swarmtraces.org",
+      "importance_score": 0.8414,
+      "importance_label": "多源热议",
+      "source_count": 4,
       "archive_date": "2026-09-26",
       "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a304aaf0894c",
-      "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-      "importance_score": 0.84,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "microsoft"
+        "openai",
+        "huggingface"
       ],
       "lens_topics": [
-        "workplace"
+        "agent-ecosystem"
       ]
     },
     {
@@ -204,6 +176,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_1b2804dac47a",
+      "title": "Codex CLI 0.157.1",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8348,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-26",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_a809a02e7e68",
       "title": "OpenAI 为 GPT-6 推出改进的提示词缓存系统与诊断工具 / Better prompt caching for GPT-6",
       "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
@@ -215,6 +200,21 @@
         "openai"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_a304aaf0894c",
+      "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
+      "importance_score": 0.8334,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-09-26",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_1f10ad842f68",
@@ -326,19 +326,6 @@
       ]
     },
     {
-      "story_id": "story_31f780f81dc1",
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "url": "https://openai.com/index/proaction",
-      "importance_score": 0.8251,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_52b87179db37",
       "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
       "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
@@ -394,14 +381,16 @@
       ]
     },
     {
-      "story_id": "story_07c3181c791a",
-      "title": "Enterprise managed settings in-product validator",
-      "url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
-      "importance_score": 0.8187,
+      "story_id": "story_31f780f81dc1",
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "url": "https://openai.com/index/proaction",
+      "importance_score": 0.8184,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-26",
-      "company_topics": [],
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
@@ -462,33 +451,6 @@
       ]
     },
     {
-      "story_id": "story_3086a0a8d592",
-      "title": "Agentic autofix now uses Copilot Memory",
-      "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
-      "importance_score": 0.8139,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_d32b9e9d97fb",
-      "title": "Usage metrics API adds pull request review stages",
-      "url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
-      "importance_score": 0.8137,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-26",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_5d947096dc73",
       "title": "通过整个代码库索引加快 C++ 代码智能 / Faster C++ code intelligence with whole codebase indexing",
       "url": "https://github.blog/changelog/2026-09-22-faster-c-code-intelligence-with-whole-codebase-indexing",
@@ -500,34 +462,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_383980d6bba6",
-      "title": "GitHub Copilot weekly releases — September 21",
-      "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
-      "importance_score": 0.8124,
+      "story_id": "story_07c3181c791a",
+      "title": "Enterprise managed settings in-product validator",
+      "url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
+      "importance_score": 0.8115,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-26",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_42a4c6c0a2d7",
-      "title": "Updates to GitHub Copilot for Slack and Microsoft Teams",
-      "url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
-      "importance_score": 0.8121,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_072908c15f30",
@@ -585,14 +528,74 @@
       ]
     },
     {
-      "story_id": "story_8129dd850da5",
-      "title": "Private saved views for repository issues and “Relates to” issue relationship is generally available",
-      "url": "https://github.blog/changelog/2026-09-25-personal-saved-views-for-repository-issues-and-more",
-      "importance_score": 0.8093,
+      "story_id": "story_8242d9eaeeac",
+      "title": "使用 GPT-6 Astra 并行将研究时间和成本减少一半 / Parallel cut research time and cost in half with GPT‑6 Astra",
+      "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "importance_score": 0.808,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c26c69f45202",
+      "title": "OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用 / What Is Nemotron 3.5 Lightning",
+      "url": "https://openrouter.ai/blog/insights/nemotron-3-5-lightning",
+      "importance_score": 0.8078,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-22",
+      "company_topics": [
+        "nvidia",
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_3086a0a8d592",
+      "title": "Agentic autofix now uses Copilot Memory",
+      "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+      "importance_score": 0.8073,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-26",
-      "company_topics": [],
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_9ccba3a0e82c",
+      "title": "Is Seedance Open Source?",
+      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
+      "importance_score": 0.8072,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3ff23fcfa0e5",
+      "title": "Compressing Streaming Neural Audio Encoders via Latent-Space Distillation",
+      "url": "https://machinelearning.apple.com/research/latent-space-distillation",
+      "importance_score": 0.8072,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-24",
+      "company_topics": [
+        "apple"
+      ],
       "lens_topics": []
     }
   ]
