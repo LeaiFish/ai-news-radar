@@ -8,7 +8,7 @@
   "latest_title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
   "latest_published_at": "2026-09-26T14:03:54Z",
   "items_url": "data/topics/huggingface.json",
-  "generated_at": "2026-09-26T19:53:48.123489Z",
+  "generated_at": "2026-09-26T23:39:15.561567Z",
   "items": [
     {
       "id": "story_a7326ac13231",
@@ -26,8 +26,8 @@
       "curated": true
     },
     {
-      "id": "story_5b20c5b40350",
-      "story_id": "story_5b20c5b40350",
+      "id": "story_21d746909977",
+      "story_id": "story_21d746909977",
       "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
       "title_en": null,
       "url": "https://swarmtraces.org",
@@ -37,14 +37,14 @@
       "source_name": "AI HOT",
       "site_id": "",
       "published_at": "2026-09-25T23:59:47.248000Z",
-      "source_count": 4,
+      "source_count": 2,
       "curated": true
     },
     {
       "id": "f5b7e831c7f6fe4d375dacbef0abf403bb826cf4",
       "story_id": null,
       "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
-      "title_en": "Revealing the details of how OpenAI agents hacked Hugging Face",
+      "title_en": null,
       "url": "https://news.ycombinator.com/item?id=49849985",
       "summary": "",
       "recommend_reason_zh": null,
@@ -56,31 +56,31 @@
       "curated": false
     },
     {
-      "id": "story_5bff6ef02926",
-      "story_id": "story_5bff6ef02926",
-      "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-      "title_en": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+      "id": "b2755019347db8d310898ae0261ef557c5468804",
+      "story_id": null,
+      "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
+      "title_en": null,
       "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
       "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
       "recommend_reason_zh": null,
       "source": "X：Yuchen Jin (@Yuchenj_UW)",
-      "source_name": "AI HOT",
-      "site_id": "",
+      "source_name": "X：Yuchen Jin (@Yuchenj_UW)",
+      "site_id": "aihot",
       "published_at": "2026-09-25T20:55:22Z",
       "source_count": 1,
       "curated": true
     },
     {
-      "id": "story_1a994fa02f8d",
-      "story_id": "story_1a994fa02f8d",
+      "id": "bb0c0accef622037412ecefca34b2b7b8dec4c01",
+      "story_id": null,
       "title": "Researchers add details to the Hugging Face incident, including OpenAI agents creating ~1M shortened URLs to encode information in an attempt to solve CAPTCHAs (New York Times)",
-      "title_en": "Researchers add details to the Hugging Face incident, including OpenAI agents creating ~1M shortened URLs to encode information in an attempt to solve CAPTCHAs (New York Times)",
+      "title_en": null,
       "url": "https://www.techmeme.com/260925/p18",
       "summary": "",
       "recommend_reason_zh": null,
       "source": "Techmeme",
-      "source_name": "TechURLs",
-      "site_id": "",
+      "source_name": "Techmeme",
+      "site_id": "techurls",
       "published_at": "2026-09-25T20:35:49Z",
       "source_count": 1,
       "curated": false
@@ -337,6 +337,21 @@
       "source_name": "Techmeme",
       "site_id": "techurls",
       "published_at": "2026-09-21T18:15:01Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "94a944f4231c956e6dff448941455466df478228",
+      "story_id": null,
+      "title": "US Treasury Secretary Scott Bessent says OpenAI's Hugging Face hacking incident is \"the responsibility of the OpenAI management, not a bunch of agents\" (Yash Roy/Bloomberg)",
+      "title_en": null,
+      "url": "https://www.techmeme.com/260921/p34",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "Techmeme",
+      "source_name": "Techmeme",
+      "site_id": "techurls",
+      "published_at": "2026-09-21T13:55:01Z",
       "source_count": 1,
       "curated": false
     },
@@ -1192,21 +1207,6 @@
       "source_name": "Hugging Face Blog",
       "site_id": "official_ai",
       "published_at": "2026-07-27T00:00:00Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "f8aff7e85b5148594e968854ce8edf596c17f4e4",
-      "story_id": null,
-      "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
-      "title_en": null,
-      "url": "https://huggingface.co/blog/nunchaku-diffusers",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "Hugging Face Blog",
-      "source_name": "Hugging Face Blog",
-      "site_id": "official_ai",
-      "published_at": "2026-07-23T00:00:00Z",
       "source_count": 1,
       "curated": true
     }
