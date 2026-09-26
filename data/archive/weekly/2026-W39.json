@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-25T20:31:00.992683Z",
+  "generated_at": "2026-09-25T23:57:52.912182Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
@@ -12,24 +12,24 @@
     "2026-09-25",
     "2026-09-26"
   ],
-  "story_count": 1380,
-  "unique_story_count": 1193,
+  "story_count": 1381,
+  "unique_story_count": 1221,
   "counts": {
     "by_company_topic": {
-      "anthropic": 182,
+      "anthropic": 178,
       "apple": 14,
       "cursor": 4,
       "deepseek": 14,
       "doubao": 11,
-      "google-gemini": 53,
-      "huggingface": 16,
+      "google-gemini": 52,
+      "huggingface": 19,
       "hunyuan": 3,
       "kimi": 11,
       "meta-llama": 3,
       "microsoft": 37,
       "minimax": 2,
-      "nvidia": 27,
-      "openai": 223,
+      "nvidia": 28,
+      "openai": 230,
       "openrouter": 12,
       "perplexity": 10,
       "qwen": 17,
@@ -37,39 +37,24 @@
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 204,
+      "agent-ecosystem": 211,
       "monetization": 24,
       "product-entry": 1,
       "workplace": 56
     },
     "by_importance_label": {
-      "值得关注": 1126,
+      "值得关注": 1122,
       "多源热议": 24,
-      "官方更新": 57,
-      "行业动态": 173
+      "官方更新": 60,
+      "行业动态": 175
     },
     "by_source_count_bucket": {
-      "1": 1303,
-      "2": 50,
+      "1": 1301,
+      "2": 53,
       "3+": 27
     }
   },
   "top_stories": [
-    {
-      "story_id": "story_a304aaf0894c",
-      "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-      "importance_score": 0.8706,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
     {
       "story_id": "story_3c48d5bb2a9e",
       "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50% / Introducing GPT-6 Sol and Luna",
@@ -97,6 +82,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a304aaf0894c",
+      "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
+      "importance_score": 0.8621,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-09-26",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_9edda83740af",
       "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
@@ -113,7 +113,7 @@
       "story_id": "story_31f780f81dc1",
       "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
       "url": "https://openai.com/index/proaction",
-      "importance_score": 0.8561,
+      "importance_score": 0.8475,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-26",
@@ -134,22 +134,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3086a0a8d592",
-      "title": "Agentic autofix now uses Copilot Memory",
-      "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
-      "importance_score": 0.8442,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_4a359665fbcd",
       "title": "Agents can now set up your website’s security with Turnstile Spin",
       "url": "https://blog.cloudflare.com/turnstile-spin",
@@ -163,34 +147,15 @@
       ]
     },
     {
-      "story_id": "story_383980d6bba6",
-      "title": "GitHub Copilot weekly releases — September 21",
-      "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
-      "importance_score": 0.8424,
+      "story_id": "story_07c3181c791a",
+      "title": "Enterprise managed settings in-product validator",
+      "url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
+      "importance_score": 0.8426,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-26",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_42a4c6c0a2d7",
-      "title": "Updates to GitHub Copilot for Slack and Microsoft Teams",
-      "url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
-      "importance_score": 0.842,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_2f7e483f74c2",
@@ -208,17 +173,6 @@
       ]
     },
     {
-      "story_id": "story_72aea9f90037",
-      "title": "Changes to query results in the GitHub Actions API and UI",
-      "url": "https://github.blog/changelog/2026-09-25-changes-to-query-results-in-the-github-actions-api-and-ui",
-      "importance_score": 0.8383,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-26",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_bf530929af3e",
       "title": "Codex CLI 0.156.1",
       "url": "https://developers.openai.com/codex/changelog",
@@ -229,6 +183,17 @@
       "company_topics": [
         "openai"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d32b9e9d97fb",
+      "title": "Usage metrics API adds pull request review stages",
+      "url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
+      "importance_score": 0.8369,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-26",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -243,6 +208,52 @@
         "anthropic"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_3086a0a8d592",
+      "title": "Agentic autofix now uses Copilot Memory",
+      "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+      "importance_score": 0.8358,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-26",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_383980d6bba6",
+      "title": "GitHub Copilot weekly releases — September 21",
+      "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
+      "importance_score": 0.8341,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-26",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_42a4c6c0a2d7",
+      "title": "Updates to GitHub Copilot for Slack and Microsoft Teams",
+      "url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
+      "importance_score": 0.8338,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-26",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_a809a02e7e68",
@@ -302,6 +313,28 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_8129dd850da5",
+      "title": "Private saved views for repository issues and “Relates to” issue relationship is generally available",
+      "url": "https://github.blog/changelog/2026-09-25-personal-saved-views-for-repository-issues-and-more",
+      "importance_score": 0.8318,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_72aea9f90037",
+      "title": "Changes to query results in the GitHub Actions API and UI",
+      "url": "https://github.blog/changelog/2026-09-25-changes-to-query-results-in-the-github-actions-api-and-ui",
+      "importance_score": 0.8298,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c64a4fb7a68e",
       "title": "CodeQL 2.27.1 添加了 C 和 C++ 查询以及 Kotlin 2.4.20 支持 / CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support",
       "url": "https://github.blog/changelog/2026-09-25-codeql-2-27-1-adds-c-and-c-query-and-kotlin-2-4-20-support",
@@ -349,19 +382,6 @@
       "source_count": 1,
       "archive_date": "2026-09-22",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_53b278107409",
-      "title": "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险的认定 / U.S. appeals court upholds designation of Anthropic as supply chain risk",
-      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-      "importance_score": 0.826,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "anthropic"
-      ],
       "lens_topics": []
     },
     {
@@ -435,6 +455,19 @@
       ]
     },
     {
+      "story_id": "story_53b278107409",
+      "title": "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险的认定 / U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+      "importance_score": 0.8179,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-09-26",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_6bb8789d9f07",
       "title": "Claude Opus 5.5 现已在 GitHub Copilot 中提供 / Claude Opus 5.5 is now available in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot",
@@ -460,19 +493,6 @@
       "archive_date": "2026-09-23",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7535491ae20c",
-      "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes， Claude can do Nine Loops",
-      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-      "importance_score": 0.8171,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "anthropic"
       ],
       "lens_topics": []
     },
@@ -568,34 +588,6 @@
       ],
       "lens_topics": [
         "workplace"
-      ]
-    },
-    {
-      "story_id": "story_8242d9eaeeac",
-      "title": "使用 GPT-6 Astra 并行将研究时间和成本减少一半 / Parallel cut research time and cost in half with GPT‑6 Astra",
-      "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "importance_score": 0.808,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-23",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_45b4b65d9e31",
-      "title": "OpenAI 智能体集群数月来入侵在线数据库搜寻冷门数据，Transluce 与澳政府相继披露 / For months， OpenAI's agent swarms have been attacking online databases to find obscure facts",
-      "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts",
-      "importance_score": 0.8078,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-09-26",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
       ]
     }
   ]
