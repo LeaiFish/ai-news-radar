@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-27T10:35:07.326068Z",
+  "generated_at": "2026-09-27T15:40:37.312844Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
@@ -13,24 +13,24 @@
     "2026-09-26",
     "2026-09-27"
   ],
-  "story_count": 1437,
-  "unique_story_count": 1361,
+  "story_count": 1432,
+  "unique_story_count": 1370,
   "counts": {
     "by_company_topic": {
       "anthropic": 190,
-      "apple": 16,
+      "apple": 15,
       "cursor": 5,
       "deepseek": 14,
       "doubao": 11,
-      "google-gemini": 52,
-      "huggingface": 20,
+      "google-gemini": 54,
+      "huggingface": 19,
       "hunyuan": 3,
       "kimi": 11,
       "meta-llama": 3,
-      "microsoft": 34,
+      "microsoft": 33,
       "minimax": 2,
       "nvidia": 28,
-      "openai": 256,
+      "openai": 258,
       "openrouter": 11,
       "perplexity": 10,
       "qwen": 17,
@@ -38,21 +38,21 @@
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 231,
+      "agent-ecosystem": 228,
       "monetization": 25,
       "product-entry": 1,
-      "workplace": 53
+      "workplace": 52
     },
     "by_importance_label": {
-      "值得关注": 1175,
-      "多源热议": 32,
+      "值得关注": 1172,
+      "多源热议": 31,
       "官方更新": 56,
-      "行业动态": 174
+      "行业动态": 173
     },
     "by_source_count_bucket": {
-      "1": 1345,
+      "1": 1341,
       "2": 57,
-      "3+": 35
+      "3+": 34
     }
   },
   "top_stories": [
@@ -64,6 +64,19 @@
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-09-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f7a9ca52c4e3",
+      "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
+      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
+      "importance_score": 0.8671,
+      "importance_label": "多源热议",
+      "source_count": 5,
+      "archive_date": "2026-09-27",
       "company_topics": [
         "openai"
       ],
@@ -92,19 +105,6 @@
       "archive_date": "2026-09-24",
       "company_topics": [
         "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f7a9ca52c4e3",
-      "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
-      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
-      "importance_score": 0.8547,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-09-27",
-      "company_topics": [
-        "openai"
       ],
       "lens_topics": []
     },
@@ -314,21 +314,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_11b21c94e979",
-      "title": "OpenAI 报告一起智能体利用 DNS 访问外部聊天机器人的失控事件",
-      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
-      "importance_score": 0.8287,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-27",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_a2908ae72b38",
       "title": "弃用通知：全平台 CodeQL 捆绑包 / Deprecation notice: All-platform CodeQL bundle",
       "url": "https://github.blog/changelog/2026-09-22-deprecation-notice-all-platform-codeql-bundle",
@@ -452,6 +437,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_11b21c94e979",
+      "title": "OpenAI 报告一起智能体利用 DNS 访问外部聊天机器人的失控事件",
+      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
+      "importance_score": 0.816,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-09-27",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_31f780f81dc1",
       "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
       "url": "https://openai.com/index/proaction",
@@ -474,22 +474,6 @@
       "archive_date": "2026-09-24",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_a7326ac13231",
-      "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
-      "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
-      "importance_score": 0.8134,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-27",
-      "company_topics": [
-        "openai",
-        "huggingface"
       ],
       "lens_topics": [
         "agent-ecosystem"
@@ -599,6 +583,19 @@
       "source_count": 1,
       "archive_date": "2026-09-26",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9ccba3a0e82c",
+      "title": "Is Seedance Open Source?",
+      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
+      "importance_score": 0.8072,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-25",
+      "company_topics": [
+        "openrouter"
+      ],
       "lens_topics": []
     }
   ]
