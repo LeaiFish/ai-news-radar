@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-21",
   "week_end": "2026-09-27",
-  "generated_at": "2026-09-27T08:18:40.629654Z",
+  "generated_at": "2026-09-27T10:35:07.326068Z",
   "daily_dates": [
     "2026-09-22",
     "2026-09-23",
@@ -13,24 +13,24 @@
     "2026-09-26",
     "2026-09-27"
   ],
-  "story_count": 1442,
-  "unique_story_count": 1348,
+  "story_count": 1437,
+  "unique_story_count": 1361,
   "counts": {
     "by_company_topic": {
-      "anthropic": 191,
+      "anthropic": 190,
       "apple": 16,
       "cursor": 5,
       "deepseek": 14,
       "doubao": 11,
       "google-gemini": 52,
-      "huggingface": 19,
+      "huggingface": 20,
       "hunyuan": 3,
       "kimi": 11,
       "meta-llama": 3,
       "microsoft": 34,
       "minimax": 2,
-      "nvidia": 29,
-      "openai": 258,
+      "nvidia": 28,
+      "openai": 256,
       "openrouter": 11,
       "perplexity": 10,
       "qwen": 17,
@@ -44,15 +44,15 @@
       "workplace": 53
     },
     "by_importance_label": {
-      "值得关注": 1178,
-      "多源热议": 33,
+      "值得关注": 1175,
+      "多源热议": 32,
       "官方更新": 56,
-      "行业动态": 175
+      "行业动态": 174
     },
     "by_source_count_bucket": {
-      "1": 1349,
+      "1": 1345,
       "2": 57,
-      "3+": 36
+      "3+": 35
     }
   },
   "top_stories": [
@@ -92,6 +92,19 @@
       "archive_date": "2026-09-24",
       "company_topics": [
         "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f7a9ca52c4e3",
+      "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
+      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
+      "importance_score": 0.8547,
+      "importance_label": "多源热议",
+      "source_count": 4,
+      "archive_date": "2026-09-27",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -301,6 +314,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_11b21c94e979",
+      "title": "OpenAI 报告一起智能体利用 DNS 访问外部聊天机器人的失控事件",
+      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
+      "importance_score": 0.8287,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-09-27",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_a2908ae72b38",
       "title": "弃用通知：全平台 CodeQL 捆绑包 / Deprecation notice: All-platform CodeQL bundle",
       "url": "https://github.blog/changelog/2026-09-22-deprecation-notice-all-platform-codeql-bundle",
@@ -382,22 +410,6 @@
       ]
     },
     {
-      "story_id": "story_a7326ac13231",
-      "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
-      "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
-      "importance_score": 0.8179,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-27",
-      "company_topics": [
-        "openai",
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_6bb8789d9f07",
       "title": "Claude Opus 5.5 现已在 GitHub Copilot 中提供 / Claude Opus 5.5 is now available in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot",
@@ -462,6 +474,22 @@
       "archive_date": "2026-09-24",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_a7326ac13231",
+      "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
+      "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+      "importance_score": 0.8134,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-09-27",
+      "company_topics": [
+        "openai",
+        "huggingface"
       ],
       "lens_topics": [
         "agent-ecosystem"
@@ -571,32 +599,6 @@
       "source_count": 1,
       "archive_date": "2026-09-26",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9ccba3a0e82c",
-      "title": "Is Seedance Open Source?",
-      "url": "https://openrouter.ai/blog/insights/seedance-2-5-open-source",
-      "importance_score": 0.8072,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-25",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3ff23fcfa0e5",
-      "title": "Compressing Streaming Neural Audio Encoders via Latent-Space Distillation",
-      "url": "https://machinelearning.apple.com/research/latent-space-distillation",
-      "importance_score": 0.8072,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-24",
-      "company_topics": [
-        "apple"
-      ],
       "lens_topics": []
     }
   ]
