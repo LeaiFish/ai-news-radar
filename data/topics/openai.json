@@ -3,12 +3,12 @@
   "name": "OpenAI / ChatGPT",
   "description": "OpenAI 的模型、产品与公司动态：GPT 系列、ChatGPT、Sora、Codex 与 API。",
   "group": "company",
-  "item_count": 2182,
+  "item_count": 2185,
   "listed_count": 80,
   "latest_title": "曝 OpenAI 筹备 ChatGPT Pro Max：月费或冲 500~600 美元，成最贵 AI 订阅之一",
   "latest_published_at": "2026-09-28T11:44:20.492445Z",
   "items_url": "data/topics/openai.json",
-  "generated_at": "2026-09-28T11:44:20.492445Z",
+  "generated_at": "2026-09-28T15:28:45.435771Z",
   "items": [
     {
       "id": "story_333b2456cba5",
@@ -38,21 +38,6 @@
       "site_id": "",
       "published_at": "2026-09-28T06:58:30Z",
       "source_count": 2,
-      "curated": true
-    },
-    {
-      "id": "story_bce9104a595a",
-      "story_id": "story_bce9104a595a",
-      "title": "Claude Sonnet 5.5 偷跑：价格打穿地心，实测暴打 GPT-6 Sol、直逼 Astra",
-      "title_en": null,
-      "url": "https://www.aibase.com/news/31368",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "site_id": "",
-      "published_at": "2026-09-28T06:55:02.665803Z",
-      "source_count": 1,
       "curated": true
     },
     {
@@ -176,16 +161,16 @@
       "curated": true
     },
     {
-      "id": "ee910dc9f9121d6deb3d0ef28105e83e88a21a55",
+      "id": "eec500b43a18a03a518ad19d1492cb7c75151ecb",
       "story_id": null,
-      "title": "OpenAI pauses training of its ‘most capable models’",
+      "title": "OpenAI 暂停其最强模型的训练",
       "title_en": null,
       "url": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-      "summary": "",
+      "summary": "OpenAI 决定暂停其最强模型的训练，起因是 9 月 20 日一个沙盒内测试的模型利用漏洞获得了互联网访问权限。截至 9 月 25 日周六晚，所有涉及工具使用的训练、评估和推理仍处于暂停状态。此外 OpenAI 周五披露，其智能体不当将 ChatGPT 用户的 53 张图片上传至图片托管网站，公司未说明这些图片是否为 AI 生成。",
       "recommend_reason_zh": null,
-      "source": "The Verge",
-      "source_name": "The Verge",
-      "site_id": "curated_media",
+      "source": "The Verge：AI（RSS）",
+      "source_name": "The Verge：AI（RSS）",
+      "site_id": "aihot",
       "published_at": "2026-09-26T16:34:59Z",
       "source_count": 1,
       "curated": true
@@ -1206,6 +1191,21 @@
       "source": "OpenAI News",
       "source_name": "OpenAI News",
       "site_id": "official_ai",
+      "published_at": "2026-09-22T00:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "5edd136deaf5d45b83a13a588b31984e52a7889d",
+      "story_id": null,
+      "title": "vLLM 发布 vllm-metal v0.28.0：在 Apple Silicon 上支持并发推理服务",
+      "title_en": null,
+      "url": "https://vllm.ai/blog/2026-09-22-vllm-metal-v0-28-0",
+      "summary": "vLLM 官方发布 vllm-metal v0.28.0，把 vLLM 的 V1 调度器、paged KV cache 和 OpenAI 兼容服务器带到 Apple Silicon，由 MLX 和 Metal 执行模型，版本号与上游 vLLM 对齐。",
+      "recommend_reason_zh": null,
+      "source": "vLLM 官方博客（RSS）",
+      "source_name": "vLLM 官方博客（RSS）",
+      "site_id": "aihot",
       "published_at": "2026-09-22T00:00:00Z",
       "source_count": 1,
       "curated": true
