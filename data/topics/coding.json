@@ -3,12 +3,12 @@
   "name": "AI 编码",
   "description": "AI 写代码的一切：编码助手、代码模型、Vibe Coding 与开发工作流。",
   "group": "tech",
-  "item_count": 4,
-  "listed_count": 4,
+  "item_count": 5,
+  "listed_count": 5,
   "latest_title": "Boris Cherny, Claude Code creator at Anthrpic: \"The more general model will always outperform the more specific model. Don't try to use tiny models for stuff. Don't try to fine-tune. Don't try to do any of this stuff. T…",
   "latest_published_at": "2026-09-28T06:37:51Z",
   "items_url": "data/topics/coding.json",
-  "generated_at": "2026-09-28T07:20:53.543329Z",
+  "generated_at": "2026-09-28T11:44:20.492445Z",
   "items": [
     {
       "id": "story_18733a04b420",
@@ -69,6 +69,21 @@
       "published_at": "2026-09-27T16:50:19Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "story_2f15dd10fd58",
+      "story_id": "story_2f15dd10fd58",
+      "title": "NVIDIA 发布开源运行时 OpenShell，为 AI Agent 提供权限管控与安全沙箱 / Add Runtime Controls to AI Agents with NVIDIA OpenShell",
+      "title_en": "Add Runtime Controls to AI Agents with NVIDIA OpenShell",
+      "url": "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell",
+      "summary": "NVIDIA 推出开源项目 NVIDIA OpenShell 0.1.0，这是一个用于定义和执行 AI Agent 访问权限的运行时。它通过沙箱执行、受控服务访问、凭证管理和形式化策略分析，在 Agent 工作负载外部强制实施权限控制。OpenShell 支持 Codex、Claude Code 等框架，允许团队在不重写 Agent 的情况下限制 API 操作、保护凭证并审查权限变更。Cadence、Slack 和 Gecko Robotics 等组织已在芯片设计、企业自动化和物理 AI 等领域采用该技术。",
+      "recommend_reason_zh": null,
+      "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-27T16:00:00Z",
+      "source_count": 1,
+      "curated": true
     }
   ]
 }

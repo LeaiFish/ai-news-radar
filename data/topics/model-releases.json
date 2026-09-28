@@ -3,13 +3,43 @@
   "name": "模型发布",
   "description": "新模型的发布、开源与迭代：旗舰更新、权重放出、性能与价格变化。",
   "group": "tech",
-  "item_count": 5,
-  "listed_count": 5,
-  "latest_title": "​费米宇宙重磅发布全球首款全链路量子增强大模型 FermiQLLM 1.0",
-  "latest_published_at": "2026-09-28T06:55:02.665803Z",
+  "item_count": 6,
+  "listed_count": 6,
+  "latest_title": "英伟达发布AI智能体安全平台，含实时隔离异常智能体的Sentry系统",
+  "latest_published_at": "2026-09-28T09:33:59Z",
   "items_url": "data/topics/model-releases.json",
-  "generated_at": "2026-09-28T07:20:53.543329Z",
+  "generated_at": "2026-09-28T11:44:20.492445Z",
   "items": [
+    {
+      "id": "story_e4e54fd17b80",
+      "story_id": "story_e4e54fd17b80",
+      "title": "英伟达发布AI智能体安全平台，含实时隔离异常智能体的Sentry系统",
+      "title_en": null,
+      "url": "https://www.ithome.com/1/007/937.htm",
+      "summary": "英伟达发布开放式AI智能体安全平台，包含OpenShell安全软件与NVIDIA Sentry看门狗系统。OpenShell可对运行在CPU的AI智能体设定边界，支持开源/闭源模型及第三方硬件。Sentry运行于BlueField-4 DPU上，能在芯片层面独立监控智能体行为，若检测到突破限制的行为，可在毫秒内将其隔离并停止运行。目前Anthropic、SpaceX等公司已与其合作采用该平台。",
+      "recommend_reason_zh": null,
+      "source": "IT之家（RSS）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-28T09:33:59Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "story_d0b08aebc6ad",
+      "story_id": "story_d0b08aebc6ad",
+      "title": "Fireworks AI 发布 Ember-1：基于 Kimi K3 的后训练模型，推理 Token 减少约 40% / Fireworks AI Releases Ember-1: A Post-Trained Kimi K3 That Uses About 40% Fewer Tokens",
+      "title_en": "Fireworks AI Releases Ember-1: A Post-Trained Kimi K3 That Uses About 40% Fewer Tokens",
+      "url": "https://www.marktechpost.com/2026/09/28/fireworks-ai-releases-ember-1-a-post-trained-kimi-k3-that-uses-about-40-fewer-tokens",
+      "summary": "Fireworks AI 推出 Ember-1，这是基于 Moonshot AI 开源权重 Kimi K3 进行后训练的专用模型。该模型通过优化内部推理过程，在保持任务准确率的同时将生成的推理 Token 减少了约 40%。与单纯降低推理努力程度不同，Ember-1 保留了有用的自我反思并削减了冗余循环。基准测试显示，其在 Terminal Bench 2.1 和 DeepSWE 1.1 上表现优于 K3 Max，且在生产环境 A/B 测试中实现了显著的成本节约。目前仅通过 Fireworks Serverless API 以研究预览形式提供，未开放权…",
+      "recommend_reason_zh": null,
+      "source": "MarkTechPost（RSS）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-28T07:22:33Z",
+      "source_count": 1,
+      "curated": true
+    },
     {
       "id": "story_7b1fb44b3b80",
       "story_id": "story_7b1fb44b3b80",
@@ -23,7 +53,7 @@
       "site_id": "",
       "published_at": "2026-09-28T06:55:02.665803Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_aa95aaf57c74",
@@ -67,21 +97,6 @@
       "source_name": "X（私有桥）",
       "site_id": "",
       "published_at": "2026-09-28T03:08:01Z",
-      "source_count": 1,
-      "curated": false
-    },
-    {
-      "id": "story_b40e0f0f0d03",
-      "story_id": "story_b40e0f0f0d03",
-      "title": "Nvidia 推出免费的 1 亿参数模型，可实时识别多达 8 个扬声器 / Nvidia drops a free 100M-parameter model that identifies up to eight speakers in real time",
-      "title_en": "Nvidia drops a free 100M-parameter model that identifies up to eight speakers in real time",
-      "url": "https://the-decoder.com/nvidia-drops-a-free-100m-parameter-model-that-identifies-up-to-eight-speakers-in-real-time",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "The Decoder AI News",
-      "source_name": "Curated Media",
-      "site_id": "",
-      "published_at": "2026-09-27T11:01:13Z",
       "source_count": 1,
       "curated": false
     }
