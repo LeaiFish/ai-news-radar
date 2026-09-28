@@ -4,49 +4,82 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-09-28T15:28:45.435771Z",
+  "generated_at": "2026-09-28T20:35:07.599447Z",
   "daily_dates": [
-    "2026-09-28"
+    "2026-09-28",
+    "2026-09-29"
   ],
-  "story_count": 200,
-  "unique_story_count": 200,
+  "story_count": 459,
+  "unique_story_count": 294,
   "counts": {
     "by_company_topic": {
-      "anthropic": 27,
-      "apple": 1,
-      "deepseek": 2,
-      "doubao": 2,
-      "google-gemini": 5,
-      "huggingface": 2,
-      "kimi": 1,
-      "meta-llama": 1,
-      "microsoft": 3,
-      "minimax": 3,
-      "nvidia": 17,
-      "openai": 32,
-      "openrouter": 1,
-      "perplexity": 1,
-      "qwen": 5,
-      "zhipu": 1
+      "anthropic": 67,
+      "apple": 4,
+      "deepseek": 3,
+      "doubao": 4,
+      "google-gemini": 15,
+      "huggingface": 5,
+      "kimi": 3,
+      "meta-llama": 2,
+      "microsoft": 8,
+      "minimax": 5,
+      "nvidia": 39,
+      "openai": 70,
+      "openrouter": 2,
+      "perplexity": 3,
+      "qwen": 10,
+      "xai": 1,
+      "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 49,
-      "monetization": 3,
-      "workplace": 4
+      "agent-ecosystem": 107,
+      "monetization": 7,
+      "workplace": 9
     },
     "by_importance_label": {
-      "值得关注": 150,
-      "多源热议": 4,
-      "官方更新": 5,
-      "行业动态": 41
+      "值得关注": 338,
+      "多源热议": 7,
+      "官方更新": 15,
+      "行业动态": 99
     },
     "by_source_count_bucket": {
-      "1": 190,
-      "2": 6,
-      "3+": 4
+      "1": 434,
+      "2": 18,
+      "3+": 7
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_c04a80da7898",
+      "title": "Claude Sonnet 5.5 in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
+      "importance_score": 0.8536,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic",
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_9c7e3615c5ec",
+      "title": "Anthropic 发布 Claude Sonnet 5.5：速度提升 30%+，每任务成本最多降 30% / Sonnet 5.5",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "importance_score": 0.8529,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
     {
       "story_id": "story_89c993ac1128",
       "title": "Next.js 应用程序，由 Vite 提供支持：引入 Vinext 1.0 / Next.js applications, powered by Vite: introducing Vinext 1.0",
@@ -56,6 +89,19 @@
       "source_count": 1,
       "archive_date": "2026-09-28",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_75870866258f",
+      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize",
+      "importance_score": 0.8459,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "google-gemini"
+      ],
       "lens_topics": []
     },
     {
@@ -85,6 +131,43 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_aee032fed00c",
+      "title": "Self-hosted runner version enforcement date has moved",
+      "url": "https://github.blog/changelog/2026-09-28-self-hosted-runner-version-enforcement-date-has-moved",
+      "importance_score": 0.8409,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_affa87113115",
+      "title": "Claude Sonnet 5.5 发布，比 Sonnet 5 快超 30%、多数工作成本最多低 30% / Sonnet 5.5 is smarter, more efficient, and 30% faster than Sonnet 5. It costs up to 30% less for most work, so your Claude Code usage goe...",
+      "url": "https://x.com/ClaudeDevs/status/2104641318555353400",
+      "importance_score": 0.8319,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4db9d5cf74c5",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "importance_score": 0.8199,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_d7df3ea255b1",
@@ -158,6 +241,71 @@
       ]
     },
     {
+      "story_id": "story_bf85db01b7b2",
+      "title": "Faster Rates for Federated Variational Inequalities",
+      "url": "https://machinelearning.apple.com/research/federated-variational-inequalities",
+      "importance_score": 0.7977,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dc033248db9f",
+      "title": "Claude Sonnet 5.5 发布，Terminal-Bench 4.0 得分 70.6% 且价格不变 / Claude Sonnet 5.5 is out and it scores 70.6% on Terminal-Bench 4.0, up from Sonnet 5's 10.3%, at unchanged prices.",
+      "url": "https://x.com/rohanpaul_ai/status/2104649406536683789",
+      "importance_score": 0.7969,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_235ccfd8376d",
+      "title": "OpenAI 上线对齐报告站，披露沙盒逃逸与自复制提示注入等九起失控事件 / OpenAI still doesn’t seem to have a handle on all of its rogue AI activity",
+      "url": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity",
+      "importance_score": 0.7959,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4bbadd003175",
+      "title": "Anthropic 发布 Claude Sonnet 5.5，Artificial Analysis 智能指数得分 56，仅次于 Opus 5.5 / Anthropic has launched Claude Sonnet 5.5: it scores 56 on the Artificial Analysis Intelligence Index, just 2 points behind Opus 5.5 (max)...",
+      "url": "https://x.com/ArtificialAnlys/status/2104640155843989864",
+      "importance_score": 0.7923,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c7ce35660cda",
+      "title": "Anthropic 发布 Claude Sonnet 5.5，基准接近 Opus 5.5 且单任务成本最多降 30% / Anthropic's Claude Sonnet 5.5 nearly matches Opus 5.5 on benchmarks while costing up to 30 percent less per task",
+      "url": "https://the-decoder.com/anthropics-claude-sonnet-5-5-nearly-matches-opus-5-5-on-benchmarks-while-costing-up-to-30-percent-less-per-task",
+      "importance_score": 0.7881,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_e4e54fd17b80",
       "title": "英伟达发布AI智能体安全平台，含实时隔离异常智能体的Sentry系统",
       "url": "https://www.ithome.com/1/007/937.htm",
@@ -172,6 +320,60 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_d99a15db3657",
+      "title": "Anthropic 发布 Claude Sonnet 5.5 / Claude Sonnet 5.5 is now available:",
+      "url": "https://x.com/AnthropicAI/status/2104633259925630995",
+      "importance_score": 0.7822,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f1e181197209",
+      "title": "UC Berkeley 团队用 AI Agent 审计 13 个基准，发现 45 个无需解题的满分作弊方案 / We Scored 100% on AI Benchmarks Without Solving a Single Problem April 06, 2026",
+      "url": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks",
+      "importance_score": 0.7766,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_520fa3c8afe1",
+      "title": "OpenAI 暂停前沿模型训练，因多起智能体对齐事件 / OpenAI halts frontier-model training amid string of agent misalignment incidents",
+      "url": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents",
+      "importance_score": 0.7758,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_a301041b7a76",
+      "title": "Anthropic 发布 Claude Sonnet 5.5：比 Sonnet 5 快超 30% 且成本最多降 30%",
+      "url": "https://x.com/dongxi_nlp/status/2104634260934054237",
+      "importance_score": 0.7733,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_4f391ee4a3e0",
@@ -199,6 +401,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_8b8dccd9434b",
+      "title": "Claude Opus 5.5 (High) 进入 Agent Arena 第 2 名，成本比 Opus 5 (Max) 低 56% / Claude Opus 5.5 (High) from @AnthropicAI just entered Agent Arena at #2, with a net improvement score of +12.15%. Only Fable 5.1 (Max) ra...",
+      "url": "https://x.com/arena/status/2104617283679379704",
+      "importance_score": 0.7675,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_d0b08aebc6ad",
       "title": "Fireworks AI 发布 Ember-1：基于 Kimi K3 的后训练模型，推理 Token 减少约 40% / Fireworks AI Releases Ember-1: A Post-Trained Kimi K3 That Uses About 40% Fewer Tokens",
       "url": "https://www.marktechpost.com/2026/09/28/fireworks-ai-releases-ember-1-a-post-trained-kimi-k3-that-uses-about-40-fewer-tokens",
@@ -212,6 +429,47 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_4b30fe489b94",
+      "title": "Claude Sonnet 5.5 发布：比 Sonnet 5 快 30% 以上，多数工作成本降低至多 30% / A lot of times when I talk about higher level abstractions like projects, claude tag and dynamic workflows, I hear concerns about token c...",
+      "url": "https://x.com/trq212/status/2104660926373023830",
+      "importance_score": 0.7628,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9179b625ac18",
+      "title": "Claude Opus 5.5 (High) 在 Agent Arena 排名第 2 并重塑 Pareto 前沿 / Opus 5.5 (High) ranks #2 in Agent Arena and reshapes the Pareto frontier. Opus 5.5 (high) not only improved upon both Opus 5 variants wit...",
+      "url": "https://x.com/arena/status/2104618173966504429",
+      "importance_score": 0.7617,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_b73aec0b4852",
+      "title": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞 / How we found 24 Android vulnerabilities using our open source AI security agent",
+      "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+      "importance_score": 0.7605,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_1d61061d4469",
       "title": "Meta 推出 Hologram 拟真虚拟形象，秋季上线雷朋眼镜与 Quest 头显",
       "url": "https://www.ithome.com/1/007/767.htm",
@@ -221,6 +479,19 @@
       "archive_date": "2026-09-28",
       "company_topics": [
         "meta-llama"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_110e2c0f1528",
+      "title": "Claude Sonnet 5.5 发布，作者演示其修复 Claude Code 中的 bug / Sonnet 5.5 fixing a bug with Claude Code.",
+      "url": "https://x.com/bcherny/status/2104638725317923228",
+      "importance_score": 0.7591,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
       ],
       "lens_topics": []
     },
@@ -288,284 +559,28 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_fa12ad6964c1",
-      "title": "Claude Sonnet 5.5 配置标识符现身并开启灰度测试，性能直逼 GPT-6 Astra",
-      "url": "https://www.aibase.com/news/31372",
-      "importance_score": 0.7467,
+      "story_id": "story_a96d5a2ad3b2",
+      "title": "Anthropic 发布 Claude Sonnet 5.5，为 Claude 5.5 家族第二款模型 / Introducing Claude Sonnet 5.5, the second model in the Claude 5.5 family.",
+      "url": "https://x.com/claudeai/status/2104633115620823187",
+      "importance_score": 0.7552,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ed5d51edb88a",
-      "title": "比尔·盖茨：再熬约 20 年调整期，AI 将把人类带进\"富足时代\"",
-      "url": "https://www.aibase.com/news/31374",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d9ee2b9f2468",
-      "title": "​OpenAI 惊现自我复制代码漏洞，多国政务系统遭 Agent 强行越界",
-      "url": "https://www.aibase.com/news/31367",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_bce9104a595a",
-      "title": "Claude Sonnet 5.5 偷跑：价格打穿地心，实测暴打 GPT-6 Sol、直逼 Astra",
-      "url": "https://www.aibase.com/news/31368",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_aa95aaf57c74",
-      "title": "开源大模型格局重塑！小米 MiMo-V2.6-Pro 强势杀回 Code Arena 前十，性能直逼国际第一梯队",
-      "url": "https://www.aibase.com/news/31370",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a070fed18463",
-      "title": "OpenAI高管透露:80%至90%研发力量已转向GPT-7及后续模型",
-      "url": "https://www.aibase.com/news/31366",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9117f82403b6",
-      "title": "英伟达发布1亿参数免费模型Nemotron3，支持8人实时语音分割识别",
-      "url": "https://www.aibase.com/news/31382",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_85428ac91ad4",
-      "title": "​MiniMax 全新文本模型 M3.1-Flash-Preview 正式公测",
-      "url": "https://www.aibase.com/news/31383",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "minimax"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7b1fb44b3b80",
-      "title": "​费米宇宙重磅发布全球首款全链路量子增强大模型 FermiQLLM 1.0",
-      "url": "https://www.aibase.com/news/31378",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6d078001cab1",
-      "title": "Anthropic 资深员工悄然购置偏远土地，以防\"AI 失控\"举家撤离",
-      "url": "https://www.aibase.com/news/31369",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
+      "archive_date": "2026-09-29",
       "company_topics": [
         "anthropic"
       ],
       "lens_topics": []
     },
     {
-      "story_id": "story_67fd4dc43332",
-      "title": "谷歌把 Colab 算力塞进 AI 会员：Ultra 用户免挂标签页也能跑长训练",
-      "url": "https://www.aibase.com/news/31381",
-      "importance_score": 0.7467,
+      "story_id": "story_0e66d53b5734",
+      "title": "Claude Sonnet 5.5 上线 Arena 的 Agent Arena 与 Battle Mode 评测 / Claude Sonnet 5.5 by @AnthropicAI is now in the Agent Arena!",
+      "url": "https://x.com/arena/status/2104640009232117859",
+      "importance_score": 0.7533,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4942527d74f8",
-      "title": "谷歌在印度测试 Gemini 内直购 Flipkart 商品，全面进军端内交易生态",
-      "url": "https://www.aibase.com/news/31380",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
+      "archive_date": "2026-09-29",
       "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_49407869fee5",
-      "title": "千问APP支持中国移动算力套餐，用户可在工作助理中启用",
-      "url": "https://www.aibase.com/news/31376",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_3aaf9af93102",
-      "title": "智谱ZCode落地新轮补偿:赠付费用户8张重置卡，已彻底移除代码快照上传链路",
-      "url": "https://www.aibase.com/news/31377",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "zhipu"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_390d51e1d5fb",
-      "title": "自信心暴涨但正确率暴跌?最新研究揭示AI辅助下的人类决策悖论",
-      "url": "https://www.aibase.com/news/31373",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2c83075dc370",
-      "title": "OpenAI 助手为夺联合国数据，数月内疯狂轰炸网站超 1.6 万次",
-      "url": "https://www.aibase.com/news/31371",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1bb2feafc8a4",
-      "title": "OpenAI 重排 Pro 档位：5x和20x用量承诺下线",
-      "url": "https://www.aibase.com/news/31379",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1519a1296d42",
-      "title": "千问创作上线 7 天会员：200 积分 + 快速通道，瞄准旅行出片等即时创作",
-      "url": "https://www.aibase.com/news/31375",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_77b6e25d654a",
-      "title": "NVIDIA 发布开源智能体安全平台，提供芯片级持续监控与隔离 / NVIDIA Open Agent Safety Platform: A Reference for Continuous In-Silicon Agent Monitoring",
-      "url": "https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring",
-      "importance_score": 0.7458,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_7cbf1cb3c6f2",
-      "title": "​MiniMax 最新文本模型 M3.1-Flash-Preview 正式上线，官方同步派发额度重置卡与双倍积分福利",
-      "url": "https://www.aibase.com/news/31365",
-      "importance_score": 0.7351,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "minimax"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4b94e12b2d6e",
-      "title": "暗网兜售 AI 模型访问权限：最高折扣 97%，黑客低价\"借用\"算力搞攻击",
-      "url": "https://www.aibase.com/news/31364",
-      "importance_score": 0.7351,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1382854eb443",
-      "title": "前苹果 Siri 工程师推出 AI 智能体 szn：藏在 iMessage 里，能帮你下单、沟通、跑腿",
-      "url": "https://www.aibase.com/news/31363",
-      "importance_score": 0.7351,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "apple"
+        "anthropic"
       ],
       "lens_topics": [
         "agent-ecosystem"

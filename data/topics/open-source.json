@@ -5,11 +5,41 @@
   "group": "tech",
   "item_count": 7,
   "listed_count": 7,
-  "latest_title": "英伟达发布AI智能体安全平台，含实时隔离异常智能体的Sentry系统",
-  "latest_published_at": "2026-09-28T09:33:59Z",
+  "latest_title": "Europe and UAE plan $1 billion orbital data center with 50 connected \"computers\" and a central \"LLM store\" that allows users to select what open source model to use on data collected by satellite sensors",
+  "latest_published_at": "2026-09-28T19:15:00Z",
   "items_url": "data/topics/open-source.json",
-  "generated_at": "2026-09-28T15:28:45.435771Z",
+  "generated_at": "2026-09-28T20:35:07.599447Z",
   "items": [
+    {
+      "id": "story_cef62b14946a",
+      "story_id": "story_cef62b14946a",
+      "title": "Europe and UAE plan $1 billion orbital data center with 50 connected \"computers\" and a central \"LLM store\" that allows users to select what open source model to use on data collected by satellite sensors",
+      "title_en": "Europe and UAE plan $1 billion orbital data center with 50 connected \"computers\" and a central \"LLM store\" that allows users to select what open source model to use on data collected by satellite sensors",
+      "url": "https://www.techradar.com/pro/europe-and-uae-plan-usd1-billion-orbital-data-center-with-50-connected-computers-and-a-central-llm-store-that-allows-users-to-select-what-open-source-model-to-use-on-data-collected-by-satellite-sensors",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "TechRadar",
+      "source_name": "TechURLs",
+      "site_id": "",
+      "published_at": "2026-09-28T19:15:00Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "story_b73aec0b4852",
+      "story_id": "story_b73aec0b4852",
+      "title": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞 / How we found 24 Android vulnerabilities using our open source AI security agent",
+      "title_en": "How we found 24 Android vulnerabilities using our open source AI security agent",
+      "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+      "summary": "GitHub Security Lab 发布开源 seclab-taskflows 任务流，通过 gather_mobile_entry_point_info.yaml 和 classify_application_local.yaml 等提示词引导 LLM 审计 Android 应用，已发现并报告 24 个漏洞。",
+      "recommend_reason_zh": null,
+      "source": "GitHub Blog",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-09-28T19:00:00Z",
+      "source_count": 1,
+      "curated": false
+    },
     {
       "id": "story_e4e54fd17b80",
       "story_id": "story_e4e54fd17b80",
@@ -23,7 +53,7 @@
       "site_id": "",
       "published_at": "2026-09-28T09:33:59Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_ffe1e3588465",
@@ -53,7 +83,7 @@
       "site_id": "",
       "published_at": "2026-09-28T07:22:33Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_aa95aaf57c74",
@@ -84,36 +114,6 @@
       "published_at": "2026-09-28T03:08:01Z",
       "source_count": 1,
       "curated": false
-    },
-    {
-      "id": "story_77b6e25d654a",
-      "story_id": "story_77b6e25d654a",
-      "title": "NVIDIA 发布开源智能体安全平台，提供芯片级持续监控与隔离 / NVIDIA Open Agent Safety Platform: A Reference for Continuous In-Silicon Agent Monitoring",
-      "title_en": "NVIDIA Open Agent Safety Platform: A Reference for Continuous In-Silicon Agent Monitoring",
-      "url": "https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring",
-      "summary": "NVIDIA 推出 NVIDIA Open Agent Safety Platform，包含开源运行时 OpenShell、硬件层 Sentry 及 DOCA 技术。该平台旨在通过内核级隔离、零信任环境和带外（out-of-band）监控来防止 AI 智能体行为漂移和越权。OpenShell 将操作指令转化为可验证策略，BlueField DPU 在模型路径上提供实时策略执行与身份治理，确保即使主机不可信时也能独立保护系统。",
-      "recommend_reason_zh": null,
-      "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
-      "source_name": "AI HOT",
-      "site_id": "",
-      "published_at": "2026-09-27T16:00:00Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "story_2f15dd10fd58",
-      "story_id": "story_2f15dd10fd58",
-      "title": "NVIDIA 发布开源运行时 OpenShell，为 AI Agent 提供权限管控与安全沙箱 / Add Runtime Controls to AI Agents with NVIDIA OpenShell",
-      "title_en": "Add Runtime Controls to AI Agents with NVIDIA OpenShell",
-      "url": "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell",
-      "summary": "NVIDIA 推出开源项目 NVIDIA OpenShell 0.1.0，这是一个用于定义和执行 AI Agent 访问权限的运行时。它通过沙箱执行、受控服务访问、凭证管理和形式化策略分析，在 Agent 工作负载外部强制实施权限控制。OpenShell 支持 Codex、Claude Code 等框架，允许团队在不重写 Agent 的情况下限制 API 操作、保护凭证并审查权限变更。Cadence、Slack 和 Gecko Robotics 等组织已在芯片设计、企业自动化和物理 AI 等领域采用该技术。",
-      "recommend_reason_zh": null,
-      "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
-      "source_name": "AI HOT",
-      "site_id": "",
-      "published_at": "2026-09-27T16:00:00Z",
-      "source_count": 1,
-      "curated": true
     }
   ]
 }
