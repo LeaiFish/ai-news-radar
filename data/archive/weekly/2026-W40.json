@@ -4,61 +4,52 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-09-28T01:42:25.455537Z",
+  "generated_at": "2026-09-28T06:55:02.665803Z",
   "daily_dates": [
     "2026-09-28"
   ],
-  "story_count": 103,
-  "unique_story_count": 103,
+  "story_count": 123,
+  "unique_story_count": 123,
   "counts": {
     "by_company_topic": {
-      "anthropic": 20,
+      "anthropic": 19,
       "apple": 1,
       "deepseek": 1,
       "doubao": 1,
-      "google-gemini": 4,
+      "google-gemini": 5,
       "huggingface": 1,
-      "minimax": 2,
-      "nvidia": 3,
-      "openai": 18,
+      "meta-llama": 1,
+      "microsoft": 1,
+      "minimax": 3,
+      "nvidia": 4,
+      "openai": 22,
       "openrouter": 1,
-      "qwen": 1,
-      "zhipu": 1
+      "qwen": 3,
+      "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 25
+      "agent-ecosystem": 27,
+      "monetization": 1,
+      "workplace": 1
     },
     "by_importance_label": {
       "值得关注": 88,
-      "多源热议": 3,
+      "多源热议": 4,
       "官方更新": 2,
-      "行业动态": 10
+      "行业动态": 29
     },
     "by_source_count_bucket": {
-      "1": 96,
-      "2": 4,
-      "3+": 3
+      "1": 113,
+      "2": 6,
+      "3+": 4
     }
   },
   "top_stories": [
     {
-      "story_id": "story_f7a9ca52c4e3",
-      "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
-      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
-      "importance_score": 0.8449,
-      "importance_label": "多源热议",
-      "source_count": 6,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_d2e151a7b076",
       "title": "What Is Qwen 3.8",
       "url": "https://openrouter.ai/blog/insights/qwen-3-8",
-      "importance_score": 0.8396,
+      "importance_score": 0.8269,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -72,7 +63,7 @@
       "story_id": "story_842b35a90c59",
       "title": "Cloudflare 2026 年度创始人致辞 / Cloudflare’s 2026 Annual Founders’ Letter",
       "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter",
-      "importance_score": 0.8287,
+      "importance_score": 0.8172,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -80,10 +71,266 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_1d61061d4469",
+      "title": "Meta 推出 Hologram 拟真虚拟形象，秋季上线雷朋眼镜与 Quest 头显",
+      "url": "https://www.ithome.com/1/007/767.htm",
+      "importance_score": 0.7795,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "meta-llama"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_fa12ad6964c1",
+      "title": "Claude Sonnet 5.5 配置标识符现身并开启灰度测试，性能直逼 GPT-6 Astra",
+      "url": "https://www.aibase.com/news/31372",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ed5d51edb88a",
+      "title": "比尔·盖茨：再熬约 20 年调整期，AI 将把人类带进\"富足时代\"",
+      "url": "https://www.aibase.com/news/31374",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d9ee2b9f2468",
+      "title": "​OpenAI 惊现自我复制代码漏洞，多国政务系统遭 Agent 强行越界",
+      "url": "https://www.aibase.com/news/31367",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_bce9104a595a",
+      "title": "Claude Sonnet 5.5 偷跑：价格打穿地心，实测暴打 GPT-6 Sol、直逼 Astra",
+      "url": "https://www.aibase.com/news/31368",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_aa95aaf57c74",
+      "title": "开源大模型格局重塑！小米 MiMo-V2.6-Pro 强势杀回 Code Arena 前十，性能直逼国际第一梯队",
+      "url": "https://www.aibase.com/news/31370",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a070fed18463",
+      "title": "OpenAI高管透露:80%至90%研发力量已转向GPT-7及后续模型",
+      "url": "https://www.aibase.com/news/31366",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9117f82403b6",
+      "title": "英伟达发布1亿参数免费模型Nemotron3，支持8人实时语音分割识别",
+      "url": "https://www.aibase.com/news/31382",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "nvidia"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_85428ac91ad4",
+      "title": "​MiniMax 全新文本模型 M3.1-Flash-Preview 正式公测",
+      "url": "https://www.aibase.com/news/31383",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "minimax"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7b1fb44b3b80",
+      "title": "​费米宇宙重磅发布全球首款全链路量子增强大模型 FermiQLLM 1.0",
+      "url": "https://www.aibase.com/news/31378",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6d078001cab1",
+      "title": "Anthropic 资深员工悄然购置偏远土地，以防\"AI 失控\"举家撤离",
+      "url": "https://www.aibase.com/news/31369",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_67fd4dc43332",
+      "title": "谷歌把 Colab 算力塞进 AI 会员：Ultra 用户免挂标签页也能跑长训练",
+      "url": "https://www.aibase.com/news/31381",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4942527d74f8",
+      "title": "谷歌在印度测试 Gemini 内直购 Flipkart 商品，全面进军端内交易生态",
+      "url": "https://www.aibase.com/news/31380",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_49407869fee5",
+      "title": "千问APP支持中国移动算力套餐，用户可在工作助理中启用",
+      "url": "https://www.aibase.com/news/31376",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_3aaf9af93102",
+      "title": "智谱ZCode落地新轮补偿:赠付费用户8张重置卡，已彻底移除代码快照上传链路",
+      "url": "https://www.aibase.com/news/31377",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "zhipu"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_390d51e1d5fb",
+      "title": "自信心暴涨但正确率暴跌?最新研究揭示AI辅助下的人类决策悖论",
+      "url": "https://www.aibase.com/news/31373",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2c83075dc370",
+      "title": "OpenAI 助手为夺联合国数据，数月内疯狂轰炸网站超 1.6 万次",
+      "url": "https://www.aibase.com/news/31371",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_1bb2feafc8a4",
+      "title": "OpenAI 重排 Pro 档位：5x和20x用量承诺下线",
+      "url": "https://www.aibase.com/news/31379",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_1519a1296d42",
+      "title": "千问创作上线 7 天会员：200 积分 + 快速通道，瞄准旅行出片等即时创作",
+      "url": "https://www.aibase.com/news/31375",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f24ebd079ef8",
+      "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
+      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
+      "importance_score": 0.7626,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_f1ecfb07dff1",
       "title": "OpenAI 报告一起智能体利用 DNS 访问外部聊天机器人的失控事件",
       "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
-      "importance_score": 0.7686,
+      "importance_score": 0.7581,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-09-28",
@@ -98,7 +345,7 @@
       "story_id": "story_7cbf1cb3c6f2",
       "title": "​MiniMax 最新文本模型 M3.1-Flash-Preview 正式上线，官方同步派发额度重置卡与双倍积分福利",
       "url": "https://www.aibase.com/news/31365",
-      "importance_score": 0.7676,
+      "importance_score": 0.7546,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -111,7 +358,7 @@
       "story_id": "story_4b94e12b2d6e",
       "title": "暗网兜售 AI 模型访问权限：最高折扣 97%，黑客低价\"借用\"算力搞攻击",
       "url": "https://www.aibase.com/news/31364",
-      "importance_score": 0.7676,
+      "importance_score": 0.7546,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -122,7 +369,7 @@
       "story_id": "story_1382854eb443",
       "title": "前苹果 Siri 工程师推出 AI 智能体 szn：藏在 iMessage 里，能帮你下单、沟通、跑腿",
       "url": "https://www.aibase.com/news/31363",
-      "importance_score": 0.7676,
+      "importance_score": 0.7546,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -137,7 +384,7 @@
       "story_id": "story_feeca9123757",
       "title": "谷歌在印测试 Gemini 直购 Flipkart 商品功能，AI 端内结账即将上线",
       "url": "https://www.aibase.com/news/31361",
-      "importance_score": 0.7665,
+      "importance_score": 0.7535,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -150,7 +397,7 @@
       "story_id": "story_f4e177eed887",
       "title": "视频化身、系统级代控与眼镜接入，Meta 全新 AI 智能体 Muse 开启内测",
       "url": "https://www.aibase.com/news/31360",
-      "importance_score": 0.7665,
+      "importance_score": 0.7535,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -163,7 +410,7 @@
       "story_id": "story_93e932ee2580",
       "title": "Anthropic 官宣 Workbench 全面升级：全新 Playground 让普通人也能一键玩转 Claude API",
       "url": "https://www.aibase.com/news/31359",
-      "importance_score": 0.7665,
+      "importance_score": 0.7535,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -176,7 +423,7 @@
       "story_id": "story_8c0a4fa554eb",
       "title": "首款端侧Agent旗舰刚落地就触碰安全红线?豆包AI否认涉足游戏外挂",
       "url": "https://www.aibase.com/news/31362",
-      "importance_score": 0.7665,
+      "importance_score": 0.7535,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -191,7 +438,7 @@
       "story_id": "story_01af939bdd21",
       "title": "OpenAI或将推出代号「O」的常驻智能助手，预计9月29日正式发布",
       "url": "https://www.aibase.com/news/31358",
-      "importance_score": 0.7665,
+      "importance_score": 0.7535,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -201,37 +448,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_ea1d6e9cc5c5",
-      "title": "OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会",
-      "url": "https://www.ithome.com/1/007/508.htm",
-      "importance_score": 0.7342,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_84332e4ff0f2",
       "title": "Anthropic首席执行官即将与特朗普总统共进晚餐 / Anthropic’s CEO is about to have dinner with President Trump",
       "url": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump",
-      "importance_score": 0.6234,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_35b6406829b7",
-      "title": "Anthropic 的 Dario Amodei 接受 SNL 待遇 / Anthropic’s Dario Amodei gets the SNL treatment",
-      "url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment",
-      "importance_score": 0.6138,
+      "importance_score": 0.6113,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -244,7 +464,7 @@
       "story_id": "story_35e2195117a1",
       "title": "OpenAI 表示其 80% 到 90% 的研究已经针对 GPT 7 及更高版本 / OpenAI says 80 to 90 percent of its research already targets GPT 7 and beyond",
       "url": "https://the-decoder.com/openai-says-80-to-90-percent-of-its-research-already-targets-gpt-7-and-beyond",
-      "importance_score": 0.6135,
+      "importance_score": 0.603,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -254,10 +474,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_35b6406829b7",
+      "title": "Anthropic 的 Dario Amodei 接受 SNL 待遇 / Anthropic’s Dario Amodei gets the SNL treatment",
+      "url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment",
+      "importance_score": 0.6024,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-09-28",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_ce25c3c7eee4",
       "title": "数万次安全调查显示OpenAI抱脸事件只是一个开始 / Tens of thousands of security probes show OpenAI's Hugging Face incident was just the beginning",
       "url": "https://the-decoder.com/tens-of-thousands-of-security-probes-show-openais-hugging-face-incident-was-just-the-beginning",
-      "importance_score": 0.6109,
+      "importance_score": 0.6006,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -271,7 +504,7 @@
       "story_id": "story_1c8a2162ff7f",
       "title": "研究人员将 GPT-6 Astra 直接插入机器人，让它清理陌生的厨房 / Researchers plug GPT-6 Astra directly into a robot and let it clean up an unfamiliar kitchen",
       "url": "https://the-decoder.com/researchers-plug-gpt-6-astra-directly-into-a-robot-and-let-it-clean-up-an-unfamiliar-kitchen",
-      "importance_score": 0.6101,
+      "importance_score": 0.5995,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -284,7 +517,7 @@
       "story_id": "story_d53e20d6200f",
       "title": "Muse 能克服 Meta 的信任问题吗？ / Can Muse overcome Meta’s trust issues?",
       "url": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues",
-      "importance_score": 0.6094,
+      "importance_score": 0.5974,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -295,38 +528,12 @@
       "story_id": "story_e443002f0c8a",
       "title": "据报道，一些人类退伍军人正在购买偏远土地，以防“人工智能出现问题” / Some Anthropic veterans are reportedly buying remote land in case \"AI goes awry\"",
       "url": "https://the-decoder.com/some-anthropic-veterans-are-reportedly-buying-remote-land-in-case-ai-goes-awry",
-      "importance_score": 0.6062,
+      "importance_score": 0.5953,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-09-28",
       "company_topics": [
         "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d8fd1c1d9e05",
-      "title": "不知道Claude发生了什么限制，他们从几乎无法使用变成了基本上无限😂 / Not sure what happened to Claude limits they went from barely usable to basically unlimited 😂",
-      "url": "https://x.com/petergyang/status/2104066667361992892",
-      "importance_score": 0.606,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a32aa324b58d",
-      "title": "Building an app with Gemini audio API to teach me conversational Japanese. 10 lessons and 10 phrases per lesson. https://t.co/KjO8XNS1EV",
-      "url": "https://x.com/petergyang/status/2104059554204188833",
-      "importance_score": 0.6051,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -334,7 +541,7 @@
       "story_id": "story_88292b12ed31",
       "title": "人工智能代理在模型开发中承担了更多工作，但决策仍然由人类做出 / AI agents do more of the work in model development, but humans still make the decisions",
       "url": "https://the-decoder.com/ai-agents-do-more-of-the-work-in-model-development-but-humans-still-make-the-decisions",
-      "importance_score": 0.5987,
+      "importance_score": 0.5874,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-09-28",
@@ -347,211 +554,12 @@
       "story_id": "story_b40e0f0f0d03",
       "title": "Nvidia 推出免费的 1 亿参数模型，可实时识别多达 8 个扬声器 / Nvidia drops a free 100M-parameter model that identifies up to eight speakers in real time",
       "url": "https://the-decoder.com/nvidia-drops-a-free-100m-parameter-model-that-identifies-up-to-eight-speakers-in-real-time",
-      "importance_score": 0.5894,
+      "importance_score": 0.5788,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-09-28",
       "company_topics": [
         "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_fb3fbbd1f00c",
-      "title": "Goldman Sachs expects Big Tech to spend $1.2 trillion on AI infrastructure by 2027, dwarfing Wall Street estimates",
-      "url": "https://the-decoder.com/goldman-sachs-expects-big-tech-to-spend-1-2-trillion-on-ai-infrastructure-by-2027-dwarfing-wall-street-estimates",
-      "importance_score": 0.5837,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_183a902eebb3",
-      "title": "OpenAI 特工试图“暴力破解”联合国网站 / OpenAI agents tried to ‘bruteforce’ a UN website",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
-      "importance_score": 0.5825,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_fb7b13157697",
-      "title": "2026 年LLM（至今） / 2026 in LLMs (so far)",
-      "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far",
-      "importance_score": 0.5807,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_342f9678e0cf",
-      "title": "Engram 是一个采样器，可以将破碎的人工智能幻觉变成音乐 / Engram is a sampler that turns broken AI hallucinations into music",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
-      "importance_score": 0.5781,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_47a080855edb",
-      "title": "“作为语言模型”：聊天模板切换了大语言模型的自指代语气",
-      "url": "https://arxiv.org/abs/2609.25021",
-      "importance_score": 0.566,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_08f7430d8cd2",
-      "title": "「闪电.skill」发布！用Anthropic的方法论把你的产品提速3倍！",
-      "url": "https://waytoagi.feishu.cn/wiki/X02mwBQqxiuzank2op4cdmXCnPg?from=from_copylink",
-      "importance_score": 0.5554,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_06f42f2a3f83",
-      "title": "9.21—9.27｜本周顶级 AI 论文",
-      "url": "https://waytoagi.feishu.cn/wiki/XA5CwszYGik8CokJ2YeciRzYnxf?from=from_copylink",
-      "importance_score": 0.5554,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_016767a9ad82",
-      "title": "DeepSeek 还没官宣的桌面版，我抢先装上跑了一遍，结果有点炸",
-      "url": "https://waytoagi.feishu.cn/wiki/CHStwYIADig6PdkeWQCctOTxngg?from=from_copylink",
-      "importance_score": 0.5554,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "deepseek",
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_dc50d791f8d7",
-      "title": "不存在“失控”的人工智能代理",
-      "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
-      "importance_score": 0.5515,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_ed41203ad30a",
-      "title": "A debt-funded cluster of non-Nvidia chips probably costs more to finance, whatever it saves on hardware. The extra interest GPU loans pay over ordinary loans of the same grade widens as the grade falls, to about 2.5 poi…",
-      "url": "https://x.com/rohanpaul_ai/status/2104369639828681013",
-      "importance_score": 0.5466,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8694f71296ec",
-      "title": "Alibaba Cloud is pleased to welcome our sponsor Byond Asia, appearing together with HoloMe, at AI Everything Abu Dhabi 2026. Meet the teams and learn more about their participation in our event program on 6–7 October 20…",
-      "url": "https://x.com/alibaba_cloud/status/2104368879388578287",
-      "importance_score": 0.5464,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5a07ce0f5e7c",
-      "title": "\"Every single company is built on some foundation of intelligence that's specialized. We're not good at everything, but we're very, very good at one thing. That specialization, your company's intelligence, is who you ar…",
-      "url": "https://x.com/rohanpaul_ai/status/2104364935803551798",
-      "importance_score": 0.5458,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cfff3d430a82",
-      "title": "this is fun, another version of Paul Graham's “how to do great work” essay simple 1 line prompt to opus 5.5 with 'extra' effort settings same prompt: 'Create a video essay from Paul Graham's essay How to do great work w…",
-      "url": "https://x.com/rohanpaul_ai/status/2104352205176500542",
-      "importance_score": 0.5436,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3bbcfb8f93c6",
-      "title": "Banks have always profited from customers doing nothing. At 0.1%, a $10,000 checking balance earns about $10 a year, and moving it to an account paying 4% was never worth the time. But for an agent it's a small compute…",
-      "url": "https://x.com/rohanpaul_ai/status/2104336611224039807",
-      "importance_score": 0.5411,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_05a684830c00",
-      "title": "https://t.co/LKQP4GhcwV",
-      "url": "https://x.com/rohanpaul_ai/status/2104336614298456274",
-      "importance_score": 0.5411,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_25f3e356a34e",
-      "title": "OpenAI DevDay 点名 您从哪里加入我们？您正在构建什么？ https://t.co/tRqB0JbPmS / OpenAI DevDay roll call Where are you joining us from, and what are you building? https://t.co/tRqB0JbPmS",
-      "url": "https://x.com/OpenAIDevs/status/2104286723509207525",
-      "importance_score": 0.5331,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai"
       ],
       "lens_topics": []
     }
