@@ -49,7 +49,7 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 | GitHub releases/blogs | Usually supported through Atom/RSS | Prefer GitHub Atom feeds or official blog RSS | Useful for model/platform/tool release tracking. |
 | Newsletters | Partially supported | Prefer public archive RSS or stable archive pages | Do not scrape private inboxes. |
 | X / Twitter | Supported through curated central feeds, opt-in API adapters, or a private sanitized items-file bridge | Prefer public generated feeds that already use official X API; keep direct X API optional and secret-backed; private cookie scrapes stay off-repo and ingest only via `data/bridge/x-items.json` / `X_BRIDGE_ITEMS_B64` (see `docs/X_PRIVATE_BRIDGE.md`) | Following a person often imports noise; public bridge routes can be unstable; cookies must never enter this repo. |
-| WeChat public accounts | Not recommended as a default | Use stable third-party RSS only if the maintainer accepts breakage risk | Login/copyright/bridge stability can be poor. |
+| WeChat public accounts | Not in the public Actions fetch. Domestic lab accounts are 待覆盖 / pending; see below | Private bridge, same pattern as `docs/X_PRIVATE_BRIDGE.md`. Self-hosted RSSHub or private OPML only on a maintainer fork | Login, copyright, and bridge stability are poor. No cookies or tokens in this repo. |
 | Telegram / Bilibili / Zhihu / podcasts | Skipped by default when feeds are unreliable | Add only as opt-in OPML entries | These can be noisy or bridge-dependent. |
 
 ## Selection source tiers
@@ -140,7 +140,8 @@ shells. Volcengine news and the Tencent Cloud Hunyuan changelog either require
 JavaScript or return an empty shell. GitHub release atoms for the model repos
 are empty or years old; high-frequency CLI atoms (`qwen-code`, `kimi-code`)
 were left out so patch notes do not crowd model posts. No WeChat or X accounts
-were added.
+were added to the fetcher. Domestic 公众号 names are recorded as pending under
+Domestic WeChat accounts below.
 
 Aggregator sites may already surface some of these updates, but they are not
 guaranteed to be complete or timely. Keep these official sources as a stable
@@ -265,6 +266,43 @@ baseline, then let the aggregator layer add breadth.
 
 See `docs/research/advanced-source-free-tier-budget-2026-05-10.md` for the X API
 and AgentMail budget notes.
+
+## Domestic WeChat accounts (pending)
+
+The domestic products already tracked as company topics also publish on WeChat
+公众号: 豆包 / ByteDance Seed, 通义千问 / Qwen, 混元·元宝, 夸克, DeepSeek,
+Kimi / 月之暗面, MiniMax, and 智谱 / GLM. Those accounts are **待覆盖 /
+pending**. They are not in the public GitHub Actions fetch, and this
+repository does not include a WeChat scraper, cookie, token, or live RSSHub
+route.
+
+Use the same private path as the X items-file bridge in
+`docs/X_PRIVATE_BRIDGE.md`. A credentialed reader stays off this repo. A
+maintainer fork may later ingest sanitized public article fields only (title,
+canonical URL, time, account name) from a private file or secret. Cookies,
+login sessions, and WeChat tokens must never be committed. A self-hosted
+RSSHub route or a hand-maintained private OPML entry is acceptable on that
+fork only. Do not add these accounts to `feeds/follow.example.opml` or to a
+built-in fetcher.
+
+Names below were checked on 2026-09-29 from a public article page or an
+official site link. `alias` is the public WeChat ID, `gh_id` is the account
+username, and `biz` is the article `__biz` value. Blank ids were not found.
+Do not invent them. Rows marked unverified are candidate display names only.
+
+| Product | 公众号名称 | Public id | Status | Check |
+| --- | --- | --- | --- | --- |
+| 豆包 | 豆包 | not verified | 待覆盖 / pending | IT之家 and 凤凰网 cite 「豆包」微信公众号 as the source of product posts. No article page was opened, so biz and gh_id stay blank. |
+| ByteDance Seed | none confirmed | — | 待覆盖 / pending | `seed.bytedance.com` does not link a 公众号. Research posts stay on the public blog. |
+| 豆包 / Seed, cloud channel | 火山引擎 | alias `volcengine`; gh_id `gh_dbeb3684fdc7`; biz `MzI0NzU1NzI5NQ==` | 待覆盖 / pending | Verified on a case article linked from `volcengine.com` (`https://mp.weixin.qq.com/s/3IDolpM9CtaHbn8t94aukQ`). Cloud account that mentions 豆包大模型. Not the consumer 「豆包」 account and not a Seed research feed. |
+| 通义千问 / Qwen | 通义实验室 | alias `AlibabaTongYiQianWen`; gh_id `gh_954f49cf86d0`; biz `MzkxMTYyMTAzNA==` | 待覆盖 / pending | Articles linked from `qianwen.aliyun.com` use this display name (`https://mp.weixin.qq.com/s/7l5EPTU7cpz7GSN4RP91rg`). The alias is Tongyi Qianwen. A second account titled exactly 「通义千问」 was not confirmed. |
+| 混元 | 腾讯混元 (unverified candidate) | not verified | 待覆盖 / pending | Brand name only. No article metadata captured. |
+| 元宝 | 腾讯元宝 (unverified candidate) | not verified | 待覆盖 / pending | Press mentions an official account. `yuanbao.tencent.com` has no article index. Display name and biz were not confirmed. |
+| 夸克 | 夸克 (unverified candidate) | not verified | 待覆盖 / pending | No official page or article metadata found in this pass. |
+| DeepSeek | DeepSeek | alias `deepseek-ai`; gh_id `gh_bc02ff24ae0f`; biz `Mzk0OTYwNzc3NQ==` | 待覆盖 / pending | Ids from the public V4 announcement (`https://mp.weixin.qq.com/s/8bxXqS2R8Fx5-1TLDBiEDg`). `deepseek.com` exposes a follow-account QR. |
+| Kimi / 月之暗面 | Kimi智能助手 | alias `kimiai_moonshot`; gh_id `gh_0b101c0f2eb3`; biz `MzkzMTY4NTIyNA==` | 待覆盖 / pending | `moonshot.cn` links `https://mp.weixin.qq.com/s/l2HNlnXaPWT9hW-OXUYrig` as its 微信公众号. Some press says 「月之暗面官方公众号」; the account display name is Kimi智能助手. |
+| MiniMax | MiniMax 稀宇科技 | not verified | 待覆盖 / pending | The official MiniMax GitHub poster is titled MiniMax 稀宇科技 and says 扫码关注公众号. That QR payload is a WeCom group link, not a biz id. No article-page gh_id or biz. |
+| 智谱 / GLM | 智谱AI or 智谱清言 (unverified candidates) | not verified | 待覆盖 / pending | The `zhipuai.cn` footer QR is a WeCom contact, not a 公众号. The GLM repo WeChat asset is a discussion group. No verified 公众号 id. |
 
 ## Example OPML Seeds
 
