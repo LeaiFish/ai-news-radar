@@ -52,6 +52,46 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 | WeChat public accounts | Not recommended as a default | Use stable third-party RSS only if the maintainer accepts breakage risk | Login/copyright/bridge stability can be poor. |
 | Telegram / Bilibili / Zhihu / podcasts | Skipped by default when feeds are unreliable | Add only as opt-in OPML entries | These can be noisy or bridge-dependent. |
 
+## Selection source tiers
+
+精选 ranking reads a second tier, `select_tier`, that is not the display
+`source_tier` label (官方一手源 / AI垂直源 / …).
+
+| Value | Meaning |
+| --- | --- |
+| `T1` | Official first-party page or feed: company blog, changelog, newsroom. |
+| `T1_5` | Official account or near-official channel, including known company X handles. |
+| `T2` | Media, personal blogs, aggregators, and anything not listed. This is the default. |
+
+Set it in one of these places. The first match wins: an explicit value on the
+item, then source name, handle, feed URL, site id, then `T2`.
+
+- Built-in RSS lists in `scripts/update_news.py` (`OFFICIAL_AI_FEEDS`,
+  `CURATED_AI_MEDIA_FEEDS`) carry `select_tier` on each feed.
+- `config/source_tiers.json` maps `by_site_id`, `by_source_name`, `by_handle`,
+  and `by_feed_url`. Add a handle or URL there when a new official account
+  should outrank media.
+- A private OPML outline can set `selectTier="T1"`, `selectTier="T1_5"`, or
+  `selectTier="T2"`. `feeds/follow.example.opml` shows the attribute.
+  Unknown outlines stay T2.
+
+A story takes the best tier among its sources, so one T1 confirmation lifts
+the whole story. Ranking uses independent-source heat first (each outlet
+once inside 48 hours; older than 24 hours counts half; the same outlet or
+the same URL does not add another point), then this tier as a small bonus.
+The daily cap stays 15. T2 stories need a strong signal (官方更新, 多源热议,
+or at least two sources) unless that gate would leave 精选 empty.
+
+`data/stories-merged.json` picks up `select_tier`, `source_heat`,
+`other_source_count`, and follow-up fields the next time `update_news.py`
+runs. This change does not regenerate that snapshot.
+
+Follow-ups are not a second merge. A later story hangs under an earlier
+parent only when they share a vendor or model, sit inside 48 hours, and the
+titles are related but below the same-story merge threshold. The feed and
+workbench can show `另有 N 家` and `进展 N` from `other_source_count` and
+`follow_up_count`.
+
 ## Source Selection Rules
 
 Add a source only when it passes most of these checks:

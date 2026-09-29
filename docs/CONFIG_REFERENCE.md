@@ -154,7 +154,17 @@ AgentMail 另有本地/私有运行变量：`EMAIL_DIGEST_ENABLED=1` 打开邮�
 
 ---
 
-## 11. 「我想改 X」速查表
+## 11. 精选故事的信源层级和热度
+
+每日精选（`stories-merged.json` 里 `tier: selected`，最多 15 条）和日报 Top 3 不是同一条规则。精选看故事，不调用模型。
+
+信源层级写在 `config/source_tiers.json`，也可以写在内置 RSS 的 `select_tier`，或 OPML 的 `selectTier`。`T1` 官方一手，`T1_5` 官方账号 / 近官方，`T2` 媒体、个人和未标注。没写就是 `T2`。
+
+热度按故事算：48 小时内每个不同出口只计一次；超过 24 小时记一半；同一家媒体或同一条 URL 不会把分数抬上去。排序先看这个热度，T1 / T1_5 只加一点（0.5 / 0.25），所以官方源会在热度接近时靠前，但盖不过明显更多的独立来源。
+
+同一故事的合并不变。后续进展另挂在父故事上，卡片和「工作台」时间线用「另有 N 家」「进展 N」显示。`data/stories-merged.json` 里的这些字段要等下一轮 `update_news.py` 才会出现。
+
+## 12. 「我想改 X」速查表
 
 | 我想… | 改这里 |
 |---|---|
@@ -169,6 +179,7 @@ AgentMail 另有本地/私有运行变量：`EMAIL_DIGEST_ENABLED=1` 打开邮�
 | 改**运行频率** | workflow 第 6 行 `cron` |
 | 改**付费源每天跑几次** | `PAID_SOURCE_DEFAULT_INTERVAL_HOURS`(约 188 行) |
 | 加/改**主题**(Topics，不是栏目 tab) | `config/topics.json`（数组顺序 = 各分组里卡片顺序；分组可设 `filter: "topics"` 让 `/topics/` 顶部展开成主题芯片），然后 `python scripts/build_topics.py --data-dir data --write-pages` |
+| 改某个信源的**精选层级** | `config/source_tiers.json`（`T1` / `T1_5` / `T2`），或 OPML 的 `selectTier`，或 `OFFICIAL_AI_FEEDS` / `CURATED_AI_MEDIA_FEEDS` 上的 `select_tier` |
 
 ---
 

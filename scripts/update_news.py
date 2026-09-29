@@ -40,9 +40,19 @@ except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_
     from story_archive import update_story_archives
 
 try:
-    from scripts.story_select import assign_selection_tiers
+    from scripts.story_followups import link_story_follow_ups
 except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
-    from story_select import assign_selection_tiers
+    from story_followups import link_story_follow_ups
+
+try:
+    from scripts.story_select import assign_selection_tiers, independent_source_heat
+except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
+    from story_select import assign_selection_tiers, independent_source_heat
+
+try:
+    from scripts.source_tiers import add_select_tier_fields, attach_select_tier, best_select_tier, item_select_tier, other_outlet_count
+except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
+    from source_tiers import add_select_tier_fields, attach_select_tier, best_select_tier, item_select_tier, other_outlet_count
 
 try:
     import feedparser
@@ -101,42 +111,50 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
         "title": "OpenAI News",
         "xml_url": "https://openai.com/news/rss.xml",
         "html_url": "https://openai.com/news",
+        "select_tier": "T1",
     },
     {
         "title": "Google DeepMind",
         "xml_url": "https://deepmind.google/blog/rss.xml",
         "html_url": "https://deepmind.google/blog",
+        "select_tier": "T1",
     },
     {
         "title": "Google AI Blog",
         "xml_url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
         "html_url": "https://blog.google/innovation-and-ai/technology/ai/",
+        "select_tier": "T1",
     },
     {
         "title": "Hugging Face Blog",
         "xml_url": "https://huggingface.co/blog/feed.xml",
         "html_url": "https://huggingface.co/blog",
+        "select_tier": "T1",
     },
     {
         "title": "GitHub AI & ML",
         "xml_url": "https://github.blog/ai-and-ml/feed/",
         "html_url": "https://github.blog/ai-and-ml/",
+        "select_tier": "T1",
     },
     {
         "title": "GitHub Changelog",
         "xml_url": "https://github.blog/changelog/feed/",
         "html_url": "https://github.blog/changelog/",
+        "select_tier": "T1",
     },
     {
         "title": "OpenAI Skills",
         "xml_url": "https://github.com/openai/skills/commits/main.atom",
         "html_url": "https://github.com/openai/skills",
         "include_keywords": "hatch,pet,migrate-to-codex",
+        "select_tier": "T1",
     },
     {
         "title": "OpenRouter Blog",
         "xml_url": "https://openrouter.ai/blog/feed.xml",
         "html_url": "https://openrouter.ai/blog",
+        "select_tier": "T1",
     },
     {
         # Full https://blog.cloudflare.com/rss/ is stable but mixed CDN/security.
@@ -144,11 +162,13 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
         "title": "Cloudflare Blog",
         "xml_url": "https://blog.cloudflare.com/tag/ai/rss/",
         "html_url": "https://blog.cloudflare.com/",
+        "select_tier": "T1",
     },
     {
         "title": "Apple Machine Learning Research",
         "xml_url": "https://machinelearning.apple.com/rss.xml",
         "html_url": "https://machinelearning.apple.com/",
+        "select_tier": "T1",
     },
 )
 OFFICIAL_AI_MAX_AGE_DAYS = 45
@@ -164,12 +184,14 @@ CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
         "xml_url": "https://the-decoder.com/feed/",
         "html_url": "https://the-decoder.com/",
         "max_entries": 10,
+        "select_tier": "T2",
     },
     {
         "title": "TechCrunch AI",
         "xml_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
         "html_url": "https://techcrunch.com/category/artificial-intelligence/",
         "max_entries": 8,
+        "select_tier": "T2",
     },
     {
         # The Verge's AI topic RSS endpoint is not currently public/stable;
@@ -180,6 +202,7 @@ CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
         "include_keywords": "ai,artificial intelligence,openai,anthropic,claude,chatgpt,gpt,gemini,llm,agent,copilot",
         "max_entries": 6,
         "strict_title_filter": True,
+        "select_tier": "T2",
     },
     {
         "title": "MarkTechPost Research",
@@ -189,24 +212,28 @@ CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
         "max_entries": 6,
         "strict_title_filter": True,
         "research_only": True,
+        "select_tier": "T2",
     },
     {
         "title": "VentureBeat AI",
         "xml_url": "https://venturebeat.com/category/ai/feed",
         "html_url": "https://venturebeat.com/category/ai/",
         "max_entries": 8,
+        "select_tier": "T2",
     },
     {
         "title": "Artificial Intelligence News",
         "xml_url": "https://www.artificialintelligence-news.com/feed/",
         "html_url": "https://www.artificialintelligence-news.com/",
         "max_entries": 8,
+        "select_tier": "T2",
     },
     {
         "title": "Claude Code Releases",
         "xml_url": "https://github.com/anthropics/claude-code/releases.atom",
         "html_url": "https://github.com/anthropics/claude-code/releases",
         "max_entries": 6,
+        "select_tier": "T1",
     },
 )
 AIBREAKFAST_JINA_URL = "https://r.jina.ai/https://aibreakfast.beehiiv.com/"
@@ -1722,6 +1749,7 @@ def fetch_feed_as_official_items(
                 meta={
                     "feed_url": feed_url,
                     "feed_home": feed.get("html_url") or "",
+                    "select_tier": feed.get("select_tier") or "",
                 },
             )
         )
@@ -1800,6 +1828,7 @@ def parse_curated_ai_media_feed_items(
                 meta={
                     "feed_url": feed_url,
                     "feed_home": feed.get("html_url") or "",
+                    "select_tier": feed.get("select_tier") or "",
                     "research_only": bool(feed.get("research_only")),
                     "strict_title_filter": bool(feed.get("strict_title_filter")),
                 },
@@ -2624,11 +2653,13 @@ def parse_opml_subscriptions(opml_path: Path) -> list[dict[str, str]]:
             xml_url,
         )
         html_url = str(outline.attrib.get("htmlUrl") or "").strip()
+        select_tier = str(outline.attrib.get("selectTier") or outline.attrib.get("select_tier") or "").strip()
         out.append(
             {
                 "title": title,
                 "xml_url": xml_url,
                 "html_url": html_url,
+                "select_tier": select_tier,
             }
         )
     return out
@@ -2945,6 +2976,14 @@ def fetch_opml_rss(
                     )
         except Exception as exc:
             error = str(exc)
+
+        for item in local_items:
+            meta = item.meta if isinstance(item.meta, dict) else {}
+            meta.setdefault("feed_url", original_feed_url)
+            explicit_tier = str(feed.get("select_tier") or "").strip()
+            if explicit_tier:
+                meta["select_tier"] = explicit_tier
+            item.meta = meta
 
         duration_ms = int((time.perf_counter() - start) * 1000)
         status = {
@@ -6559,6 +6598,7 @@ def story_item_link(item: dict[str, Any]) -> dict[str, Any]:
         "source": item.get("source"),
         "source_name": item.get("site_name"),
         "site_id": item.get("site_id"),
+        "select_tier": item_select_tier(item),
         "published_at": item.get("published_at"),
     }
 
@@ -6599,6 +6639,8 @@ def build_story_record(
     source_names = sorted({str(item.get("source") or item.get("site_name") or "") for item in sorted_items if item.get("source") or item.get("site_name")})
     title = primary.get("title_enhanced_zh") or primary.get("title_bilingual") or primary.get("title")
     url = primary.get("url")
+    select_tier = best_select_tier([ref.get("select_tier") for ref in source_refs])
+    source_heat = round(independent_source_heat({"sources": source_refs}, now), 4)
     return {
         "story_id": story_id,
         "title": title,
@@ -6609,6 +6651,14 @@ def build_story_record(
         "sources": source_refs,
         "source_count": len(source_refs),
         "source_names": source_names,
+        "select_tier": select_tier,
+        "source_heat": source_heat,
+        "other_source_count": other_outlet_count(source_refs),
+        "relation": "primary",
+        "parent_story_id": None,
+        "follow_up_of": None,
+        "follow_up_count": 0,
+        "follow_ups": [],
         "items": source_refs,
         "item_count": len(sorted_items),
         "duplicate_count": len(sorted_items),
@@ -6858,6 +6908,7 @@ def build_creator_hot_items(
         if ai_only and not normalized.get("ai_is_related", is_ai_related_record(normalized)):
             continue
         normalized = add_source_tier_fields(normalized)
+        normalized = add_select_tier_fields(normalized)
         items.append(add_creator_ranking_fields(normalized, now))
 
     deduped = suppress_near_duplicate_items(dedupe_items_by_title_url(items, random_pick=False))
@@ -7134,6 +7185,7 @@ def main() -> int:
                 "last_seen_at": iso(now),
             }
             apply_public_raw_meta(archive[item_id], raw)
+            attach_select_tier(archive[item_id], site_id=raw.site_id, source=raw.source, meta=raw.meta)
         else:
             existing["site_id"] = raw.site_id
             existing["site_name"] = raw.site_name
@@ -7146,6 +7198,7 @@ def main() -> int:
                     existing["published_at"] = iso(raw.published_at)
             existing["last_seen_at"] = iso(now)
             apply_public_raw_meta(existing, raw)
+            attach_select_tier(existing, site_id=raw.site_id, source=raw.source, meta=raw.meta)
 
     # Prune old archive
     keep_after = now - timedelta(days=args.archive_days)
@@ -7182,6 +7235,7 @@ def main() -> int:
                 continue
             normalized = add_ai_relevance_fields(normalized)
             normalized = add_source_tier_fields(normalized)
+            normalized = add_select_tier_fields(normalized)
             latest_items_all_raw.append(normalized)
 
     latest_items_all_raw = normalize_aihubtoday_records(latest_items_all_raw)
@@ -7214,11 +7268,12 @@ def main() -> int:
     latest_items_ai_dedup, title_cache = add_title_enhancements(latest_items_ai_dedup, session, title_cache)
     latest_items_ai_dedup, title_cache = add_recommend_reasons(latest_items_ai_dedup, session, title_cache)
     stories, merge_events = merge_story_items(latest_items_ai_dedup, now=now, window_hours=args.window_hours)
+    link_story_follow_ups(stories)
     generated_at = iso(now)
     daily_brief_payload = build_daily_brief_payload(stories, generated_at=generated_at, window_hours=args.window_hours)
     # Copy before tagging so daily-brief items, which share these dicts, stay unchanged.
     stories_for_feed = [dict(story) for story in stories]
-    assign_selection_tiers(stories_for_feed)
+    assign_selection_tiers(stories_for_feed, now=now)
     stories_merged_payload = build_stories_payload(stories_for_feed, generated_at=generated_at, window_hours=args.window_hours)
     merge_log_payload = build_merge_log_payload(merge_events, generated_at=generated_at)
 
