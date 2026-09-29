@@ -91,7 +91,8 @@ def test_favorites_pane_stays_localstorage_only():
     assert "本机收藏" in source
     assert "localStorage" in source
     assert "aiNewsRadarFavorites" in source
-    assert "不会上传" in source
+    assert "不会上传" not in source
+    assert "radar-fav-note" not in source
 
 
 def test_topics_hub_keeps_group_filter():

@@ -2118,14 +2118,6 @@ summary:focus-visible {
   line-height: 1.15;
 }
 
-.pane-lead {
-  margin: 0;
-  max-width: 46rem;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.55;
-}
-
 .pane-toolbar {
   display: grid;
   gap: 8px;
@@ -2147,8 +2139,7 @@ summary:focus-visible {
 .pane-chip-row[hidden],
 .pane-toolbar[hidden],
 .pane-search-row[hidden],
-.pane-meta[hidden],
-.pane-lead[hidden] {
+.pane-meta[hidden] {
   display: none;
 }
 

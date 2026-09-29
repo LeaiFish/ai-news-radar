@@ -142,7 +142,6 @@ const sectionTabsEl = document.getElementById("sectionTabs");
 const paneTopEl = document.getElementById("paneTop");
 const paneKickerEl = document.getElementById("paneKicker");
 const paneTitleEl = document.getElementById("paneTitle");
-const paneLeadEl = document.getElementById("paneLead");
 const paneToolbarEl = document.getElementById("paneToolbar");
 const paneSearchRowEl = document.getElementById("paneSearchRow");
 const paneMetaEl = document.getElementById("paneMeta");
@@ -229,32 +228,26 @@ const PANE_COPY = {
   selected: {
     kicker: "精选",
     title: "今日精选",
-    lead: "按栏目筛选，先看当前热点再读精选时间轴。",
   },
   all: {
     kicker: "全部 AI 动态",
     title: "全部 AI 动态",
-    lead: "按栏目和来源筛选全量更新，列表更密、按日分组。",
   },
   hot: {
     kicker: "热点榜",
     title: "热点榜",
-    lead: "按合并故事的交叉报道热度排序，不是独立热度接口。",
   },
   brief: {
     kicker: "AI 日报",
     title: "AI 日报",
-    lead: "来自 daily-brief.json 的当日大事，按编号速览。",
   },
   favorites: {
     kicker: "收藏",
     title: "本机收藏",
-    lead: "保存在这台浏览器的 localStorage，不会上传或跨设备同步。",
   },
   topics: {
     kicker: "主题",
     title: "按主题看 AI",
-    lead: "按产业透镜、公司与模型、技术方向浏览。匹配来自标题/摘要/来源的关键词。",
   },
 };
 
@@ -591,10 +584,6 @@ function renderPaneChrome() {
   const copy = PANE_COPY[nav] || PANE_COPY.selected;
   if (paneKickerEl) paneKickerEl.textContent = copy.kicker;
   if (paneTitleEl) paneTitleEl.textContent = copy.title;
-  if (paneLeadEl) {
-    paneLeadEl.textContent = copy.lead;
-    paneLeadEl.hidden = !copy.lead;
-  }
   const showToolbar = nav === "selected" || nav === "all";
   const showSearch = nav === "selected" || nav === "all";
   const showMeta = nav === "hot" || nav === "brief";

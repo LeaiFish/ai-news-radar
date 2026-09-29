@@ -400,7 +400,6 @@
       <div class="radar-fav-inner">
         <p class="pane-kicker">收藏</p>
         <h2>本机收藏</h2>
-        <p class="radar-fav-note">保存在这台浏览器的 localStorage，不会上传或跨设备同步。点卡片或热点右侧的星标即可加入。</p>
         <div class="radar-fav-list"></div>
       </div>
     `;

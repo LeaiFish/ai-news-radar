@@ -121,7 +121,6 @@
   const mainEl = document.getElementById("topicsMain");
   const statusEl = document.getElementById("topicsStatus");
   const titleEl = document.getElementById("topicsTitle");
-  const leadEl = document.getElementById("topicsLead");
   const updatedAtEl = document.getElementById("updatedAt");
   const filterEl = document.getElementById("topicsFilter");
   const itemTpl = document.getElementById("itemTpl");
@@ -246,9 +245,6 @@
     if (!isEmbeddedHub()) {
       document.title = "主题 · AI News Radar";
       if (titleEl) titleEl.textContent = "按主题看 AI";
-      if (leadEl) {
-        leadEl.textContent = "按产业透镜、公司与模型、技术方向浏览主题。匹配来自标题/摘要/来源的关键词，不是分类模型。";
-      }
     }
     renderHubFilter(index);
     const selected = resolveHubFilter(index);
@@ -264,9 +260,7 @@
       head.className = "topics-group-head";
       const heading = document.createElement("h2");
       heading.textContent = group.name || group.id;
-      const desc = document.createElement("p");
-      desc.textContent = group.description || "";
-      head.append(heading, desc);
+      head.append(heading);
       const grid = document.createElement("div");
       grid.className = "topics-grid";
       topicsForGroup(topics, group.id).forEach((topic) => {
@@ -353,7 +347,6 @@
   function renderDetail(detail, index) {
     document.title = `${detail.name} · 主题 · AI News Radar`;
     if (titleEl) titleEl.textContent = detail.name;
-    if (leadEl) leadEl.textContent = detail.description || "";
     const wrap = document.createElement("section");
     wrap.className = "list-wrap topics-detail-wrap";
     const head = document.createElement("div");

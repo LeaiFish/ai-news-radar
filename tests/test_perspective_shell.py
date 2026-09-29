@@ -58,7 +58,7 @@ def test_competition_overview_matches_mock_structure_and_marks_placeholders():
     page = read("index.html")
     js = read("assets/perspective.js")
 
-    assert "月度：先看全局变化" in page
+    assert "月度：先看全局变化" not in page
     assert 'id="monthSelect"' in page
     assert "本月核心判断" in page
     assert ">国内<" in page
@@ -66,7 +66,7 @@ def test_competition_overview_matches_mock_structure_and_marks_placeholders():
     for column in ("产品", "核心指标", "本月值", "环比", "追踪备注"):
         assert column in page
     assert "关联研究" in page
-    assert "内部信息，待接入" in page
+    assert "内部信息，待接入" not in page
     assert "内部信息，待接入" in js
     assert "示例产品" not in page
     assert "示例行" not in page
@@ -97,7 +97,12 @@ def test_research_catalog_and_workbench_placeholder():
 
     assert 'data-space-panel="research"' in page
     assert 'data-space-panel="workbench"' in page
-    assert "机构、事件与趋势目录" in page
+    assert '<p class="lede">机构、事件与趋势目录</p>' not in page
+    assert 'class="lede"' not in page
+    assert "今天先看的更新，按时间排列。" not in page
+    assert "按产业透镜、公司与模型、技术方向浏览。今日条数来自当前故事窗。" not in js
+    assert "id=\"packLede\"" not in page
+    assert "id=\"researchNote\"" not in page
     for label in ("机构", "事件", "趋势"):
         assert f'data-research-tab="{label}"' in page or f">{label}<" in page
     assert 'id="researchSearch"' in page

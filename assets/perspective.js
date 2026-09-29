@@ -387,7 +387,7 @@
   function renderWindowNote() {
     const stamp = formatStamp(state.generatedAt);
     const when = stamp ? `更新于 ${stamp}` : "更新时间待接入";
-    windowNote.textContent = `${when} · 数据窗 ${state.windowHours} 小时 · 核心指标、本月值与环比为内部信息，待接入`;
+    windowNote.textContent = `${when} · 数据窗 ${state.windowHours} 小时`;
   }
 
   function renderMonthSelect() {
@@ -449,16 +449,10 @@
   }
 
   const RESEARCH_TABS = new Set(["all", "org", "event", "trend"]);
-  const TAB_NOTES = {
-    all: "按产业透镜、公司与模型、技术方向浏览。今日条数来自当前故事窗。",
-    org: "公司与模型按主题配置的顺序排列。今日条数来自当前故事窗。",
-    event: "事件来自当前故事窗里的多源、官方或高重要度条目。",
-    trend: "产业透镜与技术方向分开排列。今日条数来自当前故事窗。",
-  };
   const TOPIC_GROUP_FALLBACK = [
-    { id: "lens", name: "产业透镜", description: "从收费、入口、Agent 落地与办公组织看产业怎么走" },
-    { id: "company", name: "公司与模型", description: "按厂商与模型系追踪：谁发了什么、又赢了哪一局" },
-    { id: "tech", name: "技术方向", description: "按技术领域深挖：Agent、编码、多模态、端侧与开源" },
+    { id: "lens", name: "产业透镜" },
+    { id: "company", name: "公司与模型" },
+    { id: "tech", name: "技术方向" },
   ];
   let packToken = 0;
 
@@ -808,7 +802,6 @@
     const section = el("section", "topics-group");
     const head = el("div", "topics-group-head");
     head.append(el("h2", null, group.name || group.id));
-    if (group.description) head.append(el("p", null, group.description));
     const grid = el("div", "topics-grid");
     rows.forEach((row) => grid.append(renderCatalogCard(row)));
     section.append(head, grid);
@@ -817,10 +810,8 @@
 
   function renderCatalog() {
     const list = document.getElementById("researchList");
-    const note = document.getElementById("researchNote");
     if (!list) return;
     const tab = currentTab();
-    if (note) note.textContent = TAB_NOTES[tab];
     clear(list);
     if (!state.researchReady) {
       list.append(el("p", "placeholder-line", "正在整理目录…"));
@@ -1170,12 +1161,10 @@
 
   async function renderPack(kind, id) {
     const title = document.getElementById("packTitle");
-    const lede = document.getElementById("packLede");
     const back = document.getElementById("packBack");
     if (back) back.href = researchHref({ tab: currentTab() });
     if (!state.researchReady) {
       if (title) title.textContent = "正在打开";
-      if (lede) lede.textContent = "正在读取目录…";
       clearPackSlots("正在整理…");
       return;
     }
@@ -1183,7 +1172,6 @@
     const record = lookupRecord(kind, id);
     if (!record) {
       if (title) title.textContent = "未找到条目";
-      if (lede) lede.textContent = "这个条目不在当前目录里。";
       document.title = "未找到条目 · 主题研究 · AI Perspective";
       clearPackSlots("这个条目没有事实包。");
       clear(document.getElementById("packRelated"));
@@ -1191,14 +1179,6 @@
       return;
     }
     if (title) title.textContent = record.name;
-    if (lede) {
-      if (record.kind === "event") {
-        const names = (record.story.source_names || []).join("、");
-        lede.textContent = [record.story.importance_label, names].filter(Boolean).join(" · ");
-      } else {
-        lede.textContent = record.description;
-      }
-    }
     document.title = `${record.name} · 主题研究 · AI Perspective`;
     clearPackSlots("正在整理相关故事…");
     let beats = [];
@@ -1363,7 +1343,7 @@
     const requestedMonth = readParam("month");
     state.month = /^\d{4}-\d{2}$/.test(requestedMonth) ? requestedMonth : state.currentMonth;
     if (!state.generatedAt && briefResult.status !== "fulfilled" && storiesResult.status !== "fulfilled") {
-      windowNote.textContent = "数据没有载入。核心指标、本月值与环比先标为内部信息，待接入。";
+      windowNote.textContent = "数据没有载入。";
       state.currentMonth = monthKey(new Date().toISOString());
       state.month = state.currentMonth;
     }

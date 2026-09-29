@@ -462,7 +462,7 @@ PAGE_TEMPLATE = """<!doctype html>
     <link rel="stylesheet" href="{root}assets/styles.css?v=ui20260923a" />
     <link rel="stylesheet" href="{root}assets/topics.css?v=ui20260923a" />
     <link rel="stylesheet" href="{root}assets/sidebar.css?v=ui20260923a" />
-    <script src="{root}assets/sidebar.js?v=ui20260923a"></script>
+    <script src="{root}assets/sidebar.js?v=ui20260929a"></script>
   </head>
   <body>
     <a class="skip-link" href="#topicsMain">跳到主题内容</a>
@@ -476,7 +476,6 @@ PAGE_TEMPLATE = """<!doctype html>
             <div>
               <p class="topics-kicker"><a href="{hub_href}">主题</a> · AI News Radar</p>
               <h1 id="topicsTitle">{heading}</h1>
-              <p class="topics-lead" id="topicsLead">{lead}</p>
               <div class="hero-updated">
                 <span class="updated-label">更新时间</span>
                 <span class="updated" id="updatedAt">加载中...</span>
@@ -514,7 +513,7 @@ PAGE_TEMPLATE = """<!doctype html>
         </div>
       </article>
     </template>
-    <script src="{root}assets/topics.js?v=topics-5" defer></script>
+    <script src="{root}assets/topics.js?v=topics-6" defer></script>
   </body>
 </html>
 """
@@ -543,7 +542,6 @@ def render_topic_page(*, topic_id: str = "", name: str = "", description: str = 
         title=title,
         description=lead,
         heading=heading,
-        lead=lead,
         home_href=home_href,
         classic_href=classic_href,
         hub_href=hub_href,
