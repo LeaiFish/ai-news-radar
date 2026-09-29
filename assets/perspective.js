@@ -575,6 +575,16 @@
     return name;
   }
 
+  function storyRelationLabel(story) {
+    const other = Number(story?.other_source_count);
+    const progress = Number(story?.follow_up_count);
+    const bits = [];
+    if (Number.isFinite(other) && other > 0) bits.push(`另有 ${other} 家`);
+    if (Number.isFinite(progress) && progress > 0) bits.push(`进展 ${progress}`);
+    else if (story?.relation === "follow_up") bits.push("进展");
+    return bits.join(" · ");
+  }
+
   function renderWorkbench() {
     const note = document.getElementById("workbenchNote");
     const list = document.getElementById("workbenchTimeline");
@@ -616,7 +626,7 @@
       } else {
         body.append(el("p", "timeline-title", title));
       }
-      const source = storySourceLabel(story);
+      const source = [storySourceLabel(story), storyRelationLabel(story)].filter(Boolean).join(" · ");
       if (source) body.append(el("p", "timeline-meta", source));
       item.append(body);
       list.append(item);

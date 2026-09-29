@@ -33,7 +33,9 @@ def test_selected_list_requires_tier_and_hot_board_does_not():
 def test_pipeline_tags_stories_after_the_daily_brief():
     source = read("scripts/update_news.py")
     brief_at = source.index("daily_brief_payload = build_daily_brief_payload")
-    tier_at = source.index("assign_selection_tiers(stories_for_feed)")
+    tier_at = source.index("assign_selection_tiers(stories_for_feed, now=now)")
     merged_at = source.index("stories_merged_payload = build_stories_payload")
     assert brief_at < tier_at < merged_at
+    assert "link_story_follow_ups(stories)" in source
+    assert source.index("link_story_follow_ups(stories)") < brief_at
     assert "dict(story) for story in stories" in source

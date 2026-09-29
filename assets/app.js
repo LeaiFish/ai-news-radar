@@ -1301,6 +1301,98 @@ function storySourceCount(story) {
   return Math.max(1, sources.length);
 }
 
+// 另有 N 家：去重后的其他出口。进展：挂在同一父故事下的后续更新。
+function storyRelationBits(story) {
+  if (!story) return [];
+  const other = Number(story.other_source_count);
+  const progress = Number(story.follow_up_count);
+  const sourceCount = storySourceCount(story);
+  const bits = [];
+  const otherEchoesMulti = sourceCount >= 2 && other === sourceCount - 1;
+  if (Number.isFinite(other) && other > 0 && !otherEchoesMulti) bits.push(`另有 ${fmtNumber(other)} 家`);
+  if (Number.isFinite(progress) && progress > 0) bits.push(`进展 ${fmtNumber(progress)}`);
+  else if (story.relation === "follow_up") bits.push("进展");
+  return bits;
+}
+
+function buildFollowUpList(story) {
+  const followUps = Array.isArray(story && story.follow_ups) ? story.follow_ups : [];
+  if (!followUps.length) return null;
+  const list = document.createElement("div");
+  list.className = "event-expand-list";
+  followUps.forEach((entry) => {
+    const row = document.createElement("div");
+    row.className = "event-source-row";
+    const titleText = String((entry && entry.title) || "进展").trim() || "进展";
+    if (entry && entry.url) {
+      const titleLink = document.createElement("a");
+      titleLink.className = "event-source-title";
+      titleLink.href = entry.url;
+      titleLink.target = "_blank";
+      titleLink.rel = "noopener noreferrer";
+      titleLink.textContent = titleText;
+      row.appendChild(titleLink);
+    } else {
+      const titleEl = document.createElement("span");
+      titleEl.className = "event-source-title";
+      titleEl.textContent = titleText;
+      row.appendChild(titleEl);
+    }
+    const nameEl = document.createElement("span");
+    nameEl.className = "event-source-name";
+    nameEl.textContent = "进展";
+    row.appendChild(nameEl);
+  });
+  return list;
+}
+
+function appendStoryRelationChip(metaAnchorEl, row, node) {
+  const story = row && row.story;
+  const bits = storyRelationBits(story);
+  if (!bits.length || !metaAnchorEl) return metaAnchorEl;
+  const label = bits.join(" · ");
+  const followUps = Array.isArray(story.follow_ups) ? story.follow_ups : [];
+  const expandable = followUps.length > 0 && bits.some((bit) => bit.startsWith("进展"));
+  if (!expandable) {
+    const chip = document.createElement("span");
+    chip.className = "category";
+    chip.textContent = label;
+    if (story.relation === "follow_up" && story.follow_up_of && story.follow_up_of.title) {
+      chip.title = `续自：${story.follow_up_of.title}`;
+    }
+    metaAnchorEl.insertAdjacentElement("afterend", chip);
+    return chip;
+  }
+  const bodyEl = node.querySelector(".news-card-body") || node;
+  const collapsedLabel = `${label} ▸`;
+  const expandedLabel = `${label} ▾`;
+  const chip = document.createElement("button");
+  chip.type = "button";
+  chip.className = "multi-chip";
+  chip.textContent = collapsedLabel;
+  chip.setAttribute("aria-expanded", "false");
+  let followList = null;
+  chip.addEventListener("click", () => {
+    const expanded = chip.getAttribute("aria-expanded") === "true";
+    if (expanded) {
+      if (followList) followList.hidden = true;
+      chip.setAttribute("aria-expanded", "false");
+      chip.textContent = collapsedLabel;
+      return;
+    }
+    if (!followList) {
+      followList = buildFollowUpList(story);
+      if (followList) bodyEl.appendChild(followList);
+    }
+    if (!followList) return;
+    followList.hidden = false;
+    chip.setAttribute("aria-expanded", "true");
+    chip.textContent = expandedLabel;
+  });
+  metaAnchorEl.insertAdjacentElement("afterend", chip);
+  return chip;
+}
+
 // 同一事件展开：source_count>=2 的故事可以展开看每家独立报道（标题+来源+相对时间）。
 // 去重：跳过 url 与主条目重复的信源（已经在卡片主体展示过），除非去重后一条不剩——
 // 那种情况说明所有信源 url 都和主条目一致，只能保留原始 sources 列表兜底展示。
@@ -1751,7 +1843,10 @@ function renderItemNode(row) {
       multiChip.textContent = expandedLabel;
     });
     metaAnchorEl.insertAdjacentElement("afterend", multiChip);
+    metaAnchorEl = multiChip;
   }
+
+  metaAnchorEl = appendStoryRelationChip(metaAnchorEl, row, node);
 
   const scoreEl = node.querySelector(".score-badge");
   const displayScore = row.score;
