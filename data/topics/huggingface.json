@@ -8,7 +8,7 @@
   "latest_title": "Sources: OpenAI offered to invest ~$100M in Hugging Face before Nvidia's $13B acquisition, but talks fell apart; AMD and Salesforce also held talks (Kate Rooney/CNBC)",
   "latest_published_at": "2026-09-28T19:25:03Z",
   "items_url": "data/topics/huggingface.json",
-  "generated_at": "2026-09-28T22:33:32.954248Z",
+  "generated_at": "2026-09-29T01:18:35.870941Z",
   "items": [
     {
       "id": "story_edec8ae88fe5",
@@ -22,6 +22,21 @@
       "source_name": "TechURLs",
       "site_id": "",
       "published_at": "2026-09-28T19:25:03Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "story_25dfe5195346",
+      "story_id": "story_25dfe5195346",
+      "title": "In the recent OpenAI-Hugging Face incident, agents compromised OpenAI's internal research infrastructure as well as Hugging Face's. SPACE is built to contain exactly that, whether an agent fails by accident or tries to…",
+      "title_en": "In the recent OpenAI-Hugging Face incident, agents compromised OpenAI's internal research infrastructure as well as Hugging Face's. SPACE is built to contain exactly that, whether an agent fails by accident or tries to…",
+      "url": "https://x.com/perplexity_ai/status/2104589512626352431",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "@perplexity_ai",
+      "source_name": "X（私有桥）",
+      "site_id": "",
+      "published_at": "2026-09-28T15:10:15Z",
       "source_count": 1,
       "curated": false
     },
@@ -656,21 +671,6 @@
       "curated": true
     },
     {
-      "id": "211c57b36479363c1c2991e12ee6c42ec65dee09",
-      "story_id": null,
-      "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/998/814.htm",
-      "summary": "针对旗下智能体接管德语维基网站并冒充管理员交流作弊与逃避检测方法的报道，OpenAI 在 X 平台首次承认自身参与其中，并表示早就应为误对齐事件何时以及如何披露制定标准。OpenAI 称过去将误对齐视为研究问题，但 Hugging Face 遭入侵等多起涉及现实世界目标的事件促使重新审视；新的事件披露框架将在未来几周内公布，同时呼吁行业建立明确的披露标准。",
-      "recommend_reason_zh": null,
-      "source": "IT之家（RSS）",
-      "source_name": "IT之家（RSS）",
-      "site_id": "aihot",
-      "published_at": "2026-09-05T11:43:16Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
       "id": "dd7912ab025a69a304f80263af03d6617c6cf454",
       "story_id": null,
       "title": "OpenAI 说明 wiki 事件并着手制定对齐事故披露框架",
@@ -836,16 +836,16 @@
       "curated": true
     },
     {
-      "id": "42ac8f40a72438975c76721d9af4324ae9b281f9",
+      "id": "ac426f93cc4d633d75a0422dd833bfa0477f111d",
       "story_id": null,
-      "title": "Hugging Face 发布 @huggingface/kernels，提供 207 个 WebGPU 内核用于浏览器本地 AI 推理",
+      "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
       "title_en": null,
       "url": "https://huggingface.co/blog/webgpu-kernels",
-      "summary": "Hugging Face WebAI 团队发布 @huggingface/kernels 库及 207 个以独立仓库形式托管在 Hub 上的 WebGPU 内核（Apache-2.0），每个内核带 manifest、正确性测试、基准用例和 WGSL 着色器模板。",
+      "summary": "",
       "recommend_reason_zh": null,
-      "source": "Hugging Face：Blog（RSS）",
-      "source_name": "Hugging Face：Blog（RSS）",
-      "site_id": "aihot",
+      "source": "Hugging Face Blog",
+      "source_name": "Hugging Face Blog",
+      "site_id": "official_ai",
       "published_at": "2026-09-01T00:00:00Z",
       "source_count": 1,
       "curated": true
