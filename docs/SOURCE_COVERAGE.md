@@ -40,7 +40,7 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 | Source type | Current support | Recommended path | Notes |
 | --- | --- | --- | --- |
 | Official RSS / Atom | Supported through OPML | Add to `feeds/follow.opml` locally, or `FOLLOW_OPML_B64` in GitHub Actions | Best default for personal customization. |
-| Official AI vendor updates | Built in for selected high-signal sources | Keep OpenAI, Anthropic, Google DeepMind/AI, Hugging Face, GitHub AI/Changelog, OpenRouter, Cloudflare Blog (AI tag), and Apple ML Research as first-class sources | These should not depend only on aggregator coverage. |
+| Official AI vendor updates | Built in for selected high-signal sources | Keep OpenAI, Anthropic, Google DeepMind/AI, Hugging Face, GitHub AI/Changelog, OpenRouter, Cloudflare Blog (AI tag), Apple ML Research, and the domestic lab blogs/changelogs (Qwen, ByteDance Seed, Hunyuan, Quark, DeepSeek, Kimi, MiniMax, Zhipu) as first-class sources | These should not depend only on aggregator coverage. |
 | Curated AI media RSS | Built in for selected high-signal public feeds | Keep source-specific caps and AI/research filters so media breadth does not drown the default view | Useful for product, industry, model, and research coverage. |
 | OPML collections | Supported | Export from RSS reader, copy from `feeds/follow.example.opml`, keep private file out of git | Good for cross-device and multi-agent workflows. |
 | Public JSON APIs | Supported by custom Python fetchers | Add a `fetch_*` function in `scripts/update_news.py` and register it in the task list | Use only stable APIs with timestamps. |
@@ -117,6 +117,30 @@ The public site should directly track these high-signal official sources:
 - OpenRouter Blog RSS
 - Cloudflare Blog AI-tag RSS
 - Apple Machine Learning Research RSS
+- Qwen Blog JSON (`qwen.ai` article API)
+- ByteDance Seed Blog JSON (豆包 / Seed 技术博客)
+- Hunyuan Blog JSON (`api.hunyuan.tencent.com` public list)
+- 夸克扫描王开放平台 article index (titles that name 夸克 / 扫描王)
+- DeepSeek API changelog (Chinese docs page)
+- Kimi API changelog markdown
+- MiniMax release notes markdown
+- 智谱 GLM release notes markdown
+
+These domestic sources are registered in `DOMESTIC_OFFICIAL_SOURCES` and fetched
+from `fetch_official_ai_updates`. They are `T1` in `config/source_tiers.json`.
+Domestic posts use a 90-day ingest window (`DOMESTIC_OFFICIAL_MAX_AGE_DAYS`)
+because these labs publish about once a month. The daily radar still keys off
+`published_at`, so an older post can show up under its company topic without
+entering the 24-hour list. Month-only changelog labels (Kimi) are dated to the
+first of that month.
+
+Tried and not added: Quark consumer pages (`quark.cn`, `quark.cn/articles`)
+have no dated news index. `yuanbao.tencent.com` and `doubao.com` are app
+shells. Volcengine news and the Tencent Cloud Hunyuan changelog either require
+JavaScript or return an empty shell. GitHub release atoms for the model repos
+are empty or years old; high-frequency CLI atoms (`qwen-code`, `kimi-code`)
+were left out so patch notes do not crowd model posts. No WeChat or X accounts
+were added.
 
 Aggregator sites may already surface some of these updates, but they are not
 guaranteed to be complete or timely. Keep these official sources as a stable

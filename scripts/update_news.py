@@ -20,7 +20,7 @@ from datetime import date, datetime, timedelta, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qsl, unquote, urlencode, urljoin, urlparse, urlunparse
+from urllib.parse import parse_qsl, quote, unquote, urlencode, urljoin, urlparse, urlunparse
 from zoneinfo import ZoneInfo
 
 import requests
@@ -172,6 +172,62 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
     },
 )
 OFFICIAL_AI_MAX_AGE_DAYS = 45
+# Domestic labs often publish monthly. Keep their posts long enough to reach the
+# archive and topic pages. The 24h view still uses published_at, not this window.
+DOMESTIC_OFFICIAL_MAX_AGE_DAYS = 90
+# First-party domestic labs. These are not RSS, so they are not fetched by
+# fetch_feed_as_official_items. Each entry is still an official source: name,
+# fetch URL, homepage, and select_tier stay in lockstep with config/source_tiers.json.
+DOMESTIC_OFFICIAL_SOURCES: tuple[dict[str, str], ...] = (
+    {
+        "title": "Qwen Blog",
+        "xml_url": "https://qwen.ai/api/v2/article/retrieval?language=zh-CN&type=qwen_ai",
+        "html_url": "https://qwen.ai/research",
+        "select_tier": "T1",
+    },
+    {
+        "title": "ByteDance Seed Blog",
+        "xml_url": "https://seed.bytedance.com/api/get_article_list_v2?article_type=2&count=20&order_desc=true",
+        "html_url": "https://seed.bytedance.com/zh/blog",
+        "select_tier": "T1",
+    },
+    {
+        "title": "Hunyuan Blog",
+        "xml_url": "https://api.hunyuan.tencent.com/api/blog/publicList",
+        "html_url": "https://hunyuan.tencent.com/",
+        "select_tier": "T1",
+    },
+    {
+        "title": "夸克 Quark News",
+        "xml_url": "https://scan.quark.cn/business/article-news",
+        "html_url": "https://scan.quark.cn/business/article-news",
+        "select_tier": "T1",
+    },
+    {
+        "title": "DeepSeek API Changelog",
+        "xml_url": "https://api-docs.deepseek.com/zh-cn/updates",
+        "html_url": "https://api-docs.deepseek.com/zh-cn/updates",
+        "select_tier": "T1",
+    },
+    {
+        "title": "Kimi API Changelog",
+        "xml_url": "https://platform.kimi.com/docs/changelog.md",
+        "html_url": "https://platform.kimi.com/docs/changelog",
+        "select_tier": "T1",
+    },
+    {
+        "title": "MiniMax Release Notes",
+        "xml_url": "https://platform.minimaxi.com/docs/release-notes.md",
+        "html_url": "https://platform.minimaxi.com/docs/release-notes",
+        "select_tier": "T1",
+    },
+    {
+        "title": "智谱 GLM Releases",
+        "xml_url": "https://docs.bigmodel.cn/cn/update/new-releases.md",
+        "html_url": "https://docs.bigmodel.cn/cn/update/new-releases",
+        "select_tier": "T1",
+    },
+)
 CURATED_AI_MEDIA_MAX_AGE_DAYS = 30
 # Per-fetch item cap for wide discussion-tier aggregators (buzzing/iris).
 # They dominate raw volume with very low AI keep rates (see
@@ -1865,6 +1921,377 @@ def fetch_curated_ai_media(session: requests.Session, now: datetime) -> list[Raw
     return out
 
 
+def domestic_official_source(title: str) -> dict[str, str]:
+    for source in DOMESTIC_OFFICIAL_SOURCES:
+        if source["title"] == title:
+            return source
+    raise KeyError(title)
+
+
+def _within_official_max_age(
+    published: datetime | None,
+    now: datetime | None,
+    *,
+    max_age_days: int = OFFICIAL_AI_MAX_AGE_DAYS,
+    by_calendar_date: bool = False,
+) -> bool:
+    if not published:
+        return False
+    if now is None:
+        return True
+    cutoff = now - timedelta(days=max_age_days)
+    if by_calendar_date:
+        # Month-only changelog labels land at 00:00 UTC. Compare dates so a
+        # post dated the boundary day is kept for that whole calendar day.
+        return published.date() >= cutoff.date()
+    return published >= cutoff
+
+
+def _domestic_official_item(
+    source: dict[str, str],
+    title: str,
+    url: str,
+    published: datetime | None,
+) -> RawItem | None:
+    title = maybe_fix_mojibake(re.sub(r"\s+", " ", title or "").strip())
+    url = str(url or "").strip()
+    if not title or not url or not _within_official_max_age(published, None):
+        return None
+    return RawItem(
+        site_id="official_ai",
+        site_name="Official AI Updates",
+        source=source["title"],
+        title=title,
+        url=url,
+        published_at=published,
+        meta={
+            "feed_url": source["xml_url"],
+            "feed_home": source["html_url"],
+            "select_tier": source.get("select_tier") or "T1",
+        },
+    )
+
+
+def parse_loose_official_date(value: Any, now: datetime | None) -> datetime | None:
+    """Parse ISO timestamps plus the month/day labels used by CN changelogs."""
+    if isinstance(value, (int, float)) or isinstance(value, datetime):
+        return parse_date_any(value, now or utc_now())
+    text = str(value or "").strip()
+    if not text:
+        return None
+    normalized = text
+    full = re.search(r"(20\d{2})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", text)
+    month = re.search(r"(20\d{2})\s*年\s*(\d{1,2})\s*月", text)
+    dotted = re.search(r"(20\d{2})[./](\d{1,2})[./](\d{1,2})", text)
+    iso = re.search(r"(20\d{2})-(\d{1,2})-(\d{1,2})", text)
+    if full:
+        normalized = f"{full.group(1)}-{int(full.group(2)):02d}-{int(full.group(3)):02d}"
+    elif month:
+        normalized = f"{month.group(1)}-{int(month.group(2)):02d}-01"
+    elif dotted:
+        normalized = f"{dotted.group(1)}-{int(dotted.group(2)):02d}-{int(dotted.group(3)):02d}"
+    elif iso:
+        normalized = f"{iso.group(1)}-{int(iso.group(2)):02d}-{int(iso.group(3)):02d}"
+    return parse_date_any(normalized, now or utc_now())
+
+
+def _keep_domestic_item(
+    source: dict[str, str],
+    title: str,
+    url: str,
+    published: datetime | None,
+    now: datetime | None,
+    seen: set[str],
+) -> RawItem | None:
+    if not _within_official_max_age(
+        published,
+        now,
+        max_age_days=DOMESTIC_OFFICIAL_MAX_AGE_DAYS,
+        by_calendar_date=True,
+    ):
+        return None
+    item = _domestic_official_item(source, title, url, published)
+    if item is None or item.url in seen:
+        return None
+    seen.add(item.url)
+    return item
+
+
+def parse_qwen_blog_payload(payload: Any, now: datetime | None) -> list[RawItem]:
+    source = domestic_official_source("Qwen Blog")
+    articles = []
+    if isinstance(payload, dict):
+        data = payload.get("data")
+        if isinstance(data, dict):
+            articles = data.get("articles") or []
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for article in articles:
+        if not isinstance(article, dict):
+            continue
+        extra = article.get("extra") if isinstance(article.get("extra"), dict) else {}
+        path = str(article.get("path") or "").strip()
+        title = str(article.get("title") or "").strip()
+        published = parse_loose_official_date(extra.get("date"), now)
+        if not path or not title:
+            continue
+        url = f"https://qwen.ai/blog?id={quote(path, safe='-_.')}"
+        item = _keep_domestic_item(source, title, url, published, now, seen)
+        if item:
+            out.append(item)
+    return out
+
+
+def parse_seed_blog_payload(payload: Any, now: datetime | None) -> list[RawItem]:
+    source = domestic_official_source("ByteDance Seed Blog")
+    rows = payload.get("sub_article_list") if isinstance(payload, dict) else None
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for row in rows or []:
+        if not isinstance(row, dict):
+            continue
+        meta = row.get("ArticleMeta") if isinstance(row.get("ArticleMeta"), dict) else {}
+        zh = row.get("ArticleSubContentZh") if isinstance(row.get("ArticleSubContentZh"), dict) else {}
+        en = row.get("ArticleSubContentEn") if isinstance(row.get("ArticleSubContentEn"), dict) else {}
+        title = str(zh.get("Title") or en.get("Title") or "").strip()
+        slug = str(zh.get("TitleKey") or en.get("TitleKey") or "").strip()
+        published = parse_loose_official_date(meta.get("PublishDate"), now)
+        if not title or not slug:
+            continue
+        url = "https://seed.bytedance.com/zh/blog/" + quote(slug, safe="")
+        item = _keep_domestic_item(source, title, url, published, now, seen)
+        if item:
+            out.append(item)
+    return out
+
+
+def parse_hunyuan_blog_payload(payload: Any, now: datetime | None) -> list[RawItem]:
+    source = domestic_official_source("Hunyuan Blog")
+    rows = []
+    if isinstance(payload, dict):
+        data = payload.get("data")
+        if isinstance(data, dict):
+            rows = data.get("list") or []
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        title = str(row.get("title") or "").strip()
+        slug = str(row.get("customUrl") or row.get("id") or "").strip()
+        published = parse_loose_official_date(
+            row.get("displayPublishTime") or row.get("publishedAt"),
+            now,
+        )
+        if not title or not slug:
+            continue
+        url = f"https://hunyuan.tencent.com/blog/{quote(slug, safe='-_.')}"
+        item = _keep_domestic_item(source, title, url, published, now, seen)
+        if item:
+            out.append(item)
+    return out
+
+
+def parse_quark_article_news(page_html: str, now: datetime | None) -> list[RawItem]:
+    source = domestic_official_source("夸克 Quark News")
+    soup = BeautifulSoup(page_html or "", "html.parser")
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for card in soup.select(".article-list-item"):
+        title_node = card.select_one(".article-title")
+        date_node = card.select_one(".article-date")
+        link = card.select_one("a[href]")
+        title = title_node.get_text(" ", strip=True) if title_node else ""
+        # The index also lists generic scan-API blurbs. Keep posts that name
+        # the Quark product so the topic is not filled with OCR SKUs.
+        if not any(token in title for token in ("夸克", "Quark", "扫描王")):
+            continue
+        href = str(link.get("href") or "").strip() if link else ""
+        url = urljoin(source["html_url"], href)
+        published = parse_loose_official_date(date_node.get_text(" ", strip=True) if date_node else "", now)
+        item = _keep_domestic_item(source, title, url, published, now, seen)
+        if item:
+            out.append(item)
+    return out
+
+
+def _heading_text(node: Any) -> str:
+    for anchor in node.select("a.hash-link"):
+        anchor.decompose()
+    return node.get_text(" ", strip=True)
+
+
+def parse_deepseek_updates_html(page_html: str, now: datetime | None) -> list[RawItem]:
+    source = domestic_official_source("DeepSeek API Changelog")
+    soup = BeautifulSoup(page_html or "", "html.parser")
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for heading in soup.select("h2"):
+        published = parse_loose_official_date(_heading_text(heading), now)
+        if not _within_official_max_age(
+            published,
+            now,
+            max_age_days=DOMESTIC_OFFICIAL_MAX_AGE_DAYS,
+            by_calendar_date=True,
+        ):
+            continue
+        for sibling in heading.find_next_siblings():
+            if sibling.name == "h2":
+                break
+            if sibling.name != "h3":
+                continue
+            anchor = maybe_fix_mojibake(str(sibling.get("id") or "").strip())
+            title = _heading_text(sibling)
+            url = f"{source['html_url']}#{anchor}" if anchor else source["html_url"]
+            item = _keep_domestic_item(source, title, url, published, now, seen)
+            if item:
+                out.append(item)
+    return out
+
+
+def _changelog_bullet_title(bullet: str, limit: int = 80) -> str:
+    """First clause of a changelog bullet, without markdown links or a mid-word cut."""
+    cleaned = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", bullet or "")
+    cleaned = re.sub(r"[`*]+", "", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    if len(cleaned) <= limit:
+        return cleaned
+    for sep in ("。", "；", "，"):
+        head, found, _rest = cleaned.partition(sep)
+        if found and 8 <= len(head) <= limit:
+            return head
+    return cleaned[:limit].rstrip()
+
+
+def parse_kimi_changelog_markdown(text: str, now: datetime | None) -> list[RawItem]:
+    source = domestic_official_source("Kimi API Changelog")
+    parts = re.split(r'<Update\s+label="([^"]+)"[^>]*>', text or "")
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for label, body in zip(parts[1::2], parts[2::2]):
+        published = parse_loose_official_date(label, now)
+        headings = re.findall(r"^\s*###\s+(.+)$", body, flags=re.M)
+        if not headings:
+            headings = []
+            for bullet in re.findall(r"^\s*[*+-]\s+(.+)$", body, flags=re.M):
+                title = _changelog_bullet_title(bullet)
+                if title:
+                    headings.append(title)
+        if not headings:
+            continue
+        for heading in headings:
+            title = re.sub(r"^[\W_]+", "", heading, flags=re.UNICODE).strip()
+            slug = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff]+", "-", title).strip("-").lower()[:80]
+            url = f"{source['html_url']}#{slug}" if slug else source["html_url"]
+            item = _keep_domestic_item(source, title, url, published, now, seen)
+            if item:
+                out.append(item)
+    return out
+
+
+def parse_minimax_release_notes(text: str, now: datetime | None) -> list[RawItem]:
+    source = domestic_official_source("MiniMax Release Notes")
+    published: datetime | None = None
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for raw_line in (text or "").splitlines():
+        line = raw_line.strip()
+        if line.startswith("#") and re.search(r"20\d{2}", line):
+            published = parse_loose_official_date(line, now)
+            continue
+        match = re.search(r'<Card\s+title="([^"]+)"[^>]*\shref="([^"]+)"', line)
+        if not match:
+            match = re.search(r'<Card\s+[^>]*href="([^"]+)"[^>]*\stitle="([^"]+)"', line)
+            if match:
+                href, title = match.group(1), match.group(2)
+            else:
+                continue
+        else:
+            title, href = match.group(1), match.group(2)
+        url = urljoin("https://www.minimax.cn/", href)
+        item = _keep_domestic_item(source, title, url, published, now, seen)
+        if item:
+            out.append(item)
+    return out
+
+
+def parse_zhipu_release_notes(text: str, now: datetime | None) -> list[RawItem]:
+    source = domestic_official_source("智谱 GLM Releases")
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    pattern = re.compile(
+        r'<Update\s+label="([^"]+)"\s+description="([^"]*)"[^>]*>(.*?)</Update>',
+        re.S,
+    )
+    for label, description, body in pattern.findall(text or ""):
+        published = parse_loose_official_date(label, now)
+        title = re.sub(r"\s+", " ", description).strip() or label
+        link = re.search(r"\((https?://[^)\s]+|/[^)\s]+)\)", body)
+        if link:
+            url = urljoin("https://docs.bigmodel.cn/", link.group(1))
+        else:
+            slug = re.sub(r"[^0-9A-Za-z]+", "-", label).strip("-").lower()
+            url = f"{source['html_url']}#{slug}" if slug else source["html_url"]
+        item = _keep_domestic_item(source, title, url, published, now, seen)
+        if item:
+            out.append(item)
+    return out
+
+
+def fetch_domestic_official_updates(session: requests.Session, now: datetime) -> list[RawItem]:
+    """Official CN lab blogs and changelogs that do not publish RSS."""
+    out: list[RawItem] = []
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Accept": "application/json, text/markdown, text/html, */*",
+    }
+
+    def _get_text(url: str) -> str:
+        response = session.get(url, timeout=25, headers=headers)
+        response.raise_for_status()
+        # requests uses ISO-8859-1 when a page omits charset. DeepSeek's
+        # changelog does that, which turns heading ids such as 发布 into latin-1.
+        encoding = (response.encoding or "").lower()
+        if encoding in {"", "iso-8859-1", "latin-1", "ascii"}:
+            response.encoding = response.apparent_encoding or "utf-8"
+        return response.text
+
+    jobs: tuple[tuple[str, Any], ...] = (
+        ("Qwen Blog", lambda text: parse_qwen_blog_payload(json.loads(text), now)),
+        ("ByteDance Seed Blog", lambda text: parse_seed_blog_payload(json.loads(text), now)),
+        ("夸克 Quark News", lambda text: parse_quark_article_news(text, now)),
+        ("DeepSeek API Changelog", lambda text: parse_deepseek_updates_html(text, now)),
+        ("Kimi API Changelog", lambda text: parse_kimi_changelog_markdown(text, now)),
+        ("MiniMax Release Notes", lambda text: parse_minimax_release_notes(text, now)),
+        ("智谱 GLM Releases", lambda text: parse_zhipu_release_notes(text, now)),
+    )
+    for title, parser in jobs:
+        try:
+            out.extend(parser(_get_text(domestic_official_source(title)["xml_url"])))
+        except Exception:
+            continue
+
+    try:
+        source = domestic_official_source("Hunyuan Blog")
+        response = session.post(
+            source["xml_url"],
+            json={"page": 1, "pageSize": 20},
+            timeout=25,
+            headers={
+                **headers,
+                "Content-Type": "application/json",
+                "Origin": "https://hunyuan.tencent.com",
+                "Referer": "https://hunyuan.tencent.com/",
+            },
+        )
+        response.raise_for_status()
+        out.extend(parse_hunyuan_blog_payload(response.json(), now))
+    except Exception:
+        pass
+    return out
+
+
 def fetch_official_ai_updates(session: requests.Session, now: datetime) -> list[RawItem]:
     out: list[RawItem] = []
 
@@ -1885,6 +2312,11 @@ def fetch_official_ai_updates(session: requests.Session, now: datetime) -> list[
         r = session.get("https://developers.openai.com/codex/changelog", timeout=20)
         r.raise_for_status()
         out.extend(parse_openai_codex_changelog_items(r.text, now))
+    except Exception:
+        pass
+
+    try:
+        out.extend(fetch_domestic_official_updates(session, now))
     except Exception:
         pass
 

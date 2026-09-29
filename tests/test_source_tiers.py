@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 from scripts.source_tiers import item_select_tier, normalize_select_tier, resolve_select_tier
-from scripts.update_news import CURATED_AI_MEDIA_FEEDS, OFFICIAL_AI_FEEDS, parse_opml_subscriptions
+from scripts.update_news import (
+    CURATED_AI_MEDIA_FEEDS,
+    DOMESTIC_OFFICIAL_SOURCES,
+    OFFICIAL_AI_FEEDS,
+    parse_opml_subscriptions,
+)
 
 
 def test_unknown_source_defaults_to_t2():
@@ -20,6 +25,10 @@ def test_builtin_feeds_match_the_config_file():
     for feed in CURATED_AI_MEDIA_FEEDS:
         assert resolve_select_tier(source=feed["title"], site_id="curated_media") == feed["select_tier"]
         assert resolve_select_tier(feed_url=feed["xml_url"]) == feed["select_tier"]
+    for feed in DOMESTIC_OFFICIAL_SOURCES:
+        assert feed["select_tier"] == "T1"
+        assert resolve_select_tier(source=feed["title"], site_id="curated_media") == "T1"
+        assert resolve_select_tier(feed_url=feed["xml_url"], site_id="curated_media") == "T1"
 
 
 def test_official_accounts_and_aihot_names():
