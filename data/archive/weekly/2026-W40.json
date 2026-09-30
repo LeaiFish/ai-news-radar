@@ -4,49 +4,50 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-09-30T13:44:19.964887Z",
+  "generated_at": "2026-09-30T16:50:39.430558Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
-    "2026-09-30"
+    "2026-09-30",
+    "2026-10-01"
   ],
-  "story_count": 833,
-  "unique_story_count": 700,
+  "story_count": 1164,
+  "unique_story_count": 751,
   "counts": {
     "by_company_topic": {
-      "anthropic": 107,
-      "apple": 4,
-      "deepseek": 8,
-      "doubao": 6,
-      "google-gemini": 21,
-      "huggingface": 14,
+      "anthropic": 139,
+      "apple": 6,
+      "deepseek": 15,
+      "doubao": 8,
+      "google-gemini": 30,
+      "huggingface": 21,
       "kimi": 4,
       "meta-llama": 3,
-      "microsoft": 11,
+      "microsoft": 13,
       "minimax": 4,
-      "nvidia": 57,
-      "openai": 192,
-      "openrouter": 9,
+      "nvidia": 70,
+      "openai": 294,
+      "openrouter": 14,
       "perplexity": 9,
-      "qwen": 10,
-      "xai": 7,
-      "zhipu": 5
+      "qwen": 11,
+      "xai": 12,
+      "zhipu": 8
     },
     "by_lens_topic": {
-      "agent-ecosystem": 171,
-      "monetization": 18,
-      "workplace": 21
+      "agent-ecosystem": 234,
+      "monetization": 29,
+      "workplace": 32
     },
     "by_importance_label": {
-      "值得关注": 623,
-      "多源热议": 16,
-      "官方更新": 34,
-      "行业动态": 160
+      "值得关注": 888,
+      "多源热议": 19,
+      "官方更新": 55,
+      "行业动态": 202
     },
     "by_source_count_bucket": {
-      "1": 787,
-      "2": 28,
-      "3+": 18
+      "1": 1105,
+      "2": 36,
+      "3+": 23
     }
   },
   "top_stories": [
@@ -230,6 +231,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0d7ed6e47e0a",
+      "title": "Google DeepMind 发布 SynthID Bio，为 AI 生成的蛋白质嵌入可验证水印 / Introducing SynthID Bio",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio",
+      "importance_score": 0.8394,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c04a80da7898",
       "title": "Claude Sonnet 5.5 in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
@@ -274,6 +288,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_01ea8e57038e",
+      "title": "Helping small businesses put AI to work",
+      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "importance_score": 0.8351,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c49bc1306894",
       "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
       "url": "https://openai.com/index/how-we-will-do-better-for-australia",
@@ -296,6 +323,19 @@
       "archive_date": "2026-09-29",
       "company_topics": [
         "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_855109885f33",
+      "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+      "url": "https://huggingface.co/blog/open-tts-leaderboard",
+      "importance_score": 0.8311,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -379,6 +419,19 @@
       "lens_topics": [
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_723f17108ce7",
+      "title": "On the Effectiveness-Fluency Trade-Off in LLM Conditioning: A Systematic Study",
+      "url": "https://machinelearning.apple.com/research/effectiveness-fluency-llm-conditioning",
+      "importance_score": 0.8131,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_7e0e84425f1a",
@@ -521,56 +574,6 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3622c48a5055",
-      "title": "英伟达联合超100家伙伴推出开放代理安全平台 / Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-      "url": "https://x.com/JensenHuang/status/2104499465055023424",
-      "importance_score": 0.8,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_b73aec0b4852",
-      "title": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞 / How we found 24 Android vulnerabilities using our open source AI security agent",
-      "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
-      "importance_score": 0.7959,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-29",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_c6c19c9c924b",
-      "title": "AMD 以 82 亿美元收购李飞飞的世界模型公司 World Labs / AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
-      "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion",
-      "importance_score": 0.7888,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_693509ac395b",
-      "title": "AMD 以约 82 亿美元全股票交易收购李飞飞联合创立的 World Labs / AMD is acquiring AI company World Labs in a deal worth more than $8 billion",
-      "url": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal",
-      "importance_score": 0.7849,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
       "company_topics": [],
       "lens_topics": []
     }

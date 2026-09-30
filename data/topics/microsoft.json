@@ -3,12 +3,12 @@
   "name": "Microsoft / Copilot",
   "description": "微软 AI 布局：Copilot 全家桶、Azure OpenAI、GitHub Copilot 与合作关系。",
   "group": "company",
-  "item_count": 87,
+  "item_count": 86,
   "listed_count": 80,
   "latest_title": "PromptArmor 披露 Copilot Cowork AI 网关被劫持绕过沙箱外传文件漏洞 / Hijacking Copilot Cowork's AI Gateway to Bypass Sandboxing and Exfiltrate Files",
   "latest_published_at": "2026-09-30T00:00:00Z",
   "items_url": "data/topics/microsoft.json",
-  "generated_at": "2026-09-30T13:44:19.964887Z",
+  "generated_at": "2026-09-30T16:50:39.430558Z",
   "items": [
     {
       "id": "story_962e9b340d1f",
@@ -1046,6 +1046,21 @@
       "curated": true
     },
     {
+      "id": "11db15a62c96d79c87e60fe2230b16b981382402",
+      "story_id": null,
+      "title": "Copilot 代码审查功能已登陆 Azure Repos，按审查次数计费",
+      "title_en": null,
+      "url": "https://www.infoq.cn/article/kB15qdDc6NFLdaUbCbqo",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "InfoQ CN",
+      "source_name": "InfoQ CN",
+      "site_id": "opmlrss",
+      "published_at": "2026-09-10T11:00:00Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
       "id": "4a89c21c8375b192a955b575fb405ff6c227e98c",
       "story_id": null,
       "title": "Enterprise managed permissions for GitHub Copilot agent operations",
@@ -1147,21 +1162,6 @@
       "source_name": "GitHub AI & ML",
       "site_id": "official_ai",
       "published_at": "2026-09-03T16:00:00Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "7ef1a0850c49c5e081f7f6cb2be3988626111f6b",
-      "story_id": null,
-      "title": "GitHub Copilot 如何在不牺牲任务质量的前提下降低 AI 编码成本",
-      "title_en": null,
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
-      "summary": "GitHub 工程师 Erik Kristensen 分享了 Copilot 降本的四项改动：选择性压缩工具输出、移除 view 工具行号前缀（线下推理成本降约 5%，线上用户日均推理成本降约 3%）、压缩 task-tool 提示词（每轮省约 1300 token，每活跃小时归一化成本降 2.9%）、后台任务完成后直接交付结果（AI Credits 用量降约 2.3%）。",
-      "recommend_reason_zh": null,
-      "source": "GitHub Blog",
-      "source_name": "GitHub Blog",
-      "site_id": "aihot",
-      "published_at": "2026-09-02T18:00:00Z",
       "source_count": 1,
       "curated": true
     },
