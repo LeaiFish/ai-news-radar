@@ -4,19 +4,19 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-09-30T01:18:39.206133Z",
+  "generated_at": "2026-09-30T02:09:35.732775Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
     "2026-09-30"
   ],
-  "story_count": 754,
-  "unique_story_count": 607,
+  "story_count": 766,
+  "unique_story_count": 621,
   "counts": {
     "by_company_topic": {
-      "anthropic": 103,
+      "anthropic": 105,
       "apple": 3,
-      "deepseek": 6,
+      "deepseek": 7,
       "doubao": 4,
       "google-gemini": 19,
       "huggingface": 12,
@@ -25,7 +25,7 @@
       "microsoft": 12,
       "minimax": 4,
       "nvidia": 53,
-      "openai": 180,
+      "openai": 184,
       "openrouter": 9,
       "perplexity": 10,
       "qwen": 11,
@@ -33,18 +33,18 @@
       "zhipu": 5
     },
     "by_lens_topic": {
-      "agent-ecosystem": 162,
-      "monetization": 13,
-      "workplace": 18
+      "agent-ecosystem": 165,
+      "monetization": 15,
+      "workplace": 19
     },
     "by_importance_label": {
-      "值得关注": 555,
+      "值得关注": 560,
       "多源热议": 14,
       "官方更新": 31,
-      "行业动态": 154
+      "行业动态": 161
     },
     "by_source_count_bucket": {
-      "1": 709,
+      "1": 721,
       "2": 29,
       "3+": 16
     }
@@ -54,7 +54,7 @@
       "story_id": "story_632fc8ebf5dc",
       "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
       "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "importance_score": 0.8743,
+      "importance_score": 0.8725,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-09-30",
@@ -67,7 +67,7 @@
       "story_id": "story_5793276d561c",
       "title": "OpenAI 发布常驻智能体 dots，由 GPT-6 Astra 驱动 / Introducing dots",
       "url": "https://openai.com/index/introducing-dots",
-      "importance_score": 0.874,
+      "importance_score": 0.8721,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-09-30",
@@ -95,7 +95,7 @@
       "story_id": "story_97edd51cc1bf",
       "title": "OpenRouter 教程：如何从生产流量构建 golden 评测集并跨模型复测 / Building a Golden Eval Dataset from Production Traffic",
       "url": "https://openrouter.ai/blog/tutorials/building-a-golden-eval-dataset-from-production-traffic",
-      "importance_score": 0.8526,
+      "importance_score": 0.8505,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-30",
@@ -103,21 +103,6 @@
         "openrouter"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_9ddecfa386f8",
-      "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试 / AI Agent Regression Testing After a Prompt or Model Change",
-      "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
-      "importance_score": 0.8486,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     },
     {
       "story_id": "story_89c993ac1128",
@@ -129,6 +114,21 @@
       "archive_date": "2026-09-28",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_9ddecfa386f8",
+      "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试 / AI Agent Regression Testing After a Prompt or Model Change",
+      "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
+      "importance_score": 0.8465,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_299644506077",
@@ -172,37 +172,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0b8f5dfcd83d",
-      "title": "OpenRouter 教程：如何测试 AI Agent 的工具调用准确性 / How to Test Tool-Calling Accuracy in AI Agents",
-      "url": "https://openrouter.ai/blog/tutorials/how-to-test-tool-calling-accuracy-in-ai-agents",
-      "importance_score": 0.8406,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_5e8fdb7e624e",
-      "title": "GPT-6.1 Sol in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
-      "importance_score": 0.8397,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "openai",
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_c04a80da7898",
       "title": "Claude Sonnet 5.5 in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
@@ -216,21 +185,6 @@
       ],
       "lens_topics": [
         "workplace"
-      ]
-    },
-    {
-      "story_id": "story_a2df1f649cab",
-      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "importance_score": 0.8389,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
       ]
     },
     {
@@ -249,6 +203,37 @@
       ]
     },
     {
+      "story_id": "story_0b8f5dfcd83d",
+      "title": "OpenRouter 教程：如何测试 AI Agent 的工具调用准确性 / How to Test Tool-Calling Accuracy in AI Agents",
+      "url": "https://openrouter.ai/blog/tutorials/how-to-test-tool-calling-accuracy-in-ai-agents",
+      "importance_score": 0.8385,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_5e8fdb7e624e",
+      "title": "GPT-6.1 Sol in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
+      "importance_score": 0.8378,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai",
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_794f3e562ac1",
       "title": "Image-to-Video AI Models Compared: Cost, Resolution, and Control",
       "url": "https://openrouter.ai/blog/insights/image-to-video-models-compared",
@@ -262,10 +247,25 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a2df1f649cab",
+      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "importance_score": 0.8371,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_a12eaf57e6f0",
       "title": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一 / NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
       "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "importance_score": 0.8362,
+      "importance_score": 0.8343,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-30",
@@ -273,17 +273,6 @@
         "nvidia",
         "huggingface"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ea535c078900",
-      "title": "Bring business context with external custom properties",
-      "url": "https://github.blog/changelog/2026-09-29-bring-business-context-with-external-custom-properties",
-      "importance_score": 0.8336,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -297,6 +286,17 @@
       "company_topics": [
         "openai"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ea535c078900",
+      "title": "Bring business context with external custom properties",
+      "url": "https://github.blog/changelog/2026-09-29-bring-business-context-with-external-custom-properties",
+      "importance_score": 0.8316,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -316,7 +316,7 @@
       "story_id": "story_b740e7f2bda0",
       "title": "Repository custom runner settings for Dependabot",
       "url": "https://github.blog/changelog/2026-09-29-repository-custom-runner-settings-for-dependabot",
-      "importance_score": 0.8287,
+      "importance_score": 0.8267,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-30",
@@ -338,7 +338,7 @@
       "story_id": "story_cdd2ad933b11",
       "title": "Using AI to chart a course for our post-quantum migration",
       "url": "https://blog.cloudflare.com/ai-driven-cryptography-discovery",
-      "importance_score": 0.8207,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-30",
@@ -349,27 +349,12 @@
       "story_id": "story_b04b2657bcb9",
       "title": "We tested our own WAF with frontier AI models. Here’s what we found",
       "url": "https://blog.cloudflare.com/adaptive-ai-waf-testing",
-      "importance_score": 0.8207,
+      "importance_score": 0.8188,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-30",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_4fbbd781192d",
-      "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
-      "url": "https://openai.com/index/devday-2026-recap",
-      "importance_score": 0.8163,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     },
     {
       "story_id": "story_7009e35a2340",
@@ -398,17 +383,19 @@
       ]
     },
     {
-      "story_id": "story_789068731278",
-      "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元 / OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
-      "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
-      "importance_score": 0.812,
-      "importance_label": "行业动态",
-      "source_count": 2,
+      "story_id": "story_4fbbd781192d",
+      "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "importance_score": 0.8145,
+      "importance_label": "官方更新",
+      "source_count": 1,
       "archive_date": "2026-09-30",
       "company_topics": [
         "openai"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_7e0e84425f1a",
@@ -420,6 +407,19 @@
       "archive_date": "2026-09-29",
       "company_topics": [
         "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f4351a60220c",
+      "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+      "url": "https://www.ithome.com/1/008/592.htm",
+      "importance_score": 0.8117,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -438,6 +438,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_789068731278",
+      "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元 / OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+      "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+      "importance_score": 0.81,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_d2e151a7b076",
@@ -480,10 +493,26 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_024f628f3f4f",
+      "title": "OpenAI 推出 Codex 云环境，可复用配置并跨设备跟进任务 / Run Codex tasks in reusable cloud environments, then follow progress and steer them from your phone or another computer:",
+      "url": "https://x.com/OpenAIDevs/status/2105073633731461197",
+      "importance_score": 0.8026,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_4b81e15f89c2",
       "title": "OpenAI 发布 GPT-6.1 Sol，主打智能体编码与跨应用工作流 / Give your coding agents more room to work.",
       "url": "https://x.com/OpenAIDevs/status/2105073621144338660",
-      "importance_score": 0.8047,
+      "importance_score": 0.8025,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-30",
@@ -492,22 +521,6 @@
       ],
       "lens_topics": [
         "monetization",
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_024f628f3f4f",
-      "title": "OpenAI 推出 Codex 云环境，可复用配置并跨设备跟进任务 / Run Codex tasks in reusable cloud environments, then follow progress and steer them from your phone or another computer:",
-      "url": "https://x.com/OpenAIDevs/status/2105073633731461197",
-      "importance_score": 0.8047,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
         "agent-ecosystem",
         "workplace"
       ]
@@ -552,6 +565,20 @@
       ]
     },
     {
+      "story_id": "story_e9eb045baa33",
+      "title": "Anthropic 与 SpaceX 签署最高 845 亿美元算力协议，可提前 90 天通知解除",
+      "url": "https://www.ithome.com/1/008/589.htm",
+      "importance_score": 0.7964,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "anthropic",
+        "nvidia"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_b73aec0b4852",
       "title": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞 / How we found 24 Android vulnerabilities using our open source AI security agent",
       "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
@@ -563,31 +590,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_c6c19c9c924b",
-      "title": "AMD 以 82 亿美元收购李飞飞的世界模型公司 World Labs / AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
-      "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion",
-      "importance_score": 0.7888,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_275cdbd3d9e4",
-      "title": "Hugging Face CEO 称被 NVIDIA 收购后可招募人才并用十年推动开源 AI 取胜 / getting acquired by @nvidia = hugging face can now hire people we couldn't as a small startup and give them a decade to make open-source ...",
-      "url": "https://x.com/ClementDelangue/status/2104960836796342729",
-      "importance_score": 0.7864,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "nvidia",
-        "huggingface"
-      ],
-      "lens_topics": []
     }
   ]
 }
