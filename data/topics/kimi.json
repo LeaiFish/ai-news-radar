@@ -3,12 +3,12 @@
   "name": "Kimi / 月之暗面",
   "description": "月之暗面 Kimi 系列：长上下文、K 系列开源模型与产品演进。",
   "group": "company",
-  "item_count": 49,
-  "listed_count": 49,
+  "item_count": 50,
+  "listed_count": 50,
   "latest_title": "月之暗面最强模型Kimi K3.1前端标识泄露，百万上下文配三档推理强度箭在弦上",
   "latest_published_at": "2026-09-29T02:35:34.162248Z",
   "items_url": "data/topics/kimi.json",
-  "generated_at": "2026-09-29T02:35:34.162248Z",
+  "generated_at": "2026-09-30T01:18:39.206133Z",
   "items": [
     {
       "id": "story_241aeaac543c",
@@ -26,34 +26,34 @@
       "curated": false
     },
     {
-      "id": "story_6f46b8dc8785",
-      "story_id": "story_6f46b8dc8785",
-      "title": "Perplexity 红队测试 SPACE 沙箱：108 次运行中 9 个模型均未能逃逸 VM，但有 4 个模型借助网络访问绕过封锁 / Our security team spent the last month trying to break SPACE, the sandbox platform that runs all of Perplexity Computer. We gave 9 models...",
-      "title_en": "Our security team spent the last month trying to break SPACE, the sandbox platform that runs all of Perplexity Computer. We gave 9 models...",
+      "id": "562570b09efa2839bd00ee40c059e6dc5550cedf",
+      "story_id": null,
+      "title": "Perplexity 红队测试 SPACE 沙箱：108 次运行中 9 个模型均未能逃逸 VM，但有 4 个模型借助网络访问绕过封锁",
+      "title_en": null,
       "url": "https://x.com/AravSrinivas/status/2104597362475708781",
       "summary": "Perplexity 安全团队对运行 Perplexity Computer 的沙箱平台 SPACE 做了一个月红队测试，给 Opus 5、GPT-5.6 Sol、Kimi K3、Gemini 3.1 Pro 等 9 个模型 VM 内 root 权限，108 次运行中无一逃逸 VM 边界。",
       "recommend_reason_zh": null,
       "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-      "source_name": "AI HOT",
-      "site_id": "",
+      "source_name": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+      "site_id": "aihot",
       "published_at": "2026-09-28T15:41:27Z",
       "source_count": 1,
-      "curated": false
+      "curated": true
     },
     {
-      "id": "story_d0b08aebc6ad",
-      "story_id": "story_d0b08aebc6ad",
-      "title": "Fireworks AI 发布 Ember-1：基于 Kimi K3 的后训练模型，推理 Token 减少约 40% / Fireworks AI Releases Ember-1: A Post-Trained Kimi K3 That Uses About 40% Fewer Tokens",
-      "title_en": "Fireworks AI Releases Ember-1: A Post-Trained Kimi K3 That Uses About 40% Fewer Tokens",
+      "id": "13f0ff18bf61036275a515cd59438f1b78746086",
+      "story_id": null,
+      "title": "Fireworks AI 发布 Ember-1：基于 Kimi K3 的后训练模型，推理 Token 减少约 40%",
+      "title_en": null,
       "url": "https://www.marktechpost.com/2026/09/28/fireworks-ai-releases-ember-1-a-post-trained-kimi-k3-that-uses-about-40-fewer-tokens",
       "summary": "Fireworks AI 推出 Ember-1，这是基于 Moonshot AI 开源权重 Kimi K3 进行后训练的专用模型。该模型通过优化内部推理过程，在保持任务准确率的同时将生成的推理 Token 减少了约 40%。与单纯降低推理努力程度不同，Ember-1 保留了有用的自我反思并削减了冗余循环。基准测试显示，其在 Terminal Bench 2.1 和 DeepSWE 1.1 上表现优于 K3 Max，且在生产环境 A/B 测试中实现了显著的成本节约。目前仅通过 Fireworks Serverless API 以研究预览形式提供，未开放权…",
       "recommend_reason_zh": null,
       "source": "MarkTechPost（RSS）",
-      "source_name": "AI HOT",
-      "site_id": "",
+      "source_name": "MarkTechPost（RSS）",
+      "site_id": "aihot",
       "published_at": "2026-09-28T07:22:33Z",
       "source_count": 1,
-      "curated": false
+      "curated": true
     },
     {
       "id": "90ce9f84b627eda47df99dc0f98635ebf9c8b6ff",
@@ -729,6 +729,21 @@
       "published_at": "2026-09-08T20:07:55Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "a9960fbc9b53aa0592dd0b683c4c37d1fd6c057b",
+      "story_id": null,
+      "title": "Kimi 托管智能体（Hosted Agents）Beta 上线",
+      "title_en": null,
+      "url": "https://platform.kimi.com/docs/changelog",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "Kimi API Changelog",
+      "source_name": "Kimi API Changelog",
+      "site_id": "official_ai",
+      "published_at": "2026-09-01T00:00:00Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "9d4afd81dfda0de62f94a29747b46000cd4c0fa7",

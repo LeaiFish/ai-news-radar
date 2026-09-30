@@ -4,51 +4,80 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-09-29T02:35:34.162248Z",
+  "generated_at": "2026-09-30T01:18:39.206133Z",
   "daily_dates": [
     "2026-09-28",
-    "2026-09-29"
+    "2026-09-29",
+    "2026-09-30"
   ],
-  "story_count": 517,
-  "unique_story_count": 384,
+  "story_count": 754,
+  "unique_story_count": 607,
   "counts": {
     "by_company_topic": {
-      "anthropic": 77,
-      "apple": 2,
-      "deepseek": 3,
-      "doubao": 3,
-      "google-gemini": 14,
-      "huggingface": 6,
-      "kimi": 4,
-      "meta-llama": 3,
-      "microsoft": 9,
+      "anthropic": 103,
+      "apple": 3,
+      "deepseek": 6,
+      "doubao": 4,
+      "google-gemini": 19,
+      "huggingface": 12,
+      "kimi": 5,
+      "meta-llama": 5,
+      "microsoft": 12,
       "minimax": 4,
-      "nvidia": 42,
-      "openai": 90,
-      "openrouter": 4,
-      "perplexity": 5,
-      "qwen": 9,
-      "xai": 1,
-      "zhipu": 2
+      "nvidia": 53,
+      "openai": 180,
+      "openrouter": 9,
+      "perplexity": 10,
+      "qwen": 11,
+      "xai": 8,
+      "zhipu": 5
     },
     "by_lens_topic": {
-      "agent-ecosystem": 112,
-      "monetization": 7,
-      "workplace": 10
+      "agent-ecosystem": 162,
+      "monetization": 13,
+      "workplace": 18
     },
     "by_importance_label": {
-      "值得关注": 373,
+      "值得关注": 555,
       "多源热议": 14,
-      "官方更新": 16,
-      "行业动态": 114
+      "官方更新": 31,
+      "行业动态": 154
     },
     "by_source_count_bucket": {
-      "1": 485,
-      "2": 18,
-      "3+": 14
+      "1": 709,
+      "2": 29,
+      "3+": 16
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_632fc8ebf5dc",
+      "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "importance_score": 0.8743,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5793276d561c",
+      "title": "OpenAI 发布常驻智能体 dots，由 GPT-6 Astra 驱动 / Introducing dots",
+      "url": "https://openai.com/index/introducing-dots",
+      "importance_score": 0.874,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
     {
       "story_id": "story_aa79f4494bfb",
       "title": "Claude Sonnet 5.5 发布，官方附上开发使用指南 / Claude Sonnet 5.5 is out! We wrote a guide for building with it:",
@@ -61,6 +90,34 @@
         "anthropic"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_97edd51cc1bf",
+      "title": "OpenRouter 教程：如何从生产流量构建 golden 评测集并跨模型复测 / Building a Golden Eval Dataset from Production Traffic",
+      "url": "https://openrouter.ai/blog/tutorials/building-a-golden-eval-dataset-from-production-traffic",
+      "importance_score": 0.8526,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9ddecfa386f8",
+      "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试 / AI Agent Regression Testing After a Prompt or Model Change",
+      "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
+      "importance_score": 0.8486,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_89c993ac1128",
@@ -115,6 +172,37 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0b8f5dfcd83d",
+      "title": "OpenRouter 教程：如何测试 AI Agent 的工具调用准确性 / How to Test Tool-Calling Accuracy in AI Agents",
+      "url": "https://openrouter.ai/blog/tutorials/how-to-test-tool-calling-accuracy-in-ai-agents",
+      "importance_score": 0.8406,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_5e8fdb7e624e",
+      "title": "GPT-6.1 Sol in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
+      "importance_score": 0.8397,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai",
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_c04a80da7898",
       "title": "Claude Sonnet 5.5 in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
@@ -128,6 +216,21 @@
       ],
       "lens_topics": [
         "workplace"
+      ]
+    },
+    {
+      "story_id": "story_a2df1f649cab",
+      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "importance_score": 0.8389,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
       ]
     },
     {
@@ -159,6 +262,31 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a12eaf57e6f0",
+      "title": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一 / NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "importance_score": 0.8362,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "nvidia",
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ea535c078900",
+      "title": "Bring business context with external custom properties",
+      "url": "https://github.blog/changelog/2026-09-29-bring-business-context-with-external-custom-properties",
+      "importance_score": 0.8336,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c49bc1306894",
       "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
       "url": "https://openai.com/index/how-we-will-do-better-for-australia",
@@ -185,6 +313,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b740e7f2bda0",
+      "title": "Repository custom runner settings for Dependabot",
+      "url": "https://github.blog/changelog/2026-09-29-repository-custom-runner-settings-for-dependabot",
+      "importance_score": 0.8287,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_aee032fed00c",
       "title": "Self-hosted runner version enforcement date has moved",
       "url": "https://github.blog/changelog/2026-09-28-self-hosted-runner-version-enforcement-date-has-moved",
@@ -194,6 +333,43 @@
       "archive_date": "2026-09-29",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_cdd2ad933b11",
+      "title": "Using AI to chart a course for our post-quantum migration",
+      "url": "https://blog.cloudflare.com/ai-driven-cryptography-discovery",
+      "importance_score": 0.8207,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b04b2657bcb9",
+      "title": "We tested our own WAF with frontier AI models. Here’s what we found",
+      "url": "https://blog.cloudflare.com/adaptive-ai-waf-testing",
+      "importance_score": 0.8207,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4fbbd781192d",
+      "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "importance_score": 0.8163,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_7009e35a2340",
@@ -220,6 +396,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_789068731278",
+      "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元 / OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+      "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+      "importance_score": 0.812,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_7e0e84425f1a",
@@ -291,6 +480,39 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_4b81e15f89c2",
+      "title": "OpenAI 发布 GPT-6.1 Sol，主打智能体编码与跨应用工作流 / Give your coding agents more room to work.",
+      "url": "https://x.com/OpenAIDevs/status/2105073621144338660",
+      "importance_score": 0.8047,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "monetization",
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_024f628f3f4f",
+      "title": "OpenAI 推出 Codex 云环境，可复用配置并跨设备跟进任务 / Run Codex tasks in reusable cloud environments, then follow progress and steer them from your phone or another computer:",
+      "url": "https://x.com/OpenAIDevs/status/2105073633731461197",
+      "importance_score": 0.8047,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_149b68431683",
       "title": "Anthropic IPO 招股书曝光：2025 年净亏损 420 亿美元，估值有望突破 2 万亿美元",
       "url": "https://www.ithome.com/1/008/082.htm",
@@ -354,226 +576,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_693509ac395b",
-      "title": "AMD 以约 82 亿美元全股票交易收购李飞飞联合创立的 World Labs / AMD is acquiring AI company World Labs in a deal worth more than $8 billion",
-      "url": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal",
-      "importance_score": 0.7849,
+      "story_id": "story_275cdbd3d9e4",
+      "title": "Hugging Face CEO 称被 NVIDIA 收购后可招募人才并用十年推动开源 AI 取胜 / getting acquired by @nvidia = hugging face can now hire people we couldn't as a small startup and give them a decade to make open-source ...",
+      "url": "https://x.com/ClementDelangue/status/2104960836796342729",
+      "importance_score": 0.7864,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_467c95690539",
-      "title": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-      "url": "https://www.ithome.com/1/008/099.htm",
-      "importance_score": 0.7844,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
+      "archive_date": "2026-09-30",
       "company_topics": [
-        "meta-llama"
+        "nvidia",
+        "huggingface"
       ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_e4e54fd17b80",
-      "title": "英伟达发布AI智能体安全平台，含实时隔离异常智能体的Sentry系统",
-      "url": "https://www.ithome.com/1/007/937.htm",
-      "importance_score": 0.7829,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "anthropic",
-        "nvidia"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_dc033248db9f",
-      "title": "Claude Sonnet 5.5 发布，Terminal-Bench 4.0 得分 70.6% 且价格不变 / Claude Sonnet 5.5 is out and it scores 70.6% on Terminal-Bench 4.0, up from Sonnet 5's 10.3%, at unchanged prices.",
-      "url": "https://x.com/rohanpaul_ai/status/2104649406536683789",
-      "importance_score": 0.7822,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c997bf725487",
-      "title": "消息称 OpenAI 因安全隐患取消发布 GPT‑6.1 Astra",
-      "url": "https://www.ithome.com/1/008/090.htm",
-      "importance_score": 0.7795,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4bbadd003175",
-      "title": "Anthropic 发布 Claude Sonnet 5.5，Artificial Analysis 智能指数得分 56，仅次于 Opus 5.5 / Anthropic has launched Claude Sonnet 5.5: it scores 56 on the Artificial Analysis Intelligence Index, just 2 points behind Opus 5.5 (max)...",
-      "url": "https://x.com/ArtificialAnlys/status/2104640155843989864",
-      "importance_score": 0.7778,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_00e781c8b7ac",
-      "title": "OpenAI 上线对齐失效报告网站，披露九起智能体失控事件",
-      "url": "https://www.ithome.com/1/008/079.htm",
-      "importance_score": 0.7774,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_c7ce35660cda",
-      "title": "Anthropic 发布 Claude Sonnet 5.5，基准接近 Opus 5.5 且单任务成本最多降 30% / Anthropic's Claude Sonnet 5.5 nearly matches Opus 5.5 on benchmarks while costing up to 30 percent less per task",
-      "url": "https://the-decoder.com/anthropics-claude-sonnet-5-5-nearly-matches-opus-5-5-on-benchmarks-while-costing-up-to-30-percent-less-per-task",
-      "importance_score": 0.7737,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_43ab1bde90f7",
-      "title": "AMD 以约 $8.2B 股票收购李飞飞的 World Labs 并聘其为首席科学家 / Great news for world models and spatial-intelligence.",
-      "url": "https://x.com/rohanpaul_ai/status/2104671839876472854",
-      "importance_score": 0.7737,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4f391ee4a3e0",
-      "title": "北京或批准部分NVIDIA新款工作站芯片采购，阿里、字节拟购百万颗 / Beijing has signaled it could approve some purchases of Nvidia’s new workstation chips, The Information reports. Officials asked Alibaba ...",
-      "url": "https://x.com/thexpin/status/2104508227451027712",
-      "importance_score": 0.7714,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "doubao",
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_bdc6459bc2b0",
-      "title": "MIT利用AI算法优化RNA疫苗配方，实现室温稳定保存一年 / New formulation helps RNA vaccines withstand high temperatures",
-      "url": "https://news.mit.edu/2026/new-formulation-helps-rna-vaccines-withstand-high-temperatures-0928",
-      "importance_score": 0.7695,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f6298057703f",
-      "title": "Arena 评测：GPT-6 Luna (Max) 列 Agent Arena 第 23 名，单任务成本仅 $0.05 / GPT-6 Luna (Max) by @OpenAI is #23 in Agent Arena with +1.6% net improvement across 8K real-world agentic sessions from our global commun...",
-      "url": "https://x.com/arena/status/2104673568776990762",
-      "importance_score": 0.768,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_d99a15db3657",
-      "title": "Anthropic 发布 Claude Sonnet 5.5 / Claude Sonnet 5.5 is now available:",
-      "url": "https://x.com/AnthropicAI/status/2104633259925630995",
-      "importance_score": 0.7678,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_dfbe8caf6dd6",
-      "title": "可灵AI发布Kling4.0:支持8000Token与立体声唇形同步",
-      "url": "https://www.aibase.com/news/31401",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cef9abdd8e5a",
-      "title": "Meta 智能体 Muse 翻车：没经本人同意就报住址，把买家骗到家门口",
-      "url": "https://www.aibase.com/news/31400",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_b307cc0e3b4c",
-      "title": "一年烧钱 5180 亿美元、去年亏 420 亿，Anthropic招股书揭开AI独角兽最贵账单",
-      "url": "https://www.aibase.com/news/31394",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a8d021d5e856",
-      "title": "哈佛心理学家平克：别渲染 AI 末日，真正该做的是安全工程",
-      "url": "https://www.aibase.com/news/31397",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
