@@ -1,18 +1,31 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T14:28:28.342429Z",
+  "generated_at": "2026-10-01T19:34:39.421051Z",
   "ok": true,
-  "active_count": 1,
+  "active_count": 2,
   "providers": [
     {
       "id": "openai",
       "name": "OpenAI",
       "status_url": "https://status.openai.com/",
       "ok": true,
-      "active_count": 1
+      "active_count": 2
     }
   ],
   "incidents": [
+    {
+      "id": "01M3WCKTAN41RZ01SBRRTY4AYM",
+      "provider": "OpenAI",
+      "title": "Issues with login, signup, and ads",
+      "title_zh": "login, signup, and ads 出现问题",
+      "status": "monitoring",
+      "impact": "major",
+      "started_at": "2026-10-01T18:46:17Z",
+      "updated_at": "2026-10-01T19:26:50Z",
+      "message": "We have applied the mitigation and are monitoring the recovery.",
+      "affected_components": [],
+      "url": "https://status.openai.com/incidents/01M3WCKTAN41RZ01SBRRTY4AYM"
+    },
     {
       "id": "01M3R1T4FCR1337FBBYY9K2RPB",
       "provider": "OpenAI",
@@ -21,8 +34,8 @@
       "status": "monitoring",
       "impact": "minor",
       "started_at": "2026-09-30T02:20:32Z",
-      "updated_at": "2026-09-30T15:00:05Z",
-      "message": "We have applied mitigations and are monitoring the recovery.",
+      "updated_at": "2026-10-01T16:51:16Z",
+      "message": "We are continuing to monitor our mitigiations. Some users may see slow or timed out results, especially for creating new pages or spaces.",
       "affected_components": [],
       "url": "https://status.openai.com/incidents/01M3R1T4FCR1337FBBYY9K2RPB"
     }

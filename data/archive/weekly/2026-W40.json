@@ -4,51 +4,52 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-01T14:28:28.342429Z",
+  "generated_at": "2026-10-01T19:34:39.421051Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
     "2026-09-30",
-    "2026-10-01"
+    "2026-10-01",
+    "2026-10-02"
   ],
-  "story_count": 1093,
-  "unique_story_count": 955,
+  "story_count": 1326,
+  "unique_story_count": 1017,
   "counts": {
     "by_company_topic": {
-      "anthropic": 136,
-      "apple": 5,
-      "cursor": 1,
-      "deepseek": 13,
+      "anthropic": 164,
+      "apple": 7,
+      "cursor": 2,
+      "deepseek": 17,
       "doubao": 6,
-      "google-gemini": 51,
-      "huggingface": 16,
-      "kimi": 5,
+      "google-gemini": 78,
+      "huggingface": 17,
+      "kimi": 6,
       "meta-llama": 3,
-      "microsoft": 12,
+      "microsoft": 13,
       "minimax": 6,
-      "nvidia": 64,
-      "openai": 229,
-      "openrouter": 14,
+      "nvidia": 69,
+      "openai": 260,
+      "openrouter": 17,
       "perplexity": 12,
-      "qwen": 11,
-      "xai": 10,
-      "zhipu": 6
+      "qwen": 12,
+      "xai": 11,
+      "zhipu": 7
     },
     "by_lens_topic": {
-      "agent-ecosystem": 210,
-      "monetization": 21,
-      "workplace": 24
+      "agent-ecosystem": 248,
+      "monetization": 24,
+      "workplace": 27
     },
     "by_importance_label": {
-      "值得关注": 860,
-      "多源热议": 18,
-      "官方更新": 47,
-      "行业动态": 168
+      "值得关注": 1058,
+      "多源热议": 22,
+      "官方更新": 68,
+      "行业动态": 178
     },
     "by_source_count_bucket": {
-      "1": 1034,
-      "2": 39,
-      "3+": 20
+      "1": 1255,
+      "2": 47,
+      "3+": 24
     }
   },
   "top_stories": [
@@ -66,6 +67,17 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_2f83b0f3b488",
+      "title": "Clef：我们的开源决策模型 / Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+      "url": "https://blog.cloudflare.com/clef-decision-models",
+      "importance_score": 0.8649,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_e99e37631b09",
@@ -90,6 +102,19 @@
       "archive_date": "2026-09-29",
       "company_topics": [
         "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a97a1140e735",
+      "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+      "url": "https://huggingface.co/blog/allenai/olmocore3",
+      "importance_score": 0.8486,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -241,6 +266,19 @@
       ]
     },
     {
+      "story_id": "story_25299d1ec50f",
+      "title": "The eternal complement",
+      "url": "https://openai.com/index/the-eternal-complement",
+      "importance_score": 0.8454,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_ad2ab9b8f0b7",
       "title": "通往代理浏览器之路：Kitesurf 更新 / The road to the agentic browser: A Kitesurf update",
       "url": "https://blog.cloudflare.com/kitesurf-update",
@@ -252,6 +290,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_8116becccb3e",
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "importance_score": 0.8429,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_affa87113115",
@@ -274,6 +325,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-01",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d6a6f0dfce45",
+      "title": "Actions retention now covers checks, runs, and statuses",
+      "url": "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses",
+      "importance_score": 0.8399,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
       "company_topics": [],
       "lens_topics": []
     },
@@ -322,6 +384,39 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_e4ed42a08a07",
+      "title": "Code coverage uploads no longer fail CI for new branches",
+      "url": "https://github.blog/changelog/2026-10-01-code-coverage-uploads-no-longer-fail-ci-for-new-branches",
+      "importance_score": 0.837,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ca15d7ba627d",
+      "title": "Scheduled code scanning skips inactive repositories",
+      "url": "https://github.blog/changelog/2026-10-01-scheduled-code-scanning-skips-inactive-repositories",
+      "importance_score": 0.837,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_714f9dbcfc64",
+      "title": "New dashboard experience now the default",
+      "url": "https://github.blog/changelog/2026-10-01-new-dashboard-experience-now-the-default",
+      "importance_score": 0.8356,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c49bc1306894",
       "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
       "url": "https://openai.com/index/how-we-will-do-better-for-australia",
@@ -345,6 +440,17 @@
       "company_topics": [
         "google-gemini"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9cc7967eae69",
+      "title": "GitHub async merge API generally available",
+      "url": "https://github.blog/changelog/2026-10-01-github-async-merge-api-generally-available",
+      "importance_score": 0.8301,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -455,132 +561,6 @@
       "lens_topics": [
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_7e0e84425f1a",
-      "title": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元 / Reuters reviewed the Anthropic IPO prospectus.",
-      "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
-      "importance_score": 0.812,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0b8f5dfcd83d",
-      "title": "OpenRouter 教程：如何测试 AI Agent 的工具调用准确性 / How to Test Tool-Calling Accuracy in AI Agents",
-      "url": "https://openrouter.ai/blog/tutorials/how-to-test-tool-calling-accuracy-in-ai-agents",
-      "importance_score": 0.8116,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_bef5ab52913d",
-      "title": "澳参议院传唤OpenAI与Anthropic CEO，涉AI代理违规访问政府数据事件 / Australia's Senate has asked Sam Altman and Dario Amodei to testify in Canberra on Thursday.",
-      "url": "https://x.com/rohanpaul_ai/status/2104465759619715116",
-      "importance_score": 0.8108,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_a12eaf57e6f0",
-      "title": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一 / NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "importance_score": 0.8106,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "nvidia",
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f676f1b41629",
-      "title": "OpenRouter 发布 Agent 模型成本与质量权衡选型框架 / Cost vs. Quality Tradeoff Framework for Agent Models",
-      "url": "https://openrouter.ai/blog/insights/cost-vs-quality-tradeoff-framework-for-agent-models",
-      "importance_score": 0.81,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_964372c367be",
-      "title": "OpenRouter 指南：用置信度阈值实现模型分级升级路由 / Confidence Thresholds for Model Escalation Routing",
-      "url": "https://openrouter.ai/blog/insights/confidence-thresholds-for-model-escalation-routing",
-      "importance_score": 0.81,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8db3959cb7d3",
-      "title": "Google DeepMind 发布 Gemini 4 Argon，面向可信网络防御者先行开放 / Gemini 4 Argon: our next era of frontier intelligence",
-      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
-      "importance_score": 0.8099,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d2e151a7b076",
-      "title": "What Is Qwen 3.8",
-      "url": "https://openrouter.ai/blog/insights/qwen-3-8",
-      "importance_score": 0.8079,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "qwen",
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4db9d5cf74c5",
-      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "importance_score": 0.8076,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
     }
   ]
 }
