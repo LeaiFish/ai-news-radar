@@ -3,12 +3,12 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 825,
+  "item_count": 826,
   "listed_count": 80,
   "latest_title": "Claude Code 推出 mods 功能，可用 TypeScript 定制行为与 UI / You can now mod Claude Code:",
   "latest_published_at": "2026-10-01T18:08:07Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-10-01T19:34:39.421051Z",
+  "generated_at": "2026-10-01T21:50:47.838864Z",
   "items": [
     {
       "id": "story_a804da4308ce",
@@ -28,7 +28,7 @@
     {
       "id": "story_17c7fb1b1d6b",
       "story_id": "story_17c7fb1b1d6b",
-      "title": "FTC Is Investigating OpenAI, Anthropic and Other AI Companies Over Product Risks",
+      "title": "FTC 正在调查 OpenAI、Anthropic 和其他人工智能公司的产品风险 / FTC Is Investigating OpenAI, Anthropic and Other AI Companies Over Product Risks",
       "title_en": "FTC Is Investigating OpenAI, Anthropic and Other AI Companies Over Product Risks",
       "url": "https://yro.slashdot.org/story/26/10/01/1720206/ftc-is-investigating-openai-anthropic-and-other-ai-companies-over-product-risks",
       "summary": "",
@@ -110,6 +110,21 @@
       "recommend_reason_zh": null,
       "source": "Anthropic：Research（发表成果 · 网页）",
       "source_name": "Anthropic：Research（发表成果 · 网页）",
+      "site_id": "aihot",
+      "published_at": "2026-09-30T16:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "a60c22f047b51e6ff30940cafc037e7b95c70ad3",
+      "story_id": null,
+      "title": "Claude Code 推出 mods，可用 TypeScript 函数改写提示词、替换内置功能",
+      "title_en": null,
+      "url": "https://claude.com/blog/claude-code-mods",
+      "summary": "Anthropic 为 Claude Code 推出 mods，一种小型 TypeScript 函数，可挂接到 Claude Code 的事件流，改写提示词、拦截或重试工具调用、审批权限请求并添加新 UI，随插件安装和分享。",
+      "recommend_reason_zh": null,
+      "source": "Claude：Blog（网页）",
+      "source_name": "Claude：Blog（网页）",
       "site_id": "aihot",
       "published_at": "2026-09-30T16:00:00Z",
       "source_count": 1,
@@ -1192,21 +1207,6 @@
       "source_name": "X：Claude Devs (@ClaudeDevs)",
       "site_id": "aihot",
       "published_at": "2026-09-23T21:23:41Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "e08f17337931db3bdac610517c7dfe1010beb7db",
-      "story_id": null,
-      "title": "Anthropic 团队详解如何用 Claude 在两周内把 claude.ai 提速约 3 倍",
-      "title_en": null,
-      "url": "https://claude.dev/blog/how-we-made-claude-ai-faster",
-      "summary": "Anthropic 团队发文详解今年 8 月通过两周冲刺让 claude.ai 和桌面端核心体验提速约 3 倍的过程：聚焦覆盖 95% 用户活动的四条旅程，75 分位首屏可输入时间从 3.1 秒降到 0.55 秒，合并超过三千个变更且无一次面向用户的事故。",
-      "recommend_reason_zh": null,
-      "source": "Hacker News：AI 热帖",
-      "source_name": "Hacker News：AI 热帖",
-      "site_id": "aihot",
-      "published_at": "2026-09-23T19:23:40Z",
       "source_count": 1,
       "curated": true
     }
