@@ -4,50 +4,50 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-09-30T16:50:39.430558Z",
+  "generated_at": "2026-10-01T07:11:38.386983Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
     "2026-09-30",
     "2026-10-01"
   ],
-  "story_count": 1164,
-  "unique_story_count": 751,
+  "story_count": 1108,
+  "unique_story_count": 894,
   "counts": {
     "by_company_topic": {
-      "anthropic": 139,
-      "apple": 6,
-      "deepseek": 15,
+      "anthropic": 137,
+      "apple": 4,
+      "deepseek": 12,
       "doubao": 8,
-      "google-gemini": 30,
-      "huggingface": 21,
+      "google-gemini": 52,
+      "huggingface": 17,
       "kimi": 4,
       "meta-llama": 3,
-      "microsoft": 13,
-      "minimax": 4,
-      "nvidia": 70,
-      "openai": 294,
+      "microsoft": 12,
+      "minimax": 6,
+      "nvidia": 64,
+      "openai": 236,
       "openrouter": 14,
-      "perplexity": 9,
+      "perplexity": 12,
       "qwen": 11,
-      "xai": 12,
-      "zhipu": 8
+      "xai": 9,
+      "zhipu": 6
     },
     "by_lens_topic": {
-      "agent-ecosystem": 234,
-      "monetization": 29,
-      "workplace": 32
+      "agent-ecosystem": 216,
+      "monetization": 25,
+      "workplace": 25
     },
     "by_importance_label": {
-      "值得关注": 888,
+      "值得关注": 858,
       "多源热议": 19,
-      "官方更新": 55,
-      "行业动态": 202
+      "官方更新": 52,
+      "行业动态": 179
     },
     "by_source_count_bucket": {
-      "1": 1105,
+      "1": 1051,
       "2": 36,
-      "3+": 23
+      "3+": 21
     }
   },
   "top_stories": [
@@ -231,15 +231,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0d7ed6e47e0a",
-      "title": "Google DeepMind 发布 SynthID Bio，为 AI 生成的蛋白质嵌入可验证水印 / Introducing SynthID Bio",
-      "url": "https://deepmind.google/blog/introducing-synthid-bio",
-      "importance_score": 0.8394,
+      "story_id": "story_fa117f7022c2",
+      "title": "OpenRouter 教程：如何在 CI 中用 LLM eval 门禁拦截 Pull Request / How to Gate Pull Requests on LLM Evals in CI",
+      "url": "https://openrouter.ai/blog/tutorials/how-to-gate-pull-requests-on-llm-evals-in-ci",
+      "importance_score": 0.8402,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-01",
       "company_topics": [
-        "google-gemini"
+        "openrouter"
       ],
       "lens_topics": []
     },
@@ -288,19 +288,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_01ea8e57038e",
-      "title": "Helping small businesses put AI to work",
-      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-      "importance_score": 0.8351,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_c49bc1306894",
       "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
       "url": "https://openai.com/index/how-we-will-do-better-for-australia",
@@ -327,17 +314,19 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_855109885f33",
-      "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-      "url": "https://huggingface.co/blog/open-tts-leaderboard",
-      "importance_score": 0.8311,
+      "story_id": "story_f676f1b41629",
+      "title": "OpenRouter 发布 Agent 模型成本与质量权衡选型框架 / Cost vs. Quality Tradeoff Framework for Agent Models",
+      "url": "https://openrouter.ai/blog/insights/cost-vs-quality-tradeoff-framework-for-agent-models",
+      "importance_score": 0.8262,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-01",
       "company_topics": [
-        "huggingface"
+        "openrouter"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_aee032fed00c",
@@ -348,6 +337,32 @@
       "source_count": 1,
       "archive_date": "2026-09-29",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_964372c367be",
+      "title": "OpenRouter 指南：用置信度阈值实现模型分级升级路由 / Confidence Thresholds for Model Escalation Routing",
+      "url": "https://openrouter.ai/blog/insights/confidence-thresholds-for-model-escalation-routing",
+      "importance_score": 0.8262,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8db3959cb7d3",
+      "title": "Google DeepMind 发布 Gemini 4 Argon，面向可信网络防御者先行开放 / Gemini 4 Argon: our next era of frontier intelligence",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
+      "importance_score": 0.8252,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "google-gemini"
+      ],
       "lens_topics": []
     },
     {
@@ -379,6 +394,17 @@
       ]
     },
     {
+      "story_id": "story_3dc27c9fc0cd",
+      "title": "选择 npm 可信发布的 dist-tag 权限 / Opt-in dist-tag permissions for npm trusted publishing",
+      "url": "https://github.blog/changelog/2026-09-30-opt-in-dist-tag-permissions-for-npm-trusted-publishing",
+      "importance_score": 0.8195,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_7009e35a2340",
       "title": "World Labs 宣布加入 AMD，李飞飞将出任 AMD 执行副总裁兼首席科学家 / World Labs Is Joining AMD",
       "url": "https://www.worldlabs.ai/blog/amd-announcement",
@@ -405,6 +431,21 @@
       ]
     },
     {
+      "story_id": "story_a67dcb1766e6",
+      "title": "HydraFusion in VS Code and the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
+      "importance_score": 0.8135,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_5e8fdb7e624e",
       "title": "GPT-6.1 Sol in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
@@ -419,19 +460,6 @@
       "lens_topics": [
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_723f17108ce7",
-      "title": "On the Effectiveness-Fluency Trade-Off in LLM Conditioning: A Systematic Study",
-      "url": "https://machinelearning.apple.com/research/effectiveness-fluency-llm-conditioning",
-      "importance_score": 0.8131,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_7e0e84425f1a",
@@ -492,6 +520,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0cb3c1ba901d",
+      "title": "GitHub 团队的 GitHub 高级安全试用 / GitHub Advanced Security trials for GitHub Team",
+      "url": "https://github.blog/changelog/2026-09-30-github-advanced-security-trials-for-github-team",
+      "importance_score": 0.8102,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_d2e151a7b076",
       "title": "What Is Qwen 3.8",
       "url": "https://openrouter.ai/blog/insights/qwen-3-8",
@@ -539,41 +578,6 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-30",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_149b68431683",
-      "title": "Anthropic IPO 招股书曝光：2025 年净亏损 420 亿美元，估值有望突破 2 万亿美元",
-      "url": "https://www.ithome.com/1/008/082.htm",
-      "importance_score": 0.8022,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b740e7f2bda0",
-      "title": "Dependabot 的代码仓库自定义运行器设置 / Repository custom runner settings for Dependabot",
-      "url": "https://github.blog/changelog/2026-09-29-repository-custom-runner-settings-for-dependabot",
-      "importance_score": 0.8017,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_842b35a90c59",
-      "title": "Cloudflare 2026 年度创始人致辞 / Cloudflare’s 2026 Annual Founders’ Letter",
-      "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter",
-      "importance_score": 0.8001,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-28",
       "company_topics": [],
       "lens_topics": []
     }
