@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-01T11:39:11.793936Z",
+  "generated_at": "2026-10-01T14:28:28.342429Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
@@ -12,42 +12,42 @@
     "2026-10-01"
   ],
   "story_count": 1093,
-  "unique_story_count": 935,
+  "unique_story_count": 955,
   "counts": {
     "by_company_topic": {
-      "anthropic": 133,
-      "apple": 4,
+      "anthropic": 136,
+      "apple": 5,
       "cursor": 1,
       "deepseek": 13,
       "doubao": 6,
-      "google-gemini": 53,
-      "huggingface": 17,
-      "kimi": 4,
+      "google-gemini": 51,
+      "huggingface": 16,
+      "kimi": 5,
       "meta-llama": 3,
       "microsoft": 12,
       "minimax": 6,
       "nvidia": 64,
-      "openai": 228,
+      "openai": 229,
       "openrouter": 14,
       "perplexity": 12,
       "qwen": 11,
       "xai": 10,
-      "zhipu": 5
+      "zhipu": 6
     },
     "by_lens_topic": {
-      "agent-ecosystem": 215,
-      "monetization": 24,
-      "workplace": 25
+      "agent-ecosystem": 210,
+      "monetization": 21,
+      "workplace": 24
     },
     "by_importance_label": {
-      "值得关注": 855,
+      "值得关注": 860,
       "多源热议": 18,
-      "官方更新": 50,
-      "行业动态": 170
+      "官方更新": 47,
+      "行业动态": 168
     },
     "by_source_count_bucket": {
-      "1": 1036,
-      "2": 37,
+      "1": 1034,
+      "2": 39,
       "3+": 20
     }
   },
@@ -191,6 +191,41 @@
       ]
     },
     {
+      "story_id": "story_bc118703e053",
+      "title": "一年后：主权人工智能和选择之战 / One year later: Sovereign AI and the fight for choice",
+      "url": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later",
+      "importance_score": 0.8464,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d9ebab898cc2",
+      "title": "Cloudflare OS：为您管理的公司代理工作区 / Cloudflare OS: your company’s agent workspace, managed for you",
+      "url": "https://blog.cloudflare.com/managed-cloudflare-os",
+      "importance_score": 0.8462,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_c27275b3cfd8",
+      "title": "AI搜索现已普遍可用 / AI Search is now generally available",
+      "url": "https://blog.cloudflare.com/ai-search-ga",
+      "importance_score": 0.8462,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_299644506077",
       "title": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本 / Holo4: powering generalist computer-use agents",
       "url": "https://huggingface.co/blog/Hcompany/holo4",
@@ -229,6 +264,17 @@
       "company_topics": [
         "anthropic"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e79047166a33",
+      "title": "Actions Runner 控制器版本 0.15.0 / Actions Runner Controller release 0.15.0",
+      "url": "https://github.blog/changelog/2026-10-01-actions-runner-controller-release-0-15-0",
+      "importance_score": 0.8403,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -302,19 +348,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_fa117f7022c2",
-      "title": "OpenRouter 教程：如何在 CI 中用 LLM eval 门禁拦截 Pull Request / How to Gate Pull Requests on LLM Evals in CI",
-      "url": "https://openrouter.ai/blog/tutorials/how-to-gate-pull-requests-on-llm-evals-in-ci",
-      "importance_score": 0.8301,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_aee032fed00c",
       "title": "Self-hosted runner version enforcement date has moved",
       "url": "https://github.blog/changelog/2026-09-28-self-hosted-runner-version-enforcement-date-has-moved",
@@ -323,6 +356,19 @@
       "source_count": 1,
       "archive_date": "2026-09-29",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_fa117f7022c2",
+      "title": "OpenRouter 教程：如何在 CI 中用 LLM eval 门禁拦截 Pull Request / How to Gate Pull Requests on LLM Evals in CI",
+      "url": "https://openrouter.ai/blog/tutorials/how-to-gate-pull-requests-on-llm-evals-in-ci",
+      "importance_score": 0.824,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "openrouter"
+      ],
       "lens_topics": []
     },
     {
@@ -354,34 +400,6 @@
       ]
     },
     {
-      "story_id": "story_f676f1b41629",
-      "title": "OpenRouter 发布 Agent 模型成本与质量权衡选型框架 / Cost vs. Quality Tradeoff Framework for Agent Models",
-      "url": "https://openrouter.ai/blog/insights/cost-vs-quality-tradeoff-framework-for-agent-models",
-      "importance_score": 0.8161,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_964372c367be",
-      "title": "OpenRouter 指南：用置信度阈值实现模型分级升级路由 / Confidence Thresholds for Model Escalation Routing",
-      "url": "https://openrouter.ai/blog/insights/confidence-thresholds-for-model-escalation-routing",
-      "importance_score": 0.8161,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7009e35a2340",
       "title": "World Labs 宣布加入 AMD，李飞飞将出任 AMD 执行副总裁兼首席科学家 / World Labs Is Joining AMD",
       "url": "https://www.worldlabs.ai/blog/amd-announcement",
@@ -393,17 +411,19 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_8db3959cb7d3",
-      "title": "Google DeepMind 发布 Gemini 4 Argon，面向可信网络防御者先行开放 / Gemini 4 Argon: our next era of frontier intelligence",
-      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
-      "importance_score": 0.8156,
+      "story_id": "story_6c4072b1c87e",
+      "title": "自主 ML 工程需要多少强大的代理？ / How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?",
+      "url": "https://machinelearning.apple.com/research/harness-autonomous-ml-engineering",
+      "importance_score": 0.816,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-01",
       "company_topics": [
-        "google-gemini"
+        "apple"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_d7df3ea255b1",
@@ -495,14 +515,44 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3dc27c9fc0cd",
-      "title": "选择 npm 可信发布的 dist-tag 权限 / Opt-in dist-tag permissions for npm trusted publishing",
-      "url": "https://github.blog/changelog/2026-09-30-opt-in-dist-tag-permissions-for-npm-trusted-publishing",
-      "importance_score": 0.8098,
+      "story_id": "story_f676f1b41629",
+      "title": "OpenRouter 发布 Agent 模型成本与质量权衡选型框架 / Cost vs. Quality Tradeoff Framework for Agent Models",
+      "url": "https://openrouter.ai/blog/insights/cost-vs-quality-tradeoff-framework-for-agent-models",
+      "importance_score": 0.81,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-01",
-      "company_topics": [],
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_964372c367be",
+      "title": "OpenRouter 指南：用置信度阈值实现模型分级升级路由 / Confidence Thresholds for Model Escalation Routing",
+      "url": "https://openrouter.ai/blog/insights/confidence-thresholds-for-model-escalation-routing",
+      "importance_score": 0.81,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8db3959cb7d3",
+      "title": "Google DeepMind 发布 Gemini 4 Argon，面向可信网络防御者先行开放 / Gemini 4 Argon: our next era of frontier intelligence",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
+      "importance_score": 0.8099,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-01",
+      "company_topics": [
+        "google-gemini"
+      ],
       "lens_topics": []
     },
     {
@@ -529,58 +579,6 @@
       "archive_date": "2026-09-29",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_235ccfd8376d",
-      "title": "OpenAI 上线对齐报告站，披露沙盒逃逸与自复制提示注入等九起失控事件 / OpenAI still doesn’t seem to have a handle on all of its rogue AI activity",
-      "url": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity",
-      "importance_score": 0.8067,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ea535c078900",
-      "title": "通过外部自定义属性引入业务上下文 / Bring business context with external custom properties",
-      "url": "https://github.blog/changelog/2026-09-29-bring-business-context-with-external-custom-properties",
-      "importance_score": 0.8067,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a67dcb1766e6",
-      "title": "VS Code 和 GitHub Copilot 应用程序中的 HydraFusion / HydraFusion in VS Code and the GitHub Copilot app",
-      "url": "https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
-      "importance_score": 0.8047,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_149b68431683",
-      "title": "Anthropic IPO 招股书曝光：2025 年净亏损 420 亿美元，估值有望突破 2 万亿美元",
-      "url": "https://www.ithome.com/1/008/082.htm",
-      "importance_score": 0.8022,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
       ],
       "lens_topics": []
     }
