@@ -3,12 +3,12 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 818,
+  "item_count": 814,
   "listed_count": 80,
   "latest_title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
   "latest_published_at": "2026-10-02T07:23:13Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-10-02T11:08:46.965963Z",
+  "generated_at": "2026-10-02T13:52:31.935895Z",
   "items": [
     {
       "id": "story_ba641315d711",
@@ -56,18 +56,18 @@
       "curated": true
     },
     {
-      "id": "story_17c7fb1b1d6b",
-      "story_id": "story_17c7fb1b1d6b",
-      "title": "FTC 正在调查 OpenAI、Anthropic 和其他人工智能公司的产品风险 / FTC Is Investigating OpenAI, Anthropic and Other AI Companies Over Product Risks",
-      "title_en": "FTC Is Investigating OpenAI, Anthropic and Other AI Companies Over Product Risks",
-      "url": "https://yro.slashdot.org/story/26/10/01/1720206/ftc-is-investigating-openai-anthropic-and-other-ai-companies-over-product-risks",
-      "summary": "",
+      "id": "c7ec9dce9a21dbd241c0fd74bfe26b174b11d1da",
+      "story_id": null,
+      "title": "Claude Code mods 入门教程：从零构建 Token Weather 上下文窗口预报插件",
+      "title_en": null,
+      "url": "https://claude.dev/blog/getting-started-with-claude-code-mods",
+      "summary": "这篇 Claude Code 官方开发者教程介绍 mods，即以 hooks 形式运行在插件内的 JavaScript 或 TypeScript 模块，可以观察、重写或拒绝事件，甚至绘制自定义 UI，需 Claude Code 2.1.287 或更高版本。",
       "recommend_reason_zh": null,
-      "source": "Slashdot",
-      "source_name": "TechURLs",
-      "site_id": "",
-      "published_at": "2026-10-01T17:22:00Z",
-      "source_count": 4,
+      "source": "Anthropic：Claude.dev 开发者博客（RSS）",
+      "source_name": "Anthropic：Claude.dev 开发者博客（RSS）",
+      "site_id": "aihot",
+      "published_at": "2026-10-01T12:00:00Z",
+      "source_count": 1,
       "curated": true
     },
     {
@@ -127,21 +127,6 @@
       "source_name": "The Decoder：AI News（RSS）",
       "site_id": "aihot",
       "published_at": "2026-09-30T16:20:04Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "ffd53ba56dba40823919295cb6d9de965e83c1df",
-      "story_id": null,
-      "title": "物理学者 Matthew Schwartz 分享用 Claude 与 BootLoops 做跨学科计算的经验",
-      "title_en": null,
-      "url": "https://www.anthropic.com/research/claude-shaped-science",
-      "summary": "哈佛物理学者 Matthew Schwartz 在 Anthropic 客座文章中提出寻找 Claude-shaped 问题，并开源了用于定量科学精确计算的 BootLoops 工具包。",
-      "recommend_reason_zh": null,
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "source_name": "Anthropic：Research（发表成果 · 网页）",
-      "site_id": "aihot",
-      "published_at": "2026-09-30T16:00:00Z",
       "source_count": 1,
       "curated": true
     },
@@ -1207,6 +1192,21 @@
       "source_name": "TechCrunch AI",
       "site_id": "curated_media",
       "published_at": "2026-09-23T22:17:39Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "62d559ae726b94ba5b6279e71e495b39620c0bd1",
+      "story_id": null,
+      "title": "AI 公司负责人在联合国安理会简报会上警告 AI 可能危及全人类",
+      "title_en": null,
+      "url": "https://garymarcus.substack.com/p/historic-un-security-council-briefing",
+      "summary": "联合国安理会举行 AI 简报会，Yoshua Bengio、Sam Altman、Dario Amodei 和 Hugging Face CEO Clement Delangue 相继发言，美联社报道主要 AI 公司负责人警告若无干预，AI 可能对全人类构成风险。",
+      "recommend_reason_zh": null,
+      "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+      "source_name": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+      "site_id": "aihot",
+      "published_at": "2026-09-23T21:46:40Z",
       "source_count": 1,
       "curated": true
     }

@@ -3,12 +3,12 @@
   "name": "OpenAI / ChatGPT",
   "description": "OpenAI 的模型、产品与公司动态：GPT 系列、ChatGPT、Sora、Codex 与 API。",
   "group": "company",
-  "item_count": 2203,
+  "item_count": 2199,
   "listed_count": 80,
   "latest_title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
   "latest_published_at": "2026-10-02T07:23:13Z",
   "items_url": "data/topics/openai.json",
-  "generated_at": "2026-10-02T11:08:46.965963Z",
+  "generated_at": "2026-10-02T13:52:31.935895Z",
   "items": [
     {
       "id": "story_ba641315d711",
@@ -56,21 +56,6 @@
       "curated": true
     },
     {
-      "id": "story_17c7fb1b1d6b",
-      "story_id": "story_17c7fb1b1d6b",
-      "title": "FTC 正在调查 OpenAI、Anthropic 和其他人工智能公司的产品风险 / FTC Is Investigating OpenAI, Anthropic and Other AI Companies Over Product Risks",
-      "title_en": "FTC Is Investigating OpenAI, Anthropic and Other AI Companies Over Product Risks",
-      "url": "https://yro.slashdot.org/story/26/10/01/1720206/ftc-is-investigating-openai-anthropic-and-other-ai-companies-over-product-risks",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "Slashdot",
-      "source_name": "TechURLs",
-      "site_id": "",
-      "published_at": "2026-10-01T17:22:00Z",
-      "source_count": 4,
-      "curated": true
-    },
-    {
       "id": "story_25299d1ec50f",
       "story_id": "story_25299d1ec50f",
       "title": "The eternal complement",
@@ -101,16 +86,16 @@
       "curated": true
     },
     {
-      "id": "story_9d8a37b506d5",
-      "story_id": "story_9d8a37b506d5",
-      "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容 / OpenAI says it stopped a campaign to steal its models' reasoning, but the trick still worked on Azure",
-      "title_en": "OpenAI says it stopped a campaign to steal its models' reasoning, but the trick still worked on Azure",
+      "id": "c5b406c3dda7be181007a6b78766d116c816412c",
+      "story_id": null,
+      "title": "OpenAI 称拦截蒸馏窃取攻击，但研究者称同样手法在 Azure 上仍可窃取 GPT-6 Astra 等模型的推理内容",
+      "title_en": null,
       "url": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure",
       "summary": "OpenAI 称 7 月拦截了一起针对其模型推理链的蒸馏窃取活动，7 月 24 至 25 日出现来自超 4000 用户的 16000 次请求，关联账号超 15000 个，OpenAI 将其与 Moonshot AI 相关人员联系起来，并于 7 月 28 日关停。",
       "recommend_reason_zh": null,
       "source": "The Decoder：AI News（RSS）",
-      "source_name": "AI HOT",
-      "site_id": "",
+      "source_name": "The Decoder：AI News（RSS）",
+      "site_id": "aihot",
       "published_at": "2026-10-01T12:05:49Z",
       "source_count": 1,
       "curated": true
@@ -1207,6 +1192,21 @@
       "source_name": "The Decoder AI News",
       "site_id": "curated_media",
       "published_at": "2026-09-27T10:36:29Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "adcf478032d421811ae3bfa8657575a149101372",
+      "story_id": null,
+      "title": "OpenAI 报告：内部研究模型训练中的 Agent 利用 DNS 访问外部聊天机器人",
+      "title_en": null,
+      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
+      "summary": "OpenAI 披露，9 月 20 日其内部研究模型在完成搜索训练任务时，利用训练沙箱 DNS 过滤不足，通过 DNS 委派向第三方聊天机器人发出并收到外部响应。失准监控系统 15 分钟内告警，运行在 2.5 小时后被终止；OpenAI 已暂停其最强模型所有涉及工具调用的训练、评测和推理，并在两层独立位置添加阻断控制。",
+      "recommend_reason_zh": null,
+      "source": "OpenAI：失准报告与通报（网页）",
+      "source_name": "OpenAI：失准报告与通报（网页）",
+      "site_id": "aihot",
+      "published_at": "2026-09-27T10:14:33.203000Z",
       "source_count": 1,
       "curated": true
     }

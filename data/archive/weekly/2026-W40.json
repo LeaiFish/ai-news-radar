@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-02T11:08:46.965963Z",
+  "generated_at": "2026-10-02T13:52:31.935895Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
@@ -12,44 +12,44 @@
     "2026-10-01",
     "2026-10-02"
   ],
-  "story_count": 1302,
-  "unique_story_count": 1122,
+  "story_count": 1304,
+  "unique_story_count": 1164,
   "counts": {
     "by_company_topic": {
-      "anthropic": 164,
+      "anthropic": 166,
       "apple": 5,
-      "cursor": 3,
-      "deepseek": 18,
+      "cursor": 2,
+      "deepseek": 17,
       "doubao": 6,
-      "google-gemini": 55,
+      "google-gemini": 58,
       "huggingface": 19,
-      "kimi": 6,
+      "kimi": 5,
       "meta-llama": 3,
       "microsoft": 16,
       "minimax": 6,
-      "nvidia": 69,
-      "openai": 263,
+      "nvidia": 71,
+      "openai": 268,
       "openrouter": 18,
       "perplexity": 12,
       "qwen": 12,
       "xai": 11,
-      "zhipu": 7
+      "zhipu": 6
     },
     "by_lens_topic": {
-      "agent-ecosystem": 246,
+      "agent-ecosystem": 247,
       "monetization": 23,
       "workplace": 28
     },
     "by_importance_label": {
-      "值得关注": 1028,
-      "多源热议": 22,
-      "官方更新": 72,
-      "行业动态": 180
+      "值得关注": 1035,
+      "多源热议": 20,
+      "官方更新": 71,
+      "行业动态": 178
     },
     "by_source_count_bucket": {
-      "1": 1233,
+      "1": 1237,
       "2": 45,
-      "3+": 24
+      "3+": 22
     }
   },
   "top_stories": [
@@ -92,6 +92,17 @@
       "company_topics": [
         "anthropic"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0be7d0b57b3b",
+      "title": "Introducing Web Search API via AI Gateway",
+      "url": "https://blog.cloudflare.com/introducing-web-search-api",
+      "importance_score": 0.8489,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -173,6 +184,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2e0923b281ed",
+      "title": "Building for good: How civil society organizations are automating on Cloudflare",
+      "url": "https://blog.cloudflare.com/civil-society-automation",
+      "importance_score": 0.8477,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
       "company_topics": [],
       "lens_topics": []
     },
@@ -268,19 +290,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7d80f29039e4",
-      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "story_id": "story_7ba973037a20",
+      "title": "Confidential comments on repository security advisories",
+      "url": "https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories",
       "importance_score": 0.8424,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-02",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_e79047166a33",
@@ -338,6 +356,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_7d80f29039e4",
+      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "importance_score": 0.8361,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_c49bc1306894",
       "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
       "url": "https://openai.com/index/how-we-will-do-better-for-australia",
@@ -364,17 +397,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_2f83b0f3b488",
-      "title": "Clef：我们的开源决策模型 / Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
-      "url": "https://blog.cloudflare.com/clef-decision-models",
-      "importance_score": 0.8307,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-10-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_aee032fed00c",
       "title": "Self-hosted runner version enforcement date has moved",
       "url": "https://github.blog/changelog/2026-09-28-self-hosted-runner-version-enforcement-date-has-moved",
@@ -382,6 +404,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-09-29",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2f83b0f3b488",
+      "title": "Clef：我们的开源决策模型 / Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+      "url": "https://blog.cloudflare.com/clef-decision-models",
+      "importance_score": 0.8254,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-02",
       "company_topics": [],
       "lens_topics": []
     },
@@ -427,47 +460,6 @@
       ]
     },
     {
-      "story_id": "story_d7846f2c0721",
-      "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-      "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
-      "importance_score": 0.8172,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c38cf89d1dc2",
-      "title": "代理框架比较：工具调用架构处理 / Agent Frameworks Compared: Tool-Calling Schema Handling",
-      "url": "https://openrouter.ai/blog/insights/agent-frameworks-compared-tool-calling-schema-handling",
-      "importance_score": 0.8172,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_1e4536b3e322",
-      "title": "支持机器人的模型路由：廉价优先的常见问题解答处理 / Model Routing for Support Bots: Cheap-First FAQ Handling",
-      "url": "https://openrouter.ai/blog/tutorials/model-routing-for-support-bots-cheap-first-faq-handling",
-      "importance_score": 0.8172,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7009e35a2340",
       "title": "World Labs 宣布加入 AMD，李飞飞将出任 AMD 执行副总裁兼首席科学家 / World Labs Is Joining AMD",
       "url": "https://www.worldlabs.ai/blog/amd-announcement",
@@ -509,50 +501,6 @@
       ]
     },
     {
-      "story_id": "story_a8a59d3ec43f",
-      "title": "GitHub Copilot 现在可以通过计算机与桌面应用程序交互 / GitHub Copilot can now interact with desktop apps with computer use",
-      "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps",
-      "importance_score": 0.815,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_4360c0773884",
-      "title": "VS Code 中的 GitHub Copilot，2026 年 9 月发布 / GitHub Copilot in VS Code, September 2026 releases",
-      "url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases",
-      "importance_score": 0.8149,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_a97a1140e735",
-      "title": "Olmo-core 3 简介：面向大型 MoE 的开放、可扩展的培训基础设施 / Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-      "url": "https://huggingface.co/blog/allenai/olmocore3",
-      "importance_score": 0.8146,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_5e8fdb7e624e",
       "title": "GPT-6.1 Sol in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
@@ -580,6 +528,49 @@
         "anthropic"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_0b8f5dfcd83d",
+      "title": "OpenRouter 教程：如何测试 AI Agent 的工具调用准确性 / How to Test Tool-Calling Accuracy in AI Agents",
+      "url": "https://openrouter.ai/blog/tutorials/how-to-test-tool-calling-accuracy-in-ai-agents",
+      "importance_score": 0.8116,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_d7846f2c0721",
+      "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
+      "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
+      "importance_score": 0.8113,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c38cf89d1dc2",
+      "title": "代理框架比较：工具调用架构处理 / Agent Frameworks Compared: Tool-Calling Schema Handling",
+      "url": "https://openrouter.ai/blog/insights/agent-frameworks-compared-tool-calling-schema-handling",
+      "importance_score": 0.8113,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     }
   ]
 }
