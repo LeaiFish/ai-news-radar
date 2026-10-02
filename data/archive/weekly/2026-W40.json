@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-01T21:50:47.838864Z",
+  "generated_at": "2026-10-02T02:18:20.777064Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
@@ -12,43 +12,43 @@
     "2026-10-01",
     "2026-10-02"
   ],
-  "story_count": 1314,
-  "unique_story_count": 1044,
+  "story_count": 1312,
+  "unique_story_count": 1066,
   "counts": {
     "by_company_topic": {
-      "anthropic": 164,
-      "apple": 7,
+      "anthropic": 163,
+      "apple": 5,
       "cursor": 3,
       "deepseek": 16,
       "doubao": 6,
-      "google-gemini": 64,
-      "huggingface": 17,
+      "google-gemini": 61,
+      "huggingface": 18,
       "kimi": 6,
       "meta-llama": 3,
       "microsoft": 16,
       "minimax": 6,
-      "nvidia": 69,
-      "openai": 262,
+      "nvidia": 70,
+      "openai": 263,
       "openrouter": 18,
       "perplexity": 12,
-      "qwen": 12,
+      "qwen": 13,
       "xai": 12,
       "zhipu": 7
     },
     "by_lens_topic": {
-      "agent-ecosystem": 250,
+      "agent-ecosystem": 248,
       "monetization": 22,
       "workplace": 30
     },
     "by_importance_label": {
-      "值得关注": 1041,
+      "值得关注": 1037,
       "多源热议": 22,
-      "官方更新": 74,
-      "行业动态": 177
+      "官方更新": 71,
+      "行业动态": 182
     },
     "by_source_count_bucket": {
-      "1": 1246,
-      "2": 44,
+      "1": 1243,
+      "2": 45,
       "3+": 24
     }
   },
@@ -67,17 +67,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_2f83b0f3b488",
-      "title": "Clef：我们的开源决策模型 / Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
-      "url": "https://blog.cloudflare.com/clef-decision-models",
-      "importance_score": 0.8594,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-10-02",
-      "company_topics": [],
-      "lens_topics": []
     },
     {
       "story_id": "story_e99e37631b09",
@@ -103,6 +92,17 @@
       "company_topics": [
         "anthropic"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2f83b0f3b488",
+      "title": "Clef：我们的开源决策模型 / Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+      "url": "https://blog.cloudflare.com/clef-decision-models",
+      "importance_score": 0.8491,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -253,37 +253,6 @@
       ]
     },
     {
-      "story_id": "story_a8a59d3ec43f",
-      "title": "GitHub Copilot can now interact with desktop apps with computer use",
-      "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps",
-      "importance_score": 0.8452,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_4360c0773884",
-      "title": "GitHub Copilot in VS Code, September 2026 releases",
-      "url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases",
-      "importance_score": 0.8451,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_ad2ab9b8f0b7",
       "title": "通往代理浏览器之路：Kitesurf 更新 / The road to the agentic browser: A Kitesurf update",
       "url": "https://blog.cloudflare.com/kitesurf-update",
@@ -295,19 +264,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_a97a1140e735",
-      "title": "Olmo-core 3 简介：面向大型 MoE 的开放、可扩展的培训基础设施 / Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-      "url": "https://huggingface.co/blog/allenai/olmocore3",
-      "importance_score": 0.8431,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_affa87113115",
@@ -334,41 +290,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_25299d1ec50f",
-      "title": "The eternal complement",
-      "url": "https://openai.com/index/the-eternal-complement",
-      "importance_score": 0.8398,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2b054efbb49a",
-      "title": "Rate limits for private vulnerability reports",
-      "url": "https://github.blog/changelog/2026-10-01-rate-limits-for-private-vulnerability-reports",
-      "importance_score": 0.8392,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_025446a84602",
-      "title": "Structured forms for private vulnerability reports",
-      "url": "https://github.blog/changelog/2026-10-01-structured-forms-for-private-vulnerability-reports",
-      "importance_score": 0.8392,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_c04a80da7898",
       "title": "Claude Sonnet 5.5 in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
@@ -378,21 +299,6 @@
       "archive_date": "2026-09-29",
       "company_topics": [
         "anthropic",
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_f107a55898ee",
-      "title": "Copilot CLI 和 Copilot 应用程序中的动态工作流程 / Dynamic workflows in Copilot CLI and the Copilot app",
-      "url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
-      "importance_score": 0.8386,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
         "microsoft"
       ],
       "lens_topics": [
@@ -415,15 +321,43 @@
       ]
     },
     {
-      "story_id": "story_8116becccb3e",
-      "title": "艾伯森公司如何从内到外重新构想零售业 / How Albertsons Companies is reimagining retail from the inside out",
-      "url": "https://openai.com/index/albertsons-reimagining-retail",
-      "importance_score": 0.8374,
+      "story_id": "story_d7846f2c0721",
+      "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
+      "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
+      "importance_score": 0.8381,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-02",
       "company_topics": [
-        "openai"
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c38cf89d1dc2",
+      "title": "代理框架比较：工具调用架构处理 / Agent Frameworks Compared: Tool-Calling Schema Handling",
+      "url": "https://openrouter.ai/blog/insights/agent-frameworks-compared-tool-calling-schema-handling",
+      "importance_score": 0.8381,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_1e4536b3e322",
+      "title": "支持机器人的模型路由：廉价优先的常见问题解答处理 / Model Routing for Support Bots: Cheap-First FAQ Handling",
+      "url": "https://openrouter.ai/blog/tutorials/model-routing-for-support-bots-cheap-first-faq-handling",
+      "importance_score": 0.8381,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openrouter"
       ],
       "lens_topics": []
     },
@@ -441,26 +375,35 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_be7b746442ad",
-      "title": "Accessibility statements highlighted on repository overview",
-      "url": "https://github.blog/changelog/2026-10-01-accessibility-statements-highlighted-on-repository-overview",
-      "importance_score": 0.8369,
+      "story_id": "story_a8a59d3ec43f",
+      "title": "GitHub Copilot 现在可以通过计算机与桌面应用程序交互 / GitHub Copilot can now interact with desktop apps with computer use",
+      "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps",
+      "importance_score": 0.8344,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-02",
-      "company_topics": [],
-      "lens_topics": []
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
     },
     {
-      "story_id": "story_d6a6f0dfce45",
-      "title": "操作保留现在涵盖检查、运行和状态 / Actions retention now covers checks, runs, and statuses",
-      "url": "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses",
+      "story_id": "story_4360c0773884",
+      "title": "VS Code 中的 GitHub Copilot，2026 年 9 月发布 / GitHub Copilot in VS Code, September 2026 releases",
+      "url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases",
       "importance_score": 0.8343,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-02",
-      "company_topics": [],
-      "lens_topics": []
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_c49bc1306894",
@@ -476,25 +419,16 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e4ed42a08a07",
-      "title": "新分支的代码覆盖率上传不再使 CI 失败 / Code coverage uploads no longer fail CI for new branches",
-      "url": "https://github.blog/changelog/2026-10-01-code-coverage-uploads-no-longer-fail-ci-for-new-branches",
-      "importance_score": 0.8314,
+      "story_id": "story_a97a1140e735",
+      "title": "Olmo-core 3 简介：面向大型 MoE 的开放、可扩展的培训基础设施 / Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+      "url": "https://huggingface.co/blog/allenai/olmocore3",
+      "importance_score": 0.8329,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ca15d7ba627d",
-      "title": "计划的代码扫描会跳过不活动的代码仓库 / Scheduled code scanning skips inactive repositories",
-      "url": "https://github.blog/changelog/2026-10-01-scheduled-code-scanning-skips-inactive-repositories",
-      "importance_score": 0.8314,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [],
+      "company_topics": [
+        "huggingface"
+      ],
       "lens_topics": []
     },
     {
@@ -511,10 +445,84 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_714f9dbcfc64",
-      "title": "新的仪表板体验现已成为默认设置 / New dashboard experience now the default",
-      "url": "https://github.blog/changelog/2026-10-01-new-dashboard-experience-now-the-default",
-      "importance_score": 0.83,
+      "story_id": "story_25299d1ec50f",
+      "title": "The eternal complement",
+      "url": "https://openai.com/index/the-eternal-complement",
+      "importance_score": 0.8294,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f107a55898ee",
+      "title": "Copilot CLI 和 Copilot 应用程序中的动态工作流程 / Dynamic workflows in Copilot CLI and the Copilot app",
+      "url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
+      "importance_score": 0.8282,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_2b054efbb49a",
+      "title": "私人漏洞报告的速率限制 / Rate limits for private vulnerability reports",
+      "url": "https://github.blog/changelog/2026-10-01-rate-limits-for-private-vulnerability-reports",
+      "importance_score": 0.8282,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_025446a84602",
+      "title": "私人漏洞报告的结构化表格 / Structured forms for private vulnerability reports",
+      "url": "https://github.blog/changelog/2026-10-01-structured-forms-for-private-vulnerability-reports",
+      "importance_score": 0.8282,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8116becccb3e",
+      "title": "艾伯森公司如何从内到外重新构想零售业 / How Albertsons Companies is reimagining retail from the inside out",
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "importance_score": 0.8271,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0b2fa78755e5",
+      "title": "GitHub Actions：macOS 14 运行程序图像停用 / GitHub Actions: macOS 14 runner image retirement",
+      "url": "https://github.blog/changelog/2026-10-01-github-actions-macos-14-runner-image-retirement",
+      "importance_score": 0.8264,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_be7b746442ad",
+      "title": "代码仓库概述中突出显示的可访问性声明 / Accessibility statements highlighted on repository overview",
+      "url": "https://github.blog/changelog/2026-10-01-accessibility-statements-highlighted-on-repository-overview",
+      "importance_score": 0.8262,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-02",
@@ -533,17 +541,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_9cc7967eae69",
-      "title": "GitHub 异步合并 API 正式可用 / GitHub async merge API generally available",
-      "url": "https://github.blog/changelog/2026-10-01-github-async-merge-api-generally-available",
-      "importance_score": 0.8248,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_fa117f7022c2",
       "title": "OpenRouter 教程：如何在 CI 中用 LLM eval 门禁拦截 Pull Request / How to Gate Pull Requests on LLM Evals in CI",
       "url": "https://openrouter.ai/blog/tutorials/how-to-gate-pull-requests-on-llm-evals-in-ci",
@@ -554,6 +551,17 @@
       "company_topics": [
         "openrouter"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d6a6f0dfce45",
+      "title": "操作保留现在涵盖检查、运行和状态 / Actions retention now covers checks, runs, and statuses",
+      "url": "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses",
+      "importance_score": 0.8237,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [],
       "lens_topics": []
     }
   ]
