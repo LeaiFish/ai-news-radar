@@ -4,52 +4,53 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-02T13:52:31.935895Z",
+  "generated_at": "2026-10-02T16:40:17.269775Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
     "2026-09-30",
     "2026-10-01",
-    "2026-10-02"
+    "2026-10-02",
+    "2026-10-03"
   ],
-  "story_count": 1304,
-  "unique_story_count": 1164,
+  "story_count": 1518,
+  "unique_story_count": 1203,
   "counts": {
     "by_company_topic": {
-      "anthropic": 166,
-      "apple": 5,
-      "cursor": 2,
-      "deepseek": 17,
+      "anthropic": 193,
+      "apple": 6,
+      "cursor": 3,
+      "deepseek": 21,
       "doubao": 6,
-      "google-gemini": 58,
-      "huggingface": 19,
+      "google-gemini": 69,
+      "huggingface": 22,
       "kimi": 5,
       "meta-llama": 3,
-      "microsoft": 16,
+      "microsoft": 18,
       "minimax": 6,
-      "nvidia": 71,
-      "openai": 268,
-      "openrouter": 18,
+      "nvidia": 79,
+      "openai": 303,
+      "openrouter": 22,
       "perplexity": 12,
-      "qwen": 12,
-      "xai": 11,
+      "qwen": 14,
+      "xai": 12,
       "zhipu": 6
     },
     "by_lens_topic": {
-      "agent-ecosystem": 247,
-      "monetization": 23,
-      "workplace": 28
+      "agent-ecosystem": 282,
+      "monetization": 27,
+      "workplace": 31
     },
     "by_importance_label": {
-      "值得关注": 1035,
-      "多源热议": 20,
-      "官方更新": 71,
-      "行业动态": 178
+      "值得关注": 1215,
+      "多源热议": 21,
+      "官方更新": 97,
+      "行业动态": 185
     },
     "by_source_count_bucket": {
-      "1": 1237,
-      "2": 45,
-      "3+": 22
+      "1": 1443,
+      "2": 52,
+      "3+": 23
     }
   },
   "top_stories": [
@@ -67,6 +68,32 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_87eab6a95e56",
+      "title": "A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "importance_score": 0.8589,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2e2e433e3cb1",
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "importance_score": 0.8565,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_e99e37631b09",
@@ -249,6 +276,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_8929dc6acd37",
+      "title": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+      "importance_score": 0.8457,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_299644506077",
       "title": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本 / Holo4: powering generalist computer-use agents",
       "url": "https://huggingface.co/blog/Hcompany/holo4",
@@ -312,6 +350,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_79c5530db8f1",
+      "title": "The latest AI news we announced in September 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026",
+      "importance_score": 0.8397,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c04a80da7898",
       "title": "Claude Sonnet 5.5 in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
@@ -369,6 +420,28 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_14dc0c8581ff",
+      "title": "New fields for SecurityAdvisory GraphQL API",
+      "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
+      "importance_score": 0.8354,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8251eed32ade",
+      "title": "Repository security advisory comments API in public preview",
+      "url": "https://github.blog/changelog/2026-10-02-repository-security-advisory-comments-api-in-public-preview",
+      "importance_score": 0.8353,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_c49bc1306894",
@@ -480,93 +553,6 @@
       "archive_date": "2026-10-01",
       "company_topics": [
         "apple"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_d7df3ea255b1",
-      "title": "Claude Opus 5.5 提示词指南：与 Opus 5 的行为差异及迁移模式 / Prompting Claude Opus 5.5",
-      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
-      "importance_score": 0.8151,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-09-28",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_5e8fdb7e624e",
-      "title": "GPT-6.1 Sol in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
-      "importance_score": 0.8135,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "openai",
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_7e0e84425f1a",
-      "title": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元 / Reuters reviewed the Anthropic IPO prospectus.",
-      "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
-      "importance_score": 0.812,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-09-29",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0b8f5dfcd83d",
-      "title": "OpenRouter 教程：如何测试 AI Agent 的工具调用准确性 / How to Test Tool-Calling Accuracy in AI Agents",
-      "url": "https://openrouter.ai/blog/tutorials/how-to-test-tool-calling-accuracy-in-ai-agents",
-      "importance_score": 0.8116,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-09-30",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_d7846f2c0721",
-      "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-      "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
-      "importance_score": 0.8113,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c38cf89d1dc2",
-      "title": "代理框架比较：工具调用架构处理 / Agent Frameworks Compared: Tool-Calling Schema Handling",
-      "url": "https://openrouter.ai/blog/insights/agent-frameworks-compared-tool-calling-schema-handling",
-      "importance_score": 0.8113,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "openrouter"
       ],
       "lens_topics": [
         "agent-ecosystem"
