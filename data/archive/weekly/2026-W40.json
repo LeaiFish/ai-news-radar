@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-02T16:40:17.269775Z",
+  "generated_at": "2026-10-02T21:20:13.820209Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
@@ -13,43 +13,43 @@
     "2026-10-02",
     "2026-10-03"
   ],
-  "story_count": 1518,
-  "unique_story_count": 1203,
+  "story_count": 1509,
+  "unique_story_count": 1259,
   "counts": {
     "by_company_topic": {
-      "anthropic": 193,
-      "apple": 6,
-      "cursor": 3,
+      "anthropic": 187,
+      "apple": 7,
+      "cursor": 2,
       "deepseek": 21,
       "doubao": 6,
-      "google-gemini": 69,
+      "google-gemini": 68,
       "huggingface": 22,
       "kimi": 5,
-      "meta-llama": 3,
-      "microsoft": 18,
+      "meta-llama": 4,
+      "microsoft": 17,
       "minimax": 6,
-      "nvidia": 79,
-      "openai": 303,
+      "nvidia": 77,
+      "openai": 301,
       "openrouter": 22,
       "perplexity": 12,
       "qwen": 14,
-      "xai": 12,
-      "zhipu": 6
+      "xai": 11,
+      "zhipu": 7
     },
     "by_lens_topic": {
-      "agent-ecosystem": 282,
-      "monetization": 27,
-      "workplace": 31
+      "agent-ecosystem": 285,
+      "monetization": 25,
+      "workplace": 30
     },
     "by_importance_label": {
-      "值得关注": 1215,
+      "值得关注": 1207,
       "多源热议": 21,
-      "官方更新": 97,
-      "行业动态": 185
+      "官方更新": 92,
+      "行业动态": 189
     },
     "by_source_count_bucket": {
-      "1": 1443,
-      "2": 52,
+      "1": 1430,
+      "2": 56,
       "3+": 23
     }
   },
@@ -68,32 +68,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_87eab6a95e56",
-      "title": "A model guide for the GPT-6 family",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "importance_score": 0.8589,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2e2e433e3cb1",
-      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "url": "https://huggingface.co/blog/allenai/astabrief",
-      "importance_score": 0.8565,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_e99e37631b09",
@@ -241,6 +215,19 @@
       ]
     },
     {
+      "story_id": "story_87eab6a95e56",
+      "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "importance_score": 0.8473,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_bc118703e053",
       "title": "一年后：主权人工智能和选择之战 / One year later: Sovereign AI and the fight for choice",
       "url": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later",
@@ -276,17 +263,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_8929dc6acd37",
-      "title": "AI is rewriting the developer career ladder. Here’s how to stand out.",
-      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-      "importance_score": 0.8457,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_299644506077",
       "title": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本 / Holo4: powering generalist computer-use agents",
       "url": "https://huggingface.co/blog/Hcompany/holo4",
@@ -299,6 +275,34 @@
       ],
       "lens_topics": [
         "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_2e2e433e3cb1",
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "importance_score": 0.845,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_aef691a327ab",
+      "title": "Selected models in GitHub Copilot deprecated",
+      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+      "importance_score": 0.8445,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
       ]
     },
     {
@@ -347,19 +351,6 @@
       "source_count": 1,
       "archive_date": "2026-10-01",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_79c5530db8f1",
-      "title": "The latest AI news we announced in September 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026",
-      "importance_score": 0.8397,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "google-gemini"
-      ],
       "lens_topics": []
     },
     {
@@ -422,10 +413,10 @@
       ]
     },
     {
-      "story_id": "story_14dc0c8581ff",
-      "title": "New fields for SecurityAdvisory GraphQL API",
-      "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
-      "importance_score": 0.8354,
+      "story_id": "story_d0ecf0e85035",
+      "title": "AI is changing developer work. Here are three skills to strengthen.",
+      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+      "importance_score": 0.8343,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-03",
@@ -433,10 +424,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_8251eed32ade",
-      "title": "Repository security advisory comments API in public preview",
-      "url": "https://github.blog/changelog/2026-10-02-repository-security-advisory-comments-api-in-public-preview",
-      "importance_score": 0.8353,
+      "story_id": "story_8929dc6acd37",
+      "title": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+      "importance_score": 0.8343,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-03",
@@ -470,6 +461,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_79c5530db8f1",
+      "title": "The latest AI news we announced in September 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026",
+      "importance_score": 0.8283,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_aee032fed00c",
       "title": "Self-hosted runner version enforcement date has moved",
       "url": "https://github.blog/changelog/2026-09-28-self-hosted-runner-version-enforcement-date-has-moved",
@@ -488,6 +492,28 @@
       "importance_label": "官方更新",
       "source_count": 2,
       "archive_date": "2026-10-02",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_14dc0c8581ff",
+      "title": "New fields for SecurityAdvisory GraphQL API",
+      "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
+      "importance_score": 0.8243,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8251eed32ade",
+      "title": "Repository security advisory comments API in public preview",
+      "url": "https://github.blog/changelog/2026-10-02-repository-security-advisory-comments-api-in-public-preview",
+      "importance_score": 0.8242,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
       "company_topics": [],
       "lens_topics": []
     },
@@ -527,32 +553,6 @@
       "archive_date": "2026-09-30",
       "company_topics": [
         "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_7009e35a2340",
-      "title": "World Labs 宣布加入 AMD，李飞飞将出任 AMD 执行副总裁兼首席科学家 / World Labs Is Joining AMD",
-      "url": "https://www.worldlabs.ai/blog/amd-announcement",
-      "importance_score": 0.816,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-09-29",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6c4072b1c87e",
-      "title": "自主 ML 工程需要多少强大的代理？ / How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?",
-      "url": "https://machinelearning.apple.com/research/harness-autonomous-ml-engineering",
-      "importance_score": 0.816,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-01",
-      "company_topics": [
-        "apple"
       ],
       "lens_topics": [
         "agent-ecosystem"
