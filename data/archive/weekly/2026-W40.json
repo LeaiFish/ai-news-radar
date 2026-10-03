@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-03T13:30:58.556792Z",
+  "generated_at": "2026-10-03T15:09:18.517252Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
@@ -13,42 +13,43 @@
     "2026-10-02",
     "2026-10-03"
   ],
-  "story_count": 1463,
-  "unique_story_count": 1318,
+  "story_count": 1475,
+  "unique_story_count": 1335,
   "counts": {
     "by_company_topic": {
-      "anthropic": 187,
+      "anthropic": 191,
       "apple": 7,
       "cursor": 2,
-      "deepseek": 18,
+      "deepseek": 20,
       "doubao": 6,
-      "google-gemini": 67,
+      "google-gemini": 68,
       "huggingface": 21,
-      "kimi": 5,
+      "hunyuan": 1,
+      "kimi": 7,
       "meta-llama": 4,
       "microsoft": 18,
-      "minimax": 6,
-      "nvidia": 73,
-      "openai": 284,
+      "minimax": 7,
+      "nvidia": 72,
+      "openai": 294,
       "openrouter": 18,
       "perplexity": 12,
-      "qwen": 13,
-      "xai": 12,
-      "zhipu": 7
+      "qwen": 18,
+      "xai": 16,
+      "zhipu": 9
     },
     "by_lens_topic": {
       "agent-ecosystem": 282,
-      "monetization": 24,
-      "workplace": 33
+      "monetization": 31,
+      "workplace": 32
     },
     "by_importance_label": {
-      "值得关注": 1178,
+      "值得关注": 1167,
       "多源热议": 23,
-      "官方更新": 81,
-      "行业动态": 181
+      "官方更新": 78,
+      "行业动态": 207
     },
     "by_source_count_bucket": {
-      "1": 1387,
+      "1": 1399,
       "2": 51,
       "3+": 25
     }
@@ -518,19 +519,6 @@
       ]
     },
     {
-      "story_id": "story_87eab6a95e56",
-      "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "importance_score": 0.8124,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7e0e84425f1a",
       "title": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元 / Reuters reviewed the Anthropic IPO prospectus.",
       "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
@@ -570,6 +558,21 @@
         "openrouter"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_c38cf89d1dc2",
+      "title": "代理框架比较：工具调用架构处理 / Agent Frameworks Compared: Tool-Calling Schema Handling",
+      "url": "https://openrouter.ai/blog/insights/agent-frameworks-compared-tool-calling-schema-handling",
+      "importance_score": 0.8113,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     }
   ]
 }
