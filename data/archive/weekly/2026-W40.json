@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-03T10:26:50.771208Z",
+  "generated_at": "2026-10-03T13:30:58.556792Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
@@ -13,11 +13,11 @@
     "2026-10-02",
     "2026-10-03"
   ],
-  "story_count": 1489,
-  "unique_story_count": 1310,
+  "story_count": 1463,
+  "unique_story_count": 1318,
   "counts": {
     "by_company_topic": {
-      "anthropic": 190,
+      "anthropic": 187,
       "apple": 7,
       "cursor": 2,
       "deepseek": 18,
@@ -28,8 +28,8 @@
       "meta-llama": 4,
       "microsoft": 18,
       "minimax": 6,
-      "nvidia": 74,
-      "openai": 290,
+      "nvidia": 73,
+      "openai": 284,
       "openrouter": 18,
       "perplexity": 12,
       "qwen": 13,
@@ -37,18 +37,18 @@
       "zhipu": 7
     },
     "by_lens_topic": {
-      "agent-ecosystem": 286,
+      "agent-ecosystem": 282,
       "monetization": 24,
       "workplace": 33
     },
     "by_importance_label": {
-      "值得关注": 1198,
+      "值得关注": 1178,
       "多源热议": 23,
-      "官方更新": 86,
-      "行业动态": 182
+      "官方更新": 81,
+      "行业动态": 181
     },
     "by_source_count_bucket": {
-      "1": 1413,
+      "1": 1387,
       "2": 51,
       "3+": 25
     }
@@ -461,47 +461,6 @@
       ]
     },
     {
-      "story_id": "story_87eab6a95e56",
-      "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "importance_score": 0.8184,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2e2e433e3cb1",
-      "title": "开源 AstaBrief，Asta 中的快速报告生成模型 / Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "url": "https://huggingface.co/blog/allenai/astabrief",
-      "importance_score": 0.8166,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cc4a44476dc4",
-      "title": "Copilot 代码审查：API 支持和新的默认工作级别 / Copilot code review: API support and new default effort level",
-      "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
-      "importance_score": 0.8165,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_7009e35a2340",
       "title": "World Labs 宣布加入 AMD，李飞飞将出任 AMD 执行副总裁兼首席科学家 / World Labs Is Joining AMD",
       "url": "https://www.worldlabs.ai/blog/amd-announcement",
@@ -543,30 +502,74 @@
       ]
     },
     {
-      "story_id": "story_3f3282702712",
-      "title": "无状态 GitHub 应用程序安装令牌推出 / Stateless GitHub App installation tokens rolled out",
-      "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
-      "importance_score": 0.8151,
+      "story_id": "story_5e8fdb7e624e",
+      "title": "GPT-6.1 Sol in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
+      "importance_score": 0.8135,
       "importance_label": "官方更新",
       "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_aef691a327ab",
-      "title": "已弃用 GitHub Copilot 中的选定模型 / Selected models in GitHub Copilot deprecated",
-      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-      "importance_score": 0.8148,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
+      "archive_date": "2026-09-30",
       "company_topics": [
+        "openai",
         "microsoft"
       ],
       "lens_topics": [
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_87eab6a95e56",
+      "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "importance_score": 0.8124,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7e0e84425f1a",
+      "title": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元 / Reuters reviewed the Anthropic IPO prospectus.",
+      "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
+      "importance_score": 0.812,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-09-29",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0b8f5dfcd83d",
+      "title": "OpenRouter 教程：如何测试 AI Agent 的工具调用准确性 / How to Test Tool-Calling Accuracy in AI Agents",
+      "url": "https://openrouter.ai/blog/tutorials/how-to-test-tool-calling-accuracy-in-ai-agents",
+      "importance_score": 0.8116,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-09-30",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_d7846f2c0721",
+      "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
+      "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
+      "importance_score": 0.8113,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-02",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
     }
   ]
 }
