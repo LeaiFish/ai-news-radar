@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-03T19:57:00.596354Z",
+  "generated_at": "2026-10-03T23:47:17.701297Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
@@ -14,45 +14,45 @@
     "2026-10-03",
     "2026-10-04"
   ],
-  "story_count": 1619,
-  "unique_story_count": 1362,
+  "story_count": 1598,
+  "unique_story_count": 1377,
   "counts": {
     "by_company_topic": {
-      "anthropic": 211,
+      "anthropic": 206,
       "apple": 7,
       "cursor": 2,
       "deepseek": 23,
       "doubao": 6,
       "google-gemini": 79,
-      "huggingface": 22,
+      "huggingface": 23,
       "hunyuan": 2,
       "kimi": 9,
-      "meta-llama": 6,
+      "meta-llama": 5,
       "microsoft": 18,
       "minimax": 8,
       "nvidia": 74,
-      "openai": 320,
+      "openai": 323,
       "openrouter": 18,
       "perplexity": 12,
-      "qwen": 24,
+      "qwen": 23,
       "xai": 21,
-      "zhipu": 12
+      "zhipu": 11
     },
     "by_lens_topic": {
-      "agent-ecosystem": 309,
+      "agent-ecosystem": 301,
       "monetization": 39,
       "workplace": 33
     },
     "by_importance_label": {
-      "值得关注": 1281,
-      "多源热议": 25,
+      "值得关注": 1266,
+      "多源热议": 26,
       "官方更新": 79,
-      "行业动态": 234
+      "行业动态": 227
     },
     "by_source_count_bucket": {
-      "1": 1538,
-      "2": 54,
-      "3+": 27
+      "1": 1515,
+      "2": 55,
+      "3+": 28
     }
   },
   "top_stories": [
@@ -66,6 +66,21 @@
       "archive_date": "2026-09-30",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_1be63ddb3fed",
+      "title": "Microsoft ThinkingBox 在 Hugging Face 上发布，以数据库终态和 20 次重复评测智能体 / The Agent Said It Was Done. The Database Disagreed.",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "importance_score": 0.8578,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-04",
+      "company_topics": [
+        "huggingface"
       ],
       "lens_topics": [
         "agent-ecosystem"
@@ -559,21 +574,6 @@
         "openrouter"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_c38cf89d1dc2",
-      "title": "代理框架比较：工具调用架构处理 / Agent Frameworks Compared: Tool-Calling Schema Handling",
-      "url": "https://openrouter.ai/blog/insights/agent-frameworks-compared-tool-calling-schema-handling",
-      "importance_score": 0.8113,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-02",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }

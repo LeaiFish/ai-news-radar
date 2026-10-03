@@ -3,12 +3,12 @@
   "name": "通义千问 / Qwen",
   "description": "阿里通义千问 Qwen 系列：旗舰模型、开源权重、端侧与多模态迭代。",
   "group": "company",
-  "item_count": 82,
+  "item_count": 83,
   "listed_count": 80,
   "latest_title": "Alibaba 发布闭源模型 Qwen 3.8 Max，ECI 得 157 分 / Qwen 3.8 Max",
   "latest_published_at": "2026-10-03T15:09:18.517252Z",
   "items_url": "data/topics/qwen.json",
-  "generated_at": "2026-10-03T19:57:00.596354Z",
+  "generated_at": "2026-10-03T23:47:17.701297Z",
   "items": [
     {
       "id": "story_19c737e1ea28",
@@ -23,7 +23,7 @@
       "site_id": "",
       "published_at": "2026-10-03T15:09:18.517252Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_85a45ad87748",
@@ -38,7 +38,7 @@
       "site_id": "",
       "published_at": "2026-10-03T15:09:18.517252Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_bfe1831f2b4e",
@@ -86,19 +86,34 @@
       "curated": false
     },
     {
-      "id": "story_2987cb363021",
-      "story_id": "story_2987cb363021",
-      "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90% / Agentic inference optimization: 50-90% faster engines",
-      "title_en": "Agentic inference optimization: 50-90% faster engines",
+      "id": "0972a8fbd59dff5ad402e02f6fc715985c7d716c",
+      "story_id": null,
+      "title": "I made my iPhone a second GPU for my MacBook-Qwen 3.8 27B prefills 29–44% faster",
+      "title_en": null,
+      "url": "https://reddit.com/comments/1wvz1ex",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "Hacker News · 24h最热",
+      "source_name": "Hacker News · 24h最热",
+      "site_id": "zeli",
+      "published_at": "2026-10-03T08:39:06Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "f43c5a92ec39e2402584ef8b89a404e27c40873e",
+      "story_id": null,
+      "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90%",
+      "title_en": null,
       "url": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota",
       "summary": "Baseten 工程师参考 MetaInfer 论文，让 Claude Code（Fable 5）为 Qwen-3.6-35B-A3B（NVFP4，单张 B200）自动构建推理引擎 VibeQwen，单流解码比 vLLM 0.25.1 快 90%，首 token 从 28ms 降至 12ms，并发 32 时吞吐高 71%。",
       "recommend_reason_zh": null,
       "source": "Baseten 工程博客（网页）",
-      "source_name": "AI HOT",
-      "site_id": "",
+      "source_name": "Baseten 工程博客（网页）",
+      "site_id": "aihot",
       "published_at": "2026-10-02T21:09:34Z",
       "source_count": 1,
-      "curated": false
+      "curated": true
     },
     {
       "id": "107b32fc23812669dc3b0937ac1bc831e11ffffe",
@@ -1192,21 +1207,6 @@
       "source_name": "NVIDIA Generative AI Blog",
       "site_id": "opmlrss",
       "published_at": "2026-08-26T17:07:12Z",
-      "source_count": 1,
-      "curated": false
-    },
-    {
-      "id": "726f455b286e85d827c3a9781a7a0054a59df60c",
-      "story_id": null,
-      "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
-      "title_en": null,
-      "url": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "NVIDIA Generative AI Blog",
-      "source_name": "NVIDIA Generative AI Blog",
-      "site_id": "opmlrss",
-      "published_at": "2026-08-12T18:23:13Z",
       "source_count": 1,
       "curated": false
     }
