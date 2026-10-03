@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T21:20:13.820209Z",
+  "generated_at": "2026-10-03T02:01:51.178404Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -58,15 +58,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8473,
-      "importance": 0.8473,
-      "importance_score": 0.8473,
+      "score": 0.8363,
+      "importance": 0.8363,
+      "importance_score": 0.8363,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9292,
+        "recency": 0.8683,
         "story_heat": 0.0
       },
       "category": "official",
@@ -93,12 +93,105 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
+      }
+    },
+    {
+      "story_id": "story_cc4a44476dc4",
+      "title": "Copilot 代码审查：API 支持和新的默认工作级别 / Copilot code review: API support and new default effort level",
+      "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "primary_url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "4c4bee02b6e6e7d087938a89098b4ad2a2e9898c",
+          "title": "Copilot 代码审查：API 支持和新的默认工作级别 / Copilot code review: API support and new default effort level",
+          "title_zh": "Copilot 代码审查：API 支持和新的默认工作级别",
+          "title_en": "Copilot code review: API support and new default effort level",
+          "title_original": "Copilot code review: API support and new default effort level",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-02T19:13:50Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "select_tier": "T1",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "4c4bee02b6e6e7d087938a89098b4ad2a2e9898c",
+          "title": "Copilot 代码审查：API 支持和新的默认工作级别 / Copilot code review: API support and new default effort level",
+          "title_zh": "Copilot 代码审查：API 支持和新的默认工作级别",
+          "title_en": "Copilot code review: API support and new default effort level",
+          "title_original": "Copilot code review: API support and new default effort level",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-02T19:13:50Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8352,
+      "importance": 0.8352,
+      "importance_score": 0.8352,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9065,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-02T19:13:50Z",
+      "latest_at": "2026-10-02T19:13:50Z",
+      "primary_item": {
+        "id": "4c4bee02b6e6e7d087938a89098b4ad2a2e9898c",
+        "title": "Copilot 代码审查：API 支持和新的默认工作级别 / Copilot code review: API support and new default effort level",
+        "title_zh": "Copilot 代码审查：API 支持和新的默认工作级别",
+        "title_en": "Copilot code review: API support and new default effort level",
+        "title_original": "Copilot code review: API support and new default effort level",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
       "story_id": "story_2e2e433e3cb1",
-      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "title": "开源 AstaBrief，Asta 中的快速报告生成模型 / Open-sourcing AstaBrief, the fast report-generation model in Asta",
       "url": "https://huggingface.co/blog/allenai/astabrief",
       "primary_url": "https://huggingface.co/blog/allenai/astabrief",
       "source": "Hugging Face Blog",
@@ -106,8 +199,8 @@
       "sources": [
         {
           "id": "48ab6be8be1ae5fa20bc6b26fcfcc2f5fdadf96d",
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_zh": null,
+          "title": "开源 AstaBrief，Asta 中的快速报告生成模型 / Open-sourcing AstaBrief, the fast report-generation model in Asta",
+          "title_zh": "开源 AstaBrief，Asta 中的快速报告生成模型",
           "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
           "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
           "summary": null,
@@ -135,8 +228,8 @@
       "items": [
         {
           "id": "48ab6be8be1ae5fa20bc6b26fcfcc2f5fdadf96d",
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_zh": null,
+          "title": "开源 AstaBrief，Asta 中的快速报告生成模型 / Open-sourcing AstaBrief, the fast report-generation model in Asta",
+          "title_zh": "开源 AstaBrief，Asta 中的快速报告生成模型",
           "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
           "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
           "summary": null,
@@ -151,15 +244,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.845,
-      "importance": 0.845,
-      "importance_score": 0.845,
+      "score": 0.8342,
+      "importance": 0.8342,
+      "importance_score": 0.8342,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9169,
+        "recency": 0.8568,
         "story_heat": 0.0
       },
       "category": "official",
@@ -172,8 +265,8 @@
       "latest_at": "2026-10-02T15:19:50Z",
       "primary_item": {
         "id": "48ab6be8be1ae5fa20bc6b26fcfcc2f5fdadf96d",
-        "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-        "title_zh": null,
+        "title": "开源 AstaBrief，Asta 中的快速报告生成模型 / Open-sourcing AstaBrief, the fast report-generation model in Asta",
+        "title_zh": "开源 AstaBrief，Asta 中的快速报告生成模型",
         "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
         "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
         "summary": null,
@@ -186,116 +279,23 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
-      "story_id": "story_aef691a327ab",
-      "title": "Selected models in GitHub Copilot deprecated",
-      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-      "primary_url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "b40a637560dbaf99f82b42269fa1cd04aba1b171",
-          "title": "Selected models in GitHub Copilot deprecated",
-          "title_zh": null,
-          "title_en": "Selected models in GitHub Copilot deprecated",
-          "title_original": "Selected models in GitHub Copilot deprecated",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T18:24:19Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "b40a637560dbaf99f82b42269fa1cd04aba1b171",
-          "title": "Selected models in GitHub Copilot deprecated",
-          "title_zh": null,
-          "title_en": "Selected models in GitHub Copilot deprecated",
-          "title_original": "Selected models in GitHub Copilot deprecated",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T18:24:19Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8445,
-      "importance": 0.8445,
-      "importance_score": 0.8445,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.9585,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T18:24:19Z",
-      "latest_at": "2026-10-02T18:24:19Z",
-      "primary_item": {
-        "id": "b40a637560dbaf99f82b42269fa1cd04aba1b171",
-        "title": "Selected models in GitHub Copilot deprecated",
-        "title_zh": null,
-        "title_en": "Selected models in GitHub Copilot deprecated",
-        "title_original": "Selected models in GitHub Copilot deprecated",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
-      }
-    },
-    {
-      "story_id": "story_d0ecf0e85035",
-      "title": "AI is changing developer work. Here are three skills to strengthen.",
+      "story_id": "story_8929dc6acd37",
+      "title": "人工智能正在改写开发者的职业阶梯。以下是如何脱颖而出。 / AI is rewriting the developer career ladder. Here’s how to stand out.",
       "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
       "primary_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
       "source": "GitHub AI & ML",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-          "title": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_zh": null,
-          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
+          "id": "16e311d52410a05b592402e68322476c2a4512bd",
+          "title": "人工智能正在改写开发者的职业阶梯。以下是如何脱颖而出。 / AI is rewriting the developer career ladder. Here’s how to stand out.",
+          "title_zh": "人工智能正在改写开发者的职业阶梯。以下是如何脱颖而出。",
+          "title_en": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+          "title_original": "AI is rewriting the developer career ladder. Here’s how to stand out.",
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
@@ -320,11 +320,11 @@
       "follow_ups": [],
       "items": [
         {
-          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-          "title": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_zh": null,
-          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
+          "id": "16e311d52410a05b592402e68322476c2a4512bd",
+          "title": "人工智能正在改写开发者的职业阶梯。以下是如何脱颖而出。 / AI is rewriting the developer career ladder. Here’s how to stand out.",
+          "title_zh": "人工智能正在改写开发者的职业阶梯。以下是如何脱颖而出。",
+          "title_en": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+          "title_original": "AI is rewriting the developer career ladder. Here’s how to stand out.",
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
@@ -337,15 +337,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8343,
-      "importance": 0.8343,
-      "importance_score": 0.8343,
+      "score": 0.8235,
+      "importance": 0.8235,
+      "importance_score": 0.8235,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.9,
-        "recency": 0.9126,
+        "recency": 0.8527,
         "story_heat": 0.0
       },
       "category": "official",
@@ -357,11 +357,11 @@
       "earliest_at": "2026-10-02T15:00:00Z",
       "latest_at": "2026-10-02T15:00:00Z",
       "primary_item": {
-        "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-        "title": "AI is changing developer work. Here are three skills to strengthen.",
-        "title_zh": null,
-        "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-        "title_original": "AI is changing developer work. Here are three skills to strengthen.",
+        "id": "16e311d52410a05b592402e68322476c2a4512bd",
+        "title": "人工智能正在改写开发者的职业阶梯。以下是如何脱颖而出。 / AI is rewriting the developer career ladder. Here’s how to stand out.",
+        "title_zh": "人工智能正在改写开发者的职业阶梯。以下是如何脱颖而出。",
+        "title_en": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+        "title_original": "AI is rewriting the developer career ladder. Here’s how to stand out.",
         "summary": null,
         "recommend_reason_zh": null,
         "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
@@ -372,12 +372,12 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
       "story_id": "story_0be7d0b57b3b",
-      "title": "Introducing Web Search API via AI Gateway",
+      "title": "通过 AI Gateway 引入 Web 搜索 API / Introducing Web Search API via AI Gateway",
       "url": "https://blog.cloudflare.com/introducing-web-search-api",
       "primary_url": "https://blog.cloudflare.com/introducing-web-search-api",
       "source": "Cloudflare Blog",
@@ -385,8 +385,8 @@
       "sources": [
         {
           "id": "752f54b68374dc4b47b6f711e2d1be698e7b4719",
-          "title": "Introducing Web Search API via AI Gateway",
-          "title_zh": null,
+          "title": "通过 AI Gateway 引入 Web 搜索 API / Introducing Web Search API via AI Gateway",
+          "title_zh": "通过 AI Gateway 引入 Web 搜索 API",
           "title_en": "Introducing Web Search API via AI Gateway",
           "title_original": "Introducing Web Search API via AI Gateway",
           "summary": null,
@@ -414,8 +414,8 @@
       "items": [
         {
           "id": "752f54b68374dc4b47b6f711e2d1be698e7b4719",
-          "title": "Introducing Web Search API via AI Gateway",
-          "title_zh": null,
+          "title": "通过 AI Gateway 引入 Web 搜索 API / Introducing Web Search API via AI Gateway",
+          "title_zh": "通过 AI Gateway 引入 Web 搜索 API",
           "title_en": "Introducing Web Search API via AI Gateway",
           "title_original": "Introducing Web Search API via AI Gateway",
           "summary": null,
@@ -430,15 +430,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8307,
-      "importance": 0.8307,
-      "importance_score": 0.8307,
+      "score": 0.8201,
+      "importance": 0.8201,
+      "importance_score": 0.8201,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.9,
-        "recency": 0.8926,
+        "recency": 0.8341,
         "story_heat": 0.0
       },
       "category": "official",
@@ -451,8 +451,8 @@
       "latest_at": "2026-10-02T13:28:10Z",
       "primary_item": {
         "id": "752f54b68374dc4b47b6f711e2d1be698e7b4719",
-        "title": "Introducing Web Search API via AI Gateway",
-        "title_zh": null,
+        "title": "通过 AI Gateway 引入 Web 搜索 API / Introducing Web Search API via AI Gateway",
+        "title_zh": "通过 AI Gateway 引入 Web 搜索 API",
         "title_en": "Introducing Web Search API via AI Gateway",
         "title_original": "Introducing Web Search API via AI Gateway",
         "summary": null,
@@ -465,12 +465,12 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
       "story_id": "story_79c5530db8f1",
-      "title": "The latest AI news we announced in September 2026",
+      "title": "我们于 2026 年 9 月公布的最新 AI 新闻 / The latest AI news we announced in September 2026",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026",
       "primary_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026",
       "source": "Google AI Blog",
@@ -478,8 +478,8 @@
       "sources": [
         {
           "id": "dd4c7d387fc53412a62e9d26adf403b628b46261",
-          "title": "The latest AI news we announced in September 2026",
-          "title_zh": null,
+          "title": "我们于 2026 年 9 月公布的最新 AI 新闻 / The latest AI news we announced in September 2026",
+          "title_zh": "我们于 2026 年 9 月公布的最新 AI 新闻",
           "title_en": "The latest AI news we announced in September 2026",
           "title_original": "The latest AI news we announced in September 2026",
           "summary": null,
@@ -507,8 +507,8 @@
       "items": [
         {
           "id": "dd4c7d387fc53412a62e9d26adf403b628b46261",
-          "title": "The latest AI news we announced in September 2026",
-          "title_zh": null,
+          "title": "我们于 2026 年 9 月公布的最新 AI 新闻 / The latest AI news we announced in September 2026",
+          "title_zh": "我们于 2026 年 9 月公布的最新 AI 新闻",
           "title_en": "The latest AI news we announced in September 2026",
           "title_original": "The latest AI news we announced in September 2026",
           "summary": null,
@@ -523,15 +523,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8283,
-      "importance": 0.8283,
-      "importance_score": 0.8283,
+      "score": 0.8175,
+      "importance": 0.8175,
+      "importance_score": 0.8175,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9126,
+        "recency": 0.8527,
         "story_heat": 0.0
       },
       "category": "official",
@@ -544,8 +544,8 @@
       "latest_at": "2026-10-02T15:00:00Z",
       "primary_item": {
         "id": "dd4c7d387fc53412a62e9d26adf403b628b46261",
-        "title": "The latest AI news we announced in September 2026",
-        "title_zh": null,
+        "title": "我们于 2026 年 9 月公布的最新 AI 新闻 / The latest AI news we announced in September 2026",
+        "title_zh": "我们于 2026 年 9 月公布的最新 AI 新闻",
         "title_en": "The latest AI news we announced in September 2026",
         "title_original": "The latest AI news we announced in September 2026",
         "summary": null,
@@ -558,23 +558,116 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
-      "story_id": "story_8929dc6acd37",
-      "title": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+      "story_id": "story_3f3282702712",
+      "title": "无状态 GitHub 应用程序安装令牌推出 / Stateless GitHub App installation tokens rolled out",
+      "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
+      "primary_url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "b5bf08461ba8b82a49c1d56e22877e860c5093ab",
+          "title": "无状态 GitHub 应用程序安装令牌推出 / Stateless GitHub App installation tokens rolled out",
+          "title_zh": "无状态 GitHub 应用程序安装令牌推出",
+          "title_en": "Stateless GitHub App installation tokens rolled out",
+          "title_original": "Stateless GitHub App installation tokens rolled out",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-02T22:18:23Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "select_tier": "T1",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "b5bf08461ba8b82a49c1d56e22877e860c5093ab",
+          "title": "无状态 GitHub 应用程序安装令牌推出 / Stateless GitHub App installation tokens rolled out",
+          "title_zh": "无状态 GitHub 应用程序安装令牌推出",
+          "title_en": "Stateless GitHub App installation tokens rolled out",
+          "title_original": "Stateless GitHub App installation tokens rolled out",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-02T22:18:23Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8346,
+      "importance": 0.8346,
+      "importance_score": 0.8346,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.9476,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-02T22:18:23Z",
+      "latest_at": "2026-10-02T22:18:23Z",
+      "primary_item": {
+        "id": "b5bf08461ba8b82a49c1d56e22877e860c5093ab",
+        "title": "无状态 GitHub 应用程序安装令牌推出 / Stateless GitHub App installation tokens rolled out",
+        "title_zh": "无状态 GitHub 应用程序安装令牌推出",
+        "title_en": "Stateless GitHub App installation tokens rolled out",
+        "title_original": "Stateless GitHub App installation tokens rolled out",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T02:03:09.638322Z"
+      }
+    },
+    {
+      "story_id": "story_d0ecf0e85035",
+      "title": "人工智能正在改变开发人员的工作。以下是需要加强的三个技能。 / AI is changing developer work. Here are three skills to strengthen.",
       "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
       "primary_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
       "source": "GitHub AI & ML",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "16e311d52410a05b592402e68322476c2a4512bd",
-          "title": "AI is rewriting the developer career ladder. Here’s how to stand out.",
-          "title_zh": null,
-          "title_en": "AI is rewriting the developer career ladder. Here’s how to stand out.",
-          "title_original": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
+          "title": "人工智能正在改变开发人员的工作。以下是需要加强的三个技能。 / AI is changing developer work. Here are three skills to strengthen.",
+          "title_zh": "人工智能正在改变开发人员的工作。以下是需要加强的三个技能。",
+          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
+          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
@@ -599,11 +692,11 @@
       "follow_ups": [],
       "items": [
         {
-          "id": "16e311d52410a05b592402e68322476c2a4512bd",
-          "title": "AI is rewriting the developer career ladder. Here’s how to stand out.",
-          "title_zh": null,
-          "title_en": "AI is rewriting the developer career ladder. Here’s how to stand out.",
-          "title_original": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
+          "title": "人工智能正在改变开发人员的工作。以下是需要加强的三个技能。 / AI is changing developer work. Here are three skills to strengthen.",
+          "title_zh": "人工智能正在改变开发人员的工作。以下是需要加强的三个技能。",
+          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
+          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
@@ -616,15 +709,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8343,
-      "importance": 0.8343,
-      "importance_score": 0.8343,
+      "score": 0.8235,
+      "importance": 0.8235,
+      "importance_score": 0.8235,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.9,
-        "recency": 0.9126,
+        "recency": 0.8527,
         "story_heat": 0.0
       },
       "category": "official",
@@ -636,11 +729,11 @@
       "earliest_at": "2026-10-02T15:00:00Z",
       "latest_at": "2026-10-02T15:00:00Z",
       "primary_item": {
-        "id": "16e311d52410a05b592402e68322476c2a4512bd",
-        "title": "AI is rewriting the developer career ladder. Here’s how to stand out.",
-        "title_zh": null,
-        "title_en": "AI is rewriting the developer career ladder. Here’s how to stand out.",
-        "title_original": "AI is rewriting the developer career ladder. Here’s how to stand out.",
+        "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
+        "title": "人工智能正在改变开发人员的工作。以下是需要加强的三个技能。 / AI is changing developer work. Here are three skills to strengthen.",
+        "title_zh": "人工智能正在改变开发人员的工作。以下是需要加强的三个技能。",
+        "title_en": "AI is changing developer work. Here are three skills to strengthen.",
+        "title_original": "AI is changing developer work. Here are three skills to strengthen.",
         "summary": null,
         "recommend_reason_zh": null,
         "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
@@ -651,193 +744,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
-      }
-    },
-    {
-      "story_id": "story_69b0e7637411",
-      "title": "Limits of Confidence in Diffusion",
-      "url": "https://machinelearning.apple.com/research/limits-confidence-diffusion",
-      "primary_url": "https://machinelearning.apple.com/research/limits-confidence-diffusion",
-      "source": "Apple Machine Learning Research",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "d9a025ada4dc1ab9cb24f812bbeeba3014c72f72",
-          "title": "Limits of Confidence in Diffusion",
-          "title_zh": null,
-          "title_en": "Limits of Confidence in Diffusion",
-          "title_original": "Limits of Confidence in Diffusion",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://machinelearning.apple.com/research/limits-confidence-diffusion",
-          "source": "Apple Machine Learning Research",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Apple Machine Learning Research"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "d9a025ada4dc1ab9cb24f812bbeeba3014c72f72",
-          "title": "Limits of Confidence in Diffusion",
-          "title_zh": null,
-          "title_en": "Limits of Confidence in Diffusion",
-          "title_original": "Limits of Confidence in Diffusion",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://machinelearning.apple.com/research/limits-confidence-diffusion",
-          "source": "Apple Machine Learning Research",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8043,
-      "importance": 0.8043,
-      "importance_score": 0.8043,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.7348,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T00:00:00Z",
-      "latest_at": "2026-10-02T00:00:00Z",
-      "primary_item": {
-        "id": "d9a025ada4dc1ab9cb24f812bbeeba3014c72f72",
-        "title": "Limits of Confidence in Diffusion",
-        "title_zh": null,
-        "title_en": "Limits of Confidence in Diffusion",
-        "title_original": "Limits of Confidence in Diffusion",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://machinelearning.apple.com/research/limits-confidence-diffusion",
-        "source": "Apple Machine Learning Research",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
-      }
-    },
-    {
-      "story_id": "story_d59d006f2287",
-      "title": "Model Router Benchmarks",
-      "url": "https://openrouter.ai/blog/announcements/model-router-benchmarks",
-      "primary_url": "https://openrouter.ai/blog/announcements/model-router-benchmarks",
-      "source": "OpenRouter Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "dd6eb95859a18696348ed038166ec0625293dfb7",
-          "title": "Model Router Benchmarks",
-          "title_zh": null,
-          "title_en": "Model Router Benchmarks",
-          "title_original": "Model Router Benchmarks",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/announcements/model-router-benchmarks",
-          "source": "OpenRouter Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenRouter Blog"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "dd6eb95859a18696348ed038166ec0625293dfb7",
-          "title": "Model Router Benchmarks",
-          "title_zh": null,
-          "title_en": "Model Router Benchmarks",
-          "title_original": "Model Router Benchmarks",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/announcements/model-router-benchmarks",
-          "source": "OpenRouter Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8023,
-      "importance": 0.8023,
-      "importance_score": 0.8023,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.9,
-        "recency": 0.7348,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T00:00:00Z",
-      "latest_at": "2026-10-02T00:00:00Z",
-      "primary_item": {
-        "id": "dd6eb95859a18696348ed038166ec0625293dfb7",
-        "title": "Model Router Benchmarks",
-        "title_zh": null,
-        "title_en": "Model Router Benchmarks",
-        "title_original": "Model Router Benchmarks",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://openrouter.ai/blog/announcements/model-router-benchmarks",
-        "source": "OpenRouter Blog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
@@ -895,15 +802,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8296,
-      "importance": 0.8296,
-      "importance_score": 0.8296,
+      "score": 0.8191,
+      "importance": 0.8191,
+      "importance_score": 0.8191,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.9,
-        "recency": 0.8866,
+        "recency": 0.8285,
         "story_heat": 0.0
       },
       "category": "official",
@@ -930,100 +837,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
-      }
-    },
-    {
-      "story_id": "story_14dc0c8581ff",
-      "title": "New fields for SecurityAdvisory GraphQL API",
-      "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
-      "primary_url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "983d5abca127c992de7dd3b2e4793328644c2a8e",
-          "title": "New fields for SecurityAdvisory GraphQL API",
-          "title_zh": null,
-          "title_en": "New fields for SecurityAdvisory GraphQL API",
-          "title_original": "New fields for SecurityAdvisory GraphQL API",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T13:18:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "983d5abca127c992de7dd3b2e4793328644c2a8e",
-          "title": "New fields for SecurityAdvisory GraphQL API",
-          "title_zh": null,
-          "title_en": "New fields for SecurityAdvisory GraphQL API",
-          "title_original": "New fields for SecurityAdvisory GraphQL API",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T13:18:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8243,
-      "importance": 0.8243,
-      "importance_score": 0.8243,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8904,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T13:18:00Z",
-      "latest_at": "2026-10-02T13:18:00Z",
-      "primary_item": {
-        "id": "983d5abca127c992de7dd3b2e4793328644c2a8e",
-        "title": "New fields for SecurityAdvisory GraphQL API",
-        "title_zh": null,
-        "title_en": "New fields for SecurityAdvisory GraphQL API",
-        "title_original": "New fields for SecurityAdvisory GraphQL API",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
@@ -1081,15 +895,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8202,
-      "importance": 0.8202,
-      "importance_score": 0.8202,
+      "score": 0.811,
+      "importance": 0.811,
+      "importance_score": 0.811,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7788,
+        "recency": 0.7278,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1116,7 +930,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
@@ -1174,15 +988,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7895,
-      "importance": 0.7895,
-      "importance_score": 0.7895,
+      "score": 0.7781,
+      "importance": 0.7781,
+      "importance_score": 0.7781,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9695,
+        "recency": 0.906,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1208,36 +1022,36 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
-      "story_id": "story_3f2245b761ea",
-      "title": "Chatham scales its capital markets expertise with OpenAI",
-      "url": "https://openai.com/index/chatham-financial",
-      "primary_url": "https://openai.com/index/chatham-financial",
-      "source": "OpenAI News",
+      "story_id": "story_aef691a327ab",
+      "title": "已弃用 GitHub Copilot 中的选定模型 / Selected models in GitHub Copilot deprecated",
+      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+      "primary_url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+      "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "bf8b5fd2bb77e770049eb5c2602e070a5475d368",
-          "title": "Chatham scales its capital markets expertise with OpenAI",
-          "title_zh": null,
-          "title_en": "Chatham scales its capital markets expertise with OpenAI",
-          "title_original": "Chatham scales its capital markets expertise with OpenAI",
+          "id": "b40a637560dbaf99f82b42269fa1cd04aba1b171",
+          "title": "已弃用 GitHub Copilot 中的选定模型 / Selected models in GitHub Copilot deprecated",
+          "title_zh": "已弃用 GitHub Copilot 中的选定模型",
+          "title_en": "Selected models in GitHub Copilot deprecated",
+          "title_original": "Selected models in GitHub Copilot deprecated",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/chatham-financial",
-          "source": "OpenAI News",
+          "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+          "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
+          "published_at": "2026-10-02T18:24:19Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "OpenAI News"
+        "GitHub Changelog"
       ],
       "select_tier": "T1",
       "source_heat": 1.0,
@@ -1249,32 +1063,32 @@
       "follow_ups": [],
       "items": [
         {
-          "id": "bf8b5fd2bb77e770049eb5c2602e070a5475d368",
-          "title": "Chatham scales its capital markets expertise with OpenAI",
-          "title_zh": null,
-          "title_en": "Chatham scales its capital markets expertise with OpenAI",
-          "title_original": "Chatham scales its capital markets expertise with OpenAI",
+          "id": "b40a637560dbaf99f82b42269fa1cd04aba1b171",
+          "title": "已弃用 GitHub Copilot 中的选定模型 / Selected models in GitHub Copilot deprecated",
+          "title_zh": "已弃用 GitHub Copilot 中的选定模型",
+          "title_en": "Selected models in GitHub Copilot deprecated",
+          "title_original": "Selected models in GitHub Copilot deprecated",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/chatham-financial",
-          "source": "OpenAI News",
+          "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+          "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
+          "published_at": "2026-10-02T18:24:19Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8043,
-      "importance": 0.8043,
-      "importance_score": 0.8043,
+      "score": 0.8332,
+      "importance": 0.8332,
+      "importance_score": 0.8332,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.7348,
+        "recency": 0.8957,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1283,25 +1097,25 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-02T00:00:00Z",
-      "latest_at": "2026-10-02T00:00:00Z",
+      "earliest_at": "2026-10-02T18:24:19Z",
+      "latest_at": "2026-10-02T18:24:19Z",
       "primary_item": {
-        "id": "bf8b5fd2bb77e770049eb5c2602e070a5475d368",
-        "title": "Chatham scales its capital markets expertise with OpenAI",
-        "title_zh": null,
-        "title_en": "Chatham scales its capital markets expertise with OpenAI",
-        "title_original": "Chatham scales its capital markets expertise with OpenAI",
+        "id": "b40a637560dbaf99f82b42269fa1cd04aba1b171",
+        "title": "已弃用 GitHub Copilot 中的选定模型 / Selected models in GitHub Copilot deprecated",
+        "title_zh": "已弃用 GitHub Copilot 中的选定模型",
+        "title_en": "Selected models in GitHub Copilot deprecated",
+        "title_original": "Selected models in GitHub Copilot deprecated",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/chatham-financial",
-        "source": "OpenAI News",
+        "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+        "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       },
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
@@ -1359,15 +1173,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7683,
-      "importance": 0.7683,
-      "importance_score": 0.7683,
+      "score": 0.7572,
+      "importance": 0.7572,
+      "importance_score": 0.7572,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9348,
+        "recency": 0.8736,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1393,7 +1207,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
@@ -1451,15 +1265,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7667,
-      "importance": 0.7667,
-      "importance_score": 0.7667,
+      "score": 0.7551,
+      "importance": 0.7551,
+      "importance_score": 0.7551,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9781,
+        "recency": 0.914,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1485,286 +1299,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
-      }
-    },
-    {
-      "story_id": "story_8965a8f88f14",
-      "title": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-      "url": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning",
-      "primary_url": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning",
-      "source": "Apple Machine Learning Research",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "4976d1e6556f07ca42726ca28e551248e5c31f96",
-          "title": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-          "title_zh": null,
-          "title_en": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-          "title_original": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning",
-          "source": "Apple Machine Learning Research",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Apple Machine Learning Research"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "4976d1e6556f07ca42726ca28e551248e5c31f96",
-          "title": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-          "title_zh": null,
-          "title_en": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-          "title_original": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning",
-          "source": "Apple Machine Learning Research",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7963,
-      "importance": 0.7963,
-      "importance_score": 0.7963,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.7348,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T00:00:00Z",
-      "latest_at": "2026-10-02T00:00:00Z",
-      "primary_item": {
-        "id": "4976d1e6556f07ca42726ca28e551248e5c31f96",
-        "title": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-        "title_zh": null,
-        "title_en": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-        "title_original": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning",
-        "source": "Apple Machine Learning Research",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
-      }
-    },
-    {
-      "story_id": "story_d7846f2c0721",
-      "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-      "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
-      "primary_url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
-      "source": "OpenRouter Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "8e65c2e18dab76e083f614dfd1fa6220876d2bf0",
-          "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-          "title_zh": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异",
-          "title_en": "LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-          "title_original": "LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
-          "source": "OpenRouter Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenRouter Blog"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "8e65c2e18dab76e083f614dfd1fa6220876d2bf0",
-          "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-          "title_zh": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异",
-          "title_en": "LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-          "title_original": "LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
-          "source": "OpenRouter Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7963,
-      "importance": 0.7963,
-      "importance_score": 0.7963,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.7348,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T00:00:00Z",
-      "latest_at": "2026-10-02T00:00:00Z",
-      "primary_item": {
-        "id": "8e65c2e18dab76e083f614dfd1fa6220876d2bf0",
-        "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异 / LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-        "title_zh": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异",
-        "title_en": "LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-        "title_original": "LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing",
-        "source": "OpenRouter Blog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
-      }
-    },
-    {
-      "story_id": "story_7ba973037a20",
-      "title": "Confidential comments on repository security advisories",
-      "url": "https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories",
-      "primary_url": "https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "75d3ae652733e012708727418c039e9c82d67827",
-          "title": "Confidential comments on repository security advisories",
-          "title_zh": null,
-          "title_en": "Confidential comments on repository security advisories",
-          "title_original": "Confidential comments on repository security advisories",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T13:15:40Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "75d3ae652733e012708727418c039e9c82d67827",
-          "title": "Confidential comments on repository security advisories",
-          "title_zh": null,
-          "title_en": "Confidential comments on repository security advisories",
-          "title_original": "Confidential comments on repository security advisories",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-02T13:15:40Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8242,
-      "importance": 0.8242,
-      "importance_score": 0.8242,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8899,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T13:15:40Z",
-      "latest_at": "2026-10-02T13:15:40Z",
-      "primary_item": {
-        "id": "75d3ae652733e012708727418c039e9c82d67827",
-        "title": "Confidential comments on repository security advisories",
-        "title_zh": null,
-        "title_en": "Confidential comments on repository security advisories",
-        "title_original": "Confidential comments on repository security advisories",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     },
     {
@@ -1822,21 +1357,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7564,
-      "importance": 0.7564,
-      "importance_score": 0.7564,
+      "score": 0.7452,
+      "importance": 0.7452,
+      "importance_score": 0.7452,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9546,
+        "recency": 0.892,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-02T18:07:12Z",
       "latest_at": "2026-10-02T18:07:12Z",
@@ -1856,7 +1390,464 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-02T21:56:53.629698Z"
+        "scored_at": "2026-10-03T02:03:09.638322Z"
+      }
+    },
+    {
+      "story_id": "story_ba641315d711",
+      "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+      "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "80379d05868b888bce46fe2c5c3842db5998b24f",
+          "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+          "title_zh": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+          "title_en": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+          "title_original": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+          "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "select_tier": "T2",
+          "published_at": "2026-10-02T07:23:13Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "select_tier": "T2",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "80379d05868b888bce46fe2c5c3842db5998b24f",
+          "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+          "title_zh": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+          "title_en": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+          "title_original": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+          "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "select_tier": "T2",
+          "published_at": "2026-10-02T07:23:13Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7371,
+      "importance": 0.7371,
+      "importance_score": 0.7371,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.764,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-02T07:23:13Z",
+      "latest_at": "2026-10-02T07:23:13Z",
+      "primary_item": {
+        "id": "80379d05868b888bce46fe2c5c3842db5998b24f",
+        "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+        "title_zh": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+        "title_en": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+        "title_original": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
+        "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T02:03:09.638322Z"
+      }
+    },
+    {
+      "story_id": "story_2987cb363021",
+      "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90% / Agentic inference optimization: 50-90% faster engines",
+      "url": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota",
+      "primary_url": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota",
+      "source": "Baseten 工程博客（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "f43c5a92ec39e2402584ef8b89a404e27c40873e",
+          "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90% / Agentic inference optimization: 50-90% faster engines",
+          "title_zh": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90%",
+          "title_en": "Agentic inference optimization: 50-90% faster engines",
+          "title_original": "Agentic inference optimization: 50-90% faster engines",
+          "summary": "Baseten 工程师参考 MetaInfer 论文，让 Claude Code（Fable 5）为 Qwen-3.6-35B-A3B（NVFP4，单张 B200）自动构建推理引擎 VibeQwen，单流解码比 vLLM 0.25.1 快 90%，首 token 从 28ms 降至 12ms，并发 32 时吞吐高 71%。",
+          "recommend_reason_zh": null,
+          "url": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota",
+          "source": "Baseten 工程博客（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "select_tier": "T2",
+          "published_at": "2026-10-02T21:09:34Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Baseten 工程博客（网页）"
+      ],
+      "select_tier": "T2",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "f43c5a92ec39e2402584ef8b89a404e27c40873e",
+          "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90% / Agentic inference optimization: 50-90% faster engines",
+          "title_zh": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90%",
+          "title_en": "Agentic inference optimization: 50-90% faster engines",
+          "title_original": "Agentic inference optimization: 50-90% faster engines",
+          "summary": "Baseten 工程师参考 MetaInfer 论文，让 Claude Code（Fable 5）为 Qwen-3.6-35B-A3B（NVFP4，单张 B200）自动构建推理引擎 VibeQwen，单流解码比 vLLM 0.25.1 快 90%，首 token 从 28ms 降至 12ms，并发 32 时吞吐高 71%。",
+          "recommend_reason_zh": null,
+          "url": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota",
+          "source": "Baseten 工程博客（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "select_tier": "T2",
+          "published_at": "2026-10-02T21:09:34Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7314,
+      "importance": 0.7314,
+      "importance_score": 0.7314,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.64,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9321,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-02T21:09:34Z",
+      "latest_at": "2026-10-02T21:09:34Z",
+      "primary_item": {
+        "id": "f43c5a92ec39e2402584ef8b89a404e27c40873e",
+        "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90% / Agentic inference optimization: 50-90% faster engines",
+        "title_zh": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90%",
+        "title_en": "Agentic inference optimization: 50-90% faster engines",
+        "title_original": "Agentic inference optimization: 50-90% faster engines",
+        "summary": "Baseten 工程师参考 MetaInfer 论文，让 Claude Code（Fable 5）为 Qwen-3.6-35B-A3B（NVFP4，单张 B200）自动构建推理引擎 VibeQwen，单流解码比 vLLM 0.25.1 快 90%，首 token 从 28ms 降至 12ms，并发 32 时吞吐高 71%。",
+        "recommend_reason_zh": null,
+        "url": "https://www.baseten.co/blog/agentic-inference-optimization-faster-than-sota",
+        "source": "Baseten 工程博客（网页）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T02:03:09.638322Z"
+      }
+    },
+    {
+      "story_id": "story_fb1107e372ac",
+      "title": "Google Project Suncatcher 首颗原型卫星发射入轨 / Project Suncatcher has liftoff! ☀️🚀",
+      "url": "https://x.com/GoogleAI/status/2106049984164463069",
+      "primary_url": "https://x.com/GoogleAI/status/2106049984164463069",
+      "source": "X：Google AI (@GoogleAI)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "85a23bfcf12c8943396e2a3e845d81e8ef1a63d0",
+          "title": "Google Project Suncatcher 首颗原型卫星发射入轨 / Project Suncatcher has liftoff! ☀️🚀",
+          "title_zh": "Google Project Suncatcher 首颗原型卫星发射入轨",
+          "title_en": "Project Suncatcher has liftoff! ☀️🚀",
+          "title_original": "Project Suncatcher has liftoff! ☀️🚀",
+          "summary": "Google 宣布其探索在太空托管机器学习基础设施的 Project Suncatcher 已将一颗与 Planet 合作建造的原型卫星送入轨道，搭乘 SpaceX Transporter-18 拼车任务。该任务将收集 Google TPU 在太空飞行物理应力和极端环境下表现的数据，未来探索连接多个卫星星座实现规模化机器学习；低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/GoogleAI/status/2106049984164463069",
+          "source": "X：Google AI (@GoogleAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "select_tier": "T2",
+          "published_at": "2026-10-02T15:53:39Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Google AI (@GoogleAI)"
+      ],
+      "select_tier": "T2",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "85a23bfcf12c8943396e2a3e845d81e8ef1a63d0",
+          "title": "Google Project Suncatcher 首颗原型卫星发射入轨 / Project Suncatcher has liftoff! ☀️🚀",
+          "title_zh": "Google Project Suncatcher 首颗原型卫星发射入轨",
+          "title_en": "Project Suncatcher has liftoff! ☀️🚀",
+          "title_original": "Project Suncatcher has liftoff! ☀️🚀",
+          "summary": "Google 宣布其探索在太空托管机器学习基础设施的 Project Suncatcher 已将一颗与 Planet 合作建造的原型卫星送入轨道，搭乘 SpaceX Transporter-18 拼车任务。该任务将收集 Google TPU 在太空飞行物理应力和极端环境下表现的数据，未来探索连接多个卫星星座实现规模化机器学习；低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/GoogleAI/status/2106049984164463069",
+          "source": "X：Google AI (@GoogleAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "select_tier": "T2",
+          "published_at": "2026-10-02T15:53:39Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7251,
+      "importance": 0.7251,
+      "importance_score": 0.7251,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8638,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-02T15:53:39Z",
+      "latest_at": "2026-10-02T15:53:39Z",
+      "primary_item": {
+        "id": "85a23bfcf12c8943396e2a3e845d81e8ef1a63d0",
+        "title": "Google Project Suncatcher 首颗原型卫星发射入轨 / Project Suncatcher has liftoff! ☀️🚀",
+        "title_zh": "Google Project Suncatcher 首颗原型卫星发射入轨",
+        "title_en": "Project Suncatcher has liftoff! ☀️🚀",
+        "title_original": "Project Suncatcher has liftoff! ☀️🚀",
+        "summary": "Google 宣布其探索在太空托管机器学习基础设施的 Project Suncatcher 已将一颗与 Planet 合作建造的原型卫星送入轨道，搭乘 SpaceX Transporter-18 拼车任务。该任务将收集 Google TPU 在太空飞行物理应力和极端环境下表现的数据，未来探索连接多个卫星星座实现规模化机器学习；低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/GoogleAI/status/2106049984164463069",
+        "source": "X：Google AI (@GoogleAI)",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T02:03:09.638322Z"
+      }
+    },
+    {
+      "story_id": "story_14dc0c8581ff",
+      "title": "SecurityAdvisory GraphQL API 的新字段 / New fields for SecurityAdvisory GraphQL API",
+      "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
+      "primary_url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "983d5abca127c992de7dd3b2e4793328644c2a8e",
+          "title": "SecurityAdvisory GraphQL API 的新字段 / New fields for SecurityAdvisory GraphQL API",
+          "title_zh": "SecurityAdvisory GraphQL API 的新字段",
+          "title_en": "New fields for SecurityAdvisory GraphQL API",
+          "title_original": "New fields for SecurityAdvisory GraphQL API",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-02T13:18:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "select_tier": "T1",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "983d5abca127c992de7dd3b2e4793328644c2a8e",
+          "title": "SecurityAdvisory GraphQL API 的新字段 / New fields for SecurityAdvisory GraphQL API",
+          "title_zh": "SecurityAdvisory GraphQL API 的新字段",
+          "title_en": "New fields for SecurityAdvisory GraphQL API",
+          "title_original": "New fields for SecurityAdvisory GraphQL API",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-02T13:18:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8138,
+      "importance": 0.8138,
+      "importance_score": 0.8138,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.8321,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-02T13:18:00Z",
+      "latest_at": "2026-10-02T13:18:00Z",
+      "primary_item": {
+        "id": "983d5abca127c992de7dd3b2e4793328644c2a8e",
+        "title": "SecurityAdvisory GraphQL API 的新字段 / New fields for SecurityAdvisory GraphQL API",
+        "title_zh": "SecurityAdvisory GraphQL API 的新字段",
+        "title_en": "New fields for SecurityAdvisory GraphQL API",
+        "title_original": "New fields for SecurityAdvisory GraphQL API",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T02:03:09.638322Z"
+      }
+    },
+    {
+      "story_id": "story_3a793ac15e27",
+      "title": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点 / Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+      "url": "https://www.primeintellect.ai/blog/prime-inference",
+      "primary_url": "https://www.primeintellect.ai/blog/prime-inference",
+      "source": "Prime Intellect（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7fa1b7c157967a6daa0d25dba0a18fb1e36d96a3",
+          "title": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点 / Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+          "title_zh": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点",
+          "title_en": "Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+          "title_original": "Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+          "summary": "Prime Intellect 发布推理平台 Prime Inference，提供 serverless 端点与预留容量，跨数据中心服务前沿开源模型，内部每天处理近一万亿 token。",
+          "recommend_reason_zh": null,
+          "url": "https://www.primeintellect.ai/blog/prime-inference",
+          "source": "Prime Intellect（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "select_tier": "T2",
+          "published_at": null
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Prime Intellect（网页）"
+      ],
+      "select_tier": "T2",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "7fa1b7c157967a6daa0d25dba0a18fb1e36d96a3",
+          "title": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点 / Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+          "title_zh": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点",
+          "title_en": "Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+          "title_original": "Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+          "summary": "Prime Intellect 发布推理平台 Prime Inference，提供 serverless 端点与预留容量，跨数据中心服务前沿开源模型，内部每天处理近一万亿 token。",
+          "recommend_reason_zh": null,
+          "url": "https://www.primeintellect.ai/blog/prime-inference",
+          "source": "Prime Intellect（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "select_tier": "T2",
+          "published_at": null
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7228,
+      "importance": 0.7228,
+      "importance_score": 0.7228,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.61,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9345,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-02T21:20:13.820209Z",
+      "latest_at": "2026-10-02T21:20:13.820209Z",
+      "primary_item": {
+        "id": "7fa1b7c157967a6daa0d25dba0a18fb1e36d96a3",
+        "title": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点 / Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+        "title_zh": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点",
+        "title_en": "Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+        "title_original": "Prime Inference: Fast, Reliable Serving for Frontier Open Models",
+        "summary": "Prime Intellect 发布推理平台 Prime Inference，提供 serverless 端点与预留容量，跨数据中心服务前沿开源模型，内部每天处理近一万亿 token。",
+        "recommend_reason_zh": null,
+        "url": "https://www.primeintellect.ai/blog/prime-inference",
+        "source": "Prime Intellect（网页）",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T02:03:09.638322Z"
       }
     }
   ]
