@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-03T08:14:36.836894Z",
+  "generated_at": "2026-10-03T10:26:50.771208Z",
   "daily_dates": [
     "2026-09-28",
     "2026-09-29",
@@ -13,27 +13,27 @@
     "2026-10-02",
     "2026-10-03"
   ],
-  "story_count": 1491,
-  "unique_story_count": 1300,
+  "story_count": 1489,
+  "unique_story_count": 1310,
   "counts": {
     "by_company_topic": {
-      "anthropic": 191,
+      "anthropic": 190,
       "apple": 7,
       "cursor": 2,
       "deepseek": 18,
       "doubao": 6,
-      "google-gemini": 66,
+      "google-gemini": 67,
       "huggingface": 21,
       "kimi": 5,
       "meta-llama": 4,
-      "microsoft": 19,
+      "microsoft": 18,
       "minimax": 6,
-      "nvidia": 75,
-      "openai": 292,
+      "nvidia": 74,
+      "openai": 290,
       "openrouter": 18,
       "perplexity": 12,
       "qwen": 13,
-      "xai": 11,
+      "xai": 12,
       "zhipu": 7
     },
     "by_lens_topic": {
@@ -42,13 +42,13 @@
       "workplace": 33
     },
     "by_importance_label": {
-      "值得关注": 1200,
+      "值得关注": 1198,
       "多源热议": 23,
       "官方更新": 86,
       "行业动态": 182
     },
     "by_source_count_bucket": {
-      "1": 1415,
+      "1": 1413,
       "2": 51,
       "3+": 25
     }
@@ -446,58 +446,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_87eab6a95e56",
-      "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "importance_score": 0.8229,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cc4a44476dc4",
-      "title": "Copilot 代码审查：API 支持和新的默认工作级别 / Copilot code review: API support and new default effort level",
-      "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
-      "importance_score": 0.8212,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_2e2e433e3cb1",
-      "title": "开源 AstaBrief，Asta 中的快速报告生成模型 / Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "url": "https://huggingface.co/blog/allenai/astabrief",
-      "importance_score": 0.821,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3f3282702712",
-      "title": "无状态 GitHub 应用程序安装令牌推出 / Stateless GitHub App installation tokens rolled out",
-      "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
-      "importance_score": 0.8199,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_9ddecfa386f8",
       "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试 / AI Agent Regression Testing After a Prompt or Model Change",
       "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
@@ -513,10 +461,36 @@
       ]
     },
     {
-      "story_id": "story_aef691a327ab",
-      "title": "已弃用 GitHub Copilot 中的选定模型 / Selected models in GitHub Copilot deprecated",
-      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-      "importance_score": 0.8194,
+      "story_id": "story_87eab6a95e56",
+      "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "importance_score": 0.8184,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2e2e433e3cb1",
+      "title": "开源 AstaBrief，Asta 中的快速报告生成模型 / Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "importance_score": 0.8166,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cc4a44476dc4",
+      "title": "Copilot 代码审查：API 支持和新的默认工作级别 / Copilot code review: API support and new default effort level",
+      "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "importance_score": 0.8165,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-03",
@@ -566,6 +540,32 @@
       ],
       "lens_topics": [
         "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_3f3282702712",
+      "title": "无状态 GitHub 应用程序安装令牌推出 / Stateless GitHub App installation tokens rolled out",
+      "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
+      "importance_score": 0.8151,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_aef691a327ab",
+      "title": "已弃用 GitHub Copilot 中的选定模型 / Selected models in GitHub Copilot deprecated",
+      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+      "importance_score": 0.8148,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-03",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
       ]
     }
   ]
