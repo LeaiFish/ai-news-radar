@@ -3,12 +3,12 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 768,
+  "item_count": 764,
   "listed_count": 80,
   "latest_title": "宗教学者与Anthropic公司进行了会面",
   "latest_published_at": "2026-10-04T12:57:08.561000Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-10-04T15:49:20.283402Z",
+  "generated_at": "2026-10-04T20:13:23.501412Z",
   "items": [
     {
       "id": "story_55d0dc988302",
@@ -22,21 +22,6 @@
       "source_name": "Buzzing",
       "site_id": "",
       "published_at": "2026-10-04T12:57:08.561000Z",
-      "source_count": 3,
-      "curated": true
-    },
-    {
-      "id": "story_c7ba5f8749ed",
-      "story_id": "story_c7ba5f8749ed",
-      "title": "在 Claude 和 Claude Code 中充分利用 Opus 5.5",
-      "title_en": null,
-      "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "claude.dev",
-      "source_name": "Buzzing",
-      "site_id": "",
-      "published_at": "2026-10-03T22:31:58.644000Z",
       "source_count": 3,
       "curated": true
     },
@@ -1207,6 +1192,21 @@
       "source_name": "TechCrunch AI",
       "site_id": "curated_media",
       "published_at": "2026-09-25T18:22:47Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "7b1e1539fbd3d3b77dcd2a97b8093fc66c4b347d",
+      "story_id": null,
+      "title": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化",
+      "title_en": null,
+      "url": "https://x.com/ClaudeDevs/status/2103548467729887677",
+      "summary": "Opus 5.5 每输入和输出 token 比 Opus 5 便宜 20%，缓存读取便宜 60%。作者据此计算了在 Claude Code 中完成一个任务的实际成本变化，并发布了计算器，读者可从 /usage 运行自己的测算，详见 https://claude.dev/blog/what-a-task-costs-on-opus-5-5/。",
+      "recommend_reason_zh": null,
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "source_name": "X：Claude Devs (@ClaudeDevs)",
+      "site_id": "aihot",
+      "published_at": "2026-09-25T18:13:31Z",
       "source_count": 1,
       "curated": true
     }
