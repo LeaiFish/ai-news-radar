@@ -3,13 +3,28 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 743,
+  "item_count": 742,
   "listed_count": 80,
-  "latest_title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-  "latest_published_at": "2026-10-06T02:31:56Z",
+  "latest_title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+  "latest_published_at": "2026-10-06T05:47:05Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-10-06T03:02:27.871371Z",
+  "generated_at": "2026-10-06T07:16:56.703049Z",
   "items": [
+    {
+      "id": "story_e50a0152bcff",
+      "story_id": "story_e50a0152bcff",
+      "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+      "title_en": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+      "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
+      "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
+      "recommend_reason_zh": null,
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-10-06T05:47:05Z",
+      "source_count": 2,
+      "curated": true
+    },
     {
       "id": "story_b9170f476686",
       "story_id": "story_b9170f476686",
@@ -41,21 +56,6 @@
       "curated": true
     },
     {
-      "id": "story_549df6d3483f",
-      "story_id": "story_549df6d3483f",
-      "title": "Anthropic Cowork 改为云端运行模型推理与 VM / Quoting Felix Rieseberg",
-      "title_en": "Quoting Felix Rieseberg",
-      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
-      "summary": "Anthropic 工程师 Felix Rieseberg 说明 Cowork 的新旧架构差异：旧版在云端推理、在用户电脑上运行本地 VM，磁盘、电池和性能开销大，合上笔记本工作就停止。新版把模型推理和 VM 都移到云端，每个会话有独立沙盒，桌面应用只负责文件访问等需要本机设备的工具调用，官方认为这解决了手机使用、保持工作运行和电池消耗等问题。",
-      "recommend_reason_zh": null,
-      "source": "Simon Willison 博客",
-      "source_name": "AI HOT",
-      "site_id": "",
-      "published_at": "2026-10-05T23:56:47Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
       "id": "story_651dc5458423",
       "story_id": "story_651dc5458423",
       "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上 / Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
@@ -68,21 +68,6 @@
       "site_id": "",
       "published_at": "2026-10-05T20:01:09Z",
       "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "story_a0cf0e1c0e34",
-      "story_id": "story_a0cf0e1c0e34",
-      "title": "Anthropic向警方报案称发现日记条目，一名女子面临重罪指控",
-      "title_en": null,
-      "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "www.techspot.com",
-      "source_name": "Buzzing",
-      "site_id": "",
-      "published_at": "2026-10-05T17:00:08.955000Z",
-      "source_count": 3,
       "curated": true
     },
     {
@@ -1207,6 +1192,21 @@
       "source_name": "X：Arena (@arena)",
       "site_id": "aihot",
       "published_at": "2026-09-26T17:02:36Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "9279fb40dd812920f93b7be74e145079d81085ab",
+      "story_id": null,
+      "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+      "title_en": null,
+      "url": "https://www.ithome.com/1/007/444.htm",
+      "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
+      "recommend_reason_zh": null,
+      "source": "IT之家（RSS）",
+      "source_name": "IT之家（RSS）",
+      "site_id": "aihot",
+      "published_at": "2026-09-26T15:44:10Z",
       "source_count": 1,
       "curated": true
     }
