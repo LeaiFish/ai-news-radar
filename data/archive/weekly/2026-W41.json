@@ -4,42 +4,43 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
-  "generated_at": "2026-10-05T23:10:39.493653Z",
+  "generated_at": "2026-10-06T01:17:43.660642Z",
   "daily_dates": [
     "2026-10-05",
     "2026-10-06"
   ],
-  "story_count": 277,
-  "unique_story_count": 213,
+  "story_count": 295,
+  "unique_story_count": 245,
   "counts": {
     "by_company_topic": {
-      "anthropic": 29,
-      "apple": 3,
-      "cursor": 2,
+      "anthropic": 36,
+      "apple": 2,
+      "cursor": 1,
       "deepseek": 1,
       "google-gemini": 12,
+      "kimi": 1,
       "microsoft": 3,
       "nvidia": 1,
-      "openai": 51,
-      "openrouter": 2,
+      "openai": 55,
+      "openrouter": 1,
       "qwen": 2,
       "xai": 7
     },
     "by_lens_topic": {
-      "agent-ecosystem": 37,
-      "monetization": 2,
+      "agent-ecosystem": 44,
+      "monetization": 3,
       "workplace": 5
     },
     "by_importance_label": {
-      "值得关注": 262,
-      "多源热议": 3,
-      "官方更新": 10,
-      "行业动态": 2
+      "值得关注": 280,
+      "多源热议": 4,
+      "官方更新": 7,
+      "行业动态": 4
     },
     "by_source_count_bucket": {
-      "1": 260,
-      "2": 14,
-      "3+": 3
+      "1": 276,
+      "2": 15,
+      "3+": 4
     }
   },
   "top_stories": [
@@ -60,7 +61,7 @@
       "story_id": "story_45464a737294",
       "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
       "url": "https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more",
-      "importance_score": 0.8428,
+      "importance_score": 0.8374,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -71,7 +72,7 @@
       "story_id": "story_b4c0a1b83afc",
       "title": "ReviewBench：人工智能代码审查的开放基准 / ReviewBench: An open benchmark for AI code review",
       "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
-      "importance_score": 0.8323,
+      "importance_score": 0.8274,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -82,7 +83,7 @@
       "story_id": "story_6f6f6c4ad8fb",
       "title": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印 / Our approach to EU text provenance rules",
       "url": "https://openai.com/index/eu-text-provenance",
-      "importance_score": 0.832,
+      "importance_score": 0.8271,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -95,7 +96,7 @@
       "story_id": "story_eeef959d3fa4",
       "title": "我们在 2026 年生日周期间推出的所有产品 / Everything we launched during Birthday Week 2026",
       "url": "https://blog.cloudflare.com/birthday-week-2026-wrap-up",
-      "importance_score": 0.8254,
+      "importance_score": 0.8207,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -106,7 +107,7 @@
       "story_id": "story_e48c2f9cc52d",
       "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动 / OpenAI \"rogue\" agent activities found on Wikimedia projects",
       "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
-      "importance_score": 0.8224,
+      "importance_score": 0.8174,
       "importance_label": "多源热议",
       "source_count": 3,
       "archive_date": "2026-10-06",
@@ -116,19 +117,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_443f271584c4",
-      "title": "Codex CLI 0.160.1",
-      "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.8148,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_12fb01fcc738",
@@ -146,23 +134,27 @@
       ]
     },
     {
-      "story_id": "story_6212b5c6c08c",
-      "title": "Negotiating Ontological Boundaries in User-Authored Personal Sensing Systems",
-      "url": "https://machinelearning.apple.com/research/ontological-boundary-negotiation",
-      "importance_score": 0.7928,
-      "importance_label": "官方更新",
+      "story_id": "story_874feeef6ecb",
+      "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
+      "importance_score": 0.762,
+      "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-06",
       "company_topics": [
-        "apple"
+        "openai",
+        "anthropic",
+        "google-gemini"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "monetization"
+      ]
     },
     {
       "story_id": "story_651dc5458423",
       "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上 / Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
       "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
-      "importance_score": 0.7566,
+      "importance_score": 0.7514,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -175,6 +167,21 @@
       ]
     },
     {
+      "story_id": "story_549df6d3483f",
+      "title": "Anthropic Cowork 改为云端运行模型推理与 VM / Quoting Felix Rieseberg",
+      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
+      "importance_score": 0.7311,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_92fa9be3e195",
       "title": "PromptArmor 披露 Databricks Genie 恶意 Skill 可绕过四类控制实施钓鱼与数据外泄 / Four Databricks Genie Controls That Don't Stop Malicious Skills",
       "url": "https://www.promptarmor.com/resources/four-databricks-genie-controls-that-dont-stop-malicious-skills",
@@ -184,41 +191,6 @@
       "archive_date": "2026-10-05",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_02f4ac095315",
-      "title": "Liquid AI 发布 d1 决策模型并新增图像输入能力 / Introducing d1: The most capable decision model, now with vision",
-      "url": "https://www.liquid.ai/blog/d1-decision-model",
-      "importance_score": 0.7074,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_73a9f02aadad",
-      "title": "PromptArmor 披露 Databricks Genie 恶意 Skill 可绕过控制实现钓鱼与数据外泄 / Databricks Genie Phishing and Exfiltration",
-      "url": "https://www.promptarmor.com/resources/four-databricks-genie-controls-that-dont-stop-malicious-skills",
-      "importance_score": 0.7051,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_fed4edfef497",
-      "title": "Together AI 推出 Together Link，一键在现有编码智能体中接入开源模型并降费超 50% / Together Link: open models in the harness you already use. Start with one command today.",
-      "url": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
-      "importance_score": 0.6834,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     },
     {
       "story_id": "story_3e908bc232ce",
@@ -237,7 +209,7 @@
       "story_id": "story_55dd80272fd0",
       "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
       "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu",
-      "importance_score": 0.6422,
+      "importance_score": 0.637,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -250,7 +222,20 @@
       "story_id": "story_4c57f67f1d49",
       "title": "Meta and Microsoft pull back from Claude as Anthropic transforms from partner into competitor",
       "url": "https://the-decoder.com/meta-and-microsoft-pull-back-from-claude-as-anthropic-transforms-from-partner-into-competitor",
-      "importance_score": 0.6382,
+      "importance_score": 0.6331,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e03108f330a3",
+      "title": "v2.1.290",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
+      "importance_score": 0.6318,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -263,7 +248,7 @@
       "story_id": "story_c9d04e339619",
       "title": "OpenAI will watermark ChatGPT text in the EU but makes it optional for API users worldwide",
       "url": "https://the-decoder.com/openai-will-watermark-chatgpt-text-in-the-eu-but-makes-it-optional-for-api-users-worldwide",
-      "importance_score": 0.6347,
+      "importance_score": 0.6297,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -276,7 +261,7 @@
       "story_id": "story_298805dceb2f",
       "title": "Safeworld 能否让人们相信 GenAI 机器人不会伤害他们？ / Can Safeworld convince people that GenAI robots won’t hurt them?",
       "url": "https://techcrunch.com/2026/10/05/can-safeworld-convince-people-that-gen-ai-robots-wont-hurt-them",
-      "importance_score": 0.6302,
+      "importance_score": 0.6256,
       "importance_label": "值得关注",
       "source_count": 2,
       "archive_date": "2026-10-06",
@@ -312,6 +297,19 @@
       ]
     },
     {
+      "story_id": "story_a886b790c2de",
+      "title": "Gemini Call for Me might tell your mom you&#8217;re running late",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+      "importance_score": 0.6225,
+      "importance_label": "值得关注",
+      "source_count": 2,
+      "archive_date": "2026-10-06",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_03e3c07a658d",
       "title": "麻省理工学院报告发现，人工智能正在侵蚀办公时间、学习小组以及师生之间的信任 / AI is eroding office hours, study groups, and the trust between faculty and students, MIT report finds",
       "url": "https://the-decoder.com/ai-is-eroding-office-hours-study-groups-and-the-trust-between-faculty-and-students-mit-report-finds",
@@ -323,30 +321,6 @@
       "lens_topics": [
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_0ed4914e3ba4",
-      "title": "Reka AI's omni-model Rho-1 handles text, images, video, and robot control in a single model",
-      "url": "https://the-decoder.com/reka-ais-omni-model-rho-1-handles-text-images-video-and-robot-control-in-a-single-model",
-      "importance_score": 0.6202,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d12207c335e6",
-      "title": "Anthropic 在其大型 IPO 之前悄然成为美国最大的企业捐助者 / Anthropic is quietly becoming America's biggest corporate donor ahead of its mega IPO",
-      "url": "https://the-decoder.com/anthropic-is-quietly-becoming-americas-biggest-corporate-donor-ahead-of-its-mega-ipo",
-      "importance_score": 0.6185,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_f6378b2df56c",
@@ -362,19 +336,6 @@
       ]
     },
     {
-      "story_id": "story_9b653229fade",
-      "title": "OpenAI 推出与图像生成结果一起出现的视觉广告 / OpenAI launches visual ads that appear alongside image generation results",
-      "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results",
-      "importance_score": 0.6167,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_98cbf6dcab27",
       "title": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin. https://t.co/0oFXZ7LY5T",
       "url": "https://x.com/thsottiaux/status/2106845241357824205",
@@ -386,10 +347,47 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0ed4914e3ba4",
+      "title": "Reka AI's omni-model Rho-1 handles text, images, video, and robot control in a single model",
+      "url": "https://the-decoder.com/reka-ais-omni-model-rho-1-handles-text-images-video-and-robot-control-in-a-single-model",
+      "importance_score": 0.6151,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d12207c335e6",
+      "title": "Anthropic 在其大型 IPO 之前悄然成为美国最大的企业捐助者 / Anthropic is quietly becoming America's biggest corporate donor ahead of its mega IPO",
+      "url": "https://the-decoder.com/anthropic-is-quietly-becoming-americas-biggest-corporate-donor-ahead-of-its-mega-ipo",
+      "importance_score": 0.6136,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9b653229fade",
+      "title": "OpenAI 推出与图像生成结果一起出现的视觉广告 / OpenAI launches visual ads that appear alongside image generation results",
+      "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results",
+      "importance_score": 0.6119,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_f4763bfb35df",
       "title": "OpenAI 将在 ChatGPT 中投放更多广告 / OpenAI is sticking more ads in ChatGPT",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
-      "importance_score": 0.6162,
+      "importance_score": 0.6115,
       "importance_label": "值得关注",
       "source_count": 2,
       "archive_date": "2026-10-06",
@@ -402,7 +400,7 @@
       "story_id": "story_9d09109564fc",
       "title": "OpenAI is adding text watermarking in ChatGPT and Codex",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
-      "importance_score": 0.6153,
+      "importance_score": 0.6103,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -415,7 +413,7 @@
       "story_id": "story_929b4622bfb1",
       "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
       "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost",
-      "importance_score": 0.6146,
+      "importance_score": 0.6095,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -423,10 +421,24 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_2e3b53a0964f",
+      "title": "Meet Together Link: A Free CLI That Runs Open Models Like Kimi K3 and GLM 5.3 Inside Claude Code, Codex, and OpenCode",
+      "url": "https://www.marktechpost.com/2026/10/05/meet-together-link-a-free-cli-that-runs-open-models-like-kimi-k3-and-glm-5-3-inside-claude-code-codex-and-opencode",
+      "importance_score": 0.6092,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [
+        "kimi",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_4e3db6952547",
       "title": "Instinct brings its AI agent to group chats, even for friends without an account",
       "url": "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account",
-      "importance_score": 0.613,
+      "importance_score": 0.6079,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -439,53 +451,7 @@
       "story_id": "story_25f49599d7f3",
       "title": "TikTok rolls out an AI shopping assistant and one-click checkout",
       "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout",
-      "importance_score": 0.612,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d199708ca63d",
-      "title": "ChatGPT 的新广告格式用产品轮播填充图像生成加载屏幕 / ChatGPT's new ad format fills the image generation loading screen with product carousels",
-      "url": "https://the-decoder.com/chatgpts-new-ad-format-fills-the-image-generation-loading-screen-with-product-carousels",
-      "importance_score": 0.6108,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_845e15f1cca0",
-      "title": "Hot Girl Hotline is like ‘Dear Abby’ for the AI era",
-      "url": "https://techcrunch.com/2026/10/05/hot-girl-hotline-is-like-dear-abby-for-the-ai-era",
-      "importance_score": 0.6096,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9a9783575693",
-      "title": "HackerRank’s AI interviewer offers a glimpse into what job interviews could become",
-      "url": "https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become",
-      "importance_score": 0.6077,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e2420fa33ff8",
-      "title": "Most Americans want AI development to slow down or stop entirely, new poll finds",
-      "url": "https://the-decoder.com/most-americans-want-ai-development-to-slow-down-or-stop-entirely-new-poll-finds",
-      "importance_score": 0.6075,
+      "importance_score": 0.6069,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -504,10 +470,23 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_1875f0054a28",
-      "title": "开放式人工智能还是封闭式人工智能？创始人如何在 TechCrunch Disrupt 2026 上选择构建内容 / Open or closed AI? How founders are choosing what to build on at TechCrunch Disrupt 2026",
-      "url": "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026",
-      "importance_score": 0.6037,
+      "story_id": "story_d199708ca63d",
+      "title": "ChatGPT 的新广告格式用产品轮播填充图像生成加载屏幕 / ChatGPT's new ad format fills the image generation loading screen with product carousels",
+      "url": "https://the-decoder.com/chatgpts-new-ad-format-fills-the-image-generation-loading-screen-with-product-carousels",
+      "importance_score": 0.6061,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_845e15f1cca0",
+      "title": "Hot Girl Hotline is like ‘Dear Abby’ for the AI era",
+      "url": "https://techcrunch.com/2026/10/05/hot-girl-hotline-is-like-dear-abby-for-the-ai-era",
+      "importance_score": 0.6046,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -515,23 +494,43 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a886b790c2de",
-      "title": "Gemini Call for Me might tell your mom you&#8217;re running late",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
-      "importance_score": 0.6029,
+      "story_id": "story_9a9783575693",
+      "title": "HackerRank’s AI interviewer offers a glimpse into what job interviews could become",
+      "url": "https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become",
+      "importance_score": 0.6028,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
-      "company_topics": [
-        "google-gemini"
-      ],
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e2420fa33ff8",
+      "title": "Most Americans want AI development to slow down or stop entirely, new poll finds",
+      "url": "https://the-decoder.com/most-americans-want-ai-development-to-slow-down-or-stop-entirely-new-poll-finds",
+      "importance_score": 0.6026,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_1875f0054a28",
+      "title": "开放式人工智能还是封闭式人工智能？创始人如何在 TechCrunch Disrupt 2026 上选择构建内容 / Open or closed AI? How founders are choosing what to build on at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026",
+      "importance_score": 0.5989,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [],
       "lens_topics": []
     },
     {
       "story_id": "story_be861991a375",
       "title": "研究人员正在追踪中国人工智能“代理舰队” / Researchers are tracking a Chinese AI ‘agent fleet’",
       "url": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet",
-      "importance_score": 0.6028,
+      "importance_score": 0.598,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
@@ -539,6 +538,17 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_e9bf73edc858",
+      "title": "与 Startup Battlefield 200 评委见面，他们将决定 TechCrunch Disrupt 2026 的获胜者 / Meet the Startup Battlefield 200 judges who’ll decide the winner at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/10/05/meet-the-startup-battlefield-200-judges-wholl-decide-the-winner-at-techcrunch-disrupt-2026",
+      "importance_score": 0.5978,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [],
+      "lens_topics": []
     }
   ]
 }
