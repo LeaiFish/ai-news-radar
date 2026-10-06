@@ -3,12 +3,12 @@
   "name": "模型发布",
   "description": "新模型的发布、开源与迭代：旗舰更新、权重放出、性能与价格变化。",
   "group": "tech",
-  "item_count": 2,
-  "listed_count": 2,
+  "item_count": 4,
+  "listed_count": 4,
   "latest_title": "Bloomberg: DeepSeek is close to raising at least $12B, well above its own fundraising target at a posssible $71B valuation. Demand surged after its V4 Flash model launched, and signed term sheets could lift the final to…",
   "latest_published_at": "2026-10-06T06:44:57Z",
   "items_url": "data/topics/model-releases.json",
-  "generated_at": "2026-10-06T15:13:00.395689Z",
+  "generated_at": "2026-10-06T19:35:01.810282Z",
   "items": [
     {
       "id": "story_2356b7fd1afe",
@@ -37,6 +37,36 @@
       "source_name": "AI HOT",
       "site_id": "",
       "published_at": "2026-10-06T06:28:43Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "story_948c9ff22b36",
+      "story_id": "story_948c9ff22b36",
+      "title": "Google DeepMind 发布多模态嵌入模型 EmbeddingGemma 2 / Bring multimodal semantic search to the edge with EmbeddingGemma 2",
+      "title_en": "Bring multimodal semantic search to the edge with EmbeddingGemma 2",
+      "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2",
+      "summary": "Google DeepMind 于 10 月 6 日发布开放权重的多模态嵌入模型 EmbeddingGemma 2，将文本、图像、视频帧和音频映射到统一向量空间，参数量 740M。",
+      "recommend_reason_zh": null,
+      "source": "Google Developers Blog（RSS）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-10-06T00:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "story_a4b54cc613c1",
+      "story_id": "story_a4b54cc613c1",
+      "title": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型 / EmbeddingGemma 2: The Developer Guide",
+      "title_en": "EmbeddingGemma 2: The Developer Guide",
+      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
+      "summary": "Google 发布基于 Gemma 4 的开源嵌入模型 EmbeddingGemma 2，采用 Apache 2.0 许可，将文本、代码、图像、视频和音频映射到统一的 768 维向量空间，参数量从 270M（文本/代码）到 740M（全模态）按需加载。",
+      "recommend_reason_zh": null,
+      "source": "Google Developers Blog（RSS）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-10-06T00:00:00Z",
       "source_count": 1,
       "curated": true
     }

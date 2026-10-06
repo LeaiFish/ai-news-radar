@@ -4,44 +4,45 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
-  "generated_at": "2026-10-06T15:13:00.395689Z",
+  "generated_at": "2026-10-06T19:35:01.810282Z",
   "daily_dates": [
     "2026-10-05",
-    "2026-10-06"
+    "2026-10-06",
+    "2026-10-07"
   ],
-  "story_count": 292,
-  "unique_story_count": 292,
+  "story_count": 472,
+  "unique_story_count": 335,
   "counts": {
     "by_company_topic": {
-      "anthropic": 40,
+      "anthropic": 66,
       "apple": 1,
       "cursor": 1,
-      "deepseek": 8,
-      "google-gemini": 11,
-      "huggingface": 1,
-      "kimi": 2,
+      "deepseek": 17,
+      "google-gemini": 24,
+      "huggingface": 2,
+      "kimi": 4,
       "microsoft": 2,
-      "nvidia": 2,
-      "openai": 52,
-      "openrouter": 2,
+      "nvidia": 4,
+      "openai": 80,
+      "openrouter": 3,
       "qwen": 1,
       "xai": 5
     },
     "by_lens_topic": {
-      "agent-ecosystem": 53,
-      "monetization": 3,
-      "workplace": 4
+      "agent-ecosystem": 93,
+      "monetization": 7,
+      "workplace": 8
     },
     "by_importance_label": {
-      "值得关注": 272,
-      "多源热议": 4,
-      "官方更新": 6,
-      "行业动态": 10
+      "值得关注": 429,
+      "多源热议": 8,
+      "官方更新": 13,
+      "行业动态": 22
     },
     "by_source_count_bucket": {
-      "1": 276,
-      "2": 12,
-      "3+": 4
+      "1": 446,
+      "2": 18,
+      "3+": 8
     }
   },
   "top_stories": [
@@ -72,6 +73,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_dbe192624685",
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "url": "https://openai.com/index/atlassian-partnership",
+      "importance_score": 0.8429,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_ae3c4f5c0420",
       "title": "安全概览中的代码扫描 AI Scan 启用状态 / Code scanning AI Scan enablement status in security overview",
       "url": "https://github.blog/changelog/2026-10-06-code-scanning-ai-scan-enablement-status-in-security-overview",
@@ -81,6 +95,21 @@
       "archive_date": "2026-10-06",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_17625524f250",
+      "title": "Advancing computer use with Ironclad",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "importance_score": 0.8287,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_12fb01fcc738",
@@ -131,6 +160,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_499c135d2740",
+      "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与 / DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+      "url": "https://x.com/thexpin/status/2107524306058289533",
+      "importance_score": 0.7924,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_e48c2f9cc52d",
       "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动 / OpenAI \"rogue\" agent activities found on Wikimedia projects",
       "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
@@ -159,6 +201,22 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0101f6369b65",
+      "title": "Claude Code 云端会话实战指南：每个任务独占一台 VM，可并行跑任务并以分支收尾 / Claude Code in the cloud: a field guide to cloud sessions",
+      "url": "https://claude.dev/blog/claude-code-in-the-cloud",
+      "importance_score": 0.7789,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "monetization",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_ddb0edeec9f2",
       "title": "消息称 DeepSeek 接近完成至少 800 亿元融资，腾讯、宁德时代重金参与",
       "url": "https://www.ithome.com/1/009/990.htm",
@@ -185,6 +243,47 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_948c9ff22b36",
+      "title": "Google DeepMind 发布多模态嵌入模型 EmbeddingGemma 2 / Bring multimodal semantic search to the edge with EmbeddingGemma 2",
+      "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2",
+      "importance_score": 0.7597,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5951f365282f",
+      "title": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑 / Claude for Google Workspace™",
+      "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
+      "importance_score": 0.7551,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_a4b54cc613c1",
+      "title": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型 / EmbeddingGemma 2: The Developer Guide",
+      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
+      "importance_score": 0.7537,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_9019cb276f9d",
       "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
       "url": "https://x.com/arena/status/2107476436223504484",
@@ -196,6 +295,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_8250f00047d3",
+      "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+      "url": "https://x.com/arcprize/status/2107491194007585239",
+      "importance_score": 0.7419,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_b9170f476686",
@@ -212,6 +324,19 @@
       ],
       "lens_topics": [
         "monetization"
+      ]
+    },
+    {
+      "story_id": "story_e5656e5cf8cb",
+      "title": "Sierra 与 Meta 联合多家企业发布 Personal Agent Protocol 开放协议 / Introducing Personal Agent Protocol",
+      "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
+      "importance_score": 0.7323,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
       ]
     },
     {
@@ -272,6 +397,19 @@
       ]
     },
     {
+      "story_id": "story_fd4ef3e638ea",
+      "title": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用 / October 6, 2026",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "importance_score": 0.7113,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_01cd827a595e",
       "title": "Vercel COO 讲解如何用 Agent 自动化 Inbound 销售 / How to Automate Inbound",
       "url": "https://tomtunguz.com/how-to-automate-inbound",
@@ -313,6 +451,47 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b99bbdab3a97",
+      "title": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
+      "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits",
+      "importance_score": 0.6396,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f5b119e8e41d",
+      "title": "v2.1.292",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "importance_score": 0.6347,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d5ef0f51c8cd",
+      "title": "Wikimedia confirms OpenAI's rogue AI agents edited wikis, tried to compromise tools, and hammered its infrastructure",
+      "url": "https://the-decoder.com/wikimedia-confirms-openais-rogue-ai-agents-edited-wikis-tried-to-compromise-tools-and-hammered-its-infrastructure",
+      "importance_score": 0.6334,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_74830627d20a",
       "title": "my favorite name for this pattern is \"local hands\", Claude runs in the cloud but can access your files locally- also coming to cowork https://t.co/fLX963TUxY",
       "url": "https://x.com/trq212/status/2107229483015258493",
@@ -352,6 +531,17 @@
       ]
     },
     {
+      "story_id": "story_982e172f4543",
+      "title": "Google's new image model Nano Banana 2.1 generates better images for less money",
+      "url": "https://the-decoder.com/googles-new-image-model-nano-banana-2-1-generates-better-images-for-less-money",
+      "importance_score": 0.6235,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_615fbc5c634c",
       "title": "dot has become my primary interface to AI over the last few weeks. my dot's name is boo. he's cute! in a year, i bet i'll still be interacting in this way with @ChatGPT—e.g. as an always-on persistent agent—but boo wi...",
       "url": "https://x.com/danshipper/status/2106892868564431255",
@@ -384,170 +574,6 @@
       "title": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
       "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals",
       "importance_score": 0.622,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_db6ce7bef223",
-      "title": "Mistral Large 4 is Europe's trillion-parameter answer to US models that refuse security work",
-      "url": "https://the-decoder.com/mistral-large-4-is-said-to-be-the-most-powerful-open-ai-model-from-europe-and-the-u-s",
-      "importance_score": 0.6214,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0457055c1ede",
-      "title": "Pinterest’s AI now turns beauty Pins into action plans",
-      "url": "https://techcrunch.com/2026/10/06/pinterests-ai-now-turns-beauty-pins-into-action-plans",
-      "importance_score": 0.6207,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_72a2d31af333",
-      "title": "Get all your questions answered at TechCrunch Disrupt 2026: The full breakout session agenda revealed",
-      "url": "https://techcrunch.com/2026/10/06/get-all-your-questions-answered-at-techcrunch-disrupt-2026-the-full-breakout-session-agenda-revealed",
-      "importance_score": 0.6206,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7134fce8b43d",
-      "title": "The most common mistake teams make is to treat evals as an additional QA step once the agent is built. AI products are fundamentally different. Your evals are your product spec.",
-      "url": "https://x.com/realmadhuguru/status/2107292113214091355",
-      "importance_score": 0.6183,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_ccb1e41a50fe",
-      "title": "South Korea bets $3.49 billion on building a homegrown frontier AI model to rival China's best",
-      "url": "https://the-decoder.com/south-korea-bets-3-49-billion-on-building-a-homegrown-frontier-ai-model-to-rival-chinas-best",
-      "importance_score": 0.6179,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f6378b2df56c",
-      "title": "Working on a new little project. The 𝚁𝙴𝙰𝙳𝙼𝙴 is fully written by hand, because it's for human consumption. The documentation internals are AI English, because they're for agents. This little rule of thumb can make the...",
-      "url": "https://x.com/rauchg/status/2106848085267902815",
-      "importance_score": 0.6171,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-05",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_98cbf6dcab27",
-      "title": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin. https://t.co/0oFXZ7LY5T",
-      "url": "https://x.com/thsottiaux/status/2106845241357824205",
-      "importance_score": 0.6167,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-05",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d83447b2b056",
-      "title": "Reflection's Beam becomes the most capable open-weight model built outside China",
-      "url": "https://the-decoder.com/reflections-beam-becomes-the-most-capable-open-weight-model-built-outside-china",
-      "importance_score": 0.6161,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1c879e30016c",
-      "title": "研究人员将 LeCun 的 JEPA AI 扩展到从物理学到生物学的通用世界模型 / Researchers stretch LeCun's JEPA AI into a universal world model that works from physics to biology",
-      "url": "https://the-decoder.com/researchers-stretch-lecuns-jepa-ai-into-a-universal-world-model-that-works-from-physics-to-biology",
-      "importance_score": 0.6149,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_80bf38aef92e",
-      "title": "Sergio 正在 ChatGPT 中利用协作空间创造魔法。每天都有突飞猛进的进步。 https://t.co/9fgjS3jjGC / Sergio is cooking up magic with collaborative space right in ChatGPT. Improving leaps and bounds every day. https://t.co/9fgjS3jjGC",
-      "url": "https://x.com/thsottiaux/status/2107200530477101461",
-      "importance_score": 0.6099,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6abafb1508e2",
-      "title": "v2.1.291",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
-      "importance_score": 0.6092,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d437fd56812f",
-      "title": "We’re already starting to see what kind of new jobs AI is creating. AI requires significant technical work and surrounding services to deploy into the economy. This means jobs for AI engineers that build applied AI pr...",
-      "url": "https://x.com/levie/status/2106893015063421357",
-      "importance_score": 0.6068,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-05",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_55dd80272fd0",
-      "title": "OpenAI 将开始在欧盟为 ChatGPT 的文本添加水印 / OpenAI will start watermarking ChatGPT’s text in the EU",
-      "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu",
-      "importance_score": 0.6063,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3135d7772591",
-      "title": "Cohere 将 North 2 定位为可与任何模型配合使用的企业人工智能控制室 / Cohere pitches North 2 as the enterprise AI control room that works with any model",
-      "url": "https://the-decoder.com/cohere-pitches-north-2-as-the-enterprise-ai-control-room-that-works-with-any-model",
-      "importance_score": 0.6036,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-06",
