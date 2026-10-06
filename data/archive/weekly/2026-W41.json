@@ -4,45 +4,45 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
-  "generated_at": "2026-10-06T19:35:01.810282Z",
+  "generated_at": "2026-10-06T21:39:21.261817Z",
   "daily_dates": [
     "2026-10-05",
     "2026-10-06",
     "2026-10-07"
   ],
-  "story_count": 472,
-  "unique_story_count": 335,
+  "story_count": 488,
+  "unique_story_count": 368,
   "counts": {
     "by_company_topic": {
-      "anthropic": 66,
+      "anthropic": 69,
       "apple": 1,
       "cursor": 1,
-      "deepseek": 17,
-      "google-gemini": 24,
+      "deepseek": 19,
+      "google-gemini": 25,
       "huggingface": 2,
       "kimi": 4,
       "microsoft": 2,
       "nvidia": 4,
-      "openai": 80,
+      "openai": 81,
       "openrouter": 3,
       "qwen": 1,
       "xai": 5
     },
     "by_lens_topic": {
-      "agent-ecosystem": 93,
+      "agent-ecosystem": 92,
       "monetization": 7,
-      "workplace": 8
+      "workplace": 9
     },
     "by_importance_label": {
-      "值得关注": 429,
-      "多源热议": 8,
-      "官方更新": 13,
-      "行业动态": 22
+      "值得关注": 443,
+      "多源热议": 6,
+      "官方更新": 15,
+      "行业动态": 24
     },
     "by_source_count_bucket": {
-      "1": 446,
-      "2": 18,
-      "3+": 8
+      "1": 462,
+      "2": 20,
+      "3+": 6
     }
   },
   "top_stories": [
@@ -73,10 +73,34 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_79247d86835a",
+      "title": "堆叠拉取请求现已普遍可用 / Stacked pull requests generally available",
+      "url": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available",
+      "importance_score": 0.8405,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c1863a515d19",
+      "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2 / EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "importance_score": 0.8396,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_dbe192624685",
-      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "title": "Atlassian 和 OpenAI 扩大合作伙伴关系，将企业知识转化为行动 / Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
       "url": "https://openai.com/index/atlassian-partnership",
-      "importance_score": 0.8429,
+      "importance_score": 0.8379,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -98,9 +122,9 @@
     },
     {
       "story_id": "story_17625524f250",
-      "title": "Advancing computer use with Ironclad",
+      "title": "通过 Ironclad 促进计算机的使用 / Advancing computer use with Ironclad",
       "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
-      "importance_score": 0.8287,
+      "importance_score": 0.8241,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -160,16 +184,14 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_499c135d2740",
-      "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与 / DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
-      "url": "https://x.com/thexpin/status/2107524306058289533",
-      "importance_score": 0.7924,
+      "story_id": "story_0366a3557ad7",
+      "title": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑 / Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+      "url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
+      "importance_score": 0.7979,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-07",
-      "company_topics": [
-        "deepseek"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -188,6 +210,19 @@
       ]
     },
     {
+      "story_id": "story_499c135d2740",
+      "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与 / DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+      "url": "https://x.com/thexpin/status/2107524306058289533",
+      "importance_score": 0.7872,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_e50a0152bcff",
       "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
       "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
@@ -204,7 +239,7 @@
       "story_id": "story_0101f6369b65",
       "title": "Claude Code 云端会话实战指南：每个任务独占一台 VM，可并行跑任务并以分支收尾 / Claude Code in the cloud: a field guide to cloud sessions",
       "url": "https://claude.dev/blog/claude-code-in-the-cloud",
-      "importance_score": 0.7789,
+      "importance_score": 0.7742,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -246,7 +281,7 @@
       "story_id": "story_948c9ff22b36",
       "title": "Google DeepMind 发布多模态嵌入模型 EmbeddingGemma 2 / Bring multimodal semantic search to the edge with EmbeddingGemma 2",
       "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2",
-      "importance_score": 0.7597,
+      "importance_score": 0.7557,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -256,32 +291,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_5951f365282f",
-      "title": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑 / Claude for Google Workspace™",
-      "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
-      "importance_score": 0.7551,
+      "story_id": "story_d8dfa4809dc9",
+      "title": "GitHub 重建 Git 基础设施，应对智能体规模开发 / Building Git infrastructure for agent-scale development",
+      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+      "importance_score": 0.7508,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-07",
-      "company_topics": [
-        "anthropic"
-      ],
+      "company_topics": [],
       "lens_topics": [
-        "workplace"
+        "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_a4b54cc613c1",
-      "title": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型 / EmbeddingGemma 2: The Developer Guide",
-      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
-      "importance_score": 0.7537,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_9019cb276f9d",
@@ -297,15 +317,30 @@
       ]
     },
     {
-      "story_id": "story_8250f00047d3",
-      "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-      "url": "https://x.com/arcprize/status/2107491194007585239",
-      "importance_score": 0.7419,
+      "story_id": "story_5951f365282f",
+      "title": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑 / Claude for Google Workspace™",
+      "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
+      "importance_score": 0.75,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-07",
       "company_topics": [
-        "deepseek"
+        "anthropic"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_a4b54cc613c1",
+      "title": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型 / EmbeddingGemma 2: The Developer Guide",
+      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
+      "importance_score": 0.7497,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -327,16 +362,32 @@
       ]
     },
     {
-      "story_id": "story_e5656e5cf8cb",
-      "title": "Sierra 与 Meta 联合多家企业发布 Personal Agent Protocol 开放协议 / Introducing Personal Agent Protocol",
-      "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
-      "importance_score": 0.7323,
+      "story_id": "story_8250f00047d3",
+      "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+      "url": "https://x.com/arcprize/status/2107491194007585239",
+      "importance_score": 0.7369,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-07",
-      "company_topics": [],
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3b79fbfc648a",
+      "title": "ChatGPT 推出 Meetings 插件，可自动记会议纪要并跟进待办",
+      "url": "https://x.com/thsottiaux/status/2107573405553938664",
+      "importance_score": 0.7354,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": [
-        "agent-ecosystem"
+        "agent-ecosystem",
+        "workplace"
       ]
     },
     {
@@ -364,6 +415,19 @@
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-06",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_e5656e5cf8cb",
+      "title": "Sierra 与 Meta 联合多家企业发布 Personal Agent Protocol 开放协议 / Introducing Personal Agent Protocol",
+      "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
+      "importance_score": 0.7272,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
       "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
@@ -400,7 +464,7 @@
       "story_id": "story_fd4ef3e638ea",
       "title": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用 / October 6, 2026",
       "url": "https://ai.google.dev/gemini-api/docs/changelog",
-      "importance_score": 0.7113,
+      "importance_score": 0.7073,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -452,9 +516,9 @@
     },
     {
       "story_id": "story_b99bbdab3a97",
-      "title": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
+      "title": "Anthropic 为初创公司提供一年免费的 Claude Team 和 1,000 美元的积分 / Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
       "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits",
-      "importance_score": 0.6396,
+      "importance_score": 0.6346,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -464,10 +528,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_806d4d2fd204",
+      "title": "LibreOffice 称“无人工智能”现已成为一项软件功能 / LibreOffice says ‘no AI’ is now a software feature",
+      "url": "https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature",
+      "importance_score": 0.6333,
+      "importance_label": "值得关注",
+      "source_count": 2,
+      "archive_date": "2026-10-07",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_f5b119e8e41d",
       "title": "v2.1.292",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
-      "importance_score": 0.6347,
+      "importance_score": 0.6294,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -478,9 +553,9 @@
     },
     {
       "story_id": "story_d5ef0f51c8cd",
-      "title": "Wikimedia confirms OpenAI's rogue AI agents edited wikis, tried to compromise tools, and hammered its infrastructure",
+      "title": "维基媒体证实 OpenAI 的流氓人工智能代理编辑了维基，试图破坏工具并破坏其基础设施 / Wikimedia confirms OpenAI's rogue AI agents edited wikis, tried to compromise tools, and hammered its infrastructure",
       "url": "https://the-decoder.com/wikimedia-confirms-openais-rogue-ai-agents-edited-wikis-tried-to-compromise-tools-and-hammered-its-infrastructure",
-      "importance_score": 0.6334,
+      "importance_score": 0.6282,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -502,82 +577,6 @@
       "company_topics": [
         "anthropic"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_365d1cdf616c",
-      "title": "CATL and Tencent back Deepseek's ballooning funding round as the AI startup eyes a 2027 IPO",
-      "url": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo",
-      "importance_score": 0.6252,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8d77542b6546",
-      "title": "I asked Sam, co-founder of @meetgranola, how he feels about people skipping his UI and instead just using the MCP to get the job done. Here's what he said: \"There's definitely a pang of sadness to that as a UI designe...",
-      "url": "https://x.com/petergyang/status/2106897211766530299",
-      "importance_score": 0.624,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-05",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_982e172f4543",
-      "title": "Google's new image model Nano Banana 2.1 generates better images for less money",
-      "url": "https://the-decoder.com/googles-new-image-model-nano-banana-2-1-generates-better-images-for-less-money",
-      "importance_score": 0.6235,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_615fbc5c634c",
-      "title": "dot has become my primary interface to AI over the last few weeks. my dot's name is boo. he's cute! in a year, i bet i'll still be interacting in this way with @ChatGPT—e.g. as an always-on persistent agent—but boo wi...",
-      "url": "https://x.com/danshipper/status/2106892868564431255",
-      "importance_score": 0.6234,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-05",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_03e3c07a658d",
-      "title": "麻省理工学院报告发现，人工智能正在侵蚀办公时间、学习小组以及师生之间的信任 / AI is eroding office hours, study groups, and the trust between faculty and students, MIT report finds",
-      "url": "https://the-decoder.com/ai-is-eroding-office-hours-study-groups-and-the-trust-between-faculty-and-students-mit-report-finds",
-      "importance_score": 0.6223,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-05",
-      "company_topics": [],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_82e852a8ec60",
-      "title": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
-      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals",
-      "importance_score": 0.622,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-06",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
