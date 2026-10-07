@@ -3,13 +3,43 @@
   "name": "模型发布",
   "description": "新模型的发布、开源与迭代：旗舰更新、权重放出、性能与价格变化。",
   "group": "tech",
-  "item_count": 3,
-  "listed_count": 3,
-  "latest_title": "Strands Decider 2B：一个小型开源决策模型",
-  "latest_published_at": "2026-10-07T05:49:51.293000Z",
+  "item_count": 5,
+  "listed_count": 5,
+  "latest_title": "Google发布开源多模态向量模型",
+  "latest_published_at": "2026-10-07T20:00:18.463510Z",
   "items_url": "data/topics/model-releases.json",
-  "generated_at": "2026-10-07T14:33:54.576231Z",
+  "generated_at": "2026-10-07T20:00:18.463510Z",
   "items": [
+    {
+      "id": "story_3a4d44c4d7a1",
+      "story_id": "story_3a4d44c4d7a1",
+      "title": "Google发布开源多模态向量模型",
+      "title_en": null,
+      "url": "https://waytoagi.feishu.cn/wiki/Al1cw6cjCiOqv1kX99Xcqibfnud?from=from_copylink",
+      "summary": "10月6日，Google DeepMind 发布了开放多模态 embedding 模型，可将文本、代码、图像、音视频映射至同一向量空间，上下文提升至 8K。模块化设计搭配向量压缩技术，能在边缘设备轻量化部署。它覆盖 RAG、素材检索、分类聚类场景，主流框架均可接入，文中还有完整调用示例、微调方案和工程避坑指南，帮你快速落地隐私可控的跨模态检索应用。",
+      "recommend_reason_zh": null,
+      "source": "社区更新 · 2026-10-07",
+      "source_name": "WaytoAGI",
+      "site_id": "",
+      "published_at": "2026-10-07T20:00:18.463510Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "story_264ad45e12b5",
+      "story_id": "story_264ad45e12b5",
+      "title": "OpenAI 发表了 722 篇由其尚未发布的模型撰写的数学论文 / OpenAI publishes 722 maths papers written by a model it has not released",
+      "title_en": "OpenAI publishes 722 maths papers written by a model it has not released",
+      "url": "https://thenextweb.com/news/openai-maths-722-papers-unreleased-model-github",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "The Next Web",
+      "source_name": "TechURLs",
+      "site_id": "",
+      "published_at": "2026-10-07T16:10:10Z",
+      "source_count": 1,
+      "curated": false
+    },
     {
       "id": "story_e0dd924b5897",
       "story_id": "story_e0dd924b5897",
@@ -26,6 +56,21 @@
       "curated": false
     },
     {
+      "id": "story_f4f1c908eb31",
+      "story_id": "story_f4f1c908eb31",
+      "title": "Liquid AI 发布开源决策模型 d1-3B 和 d1-omni-600M / Open d1: Edge decision models for text, vision, and audio",
+      "title_en": "Open d1: Edge decision models for text, vision, and audio",
+      "url": "https://www.liquid.ai/blog/d1-open",
+      "summary": "Liquid AI 发布开源权重决策模型 d1-3B 和 d1-omni-600M，已在 Hugging Face 上提供。",
+      "recommend_reason_zh": null,
+      "source": "Liquid AI 模型与工程博客（网页）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-10-07T00:00:00Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
       "id": "story_e1332c8f3158",
       "story_id": "story_e1332c8f3158",
       "title": "OpenAI 发布内部前沿模型产出的数学研究成果 / Sharing AI progress in mathematics",
@@ -38,21 +83,6 @@
       "site_id": "",
       "published_at": "2026-10-06T23:01:09.228000Z",
       "source_count": 3,
-      "curated": true
-    },
-    {
-      "id": "story_c1863a515d19",
-      "story_id": "story_c1863a515d19",
-      "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2 / EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "title_en": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "Google DeepMind",
-      "source_name": "Official AI Updates",
-      "site_id": "",
-      "published_at": "2026-10-06T19:57:04Z",
-      "source_count": 1,
       "curated": true
     }
   ]
