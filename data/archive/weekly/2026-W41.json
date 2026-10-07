@@ -4,49 +4,49 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
-  "generated_at": "2026-10-07T20:00:18.463510Z",
+  "generated_at": "2026-10-07T22:00:30.578594Z",
   "daily_dates": [
     "2026-10-05",
     "2026-10-06",
     "2026-10-07",
     "2026-10-08"
   ],
-  "story_count": 735,
-  "unique_story_count": 594,
+  "story_count": 728,
+  "unique_story_count": 615,
   "counts": {
     "by_company_topic": {
-      "anthropic": 99,
+      "anthropic": 97,
       "apple": 1,
       "cursor": 2,
-      "deepseek": 17,
+      "deepseek": 16,
       "google-gemini": 32,
       "huggingface": 6,
       "kimi": 2,
       "meta-llama": 2,
-      "microsoft": 7,
+      "microsoft": 8,
       "minimax": 4,
-      "nvidia": 8,
-      "openai": 143,
-      "openrouter": 3,
+      "nvidia": 9,
+      "openai": 145,
+      "openrouter": 5,
       "perplexity": 1,
       "qwen": 2,
       "xai": 10,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 116,
-      "monetization": 9,
-      "workplace": 20
+      "agent-ecosystem": 114,
+      "monetization": 10,
+      "workplace": 18
     },
     "by_importance_label": {
-      "值得关注": 667,
+      "值得关注": 659,
       "多源热议": 10,
-      "官方更新": 32,
+      "官方更新": 33,
       "行业动态": 26
     },
     "by_source_count_bucket": {
-      "1": 693,
-      "2": 29,
+      "1": 688,
+      "2": 27,
       "3+": 13
     }
   },
@@ -55,7 +55,7 @@
       "story_id": "story_6557dda4a6cd",
       "title": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI / GPT-6 and Intelligent UI for everyone",
       "url": "https://openai.com/index/gpt-6-for-everyone",
-      "importance_score": 0.8648,
+      "importance_score": 0.861,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-10-08",
@@ -78,27 +78,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d56d7999a319",
-      "title": "边缘的多模态开放 d1 决策模型 / Multimodal open d1 decision models for the edge",
-      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
-      "importance_score": 0.8521,
+      "story_id": "story_7656d3b30e51",
+      "title": "GitHub Copilot 中的Claude俳句 5.5 / Claude Haiku 5.5 in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+      "importance_score": 0.8554,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-08",
       "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b9d295c686cc",
-      "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
-      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-      "importance_score": 0.8473,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
+        "anthropic",
         "microsoft"
       ],
       "lens_topics": [
@@ -119,6 +107,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_d56d7999a319",
+      "title": "边缘的多模态开放 d1 决策模型 / Multimodal open d1 decision models for the edge",
+      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "importance_score": 0.8472,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_aec85adef32a",
       "title": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具 / Building advertising for the way people use AI",
       "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
@@ -132,10 +133,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_58aa148af326",
-      "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
-      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-      "importance_score": 0.8413,
+      "story_id": "story_b9d295c686cc",
+      "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
+      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "importance_score": 0.8425,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-08",
@@ -145,17 +146,6 @@
       "lens_topics": [
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_e084383f2689",
-      "title": "秘密保护必须与软件一起扩展 / Secret protection must scale with software",
-      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
-      "importance_score": 0.8383,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": []
     },
     {
       "story_id": "story_3d2baa621386",
@@ -171,6 +161,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_58aa148af326",
+      "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
+      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
+      "importance_score": 0.8365,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_b297de01ee31",
       "title": "适用于 iOS 的 ChatGPT 1.2026.272 / ChatGPT for iOS 1.2026.272",
       "url": "https://developers.openai.com/codex/changelog",
@@ -184,27 +189,14 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a5dc5a4d2dcb",
-      "title": "用于泄露秘密检测的专用模型 / Purpose-built model for leaked secret detection",
-      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
-      "importance_score": 0.8345,
+      "story_id": "story_e084383f2689",
+      "title": "秘密保护必须与软件一起扩展 / Secret protection must scale with software",
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
+      "importance_score": 0.8333,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-08",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_463b6db0777c",
-      "title": "帮助青少年学习、规划和塑造人工智能的未来 / Helping teens learn, plan, and shape the future of AI",
-      "url": "https://openai.com/index/teens-learn-and-plan",
-      "importance_score": 0.8323,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "openai"
-      ],
       "lens_topics": []
     },
     {
@@ -219,10 +211,21 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e7c1dfa5362c",
-      "title": "丽笙酒店集团将酒店发现带入 ChatGPT / Radisson Hotel Group brings hotel discovery into ChatGPT",
-      "url": "https://openai.com/index/radisson",
-      "importance_score": 0.8292,
+      "story_id": "story_a5dc5a4d2dcb",
+      "title": "用于泄露秘密检测的专用模型 / Purpose-built model for leaked secret detection",
+      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+      "importance_score": 0.8296,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_463b6db0777c",
+      "title": "帮助青少年学习、规划和塑造人工智能的未来 / Helping teens learn, plan, and shape the future of AI",
+      "url": "https://openai.com/index/teens-learn-and-plan",
+      "importance_score": 0.8278,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-08",
@@ -239,6 +242,19 @@
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-10-07",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e7c1dfa5362c",
+      "title": "丽笙酒店集团将酒店发现带入 ChatGPT / Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "url": "https://openai.com/index/radisson",
+      "importance_score": 0.8249,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
       "company_topics": [
         "openai"
       ],
@@ -285,21 +301,6 @@
       "archive_date": "2026-10-06",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_d018af5dc3ed",
-      "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度 / We’re rolling out monthly Claude Platform API credits for Max and Team plans:",
-      "url": "https://x.com/ClaudeDevs/status/2107895957933408429",
-      "importance_score": 0.8052,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
     },
     {
       "story_id": "story_19005dd16bea",
@@ -350,30 +351,19 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_cb02882597ae",
-      "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
-      "importance_score": 0.8003,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3be37f6f83d0",
-      "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
-      "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
-      "importance_score": 0.7988,
+      "story_id": "story_d018af5dc3ed",
+      "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度 / We’re rolling out monthly Claude Platform API credits for Max and Team plans:",
+      "url": "https://x.com/ClaudeDevs/status/2107895957933408429",
+      "importance_score": 0.8002,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-08",
       "company_topics": [
-        "openrouter"
+        "anthropic"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "monetization"
+      ]
     },
     {
       "story_id": "story_b4c0a1b83afc",
@@ -384,6 +374,47 @@
       "source_count": 1,
       "archive_date": "2026-10-06",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cb02882597ae",
+      "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+      "importance_score": 0.7953,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b7bb5dc102ec",
+      "title": "AI 销售代理如何每月为我们的销售团队节省 600 个小时 / How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
+      "url": "https://openrouter.ai/blog/case-studies/how-an-ai-sales-agent-saved-our-sales-team-600-hours-a-month",
+      "importance_score": 0.795,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_3be37f6f83d0",
+      "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
+      "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+      "importance_score": 0.795,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "openrouter"
+      ],
       "lens_topics": []
     },
     {
@@ -415,45 +446,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3dab97b43266",
-      "title": "NVIDIA 与 Microsoft 发布 RTX Spark 及 DGX Station for Windows，推动 AI Agent 落地 Windows PC / NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents",
-      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event",
-      "importance_score": 0.7734,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_e7c3293152eb",
-      "title": "亚利桑那州法院裁定 AI 生成受害者视频带有不当情感分量 将重新量刑 / 'Undue emotional weight'",
-      "url": "https://www.404media.co/undue-emotional-weight",
-      "importance_score": 0.7725,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_60be9a556c35",
-      "title": "Anthropic 发布 Claude Haiku 5.5，Artificial Analysis 智能指数得分 43 / Anthropic has released Claude Haiku 5.5, scoring 43 on the Artificial Analysis Intelligence Index - up 26 points one year after the last ...",
-      "url": "https://x.com/ArtificialAnlys/status/2107911905822351609",
-      "importance_score": 0.7715,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_ddb0edeec9f2",
       "title": "消息称 DeepSeek 接近完成至少 800 亿元融资，腾讯、宁德时代重金参与",
       "url": "https://www.ithome.com/1/009/990.htm",
@@ -475,6 +467,45 @@
       "source_count": 1,
       "archive_date": "2026-10-07",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3dab97b43266",
+      "title": "NVIDIA 与 Microsoft 发布 RTX Spark 及 DGX Station for Windows，推动 AI Agent 落地 Windows PC / NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event",
+      "importance_score": 0.7683,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "nvidia"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_e7c3293152eb",
+      "title": "亚利桑那州法院裁定 AI 生成受害者视频带有不当情感分量 将重新量刑 / 'Undue emotional weight'",
+      "url": "https://www.404media.co/undue-emotional-weight",
+      "importance_score": 0.7677,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_60be9a556c35",
+      "title": "Anthropic 发布 Claude Haiku 5.5，Artificial Analysis 智能指数得分 43 / Anthropic has released Claude Haiku 5.5, scoring 43 on the Artificial Analysis Intelligence Index - up 26 points one year after the last ...",
+      "url": "https://x.com/ArtificialAnlys/status/2107911905822351609",
+      "importance_score": 0.7665,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "anthropic"
+      ],
       "lens_topics": []
     },
     {
@@ -505,7 +536,7 @@
       "story_id": "story_e4350e8ce423",
       "title": "Cursor 公布 Claude Haiku 5.5 定价并下调 Claude Sonnet 5.5 缓存读取价格 / Claude Haiku 5.5 is priced at $0.10/M input and $0.50/M output tokens, or $0.50/M and $2.50/M above 100k input tokens.",
       "url": "https://x.com/cursor_ai/status/2107897257651769464",
-      "importance_score": 0.7601,
+      "importance_score": 0.7551,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-08",
@@ -542,32 +573,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_63ffa7f8acf5",
-      "title": "Microsoft Research Asia 开源 Agent Lightning v1.0：3,500 行代码的真实 harness 智能体 RL 训练框架 / Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
-      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses",
-      "importance_score": 0.7485,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_eedd3d5235fe",
-      "title": "Anthropic 将 Claude Sonnet 5.5 缓存读取价格减半至每百万 token $0.10 / One more thing: we’re halving the price of cache reads on Claude Sonnet 5.5, to $0.10 per million tokens. That makes Sonnet 5.5 around 20...",
-      "url": "https://x.com/claudeai/status/2107894060229034197",
-      "importance_score": 0.7415,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
     }
   ]
 }

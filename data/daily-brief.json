@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T20:00:18.463510Z",
+  "generated_at": "2026-10-07T22:00:30.578594Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -69,7 +69,7 @@
       "relation": "primary",
       "parent_story_id": null,
       "follow_up_of": null,
-      "follow_up_count": 2,
+      "follow_up_count": 3,
       "follow_ups": [
         {
           "story_id": "story_fa654d323081",
@@ -86,6 +86,14 @@
           "latest_at": "2026-10-07T19:06:40Z",
           "reason": "title_and_model",
           "similarity": 0.502
+        },
+        {
+          "story_id": "story_df6942b2a339",
+          "title": "OpenAI says GPT-6 in ChatGPT's Chat tab is powered by GPT-6 Sol for Plus, Pro, Business, and Enterprise tiers and GPT-6 Luna for Free and Go tiers (@openai)",
+          "url": "https://www.techmeme.com/261007/p36",
+          "latest_at": "2026-10-07T20:55:02Z",
+          "reason": "shared_entity",
+          "similarity": 0.4309
         }
       ],
       "items": [
@@ -137,15 +145,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8648,
-      "importance": 0.8648,
-      "importance_score": 0.8648,
+      "score": 0.861,
+      "importance": 0.861,
+      "importance_score": 0.861,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7491,
+        "recency": 0.7277,
         "story_heat": 0.5
       },
       "category": "official",
@@ -173,7 +181,105 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
+      }
+    },
+    {
+      "story_id": "story_7656d3b30e51",
+      "title": "GitHub Copilot 中的Claude俳句 5.5 / Claude Haiku 5.5 in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+      "primary_url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "19ce53b7b96cdf6c23e65be8f3d837c42dc378a3",
+          "title": "GitHub Copilot 中的Claude俳句 5.5 / Claude Haiku 5.5 in GitHub Copilot",
+          "title_zh": "GitHub Copilot 中的Claude俳句 5.5",
+          "title_en": "Claude Haiku 5.5 in GitHub Copilot",
+          "title_original": "Claude Haiku 5.5 in GitHub Copilot",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-07T20:12:18Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "select_tier": "T1",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "follow_up",
+      "parent_story_id": "story_58aa148af326",
+      "follow_up_of": {
+        "story_id": "story_58aa148af326",
+        "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
+        "reason": "title_and_vendor",
+        "similarity": 0.6286
+      },
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "19ce53b7b96cdf6c23e65be8f3d837c42dc378a3",
+          "title": "GitHub Copilot 中的Claude俳句 5.5 / Claude Haiku 5.5 in GitHub Copilot",
+          "title_zh": "GitHub Copilot 中的Claude俳句 5.5",
+          "title_en": "Claude Haiku 5.5 in GitHub Copilot",
+          "title_original": "Claude Haiku 5.5 in GitHub Copilot",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-07T20:12:18Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8554,
+      "importance": 0.8554,
+      "importance_score": 0.8554,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.9743,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-07T20:12:18Z",
+      "latest_at": "2026-10-07T20:12:18Z",
+      "primary_item": {
+        "id": "19ce53b7b96cdf6c23e65be8f3d837c42dc378a3",
+        "title": "GitHub Copilot 中的Claude俳句 5.5 / Claude Haiku 5.5 in GitHub Copilot",
+        "title_zh": "GitHub Copilot 中的Claude俳句 5.5",
+        "title_en": "Claude Haiku 5.5 in GitHub Copilot",
+        "title_original": "Claude Haiku 5.5 in GitHub Copilot",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -231,15 +337,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8521,
-      "importance": 0.8521,
-      "importance_score": 0.8521,
+      "score": 0.8472,
+      "importance": 0.8472,
+      "importance_score": 0.8472,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9563,
+        "recency": 0.929,
         "story_heat": 0.0
       },
       "category": "official",
@@ -266,100 +372,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
-      }
-    },
-    {
-      "story_id": "story_b9d295c686cc",
-      "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
-      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-      "primary_url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "4b00cda75f5bf858a654f796a769ab4bacf81797",
-          "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
-          "title_zh": "GitHub Copilot 的本地沙箱现已普遍可用",
-          "title_en": "Local sandboxing for GitHub Copilot now generally available",
-          "title_original": "Local sandboxing for GitHub Copilot now generally available",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-07T15:46:17Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "4b00cda75f5bf858a654f796a769ab4bacf81797",
-          "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
-          "title_zh": "GitHub Copilot 的本地沙箱现已普遍可用",
-          "title_en": "Local sandboxing for GitHub Copilot now generally available",
-          "title_original": "Local sandboxing for GitHub Copilot now generally available",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-07T15:46:17Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8473,
-      "importance": 0.8473,
-      "importance_score": 0.8473,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.94,
-        "recency": 0.9407,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-07T15:46:17Z",
-      "latest_at": "2026-10-07T15:46:17Z",
-      "primary_item": {
-        "id": "4b00cda75f5bf858a654f796a769ab4bacf81797",
-        "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
-        "title_zh": "GitHub Copilot 的本地沙箱现已普遍可用",
-        "title_en": "Local sandboxing for GitHub Copilot now generally available",
-        "title_original": "Local sandboxing for GitHub Copilot now generally available",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -417,15 +430,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8383,
-      "importance": 0.8383,
-      "importance_score": 0.8383,
+      "score": 0.8333,
+      "importance": 0.8333,
+      "importance_score": 0.8333,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9681,
+        "recency": 0.9405,
         "story_heat": 0.0
       },
       "category": "official",
@@ -452,7 +465,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -510,15 +523,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8248,
-      "importance": 0.8248,
-      "importance_score": 0.8248,
+      "score": 0.821,
+      "importance": 0.821,
+      "importance_score": 0.821,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7491,
+        "recency": 0.7277,
         "story_heat": 0.0
       },
       "category": "official",
@@ -545,7 +558,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -603,15 +616,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8243,
-      "importance": 0.8243,
-      "importance_score": 0.8243,
+      "score": 0.8198,
+      "importance": 0.8198,
+      "importance_score": 0.8198,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8908,
+        "recency": 0.8654,
         "story_heat": 0.0
       },
       "category": "official",
@@ -638,7 +651,100 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
+      }
+    },
+    {
+      "story_id": "story_b9d295c686cc",
+      "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
+      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "primary_url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "4b00cda75f5bf858a654f796a769ab4bacf81797",
+          "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
+          "title_zh": "GitHub Copilot 的本地沙箱现已普遍可用",
+          "title_en": "Local sandboxing for GitHub Copilot now generally available",
+          "title_original": "Local sandboxing for GitHub Copilot now generally available",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-07T15:46:17Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "select_tier": "T1",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "4b00cda75f5bf858a654f796a769ab4bacf81797",
+          "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
+          "title_zh": "GitHub Copilot 的本地沙箱现已普遍可用",
+          "title_en": "Local sandboxing for GitHub Copilot now generally available",
+          "title_original": "Local sandboxing for GitHub Copilot now generally available",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-07T15:46:17Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8425,
+      "importance": 0.8425,
+      "importance_score": 0.8425,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.94,
+        "recency": 0.9139,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-07T15:46:17Z",
+      "latest_at": "2026-10-07T15:46:17Z",
+      "primary_item": {
+        "id": "4b00cda75f5bf858a654f796a769ab4bacf81797",
+        "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
+        "title_zh": "GitHub Copilot 的本地沙箱现已普遍可用",
+        "title_en": "Local sandboxing for GitHub Copilot now generally available",
+        "title_original": "Local sandboxing for GitHub Copilot now generally available",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -758,15 +864,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8159,
-      "importance": 0.8159,
-      "importance_score": 0.8159,
+      "score": 0.8122,
+      "importance": 0.8122,
+      "importance_score": 0.8122,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7386,
+        "recency": 0.7175,
         "story_heat": 0.5
       },
       "category": "official",
@@ -793,7 +899,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -851,15 +957,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8421,
-      "importance": 0.8421,
-      "importance_score": 0.8421,
+      "score": 0.8375,
+      "importance": 0.8375,
+      "importance_score": 0.8375,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9006,
+        "recency": 0.875,
         "story_heat": 0.0
       },
       "category": "official",
@@ -886,100 +992,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
-      }
-    },
-    {
-      "story_id": "story_58aa148af326",
-      "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
-      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-      "primary_url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "b2ee605dc8cba7b47fafb515839143263ce95ea9",
-          "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
-          "title_zh": "在 GitHub Copilot CLI 中发现本地模型",
-          "title_en": "Discover local models in GitHub Copilot CLI",
-          "title_original": "Discover local models in GitHub Copilot CLI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-07T15:46:13Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "select_tier": "T1",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "b2ee605dc8cba7b47fafb515839143263ce95ea9",
-          "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
-          "title_zh": "在 GitHub Copilot CLI 中发现本地模型",
-          "title_en": "Discover local models in GitHub Copilot CLI",
-          "title_original": "Discover local models in GitHub Copilot CLI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "select_tier": "T1",
-          "published_at": "2026-10-07T15:46:13Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8413,
-      "importance": 0.8413,
-      "importance_score": 0.8413,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.9407,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-07T15:46:13Z",
-      "latest_at": "2026-10-07T15:46:13Z",
-      "primary_item": {
-        "id": "b2ee605dc8cba7b47fafb515839143263ce95ea9",
-        "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
-        "title_zh": "在 GitHub Copilot CLI 中发现本地模型",
-        "title_en": "Discover local models in GitHub Copilot CLI",
-        "title_original": "Discover local models in GitHub Copilot CLI",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -1037,15 +1050,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8052,
-      "importance": 0.8052,
-      "importance_score": 0.8052,
+      "score": 0.8002,
+      "importance": 0.8002,
+      "importance_score": 0.8002,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9735,
+        "recency": 0.9458,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1071,7 +1084,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -1129,15 +1142,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8323,
-      "importance": 0.8323,
-      "importance_score": 0.8323,
+      "score": 0.8278,
+      "importance": 0.8278,
+      "importance_score": 0.8278,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8908,
+        "recency": 0.8654,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1164,7 +1177,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -1253,15 +1266,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8003,
-      "importance": 0.8003,
-      "importance_score": 0.8003,
+      "score": 0.7953,
+      "importance": 0.7953,
+      "importance_score": 0.7953,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9739,
+        "recency": 0.9461,
         "story_heat": 0.25
       },
       "category": "official",
@@ -1288,26 +1301,26 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
-      "story_id": "story_3be37f6f83d0",
-      "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
-      "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
-      "primary_url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+      "story_id": "story_b7bb5dc102ec",
+      "title": "AI 销售代理如何每月为我们的销售团队节省 600 个小时 / How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
+      "url": "https://openrouter.ai/blog/case-studies/how-an-ai-sales-agent-saved-our-sales-team-600-hours-a-month",
+      "primary_url": "https://openrouter.ai/blog/case-studies/how-an-ai-sales-agent-saved-our-sales-team-600-hours-a-month",
       "source": "OpenRouter Blog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "27202e279c5b34db6dfbf23e1ea2827edf04e66c",
-          "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
-          "title_zh": "ElevenLabs 现已在 OpenRouter 上运行",
-          "title_en": "ElevenLabs is now on OpenRouter",
-          "title_original": "ElevenLabs is now on OpenRouter",
+          "id": "747a4123d15c37ba434c365439ec6322545a7214",
+          "title": "AI 销售代理如何每月为我们的销售团队节省 600 个小时 / How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
+          "title_zh": "AI 销售代理如何每月为我们的销售团队节省 600 个小时",
+          "title_en": "How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
+          "title_original": "How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+          "url": "https://openrouter.ai/blog/case-studies/how-an-ai-sales-agent-saved-our-sales-team-600-hours-a-month",
           "source": "OpenRouter Blog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
@@ -1329,14 +1342,14 @@
       "follow_ups": [],
       "items": [
         {
-          "id": "27202e279c5b34db6dfbf23e1ea2827edf04e66c",
-          "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
-          "title_zh": "ElevenLabs 现已在 OpenRouter 上运行",
-          "title_en": "ElevenLabs is now on OpenRouter",
-          "title_original": "ElevenLabs is now on OpenRouter",
+          "id": "747a4123d15c37ba434c365439ec6322545a7214",
+          "title": "AI 销售代理如何每月为我们的销售团队节省 600 个小时 / How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
+          "title_zh": "AI 销售代理如何每月为我们的销售团队节省 600 个小时",
+          "title_en": "How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
+          "title_original": "How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+          "url": "https://openrouter.ai/blog/case-studies/how-an-ai-sales-agent-saved-our-sales-team-600-hours-a-month",
           "source": "OpenRouter Blog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
@@ -1346,15 +1359,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7988,
-      "importance": 0.7988,
-      "importance_score": 0.7988,
+      "score": 0.795,
+      "importance": 0.795,
+      "importance_score": 0.795,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.7491,
+        "recency": 0.7277,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1366,14 +1379,14 @@
       "earliest_at": "2026-10-07T00:00:00Z",
       "latest_at": "2026-10-07T00:00:00Z",
       "primary_item": {
-        "id": "27202e279c5b34db6dfbf23e1ea2827edf04e66c",
-        "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
-        "title_zh": "ElevenLabs 现已在 OpenRouter 上运行",
-        "title_en": "ElevenLabs is now on OpenRouter",
-        "title_original": "ElevenLabs is now on OpenRouter",
+        "id": "747a4123d15c37ba434c365439ec6322545a7214",
+        "title": "AI 销售代理如何每月为我们的销售团队节省 600 个小时 / How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
+        "title_zh": "AI 销售代理如何每月为我们的销售团队节省 600 个小时",
+        "title_en": "How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
+        "title_original": "How an AI Sales Agent Saved Our Sales Team 600 Hours a Month",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+        "url": "https://openrouter.ai/blog/case-studies/how-an-ai-sales-agent-saved-our-sales-team-600-hours-a-month",
         "source": "OpenRouter Blog",
         "source_name": "Official AI Updates"
       },
@@ -1381,31 +1394,31 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
-      "story_id": "story_a5dc5a4d2dcb",
-      "title": "用于泄露秘密检测的专用模型 / Purpose-built model for leaked secret detection",
-      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
-      "primary_url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+      "story_id": "story_58aa148af326",
+      "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
+      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
+      "primary_url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "6ee63ce2297e3b1235a0088ed54c15b30891ac18",
-          "title": "用于泄露秘密检测的专用模型 / Purpose-built model for leaked secret detection",
-          "title_zh": "用于泄露秘密检测的专用模型",
-          "title_en": "Purpose-built model for leaked secret detection",
-          "title_original": "Purpose-built model for leaked secret detection",
+          "id": "b2ee605dc8cba7b47fafb515839143263ce95ea9",
+          "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
+          "title_zh": "在 GitHub Copilot CLI 中发现本地模型",
+          "title_en": "Discover local models in GitHub Copilot CLI",
+          "title_original": "Discover local models in GitHub Copilot CLI",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+          "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "select_tier": "T1",
-          "published_at": "2026-10-07T16:13:56Z"
+          "published_at": "2026-10-07T15:46:13Z"
         }
       ],
       "source_count": 1,
@@ -1418,36 +1431,45 @@
       "relation": "primary",
       "parent_story_id": null,
       "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
+      "follow_up_count": 1,
+      "follow_ups": [
+        {
+          "story_id": "story_7656d3b30e51",
+          "title": "GitHub Copilot 中的Claude俳句 5.5 / Claude Haiku 5.5 in GitHub Copilot",
+          "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+          "latest_at": "2026-10-07T20:12:18Z",
+          "reason": "title_and_vendor",
+          "similarity": 0.6286
+        }
+      ],
       "items": [
         {
-          "id": "6ee63ce2297e3b1235a0088ed54c15b30891ac18",
-          "title": "用于泄露秘密检测的专用模型 / Purpose-built model for leaked secret detection",
-          "title_zh": "用于泄露秘密检测的专用模型",
-          "title_en": "Purpose-built model for leaked secret detection",
-          "title_original": "Purpose-built model for leaked secret detection",
+          "id": "b2ee605dc8cba7b47fafb515839143263ce95ea9",
+          "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
+          "title_zh": "在 GitHub Copilot CLI 中发现本地模型",
+          "title_en": "Discover local models in GitHub Copilot CLI",
+          "title_original": "Discover local models in GitHub Copilot CLI",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+          "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "select_tier": "T1",
-          "published_at": "2026-10-07T16:13:56Z"
+          "published_at": "2026-10-07T15:46:13Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8345,
-      "importance": 0.8345,
-      "importance_score": 0.8345,
+      "score": 0.8365,
+      "importance": 0.8365,
+      "importance_score": 0.8365,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.947,
+        "ai_relevance": 0.91,
+        "recency": 0.9139,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1456,17 +1478,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-07T16:13:56Z",
-      "latest_at": "2026-10-07T16:13:56Z",
+      "earliest_at": "2026-10-07T15:46:13Z",
+      "latest_at": "2026-10-07T15:46:13Z",
       "primary_item": {
-        "id": "6ee63ce2297e3b1235a0088ed54c15b30891ac18",
-        "title": "用于泄露秘密检测的专用模型 / Purpose-built model for leaked secret detection",
-        "title_zh": "用于泄露秘密检测的专用模型",
-        "title_en": "Purpose-built model for leaked secret detection",
-        "title_original": "Purpose-built model for leaked secret detection",
+        "id": "b2ee605dc8cba7b47fafb515839143263ce95ea9",
+        "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
+        "title_zh": "在 GitHub Copilot CLI 中发现本地模型",
+        "title_en": "Discover local models in GitHub Copilot CLI",
+        "title_original": "Discover local models in GitHub Copilot CLI",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+        "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       },
@@ -1474,7 +1496,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -1532,15 +1554,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7734,
-      "importance": 0.7734,
-      "importance_score": 0.7734,
+      "score": 0.7683,
+      "importance": 0.7683,
+      "importance_score": 0.7683,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9821,
+        "recency": 0.9541,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1566,7 +1588,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -1624,15 +1646,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7725,
-      "importance": 0.7725,
-      "importance_score": 0.7725,
+      "score": 0.7677,
+      "importance": 0.7677,
+      "importance_score": 0.7677,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9272,
+        "recency": 0.9008,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1658,7 +1680,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -1716,15 +1738,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7715,
-      "importance": 0.7715,
-      "importance_score": 0.7715,
+      "score": 0.7665,
+      "importance": 0.7665,
+      "importance_score": 0.7665,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9885,
+        "recency": 0.9603,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1750,7 +1772,100 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
+      }
+    },
+    {
+      "story_id": "story_3be37f6f83d0",
+      "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
+      "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+      "primary_url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+      "source": "OpenRouter Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "27202e279c5b34db6dfbf23e1ea2827edf04e66c",
+          "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
+          "title_zh": "ElevenLabs 现已在 OpenRouter 上运行",
+          "title_en": "ElevenLabs is now on OpenRouter",
+          "title_original": "ElevenLabs is now on OpenRouter",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+          "source": "OpenRouter Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-07T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenRouter Blog"
+      ],
+      "select_tier": "T1",
+      "source_heat": 1.0,
+      "other_source_count": 0,
+      "relation": "primary",
+      "parent_story_id": null,
+      "follow_up_of": null,
+      "follow_up_count": 0,
+      "follow_ups": [],
+      "items": [
+        {
+          "id": "27202e279c5b34db6dfbf23e1ea2827edf04e66c",
+          "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
+          "title_zh": "ElevenLabs 现已在 OpenRouter 上运行",
+          "title_en": "ElevenLabs is now on OpenRouter",
+          "title_original": "ElevenLabs is now on OpenRouter",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+          "source": "OpenRouter Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "select_tier": "T1",
+          "published_at": "2026-10-07T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.795,
+      "importance": 0.795,
+      "importance_score": 0.795,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.7277,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-07T00:00:00Z",
+      "latest_at": "2026-10-07T00:00:00Z",
+      "primary_item": {
+        "id": "27202e279c5b34db6dfbf23e1ea2827edf04e66c",
+        "title": "ElevenLabs 现已在 OpenRouter 上运行 / ElevenLabs is now on OpenRouter",
+        "title_zh": "ElevenLabs 现已在 OpenRouter 上运行",
+        "title_en": "ElevenLabs is now on OpenRouter",
+        "title_original": "ElevenLabs is now on OpenRouter",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://openrouter.ai/blog/announcements/elevenlabs-on-openrouter",
+        "source": "OpenRouter Blog",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -1808,15 +1923,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8292,
-      "importance": 0.8292,
-      "importance_score": 0.8292,
+      "score": 0.8249,
+      "importance": 0.8249,
+      "importance_score": 0.8249,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8288,
+        "recency": 0.8051,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1843,7 +1958,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     },
     {
@@ -1906,15 +2021,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7601,
-      "importance": 0.7601,
-      "importance_score": 0.7601,
+      "score": 0.7551,
+      "importance": 0.7551,
+      "importance_score": 0.7551,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9748,
+        "recency": 0.947,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1940,99 +2055,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
-      }
-    },
-    {
-      "story_id": "story_77612876f6aa",
-      "title": "a16z 解析 Texas 为何让数据中心排队等待并网 / Why Texas Is Making Data Centers Wait",
-      "url": "https://www.a16z.news/p/why-texas-is-making-data-centers",
-      "primary_url": "https://www.a16z.news/p/why-texas-is-making-data-centers",
-      "source": "a16z：News（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "f2859699c58c0213601b34c1a089417db1504845",
-          "title": "a16z 解析 Texas 为何让数据中心排队等待并网 / Why Texas Is Making Data Centers Wait",
-          "title_zh": "a16z 解析 Texas 为何让数据中心排队等待并网",
-          "title_en": "Why Texas Is Making Data Centers Wait",
-          "title_original": "Why Texas Is Making Data Centers Wait",
-          "summary": "a16z 的 Ryan McEntush 撰文分析 Texas 电网对数据中心按下暂停键的能源原因。",
-          "recommend_reason_zh": null,
-          "url": "https://www.a16z.news/p/why-texas-is-making-data-centers",
-          "source": "a16z：News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "select_tier": "T2",
-          "published_at": "2026-10-07T14:01:44Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "a16z：News（RSS）"
-      ],
-      "select_tier": "T2",
-      "source_heat": 1.0,
-      "other_source_count": 0,
-      "relation": "primary",
-      "parent_story_id": null,
-      "follow_up_of": null,
-      "follow_up_count": 0,
-      "follow_ups": [],
-      "items": [
-        {
-          "id": "f2859699c58c0213601b34c1a089417db1504845",
-          "title": "a16z 解析 Texas 为何让数据中心排队等待并网 / Why Texas Is Making Data Centers Wait",
-          "title_zh": "a16z 解析 Texas 为何让数据中心排队等待并网",
-          "title_en": "Why Texas Is Making Data Centers Wait",
-          "title_original": "Why Texas Is Making Data Centers Wait",
-          "summary": "a16z 的 Ryan McEntush 撰文分析 Texas 电网对数据中心按下暂停键的能源原因。",
-          "recommend_reason_zh": null,
-          "url": "https://www.a16z.news/p/why-texas-is-making-data-centers",
-          "source": "a16z：News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "select_tier": "T2",
-          "published_at": "2026-10-07T14:01:44Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7557,
-      "importance": 0.7557,
-      "importance_score": 0.7557,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.73,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9173,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-07T14:01:44Z",
-      "latest_at": "2026-10-07T14:01:44Z",
-      "primary_item": {
-        "id": "f2859699c58c0213601b34c1a089417db1504845",
-        "title": "a16z 解析 Texas 为何让数据中心排队等待并网 / Why Texas Is Making Data Centers Wait",
-        "title_zh": "a16z 解析 Texas 为何让数据中心排队等待并网",
-        "title_en": "Why Texas Is Making Data Centers Wait",
-        "title_original": "Why Texas Is Making Data Centers Wait",
-        "summary": "a16z 的 Ryan McEntush 撰文分析 Texas 电网对数据中心按下暂停键的能源原因。",
-        "recommend_reason_zh": null,
-        "url": "https://www.a16z.news/p/why-texas-is-making-data-centers",
-        "source": "a16z：News（RSS）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-07T20:02:10.675262Z"
+        "scored_at": "2026-10-07T22:02:31.592903Z"
       }
     }
   ]
