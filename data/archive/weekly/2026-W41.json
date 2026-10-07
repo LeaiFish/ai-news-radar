@@ -4,51 +4,64 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
-  "generated_at": "2026-10-07T11:49:19.242309Z",
+  "generated_at": "2026-10-07T14:33:54.576231Z",
   "daily_dates": [
     "2026-10-05",
     "2026-10-06",
     "2026-10-07"
   ],
   "story_count": 503,
-  "unique_story_count": 476,
+  "unique_story_count": 503,
   "counts": {
     "by_company_topic": {
-      "anthropic": 69,
+      "anthropic": 68,
       "apple": 1,
       "cursor": 1,
-      "deepseek": 14,
-      "google-gemini": 21,
-      "huggingface": 1,
+      "deepseek": 13,
+      "google-gemini": 24,
+      "huggingface": 2,
       "kimi": 2,
       "meta-llama": 1,
       "microsoft": 3,
       "minimax": 3,
-      "nvidia": 5,
-      "openai": 91,
-      "openrouter": 3,
+      "nvidia": 4,
+      "openai": 93,
+      "openrouter": 2,
       "qwen": 1,
       "xai": 9,
       "zhipu": 1
     },
     "by_lens_topic": {
-      "agent-ecosystem": 88,
-      "monetization": 6,
-      "workplace": 13
+      "agent-ecosystem": 85,
+      "monetization": 5,
+      "workplace": 11
     },
     "by_importance_label": {
-      "值得关注": 466,
-      "多源热议": 9,
-      "官方更新": 13,
-      "行业动态": 15
+      "值得关注": 467,
+      "多源热议": 8,
+      "官方更新": 14,
+      "行业动态": 14
     },
     "by_source_count_bucket": {
-      "1": 474,
-      "2": 20,
+      "1": 475,
+      "2": 19,
       "3+": 9
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_856527284047",
+      "title": "Nemotron 系列微调后达到 IOI 2026 与 IMO 2026 金牌水平 / One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "importance_score": 0.8554,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
     {
       "story_id": "story_2f21e7c25d8c",
       "title": "猎鹰阿联酋：当LLM学习方言、文化和细微差别时 / Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
@@ -76,10 +89,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_3d2baa621386",
+      "title": "Playground 简介：创建和玩自定义游戏 / Introducing Playground: Create and play custom games",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform",
+      "importance_score": 0.8375,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_b297de01ee31",
       "title": "适用于 iOS 的 ChatGPT 1.2026.272 / ChatGPT for iOS 1.2026.272",
       "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.8418,
+      "importance_score": 0.8359,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -100,12 +126,12 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_11f226560af5",
+      "story_id": "story_e1332c8f3158",
       "title": "OpenAI 发布内部前沿模型产出的数学研究成果 / Sharing AI progress in mathematics",
       "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-      "importance_score": 0.8246,
+      "importance_score": 0.8268,
       "importance_label": "官方更新",
-      "source_count": 2,
+      "source_count": 3,
       "archive_date": "2026-10-07",
       "company_topics": [
         "openai"
@@ -116,7 +142,7 @@
       "story_id": "story_9e4b08095253",
       "title": "更新您的 IDE 以恢复 Copilot 使用指标中的代理活动 / Update your IDE to restore agent activity in Copilot usage metrics",
       "url": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
-      "importance_score": 0.8231,
+      "importance_score": 0.8173,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -144,56 +170,6 @@
       ]
     },
     {
-      "story_id": "story_79247d86835a",
-      "title": "堆叠拉取请求现已普遍可用 / Stacked pull requests generally available",
-      "url": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available",
-      "importance_score": 0.8078,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d4a8437d985e",
-      "title": "Jump Trading 如何利用 ChatGPT 扩大量化研究规模 / How Jump Trading is scaling quant research with ChatGPT",
-      "url": "https://openai.com/index/jump-trading",
-      "importance_score": 0.8076,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_dbe192624685",
-      "title": "Atlassian 和 OpenAI 扩大合作伙伴关系，将企业知识转化为行动 / Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "url": "https://openai.com/index/atlassian-partnership",
-      "importance_score": 0.8072,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c1863a515d19",
-      "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2 / EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
-      "importance_score": 0.8071,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_45464a737294",
       "title": "秘密扫描添加了 Lovable、Supabase 等探测器 / Secret scanning adds detectors for Lovable, Supabase, and more",
       "url": "https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more",
@@ -213,6 +189,43 @@
       "source_count": 2,
       "archive_date": "2026-10-06",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_79247d86835a",
+      "title": "堆叠拉取请求现已普遍可用 / Stacked pull requests generally available",
+      "url": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available",
+      "importance_score": 0.8022,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dbe192624685",
+      "title": "Atlassian 和 OpenAI 扩大合作伙伴关系，将企业知识转化为行动 / Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "url": "https://openai.com/index/atlassian-partnership",
+      "importance_score": 0.8019,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c1863a515d19",
+      "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2 / EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "importance_score": 0.8016,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "google-gemini"
+      ],
       "lens_topics": []
     },
     {
@@ -268,10 +281,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0366a3557ad7",
-      "title": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑 / Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
-      "url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
-      "importance_score": 0.7657,
+      "story_id": "story_77612876f6aa",
+      "title": "a16z 解析 Texas 为何让数据中心排队等待并网 / Why Texas Is Making Data Centers Wait",
+      "url": "https://www.a16z.news/p/why-texas-is-making-data-centers",
+      "importance_score": 0.7692,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -292,10 +305,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0366a3557ad7",
+      "title": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑 / Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+      "url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
+      "importance_score": 0.7602,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_499c135d2740",
       "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与 / DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
       "url": "https://x.com/thexpin/status/2107524306058289533",
-      "importance_score": 0.7558,
+      "importance_score": 0.7505,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -318,33 +342,6 @@
       ]
     },
     {
-      "story_id": "story_0101f6369b65",
-      "title": "Claude Code 云端会话实战指南：每个任务独占一台 VM，可并行跑任务并以分支收尾 / Claude Code in the cloud: a field guide to cloud sessions",
-      "url": "https://claude.dev/blog/claude-code-in-the-cloud",
-      "importance_score": 0.7452,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_0f2de19abf40",
-      "title": "Mistral Large 4 进入 Code Arena: WebDev 排名第45，得分1534 / Mistral Large 4 by @MistralAI just landed in the Code Arena: WebDev at #45. With 1534 pts, this is a +304 pt improvement from Mistral Lar...",
-      "url": "https://x.com/arena/status/2107717155374727602",
-      "importance_score": 0.7418,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_b9170f476686",
       "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
       "url": "https://x.com/Khazix0918/status/2107297777583825359",
@@ -360,6 +357,17 @@
       "lens_topics": [
         "monetization"
       ]
+    },
+    {
+      "story_id": "story_0f2de19abf40",
+      "title": "Mistral Large 4 进入 Code Arena: WebDev 排名第45，得分1534 / Mistral Large 4 by @MistralAI just landed in the Code Arena: WebDev at #45. With 1534 pts, this is a +304 pt improvement from Mistral Lar...",
+      "url": "https://x.com/arena/status/2107717155374727602",
+      "importance_score": 0.7354,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_874feeef6ecb",
@@ -422,7 +430,7 @@
       "story_id": "story_5951f365282f",
       "title": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑 / Claude for Google Workspace™",
       "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
-      "importance_score": 0.7188,
+      "importance_score": 0.7135,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -437,7 +445,7 @@
       "story_id": "story_d8dfa4809dc9",
       "title": "GitHub 重建 Git 基础设施，应对智能体规模开发 / Building Git infrastructure for agent-scale development",
       "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
-      "importance_score": 0.7178,
+      "importance_score": 0.7122,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -445,19 +453,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_8250f00047d3",
-      "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-      "url": "https://x.com/arcprize/status/2107491194007585239",
-      "importance_score": 0.7065,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_01cd827a595e",
@@ -473,20 +468,17 @@
       ]
     },
     {
-      "story_id": "story_3b79fbfc648a",
-      "title": "ChatGPT 推出 Meetings 插件，可自动记会议纪要并跟进待办",
-      "url": "https://x.com/thsottiaux/status/2107573405553938664",
-      "importance_score": 0.7025,
+      "story_id": "story_8250f00047d3",
+      "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+      "url": "https://x.com/arcprize/status/2107491194007585239",
+      "importance_score": 0.7013,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
       "company_topics": [
-        "openai"
+        "deepseek"
       ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_549df6d3483f",
@@ -504,10 +496,26 @@
       ]
     },
     {
+      "story_id": "story_3b79fbfc648a",
+      "title": "ChatGPT 推出 Meetings 插件，可自动记会议纪要并跟进待办",
+      "url": "https://x.com/thsottiaux/status/2107573405553938664",
+      "importance_score": 0.6968,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_e5656e5cf8cb",
       "title": "Sierra 与 Meta 联合多家企业发布 Personal Agent Protocol 开放协议 / Introducing Personal Agent Protocol",
       "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
-      "importance_score": 0.6958,
+      "importance_score": 0.6905,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -530,23 +538,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_14c025ef8509",
-      "title": "I hooked up our team claw to X to trigger work faster. Unassigned sessions are for anyone to grab. Our agent looks who worked on the related code last and pings people on the server. Whole thing was a prompt and team...",
-      "url": "https://x.com/steipete/status/2107697554448421160",
-      "importance_score": 0.6365,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-07",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_61c07eca9a7f",
-      "title": "I am surprised that people are surprised this is how I prompt Claude. Talk to Claude the way you would a coworker. There's no secret to prompting. There's no need to be overly scaffolded or prescriptive for most tasks...",
-      "url": "https://x.com/bcherny/status/2107565388250874193",
-      "importance_score": 0.6338,
+      "story_id": "story_45ef9ab120a7",
+      "title": "Anthropic 让更多安全团队能够以更少的安全限制接触 Claude / Anthropic gives more security teams access to Claude with fewer safety restrictions",
+      "url": "https://the-decoder.com/anthropic-gives-more-security-teams-access-to-claude-with-fewer-safety-restrictions",
+      "importance_score": 0.6424,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
@@ -556,23 +551,23 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e8238c65642f",
-      "title": "we're increasingly going to be moving towards Claude's \"brains\" in the cloud and giving Claude \"local hands\" to operate on your computer I talked about this a bit on latent space https://t.co/m6NVHyweBp",
-      "url": "https://x.com/trq212/status/2107580785456976085",
-      "importance_score": 0.6317,
+      "story_id": "story_73b41563dcb9",
+      "title": "OpenAI 的 Alexander Embiricos 将出席 TechCrunch Disrupt 2026——Dots 推出几天后 / OpenAI’s Alexander Embiricos is coming to TechCrunch Disrupt 2026 — days after the launch of Dots",
+      "url": "https://techcrunch.com/2026/10/07/openais-alexander-embiricos-is-coming-to-techcrunch-disrupt-2026-days-after-the-launch-of-dots",
+      "importance_score": 0.6361,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
       "company_topics": [
-        "anthropic"
+        "openai"
       ],
       "lens_topics": []
     },
     {
-      "story_id": "story_e36c79971863",
-      "title": "OpenAI 在 GitHub 上转储了 372 个人工智能生成的数学证明，告诉学术界要跟上 / OpenAI dumps 372 AI-generated math proofs on GitHub, telling the academic world to keep up",
-      "url": "https://the-decoder.com/openai-dumps-372-ai-generated-math-proofs-on-github-telling-the-academic-world-to-keep-up",
-      "importance_score": 0.6288,
+      "story_id": "story_ce2cafc93cbc",
+      "title": "在自杀对话期间父母警报失败后，ChatGPT 将青少年评为“不可接受的风险” / ChatGPT rated \"unacceptable risk\" for teens after parental alerts failed during suicide conversations",
+      "url": "https://the-decoder.com/chatgpt-rated-unacceptable-risk-for-teens-after-parental-alerts-failed-during-suicide-conversations",
+      "importance_score": 0.6311,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-07",
