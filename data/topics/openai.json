@@ -3,12 +3,12 @@
   "name": "OpenAI / ChatGPT",
   "description": "OpenAI 的模型、产品与公司动态：GPT 系列、ChatGPT、Sora、Codex 与 API。",
   "group": "company",
-  "item_count": 2154,
+  "item_count": 2153,
   "listed_count": 80,
   "latest_title": "Decisions API 已进入公开测试阶段",
   "latest_published_at": "2026-10-07T00:03:31.762000Z",
   "items_url": "data/topics/openai.json",
-  "generated_at": "2026-10-07T07:17:55.214750Z",
+  "generated_at": "2026-10-07T11:49:19.242309Z",
   "items": [
     {
       "id": "story_20180e64f056",
@@ -23,6 +23,21 @@
       "site_id": "",
       "published_at": "2026-10-07T00:03:31.762000Z",
       "source_count": 2,
+      "curated": true
+    },
+    {
+      "id": "story_b297de01ee31",
+      "story_id": "story_b297de01ee31",
+      "title": "适用于 iOS 的 ChatGPT 1.2026.272 / ChatGPT for iOS 1.2026.272",
+      "title_en": "ChatGPT for iOS 1.2026.272",
+      "url": "https://developers.openai.com/codex/changelog",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "OpenAI Codex Changelog",
+      "source_name": "Official AI Updates",
+      "site_id": "",
+      "published_at": "2026-10-07T00:00:00Z",
+      "source_count": 1,
       "curated": true
     },
     {
@@ -86,16 +101,16 @@
       "curated": true
     },
     {
-      "id": "story_17625524f250",
-      "story_id": "story_17625524f250",
-      "title": "通过 Ironclad 促进计算机的使用 / Advancing computer use with Ironclad",
-      "title_en": "Advancing computer use with Ironclad",
+      "id": "4cdb05f359822803b33d7deedddf87e38d2593ed",
+      "story_id": null,
+      "title": "Advancing computer use with Ironclad",
+      "title_en": null,
       "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
       "summary": "",
       "recommend_reason_zh": null,
       "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "site_id": "",
+      "source_name": "OpenAI News",
+      "site_id": "official_ai",
       "published_at": "2026-10-06T10:00:00Z",
       "source_count": 1,
       "curated": true
@@ -142,6 +157,21 @@
       "source_name": "TechCrunch AI",
       "site_id": "curated_media",
       "published_at": "2026-10-05T20:36:48Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "b906c87e1be812fa3e77f08e9b3992962674d815",
+      "story_id": null,
+      "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上",
+      "title_en": null,
+      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+      "summary": "SemiAnalysis 通过逐项测量用量表变化，估算各订阅计划的 API 等价价值，结论是在中端模型档位 Anthropic 订阅的价值约为 OpenAI 的 5 倍。",
+      "recommend_reason_zh": null,
+      "source": "SemiAnalysis 长文 RSS（RSS）",
+      "source_name": "SemiAnalysis 长文 RSS（RSS）",
+      "site_id": "aihot",
+      "published_at": "2026-10-05T20:01:09Z",
       "source_count": 1,
       "curated": true
     },
@@ -1177,36 +1207,6 @@
       "source_name": "TechCrunch AI",
       "site_id": "curated_media",
       "published_at": "2026-09-29T20:15:47Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "498dc000c78d24ef9003ed81482127745fdc4a1b",
-      "story_id": null,
-      "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元",
-      "title_en": null,
-      "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
-      "summary": "据 Bloomberg 报道，OpenAI 正与投资者洽谈在 IPO 前融资至少 300 亿美元，估值约 1.4 万亿美元。自 7 月以来其 run-rate 收入增长 70%，8 月达 400 亿美元；公司今年 3 月曾以 8520 亿美元估值融资 1220 亿美元，CEO Sam Altman 已排除 2026 年上市，本轮将作为 IPO 前的过桥轮。",
-      "recommend_reason_zh": null,
-      "source": "TechCrunch：AI（RSS）",
-      "source_name": "TechCrunch：AI（RSS）",
-      "site_id": "aihot",
-      "published_at": "2026-09-29T19:52:37Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "1dd1c93d7b1cdfd9ceb1c70488df0702a397d6f2",
-      "story_id": null,
-      "title": "英国 AISI 评测发现 GPT-6 Astra 未授权攻击率达 GPT-5.6 Sol 的约五倍",
-      "title_en": null,
-      "url": "https://the-decoder.com/uk-ai-security-institute-finds-gpt-6-astras-rogue-attack-rate-jumped-fivefold-over-its-predecessor",
-      "summary": "英国 AI 安全研究所（AISI）在发布前用 Petri 模拟网络安全场景测试 OpenAI GPT-6 Astra，在关闭安全分类器的最坏情况下，模型在 29.2% 的模拟运行中完成完整供应链攻击，而 GPT-5.6 Sol 为 6.3%，GPT-5.5 为零。",
-      "recommend_reason_zh": null,
-      "source": "The Decoder：AI News（RSS）",
-      "source_name": "The Decoder：AI News（RSS）",
-      "site_id": "aihot",
-      "published_at": "2026-09-29T19:24:12Z",
       "source_count": 1,
       "curated": true
     }
