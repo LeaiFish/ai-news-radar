@@ -4,21 +4,21 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
-  "generated_at": "2026-10-08T07:25:59.374387Z",
+  "generated_at": "2026-10-08T12:04:25.445168Z",
   "daily_dates": [
     "2026-10-05",
     "2026-10-06",
     "2026-10-07",
     "2026-10-08"
   ],
-  "story_count": 786,
-  "unique_story_count": 726,
+  "story_count": 795,
+  "unique_story_count": 773,
   "counts": {
     "by_company_topic": {
       "anthropic": 114,
       "apple": 1,
       "cursor": 2,
-      "deepseek": 18,
+      "deepseek": 17,
       "doubao": 2,
       "google-gemini": 34,
       "huggingface": 5,
@@ -26,8 +26,8 @@
       "meta-llama": 2,
       "microsoft": 11,
       "minimax": 4,
-      "nvidia": 11,
-      "openai": 150,
+      "nvidia": 12,
+      "openai": 147,
       "openrouter": 6,
       "perplexity": 5,
       "qwen": 2,
@@ -35,20 +35,20 @@
       "zhipu": 1
     },
     "by_lens_topic": {
-      "agent-ecosystem": 116,
+      "agent-ecosystem": 114,
       "monetization": 13,
       "product-entry": 1,
-      "workplace": 21
+      "workplace": 23
     },
     "by_importance_label": {
-      "值得关注": 698,
+      "值得关注": 703,
       "多源热议": 10,
-      "官方更新": 26,
-      "行业动态": 52
+      "官方更新": 24,
+      "行业动态": 58
     },
     "by_source_count_bucket": {
-      "1": 747,
-      "2": 27,
+      "1": 754,
+      "2": 29,
       "3+": 12
     }
   },
@@ -57,7 +57,7 @@
       "story_id": "story_6557dda4a6cd",
       "title": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI / GPT-6 and Intelligent UI for everyone",
       "url": "https://openai.com/index/gpt-6-for-everyone",
-      "importance_score": 0.9043,
+      "importance_score": 0.8947,
       "importance_label": "官方更新",
       "source_count": 4,
       "archive_date": "2026-10-08",
@@ -106,19 +106,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_6d9b4cd327fa",
-      "title": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移 / AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-      "url": "https://aihot.news/agent?tab=api",
-      "importance_score": 0.838,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_3d2baa621386",
       "title": "Playground 简介：创建和玩自定义游戏 / Introducing Playground: Create and play custom games",
       "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform",
@@ -145,22 +132,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7656d3b30e51",
-      "title": "GitHub Copilot 中的Claude俳句 5.5 / Claude Haiku 5.5 in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
-      "importance_score": 0.8331,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "anthropic",
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_ae3c4f5c0420",
       "title": "安全概览中的代码扫描 AI Scan 启用状态 / Code scanning AI Scan enablement status in security overview",
       "url": "https://github.blog/changelog/2026-10-06-code-scanning-ai-scan-enablement-status-in-security-overview",
@@ -170,6 +141,19 @@
       "archive_date": "2026-10-06",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_6d9b4cd327fa",
+      "title": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移 / AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
+      "url": "https://aihot.news/agent?tab=api",
+      "importance_score": 0.8272,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_e1332c8f3158",
@@ -185,27 +169,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d56d7999a319",
-      "title": "边缘的多模态开放 d1 决策模型 / Multimodal open d1 decision models for the edge",
-      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
-      "importance_score": 0.8259,
+      "story_id": "story_7656d3b30e51",
+      "title": "GitHub Copilot 中的Claude俳句 5.5 / Claude Haiku 5.5 in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+      "importance_score": 0.8231,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-08",
       "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b9d295c686cc",
-      "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
-      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-      "importance_score": 0.8216,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
+        "anthropic",
         "microsoft"
       ],
       "lens_topics": [
@@ -229,19 +201,17 @@
       ]
     },
     {
-      "story_id": "story_58aa148af326",
-      "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
-      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-      "importance_score": 0.8156,
+      "story_id": "story_d56d7999a319",
+      "title": "边缘的多模态开放 d1 决策模型 / Multimodal open d1 decision models for the edge",
+      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "importance_score": 0.8165,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-08",
       "company_topics": [
-        "microsoft"
+        "huggingface"
       ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_12fb01fcc738",
@@ -259,39 +229,34 @@
       ]
     },
     {
-      "story_id": "story_e084383f2689",
-      "title": "秘密保护必须与软件一起扩展 / Secret protection must scale with software",
-      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
-      "importance_score": 0.8117,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a5dc5a4d2dcb",
-      "title": "用于泄露秘密检测的专用模型 / Purpose-built model for leaked secret detection",
-      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
-      "importance_score": 0.8085,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_463b6db0777c",
-      "title": "帮助青少年学习、规划和塑造人工智能的未来 / Helping teens learn, plan, and shape the future of AI",
-      "url": "https://openai.com/index/teens-learn-and-plan",
-      "importance_score": 0.808,
+      "story_id": "story_b9d295c686cc",
+      "title": "GitHub Copilot 的本地沙箱现已普遍可用 / Local sandboxing for GitHub Copilot now generally available",
+      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "importance_score": 0.8123,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-08",
       "company_topics": [
-        "openai"
+        "microsoft"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_58aa148af326",
+      "title": "在 GitHub Copilot CLI 中发现本地模型 / Discover local models in GitHub Copilot CLI",
+      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
+      "importance_score": 0.8063,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_45464a737294",
@@ -312,6 +277,17 @@
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e084383f2689",
+      "title": "秘密保护必须与软件一起扩展 / Secret protection must scale with software",
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
+      "importance_score": 0.8022,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
       "company_topics": [],
       "lens_topics": []
     },
@@ -353,6 +329,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a5dc5a4d2dcb",
+      "title": "用于泄露秘密检测的专用模型 / Purpose-built model for leaked secret detection",
+      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+      "importance_score": 0.7992,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_b4c0a1b83afc",
       "title": "ReviewBench：人工智能代码审查的开放基准 / ReviewBench: An open benchmark for AI code review",
       "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
@@ -360,6 +347,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8b891e5bed56",
+      "title": "Crowdstrike 报告疑似单人使用 AI 渗透工具攻击多家韩国银行 / AI-powered hacking tools enabled a likely single attacker to breach multiple South Korean banks",
+      "url": "https://the-decoder.com/ai-powered-hacking-tools-enabled-a-likely-single-attacker-to-breach-multiple-south-korean-banks",
+      "importance_score": 0.7908,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
       "company_topics": [],
       "lens_topics": []
     },
@@ -392,31 +390,14 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d018af5dc3ed",
-      "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度 / We’re rolling out monthly Claude Platform API credits for Max and Team plans:",
-      "url": "https://x.com/ClaudeDevs/status/2107895957933408429",
-      "importance_score": 0.7786,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_cb02882597ae",
-      "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
-      "importance_score": 0.7736,
-      "importance_label": "官方更新",
+      "story_id": "story_aab4210bc456",
+      "title": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust / Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
+      "url": "https://github.com/pingdotgg/ts-rust",
+      "importance_score": 0.7775,
+      "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-08",
-      "company_topics": [
-        "anthropic"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -444,10 +425,121 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_d018af5dc3ed",
+      "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度 / We’re rolling out monthly Claude Platform API credits for Max and Team plans:",
+      "url": "https://x.com/ClaudeDevs/status/2107895957933408429",
+      "importance_score": 0.7689,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_d57a6088a0e4",
+      "title": "德国环保搜索引擎Ecosia弃用Mistral，转投中国开源模型：欧洲自主梦撞上现实",
+      "url": "https://www.aibase.com/news/31475",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9088ec18d8d0",
+      "title": "阿里蔡崇信:AI将转向隐性基础设施，知识工作者TAM达50万亿美元",
+      "url": "https://www.aibase.com/news/31474",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_78a725ddd1ec",
+      "title": "腾讯 WorkBuddy 上线独立文件浏览器！本地文档可直接呼叫 AI 处理",
+      "url": "https://www.aibase.com/news/31478",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_67b66df75035",
+      "title": "阶跃首款大模型原生智能体手机定档：一句话调度跑腿，拍张海报就帮你请假",
+      "url": "https://www.aibase.com/news/31479",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_54de542800d6",
+      "title": "谷歌把AI搜索塞进手机：EmbeddingGemma2 开源，不到600MB断网照样搜图文音视频",
+      "url": "https://www.aibase.com/news/31476",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-08",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cb02882597ae",
+      "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+      "importance_score": 0.764,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-08",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_34879e2db3e2",
+      "title": "Mistral Large 4 上线 OpenRouter 公测：1T 参数、512K 上下文 / Le Chonk has arrived 🐈",
+      "url": "https://x.com/OpenRouter/status/2107471559040635360",
+      "importance_score": 0.7616,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-06",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0366a3557ad7",
+      "title": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑 / Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+      "url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
+      "importance_score": 0.7602,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-07",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_ed67401df687",
       "title": "谷歌调整Gemini订阅策略:10月9日起免费版仅留Flash-Lite，付费阶梯进一步拉开",
       "url": "https://www.aibase.com/news/31471",
-      "importance_score": 0.7676,
+      "importance_score": 0.7559,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-08",
@@ -462,112 +554,11 @@
       "story_id": "story_beb369bc30ac",
       "title": "Manus 母公司完成新一轮超5亿美元融资，腾讯红杉继续加码",
       "url": "https://www.aibase.com/news/31468",
-      "importance_score": 0.7676,
+      "importance_score": 0.7559,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-08",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_bad8b19b631e",
-      "title": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-      "url": "https://www.aibase.com/news/31469",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "deepseek",
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b9c921b27fed",
-      "title": "微软重磅发布全新英伟达芯片 AI PC：搭载 RTX Spark 芯片与全新 Windows 11，起售价 2，600 美元",
-      "url": "https://www.aibase.com/news/31463",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8476dd0605d1",
-      "title": "PFN发布PLaMo 3 Translate 31B模型，翻译实力叫板顶尖巨头",
-      "url": "https://www.aibase.com/news/31470",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_82e34aba148b",
-      "title": "Anthropic 重磅发布 Claude Haiku 5.5！价格暴降 90% 但面临隐性成本",
-      "url": "https://www.aibase.com/news/31467",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8219e5df5a3e",
-      "title": "WorkBuddy上线独立文件浏览器:本地文件右键「打开方式」直接调用AI",
-      "url": "https://www.aibase.com/news/31472",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6c949981cab1",
-      "title": "独角兽诞生！估值 15 亿美元的开源黑马如何靠AI Agent收割企业级市场？",
-      "url": "https://www.aibase.com/news/31462",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_59b2dc20bb47",
-      "title": "美国地方媒体组团起诉微软OpenAI：数万篇文章被喂进模型，一文钱没给",
-      "url": "https://www.aibase.com/news/31466",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3dba4140caff",
-      "title": "非营利组织发布新报告：ChatGPT 青少年模式安全风险过高  ​",
-      "url": "https://www.aibase.com/news/31461",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-08",
-      "company_topics": [
-        "openai"
-      ],
       "lens_topics": []
     }
   ]
