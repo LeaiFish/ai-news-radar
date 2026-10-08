@@ -3,12 +3,12 @@
   "name": "部署工程",
   "description": "把模型跑起来：推理优化、显存与成本、Serving 与基础设施。",
   "group": "tech",
-  "item_count": 4,
-  "listed_count": 4,
+  "item_count": 3,
+  "listed_count": 3,
   "latest_title": "如何在单张 RTX 5090 上用 MiniMax H3 生成实时视频 / How I Generated Live Video with MiniMax H3 on a Single GPU",
   "latest_published_at": "2026-10-08T19:01:22Z",
   "items_url": "data/topics/inference.json",
-  "generated_at": "2026-10-08T19:58:47.224756Z",
+  "generated_at": "2026-10-08T22:06:58.291960Z",
   "items": [
     {
       "id": "story_6e2cc0057ae4",
@@ -54,21 +54,6 @@
       "published_at": "2026-10-08T00:00:00Z",
       "source_count": 1,
       "curated": true
-    },
-    {
-      "id": "story_3a4d44c4d7a1",
-      "story_id": "story_3a4d44c4d7a1",
-      "title": "Google发布开源多模态向量模型",
-      "title_en": null,
-      "url": "https://waytoagi.feishu.cn/wiki/Al1cw6cjCiOqv1kX99Xcqibfnud?from=from_copylink",
-      "summary": "10月6日，Google DeepMind 发布了开放多模态 embedding 模型，可将文本、代码、图像、音视频映射至同一向量空间，上下文提升至 8K。模块化设计搭配向量压缩技术，能在边缘设备轻量化部署。它覆盖 RAG、素材检索、分类聚类场景，主流框架均可接入，文中还有完整调用示例、微调方案和工程避坑指南，帮你快速落地隐私可控的跨模态检索应用。",
-      "recommend_reason_zh": null,
-      "source": "社区更新 · 2026-10-07",
-      "source_name": "WaytoAGI",
-      "site_id": "",
-      "published_at": "2026-10-07T20:00:18.463510Z",
-      "source_count": 1,
-      "curated": false
     }
   ]
 }
