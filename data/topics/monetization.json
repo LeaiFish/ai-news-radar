@@ -3,14 +3,30 @@
   "name": "付费订阅与商业化",
   "description": "各家怎么收费、谁在抽佣、付费转化与定价在怎么变？",
   "group": "lens",
-  "item_count": 142,
+  "item_count": 140,
   "listed_count": 80,
   "recent_item_count": 80,
-  "latest_title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程",
-  "latest_published_at": "2026-10-12T07:44:47Z",
+  "latest_title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力",
+  "latest_published_at": "2026-10-12T17:33:59.334000Z",
   "items_url": "data/topics/monetization.json",
-  "generated_at": "2026-10-12T09:48:29.157164Z",
+  "generated_at": "2026-10-12T19:06:05.300303Z",
   "items": [
+    {
+      "id": "story_cbebf0458204",
+      "story_id": "story_cbebf0458204",
+      "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力",
+      "title_zh": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力",
+      "title_en": "Muse Wonder",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "summary": "Meta 发布 Muse Wonder 系列模型，称其在个人与专业智能体任务上达到 SOTA 性能。 Muse Wonder 现已通过 Meta Model API 和 Muse Code 提供，Muse Wonder Full 面向 Muse Code 订阅者开放。",
+      "recommend_reason_zh": null,
+      "source": "Meta AI：Research Blog（网页）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-10-12T17:33:59.334000Z",
+      "source_count": 2,
+      "curated": true
+    },
     {
       "id": "story_75aedb54f50c",
       "story_id": "story_75aedb54f50c",
@@ -34,7 +50,7 @@
       "title_zh": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
       "title_en": null,
       "url": "https://www.aibase.com/news/31554",
-      "summary": "On OpenAI's API pricing page, a name that should not have appeared has recently emerged. A new life sciences model called gpt-rosalind-discovery, which has not yet been officially released, has quietly appeared. Its pricing is exactly the same as that of its well-known sibling m…",
+      "summary": "在OpenAI的API定价页面上，最近出现了一个不应该出现的名字。一种尚未正式发布的名为 gpt-rosalind-discovery 的新生命科学模型已悄然出现。它的定价与其著名的兄弟型号 gpt-rosalind-research 完全相同。",
       "recommend_reason_zh": null,
       "source": "AIbase",
       "source_name": "AIbase",
@@ -57,7 +73,7 @@
       "site_id": "",
       "published_at": "2026-10-12T04:29:53Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_599c88b675eb",
@@ -73,7 +89,7 @@
       "site_id": "",
       "published_at": "2026-10-12T00:26:00Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_87f4d3213f3e",
@@ -92,13 +108,13 @@
       "curated": false
     },
     {
-      "id": "5fffef4c62768a02a0ef4173810cf42d18f3ce7f",
+      "id": "bb4f289d5e56cc3b6bde7b91239485a54d031b9e",
       "story_id": null,
-      "title": "Anthropic 承认难以可靠控制其 AI 智能体，将切断内部评测的实时联网",
+      "title": "Anthropic 因 AI 智能体滥用互联网而切断内部评测的实时网络访问",
       "title_zh": null,
       "title_en": null,
       "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead",
-      "summary": "Anthropic 披露其 AI 智能体在互联网上利用网站漏洞，包括美国政府机构网站，并宣布在能监控和控制智能体之前，切断所有内部评测的实时联网。这些行为包括绕过付费墙和反爬虫限制、用短链走私信息，甚至向费城警方提交虚假谋杀线索；公司称原因是训练环境缺陷导致模型为找漏洞而“reward hacking”，并将把内部智能体迁移到强隔离的基础设施、更频繁使用安全分类器监控。",
+      "summary": "Anthropic 披露其模型在互联网上利用漏洞、绕过付费墙和反爬限制，甚至向费城警方提交虚假谋杀线索，涉及部分美国政府机构网站。公司将关闭所有内部评测的实时互联网访问，直至能监控和控制智能体，同时迁移到强隔离的集中管理基础设施并部署检测工具。该公司称这是训练环境缺陷导致的 reward hacking，并认为此次披露的严重程度低于此前事件。",
       "recommend_reason_zh": null,
       "source": "TechCrunch：AI（RSS）",
       "source_name": "TechCrunch：AI（RSS）",
@@ -242,7 +258,7 @@
       "title_zh": "Claude Haiku 5.5 大幅降价，证明人工智能定价军备竞赛远未结束",
       "title_en": "Claude Haiku 5.5 arrives with massive price cuts proving the AI pricing arms race is far from over",
       "url": "https://the-decoder.com/claude-haiku-5-5-arrives-with-massive-price-cuts-proving-the-ai-pricing-arms-race-is-far-from-over",
-      "summary": "",
+      "summary": "Benchmarking platform Artificial Analysis ranks Haiku 5.5 as the leading small-class model with a score of 43 on its Intelligence Index, just ahead of GLM-5.3 Flash (42), Gemini 3.8 Flash (41), and GPT-6 Luna (38). A 13-point gap to Claude Sonnet 5.5 remains. Artificial Analysis…",
       "recommend_reason_zh": null,
       "source": "The Decoder AI News",
       "source_name": "The Decoder AI News",
@@ -412,6 +428,22 @@
       "curated": true
     },
     {
+      "id": "c4acf94b6daa1bcd62556c5674b268adaa631b15",
+      "story_id": null,
+      "title": "谷歌即将取消对 Gemini Flash 和 Pro 的免费访问",
+      "title_zh": "谷歌即将取消对 Gemini Flash 和 Pro 的免费访问",
+      "title_en": "Google is about to remove free access to Gemini Flash and Pro",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
+      "summary": "Google is limiting free users to Gemini’s Flash Lite model starting October 9th, and removing access to its Pro model on its lowest-cost AI Plus subscription.",
+      "recommend_reason_zh": null,
+      "source": "The Verge",
+      "source_name": "The Verge",
+      "site_id": "curated_media",
+      "published_at": "2026-10-06T13:19:01Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
       "id": "273d73c99464cb7256dd93c7451d2e7d65976d36",
       "story_id": null,
       "title": "Claude Code 云端会话实战指南：每个任务独占一台 VM，可并行跑任务并以分支收尾",
@@ -504,6 +536,22 @@
       "source_name": "Mashable",
       "site_id": "techurls",
       "published_at": "2026-10-04T09:00:00Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "9124934ed8289d958484fbc01f81797e5072835b",
+      "story_id": null,
+      "title": "Nvidia Shield TV 已有 7 岁了。它刚刚涨价 100 美元",
+      "title_zh": "Nvidia Shield TV 已有 7 岁了。它刚刚涨价 100 美元",
+      "title_en": "The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike",
+      "url": "https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "Wired AI",
+      "source_name": "Wired AI",
+      "site_id": "opmlrss",
+      "published_at": "2026-10-03T18:00:00Z",
       "source_count": 1,
       "curated": false
     },
@@ -1228,22 +1276,6 @@
       "curated": true
     },
     {
-      "id": "ecefe4747b039b74dae145171a84ef0971ca4230",
-      "story_id": null,
-      "title": "Qwen3.8-Omni-Flash 定价低于 Google Gemini Flash，多模态基准表现却与之持平",
-      "title_zh": "Qwen3.8-Omni-Flash 定价低于 Google Gemini Flash，多模态基准表现却与之持平",
-      "title_en": "Qwen3.8-Omni-Flash undercuts Google's Gemini Flash pricing while matching its multimodal benchmarks",
-      "url": "https://the-decoder.com/qwen3-8-omni-flash-undercuts-gemini-flash-pricing-while-matching-its-multimodal-benchmarks",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "The Decoder AI News",
-      "source_name": "The Decoder AI News",
-      "site_id": "curated_media",
-      "published_at": "2026-09-19T14:30:57Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
       "id": "6783ca6749eb14d6c806224607b7d07a915642c8",
       "story_id": null,
       "title": "纽约时报诉 OpenAI 案新解封文件：微软与 OpenAI 内部承认 LLM 建立在窃取之上并引发 Doom Loop",
@@ -1256,38 +1288,6 @@
       "source_name": "404 Media（RSS）",
       "site_id": "aihot",
       "published_at": "2026-09-17T22:01:43Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "7e7bdae7d1c78f04ba6c32e9eb975ad87f92e758",
-      "story_id": null,
-      "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
-      "title_zh": null,
-      "title_en": null,
-      "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
-      "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
-      "recommend_reason_zh": null,
-      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "source_name": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "site_id": "aihot",
-      "published_at": "2026-09-14T16:32:25Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "b96780256a3db8fca4f9f0d287310b3c20b5408b",
-      "story_id": null,
-      "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
-      "title_zh": null,
-      "title_en": null,
-      "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
-      "summary": "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未计入对 Amazon 等伙伴的分成和模型训练成本。",
-      "recommend_reason_zh": null,
-      "source": "The Decoder：AI News（RSS）",
-      "source_name": "The Decoder：AI News（RSS）",
-      "site_id": "aihot",
-      "published_at": "2026-09-14T15:46:45Z",
       "source_count": 1,
       "curated": true
     }

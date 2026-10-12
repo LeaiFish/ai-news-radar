@@ -4,41 +4,126 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-12T09:48:29.157164Z",
+  "generated_at": "2026-10-12T19:06:05.300303Z",
   "daily_dates": [
-    "2026-10-12"
+    "2026-10-12",
+    "2026-10-13"
   ],
-  "story_count": 115,
-  "unique_story_count": 115,
+  "story_count": 279,
+  "unique_story_count": 190,
   "counts": {
     "by_company_topic": {
-      "anthropic": 19,
-      "apple": 2,
-      "google-gemini": 5,
-      "kimi": 1,
-      "microsoft": 2,
-      "nvidia": 2,
-      "openai": 12,
-      "qwen": 1,
-      "xai": 3
+      "anthropic": 41,
+      "apple": 4,
+      "deepseek": 1,
+      "google-gemini": 9,
+      "kimi": 3,
+      "meta-llama": 2,
+      "microsoft": 8,
+      "nvidia": 5,
+      "openai": 26,
+      "qwen": 3,
+      "xai": 7,
+      "zhipu": 1
     },
     "by_lens_topic": {
-      "agent-ecosystem": 18,
-      "monetization": 4,
-      "workplace": 3
+      "agent-ecosystem": 51,
+      "monetization": 9,
+      "workplace": 8
     },
     "by_importance_label": {
-      "值得关注": 86,
-      "多源热议": 2,
-      "行业动态": 27
+      "值得关注": 215,
+      "多源热议": 6,
+      "官方更新": 2,
+      "行业动态": 56
     },
     "by_source_count_bucket": {
-      "1": 110,
-      "2": 3,
-      "3+": 2
+      "1": 262,
+      "2": 11,
+      "3+": 6
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_1327604ea90f",
+      "title": "适合初学者的 GitHub Copilot 应用程序：如何向 Copilot 教授您的代码库 / GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+      "importance_score": 0.8485,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_7924bc1de44f",
+      "title": "Push attribution for commits in limited public preview",
+      "url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
+      "importance_score": 0.8374,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_41c5d4380fc2",
+      "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "importance_score": 0.8106,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cbebf0458204",
+      "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力 / Muse Wonder",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "importance_score": 0.8097,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "meta-llama"
+      ],
+      "lens_topics": [
+        "monetization",
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_b6844ce9c244",
+      "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+      "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+      "importance_score": 0.7837,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f0a7b95fb5f2",
+      "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+      "url": "https://x.com/arena/status/2109706854700044523",
+      "importance_score": 0.783,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
     {
       "story_id": "story_b41ff3f56559",
       "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审 / Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
@@ -365,6 +450,32 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b56e48a5a98d",
+      "title": "微软发布自研芯片 Maia 300 并将大规模扩展 Maia 推理部署 / Today we are announcing our biggest bet yet on our own silicon.",
+      "url": "https://x.com/satyanadella/status/2109631106404487523",
+      "importance_score": 0.7316,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_f5cd9aba7e15",
+      "title": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构 / Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+      "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
+      "importance_score": 0.7308,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_599c88b675eb",
       "title": "AI逆向一切：Brandon Thomas用Claude Opus 5.5重写Adobe七款软件开源，REA项目逼近10万Star",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686995&idx=1&sn=cc40a3488a2ea7652d2ab589056f40b4",
@@ -439,110 +550,6 @@
       "archive_date": "2026-10-12",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_69b0e68fc7fa",
-      "title": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel. - Napkin math somewher...",
-      "url": "https://x.com/karpathy/status/2109361546505966046",
-      "importance_score": 0.6191,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2be328479786",
-      "title": "\"I'm not at a point where I trust the agent, especially with stuff that people are using.\" From Micky (@Rasmic), who's taught 100K+ people to build with AI: \"The manual review is like the final step. All the work's do...",
-      "url": "https://x.com/petergyang/status/2109433961223180517",
-      "importance_score": 0.613,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_ffe823195611",
-      "title": "HomeView 会成为苹果第一个成功的智能家居产品吗？ / Will the HomeView be Apple’s first smart home success?",
-      "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success",
-      "importance_score": 0.5939,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a3f61e634f64",
-      "title": "这些高管认为语音 AI 尚未达到 ChatGPT 时刻 / These execs think voice AI hasn’t reached its ChatGPT moment yet",
-      "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet",
-      "importance_score": 0.5915,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a827621c476a",
-      "title": "距离 TechCrunch Disrupt 2026 还有 48 小时——直接聆听未来发展者的心声 / 48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next",
-      "url": "https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next",
-      "importance_score": 0.5891,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5983138e3505",
-      "title": "研究发现，人工智能代理夸大了他们的结果，距离自主研究还很远 / AI agents overstate their results and remain far from autonomous research, study finds",
-      "url": "https://the-decoder.com/ai-agents-overstate-their-results-and-remain-far-from-autonomous-research-study-finds",
-      "importance_score": 0.5868,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_790340c5eea3",
-      "title": "人工智能行业能否通过废除保密协议来说服数据中心反对者？ / Can the AI industry persuade data center opponents by getting rid of NDAs?",
-      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas",
-      "importance_score": 0.5847,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_fb7e34d425e3",
-      "title": "研究发现，人工智能代理团队浪费大量代币以获得几乎无法衡量的质量收益 / AI agent teams waste massive tokens for barely measurable quality gains, research finds",
-      "url": "https://the-decoder.com/ai-agent-teams-waste-massive-tokens-for-barely-measurable-quality-gains-research-finds",
-      "importance_score": 0.5823,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }
