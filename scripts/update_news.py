@@ -6111,11 +6111,11 @@ def add_bilingual_fields(
         if title and url and has_cjk(title):
             zh_by_url[url] = title
 
-    translated_now_ai = 0
-    translated_now_all = 0
+    translation_attempts_ai = 0
+    translation_attempts_all = 0
 
     def enrich(item: dict[str, Any], allow_translate: bool, is_ai_pool: bool) -> dict[str, Any]:
-        nonlocal translated_now_ai, translated_now_all
+        nonlocal translation_attempts_ai, translation_attempts_all
         out = dict(item)
         title = str(out.get("title") or "").strip()
         url = normalize_url(str(out.get("url") or ""))
@@ -6171,26 +6171,22 @@ def add_bilingual_fields(
                     cache_hit_key = title
         if not zh_title and allow_translate:
             budget = max_new_translations if is_ai_pool else max_new_translations_all
-            translated_now = translated_now_ai if is_ai_pool else translated_now_all
+            translated_now = translation_attempts_ai if is_ai_pool else translation_attempts_all
             if translated_now < budget:
+                if is_ai_pool:
+                    translation_attempts_ai += 1
+                else:
+                    translation_attempts_all += 1
                 translation_input = english_probe
                 tr = translate_to_zh_deepseek(translation_input)
                 if tr and (is_valid_zh_translation(title, tr) or (is_agentmail_item and is_acceptable_agentmail_translation(tr))):
                     zh_title = repair_zh_title_translation(title, tr)
                     cache[ZH_CACHE_DS_PREFIX + title] = zh_title
-                    if is_ai_pool:
-                        translated_now_ai += 1
-                    else:
-                        translated_now_all += 1
                 else:
                     tr = translate_to_zh_cn(session, translation_input)
                     if tr and (is_valid_zh_translation(title, tr) or (is_agentmail_item and is_acceptable_agentmail_translation(tr))):
                         zh_title = repair_zh_title_translation(title, tr)
                         cache[title] = zh_title
-                        if is_ai_pool:
-                            translated_now_ai += 1
-                        else:
-                            translated_now_all += 1
 
         if zh_title:
             zh_title = repair_zh_title_translation(title, zh_title)

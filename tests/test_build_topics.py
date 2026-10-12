@@ -55,6 +55,22 @@ def test_topic_translation_backfill_is_bounded_and_uses_only_recent_matches(tmp_
     assert json.loads((tmp_path / "title-zh-cache.json").read_text())["Kimi new"] == "Kimi 最新消息"
 
 
+def test_domestic_titles_are_translated_before_newer_overseas_news(tmp_path, monkeypatch):
+    from scripts import update_news
+    rows = [
+        {"title": "OpenAI release", "published_at": "2026-10-12T00:00:00Z"},
+        {"title": "Qwen release", "published_at": "2026-10-10T00:00:00Z"},
+    ]
+    (tmp_path / "archive.json").write_text(json.dumps({"generated_at": "2026-10-12T00:00:00Z", "items": rows}))
+    config = tmp_path / "config.json"
+    config.write_text(json.dumps({"groups": [{"id": "company"}], "topics": [topic(), topic(id="qwen", keywords=["Qwen"])]}))
+    def translate(items, broad, session, cache, limit):
+        assert [row["title"] for row in items] == ["Qwen release"]
+        return [{"title_zh": "千问发布模型"}], [], cache
+    monkeypatch.setattr(update_news, "add_bilingual_fields", translate)
+    assert backfill_topic_titles(tmp_path, config, 1) == 1
+
+
 def test_company_history_preserves_article_ids_and_merges_tracking_variants():
     rows = [
         {"title": "Qwen release", "url": "https://qwen.ai/blog?id=first"},

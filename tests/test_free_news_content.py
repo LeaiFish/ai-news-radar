@@ -63,6 +63,18 @@ def test_paid_processing_stays_off_even_with_a_key(monkeypatch):
     assert update_news.generate_recommend_reason_deepseek("Model release", "Full text") is None
 
 
+def test_failed_free_translations_still_consume_the_attempt_budget(monkeypatch):
+    monkeypatch.setenv("RADAR_FREE_ONLY", "1")
+    calls = []
+    def unavailable(session, title):
+        calls.append(title)
+        return None
+    monkeypatch.setattr(update_news, "translate_to_zh_cn", unavailable)
+    rows = [{"title": f"A new model release number {n}", "url": f"https://example.com/{n}"} for n in range(5)]
+    update_news.add_bilingual_fields(rows, [], None, {}, max_new_translations=2)
+    assert len(calls) == 2
+
+
 def test_rss_content_is_preserved_as_source_excerpt():
     text = "The model has public weights, documented deployment steps, and independently reproducible evaluation results."
     entry = {"title": "Model release", "content": [{"value": "<p>" + text + "</p>"}]}

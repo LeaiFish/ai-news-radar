@@ -25,6 +25,7 @@ CJK_RE = re.compile(r"[\u4e00-\u9fff]")
 CURATED_SITE_IDS = {"official_ai", "aihot", "curated_media", "aibreakfast"}
 MAX_SUMMARY_CHARS = 280
 DEFAULT_MAX_ITEMS = 80
+DOMESTIC_TOPIC_IDS = {"doubao", "qwen", "hunyuan", "quark", "kimi", "deepseek", "minimax", "zhipu"}
 
 TEXT_FIELDS = (
     "title",
@@ -498,7 +499,10 @@ def backfill_topic_titles(data_dir: Path, config_path: Path, limit: int) -> int:
     start = end - timedelta(days=30)
     candidates = []
     seen = set()
-    for record in sorted(pools["archive"], key=record_time_iso, reverse=True):
+    domestic_topics = [t for t in config["topics"] if t["id"] in DOMESTIC_TOPIC_IDS]
+    def translation_priority(record):
+        return (any(record_matches_topic(record, t) for t in domestic_topics), record_time_iso(record))
+    for record in sorted(pools["archive"], key=translation_priority, reverse=True):
         title = str(record.get("title") or "")
         stamp = parse_time(record_time_iso(record))
         if not title or title in seen or record.get("title_zh") or CJK_RE.search(title):
