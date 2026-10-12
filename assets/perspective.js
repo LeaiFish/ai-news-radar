@@ -703,7 +703,6 @@
   function topicRow(topic, kind) {
     const count = Number(state.topics.find((row) => row.id === topic.id)?.recent_item_count || 0);
     const tags = [];
-    if (kind === "org") tags.push(DOMESTIC.some((item) => item.id === topic.id) ? "国内" : "海外");
     tags.push(count > 0 ? `近30天 ${count} 条` : "近30天无消息");
     return {
       kind,
@@ -801,9 +800,21 @@
     const section = el("section", "topics-group");
     const head = el("div", "topics-group-head");
     head.append(el("h2", null, group.name || group.id));
-    const grid = el("div", "topics-grid");
-    rows.forEach((row) => grid.append(renderCatalogCard(row)));
-    section.append(head, grid);
+    section.append(head);
+    const appendRows = (label, entries) => {
+      if (!entries.length) return;
+      const block = el("div", "company-region");
+      if (label) block.append(el("h3", "company-region-title", label));
+      const grid = el("div", "topics-grid");
+      entries.forEach((row) => grid.append(renderCatalogCard(row)));
+      block.append(grid);
+      section.append(block);
+    };
+    if (group.id === "company") {
+      const domestic = (row) => DOMESTIC.some((item) => item.id === row.id);
+      appendRows("国内", rows.filter(domestic));
+      appendRows("海外", rows.filter((row) => !domestic(row)));
+    } else appendRows("", rows);
     return section;
   }
 
@@ -1068,7 +1079,7 @@
         body.append(original);
       }
       const summary = String(beat.summary || "").trim();
-      body.append(el("p", "timeline-summary", summary ? shortText(summary, 280) : "来源未提供摘要，点击标题查看原文。"));
+      if (summary) body.append(el("p", "timeline-summary", shortText(summary, 280)));
       if (beat.reason && beat.reason !== summary) body.append(el("p", "timeline-reason", `推荐理由：${beat.reason}`));
       li.append(body);
       list.append(li);

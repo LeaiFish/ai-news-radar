@@ -472,6 +472,17 @@ h1 {
   margin-top: 0;
 }
 
+.company-region-title {
+  margin: 20px 0 0;
+  font-size: 16px;
+  font-weight: 650;
+  color: var(--muted);
+}
+
+.company-region + .company-region {
+  margin-top: 28px;
+}
+
 @media (max-width: 480px) {
   .catalog-tools {
     grid-template-columns: minmax(0, 1fr) 140px;
