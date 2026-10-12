@@ -1037,7 +1037,6 @@
     page = Math.max(1, Math.min(pageCount, page));
     const start = (page - 1) * pageSize;
     const shown = beats.slice(start, start + pageSize);
-    slot.append(el("p", "timeline-more", `近30天 · 第 ${start + 1}–${start + shown.length} 条，共 ${beats.length} 条`));
     const list = el("ol", "timeline");
     let previousDay = "";
     shown.forEach((beat) => {
@@ -1197,7 +1196,7 @@
     const deltaHeading = document.querySelector("#pack-delta h2");
     const factsHeading = document.querySelector("#pack-facts h2");
     if (deltaHeading) deltaHeading.textContent = record.kind === "event" ? "事件进展" : "近30天变化";
-    if (factsHeading) factsHeading.textContent = record.kind === "event" ? "事件相关报道" : "近30天相关消息";
+    if (factsHeading) factsHeading.hidden = true;
     let beats = [];
     if (record.kind === "event") {
       beats = eventBeats(record.story);

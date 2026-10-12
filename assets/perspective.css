@@ -572,6 +572,15 @@ html[data-research-view="pack"] #researchCatalog {
   position: relative;
 }
 
+.timeline-entry:has(+ .timeline-entry)::before {
+  content: "";
+  position: absolute;
+  left: 66px;
+  top: 25px;
+  bottom: -25px;
+  border-left: 1px solid var(--line);
+}
+
 .timeline-day {
   margin: 22px 0 14px;
   font-size: 18px;
@@ -716,6 +725,10 @@ html[data-research-view="pack"] #researchCatalog {
   .timeline .timeline-entry {
     grid-template-columns: 44px minmax(0, 1fr);
     gap: 16px;
+  }
+
+  .timeline-entry:has(+ .timeline-entry)::before {
+    left: 48px;
   }
 
   .timeline-card { padding: 14px; }
