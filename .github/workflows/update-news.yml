@@ -1,13 +1,14 @@
 name: Update AI News Snapshot
 
 on:
+  push:
+    branches: [master]
+    paths:
+      - 'scripts/free_news_content.py'
+      - 'scripts/update_news.py'
+      - 'scripts/build_topics.py'
+      - '.github/workflows/update-news.yml'
   workflow_dispatch:
-    inputs:
-      force_tikhub:
-        description: "Force a paid TikHub refresh even before its normal interval"
-        required: false
-        default: false
-        type: boolean
   schedule:
     # 分时段节奏（2026-08-30 卡尔定，全部 UTC；北京 = UTC+8）：
     # 高峰（北京周一至五 9-12 / 14-18）保持每小时；其余空闲时段 3 小时一轮；深夜 4 小时一轮。
@@ -27,6 +28,8 @@ jobs:
   update:
     timeout-minutes: 40
     runs-on: ubuntu-latest
+    env:
+      RADAR_FREE_ONLY: "1"
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -74,7 +77,7 @@ jobs:
 
       - name: Update data
         env:
-          EMAIL_DIGEST_ENABLED: ${{ secrets.EMAIL_DIGEST_ENABLED || vars.EMAIL_DIGEST_ENABLED }}
+          EMAIL_DIGEST_ENABLED: "0"
           AGENTMAIL_PROVIDER: ${{ vars.AGENTMAIL_PROVIDER }}
           AGENTMAIL_CLI: ${{ vars.AGENTMAIL_CLI }}
           # Body reads are limited to explicitly authorized local/private runs.
@@ -89,9 +92,9 @@ jobs:
           # secrets; optional tuning variables override code defaults.
           # Policy is key-first: a key present => the source runs; ENABLED is
           # optional and only needs setting to 0 to force it off.
-          X_API_ENABLED: ${{ secrets.X_API_ENABLED || vars.X_API_ENABLED }}
+          X_API_ENABLED: "0"
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-          SOCIALDATA_ENABLED: ${{ secrets.SOCIALDATA_ENABLED || vars.SOCIALDATA_ENABLED }}
+          SOCIALDATA_ENABLED: "0"
           SOCIALDATA_API_KEY: ${{ secrets.SOCIALDATA_API_KEY }}
           SOCIALDATA_QUERY: ${{ vars.SOCIALDATA_QUERY }}
           SOCIALDATA_SEARCH_TYPE: ${{ vars.SOCIALDATA_SEARCH_TYPE }}
@@ -104,7 +107,7 @@ jobs:
           SOCIALDATA_LIST_ENABLED: ${{ vars.SOCIALDATA_LIST_ENABLED }}
           SOCIALDATA_LIST_MAX_RESULTS: ${{ vars.SOCIALDATA_LIST_MAX_RESULTS }}
           SOCIALDATA_LIST_EXCLUDE: ${{ vars.SOCIALDATA_LIST_EXCLUDE }}
-          TIKHUB_ENABLED: ${{ secrets.TIKHUB_ENABLED || vars.TIKHUB_ENABLED }}
+          TIKHUB_ENABLED: "0"
           TIKHUB_API_KEY: ${{ secrets.TIKHUB_API_KEY }}
           TIKHUB_API_BASE_URL: ${{ vars.TIKHUB_API_BASE_URL }}
           TIKHUB_QUERY: ${{ vars.TIKHUB_QUERY }}
@@ -114,17 +117,15 @@ jobs:
           TIKHUB_RUN_INTERVAL_HOURS: ${{ vars.TIKHUB_RUN_INTERVAL_HOURS }}
           TIKHUB_RUN_UTC_HOUR: ${{ vars.TIKHUB_RUN_UTC_HOUR }}
           TIKHUB_RUN_UTC_MINUTE_MAX: ${{ vars.TIKHUB_RUN_UTC_MINUTE_MAX }}
-          TIKHUB_FORCE_RUN: ${{ inputs.force_tikhub && '1' || '' }}
+          TIKHUB_FORCE_RUN: "0"
           RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS || 20 }}
           # DeepSeek: powers title enhancement + zh translation fallback in
           # update_news.py itself (persona scoring gets its own copy of these
           # in the step below). All reads in update_news.py use
           # `os.environ.get(...) or default`, so leaving the optional vars
           # unset/empty is safe.
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          DEEPSEEK_API_BASE_URL: ${{ vars.DEEPSEEK_API_BASE_URL }}
-          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
-          TITLE_ENHANCE_MAX_PER_RUN: ${{ vars.TITLE_ENHANCE_MAX_PER_RUN }}
+          TITLE_ENHANCE_MAX_PER_RUN: "0"
+          REASON_ENHANCE_MAX_PER_RUN: "0"
         run: |
           if [ -f feeds/follow.opml ]; then
             python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-20}"
@@ -132,26 +133,18 @@ jobs:
             python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21
           fi
 
-      - name: Persona scoring
-        env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          DEEPSEEK_API_BASE_URL: ${{ vars.DEEPSEEK_API_BASE_URL }}
-          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
-        run: python scripts/persona_score.py --data-dir data
-
       - name: Generate RSS feed
         run: python scripts/generate_feed.py --data-dir data
 
-      - name: Backfill recent topic translations
-        env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          DEEPSEEK_API_BASE_URL: ${{ vars.DEEPSEEK_API_BASE_URL }}
-          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+      - name: Enrich public news with free source excerpts
+        run: python scripts/free_news_content.py --data-dir data --max-fetch 40 --max-translate 20
+
+      - name: Backfill recent topic translations (free only)
         run: python scripts/build_topics.py --data-dir data --translate-max-new 20
 
       - name: Commit and push changes
         env:
-          EMAIL_DIGEST_PUBLISH: ${{ secrets.EMAIL_DIGEST_PUBLISH || vars.EMAIL_DIGEST_PUBLISH }}
+          EMAIL_DIGEST_PUBLISH: "0"
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

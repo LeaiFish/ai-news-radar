@@ -307,6 +307,14 @@ def collect_pools(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
     brief = _load_list(brief_payload, "items")
     latest = _load_list(latest_payload, "items", "items_ai")
     archive = _load_list(archive_payload, "items")
+    summaries = load_json(data_dir / "news-summary-cache.json")
+    for record in stories + brief + latest + archive:
+        url = record.get("url") or record.get("primary_url") or ""
+        cached = summaries.get(url, {})
+        if isinstance(cached, dict) and (cached.get("summary_zh") or cached.get("summary_original")):
+            # Preserve existing editorial summaries; use translated source excerpts for gaps.
+            if not record.get("summary") or not CJK_RE.search(str(record.get("summary"))):
+                record["summary"] = cached.get("summary_zh") or cached["summary_original"]
     translations = load_json(data_dir / "title-zh-cache.json")
     for record in archive:
         title = str(record.get("title") or "")

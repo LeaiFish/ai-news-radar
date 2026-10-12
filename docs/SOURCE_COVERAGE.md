@@ -1,5 +1,31 @@
 # Source Coverage Plan
 
+## Free public-news processing
+
+The public refresh workflow now sets `RADAR_FREE_ONLY=1`: paid X/SocialData/TikHub
+collectors and email ingestion are disabled, model title/reason calls are skipped,
+and the paid persona-scoring step is removed. Existing translated caches are reused;
+new translations use the keyless Google Translate endpoint only. Its availability
+is not guaranteed, and failures retain the original text without a paid fallback.
+
+RSS/Atom descriptions and content snippets are preserved instead of discarded.
+`scripts/free_news_content.py` fills missing recent company-topic excerpts from
+allowlisted public article pages (JSON-LD, article paragraphs or source metadata).
+Requests validate public DNS addresses and every redirect, cap responses at 512 KiB,
+and limit each round to 40 fetch attempts and 20 free translations. Failed fetches
+wait at least one day before retrying. No login, cookies supplied by the maintainer,
+paid reader, LLM, private inbox, local internal metrics or full article body is used.
+
+`data/news-summary-cache.json` stores short original excerpts, optional Chinese
+translations and provenance. Topics reuse them by exact original URL, preserving
+existing editorial summaries. These are source excerpts, not model-written summaries;
+title-only pages and inaccessible bodies remain empty rather than fabricated.
+
+```bash
+RADAR_FREE_ONLY=1 python scripts/free_news_content.py --data-dir data --max-fetch 40 --max-translate 20
+RADAR_FREE_ONLY=1 python scripts/build_topics.py --data-dir data --translate-max-new 20
+```
+
 This project should help ordinary AI enthusiasts scan high-signal updates
 without forcing them to follow noisy timelines or manage many source choices.
 

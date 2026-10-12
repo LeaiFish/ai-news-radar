@@ -611,7 +611,10 @@ def parse_feed_entries_via_xml(feed_xml: bytes) -> list[dict[str, Any]]:
                 if key in seen:
                     continue
                 seen.add(key)
-                out.append({"title": title, "link": link, "published": published})
+                summary = (node.findtext("description") or node.findtext("{*}description")
+                           or node.findtext("{*}summary") or node.findtext("{*}encoded")
+                           or node.findtext("{*}content") or "")
+                out.append({"title": title, "link": link, "published": published, "summary": summary})
     return out
 
 
@@ -1741,6 +1744,22 @@ def parse_openai_codex_changelog_items(page_html: str, now: datetime) -> list[Ra
     return out
 
 
+def feed_entry_summary(entry: dict[str, Any]) -> str:
+    """Keep source-provided RSS prose; do not synthesize facts from its title."""
+    values = [entry.get("summary"), entry.get("description")]
+    content = entry.get("content") or []
+    if isinstance(content, list):
+        values.extend(x.get("value") for x in content if isinstance(x, dict))
+    for value in values:
+        if not isinstance(value, str):
+            continue
+        text = BeautifulSoup(value, "html.parser").get_text(" ", strip=True)
+        text = re.sub(r"\s+", " ", text).strip()
+        if len(text) >= 30 and text.casefold() != str(entry.get("title") or "").casefold():
+            return text[:500]
+    return ""
+
+
 def fetch_feed_as_official_items(
     session: requests.Session,
     feed: dict[str, str],
@@ -1803,6 +1822,7 @@ def fetch_feed_as_official_items(
                 url=link,
                 published_at=published,
                 meta={
+                    "summary": feed_entry_summary(entry),
                     "feed_url": feed_url,
                     "feed_home": feed.get("html_url") or "",
                     "select_tier": feed.get("select_tier") or "",
@@ -1882,6 +1902,7 @@ def parse_curated_ai_media_feed_items(
                 url=link,
                 published_at=published,
                 meta={
+                    "summary": feed_entry_summary(entry),
                     "feed_url": feed_url,
                     "feed_home": feed.get("html_url") or "",
                     "select_tier": feed.get("select_tier") or "",
@@ -3341,7 +3362,7 @@ def fetch_opml_rss(
                 )
                 entries = parsed.entries
                 cn_feed = ".cn/" in feed_url or feed_url.endswith(".cn") or has_cjk(str(feed_title or ""))
-                pending: list[tuple[str, str, datetime]] = []
+                pending: list[tuple[str, str, datetime, str]] = []
                 for entry in entries:
                     title = str(entry.get("title", "")).strip()
                     link = str(entry.get("link", "")).strip()
@@ -3354,13 +3375,13 @@ def fetch_opml_rss(
                     )
                     if not published:
                         continue
-                    pending.append((title, link, published))
+                    pending.append((title, link, published, feed_entry_summary(entry)))
                 corrected_times = correct_feed_published_batch(
-                    [p for _, _, p in pending],
+                    [p for _, _, p, _ in pending],
                     now,
-                    assume_cst_mislabel=cn_feed or any(has_cjk(t) for t, _, _ in pending),
+                    assume_cst_mislabel=cn_feed or any(has_cjk(t) for t, _, _, _ in pending),
                 )
-                for (title, link, _), published in zip(pending, corrected_times):
+                for (title, link, _, source_summary), published in zip(pending, corrected_times):
                     local_items.append(
                         RawItem(
                             site_id="opmlrss",
@@ -3370,6 +3391,7 @@ def fetch_opml_rss(
                             url=link,
                             published_at=published,
                             meta={
+                                "summary": source_summary,
                                 "feed_url": feed_url,
                                 "feed_home": feed.get("html_url") or "",
                             },
@@ -3401,6 +3423,7 @@ def fetch_opml_rss(
                             url=entry.get("link", ""),
                             published_at=published,
                             meta={
+                                "summary": feed_entry_summary(entry),
                                 "feed_url": feed_url,
                                 "feed_home": feed.get("html_url") or "",
                             },
@@ -5886,6 +5909,8 @@ def _get_translation_glossary() -> tuple[list[str], list[tuple[str, str, str | N
 
 
 def translate_to_zh_deepseek(text: str, timeout: int = 20) -> str | None:
+    if os.environ.get("RADAR_FREE_ONLY") == "1":
+        return None
     s = (text or "").strip()
     if not s:
         return None
@@ -6122,7 +6147,7 @@ def add_bilingual_fields(
 
         out["title_en"] = title
 
-        has_ds_key = bool(str(os.environ.get("DEEPSEEK_API_KEY") or "").strip())
+        has_ds_key = os.environ.get("RADAR_FREE_ONLY") != "1" and bool(str(os.environ.get("DEEPSEEK_API_KEY") or "").strip())
         cache_hit_key: str | None = None
         zh_title = zh_by_url.get(url)
         if not zh_title:
@@ -6456,6 +6481,8 @@ def enhance_title_deepseek(title: str, context: str, timeout: int = 45) -> str |
     """Rewrite a terse/jargon title into an informative Chinese one-liner,
     grounded in `context` (micro-crawled page text). Validates the candidate
     before returning so a non-None result can be trusted by callers."""
+    if os.environ.get("RADAR_FREE_ONLY") == "1":
+        return None
     title_s = str(title or "").strip()
     context_s = str(context or "").strip()
     if not title_s:
@@ -6524,7 +6551,7 @@ def add_title_enhancements(
 ) -> tuple[list[dict[str, Any]], dict[str, str]]:
     """Micro-crawl + DeepSeek-rewrite gated items_ai entries into an
     informative `title_enhanced_zh`. No-ops entirely without a DeepSeek key."""
-    if not str(os.environ.get("DEEPSEEK_API_KEY") or "").strip():
+    if os.environ.get("RADAR_FREE_ONLY") == "1" or not str(os.environ.get("DEEPSEEK_API_KEY") or "").strip():
         return items_ai, cache
 
     if max_new_per_run is None:
@@ -6590,6 +6617,8 @@ def generate_recommend_reason_deepseek(
     fetch helpers but is unused: the DeepSeek call itself is a one-off POST,
     same as `enhance_title_deepseek()`. Returns None on any failure (network
     error, empty text, validation failure)."""
+    if os.environ.get("RADAR_FREE_ONLY") == "1":
+        return None
     title_s = str(title or "").strip()
     text_s = str(full_text or "").strip()
     if not title_s or not text_s:
@@ -6668,7 +6697,7 @@ def add_recommend_reasons(
     title enhancement, since full-text fetch + reasoning is more expensive
     per item; shares the same on-disk cache dict/file as title enhancement
     (distinct `RECOMMEND_REASON_CACHE_PREFIX` key namespace) for consistency."""
-    if not str(os.environ.get("DEEPSEEK_API_KEY") or "").strip():
+    if os.environ.get("RADAR_FREE_ONLY") == "1" or not str(os.environ.get("DEEPSEEK_API_KEY") or "").strip():
         return items_ai, cache
 
     if max_new_per_run is None:
