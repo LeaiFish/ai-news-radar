@@ -704,7 +704,6 @@
     const count = Number(state.topics.find((row) => row.id === topic.id)?.recent_item_count || 0);
     const tags = [];
     if (kind === "org") tags.push(DOMESTIC.some((item) => item.id === topic.id) ? "国内" : "海外");
-    else tags.push(topic.group === "lens" ? "产业透镜" : "技术方向");
     tags.push(count > 0 ? `近30天 ${count} 条` : "近30天无消息");
     return {
       kind,
@@ -895,11 +894,13 @@
 
   function topicItemBeat(item) {
     return {
-      title: item.title || "",
+      title: item.title_zh || item.title || "",
       url: safeHttpUrl(item.url),
       source: item.source || item.source_name || "",
       published_at: item.published_at || "",
       summary: item.summary || "",
+      reason: item.recommend_reason_zh || "",
+      originalTitle: item.title_en || "",
       sourceCount: Number(item.source_count || 1),
     };
   }
@@ -1024,43 +1025,85 @@
     slot.append(list);
   }
 
-  function renderTimeline(beats, expanded = false) {
+  function renderTimeline(beats, page = 1) {
     const slot = document.getElementById("packFacts");
     clear(slot);
     if (!beats.length) {
-      slot.append(el("p", "placeholder-line", "还没有可排列的相关故事。"));
+      slot.append(el("p", "placeholder-line", "近30天没有相关消息。"));
       return;
     }
-    slot.append(el("p", "timeline-more", `已收录 ${beats.length} 条相关消息，近30天内；按发布时间倒序排列。`));
-    const shown = expanded ? beats : beats.slice(0, 12);
+    const pageSize = 20;
+    const pageCount = Math.ceil(beats.length / pageSize);
+    page = Math.max(1, Math.min(pageCount, page));
+    const start = (page - 1) * pageSize;
+    const shown = beats.slice(start, start + pageSize);
+    slot.append(el("p", "timeline-more", `近30天 · 第 ${start + 1}–${start + shown.length} 条，共 ${beats.length} 条`));
     const list = el("ol", "timeline");
+    let previousDay = "";
     shown.forEach((beat) => {
-      const li = el("li");
-      li.append(el("time", null, formatStamp(beat.published_at) || "时间待补充"));
-      const body = el("div");
+      const stamp = new Date(beat.published_at);
+      const valid = Number.isFinite(stamp.getTime());
+      const day = valid ? stamp.toLocaleDateString("zh-CN", { timeZone: "Asia/Shanghai", month: "long", day: "numeric", weekday: "long" }).replace("星期", " 星期") : "日期待补充";
+      if (day !== previousDay) {
+        list.append(el("li", "timeline-day", day));
+        previousDay = day;
+      }
+      const li = el("li", "timeline-entry");
+      const time = el("time", null, valid ? stamp.toLocaleTimeString("zh-CN", { timeZone: "Asia/Shanghai", hour: "2-digit", minute: "2-digit", hour12: false }) : "—");
+      if (valid) time.dateTime = stamp.toISOString();
+      li.append(time);
+      const body = el("article", "timeline-card");
+      body.append(el("p", "timeline-meta", [beat.source || "来源", beat.sourceCount > 1 ? `${beat.sourceCount} 家信源` : ""].filter(Boolean).join(" · ")));
       const label = preferZh(beat.title);
       if (beat.url) {
-        const link = el("a", "note-link", label);
+        const link = el("a", "note-link timeline-title", label);
         link.href = beat.url;
         link.target = "_blank";
         link.rel = "noopener noreferrer";
         body.append(link);
-      } else {
-        body.append(el("p", "timeline-title", label));
+      } else body.append(el("p", "timeline-title", label));
+      if (beat.originalTitle && beat.originalTitle !== label) {
+        const original = el("details", "timeline-original");
+        original.append(el("summary", null, "英文原标题"));
+        original.append(el("p", null, beat.originalTitle));
+        body.append(original);
       }
-      const meta = [beat.source, beat.sourceCount > 1 ? `${beat.sourceCount} 家信源` : ""].filter(Boolean).join(" · ");
-      if (meta) body.append(el("p", "timeline-meta", meta));
       const summary = String(beat.summary || "").trim();
-      if (summary) body.append(el("p", "timeline-summary", shortText(summary, 140)));
+      body.append(el("p", "timeline-summary", summary ? shortText(summary, 280) : "来源未提供摘要，点击标题查看原文。"));
+      if (beat.reason && beat.reason !== summary) body.append(el("p", "timeline-reason", `推荐理由：${beat.reason}`));
+      if (beat.url) {
+        const link = el("a", "timeline-source", "查看原文 ↗");
+        link.href = beat.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        body.append(link);
+      }
       li.append(body);
       list.append(li);
     });
     slot.append(list);
-    if (beats.length > shown.length) {
-      const button = el("button", "note-link", `查看全部相关消息（${beats.length} 条）`);
-      button.type = "button";
-      button.addEventListener("click", () => renderTimeline(beats, true));
-      slot.append(button);
+    if (pageCount > 1) {
+      const nav = el("nav", "timeline-pagination");
+      nav.setAttribute("aria-label", "相关消息分页");
+      const addButton = (label, target, disabled = false) => {
+        const button = el("button", "timeline-page", label);
+        button.type = "button";
+        button.disabled = disabled;
+        if (target === page && /^\d+$/.test(label)) button.setAttribute("aria-current", "page");
+        button.addEventListener("click", () => {
+          renderTimeline(beats, target);
+          slot.scrollIntoView({ block: "start" });
+        });
+        nav.append(button);
+      };
+      addButton("上一页", page - 1, page === 1);
+      const pages = [...new Set([1, page - 1, page, page + 1, pageCount].filter((n) => n >= 1 && n <= pageCount))].sort((a, b) => a - b);
+      pages.forEach((n, i) => {
+        if (i && n - pages[i - 1] > 1) nav.append(el("span", "timeline-ellipsis", "…"));
+        addButton(String(n), n);
+      });
+      addButton("下一页", page + 1, page === pageCount);
+      slot.append(nav);
     }
   }
 
@@ -1078,40 +1121,6 @@
     notes.push("人工确认与 Rubric 打分待接入。");
     const list = el("ul", "open-list");
     notes.forEach((note) => list.append(el("li", null, note)));
-    slot.append(list);
-  }
-
-  function renderSourceIndex(beats) {
-    const slot = document.getElementById("packSources");
-    clear(slot);
-    const seen = new Set();
-    const rows = [];
-    beats.forEach((beat) => {
-      const key = beat.url || beat.source;
-      if (!key || seen.has(key)) return;
-      seen.add(key);
-      rows.push(beat);
-    });
-    if (!rows.length) {
-      slot.append(el("p", "placeholder-line", "信源索引待补充。"));
-      return;
-    }
-    const list = el("ul", "source-index");
-    rows.slice(0, 10).forEach((beat) => {
-      const li = el("li");
-      const label = beat.source || "来源";
-      if (beat.url) {
-        const link = el("a", null, label);
-        link.href = beat.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        li.append(link);
-        if (beat.title) li.append(el("span", "source-title", ` · ${shortText(preferZh(beat.title), 36)}`));
-      } else {
-        li.textContent = label;
-      }
-      list.append(li);
-    });
     slot.append(list);
   }
 
@@ -1155,7 +1164,7 @@
   }
 
   function clearPackSlots(message) {
-    ["packJudgment", "packDelta", "packFacts", "packOpen", "packSources"].forEach((id) => {
+    ["packJudgment", "packDelta", "packFacts", "packOpen"].forEach((id) => {
       const slot = document.getElementById(id);
       if (!slot) return;
       clear(slot);
@@ -1209,7 +1218,6 @@
     renderDelta(record);
     renderTimeline(beats);
     renderOpenQuestions(record, beats);
-    renderSourceIndex(beats);
     renderPackRail(record, beats);
   }
 

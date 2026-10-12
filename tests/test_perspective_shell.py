@@ -111,7 +111,7 @@ def test_research_catalog_and_workbench_placeholder():
     assert "本期变化" in page
     assert "事实与阐述" in page
     assert "待验证" in page
-    assert "信源索引" in page
+    assert "信源索引" not in page
     assert "本页目录" in page
     assert "相关研究" in page
     assert "相关材料" in page

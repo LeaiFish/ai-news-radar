@@ -5,6 +5,8 @@ from pathlib import Path
 
 from scripts.build_topics import (
     build_topics_payload,
+    backfill_topic_titles,
+    collect_pools,
     haystack_text,
     load_topic_config,
     match_topic_items,
@@ -18,6 +20,39 @@ from scripts.build_topics import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_archive_topic_titles_reuse_translation_cache(tmp_path):
+    (tmp_path / "archive.json").write_text(json.dumps({"items": [
+        {"title": "Kimi update", "url": "https://example.com/kimi"}
+    ]}))
+    (tmp_path / "title-zh-cache.json").write_text(json.dumps({"ds1|Kimi update": "Kimi 发布更新"}))
+    row = collect_pools(tmp_path)["archive"][0]
+    item = slim_item(row, set())
+    assert item["title"] == "Kimi 发布更新"
+    assert item["title_en"] == "Kimi update"
+
+
+def test_topic_translation_backfill_is_bounded_and_uses_only_recent_matches(tmp_path, monkeypatch):
+    from scripts import update_news
+    rows = [
+        {"title": "Kimi new", "published_at": "2026-10-12T00:00:00Z"},
+        {"title": "Kimi old", "published_at": "2026-08-01T00:00:00Z"},
+        {"title": "Unrelated news", "published_at": "2026-10-12T00:00:00Z"},
+    ]
+    (tmp_path / "archive.json").write_text(json.dumps({"generated_at": "2026-10-12T00:00:00Z", "items": rows}))
+    config = tmp_path / "config.json"
+    config.write_text(json.dumps({"groups": [{"id": "company"}], "topics": [topic(keywords=["Kimi"])]}))
+    seen = []
+    def translate(items, broad, session, cache, limit):
+        seen.extend(row["title"] for row in items)
+        assert limit == 1
+        cache["Kimi new"] = "Kimi 最新消息"
+        return [{"title_zh": "Kimi 最新消息"}], [], cache
+    monkeypatch.setattr(update_news, "add_bilingual_fields", translate)
+    assert backfill_topic_titles(tmp_path, config, 1) == 1
+    assert seen == ["Kimi new"]
+    assert json.loads((tmp_path / "title-zh-cache.json").read_text())["Kimi new"] == "Kimi 最新消息"
 
 
 def test_company_history_preserves_article_ids_and_merges_tracking_variants():

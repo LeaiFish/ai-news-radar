@@ -251,8 +251,9 @@ def truncate(text: str, limit: int = MAX_SUMMARY_CHARS) -> str:
 def slim_item(record: dict[str, Any], curated_ids: set[str]) -> dict[str, Any]:
     primary = record.get("primary_item") if isinstance(record.get("primary_item"), dict) else {}
     title = (
-        record.get("title")
+        record.get("title_zh")
         or primary.get("title_zh")
+        or record.get("title")
         or primary.get("title")
         or ""
     )
@@ -273,6 +274,7 @@ def slim_item(record: dict[str, Any], curated_ids: set[str]) -> dict[str, Any]:
         "id": record.get("story_id") or record.get("id") or "",
         "story_id": record.get("story_id") or None,
         "title": str(title).strip(),
+        "title_zh": str(record.get("title_zh") or primary.get("title_zh") or "").strip() or None,
         "title_en": str(title_en).strip() or None,
         "url": str(url).strip(),
         "summary": truncate(str(summary)),
@@ -305,6 +307,13 @@ def collect_pools(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
     brief = _load_list(brief_payload, "items")
     latest = _load_list(latest_payload, "items", "items_ai")
     archive = _load_list(archive_payload, "items")
+    translations = load_json(data_dir / "title-zh-cache.json")
+    for record in archive:
+        title = str(record.get("title") or "")
+        translated = translations.get("ds1|" + title) or translations.get(title)
+        if not record.get("title_zh") and isinstance(translated, str) and CJK_RE.search(translated):
+            record["title_zh"] = translated
+            record.setdefault("title_en", title)
 
     for record in stories:
         record["_pool"] = "stories"
@@ -467,6 +476,41 @@ def write_topics_payload(
     return payload
 
 
+def backfill_topic_titles(data_dir: Path, config_path: Path, limit: int) -> int:
+    """Translate a bounded set of recent public topic headlines using existing providers."""
+    if limit <= 0:
+        return 0
+    try:
+        from scripts.update_news import add_bilingual_fields, create_session
+    except ModuleNotFoundError:
+        from update_news import add_bilingual_fields, create_session
+    config = load_topic_config(config_path)
+    pools = collect_pools(data_dir)
+    end = parse_time(pools.get("generated_at")) or datetime.now(timezone.utc)
+    start = end - timedelta(days=30)
+    candidates = []
+    seen = set()
+    for record in sorted(pools["archive"], key=record_time_iso, reverse=True):
+        title = str(record.get("title") or "")
+        stamp = parse_time(record_time_iso(record))
+        if not title or title in seen or record.get("title_zh") or CJK_RE.search(title):
+            continue
+        if stamp is None or not start <= stamp <= end:
+            continue
+        if not any(record_matches_topic(record, topic) for topic in config["topics"]):
+            continue
+        seen.add(title)
+        candidates.append(record)
+        if len(candidates) >= limit:
+            break
+    cache_path = data_dir / "title-zh-cache.json"
+    cache = load_json(cache_path)
+    with create_session() as session:
+        translated, _, cache = add_bilingual_fields(candidates, [], session, cache, limit)
+    write_json(cache_path, cache)
+    return sum(bool(row.get("title_zh")) for row in translated)
+
+
 PAGE_TEMPLATE = """<!doctype html>
 <html lang="zh-CN" data-radar-surface="topics"{topic_attr} data-root="{root}">
   <head>
@@ -609,6 +653,7 @@ def main() -> int:
     parser.add_argument("--config", default=str(DEFAULT_CONFIG), help="Topic definitions JSON")
     parser.add_argument("--data-dir", default=str(DEFAULT_DATA_DIR), help="Directory with news JSON")
     parser.add_argument("--pages-dir", default=str(DEFAULT_PAGES_DIR), help="Directory for static topic HTML")
+    parser.add_argument("--translate-max-new", type=int, default=0, help="Optional bounded recent-topic title translation backfill")
     parser.add_argument(
         "--write-pages",
         action="store_true",
@@ -618,6 +663,9 @@ def main() -> int:
 
     config_path = Path(args.config)
     data_dir = Path(args.data_dir)
+    if args.translate_max_new > 0:
+        count = backfill_topic_titles(data_dir, config_path, args.translate_max_new)
+        print(f"Translated recent topic headlines: {count}")
     payload = write_topics_payload(data_dir, config_path=config_path)
     print(f"Wrote: {data_dir / 'topics.json'} ({payload.get('topic_count', 0)} topics)")
     details = payload.get("_details") or {}

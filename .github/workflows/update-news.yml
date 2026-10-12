@@ -142,6 +142,13 @@ jobs:
       - name: Generate RSS feed
         run: python scripts/generate_feed.py --data-dir data
 
+      - name: Backfill recent topic translations
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_BASE_URL: ${{ vars.DEEPSEEK_API_BASE_URL }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+        run: python scripts/build_topics.py --data-dir data --translate-max-new 20
+
       - name: Commit and push changes
         env:
           EMAIL_DIGEST_PUBLISH: ${{ secrets.EMAIL_DIGEST_PUBLISH || vars.EMAIL_DIGEST_PUBLISH }}
