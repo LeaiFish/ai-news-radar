@@ -4,16 +4,16 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-12T19:06:05.300303Z",
+  "generated_at": "2026-10-12T20:19:29.731701Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13"
   ],
-  "story_count": 279,
-  "unique_story_count": 190,
+  "story_count": 285,
+  "unique_story_count": 198,
   "counts": {
     "by_company_topic": {
-      "anthropic": 41,
+      "anthropic": 40,
       "apple": 4,
       "deepseek": 1,
       "google-gemini": 9,
@@ -21,26 +21,26 @@
       "meta-llama": 2,
       "microsoft": 8,
       "nvidia": 5,
-      "openai": 26,
+      "openai": 28,
       "qwen": 3,
       "xai": 7,
       "zhipu": 1
     },
     "by_lens_topic": {
-      "agent-ecosystem": 51,
+      "agent-ecosystem": 52,
       "monetization": 9,
       "workplace": 8
     },
     "by_importance_label": {
-      "值得关注": 215,
-      "多源热议": 6,
+      "值得关注": 219,
+      "多源热议": 8,
       "官方更新": 2,
       "行业动态": 56
     },
     "by_source_count_bucket": {
-      "1": 262,
-      "2": 11,
-      "3+": 6
+      "1": 267,
+      "2": 10,
+      "3+": 8
     }
   },
   "top_stories": [
@@ -48,7 +48,7 @@
       "story_id": "story_1327604ea90f",
       "title": "适合初学者的 GitHub Copilot 应用程序：如何向 Copilot 教授您的代码库 / GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
-      "importance_score": 0.8485,
+      "importance_score": 0.8454,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -62,9 +62,9 @@
     },
     {
       "story_id": "story_7924bc1de44f",
-      "title": "Push attribution for commits in limited public preview",
+      "title": "在有限的公开预览中推送提交的归因 / Push attribution for commits in limited public preview",
       "url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
-      "importance_score": 0.8374,
+      "importance_score": 0.8343,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -75,18 +75,31 @@
       "story_id": "story_41c5d4380fc2",
       "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
       "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-      "importance_score": 0.8106,
+      "importance_score": 0.8328,
       "importance_label": "多源热议",
-      "source_count": 3,
+      "source_count": 4,
       "archive_date": "2026-10-13",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8a809173e2e5",
+      "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+      "url": "https://github.com/openai/codex/issues/48195",
+      "importance_score": 0.8223,
+      "importance_label": "多源热议",
+      "source_count": 4,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
       "story_id": "story_cbebf0458204",
       "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力 / Muse Wonder",
       "url": "https://research.meta.ai/blog/muse-wonder",
-      "importance_score": 0.8097,
+      "importance_score": 0.8066,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-13",
@@ -102,7 +115,7 @@
       "story_id": "story_b6844ce9c244",
       "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
       "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
-      "importance_score": 0.7837,
+      "importance_score": 0.7806,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -115,7 +128,7 @@
       "story_id": "story_f0a7b95fb5f2",
       "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
       "url": "https://x.com/arena/status/2109706854700044523",
-      "importance_score": 0.783,
+      "importance_score": 0.7799,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -453,7 +466,7 @@
       "story_id": "story_b56e48a5a98d",
       "title": "微软发布自研芯片 Maia 300 并将大规模扩展 Maia 推理部署 / Today we are announcing our biggest bet yet on our own silicon.",
       "url": "https://x.com/satyanadella/status/2109631106404487523",
-      "importance_score": 0.7316,
+      "importance_score": 0.7287,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -468,7 +481,7 @@
       "story_id": "story_f5cd9aba7e15",
       "title": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构 / Can we change an AI model&#8217;s architecture without retraining it from scratch?",
       "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
-      "importance_score": 0.7308,
+      "importance_score": 0.7277,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -534,17 +547,6 @@
       "title": "与我的女儿和 Codex 一起构建一个 @modretro 游戏 https://t.co/78Ev7iGuG1 / Building a @modretro game with my daughter and Codex https://t.co/78Ev7iGuG1",
       "url": "https://x.com/petergyang/status/2109434554729824397",
       "importance_score": 0.6297,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4cc7861f8f09",
-      "title": "Replacing LLM calls with deterministic code is a no brainer and also results in better code that better matches what users want https://t.co/jzOeeoHFMO",
-      "url": "https://x.com/garrytan/status/2109410082769482174",
-      "importance_score": 0.6261,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-12",
