@@ -1070,13 +1070,6 @@
       const summary = String(beat.summary || "").trim();
       body.append(el("p", "timeline-summary", summary ? shortText(summary, 280) : "来源未提供摘要，点击标题查看原文。"));
       if (beat.reason && beat.reason !== summary) body.append(el("p", "timeline-reason", `推荐理由：${beat.reason}`));
-      if (beat.url) {
-        const link = el("a", "timeline-source", "查看原文 ↗");
-        link.href = beat.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        body.append(link);
-      }
       li.append(body);
       list.append(li);
     });

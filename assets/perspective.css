@@ -570,15 +570,19 @@ html[data-research-view="pack"] #researchCatalog {
   gap: 20px;
   padding: 0 0 18px;
   position: relative;
+  --timeline-axis-x: 66px;
+  --timeline-axis-y: 25px;
 }
 
 .timeline-entry:has(+ .timeline-entry)::before {
   content: "";
   position: absolute;
-  left: 66px;
-  top: 25px;
+  left: var(--timeline-axis-x);
+  top: var(--timeline-axis-y);
   bottom: -25px;
-  border-left: 1px solid var(--line);
+  width: 1px;
+  background: var(--line);
+  transform: translateX(-50%);
 }
 
 .timeline-day {
@@ -599,11 +603,12 @@ html[data-research-view="pack"] #researchCatalog {
   background: var(--surface);
 }
 
-.timeline-card::before {
+.timeline-entry::after {
   content: "";
   position: absolute;
-  left: -15px;
-  top: 22px;
+  left: var(--timeline-axis-x);
+  top: var(--timeline-axis-y);
+  transform: translate(-50%, -50%);
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -619,13 +624,6 @@ html[data-research-view="pack"] #researchCatalog {
   color: var(--muted);
   font-size: 12px;
   overflow-wrap: anywhere;
-}
-
-.timeline-source {
-  display: inline-block;
-  margin-top: 12px;
-  font-size: 13px;
-  color: var(--accent);
 }
 
 .timeline-reason {
@@ -727,8 +725,8 @@ html[data-research-view="pack"] #researchCatalog {
     gap: 16px;
   }
 
-  .timeline-entry:has(+ .timeline-entry)::before {
-    left: 48px;
+  .timeline .timeline-entry {
+    --timeline-axis-x: 48px;
   }
 
   .timeline-card { padding: 14px; }
