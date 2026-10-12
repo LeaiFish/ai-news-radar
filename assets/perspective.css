@@ -441,20 +441,27 @@ h1 {
 }
 
 .catalog-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 18px 0 8px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0 24px;
 }
 
 .catalog-tools input {
-  flex: 1 1 180px;
-  min-width: 180px;
-  max-width: 360px;
+  width: 100%;
+  min-width: 0;
+  height: 44px;
 }
 
 .catalog-tools select {
-  min-width: 148px;
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+}
+
+.catalog-tools .filter-field {
+  margin: 0;
 }
 
 #researchList > .placeholder-line {
@@ -462,7 +469,14 @@ h1 {
 }
 
 .catalog-groups .topics-group:first-child {
-  margin-top: 8px;
+  margin-top: 0;
+}
+
+@media (max-width: 480px) {
+  .catalog-tools {
+    grid-template-columns: minmax(0, 1fr) 140px;
+    gap: 8px;
+  }
 }
 
 a.topic-card,
