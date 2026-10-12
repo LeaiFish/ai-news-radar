@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 
 from scripts.build_topics import (
+    build_topics_payload,
     haystack_text,
     load_topic_config,
     match_topic_items,
@@ -17,6 +18,28 @@ from scripts.build_topics import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_company_history_preserves_article_ids_and_merges_tracking_variants():
+    rows = [
+        {"title": "Qwen release", "url": "https://qwen.ai/blog?id=first"},
+        {"title": "Qwen release", "url": "https://qwen.ai/blog?utm_source=rss&id=first#top"},
+        {"title": "Qwen image", "url": "https://qwen.ai/blog?id=second"},
+        {"title": "Qwen audio", "url": "https://qwen.ai/blog?id=third"},
+    ]
+    config = {
+        "max_items_per_topic": 1,
+        "topics": [topic(id="qwen", keywords=["Qwen"], pools=["archive"])],
+    }
+    result = build_topics_payload(config, {"archive": rows})
+    detail = result["_details"]["qwen"]
+    assert detail["item_count"] == 3
+    assert detail["listed_count"] == 3
+    assert len(detail["items"]) == 3
+    config["topics"][0]["group"] = "tech"
+    limited = build_topics_payload(config, {"archive": rows})["_details"]["qwen"]
+    assert limited["item_count"] == 3
+    assert limited["listed_count"] == 1
 
 
 def topic(**overrides):

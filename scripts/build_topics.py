@@ -13,7 +13,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "topics.json"
@@ -184,7 +184,12 @@ def canonicalize_url(url: str) -> str:
     path = parsed.path or ""
     if path.endswith("/") and path != "/":
         path = path.rstrip("/")
-    return urlunparse((parsed.scheme.lower(), host, path, "", "", ""))
+    query = urlencode(sorted(
+        (key, value) for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_")
+        and key.lower() not in {"fbclid", "gclid", "msclkid"}
+    ))
+    return urlunparse((parsed.scheme.lower(), host, path, parsed.params, query, ""))
 
 
 def record_identity(record: dict[str, Any]) -> str:
@@ -383,7 +388,9 @@ def build_topics_payload(
 
     # Hub cards follow this array order within each group. Do not sort by name or count.
     for topic in config.get("topics") or []:
-        items, total = match_topic_items(topic, pools, curated_ids, max_items)
+        # Company research needs the complete available history, not a curated cap.
+        topic_limit = 0 if topic.get("group") == "company" else max_items
+        items, total = match_topic_items(topic, pools, curated_ids, topic_limit)
         latest = items[0] if items else {}
         summary = {
             "id": topic["id"],
@@ -415,6 +422,7 @@ def build_topics_payload(
                 "主题用维护者配置的关键词/别名（以及可选正则）去匹配标题、摘要、来源和标签，"
                 "不是语义分类。短英文词走词边界，中文走子串；同一条新闻可以出现在多个主题里。"
                 "公司主题还会扫描 archive.json 做更长窗口；较宽的技术主题默认只用 24 小时故事池，减少误伤。"
+                "公司主题保留全部匹配记录，其他主题按配置限制条数。"
             ),
         },
         "groups": config.get("groups") or [],

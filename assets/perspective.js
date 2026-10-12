@@ -134,7 +134,7 @@
 
   function dataUrl(path) {
     if (!dataBaseUrl) return new URL(path, ROOT).href;
-    const file = String(path || "").split("/").pop();
+    const file = String(path || "").replace(/^data\//, "");
     return `${dataBaseUrl}/${file}`;
   }
 
@@ -1024,14 +1024,15 @@
     slot.append(list);
   }
 
-  function renderTimeline(beats) {
+  function renderTimeline(beats, expanded = false) {
     const slot = document.getElementById("packFacts");
     clear(slot);
     if (!beats.length) {
       slot.append(el("p", "placeholder-line", "还没有可排列的相关故事。"));
       return;
     }
-    const shown = beats.slice(0, 12);
+    slot.append(el("p", "timeline-more", `已收录 ${beats.length} 条相关消息，包含历史记录；按发布时间倒序排列。`));
+    const shown = expanded ? beats : beats.slice(0, 12);
     const list = el("ol", "timeline");
     shown.forEach((beat) => {
       const li = el("li");
@@ -1056,7 +1057,10 @@
     });
     slot.append(list);
     if (beats.length > shown.length) {
-      slot.append(el("p", "timeline-more", `目录里还有 ${beats.length - shown.length} 条，这里先列最近 12 条。`));
+      const button = el("button", "note-link", `查看全部相关消息（${beats.length} 条）`);
+      button.type = "button";
+      button.addEventListener("click", () => renderTimeline(beats, true));
+      slot.append(button);
     }
   }
 
@@ -1181,6 +1185,10 @@
     if (title) title.textContent = record.name;
     document.title = `${record.name} · 主题研究 · AI Perspective`;
     clearPackSlots("正在整理相关故事…");
+    const deltaHeading = document.querySelector("#pack-delta h2");
+    const factsHeading = document.querySelector("#pack-facts h2");
+    if (deltaHeading) deltaHeading.textContent = `当前数据窗口变化（${state.windowHours} 小时）`;
+    if (factsHeading) factsHeading.textContent = record.kind === "event" ? "事件相关报道" : "相关消息与历史记录";
     let beats = [];
     if (record.kind === "event") {
       beats = eventBeats(record.story);
