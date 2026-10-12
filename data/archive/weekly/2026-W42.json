@@ -4,51 +4,63 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-12T20:19:29.731701Z",
+  "generated_at": "2026-10-12T23:37:29.899888Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13"
   ],
-  "story_count": 285,
-  "unique_story_count": 198,
+  "story_count": 305,
+  "unique_story_count": 228,
   "counts": {
     "by_company_topic": {
-      "anthropic": 40,
-      "apple": 4,
+      "anthropic": 44,
+      "apple": 6,
+      "cursor": 1,
       "deepseek": 1,
-      "google-gemini": 9,
+      "google-gemini": 11,
       "kimi": 3,
       "meta-llama": 2,
       "microsoft": 8,
       "nvidia": 5,
-      "openai": 28,
+      "openai": 30,
       "qwen": 3,
-      "xai": 7,
+      "xai": 5,
       "zhipu": 1
     },
     "by_lens_topic": {
-      "agent-ecosystem": 52,
-      "monetization": 9,
+      "agent-ecosystem": 57,
+      "monetization": 10,
       "workplace": 8
     },
     "by_importance_label": {
-      "值得关注": 219,
-      "多源热议": 8,
-      "官方更新": 2,
-      "行业动态": 56
+      "值得关注": 233,
+      "多源热议": 10,
+      "官方更新": 5,
+      "行业动态": 57
     },
     "by_source_count_bucket": {
-      "1": 267,
+      "1": 285,
       "2": 10,
-      "3+": 8
+      "3+": 10
     }
   },
   "top_stories": [
     {
+      "story_id": "story_41c5d4380fc2",
+      "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "importance_score": 0.8504,
+      "importance_label": "多源热议",
+      "source_count": 5,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_1327604ea90f",
       "title": "适合初学者的 GitHub Copilot 应用程序：如何向 Copilot 教授您的代码库 / GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
-      "importance_score": 0.8454,
+      "importance_score": 0.8373,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -64,20 +76,9 @@
       "story_id": "story_7924bc1de44f",
       "title": "在有限的公开预览中推送提交的归因 / Push attribution for commits in limited public preview",
       "url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
-      "importance_score": 0.8343,
+      "importance_score": 0.8264,
       "importance_label": "官方更新",
       "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_41c5d4380fc2",
-      "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
-      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-      "importance_score": 0.8328,
-      "importance_label": "多源热议",
-      "source_count": 4,
       "archive_date": "2026-10-13",
       "company_topics": [],
       "lens_topics": []
@@ -86,7 +87,7 @@
       "story_id": "story_8a809173e2e5",
       "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
       "url": "https://github.com/openai/codex/issues/48195",
-      "importance_score": 0.8223,
+      "importance_score": 0.814,
       "importance_label": "多源热议",
       "source_count": 4,
       "archive_date": "2026-10-13",
@@ -96,10 +97,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_414ddb232fce",
+      "title": "Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+      "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "importance_score": 0.804,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_cbebf0458204",
       "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力 / Muse Wonder",
       "url": "https://research.meta.ai/blog/muse-wonder",
-      "importance_score": 0.8066,
+      "importance_score": 0.7985,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-13",
@@ -112,12 +126,12 @@
       ]
     },
     {
-      "story_id": "story_b6844ce9c244",
-      "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
-      "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
-      "importance_score": 0.7806,
+      "story_id": "story_d243d2985244",
+      "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
+      "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+      "importance_score": 0.7979,
       "importance_label": "行业动态",
-      "source_count": 1,
+      "source_count": 2,
       "archive_date": "2026-10-13",
       "company_topics": [
         "anthropic"
@@ -125,14 +139,29 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_f0a7b95fb5f2",
-      "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
-      "url": "https://x.com/arena/status/2109706854700044523",
-      "importance_score": 0.7799,
-      "importance_label": "行业动态",
+      "story_id": "story_b75f3d1068f1",
+      "title": "Large Language Models for Machine Translation Quality Annotation: Humans and Models Are Both Challenged",
+      "url": "https://machinelearning.apple.com/research/llm-translation-quality-annotation",
+      "importance_score": 0.792,
+      "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
-      "company_topics": [],
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9bff18632a1f",
+      "title": "Self-Compacting Language Model Agents",
+      "url": "https://machinelearning.apple.com/research/self-compacting-language-agents",
+      "importance_score": 0.792,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "apple"
+      ],
       "lens_topics": [
         "agent-ecosystem"
       ]
@@ -149,6 +178,32 @@
         "google-gemini"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_b6844ce9c244",
+      "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+      "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+      "importance_score": 0.7724,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f0a7b95fb5f2",
+      "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+      "url": "https://x.com/arena/status/2109706854700044523",
+      "importance_score": 0.7717,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_efb1d33574f2",
@@ -419,6 +474,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_8b03c7583593",
+      "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
+      "url": "https://x.com/cursor_ai/status/2109779605699879146",
+      "importance_score": 0.7597,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "cursor"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
       "story_id": "story_75aedb54f50c",
       "title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程 / How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
       "url": "https://x.com/MeshyAI/status/2109550836934471864",
@@ -463,32 +533,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_b56e48a5a98d",
-      "title": "微软发布自研芯片 Maia 300 并将大规模扩展 Maia 推理部署 / Today we are announcing our biggest bet yet on our own silicon.",
-      "url": "https://x.com/satyanadella/status/2109631106404487523",
-      "importance_score": 0.7287,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_f5cd9aba7e15",
-      "title": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构 / Can we change an AI model&#8217;s architecture without retraining it from scratch?",
-      "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
-      "importance_score": 0.7277,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_599c88b675eb",
       "title": "AI逆向一切：Brandon Thomas用Claude Opus 5.5重写Adobe七款软件开源，REA项目逼近10万Star",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686995&idx=1&sn=cc40a3488a2ea7652d2ab589056f40b4",
@@ -504,54 +548,19 @@
       ]
     },
     {
-      "story_id": "story_87f4d3213f3e",
-      "title": "通过此更改，我们在从订阅中提取使用量时不会收取 GPT-6.1 Sol 的长期上下文费用。 / With this change, we are not charging long context fees for GPT-6.1 Sol when drawing usage from the subscription.",
-      "url": "https://x.com/thsottiaux/status/2109430894604026039",
-      "importance_score": 0.6416,
-      "importance_label": "值得关注",
+      "story_id": "story_b56e48a5a98d",
+      "title": "微软发布自研芯片 Maia 300 并将大规模扩展 Maia 推理部署 / Today we are announcing our biggest bet yet on our own silicon.",
+      "url": "https://x.com/satyanadella/status/2109631106404487523",
+      "importance_score": 0.7211,
+      "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-10-12",
+      "archive_date": "2026-10-13",
       "company_topics": [
-        "openai"
+        "microsoft"
       ],
       "lens_topics": [
-        "monetization"
+        "workplace"
       ]
-    },
-    {
-      "story_id": "story_09f9d323583d",
-      "title": "这些天我唯一使用 Gemini 的地方是 Chrome / The only place where I use Gemini these days is in Chrome",
-      "url": "https://x.com/zarazhangrui/status/2109483079106740500",
-      "importance_score": 0.6371,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c0ca8ffffd40",
-      "title": "This is a good way to understand how early we actually are in AI diffusion right now. The vast majority of people are using AI as a chatbot for simple interactions that approximate next-generation search. This is supe...",
-      "url": "https://x.com/levie/status/2109467575025578330",
-      "importance_score": 0.6347,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_95e990525688",
-      "title": "与我的女儿和 Codex 一起构建一个 @modretro 游戏 https://t.co/78Ev7iGuG1 / Building a @modretro game with my daughter and Codex https://t.co/78Ev7iGuG1",
-      "url": "https://x.com/petergyang/status/2109434554729824397",
-      "importance_score": 0.6297,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
     }
   ]
 }
