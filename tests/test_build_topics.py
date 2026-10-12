@@ -42,6 +42,17 @@ def test_company_history_preserves_article_ids_and_merges_tracking_variants():
     assert limited["listed_count"] == 1
 
 
+def test_recent_topic_count_uses_30_days_and_excludes_unknown_and_future_dates():
+    dates = ["2026-10-12T00:00:00Z", "2026-09-12T00:00:00Z",
+             "2026-09-11T23:59:59Z", "2026-10-13T00:00:00Z", "invalid"]
+    rows = [{"title": "Qwen update", "url": f"https://qwen.ai/blog?id={i}",
+             "published_at": stamp} for i, stamp in enumerate(dates)]
+    config = {"topics": [topic(id="qwen", keywords=["Qwen"], pools=["archive"])]}
+    result = build_topics_payload(config, {"archive": rows}, generated_at="2026-10-12T00:00:00Z")
+    assert result["topics"][0]["recent_item_count"] == 2
+    assert result["_details"]["qwen"]["recent_item_count"] == 2
+
+
 def topic(**overrides):
     base = {
         "id": "openai",

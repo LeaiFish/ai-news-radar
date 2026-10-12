@@ -674,10 +674,10 @@
     const select = document.getElementById("researchFilter");
     if (!select) return;
     const options = {
-      all: [["all", "全部"], ["active", "今日有更新"], ["quiet", "今日无故事"]],
-      org: [["all", "全部"], ["active", "今日有更新"], ["quiet", "今日无故事"], ["domestic", "国内"], ["overseas", "海外"]],
+      all: [["all", "全部"], ["active", "近30天有更新"], ["quiet", "近30天无消息"]],
+      org: [["all", "全部"], ["active", "近30天有更新"], ["quiet", "近30天无消息"], ["domestic", "国内"], ["overseas", "海外"]],
       event: [["all", "全部"], ["multi", "多源"], ["official", "官方更新"]],
-      trend: [["all", "全部"], ["lens", "产业透镜"], ["tech", "技术方向"], ["active", "今日有更新"]],
+      trend: [["all", "全部"], ["lens", "产业透镜"], ["tech", "技术方向"], ["active", "近30天有更新"]],
     }[tab] || [["all", "全部"]];
     const previous = select.value;
     clear(select);
@@ -701,11 +701,11 @@
   }
 
   function topicRow(topic, kind) {
-    const count = storiesForTopic(topic).length;
+    const count = Number(state.topics.find((row) => row.id === topic.id)?.recent_item_count || 0);
     const tags = [];
     if (kind === "org") tags.push(DOMESTIC.some((item) => item.id === topic.id) ? "国内" : "海外");
     else tags.push(topic.group === "lens" ? "产业透镜" : "技术方向");
-    tags.push(count > 0 ? `今日 ${count} 条` : "今日无故事");
+    tags.push(count > 0 ? `近30天 ${count} 条` : "近30天无消息");
     return {
       kind,
       id: topic.id,
@@ -776,7 +776,7 @@
     card.dataset.packId = row.id;
     card.append(el("h3", null, row.name));
     if (row.blurb) card.append(el("p", "topic-card-blurb", row.blurb));
-    const countTag = row.tags.find((tag) => tag.startsWith("今日") || tag === "单源" || /^多源 \d+$/.test(tag));
+    const countTag = row.tags.find((tag) => tag.startsWith("近30天") || tag === "单源" || /^多源 \d+$/.test(tag));
     const rest = row.tags.filter((tag) => tag !== countTag);
     const meta = el("div", "topic-card-meta");
     if (countTag) meta.append(el("strong", null, countTag));
@@ -970,7 +970,7 @@
       appendJudgmentCard(
         slot,
         preferZh(brief?.title || top.title),
-        `依据当前数据窗 · ${label} · ${sources} 家信源`,
+        `依据${record.kind === "event" ? "当前事件" : "近30天消息"} · ${label} · ${sources} 家信源`,
         storyUrl(top),
       );
       return;
@@ -1031,7 +1031,7 @@
       slot.append(el("p", "placeholder-line", "还没有可排列的相关故事。"));
       return;
     }
-    slot.append(el("p", "timeline-more", `已收录 ${beats.length} 条相关消息，包含历史记录；按发布时间倒序排列。`));
+    slot.append(el("p", "timeline-more", `已收录 ${beats.length} 条相关消息，近30天内；按发布时间倒序排列。`));
     const shown = expanded ? beats : beats.slice(0, 12);
     const list = el("ol", "timeline");
     shown.forEach((beat) => {
@@ -1187,15 +1187,21 @@
     clearPackSlots("正在整理相关故事…");
     const deltaHeading = document.querySelector("#pack-delta h2");
     const factsHeading = document.querySelector("#pack-facts h2");
-    if (deltaHeading) deltaHeading.textContent = `当前数据窗口变化（${state.windowHours} 小时）`;
-    if (factsHeading) factsHeading.textContent = record.kind === "event" ? "事件相关报道" : "相关消息与历史记录";
+    if (deltaHeading) deltaHeading.textContent = record.kind === "event" ? "事件进展" : "近30天变化";
+    if (factsHeading) factsHeading.textContent = record.kind === "event" ? "事件相关报道" : "近30天相关消息";
     let beats = [];
     if (record.kind === "event") {
       beats = eventBeats(record.story);
     } else {
       const items = await loadTopicItems(record.id);
       if (token !== packToken) return;
-      beats = items.map(topicItemBeat).sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
+      const end = Date.parse(state.generatedAt) || Date.now();
+      const recent = items.filter((item) => {
+        const time = Date.parse(item.published_at);
+        return Number.isFinite(time) && time <= end && time >= end - 30 * 86400000;
+      });
+      record.windowStories = recent.map((item) => ({ ...item, latest_at: item.published_at, primary_item: item }));
+      beats = recent.map(topicItemBeat).sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
       if (!beats.length) beats = record.windowStories.map(storyBeat);
     }
     if (token !== packToken) return;

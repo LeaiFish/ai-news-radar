@@ -10,7 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
@@ -385,6 +385,9 @@ def build_topics_payload(
     curated_ids = curated_story_ids(pools.get("brief") or [])
     topic_rows: list[dict[str, Any]] = []
     detail_by_id: dict[str, dict[str, Any]] = {}
+    snapshot_at = generated_at or pools.get("generated_at") or utc_now_iso()
+    window_end = parse_time(snapshot_at) or datetime.now(timezone.utc)
+    window_start = window_end - timedelta(days=30)
 
     # Hub cards follow this array order within each group. Do not sort by name or count.
     for topic in config.get("topics") or []:
@@ -399,6 +402,11 @@ def build_topics_payload(
             "group": topic["group"],
             "item_count": total,
             "listed_count": len(items),
+            "recent_item_count": sum(
+                1 for item in items
+                if (stamp := parse_time(item.get("published_at"))) is not None
+                and window_start <= stamp <= window_end
+            ),
             "latest_title": latest.get("title") or "",
             "latest_published_at": latest.get("published_at") or "",
             "items_url": f"data/topics/{topic['id']}.json",

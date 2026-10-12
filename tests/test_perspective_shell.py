@@ -75,10 +75,10 @@ def test_competition_overview_matches_mock_structure_and_marks_placeholders():
     assert "近窗" not in page
     assert "本窗口无故事" not in js
     assert "本窗口无故事" not in page
-    assert "今日 ${count} 条" in js
-    assert "今日无故事" in js
-    assert "今日无故事" in page
-    assert "今日有更新" in page
+    assert "近30天 ${count} 条" in js
+    assert "近30天无消息" in js
+    assert "近30天无消息" in page
+    assert "近30天有更新" in page
     assert "${row.count} 条" not in js
     assert "AI 草稿" in js
     assert "daily-brief.json" in js
