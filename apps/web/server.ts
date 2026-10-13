@@ -145,7 +145,7 @@ async function handle(req: import("node:http").IncomingMessage, res: import("nod
   const search = qi >= 0 ? raw.slice(qi) : "";
 
   if (process.env.RADAR_LEGACY_READER === "true" && (req.method === "GET" || req.method === "HEAD")) {
-    const publicFiles = new Set(["/index.html", "/public-news.json", "/config/topics.json", ...["logo.svg", "styles.css", "sidebar.css", "topics.css", "perspective.css", "perspective.js", "public-projection.js"].map(name => `/assets/${name}`)]);
+    const publicFiles = new Set(["/index.html", "/public-news.json", "/config/topics.json", ...["logo.svg", "styles.css", "sidebar.css", "topics.css", "perspective.css", "perspective.js", "public-projection.js", "aihot-skin.css"].map(name => `/assets/${name}`)]);
     const publicPath = pathname === "/" ? "/index.html" : pathname;
     if (publicFiles.has(publicPath)) {
       const file = path.join("/data/public-site", publicPath);

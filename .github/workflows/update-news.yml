@@ -174,7 +174,7 @@ jobs:
           # caused by a stale filename whitelist here). .gitignore keeps
           # data/email-digest.json out of this add.
           git add data/
-          git add -- index.html public-news.json assets/public-projection.js assets/perspective.js
+          git add -- index.html public-news.json assets/public-projection.js assets/perspective.js assets/aihot-skin.css
           if [ -f data/email-digest.json ] && [ "$EMAIL_DIGEST_PUBLISH" = "1" ]; then
             git add -f data/email-digest.json
           fi

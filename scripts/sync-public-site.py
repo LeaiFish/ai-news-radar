@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 p=argparse.ArgumentParser();p.add_argument('--publish',action='store_true');args=p.parse_args()
 checkout=ROOT/'.local/pages-checkout'
-ASSETS=['logo.svg','styles.css','sidebar.css','topics.css','perspective.css','perspective.js','public-projection.js']
+ASSETS=['logo.svg','styles.css','sidebar.css','topics.css','perspective.css','perspective.js','public-projection.js','aihot-skin.css']
 def copy_reader(stage,out):
  (out/'assets').mkdir(parents=True,exist_ok=True)
  (out/'config').mkdir(parents=True,exist_ok=True)
@@ -37,7 +37,7 @@ with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
     raise SystemExit(0)
   for name in ['index.html','public-news.json']:shutil.copyfile(stage/name,checkout/name)
   copy_reader(stage,checkout)
-  run('git','add','--','index.html','public-news.json','assets/logo.svg','assets/styles.css','assets/sidebar.css','assets/topics.css','assets/perspective.css','assets/perspective.js','assets/public-projection.js','config/topics.json',cwd=checkout)
+  run('git','add','--','index.html','public-news.json','assets/logo.svg','assets/styles.css','assets/sidebar.css','assets/topics.css','assets/perspective.css','assets/perspective.js','assets/public-projection.js','assets/aihot-skin.css','config/topics.json',cwd=checkout)
   if subprocess.run(['git','diff','--cached','--quiet'],cwd=checkout).returncode==0:print('No public changes')
   else:
    run('git','-c','user.name=AI Perspective publisher','-c','user.email=publisher@localhost','commit','-m','chore: publish local public-news projection',cwd=checkout)

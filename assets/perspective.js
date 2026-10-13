@@ -977,7 +977,7 @@
       .map((story, index) => ({ story, index, score: judgmentScore(story) }))
       .sort((a, b) => b.score - a.score || a.index - b.index)[0]?.story;
     if (top) {
-      const brief = state.briefItems.find((item) => item.story_id === top.story_id);
+      const brief = top.story_id ? state.briefItems.find((item) => item.story_id === top.story_id) : null;
       const label = brief?.importance_label || top.importance_label || "未分级";
       const sources = Number(top.source_count || brief?.source_count || 1);
       appendJudgmentCard(

@@ -70,3 +70,5 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.ai-perspective.publi
 
 ## 界面保留（2026-10-13）
 公开站和本机默认入口使用上一版 Radar 的侧栏、竞争概览、主题研究、工作台及机构页排版；AIHOT 完整后台仍用于采集、存储和管理。公开页面通过 public-news.json 适配原有界面，不导出数据库或内部数据。
+
+界面视觉通过 assets/aihot-skin.css 参考 AIHOT 的颜色、侧栏、字体、卡片与分页；Radar 的导航分类、机构页模块和交互仍保持原设计。
