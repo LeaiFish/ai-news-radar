@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
       (function () {
+        var topicHash = window.location.hash.match(/^#\/topics\/([^/?#]+)/);
+        if (topicHash) {
+          var target = new URL(window.location.href);
+          target.searchParams.set("space", "research");
+          target.searchParams.set("kind", "org");
+          target.searchParams.set("id", decodeURIComponent(topicHash[1]));
+          target.hash = "";
+          window.history.replaceState(null, "", target);
+        }
         var params;
         try {
           params = new URLSearchParams(window.location.search);
@@ -276,6 +285,7 @@
         </section>
       </main>
     </div>
+    <script src="./assets/public-projection.js?v=20261013"></script>
     <script src="./assets/perspective.js?v=ui20261012f"></script>
   </body>
 </html>

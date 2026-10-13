@@ -161,8 +161,7 @@ jobs:
           npm run public:build
           cp .public-export/site/index.html index.html
           cp .public-export/site/public-news.json public-news.json
-          mkdir -p assets/public-reader
-          cp .public-export/site/assets/public-reader/* assets/public-reader/
+          cp .public-export/site/assets/* assets/
 
       - name: Commit and push changes
         env:
@@ -175,7 +174,7 @@ jobs:
           # caused by a stale filename whitelist here). .gitignore keeps
           # data/email-digest.json out of this add.
           git add data/
-          git add -- index.html public-news.json assets/public-reader/
+          git add -- index.html public-news.json assets/public-projection.js assets/perspective.js
           if [ -f data/email-digest.json ] && [ "$EMAIL_DIGEST_PUBLISH" = "1" ]; then
             git add -f data/email-digest.json
           fi

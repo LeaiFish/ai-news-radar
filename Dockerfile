@@ -22,12 +22,14 @@ COPY scripts/ scripts/
 COPY licenses/ licenses/
 COPY NOTICE LICENSE ./
 COPY assets/og-fonts/ assets/og-fonts/
+COPY legacy-radar.html ./
+COPY assets/logo.svg assets/styles.css assets/sidebar.css assets/topics.css assets/perspective.css assets/perspective.js assets/public-projection.js assets/
 COPY config/topics.json config/source_tiers.json config/focus_sources.json config/
 COPY feeds/follow.example.opml feeds/
 COPY requirements.txt ./
 RUN --mount=type=secret,id=proxy_ca sh -c 'if [ -f /run/secrets/proxy_ca ]; then export NODE_EXTRA_CA_CERTS=/run/secrets/proxy_ca; fi; npm ci --no-audit --no-fund ${NPM_REGISTRY:+--registry=$NPM_REGISTRY}'
 RUN --mount=type=secret,id=proxy_ca python3 -m venv /app/.venv && sh -c 'if [ -f /run/secrets/proxy_ca ]; then export PIP_CERT=/run/secrets/proxy_ca; fi; /app/.venv/bin/pip install --no-cache-dir -r requirements.txt'
-RUN npm run build -w @aihot/web && npx vite build --config apps/web/static.config.ts && npm prune --omit=dev --no-audit --no-fund
+RUN npm run build -w @aihot/web && node scripts/package-public-site.ts && npm prune --omit=dev --no-audit --no-fund
 
 FROM base
 ENV NODE_ENV=production

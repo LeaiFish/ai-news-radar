@@ -67,3 +67,6 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.ai-perspective.publi
 `export-public-news.py` 只读固定新闻文件，拒绝私有/内部/指标字段与本地/带凭据URL；`export-public-db.ts` 只读公开投影，不执行 `pg_dump`。Dockerfile 显式列出代码与公开配置，禁止整目录 `COPY . .`。上传前仍应把内部业务工作簿、数据库与新闻项目存放在不同目录。
 
 回退界面可使用 `legacy-radar.html`；数据库卷不会因重建镜像删除。`docker compose down` 保留数据，不要运行带 `-v` 的删除命令，除非确实要删除本机新闻数据库。
+
+## 界面保留（2026-10-13）
+公开站和本机默认入口使用上一版 Radar 的侧栏、竞争概览、主题研究、工作台及机构页排版；AIHOT 完整后台仍用于采集、存储和管理。公开页面通过 public-news.json 适配原有界面，不导出数据库或内部数据。

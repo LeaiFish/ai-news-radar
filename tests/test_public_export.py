@@ -28,9 +28,9 @@ def test_public_reader_entry_references_only_existing_reader_assets():
     from bs4 import BeautifulSoup
     root=Path(__file__).parents[1]
     page=BeautifulSoup((root/'index.html').read_text(),'html.parser')
-    assert page.title.get_text()=='AI Perspective'
+    assert page.title.get_text()=='竞争概览 · AI Perspective'
     urls=[tag.get('src') for tag in page.select('script[src]')]+[tag.get('href') for tag in page.select('link[rel="stylesheet"]')]
     assert urls
     for url in urls:
-        assert url.startswith('/ai-news-radar/assets/public-reader/')
-        assert (root/url.removeprefix('/ai-news-radar/')).is_file()
+        assert url.startswith('./assets/')
+        assert (root/url.split('?')[0].removeprefix('./')).is_file()

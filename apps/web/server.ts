@@ -24,6 +24,7 @@ const TRUST_PROXY = process.env.TRUST_PROXY === "true";
 const CLIENT_DIR = path.resolve(import.meta.dirname, "build/client");
 
 const TYPES: Record<string, string> = {
+  ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".css": "text/css; charset=utf-8",
   ".svg": "image/svg+xml",
@@ -143,6 +144,20 @@ async function handle(req: import("node:http").IncomingMessage, res: import("nod
   const pathname = qi >= 0 ? raw.slice(0, qi) : raw;
   const search = qi >= 0 ? raw.slice(qi) : "";
 
+  if (process.env.RADAR_LEGACY_READER === "true" && (req.method === "GET" || req.method === "HEAD")) {
+    const publicFiles = new Set(["/index.html", "/public-news.json", "/config/topics.json", ...["logo.svg", "styles.css", "sidebar.css", "topics.css", "perspective.css", "perspective.js", "public-projection.js"].map(name => `/assets/${name}`)]);
+    const publicPath = pathname === "/" ? "/index.html" : pathname;
+    if (publicFiles.has(publicPath)) {
+      const file = path.join("/data/public-site", publicPath);
+      const info = await stat(file).catch(() => null);
+      if (info?.isFile()) {
+        res.writeHead(200, { "Content-Type": TYPES[path.extname(file)] ?? "application/octet-stream", "Cache-Control": "no-cache", "X-Content-Type-Options": "nosniff" });
+        if (req.method === "HEAD") return res.end();
+        createReadStream(file).pipe(res);
+        return;
+      }
+    }
+  }
   const decision = resolveRedirect(pathname, search);
   if (decision) {
     for (const [k, v] of Object.entries(decision.headers)) res.setHeader(k, v);

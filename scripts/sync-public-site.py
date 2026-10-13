@@ -5,6 +5,12 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 p=argparse.ArgumentParser();p.add_argument('--publish',action='store_true');args=p.parse_args()
 checkout=ROOT/'.local/pages-checkout'
+ASSETS=['logo.svg','styles.css','sidebar.css','topics.css','perspective.css','perspective.js','public-projection.js']
+def copy_reader(stage,out):
+ (out/'assets').mkdir(parents=True,exist_ok=True)
+ (out/'config').mkdir(parents=True,exist_ok=True)
+ for name in ASSETS:shutil.copyfile(stage/'assets'/name,out/'assets'/name)
+ shutil.copyfile(stage/'config/topics.json',out/'config/topics.json')
 def run(*cmd,cwd=ROOT):return subprocess.run(cmd,cwd=cwd,check=True,text=True,capture_output=True).stdout
 with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
  stage=Path(folder)/'site'
@@ -16,7 +22,7 @@ with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
  if not args.publish:
   out=ROOT/'.local/public-preview/ai-news-radar';out.mkdir(parents=True,exist_ok=True)
   for name in ['index.html','public-news.json']:shutil.copyfile(stage/name,out/name)
-  shutil.copytree(stage/'assets/public-reader',out/'assets/public-reader',dirs_exist_ok=True)
+  copy_reader(stage,out)
   print('Public preview written to .local/public-preview; nothing uploaded.')
  else:
   checkout.parent.mkdir(parents=True,exist_ok=True)
@@ -30,8 +36,8 @@ with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
     print('The public site already has a newer news snapshot; skipped stale local export.')
     raise SystemExit(0)
   for name in ['index.html','public-news.json']:shutil.copyfile(stage/name,checkout/name)
-  shutil.copytree(stage/'assets/public-reader',checkout/'assets/public-reader',dirs_exist_ok=True)
-  run('git','add','--','index.html','public-news.json','assets/public-reader',cwd=checkout)
+  copy_reader(stage,checkout)
+  run('git','add','--','index.html','public-news.json','assets/logo.svg','assets/styles.css','assets/sidebar.css','assets/topics.css','assets/perspective.css','assets/perspective.js','assets/public-projection.js','config/topics.json',cwd=checkout)
   if subprocess.run(['git','diff','--cached','--quiet'],cwd=checkout).returncode==0:print('No public changes')
   else:
    run('git','-c','user.name=AI Perspective publisher','-c','user.email=publisher@localhost','commit','-m','chore: publish local public-news projection',cwd=checkout)

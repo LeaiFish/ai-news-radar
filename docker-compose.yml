@@ -89,6 +89,9 @@ services:
       AIHOT_RELEASE: ${AIHOT_RELEASE:-}
       WEB_HOST: 0.0.0.0
       WEB_PORT: "3000"
+      RADAR_LEGACY_READER: "true"
+    volumes:
+      - data:/data:ro
     ports:
       - "127.0.0.1:${PORT:-3000}:3000"
     depends_on:

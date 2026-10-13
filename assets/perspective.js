@@ -158,6 +158,7 @@
   }
 
   async function loadJson(path) {
+    if (!dataBaseUrl && window.radarPublicProjection) return window.radarPublicProjection(path, ROOT);
     const response = await fetch(`${dataUrl(path)}?t=${Date.now()}`);
     if (!response.ok) throw new Error(`${path} ${response.status}`);
     return response.json();
