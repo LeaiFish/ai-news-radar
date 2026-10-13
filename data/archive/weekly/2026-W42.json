@@ -4,51 +4,78 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-13T12:46:10.247756Z",
+  "generated_at": "2026-10-13T16:03:27.754872Z",
   "daily_dates": [
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
   ],
-  "story_count": 404,
-  "unique_story_count": 404,
+  "story_count": 712,
+  "unique_story_count": 456,
   "counts": {
     "by_company_topic": {
-      "anthropic": 51,
-      "apple": 4,
-      "cursor": 6,
-      "deepseek": 2,
-      "doubao": 2,
-      "google-gemini": 14,
-      "kimi": 4,
-      "meta-llama": 2,
-      "microsoft": 9,
-      "minimax": 3,
-      "nvidia": 10,
-      "openai": 40,
-      "perplexity": 3,
-      "qwen": 11,
-      "xai": 17,
-      "zhipu": 2
+      "anthropic": 81,
+      "apple": 22,
+      "cursor": 13,
+      "deepseek": 3,
+      "doubao": 4,
+      "google-gemini": 25,
+      "kimi": 6,
+      "meta-llama": 4,
+      "microsoft": 13,
+      "minimax": 6,
+      "nvidia": 17,
+      "openai": 68,
+      "perplexity": 6,
+      "qwen": 20,
+      "xai": 32,
+      "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 69,
-      "monetization": 10,
-      "product-entry": 1,
-      "workplace": 11
+      "agent-ecosystem": 123,
+      "monetization": 22,
+      "product-entry": 2,
+      "workplace": 18
     },
     "by_importance_label": {
-      "值得关注": 302,
-      "多源热议": 14,
-      "官方更新": 5,
-      "行业动态": 83
+      "值得关注": 527,
+      "多源热议": 29,
+      "官方更新": 14,
+      "行业动态": 142
     },
     "by_source_count_bucket": {
-      "1": 376,
-      "2": 14,
-      "3+": 14
+      "1": 659,
+      "2": 24,
+      "3+": 29
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_7e7580bbc9b4",
+      "title": "Gemini 4 Argon for Robotics",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+      "importance_score": 0.8639,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_454f718acba9",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon",
+      "importance_score": 0.8519,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
     {
       "story_id": "story_299fe0589862",
       "title": "安全概述中的代码扫描 AI Scan 指标 / Code scanning AI Scan metrics in security overview",
@@ -61,13 +88,35 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_564a92d1b485",
+      "title": "Improved detection for withdrawn Dependabot alerts",
+      "url": "https://github.blog/changelog/2026-10-13-improved-detection-for-withdrawn-dependabot-alerts",
+      "importance_score": 0.8389,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3881ff799aa4",
+      "title": "Search and filter for budgets now available",
+      "url": "https://github.blog/changelog/2026-10-13-search-and-filter-for-budgets-now-available",
+      "importance_score": 0.834,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_3f65ad068613",
       "title": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产 / Character.AI files for bankruptcy",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
-      "importance_score": 0.8109,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-13",
+      "importance_score": 0.8278,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-10-14",
       "company_topics": [],
       "lens_topics": []
     },
@@ -103,6 +152,19 @@
       ]
     },
     {
+      "story_id": "story_84b9cfdb1dea",
+      "title": "Mix, Don't Tune: Bilingual Pre-Training Outperforms Hyperparameter Search in Data-Constrained Settings",
+      "url": "https://machinelearning.apple.com/research/mix-dont-tune",
+      "importance_score": 0.8067,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_7924bc1de44f",
       "title": "在有限的公开预览中推送提交的归因 / Push attribution for commits in limited public preview",
       "url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
@@ -121,6 +183,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6ea79184eed9",
+      "title": "Character.AI 成立五年后申请 Chapter 11 破产，部分资产以 2000 万美元出售给 Disney / Just 5 years in, interactive chatbot platform Character.AI files for bankruptcy",
+      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy",
+      "importance_score": 0.7883,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
       "company_topics": [],
       "lens_topics": []
     },
@@ -462,84 +535,6 @@
       "archive_date": "2026-10-12",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_8044a36c6dff",
-      "title": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-      "url": "https://www.aibase.com/news/31551",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6b74733062f4",
-      "title": "特朗普强推 AI 改名\"超级智能\"，硅谷巨头排队照办",
-      "url": "https://www.aibase.com/news/31555",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_60f0e5ebdd7f",
-      "title": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
-      "url": "https://www.aibase.com/news/31549",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_57cb2220043e",
-      "title": "OpenAI 给 GPT-6.1 Sol 扩容：默认上下文 272k 飙到 500k，长文本还免费",
-      "url": "https://www.aibase.com/news/31560",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_451b13ea70e5",
-      "title": "苹果加码智能家居生态，计划联合LG推出门锁、门铃等设备",
-      "url": "https://www.aibase.com/news/31558",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4405999eb6ed",
-      "title": "微软升级 Copilot Notebooks:支持任务委派、Office 文档编辑与交互式报告",
-      "url": "https://www.aibase.com/news/31563",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
     }
   ]
 }
