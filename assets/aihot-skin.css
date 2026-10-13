@@ -98,3 +98,10 @@ h1, .pack-main h1 { font-size: 30px; font-weight: 650; letter-spacing: -.035em; 
 @media (prefers-reduced-motion: reduce) { .topic-card:hover { transform: none; } }
 
 html[data-space] .space-nav .nav-link::before { inset: auto; height: 17px; width: 17px; }
+
+.research-judgment { padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.research-judgment h3 { margin: 12px 0 20px; font-size: 18px; font-weight: 600; line-height: 1.7; }
+.research-focus-list { list-style: none; padding: 0; margin: 0 0 20px; }
+.research-focus-list li { padding: 16px 0; border-top: 1px solid var(--line-soft); font-size: 14px; line-height: 1.8; }
+.research-focus-list p { margin: 6px 0; color: var(--ink-soft); }
+.research-evidence { display: grid; gap: 4px; font-size: 12px; }

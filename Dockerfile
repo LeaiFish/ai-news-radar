@@ -23,7 +23,7 @@ COPY licenses/ licenses/
 COPY NOTICE LICENSE ./
 COPY assets/og-fonts/ assets/og-fonts/
 COPY legacy-radar.html ./
-COPY assets/logo.svg assets/styles.css assets/sidebar.css assets/topics.css assets/perspective.css assets/perspective.js assets/public-projection.js assets/aihot-skin.css assets/
+COPY assets/logo.svg assets/styles.css assets/sidebar.css assets/topics.css assets/perspective.css assets/perspective.js assets/public-projection.js assets/aihot-skin.css assets/research-analysis.js assets/
 COPY config/topics.json config/source_tiers.json config/focus_sources.json config/
 COPY feeds/follow.example.opml feeds/
 COPY requirements.txt ./

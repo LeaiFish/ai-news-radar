@@ -13,6 +13,7 @@ def run(*args): subprocess.run(args,cwd=ROOT,env=env,check=True,timeout=1500)
 run('python3','scripts/update_news.py','--output-dir',str(news),'--window-hours','24','--archive-days','35','--translate-max-new','20')
 run('python3','scripts/free_news_content.py','--data-dir',str(news),'--max-fetch','40','--max-translate','20')
 run('python3','scripts/build_topics.py','--data-dir',str(news),'--translate-max-new','20')
+run('python3','scripts/translate-domestic-summaries.py','--data-dir',str(news),'--max-new','400')
 run('python3','scripts/export-public-news.py','--output',str(public/'public-news.json'))
 run('node','scripts/import-public-news.ts')
 # The exporter reads only marked public imports and respects withdrawals.

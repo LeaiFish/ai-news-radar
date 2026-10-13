@@ -161,7 +161,7 @@ def enrich(data_dir: Path, max_fetch: int = 40, max_translate: int = 20) -> dict
                     cache[url] = saved
                 continue
             translated = saved.get("summary_zh", "")
-            if re.search(r"[一-鿿]", summary):
+            if len(re.findall(r"[一-鿿]", summary)) >= max(4, len(re.findall(r"[A-Za-z]", summary)) * .15):
                 translated = summary
             elif not translated and counts["translated"] < max_translate:
                 counts["translated"] += 1

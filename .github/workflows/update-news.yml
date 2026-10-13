@@ -145,6 +145,9 @@ jobs:
       - name: Enrich public news with free source excerpts
         run: python scripts/free_news_content.py --data-dir data --max-fetch 40 --max-translate 20
 
+      - name: Translate domestic institution summaries (free only)
+        run: python scripts/translate-domestic-summaries.py --data-dir data --max-new 400
+
       - name: Backfill recent topic translations (free only)
         run: python scripts/build_topics.py --data-dir data --translate-max-new 20
 
@@ -174,7 +177,7 @@ jobs:
           # caused by a stale filename whitelist here). .gitignore keeps
           # data/email-digest.json out of this add.
           git add data/
-          git add -- index.html public-news.json assets/public-projection.js assets/perspective.js assets/aihot-skin.css
+          git add -- index.html public-news.json assets/public-projection.js assets/perspective.js assets/aihot-skin.css assets/research-analysis.js
           if [ -f data/email-digest.json ] && [ "$EMAIL_DIGEST_PUBLISH" = "1" ]; then
             git add -f data/email-digest.json
           fi

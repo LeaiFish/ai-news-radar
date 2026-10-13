@@ -444,7 +444,11 @@
     applyMonth();
     if (state.month !== state.currentMonth) return;
     renderJudgments();
-    renderTable(domesticBody, collectRows(DOMESTIC));
+    const firstDomestic = state.topicConfig.filter(topic => topic.group === "company" && DOMESTIC.some(product => product.id === topic.id)).slice(0, 4);
+    renderTable(domesticBody, firstDomestic.map(topic => {
+      const latest = state.topics.find(row => row.id === topic.id);
+      return {name: topic.name, note: latest?.latest_title || "近30天暂无相关消息", url: `./?space=research&kind=org&id=${encodeURIComponent(topic.id)}`};
+    }));
     renderTable(overseasBody, collectRows(OVERSEAS));
     renderRelated();
   }
@@ -971,6 +975,32 @@
   }
 
   function renderJudgment(record, beats) {
+    if (record.kind === "org" || record.kind === "trend") {
+      const slot = document.getElementById("packJudgment");
+      clear(slot);
+      const analysis = globalThis.radarAnalyzeResearch(beats, Date.parse(state.generatedAt) || Date.now());
+      const card = el("article", "judgment-card research-judgment");
+      card.append(el("p", "judgment-meta", `依据近30天 ${analysis.total} 条去重消息 · ${analysis.sources} 个报道来源 · 自动归纳`));
+      if (!analysis.themes.length) {
+        card.append(el("h3", null, "当前消息不足以判断持续重心"), el("p", "judgment-summary", "尚未出现被多条消息支持的方向，继续观察后续发布和落地进展。"));
+      } else {
+        card.append(el("h3", null, `公开报道的重心集中在${analysis.themes.slice(0,2).map(theme=>theme.name).join("、")}`));
+        const list=el("ul", "research-focus-list");
+        analysis.themes.forEach(theme=>{
+          const item=el("li");
+          item.append(el("strong", null, `${theme.name}（${theme.count} 条）`),el("p", null, `可能的发展方向：${theme.direction}。`));
+          const evidence=el("div", "research-evidence");
+          theme.evidence.forEach(beat=>{
+            const href=safeHttpUrl(beat.url);if (!href) return;
+            const link=el("a", null, shortText(beat.title,65));link.href=href;link.target="_blank";link.rel="noopener noreferrer";evidence.append(link);
+          });
+          item.append(evidence);list.append(item);
+        });
+        card.append(list);
+      }
+      card.append(el("p", "judgment-meta", "这是对已收集公开报道的观察，方向由标题关键词归纳；同一消息可涉及多个方向，报道数量不代表投入规模或公司官方战略。"));
+      slot.append(card);return;
+    }
     const slot = document.getElementById("packJudgment");
     clear(slot);
     const top = record.windowStories
@@ -1214,7 +1244,10 @@
         return Number.isFinite(time) && time <= end && time >= end - 30 * 86400000;
       });
       record.windowStories = recent.map((item) => ({ ...item, latest_at: item.published_at, primary_item: item }));
-      beats = recent.map(topicItemBeat).sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
+      beats = recent.map(topicItemBeat).map(beat => {
+        if (DOMESTIC.some(topic=>topic.id===record.id) && ((beat.summary || "").match(/[\u4e00-\u9fff]/g) || []).length < Math.max(4, ((beat.summary || "").match(/[A-Za-z]/g) || []).length * 0.15)) beat.summary="";
+        return beat;
+      }).sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
       if (!beats.length) beats = record.windowStories.map(storyBeat);
     }
     if (token !== packToken) return;

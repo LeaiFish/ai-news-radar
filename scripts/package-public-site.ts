@@ -4,7 +4,7 @@ await rm(`${out}/assets`,{recursive:true,force:true});
 await mkdir(`${out}/assets`,{recursive:true});
 await mkdir(`${out}/config`,{recursive:true});
 await copyFile('legacy-radar.html',`${out}/index.html`);
-for (const name of ['logo.svg','styles.css','sidebar.css','topics.css','perspective.css','perspective.js','public-projection.js','aihot-skin.css']) await copyFile(`assets/${name}`,`${out}/assets/${name}`);
+for (const name of ['logo.svg','styles.css','sidebar.css','topics.css','perspective.css','perspective.js','public-projection.js','aihot-skin.css','research-analysis.js']) await copyFile(`assets/${name}`,`${out}/assets/${name}`);
 await copyFile('config/topics.json',`${out}/config/topics.json`);
 if (await access('.public-export/public-news.json').then(()=>true,()=>false)) await copyFile('.public-export/public-news.json',`${out}/public-news.json`);
 await writeFile(`${out}/.nojekyll`,'');
