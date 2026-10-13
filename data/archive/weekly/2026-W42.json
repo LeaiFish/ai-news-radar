@@ -4,44 +4,46 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-12T23:37:29.899888Z",
+  "generated_at": "2026-10-13T01:16:23.272078Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13"
   ],
-  "story_count": 305,
-  "unique_story_count": 228,
+  "story_count": 329,
+  "unique_story_count": 262,
   "counts": {
     "by_company_topic": {
-      "anthropic": 44,
-      "apple": 6,
-      "cursor": 1,
-      "deepseek": 1,
+      "anthropic": 43,
+      "apple": 3,
+      "cursor": 2,
+      "deepseek": 2,
       "google-gemini": 11,
-      "kimi": 3,
+      "kimi": 4,
       "meta-llama": 2,
-      "microsoft": 8,
+      "microsoft": 9,
+      "minimax": 1,
       "nvidia": 5,
-      "openai": 30,
+      "openai": 32,
+      "perplexity": 3,
       "qwen": 3,
-      "xai": 5,
+      "xai": 9,
       "zhipu": 1
     },
     "by_lens_topic": {
-      "agent-ecosystem": 57,
-      "monetization": 10,
-      "workplace": 8
+      "agent-ecosystem": 63,
+      "monetization": 8,
+      "workplace": 9
     },
     "by_importance_label": {
-      "值得关注": 233,
-      "多源热议": 10,
-      "官方更新": 5,
-      "行业动态": 57
+      "值得关注": 251,
+      "多源热议": 11,
+      "官方更新": 3,
+      "行业动态": 64
     },
     "by_source_count_bucket": {
-      "1": 285,
-      "2": 10,
-      "3+": 10
+      "1": 307,
+      "2": 11,
+      "3+": 11
     }
   },
   "top_stories": [
@@ -49,7 +51,7 @@
       "story_id": "story_41c5d4380fc2",
       "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
       "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-      "importance_score": 0.8504,
+      "importance_score": 0.8469,
       "importance_label": "多源热议",
       "source_count": 5,
       "archive_date": "2026-10-13",
@@ -60,7 +62,7 @@
       "story_id": "story_1327604ea90f",
       "title": "适合初学者的 GitHub Copilot 应用程序：如何向 Copilot 教授您的代码库 / GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
-      "importance_score": 0.8373,
+      "importance_score": 0.8334,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -76,7 +78,18 @@
       "story_id": "story_7924bc1de44f",
       "title": "在有限的公开预览中推送提交的归因 / Push attribution for commits in limited public preview",
       "url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
-      "importance_score": 0.8264,
+      "importance_score": 0.8226,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_06f333b9aafa",
+      "title": "Anonymous organization-level registries for Dependabot",
+      "url": "https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot",
+      "importance_score": 0.8171,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -87,7 +100,7 @@
       "story_id": "story_8a809173e2e5",
       "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
       "url": "https://github.com/openai/codex/issues/48195",
-      "importance_score": 0.814,
+      "importance_score": 0.81,
       "importance_label": "多源热议",
       "source_count": 4,
       "archive_date": "2026-10-13",
@@ -97,23 +110,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_414ddb232fce",
-      "title": "Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
-      "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
-      "importance_score": 0.804,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_cbebf0458204",
       "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力 / Muse Wonder",
       "url": "https://research.meta.ai/blog/muse-wonder",
-      "importance_score": 0.7985,
+      "importance_score": 0.7946,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-13",
@@ -129,7 +129,7 @@
       "story_id": "story_d243d2985244",
       "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
       "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-      "importance_score": 0.7979,
+      "importance_score": 0.7938,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-13",
@@ -137,34 +137,6 @@
         "anthropic"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_b75f3d1068f1",
-      "title": "Large Language Models for Machine Translation Quality Annotation: Humans and Models Are Both Challenged",
-      "url": "https://machinelearning.apple.com/research/llm-translation-quality-annotation",
-      "importance_score": 0.792,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9bff18632a1f",
-      "title": "Self-Compacting Language Model Agents",
-      "url": "https://machinelearning.apple.com/research/self-compacting-language-agents",
-      "importance_score": 0.792,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     },
     {
       "story_id": "story_b41ff3f56559",
@@ -183,7 +155,7 @@
       "story_id": "story_b6844ce9c244",
       "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
       "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
-      "importance_score": 0.7724,
+      "importance_score": 0.7685,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -196,7 +168,7 @@
       "story_id": "story_f0a7b95fb5f2",
       "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
       "url": "https://x.com/arena/status/2109706854700044523",
-      "importance_score": 0.7717,
+      "importance_score": 0.7678,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-13",
@@ -204,6 +176,17 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_f11a13789a5b",
+      "title": "打破硬件边界:智能戒指厂商Ultrahuman如何以生物年龄模型重构健康预测",
+      "url": "https://www.aibase.com/news/31575",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_efb1d33574f2",
@@ -239,6 +222,54 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b5fab2baca32",
+      "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+      "url": "https://www.aibase.com/news/31576",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_af833dea3300",
+      "title": "Meta端出Muse Wonder对标GPT- 6 与Claude，内部代号\"西瓜\"、烤肉直播里剧透",
+      "url": "https://www.aibase.com/news/31572",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a1157fadd5d8",
+      "title": "微软发布第三代自研AI芯片Maia300，计划2027年投产",
+      "url": "https://www.aibase.com/news/31577",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7f861b743ceb",
+      "title": "编造月之暗面被带走谣言，两名男子被北京警方刑拘",
+      "url": "https://www.aibase.com/news/31571",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "kimi"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_79c60ffdb517",
       "title": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
       "url": "https://www.aibase.com/news/31567",
@@ -263,6 +294,45 @@
       "archive_date": "2026-10-12",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_5c3b7bc2e45a",
+      "title": "估值4亿美元!DeepSeek出手布局人形机器人AI赛道",
+      "url": "https://www.aibase.com/news/31574",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_44e9421b5ba8",
+      "title": "OpenAI给ChatGPT装上交互界面，手搓AI应用赛道要被跨域了",
+      "url": "https://www.aibase.com/news/31573",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_31570338089f",
+      "title": "英特尔陈立武预警：AI 硬件还要缺两三年，智能体正改写芯片配比",
+      "url": "https://www.aibase.com/news/31578",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_221e683ee734",
@@ -472,95 +542,6 @@
         "openai"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_8b03c7583593",
-      "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
-      "url": "https://x.com/cursor_ai/status/2109779605699879146",
-      "importance_score": 0.7597,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "cursor"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_75aedb54f50c",
-      "title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程 / How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-      "url": "https://x.com/MeshyAI/status/2109550836934471864",
-      "importance_score": 0.7563,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization",
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_6df55b1a5a3a",
-      "title": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-      "url": "https://x.com/Khazix0918/status/2109501787736813663",
-      "importance_score": 0.7393,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_bfd50c0d14b1",
-      "title": "GPT-6.1 Sol 在 Codex 与 Work 中默认上下文长度提升至 500k",
-      "url": "https://x.com/thsottiaux/status/2109430343346581527",
-      "importance_score": 0.7323,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_599c88b675eb",
-      "title": "AI逆向一切：Brandon Thomas用Claude Opus 5.5重写Adobe七款软件开源，REA项目逼近10万Star",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686995&idx=1&sn=cc40a3488a2ea7652d2ab589056f40b4",
-      "importance_score": 0.7268,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_b56e48a5a98d",
-      "title": "微软发布自研芯片 Maia 300 并将大规模扩展 Maia 推理部署 / Today we are announcing our biggest bet yet on our own silicon.",
-      "url": "https://x.com/satyanadella/status/2109631106404487523",
-      "importance_score": 0.7211,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
     }
   ]
 }

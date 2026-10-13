@@ -5,7 +5,7 @@
 <link>https://news.learnprompt.pro</link>
 <description>24 小时 AI 更新雷达的策展精选：官方发布、模型上新、高信号讨论。</description>
 <language>zh-cn</language>
-<lastBuildDate>Mon, 12 Oct 2026 23:37:29 +0000</lastBuildDate>
+<lastBuildDate>Tue, 13 Oct 2026 01:16:23 +0000</lastBuildDate>
 <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://news.learnprompt.pro/data/feed.xml"/>
 <item>
 <title>QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions</title>
@@ -40,14 +40,6 @@
 <pubDate>Mon, 12 Oct 2026 19:25:54 +0000</pubDate>
 </item>
 <item>
-<title>Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices</title>
-<link>https://machinelearning.apple.com/research/distributed-gpu-cloud</link>
-<guid isPermaLink="true">https://machinelearning.apple.com/research/distributed-gpu-cloud</guid>
-<description>The increasing demand for GPU-accelerated machine learning inference has exposed limitations in centralized GPU infrastructures, including high cost, limited elasticity, and long wait times under resource constraints. At the same time, modern Apple Silicon–based macOS devices are equipped with powerful GPUs that remain largely idle during normal usage. This paper presents Minions, a dynamic and distributed virtual GPU cloud that aggregates idle Apple Silicon GPUs across macOS devices to execute （Apple Machine Learning Research）</description>
-<category>官方更新</category>
-<pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
-</item>
-<item>
 <title>Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力 / Muse Wonder</title>
 <link>https://research.meta.ai/blog/muse-wonder</link>
 <guid isPermaLink="true">https://research.meta.ai/blog/muse-wonder</guid>
@@ -64,6 +56,14 @@
 <pubDate>Mon, 12 Oct 2026 20:59:50 +0000</pubDate>
 </item>
 <item>
+<title>Anonymous organization-level registries for Dependabot</title>
+<link>https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot</link>
+<guid isPermaLink="true">https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot</guid>
+<description>You can now select Anonymous as the authentication method for an organization-level private registry. Use it for registries that Dependabot can reach without credentials, such as an internal package mirror… The post Anonymous organization-level registries for Dependabot appeared first on The GitHub Blog .（GitHub Changelog）</description>
+<category>官方更新</category>
+<pubDate>Mon, 12 Oct 2026 14:04:16 +0000</pubDate>
+</item>
+<item>
 <title>Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!</title>
 <link>https://x.com/arena/status/2109706854700044523</link>
 <guid isPermaLink="true">https://x.com/arena/status/2109706854700044523</guid>
@@ -72,12 +72,12 @@
 <pubDate>Mon, 12 Oct 2026 18:04:45 +0000</pubDate>
 </item>
 <item>
-<title>Large Language Models for Machine Translation Quality Annotation: Humans and Models Are Both Challenged</title>
-<link>https://machinelearning.apple.com/research/llm-translation-quality-annotation</link>
-<guid isPermaLink="true">https://machinelearning.apple.com/research/llm-translation-quality-annotation</guid>
-<description>Large Language Models (LLMs) are considered to be a more efficient and cost-effective alternative to human judgment for Machine Translation (MT) evaluation. With MT evaluation spanning a large number of language pairs, domains and levels of annotation granularity, LLMs must be thoroughly evaluated across these dimensions before being reliably used as alternatives to human evaluation. In this paper, we evaluate the performance of LLMs for two prominent MT quality evaluation schemes: Multidimensio（Apple Machine Learning Research）</description>
-<category>官方更新</category>
-<pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+<title>3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码"复刻"了 83%</title>
+<link>https://www.aibase.com/news/31576</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31576</guid>
+<description>AIbase</description>
+<category>行业动态</category>
+<pubDate>Tue, 13 Oct 2026 01:16:23 +0000</pubDate>
 </item>
 <item>
 <title>Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.</title>
@@ -104,20 +104,12 @@
 <pubDate>Mon, 12 Oct 2026 18:21:36 +0000</pubDate>
 </item>
 <item>
-<title>AI 没抢走程序员饭碗？美初级码农就业反降 20%，专家忧十年后断档</title>
-<link>https://www.aibase.com/news/31568</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31568</guid>
+<title>Meta端出Muse Wonder对标GPT- 6 与Claude，内部代号"西瓜"、烤肉直播里剧透</title>
+<link>https://www.aibase.com/news/31572</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31572</guid>
 <description>AIbase</description>
 <category>行业动态</category>
-<pubDate>Mon, 12 Oct 2026 09:48:29 +0000</pubDate>
-</item>
-<item>
-<title>Self-Compacting Language Model Agents</title>
-<link>https://machinelearning.apple.com/research/self-compacting-language-agents</link>
-<guid isPermaLink="true">https://machinelearning.apple.com/research/self-compacting-language-agents</guid>
-<description>Long agent traces composed of chains of thought and tool calls accumulate stale content that anchor subsequent generations, and eventually outgrow the context window. Existing scaffolds mitigate it with fixed-interval compaction triggered at a token threshold. Such triggers pay no heed to trajectory structure, risking discard of partial results mid-derivation or mid-search. We propose SELFCOMPACT, a scaffold that allows the model itself to decide when and how to compact. Specifically, it pairs t（Apple Machine Learning Research）</description>
-<category>官方更新</category>
-<pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+<pubDate>Tue, 13 Oct 2026 01:16:23 +0000</pubDate>
 </item>
 <item>
 <title>用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程 / How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮</title>
@@ -128,44 +120,52 @@
 <pubDate>Mon, 12 Oct 2026 07:44:47 +0000</pubDate>
 </item>
 <item>
-<title>微软发布自研芯片 Maia 300 并将大规模扩展 Maia 推理部署 / Today we are announcing our biggest bet yet on our own silicon.</title>
-<link>https://x.com/satyanadella/status/2109631106404487523</link>
-<guid isPermaLink="true">https://x.com/satyanadella/status/2109631106404487523</guid>
-<description>微软宣布明年起将 Maia 芯片家族扩展到多吉瓦级部署，作为自家产品和服务的首选推理系统，并发布 Maia 300，每瓦 token 产出比主流 GPU 系统高 40%。Maia 200 已在美国、欧洲和澳大利亚部署，在 Teams 和 Copilot 场景中每瓦 token 产出提升最高 1.7x。（X：Satya Nadella (@satyanadella)）</description>
-<category>行业动态</category>
-<pubDate>Mon, 12 Oct 2026 13:03:45 +0000</pubDate>
-</item>
-<item>
-<title>​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游</title>
-<link>https://www.aibase.com/news/31567</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31567</guid>
+<title>OpenAI给ChatGPT装上交互界面，手搓AI应用赛道要被跨域了</title>
+<link>https://www.aibase.com/news/31573</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31573</guid>
 <description>AIbase</description>
 <category>行业动态</category>
-<pubDate>Mon, 12 Oct 2026 09:48:29 +0000</pubDate>
+<pubDate>Tue, 13 Oct 2026 01:16:23 +0000</pubDate>
 </item>
 <item>
-<title>GPT-6.1 Sol 在 Codex 与 Work 中默认上下文长度提升至 500k</title>
-<link>https://x.com/thsottiaux/status/2109430343346581527</link>
-<guid isPermaLink="true">https://x.com/thsottiaux/status/2109430343346581527</guid>
-<description>Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务；用户仍可自行覆盖设置，模型最大上下文长度为 1M。（X：Tibo (@thsottiaux)）</description>
-<category>值得关注</category>
-<pubDate>Sun, 11 Oct 2026 23:45:59 +0000</pubDate>
-</item>
-<item>
-<title>唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段</title>
-<link>https://www.aibase.com/news/31566</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31566</guid>
+<title>估值4亿美元!DeepSeek出手布局人形机器人AI赛道</title>
+<link>https://www.aibase.com/news/31574</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31574</guid>
 <description>AIbase</description>
 <category>行业动态</category>
-<pubDate>Mon, 12 Oct 2026 09:48:29 +0000</pubDate>
+<pubDate>Tue, 13 Oct 2026 01:16:23 +0000</pubDate>
 </item>
 <item>
-<title>唯品会悄悄上线 AI 助手"小唯"：能聊天能比价，重金招人月薪最高 8 万</title>
-<link>https://www.aibase.com/news/31570</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31570</guid>
+<title>微软发布第三代自研AI芯片Maia300，计划2027年投产</title>
+<link>https://www.aibase.com/news/31577</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31577</guid>
 <description>AIbase</description>
 <category>行业动态</category>
-<pubDate>Mon, 12 Oct 2026 09:48:29 +0000</pubDate>
+<pubDate>Tue, 13 Oct 2026 01:16:23 +0000</pubDate>
+</item>
+<item>
+<title>打破硬件边界:智能戒指厂商Ultrahuman如何以生物年龄模型重构健康预测</title>
+<link>https://www.aibase.com/news/31575</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31575</guid>
+<description>AIbase</description>
+<category>行业动态</category>
+<pubDate>Tue, 13 Oct 2026 01:16:23 +0000</pubDate>
+</item>
+<item>
+<title>编造月之暗面被带走谣言，两名男子被北京警方刑拘</title>
+<link>https://www.aibase.com/news/31571</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31571</guid>
+<description>AIbase</description>
+<category>行业动态</category>
+<pubDate>Tue, 13 Oct 2026 01:16:23 +0000</pubDate>
+</item>
+<item>
+<title>AI编程代理生成的代码更多，但并不意味着生成的软件更多</title>
+<link>https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software</link>
+<guid isPermaLink="true">https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software</guid>
+<description>arstechnica.com</description>
+<category>多源热议</category>
+<pubDate>Mon, 12 Oct 2026 19:09:55 +0000</pubDate>
 </item>
 </channel>
 </rss>
