@@ -34,3 +34,13 @@ data/bridge/x-items.json
 .idea/
 .vscode/
 .gstack/
+
+# Full system local/generated files
+node_modules/
+apps/web/build/
+apps/web/.react-router/
+.data/
+.public-export/
+.local/
+
+!.env.example

@@ -1,0 +1,386 @@
+{
+  "groups": [
+    {
+      "key": "lens",
+      "name": "产业透镜",
+      "blurb": "从收费、入口、Agent 落地与办公组织看产业怎么走"
+    },
+    {
+      "key": "company",
+      "name": "公司与模型",
+      "blurb": "按厂商与模型系追踪：谁发了什么、又赢了哪一局"
+    },
+    {
+      "key": "tech",
+      "name": "技术方向",
+      "blurb": "按技术领域深挖：Agent、编码、多模态、端侧与开源"
+    }
+  ],
+  "topics": [
+    {
+      "slug": "monetization",
+      "name": "付费订阅与商业化",
+      "group": "lens",
+      "definition": "各家怎么收费、谁在抽佣、付费转化与定价在怎么变？",
+      "tags": [
+        "entity:monetization"
+      ]
+    },
+    {
+      "slug": "product-entry",
+      "name": "产品入口与链路",
+      "group": "lens",
+      "definition": "国民级 App 的 AI 入口在哪、搜索与助手链路怎么接、谁在抢入口？",
+      "tags": [
+        "entity:product-entry"
+      ]
+    },
+    {
+      "slug": "agent-ecosystem",
+      "name": "Agent 路线与生态",
+      "group": "lens",
+      "definition": "各家 Agent 的产品形态、开放生态与落地场景在怎么演进？",
+      "tags": [
+        "entity:agent-ecosystem"
+      ]
+    },
+    {
+      "slug": "workplace",
+      "name": "办公生产力与组织重构",
+      "group": "lens",
+      "definition": "AI 办公产品的进展，以及各家为 AI 做的组织与人事调整？",
+      "tags": [
+        "entity:workplace"
+      ]
+    },
+    {
+      "slug": "doubao",
+      "name": "豆包",
+      "group": "company",
+      "entityId": "doubao",
+      "definition": "字节跳动豆包与火山引擎：豆包产品、Doubao 模型、火山方舟 / Volcengine Ark。",
+      "tags": [
+        "entity:doubao"
+      ]
+    },
+    {
+      "slug": "qwen",
+      "name": "通义千问 / Qwen",
+      "group": "company",
+      "entityId": "qwen",
+      "definition": "阿里通义千问 Qwen 系列：旗舰模型、开源权重、端侧与多模态迭代。",
+      "tags": [
+        "entity:qwen"
+      ]
+    },
+    {
+      "slug": "hunyuan",
+      "name": "混元 / 元宝",
+      "group": "company",
+      "entityId": "hunyuan",
+      "definition": "腾讯混元模型与元宝产品：Hunyuan 发布、腾讯元宝客户端与相关能力。",
+      "tags": [
+        "entity:hunyuan"
+      ]
+    },
+    {
+      "slug": "quark",
+      "name": "夸克",
+      "group": "company",
+      "entityId": "quark",
+      "definition": "阿里夸克：夸克 App / 夸克 AI 产品动态，与通义千问模型系列分开追踪。",
+      "tags": [
+        "entity:quark"
+      ]
+    },
+    {
+      "slug": "kimi",
+      "name": "Kimi / 月之暗面",
+      "group": "company",
+      "entityId": "kimi",
+      "definition": "月之暗面 Kimi 系列：长上下文、K 系列开源模型与产品演进。",
+      "tags": [
+        "entity:kimi"
+      ]
+    },
+    {
+      "slug": "deepseek",
+      "name": "DeepSeek",
+      "group": "company",
+      "entityId": "deepseek",
+      "definition": "DeepSeek（深度求索）的模型发布、开源权重、推理成本与技术报告。",
+      "tags": [
+        "entity:deepseek"
+      ]
+    },
+    {
+      "slug": "minimax",
+      "name": "MiniMax",
+      "group": "company",
+      "entityId": "minimax",
+      "definition": "MiniMax 的模型与产品：M 系列、语音与多模态、海螺视频与商业化进展。",
+      "tags": [
+        "entity:minimax"
+      ]
+    },
+    {
+      "slug": "openai",
+      "name": "OpenAI / ChatGPT",
+      "group": "company",
+      "entityId": "openai",
+      "definition": "OpenAI 的模型、产品与公司动态：GPT 系列、ChatGPT、Sora、Codex 与 API。",
+      "tags": [
+        "entity:openai"
+      ]
+    },
+    {
+      "slug": "anthropic",
+      "name": "Anthropic / Claude",
+      "group": "company",
+      "entityId": "anthropic",
+      "definition": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
+      "tags": [
+        "entity:anthropic"
+      ]
+    },
+    {
+      "slug": "google-gemini",
+      "name": "Google / Gemini",
+      "group": "company",
+      "entityId": "google",
+      "definition": "Google 与 DeepMind 的 AI 动态：Gemini、Veo、Gemma、Imagen 与研究发布。",
+      "tags": [
+        "entity:google-gemini"
+      ]
+    },
+    {
+      "slug": "meta-llama",
+      "name": "Meta / Llama",
+      "group": "company",
+      "entityId": "meta",
+      "definition": "Meta 的开源模型与 AI 实验室：Llama 系列、PyTorch 周边与超级智能布局。",
+      "tags": [
+        "entity:meta-llama"
+      ]
+    },
+    {
+      "slug": "xai",
+      "name": "xAI / Grok",
+      "group": "company",
+      "entityId": "xai",
+      "definition": "xAI 与 Grok 系列：模型迭代、Grok 产品、算力与 X 平台整合。",
+      "tags": [
+        "entity:xai"
+      ]
+    },
+    {
+      "slug": "perplexity",
+      "name": "Perplexity",
+      "group": "company",
+      "entityId": "perplexity",
+      "definition": "Perplexity 的搜索、订阅与 Agent 产品：问答、Comet 浏览器与 Computer 助手。",
+      "tags": [
+        "entity:perplexity"
+      ]
+    },
+    {
+      "slug": "apple",
+      "name": "Apple / Apple Intelligence",
+      "group": "company",
+      "entityId": "apple",
+      "definition": "苹果的设备端与系统级 AI：Apple Intelligence、Siri、Core ML 与端侧模型。",
+      "tags": [
+        "entity:apple"
+      ]
+    },
+    {
+      "slug": "microsoft",
+      "name": "Microsoft / Copilot",
+      "group": "company",
+      "entityId": "microsoft",
+      "definition": "微软 AI 布局：Copilot 全家桶、Azure OpenAI、GitHub Copilot 与合作关系。",
+      "tags": [
+        "entity:microsoft"
+      ]
+    },
+    {
+      "slug": "nvidia",
+      "name": "NVIDIA",
+      "group": "company",
+      "entityId": "nvidia",
+      "definition": "英伟达的 AI 芯片与生态：GPU 新品、CUDA、NIM、机器人与算力市场。",
+      "tags": [
+        "entity:nvidia"
+      ]
+    },
+    {
+      "slug": "zhipu",
+      "name": "智谱 / GLM",
+      "group": "company",
+      "entityId": "zhipu",
+      "definition": "智谱 GLM 系列：开源发布、代码与推理能力、ChatGLM 与生态进展。",
+      "tags": [
+        "entity:zhipu"
+      ]
+    },
+    {
+      "slug": "huggingface",
+      "name": "Hugging Face",
+      "group": "company",
+      "entityId": "hugging-face",
+      "definition": "Hugging Face 开源社区：热门模型与数据集、排行榜、Spaces 与推理服务。",
+      "tags": [
+        "entity:huggingface"
+      ]
+    },
+    {
+      "slug": "cursor",
+      "name": "Cursor",
+      "group": "company",
+      "entityId": "cursor",
+      "definition": "Cursor 编辑器的产品迭代与生态——AI 编码工具里最受关注的玩家之一。",
+      "tags": [
+        "entity:cursor"
+      ]
+    },
+    {
+      "slug": "openrouter",
+      "name": "OpenRouter",
+      "group": "company",
+      "entityId": "openrouter",
+      "definition": "OpenRouter 模型路由：新模型上架、用量排行与开发者选型的市场信号。",
+      "tags": [
+        "entity:openrouter"
+      ]
+    },
+    {
+      "slug": "agent",
+      "name": "Agent 智能体",
+      "group": "tech",
+      "definition": "让模型规划、调用工具、完成多步任务：Agent 框架、评测与产品形态。",
+      "tags": [
+        "entity:agent",
+        "Agent"
+      ]
+    },
+    {
+      "slug": "coding",
+      "name": "AI 编码",
+      "group": "tech",
+      "definition": "AI 写代码的一切：编码助手、代码模型、Vibe Coding 与开发工作流。",
+      "tags": [
+        "entity:coding",
+        "编码"
+      ]
+    },
+    {
+      "slug": "multimodal",
+      "name": "多模态",
+      "group": "tech",
+      "definition": "文本之外的能力：视觉理解、图文混合、音视频输入输出。",
+      "tags": [
+        "entity:multimodal",
+        "多模态"
+      ]
+    },
+    {
+      "slug": "on-device",
+      "name": "端侧 AI",
+      "group": "tech",
+      "definition": "跑在手机、电脑与边缘设备上的小模型、本地推理与端侧芯片。",
+      "tags": [
+        "entity:on-device",
+        "端侧"
+      ]
+    },
+    {
+      "slug": "open-source",
+      "name": "开源生态",
+      "group": "tech",
+      "definition": "开源模型、框架与仓库：权重开放、社区爆火、开源与闭源消长。",
+      "tags": [
+        "entity:open-source",
+        "开源生态",
+        "开源/仓库"
+      ]
+    },
+    {
+      "slug": "mcp",
+      "name": "MCP 与工具调用",
+      "group": "tech",
+      "definition": "模型连接外部世界：MCP 生态、function calling 与工具链集成。",
+      "tags": [
+        "entity:mcp",
+        "MCP/工具调用"
+      ]
+    },
+    {
+      "slug": "model-releases",
+      "name": "模型发布",
+      "group": "tech",
+      "definition": "新模型的发布、开源与迭代：旗舰更新、权重放出、性能与价格变化。",
+      "tags": [
+        "entity:model-releases",
+        "模型发布"
+      ]
+    },
+    {
+      "slug": "image-gen",
+      "name": "图像生成",
+      "group": "tech",
+      "definition": "文生图与图像编辑：模型迭代、创作工具与视觉生成生态。",
+      "tags": [
+        "entity:image-gen",
+        "图像生成"
+      ]
+    },
+    {
+      "slug": "video",
+      "name": "AI 视频",
+      "group": "tech",
+      "definition": "AI 视频生成与理解：文生视频、剪辑工具与影视创作。",
+      "tags": [
+        "entity:video",
+        "视频"
+      ]
+    },
+    {
+      "slug": "audio",
+      "name": "语音与音频",
+      "group": "tech",
+      "definition": "语音合成、实时对话、音乐生成与音频理解。",
+      "tags": [
+        "entity:audio"
+      ]
+    },
+    {
+      "slug": "embodied",
+      "name": "具身智能",
+      "group": "tech",
+      "definition": "AI 走进物理世界：人形机器人、具身模型与真实环境操作。",
+      "tags": [
+        "entity:embodied",
+        "具身智能"
+      ]
+    },
+    {
+      "slug": "reasoning",
+      "name": "推理能力",
+      "group": "tech",
+      "definition": "模型推理与思维链：推理模型、数学/逻辑基准、test-time compute。",
+      "tags": [
+        "entity:reasoning",
+        "推理"
+      ]
+    },
+    {
+      "slug": "inference",
+      "name": "部署工程",
+      "group": "tech",
+      "definition": "把模型跑起来：推理优化、显存与成本、Serving 与基础设施。",
+      "tags": [
+        "entity:inference"
+      ]
+    }
+  ]
+}

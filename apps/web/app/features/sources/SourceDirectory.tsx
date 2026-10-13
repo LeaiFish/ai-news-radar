@@ -1,0 +1,6 @@
+import { useState } from 'react';
+import catalog from '../../../../../config/focus_sources.json';
+export function SourceDirectory(){
+ const [query,setQuery]=useState('');
+ return <div><h1 className="mb-3 text-[28px] font-bold">关注信源</h1><p className="mb-6 text-[14px] leading-6 text-ink-3">保留你选定的48个信息源。权威度沿用你的标注；列入目录不代表已实现实时采集。</p><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索名称或简介" className="mb-7 h-11 w-full rounded-control border border-line bg-surface px-4"/><div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{catalog.sources.filter(s=>`${s.name} ${s.description}`.toLowerCase().includes(query.toLowerCase())).map(s=><article key={s.id} className="card p-5"><h2 className="text-[17px] font-semibold"><a href={s.source_url||s.source_reference_url} target="_blank" rel="noopener noreferrer">{s.name}</a></h2><p className="mt-2 text-[13px] leading-6 text-ink-3">{s.description}</p><p className="mt-3 text-xs text-ink-4">权威度 {s.authority} · {s.kind==='wechat'?'微信公众号':s.kind==='x'?'X 账号':'网站'}</p><a className="mt-4 inline-block text-[13px] text-accent" href={s.example_original_url} target="_blank" rel="noopener noreferrer">典型文章 ↗</a></article>)}</div></div>;
+}

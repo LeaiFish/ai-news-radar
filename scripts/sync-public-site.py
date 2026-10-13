@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+"""Copy ONLY the public Docker outlet to a separate checkout; optional publication."""
+import argparse,json,os,shutil,subprocess,tempfile
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent.parent
+p=argparse.ArgumentParser();p.add_argument('--publish',action='store_true');args=p.parse_args()
+checkout=ROOT/'.local/pages-checkout'
+def run(*cmd,cwd=ROOT):return subprocess.run(cmd,cwd=cwd,check=True,text=True,capture_output=True).stdout
+with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
+ stage=Path(folder)/'site'
+ run('docker','compose','exec','-T','worker','node','scripts/export-public-db.ts')
+ run('docker','compose','cp','worker:/data/public-site',str(stage))
+ data=json.loads((stage/'public-news.json').read_text())
+ if data.get('version')!=1 or set(data)-{'version','generatedAt','windowDays','groups','topics','items','stories','dailyIds'}:raise SystemExit('Invalid public projection')
+ if not (stage/'index.html').exists():raise SystemExit('Run the free refresh once before syncing')
+ if not args.publish:
+  out=ROOT/'.local/public-preview/ai-news-radar';out.mkdir(parents=True,exist_ok=True)
+  for name in ['index.html','public-news.json']:shutil.copyfile(stage/name,out/name)
+  shutil.copytree(stage/'assets/public-reader',out/'assets/public-reader',dirs_exist_ok=True)
+  print('Public preview written to .local/public-preview; nothing uploaded.')
+ else:
+  checkout.parent.mkdir(parents=True,exist_ok=True)
+  if not checkout.exists():run('git','clone','--branch','master','--single-branch','https://github.com/LeaiFish/ai-news-radar.git',str(checkout))
+  if run('git','status','--porcelain',cwd=checkout).strip():raise SystemExit('Dedicated Pages checkout has local changes; inspect before publishing')
+  run('git','pull','--rebase',cwd=checkout)
+  remote_snapshot=checkout/'public-news.json'
+  if remote_snapshot.exists():
+   current=json.loads(remote_snapshot.read_text())
+   if current.get('generatedAt','') > data.get('generatedAt',''):
+    print('The public site already has a newer news snapshot; skipped stale local export.')
+    raise SystemExit(0)
+  for name in ['index.html','public-news.json']:shutil.copyfile(stage/name,checkout/name)
+  shutil.copytree(stage/'assets/public-reader',checkout/'assets/public-reader',dirs_exist_ok=True)
+  run('git','add','--','index.html','public-news.json','assets/public-reader',cwd=checkout)
+  if subprocess.run(['git','diff','--cached','--quiet'],cwd=checkout).returncode==0:print('No public changes')
+  else:
+   run('git','-c','user.name=AI Perspective publisher','-c','user.email=publisher@localhost','commit','-m','chore: publish local public-news projection',cwd=checkout)
+   run('git','push','origin','HEAD:master',cwd=checkout)
+   print('Published only reader assets and public-news.json')

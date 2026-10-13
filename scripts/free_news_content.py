@@ -122,13 +122,14 @@ def fetch_excerpt(session: requests.Session, url: str, title: str) -> tuple[str,
 def enrich(data_dir: Path, max_fetch: int = 40, max_translate: int = 20) -> dict[str, int]:
     try:
         from scripts.update_news import create_session, translate_to_zh_cn
-        from scripts.build_topics import load_topic_config, record_matches_topic, parse_time, write_topics_payload
+        from scripts.build_topics import DOMESTIC_TOPIC_IDS, load_topic_config, record_matches_topic, parse_time, write_topics_payload
     except ModuleNotFoundError:
         from update_news import create_session, translate_to_zh_cn
-        from build_topics import load_topic_config, record_matches_topic, parse_time, write_topics_payload
+        from build_topics import DOMESTIC_TOPIC_IDS, load_topic_config, record_matches_topic, parse_time, write_topics_payload
     archive = json.loads((data_dir / "archive.json").read_text())
     config = load_topic_config(Path(__file__).resolve().parents[1] / "config/topics.json")
     topics = [t for t in config["topics"] if t.get("group") == "company"]
+    domestic_topics = [t for t in topics if t["id"] in DOMESTIC_TOPIC_IDS]
     now = datetime.now(timezone.utc)
     end = parse_time(archive.get("generated_at")) or now
     cache_path = data_dir / "news-summary-cache.json"
@@ -136,7 +137,7 @@ def enrich(data_dir: Path, max_fetch: int = 40, max_translate: int = 20) -> dict
     counts = {"fetched": 0, "translated": 0, "available": 0}
     seen = set()
     with create_session() as session:
-        for row in sorted(archive.get("items", []), key=lambda x: (focus_priority(x), str(x.get("published_at") or "")), reverse=True):
+        for row in sorted(archive.get("items", []), key=lambda x: (any(record_matches_topic(x,t) for t in domestic_topics), focus_priority(x), str(x.get("published_at") or "")), reverse=True):
             url, title = row.get("url", ""), row.get("title", "")
             stamp = parse_time(row.get("published_at"))
             if url in seen or not stamp or not end - timedelta(days=30) <= stamp <= end:
