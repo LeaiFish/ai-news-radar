@@ -15,6 +15,11 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
+try:
+    from scripts.focus_sources import focus_priority
+except ModuleNotFoundError:
+    from focus_sources import focus_priority
+
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "topics.json"
 DEFAULT_DATA_DIR = ROOT / "data"
@@ -501,7 +506,7 @@ def backfill_topic_titles(data_dir: Path, config_path: Path, limit: int) -> int:
     seen = set()
     domestic_topics = [t for t in config["topics"] if t["id"] in DOMESTIC_TOPIC_IDS]
     def translation_priority(record):
-        return (any(record_matches_topic(record, t) for t in domestic_topics), record_time_iso(record))
+        return (any(record_matches_topic(record, t) for t in domestic_topics), focus_priority(record), record_time_iso(record))
     for record in sorted(pools["archive"], key=translation_priority, reverse=True):
         title = str(record.get("title") or "")
         stamp = parse_time(record_time_iso(record))

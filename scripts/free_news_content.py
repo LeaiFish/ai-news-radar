@@ -14,6 +14,11 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
+try:
+    from scripts.focus_sources import focus_priority
+except ModuleNotFoundError:
+    from focus_sources import focus_priority
+
 ALLOWED_HOSTS = frozenset({
     "www.aibase.com", "aibase.com", "qwen.ai", "seed.bytedance.com",
     "www.marktechpost.com", "marktechpost.com", "techcrunch.com",
@@ -131,12 +136,12 @@ def enrich(data_dir: Path, max_fetch: int = 40, max_translate: int = 20) -> dict
     counts = {"fetched": 0, "translated": 0, "available": 0}
     seen = set()
     with create_session() as session:
-        for row in sorted(archive.get("items", []), key=lambda x: str(x.get("published_at") or ""), reverse=True):
+        for row in sorted(archive.get("items", []), key=lambda x: (focus_priority(x), str(x.get("published_at") or "")), reverse=True):
             url, title = row.get("url", ""), row.get("title", "")
             stamp = parse_time(row.get("published_at"))
             if url in seen or not stamp or not end - timedelta(days=30) <= stamp <= end:
                 continue
-            if not any(record_matches_topic(row, t) for t in topics):
+            if not focus_priority(row) and not any(record_matches_topic(row, t) for t in topics):
                 continue
             seen.add(url)
             saved = cache.get(url, {})

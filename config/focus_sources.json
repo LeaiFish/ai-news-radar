@@ -1,0 +1,840 @@
+{
+  "version": 1,
+  "notes": "用户指定的48个优先信源。authority保留用户评级，不等同于source_tiers。公众号代表文章不是主页。链接样例未宣称实时可达。",
+  "sources": [
+    {
+      "id": "focus-01",
+      "name": "suno",
+      "authority": 1,
+      "description": "AI 音乐创作平台，关注模型、音乐生成能力及产品发布。",
+      "kind": "x",
+      "source_url": "https://x.com/suno",
+      "account_name": null,
+      "source_reference_url": "https://x.com/suno",
+      "example_original_url": "https://x.com/suno/status/2065862499765821916",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqcoyrfo00ieslttjd60zi3a",
+      "aliases": [
+        "suno"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-02",
+      "name": "OpenRouter（x）",
+      "authority": 1,
+      "description": "模型 API 聚合平台的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/OpenRouter",
+      "account_name": null,
+      "source_reference_url": "https://x.com/OpenRouter",
+      "example_original_url": "https://x.com/OpenRouter/status/2065856853989270011",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqcopoix00f8slttxcyouu31",
+      "aliases": [
+        "OpenRouter（x）"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-03",
+      "name": "OpenRouter（官网）",
+      "authority": 1,
+      "description": "模型 API 聚合平台，提供模型接入、路由与价格信息。",
+      "kind": "website",
+      "source_url": "https://openrouter.ai/",
+      "account_name": null,
+      "source_reference_url": "https://openrouter.ai/",
+      "example_original_url": "https://openrouter.ai/blog/announcements/fusion-beats-frontier/",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqck73e2001gslzwhu2x5dcg",
+      "aliases": [
+        "OpenRouter Blog",
+        "OpenRouter Announcements"
+      ],
+      "capture_route": "existing_official_feed",
+      "example_status": "user_supplied_not_live_verified",
+      "feed_url": "https://openrouter.ai/blog/feed.xml"
+    },
+    {
+      "id": "focus-04",
+      "name": "Hugging Face",
+      "authority": 1,
+      "description": "开放模型、数据集与机器学习社区；博客也包含社区作者文章。",
+      "kind": "website",
+      "source_url": "https://huggingface.co/",
+      "account_name": null,
+      "source_reference_url": "https://huggingface.co/",
+      "example_original_url": "https://huggingface.co/blog/allenai/olmo-eval",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqb4534400wqsl9znvhs39jk",
+      "aliases": [
+        "Hugging Face",
+        "Hugging Face Blog"
+      ],
+      "capture_route": "existing_official_feed",
+      "example_status": "user_supplied_not_live_verified",
+      "feed_url": "https://huggingface.co/blog/feed.xml"
+    },
+    {
+      "id": "focus-05",
+      "name": "IT之家",
+      "authority": 3,
+      "description": "中文科技媒体，需过滤硬件等非 AI 新闻。",
+      "kind": "website",
+      "source_url": "https://www.ithome.com/",
+      "account_name": null,
+      "source_reference_url": "https://www.ithome.com/",
+      "example_original_url": "https://www.ithome.com/0/963/725.htm",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqb39p8x00o2sl9z85e1r79i",
+      "aliases": [
+        "IT之家"
+      ],
+      "capture_route": "candidate_public_rss",
+      "example_status": "user_supplied_not_live_verified",
+      "feed_url": "https://www.ithome.com/rss/"
+    },
+    {
+      "id": "focus-06",
+      "name": "OpenAI Developers",
+      "authority": 1,
+      "description": "OpenAI 面向开发者的官方账号，关注 API 与工具更新。",
+      "kind": "x",
+      "source_url": "https://x.com/OpenAIDevs",
+      "account_name": null,
+      "source_reference_url": "https://x.com/OpenAIDevs",
+      "example_original_url": "https://x.com/OpenAIDevs/status/2065226355495895521",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqa7bz2g0itbslld0f4rluhk",
+      "aliases": [
+        "OpenAI Developers"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-07",
+      "name": "OpenAI",
+      "authority": 1,
+      "description": "OpenAI 官方账号，关注模型与产品发布。",
+      "kind": "x",
+      "source_url": "https://x.com/OpenAI",
+      "account_name": null,
+      "source_reference_url": "https://x.com/OpenAI",
+      "example_original_url": "https://x.com/OpenAI/status/2065225362544726371",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqa6vs2i0iodslldledhp882",
+      "aliases": [
+        "OpenAI"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-08",
+      "name": "Replit",
+      "authority": 1,
+      "description": "云端开发与 AI 编程产品的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/Replit",
+      "account_name": null,
+      "source_reference_url": "https://x.com/Replit",
+      "example_original_url": "https://x.com/Replit/status/2065189762365813089",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqa20ewf0hf9slldu9bj1rhz",
+      "aliases": [
+        "Replit"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-09",
+      "name": "Perplexity",
+      "authority": 1,
+      "description": "AI 搜索与研究产品的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/perplexity_ai",
+      "account_name": null,
+      "source_reference_url": "https://x.com/perplexity_ai",
+      "example_original_url": "https://x.com/perplexity_ai/status/2065124930463916317",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq9sr7km0exoslld90mxla1z",
+      "aliases": [
+        "Perplexity"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-10",
+      "name": "Cursor",
+      "authority": 1,
+      "description": "AI 编程编辑器的官方产品与工程博客。",
+      "kind": "website",
+      "source_url": "https://cursor.com/cn/home",
+      "account_name": null,
+      "source_reference_url": "https://cursor.com/cn/home",
+      "example_original_url": "https://cursor.com/cn/blog/agent-autonomy-auto-review",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq9rpndz0emkslldcjukgjn5",
+      "aliases": [
+        "Cursor"
+      ],
+      "capture_route": "candidate_official_page",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-11",
+      "name": "GitHub",
+      "authority": 1,
+      "description": "代码托管平台；此例实际信源是 Hugging Face 的 open-r1 仓库。",
+      "kind": "website",
+      "source_url": "https://github.com/",
+      "account_name": null,
+      "source_reference_url": "https://github.com/",
+      "example_original_url": "https://github.com/huggingface/open-r1",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq9rg6q70ekjslldnvejg7m9",
+      "aliases": [],
+      "capture_route": "repository_feed_candidate",
+      "example_status": "user_supplied_not_live_verified",
+      "match_urls": [
+        "https://github.com/huggingface/open-r1"
+      ]
+    },
+    {
+      "id": "focus-12",
+      "name": "xAI",
+      "authority": 1,
+      "description": "Grok 的开发公司，关注模型、API 与产品更新。",
+      "kind": "website",
+      "source_url": "https://x.ai/",
+      "account_name": null,
+      "source_reference_url": "https://x.ai/",
+      "example_original_url": "https://x.ai/news/grok-plugin-marketplace",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq9p5wcv0dyaslld6pnm1nzy",
+      "aliases": [
+        "xAI"
+      ],
+      "capture_route": "candidate_official_page",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-13",
+      "name": "Krea",
+      "authority": 1,
+      "description": "AI 图像与视频创作产品的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/krea_ai",
+      "account_name": null,
+      "source_reference_url": "https://x.com/krea_ai",
+      "example_original_url": "https://x.com/krea_ai/status/2065086662166901114",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq9mtk1y0dbpslldlq5ewsuc",
+      "aliases": [
+        "Krea"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-14",
+      "name": "千问",
+      "authority": 1,
+      "description": "千问消费端 App 公众号，与通义实验室的模型研究渠道分开记录。",
+      "kind": "wechat",
+      "source_url": null,
+      "account_name": "千问APP",
+      "source_reference_url": "https://mp.weixin.qq.com/s/G36ugI8tuSLUkDzL_sJNkQ",
+      "example_original_url": "https://mp.weixin.qq.com/s/G36ugI8tuSLUkDzL_sJNkQ",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq99p86d09wisllduyfqf5mn",
+      "aliases": [
+        "千问APP",
+        "千问 APP"
+      ],
+      "capture_route": "wechat_bridge_pending",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-15",
+      "name": "腾讯混元",
+      "authority": 1,
+      "description": "腾讯混元模型与产品的公众号来源。",
+      "kind": "wechat",
+      "source_url": null,
+      "account_name": "腾讯混元",
+      "source_reference_url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+      "example_original_url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq99cd9g09skslldniw7u2ub",
+      "aliases": [
+        "腾讯混元"
+      ],
+      "capture_route": "wechat_bridge_pending",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-16",
+      "name": "The Verge",
+      "authority": 2,
+      "description": "科技媒体，覆盖 AI 产品、消费科技与产业动态。",
+      "kind": "website",
+      "source_url": "https://www.theverge.com/",
+      "account_name": null,
+      "source_reference_url": "https://www.theverge.com/",
+      "example_original_url": "https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq98bstr09i4slldkrky14cd",
+      "aliases": [
+        "The Verge",
+        "The Verge AI"
+      ],
+      "capture_route": "existing_media_feed",
+      "example_status": "user_supplied_not_live_verified",
+      "feed_url": "https://www.theverge.com/rss/index.xml"
+    },
+    {
+      "id": "focus-17",
+      "name": "Xiaomi MiMo",
+      "authority": 1,
+      "description": "小米 MiMo 模型相关公众号来源。",
+      "kind": "wechat",
+      "source_url": null,
+      "account_name": "Xiaomi MiMo",
+      "source_reference_url": "https://mp.weixin.qq.com/s/WkMPz-eBK2Hz0ZTQEwtx6w",
+      "example_original_url": "https://mp.weixin.qq.com/s/WkMPz-eBK2Hz0ZTQEwtx6w",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq8whf5x06f2slld2conqwg5",
+      "aliases": [
+        "Xiaomi MiMo"
+      ],
+      "capture_route": "wechat_bridge_pending",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-18",
+      "name": "Berryxia.AI",
+      "authority": 3,
+      "description": "AI 工具与应用实践内容作者，适合发现产品线索。",
+      "kind": "x",
+      "source_url": "https://x.com/berryxia",
+      "account_name": null,
+      "source_reference_url": "https://x.com/berryxia",
+      "example_original_url": "https://x.com/berryxia/status/2064875107278098769",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq8svjva05grslldediy0tpk",
+      "aliases": [
+        "Berryxia.AI"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-19",
+      "name": "MiniMax",
+      "authority": 1,
+      "description": "MiniMax 模型与产品的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/MiniMax_AI",
+      "account_name": null,
+      "source_reference_url": "https://x.com/MiniMax_AI",
+      "example_original_url": "https://x.com/MiniMax_AI/status/2064791800884363286",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq8gzpbb02egslld4b5zy63k",
+      "aliases": [
+        "MiniMax"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-20",
+      "name": "Hacker News",
+      "authority": 2,
+      "description": "技术社区；讨论页应与其链接指向的原始文章分别记录。",
+      "kind": "website",
+      "source_url": "https://news.ycombinator.com/",
+      "account_name": null,
+      "source_reference_url": "https://news.ycombinator.com/",
+      "example_original_url": "https://news.ycombinator.com/item?id=48477400",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq8f7imu01wnslld8czaif69",
+      "aliases": [
+        "Hacker News"
+      ],
+      "capture_route": "existing_community_api",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-21",
+      "name": "Huawei Cloud",
+      "authority": 1,
+      "description": "华为云官方账号，关注 AI 基础设施与云服务。",
+      "kind": "x",
+      "source_url": "https://x.com/HuaweiCloud1",
+      "account_name": null,
+      "source_reference_url": "https://x.com/HuaweiCloud1",
+      "example_original_url": "https://x.com/HuaweiCloud1/status/2064637581652852831",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq7vrubn024sslepi58d3kyg",
+      "aliases": [
+        "Huawei Cloud"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-22",
+      "name": "火山引擎",
+      "authority": 1,
+      "description": "字节跳动云与 AI 开发平台的公众号来源，不等同于豆包消费端账号。",
+      "kind": "wechat",
+      "source_url": null,
+      "account_name": "火山引擎",
+      "source_reference_url": "https://mp.weixin.qq.com/s/g3DxNO_3aYI4g26gQ2Yvig",
+      "example_original_url": "https://mp.weixin.qq.com/s/g3DxNO_3aYI4g26gQ2Yvig",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq7kyzxh0435sl5wh21ncfun",
+      "aliases": [
+        "火山引擎"
+      ],
+      "capture_route": "wechat_bridge_pending",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-23",
+      "name": "claude",
+      "authority": 1,
+      "description": "Claude 官方产品博客；用户样例的原文链接仍需补齐。",
+      "kind": "website",
+      "source_url": "https://claude.com/blog",
+      "account_name": null,
+      "source_reference_url": "https://claude.com/blog",
+      "example_original_url": "https://aihot.virxact.com/items/cmq74r6rm008wslophwgthx4l",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq74r6rm008wslophwgthx4l",
+      "aliases": [
+        "Claude Blog"
+      ],
+      "capture_route": "candidate_official_page",
+      "example_status": "original_url_is_aihot_relay_needs_correction"
+    },
+    {
+      "id": "focus-24",
+      "name": "NotebookLM",
+      "authority": 1,
+      "description": "Google 基于资料的 AI 笔记与研究产品的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/NotebookLM",
+      "account_name": null,
+      "source_reference_url": "https://x.com/NotebookLM",
+      "example_original_url": "https://x.com/NotebookLM/status/2064410506287538387",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq6zc2gi00zlslbhqf3iwgv1",
+      "aliases": [
+        "NotebookLM"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-25",
+      "name": "eric zakariasson",
+      "authority": 2,
+      "description": "AI 编程与开发实践作者；具体任职信息待核验。",
+      "kind": "x",
+      "source_url": "https://x.com/ericzakariasson",
+      "account_name": null,
+      "source_reference_url": "https://x.com/ericzakariasson",
+      "example_original_url": "https://x.com/ericzakariasson/status/2064404502053294565",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq6yahue00p0slbh0r0bgk9q",
+      "aliases": [
+        "eric zakariasson"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-26",
+      "name": "Fei-Fei Li",
+      "authority": 1,
+      "description": "李飞飞，计算机视觉研究者、斯坦福教授及 World Labs 联合创始人。",
+      "kind": "x",
+      "source_url": "https://x.com/drfeifei",
+      "account_name": null,
+      "source_reference_url": "https://x.com/drfeifei",
+      "example_original_url": "https://x.com/drfeifei/status/2064387365930676695",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq6w8kfq0054slbhl8fai2wp",
+      "aliases": [
+        "Fei-Fei Li"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-27",
+      "name": "Luma",
+      "authority": 1,
+      "description": "生成式视觉与视频产品公司的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/LumaLabsAI",
+      "account_name": null,
+      "source_reference_url": "https://x.com/LumaLabsAI",
+      "example_original_url": "https://x.com/LumaLabsAI/status/2064389582997897216",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq6vx8zl000uslbhiiucbbxy",
+      "aliases": [
+        "Luma"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-28",
+      "name": "Apple",
+      "authority": 1,
+      "description": "Apple 开发者文档；与 Apple ML Research 博客是不同渠道。",
+      "kind": "website",
+      "source_url": "https://developer.apple.com/",
+      "account_name": null,
+      "source_reference_url": "https://developer.apple.com/",
+      "example_original_url": "https://developer.apple.com/documentation/coreai",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq5ujnt202iesl5ig6vg5i3r",
+      "aliases": [
+        "Apple Developer"
+      ],
+      "capture_route": "partial_official_channel",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-29",
+      "name": "Viggle AI",
+      "authority": 1,
+      "description": "AI 角色动作与视频生成产品的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/ViggleAI",
+      "account_name": null,
+      "source_reference_url": "https://x.com/ViggleAI",
+      "example_original_url": "https://x.com/ViggleAI/status/2064083087806390319",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq5p0eag0118sl5iydnwrhui",
+      "aliases": [
+        "Viggle AI"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-30",
+      "name": "TechCrunch",
+      "authority": 2,
+      "description": "科技与创业媒体，覆盖 AI 产品、公司与融资。",
+      "kind": "website",
+      "source_url": "https://techcrunch.com/",
+      "account_name": null,
+      "source_reference_url": "https://techcrunch.com/",
+      "example_original_url": "https://techcrunch.com/2026/06/08/apple-just-taught-your-iphone-to-finish-your-sentences-your-photos-and-your-workflows/",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq5l4kxt00lmsl384yhftczo",
+      "aliases": [
+        "TechCrunch",
+        "TechCrunch AI"
+      ],
+      "capture_route": "existing_media_feed",
+      "example_status": "user_supplied_not_live_verified",
+      "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+    },
+    {
+      "id": "focus-31",
+      "name": "Kimi",
+      "authority": 1,
+      "description": "Kimi 消费端产品公众号；与 API 更新日志分开追踪。",
+      "kind": "wechat",
+      "source_url": null,
+      "account_name": "Kimi智能助手",
+      "source_reference_url": "https://mp.weixin.qq.com/s/p87ebkY1xqKtkGZ2N3DGSw",
+      "example_original_url": "https://mp.weixin.qq.com/s/p87ebkY1xqKtkGZ2N3DGSw",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqf2oucs027eslwayb6fe3ro",
+      "aliases": [
+        "Kimi智能助手"
+      ],
+      "capture_route": "wechat_bridge_pending",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-32",
+      "name": "MarkTechPost",
+      "authority": 3,
+      "description": "AI 研究与工具报道网站，需回溯论文或项目原文验证结论。",
+      "kind": "website",
+      "source_url": "https://www.marktechpost.com/",
+      "account_name": null,
+      "source_reference_url": "https://www.marktechpost.com/",
+      "example_original_url": "https://www.marktechpost.com/2026/06/15/meet-flash-kmeans-an-io-aware-exact-k-means-that-runs-over-200x-faster-than-faiss-on-gpus/",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmqf0xl1601t7slwaf7eww3hm",
+      "aliases": [
+        "MarkTechPost",
+        "MarkTechPost Research",
+        "MarkTechPost（RSS）"
+      ],
+      "capture_route": "existing_media_feed",
+      "example_status": "user_supplied_not_live_verified",
+      "feed_url": "https://www.marktechpost.com/feed/"
+    },
+    {
+      "id": "focus-33",
+      "name": "ChatGPT",
+      "authority": 1,
+      "description": "ChatGPT 官方产品账号，关注面向用户的功能。",
+      "kind": "x",
+      "source_url": "https://x.com/ChatGPTapp",
+      "account_name": null,
+      "source_reference_url": "https://x.com/ChatGPTapp",
+      "example_original_url": "https://x.com/ChatGPTapp/status/2064018770839113769",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq5f9hfb07e4slt2h4zsfqiu",
+      "aliases": [
+        "ChatGPT"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-34",
+      "name": "Runway",
+      "authority": 1,
+      "description": "AI 视频创作公司的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/runwayml",
+      "account_name": null,
+      "source_reference_url": "https://x.com/runwayml",
+      "example_original_url": "https://x.com/runwayml/status/2064012425884569627",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq5eo92f076uslt21k43rdpb",
+      "aliases": [
+        "Runway"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-35",
+      "name": "Rohan Paul",
+      "authority": 3,
+      "description": "AI 论文、模型与应用动态的内容作者，常用于发现原始研究线索。",
+      "kind": "x",
+      "source_url": "https://x.com/rohanpaul_ai",
+      "account_name": null,
+      "source_reference_url": "https://x.com/rohanpaul_ai",
+      "example_original_url": "https://x.com/rohanpaul_ai/status/2063246343842501091",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq2e53d100lpsl783tyjx1iw",
+      "aliases": [
+        "Rohan Paul"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-36",
+      "name": "Michael Truell",
+      "authority": 2,
+      "description": "Cursor 联合创始人及 CEO，关注 AI 编程产品与研发方向。",
+      "kind": "x",
+      "source_url": "https://x.com/mntruell",
+      "account_name": null,
+      "source_reference_url": "https://x.com/mntruell",
+      "example_original_url": "https://x.com/mntruell/status/2062955210897801520",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq18rbp70dk3sltr7eqx8xil",
+      "aliases": [
+        "Michael Truell"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-37",
+      "name": "Google Gemini",
+      "authority": 1,
+      "description": "Google Gemini 面向用户的官方产品账号。",
+      "kind": "x",
+      "source_url": "https://x.com/GeminiApp",
+      "account_name": null,
+      "source_reference_url": "https://x.com/GeminiApp",
+      "example_original_url": "https://x.com/GeminiApp/status/2062936486509785385",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq15ifnr0comsltrb2vd53mu",
+      "aliases": [
+        "Google Gemini"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-38",
+      "name": "Google AI",
+      "authority": 1,
+      "description": "Google AI 官方账号，关注模型、研究与生态。",
+      "kind": "x",
+      "source_url": "https://x.com/GoogleAI",
+      "account_name": null,
+      "source_reference_url": "https://x.com/GoogleAI",
+      "example_original_url": "https://x.com/GoogleAI/status/2062942864288387430",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq16wkmr0d1qsltrrxq2ijpb",
+      "aliases": [
+        "Google AI",
+        "Google AI Blog"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-39",
+      "name": "Cloudflare Blog",
+      "authority": 1,
+      "description": "Cloudflare 官方工程博客，重点关注 AI Gateway、Workers AI 等内容。",
+      "kind": "website",
+      "source_url": "https://blog.cloudflare.com/",
+      "account_name": null,
+      "source_reference_url": "https://blog.cloudflare.com/",
+      "example_original_url": "https://blog.cloudflare.com/ai-gateway-spend-limits/",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq10uxf80bfesltrngu1lo15",
+      "aliases": [
+        "Cloudflare Blog"
+      ],
+      "capture_route": "existing_official_feed",
+      "example_status": "user_supplied_not_live_verified",
+      "feed_url": "https://blog.cloudflare.com/tag/ai/rss/"
+    },
+    {
+      "id": "focus-40",
+      "name": "OpenBMB",
+      "authority": 2,
+      "description": "开放模型与工具项目的研究社区账号。",
+      "kind": "x",
+      "source_url": "https://x.com/OpenBMB",
+      "account_name": null,
+      "source_reference_url": "https://x.com/OpenBMB",
+      "example_original_url": "https://x.com/OpenBMB/status/2062889699056984281",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq0yxent0avgsltr8x9ya6jn",
+      "aliases": [
+        "OpenBMB"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-41",
+      "name": "通义实验室",
+      "authority": 1,
+      "description": "通义／Qwen 模型研究与发布公众号，与千问APP分开记录。",
+      "kind": "wechat",
+      "source_url": null,
+      "account_name": "通义实验室",
+      "source_reference_url": "https://mp.weixin.qq.com/s/Q1fa3KwT63HBOF2fmWKzlg",
+      "example_original_url": "https://mp.weixin.qq.com/s/Q1fa3KwT63HBOF2fmWKzlg",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq2o71l001imsl6nw5cypu9a",
+      "aliases": [
+        "通义实验室"
+      ],
+      "capture_route": "wechat_bridge_pending",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-42",
+      "name": "Elon Musk",
+      "authority": 2,
+      "description": "xAI 创始人的个人账号，也发布大量非 AI 内容，需按主题过滤。",
+      "kind": "x",
+      "source_url": "https://x.com/elonmusk",
+      "account_name": null,
+      "source_reference_url": "https://x.com/elonmusk",
+      "example_original_url": "https://x.com/elonmusk/status/2062796095764234421",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq0m70ig07k4sltro8abpbi0",
+      "aliases": [
+        "Elon Musk"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-43",
+      "name": "Alibaba Cloud",
+      "authority": 1,
+      "description": "阿里云官方账号，关注 AI 云服务与基础设施。",
+      "kind": "x",
+      "source_url": "https://x.com/alibaba_cloud",
+      "account_name": null,
+      "source_reference_url": "https://x.com/alibaba_cloud",
+      "example_original_url": "https://x.com/alibaba_cloud/status/2062781182417490310",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmq0jeh6o06sosltrqizuioxb",
+      "aliases": [
+        "Alibaba Cloud"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-44",
+      "name": "anthropic",
+      "authority": 1,
+      "description": "Anthropic 官方新闻页，关注公司、模型与平台更新。",
+      "kind": "website",
+      "source_url": "https://www.anthropic.com/news",
+      "account_name": null,
+      "source_reference_url": "https://www.anthropic.com/news",
+      "example_original_url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmpy3tdza01g9slaxmze2wjve",
+      "aliases": [
+        "Anthropic News",
+        "Anthropic Newsroom",
+        "Anthropic：Newsroom（网页）"
+      ],
+      "capture_route": "existing_official_page",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-45",
+      "name": "SiliconFlow",
+      "authority": 1,
+      "description": "硅基流动模型推理与 API 平台的官方账号。",
+      "kind": "x",
+      "source_url": "https://x.com/SiliconFlowAI",
+      "account_name": null,
+      "source_reference_url": "https://x.com/SiliconFlowAI",
+      "example_original_url": "https://x.com/SiliconFlowAI/status/2062042813852995899",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmpxnygnz05rnslckz87nvi12",
+      "aliases": [
+        "SiliconFlow"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-46",
+      "name": "Satya Nadella",
+      "authority": 2,
+      "description": "微软 CEO 的个人账号，关注 Copilot、Azure 与 AI 战略。",
+      "kind": "x",
+      "source_url": "https://x.com/satyanadella",
+      "account_name": null,
+      "source_reference_url": "https://x.com/satyanadella",
+      "example_original_url": "https://x.com/satyanadella/status/2061942751860769094",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmpx8tg5y01ovslckfq8fp2sf",
+      "aliases": [
+        "Satya Nadella"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-47",
+      "name": "Logan Kilpatrick",
+      "authority": 2,
+      "description": "Google AI 开发者生态相关发声者，关注模型 API 与开发者工具。",
+      "kind": "x",
+      "source_url": "https://x.com/OfficialLoganK",
+      "account_name": null,
+      "source_reference_url": "https://x.com/OfficialLoganK",
+      "example_original_url": "https://x.com/OfficialLoganK/status/2061568290984800740",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmpx174nl001nslgy17hiomfy",
+      "aliases": [
+        "Logan Kilpatrick"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    },
+    {
+      "id": "focus-48",
+      "name": "ClaudeDevs",
+      "authority": 1,
+      "description": "Claude 面向开发者的官方账号，关注 API 与开发工具。",
+      "kind": "x",
+      "source_url": "https://x.com/ClaudeDevs",
+      "account_name": null,
+      "source_reference_url": "https://x.com/ClaudeDevs",
+      "example_original_url": "https://x.com/ClaudeDevs/status/2061877343078244459",
+      "example_aihot_url": "https://aihot.virxact.com/items/cmpwzyueg02bcsl796alxq7x4",
+      "aliases": [
+        "ClaudeDevs"
+      ],
+      "capture_route": "public_aggregator_only",
+      "example_status": "user_supplied_not_live_verified"
+    }
+  ]
+}
