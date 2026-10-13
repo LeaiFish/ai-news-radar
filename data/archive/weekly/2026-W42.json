@@ -4,57 +4,76 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-13T16:03:27.754872Z",
+  "generated_at": "2026-10-13T20:16:40.356343Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
     "2026-10-14"
   ],
-  "story_count": 712,
-  "unique_story_count": 456,
+  "story_count": 726,
+  "unique_story_count": 538,
   "counts": {
     "by_company_topic": {
-      "anthropic": 81,
-      "apple": 22,
+      "anthropic": 85,
+      "apple": 25,
       "cursor": 13,
       "deepseek": 3,
       "doubao": 4,
-      "google-gemini": 25,
+      "google-gemini": 44,
+      "huggingface": 1,
       "kimi": 6,
-      "meta-llama": 4,
-      "microsoft": 13,
-      "minimax": 6,
-      "nvidia": 17,
-      "openai": 68,
-      "perplexity": 6,
+      "meta-llama": 2,
+      "microsoft": 14,
+      "minimax": 5,
+      "nvidia": 19,
+      "openai": 64,
+      "openrouter": 1,
+      "perplexity": 3,
       "qwen": 20,
-      "xai": 32,
+      "xai": 31,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 123,
-      "monetization": 22,
+      "agent-ecosystem": 108,
+      "monetization": 24,
       "product-entry": 2,
-      "workplace": 18
+      "workplace": 19
     },
     "by_importance_label": {
-      "值得关注": 527,
-      "多源热议": 29,
-      "官方更新": 14,
+      "值得关注": 538,
+      "多源热议": 25,
+      "官方更新": 21,
       "行业动态": 142
     },
     "by_source_count_bucket": {
-      "1": 659,
+      "1": 677,
       "2": 24,
-      "3+": 29
+      "3+": 25
     }
   },
   "top_stories": [
     {
+      "story_id": "story_0b5ea0aa6745",
+      "title": "Gemini 4 Argon in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
+      "importance_score": 0.8559,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "google-gemini",
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_7e7580bbc9b4",
-      "title": "Gemini 4 Argon for Robotics",
+      "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
       "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-      "importance_score": 0.8639,
+      "importance_score": 0.8533,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -64,10 +83,25 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_454f718acba9",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-argon",
+      "story_id": "story_e4780bdccfac",
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "importance_score": 0.8519,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_46f20f54d699",
+      "title": "负责任、安全地开发 Gemini 4 Argon / Developing Gemini 4 Argon responsibly and safely",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+      "importance_score": 0.8506,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -88,10 +122,86 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_d010181126b6",
+      "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
+      "url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
+      "importance_score": 0.8417,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7d588311103d",
+      "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型 / Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
+      "importance_score": 0.8412,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_64ef9b1ab8ef",
+      "title": "Audit GitHub Code Quality finding dismissals and reopenings",
+      "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
+      "importance_score": 0.8381,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_245708e44bc0",
+      "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+      "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise",
+      "importance_score": 0.838,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dab965516ebe",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "importance_score": 0.8317,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0fb62e8392fa",
+      "title": "Enterprise managed settings enforcement updates",
+      "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+      "importance_score": 0.8316,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_564a92d1b485",
       "title": "Improved detection for withdrawn Dependabot alerts",
       "url": "https://github.blog/changelog/2026-10-13-improved-detection-for-withdrawn-dependabot-alerts",
-      "importance_score": 0.8389,
+      "importance_score": 0.8286,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -102,7 +212,7 @@
       "story_id": "story_3881ff799aa4",
       "title": "Search and filter for budgets now available",
       "url": "https://github.blog/changelog/2026-10-13-search-and-filter-for-budgets-now-available",
-      "importance_score": 0.834,
+      "importance_score": 0.824,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -113,7 +223,7 @@
       "story_id": "story_3f65ad068613",
       "title": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产 / Character.AI files for bankruptcy",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
-      "importance_score": 0.8278,
+      "importance_score": 0.818,
       "importance_label": "多源热议",
       "source_count": 3,
       "archive_date": "2026-10-14",
@@ -155,7 +265,7 @@
       "story_id": "story_84b9cfdb1dea",
       "title": "Mix, Don't Tune: Bilingual Pre-Training Outperforms Hyperparameter Search in Data-Constrained Settings",
       "url": "https://machinelearning.apple.com/research/mix-dont-tune",
-      "importance_score": 0.8067,
+      "importance_score": 0.7983,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -176,6 +286,20 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_f625de565a09",
+      "title": "Gemini 4 Argon 正式 GA，智能指数追平 GPT-6 Astra，Cost per Task 仅为 60% / Gemini 4 Argon is now GA. Argon ranks equal to GPT-6 Astra on the Artificial Analysis Intelligence Index at 60% of the Cost per Task with...",
+      "url": "https://x.com/ArtificialAnlys/status/2110068185793970576",
+      "importance_score": 0.7948,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "openai",
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_06f333b9aafa",
       "title": "Anonymous organization-level registries for Dependabot",
       "url": "https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot",
@@ -187,17 +311,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_6ea79184eed9",
-      "title": "Character.AI 成立五年后申请 Chapter 11 破产，部分资产以 2000 万美元出售给 Disney / Just 5 years in, interactive chatbot platform Character.AI files for bankruptcy",
-      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy",
-      "importance_score": 0.7883,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_8a809173e2e5",
       "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
       "url": "https://github.com/openai/codex/issues/48195",
@@ -205,6 +318,19 @@
       "importance_label": "多源热议",
       "source_count": 4,
       "archive_date": "2026-10-13",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_35a5de0aa347",
+      "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金 / GPT 5.6 Sol btw",
+      "url": "https://x.com/reach_vb/status/2110086935733833893",
+      "importance_score": 0.783,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
       "company_topics": [
         "openai"
       ],
@@ -234,6 +360,17 @@
       "company_topics": [
         "google-gemini"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6ea79184eed9",
+      "title": "Character.AI 成立五年后申请 Chapter 11 破产，部分资产以 2000 万美元出售给 Disney / Just 5 years in, interactive chatbot platform Character.AI files for bankruptcy",
+      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy",
+      "importance_score": 0.7782,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -416,124 +553,6 @@
       "company_topics": [
         "anthropic"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_221e683ee734",
-      "title": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-      "url": "https://www.aibase.com/news/31570",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1fdb1c50ab82",
-      "title": "看一眼就能支付?千问全新AI眼镜与耳机高调亮相，开启主动AI新时代",
-      "url": "https://www.aibase.com/news/31609",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_11769109c22f",
-      "title": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
-      "url": "https://www.aibase.com/news/31611",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0c6aa6cfd34e",
-      "title": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
-      "url": "https://www.aibase.com/news/31607",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_fa48372b0d92",
-      "title": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-      "url": "https://www.aibase.com/news/31548",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ec16e714cb98",
-      "title": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-      "url": "https://www.aibase.com/news/31556",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b678c0e4c7df",
-      "title": "赴港 IPO 前夕抛出和解橄榄枝！月之暗面高管与老股东谈判，涉案金额或超 7 亿美元",
-      "url": "https://www.aibase.com/news/31562",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_90e23f3b15fd",
-      "title": "微软CEO纳德拉发声:呼吁为先进AI模型设立人类可控的“紧急制动”机制",
-      "url": "https://www.aibase.com/news/31553",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_88b357bbdd50",
-      "title": "腾讯上线「企鹅微单」:AI创作者接单平台，支持需求发布、智能匹配与微信内结算",
-      "url": "https://www.aibase.com/news/31559",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_861054ccf783",
-      "title": "纸质书里惊现 AI 提示词：《终焉路独行》误把校对指令当正文，全数召回",
-      "url": "https://www.aibase.com/news/31561",
-      "importance_score": 0.7614,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
