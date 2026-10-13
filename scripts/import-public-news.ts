@@ -32,7 +32,7 @@ try {
   const result=await upsertMaterial({id:item.id,sourceId,url:url.href,title:item.originalTitle||item.title,publishedAt:new Date(item.publishedAt),discoveredAt:new Date(item.discoveredAt),excerpt:item.summary,bodyStatus:'none',raw:{public_import:true,public_snapshot_at:input.generatedAt,public_daily:(input.dailyIds||[]).includes(item.id)},via:'import',backfill:'radar-public-history'});
   const subjects=input.topics.filter((t:{itemIds:string[]})=>t.itemIds.includes(item.id)).map((t:{id:string})=>t.id);
   const [article]=await sql<{revision:number}[]>`SELECT revision FROM articles WHERE id=${result.articleId}`;
-  const output={provenance:'radar-free-pipeline',scope:'single',public_import:true};
+  const output={provenance:'radar-free-pipeline',scope:'single',public_import:true,public_snapshot_at:input.generatedAt,public_daily:(input.dailyIds||[]).includes(item.id)};
   // Rule provenance and null score: no model was called and no AI judgement is invented.
   await sql`DELETE FROM analyses WHERE article_id=${result.articleId} AND origin='rule' AND model='radar-free-import'`;
   await sql`INSERT INTO analyses (article_id,input_revision,origin,model,prompt_version,relevance,tags,subjects,title_zh,summary_zh,score,selected,output) VALUES (${result.articleId},${article!.revision},'rule','radar-free-import','1','pass',${subjects.map((s:string)=>'entity:'+s)},${subjects},${item.title},${item.summary},NULL,${item.selected===true},${sql.json(output)})`;

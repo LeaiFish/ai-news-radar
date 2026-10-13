@@ -1,4 +1,4 @@
-"""AI Perspective shell: three spaces, competition overview, honest placeholders."""
+"""Retained legacy fallback shell: three spaces, overview and honest placeholders."""
 
 from pathlib import Path
 
@@ -10,8 +10,8 @@ def read(relative_path: str) -> str:
     return (ROOT / relative_path).read_text(encoding="utf-8")
 
 
-def test_perspective_home_is_the_new_shell_with_relative_links():
-    page = read("index.html")
+def test_legacy_perspective_home_keeps_relative_links():
+    page = read("legacy-radar.html")
     css = read("assets/perspective.css")
     js = read("assets/perspective.js")
 
@@ -55,7 +55,7 @@ def test_perspective_home_is_the_new_shell_with_relative_links():
 
 
 def test_competition_overview_matches_mock_structure_and_marks_placeholders():
-    page = read("index.html")
+    page = read("legacy-radar.html")
     js = read("assets/perspective.js")
 
     assert "月度：先看全局变化" not in page
@@ -90,7 +90,7 @@ def test_competition_overview_matches_mock_structure_and_marks_placeholders():
 
 
 def test_research_catalog_and_workbench_placeholder():
-    page = read("index.html")
+    page = read("legacy-radar.html")
     js = read("assets/perspective.js")
     research = read("research/index.html")
     workbench = read("workbench/index.html")

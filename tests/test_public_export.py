@@ -23,3 +23,14 @@ def test_only_known_news_fields_leave_the_export():
         assert set(row['source'])=={'name'}
         assert set(row['links'])=={'original'}
         assert row['score'] is None
+
+def test_public_reader_entry_references_only_existing_reader_assets():
+    from bs4 import BeautifulSoup
+    root=Path(__file__).parents[1]
+    page=BeautifulSoup((root/'index.html').read_text(),'html.parser')
+    assert page.title.get_text()=='AI Perspective'
+    urls=[tag.get('src') for tag in page.select('script[src]')]+[tag.get('href') for tag in page.select('link[rel="stylesheet"]')]
+    assert urls
+    for url in urls:
+        assert url.startswith('/ai-news-radar/assets/public-reader/')
+        assert (root/url.removeprefix('/ai-news-radar/')).is_file()
