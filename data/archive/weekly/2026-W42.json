@@ -4,54 +4,83 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-14T15:51:10.768749Z",
+  "generated_at": "2026-10-14T20:41:24.402348Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
-    "2026-10-14"
+    "2026-10-14",
+    "2026-10-15"
   ],
-  "story_count": 723,
-  "unique_story_count": 723,
+  "story_count": 1016,
+  "unique_story_count": 801,
   "counts": {
     "by_company_topic": {
-      "anthropic": 83,
-      "apple": 14,
+      "anthropic": 106,
+      "apple": 25,
       "cursor": 7,
       "deepseek": 2,
-      "doubao": 7,
-      "google-gemini": 59,
-      "huggingface": 1,
-      "kimi": 5,
+      "doubao": 11,
+      "google-gemini": 78,
+      "huggingface": 2,
+      "kimi": 6,
       "meta-llama": 2,
-      "microsoft": 11,
-      "minimax": 5,
-      "nvidia": 19,
-      "openai": 88,
-      "openrouter": 5,
+      "microsoft": 13,
+      "minimax": 6,
+      "nvidia": 29,
+      "openai": 140,
+      "openrouter": 6,
       "perplexity": 3,
-      "qwen": 14,
-      "xai": 26,
+      "qwen": 17,
+      "xai": 37,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 112,
-      "monetization": 19,
-      "product-entry": 1,
-      "workplace": 22
+      "agent-ecosystem": 160,
+      "monetization": 26,
+      "product-entry": 2,
+      "workplace": 31
     },
     "by_importance_label": {
-      "值得关注": 563,
-      "多源热议": 17,
-      "官方更新": 20,
-      "行业动态": 123
+      "值得关注": 799,
+      "多源热议": 23,
+      "官方更新": 33,
+      "行业动态": 161
     },
     "by_source_count_bucket": {
-      "1": 678,
-      "2": 28,
-      "3+": 17
+      "1": 955,
+      "2": 38,
+      "3+": 23
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_d89175ca1e0e",
+      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "importance_score": 0.8487,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5d5ac7e11bf8",
+      "title": "HydraFusion updates and new Max option",
+      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "importance_score": 0.8423,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
     {
       "story_id": "story_299fe0589862",
       "title": "安全概述中的代码扫描 AI Scan 指标 / Code scanning AI Scan metrics in security overview",
@@ -75,6 +104,34 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_d966792613ef",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "importance_score": 0.8308,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_64acddaea2df",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "url": "https://openai.com/index/sentinelone",
+      "importance_score": 0.8308,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_a6b4e45b4f15",
       "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
       "url": "https://openai.com/index/third-moment-research",
@@ -88,6 +145,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_0a3d139d09ff",
+      "title": "GPT-5.5 retirement in Codex",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8235,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_9b461af69bbd",
@@ -279,6 +349,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a69b8419ae13",
+      "title": "Code-Switching Detection via Language-Selective Dimensions in Speech Foundation Models",
+      "url": "https://machinelearning.apple.com/research/code-switching-detection",
+      "importance_score": 0.7975,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_64ef9b1ab8ef",
       "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
       "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
@@ -353,6 +436,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_92ccdb815e7c",
+      "title": "40 位总检察长介入 Character.AI 破产案，要求保护用户对话数据 / Now that Character.AI is going bankrupt, what happens to all of its users&#8217; data?",
+      "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+      "importance_score": 0.7807,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_8033d9c7963f",
       "title": "NVIDIA 官宣 RTX Spark 软件生态就绪，10 月 16 日笔记本上市 / All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
       "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates",
@@ -377,6 +471,19 @@
         "google-gemini"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_0ed0dbeb6252",
+      "title": "Google 发布智能体审稿系统 Deep Review，支持多领域技术文档审查 / Analyzing technical documents with Deep Review",
+      "url": "https://research.google/blog/analyzing-technical-documents-with-deep-review",
+      "importance_score": 0.7725,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_cbebf0458204",
@@ -462,102 +569,6 @@
       "source_count": 1,
       "archive_date": "2026-10-12",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8d96e81d48fb",
-      "title": "IDC 报告：英伟达中国 AI 芯片份额跌至 34%，华为追到 28%",
-      "url": "https://www.aibase.com/news/31617",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_87d81ac84ccc",
-      "title": "千亿大模型塞进掌心：高通 CEO 称 AI 巨头或 2028 年杀入手机市场",
-      "url": "https://www.aibase.com/news/31606",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_843dd0e4a055",
-      "title": "全天候监听你的 AI 助手 Ambi 拿下 2600 万美元：前 Plaud 高管要把智能从屏幕里放出来",
-      "url": "https://www.aibase.com/news/31614",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_79c60ffdb517",
-      "title": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-      "url": "https://www.aibase.com/news/31567",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_63c66546490b",
-      "title": "面壁智能端侧多模态 MiniCPM-V 4.7 发布：3GB 内存跑出 13+ token/s",
-      "url": "https://www.aibase.com/news/31615",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_608bad1068ca",
-      "title": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-      "url": "https://www.aibase.com/news/31564",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_43649a7a39af",
-      "title": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
-      "url": "https://www.aibase.com/news/31613",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3e09a42052c8",
-      "title": "没有总开关的\"数字蠕虫\"：Anthropic 称小模型年底就能自己复制自己",
-      "url": "https://www.aibase.com/news/31610",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "anthropic"
-      ],
       "lens_topics": []
     }
   ]
