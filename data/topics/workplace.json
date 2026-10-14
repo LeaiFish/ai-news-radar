@@ -3,13 +3,13 @@
   "name": "办公生产力与组织重构",
   "description": "AI 办公产品的进展，以及各家为 AI 做的组织与人事调整？",
   "group": "lens",
-  "item_count": 230,
+  "item_count": 233,
   "listed_count": 80,
   "recent_item_count": 80,
   "latest_title": "AI日报：豆包工作支持导入ChatGPT历史对话；国行iPhone新增AI备案；千问办公电商版上线",
   "latest_published_at": "2026-10-14T10:18:18.230431Z",
   "items_url": "data/topics/workplace.json",
-  "generated_at": "2026-10-14T11:58:54.692773Z",
+  "generated_at": "2026-10-14T15:51:10.768749Z",
   "items": [
     {
       "id": "story_89d1f81d7a75",
@@ -28,22 +28,6 @@
       "curated": true
     },
     {
-      "id": "story_e5c405f2adfd",
-      "story_id": "story_e5c405f2adfd",
-      "title": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析",
-      "title_zh": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析",
-      "title_en": "Visual Studio Copilot and SSMS Remote Code Execution (CVE-2026-103572)",
-      "url": "https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution",
-      "summary": "Johann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是利用文件名末尾多加一个点绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。",
-      "recommend_reason_zh": null,
-      "source": "Johann Rehberger / Embrace The Red（RSS）",
-      "source_name": "AI HOT",
-      "site_id": "",
-      "published_at": "2026-10-13T22:00:40Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
       "id": "story_0b5ea0aa6745",
       "story_id": "story_0b5ea0aa6745",
       "title": "Gemini 4 Argon in GitHub Copilot",
@@ -56,6 +40,22 @@
       "source_name": "Official AI Updates",
       "site_id": "",
       "published_at": "2026-10-13T18:39:56Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "76121c3382bf89148d718d62808d2ea54f5748f9",
+      "story_id": null,
+      "title": "Enterprise managed settings enforcement updates",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+      "summary": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The post Enterprise managed settings enforcement updates appeared f…",
+      "recommend_reason_zh": null,
+      "source": "GitHub Changelog",
+      "source_name": "GitHub Changelog",
+      "site_id": "official_ai",
+      "published_at": "2026-10-13T15:20:10Z",
       "source_count": 1,
       "curated": true
     },
@@ -1100,6 +1100,22 @@
       "curated": true
     },
     {
+      "id": "01f024db5081b44b8dfc847b2d370c847e97b942",
+      "story_id": null,
+      "title": "ChatGPT 移动应用获得基于语音的代理功能",
+      "title_zh": "ChatGPT 移动应用获得基于语音的代理功能",
+      "title_en": "ChatGPT mobile app gets voice-based agentic features",
+      "url": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features",
+      "summary": "OpenAI announced on Wednesday that it is bringing voice-based agentic features to mobile, allowing users to trigger workflows like drafting documents or summarizing emails. Plus and Pro users will be able to use the Work tab on their phone to create a document, draft an email, o…",
+      "recommend_reason_zh": null,
+      "source": "TechCrunch AI",
+      "source_name": "TechCrunch AI",
+      "site_id": "curated_media",
+      "published_at": "2026-09-23T17:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
       "id": "0121837d0ed77c1ea34f904c3968f1538e274816",
       "story_id": null,
       "title": "GitHub Copilot 应用程序中的本地沙盒",
@@ -1272,22 +1288,6 @@
       "source_name": "GitHub Changelog",
       "site_id": "official_ai",
       "published_at": "2026-09-18T19:00:00Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "f7b34c49943fa49cfbe8d0de303807e421679c05",
-      "story_id": null,
-      "title": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户",
-      "title_zh": null,
-      "title_en": null,
-      "url": "https://x.com/haider1/status/2100848578340220987",
-      "summary": "一个3人团队在7月25日利用两个漏洞接管了OpenAI员工的 ChatGPT/Codex 账户，并可访问 Outlook、Slack、GitHub 等关联服务，他们用向 OpenAI 内部代码库提交 PR 的方式证明了漏洞，全程不到72小时。",
-      "recommend_reason_zh": null,
-      "source": "X：Haider (@haider1)",
-      "source_name": "X：Haider (@haider1)",
-      "site_id": "aihot",
-      "published_at": "2026-09-18T07:25:07Z",
       "source_count": 1,
       "curated": true
     }

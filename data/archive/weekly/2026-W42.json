@@ -4,51 +4,51 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-14T11:58:54.692773Z",
+  "generated_at": "2026-10-14T15:51:10.768749Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
     "2026-10-14"
   ],
-  "story_count": 752,
-  "unique_story_count": 732,
+  "story_count": 723,
+  "unique_story_count": 723,
   "counts": {
     "by_company_topic": {
-      "anthropic": 84,
-      "apple": 29,
-      "cursor": 8,
+      "anthropic": 83,
+      "apple": 14,
+      "cursor": 7,
       "deepseek": 2,
       "doubao": 7,
-      "google-gemini": 60,
+      "google-gemini": 59,
       "huggingface": 1,
       "kimi": 5,
       "meta-llama": 2,
-      "microsoft": 12,
+      "microsoft": 11,
       "minimax": 5,
-      "nvidia": 20,
+      "nvidia": 19,
       "openai": 88,
       "openrouter": 5,
       "perplexity": 3,
-      "qwen": 15,
-      "xai": 27,
+      "qwen": 14,
+      "xai": 26,
       "zhipu": 2
     },
     "by_lens_topic": {
       "agent-ecosystem": 112,
-      "monetization": 21,
+      "monetization": 19,
       "product-entry": 1,
       "workplace": 22
     },
     "by_importance_label": {
-      "值得关注": 588,
-      "多源热议": 19,
-      "官方更新": 22,
+      "值得关注": 563,
+      "多源热议": 17,
+      "官方更新": 20,
       "行业动态": 123
     },
     "by_source_count_bucket": {
-      "1": 706,
-      "2": 27,
-      "3+": 19
+      "1": 678,
+      "2": 28,
+      "3+": 17
     }
   },
   "top_stories": [
@@ -64,10 +64,49 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0b5e45b58095",
+      "title": "GitHub Actions workflow lockfiles in public preview",
+      "url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview",
+      "importance_score": 0.8388,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a6b4e45b4f15",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "url": "https://openai.com/index/third-moment-research",
+      "importance_score": 0.8304,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_9b461af69bbd",
+      "title": "The Design Space of Tri-Modal Masked Diffusion Models",
+      "url": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+      "importance_score": 0.8152,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_5013494879cd",
       "title": "The EU’s next chapter in AI is agentic",
       "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
-      "importance_score": 0.8234,
+      "importance_score": 0.8152,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -82,7 +121,7 @@
       "story_id": "story_0b5ea0aa6745",
       "title": "Gemini 4 Argon in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
-      "importance_score": 0.8202,
+      "importance_score": 0.8126,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -96,23 +135,10 @@
       ]
     },
     {
-      "story_id": "story_ae8e1b14ad88",
-      "title": "Google DeepMind 和新加坡政府合作构建用于诈骗检测的微调人工智能模型 / Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
-      "importance_score": 0.8198,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7e7580bbc9b4",
       "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
       "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-      "importance_score": 0.8189,
+      "importance_score": 0.8116,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -122,42 +148,16 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e4780bdccfac",
-      "title": "使用 LFM2.5-24B-A2B 在设备上快速运行专用代理 / Run fast, private agents on-device with LFM2.5-24B-A2B",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "importance_score": 0.817,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_46f20f54d699",
-      "title": "负责任、安全地开发 Gemini 4 Argon / Developing Gemini 4 Argon responsibly and safely",
-      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
-      "importance_score": 0.8143,
+      "story_id": "story_ae8e1b14ad88",
+      "title": "Google DeepMind 和新加坡政府合作构建用于诈骗检测的微调人工智能模型 / Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
+      "importance_score": 0.8114,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
       "company_topics": [
         "google-gemini"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_624c9e1c6e13",
-      "title": "GitHub 应用程序的最小权限和管理改进 / GitHub App improvements for least privilege and management",
-      "url": "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management",
-      "importance_score": 0.8139,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -187,6 +187,21 @@
       ]
     },
     {
+      "story_id": "story_e4780bdccfac",
+      "title": "使用 LFM2.5-24B-A2B 在设备上快速运行专用代理 / Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "importance_score": 0.8096,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_1327604ea90f",
       "title": "适合初学者的 GitHub Copilot 应用程序：如何向 Copilot 教授您的代码库 / GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
@@ -203,10 +218,34 @@
       ]
     },
     {
+      "story_id": "story_46f20f54d699",
+      "title": "负责任、安全地开发 Gemini 4 Argon / Developing Gemini 4 Argon responsibly and safely",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+      "importance_score": 0.8066,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_624c9e1c6e13",
+      "title": "GitHub 应用程序的最小权限和管理改进 / GitHub App improvements for least privilege and management",
+      "url": "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management",
+      "importance_score": 0.8057,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_d010181126b6",
       "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
       "url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
-      "importance_score": 0.8073,
+      "importance_score": 0.7999,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -219,75 +258,12 @@
       "story_id": "story_7d588311103d",
       "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型 / Gemini 4 Argon: Built to solve your hardest problems",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
-      "importance_score": 0.8069,
+      "importance_score": 0.7995,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
       "company_topics": [
         "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_10babe9f9579",
-      "title": "Xbow 用 GPT-5.6 挖出 Chrome 三个漏洞，获 Google 25 万美元全链奖励 / GPT-5.6 helped break Chrome’s defenses for a $250,000 Google bounty.",
-      "url": "https://x.com/rohanpaul_ai/status/2110203596948353155",
-      "importance_score": 0.8037,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-14",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_64ef9b1ab8ef",
-      "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
-      "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
-      "importance_score": 0.8028,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_245708e44bc0",
-      "title": "GitHub 的秘密检测模型：以更少的噪音发现更多的秘密 / GitHub’s model for secret detection: Finding more secrets with less noise",
-      "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise",
-      "importance_score": 0.8027,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_dab965516ebe",
-      "title": "Higgsfield takes AI video from 1 minute to over 10",
-      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
-      "importance_score": 0.7993,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a14be4c44ee5",
-      "title": "Seed Alignment & Preparedness 全球顶尖人才招募启动",
-      "url": "https://seed.bytedance.com/zh/blog/seed-alignment-preparedness-%E5%85%A8%E7%90%83%E9%A1%B6%E5%B0%96%E4%BA%BA%E6%89%8D%E6%8B%9B%E5%8B%9F%E5%90%AF%E5%8A%A8",
-      "importance_score": 0.7989,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [
-        "doubao"
       ],
       "lens_topics": []
     },
@@ -303,30 +279,41 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0fb62e8392fa",
-      "title": "Enterprise managed settings enforcement updates",
-      "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
-      "importance_score": 0.7976,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_564a92d1b485",
-      "title": "Improved detection for withdrawn Dependabot alerts",
-      "url": "https://github.blog/changelog/2026-10-13-improved-detection-for-withdrawn-dependabot-alerts",
+      "story_id": "story_64ef9b1ab8ef",
+      "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
+      "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
       "importance_score": 0.7952,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_245708e44bc0",
+      "title": "GitHub 的秘密检测模型：以更少的噪音发现更多的秘密 / GitHub’s model for secret detection: Finding more secrets with less noise",
+      "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise",
+      "importance_score": 0.7952,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_10babe9f9579",
+      "title": "Xbow 用 GPT-5.6 挖出 Chrome 三个漏洞，获 Google 25 万美元全链奖励 / GPT-5.6 helped break Chrome’s defenses for a $250,000 Google bounty.",
+      "url": "https://x.com/rohanpaul_ai/status/2110203596948353155",
+      "importance_score": 0.7951,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_06f333b9aafa",
@@ -340,14 +327,16 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3881ff799aa4",
-      "title": "Search and filter for budgets now available",
-      "url": "https://github.blog/changelog/2026-10-13-search-and-filter-for-budgets-now-available",
+      "story_id": "story_a14be4c44ee5",
+      "title": "Seed Alignment & Preparedness 全球顶尖人才招募启动",
+      "url": "https://seed.bytedance.com/zh/blog/seed-alignment-preparedness-%E5%85%A8%E7%90%83%E9%A1%B6%E5%B0%96%E4%BA%BA%E6%89%8D%E6%8B%9B%E5%8B%9F%E5%90%AF%E5%8A%A8",
       "importance_score": 0.7915,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
-      "company_topics": [],
+      "company_topics": [
+        "doubao"
+      ],
       "lens_topics": []
     },
     {
@@ -556,6 +545,19 @@
       "source_count": 1,
       "archive_date": "2026-10-13",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3e09a42052c8",
+      "title": "没有总开关的\"数字蠕虫\"：Anthropic 称小模型年底就能自己复制自己",
+      "url": "https://www.aibase.com/news/31610",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "anthropic"
+      ],
       "lens_topics": []
     }
   ]
