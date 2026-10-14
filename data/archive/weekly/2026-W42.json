@@ -4,33 +4,33 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-14T01:19:04.120189Z",
+  "generated_at": "2026-10-14T01:57:55.847259Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
     "2026-10-14"
   ],
-  "story_count": 769,
-  "unique_story_count": 625,
+  "story_count": 767,
+  "unique_story_count": 627,
   "counts": {
     "by_company_topic": {
-      "anthropic": 85,
-      "apple": 27,
-      "cursor": 11,
+      "anthropic": 86,
+      "apple": 29,
+      "cursor": 10,
       "deepseek": 2,
       "doubao": 4,
-      "google-gemini": 50,
+      "google-gemini": 51,
       "huggingface": 1,
       "kimi": 6,
       "meta-llama": 2,
       "microsoft": 13,
       "minimax": 6,
       "nvidia": 22,
-      "openai": 86,
+      "openai": 88,
       "openrouter": 4,
       "perplexity": 3,
       "qwen": 20,
-      "xai": 30,
+      "xai": 29,
       "zhipu": 3
     },
     "by_lens_topic": {
@@ -40,23 +40,34 @@
       "workplace": 20
     },
     "by_importance_label": {
-      "值得关注": 597,
+      "值得关注": 592,
       "多源热议": 23,
       "官方更新": 19,
-      "行业动态": 130
+      "行业动态": 133
     },
     "by_source_count_bucket": {
-      "1": 721,
+      "1": 719,
       "2": 25,
       "3+": 23
     }
   },
   "top_stories": [
     {
+      "story_id": "story_299fe0589862",
+      "title": "安全概述中的代码扫描 AI Scan 指标 / Code scanning AI Scan metrics in security overview",
+      "url": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+      "importance_score": 0.8422,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_0b5ea0aa6745",
       "title": "Gemini 4 Argon in GitHub Copilot",
       "url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
-      "importance_score": 0.8435,
+      "importance_score": 0.842,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -70,21 +81,10 @@
       ]
     },
     {
-      "story_id": "story_299fe0589862",
-      "title": "安全概述中的代码扫描 AI Scan 指标 / Code scanning AI Scan metrics in security overview",
-      "url": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
-      "importance_score": 0.8422,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7e7580bbc9b4",
       "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
       "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-      "importance_score": 0.8414,
+      "importance_score": 0.8399,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -97,7 +97,7 @@
       "story_id": "story_e4780bdccfac",
       "title": "使用 LFM2.5-24B-A2B 在设备上快速运行专用代理 / Run fast, private agents on-device with LFM2.5-24B-A2B",
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "importance_score": 0.8399,
+      "importance_score": 0.8384,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -112,7 +112,7 @@
       "story_id": "story_624c9e1c6e13",
       "title": "GitHub App improvements for least privilege and management",
       "url": "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management",
-      "importance_score": 0.8388,
+      "importance_score": 0.8372,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -123,7 +123,7 @@
       "story_id": "story_46f20f54d699",
       "title": "负责任、安全地开发 Gemini 4 Argon / Developing Gemini 4 Argon responsibly and safely",
       "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
-      "importance_score": 0.838,
+      "importance_score": 0.8365,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -136,7 +136,7 @@
       "story_id": "story_d010181126b6",
       "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
       "url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
-      "importance_score": 0.8298,
+      "importance_score": 0.8283,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -149,7 +149,7 @@
       "story_id": "story_7d588311103d",
       "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型 / Gemini 4 Argon: Built to solve your hardest problems",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
-      "importance_score": 0.8293,
+      "importance_score": 0.8279,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -162,7 +162,7 @@
       "story_id": "story_64ef9b1ab8ef",
       "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
       "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
-      "importance_score": 0.8259,
+      "importance_score": 0.8244,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -173,7 +173,7 @@
       "story_id": "story_245708e44bc0",
       "title": "GitHub 的秘密检测模型：以更少的噪音发现更多的秘密 / GitHub’s model for secret detection: Finding more secrets with less noise",
       "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise",
-      "importance_score": 0.8258,
+      "importance_score": 0.8243,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -184,7 +184,7 @@
       "story_id": "story_dab965516ebe",
       "title": "Higgsfield takes AI video from 1 minute to over 10",
       "url": "https://openai.com/index/higgsfield-longer-videos-voice",
-      "importance_score": 0.8205,
+      "importance_score": 0.8191,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -197,7 +197,7 @@
       "story_id": "story_0fb62e8392fa",
       "title": "Enterprise managed settings enforcement updates",
       "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
-      "importance_score": 0.8198,
+      "importance_score": 0.8184,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -212,7 +212,7 @@
       "story_id": "story_564a92d1b485",
       "title": "Improved detection for withdrawn Dependabot alerts",
       "url": "https://github.blog/changelog/2026-10-13-improved-detection-for-withdrawn-dependabot-alerts",
-      "importance_score": 0.817,
+      "importance_score": 0.8156,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -223,7 +223,7 @@
       "story_id": "story_3881ff799aa4",
       "title": "Search and filter for budgets now available",
       "url": "https://github.blog/changelog/2026-10-13-search-and-filter-for-budgets-now-available",
-      "importance_score": 0.8127,
+      "importance_score": 0.8113,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -311,7 +311,7 @@
       "story_id": "story_f625de565a09",
       "title": "Gemini 4 Argon 正式 GA，智能指数追平 GPT-6 Astra，Cost per Task 仅为 60% / Gemini 4 Argon is now GA. Argon ranks equal to GPT-6 Astra on the Artificial Analysis Intelligence Index at 60% of the Cost per Task with...",
       "url": "https://x.com/ArtificialAnlys/status/2110068185793970576",
-      "importance_score": 0.7826,
+      "importance_score": 0.7811,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-14",
@@ -320,19 +320,6 @@
         "google-gemini"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_e1f4c7a875e0",
-      "title": "Character.ai 破产文件显示 AI 商业模式难以为继 / Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
-      "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work",
-      "importance_score": 0.7816,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [],
-      "lens_topics": [
-        "monetization"
-      ]
     },
     {
       "story_id": "story_8033d9c7963f",
@@ -348,18 +335,14 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_37d5124eb4e9",
-      "title": "实测Gemini 4 Argon：知识工作强劲但体验糟糕，卡兹克称难撼Claude Opus 5.5与GPT-6 Astra",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687032&idx=1&sn=c5368ed503c4b529ee3946cce017543e",
-      "importance_score": 0.7795,
+      "story_id": "story_e1f4c7a875e0",
+      "title": "Character.ai 破产文件显示 AI 商业模式难以为继 / Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+      "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work",
+      "importance_score": 0.78,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-14",
-      "company_topics": [
-        "openai",
-        "anthropic",
-        "google-gemini"
-      ],
+      "company_topics": [],
       "lens_topics": [
         "monetization"
       ]
@@ -378,31 +361,34 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e5c405f2adfd",
-      "title": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析 / Visual Studio Copilot and SSMS Remote Code Execution (CVE-2026-103572)",
-      "url": "https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution",
-      "importance_score": 0.7712,
+      "story_id": "story_37d5124eb4e9",
+      "title": "实测Gemini 4 Argon：知识工作强劲但体验糟糕，卡兹克称难撼Claude Opus 5.5与GPT-6 Astra",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687032&idx=1&sn=c5368ed503c4b529ee3946cce017543e",
+      "importance_score": 0.7779,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-14",
       "company_topics": [
-        "microsoft"
+        "openai",
+        "anthropic",
+        "google-gemini"
       ],
       "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
+        "monetization"
       ]
     },
     {
-      "story_id": "story_35a5de0aa347",
-      "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金 / GPT 5.6 Sol btw",
-      "url": "https://x.com/reach_vb/status/2110086935733833893",
-      "importance_score": 0.7705,
+      "story_id": "story_c910ad326bd2",
+      "title": "Gemini 4 Argon 全面开放，作者实测后认为难以撼动 Claude Opus 5.5 和 GPT-6 Astra",
+      "url": "https://x.com/Khazix0918/status/2110174495420064055",
+      "importance_score": 0.7772,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-14",
       "company_topics": [
-        "openai"
+        "openai",
+        "anthropic",
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -421,6 +407,35 @@
         "monetization",
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_e5c405f2adfd",
+      "title": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析 / Visual Studio Copilot and SSMS Remote Code Execution (CVE-2026-103572)",
+      "url": "https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution",
+      "importance_score": 0.7696,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_35a5de0aa347",
+      "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金 / GPT 5.6 Sol btw",
+      "url": "https://x.com/reach_vb/status/2110086935733833893",
+      "importance_score": 0.769,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_d243d2985244",
@@ -471,6 +486,20 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_e80fd4a6684f",
+      "title": "苹果诉 OpenAI 窃密案突破：法院准其调取招聘材料，剑指硬件争夺",
+      "url": "https://www.aibase.com/news/31626",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-14",
+      "company_topics": [
+        "openai",
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_e62fb6d032b9",
       "title": "阶跃 Step 5 Preview 登陆腾讯 WorkBuddy，限时免费两周",
       "url": "https://www.aibase.com/news/31565",
@@ -482,40 +511,29 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_dd0e3ddc2cad",
-      "title": "手机 AI 从问答走向任务执行，OPPO 联手 Manus 推进智能体落地",
-      "url": "https://www.aibase.com/news/31622",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_cf9a4ca6dca1",
-      "title": "黄仁勋欧洲撒钱 20 亿美元：拉拢四家法企，喊话\"欧洲必须入场\"",
-      "url": "https://www.aibase.com/news/31620",
+      "story_id": "story_cfc755743aab",
+      "title": "OpenAI 拟收购知名安全公司 Trail of Bits，谈判正在进行中",
+      "url": "https://www.aibase.com/news/31628",
       "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-14",
       "company_topics": [
-        "nvidia"
+        "openai"
       ],
       "lens_topics": []
     },
     {
-      "story_id": "story_cbe94418f6ae",
-      "title": "德勤调查：过半英国大企业一年内部署 AI 替人，青年失业创十余年新高",
-      "url": "https://www.aibase.com/news/31621",
+      "story_id": "story_c24fa7d8f6b0",
+      "title": "Siri AI 全面进驻智能家居:苹果连发四款重磅新品，开启客厅生态新纪元",
+      "url": "https://www.aibase.com/news/31627",
       "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-14",
-      "company_topics": [],
+      "company_topics": [
+        "apple"
+      ],
       "lens_topics": []
     },
     {
@@ -528,19 +546,6 @@
       "archive_date": "2026-10-12",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_af3e1b27e413",
-      "title": "谷歌 Argon 模型开放全球开发者，输入 Token 定价2美元起",
-      "url": "https://www.aibase.com/news/31625",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [],
-      "lens_topics": [
-        "monetization"
-      ]
     },
     {
       "story_id": "story_8d96e81d48fb",
