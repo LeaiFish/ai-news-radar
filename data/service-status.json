@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-14T07:18:00.821840Z",
+  "generated_at": "2026-10-14T10:18:18.230431Z",
   "ok": true,
   "active_count": 1,
   "providers": [
@@ -14,17 +14,17 @@
   ],
   "incidents": [
     {
-      "id": "01M4WKPE1EY48ZB4RZJ80YH7ES",
+      "id": "01M4WYPP5QA0CJ3JV76KH285K8",
       "provider": "OpenAI",
-      "title": "Degraded performance in Codex and ChatGPT Work",
-      "title_zh": "Degraded performance in Codex and ChatGPT Work",
-      "status": "identified",
+      "title": "Limited availability on gpt-image-2.5-flare and gpt-image-2.5-sunburst",
+      "title_zh": "Limited availability on gpt-image-2.5-flare and gpt-image-2.5-sunburst",
+      "status": "investigating",
       "impact": "minor",
-      "started_at": "2026-10-14T07:05:44Z",
-      "updated_at": "2026-10-14T07:05:44Z",
-      "message": "We have identified that users are experiencing elevated errors for the impacted services. We are working on implementing a mitigation.",
+      "started_at": "2026-10-14T10:18:07Z",
+      "updated_at": "2026-10-14T10:18:07Z",
+      "message": "We are investigating limited availability when using gpt-image-2.5-flare and gpt-image-2.5-sunburst in the API.",
       "affected_components": [],
-      "url": "https://status.openai.com/incidents/01M4WKPE1EY48ZB4RZJ80YH7ES"
+      "url": "https://status.openai.com/incidents/01M4WYPP5QA0CJ3JV76KH285K8"
     }
   ]
 }
