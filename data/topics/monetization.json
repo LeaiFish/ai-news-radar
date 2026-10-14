@@ -3,13 +3,13 @@
   "name": "付费订阅与商业化",
   "description": "各家怎么收费、谁在抽佣、付费转化与定价在怎么变？",
   "group": "lens",
-  "item_count": 163,
+  "item_count": 165,
   "listed_count": 80,
   "recent_item_count": 80,
   "latest_title": "谷歌 Argon 模型开放全球开发者，输入 Token 定价2美元起",
   "latest_published_at": "2026-10-14T01:19:04.120189Z",
   "items_url": "data/topics/monetization.json",
-  "generated_at": "2026-10-14T01:57:55.847259Z",
+  "generated_at": "2026-10-14T06:11:25.209261Z",
   "items": [
     {
       "id": "story_af3e1b27e413",
@@ -40,6 +40,22 @@
       "source_name": "AI HOT",
       "site_id": "",
       "published_at": "2026-10-13T22:56:51Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "f08b53cc8919a0b8909bc47d7f493b2fba1e902f",
+      "story_id": null,
+      "title": "Meta 推出 Muse Wonder 和 Muse Wonder Full：基准、定价以及如何使用",
+      "title_zh": "Meta 推出 Muse Wonder 和 Muse Wonder Full：基准、定价以及如何使用",
+      "title_en": "Meta Launches Muse Wonder and Muse Wonder Full: Benchmarks, Pricing and How to Use It",
+      "url": "https://www.marktechpost.com/2026/10/13/meta-muse-wonder-muse-wonder-full-release",
+      "summary": "Meta released Muse Wonder and Muse Wonder Full, 1M-context agent models. Muse Wonder costs $4/$20 per million tokens on Meta Model API. Wonder Full, on Muse Code plans, leads DeepSWE and SWE-Marathon.",
+      "recommend_reason_zh": null,
+      "source": "MarkTechPost Research",
+      "source_name": "MarkTechPost Research",
+      "site_id": "curated_media",
+      "published_at": "2026-10-13T22:53:44Z",
       "source_count": 1,
       "curated": true
     },
@@ -121,7 +137,7 @@
       "site_id": "",
       "published_at": "2026-10-13T16:26:15Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_53f5b0d3cf77",
@@ -184,38 +200,6 @@
       "source_name": "AI HOT",
       "site_id": "",
       "published_at": "2026-10-13T12:59:16.617000Z",
-      "source_count": 1,
-      "curated": false
-    },
-    {
-      "id": "f8bfb6e1553b44437f9348f922a80b001e27d52c",
-      "story_id": null,
-      "title": "Show HN：使用您的 OpenAI 订阅来创建有声读物",
-      "title_zh": "Show HN：使用您的 OpenAI 订阅来创建有声读物",
-      "title_en": "Show HN: Use your OpenAI subscription to create audiobooks",
-      "url": "https://news.ycombinator.com/item?id=50069337",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "hackernews",
-      "source_name": "hackernews",
-      "site_id": "newsnow",
-      "published_at": "2026-10-13T10:08:34Z",
-      "source_count": 1,
-      "curated": false
-    },
-    {
-      "id": "story_3bb563628099",
-      "story_id": "story_3bb563628099",
-      "title": "SpaceXSI 将 X 和 Grok 统一为每月订阅",
-      "title_zh": "SpaceXSI 将 X 和 Grok 统一为每月订阅",
-      "title_en": "SpaceXSI unifies X and Grok under one monthly subscription",
-      "url": "https://mashable.com/tech/spacexsi-x-grok-cursor-subscription",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "Mashable",
-      "source_name": "TechURLs",
-      "site_id": "",
-      "published_at": "2026-10-13T09:56:41Z",
       "source_count": 1,
       "curated": false
     },
@@ -684,6 +668,22 @@
       "curated": true
     },
     {
+      "id": "750c933d5b0d215cc7d7a4bf4ec2ee1e8fd4033c",
+      "story_id": null,
+      "title": "AI搜索现已普遍可用",
+      "title_zh": "AI搜索现已普遍可用",
+      "title_en": "AI Search is now generally available",
+      "url": "https://blog.cloudflare.com/ai-search-ga",
+      "summary": "人工智能搜索现已普遍可用。它直接嵌入图像像素以进行视觉搜索，对扫描的 PDF 运行光学字符识别，接受最大 10 MiB 的文件，并适用于任何聊天模型。以下是新内容以及定价的运作方式。",
+      "recommend_reason_zh": null,
+      "source": "Cloudflare Blog",
+      "source_name": "Cloudflare Blog",
+      "site_id": "official_ai",
+      "published_at": "2026-10-01T13:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
       "id": "73f55d5d3ab47ca86895e3f210b1ab06ec1d8be2",
       "story_id": null,
       "title": "OpenAI 发布 GPT-6.1 Sol：以 Astra 五分之一价格接近其编码与计算机操作水平",
@@ -706,7 +706,7 @@
       "title_zh": "Monetization Gateway beta：通过 HTTP 402 向 AI 代理收取消费费用",
       "title_en": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402",
       "url": "https://blog.cloudflare.com/monetization-gateway-beta",
-      "summary": "Cloudflare’s AI Gateway, Ceramic.ai, Stocktwits, and more are using the Cloudflare Monetization Gateway today to charge agents for access to tokens, APIs, and MCP tools. U.S.-based sellers can now apply for access to the closed beta.",
+      "summary": "Cloudflare 的 AI Gateway、Ceramic.ai、Stocktwits 等目前正在使用 Cloudflare Monetization Gateway 向代理收取令牌、API 和 MCP 工具的访问费用。美国卖家现在可以申请进入内测版。",
       "recommend_reason_zh": null,
       "source": "Cloudflare Blog",
       "source_name": "Cloudflare Blog",
