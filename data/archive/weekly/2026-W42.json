@@ -4,83 +4,55 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-14T20:41:24.402348Z",
+  "generated_at": "2026-10-14T23:55:03.450949Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
     "2026-10-14",
     "2026-10-15"
   ],
-  "story_count": 1016,
-  "unique_story_count": 801,
+  "story_count": 997,
+  "unique_story_count": 835,
   "counts": {
     "by_company_topic": {
-      "anthropic": 106,
-      "apple": 25,
+      "anthropic": 107,
+      "apple": 24,
       "cursor": 7,
       "deepseek": 2,
       "doubao": 11,
-      "google-gemini": 78,
+      "google-gemini": 75,
       "huggingface": 2,
-      "kimi": 6,
+      "kimi": 5,
       "meta-llama": 2,
-      "microsoft": 13,
+      "microsoft": 12,
       "minimax": 6,
-      "nvidia": 29,
-      "openai": 140,
+      "nvidia": 27,
+      "openai": 139,
       "openrouter": 6,
       "perplexity": 3,
       "qwen": 17,
-      "xai": 37,
+      "xai": 36,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 160,
-      "monetization": 26,
+      "agent-ecosystem": 157,
+      "monetization": 24,
       "product-entry": 2,
-      "workplace": 31
+      "workplace": 28
     },
     "by_importance_label": {
-      "值得关注": 799,
+      "值得关注": 789,
       "多源热议": 23,
       "官方更新": 33,
-      "行业动态": 161
+      "行业动态": 152
     },
     "by_source_count_bucket": {
-      "1": 955,
-      "2": 38,
+      "1": 937,
+      "2": 37,
       "3+": 23
     }
   },
   "top_stories": [
-    {
-      "story_id": "story_d89175ca1e0e",
-      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
-      "importance_score": 0.8487,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5d5ac7e11bf8",
-      "title": "HydraFusion updates and new Max option",
-      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
-      "importance_score": 0.8423,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
     {
       "story_id": "story_299fe0589862",
       "title": "安全概述中的代码扫描 AI Scan 指标 / Code scanning AI Scan metrics in security overview",
@@ -90,6 +62,19 @@
       "source_count": 1,
       "archive_date": "2026-10-13",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d89175ca1e0e",
+      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "importance_score": 0.841,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "huggingface"
+      ],
       "lens_topics": []
     },
     {
@@ -104,32 +89,19 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d966792613ef",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "url": "https://openai.com/index/amp-beyond-coding",
-      "importance_score": 0.8308,
+      "story_id": "story_5d5ac7e11bf8",
+      "title": "HydraFusion updates and new Max option",
+      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "importance_score": 0.8342,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
       "company_topics": [
-        "openai"
+        "microsoft"
       ],
       "lens_topics": [
-        "agent-ecosystem"
+        "workplace"
       ]
-    },
-    {
-      "story_id": "story_64acddaea2df",
-      "title": "SentinelOne cuts malware analysis from weeks to hours",
-      "url": "https://openai.com/index/sentinelone",
-      "importance_score": 0.8308,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_a6b4e45b4f15",
@@ -147,10 +119,38 @@
       ]
     },
     {
+      "story_id": "story_d966792613ef",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "importance_score": 0.8235,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_64acddaea2df",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "url": "https://openai.com/index/sentinelone",
+      "importance_score": 0.8235,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_0a3d139d09ff",
       "title": "GPT-5.5 retirement in Codex",
       "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.8235,
+      "importance_score": 0.8174,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
@@ -186,6 +186,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_d1615be89346",
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "url": "https://openai.com/index/block-ai-powered-security",
+      "importance_score": 0.813,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_0b5ea0aa6745",
@@ -349,19 +362,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a69b8419ae13",
-      "title": "Code-Switching Detection via Language-Selective Dimensions in Speech Foundation Models",
-      "url": "https://machinelearning.apple.com/research/code-switching-detection",
-      "importance_score": 0.7975,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_64ef9b1ab8ef",
       "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
       "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
@@ -423,6 +423,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a69b8419ae13",
+      "title": "Code-Switching Detection via Language-Selective Dimensions in Speech Foundation Models",
+      "url": "https://machinelearning.apple.com/research/code-switching-detection",
+      "importance_score": 0.7914,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_8a809173e2e5",
       "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
       "url": "https://github.com/openai/codex/issues/48195",
@@ -436,15 +449,20 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_92ccdb815e7c",
-      "title": "40 位总检察长介入 Character.AI 破产案，要求保护用户对话数据 / Now that Character.AI is going bankrupt, what happens to all of its users&#8217; data?",
-      "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
-      "importance_score": 0.7807,
+      "story_id": "story_5ff9beed0eee",
+      "title": "欧盟就模型越狱事件调查 OpenAI 和 Anthropic，最高可罚全球营业额 3%",
+      "url": "https://www.ithome.com/1/013/154.htm",
+      "importance_score": 0.7808,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-15",
-      "company_topics": [],
-      "lens_topics": []
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_8033d9c7963f",
@@ -473,17 +491,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0ed0dbeb6252",
-      "title": "Google 发布智能体审稿系统 Deep Review，支持多领域技术文档审查 / Analyzing technical documents with Deep Review",
-      "url": "https://research.google/blog/analyzing-technical-documents-with-deep-review",
-      "importance_score": 0.7725,
-      "importance_label": "官方更新",
+      "story_id": "story_92ccdb815e7c",
+      "title": "40 位总检察长介入 Character.AI 破产案，要求保护用户对话数据 / Now that Character.AI is going bankrupt, what happens to all of its users&#8217; data?",
+      "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+      "importance_score": 0.7728,
+      "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-15",
       "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_cbebf0458204",
@@ -553,17 +569,6 @@
       "story_id": "story_e62fb6d032b9",
       "title": "阶跃 Step 5 Preview 登陆腾讯 WorkBuddy，限时免费两周",
       "url": "https://www.aibase.com/news/31565",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_bad3c79d5ad6",
-      "title": "AI 没抢走程序员饭碗？美初级码农就业反降 20%，专家忧十年后断档",
-      "url": "https://www.aibase.com/news/31568",
       "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,

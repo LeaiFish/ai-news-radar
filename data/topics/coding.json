@@ -6,11 +6,27 @@
   "item_count": 9,
   "listed_count": 9,
   "recent_item_count": 9,
-  "latest_title": "开源「红绿灯」提示语，解决Agent刹不住车浪费token额度的老毛病",
-  "latest_published_at": "2026-10-14T20:41:24.402348Z",
+  "latest_title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
+  "latest_published_at": "2026-10-14T21:36:11Z",
   "items_url": "data/topics/coding.json",
-  "generated_at": "2026-10-14T20:41:24.402348Z",
+  "generated_at": "2026-10-14T23:55:03.450949Z",
   "items": [
+    {
+      "id": "story_a7bf3db1c48a",
+      "story_id": "story_a7bf3db1c48a",
+      "title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
+      "title_zh": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
+      "title_en": "It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
+      "url": "https://x.com/lydiahallie/status/2110484841926152622",
+      "summary": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。 作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。",
+      "recommend_reason_zh": null,
+      "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-10-14T21:36:11Z",
+      "source_count": 1,
+      "curated": true
+    },
     {
       "id": "story_0aabbcd481a3",
       "story_id": "story_0aabbcd481a3",
@@ -73,7 +89,23 @@
       "site_id": "",
       "published_at": "2026-10-14T07:00:00Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
+    },
+    {
+      "id": "story_598abdf97711",
+      "story_id": "story_598abdf97711",
+      "title": "OpenAI 团队分享如何用 GPT-6 系列模型维护大型代码库",
+      "title_zh": "OpenAI 团队分享如何用 GPT-6 系列模型维护大型代码库",
+      "title_en": "Maintaining software with the GPT-6 family",
+      "url": "https://developers.openai.com/blog/maintaining-software-with-the-gpt-6-family",
+      "summary": "OpenAI Core Experimentation 团队发文介绍用 GPT-6 Astra 和 GPT-6.1 Sol 配合 Codex 做代码维护，包括清理无用代码和陈旧实验、修复 flaky 测试等。",
+      "recommend_reason_zh": null,
+      "source": "OpenAI Developers：Blog（网页）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-10-14T07:00:00Z",
+      "source_count": 1,
+      "curated": false
     },
     {
       "id": "story_4b25208c5177",
@@ -122,38 +154,6 @@
       "published_at": "2026-10-14T00:00:00Z",
       "source_count": 1,
       "curated": true
-    },
-    {
-      "id": "story_8f27fe7aa1db",
-      "story_id": "story_8f27fe7aa1db",
-      "title": "Day 9/ We've rolled out optimizations to how we store state on disk for the chatgpt &amp; codex desktop app that should reduce the amount stored on disk by 60%. Small ship but we've heard enough feedback about power u...",
-      "title_zh": null,
-      "title_en": "Day 9/ We've rolled out optimizations to how we store state on disk for the chatgpt &amp; codex desktop app that should reduce the amount stored on disk by 60%. Small ship but we've heard enough feedback about power u...",
-      "url": "https://x.com/thsottiaux/status/2110151780478927344",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "Follow Builders · X · Thibault Sottiaux",
-      "source_name": "Follow Builders",
-      "site_id": "",
-      "published_at": "2026-10-13T23:32:43Z",
-      "source_count": 1,
-      "curated": false
-    },
-    {
-      "id": "story_a0394ff57633",
-      "story_id": "story_a0394ff57633",
-      "title": "The Claude Code hackathon is back, and we're bringing it to Japan! エンジニアの方も、そうでない方も、日本在住のビルダーならどなたでも応募できます。世界に何を見せてくれるのか、楽しみにしています。 応募締切は10月26日 23:59（日本時間）： https://t.co/YXVYxl5gdU #claudejapan2026",
-      "title_zh": "The Claude Code hackathon is back, and we're bringing it to Japan! エンジニアの方も、そうでない方も、日本在住のビルダーならどなたでも応募できます。世界に何を見せてくれるのか、楽しみにしています。 応募締切は10月26日 23:59（日本時間）： https://t.co/YXVYxl5gdU #claudejapan2026",
-      "title_en": null,
-      "url": "https://x.com/ClaudeDevs/status/2110128453760815153",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "@ClaudeDevs",
-      "source_name": "X（私有桥）",
-      "site_id": "",
-      "published_at": "2026-10-13T22:00:02Z",
-      "source_count": 1,
-      "curated": false
     }
   ]
 }

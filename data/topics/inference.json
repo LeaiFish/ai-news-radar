@@ -3,13 +3,13 @@
   "name": "部署工程",
   "description": "把模型跑起来：推理优化、显存与成本、Serving 与基础设施。",
   "group": "tech",
-  "item_count": 2,
-  "listed_count": 2,
-  "recent_item_count": 2,
+  "item_count": 3,
+  "listed_count": 3,
+  "recent_item_count": 3,
   "latest_title": "德勤调查：过半英国大企业一年内部署 AI 替人，青年失业创十余年新高",
   "latest_published_at": "2026-10-14T01:19:04.120189Z",
   "items_url": "data/topics/inference.json",
-  "generated_at": "2026-10-14T20:41:24.402348Z",
+  "generated_at": "2026-10-14T23:55:03.450949Z",
   "items": [
     {
       "id": "story_cbe94418f6ae",
@@ -42,6 +42,22 @@
       "published_at": "2026-10-14T00:00:00Z",
       "source_count": 1,
       "curated": true
+    },
+    {
+      "id": "story_7583a138fa27",
+      "story_id": "story_7583a138fa27",
+      "title": "vLLM 推出无需置信头的在线拟合接受估计器，让 EAGLE、MTP 等草稿模型可用 Adaptive Verification",
+      "title_zh": "vLLM 推出无需置信头的在线拟合接受估计器，让 EAGLE、MTP 等草稿模型可用 Adaptive Verification",
+      "title_en": "Adaptive Verification Without a Confidence Head",
+      "url": "https://vllm.ai/blog/2026-10-14-adaptive-verification-online-estimator",
+      "summary": "vLLM 支持 confidence scoring 扩展到所有基于草稿模型的投机类型，通过在线拟合的 logistic 回归从草发者 logits 推导 logit(q_max) 特征来预测目标模型的接受概率，作为 Adaptive Verification 的置信分。",
+      "recommend_reason_zh": null,
+      "source": "vLLM 官方博客（RSS）",
+      "source_name": "AI HOT",
+      "site_id": "",
+      "published_at": "2026-10-14T00:00:00Z",
+      "source_count": 1,
+      "curated": false
     }
   ]
 }
