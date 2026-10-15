@@ -4,55 +4,105 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-15T11:35:41.427794Z",
+  "generated_at": "2026-10-15T15:38:01.382975Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
     "2026-10-14",
     "2026-10-15"
   ],
-  "story_count": 1017,
-  "unique_story_count": 973,
+  "story_count": 1023,
+  "unique_story_count": 1022,
   "counts": {
     "by_company_topic": {
       "anthropic": 114,
-      "apple": 19,
+      "apple": 18,
       "cursor": 7,
       "deepseek": 5,
       "doubao": 7,
       "google-gemini": 74,
-      "huggingface": 6,
-      "kimi": 6,
+      "huggingface": 11,
+      "kimi": 5,
       "meta-llama": 3,
       "microsoft": 12,
       "minimax": 6,
-      "nvidia": 27,
-      "openai": 135,
+      "nvidia": 29,
+      "openai": 136,
       "openrouter": 5,
       "perplexity": 6,
-      "qwen": 14,
+      "qwen": 16,
       "xai": 37,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 159,
-      "monetization": 27,
+      "agent-ecosystem": 165,
+      "monetization": 26,
       "product-entry": 2,
-      "workplace": 27
+      "workplace": 26
     },
     "by_importance_label": {
-      "值得关注": 807,
-      "多源热议": 22,
-      "官方更新": 25,
-      "行业动态": 163
+      "值得关注": 805,
+      "多源热议": 21,
+      "官方更新": 31,
+      "行业动态": 166
     },
     "by_source_count_bucket": {
-      "1": 959,
-      "2": 36,
-      "3+": 22
+      "1": 965,
+      "2": 37,
+      "3+": 21
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_96d693beea7f",
+      "title": "Cloudflare and OpenAI: making AI discovery better for everyone",
+      "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web",
+      "importance_score": 0.8513,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d3e63bdf95a3",
+      "title": "Teaching students to think and learn through questions",
+      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "importance_score": 0.8453,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7e42f375ca95",
+      "title": "Apertus 1.5 Release Notes",
+      "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "importance_score": 0.8439,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_31e130baa525",
+      "title": "AI Scan for pull requests generally available",
+      "url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+      "importance_score": 0.8426,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [],
+      "lens_topics": []
+    },
     {
       "story_id": "story_299fe0589862",
       "title": "安全概述中的代码扫描 AI Scan 指标 / Code scanning AI Scan metrics in security overview",
@@ -61,6 +111,30 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e310e363f789",
+      "title": "Agentic autofix for code scanning alerts general availability",
+      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+      "importance_score": 0.8394,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_6145f106e319",
+      "title": "Email notifications for repository push events have been retired",
+      "url": "https://github.blog/changelog/2026-10-15-email-notifications-for-repository-push-events-have-been-retired",
+      "importance_score": 0.8391,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
       "company_topics": [],
       "lens_topics": []
     },
@@ -91,10 +165,10 @@
       ]
     },
     {
-      "story_id": "story_d89175ca1e0e",
-      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
-      "importance_score": 0.8161,
+      "story_id": "story_0adb412c8d15",
+      "title": "Welcome FLUX.3 Image Klein in Diffusers",
+      "url": "https://huggingface.co/blog/flux-3",
+      "importance_score": 0.8236,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
@@ -127,6 +201,19 @@
       "company_topics": [
         "openai"
       ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_98d21dd2774c",
+      "title": "可灵 Kling 4.0 正式全量开放，新增 MCP 和 CLI 接入 / For Those Who Create. KLING 4.0 Is Now Fully Available. 🎬",
+      "url": "https://x.com/Kling_ai/status/2110747537187709424",
+      "importance_score": 0.8144,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
       ]
@@ -232,19 +319,17 @@
       ]
     },
     {
-      "story_id": "story_5d5ac7e11bf8",
-      "title": "HydraFusion updates and new Max option",
-      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
-      "importance_score": 0.8078,
+      "story_id": "story_d89175ca1e0e",
+      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "importance_score": 0.8083,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
       "company_topics": [
-        "microsoft"
+        "huggingface"
       ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_46f20f54d699",
@@ -271,34 +356,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d966792613ef",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "url": "https://openai.com/index/amp-beyond-coding",
-      "importance_score": 0.8,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_64acddaea2df",
-      "title": "SentinelOne cuts malware analysis from weeks to hours",
-      "url": "https://openai.com/index/sentinelone",
-      "importance_score": 0.8,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_d010181126b6",
       "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
       "url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
@@ -310,6 +367,21 @@
         "anthropic"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_5d5ac7e11bf8",
+      "title": "HydraFusion updates and new Max option",
+      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "importance_score": 0.7996,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_7d588311103d",
@@ -397,19 +469,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_b52f86ee936a",
-      "title": "Anthropic Q3营收达168亿美元但增速放缓，11月IPO前估值预期或下调 / Anthropic's Q3 revenue hits $16.8B but growth slows ahead of planned November IPO",
-      "url": "https://the-decoder.com/anthropics-q3-revenue-hits-16-8b-but-growth-slows-ahead-of-planned-november-ipo",
-      "importance_score": 0.7901,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_8a809173e2e5",
       "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
       "url": "https://github.com/openai/codex/issues/48195",
@@ -436,6 +495,30 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b52f86ee936a",
+      "title": "Anthropic Q3营收达168亿美元但增速放缓，11月IPO前估值预期或下调 / Anthropic's Q3 revenue hits $16.8B but growth slows ahead of planned November IPO",
+      "url": "https://the-decoder.com/anthropics-q3-revenue-hits-16-8b-but-growth-slows-ahead-of-planned-november-ipo",
+      "importance_score": 0.7802,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_555671785c26",
+      "title": "The Verge 实测 Eiliko 机器人玩具：68000 台设备数据可被任意访问并可远程劫持 / Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked",
+      "url": "https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab",
+      "importance_score": 0.7799,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_b41ff3f56559",
       "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审 / Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
       "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
@@ -449,10 +532,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_302c81ff9afb",
-      "title": "阶跃星辰开放 Step 5 Preview 权重并发布技术博客",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488160&idx=1&sn=427a3dc2e5b84b0977e1e5ea075cfbd7",
-      "importance_score": 0.7767,
+      "story_id": "story_f85fd99ece20",
+      "title": "阶跃星辰开放 Step 5 Preview 权重 / Step 5 Preview is now open weights.",
+      "url": "https://x.com/StepFun_ai/status/2110717330657616092",
+      "importance_score": 0.7759,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-15",
@@ -488,87 +571,6 @@
       "company_topics": [
         "anthropic"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_efff124d7912",
-      "title": "苹果悄悄收编 AI 播客团队：反向雇佣 Huxe，给 Podcasts 埋下个性化伏笔",
-      "url": "https://www.aibase.com/news/31616",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_efb1d33574f2",
-      "title": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-      "url": "https://www.aibase.com/news/31566",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ef317db9eefe",
-      "title": "微软给 Excel 塞进\"交互式画布\"：说句话，零散表格变决策看板",
-      "url": "https://www.aibase.com/news/31612",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e62fb6d032b9",
-      "title": "阶跃 Step 5 Preview 登陆腾讯 WorkBuddy，限时免费两周",
-      "url": "https://www.aibase.com/news/31565",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_bad3c79d5ad6",
-      "title": "AI 没抢走程序员饭碗？美初级码农就业反降 20%，专家忧十年后断档",
-      "url": "https://www.aibase.com/news/31568",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8d96e81d48fb",
-      "title": "IDC 报告：英伟达中国 AI 芯片份额跌至 34%，华为追到 28%",
-      "url": "https://www.aibase.com/news/31617",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_87d81ac84ccc",
-      "title": "千亿大模型塞进掌心：高通 CEO 称 AI 巨头或 2028 年杀入手机市场",
-      "url": "https://www.aibase.com/news/31606",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
