@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-15T20:20:29.707824Z",
+  "generated_at": "2026-10-15T23:41:23.382900Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
@@ -12,48 +12,61 @@
     "2026-10-15",
     "2026-10-16"
   ],
-  "story_count": 1315,
-  "unique_story_count": 1098,
+  "story_count": 1284,
+  "unique_story_count": 1117,
   "counts": {
     "by_company_topic": {
-      "anthropic": 152,
-      "apple": 23,
+      "anthropic": 146,
+      "apple": 22,
       "cursor": 7,
       "deepseek": 9,
       "doubao": 7,
-      "google-gemini": 89,
+      "google-gemini": 84,
       "huggingface": 21,
       "kimi": 7,
       "meta-llama": 5,
       "microsoft": 13,
       "minimax": 7,
-      "nvidia": 39,
-      "openai": 173,
+      "nvidia": 40,
+      "openai": 165,
       "openrouter": 7,
       "perplexity": 8,
       "qwen": 19,
-      "xai": 46,
+      "xai": 42,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 226,
-      "monetization": 35,
-      "product-entry": 3,
-      "workplace": 31
+      "agent-ecosystem": 220,
+      "monetization": 34,
+      "product-entry": 2,
+      "workplace": 30
     },
     "by_importance_label": {
-      "值得关注": 1023,
-      "多源热议": 26,
-      "官方更新": 48,
-      "行业动态": 218
+      "值得关注": 999,
+      "多源热议": 25,
+      "官方更新": 52,
+      "行业动态": 208
     },
     "by_source_count_bucket": {
-      "1": 1243,
-      "2": 46,
-      "3+": 26
+      "1": 1214,
+      "2": 45,
+      "3+": 25
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_787df5073195",
+      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "importance_score": 0.8521,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
     {
       "story_id": "story_96d693beea7f",
       "title": "Cloudflare and OpenAI: making AI discovery better for everyone",
@@ -68,20 +81,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_92a79a18c257",
-      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
-      "importance_score": 0.85,
+      "story_id": "story_c33781d78308",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "importance_score": 0.8482,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "microsoft"
+        "openai"
       ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_d3e63bdf95a3",
@@ -132,6 +142,22 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_92a79a18c257",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "importance_score": 0.8416,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_e310e363f789",
       "title": "Agentic autofix for code scanning alerts general availability",
       "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
@@ -167,16 +193,14 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_036b3bff1937",
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
-      "importance_score": 0.8334,
+      "story_id": "story_a3a6cd0a1f49",
+      "title": "Download GitHub Code Quality license usage as a CSV",
+      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
+      "importance_score": 0.8351,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
-      "company_topics": [
-        "google-gemini"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -193,6 +217,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_036b3bff1937",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
+      "importance_score": 0.8254,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_0adb412c8d15",
@@ -249,15 +286,15 @@
       ]
     },
     {
-      "story_id": "story_c422d5920185",
-      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-      "url": "https://huggingface.co/blog/meta-muse-spark-open",
-      "importance_score": 0.8142,
+      "story_id": "story_12c564ccf62b",
+      "title": "Codex CLI 0.163.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8139,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "huggingface"
+        "openai"
       ],
       "lens_topics": []
     },
@@ -375,6 +412,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_c422d5920185",
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "importance_score": 0.8079,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_46f20f54d699",
       "title": "负责任、安全地开发 Gemini 4 Argon / Developing Gemini 4 Argon responsibly and safely",
       "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
@@ -388,19 +438,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_f304ca458874",
-      "title": "Apple 演示用 MLX 与 RDMA 在 Mac Studio 集群本地运行 816B 大模型 / Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
-      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
-      "importance_score": 0.8062,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_624c9e1c6e13",
       "title": "GitHub 应用程序的最小权限和管理改进 / GitHub App improvements for least privilege and management",
       "url": "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management",
@@ -409,6 +446,19 @@
       "source_count": 1,
       "archive_date": "2026-10-14",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f304ca458874",
+      "title": "Apple 演示用 MLX 与 RDMA 在 Mac Studio 集群本地运行 816B 大模型 / Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
+      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "importance_score": 0.7999,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "apple"
+      ],
       "lens_topics": []
     },
     {
@@ -464,52 +514,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_9b60d0e3e41b",
-      "title": "Plan or Retrieve First? A Scale Study of Tool Discovery Architectures",
-      "url": "https://machinelearning.apple.com/research/plan-retrieve-tool-discovery",
-      "importance_score": 0.7982,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_1085c1fb0099",
-      "title": "Selection-Based Structured Reasoning: Toward Efficient Multimodal Search Agents",
-      "url": "https://machinelearning.apple.com/research/selection-structured-reasoning",
-      "importance_score": 0.7982,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_1c3ebae275df",
-      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单 / Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
-      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
-      "importance_score": 0.7975,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization",
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_64ef9b1ab8ef",
       "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
       "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
@@ -547,21 +551,6 @@
       ]
     },
     {
-      "story_id": "story_87c2231e4c10",
-      "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文 / Muse Spark Is Now an Open-Weights Model",
-      "url": "https://pytorch.org/blog/muse-spark-open",
-      "importance_score": 0.7944,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_06f333b9aafa",
       "title": "Anonymous organization-level registries for Dependabot",
       "url": "https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot",
@@ -573,18 +562,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_fee8943ac5f8",
-      "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter / Muse Spark Open from @AIatMeta is now available on OpenRouter!",
-      "url": "https://x.com/OpenRouter/status/2110793354154008685",
-      "importance_score": 0.7917,
-      "importance_label": "行业动态",
+      "story_id": "story_9b60d0e3e41b",
+      "title": "Plan or Retrieve First? A Scale Study of Tool Discovery Architectures",
+      "url": "https://machinelearning.apple.com/research/plan-retrieve-tool-discovery",
+      "importance_score": 0.7919,
+      "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "openrouter"
+        "apple"
       ],
       "lens_topics": [
-        "monetization",
         "agent-ecosystem"
       ]
     }
