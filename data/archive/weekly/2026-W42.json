@@ -4,52 +4,52 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-15T10:01:28.459509Z",
+  "generated_at": "2026-10-15T11:35:41.427794Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
     "2026-10-14",
     "2026-10-15"
   ],
-  "story_count": 1025,
-  "unique_story_count": 953,
+  "story_count": 1017,
+  "unique_story_count": 973,
   "counts": {
     "by_company_topic": {
-      "anthropic": 116,
+      "anthropic": 114,
       "apple": 19,
       "cursor": 7,
       "deepseek": 5,
-      "doubao": 9,
+      "doubao": 7,
       "google-gemini": 74,
       "huggingface": 6,
       "kimi": 6,
       "meta-llama": 3,
       "microsoft": 12,
       "minimax": 6,
-      "nvidia": 25,
-      "openai": 137,
+      "nvidia": 27,
+      "openai": 135,
       "openrouter": 5,
       "perplexity": 6,
-      "qwen": 17,
-      "xai": 38,
+      "qwen": 14,
+      "xai": 37,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 160,
+      "agent-ecosystem": 159,
       "monetization": 27,
       "product-entry": 2,
-      "workplace": 30
+      "workplace": 27
     },
     "by_importance_label": {
-      "值得关注": 814,
-      "多源热议": 23,
+      "值得关注": 807,
+      "多源热议": 22,
       "官方更新": 25,
       "行业动态": 163
     },
     "by_source_count_bucket": {
-      "1": 963,
-      "2": 39,
-      "3+": 23
+      "1": 959,
+      "2": 36,
+      "3+": 22
     }
   },
   "top_stories": [
@@ -94,7 +94,7 @@
       "story_id": "story_d89175ca1e0e",
       "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
       "url": "https://huggingface.co/blog/allenai/hiro-acev2",
-      "importance_score": 0.8192,
+      "importance_score": 0.8161,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
@@ -175,21 +175,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_5d5ac7e11bf8",
-      "title": "HydraFusion updates and new Max option",
-      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
-      "importance_score": 0.8111,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_3f65ad068613",
       "title": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产 / Character.AI files for bankruptcy",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
@@ -247,6 +232,21 @@
       ]
     },
     {
+      "story_id": "story_5d5ac7e11bf8",
+      "title": "HydraFusion updates and new Max option",
+      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "importance_score": 0.8078,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_46f20f54d699",
       "title": "负责任、安全地开发 Gemini 4 Argon / Developing Gemini 4 Argon responsibly and safely",
       "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
@@ -274,7 +274,7 @@
       "story_id": "story_d966792613ef",
       "title": "Amp puts AI agents to work beyond code with OpenAI models",
       "url": "https://openai.com/index/amp-beyond-coding",
-      "importance_score": 0.803,
+      "importance_score": 0.8,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
@@ -289,7 +289,7 @@
       "story_id": "story_64acddaea2df",
       "title": "SentinelOne cuts malware analysis from weeks to hours",
       "url": "https://openai.com/index/sentinelone",
-      "importance_score": 0.803,
+      "importance_score": 0.8,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
@@ -397,6 +397,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b52f86ee936a",
+      "title": "Anthropic Q3营收达168亿美元但增速放缓，11月IPO前估值预期或下调 / Anthropic's Q3 revenue hits $16.8B but growth slows ahead of planned November IPO",
+      "url": "https://the-decoder.com/anthropics-q3-revenue-hits-16-8b-but-growth-slows-ahead-of-planned-november-ipo",
+      "importance_score": 0.7901,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_8a809173e2e5",
       "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
       "url": "https://github.com/openai/codex/issues/48195",
@@ -423,19 +436,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_302c81ff9afb",
-      "title": "阶跃星辰开放 Step 5 Preview 权重并发布技术博客",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488160&idx=1&sn=427a3dc2e5b84b0977e1e5ea075cfbd7",
-      "importance_score": 0.7803,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_b41ff3f56559",
       "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审 / Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
       "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
@@ -445,6 +445,19 @@
       "archive_date": "2026-10-12",
       "company_topics": [
         "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_302c81ff9afb",
+      "title": "阶跃星辰开放 Step 5 Preview 权重并发布技术博客",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488160&idx=1&sn=427a3dc2e5b84b0977e1e5ea075cfbd7",
+      "importance_score": 0.7767,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -524,41 +537,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e226ed713148",
-      "title": "腾讯 AI 管家\"马维斯\"上架鸿蒙：手机电脑一把抓，老用户无缝续杯",
-      "url": "https://www.aibase.com/news/31667",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_dfa5f836e905",
-      "title": "腾讯 Marvis 鸿蒙版正式上线，支持微信、QQ登录",
-      "url": "https://www.aibase.com/news/31666",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d72a8625e8d7",
-      "title": "​Anthropic 正式宣布在新加坡设立办事处，并与新加坡政府达成战略合作",
-      "url": "https://www.aibase.com/news/31672",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_bad3c79d5ad6",
       "title": "AI 没抢走程序员饭碗？美初级码农就业反降 20%，专家忧十年后断档",
       "url": "https://www.aibase.com/news/31568",
@@ -566,6 +544,30 @@
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-12",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8d96e81d48fb",
+      "title": "IDC 报告：英伟达中国 AI 芯片份额跌至 34%，华为追到 28%",
+      "url": "https://www.aibase.com/news/31617",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
+      "company_topics": [
+        "nvidia"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_87d81ac84ccc",
+      "title": "千亿大模型塞进掌心：高通 CEO 称 AI 巨头或 2028 年杀入手机市场",
+      "url": "https://www.aibase.com/news/31606",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-13",
       "company_topics": [],
       "lens_topics": []
     }
