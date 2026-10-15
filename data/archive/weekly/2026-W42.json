@@ -4,52 +4,52 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-15T05:56:17.305984Z",
+  "generated_at": "2026-10-15T07:19:27.725488Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
     "2026-10-14",
     "2026-10-15"
   ],
-  "story_count": 1022,
-  "unique_story_count": 907,
+  "story_count": 1034,
+  "unique_story_count": 935,
   "counts": {
     "by_company_topic": {
-      "anthropic": 113,
+      "anthropic": 115,
       "apple": 19,
       "cursor": 7,
       "deepseek": 4,
-      "doubao": 11,
+      "doubao": 9,
       "google-gemini": 77,
-      "huggingface": 2,
+      "huggingface": 6,
       "kimi": 6,
       "meta-llama": 2,
       "microsoft": 12,
       "minimax": 6,
-      "nvidia": 26,
-      "openai": 133,
+      "nvidia": 27,
+      "openai": 134,
       "openrouter": 6,
       "perplexity": 6,
-      "qwen": 18,
-      "xai": 37,
+      "qwen": 17,
+      "xai": 38,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 160,
-      "monetization": 26,
+      "agent-ecosystem": 163,
+      "monetization": 27,
       "product-entry": 2,
       "workplace": 30
     },
     "by_importance_label": {
-      "值得关注": 815,
-      "多源热议": 22,
-      "官方更新": 27,
-      "行业动态": 158
+      "值得关注": 819,
+      "多源热议": 23,
+      "官方更新": 25,
+      "行业动态": 167
     },
     "by_source_count_bucket": {
-      "1": 963,
+      "1": 974,
       "2": 37,
-      "3+": 22
+      "3+": 23
     }
   },
   "top_stories": [
@@ -94,7 +94,7 @@
       "story_id": "story_d89175ca1e0e",
       "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
       "url": "https://huggingface.co/blog/allenai/hiro-acev2",
-      "importance_score": 0.8276,
+      "importance_score": 0.8247,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
@@ -107,7 +107,7 @@
       "story_id": "story_5d5ac7e11bf8",
       "title": "HydraFusion updates and new Max option",
       "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
-      "importance_score": 0.82,
+      "importance_score": 0.8169,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-15",
@@ -201,34 +201,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d966792613ef",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "url": "https://openai.com/index/amp-beyond-coding",
-      "importance_score": 0.8109,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_64acddaea2df",
-      "title": "SentinelOne cuts malware analysis from weeks to hours",
-      "url": "https://openai.com/index/sentinelone",
-      "importance_score": 0.8109,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_028d06be8228",
       "title": "Client telemetry user attribution and configurable capture",
       "url": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
@@ -275,6 +247,34 @@
       ]
     },
     {
+      "story_id": "story_d966792613ef",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "importance_score": 0.8082,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_64acddaea2df",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "url": "https://openai.com/index/sentinelone",
+      "importance_score": 0.8082,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_46f20f54d699",
       "title": "负责任、安全地开发 Gemini 4 Argon / Developing Gemini 4 Argon responsibly and safely",
       "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
@@ -296,19 +296,6 @@
       "source_count": 1,
       "archive_date": "2026-10-14",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d1615be89346",
-      "title": "How Block is building AI-powered security with OpenAI technology",
-      "url": "https://openai.com/index/block-ai-powered-security",
-      "importance_score": 0.8012,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "openai"
-      ],
       "lens_topics": []
     },
     {
@@ -410,6 +397,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_302c81ff9afb",
+      "title": "阶跃星辰开放 Step 5 Preview 权重并发布技术博客",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488160&idx=1&sn=427a3dc2e5b84b0977e1e5ea075cfbd7",
+      "importance_score": 0.7868,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_8a809173e2e5",
       "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
       "url": "https://github.com/openai/codex/issues/48195",
@@ -449,10 +449,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_52b4136b5835",
+      "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤 / The states come for OpenAI",
+      "url": "https://www.platformer.news/openai-states-lawsuit-liability",
+      "importance_score": 0.7726,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_d6deb20c7940",
       "title": "Gemini 4 Argon 向全球 Google AI Pro 和 Ultra 订阅者开放 / Gemini 4 Argon is available to Google AI Pro and Ultra subscribers globally. Learn more in this 🧵 https://x.com/GeminiApp/status/2110039...",
       "url": "https://x.com/GeminiApp/status/2110491358498865638",
-      "importance_score": 0.7732,
+      "importance_score": 0.77,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-15",
@@ -462,17 +475,6 @@
       "lens_topics": [
         "monetization"
       ]
-    },
-    {
-      "story_id": "story_05df7d6baec1",
-      "title": "卡兹克实测开源Skill Anatomy，一句话让AI生成原理科普视频",
-      "url": "https://x.com/Khazix0918/status/2110587546271191166",
-      "importance_score": 0.7727,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [],
-      "lens_topics": []
     },
     {
       "story_id": "story_cbebf0458204",
@@ -491,16 +493,14 @@
       ]
     },
     {
-      "story_id": "story_5e16cebce9e0",
-      "title": "美国 8 州起诉 OpenAI，指控 ChatGPT 指导青少年自伤或伤害他人",
-      "url": "https://www.ithome.com/1/013/160.htm",
-      "importance_score": 0.77,
+      "story_id": "story_05df7d6baec1",
+      "title": "卡兹克实测开源Skill Anatomy，一句话让AI生成原理科普视频",
+      "url": "https://x.com/Khazix0918/status/2110587546271191166",
+      "importance_score": 0.7692,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-15",
-      "company_topics": [
-        "openai"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -552,19 +552,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_ed360e790fe6",
-      "title": "报道称苹果 AI 国内供应商或包括阿里、百度，iOS 27.3 或 12 月落地",
-      "url": "https://www.aibase.com/news/31661",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_e62fb6d032b9",
       "title": "阶跃 Step 5 Preview 登陆腾讯 WorkBuddy，限时免费两周",
       "url": "https://www.aibase.com/news/31565",
@@ -572,6 +559,17 @@
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-12",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c2a686acce62",
+      "title": "三星首席设计官波尔奇尼：AI 越发达，人的创造力越值钱",
+      "url": "https://www.aibase.com/news/31663",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-15",
       "company_topics": [],
       "lens_topics": []
     }
