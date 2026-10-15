@@ -4,52 +4,53 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-15T15:38:01.382975Z",
+  "generated_at": "2026-10-15T20:20:29.707824Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
     "2026-10-14",
-    "2026-10-15"
+    "2026-10-15",
+    "2026-10-16"
   ],
-  "story_count": 1023,
-  "unique_story_count": 1022,
+  "story_count": 1315,
+  "unique_story_count": 1098,
   "counts": {
     "by_company_topic": {
-      "anthropic": 114,
-      "apple": 18,
+      "anthropic": 152,
+      "apple": 23,
       "cursor": 7,
-      "deepseek": 5,
+      "deepseek": 9,
       "doubao": 7,
-      "google-gemini": 74,
-      "huggingface": 11,
-      "kimi": 5,
-      "meta-llama": 3,
-      "microsoft": 12,
-      "minimax": 6,
-      "nvidia": 29,
-      "openai": 136,
-      "openrouter": 5,
-      "perplexity": 6,
-      "qwen": 16,
-      "xai": 37,
+      "google-gemini": 89,
+      "huggingface": 21,
+      "kimi": 7,
+      "meta-llama": 5,
+      "microsoft": 13,
+      "minimax": 7,
+      "nvidia": 39,
+      "openai": 173,
+      "openrouter": 7,
+      "perplexity": 8,
+      "qwen": 19,
+      "xai": 46,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 165,
-      "monetization": 26,
-      "product-entry": 2,
-      "workplace": 26
+      "agent-ecosystem": 226,
+      "monetization": 35,
+      "product-entry": 3,
+      "workplace": 31
     },
     "by_importance_label": {
-      "值得关注": 805,
-      "多源热议": 21,
-      "官方更新": 31,
-      "行业动态": 166
+      "值得关注": 1023,
+      "多源热议": 26,
+      "官方更新": 48,
+      "行业动态": 218
     },
     "by_source_count_bucket": {
-      "1": 965,
-      "2": 37,
-      "3+": 21
+      "1": 1243,
+      "2": 46,
+      "3+": 26
     }
   },
   "top_stories": [
@@ -65,6 +66,22 @@
         "openai"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_92a79a18c257",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "importance_score": 0.85,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
     },
     {
       "story_id": "story_d3e63bdf95a3",
@@ -150,6 +167,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_036b3bff1937",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
+      "importance_score": 0.8334,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_a6b4e45b4f15",
       "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
       "url": "https://openai.com/index/third-moment-research",
@@ -217,6 +247,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_c422d5920185",
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "importance_score": 0.8142,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_0b5ea0aa6745",
@@ -345,6 +388,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_f304ca458874",
+      "title": "Apple 演示用 MLX 与 RDMA 在 Mac Studio 集群本地运行 816B 大模型 / Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
+      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "importance_score": 0.8062,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_624c9e1c6e13",
       "title": "GitHub 应用程序的最小权限和管理改进 / GitHub App improvements for least privilege and management",
       "url": "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management",
@@ -408,6 +464,52 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_9b60d0e3e41b",
+      "title": "Plan or Retrieve First? A Scale Study of Tool Discovery Architectures",
+      "url": "https://machinelearning.apple.com/research/plan-retrieve-tool-discovery",
+      "importance_score": 0.7982,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_1085c1fb0099",
+      "title": "Selection-Based Structured Reasoning: Toward Efficient Multimodal Search Agents",
+      "url": "https://machinelearning.apple.com/research/selection-structured-reasoning",
+      "importance_score": 0.7982,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_1c3ebae275df",
+      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单 / Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+      "importance_score": 0.7975,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "monetization",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_64ef9b1ab8ef",
       "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
       "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
@@ -445,6 +547,21 @@
       ]
     },
     {
+      "story_id": "story_87c2231e4c10",
+      "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文 / Muse Spark Is Now an Open-Weights Model",
+      "url": "https://pytorch.org/blog/muse-spark-open",
+      "importance_score": 0.7944,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_06f333b9aafa",
       "title": "Anonymous organization-level registries for Dependabot",
       "url": "https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot",
@@ -456,122 +573,20 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a14be4c44ee5",
-      "title": "Seed Alignment & Preparedness 全球顶尖人才招募启动",
-      "url": "https://seed.bytedance.com/zh/blog/seed-alignment-preparedness-%E5%85%A8%E7%90%83%E9%A1%B6%E5%B0%96%E4%BA%BA%E6%89%8D%E6%8B%9B%E5%8B%9F%E5%90%AF%E5%8A%A8",
-      "importance_score": 0.7915,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [
-        "doubao"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8a809173e2e5",
-      "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
-      "url": "https://github.com/openai/codex/issues/48195",
-      "importance_score": 0.7847,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8033d9c7963f",
-      "title": "NVIDIA 官宣 RTX Spark 软件生态就绪，10 月 16 日笔记本上市 / All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
-      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates",
-      "importance_score": 0.7806,
+      "story_id": "story_fee8943ac5f8",
+      "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter / Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+      "url": "https://x.com/OpenRouter/status/2110793354154008685",
+      "importance_score": 0.7917,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-10-13",
+      "archive_date": "2026-10-16",
       "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b52f86ee936a",
-      "title": "Anthropic Q3营收达168亿美元但增速放缓，11月IPO前估值预期或下调 / Anthropic's Q3 revenue hits $16.8B but growth slows ahead of planned November IPO",
-      "url": "https://the-decoder.com/anthropics-q3-revenue-hits-16-8b-but-growth-slows-ahead-of-planned-november-ipo",
-      "importance_score": 0.7802,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_555671785c26",
-      "title": "The Verge 实测 Eiliko 机器人玩具：68000 台设备数据可被任意访问并可远程劫持 / Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked",
-      "url": "https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab",
-      "importance_score": 0.7799,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b41ff3f56559",
-      "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审 / Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-      "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
-      "importance_score": 0.7791,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-12",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f85fd99ece20",
-      "title": "阶跃星辰开放 Step 5 Preview 权重 / Step 5 Preview is now open weights.",
-      "url": "https://x.com/StepFun_ai/status/2110717330657616092",
-      "importance_score": 0.7759,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-15",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cbebf0458204",
-      "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力 / Muse Wonder",
-      "url": "https://research.meta.ai/blog/muse-wonder",
-      "importance_score": 0.77,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "meta-llama"
+        "openrouter"
       ],
       "lens_topics": [
         "monetization",
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_d243d2985244",
-      "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
-      "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-      "importance_score": 0.7679,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
     }
   ]
 }
