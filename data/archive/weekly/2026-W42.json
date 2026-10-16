@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-16T19:57:58.794477Z",
+  "generated_at": "2026-10-16T23:35:11.108405Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
@@ -13,45 +13,45 @@
     "2026-10-16",
     "2026-10-17"
   ],
-  "story_count": 1521,
-  "unique_story_count": 1324,
+  "story_count": 1502,
+  "unique_story_count": 1348,
   "counts": {
     "by_company_topic": {
-      "anthropic": 177,
+      "anthropic": 176,
       "apple": 24,
       "cursor": 13,
       "deepseek": 16,
       "doubao": 7,
-      "google-gemini": 104,
-      "huggingface": 20,
+      "google-gemini": 101,
+      "huggingface": 19,
       "kimi": 11,
       "meta-llama": 4,
       "microsoft": 15,
       "minimax": 8,
       "nvidia": 54,
       "openai": 191,
-      "openrouter": 14,
-      "perplexity": 12,
-      "qwen": 22,
-      "xai": 53,
+      "openrouter": 12,
+      "perplexity": 11,
+      "qwen": 21,
+      "xai": 50,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 235,
-      "monetization": 40,
+      "agent-ecosystem": 232,
+      "monetization": 38,
       "product-entry": 2,
-      "workplace": 32
+      "workplace": 31
     },
     "by_importance_label": {
-      "值得关注": 1192,
-      "多源热议": 26,
-      "官方更新": 54,
-      "行业动态": 249
+      "值得关注": 1183,
+      "多源热议": 28,
+      "官方更新": 52,
+      "行业动态": 239
     },
     "by_source_count_bucket": {
-      "1": 1441,
+      "1": 1420,
       "2": 54,
-      "3+": 26
+      "3+": 28
     }
   },
   "top_stories": [
@@ -140,6 +140,19 @@
       "source_count": 1,
       "archive_date": "2026-10-13",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_27f49e3620ac",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "importance_score": 0.8405,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-17",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
@@ -243,21 +256,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_6b115062be00",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "importance_score": 0.8229,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-17",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_2f7abdbde624",
       "title": "Xcode 27 runner image generally available",
       "url": "https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available",
@@ -280,6 +278,21 @@
         "huggingface"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_6b115062be00",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "importance_score": 0.816,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-17",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_9b461af69bbd",
@@ -555,17 +568,6 @@
       "story_id": "story_64ef9b1ab8ef",
       "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
       "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
-      "importance_score": 0.7952,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_245708e44bc0",
-      "title": "GitHub 的秘密检测模型：以更少的噪音发现更多的秘密 / GitHub’s model for secret detection: Finding more secrets with less noise",
-      "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise",
       "importance_score": 0.7952,
       "importance_label": "官方更新",
       "source_count": 1,
