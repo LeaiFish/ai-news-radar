@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-16T09:54:54.716980Z",
+  "generated_at": "2026-10-16T11:30:10.553259Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
@@ -12,23 +12,23 @@
     "2026-10-15",
     "2026-10-16"
   ],
-  "story_count": 1291,
-  "unique_story_count": 1221,
+  "story_count": 1294,
+  "unique_story_count": 1242,
   "counts": {
     "by_company_topic": {
-      "anthropic": 149,
+      "anthropic": 147,
       "apple": 20,
       "cursor": 10,
-      "deepseek": 12,
+      "deepseek": 11,
       "doubao": 7,
-      "google-gemini": 88,
+      "google-gemini": 89,
       "huggingface": 18,
       "kimi": 9,
-      "meta-llama": 5,
+      "meta-llama": 4,
       "microsoft": 14,
       "minimax": 7,
-      "nvidia": 44,
-      "openai": 164,
+      "nvidia": 43,
+      "openai": 163,
       "openrouter": 10,
       "perplexity": 11,
       "qwen": 21,
@@ -36,20 +36,20 @@
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 210,
+      "agent-ecosystem": 211,
       "monetization": 33,
       "product-entry": 2,
       "workplace": 30
     },
     "by_importance_label": {
-      "值得关注": 1011,
+      "值得关注": 1013,
       "多源热议": 25,
       "官方更新": 45,
-      "行业动态": 210
+      "行业动态": 211
     },
     "by_source_count_bucket": {
-      "1": 1223,
-      "2": 43,
+      "1": 1225,
+      "2": 44,
       "3+": 25
     }
   },
@@ -116,19 +116,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7db28526b529",
-      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "importance_score": 0.84,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_e310e363f789",
       "title": "Agentic autofix for code scanning alerts general availability",
       "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
@@ -164,19 +151,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_bb81118ad07f",
-      "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
-      "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
-      "importance_score": 0.8332,
+      "story_id": "story_7db28526b529",
+      "title": "扩展 Indic 预训练：2.8 万亿代币和开放数据生成管道 / Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "importance_score": 0.8363,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "microsoft"
+        "huggingface"
       ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_a6b4e45b4f15",
@@ -194,28 +179,30 @@
       ]
     },
     {
-      "story_id": "story_787df5073195",
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "importance_score": 0.8284,
+      "story_id": "story_bb81118ad07f",
+      "title": "Slack 和 Microsoft Teams 中 GitHub Copilot 的多存储库支持和其他改进 / Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+      "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "importance_score": 0.8295,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "huggingface"
+        "microsoft"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
-      "story_id": "story_c33781d78308",
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "story_id": "story_787df5073195",
+      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
       "importance_score": 0.8251,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "openai"
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -233,20 +220,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_92a79a18c257",
-      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
-      "importance_score": 0.8184,
+      "story_id": "story_c33781d78308",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "importance_score": 0.8218,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "microsoft"
+        "openai"
       ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_9b461af69bbd",
@@ -274,6 +258,22 @@
       ],
       "lens_topics": [
         "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_92a79a18c257",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "importance_score": 0.815,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
       ]
     },
     {
@@ -305,17 +305,6 @@
         "agent-ecosystem",
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_a3a6cd0a1f49",
-      "title": "Download GitHub Code Quality license usage as a CSV",
-      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
-      "importance_score": 0.8116,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [],
-      "lens_topics": []
     },
     {
       "story_id": "story_7e7580bbc9b4",
@@ -414,6 +403,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a3a6cd0a1f49",
+      "title": "Download GitHub Code Quality license usage as a CSV",
+      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
+      "importance_score": 0.8083,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_46f20f54d699",
       "title": "负责任、安全地开发 Gemini 4 Argon / Developing Gemini 4 Argon responsibly and safely",
       "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
@@ -441,7 +441,7 @@
       "story_id": "story_036b3bff1937",
       "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
       "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
-      "importance_score": 0.8032,
+      "importance_score": 0.8001,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
@@ -503,17 +503,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e5bf6702d2f9",
-      "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
-      "url": "https://www.ithome.com/1/013/983.htm",
-      "importance_score": 0.7967,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_64ef9b1ab8ef",
       "title": "审核 GitHub 代码质量发现解雇和重新开放 / Audit GitHub Code Quality finding dismissals and reopenings",
       "url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
@@ -558,6 +547,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e5bf6702d2f9",
+      "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
+      "url": "https://www.ithome.com/1/013/983.htm",
+      "importance_score": 0.7927,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
       "company_topics": [],
       "lens_topics": []
     },
