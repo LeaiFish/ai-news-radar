@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-16T11:30:10.553259Z",
+  "generated_at": "2026-10-16T15:23:55.976882Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
@@ -12,17 +12,17 @@
     "2026-10-15",
     "2026-10-16"
   ],
-  "story_count": 1294,
-  "unique_story_count": 1242,
+  "story_count": 1290,
+  "unique_story_count": 1284,
   "counts": {
     "by_company_topic": {
-      "anthropic": 147,
+      "anthropic": 150,
       "apple": 20,
       "cursor": 10,
       "deepseek": 11,
       "doubao": 7,
-      "google-gemini": 89,
-      "huggingface": 18,
+      "google-gemini": 91,
+      "huggingface": 16,
       "kimi": 9,
       "meta-llama": 4,
       "microsoft": 14,
@@ -31,26 +31,26 @@
       "openai": 163,
       "openrouter": 10,
       "perplexity": 11,
-      "qwen": 21,
-      "xai": 44,
+      "qwen": 19,
+      "xai": 45,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 211,
-      "monetization": 33,
+      "agent-ecosystem": 205,
+      "monetization": 34,
       "product-entry": 2,
-      "workplace": 30
+      "workplace": 29
     },
     "by_importance_label": {
-      "值得关注": 1013,
-      "多源热议": 25,
-      "官方更新": 45,
-      "行业动态": 211
+      "值得关注": 1014,
+      "多源热议": 23,
+      "官方更新": 43,
+      "行业动态": 210
     },
     "by_source_count_bucket": {
-      "1": 1225,
-      "2": 44,
-      "3+": 25
+      "1": 1221,
+      "2": 46,
+      "3+": 23
     }
   },
   "top_stories": [
@@ -68,6 +68,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_bb81118ad07f",
+      "title": "Slack 和 Microsoft Teams 中 GitHub Copilot 的多存储库支持和其他改进 / Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+      "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "importance_score": 0.8459,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_d3e63bdf95a3",
       "title": "Teaching students to think and learn through questions",
       "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
@@ -78,6 +93,17 @@
       "company_topics": [
         "openai"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d6b13589cf07",
+      "title": "Continuous accountability for Verified bots",
+      "url": "https://blog.cloudflare.com/verified-bots-accountability",
+      "importance_score": 0.8439,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -112,6 +138,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-13",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_002852c1d7cc",
+      "title": "开源许可证合规性已普遍可用 / Open source license compliance generally available",
+      "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available",
+      "importance_score": 0.8404,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
       "company_topics": [],
       "lens_topics": []
     },
@@ -151,19 +188,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7db28526b529",
-      "title": "扩展 Indic 预训练：2.8 万亿代币和开放数据生成管道 / Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "importance_score": 0.8363,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_a6b4e45b4f15",
       "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
       "url": "https://openai.com/index/third-moment-research",
@@ -179,25 +203,23 @@
       ]
     },
     {
-      "story_id": "story_bb81118ad07f",
-      "title": "Slack 和 Microsoft Teams 中 GitHub Copilot 的多存储库支持和其他改进 / Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
-      "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
-      "importance_score": 0.8295,
+      "story_id": "story_7db28526b529",
+      "title": "扩展 Indic 预训练：2.8 万亿代币和开放数据生成管道 / Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "importance_score": 0.8278,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "microsoft"
+        "huggingface"
       ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
-      "story_id": "story_787df5073195",
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "importance_score": 0.8251,
+      "story_id": "story_21316bd60c11",
+      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "importance_score": 0.8241,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
@@ -220,15 +242,26 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_c33781d78308",
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "importance_score": 0.8218,
+      "story_id": "story_2f7abdbde624",
+      "title": "Xcode 27 runner image generally available",
+      "url": "https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available",
+      "importance_score": 0.818,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_787df5073195",
+      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "importance_score": 0.8171,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "openai"
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -261,22 +294,6 @@
       ]
     },
     {
-      "story_id": "story_92a79a18c257",
-      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
-      "importance_score": 0.815,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_98d21dd2774c",
       "title": "可灵 Kling 4.0 正式全量开放，新增 MCP 和 CLI 接入 / For Those Who Create. KLING 4.0 Is Now Fully Available. 🎬",
       "url": "https://x.com/Kling_ai/status/2110747537187709424",
@@ -288,6 +305,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_c33781d78308",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "importance_score": 0.8141,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_0b5ea0aa6745",
@@ -403,15 +433,20 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a3a6cd0a1f49",
-      "title": "Download GitHub Code Quality license usage as a CSV",
-      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
-      "importance_score": 0.8083,
+      "story_id": "story_92a79a18c257",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "importance_score": 0.8072,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
-      "company_topics": [],
-      "lens_topics": []
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
     },
     {
       "story_id": "story_46f20f54d699",
@@ -438,16 +473,14 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_036b3bff1937",
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
-      "importance_score": 0.8001,
+      "story_id": "story_a3a6cd0a1f49",
+      "title": "Download GitHub Code Quality license usage as a CSV",
+      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
+      "importance_score": 0.8004,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
-      "company_topics": [
-        "google-gemini"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -538,41 +571,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_06f333b9aafa",
-      "title": "Anonymous organization-level registries for Dependabot",
-      "url": "https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot",
-      "importance_score": 0.7937,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-13",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e5bf6702d2f9",
-      "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
-      "url": "https://www.ithome.com/1/013/983.htm",
-      "importance_score": 0.7927,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a14be4c44ee5",
-      "title": "Seed Alignment & Preparedness 全球顶尖人才招募启动",
-      "url": "https://seed.bytedance.com/zh/blog/seed-alignment-preparedness-%E5%85%A8%E7%90%83%E9%A1%B6%E5%B0%96%E4%BA%BA%E6%89%8D%E6%8B%9B%E5%8B%9F%E5%90%AF%E5%8A%A8",
-      "importance_score": 0.7915,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-14",
-      "company_topics": [
-        "doubao"
-      ],
-      "lens_topics": []
     }
   ]
 }
