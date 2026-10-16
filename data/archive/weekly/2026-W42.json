@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-16T01:28:33.543540Z",
+  "generated_at": "2026-10-16T05:54:25.458840Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
@@ -12,43 +12,43 @@
     "2026-10-15",
     "2026-10-16"
   ],
-  "story_count": 1298,
-  "unique_story_count": 1152,
+  "story_count": 1296,
+  "unique_story_count": 1179,
   "counts": {
     "by_company_topic": {
-      "anthropic": 148,
-      "apple": 19,
-      "cursor": 7,
-      "deepseek": 10,
+      "anthropic": 149,
+      "apple": 20,
+      "cursor": 8,
+      "deepseek": 12,
       "doubao": 7,
-      "google-gemini": 89,
+      "google-gemini": 87,
       "huggingface": 18,
-      "kimi": 7,
+      "kimi": 8,
       "meta-llama": 5,
-      "microsoft": 13,
+      "microsoft": 14,
       "minimax": 7,
-      "nvidia": 43,
-      "openai": 167,
+      "nvidia": 44,
+      "openai": 166,
       "openrouter": 9,
       "perplexity": 11,
-      "qwen": 19,
-      "xai": 45,
+      "qwen": 20,
+      "xai": 44,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 218,
-      "monetization": 35,
+      "agent-ecosystem": 214,
+      "monetization": 34,
       "product-entry": 2,
       "workplace": 30
     },
     "by_importance_label": {
-      "值得关注": 1011,
+      "值得关注": 1013,
       "多源热议": 26,
-      "官方更新": 44,
-      "行业动态": 217
+      "官方更新": 46,
+      "行业动态": 211
     },
     "by_source_count_bucket": {
-      "1": 1228,
+      "1": 1226,
       "2": 44,
       "3+": 26
     }
@@ -68,10 +68,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_787df5073195",
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "importance_score": 0.8477,
+      "story_id": "story_7db28526b529",
+      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "importance_score": 0.8495,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
@@ -94,19 +94,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_c33781d78308",
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "importance_score": 0.8439,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7e42f375ca95",
       "title": "Apertus 1.5 Release Notes",
       "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
@@ -118,6 +105,21 @@
         "huggingface"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_bb81118ad07f",
+      "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+      "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "importance_score": 0.8428,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_31e130baa525",
@@ -177,30 +179,29 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_92a79a18c257",
-      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "story_id": "story_787df5073195",
+      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
       "importance_score": 0.8373,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
       "company_topics": [
-        "microsoft"
+        "huggingface"
       ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
-      "story_id": "story_a3a6cd0a1f49",
-      "title": "Download GitHub Code Quality license usage as a CSV",
-      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
-      "importance_score": 0.8308,
+      "story_id": "story_c33781d78308",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "importance_score": 0.8338,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
-      "company_topics": [],
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
@@ -219,6 +220,22 @@
       ]
     },
     {
+      "story_id": "story_92a79a18c257",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "importance_score": 0.8271,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_0adb412c8d15",
       "title": "Welcome FLUX.3 Image Klein in Diffusers",
       "url": "https://huggingface.co/blog/flux-3",
@@ -232,16 +249,14 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_036b3bff1937",
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
-      "importance_score": 0.8213,
+      "story_id": "story_a3a6cd0a1f49",
+      "title": "Download GitHub Code Quality license usage as a CSV",
+      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
+      "importance_score": 0.8204,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-16",
-      "company_topics": [
-        "google-gemini"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -316,6 +331,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_036b3bff1937",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
+      "importance_score": 0.8115,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_ae8e1b14ad88",
       "title": "Google DeepMind 和新加坡政府合作构建用于诈骗检测的微调人工智能模型 / Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
       "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
@@ -351,22 +379,6 @@
         "microsoft"
       ],
       "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_1c3ebae275df",
-      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单 / Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
-      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
-      "importance_score": 0.8097,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization",
         "workplace"
       ]
     },
@@ -480,6 +492,22 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_1c3ebae275df",
+      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单 / Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+      "importance_score": 0.7993,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-16",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "monetization",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_7924bc1de44f",
       "title": "在有限的公开预览中推送提交的归因 / Push attribution for commits in limited public preview",
       "url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
@@ -550,34 +578,6 @@
         "doubao"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_8a809173e2e5",
-      "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
-      "url": "https://github.com/openai/codex/issues/48195",
-      "importance_score": 0.7847,
-      "importance_label": "多源热议",
-      "source_count": 4,
-      "archive_date": "2026-10-13",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_87c2231e4c10",
-      "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文 / Muse Spark Is Now an Open-Weights Model",
-      "url": "https://pytorch.org/blog/muse-spark-open",
-      "importance_score": 0.782,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-16",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }
