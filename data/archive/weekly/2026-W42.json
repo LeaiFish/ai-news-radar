@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-12",
   "week_end": "2026-10-18",
-  "generated_at": "2026-10-17T17:18:40.042642Z",
+  "generated_at": "2026-10-17T19:23:20.524359Z",
   "daily_dates": [
     "2026-10-12",
     "2026-10-13",
@@ -14,12 +14,12 @@
     "2026-10-17",
     "2026-10-18"
   ],
-  "story_count": 1548,
-  "unique_story_count": 1425,
+  "story_count": 1547,
+  "unique_story_count": 1443,
   "counts": {
     "by_company_topic": {
       "anthropic": 214,
-      "apple": 21,
+      "apple": 22,
       "cursor": 12,
       "deepseek": 27,
       "doubao": 7,
@@ -29,8 +29,8 @@
       "meta-llama": 4,
       "microsoft": 14,
       "minimax": 7,
-      "nvidia": 46,
-      "openai": 205,
+      "nvidia": 47,
+      "openai": 207,
       "openrouter": 13,
       "perplexity": 15,
       "qwen": 19,
@@ -38,21 +38,21 @@
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 238,
+      "agent-ecosystem": 233,
       "monetization": 36,
       "product-entry": 2,
       "workplace": 35
     },
     "by_importance_label": {
-      "值得关注": 1243,
-      "多源热议": 39,
-      "官方更新": 48,
+      "值得关注": 1247,
+      "多源热议": 35,
+      "官方更新": 47,
       "行业动态": 218
     },
     "by_source_count_bucket": {
-      "1": 1452,
+      "1": 1455,
       "2": 56,
-      "3+": 40
+      "3+": 36
     }
   },
   "top_stories": [
@@ -352,32 +352,6 @@
       ]
     },
     {
-      "story_id": "story_b76091835d0d",
-      "title": "DeepSeek-V4.1-Flash-1017 更新",
-      "url": "https://api-docs.deepseek.com/zh-cn/updates",
-      "importance_score": 0.8122,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-18",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a7072f464e06",
-      "title": "开放自研搜索 API",
-      "url": "https://api-docs.deepseek.com/zh-cn/updates",
-      "importance_score": 0.8122,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-18",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7e7580bbc9b4",
       "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
       "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
@@ -483,6 +457,32 @@
       "archive_date": "2026-10-17",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b76091835d0d",
+      "title": "DeepSeek-V4.1-Flash-1017 更新",
+      "url": "https://api-docs.deepseek.com/zh-cn/updates",
+      "importance_score": 0.808,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-18",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a7072f464e06",
+      "title": "开放自研搜索 API",
+      "url": "https://api-docs.deepseek.com/zh-cn/updates",
+      "importance_score": 0.808,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-18",
+      "company_topics": [
+        "deepseek"
       ],
       "lens_topics": []
     },
