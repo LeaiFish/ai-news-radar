@@ -285,14 +285,6 @@
     return importance + multi + boost + zh;
   }
 
-  function pickJudgments() {
-    return state.briefItems
-      .map((item, index) => ({ item, index, score: judgmentScore(item) }))
-      .sort((a, b) => b.score - a.score || a.index - b.index)
-      .slice(0, 3)
-      .map((entry) => entry.item);
-  }
-
   function clear(node) {
     while (node.firstChild) node.removeChild(node.firstChild);
   }
@@ -346,32 +338,12 @@
 
   function renderJudgments() {
     clear(judgmentGrid);
-    const items = pickJudgments();
-    if (!items.length) {
-      judgmentGrid.append(el("p", "placeholder-line", "当日简报暂时没有可用条目。"));
+    const template = document.getElementById("overviewJudgmentBrief");
+    if (!template || template.dataset.month !== state.month) {
+      judgmentGrid.append(el("p", "placeholder-line", "本月综合简报待更新。可先查看主题研究中的近期判断。"));
       return;
     }
-    items.forEach((item) => {
-      const card = el("article", "judgment-card news-card");
-      const top = el("div", "judgment-top");
-      top.append(el("h3", null, preferZh(item.title)));
-      top.append(el("span", "tag tag-draft ai-tag", "AI 草稿"));
-      card.append(top);
-      const summary = String(item.primary_item?.summary || item.summary || "").trim();
-      if (summary) card.append(el("p", "judgment-summary", summary));
-      const sources = Number(item.source_count || (item.sources || []).length || 1);
-      const label = item.importance_label || "未分级";
-      card.append(el("p", "judgment-meta", `来自当日简报 · ${label} · ${sources} 家信源`));
-      const href = safeHttpUrl(item.primary_url || item.url || item.primary_item?.url);
-      if (href) {
-        const link = el("a", "source-link", "查看来源");
-        link.href = href;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        card.append(link);
-      }
-      judgmentGrid.append(card);
-    });
+    judgmentGrid.append(template.content.cloneNode(true));
   }
 
   function renderRelated() {

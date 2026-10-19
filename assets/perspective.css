@@ -259,6 +259,10 @@ h1 {
   gap: 12px;
 }
 
+.judgment-grid.monthly-judgment {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .judgment-card {
   flex-direction: column;
   align-items: stretch;
@@ -574,7 +578,8 @@ html[data-research-view="pack"] #researchCatalog {
   margin-top: 6px;
 }
 
-.brief-change + .brief-change {
+.brief-change + .brief-change,
+.research-brief > .brief-change + p {
   margin-top: 20px;
 }
 

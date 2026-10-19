@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="./assets/styles.css?v=ui20260923a" />
     <link rel="stylesheet" href="./assets/sidebar.css?v=ui20260923a" />
     <link rel="stylesheet" href="./assets/topics.css?v=ui20260923a" />
-    <link rel="stylesheet" href="./assets/perspective.css?v=briefs20261019" />
+    <link rel="stylesheet" href="./assets/perspective.css?v=monthlybrief20261019" />
     <link rel="stylesheet" href="./assets/aihot-skin.css?v=20261013b" />
   </head>
   <body>
@@ -133,8 +133,8 @@
               <div class="block-head">
                 <h2 id="judgmentHeading">本月核心判断</h2>
               </div>
-              <div class="judgment-grid" id="judgmentGrid" aria-live="polite">
-                <p class="placeholder-line">正在整理当日简报…</p>
+              <div class="judgment-grid monthly-judgment" id="judgmentGrid" aria-live="polite">
+                <p class="placeholder-line">正在整理本月判断…</p>
               </div>
             </section>
 
@@ -285,6 +285,28 @@
         </section>
       </main>
     </div>
+    <template id="overviewJudgmentBrief" data-month="2026-10">
+      <article class="research-brief">
+        <p class="brief-meta">2026 年 10 月阶段判断 · 截至 10 月 19 日 · 参考研究观察期：9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认</p>
+        <p><strong>从本轮研究样本看，AI 应用竞争正在围绕接住真实需求、持续完成任务，以及让用户反复使用成果展开。</strong>各家的推进路径已有差异：豆包、千问、元宝更多从生活服务、个人资料和记录整理切入，Claude、ChatGPT、Grok 则在原文件协作、持续委托和团队执行上补齐流程。共同的竞争问题是，谁能让用户少搬运资料、少切换工具，并以更少的审阅和返工得到可用结果。</p>
+        <section class="brief-change">
+          <h3>入口竞争开始深入已有场景，能否接住背景资料和后续操作变得更关键。</h3>
+          <p>豆包把出行、酒店等服务接入对话，千问连接网盘资料与经营任务，元宝强化录音整理和生活技能。这些动作分别利用服务供给、个人数据和现场信息来承接需求。入口的价值因此需要看整条使用链路：用户是否更容易发起任务，已有资料能否准确参与处理，结果能否顺畅交给下一步。功能入口增多之后，持续复用和实际操作量的变化更值得跟踪。</p>
+          <p class="brief-citations">参考研究：<a href="./?space=research&amp;kind=org&amp;id=doubao">豆包</a> · <a href="./?space=research&amp;kind=org&amp;id=qwen">千问</a> · <a href="./?space=research&amp;kind=org&amp;id=hunyuan">元宝</a> · <a href="./?space=research&amp;kind=trend&amp;id=product-entry">产品入口与链路</a></p>
+        </section>
+        <section class="brief-change">
+          <h3>办公与 Agent 竞争向完整交付推进，成果能否继续修改、接续和协作成为分化点。</h3>
+          <p>Claude 将修改留在 Google 原文件中，ChatGPT 用 Space 承载可编辑成果、用 Dots 尝试持续委托，Grok Bot 则补齐团队共享背景与幻灯片、邮件交付。它们分别在解决文件来回搬运、任务中断和团队重复交代背景的问题。随着执行范围扩大，人工审阅、异常处理和任务验收也会占据更多注意力，实际提效需要连同这些成本一起衡量。</p>
+          <p class="brief-citations">参考研究：<a href="./?space=research&amp;kind=org&amp;id=anthropic">Claude</a> · <a href="./?space=research&amp;kind=org&amp;id=openai">ChatGPT</a> · <a href="./?space=research&amp;kind=org&amp;id=xai">Grok</a> · <a href="./?space=research&amp;kind=trend&amp;id=agent-ecosystem">Agent 路线与生态</a> · <a href="./?space=research&amp;kind=trend&amp;id=workplace">办公生产力与组织重构</a></p>
+        </section>
+        <section class="brief-change">
+          <h3>付费竞争开始围绕工具组合与持续使用展开，应用需要证明完整任务的价值。</h3>
+          <p>豆包延长高级能力体验，Notion 支持在限定条件下复用 ChatGPT 订阅，Grok 推出跨产品组合计划，分别降低了试用、重复购买和交叉使用的门槛。这些变化让比较维度从单个功能价格延伸到一套工具能完成多少工作。对应用方而言，稳定利用用户资料、适配具体流程并减少返工，会影响持续付费的理由；赠送权益和组合套餐的效果还需用后续使用与续费验证。</p>
+          <p class="brief-citations">参考研究：<a href="./?space=research&amp;kind=trend&amp;id=monetization">付费订阅与商业化</a> · <a href="./?space=research&amp;kind=org&amp;id=xai">Grok 订阅整合</a></p>
+        </section>
+        <p><strong>下一阶段重点看用户是否持续把真实任务交给 AI，以及这些任务是否更省事地完成。</strong>任务完成质量、人工接管与修改成本、重复使用和续费，比发布频次或入口数量更能检验应用竞争力。目前这些公开样本支持对产品方向的判断，尚不足以排出市场份额、长期留存或商业化成效的赢家。</p>
+      </article>
+    </template>
     <template id="doubaoJudgmentBrief">
       <div class="research-brief">
         <p class="brief-meta">观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认</p>
@@ -517,6 +539,6 @@
     </template>
     <script src="./assets/research-analysis.js?v=20261013"></script>
     <script src="./assets/public-projection.js?v=20261013"></script>
-    <script src="./assets/perspective.js?v=globalbriefs20261019"></script>
+    <script src="./assets/perspective.js?v=monthlybrief20261019"></script>
   </body>
 </html>
