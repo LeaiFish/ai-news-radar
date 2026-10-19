@@ -446,8 +446,77 @@
         </article>
       </div>
     </template>
+    <template id="claudeJudgmentBrief">
+      <div class="research-brief">
+        <p class="brief-meta">观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认</p>
+        <p><strong>Claude 正在把办公文件中的修改、开发任务的交付和后台持续执行接入更完整的工作流程。</strong>Google Workspace 公测让用户直接在文档、表格和演示文件中与 Claude 协作；Claude Code 的云端工作方式让开发任务可以离开本地电脑继续执行；自动化参考方案则展示了按计划读取资料、识别增量并交付简报的路径。综合这些产品和实践，Claude 的应用重心正在从单次内容生成向可继续修改、审阅和接续的工作靠近。<span class="brief-citations"><a href="https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides" target="_blank" rel="noopener noreferrer">Google Workspace 公测</a> · <a href="https://claude.dev/blog/claude-code-in-the-cloud/" target="_blank" rel="noopener noreferrer">Claude Code 云端实践</a> · <a href="https://claude.dev/blog/building-effective-agent-automations/" target="_blank" rel="noopener noreferrer">后台自动化参考方案</a></span></p>
+        <p>当前更值得跟踪的是原文件修改是否准确、复杂任务交付后需要多少返工，以及后台运行能否持续读到有效资料。办公公测、Claude Code 与 Managed Agents 面向不同用户和使用门槛，应分别看待；这些进展仍需用具体任务的完成质量、审阅成本和持续使用来验证。</p>
+      </div>
+    </template>
+    <template id="claudeChangesBrief">
+      <div class="research-brief">
+        <article class="brief-change">
+          <h3>办公协作进入原文件，资料处理、修改与审阅开始围绕同一份成果进行。</h3>
+          <p>10 月 6 日，Claude for Google Workspace 向全部付费计划开放公测，既可在 Docs、Sheets、Slides 侧栏中读取选区并直接修改，也可从 Claude 调用连接器创建和编辑 Google 文件。对用户而言，价值在于减少来回复制和多版本交接，修改还可通过建议卡逐项审阅。实际收益要连同内容正确性、格式保持和人工验收一起衡量。<span class="brief-citations"><a href="https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides" target="_blank" rel="noopener noreferrer">Claude 官方发布，10 月 6 日</a></span></p>
+        </article>
+        <article class="brief-change">
+          <h3>开发任务的后台交付路径更清晰，离开电脑后仍可跟进执行结果。</h3>
+          <p>10 月 6 日发布的 Claude Code 云端指南，展示了从浏览器、手机、桌面端或 Slack 发起任务，每项任务在独立环境与分支中执行，完成后交回可审阅的代码改动。这里的近期增量是官方对使用方式和实操结果的集中披露，不能把指南日期当作功能首次上线日期；应用价值则是减少本机占用，并让并行任务更容易隔离与验收。<span class="brief-citations"><a href="https://claude.dev/blog/claude-code-in-the-cloud/" target="_blank" rel="noopener noreferrer">Claude 官方实践指南，10 月 6 日</a></span></p>
+        </article>
+        <article class="brief-change">
+          <h3>持续跟踪开始有可复用的实现方案，后台任务需要记住上次做到了哪里。</h3>
+          <p>10 月 8 日，Claude 发布基于 Managed Agents 的定时简报参考实现，将 Slack、GitHub 等资料源、运行计划、历史记录和预算限制组合起来。其意义在于把“定时启动”推进到识别新增内容、避免重复交付和处理来源故障。该方案仍建立在 beta 能力与开发配置之上，不能等同于 Claude 聊天界面已向所有用户提供开箱即用的持续助理。<span class="brief-citations"><a href="https://claude.dev/blog/building-effective-agent-automations/" target="_blank" rel="noopener noreferrer">Claude 官方参考实现，10 月 8 日</a></span></p>
+        </article>
+      </div>
+    </template>
+    <template id="chatgptJudgmentBrief">
+      <div class="research-brief">
+        <p class="brief-meta">观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认</p>
+        <p><strong>持续委托、可编辑成果和跨设备接续正在成为 ChatGPT 的应用主线。</strong>Dots 尝试在对话间隙继续承担任务，ChatGPT Space 将文件与 Pages 组织为可修改、可协作的成果，Work 则连接电脑、网页和手机上的任务进度。这几条路径共同指向把一次问答延伸为持续推进的工作：用户能交代目标、回看过程，并在已有成果上继续修改。<span class="brief-citations"><a href="https://learn.chatgpt.com/docs/whats-new/devday-2026" target="_blank" rel="noopener noreferrer">OpenAI DevDay 应用更新</a> · <a href="https://learn.chatgpt.com/docs/whats-new/october-5-9-2026" target="_blank" rel="noopener noreferrer">Dots 移动端与上下文更新</a></span></p>
+        <p>当前判断更适合落在工作流程是否连贯：能否持续使用正确的背景资料，成果能否直接复用，以及换设备后是否减少重新交代任务的成本。Dots 仍在逐步开放，Space 和跨设备 Work 也有账号与配置条件；产品入口变多，尚不能直接说明长期委托的可靠性或使用深度。</p>
+      </div>
+    </template>
+    <template id="chatgptChangesBrief">
+      <div class="research-brief">
+        <article class="brief-change">
+          <h3>委托从一次性提问延伸到持续责任，用户开始能够在对话之外等待进展。</h3>
+          <p>9 月 29 日的 DevDay 发布将 Dots 定位为持续工作的智能体，可利用连接应用、生成文件，并将子任务交给 Work 或 Codex；10 月 5—9 日的更新进一步补充来自 ChatGPT、Codex 的上下文。对会议准备、项目跟进等重复任务，关键变化是有机会少做重复交代、持续获得进展。Dots 仍按条件逐步开放，其长期记忆和交付质量需要实际任务验证。<span class="brief-citations"><a href="https://learn.chatgpt.com/docs/whats-new/september-28-october-2-2026" target="_blank" rel="noopener noreferrer">OpenAI 官方周报，9 月 28 日—10 月 2 日</a> · <a href="https://learn.chatgpt.com/docs/whats-new/october-5-9-2026" target="_blank" rel="noopener noreferrer">OpenAI 官方周报，10 月 5—9 日</a></span></p>
+        </article>
+        <article class="brief-change">
+          <h3>成果开始留在可直接修改和协作的空间里，交付后的工作也被纳入产品。</h3>
+          <p>9 月 29 日介绍的 ChatGPT Space 将文件与 Pages 集中起来，支持让 ChatGPT 起草和修订、人工直接编辑，以及邀请协作者查看、评论或共同修改。对报告、方案等需要反复完善的任务，应用价值在于围绕同一份成果持续工作，减少答案复制到其他工具后的断层。能否保留正确上下文、清楚管理修改与协作权限，仍会影响实际交接效率。<span class="brief-citations"><a href="https://learn.chatgpt.com/docs/whats-new/devday-2026" target="_blank" rel="noopener noreferrer">OpenAI DevDay 官方说明，9 月 29 日</a></span></p>
+        </article>
+        <article class="brief-change">
+          <h3>跨设备接续与移动端设置逐步补齐，任务不再只依赖桌面端发起和跟进。</h3>
+          <p>DevDay 更新支持从桌面发起新的同步 Work 任务，再到网页或手机继续；10 月 5—9 日的更新允许在手机创建、命名和配置 dot，并连接插件。两者分别降低了接续任务和设置持续助理的门槛。需要本地文件与工具的 Work 步骤仍依赖已连接且在线的电脑，因此跨设备对话可继续，并不意味着所有执行都已脱离本机。<span class="brief-citations"><a href="https://learn.chatgpt.com/docs/whats-new/devday-2026" target="_blank" rel="noopener noreferrer">OpenAI 跨设备 Work 说明，9 月 29 日</a> · <a href="https://learn.chatgpt.com/docs/whats-new/october-5-9-2026" target="_blank" rel="noopener noreferrer">Dots 移动端设置更新，10 月 5—9 日</a></span></p>
+        </article>
+      </div>
+    </template>
+    <template id="grokJudgmentBrief">
+      <div class="research-brief">
+        <p class="brief-meta">观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认</p>
+        <p><strong>Grok 正把个人聊天入口与团队执行型 Bot 放到同一产品组合中，应用价值开始更多取决于任务交付和团队复用。</strong>Team Bots 把共享资料、工具和团队技能组织到具体角色中，Grok Bot 继续补齐幻灯片和邮件等办公成果的交付，新的 X Subscription 则把 Grok、Grok Bot、Cursor 与 X Premium 放进同一订阅。结合来看，近期主线是让用户更容易从个人试用走向具体工作，并让多个产品共同覆盖创作、执行和分享。<span class="brief-citations"><a href="https://x.ai/news/team-bots" target="_blank" rel="noopener noreferrer">Team Bots 公测</a> · <a href="https://x.ai/changelog/bot" target="_blank" rel="noopener noreferrer">Grok Bot 产品更新</a> · <a href="https://x.ai/news/x-subscription" target="_blank" rel="noopener noreferrer">X Subscription 发布</a></span></p>
+        <p>目前能确认的是产品供给、团队入口和订阅组织发生了变化。下一步更值得观察 Bot 是否能稳定利用团队背景、交付可用文件，以及组合订阅能否带来跨产品的持续使用。厂商内部案例和功能日志可以说明应用路径，尚不足以推断普遍的效率提升、付费转化或用户留存。</p>
+      </div>
+    </template>
+    <template id="grokChangesBrief">
+      <div class="research-brief">
+        <article class="brief-change">
+          <h3>团队 Bot 开始按共同职责组织背景与工具，让同一套工作方法被多人复用。</h3>
+          <p>9 月 28 日，Team Bots 在 Teams、Enterprise 计划进入公测，可共享角色资料、技能与应用工具，也可在 Slack 频道参与工作，同时保留个人对话的独立上下文。官方展示销售简报、项目协调和数据查询等流程。其应用意义在于减少团队成员各自配置、反复交代背景的成本；这些案例主要来自厂商与客户陈述，实际成效仍取决于团队资料质量和后续维护。<span class="brief-citations"><a href="https://x.ai/news/team-bots" target="_blank" rel="noopener noreferrer">官方 Team Bots 发布，9 月 28 日</a></span></p>
+        </article>
+        <article class="brief-change">
+          <h3>办公任务向可使用的文件和发送前审阅推进，交付链路继续补齐。</h3>
+          <p>9 月 26 日的更新支持在聊天中审阅 Outlook 邮件草稿后发送；10 月 7 日进一步加入共同制作幻灯片、先选示例版式，再交付 PowerPoint 或 Google Slides，并支持带格式邮件。这组变化把内容生成接到用户实际需要的文件和通信操作上。日志同时持续修复文件送达、邮件工具和浏览器恢复问题，说明稳定交付仍是需要跟踪的重点。<span class="brief-citations"><a href="https://x.ai/changelog/bot" target="_blank" rel="noopener noreferrer">Grok Bot 官方日志，9 月 26 日、10 月 7 日</a></span></p>
+        </article>
+        <article class="brief-change">
+          <h3>组合订阅开始连接聊天、办公 Bot、编程与分享，扩大已有用户的交叉使用机会。</h3>
+          <p>10 月 12 日发布的 X Subscription 将 Grok、Grok Bot、Cursor 与 X Premium 纳入同一计划，并为 Grok 与 Cursor 的 Grok 模型使用设置共享额度。对已使用其中一个产品的人，变化是尝试其他应用的订阅门槛降低；但统一计费并不等于工作上下文已全面互通，第三方模型在 Cursor 中也有独立计费条件。后续应观察跨产品使用深度和真实续费表现。<span class="brief-citations"><a href="https://x.ai/news/x-subscription" target="_blank" rel="noopener noreferrer">官方 X Subscription 发布，10 月 12 日</a></span></p>
+        </article>
+      </div>
+    </template>
     <script src="./assets/research-analysis.js?v=20261013"></script>
     <script src="./assets/public-projection.js?v=20261013"></script>
-    <script src="./assets/perspective.js?v=lensbriefs20261019"></script>
+    <script src="./assets/perspective.js?v=globalbriefs20261019"></script>
   </body>
 </html>
