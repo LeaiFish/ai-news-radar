@@ -1208,19 +1208,27 @@
     });
   }
 
-  const RESEARCH_BRIEF_PREFIXES = { doubao: "doubao", qwen: "qwen", hunyuan: "yuanbao" };
+  const RESEARCH_BRIEFS = {
+    doubao: { kind: "org", prefix: "doubao" },
+    qwen: { kind: "org", prefix: "qwen" },
+    hunyuan: { kind: "org", prefix: "yuanbao" },
+    monetization: { kind: "trend", prefix: "monetization" },
+    "product-entry": { kind: "trend", prefix: "productEntry" },
+    "agent-ecosystem": { kind: "trend", prefix: "agentEcosystem" },
+    workplace: { kind: "trend", prefix: "workplace" },
+  };
 
   function renderResearchBrief(slot, record, section) {
-    const prefix = RESEARCH_BRIEF_PREFIXES[record.id];
-    if (record.kind !== "org" || !prefix) return false;
-    const template = document.getElementById(`${prefix}${section}Brief`);
+    const brief = RESEARCH_BRIEFS[record.id];
+    if (!brief || record.kind !== brief.kind) return false;
+    const template = document.getElementById(`${brief.prefix}${section}Brief`);
     if (!template) return false;
     slot.append(template.content.cloneNode(true));
     return true;
   }
 
   async function renderPack(kind, id) {
-    const deltaLabel = kind === "org" && RESEARCH_BRIEF_PREFIXES[id] ? "近30天变化" : "本期变化";
+    const deltaLabel = RESEARCH_BRIEFS[id]?.kind === kind ? "近30天变化" : "本期变化";
     document.querySelector("#pack-delta h2").textContent = deltaLabel;
     document.querySelector('.pack-toc > a[href="#pack-delta"]').textContent = deltaLabel;
     const title = document.getElementById("packTitle");
