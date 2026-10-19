@@ -975,6 +975,9 @@
   }
 
   function renderJudgment(record, beats) {
+    const slot = document.getElementById("packJudgment");
+    clear(slot);
+    if (renderDoubaoBrief(slot, record, "doubaoJudgmentBrief")) return;
     if (record.kind === "org" || record.kind === "trend") {
       const slot = document.getElementById("packJudgment");
       clear(slot);
@@ -1001,8 +1004,6 @@
       card.append(el("p", "judgment-meta", "这是对已收集公开报道的观察，方向由标题关键词归纳；同一消息可涉及多个方向，报道数量不代表投入规模或公司官方战略。"));
       slot.append(card);return;
     }
-    const slot = document.getElementById("packJudgment");
-    clear(slot);
     const top = record.windowStories
       .map((story, index) => ({ story, index, score: judgmentScore(story) }))
       .sort((a, b) => b.score - a.score || a.index - b.index)[0]?.story;
@@ -1046,6 +1047,7 @@
   function renderDelta(record) {
     const slot = document.getElementById("packDelta");
     clear(slot);
+    if (renderDoubaoBrief(slot, record, "doubaoChangesBrief")) return;
     if (record.kind === "event") {
       const beats = eventBeats(record.story);
       if (beats.length <= 1) {
@@ -1206,7 +1208,18 @@
     });
   }
 
+  function renderDoubaoBrief(slot, record, templateId) {
+    if (record.kind !== "org" || record.id !== "doubao") return false;
+    const template = document.getElementById(templateId);
+    if (!template) return false;
+    slot.append(template.content.cloneNode(true));
+    return true;
+  }
+
   async function renderPack(kind, id) {
+    const deltaLabel = kind === "org" && id === "doubao" ? "近30天变化" : "本期变化";
+    document.querySelector("#pack-delta h2").textContent = deltaLabel;
+    document.querySelector('.pack-toc > a[href="#pack-delta"]').textContent = deltaLabel;
     const title = document.getElementById("packTitle");
     const back = document.getElementById("packBack");
     if (back) back.href = researchHref({ tab: currentTab() });

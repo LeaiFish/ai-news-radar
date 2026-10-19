@@ -537,6 +537,44 @@ html[data-research-view="pack"] #researchCatalog {
   font-weight: 740;
 }
 
+.doubao-brief {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.doubao-brief p {
+  margin: 0 0 14px;
+}
+
+.doubao-brief strong,
+.brief-change h3 {
+  color: var(--ink);
+}
+
+.doubao-brief .brief-meta,
+.brief-citations {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.brief-citations {
+  display: block;
+  margin-top: 6px;
+}
+
+.brief-change + .brief-change {
+  margin-top: 20px;
+}
+
+.brief-change h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 740;
+}
+
 .pack-toc {
   position: sticky;
   top: 8px;
