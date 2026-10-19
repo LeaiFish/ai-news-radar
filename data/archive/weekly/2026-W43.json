@@ -4,21 +4,21 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-18T23:11:34.631975Z",
+  "generated_at": "2026-10-19T01:22:17.300240Z",
   "daily_dates": [
     "2026-10-19"
   ],
-  "story_count": 80,
-  "unique_story_count": 80,
+  "story_count": 97,
+  "unique_story_count": 97,
   "counts": {
     "by_company_topic": {
-      "anthropic": 14,
-      "deepseek": 4,
-      "google-gemini": 5,
+      "anthropic": 16,
+      "deepseek": 5,
+      "google-gemini": 6,
       "kimi": 3,
-      "microsoft": 1,
-      "nvidia": 4,
+      "nvidia": 3,
       "openai": 5,
+      "xai": 3,
       "zhipu": 2
     },
     "by_lens_topic": {
@@ -26,22 +26,94 @@
       "workplace": 1
     },
     "by_importance_label": {
-      "值得关注": 72,
+      "值得关注": 83,
       "多源热议": 5,
-      "行业动态": 3
+      "行业动态": 9
     },
     "by_source_count_bucket": {
-      "1": 73,
-      "2": 2,
+      "1": 89,
+      "2": 3,
       "3+": 5
     }
   },
   "top_stories": [
     {
+      "story_id": "story_f9322ffd3993",
+      "title": "不操控键鼠、自己写代码：4 个 Gemini 智能体在《我的世界》里自主组队击败末影龙",
+      "url": "https://www.aibase.com/news/31703",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_d83ad166353f",
+      "title": "Vercel数据表明决策模型Jev成史上采用最快AI模型",
+      "url": "https://www.aibase.com/news/31708",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cda63bd1952b",
+      "title": "Character.AI 破产后续：迪士尼接盘 60 余人，三年豪掷 1.8 亿美元薪酬",
+      "url": "https://www.aibase.com/news/31705",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6b14db08f0d9",
+      "title": "迪士尼将以2000万美元收购Character.AI部分资产并接纳核心团队",
+      "url": "https://www.aibase.com/news/31704",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3f5e9d31411c",
+      "title": "上市前 Anthropic 拟捐 5% 股份设公共利益基金，估值每涨 50% 再添 2%",
+      "url": "https://www.aibase.com/news/31706",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_298a8fc112b6",
+      "title": "垂直大模型\"同源观澜\"在福州发布：用 AI 把两岸共同历史记忆\"激活\"",
+      "url": "https://www.aibase.com/news/31707",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_b5da960ac254",
       "title": "Anthropic 内部研究显示初级技术岗位占比下降，AI Agent 工时达员工六倍 / Anthropic has nearly stopped hiring junior staff because AI agents now work six times as many hours",
       "url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours",
-      "importance_score": 0.7618,
+      "importance_score": 0.757,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -56,7 +128,7 @@
       "story_id": "story_5291e4230e02",
       "title": "德国两家法院先后裁定 Google 须为其 AI Overview 内容负责 / Two German courts now hold Google liable for what its AI overviews say",
       "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say",
-      "importance_score": 0.7533,
+      "importance_score": 0.7486,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -67,7 +139,7 @@
       "story_id": "story_f9057edcf67a",
       "title": "DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首 / Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max...",
       "url": "https://x.com/arena/status/2111894091168682086",
-      "importance_score": 0.7479,
+      "importance_score": 0.7426,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -81,7 +153,7 @@
       "story_id": "story_54e5b25c77ec",
       "title": "卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由",
       "url": "https://x.com/Khazix0918/status/2111639562720329976",
-      "importance_score": 0.7083,
+      "importance_score": 0.7042,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -91,23 +163,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0a09dae255fc",
-      "title": "Browser Use 讲解浏览器智能体的工作原理与使用时机 / What Is a Browser Agent? How It Works and When to Use One",
-      "url": "https://browser-use.com/posts/browser-agents",
-      "importance_score": 0.6834,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_f7051b036301",
       "title": "v2.1.303",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
-      "importance_score": 0.6343,
+      "importance_score": 0.6288,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -118,9 +177,9 @@
     },
     {
       "story_id": "story_dcbd9b62fff3",
-      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "title": "Anthropic 表示将把 5% 的股份捐给“公益基金” / Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
       "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund",
-      "importance_score": 0.6297,
+      "importance_score": 0.6243,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -133,7 +192,7 @@
       "story_id": "story_801f2ecd1e58",
       "title": "四名 Gemini 4 Argon 特工在没有任何人类帮助的情况下击败了 Minecraft / Four Gemini 4 Argon agents beat Minecraft without any human help",
       "url": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help",
-      "importance_score": 0.6109,
+      "importance_score": 0.6061,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -148,7 +207,7 @@
       "story_id": "story_8d0f594a25fd",
       "title": "迪士尼同意雇用 Character.AI 的大部分员工 / Disney agrees to hire the majority of Character.AI’s workforce",
       "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce",
-      "importance_score": 0.6072,
+      "importance_score": 0.6021,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -159,7 +218,7 @@
       "story_id": "story_ca7d3316a2f2",
       "title": "在人工智能代理开始达成交易之前，Anthropic 咨询律师事务所制定公平的谈判规范 / Anthropic consults law firms to set fair negotiation norms before AI agents start cutting deals",
       "url": "https://the-decoder.com/anthropic-consults-law-firms-to-set-fair-negotiation-norms-before-ai-agents-start-cutting-deals",
-      "importance_score": 0.6033,
+      "importance_score": 0.5987,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -174,7 +233,7 @@
       "story_id": "story_2e96b32a07ad",
       "title": "人工智能代理在长期决策方面品味不佳，新的基准证明了这一点 / AI agents have bad taste in long-term decisions and a new benchmark proves it",
       "url": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it",
-      "importance_score": 0.5984,
+      "importance_score": 0.5938,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -186,10 +245,21 @@
       ]
     },
     {
+      "story_id": "story_500c19dbbb1e",
+      "title": "llm-tools-datasette 0.1.1",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette",
+      "importance_score": 0.5936,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_fae835093265",
       "title": "Tim is so right. Hope the devs building StarCraft 3 sees this tweet and embrace AI to ship before 2030 🙂 https://t.co/OAFYpl4KR2",
       "url": "https://x.com/petergyang/status/2111663267995361287",
-      "importance_score": 0.5925,
+      "importance_score": 0.5883,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -200,7 +270,7 @@
       "story_id": "story_9848371d21a9",
       "title": "AI agents chasing a $465 train refund invented excuses, leaked medical data, and spammed an MP's office",
       "url": "https://the-decoder.com/ai-agents-chasing-a-465-train-refund-invented-excuses-leaked-medical-data-and-spammed-an-mps-office",
-      "importance_score": 0.5888,
+      "importance_score": 0.5843,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -210,10 +280,10 @@
       ]
     },
     {
-      "story_id": "story_5a8874de1854",
-      "title": "I had the same conversation reminiscing at a team offsite the other day. “What did we pay attention to before AI?” “😅 Front end JavaScript frameworks” https://t.co/sKe9X8ylhL",
-      "url": "https://x.com/thenanyu/status/2111597172840083574",
-      "importance_score": 0.5841,
+      "story_id": "story_2002fd2be0e1",
+      "title": "llm-echo 0.5",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-echo",
+      "importance_score": 0.58,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -224,7 +294,31 @@
       "story_id": "story_9ce71d7d4c97",
       "title": "TinyFish 让搜索变得免费：AI 代理阅读网页的真正成本是多少 / TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web",
       "url": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost",
-      "importance_score": 0.5783,
+      "importance_score": 0.5731,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_8cf717bf1184",
+      "title": "学完就用上了：AI 硬件训练营的小伙伴在安克黑客松的 24 小时",
+      "url": "https://waytoagi.feishu.cn/wiki/TcDAwH7tpiVzRvkv71Uc8v6Cnkc?from=from_copylink",
+      "importance_score": 0.5692,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2d75f0767142",
+      "title": "10.12—10.19｜本周精选 AI 论文",
+      "url": "https://waytoagi.feishu.cn/wiki/IXXbwvJ94iBauCkG2AXcZ9fcnpf?from=from_copylink",
+      "importance_score": 0.5692,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -237,7 +331,7 @@
       "story_id": "story_306d2e501101",
       "title": "混合推理代理：在潜空间中进行推理、通过文本采取行动的大语言模型（LLM）代理",
       "url": "https://arxiv.org/abs/2610.18861",
-      "importance_score": 0.5695,
+      "importance_score": 0.564,
       "importance_label": "多源热议",
       "source_count": 3,
       "archive_date": "2026-10-19",
@@ -250,7 +344,7 @@
       "story_id": "story_7cb041410c22",
       "title": "Anthropic 的就业形势正在发生怎样的变化",
       "url": "https://www.anthropic.com/research/employment-at-anthropic",
-      "importance_score": 0.5659,
+      "importance_score": 0.5605,
       "importance_label": "多源热议",
       "source_count": 3,
       "archive_date": "2026-10-19",
@@ -263,7 +357,7 @@
       "story_id": "story_663035be8b47",
       "title": "网站正纷纷关闭人工智能客服",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "importance_score": 0.5659,
+      "importance_score": 0.5605,
       "importance_label": "多源热议",
       "source_count": 3,
       "archive_date": "2026-10-19",
@@ -273,24 +367,10 @@
       ]
     },
     {
-      "story_id": "story_56003fb72892",
-      "title": "Meta 联手苹果推出全美最强开源模型，编码基测输给智谱、Kimi",
-      "url": "https://www.infoq.cn/article/EuYOPRUBAeBgBGBu5ktk",
-      "importance_score": 0.56,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "kimi",
-        "zhipu"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_a3ea6118bed5",
       "title": "DeepSeek升级了：从故宫3D到赛车游戏，价格没涨",
       "url": "https://waytoagi.feishu.cn/wiki/Qa92wZVeyiUghvkGFpAcAnjun3e?from=from_copylink",
-      "importance_score": 0.5597,
+      "importance_score": 0.5544,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -303,7 +383,7 @@
       "story_id": "story_9750f9b65138",
       "title": "当AI越来越强，人类还剩下什么？——关于taste的一次分享",
       "url": "https://waytoagi.feishu.cn/wiki/ZNaUwCFtoiIiMakvkl4cLtXXnlf?from=from_copylink",
-      "importance_score": 0.5597,
+      "importance_score": 0.5544,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -314,7 +394,7 @@
       "story_id": "story_d5535ede0231",
       "title": "Google 开源 Harness2，一种递归代理利用框架 / Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
       "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework",
-      "importance_score": 0.5555,
+      "importance_score": 0.5511,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -326,21 +406,10 @@
       ]
     },
     {
-      "story_id": "story_f586fcc47fb9",
-      "title": "“AI+终端”时代的萌芽：大模型在终端领域的探索和量产落地｜QCon上海",
-      "url": "https://www.infoq.cn/article/qZPH971CbfHkaCfgG0cb",
-      "importance_score": 0.5541,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_a7a896f24b42",
       "title": "如何使用 NVIDIA 结构化数据模型进行零训练表格预测 / How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
       "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models",
-      "importance_score": 0.5508,
+      "importance_score": 0.5464,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -353,7 +422,7 @@
       "story_id": "story_ecf5266b0e37",
       "title": "了解 Voxel51 3.0：物理 AI 的统一多模态数据平台 / Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
       "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform",
-      "importance_score": 0.5471,
+      "importance_score": 0.5429,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -363,10 +432,34 @@
       ]
     },
     {
+      "story_id": "story_3af6ef490c9a",
+      "title": "尝试租用 AI/SI 计算是什么感觉 https://t.co/SBdEXK31zc / What it’s like trying to rent AI/SI compute https://t.co/SBdEXK31zc",
+      "url": "https://x.com/elonmusk/status/2111930742615802163",
+      "importance_score": 0.5393,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_75ca8ab1ad58",
+      "title": "Grok @Bot 就像雇用了一位非常有能力的员工 / Grok @Bot is like hiring an incredibly competent employee",
+      "url": "https://x.com/elonmusk/status/2111914748648296655",
+      "importance_score": 0.5367,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [
+        "xai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_44f749f3afa5",
       "title": "Show HN: WhatsApp MCP running free on Cloudflare",
       "url": "https://github.com/finereli/whatsapp-mcp",
-      "importance_score": 0.5417,
+      "importance_score": 0.5363,
       "importance_label": "值得关注",
       "source_count": 2,
       "archive_date": "2026-10-19",
@@ -379,7 +472,7 @@
       "story_id": "story_69fc7bae46d7",
       "title": "Anthropic提出的AI安全法案只有在造成50人死亡或10亿美元损失的情况下才会生效",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
-      "importance_score": 0.5409,
+      "importance_score": 0.5355,
       "importance_label": "值得关注",
       "source_count": 2,
       "archive_date": "2026-10-19",
@@ -389,10 +482,35 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_56003fb72892",
+      "title": "Meta 联手苹果推出全美最强开源模型，编码基测输给智谱、Kimi",
+      "url": "https://www.infoq.cn/article/EuYOPRUBAeBgBGBu5ktk",
+      "importance_score": 0.5354,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [
+        "kimi",
+        "zhipu"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_383c2dd2c97b",
+      "title": "如果您不运行自己的 LLM 代理，您怎么知道发生了什么？ / If you don't run your own LLM proxy, how do you know whats going on?",
+      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on",
+      "importance_score": 0.5352,
+      "importance_label": "值得关注",
+      "source_count": 2,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_7f4aa7be0626",
       "title": "数据中心有一个新的公关计划：您孩子的实地考察 / Data Centers Have a New PR Plan: Your Kid’s Field Trip",
       "url": "https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids",
-      "importance_score": 0.5386,
+      "importance_score": 0.5339,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -403,7 +521,7 @@
       "story_id": "story_2798eaa59ee3",
       "title": "OnlyFans 创作者对 Meta 让 Muse 说脏话感到愤怒 / OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty",
       "url": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty",
-      "importance_score": 0.5386,
+      "importance_score": 0.5339,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
@@ -413,141 +531,15 @@
       ]
     },
     {
-      "story_id": "story_fafd6304ca6c",
-      "title": "DeepSeek 搜索和获取服务——每 1000 次成功请求 0.75 美元",
-      "url": "https://api-docs.deepseek.com/guides/search",
-      "importance_score": 0.5366,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_9e9259d44c25",
-      "title": "Show HN: Sphinx——一个在发布前通过问答测试你AI代码的钩子",
-      "url": "https://sphinx-six-theta.vercel.app",
-      "importance_score": 0.5366,
-      "importance_label": "多源热议",
-      "source_count": 3,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cedcde878ce0",
-      "title": "人工智能行业庞大的债务正让投资者感到不安",
-      "url": "https://www.economist.com/business/2026/10/18/the-ai-industrys-gigantic-debts-are-making-investors-nervous",
-      "importance_score": 0.5166,
+      "story_id": "story_f586fcc47fb9",
+      "title": "“AI+终端”时代的萌芽：大模型在终端领域的探索和量产落地｜QCon上海",
+      "url": "https://www.infoq.cn/article/qZPH971CbfHkaCfgG0cb",
+      "importance_score": 0.5338,
       "importance_label": "值得关注",
       "source_count": 1,
       "archive_date": "2026-10-19",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_1a0f953bf7a9",
-      "title": "'The GPU never reads the same text twice': Belgian startup Corbenic wants to turn your server's SSD into AI memory, but its 14x speedup owes more to reading less",
-      "url": "https://www.techradar.com/pro/the-gpu-never-reads-the-same-text-twice-belgian-startup-corbenic-wants-to-turn-your-servers-ssd-into-ai-memory-but-its-14x-speedup-owes-more-to-reading-less",
-      "importance_score": 0.5165,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f4745caeab64",
-      "title": "Google is renaming Gemini again; here's what each feature does now",
-      "url": "https://www.androidpolice.com/googles-renamed-gemini-features-field-guide",
-      "importance_score": 0.5152,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_68d4cbbdfeb6",
-      "title": "PhoneBot uses an old $50 Android smartphone brain with its cameras as eyes — tech Frankenstein is an open source humanoid robot platform for makers",
-      "url": "https://www.techradar.com/pro/phonebot-uses-an-old-usd50-android-smartphone-brain-with-its-cameras-as-eyes-tech-frankenstein-is-an-open-source-humanoid-robot-platform-for-makers",
-      "importance_score": 0.5135,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ef3ebe0f035c",
-      "title": "Behold, Intel plans a 480GB GPU, a video card with more memory than the average laptop SSD has storage — but of course it's for AI, and curiously, it will use LPPDR5X, not even GDDR7",
-      "url": "https://www.techradar.com/pro/behold-intel-plans-a-480gb-gpu-a-video-card-with-more-memory-than-the-average-laptop-ssd-has-storage-but-of-course-its-for-ai-and-curiously-it-will-use-lppdr5x-not-even-gddr7",
-      "importance_score": 0.5129,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_819759de47d9",
-      "title": "Anthropic is pitching Congress its own AI safety bill, report says",
-      "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill",
-      "importance_score": 0.5111,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cc5c33872624",
-      "title": "Anthropic says it is committing 5% of its shares to a Public Benefit Fund, a wholly owned LLC that can't lobby, plus 2% for every 50% rise in its valuation (Anthropic)",
-      "url": "https://www.techmeme.com/261018/p10",
-      "importance_score": 0.5106,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9d237dccf512",
-      "title": "企业级 AI Agent 工作台前端实战教程",
-      "url": "https://juejin.cn/post/7696759034847068175",
-      "importance_score": 0.5103,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_4ccf0bcca5ee",
-      "title": "DeepSeek Harness 进阶——认识DeepSeek Harness插件机制，并从0到1实现一个插件",
-      "url": "https://juejin.cn/post/7696822189491912742",
-      "importance_score": 0.5103,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }
