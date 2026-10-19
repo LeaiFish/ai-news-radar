@@ -537,7 +537,7 @@ html[data-research-view="pack"] #researchCatalog {
   font-weight: 740;
 }
 
-.doubao-brief {
+.research-brief {
   padding: clamp(16px, 2vw, 24px);
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -549,21 +549,21 @@ html[data-research-view="pack"] #researchCatalog {
   overflow-wrap: anywhere;
 }
 
-.doubao-brief p {
+.research-brief p {
   margin: 0 0 14px;
 }
 
-.doubao-brief > p:last-child,
-.doubao-brief > .brief-change:last-child > p:last-child {
+.research-brief > p:last-child,
+.research-brief > .brief-change:last-child > p:last-child {
   margin-bottom: 0;
 }
 
-.doubao-brief strong,
+.research-brief strong,
 .brief-change h3 {
   color: var(--ink);
 }
 
-.doubao-brief .brief-meta,
+.research-brief .brief-meta,
 .brief-citations {
   color: var(--muted);
   font-size: 12px;

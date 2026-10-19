@@ -977,7 +977,7 @@
   function renderJudgment(record, beats) {
     const slot = document.getElementById("packJudgment");
     clear(slot);
-    if (renderDoubaoBrief(slot, record, "doubaoJudgmentBrief")) return;
+    if (renderResearchBrief(slot, record, "Judgment")) return;
     if (record.kind === "org" || record.kind === "trend") {
       const slot = document.getElementById("packJudgment");
       clear(slot);
@@ -1047,7 +1047,7 @@
   function renderDelta(record) {
     const slot = document.getElementById("packDelta");
     clear(slot);
-    if (renderDoubaoBrief(slot, record, "doubaoChangesBrief")) return;
+    if (renderResearchBrief(slot, record, "Changes")) return;
     if (record.kind === "event") {
       const beats = eventBeats(record.story);
       if (beats.length <= 1) {
@@ -1208,16 +1208,19 @@
     });
   }
 
-  function renderDoubaoBrief(slot, record, templateId) {
-    if (record.kind !== "org" || record.id !== "doubao") return false;
-    const template = document.getElementById(templateId);
+  const RESEARCH_BRIEF_PREFIXES = { doubao: "doubao", qwen: "qwen", hunyuan: "yuanbao" };
+
+  function renderResearchBrief(slot, record, section) {
+    const prefix = RESEARCH_BRIEF_PREFIXES[record.id];
+    if (record.kind !== "org" || !prefix) return false;
+    const template = document.getElementById(`${prefix}${section}Brief`);
     if (!template) return false;
     slot.append(template.content.cloneNode(true));
     return true;
   }
 
   async function renderPack(kind, id) {
-    const deltaLabel = kind === "org" && id === "doubao" ? "近30天变化" : "本期变化";
+    const deltaLabel = kind === "org" && RESEARCH_BRIEF_PREFIXES[id] ? "近30天变化" : "本期变化";
     document.querySelector("#pack-delta h2").textContent = deltaLabel;
     document.querySelector('.pack-toc > a[href="#pack-delta"]').textContent = deltaLabel;
     const title = document.getElementById("packTitle");
