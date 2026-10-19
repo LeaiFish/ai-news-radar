@@ -538,6 +538,11 @@ html[data-research-view="pack"] #researchCatalog {
 }
 
 .doubao-brief {
+  padding: clamp(16px, 2vw, 24px);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--radar-shadow-soft);
   color: var(--ink-soft);
   font-size: 14px;
   line-height: 1.8;
@@ -546,6 +551,11 @@ html[data-research-view="pack"] #researchCatalog {
 
 .doubao-brief p {
   margin: 0 0 14px;
+}
+
+.doubao-brief > p:last-child,
+.doubao-brief > .brief-change:last-child > p:last-child {
+  margin-bottom: 0;
 }
 
 .doubao-brief strong,
