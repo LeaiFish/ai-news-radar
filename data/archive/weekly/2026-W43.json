@@ -4,41 +4,44 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-19T13:36:30.771901Z",
+  "generated_at": "2026-10-19T17:32:28.129746Z",
   "daily_dates": [
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
   ],
-  "story_count": 166,
-  "unique_story_count": 166,
+  "story_count": 369,
+  "unique_story_count": 217,
   "counts": {
     "by_company_topic": {
-      "anthropic": 24,
-      "deepseek": 10,
-      "doubao": 1,
-      "google-gemini": 7,
-      "huggingface": 1,
-      "kimi": 3,
-      "minimax": 2,
-      "nvidia": 2,
-      "openai": 6,
-      "qwen": 1,
-      "xai": 5,
-      "zhipu": 1
+      "anthropic": 47,
+      "deepseek": 25,
+      "doubao": 2,
+      "google-gemini": 15,
+      "huggingface": 3,
+      "kimi": 5,
+      "minimax": 5,
+      "nvidia": 7,
+      "openai": 17,
+      "openrouter": 1,
+      "qwen": 2,
+      "xai": 9,
+      "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 28,
-      "monetization": 1
+      "agent-ecosystem": 65,
+      "monetization": 3,
+      "workplace": 1
     },
     "by_importance_label": {
-      "值得关注": 131,
-      "多源热议": 4,
-      "官方更新": 2,
-      "行业动态": 29
+      "值得关注": 284,
+      "多源热议": 11,
+      "官方更新": 6,
+      "行业动态": 68
     },
     "by_source_count_bucket": {
-      "1": 157,
-      "2": 5,
-      "3+": 4
+      "1": 350,
+      "2": 8,
+      "3+": 11
     }
   },
   "top_stories": [
@@ -54,6 +57,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_f7501de552be",
+      "title": "Some Git over HTTPS may temporarily require authentication",
+      "url": "https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication",
+      "importance_score": 0.8269,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_687c4d3aaba7",
       "title": "MiniMax M3.1 Flash",
       "url": "https://platform.minimax.cn/docs/guides/text-generation",
@@ -64,6 +78,43 @@
       "company_topics": [
         "minimax"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_db496b859e20",
+      "title": "MiniMax M3.1 Flash",
+      "url": "https://www.minimax.cn/blog/minimax-m31f",
+      "importance_score": 0.8037,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "minimax"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0e04939a4dfa",
+      "title": "黑客用 AI 智能体入侵 John Deere、SharkNinja 等超 100 家网站 / A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "importance_score": 0.7986,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_4344acbfe0e3",
+      "title": "Disney 拟通过破产程序收购 Character.AI 团队与技术、绕开其诉讼 / Disney found a way to buy Character.AI without buying its lawsuits",
+      "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits",
+      "importance_score": 0.7755,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -137,6 +188,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_3f646f16c678",
+      "title": "Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性 / The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+      "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture",
+      "importance_score": 0.7564,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_7e560b6785ec",
       "title": "无需改模型权重！谷歌开源王牌框架 Harness²：让 AI 运行中自我修补，跑分全面暴涨",
       "url": "https://www.aibase.com/news/31723",
@@ -169,6 +233,20 @@
       "source_count": 1,
       "archive_date": "2026-10-19",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_84e1775d2c48",
+      "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter / Mercury 3 is live on OpenRouter!",
+      "url": "https://x.com/OpenRouter/status/2112225779782398131",
+      "importance_score": 0.7509,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "openai",
+        "openrouter"
+      ],
       "lens_topics": []
     },
     {
@@ -338,6 +416,58 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0b76dd48e093",
+      "title": "DeepSeek V4.1 Flash 1017 发布，Artificial Analysis 智能指数得分 45 并列开源模型第二 / DeepSeek V4.1 Flash 1017 scores 45 on the Artificial Analysis Intelligence Index, improving on DeepSeek V4.1 Flash by 6 points, and is th...",
+      "url": "https://x.com/ArtificialAnlys/status/2112218661432000694",
+      "importance_score": 0.7467,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "deepseek",
+        "zhipu"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e0b64f4fd038",
+      "title": "Meta Muse Wonder Full (Max) 登上 Code Arena: WebDev 第 6 名，1726 分 / Exciting news: Muse Wonder Full (Max) by @AIatMeta has just debuted in the Code Arena: WebDev at #6 overall with 1726 pts, putting Meta i...",
+      "url": "https://x.com/arena/status/2112215825944117361",
+      "importance_score": 0.7433,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_069e20b396ef",
+      "title": "蚂蚁 inclusionAI 开源 Ming-3.0-tts 语音合成模型 / inclusionAI/Ming-3.0-tts",
+      "url": "https://github.com/inclusionAI/Ming-3.0-tts",
+      "importance_score": 0.7423,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d98a8d54de8d",
+      "title": "n8n 教程：在 NVIDIA DGX Spark 上离线运行全套 AI 工作流 / Run your n8n AI workflows on NVIDIA DGX Spark, with no cloud API",
+      "url": "https://blog.n8n.io/n8n-nvidia-dgx-spark",
+      "importance_score": 0.7391,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "openai",
+        "nvidia"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_f9322ffd3993",
       "title": "不操控键鼠、自己写代码：4 个 Gemini 智能体在《我的世界》里自主组队击败末影龙",
       "url": "https://www.aibase.com/news/31703",
@@ -396,133 +526,6 @@
       "company_topics": [
         "anthropic"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_298a8fc112b6",
-      "title": "垂直大模型\"同源观澜\"在福州发布：用 AI 把两岸共同历史记忆\"激活\"",
-      "url": "https://www.aibase.com/news/31707",
-      "importance_score": 0.7384,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f9057edcf67a",
-      "title": "DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首 / Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max...",
-      "url": "https://x.com/arena/status/2111894091168682086",
-      "importance_score": 0.7161,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "kimi",
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_da194de810e6",
-      "title": "MiniMax 发布 M3.1 Flash，推理提速近三倍、用量成本降低 70% / MiniMax M3.1 Flash: Redefining Agent Performance and Cost",
-      "url": "https://www.minimax.io/blog/minimax-m31f",
-      "importance_score": 0.7134,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "minimax"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_49dab9c19c67",
-      "title": "Our team worked with OpenCode to have their users who are also OpenAI API customers back in business and any credits refunded which would have been drawn in the attack. Also, you can request Daybreak Blue access to us...",
-      "url": "https://x.com/thsottiaux/status/2112034063934742720",
-      "importance_score": 0.6305,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e74bef16130e",
-      "title": "人类计划为受人工智能威胁的工人提供基金，马斯克以 SpaceX 股票为儿童进行反击 / Anthropic plans fund for workers threatened by AI, Musk counters with SpaceX shares for children",
-      "url": "https://the-decoder.com/anthropic-plans-fund-for-workers-threatened-by-ai-musk-counters-with-spacex-shares-for-children",
-      "importance_score": 0.6304,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_37ac9750a820",
-      "title": "新云洗牌即将到来，英伟达损失最大 / The neocloud shakeout is coming, and Nvidia has the most to lose",
-      "url": "https://the-decoder.com/the-neocloud-shakeout-is-coming-and-nvidia-has-the-most-to-lose",
-      "importance_score": 0.6268,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_78dff3b22f2e",
-      "title": "Stripe 表示人工智能代理的购买量正在增加，但不愿透露具体数字 / Stripe says AI agent purchases are adding up, but it won't share the numbers",
-      "url": "https://the-decoder.com/stripe-says-ai-agent-purchases-are-adding-up-but-it-wont-share-the-numbers",
-      "importance_score": 0.6218,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_adac0062bc1c",
-      "title": "Data engineers > AI engineers there's a big difference between a \"RAG guy\" and a \"Data Intensive Applications\" person like in this screenshot and there's never been a starker difference in demand in my entire career i...",
-      "url": "https://x.com/swyx/status/2112073533794971941",
-      "importance_score": 0.6199,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f7051b036301",
-      "title": "v2.1.303",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
-      "importance_score": 0.6008,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3594952f72fb",
-      "title": "Tried out the new 𝚍𝚎𝚎𝚙𝚜𝚎𝚎𝚔-𝚟𝟺.𝟷-𝚏𝚕𝚊𝚜𝚑-𝟷𝟶𝟷𝟽-𝚏𝚊𝚜𝚝 on AI Gateway to make a few improvements. It added sound, better collision detection, improved the ramp, camera that follows the car, etc. I think it cost 30 cents 😂 htt...",
-      "url": "https://x.com/rauchg/status/2111929486661018081",
-      "importance_score": 0.5989,
-      "importance_label": "值得关注",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
