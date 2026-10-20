@@ -55,6 +55,11 @@ except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_
     from source_tiers import add_select_tier_fields, attach_select_tier, best_select_tier, item_select_tier, other_outlet_count
 
 try:
+    from scripts.wechat_sources import load_radar_rows as load_wechat_rows
+except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
+    from wechat_sources import load_radar_rows as load_wechat_rows
+
+try:
     import feedparser
 except ModuleNotFoundError:
     feedparser = None
@@ -466,6 +471,11 @@ PUBLIC_RAW_META_FIELDS: tuple[str, ...] = (
     "creator_metrics",
     "search_surface",
     "summary",
+    "company_id",
+    "account_name",
+    "account_verified",
+    "verified_at",
+    "evidence_url",
 )
 
 
@@ -3539,6 +3549,7 @@ SOURCE_TIER_BY_SITE: dict[str, tuple[str, str, int]] = {
     "xapi": ("advanced", "高级源", 4),
     "socialdata_x": ("advanced", "高级源", 4),
     "x_bridge": ("advanced", "高级源", 4),
+    "wechat_bridge": ("advanced", "公众号补充源", 4),
     "techurls": ("discussion", "热议参考", 5),
     "buzzing": ("discussion", "热议参考", 5),
     "iris": ("discussion", "热议参考", 5),
@@ -4725,6 +4736,18 @@ def load_x_bridge_items(
         status["error"] = str(exc) if str(exc) else type(exc).__name__
         status["duration_ms"] = int((time.perf_counter() - started) * 1000)
         return [], status
+
+
+def load_wechat_bridge_items(path, now, window_hours=24):
+    rows, status = load_wechat_rows(path, now, window_hours)
+    return [RawItem(
+        site_id="wechat_bridge", site_name="官方公众号（补充）",
+        source=f"公众号：{row['account_name']}", title=row["title"], url=row["url"],
+        published_at=row["published_at"],
+        meta={"select_tier": "T1_5", "company_id": row["company_id"],
+              "account_name": row["account_name"], "account_verified": True,
+              "verified_at": row["verified_at"], "evidence_url": row["evidence_url"]},
+    ) for row in rows], status
 
 
 def socialdata_should_run_now(now: datetime, paid_source_state: dict[str, Any] | None = None) -> tuple[bool, str | None]:
@@ -7507,6 +7530,12 @@ def main() -> int:
                 "skip_reason": None,
             }
         )
+    wechat_items, wechat_status = load_wechat_bridge_items(
+        output_dir / "bridge" / "wechat-accounts.json", now, args.window_hours,
+    )
+    if not wechat_status.get("skipped"):
+        raw_items.extend(wechat_items)
+        statuses.append(wechat_status)
     socialdata_items, socialdata_status = maybe_fetch_socialdata_updates(session, now, paid_source_state)
     update_paid_source_state(paid_source_state, "socialdata", socialdata_status, now)
     sync_paid_source_status_timestamps(socialdata_status, paid_source_state, "socialdata")

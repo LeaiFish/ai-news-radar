@@ -3,6 +3,11 @@
 This directory is the **only** supported ingress for sanitized public post
 metadata produced by an off-repo private X cookie scraper.
 
+The optional `wechat-accounts.json` ingress stores verified public WeChat article
+metadata only. See `docs/WECHAT_SOURCE_BRIDGE.md` for discovery, verification,
+retention and health rules. This file may be committed after verification;
+never include credentials or article bodies.
+
 ## Rules
 
 - **Never** put cookies, `auth_token`, `ct0`, Playwright `storage_state`,

@@ -75,7 +75,7 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 | GitHub releases/blogs | Usually supported through Atom/RSS | Prefer GitHub Atom feeds or official blog RSS | Useful for model/platform/tool release tracking. |
 | Newsletters | Partially supported | Prefer public archive RSS or stable archive pages | Do not scrape private inboxes. |
 | X / Twitter | Supported through curated central feeds, opt-in API adapters, or a private sanitized items-file bridge | Prefer public generated feeds that already use official X API; keep direct X API optional and secret-backed; private cookie scrapes stay off-repo and ingest only via `data/bridge/x-items.json` / `X_BRIDGE_ITEMS_B64` (see `docs/X_PRIVATE_BRIDGE.md`) | Following a person often imports noise; public bridge routes can be unstable; cookies must never enter this repo. |
-| WeChat public accounts | Not in the public Actions fetch. Domestic lab accounts are 待覆盖 / pending; see below | Private bridge, same pattern as `docs/X_PRIVATE_BRIDGE.md`. Self-hosted RSSHub or private OPML only on a maintainer fork | Login, copyright, and bridge stability are poor. No cookies or tokens in this repo. |
+| WeChat public accounts | Optional verified article metadata input; account coverage remains subject to live verification | `data/bridge/wechat-accounts.json`, see `docs/WECHAT_SOURCE_BRIDGE.md`; search and original-page checks run separately from Actions | Best-effort discovery, no completeness guarantee. No cookies, tokens or bodies in this repo. |
 | Telegram / Bilibili / Zhihu / podcasts | Skipped by default when feeds are unreliable | Add only as opt-in OPML entries | These can be noisy or bridge-dependent. |
 
 ## Selection source tiers
@@ -166,8 +166,8 @@ shells. Volcengine news and the Tencent Cloud Hunyuan changelog either require
 JavaScript or return an empty shell. GitHub release atoms for the model repos
 are empty or years old; high-frequency CLI atoms (`qwen-code`, `kimi-code`)
 were left out so patch notes do not crowd model posts. No WeChat or X accounts
-were added to the fetcher. Domestic 公众号 names are recorded as pending under
-Domestic WeChat accounts below.
+were added to those built-in fetchers. Optional checked 公众号 article metadata
+can now enter through the bridge described under Domestic WeChat accounts below.
 
 Aggregator sites may already surface some of these updates, but they are not
 guaranteed to be complete or timely. Keep these official sources as a stable
@@ -293,19 +293,21 @@ baseline, then let the aggregator layer add breadth.
 See `docs/research/advanced-source-free-tier-budget-2026-05-10.md` for the X API
 and AgentMail budget notes.
 
-## Domestic WeChat accounts (pending)
+## Domestic WeChat accounts (optional article bridge)
 
 The domestic products already tracked as company topics also publish on WeChat
 公众号: 豆包 / ByteDance Seed, 通义千问 / Qwen, 混元·元宝, 夸克, DeepSeek,
-Kimi / 月之暗面, MiniMax, and 智谱 / GLM. Those accounts are **待覆盖 /
-pending**. They are not in the public GitHub Actions fetch, and this
-repository does not include a WeChat scraper, cookie, token, or live RSSHub
-route.
+Kimi / 月之暗面, MiniMax, and 智谱 / GLM. Those account identities remain
+**subject to verification**. An optional metadata bridge now accepts checked
+article pages; see `docs/WECHAT_SOURCE_BRIDGE.md` and `config/wechat_sources.json`.
+GitHub Actions only reads the resulting metadata file. It does not search
+WeChat, use login sessions or maintain a live RSSHub route. The table below
+retains the dated identity research; current article coverage lives in the
+bridge snapshot and `source-status.json`.
 
-Use the same private path as the X items-file bridge in
-`docs/X_PRIVATE_BRIDGE.md`. A credentialed reader stays off this repo. A
-maintainer fork may later ingest sanitized public article fields only (title,
-canonical URL, time, account name) from a private file or secret. Cookies,
+The ingress follows the optional items-file pattern of
+`docs/X_PRIVATE_BRIDGE.md`, using sanitized public article fields only (title,
+canonical URL, time, account name and verification evidence). Cookies,
 login sessions, and WeChat tokens must never be committed. A self-hosted
 RSSHub route or a hand-maintained private OPML entry is acceptable on that
 fork only. Do not add these accounts to `feeds/follow.example.opml` or to a

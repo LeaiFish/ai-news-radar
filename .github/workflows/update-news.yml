@@ -6,6 +6,9 @@ on:
     paths:
       - 'scripts/free_news_content.py'
       - 'scripts/update_news.py'
+      - 'scripts/wechat_sources.py'
+      - 'config/wechat_sources.json'
+      - 'data/bridge/wechat-accounts.json'
       - 'scripts/build_topics.py'
       - '.github/workflows/update-news.yml'
       - 'apps/web/**'
