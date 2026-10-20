@@ -4,13 +4,13 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-20T01:53:24.956131Z",
+  "generated_at": "2026-10-20T04:07:25.435604Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20"
   ],
-  "story_count": 422,
-  "unique_story_count": 318,
+  "story_count": 427,
+  "unique_story_count": 332,
   "counts": {
     "by_company_topic": {
       "anthropic": 51,
@@ -18,40 +18,51 @@
       "deepseek": 31,
       "doubao": 3,
       "google-gemini": 17,
-      "huggingface": 4,
+      "huggingface": 3,
       "kimi": 4,
       "microsoft": 3,
-      "minimax": 10,
+      "minimax": 11,
       "nvidia": 10,
-      "openai": 29,
+      "openai": 32,
       "openrouter": 3,
       "qwen": 2,
       "xai": 12,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 74,
+      "agent-ecosystem": 75,
       "monetization": 5,
       "workplace": 6
     },
     "by_importance_label": {
-      "值得关注": 331,
-      "多源热议": 10,
-      "官方更新": 10,
-      "行业动态": 71
+      "值得关注": 340,
+      "多源热议": 11,
+      "官方更新": 11,
+      "行业动态": 65
     },
     "by_source_count_bucket": {
-      "1": 398,
-      "2": 14,
-      "3+": 10
+      "1": 403,
+      "2": 13,
+      "3+": 11
     }
   },
   "top_stories": [
     {
+      "story_id": "story_1c2bfa5d3821",
+      "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
+      "url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4",
+      "importance_score": 0.8361,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_ee1e20c5c4d0",
       "title": "适用于企业、组织和团队的 Copilot 模型策略 API / Copilot model policy API for enterprise, orgs, and teams",
       "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
-      "importance_score": 0.841,
+      "importance_score": 0.8357,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -66,7 +77,7 @@
       "story_id": "story_78e3fb73f308",
       "title": "GitHub Copilot 模型已于 2026 年 10 月 19 日弃用 / GitHub Copilot models deprecated on October 19, 2026",
       "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
-      "importance_score": 0.8408,
+      "importance_score": 0.8355,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -79,21 +90,10 @@
       ]
     },
     {
-      "story_id": "story_1c2bfa5d3821",
-      "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
-      "url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4",
-      "importance_score": 0.8361,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_724b564bb7c8",
       "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话 / How to continue a GitHub Copilot app session in VS Code",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
-      "importance_score": 0.8345,
+      "importance_score": 0.8293,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -109,7 +109,7 @@
       "story_id": "story_cd1029843073",
       "title": "通过专注于优化，我们的推理费用减少了 68% / Cutting our inference bill by 68% by being obsessive about optimization",
       "url": "https://blog.cloudflare.com/obsessive-inference-optimization",
-      "importance_score": 0.8335,
+      "importance_score": 0.8283,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -120,7 +120,7 @@
       "story_id": "story_00aba4b65dc4",
       "title": "隆重推出 Clairic，一种新的 System One 类提取模型 / Introducing Clairic, a new System One class of extraction models",
       "url": "https://blog.cloudflare.com/clairic-extraction-model",
-      "importance_score": 0.8302,
+      "importance_score": 0.8251,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -128,10 +128,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_ea80880e9304",
+      "title": "4 tips for styling outfits with Gemini",
+      "url": "https://blog.google/products-and-platforms/products/gemini/stylist-outfit-tips-gemini",
+      "importance_score": 0.8231,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_cf7ab9adb16b",
       "title": "OpenAI 发布 GPT-6 系列模型，提升 COBOL 等低资源编程语言编码能力 / Advancing coding in low‑resource programming languages",
       "url": "https://openai.com/index/low-resource-programming-languages",
-      "importance_score": 0.8193,
+      "importance_score": 0.8146,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -157,7 +170,7 @@
       "story_id": "story_f7501de552be",
       "title": "某些基于 HTTPS 的 Git 可能暂时需要身份验证 / Some Git over HTTPS may temporarily require authentication",
       "url": "https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication",
-      "importance_score": 0.8084,
+      "importance_score": 0.8038,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -165,10 +178,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_06693270d023",
+      "title": "美国国土安全部下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品 / The US orders every civilian agency to rip out DeepSeek, even tools built on it",
+      "url": "https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party",
+      "importance_score": 0.7757,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_cdecf8c47980",
       "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹 / Accused OpenAI spy had folder called “Saudi Gov Docs,” FBI says",
       "url": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says",
-      "importance_score": 0.7808,
+      "importance_score": 0.7755,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -181,23 +207,10 @@
       ]
     },
     {
-      "story_id": "story_06693270d023",
-      "title": "美国国土安全部下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品 / The US orders every civilian agency to rip out DeepSeek, even tools built on it",
-      "url": "https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party",
-      "importance_score": 0.7806,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_0e04939a4dfa",
       "title": "黑客用 AI 智能体入侵 John Deere、SharkNinja 等超 100 家网站 / A hacker broke into John Deere and SharkNinja with an army of AI agents",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-      "importance_score": 0.7792,
+      "importance_score": 0.7743,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-20",
@@ -207,42 +220,9 @@
       ]
     },
     {
-      "story_id": "story_5de10e5e2e65",
-      "title": "Apate.ai 用35万个AI反诈拖住骗子，国内年轻人用AI视频反制AI卖惨账号",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687365&idx=1&sn=4102098fb8725531aa2f783fa2f20f20",
-      "importance_score": 0.7729,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c90e40ea343b",
-      "title": "蚂蚁百灵开源 Ming-3.0语音系列:五款模型覆盖合成、理解与识别",
-      "url": "https://www.aibase.com/news/31738",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c58b3706179b",
-      "title": "AI助手初创公司Town完成1.08亿美元B轮融资，估值突破10亿美元",
-      "url": "https://www.aibase.com/news/31739",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9862ff1536e9",
-      "title": "Claude 给 Mac 当了一回\"保安\"：写个测温小工具，顺手揪出吃满 12 核的挖矿木马",
-      "url": "https://www.aibase.com/news/31737",
+      "story_id": "story_e0e49a7d53d3",
+      "title": "Anthropic初级技术岗位占比降至14%，AI代理工作时长达员工6倍",
+      "url": "https://www.aibase.com/news/31744",
       "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
@@ -253,10 +233,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a0a6a5851bf6",
-      "title": "亚马逊推开源 TorchNeuron：改一处配置，PyTorch 就能跑在自研 Trainium 上",
-      "url": "https://www.aibase.com/news/31735",
-      "importance_score": 0.7658,
+      "story_id": "story_e07f50dbfbf8",
+      "title": "AI 把\"克隆游戏\"门槛砍平，独立开发者开始藏起 Demo 怕被抢跑",
+      "url": "https://www.aibase.com/news/31743",
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -264,10 +244,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_907674fe60b3",
-      "title": "一张脸就能算出生死？AI 凭面部照片预测癌症患者存活率",
-      "url": "https://www.aibase.com/news/31734",
-      "importance_score": 0.7658,
+      "story_id": "story_434f043d9c37",
+      "title": "蚂蚁百灵开源 Ming-3.0 语音系列：五款模型覆盖语音合成、识别与理解",
+      "url": "https://www.aibase.com/news/31746",
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -275,34 +255,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_8f62ced51092",
-      "title": "MiniMax 更新 M3.1Flash:成本降70%、速度近3倍，OSWorld V2与 ALE 双项国产第一",
-      "url": "https://www.aibase.com/news/31732",
-      "importance_score": 0.7658,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "minimax"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_52180dc2918a",
-      "title": "OpenCode Console遭攻击，1.4%用户受影响，部分API密钥泄露",
-      "url": "https://www.aibase.com/news/31736",
-      "importance_score": 0.7658,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2623160af52b",
-      "title": "抢在对头上市前“吸金”！OpenAI 紧急开启 300 亿美元新融资，估值冲向 1.4 万亿美元",
-      "url": "https://www.aibase.com/news/31733",
-      "importance_score": 0.7658,
+      "story_id": "story_3bc507778c39",
+      "title": "商汤给 GPT-6-Astra 做\"真机体检\"：仿真考卷近乎满分，一上手就露怯",
+      "url": "https://www.aibase.com/news/31740",
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -312,10 +268,106 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_2a2e1301126b",
+      "title": "MiniMax M3.1 Flash 低调现身：速度提升3倍，价格降低70%",
+      "url": "https://www.aibase.com/news/31741",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "minimax"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_1d3f0cfd0676",
+      "title": "OpenAI 升级 ChatGPT 浏览器扩展，支持跨标签页读取与自动化操作",
+      "url": "https://www.aibase.com/news/31742",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0624b19947ee",
+      "title": "OpenAI 录音门工程师保释被拒：妻儿已赴沙特，法官怕他\"一走了之\"",
+      "url": "https://www.aibase.com/news/31745",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5de10e5e2e65",
+      "title": "Apate.ai 用35万个AI反诈拖住骗子，国内年轻人用AI视频反制AI卖惨账号",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687365&idx=1&sn=4102098fb8725531aa2f783fa2f20f20",
+      "importance_score": 0.7673,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a1d801ce6124",
+      "title": "Redact 调查：WhatsApp 帮助页面隐藏 LLM 指令，让 AI 不推荐监管机构、不提 GDPR / WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "importance_score": 0.7627,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c90e40ea343b",
+      "title": "蚂蚁百灵开源 Ming-3.0语音系列:五款模型覆盖合成、理解与识别",
+      "url": "https://www.aibase.com/news/31738",
+      "importance_score": 0.7619,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c58b3706179b",
+      "title": "AI助手初创公司Town完成1.08亿美元B轮融资，估值突破10亿美元",
+      "url": "https://www.aibase.com/news/31739",
+      "importance_score": 0.7619,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9862ff1536e9",
+      "title": "Claude 给 Mac 当了一回\"保安\"：写个测温小工具，顺手揪出吃满 12 核的挖矿木马",
+      "url": "https://www.aibase.com/news/31737",
+      "importance_score": 0.7619,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_88a0c6b8e716",
       "title": "Inception Labs 发布扩散大语言模型 Mercury 3，速度达 1068 tokens/秒 / Diffusion at Scale: Introducing Mercury 3",
       "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
-      "importance_score": 0.7656,
+      "importance_score": 0.7613,
       "importance_label": "多源热议",
       "source_count": 3,
       "archive_date": "2026-10-20",
@@ -396,10 +448,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_4344acbfe0e3",
-      "title": "Disney 拟通过破产程序收购 Character.AI 团队与技术、绕开其诉讼 / Disney found a way to buy Character.AI without buying its lawsuits",
-      "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits",
-      "importance_score": 0.7559,
+      "story_id": "story_a0a6a5851bf6",
+      "title": "亚马逊推开源 TorchNeuron：改一处配置，PyTorch 就能跑在自研 Trainium 上",
+      "url": "https://www.aibase.com/news/31735",
+      "importance_score": 0.7602,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -407,34 +459,52 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_84e1775d2c48",
-      "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter / Mercury 3 is live on OpenRouter!",
-      "url": "https://x.com/OpenRouter/status/2112225779782398131",
-      "importance_score": 0.7557,
+      "story_id": "story_907674fe60b3",
+      "title": "一张脸就能算出生死？AI 凭面部照片预测癌症患者存活率",
+      "url": "https://www.aibase.com/news/31734",
+      "importance_score": 0.7602,
       "importance_label": "行业动态",
-      "source_count": 2,
+      "source_count": 1,
       "archive_date": "2026-10-20",
-      "company_topics": [
-        "openai",
-        "openrouter"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
-      "story_id": "story_f05a4bc1e42d",
-      "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一 / Big news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Agent Arena! It just landed at #11 overall with ...",
-      "url": "https://x.com/arena/status/2112247114944360666",
-      "importance_score": 0.7549,
+      "story_id": "story_8f62ced51092",
+      "title": "MiniMax 更新 M3.1Flash:成本降70%、速度近3倍，OSWorld V2与 ALE 双项国产第一",
+      "url": "https://www.aibase.com/news/31732",
+      "importance_score": 0.7602,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
       "company_topics": [
-        "deepseek",
+        "minimax"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_52180dc2918a",
+      "title": "OpenCode Console遭攻击，1.4%用户受影响，部分API密钥泄露",
+      "url": "https://www.aibase.com/news/31736",
+      "importance_score": 0.7602,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2623160af52b",
+      "title": "抢在对头上市前“吸金”！OpenAI 紧急开启 300 亿美元新融资，估值冲向 1.4 万亿美元",
+      "url": "https://www.aibase.com/news/31733",
+      "importance_score": 0.7602,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
         "openai"
       ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_7e560b6785ec",
@@ -465,74 +535,6 @@
       "title": "英特尔杀入大模型推理市场！发布GPU D系列：最高配480GB显存，专为万亿参数推理而生",
       "url": "https://www.aibase.com/news/31722",
       "importance_score": 0.752,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_be973b3cdd3b",
-      "title": "AI 系统 RFdiffusion3 能从原子层面造蛋白：实验里真能干活",
-      "url": "https://www.aibase.com/news/31710",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b8cfe2ba3126",
-      "title": "OpenAI狂揽硬件人才，具身智能“终极战”全面打响",
-      "url": "https://www.aibase.com/news/31720",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_98912a5308e9",
-      "title": "老师们的“AI助教”来了!腾讯免费送，每月2000积分随便用",
-      "url": "https://www.aibase.com/news/31719",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_89ab5f0237ec",
-      "title": "研究证实:AI生成内容与深度伪造技术可向人类植入虚假记忆",
-      "url": "https://www.aibase.com/news/31715",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_625af896d740",
-      "title": "演员吴越遭 AI 换脸带货，微信视频号：涉事账号永久封禁、内容清空",
-      "url": "https://www.aibase.com/news/31713",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_61950f77d8ab",
-      "title": "AI 浪潮下的社区无奈谢幕:知名反编译追踪网站decomp.dev宣布关闭",
-      "url": "https://www.aibase.com/news/31709",
-      "importance_score": 0.7495,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-19",
