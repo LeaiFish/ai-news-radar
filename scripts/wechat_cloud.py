@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import html
 import json
 from pathlib import Path
@@ -15,11 +15,14 @@ import time
 import requests
 
 try:
-    from scripts.wechat_sources import canonical_url, targets
+    from scripts.wechat_sources import canonical_url, targets, identity
+    from scripts.wechat_http import retry, TemporaryFailure
 except ModuleNotFoundError:
-    from wechat_sources import canonical_url, targets
+    from wechat_sources import canonical_url, targets, identity
+    from wechat_http import retry, TemporaryFailure
 
 SEARCH_URL = "https://mcp.exa.ai/mcp"
+RECENT_SEARCH_URL = SEARCH_URL + '?tools=web_search_advanced_exa'
 SITE_URL = "https://leaifish.github.io/ai-news-radar/"
 URL_PATTERN = re.compile(r'https?://mp\.weixin\.qq\.com/s(?:/[A-Za-z0-9_-]+|\?[^\s<>"\\]+)')
 
@@ -36,10 +39,15 @@ def rpc_result(text):
                 messages.append(json.loads("\n".join(data)))
     for message in messages:
         if message.get("error"):
+            detail = json.dumps(message['error']).lower()
+            if re.search(r'429|rate.?limit|too many requests', detail):
+                raise TemporaryFailure('search_rate_limited')
             raise ValueError("search_rpc_error")
         result = message.get("result")
         if isinstance(result, dict):
             if result.get("isError"):
+                if re.search(r'429|rate.?limit|too many requests', json.dumps(result).lower()):
+                    raise TemporaryFailure('search_rate_limited')
                 raise ValueError("search_provider_error")
             content = result.get("content")
             if not isinstance(content, list):
@@ -51,15 +59,20 @@ def rpc_result(text):
 def search_articles(account, now, *, broad=False, post=requests.post):
     month = "" if broad else now.strftime("%Y年%m月")
     query = f'{account} {month} 发布 更新 官方公众号 site:mp.weixin.qq.com/s/'
-    response = post(SEARCH_URL, headers={"Accept": "application/json, text/event-stream",
+    arguments = {"query": query, "numResults": 5,
+        "objective": f"寻找{account}官方微信公众号公开文章原文链接，优先最近30天发布或产品更新。排除媒体转载。返回原文链接；账号和日期将另行核验，不能推断或编造。"}
+    if not broad:
+        arguments = {'query': f'"{account}" 发布 更新', 'numResults': 5,
+                     'includeDomains': ['mp.weixin.qq.com'], 'startPublishedDate': (now - timedelta(days=30)).date().isoformat(),
+                     'endPublishedDate': (now + timedelta(days=1)).date().isoformat(), 'textMaxCharacters': 2000}
+    def request():
+        response = post(SEARCH_URL if broad else RECENT_SEARCH_URL, headers={"Accept": "application/json, text/event-stream",
         "Content-Type": "application/json"}, json={"jsonrpc": "2.0", "id": 1,
-        "method": "tools/call", "params": {"name": "web_search_exa", "arguments": {
-            "query": query, "numResults": 5,
-            "objective": f"寻找{account}官方微信公众号公开文章原文链接，优先最近30天发布或产品更新。排除媒体转载。返回原文链接；账号和日期将另行核验，不能推断或编造。"
-        }}}, timeout=(5, 25))
-    response.raise_for_status()
-    response.encoding = "utf-8"
-    content = rpc_result(response.text)
+        "method": "tools/call", "params": {"name": "web_search_exa" if broad else 'web_search_advanced_exa', 'arguments': arguments}}, timeout=(5, 25))
+        response.raise_for_status()
+        response.encoding = "utf-8"
+        return rpc_result(response.text)
+    content = retry(request)
     urls = []
     for match in URL_PATTERN.finditer(content):
         try:
@@ -83,8 +96,9 @@ def discover(now, *, search=search_articles, companies=None):
             urls = search(account, now)
             if not urls:
                 urls = search(account, now, broad=True)
+            known = identity(company, account)
             return {"account_name": account, "ok": True}, [
-                {"company_id": company, "account_name": account, "url": url} for url in dict.fromkeys(urls[:10])]
+                {"company_id": company, "account_name": known['account_name'] if known else account, "url": url} for url in dict.fromkeys(urls[:10])]
         except (ValueError, requests.RequestException) as exc:
             # Never persist provider text, headers, cookies, or full article bodies.
             code = str(exc) if isinstance(exc, ValueError) else type(exc).__name__
@@ -92,7 +106,7 @@ def discover(now, *, search=search_articles, companies=None):
                 code = f"search_http_{exc.response.status_code}"
                 if exc.response.status_code in {401, 403, 429}:
                     unavailable.set()
-            if code in {"search_provider_error", "search_rpc_error"}:
+            if code in {"search_provider_error", "search_rpc_error", 'search_rate_limited'}:
                 unavailable.set()
             return {"account_name": account, "ok": False, "error": code}, []
     with ThreadPoolExecutor(max_workers=2) as pool:
@@ -100,7 +114,7 @@ def discover(now, *, search=search_articles, companies=None):
     return {"searches": [s for s, _ in checked], "candidates": [c for _, rows in checked for c in rows]}
 
 
-def aihot_candidates(now, *, companies=None, get=requests.get, max_pages=10):
+def aihot_candidates(now, *, companies=None, get=requests.get, max_pages=10, query=None):
     """Discover URLs only; publisher identity and dates still require original-page verification."""
     companies = targets() if companies is None else companies
     candidates, seen, counts = [], set(), {}
@@ -108,6 +122,8 @@ def aihot_candidates(now, *, companies=None, get=requests.get, max_pages=10):
     try:
         while more and pages < max_pages:
             params = {"mode": "all", "window": "7d", "by": "published", "limit": 100}
+            if query:
+                params['q'] = query
             if cursor:
                 params["cursor"] = cursor
             response = get("https://aihot.news/api/v1/items", params=params,
@@ -174,6 +190,15 @@ def verify_publication(snapshot, *, timeout=300, get=requests.get, clock=time.mo
     raise ValueError("pages_snapshot_verification_timeout")
 
 
+def collection_state(run, discovery):
+    supplemental = discovery.get('supplemental_discovery', {})
+    if (run['searched_accounts'] == 0 and not supplemental.get('ok')) or (
+            run['candidates'] > 0 and run['verified'] == 0 and run.get('errors')):
+        return 'failed'
+    return 'partial' if run.get('errors') or supplemental.get('ok') is False or any(
+        p.get('ok') is False for p in supplemental.get('pilot_queries', [])) else 'complete'
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
@@ -188,12 +213,16 @@ def main():
         if not args.output:
             parser.error("--output or --verify-deployment is required")
         now = datetime.now(timezone.utc)
+        with ThreadPoolExecutor(max_workers=3) as pool:
+            api_jobs = [pool.submit(aihot_candidates, now)] + [pool.submit(aihot_candidates, now, companies={'qwen': targets()['qwen']}, max_pages=3, query=q) for q in ('千问', '通义')]
+            api_results = [f.result() for f in api_jobs]
+        supplemental = api_results[0]
+        supplemental['candidates'] = [row for result in api_results[1:] for row in result['candidates']] + supplemental['candidates']
+        supplemental['pilot_queries'] = [{k: v for k, v in result.items() if k != 'candidates'} for result in api_results[1:]]
         payload = discover(now)
-        supplemental = aihot_candidates(now)
-        # Prefer targeted search candidates, then fill the per-account budget
-        # with public aggregator URLs. Neither path bypasses the verifier.
+        # Timestamped recent API leads get the budget before broad historical search.
         counts, seen, combined = {}, set(), []
-        for row in payload["candidates"] + supplemental["candidates"]:
+        for row in supplemental["candidates"] + payload["candidates"]:
             key = (row["company_id"], row["account_name"], row["url"])
             account = row["account_name"]
             if key not in seen and counts.get(account, 0) < 10:
@@ -206,8 +235,9 @@ def main():
         args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         failed = sum(not s["ok"] for s in payload["searches"])
         print(json.dumps({"target_accounts": len(payload["searches"]), "searched_accounts": len(payload["searches"]) - failed, "failed_searches": failed,
-                          "candidates": len(payload["candidates"]), "supplemental_discovery": payload["supplemental_discovery"]}))
-        return 2 if failed or not supplemental["ok"] else 0
+                          "candidates": len(payload["candidates"]), "supplemental_discovery": payload["supplemental_discovery"],
+                          'search_errors': [s for s in payload['searches'] if not s['ok']]}))
+        return 2 if failed or not supplemental["ok"] or any(not p['ok'] for p in supplemental['pilot_queries']) else 0
     except (OSError, ValueError, requests.RequestException) as exc:
         print(json.dumps({"error": str(exc) if isinstance(exc, ValueError) else type(exc).__name__}))
         return 3

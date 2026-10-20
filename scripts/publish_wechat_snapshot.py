@@ -59,6 +59,14 @@ def public_snapshot(payload, now):
         raise ValueError("invalid_discovery_errors")
     # Error details remain local; only the count and generic code are published.
     stats["errors"] = [{"error": "discovery_failed"} for _ in errors]
+    for key in ('recent_24h', 'rejected'):
+        if type(run.get(key)) is int and run[key] >= 0:
+            stats[key] = run[key]
+    if run.get('collection_state') in {'complete', 'partial', 'failed'}:
+        stats['collection_state'] = run['collection_state']
+    if isinstance(run.get('pilot_recent_7d'), dict):
+        stats['pilot_recent_7d'] = {k: v for k, v in run['pilot_recent_7d'].items()
+                                    if k in {'千问APP', '通义实验室'} and type(v) is int and v >= 0}
     updated = payload.get("updated")
     if not isinstance(updated, str) or not published_datetime(updated):
         raise ValueError("invalid_snapshot_date")

@@ -27,9 +27,10 @@ def test_utf8_sse_and_public_url_normalization_without_trusting_metadata():
         calls.append((url, kwargs))
         return response('event: message\ndata: ' + json.dumps(body, ensure_ascii=False) + '\n\n')
     assert cloud.search_articles('DeepSeek', NOW, post=post) == [URL]
-    assert calls[0][0] == cloud.SEARCH_URL
+    assert calls[0][0] == cloud.RECENT_SEARCH_URL
     assert 'Authorization' not in calls[0][1]['headers']
-    assert calls[0][1]['json']['params']['arguments']['objective']
+    assert calls[0][1]['json']['params']['arguments']['startPublishedDate'] == '2026-09-20'
+    assert calls[0][1]['json']['params']['arguments']['includeDomains'] == ['mp.weixin.qq.com']
 
 
 def test_multiline_sse_json_and_provider_errors():

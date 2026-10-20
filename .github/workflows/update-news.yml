@@ -8,6 +8,7 @@ on:
       - 'scripts/update_news.py'
       - 'scripts/wechat_sources.py'
       - 'scripts/wechat_cloud.py'
+      - 'scripts/wechat_http.py'
       - 'config/wechat_sources.json'
       - 'data/bridge/wechat-accounts.json'
       - 'scripts/build_topics.py'
@@ -81,15 +82,25 @@ jobs:
           from datetime import datetime, timezone
           import json, os
           from scripts.publish_wechat_snapshot import public_snapshot
+          from scripts.wechat_cloud import collection_state
           path = Path('data/bridge/wechat-accounts.json')
           payload = json.loads(path.read_text(encoding='utf-8'))
           run = payload['last_run']
+          discovery = json.loads(Path(os.environ['RUNNER_TEMP'], 'wechat-candidates.json').read_text(encoding='utf-8'))
+          if discovery.get('supplemental_discovery', {}).get('ok') is False:
+              run['errors'].append({'error': 'supplemental_discovery_failed'})
+          for probe in discovery.get('supplemental_discovery', {}).get('pilot_queries', []):
+              if not probe.get('ok'):
+                  run['errors'].append({'error': 'pilot_discovery_failed'})
+          run['collection_state'] = collection_state(run, discovery)
+          run['ok'] = run['collection_state'] == 'complete'
+          run['search_errors'] = [r for r in discovery['searches'] if not r['ok']]
           Path(os.environ['RUNNER_TEMP'], 'wechat-result.json').write_text(json.dumps(run, ensure_ascii=False), encoding='utf-8')
           path.write_text(json.dumps(public_snapshot(payload, datetime.now(timezone.utc)), ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
           if [ "$discovery" -eq 2 ] || [ "$verification" -eq 2 ]; then
             echo "partial=true" >> "$GITHUB_OUTPUT"
-            echo "::warning::WeChat collection was incomplete; publishing only verified records with failed health status."
+            echo "::warning::WeChat collection was incomplete; publishing only verified records with incomplete collection status."
           else
             echo "partial=false" >> "$GITHUB_OUTPUT"
           fi
@@ -276,15 +287,19 @@ jobs:
           bridge = next((s for s in status.get('sites', []) if s.get('site_id') == 'wechat_bridge'), {})
           version = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'], text=True).strip()
           deployed = '部署成功' if os.environ['DEPLOYMENT_OUTCOME'] == 'success' else '部署失败或未执行'
-          summary = f"公众号采集：搜索 {run['searched_accounts']} 个账号，覆盖 {run['covered_companies']} 个机构/{run['covered_accounts']} 个账号，新增 {run['added']} 条，24小时入池 {bridge.get('item_count', 0)} 条，{deployed}，版本 {version}。"
+          state = {'complete': '采集完成', 'partial': '采集部分失败', 'failed': '采集不可用'}[run['collection_state']]
+          summary = f"公众号：搜索候选名 {run['searched_accounts']} 个，覆盖 {run['covered_companies']} 个机构/{run['covered_accounts']} 个实际账号，新增归档 {run['added']} 条（含历史），近24小时入池 {bridge.get('item_count', 0)} 条，正常剔除 {run.get('rejected', 0)} 条，{state}，{deployed}，版本 {version}。"
           print(summary)
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as handle:
               handle.write(summary + '\n')
+              handle.write('试点账号近7日有效文章数：' + json.dumps(run.get('pilot_recent_7d', {}), ensure_ascii=False) + '\n')
+              if run.get('search_errors'):
+                  handle.write('搜索失败详情：' + json.dumps(run['search_errors'], ensure_ascii=False) + '\n')
               if run.get('errors'):
                   from collections import Counter
                   handle.write('采集未完成：' + json.dumps(dict(Counter(e.get('error', 'unknown') for e in run['errors'])), ensure_ascii=False) + '\n')
+          if run['collection_state'] == 'failed':
+              raise SystemExit('WeChat collection unavailable; see run summary.')
+          if run['collection_state'] == 'partial':
+              print('::warning::Some searches or checks failed; verified records are published and details remain in the summary.')
           PY
-          if [ "$COLLECTION_PARTIAL" = "true" ]; then
-            echo "::error::Verified records were published, but some searches or article checks failed; see the run summary."
-            exit 1
-          fi

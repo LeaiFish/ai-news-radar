@@ -15,6 +15,10 @@ from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
+try:
+    from scripts.wechat_http import retry
+except ModuleNotFoundError:
+    from wechat_http import retry
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config/wechat_sources.json"
@@ -27,6 +31,13 @@ MOBILE_UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/
 
 def targets():
     return json.loads(CONFIG.read_text(encoding="utf-8"))["companies"]
+
+
+def identity(company, name):
+    for record in json.loads(CONFIG.read_text(encoding='utf-8')).get('identities', []):
+        if record['company_id'] == company and name in record['search_terms']:
+            return record
+    return None
 
 
 def normalized_name(value):
@@ -103,16 +114,24 @@ def parse_article(source, requested_account, url, now):
             published = datetime.fromtimestamp(int(ct), UTC)
     if published and published > now:
         raise ValueError("future_publication_date")
-    return {"url": canonical_url(url), "title": title, "account_name": account,
+    row = {"url": canonical_url(url), "title": title, "account_name": account,
             "published": iso(published) if published else None,
             "verified_at": iso(now), "account_verified": True}
+    account_id = js_value(source, 'biz') or parse_qs(urlparse(url).query).get('__biz', [None])[0]
+    if account_id:
+        row['account_id'] = account_id
+    return row
 
 
 def read_page(url):
     # Only follow redirects within the requested public host. Never use a login session.
     host = urlparse(url).netloc
     for _ in range(5):
-        response = requests.get(url, headers={"User-Agent": MOBILE_UA}, timeout=20, allow_redirects=False)
+        def request():
+            r = requests.get(url, headers={"User-Agent": MOBILE_UA}, timeout=20, allow_redirects=False)
+            r.raise_for_status()
+            return r
+        response = retry(request)
         if response.is_redirect:
             from urllib.parse import urljoin
             redirected = urljoin(url, response.headers["Location"])
@@ -144,6 +163,9 @@ def verify_candidate(candidate, now):
         evidence = f"https://web.archive.org/web/{now.year}id_/{url}"
         row = parse_article(read_page(evidence), account, url, now)
     row.update(company_id=company, evidence_url=evidence)
+    known = identity(company, account)
+    if known and row.get('account_id') and row['account_id'] != known['account_id']:
+        raise ValueError('account_id_mismatch')
     return row
 
 
@@ -158,6 +180,9 @@ def eligible_rows(payload, now):
             if not isinstance(row, dict) or row.get("account_verified") is not True:
                 continue
             if normalized_name(row.get("account_name")) not in {normalized_name(n) for n in allowed[company]}:
+                continue
+            known = identity(company, row.get('account_name'))
+            if known and row.get('account_id') and row['account_id'] != known['account_id']:
                 continue
             try:
                 url = canonical_url(row.get("url"))
@@ -175,7 +200,7 @@ def eligible_rows(payload, now):
             # Allowlist fields; no arbitrary candidate/page metadata enters Radar.
             yield company, {k: row.get(k) for k in (
                 "title", "account_name", "published", "verified_at", "account_verified", "evidence_url"
-            )} | {"url": url}
+            )} | {"url": url} | ({'account_id': row['account_id']} if row.get('account_id') else {})
 
 
 def sync(payload, existing, now, verifier=verify_candidate):
@@ -183,12 +208,14 @@ def sync(payload, existing, now, verifier=verify_candidate):
     if not isinstance(payload, dict) or not isinstance(payload.get("searches"), list) or not isinstance(payload.get("candidates"), list):
         raise ValueError("invalid_wechat_candidates_schema")
     searches = payload.get("searches", [])
-    errors = []
+    errors, rejected = [], []
     target_names = {name for names in allowed.values() for name in names}
     successful_searches = {s.get("account_name") for s in searches if isinstance(s, dict) and s.get("ok") is True and isinstance(s.get("account_name"), str)} & target_names
     for name in sorted(target_names):
         if name not in successful_searches:
-            errors.append({"account_name": name, "error": "search_failed_or_not_run"})
+            detail = next((s.get('error') for s in searches if isinstance(s, dict) and s.get('account_name') == name), None)
+            safe = detail if isinstance(detail, str) and re.fullmatch(r'[A-Za-z0-9_:-]{1,100}', detail) else 'search_failed_or_not_run'
+            errors.append({"account_name": name, "error": safe})
     rows_by_company = {company: {} for company in allowed}
     if existing:
         for company, row in eligible_rows(existing, now):
@@ -215,6 +242,10 @@ def sync(payload, existing, now, verifier=verify_candidate):
         candidates.append(candidate | {"url": url})
     def checked(candidate):
         try:
+            known = identity(candidate['company_id'], candidate['account_name'])
+            account_id = parse_qs(urlparse(candidate['url']).query).get('__biz', [None])[0]
+            if known and account_id and account_id != known['account_id']:
+                raise ValueError('account_id_mismatch')
             return candidate, verifier(candidate, now), None
         except (ValueError, requests.RequestException) as exc:
             # Only public URL and exception type; never echo response bodies or headers.
@@ -223,14 +254,18 @@ def sync(payload, existing, now, verifier=verify_candidate):
                 reason = f"http_{exc.response.status_code}"
             return candidate, None, reason
     added = verified = 0
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    new_keys = set()
+    with ThreadPoolExecutor(max_workers=2) as pool:
         for candidate, row, error in pool.map(checked, candidates):
             if error:
-                errors.append({"account_name": candidate.get("account_name"), "url": candidate["url"], "error": error})
+                destination = rejected if error in {'account_mismatch', 'account_id_mismatch', 'future_publication_date'} else errors
+                destination.append({"account_name": candidate.get("account_name"), "url": candidate["url"], "error": error})
                 continue
             company = row.pop("company_id")
             previous = rows_by_company[company].get(row["url"])
             added += int(previous is None)
+            if previous is None:
+                new_keys.add((company, row['url']))
             verified += 1
             if previous and not row["published"]:
                 row["published"] = previous.get("published")
@@ -246,12 +281,19 @@ def sync(payload, existing, now, verifier=verify_candidate):
             rows.sort(key=lambda r: (r.get("published") or "", r["verified_at"]), reverse=True)
             accounts[company].extend(rows[:20])
     covered_accounts = {normalized_name(row["account_name"]) for rows in accounts.values() for row in rows}
+    added = sum((company, r['url']) in new_keys for company, rows in accounts.items() for r in rows)
+    fresh = sum(bool(published_datetime(r.get('published'))) and now - timedelta(hours=24) <= published_datetime(r['published']) <= now
+                for rows in accounts.values() for r in rows)
+    pilot_recent = {record['account_name']: sum(r['account_name'] == record['account_name'] and bool(published_datetime(r.get('published')))
+                        and now - timedelta(days=7) <= published_datetime(r['published']) <= now for r in accounts.get(record['company_id'], []))
+                    for record in json.loads(CONFIG.read_text(encoding='utf-8')).get('identities', [])}
     return {"schema": SCHEMA, "updated": now.astimezone(SHANGHAI).date().isoformat(),
             "accounts": accounts, "last_run": {"at": iso(now), "ok": not errors,
                 "searched_accounts": len(successful_searches), "candidates": len(candidates),
                 "covered_companies": sum(bool(rows) for rows in accounts.values()),
                 "covered_accounts": len(covered_accounts),
-                "verified": verified, "added": added, "errors": errors}}
+                "verified": verified, "added": added, "recent_24h": fresh,
+                "rejected": len(rejected), "pilot_recent_7d": pilot_recent, "errors": errors}}
 
 
 def load_radar_rows(path, now, window_hours=24):
@@ -277,7 +319,7 @@ def load_radar_rows(path, now, window_hours=24):
         refreshed = published_datetime(last_run.get("at"))
         stale = not refreshed or refreshed > now or now - refreshed > timedelta(hours=30)
         status.update(item_count=len(rows), undated_count=missing_date, stale=stale,
-                      discovery={key: last_run.get(key) for key in ("at", "ok", "searched_accounts", "candidates", "verified", "added", "covered_companies", "covered_accounts")},
+                      discovery={key: last_run.get(key) for key in ("at", "ok", "searched_accounts", "candidates", "verified", "added", "covered_companies", "covered_accounts", 'recent_24h', 'rejected', 'pilot_recent_7d', 'collection_state')},
                       failed_candidates=len(last_run.get("errors", [])), ok=last_run.get("ok") is True and not stale,
                       error="wechat_snapshot_stale" if stale else (None if last_run.get("ok") is True else "wechat_discovery_incomplete"))
         return rows, status

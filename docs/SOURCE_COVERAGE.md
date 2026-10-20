@@ -514,3 +514,5 @@ dates or publisher identity as verification. Every candidate still passes
 `wechat_sources.py` original-page account/date checks before admission. Targeted
 search remains separate; search failures are not disguised as successful
 aggregator coverage.
+
+WeChat quality checks prioritize recent public API leads and date-filtered search, with bounded transient retries, pilot identity checks and explicit historical-versus-24-hour counts. Partial coverage remains visible as a warning and source-health status; see `WECHAT_SOURCE_BRIDGE.md`.
