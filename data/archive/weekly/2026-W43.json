@@ -4,48 +4,49 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-20T15:40:37.297740Z",
+  "generated_at": "2026-10-20T20:34:56.241977Z",
   "daily_dates": [
     "2026-10-19",
-    "2026-10-20"
+    "2026-10-20",
+    "2026-10-21"
   ],
-  "story_count": 436,
-  "unique_story_count": 436,
+  "story_count": 700,
+  "unique_story_count": 515,
   "counts": {
     "by_company_topic": {
-      "anthropic": 56,
+      "anthropic": 86,
       "cursor": 1,
-      "deepseek": 36,
-      "doubao": 2,
-      "google-gemini": 14,
-      "huggingface": 6,
-      "hunyuan": 2,
+      "deepseek": 58,
+      "doubao": 3,
+      "google-gemini": 22,
+      "huggingface": 14,
+      "hunyuan": 4,
       "kimi": 3,
-      "microsoft": 3,
-      "minimax": 11,
-      "nvidia": 9,
-      "openai": 33,
-      "openrouter": 3,
-      "perplexity": 1,
+      "microsoft": 6,
+      "minimax": 19,
+      "nvidia": 19,
+      "openai": 62,
+      "openrouter": 5,
+      "perplexity": 4,
       "qwen": 2,
-      "xai": 10,
+      "xai": 14,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 69,
-      "monetization": 5,
-      "workplace": 7
+      "agent-ecosystem": 104,
+      "monetization": 10,
+      "workplace": 13
     },
     "by_importance_label": {
-      "值得关注": 343,
-      "多源热议": 7,
-      "官方更新": 17,
-      "行业动态": 69
+      "值得关注": 548,
+      "多源热议": 10,
+      "官方更新": 35,
+      "行业动态": 107
     },
     "by_source_count_bucket": {
-      "1": 419,
-      "2": 10,
-      "3+": 7
+      "1": 676,
+      "2": 14,
+      "3+": 10
     }
   },
   "top_stories": [
@@ -63,6 +64,48 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_1587a1f5ff72",
+      "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+      "importance_score": 0.8542,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "nvidia",
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a92dafcadd98",
+      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
+      "importance_score": 0.8407,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_35462734c1f0",
+      "title": "New Gemini tools for small business owners",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
+      "importance_score": 0.8405,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_d023719243dc",
       "title": "Dependabot now supports npm 12, pnpm 11 and 12, and Bun 1.4",
       "url": "https://github.blog/changelog/2026-10-20-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4",
@@ -74,6 +117,28 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a59ab3527808",
+      "title": "Bulk migrate branch protections to rulesets for a repository",
+      "url": "https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository",
+      "importance_score": 0.8377,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9b4c06e45edc",
+      "title": "Updates to GitHub secret scanning",
+      "url": "https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning",
+      "importance_score": 0.8376,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_1c2bfa5d3821",
       "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
       "url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4",
@@ -81,6 +146,41 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b7b098dc2662",
+      "title": "Dependabot alerts REST API now includes dependency versions",
+      "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
+      "importance_score": 0.8355,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d426b0379ab0",
+      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "url": "https://openai.com/index/ted-taylor-restaurant",
+      "importance_score": 0.8345,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b4d45cb1791e",
+      "title": "GitHub package firewall in public preview",
+      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+      "importance_score": 0.833,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
       "company_topics": [],
       "lens_topics": []
     },
@@ -166,6 +266,19 @@
         "agent-ecosystem",
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_5df9bc2fa0b7",
+      "title": "OpenAI acquires Orchestra Bio",
+      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+      "importance_score": 0.8057,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_724b564bb7c8",
@@ -432,119 +545,6 @@
       "archive_date": "2026-10-19",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_d4c2b72e8c74",
-      "title": "AI日报：腾讯开放元宝搜索；MiniMax 更新 M3.1Flash；蚂蚁百灵开源 Ming-3.0 语音系列",
-      "url": "https://www.aibase.com/news/31757",
-      "importance_score": 0.7519,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "hunyuan",
-        "minimax"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d0993717a24a",
-      "title": "奇瑞 CheryMind 垂域基础大模型发布，宣称\"为物理 AI 而生\"",
-      "url": "https://www.aibase.com/news/31755",
-      "importance_score": 0.7519,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_81ab0ce45866",
-      "title": "开源工具 Strata 0.2 重磅发布：硬件门槛再降 16GB，本地流畅跑千亿大模型",
-      "url": "https://www.aibase.com/news/31754",
-      "importance_score": 0.7519,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2740cb61813e",
-      "title": "日本演员协会发布首版生成式AI准则，复刻演员声音须全程获授权",
-      "url": "https://www.aibase.com/news/31756",
-      "importance_score": 0.7519,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_11f1dd50d5e5",
-      "title": "DeepSeek 开源推理框架 DeepInfer:推理成本成为 AI 普惠的关键一层",
-      "url": "https://www.aibase.com/news/31758",
-      "importance_score": 0.7519,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cdecf8c47980",
-      "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹 / Accused OpenAI spy had folder called “Saudi Gov Docs,” FBI says",
-      "url": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says",
-      "importance_score": 0.7508,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_b33aad2c0b68",
-      "title": "Gartner 泼冷水：7 万亿美元 AI 基建到 2030 年只能回本约一半",
-      "url": "https://www.aibase.com/news/31753",
-      "importance_score": 0.7502,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_de7f8f7eee1d",
-      "title": "OpenAI推出ChatGPT Slides，支持AI生成演示文稿与实时协作",
-      "url": "https://www.aibase.com/news/31750",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d8b4fe34f8d1",
-      "title": "90 天不上线免买单！Mastra 推出全新服务 Launch：以“对赌”承诺加速 AI 智能体企业级落地",
-      "url": "https://www.aibase.com/news/31752",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }
