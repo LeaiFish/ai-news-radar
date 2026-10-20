@@ -40,6 +40,11 @@ except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_
     from ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
 
 try:
+    from scripts.editorial_focus import add_editorial_focus, editorial_focus, story_editorial_focus
+except ModuleNotFoundError:  # pragma: no cover - direct script execution
+    from editorial_focus import add_editorial_focus, editorial_focus, story_editorial_focus
+
+try:
     from scripts.story_archive import update_story_archives
 except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
     from story_archive import update_story_archives
@@ -116,7 +121,7 @@ RSS_FEED_SKIP_EXACT: set[str] = {
     "https://flak.tedunangst.com/rss",
 }
 
-OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
+OFFICIAL_AI_FEEDS: tuple[dict[str, Any], ...] = (
     {
         "title": "OpenAI News",
         "xml_url": "https://openai.com/news/rss.xml",
@@ -178,6 +183,28 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
         "title": "Apple Machine Learning Research",
         "xml_url": "https://machinelearning.apple.com/rss.xml",
         "html_url": "https://machinelearning.apple.com/",
+        "select_tier": "T1",
+    },
+    {
+        "title": "Meta Engineering Blog",
+        "xml_url": "https://engineering.fb.com/feed/",
+        "html_url": "https://engineering.fb.com/",
+        "include_keywords": "ai,ml,model,agent,inference,training,recommendation",
+        "max_entries": 6,
+        "select_tier": "T1",
+    },
+    {
+        "title": "LangChain Blog",
+        "xml_url": "https://www.langchain.com/blog/rss.xml",
+        "html_url": "https://www.langchain.com/blog",
+        "max_entries": 8,
+        "select_tier": "T1",
+    },
+    {
+        "title": "vLLM Blog",
+        "xml_url": "https://vllm.ai/blog/rss.xml",
+        "html_url": "https://vllm.ai/blog",
+        "max_entries": 4,
         "select_tier": "T1",
     },
 )
@@ -301,18 +328,25 @@ CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
         "max_entries": 6,
         "select_tier": "T1",
     },
+    {
+        "title": "Testing Catalog",
+        "xml_url": "https://www.testingcatalog.com/rss/",
+        "html_url": "https://www.testingcatalog.com/",
+        "max_entries": 8,
+        "select_tier": "T2",
+    },
 )
 AIBREAKFAST_JINA_URL = "https://r.jina.ai/https://aibreakfast.beehiiv.com/"
-AIHOT_ITEMS_API_URL = "https://aihot.virxact.com/api/public/items"
+AIHOT_ITEMS_API_URL = "https://aihot.news/api/v1/items"
 AIHOT_MIN_SCORE = 60
 AIHOT_API_TAKE = 100
 AIHOT_API_MAX_PAGES = 5
-AIHOT_API_UA = f"{BROWSER_UA} aihot-skill/0.2.0 AI-News-Radar/0.7"
-AIHOT_FEED_URL = "https://aihot.virxact.com/feed.xml"
+AIHOT_API_UA = "AI-News-Radar/0.8 aihot-api/2.0.0"
+AIHOT_FEED_URL = "https://aihot.news/feed.xml"
 AIHOT_FALLBACK_FEED_URLS = (
-    "https://aihot.virxact.com/rss.xml",
-    "https://aihot.virxact.com/feed",
-    "https://aihot.virxact.com/feed/daily.xml",
+    "https://aihot.news/rss.xml",
+    "https://aihot.news/feed",
+    "https://aihot.news/feed/daily.xml",
 )
 FOLLOW_BUILDERS_FEED_BASE = "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main"
 HN_ALGOLIA_URL = "https://hn.algolia.com/api/v1/search_by_date"
@@ -819,6 +853,9 @@ def apply_public_raw_meta(record: dict[str, Any], raw: RawItem) -> None:
     for key in PUBLIC_RAW_META_FIELDS:
         if key in meta and meta.get(key) is not None:
             record[key] = sanitize_public_value(meta.get(key))
+    # Keep derived editorial hints in the archive as well as the current view.
+    # Never trust a provider's arbitrary priority label.
+    record.update(add_editorial_focus(record))
 
 
 def decode_escaped_json(raw: str) -> dict[str, Any] | None:
@@ -1777,7 +1814,7 @@ def feed_entry_summary(entry: dict[str, Any]) -> str:
 
 def fetch_feed_as_official_items(
     session: requests.Session,
-    feed: dict[str, str],
+    feed: dict[str, Any],
     now: datetime,
 ) -> list[RawItem]:
     site_id = "official_ai"
@@ -1844,6 +1881,9 @@ def fetch_feed_as_official_items(
                 },
             )
         )
+
+        if feed.get("max_entries") and len(out) >= int(feed["max_entries"]):
+            break
 
     return out
 
@@ -2836,11 +2876,12 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None) 
             score = float(raw_score)
         except (TypeError, ValueError):
             continue
-        if score < AIHOT_MIN_SCORE:
+        if not math.isfinite(score) or score < AIHOT_MIN_SCORE:
             continue
 
         title = maybe_fix_mojibake(str(first_non_empty(entry.get("title"), entry.get("title_en")) or "").strip())
-        link = str(entry.get("url") or "").strip()
+        links = entry.get("links") if isinstance(entry.get("links"), dict) else {}
+        link = str(links.get("original") or entry.get("url") or "").strip()
         if not title or not link:
             continue
         normalized_url = normalize_url(link)
@@ -2849,7 +2890,10 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None) 
         seen_urls.add(normalized_url)
 
         published = parse_iso(str(entry.get("publishedAt") or "")) or parse_date_any(entry.get("publishedAt"), now)
-        source = maybe_fix_mojibake(str(first_non_empty(entry.get("source"), site_name)))
+        source_value = entry.get("source")
+        if isinstance(source_value, dict):
+            source_value = source_value.get("name")
+        source = maybe_fix_mojibake(str(first_non_empty(source_value, site_name)))
         score_value: int | float = int(score) if score.is_integer() else score
         out.append(
             RawItem(
@@ -2866,7 +2910,7 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None) 
                     "aihot_category": entry.get("category"),
                     "aihot_selected": bool(entry.get("selected")),
                     "provided_title_zh": entry.get("title"),
-                    "provided_title_en": entry.get("title_en"),
+                    "provided_title_en": entry.get("originalTitle") or entry.get("title_en"),
                     "summary": entry.get("summary"),
                 },
             )
@@ -2879,7 +2923,7 @@ def fetch_aihot(session: requests.Session, now: datetime) -> list[RawItem]:
     out: list[RawItem] = []
     cursor = ""
     for _ in range(AIHOT_API_MAX_PAGES):
-        params: dict[str, Any] = {"mode": "selected", "take": AIHOT_API_TAKE}
+        params: dict[str, Any] = {"mode": "selected", "window": "7d", "by": "published", "limit": AIHOT_API_TAKE}
         if cursor:
             params["cursor"] = cursor
         r = session.get(
@@ -2894,9 +2938,14 @@ def fetch_aihot(session: requests.Session, now: datetime) -> list[RawItem]:
         )
         r.raise_for_status()
         payload = r.json()
+        if payload.get("schemaVersion") != 1 or not isinstance(payload.get("page"), dict) or not isinstance(payload.get("items"), list):
+            raise ValueError("Unsupported AIHOT v1 response envelope")
         out.extend(parse_aihot_api_items(payload, now))
-        cursor = str(payload.get("nextCursor") or "")
-        if not payload.get("hasNext") or not cursor:
+        page = payload["page"]
+        cursor = str(page.get("nextCursor") or "")
+        if page.get("hasMore") and not cursor:
+            raise ValueError("AIHOT v1 pagination is missing nextCursor")
+        if not page.get("hasMore") or not cursor:
             break
     return out
 
@@ -3715,7 +3764,7 @@ def add_source_tier_fields(record: dict[str, Any]) -> dict[str, Any]:
         out["source_tier_rank"] = rank
     else:
         out.update(source_tier_for_site(site_id))
-    return out
+    return add_editorial_focus(out)
 
 
 def source_tier_sort_key(record: dict[str, Any]) -> tuple[int, float, str]:
@@ -7037,9 +7086,12 @@ def calculate_item_importance(
     editorial = editorial_score(item)
     heat = min(1.0, max(0, duplicate_count - 1) / 4)
     score = (editorial * 0.3) + (source_score * 0.22) + (relevance * 0.2) + (recency * 0.18) + (heat * 0.1)
+    technical_penalty = 0.12 if editorial_focus(item) == "technical" else 0.0
+    score -= technical_penalty
     return {
         "score": round(max(0.0, min(1.0, score)), 4),
         "breakdown": {
+            "technical_penalty": technical_penalty,
             "editorial": round(editorial, 4),
             "source_tier": round(source_score, 4),
             "ai_relevance": round(relevance, 4),
@@ -7097,6 +7149,8 @@ def story_item_link(item: dict[str, Any]) -> dict[str, Any]:
         "source_name": item.get("site_name"),
         "site_id": item.get("site_id"),
         "select_tier": item_select_tier(item),
+        "editorial_focus": editorial_focus(item),
+        "editorial_tags": add_editorial_focus(item)["editorial_tags"],
         "published_at": item.get("published_at"),
     }
 
@@ -7141,6 +7195,7 @@ def build_story_record(
     source_heat = round(independent_source_heat({"sources": source_refs}, now), 4)
     return {
         "story_id": story_id,
+        "editorial_focus": story_editorial_focus({"items": sorted_items}),
         "title": title,
         "url": url,
         "primary_url": url,

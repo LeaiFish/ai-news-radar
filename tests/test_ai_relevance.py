@@ -231,3 +231,13 @@ class AiRelevanceScoringTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_specialized_product_feeds_keep_real_updates_without_generic_ai_in_title():
+    for row in [
+        {'site_id': 'curated_media', 'source': 'Testing Catalog', 'title': 'Krea launched Krea 3 for fast image editing', 'url': 'https://www.testingcatalog.com/krea-3/'},
+        {'site_id': 'official_ai', 'source': 'LangChain Blog', 'title': 'How Orange Business Built Live Intelligence', 'url': 'https://www.langchain.com/blog/orange-business'},
+    ]:
+        assert score_ai_relevance(row)['is_ai_related']
+    unrelated = {'site_id': 'official_ai', 'source': 'LangChain Blog', 'title': 'A quiet office morning', 'url': 'https://example.com/not-langchain'}
+    assert not score_ai_relevance(unrelated)['is_ai_related']

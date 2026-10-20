@@ -18,7 +18,9 @@ not enough. They still need a strong signal (``官方更新``, ``多源热议``,
 ``source_count`` >= 2). T1 and T1_5 keep the topic path. If the soft gate
 would leave 精选 empty, the previous candidate rules fill it.
 
-Candidates are ranked by independent-source heat, then select tier, then
+Purely technical stories rank behind other eligible stories; internal labels
+never add a reader-facing filter. Within each priority group, candidates are
+ranked by independent-source heat, then select tier, then
 ``importance_score``. Heat counts each distinct outlet once inside 48 hours.
 A contribution older than 24 hours has half weight, and the same outlet or
 the same URL cannot add a second point. T1 / T1_5 add a small heat bonus so
@@ -35,6 +37,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+
+try:
+    from scripts.editorial_focus import story_editorial_focus
+except ModuleNotFoundError:  # pragma: no cover - direct script execution
+    from editorial_focus import story_editorial_focus
 
 try:
     from scripts.story_archive import load_company_and_lens_topics, match_story_topic_ids
@@ -262,9 +269,10 @@ def story_is_selection_candidate(
     return strong or topic
 
 
-def _selection_rank(story: dict[str, Any], index: int, now: datetime) -> tuple[float, int, float, str, int]:
+def _selection_rank(story: dict[str, Any], index: int, now: datetime) -> tuple[int, float, int, float, str, int]:
     tier = story_select_tier(story)
     return (
+        int(story_editorial_focus(story) == "technical"),
         -selection_rank_heat(story, now),
         int(SELECT_TIER_RANK.get(tier, SELECT_TIER_RANK[SELECT_TIER_T2])),
         -story_importance_score(story),

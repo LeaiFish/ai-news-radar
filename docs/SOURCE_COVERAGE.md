@@ -226,8 +226,8 @@ LangChain and Grok remain outside this first application-source batch.
   dominating the default hot view.
 - **AI Breakfast**: reads the public Beehiiv archive through Jina Reader because
   the original Beehiiv feed can be blocked from GitHub Actions.
-- **AI HOT**: reads the public `https://aihot.virxact.com/api/public/items`
-  API in selected mode and keeps only items whose AI HOT card score is at least
+- **AI HOT**: reads the anonymous `https://aihot.news/api/v1/items`
+  API (`mode=selected`, `window=7d`, `by=published`, `limit=100`) and keeps only items whose AI HOT card score is at least
   60. The parser preserves AI HOT's Chinese title, valid English original title,
   editorial summary, category, score, and canonical source URL. The RSS feed is
   intentionally not used for the default fetch path because it does not expose
@@ -469,3 +469,48 @@ bring their own private source list.
 ## Official service status
 
 The collector reads OpenAI’s public status API and writes `data/service-status.json` separately from news. Only investigating, identified and monitoring incidents appear in the shared mobile/classic banner; resolved incidents, failed reads and snapshots older than two hours stay hidden. A hidden banner is not an assertion that every service is healthy. The normal update workflow publishes the generated file.
+
+## Product-first source supplementation (2026-10-20)
+
+The user prioritizes product functionality, usage, experience and application
+scenarios. Model evaluations and technical research remain useful indirect
+signals, but do not imply a product release or receive the highest default
+selection priority.
+
+| Source | Verified public entry | Intake and bounded capture |
+| --- | --- | --- |
+| Testing Catalog | <https://www.testingcatalog.com/rss/> | Up to 8 recent long-form entries, T2. The RSS is not a complete mirror of its X account. |
+| LangChain Blog | <https://www.langchain.com/blog/rss.xml> | Up to 8 recent entries, T1. Product updates and real use cases take priority; engineering and eval articles get internal technical tags. The old `blog.langchain.com/rss/` redirects to HTML. |
+| Meta Engineering Blog | <https://engineering.fb.com/feed/> | Up to 6 entries with AI/ML/model/agent/inference/training/recommendation signals, T1. Complements the existing Meta product Newsroom. |
+| vLLM Blog | <https://vllm.ai/blog/rss.xml> | Up to 4 entries, T1 authority, with an internal `model_technology` tag and lower selection priority. The old `blog.vllm.ai/feed.xml` returned 404. |
+
+The 7-day Source Overlap Check found LangChain 4/14 hard duplicates, Meta 3/7,
+vLLM 5/9, and Testing Catalog 0/4 (one possible overlap). Small samples and
+moderate overlap remain advisory. These capped direct sources are included at
+the user's request to improve first-party independence; duplication does not
+create additional independent outlets. Evidence and live probe results are in
+`reports/source-intake/2026-10-20-supplement.json`.
+
+Internal `editorial_focus` / `editorial_tags` distinguish product updates,
+model evaluation, model technology and technical research. The labels are
+rule-based editorial hints, not claims about future product plans. Purely
+technical stories rank after other eligible stories in the limited 精选 view;
+they remain in the full pool. Their importance score receives a 0.12 deduction.
+A mixed story with actual product evidence retains product focus. Source
+credibility tiers and AI relevance thresholds are not reduced. No new labels
+or filters are added to the reader UI; the public-news projection omits these
+internal fields.
+
+AIHOT v1 reads original URLs from `links.original`, publisher names from
+`source.name`, English titles from `originalTitle`, and pagination from `page`.
+The previous `/api/public/*` endpoint is announced to stop on 2026-10-31.
+Invalid response envelopes fail explicitly instead of reporting a successful
+empty source. Existing score >=60 and selected-only rules remain in place.
+
+The official WeChat discovery flow also collects allowlisted candidate article
+URLs from AIHOT's public **all** mode (up to 10 pages / 1,000 entries in 7 days,
+with truncation and failures recorded). It never imports aggregator titles,
+dates or publisher identity as verification. Every candidate still passes
+`wechat_sources.py` original-page account/date checks before admission. Targeted
+search remains separate; search failures are not disguised as successful
+aggregator coverage.

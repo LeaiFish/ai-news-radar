@@ -100,6 +100,61 @@ def discover(now, *, search=search_articles, companies=None):
     return {"searches": [s for s, _ in checked], "candidates": [c for _, rows in checked for c in rows]}
 
 
+def aihot_candidates(now, *, companies=None, get=requests.get, max_pages=10):
+    """Discover URLs only; publisher identity and dates still require original-page verification."""
+    companies = targets() if companies is None else companies
+    candidates, seen, counts = [], set(), {}
+    cursor, pages, more = None, 0, True
+    try:
+        while more and pages < max_pages:
+            params = {"mode": "all", "window": "7d", "by": "published", "limit": 100}
+            if cursor:
+                params["cursor"] = cursor
+            response = get("https://aihot.news/api/v1/items", params=params,
+                headers={"User-Agent": "AI-News-Radar/0.8 aihot-api/2.0.0"}, timeout=(5, 25))
+            response.raise_for_status()
+            data = response.json()
+            if data.get("schemaVersion") != 1 or not isinstance(data.get("items"), list) or not isinstance(data.get("page"), dict):
+                raise ValueError("aihot_invalid_response")
+            pages += 1
+            for item in data["items"]:
+                if not isinstance(item, dict):
+                    continue
+                source = item.get("source")
+                name = source.get("name", "") if isinstance(source, dict) else ""
+                if not isinstance(name, str) or not name.startswith("公众号："):
+                    continue
+                name = name.removeprefix("公众号：").strip()
+                # Parentheses in the aggregator label are descriptions, never
+                # proof of account ownership. Reject merely matching prefixes.
+                possible = [(company, account) for company, accounts in companies.items() for account in accounts
+                            if name == account or name.startswith(account + "（") or name.startswith(account + " (")]
+                if not possible:
+                    continue
+                company, account = max(possible, key=lambda row: len(row[1]))
+                links = item.get("links") if isinstance(item.get("links"), dict) else {}
+                try:
+                    url = canonical_url(links.get("original"))
+                except ValueError:
+                    continue
+                key = (company, account, url)
+                if key in seen or counts.get(account, 0) >= 10:
+                    continue
+                seen.add(key)
+                counts[account] = counts.get(account, 0) + 1
+                candidates.append({"company_id": company, "account_name": account, "url": url})
+            page = data["page"]
+            more = bool(page.get("hasMore"))
+            next_cursor = page.get("nextCursor")
+            if more and (not isinstance(next_cursor, str) or not next_cursor or next_cursor == cursor):
+                raise ValueError("aihot_invalid_cursor")
+            cursor = next_cursor
+        return {"ok": True, "pages": pages, "truncated": more, "candidates": candidates}
+    except (ValueError, requests.RequestException) as exc:
+        return {"ok": False, "pages": pages, "truncated": more, "candidates": candidates,
+                "error": str(exc) if isinstance(exc, ValueError) else type(exc).__name__}
+
+
 def verify_publication(snapshot, *, timeout=300, get=requests.get, clock=time.monotonic, sleep=time.sleep):
     expected = snapshot["last_run"]["at"]
     deadline = clock() + timeout
@@ -132,13 +187,27 @@ def main():
             return 0
         if not args.output:
             parser.error("--output or --verify-deployment is required")
-        payload = discover(datetime.now(timezone.utc))
+        now = datetime.now(timezone.utc)
+        payload = discover(now)
+        supplemental = aihot_candidates(now)
+        # Prefer targeted search candidates, then fill the per-account budget
+        # with public aggregator URLs. Neither path bypasses the verifier.
+        counts, seen, combined = {}, set(), []
+        for row in payload["candidates"] + supplemental["candidates"]:
+            key = (row["company_id"], row["account_name"], row["url"])
+            account = row["account_name"]
+            if key not in seen and counts.get(account, 0) < 10:
+                seen.add(key)
+                counts[account] = counts.get(account, 0) + 1
+                combined.append(row)
+        payload["candidates"] = combined
+        payload["supplemental_discovery"] = {k: v for k, v in supplemental.items() if k != "candidates"}
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         failed = sum(not s["ok"] for s in payload["searches"])
         print(json.dumps({"target_accounts": len(payload["searches"]), "searched_accounts": len(payload["searches"]) - failed, "failed_searches": failed,
-                          "candidates": len(payload["candidates"])}))
-        return 2 if failed else 0
+                          "candidates": len(payload["candidates"]), "supplemental_discovery": payload["supplemental_discovery"]}))
+        return 2 if failed or not supplemental["ok"] else 0
     except (OSError, ValueError, requests.RequestException) as exc:
         print(json.dumps({"error": str(exc) if isinstance(exc, ValueError) else type(exc).__name__}))
         return 3

@@ -458,8 +458,8 @@ class TopicFilterTests(unittest.TestCase):
                     "selected": True,
                 },
             ],
-            "hasNext": True,
-            "nextCursor": "cursor-2",
+            "schemaVersion": 1,
+            "page": {"hasMore": True, "nextCursor": "cursor-2"},
         }
         page_2 = {
             "items": [
@@ -473,8 +473,8 @@ class TopicFilterTests(unittest.TestCase):
                     "selected": True,
                 }
             ],
-            "hasNext": False,
-            "nextCursor": None,
+            "schemaVersion": 1,
+            "page": {"hasMore": False, "nextCursor": None},
         }
 
         class FakeResponse:
@@ -498,10 +498,10 @@ class TopicFilterTests(unittest.TestCase):
         session = FakeSession()
         items = fetch_aihot(session, now=datetime(2026, 6, 16, tzinfo=timezone.utc))
         self.assertEqual([item.title for item in items], ["Page one strong item", "Page two boundary item"])
-        self.assertEqual(session.calls[0][0], "https://aihot.virxact.com/api/public/items")
-        self.assertEqual(session.calls[0][1]["params"], {"mode": "selected", "take": 100})
-        self.assertEqual(session.calls[1][1]["params"], {"mode": "selected", "take": 100, "cursor": "cursor-2"})
-        self.assertIn("aihot-skill/0.2.0", session.calls[0][1]["headers"]["User-Agent"])
+        self.assertEqual(session.calls[0][0], "https://aihot.news/api/v1/items")
+        self.assertEqual(session.calls[0][1]["params"], {"mode": "selected", "window": "7d", "by": "published", "limit": 100})
+        self.assertEqual(session.calls[1][1]["params"], {"mode": "selected", "window": "7d", "by": "published", "limit": 100, "cursor": "cursor-2"})
+        self.assertIn("aihot-api/2.0.0", session.calls[0][1]["headers"]["User-Agent"])
 
     def test_parse_curated_media_feed_applies_strict_title_filter_and_cap(self):
         xml = """<?xml version='1.0' encoding='UTF-8'?>

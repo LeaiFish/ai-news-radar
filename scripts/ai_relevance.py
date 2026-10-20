@@ -156,6 +156,7 @@ CURATED_MEDIA_TRUSTED_SOURCE_KEYWORDS = [
     "venturebeat ai",
     "artificial intelligence news",
     "claude code releases",
+    "testing catalog",
 ]
 CURATED_MEDIA_RESEARCH_SOURCE_KEYWORDS = [
     "marktechpost research",
@@ -353,6 +354,15 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
             reason="trusted_ai_source_default_keep",
             signals=ai_signals or [site_id],
             noise=noise,
+        )
+
+    # This dedicated first-party AI product feed often names its customers or
+    # features without saying "AI" in the title. Bind trust to both name and host.
+    if site_id == "official_ai" and source == "LangChain Blog" and url_host in {"www.langchain.com", "langchain.com"}:
+        return _result(
+            is_ai_related=True, score=0.87,
+            label=_label_for_text(text, bool(tech_signals)),
+            reason="specialized_ai_product_feed", signals=ai_signals or ["langchain"], noise=noise,
         )
 
     has_ai = contains_meaningful_ai_signal(text)

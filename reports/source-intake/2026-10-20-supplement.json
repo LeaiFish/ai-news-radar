@@ -1,0 +1,923 @@
+{
+  "schema": "radar_source_supplement_v1",
+  "generated_at": "2026-10-20T08:34:11.230785+00:00",
+  "status": "validated_ready_to_publish",
+  "product_priority": "Product functionality, user experience and application scenarios first. Model evaluation and technical research retained as indirect evidence with internal labels and lower default selection priority.",
+  "feeds": [
+    {
+      "name": "Testing Catalog",
+      "url": "https://www.testingcatalog.com/rss/",
+      "cap": 8,
+      "authority": "T2"
+    },
+    {
+      "name": "LangChain Blog",
+      "url": "https://www.langchain.com/blog/rss.xml",
+      "cap": 8,
+      "authority": "T1"
+    },
+    {
+      "name": "Meta Engineering Blog",
+      "url": "https://engineering.fb.com/feed/",
+      "cap": 6,
+      "authority": "T1"
+    },
+    {
+      "name": "vLLM Blog",
+      "url": "https://vllm.ai/blog/rss.xml",
+      "cap": 4,
+      "authority": "T1",
+      "default_focus": "technical"
+    }
+  ],
+  "overlap_reports": [
+    {
+      "generated_at": "2026-10-20T08:24:55.460646Z",
+      "candidate": {
+        "site_id": "langchain-blog",
+        "site_name": "LangChain Blog",
+        "url": "https://www.langchain.com/blog/rss.xml",
+        "item_count": 14,
+        "lookback_days": 7
+      },
+      "baseline": {
+        "source_count": 17,
+        "item_count": 5893,
+        "window_days": 7,
+        "note": "Union of local archive and live 2026-10-20 07:16Z public projection; URL deduplicated."
+      },
+      "overlap": {
+        "duplicate_count": 4,
+        "possible_duplicate_count": 0,
+        "unique_count": 10,
+        "duplicate_rate": 0.286,
+        "unique_rate": 0.714
+      },
+      "top_overlapping_sources": [
+        {
+          "site_id": "aihot",
+          "site_name": "AI HOT",
+          "matched_count": 3
+        },
+        {
+          "site_id": "current_public",
+          "site_name": "current_public",
+          "matched_count": 1
+        }
+      ],
+      "recommendation": {
+        "decision": "accept_default",
+        "reason": "重复率较低，能为默认源补充明显新增信息。",
+        "sample_too_small": false
+      },
+      "matches": [
+        {
+          "candidate_title": "How Numan Built an Eval-First AI Health Coach with LangGraph and LangSmith",
+          "candidate_url": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith",
+          "matched_title": "Numan 如何用 LangGraph 和 LangSmith 构建评测优先的 AI 健康教练 Nu",
+          "matched_url": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith",
+          "matched_site_id": "current_public",
+          "matched_site_name": null,
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context",
+          "candidate_url": "https://www.langchain.com/blog/context-engineering-deep-agents-remember",
+          "matched_title": "LangChain 详解 Deep Agents 的上下文工程：如何记住信息而不塞满上下文窗口",
+          "matched_url": "https://www.langchain.com/blog/context-engineering-deep-agents-remember",
+          "matched_site_id": "aihot",
+          "matched_site_name": "AI HOT",
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "Building Long-Running Agents with ScaleDown and Deep Agents",
+          "candidate_url": "https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents",
+          "matched_title": "LangChain 发布 langchain-scaledown 集成，用 ScaleDown 约束解码模型管理长时智能体上下文",
+          "matched_url": "https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents",
+          "matched_site_id": "aihot",
+          "matched_site_name": "AI HOT",
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "Search agent traces by behavior with AI Search in LangSmith",
+          "candidate_url": "https://www.langchain.com/blog/agent-traces-ai-search-langsmith",
+          "matched_title": "LangSmith 推出 AI Search，用自然语言按行为搜索 agent 轨迹",
+          "matched_url": "https://www.langchain.com/blog/agent-traces-ai-search-langsmith",
+          "matched_site_id": "aihot",
+          "matched_site_name": "AI HOT",
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        }
+      ],
+      "possible_matches": []
+    },
+    {
+      "generated_at": "2026-10-20T08:24:55.460646Z",
+      "candidate": {
+        "site_id": "meta-engineering-blog",
+        "site_name": "Meta Engineering Blog",
+        "url": "https://engineering.fb.com/feed/",
+        "item_count": 7,
+        "lookback_days": 7
+      },
+      "baseline": {
+        "source_count": 17,
+        "item_count": 5893,
+        "window_days": 7,
+        "note": "Union of local archive and live 2026-10-20 07:16Z public projection; URL deduplicated."
+      },
+      "overlap": {
+        "duplicate_count": 3,
+        "possible_duplicate_count": 0,
+        "unique_count": 4,
+        "duplicate_rate": 0.429,
+        "unique_rate": 0.571
+      },
+      "top_overlapping_sources": [
+        {
+          "site_id": "current_public",
+          "site_name": "current_public",
+          "matched_count": 2
+        },
+        {
+          "site_id": "aihot",
+          "site_name": "AI HOT",
+          "matched_count": 1
+        }
+      ],
+      "recommendation": {
+        "decision": "watchlist",
+        "reason": "重复率中等，建议先作为OPML高级源或观察源，而不是直接进入默认源。",
+        "sample_too_small": false
+      },
+      "matches": [
+        {
+          "candidate_title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+          "candidate_url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture",
+          "matched_title": "Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性",
+          "matched_url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture",
+          "matched_site_id": "current_public",
+          "matched_site_name": null,
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
+          "candidate_url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster",
+          "matched_title": "Meta 详解 Prometheus 吉瓦级超集群：一期已完成并用于训练 Muse 模型",
+          "matched_url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster",
+          "matched_site_id": "current_public",
+          "matched_site_name": null,
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "How Meta Built Forum With AI-Native Engineering",
+          "candidate_url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering",
+          "matched_title": "Meta 如何用 AI 原生工程方式开发 Forum 应用",
+          "matched_url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering",
+          "matched_site_id": "aihot",
+          "matched_site_name": "AI HOT",
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        }
+      ],
+      "possible_matches": []
+    },
+    {
+      "generated_at": "2026-10-20T08:24:55.460646Z",
+      "candidate": {
+        "site_id": "testing-catalog",
+        "site_name": "Testing Catalog",
+        "url": "https://www.testingcatalog.com/rss/",
+        "item_count": 4,
+        "lookback_days": 7
+      },
+      "baseline": {
+        "source_count": 17,
+        "item_count": 5893,
+        "window_days": 7,
+        "note": "Union of local archive and live 2026-10-20 07:16Z public projection; URL deduplicated."
+      },
+      "overlap": {
+        "duplicate_count": 0,
+        "possible_duplicate_count": 1,
+        "unique_count": 3,
+        "duplicate_rate": 0.0,
+        "unique_rate": 0.75
+      },
+      "top_overlapping_sources": [],
+      "recommendation": {
+        "decision": "watchlist",
+        "reason": "样本少于5条，不建议仅凭重复率直接拒绝；先进入观察列表。",
+        "sample_too_small": true
+      },
+      "matches": [],
+      "possible_matches": [
+        {
+          "candidate_title": "ICYMI: Meta&#x27;s Muse Spark Open is optimized for new Mac Studio",
+          "candidate_url": "https://www.testingcatalog.com/icymi-metas-muse-spark-open-is-optimized-for-new-mac-studio",
+          "matched_title": "Meta and Apple Bring Muse Spark Open AI Model to Mac Studio",
+          "matched_url": "https://apple.slashdot.org/story/26/10/15/189249/meta-and-apple-bring-muse-spark-open-ai-model-to-mac-studio",
+          "matched_site_id": "techurls",
+          "matched_site_name": "TechURLs",
+          "match_type": "entity_time_possible",
+          "score": 0.634,
+          "hard_duplicate": false
+        }
+      ]
+    },
+    {
+      "generated_at": "2026-10-20T08:24:55.460646Z",
+      "candidate": {
+        "site_id": "vllm-blog",
+        "site_name": "vLLM Blog",
+        "url": "https://vllm.ai/blog/rss.xml",
+        "item_count": 9,
+        "lookback_days": 7
+      },
+      "baseline": {
+        "source_count": 17,
+        "item_count": 5893,
+        "window_days": 7,
+        "note": "Union of local archive and live 2026-10-20 07:16Z public projection; URL deduplicated."
+      },
+      "overlap": {
+        "duplicate_count": 5,
+        "possible_duplicate_count": 0,
+        "unique_count": 4,
+        "duplicate_rate": 0.556,
+        "unique_rate": 0.444
+      },
+      "top_overlapping_sources": [
+        {
+          "site_id": "current_public",
+          "site_name": "current_public",
+          "matched_count": 3
+        },
+        {
+          "site_id": "aihot",
+          "site_name": "AI HOT",
+          "matched_count": 2
+        }
+      ],
+      "recommendation": {
+        "decision": "watchlist",
+        "reason": "重复率中等，建议先作为OPML高级源或观察源，而不是直接进入默认源。",
+        "sample_too_small": false
+      },
+      "matches": [
+        {
+          "candidate_title": "Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly",
+          "candidate_url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
+          "matched_title": "vLLM 中的超优化 Kimi K3",
+          "matched_url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
+          "matched_site_id": "current_public",
+          "matched_site_name": null,
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "Scaling Kimi K3 on AMD Instinct MI355X: Matching NVIDIA HGX B300 Throughput per GPU on AgentX",
+          "candidate_url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
+          "matched_title": "vLLM 解析 Kimi K3 在 AMD Instinct MI355X 上的推理优化，单 GPU 吞吐超 NVIDIA HGX B300 24.4%",
+          "matched_url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
+          "matched_site_id": "current_public",
+          "matched_site_name": null,
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "Serving Reflection Beam on vLLM from Day 0",
+          "candidate_url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
+          "matched_title": "vLLM 实现 Reflection Beam 501B MoE 模型 Day 0 支持",
+          "matched_url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
+          "matched_site_id": "current_public",
+          "matched_site_name": null,
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "Day 0 support for Muse Spark Open on vLLM",
+          "candidate_url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
+          "matched_title": "vLLM 提供 Muse Spark Open Day 0 支持",
+          "matched_url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
+          "matched_site_id": "aihot",
+          "matched_site_name": "AI HOT",
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        },
+        {
+          "candidate_title": "Adaptive Verification Without a Confidence Head",
+          "candidate_url": "https://vllm.ai/blog/2026-10-14-adaptive-verification-online-estimator",
+          "matched_title": "vLLM 推出无需置信头的在线拟合接受估计器，让 EAGLE、MTP 等草稿模型可用 Adaptive Verification",
+          "matched_url": "https://vllm.ai/blog/2026-10-14-adaptive-verification-online-estimator",
+          "matched_site_id": "aihot",
+          "matched_site_name": "AI HOT",
+          "match_type": "url_exact",
+          "score": 1.0,
+          "hard_duplicate": true
+        }
+      ],
+      "possible_matches": []
+    }
+  ],
+  "decision": "User explicitly requested filling available source gaps. Add bounded direct capture even where overlap advice is watchlist, to reduce aggregator dependence. All new sources retain ordinary relevance, deduplication and time-window rules.",
+  "live_feed_probes": {
+    "vLLM-Blog": [
+      {
+        "source": "vLLM Blog",
+        "title": "Achieving near-zero-downtime scaling in Elastic Expert Parallelism",
+        "url": "https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime",
+        "published_at": "2026-10-19T00:00:00Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.91,
+          "label": "model_release",
+          "reason": "matched_ai_signal",
+          "signals": [
+            "llm"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "model_technology"
+        ]
+      },
+      {
+        "source": "vLLM Blog",
+        "title": "Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly",
+        "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
+        "published_at": "2026-10-16T00:00:00Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.91,
+          "label": "model_release",
+          "reason": "matched_ai_signal",
+          "signals": [
+            "llm"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "model_technology"
+        ]
+      },
+      {
+        "source": "vLLM Blog",
+        "title": "Scaling Kimi K3 on AMD Instinct MI355X: Matching NVIDIA HGX B300 Throughput per GPU on AgentX",
+        "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
+        "published_at": "2026-10-16T00:00:00Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.94,
+          "label": "model_release",
+          "reason": "matched_ai_signal",
+          "signals": [
+            "llm",
+            "gpu"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "model_technology"
+        ]
+      },
+      {
+        "source": "vLLM Blog",
+        "title": "Serving Reflection Beam on vLLM from Day 0",
+        "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
+        "published_at": "2026-10-16T00:00:00Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.91,
+          "label": "model_release",
+          "reason": "matched_ai_signal",
+          "signals": [
+            "llm"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "model_technology"
+        ]
+      }
+    ],
+    "Testing-Catalog": [
+      {
+        "source": "Testing Catalog",
+        "title": "OpenAI testing new &quot;Aurora&quot; GPT-Image model on Arena",
+        "url": "https://www.testingcatalog.com/openai-possibly-testing-gpt-image-3/",
+        "published_at": "2026-10-18T18:07:09+00:00",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.82,
+          "label": "research_paper",
+          "reason": "curated_media_source_filter",
+          "signals": [
+            "gpt",
+            "openai"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "Testing Catalog",
+        "title": "Anthropic prepares to release Claude Fable 5.5 next week",
+        "url": "https://www.testingcatalog.com/anthropic-several-models-coming-fable-5-5-reaches-partners/",
+        "published_at": "2026-10-17T12:52:59+00:00",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.82,
+          "label": "model_release",
+          "reason": "curated_media_source_filter",
+          "signals": [
+            "anthropic",
+            "claude"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "Testing Catalog",
+        "title": "ICYMI: Meta&#x27;s Muse Spark Open is optimized for new Mac Studio",
+        "url": "https://www.testingcatalog.com/icymi-metas-muse-spark-open-is-optimized-for-new-mac-studio/",
+        "published_at": "2026-10-17T12:23:58+00:00",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.76,
+          "label": "ai_general",
+          "reason": "curated_media_source_filter",
+          "signals": [
+            "testing catalog"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "Testing Catalog",
+        "title": "Krea launched Krea 3 for fast and precise image editing",
+        "url": "https://www.testingcatalog.com/krea-launched-krea-3-for-fast-and-precise-image-editing/",
+        "published_at": "2026-10-15T16:38:42+00:00",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.76,
+          "label": "ai_general",
+          "reason": "curated_media_source_filter",
+          "signals": [
+            "testing catalog"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "Testing Catalog",
+        "title": "Meta launches Muse Wonder and Wonder Full for AI agents",
+        "url": "https://www.testingcatalog.com/meta-launches-muse-wonder-and-wonder-full-for-ai-agents/",
+        "published_at": "2026-10-12T22:16:46+00:00",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.76,
+          "label": "research_paper",
+          "reason": "curated_media_source_filter",
+          "signals": [
+            "testing catalog"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "Testing Catalog",
+        "title": "Google is preparing Nano Banana 3 Pro upgrade",
+        "url": "https://www.testingcatalog.com/google-is-preparing-nano-banana-3-pro-upgrade/",
+        "published_at": "2026-10-12T21:42:33+00:00",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.76,
+          "label": "ai_product_update",
+          "reason": "curated_media_source_filter",
+          "signals": [
+            "testing catalog"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "Testing Catalog",
+        "title": "Anthropic tests its next model under Claude Opus 5.5",
+        "url": "https://www.testingcatalog.com/anthropic-tests-new-model-opus-5-5-routing-opus-5-6-fable-5-5/",
+        "published_at": "2026-10-12T13:11:16+00:00",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.82,
+          "label": "research_paper",
+          "reason": "curated_media_source_filter",
+          "signals": [
+            "anthropic",
+            "claude"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "Testing Catalog",
+        "title": "Gemini 4 Argon spotted in A/B testing on Antigravity",
+        "url": "https://www.testingcatalog.com/gemini-4-argon-ab-tests-early-outputs/",
+        "published_at": "2026-10-11T21:58:46+00:00",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.79,
+          "label": "model_release",
+          "reason": "curated_media_source_filter",
+          "signals": [
+            "gemini"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      }
+    ],
+    "LangChain-Blog": [
+      {
+        "source": "LangChain Blog",
+        "title": "How Numan Built an Eval-First AI Health Coach with LangGraph and LangSmith",
+        "url": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith",
+        "published_at": "2026-10-19T16:44:34Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "research_paper",
+          "reason": "specialized_ai_product_feed",
+          "signals": [
+            "langchain"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "product",
+        "editorial_tags": [
+          "product_update"
+        ]
+      },
+      {
+        "source": "LangChain Blog",
+        "title": "October 2026 LangChain Newsletter: Everything we shipped at Interrupt NYC & London",
+        "url": "https://www.langchain.com/blog/october-2026-langchain-newsletter",
+        "published_at": "2026-10-15T17:02:58Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "ai_general",
+          "reason": "specialized_ai_product_feed",
+          "signals": [
+            "langchain"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "LangChain Blog",
+        "title": "The Most Common Questions About Agent Evals, Answered",
+        "url": "https://www.langchain.com/blog/common-questions-about-agent-evals",
+        "published_at": "2026-10-15T09:18:55Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "agent_workflow",
+          "reason": "specialized_ai_product_feed",
+          "signals": [
+            "langchain"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "technical_research"
+        ]
+      },
+      {
+        "source": "LangChain Blog",
+        "title": "Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context",
+        "url": "https://www.langchain.com/blog/context-engineering-deep-agents-remember",
+        "published_at": "2026-10-15T09:18:55Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "agent_workflow",
+          "reason": "specialized_ai_product_feed",
+          "signals": [
+            "langchain"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "technical_research"
+        ]
+      },
+      {
+        "source": "LangChain Blog",
+        "title": "How Orange Business Built Live Intelligence with LangChain and LangSmith",
+        "url": "https://www.langchain.com/blog/how-orange-business-built-live-intelligence-on-langchain-and-langsmith",
+        "published_at": "2026-10-13T19:56:07Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "ai_general",
+          "reason": "specialized_ai_product_feed",
+          "signals": [
+            "langchain"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "product",
+        "editorial_tags": [
+          "product_update"
+        ]
+      },
+      {
+        "source": "LangChain Blog",
+        "title": "MCP in LangChain: Stateless Protocol, Elicitation, and More!",
+        "url": "https://www.langchain.com/blog/mcp-in-langchain-stateless-protocol-elicitation-and-more",
+        "published_at": "2026-10-13T19:56:07Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "developer_tool",
+          "reason": "specialized_ai_product_feed",
+          "signals": [
+            "mcp"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "LangChain Blog",
+        "title": "How We Made Our Docs Test Themselves",
+        "url": "https://www.langchain.com/blog/our-docs-test-themselves",
+        "published_at": "2026-10-13T19:56:07Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "ai_general",
+          "reason": "specialized_ai_product_feed",
+          "signals": [
+            "langchain"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      },
+      {
+        "source": "LangChain Blog",
+        "title": "Deep Agents Deploy: an open alternative to Claude Managed Agents",
+        "url": "https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents",
+        "published_at": "2026-10-13T19:56:07Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "model_release",
+          "reason": "specialized_ai_product_feed",
+          "signals": [
+            "claude"
+          ],
+          "noise": []
+        },
+        "editorial_focus": "general",
+        "editorial_tags": []
+      }
+    ],
+    "Meta-Engineering-Blog": [
+      {
+        "source": "Meta Engineering Blog",
+        "title": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+        "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
+        "published_at": "2026-10-19T16:00:47Z",
+        "ai": {
+          "is_ai_related": false,
+          "score": 0.35,
+          "label": "not_ai",
+          "reason": "missing_meaningful_ai_signal",
+          "signals": [],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "technical_research"
+        ]
+      },
+      {
+        "source": "Meta Engineering Blog",
+        "title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+        "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+        "published_at": "2026-10-19T15:30:37Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "agent_workflow",
+          "reason": "matched_ai_signal",
+          "signals": [],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "technical_research"
+        ]
+      },
+      {
+        "source": "Meta Engineering Blog",
+        "title": "How Meta Built Forum With AI-Native Engineering",
+        "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+        "published_at": "2026-10-15T19:00:03Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "ai_general",
+          "reason": "matched_ai_signal",
+          "signals": [],
+          "noise": []
+        },
+        "editorial_focus": "product",
+        "editorial_tags": [
+          "product_update"
+        ]
+      },
+      {
+        "source": "Meta Engineering Blog",
+        "title": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
+        "url": "https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/",
+        "published_at": "2026-10-13T16:01:00Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "model_release",
+          "reason": "matched_ai_signal",
+          "signals": [],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "technical_research"
+        ]
+      },
+      {
+        "source": "Meta Engineering Blog",
+        "title": "OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks",
+        "url": "https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/",
+        "published_at": "2026-10-12T21:19:18Z",
+        "ai": {
+          "is_ai_related": true,
+          "score": 0.87,
+          "label": "ai_general",
+          "reason": "matched_ai_signal",
+          "signals": [],
+          "noise": []
+        },
+        "editorial_focus": "technical",
+        "editorial_tags": [
+          "technical_research"
+        ]
+      }
+    ]
+  },
+  "probe_counts": {
+    "parsed": 25,
+    "ai_relevant": 24,
+    "aihot_v1_items": 131
+  },
+  "probe_limitations": [
+    "Testing Catalog RSS succeeded in the initial live probe; the second network attempt timed out. Final scoring was verified against the same successfully downloaded live RSS snapshot.",
+    "These are capped probe counts, not newly published site item counts.",
+    "The public 7-day all-mode API sampling is capped at 10 pages and may be truncated."
+  ],
+  "wechat": {
+    "discovery": "Added allowlisted original URLs from AIHOT all mode to the existing daily search and original-page verifier",
+    "candidates": 6,
+    "verified": 0,
+    "admitted": 0,
+    "verification": [
+      {
+        "candidate": {
+          "company_id": "qwen",
+          "account_name": "千问APP",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489185&idx=1&sn=35c1a3685172a6e5173019452218d9fe"
+        },
+        "error": "HTTPError"
+      },
+      {
+        "candidate": {
+          "company_id": "minimax",
+          "account_name": "MiniMax",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ%3D%3D&mid=2247489196&idx=1&sn=4c8b969db8bd136f47d7b1a7650790c4"
+        },
+        "error": "HTTPError"
+      },
+      {
+        "candidate": {
+          "company_id": "doubao",
+          "account_name": "火山引擎",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzI0NzU1NzI5NQ%3D%3D&mid=2247544974&idx=1&sn=d893ba0f9a799110a826a59d0febb899"
+        },
+        "error": "HTTPError"
+      },
+      {
+        "candidate": {
+          "company_id": "doubao",
+          "account_name": "火山引擎",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzI0NzU1NzI5NQ%3D%3D&mid=2247544876&idx=1&sn=b12bbf0e3c265e4bc6a43f2e75ebe6fe"
+        },
+        "error": "HTTPError"
+      },
+      {
+        "candidate": {
+          "company_id": "deepseek",
+          "account_name": "DeepSeek",
+          "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&mid=2247485876&idx=1&sn=2606d3fa9ac085f94290ddd1d94649cc"
+        },
+        "error": "HTTPError"
+      },
+      {
+        "candidate": {
+          "company_id": "hunyuan",
+          "account_name": "腾讯混元",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498682&idx=1&sn=c05eb139c48a0ba10cf4434f6489ac63"
+        },
+        "error": "HTTPError"
+      }
+    ],
+    "existing_snapshot_preserved": true,
+    "note": "All six current candidates failed HTTP access during original/archive verification; no aggregator-provided date or publisher identity was substituted."
+  },
+  "hidden_labels": {
+    "item_fields": [
+      "editorial_focus",
+      "editorial_tags"
+    ],
+    "tags": [
+      "product_update",
+      "model_evaluation",
+      "model_technology",
+      "technical_research"
+    ],
+    "ranking": "Purely technical stories sort after other eligible candidates in the limited selected view; importance deducts 0.12. Full pool retained; mixed stories with product evidence keep product focus.",
+    "reader_projection": "No UI fields or filters added."
+  },
+  "aihot_migration": {
+    "endpoint": "https://aihot.news/api/v1/items",
+    "parameters": {
+      "mode": "selected",
+      "window": "7d",
+      "by": "published",
+      "limit": 100
+    },
+    "score_threshold": 60,
+    "max_pages": 5,
+    "validation": "Actual v1 response and two-page pagination verified; original URLs, publisher name, bilingual titles and unknown dates retained; invalid schema/cursor raises a source error."
+  },
+  "tests": {
+    "python_suite": "425 passed",
+    "syntax": "pass",
+    "diff_whitespace": "pass"
+  },
+  "deployment": {
+    "status": "not_a_deployment_receipt",
+    "note": "This intake records source tests; publication is verified separately against Actions and the live snapshot."
+  }
+}
