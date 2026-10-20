@@ -7,7 +7,7 @@
 
 ## 每日采集
 
-定时 Agent 在 Asia/Shanghai 每天 10:40 开始执行以下流程。不发送任何 Hi 消息。
+可在自己的运行环境配置每日任务，时区与时间由部署者选择。GitHub Actions 只消费公开元数据，不接收本机登录态。
 
 1. 读取目标清单，用可用网页搜索工具逐账号搜索：`<账号名> 发布 site:mp.weixin.qq.com/s/`。
    可以换产品、月份关键词重试；域名限定无结果时，可从官方站或新闻中的原文链接发现候选。
@@ -36,7 +36,7 @@
 5. 正常运行 `scripts/update_news.py`，即可进入原有归档、AI 相关性、时间窗口和事件合并流程。
    正常流水线随后生成主题与公开新闻投影。未推送的本机文件不会自动出现在 GitHub Pages。
 
-本机定时任务使用免费刷新命令（如有私有 OPML，改用 `feeds/follow.opml`，不提交该文件）：
+在仓库根目录执行免费刷新命令（如有私有 OPML，改用 `feeds/follow.opml`，不提交该文件）：
 
 ```bash
 RADAR_FREE_ONLY=1 X_API_ENABLED=0 SOCIALDATA_ENABLED=0 TIKHUB_ENABLED=0 EMAIL_DIGEST_ENABLED=0 \
@@ -62,15 +62,15 @@ TITLE_ENHANCE_MAX_PER_RUN=0 REASON_ENHANCE_MAX_PER_RUN=0 \
 
 推送触发现有 `update-news.yml`：免费更新新闻、生成公开阅读器，然后由现有 GitHub Pages
 从 `master` 根目录发布到 <https://leaifish.github.io/ai-news-radar/>。
-原有其他信源刷新频率保持不变。10:40 是公众号采集开始时间，网页上线会晚于该时间，
-且本机定时采集需要电脑开机、应用运行和网络可用。
+原有其他信源刷新频率保持不变。网页更新时间取决于采集、Actions 和 Pages 部署是否完成。
+若使用本机任务，运行设备需开机并保持网络可用。
 
 发布脚本输出 `pushed` 和提交 SHA 只说明推送成功，不代表部署成功。
 每日 Agent 还必须等待该提交触发的更新工作流和 Pages 部署完成，读取线上
 `data/source-status.json`，确认 `wechat_bridge.discovery.at` 与本轮快照
 `last_run.at` 一致后才报告线上更新成功。失败或超时如实报告，并附 Actions 链接。
 采集部分失败时可以发布已经核验的有效记录，但摘要必须保留失败状态。
-每日任务不得修改或推送产品代码，不发送任何 Hi 或其他消息工具通知。
+每日采集任务只发布经过白名单过滤的元数据，不自动修改产品代码。
 
 ## 接入与状态
 
@@ -93,22 +93,30 @@ TITLE_ENHANCE_MAX_PER_RUN=0 REASON_ENHANCE_MAX_PER_RUN=0 \
 
 首次部署需要把脚本、账号配置和工作流一起发布；不能只上传一个 JSON 就声称线上已经接入。
 
-## 微信读书通道实测（2026-10-20）
+## 可选：在本机配置微信读书通道
 
-在独立的本机临时环境测试了 [we-mp-rss](https://github.com/rachelos/we-mp-rss)，
-代码版本 `d94db01372105bc479db81a0ac91829dac7f43e4`。用户扫码登录成功，
-微信读书封面接口返回两个目标账号的文章；再次直接读取公众号原文，核对账号名和发布日期：
+登录通道是私有扩展，默认采集仍使用公开搜索和原文核验。
+如需使用 [we-mp-rss](https://github.com/rachelos/we-mp-rss)，按其
+[上游部署说明](https://github.com/rachelos/we-mp-rss/blob/main/README.zh-CN.md)
+在 Radar 仓库之外运行。以下只是配置示例，不包含任何现成账号或凭据：
 
-| 原文账号 | 返回文章 | 原文发布时间（北京时间） |
-| --- | --- | --- |
-| 千问APP | [千问AI耳机接入千问App，有事开口聊！](https://mp.weixin.qq.com/s/63gcPhH99__DUGgLuO__lQ) | 2026-10-15 17:54 |
-| 通义实验室 | [从“能说话”到“会表达”：Qwen-Audio-3.0-TTS 发布](https://mp.weixin.qq.com/s/INvrqTrWLMm2WCLIqhqTrg) | 2026-07-20 16:54 |
+```bash
+WECHAT_DATA_DIR="$HOME/.local/share/we-mp-rss"
+mkdir -p "$WECHAT_DATA_DIR"
+docker run -d --name we-mp-rss \
+  -p 127.0.0.1:8001:8001 \
+  -v "$WECHAT_DATA_DIR:/app/data" \
+  ghcr.io/rachelos/we-mp-rss:latest
+```
 
-两条公开元数据已去重合入桥接文件，均不在过去 24 小时窗口内。
-这是接口返回的最新文章，不足以证明公众号实际最新文章；通义实验室的返回结果明显陈旧。
-两个账号的文章列表接口都返回业务错误码 `-2041`，本次未取得完整历史列表。
+1. 在本机打开 `http://127.0.0.1:8001`，按上游说明设置独立管理密码。
+2. 部署者自行扫码完成授权，再添加 `config/wechat_sources.json` 中需要跟踪的账号。
+3. 只将发现的公开文章 URL 写入前述候选 JSON，交由 `wechat_sources.py` 重新核验账号和原文日期。
+   此仓库未直接集成该登录通道的接口，也不把其带凭据的 RSS/API 地址作为公共来源。
+4. 登录数据库、Cookie、token、会话文件、二维码和运行日志留在上述私有数据目录。
+   不复制到仓库，不上传到 GitHub，不粘贴到文档或 Actions 输出。
+5. API 返回的文章列表可能陈旧、缺失或失败；抓取时间不能代替原文发布时间。
+   若原文无法核验，只报告未核验，不将其作为新文章发布。
 
-该版本上游封面兜底逻辑使用抓取时间填写 `create_time` / `update_time`，
-不能把据此生成的订阅时间直接当成原文发布时间。此次写入使用原文日期。
-尚未将此登录通道接入每日任务；每日任务仍使用公开搜索和原文核验。
-登录凭据留在独立测试环境，不进入 Radar 仓库；本次未发布线上变更。
+公开仓库只保留候选机构账号名、公开文章元数据、校验/发布代码及配置方法。
+候选名匹配不等于机构所有权认证；机构归属仍需官网链接或其他公开证据核对。

@@ -44,3 +44,10 @@ apps/web/.react-router/
 .local/
 
 !.env.example
+
+# Private WeChat runtime (public metadata bridge remains trackable)
+/wechat-private/
+/.wechat-private/
+/we-mp-rss/
+/storage_state*.json
+/storage-state*.json

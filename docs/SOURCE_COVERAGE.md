@@ -173,6 +173,42 @@ Aggregator sites may already surface some of these updates, but they are not
 guaranteed to be complete or timely. Keep these official sources as a stable
 baseline, then let the aggregator layer add breadth.
 
+## First-party application updates (2026-10-20)
+
+Application coverage complements lab/model sources. `scripts/official_app_updates.py`
+is registered in `collect_all`; each endpoint gets its own source-health row.
+Records join the existing global pool and company topics as `official_ai` / `T1`.
+
+| Source | Official endpoint | Intake rule |
+| --- | --- | --- |
+| Meta AI / Muse Newsroom | <https://about.fb.com/feed/> | Keep Muse, Meta AI, artificial intelligence and AI-glasses announcements. The local live probe failed DNS resolution on 2026-10-20; no fresh items are claimed. The scheduled collector reports failure and retries on the next cycle. |
+| Gemini App Blog | <https://blog.google/innovation-and-ai/products/gemini-app/rss/> | Only Gemini application article paths; exclude cross-posted general Google/model/API news. |
+| Gemini Product Blog | <https://blog.google/products-and-platforms/products/gemini/rss/> | Same application-path filter. Both Gemini feeds share one publisher name so the same article cannot count as two independent outlets. |
+| Gemini release notes | <https://gemini.google/release-notes/> | One entry per explicitly dated release card. |
+| ChatGPT product updates | <https://learn.chatgpt.com/docs/whats-new> | Weekly sections with explicit full date ranges; include ChatGPT/Dots blocks, omit API/Codex-only blocks. Timeline date is the stated period's start, not an inferred publication timestamp. Undated event headings are skipped. |
+| 千问办公产品更新 | <https://learn.qwenwork.cn/whatsnew/> | One issue per full dated section ID. Linked from the learning community on <https://qwenwork.cn/>. |
+| 千问办公客户端更新 | <https://docs.qwenwork.cn/release-notes/desktop> | One dated version block; official homepage links this changelog. |
+| 元宝官方版本更新 | <https://itunes.apple.com/lookup?id=6480446430&country=cn> | Match app ID **6480446430** and Tencent's verified seller name before importing current version, release date and release notes. This API exposes the current version; older versions accumulate only after observation. |
+
+Keep at most 20 entries per endpoint within 45 days. Reject undated, future-dated,
+off-domain and invalid app-identity records. Keep short source excerpts without
+generating editorial judgments. Detect unrecognized page structures as failures.
+No login, cookies, paid reader or third-party feed bridge is involved.
+
+Native issue/version anchors remain part of the URL identity through collection
+and topic deduplication. Gemini and App Store use standard text-fragment links to
+the visible date/version because they offer no native release anchors. This
+prevents successive releases on one page from collapsing into a single item;
+unrelated article fragments are still stripped.
+
+Source Overlap Check against the 30-day archive (2026-10-20), before the stricter
+application-path filter: Gemini App Blog had 5 recent entries, 20% hard duplicates
+(`accept_default`); Gemini Product Blog had 15, 40% (`watchlist`). The latter is
+included with the narrower filter to cover application announcements such as
+Skills missing from the first feed; shared URLs/publishers are deduplicated.
+Claude developer RSS was 100% duplicated (10/10) and was not added. Notion,
+LangChain and Grok remain outside this first application-source batch.
+
 ## Built-In Curated Feeds
 
 - **Follow Builders**: reads public `feed-x.json`, `feed-blogs.json`, and

@@ -16,6 +16,11 @@ from typing import Any
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 try:
+    from scripts.official_app_updates import update_fragment
+except ModuleNotFoundError:
+    from official_app_updates import update_fragment
+
+try:
     from scripts.focus_sources import focus_priority
 except ModuleNotFoundError:
     from focus_sources import focus_priority
@@ -195,7 +200,7 @@ def canonicalize_url(url: str) -> str:
         if not key.lower().startswith("utm_")
         and key.lower() not in {"fbclid", "gclid", "msclkid"}
     ))
-    return urlunparse((parsed.scheme.lower(), host, path, parsed.params, query, ""))
+    return urlunparse((parsed.scheme.lower(), host, path, parsed.params, query, update_fragment(parsed)))
 
 
 def record_identity(record: dict[str, Any]) -> str:

@@ -30,6 +30,11 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 try:
+    from scripts.official_app_updates import APP_SOURCES, fetch_source as fetch_official_app_rows, update_fragment
+except ModuleNotFoundError:  # pragma: no cover - direct script execution
+    from official_app_updates import APP_SOURCES, fetch_source as fetch_official_app_rows, update_fragment
+
+try:
     from scripts.ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
 except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
     from ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
@@ -528,7 +533,7 @@ def normalize_url(raw_url: str) -> str:
         parsed = parsed._replace(
             scheme=parsed.scheme.lower(),
             netloc=parsed.netloc.lower(),
-            fragment="",
+            fragment=update_fragment(parsed),
             query=urlencode(query, doseq=True),
         )
         normalized = urlunparse(parsed)
@@ -3051,6 +3056,14 @@ def fetch_newsnow(session: requests.Session, now: datetime) -> list[RawItem]:
     return out
 
 
+def fetch_official_app_source(session: requests.Session, spec: dict, now: datetime) -> list[RawItem]:
+    return [RawItem(
+        site_id="official_ai", site_name="Official AI Updates", source=row["source"],
+        title=row["title"], url=row["url"], published_at=row["published_at"],
+        meta={key: row[key] for key in ("summary", "feed_url", "feed_home", "select_tier")},
+    ) for row in fetch_official_app_rows(session, spec, now)]
+
+
 def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem], list[dict[str, Any]]]:
     tasks = [
         ("official_ai", "Official AI Updates", fetch_official_ai_updates),
@@ -3068,6 +3081,11 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
         ("aihot", "AI HOT", fetch_aihot),
         ("newsnow", "NewsNow", fetch_newsnow),
     ]
+    # One status per official application endpoint: a failed Meta feed must not
+    # be hidden behind successful OpenAI/Google/lab updates.
+    tasks.extend((spec["id"], spec["title"],
+                  lambda session, now, spec=spec: fetch_official_app_source(session, spec, now))
+                 for spec in APP_SOURCES)
 
     raw_items: list[RawItem] = []
     statuses: list[dict[str, Any]] = []
