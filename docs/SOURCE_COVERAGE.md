@@ -63,6 +63,13 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 
 ## Supported Source Types
 
+WeChat additionally supports the opt-in local `scripts/wechat_wemprss.py` adapter.
+It uses an external private we-mp-rss installation and verifies account names and
+original publication dates from article HTML. Seven configured publisher IDs cover
+six companies; each cover endpoint supplies at most one candidate and may be stale.
+Only public metadata is published. Login state and bodies stay outside the repo;
+cloud public discovery continues independently. See `WECHAT_SOURCE_BRIDGE.md`.
+
 | Source type | Current support | Recommended path | Notes |
 | --- | --- | --- | --- |
 | Official RSS / Atom | Supported through OPML | Add to `feeds/follow.opml` locally, or `FOLLOW_OPML_B64` in GitHub Actions | Best default for personal customization. |

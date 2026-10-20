@@ -129,7 +129,9 @@ TITLE_ENHANCE_MAX_PER_RUN=0 REASON_ENHANCE_MAX_PER_RUN=0 \
 
 ## 可选：在本机配置微信读书通道
 
-登录通道是私有扩展，默认采集仍使用公开搜索和原文核验。
+登录通道是私有扩展，云端采集仍使用公开搜索和原文核验。本机已提供可选的
+`scripts/wechat_wemprss.py`，通过仓库外 we-mp-rss 的微信读书登录读取文章。
+`config/wemprss_sources.json` 只含 7 个公众号的公开标识，覆盖 6 个机构；夸克、智谱暂未配置。
 如需使用 [we-mp-rss](https://github.com/rachelos/we-mp-rss)，按其
 [上游部署说明](https://github.com/rachelos/we-mp-rss/blob/main/README.zh-CN.md)
 在 Radar 仓库之外运行。以下只是配置示例，不包含任何现成账号或凭据：
@@ -145,12 +147,24 @@ docker run -d --name we-mp-rss \
 
 1. 在本机打开 `http://127.0.0.1:8001`，按上游说明设置独立管理密码。
 2. 部署者自行扫码完成授权，再添加 `config/wechat_sources.json` 中需要跟踪的账号。
-3. 只将发现的公开文章 URL 写入前述候选 JSON，交由 `wechat_sources.py` 重新核验账号和原文日期。
-   此仓库未直接集成该登录通道的接口，也不把其带凭据的 RSS/API 地址作为公共来源。
+3. 对已有源码和虚拟环境的 we-mp-rss 安装运行以下命令。适配器在独立子进程中使用上游 SDK，
+   读取封面候选及原文 HTML，核对账号和原文日期；正文仅在内存处理。只输出公开元数据，
+   不把带凭据的 RSS/API 地址作为公共来源。
 4. 登录数据库、Cookie、token、会话文件、二维码和运行日志留在上述私有数据目录。
    不复制到仓库，不上传到 GitHub，不粘贴到文档或 Actions 输出。
 5. API 返回的文章列表可能陈旧、缺失或失败；抓取时间不能代替原文发布时间。
    若原文无法核验，只报告未核验，不将其作为新文章发布。
+
+```bash
+.venv/bin/python scripts/wechat_wemprss.py --source-dir /absolute/private/we-mp-rss
+.venv/bin/python scripts/publish_wechat_snapshot.py
+```
+
+当前使用封面入口，每个已配置公众号每轮最多核验一篇，不能保证全量或最新；
+不使用上游兜底生成的抓取时间作为发布日期，也不调用自动加入个人书架的采集方法。
+认证失败或限流即停止后续请求，保留历史并报告部分或全部失败。进程总超时为 6 分钟。
+公开核验依据允许 `weread.qq.com/web/mp/content?reviewId=...`，必须与原文短链接标识一致，
+禁止附加登录参数。每日本机任务需设备开机联网；云端 10:40 的公开采集继续作为补充。
 
 公开仓库只保留候选机构账号名、公开文章元数据、校验/发布代码及配置方法。
 候选名匹配不等于机构所有权认证；机构归属仍需官网链接或其他公开证据核对。

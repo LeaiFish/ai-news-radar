@@ -10,9 +10,9 @@ import subprocess
 import tempfile
 
 try:
-    from scripts.wechat_sources import SCHEMA, eligible_rows, normalized_name, published_datetime, targets, canonical_url
+    from scripts.wechat_sources import SCHEMA, eligible_rows, normalized_name, published_datetime, targets, canonical_url, canonical_evidence_url
 except ModuleNotFoundError:
-    from wechat_sources import SCHEMA, eligible_rows, normalized_name, published_datetime, targets, canonical_url
+    from wechat_sources import SCHEMA, eligible_rows, normalized_name, published_datetime, targets, canonical_url, canonical_evidence_url
 
 REPOSITORY = "git@github.com:LeaiFish/ai-news-radar.git"
 SNAPSHOT = Path("data/bridge/wechat-accounts.json")
@@ -32,12 +32,7 @@ def public_snapshot(payload, now):
     for company, row in rows:
         if row["published"] is not None and not published_datetime(row["published"]):
             raise ValueError("invalid_publication_date")
-        evidence = row["evidence_url"]
-        if evidence.startswith("https://web.archive.org/web/"):
-            prefix, original = evidence.split("/https://", 1)
-            row["evidence_url"] = prefix + "/" + canonical_url("https://" + original)
-        else:
-            row["evidence_url"] = canonical_url(evidence)
+        row["evidence_url"] = canonical_evidence_url(row["evidence_url"], row["url"])
         accounts[company].append(row)
     run = payload.get("last_run")
     if not isinstance(run, dict) or not published_datetime(run.get("at")):

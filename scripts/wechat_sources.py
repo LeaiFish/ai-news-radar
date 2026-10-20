@@ -63,6 +63,28 @@ def iso(value):
     return value.astimezone(UTC).isoformat().replace("+00:00", "Z")
 
 
+def canonical_evidence_url(value, article_url):
+    """Accept public article evidence, never authenticated API/RSS addresses."""
+    url = canonical_url(article_url)
+    parsed = urlparse(str(value or ""))
+    if parsed.netloc == "weread.qq.com":
+        query = parse_qs(parsed.query, keep_blank_values=True)
+        if (parsed.scheme != "https" or parsed.path != "/web/mp/content"
+                or parsed.fragment or set(query) != {"reviewId"}
+                or len(query["reviewId"]) != 1):
+            raise ValueError("invalid_weread_evidence")
+        review = query["reviewId"][0]
+        match = re.fullmatch(r"MP_WXS_\d+_([A-Za-z0-9_~\-]+)", review)
+        if not match or canonical_url("https://mp.weixin.qq.com/s/" + match[1].replace("~", "_")) != url:
+            raise ValueError("evidence_article_mismatch")
+        return "https://weread.qq.com/web/mp/content?" + urlencode({"reviewId": review})
+    archived = re.fullmatch(r"(https://web\.archive\.org/web/\d+(?:id_)?/)(https://mp\.weixin\.qq\.com/.*)", str(value or ""))
+    target = canonical_url(archived[2] if archived else value)
+    if target != url:
+        raise ValueError("evidence_article_mismatch")
+    return (archived[1] if archived else "") + target
+
+
 def published_datetime(value):
     """Require an absolute, complete date; date-only means Shanghai midnight."""
     if not value:
@@ -190,12 +212,11 @@ def eligible_rows(payload, now):
                 continue
             verified_at = published_datetime(row.get("verified_at"))
             evidence = row.get("evidence_url")
-            archived = re.fullmatch(r"https://web\.archive\.org/web/\d+(?:id_)?/(https://mp\.weixin\.qq\.com/.*)", str(evidence or ""))
             try:
-                evidence_target = canonical_url(archived[1] if archived else evidence)
+                canonical_evidence_url(evidence, url)
             except ValueError:
                 continue
-            if not isinstance(row.get("title"), str) or not row["title"].strip() or not verified_at or verified_at > now or evidence_target != url:
+            if not isinstance(row.get("title"), str) or not row["title"].strip() or not verified_at or verified_at > now:
                 continue
             # Allowlist fields; no arbitrary candidate/page metadata enters Radar.
             yield company, {k: row.get(k) for k in (
@@ -203,13 +224,18 @@ def eligible_rows(payload, now):
             )} | {"url": url} | ({'account_id': row['account_id']} if row.get('account_id') else {})
 
 
-def sync(payload, existing, now, verifier=verify_candidate):
+def sync(payload, existing, now, verifier=verify_candidate, expected_accounts=None):
     allowed = targets()
     if not isinstance(payload, dict) or not isinstance(payload.get("searches"), list) or not isinstance(payload.get("candidates"), list):
         raise ValueError("invalid_wechat_candidates_schema")
     searches = payload.get("searches", [])
     errors, rejected = [], []
     target_names = {name for names in allowed.values() for name in names}
+    if expected_accounts is not None:
+        expected = set(expected_accounts)
+        if not expected <= target_names:
+            raise ValueError("unknown_expected_account")
+        target_names = expected
     successful_searches = {s.get("account_name") for s in searches if isinstance(s, dict) and s.get("ok") is True and isinstance(s.get("account_name"), str)} & target_names
     for name in sorted(target_names):
         if name not in successful_searches:
