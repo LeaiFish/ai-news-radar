@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 from threading import Event
 import time
+from urllib.parse import parse_qs, urlparse
 
 import requests
 
@@ -74,10 +75,14 @@ def search_articles(account, now, *, broad=False, post=requests.post):
         return rpc_result(response.text)
     content = retry(request)
     urls = []
+    known = next((record for company in targets() if (record := identity(company, account))), None)
     for match in URL_PATTERN.finditer(content):
         try:
             url = canonical_url(html.unescape(match[0]))
         except ValueError:
+            continue
+        account_id = parse_qs(urlparse(url).query).get('__biz', [None])[0]
+        if known and account_id and account_id != known['account_id']:
             continue
         if url not in urls:
             urls.append(url)
