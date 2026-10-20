@@ -44,7 +44,7 @@ permissions:
 
 jobs:
   update:
-    timeout-minutes: 50
+    timeout-minutes: 75
     runs-on: ubuntu-latest
     env:
       RADAR_FREE_ONLY: "1"
