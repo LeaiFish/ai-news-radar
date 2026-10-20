@@ -7,6 +7,7 @@ on:
       - 'scripts/free_news_content.py'
       - 'scripts/update_news.py'
       - 'scripts/wechat_sources.py'
+      - 'scripts/wechat_cloud.py'
       - 'config/wechat_sources.json'
       - 'data/bridge/wechat-accounts.json'
       - 'scripts/build_topics.py'
@@ -18,7 +19,13 @@ on:
       - 'config/focus_sources.json'
       - 'config/topics.json'
   workflow_dispatch:
+    inputs:
+      refresh_wechat:
+        description: 'Discover and verify official WeChat articles before publishing'
+        type: boolean
+        default: false
   schedule:
+    - cron: "40 2 * * *"           # 公众号：北京时间每天 10:40，由云端采集和核验
     # 分时段节奏（2026-08-30 卡尔定，全部 UTC；北京 = UTC+8）：
     # 高峰（北京周一至五 9-12 / 14-18）保持每小时；其余空闲时段 3 小时一轮；深夜 4 小时一轮。
     - cron: "17 1-3,6-9 * * 1-5"   # 高峰每小时：北京工作日 09:17-11:17、14:17-17:17
@@ -28,14 +35,15 @@ on:
 
 concurrency:
   group: update-ai-news-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   update:
-    timeout-minutes: 40
+    timeout-minutes: 50
     runs-on: ubuntu-latest
     env:
       RADAR_FREE_ONLY: "1"
@@ -54,6 +62,37 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Discover and verify public WeChat articles
+        id: wechat
+        if: github.event.schedule == '40 2 * * *' || inputs.refresh_wechat == true
+        run: |
+          set +e
+          python scripts/wechat_cloud.py --output "$RUNNER_TEMP/wechat-candidates.json"
+          discovery=$?
+          if [ "$discovery" -ne 0 ] && [ "$discovery" -ne 2 ]; then exit 3; fi
+          python scripts/wechat_sources.py --candidates "$RUNNER_TEMP/wechat-candidates.json"
+          verification=$?
+          set -e
+          if [ "$verification" -ne 0 ] && [ "$verification" -ne 2 ]; then exit 3; fi
+          # Only the public allowlist is committed; discovery responses stay in runner temp.
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import datetime, timezone
+          import json, os
+          from scripts.publish_wechat_snapshot import public_snapshot
+          path = Path('data/bridge/wechat-accounts.json')
+          payload = json.loads(path.read_text(encoding='utf-8'))
+          run = payload['last_run']
+          Path(os.environ['RUNNER_TEMP'], 'wechat-result.json').write_text(json.dumps(run, ensure_ascii=False), encoding='utf-8')
+          path.write_text(json.dumps(public_snapshot(payload, datetime.now(timezone.utc)), ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+          if [ "$discovery" -eq 2 ] || [ "$verification" -eq 2 ]; then
+            echo "partial=true" >> "$GITHUB_OUTPUT"
+            echo "::warning::WeChat collection was incomplete; publishing only verified records with failed health status."
+          else
+            echo "partial=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Prepare OPML
         env:
@@ -204,3 +243,48 @@ jobs:
             git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort || true; exit 1; }
           done
           git push
+
+      - name: Request Pages build for the generated snapshot
+        if: steps.wechat.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --jq '.status'; then
+            status=$(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" --jq '.status')
+            case "$status" in
+              queued|building) echo "A Pages build is already active; verifying its output next." ;;
+              *) exit 1 ;;
+            esac
+          fi
+
+      - name: Verify published WeChat snapshot
+        id: verify_wechat_pages
+        if: steps.wechat.outcome == 'success'
+        run: python scripts/wechat_cloud.py --verify-deployment data/bridge/wechat-accounts.json
+
+      - name: Report WeChat collection and deployment
+        if: always() && steps.wechat.outcome == 'success'
+        env:
+          COLLECTION_PARTIAL: ${{ steps.wechat.outputs.partial }}
+          DEPLOYMENT_OUTCOME: ${{ steps.verify_wechat_pages.outcome }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          run = json.loads(Path(os.environ['RUNNER_TEMP'], 'wechat-result.json').read_text(encoding='utf-8'))
+          status = json.loads(Path('data/source-status.json').read_text(encoding='utf-8'))
+          bridge = next((s for s in status.get('sites', []) if s.get('site_id') == 'wechat_bridge'), {})
+          version = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'], text=True).strip()
+          deployed = '部署成功' if os.environ['DEPLOYMENT_OUTCOME'] == 'success' else '部署失败或未执行'
+          summary = f"公众号采集：搜索 {run['searched_accounts']} 个账号，覆盖 {run['covered_companies']} 个机构/{run['covered_accounts']} 个账号，新增 {run['added']} 条，24小时入池 {bridge.get('item_count', 0)} 条，{deployed}，版本 {version}。"
+          print(summary)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as handle:
+              handle.write(summary + '\n')
+              if run.get('errors'):
+                  from collections import Counter
+                  handle.write('采集未完成：' + json.dumps(dict(Counter(e.get('error', 'unknown') for e in run['errors'])), ensure_ascii=False) + '\n')
+          PY
+          if [ "$COLLECTION_PARTIAL" = "true" ]; then
+            echo "::error::Verified records were published, but some searches or article checks failed; see the run summary."
+            exit 1
+          fi

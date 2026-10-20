@@ -75,7 +75,7 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 | GitHub releases/blogs | Usually supported through Atom/RSS | Prefer GitHub Atom feeds or official blog RSS | Useful for model/platform/tool release tracking. |
 | Newsletters | Partially supported | Prefer public archive RSS or stable archive pages | Do not scrape private inboxes. |
 | X / Twitter | Supported through curated central feeds, opt-in API adapters, or a private sanitized items-file bridge | Prefer public generated feeds that already use official X API; keep direct X API optional and secret-backed; private cookie scrapes stay off-repo and ingest only via `data/bridge/x-items.json` / `X_BRIDGE_ITEMS_B64` (see `docs/X_PRIVATE_BRIDGE.md`) | Following a person often imports noise; public bridge routes can be unstable; cookies must never enter this repo. |
-| WeChat public accounts | Optional verified article metadata input; account coverage remains subject to live verification | `data/bridge/wechat-accounts.json`, see `docs/WECHAT_SOURCE_BRIDGE.md`; search and original-page checks run separately from Actions | Best-effort discovery, no completeness guarantee. No cookies, tokens or bodies in this repo. |
+| WeChat public accounts | Optional verified article metadata input; cloud discovery at 10:40 Asia/Shanghai | `scripts/wechat_cloud.py` discovers public URLs, `wechat_sources.py` verifies original pages, then Actions publishes `data/bridge/wechat-accounts.json`; see `docs/WECHAT_SOURCE_BRIDGE.md` | Best-effort discovery, no completeness guarantee. No WeChat cookies, tokens or bodies in this repo. |
 | Telegram / Bilibili / Zhihu / podcasts | Skipped by default when feeds are unreliable | Add only as opt-in OPML entries | These can be noisy or bridge-dependent. |
 
 ## Selection source tiers
@@ -336,8 +336,9 @@ The domestic products already tracked as company topics also publish on WeChat
 Kimi / 月之暗面, MiniMax, and 智谱 / GLM. Those account identities remain
 **subject to verification**. An optional metadata bridge now accepts checked
 article pages; see `docs/WECHAT_SOURCE_BRIDGE.md` and `config/wechat_sources.json`.
-GitHub Actions only reads the resulting metadata file. It does not search
-WeChat, use login sessions or maintain a live RSSHub route. The table below
+GitHub Actions discovers candidate links through a public no-key search service
+and verifies original article pages daily at 10:40 Asia/Shanghai. It does not use
+WeChat login sessions or maintain a live RSSHub route. The table below
 retains the dated identity research; current article coverage lives in the
 bridge snapshot and `source-status.json`.
 

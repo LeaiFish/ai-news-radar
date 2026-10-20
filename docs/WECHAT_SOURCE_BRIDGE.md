@@ -5,15 +5,26 @@
 这些名字是待核验候选，不是已确认覆盖的账号。
 千问消费端账号为「千问APP」（已读取代表原文核对名称），与模型研究账号「通义实验室」分开搜索。
 
-## 每日采集
+## 云端每日采集与发布
 
-可在自己的运行环境配置每日任务，时区与时间由部署者选择。GitHub Actions 只消费公开元数据，不接收本机登录态。
+GitHub Actions 的 `update-news.yml` 每天北京时间 **10:40** 开始采集公众号文章，
+对应 UTC `40 2 * * *`。整个流程在 GitHub 托管 runner 上运行，不依赖本机开机，
+不接收微信登录态。其他信源保持原有刷新频率。GitHub 定时任务可能排队或延迟，
+10:40 是计划开始时间，网页更新时间还取决于采集和部署耗时。
+
+`scripts/wechat_cloud.py` 使用 [Exa 的公开免 Key MCP 搜索接口](https://exa.ai/mcp)，
+不调用付费 API，不需要新增 Secret。每个候选账号先按当前月份搜索，空结果再尝试宽泛搜索，
+每次最多取 5 个候选、每账号最多 10 条；遇到认证、访问限制或限流时停止该后端。
+搜索成功但没有结果与搜索失败分开记录。公开搜索不能保证覆盖全部最新文章，
+搜索接口的可用性和免费额度由上游控制，失败时不会改用付费服务。
+
+以下核验、合并和新闻生成规则同时适用于云端和手动采集：
 
 1. 读取目标清单，用可用网页搜索工具逐账号搜索：`<账号名> 发布 site:mp.weixin.qq.com/s/`。
    可以换产品、月份关键词重试；域名限定无结果时，可从官方站或新闻中的原文链接发现候选。
    搜索成功但无结果记录为成功的空搜索；工具失败记录为失败，不能当成没有新文章。
    仓库现有代表文章可以补充候选，但必须重新核验。每账号最多 10 个候选 URL。
-2. 将搜索状态和候选 URL 写入 `/tmp/radar-wechat-candidates.json`，不要信任搜索摘要中的账号或日期：
+2. 将搜索状态和候选 URL 写入 runner 的 `$RUNNER_TEMP/wechat-candidates.json`，手动操作可使用 `/tmp/radar-wechat-candidates.json`。不要信任搜索摘要中的账号或日期：
 
    ```json
    {
@@ -26,7 +37,8 @@
    ```
 
    实际任务应包含全部候选账号的搜索状态；遗漏或失败会标记本次发现不完整。
-3. 执行 `.venv/bin/python scripts/wechat_sources.py --candidates /tmp/radar-wechat-candidates.json`。
+3. 执行 `python scripts/wechat_sources.py --candidates "$RUNNER_TEMP/wechat-candidates.json"`。
+   本机手动操作使用虚拟环境 Python 和本机候选文件路径。
    该脚本用移动端 User-Agent 直接读取公开原文；被拦截或限流时，尝试当年 Wayback 存档。
    404、验证页、账号不匹配等均不收录。只比较账号完整名称，忽略空格和大小写，不模糊匹配品牌名。
    原文账号名吻合只证明与候选清单一致，不构成独立的机构所有权认证。
@@ -36,7 +48,23 @@
 5. 正常运行 `scripts/update_news.py`，即可进入原有归档、AI 相关性、时间窗口和事件合并流程。
    正常流水线随后生成主题与公开新闻投影。未推送的本机文件不会自动出现在 GitHub Pages。
 
-在仓库根目录执行免费刷新命令（如有私有 OPML，改用 `feeds/follow.opml`，不提交该文件）：
+云端随后按工作流的免费配置生成新闻、提交快照、请求 Pages 构建并回读线上
+`wechat_bridge.discovery.at`，必须与本轮 `last_run.at` 一致才算部署成功。
+文章与搜索服务响应全文只在内存或 runner 临时目录中处理；只有公开字段白名单进入 Git。
+采集部分失败时仍发布已核验记录和失败健康状态，并在最后将工作流标记失败、写明原因，
+不会显示为“全部采集成功”。任务不发送 Hi 或其他消息工具通知。
+
+需要立即执行时，在 Actions 的 `Update AI News Snapshot` 中选择 Run workflow，
+勾选 `refresh_wechat`；或运行：
+
+```bash
+gh workflow run update-news.yml --repo LeaiFish/ai-news-radar --ref master -f refresh_wechat=true
+```
+
+采集结果、覆盖账号数、新增条数、24 小时入池数、部署状态和版本在该轮 Actions Summary 中查看。
+为避免 10:40 采集被其他刷新取消，工作流对同一分支串行运行、不取消正在执行的任务。
+
+在仓库根目录手动执行免费刷新命令（如有私有 OPML，改用 `feeds/follow.opml`，不提交该文件）：
 
 ```bash
 RADAR_FREE_ONLY=1 X_API_ENABLED=0 SOCIALDATA_ENABLED=0 TIKHUB_ENABLED=0 EMAIL_DIGEST_ENABLED=0 \
@@ -46,9 +74,10 @@ TITLE_ENHANCE_MAX_PER_RUN=0 REASON_ENHANCE_MAX_PER_RUN=0 \
 .venv/bin/python scripts/export-public-news.py --output public-news.json
 ```
 
-## 自动发布到线上
+## 可选：手动推送本机快照
 
-首次发布接入脚本、账号配置和工作流后，每日采集完成执行：
+云端每日任务直接使用临时 `GITHUB_TOKEN` 提交和请求 Pages 构建，
+不需要 SSH 密钥。以下脚本仅用于手动发布本机已核验快照：
 
 ```bash
 .venv/bin/python scripts/publish_wechat_snapshot.py
@@ -66,7 +95,7 @@ TITLE_ENHANCE_MAX_PER_RUN=0 REASON_ENHANCE_MAX_PER_RUN=0 \
 若使用本机任务，运行设备需开机并保持网络可用。
 
 发布脚本输出 `pushed` 和提交 SHA 只说明推送成功，不代表部署成功。
-每日 Agent 还必须等待该提交触发的更新工作流和 Pages 部署完成，读取线上
+手动发布时还必须等待该提交触发的更新工作流和 Pages 部署完成，读取线上
 `data/source-status.json`，确认 `wechat_bridge.discovery.at` 与本轮快照
 `last_run.at` 一致后才报告线上更新成功。失败或超时如实报告，并附 Actions 链接。
 采集部分失败时可以发布已经核验的有效记录，但摘要必须保留失败状态。
@@ -80,7 +109,7 @@ TITLE_ENHANCE_MAX_PER_RUN=0 REASON_ENHANCE_MAX_PER_RUN=0 \
 - `source-status.json` 的 `wechat_bridge` 报告入池数量、无日期数量、搜索覆盖和部分失败。
   快照超过 30 小时没有更新会报告 `wechat_snapshot_stale`，仍可使用其中有效的近期文章。
 - 本文件只包含公开元数据，可作为 GitHub Actions 的输入提交。不得写入 cookies、token、登录态或全文。
-  工作流监测该文件的推送并正常更新站点；每日 Agent 的本机执行与远端发布是两个可分别验证的环节。
+  工作流监测该文件的推送并正常更新站点；云端每日采集与手动快照推送均可触发更新。
 - 搜索结果不等于全量订阅。这是尽力补充渠道，不保证新文章的完整性或实时性。
 
 ## 本地验证
@@ -88,6 +117,7 @@ TITLE_ENHANCE_MAX_PER_RUN=0 REASON_ENHANCE_MAX_PER_RUN=0 \
 ```bash
 .venv/bin/python -m pytest -q tests/test_wechat_sources.py
 .venv/bin/python -m pytest -q tests/test_publish_wechat_snapshot.py
+.venv/bin/python -m pytest -q tests/test_wechat_cloud.py
 .venv/bin/python -m py_compile scripts/wechat_sources.py scripts/update_news.py
 ```
 
