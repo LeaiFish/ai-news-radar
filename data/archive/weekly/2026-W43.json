@@ -4,54 +4,69 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-19T21:31:55.129367Z",
+  "generated_at": "2026-10-20T01:12:00.628826Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20"
   ],
-  "story_count": 386,
-  "unique_story_count": 259,
+  "story_count": 427,
+  "unique_story_count": 313,
   "counts": {
     "by_company_topic": {
-      "anthropic": 46,
+      "anthropic": 51,
       "cursor": 1,
-      "deepseek": 27,
+      "deepseek": 31,
       "doubao": 3,
-      "google-gemini": 15,
+      "google-gemini": 18,
       "huggingface": 4,
-      "kimi": 5,
-      "microsoft": 1,
-      "minimax": 6,
+      "kimi": 4,
+      "microsoft": 3,
+      "minimax": 10,
       "nvidia": 10,
-      "openai": 22,
-      "openrouter": 1,
+      "openai": 29,
+      "openrouter": 3,
       "qwen": 2,
-      "xai": 7,
-      "zhipu": 3
+      "xai": 12,
+      "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 69,
-      "monetization": 3,
-      "workplace": 4
+      "agent-ecosystem": 76,
+      "monetization": 5,
+      "workplace": 6
     },
     "by_importance_label": {
-      "值得关注": 297,
+      "值得关注": 337,
       "多源热议": 10,
       "官方更新": 10,
-      "行业动态": 69
+      "行业动态": 70
     },
     "by_source_count_bucket": {
-      "1": 364,
-      "2": 12,
+      "1": 404,
+      "2": 13,
       "3+": 10
     }
   },
   "top_stories": [
     {
-      "story_id": "story_724b564bb7c8",
-      "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话 / How to continue a GitHub Copilot app session in VS Code",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
-      "importance_score": 0.845,
+      "story_id": "story_ee1e20c5c4d0",
+      "title": "Copilot model policy API for enterprise, orgs, and teams",
+      "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+      "importance_score": 0.8427,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_78e3fb73f308",
+      "title": "GitHub Copilot models deprecated on October 19, 2026",
+      "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
+      "importance_score": 0.8425,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -64,26 +79,20 @@
       ]
     },
     {
-      "story_id": "story_cd1029843073",
-      "title": "通过专注于优化，我们的推理费用减少了 68% / Cutting our inference bill by 68% by being obsessive about optimization",
-      "url": "https://blog.cloudflare.com/obsessive-inference-optimization",
-      "importance_score": 0.8441,
+      "story_id": "story_724b564bb7c8",
+      "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话 / How to continue a GitHub Copilot app session in VS Code",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
+      "importance_score": 0.8361,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_00aba4b65dc4",
-      "title": "Introducing Clairic, a new System One class of extraction models",
-      "url": "https://blog.cloudflare.com/clairic-extraction-model",
-      "importance_score": 0.8406,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
     },
     {
       "story_id": "story_1c2bfa5d3821",
@@ -97,10 +106,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_f7501de552be",
-      "title": "某些基于 HTTPS 的 Git 可能暂时需要身份验证 / Some Git over HTTPS may temporarily require authentication",
-      "url": "https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication",
-      "importance_score": 0.8178,
+      "story_id": "story_cd1029843073",
+      "title": "通过专注于优化，我们的推理费用减少了 68% / Cutting our inference bill by 68% by being obsessive about optimization",
+      "url": "https://blog.cloudflare.com/obsessive-inference-optimization",
+      "importance_score": 0.8351,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -108,15 +117,26 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e09ec7be817e",
-      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-      "url": "https://huggingface.co/blog/hf-torchneuron",
-      "importance_score": 0.8119,
+      "story_id": "story_00aba4b65dc4",
+      "title": "隆重推出 Clairic，一种新的 System One 类提取模型 / Introducing Clairic, a new System One class of extraction models",
+      "url": "https://blog.cloudflare.com/clairic-extraction-model",
+      "importance_score": 0.8318,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cf7ab9adb16b",
+      "title": "OpenAI 发布 GPT-6 系列模型，提升 COBOL 等低资源编程语言编码能力 / Advancing coding in low‑resource programming languages",
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "importance_score": 0.8208,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
       "company_topics": [
-        "huggingface"
+        "openai"
       ],
       "lens_topics": []
     },
@@ -134,23 +154,21 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_db496b859e20",
-      "title": "MiniMax M3.1 Flash",
-      "url": "https://www.minimax.cn/blog/minimax-m31f",
-      "importance_score": 0.7959,
+      "story_id": "story_f7501de552be",
+      "title": "某些基于 HTTPS 的 Git 可能暂时需要身份验证 / Some Git over HTTPS may temporarily require authentication",
+      "url": "https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication",
+      "importance_score": 0.8098,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
-      "company_topics": [
-        "minimax"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
       "story_id": "story_cdecf8c47980",
       "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹 / Accused OpenAI spy had folder called “Saudi Gov Docs,” FBI says",
       "url": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says",
-      "importance_score": 0.7916,
+      "importance_score": 0.7825,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -163,10 +181,23 @@
       ]
     },
     {
+      "story_id": "story_06693270d023",
+      "title": "美国国土安全部下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品 / The US orders every civilian agency to rip out DeepSeek, even tools built on it",
+      "url": "https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party",
+      "importance_score": 0.7821,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_0e04939a4dfa",
       "title": "黑客用 AI 智能体入侵 John Deere、SharkNinja 等超 100 家网站 / A hacker broke into John Deere and SharkNinja with an army of AI agents",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-      "importance_score": 0.789,
+      "importance_score": 0.7807,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-20",
@@ -176,10 +207,10 @@
       ]
     },
     {
-      "story_id": "story_4344acbfe0e3",
-      "title": "Disney 拟通过破产程序收购 Character.AI 团队与技术、绕开其诉讼 / Disney found a way to buy Character.AI without buying its lawsuits",
-      "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits",
-      "importance_score": 0.7658,
+      "story_id": "story_5de10e5e2e65",
+      "title": "Apate.ai 用35万个AI反诈拖住骗子，国内年轻人用AI视频反制AI卖惨账号",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687365&idx=1&sn=4102098fb8725531aa2f783fa2f20f20",
+      "importance_score": 0.7746,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
@@ -187,20 +218,77 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_f05a4bc1e42d",
-      "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一 / Big news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Agent Arena! It just landed at #11 overall with ...",
-      "url": "https://x.com/arena/status/2112247114944360666",
-      "importance_score": 0.7654,
+      "story_id": "story_a0a6a5851bf6",
+      "title": "亚马逊推开源 TorchNeuron：改一处配置，PyTorch 就能跑在自研 Trainium 上",
+      "url": "https://www.aibase.com/news/31735",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_907674fe60b3",
+      "title": "一张脸就能算出生死？AI 凭面部照片预测癌症患者存活率",
+      "url": "https://www.aibase.com/news/31734",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8f62ced51092",
+      "title": "MiniMax 更新 M3.1Flash:成本降70%、速度近3倍，OSWorld V2与 ALE 双项国产第一",
+      "url": "https://www.aibase.com/news/31732",
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-20",
       "company_topics": [
-        "deepseek",
+        "minimax"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_52180dc2918a",
+      "title": "OpenCode Console遭攻击，1.4%用户受影响，部分API密钥泄露",
+      "url": "https://www.aibase.com/news/31736",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2623160af52b",
+      "title": "抢在对头上市前“吸金”！OpenAI 紧急开启 300 亿美元新融资，估值冲向 1.4 万亿美元",
+      "url": "https://www.aibase.com/news/31733",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
         "openai"
       ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_88a0c6b8e716",
+      "title": "Inception Labs 发布扩散大语言模型 Mercury 3，速度达 1068 tokens/秒 / Diffusion at Scale: Introducing Mercury 3",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "importance_score": 0.767,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_f866fb9579b1",
@@ -271,6 +359,47 @@
       "archive_date": "2026-10-19",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_4344acbfe0e3",
+      "title": "Disney 拟通过破产程序收购 Character.AI 团队与技术、绕开其诉讼 / Disney found a way to buy Character.AI without buying its lawsuits",
+      "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits",
+      "importance_score": 0.7574,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_84e1775d2c48",
+      "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter / Mercury 3 is live on OpenRouter!",
+      "url": "https://x.com/OpenRouter/status/2112225779782398131",
+      "importance_score": 0.7573,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "openai",
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f05a4bc1e42d",
+      "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一 / Big news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Agent Arena! It just landed at #11 overall with ...",
+      "url": "https://x.com/arena/status/2112247114944360666",
+      "importance_score": 0.7566,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "deepseek",
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_7e560b6785ec",
@@ -408,133 +537,6 @@
       "company_topics": [
         "deepseek"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2e0021cc3257",
-      "title": "AI 正在偷改人类记忆：看一眼假图，就\"记得\"从未发生的事",
-      "url": "https://www.aibase.com/news/31721",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2489c36ca65c",
-      "title": "算力相当于全人类不吃不喝算 200 年！我国首个全国产十万卡 AI 超集群“曙光 8000”真机震撼亮相",
-      "url": "https://www.aibase.com/news/31714",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_16ab1c3d9bf2",
-      "title": "DeepSeek发布API网页搜索与抓取服务:每1000次成功请求收费5元",
-      "url": "https://www.aibase.com/news/31711",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_07d6bd367abd",
-      "title": "Anthropic 自曝就业之变：AI 智能体干活时长碾压人类 6 倍，新人岗位被腰斩",
-      "url": "https://www.aibase.com/news/31716",
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_979604c06d35",
-      "title": "AWS 发布 TorchNeuron：Trainium 的原生 PyTorch 后端 / Introducing TorchNeuron: Native PyTorch backend for AWS Trainium",
-      "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium",
-      "importance_score": 0.7474,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3f646f16c678",
-      "title": "Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性 / The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
-      "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture",
-      "importance_score": 0.7466,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_84e1775d2c48",
-      "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter / Mercury 3 is live on OpenRouter!",
-      "url": "https://x.com/OpenRouter/status/2112225779782398131",
-      "importance_score": 0.741,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "openai",
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d95f2ac548b5",
-      "title": "fal 联合 bfl_ai 发布后训练视频模型 FLUX 3 Max / Introducing FLUX 3 Max, the latest post-trained video model from fal Research in partnership with @bfl_ai.",
-      "url": "https://x.com/fal/status/2112251022047412492",
-      "importance_score": 0.7391,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f9322ffd3993",
-      "title": "不操控键鼠、自己写代码：4 个 Gemini 智能体在《我的世界》里自主组队击败末影龙",
-      "url": "https://www.aibase.com/news/31703",
-      "importance_score": 0.7384,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_d83ad166353f",
-      "title": "Vercel数据表明决策模型Jev成史上采用最快AI模型",
-      "url": "https://www.aibase.com/news/31708",
-      "importance_score": 0.7384,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
