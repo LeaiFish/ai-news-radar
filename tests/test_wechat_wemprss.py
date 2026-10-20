@@ -5,7 +5,7 @@ import pytest
 
 from scripts.wechat_wemprss import collect, merge_result
 from scripts.wechat_sources import canonical_evidence_url, eligible_rows, load_radar_rows
-from scripts.publish_wechat_snapshot import public_snapshot
+from scripts.publish_wechat_snapshot import public_snapshot, merged_snapshot
 
 NOW = datetime(2026, 10, 20, 10, tzinfo=timezone.utc)
 JOB = {"company_id": "deepseek", "account_name": "DeepSeek", "book_id": "MP_WXS_123"}
@@ -77,3 +77,16 @@ def test_auth_failure_stops_requests_and_keeps_verified_history():
     assert not snapshot["last_run"]["ok"]
     assert len(list(eligible_rows(snapshot, NOW))) == 1
     assert snapshot["last_run"]["collection_state"] == "failed"
+
+
+def test_publish_counts_include_remote_history_without_counting_it_as_added():
+    incoming = merge_result(collect(Reader(), [JOB], NOW), None, [JOB], NOW)
+    remote = public_snapshot(incoming, NOW)
+    row = dict(remote["accounts"]["deepseek"][0], account_name="千问APP",
+               url="https://mp.weixin.qq.com/s/old", evidence_url="https://mp.weixin.qq.com/s/old")
+    remote["accounts"] = {"qwen": [row]}
+    merged = merged_snapshot(incoming, remote, NOW)
+    assert merged["last_run"]["covered_companies"] == 2
+    assert merged["last_run"]["covered_accounts"] == 2
+    assert merged["last_run"]["added"] == 1
+    assert merged["last_run"]["recent_24h"] == 0

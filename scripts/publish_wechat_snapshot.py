@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import argparse
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 import subprocess
@@ -91,6 +91,18 @@ def merged_snapshot(incoming, remote, now):
             grouped.setdefault(normalized_name(row["account_name"]), []).append(row)
         incoming["accounts"][company] = [row for name in sorted(grouped)
             for row in sorted(grouped[name], key=lambda r: (r["published"] or "", r["verified_at"]), reverse=True)[:20]]
+    # Counts must describe the merged archive, including remote-only history.
+    retained = [(company, row) for company, rows in incoming["accounts"].items() for row in rows]
+    remote_keys = {(company, row["url"]) for company, rows in remote["accounts"].items() for row in rows}
+    run = incoming["last_run"]
+    run["covered_companies"] = sum(bool(rows) for rows in incoming["accounts"].values())
+    run["covered_accounts"] = len({normalized_name(row["account_name"]) for _, row in retained})
+    run["added"] = (remote["last_run"]["added"] if run["at"] == remote["last_run"]["at"] else
+        sum((company, row["url"]) not in remote_keys for company, row in retained))
+    if "recent_24h" in run:
+        collected_at = published_datetime(run["at"])
+        run["recent_24h"] = sum(bool(published_datetime(row["published"])) and
+            collected_at - timedelta(hours=24) <= published_datetime(row["published"]) <= collected_at for _, row in retained)
     return incoming
 
 
