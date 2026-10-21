@@ -4,50 +4,50 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-21T03:46:13.627754Z",
+  "generated_at": "2026-10-21T06:05:01.234135Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21"
   ],
-  "story_count": 721,
-  "unique_story_count": 594,
+  "story_count": 714,
+  "unique_story_count": 603,
   "counts": {
     "by_company_topic": {
-      "anthropic": 87,
-      "cursor": 2,
-      "deepseek": 61,
+      "anthropic": 90,
+      "cursor": 3,
+      "deepseek": 63,
       "doubao": 4,
-      "google-gemini": 27,
+      "google-gemini": 28,
       "huggingface": 12,
       "hunyuan": 4,
       "kimi": 3,
       "meta-llama": 1,
       "microsoft": 4,
-      "minimax": 16,
-      "nvidia": 19,
-      "openai": 67,
+      "minimax": 15,
+      "nvidia": 18,
+      "openai": 65,
       "openrouter": 5,
       "perplexity": 5,
       "qwen": 4,
-      "xai": 13,
+      "xai": 12,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 104,
-      "monetization": 9,
+      "agent-ecosystem": 105,
+      "monetization": 8,
       "workplace": 11
     },
     "by_importance_label": {
-      "值得关注": 583,
-      "多源热议": 9,
-      "官方更新": 30,
-      "行业动态": 99
+      "值得关注": 578,
+      "多源热议": 11,
+      "官方更新": 31,
+      "行业动态": 94
     },
     "by_source_count_bucket": {
-      "1": 696,
+      "1": 687,
       "2": 16,
-      "3+": 9
+      "3+": 11
     }
   },
   "top_stories": [
@@ -76,16 +76,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_1587a1f5ff72",
-      "title": "NVIDIA Cosmos3-H-Dreams：通过生成模拟将临床手术变为现实 / NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-      "importance_score": 0.837,
+      "story_id": "story_2d5f6b176445",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
+      "importance_score": 0.8387,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
       "company_topics": [
-        "nvidia",
-        "huggingface"
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -101,30 +100,16 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a92dafcadd98",
-      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
-      "importance_score": 0.824,
+      "story_id": "story_1587a1f5ff72",
+      "title": "NVIDIA Cosmos3-H-Dreams：通过生成模拟将临床手术变为现实 / NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+      "importance_score": 0.8318,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
       "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_35462734c1f0",
-      "title": "New Gemini tools for small business owners",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
-      "importance_score": 0.8239,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "google-gemini"
+        "nvidia",
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -168,10 +153,38 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a92dafcadd98",
+      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
+      "importance_score": 0.8191,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_35462734c1f0",
+      "title": "New Gemini tools for small business owners",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
+      "importance_score": 0.8189,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_a59ab3527808",
-      "title": "Bulk migrate branch protections to rulesets for a repository",
+      "title": "将分支保护批量迁移到代码仓库的规则集 / Bulk migrate branch protections to rulesets for a repository",
       "url": "https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository",
-      "importance_score": 0.8206,
+      "importance_score": 0.8154,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -182,7 +195,7 @@
       "story_id": "story_9b4c06e45edc",
       "title": "Updates to GitHub secret scanning",
       "url": "https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning",
-      "importance_score": 0.8205,
+      "importance_score": 0.8153,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -193,7 +206,7 @@
       "story_id": "story_d426b0379ab0",
       "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
       "url": "https://openai.com/index/ted-taylor-restaurant",
-      "importance_score": 0.8193,
+      "importance_score": 0.8147,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -206,38 +219,12 @@
       "story_id": "story_b7b098dc2662",
       "title": "Dependabot alerts REST API now includes dependency versions",
       "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
-      "importance_score": 0.8186,
+      "importance_score": 0.8135,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_b4d45cb1791e",
-      "title": "GitHub package firewall in public preview",
-      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
-      "importance_score": 0.8163,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_626c5bb0bff8",
-      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-      "url": "https://openai.com/index/terminal-x",
-      "importance_score": 0.8134,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     },
     {
       "story_id": "story_687c4d3aaba7",
@@ -250,6 +237,17 @@
       "company_topics": [
         "minimax"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b4d45cb1791e",
+      "title": "GitHub package firewall in public preview",
+      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+      "importance_score": 0.8113,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -284,6 +282,21 @@
       ]
     },
     {
+      "story_id": "story_626c5bb0bff8",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "url": "https://openai.com/index/terminal-x",
+      "importance_score": 0.809,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_724b564bb7c8",
       "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话 / How to continue a GitHub Copilot app session in VS Code",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
@@ -298,6 +311,33 @@
         "agent-ecosystem",
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_7b2ba03c7801",
+      "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源 / Main takeaways from SpaceX’s earnings call today",
+      "url": "https://x.com/rohanpaul_ai/status/2112768460866695334",
+      "importance_score": 0.8034,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "anthropic",
+        "cursor"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8d28dac21b18",
+      "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺 / WSJ saw Anthropic’s draft IPO papers: $16.3B revenue in 6 months, $80.7B loss on paper, and about $450B promised for compute",
+      "url": "https://x.com/rohanpaul_ai/status/2112763999586771238",
+      "importance_score": 0.8026,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_00aba4b65dc4",
@@ -348,81 +388,6 @@
       ]
     },
     {
-      "story_id": "story_eeece0985172",
-      "title": "王腾创业首款产品ISHO Ring智能戒指官宣:搭载Apollo330B芯片，10月29日发布",
-      "url": "https://www.aibase.com/news/31773",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0d55ce021a47",
-      "title": "SpaceX 财报显示 AI 业务超预期，占收入 52% / SpaceX’s AI business is beating expectations",
-      "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations",
-      "importance_score": 0.7651,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "xai",
-        "cursor"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e60845a1dbaa",
-      "title": "AI 学会主动逃避监管了？OpenAI 披露旗下智能体曾试图关闭内部监控警报",
-      "url": "https://www.aibase.com/news/31771",
-      "importance_score": 0.7647,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_e5772707088a",
-      "title": "Spotify年内已从推荐系统移除超5000万首AI垃圾歌曲",
-      "url": "https://www.aibase.com/news/31770",
-      "importance_score": 0.7647,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e51ac84d421e",
-      "title": "Meta旗下AI应用Muse上市40天美国下载量突破1000万",
-      "url": "https://www.aibase.com/news/31769",
-      "importance_score": 0.7647,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1965aa09afd6",
-      "title": "Hugging Face 掌门人呛声 Netflix：把 AI 拍成\"末日片\"，受害方都不认",
-      "url": "https://www.aibase.com/news/31772",
-      "importance_score": 0.7647,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_a1d801ce6124",
       "title": "Redact 调查：WhatsApp 帮助页面隐藏 LLM 指令，让 AI 不推荐监管机构、不提 GDPR / WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
       "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
@@ -448,103 +413,14 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_93f048271b17",
-      "title": "Anthropic 云合作生变：AWS、Google、微软视其为竞争者 / Anthropic’s cloud partnerships are getting messy",
-      "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy",
-      "importance_score": 0.7638,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ddf1f19f678b",
-      "title": "Salesforce 豪掷 56.6 亿美元吞下 Braze：补上\"实时互动\"这块 AI 拼图",
-      "url": "https://www.aibase.com/news/31763",
-      "importance_score": 0.7622,
+      "story_id": "story_eeece0985172",
+      "title": "王腾创业首款产品ISHO Ring智能戒指官宣:搭载Apollo330B芯片，10月29日发布",
+      "url": "https://www.aibase.com/news/31773",
+      "importance_score": 0.7617,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-21",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a2c0512e14df",
-      "title": "OpenAI 专治\"古董代码\"：COBOL 迁移准确率飙到 97.9%，银行老系统有救了",
-      "url": "https://www.aibase.com/news/31765",
-      "importance_score": 0.7622,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5a097b80c9f3",
-      "title": "SpaceX第三季度营收146亿美元:人工智能业务占比达52%并推动公司扭亏为盈",
-      "url": "https://www.aibase.com/news/31762",
-      "importance_score": 0.7622,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5975058103f8",
-      "title": "谷歌在车载Gemini中推出个人智能功能，打通多源生态服务",
-      "url": "https://www.aibase.com/news/31766",
-      "importance_score": 0.7622,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2624c458011a",
-      "title": "​OpenAI 重磅上线 ChatGPT“锁定聊天”功能：四位数 PIN 码与生物识别双保险",
-      "url": "https://www.aibase.com/news/31764",
-      "importance_score": 0.7622,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_20b780d60549",
-      "title": "谷歌为车载版 Gemini 接入个人智能：跨 Gmail、日历与地图打通全场景数据",
-      "url": "https://www.aibase.com/news/31767",
-      "importance_score": 0.7622,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0ce33c944a01",
-      "title": "谷歌宣布：Claude Opus 5.5 与 Claude Sonnet 5.5 正式接入 Antigravity 平台",
-      "url": "https://www.aibase.com/news/31768",
-      "importance_score": 0.7622,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "anthropic"
-      ],
       "lens_topics": []
     },
     {
@@ -555,6 +431,129 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f866fb9579b1",
+      "title": "山姆出手整治\"AI 下架好物\"谣言：数千条假帖引流牟利",
+      "url": "https://www.aibase.com/news/31725",
+      "importance_score": 0.7606,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e40c814da79b",
+      "title": "阿里速卖通联袂天猫推全球增长计划，拿真金白银投 AI 硬件新品牌",
+      "url": "https://www.aibase.com/news/31729",
+      "importance_score": 0.7606,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5806e8a8ca0a",
+      "title": "检方羁押申请揭 OpenAI 录音门新线：嫌疑人被捕前 4 天仍密聊沙特王室",
+      "url": "https://www.aibase.com/news/31730",
+      "importance_score": 0.7606,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_42cc36918f65",
+      "title": "从汽车制造商到全球智能科技公司！奇瑞全球创新大会重磅官宣：首个行业垂域大模型与人形机器人“墨宝”震撼登场",
+      "url": "https://www.aibase.com/news/31731",
+      "importance_score": 0.7606,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3e82f9917712",
+      "title": "OpenAI发布ChatGPT扩展程序重大升级，支持跨标签页上下文读取与自动化操作",
+      "url": "https://www.aibase.com/news/31728",
+      "importance_score": 0.7606,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_15dde2629f34",
+      "title": "游戏公司误退 3.3 万遭拒还，家长持 AI 伪造录音闹庭被训诫",
+      "url": "https://www.aibase.com/news/31726",
+      "importance_score": 0.7606,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_75f1482a0a43",
+      "title": "DeepSeek 全面开源内部推理框架 DeepInfer",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&mid=2247485884&idx=1&sn=d457981abe7db1f1b5d600fc109dc836",
+      "importance_score": 0.7599,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0d55ce021a47",
+      "title": "SpaceX 财报显示 AI 业务超预期，占收入 52% / SpaceX’s AI business is beating expectations",
+      "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations",
+      "importance_score": 0.7597,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "xai",
+        "cursor"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e60845a1dbaa",
+      "title": "AI 学会主动逃避监管了？OpenAI 披露旗下智能体曾试图关闭内部监控警报",
+      "url": "https://www.aibase.com/news/31771",
+      "importance_score": 0.7589,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_e5772707088a",
+      "title": "Spotify年内已从推荐系统移除超5000万首AI垃圾歌曲",
+      "url": "https://www.aibase.com/news/31770",
+      "importance_score": 0.7589,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
       "company_topics": [],
       "lens_topics": []
     }
