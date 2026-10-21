@@ -4,52 +4,82 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-21T15:59:13.004205Z",
+  "generated_at": "2026-10-21T20:38:00.180476Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
-    "2026-10-21"
+    "2026-10-21",
+    "2026-10-22"
   ],
-  "story_count": 723,
-  "unique_story_count": 723,
+  "story_count": 987,
+  "unique_story_count": 791,
   "counts": {
     "by_company_topic": {
-      "anthropic": 94,
-      "cursor": 3,
-      "deepseek": 46,
+      "anthropic": 138,
+      "cursor": 5,
+      "deepseek": 52,
       "doubao": 3,
-      "google-gemini": 32,
-      "huggingface": 14,
+      "google-gemini": 48,
+      "huggingface": 22,
       "hunyuan": 2,
       "kimi": 3,
-      "microsoft": 5,
-      "minimax": 15,
-      "nvidia": 32,
-      "openai": 79,
+      "microsoft": 6,
+      "minimax": 17,
+      "nvidia": 51,
+      "openai": 129,
       "openrouter": 5,
-      "perplexity": 4,
-      "qwen": 4,
-      "xai": 15,
+      "perplexity": 6,
+      "qwen": 6,
+      "xai": 19,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 119,
+      "agent-ecosystem": 166,
       "monetization": 6,
-      "workplace": 12
+      "workplace": 17
     },
     "by_importance_label": {
-      "值得关注": 573,
-      "多源热议": 11,
-      "官方更新": 36,
-      "行业动态": 103
+      "值得关注": 782,
+      "多源热议": 14,
+      "官方更新": 55,
+      "行业动态": 136
     },
     "by_source_count_bucket": {
-      "1": 692,
-      "2": 20,
-      "3+": 11
+      "1": 942,
+      "2": 29,
+      "3+": 16
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_35d2cfa7a29f",
+      "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "importance_score": 0.8869,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai",
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_200d3bc2ea4e",
+      "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复 / Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "importance_score": 0.8698,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
     {
       "story_id": "story_550f1a888b8d",
       "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
@@ -104,21 +134,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_200d3bc2ea4e",
-      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-      "importance_score": 0.8551,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_369288508eca",
       "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
       "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
@@ -132,16 +147,28 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_35d2cfa7a29f",
-      "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
-      "url": "https://openai.com/index/openai-models-google-cloud",
-      "importance_score": 0.8479,
+      "story_id": "story_2b8c03ec1d03",
+      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+      "importance_score": 0.8485,
       "importance_label": "官方更新",
       "source_count": 1,
-      "archive_date": "2026-10-21",
+      "archive_date": "2026-10-22",
       "company_topics": [
-        "openai",
-        "google-gemini"
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0fb91e12e23c",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "importance_score": 0.8428,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -154,6 +181,21 @@
       "source_count": 1,
       "archive_date": "2026-10-21",
       "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_52d208e0dc89",
+      "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索 / Using thousands of AI agents to uncover new leads in biological data",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "importance_score": 0.8403,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": [
         "agent-ecosystem"
       ]
@@ -194,19 +236,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_52d208e0dc89",
-      "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索 / Using thousands of AI agents to uncover new leads in biological data",
-      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "importance_score": 0.8252,
+      "story_id": "story_d85e988461bd",
+      "title": "GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
+      "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
+      "importance_score": 0.8341,
       "importance_label": "官方更新",
       "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "archive_date": "2026-10-22",
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_f47486927056",
@@ -317,6 +355,19 @@
         "agent-ecosystem",
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_8baebbd2c5b5",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "url": "https://openai.com/index/empowering-cyber-defenders",
+      "importance_score": 0.8056,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_724b564bb7c8",
@@ -491,6 +542,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a98043caf1bf",
+      "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.",
+      "url": "https://x.com/OpenAI/status/2112945805686604033",
+      "importance_score": 0.7904,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_4617964386d5",
       "title": "美国陆军网络司令部 ECHOTRIBBLE 项目拟将 AI 智能体变成自主扩散的网络武器 / Army Cyber Command's ECHOTRIBBLE would turn AI agents into self-spreading cyberweapons",
       "url": "https://the-decoder.com/army-cyber-commands-echotribble-would-turn-ai-agents-into-self-spreading-cyberweapons",
@@ -502,70 +566,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_382c023f809a",
-      "title": "OpenAI 称其模型协助研究人员在披露前发现 PHP 关键漏洞 / OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-so...",
-      "url": "https://x.com/OpenAI/status/2112907856018309586",
-      "importance_score": 0.7747,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e2be14acc0f5",
-      "title": "OpenAI 披露 GPT-6 Astra 智能体关闭安全监控后撒谎的事件 / OpenAI says an AI agent lied about disabling its safety monitoring system",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
-      "importance_score": 0.7744,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_a1d801ce6124",
-      "title": "Redact 调查：WhatsApp 帮助页面隐藏 LLM 指令，让 AI 不推荐监管机构、不提 GDPR / WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-      "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-      "importance_score": 0.7645,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ec99b9afee19",
-      "title": "路透：OpenAI 拟在 Anthropic 上市前加速融资约 300 亿美元，估值超 1.4 万亿美元 / Reuters: OpenAI is racing to raise about $30B at a valuation above $1.4T before Anthropic goes public.",
-      "url": "https://x.com/rohanpaul_ai/status/2112455383356989598",
-      "importance_score": 0.764,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d1eb29f274bd",
-      "title": "Google 发布 vLLM 与 SGLang 的 TorchTPU 原生推理引擎 / Announcing New vLLM and SGLang Inference Engines on TPU",
-      "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu",
-      "importance_score": 0.7609,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
     }
   ]
 }
