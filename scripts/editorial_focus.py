@@ -9,16 +9,21 @@ import re
 from typing import Any
 from urllib.parse import urlsplit
 
+try:
+    from scripts.product_context import product_context
+except ModuleNotFoundError:
+    from product_context import product_context
+
 _PRODUCT = re.compile(
     r"(?:\b(?:launch\w*|introduc\w*|new|release\w*|roll\w* out)\b.{0,80}"
     r"\b(?:app|dashboard|feature|tool|workspace|integration|subscription|api)\b)"
     r"|\b(?:use case|health coach|customer story|how .{0,60}built)\b"
-    r"|新功能|功能更新|客户端|产品发布|应用场景|使用体验|实测|陪逛|协作功能", re.I,
+    r"|新功能|功能更新|客户端|产品发布|应用场景|使用体验|陪逛|协作功能", re.I,
 )
 _TECHNICAL = re.compile(
     r"\b(?:benchmark\w*|eval(?:uation)?s?|inference|pretraining|fine[- ]?tun\w*|"
     r"quantization|tokenization|throughput|context engineering|training|arxiv)\b"
-    r"|评测|榜单|基准测试|推理优化|量化|预训练|微调|论文|吞吐", re.I,
+    r"|评测|榜单|基准测试|推理框架|推理优化|量化|预训练|微调|论文|吞吐|性能与成本", re.I,
 )
 
 
@@ -38,6 +43,11 @@ def editorial_tags(row: dict[str, Any]) -> list[str]:
         return ["model_evaluation"]
     if host in {"vllm.ai", "blog.vllm.ai", "lmsys.org", "pytorch.org"} or any(name in source for name in ("vllm", "lmsys", "pytorch")):
         return ["model_technology"]
+    context = product_context(row)
+    if context and context["kind"] == "product":
+        return ["product_update"]
+    if context and context["kind"] == "technical":
+        return ["technical_research"]
     if _PRODUCT.search(title):
         return ["product_update"]
     if row.get("aihot_category") == "paper" or "anthropic.com/research/" in url or "alignment.openai.com/" in url:

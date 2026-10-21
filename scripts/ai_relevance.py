@@ -7,6 +7,11 @@ import re
 from typing import Any
 from urllib.parse import urlparse
 
+try:
+    from scripts.product_context import product_context
+except ModuleNotFoundError:  # direct script execution
+    from product_context import product_context
+
 AI_KEYWORDS = [
     "a.i.",
     "agent view",
@@ -370,6 +375,14 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
     has_tech = bool(tech_signals)
 
     if not (has_ai or (has_broad_ai and has_tech)):
+        context = product_context(record)
+        if context:
+            return _result(
+                is_ai_related=True, score=0.82 if context["kind"] == "product" else 0.72,
+                label="ai_product_update" if context["kind"] == "product" else _label_for_text(text, has_tech),
+                reason=context["signal"], signals=sorted(set(ai_signals + [context["identity"], context["signal"]])),
+                noise=noise,
+            )
         return _result(
             is_ai_related=False,
             score=source_prior + (0.32 if has_broad_ai else 0.0) + (0.08 if has_tech else 0.0),

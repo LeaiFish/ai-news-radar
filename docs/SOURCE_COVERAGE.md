@@ -508,6 +508,17 @@ credibility tiers and AI relevance thresholds are not reduced. No new labels
 or filters are added to the reader UI; the public-news projection omits these
 internal fields.
 
+Product recognition also uses `scripts/product_context.py`: a known AI product
+identity plus concrete functionality, usage instructions, customer scenarios or
+experience changes can rescue a title that omits the words AI/LLM. Identity can
+come from an exact official host/X handle or matching verified WeChat account
+metadata. General cloud accounts, source names alone, ambiguous Muse/museum
+substrings, promotional footers, coupons and greetings do not grant this rescue.
+Existing adult-promotion rejection runs first. Existing positive relevance scores
+are retained. The same evidence drives internal product tags, while evaluation
+accounts and model-technology sources keep their technical priority. This changes
+selection rules, not reader-facing tags or source credibility tiers.
+
 AIHOT v1 reads original URLs from `links.original`, publisher names from
 `source.name`, English titles from `originalTitle`, and pagination from `page`.
 The previous `/api/public/*` endpoint is announced to stop on 2026-10-31.
