@@ -4,48 +4,49 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-20T23:52:10.855904Z",
+  "generated_at": "2026-10-21T01:10:47.571968Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21"
   ],
-  "story_count": 695,
-  "unique_story_count": 541,
+  "story_count": 709,
+  "unique_story_count": 562,
   "counts": {
     "by_company_topic": {
-      "anthropic": 85,
+      "anthropic": 89,
       "cursor": 2,
-      "deepseek": 59,
+      "deepseek": 60,
       "doubao": 3,
-      "google-gemini": 26,
-      "huggingface": 14,
+      "google-gemini": 24,
+      "huggingface": 11,
       "hunyuan": 4,
       "kimi": 3,
+      "meta-llama": 1,
       "microsoft": 4,
-      "minimax": 14,
+      "minimax": 16,
       "nvidia": 19,
-      "openai": 62,
+      "openai": 65,
       "openrouter": 3,
       "perplexity": 4,
-      "qwen": 2,
+      "qwen": 3,
       "xai": 13,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 99,
+      "agent-ecosystem": 102,
       "monetization": 9,
       "workplace": 11
     },
     "by_importance_label": {
-      "值得关注": 554,
+      "值得关注": 572,
       "多源热议": 9,
-      "官方更新": 33,
+      "官方更新": 29,
       "行业动态": 99
     },
     "by_source_count_bucket": {
-      "1": 672,
-      "2": 14,
+      "1": 685,
+      "2": 15,
       "3+": 9
     }
   },
@@ -67,7 +68,7 @@
       "story_id": "story_1587a1f5ff72",
       "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
       "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-      "importance_score": 0.8461,
+      "importance_score": 0.843,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -103,7 +104,7 @@
       "story_id": "story_a92dafcadd98",
       "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
-      "importance_score": 0.8329,
+      "importance_score": 0.8298,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -118,7 +119,7 @@
       "story_id": "story_35462734c1f0",
       "title": "New Gemini tools for small business owners",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
-      "importance_score": 0.8327,
+      "importance_score": 0.8297,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -131,7 +132,7 @@
       "story_id": "story_a59ab3527808",
       "title": "Bulk migrate branch protections to rulesets for a repository",
       "url": "https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository",
-      "importance_score": 0.8296,
+      "importance_score": 0.8265,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -142,18 +143,7 @@
       "story_id": "story_9b4c06e45edc",
       "title": "Updates to GitHub secret scanning",
       "url": "https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning",
-      "importance_score": 0.8295,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b7b098dc2662",
-      "title": "Dependabot alerts REST API now includes dependency versions",
-      "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
-      "importance_score": 0.8275,
+      "importance_score": 0.8264,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -164,7 +154,7 @@
       "story_id": "story_d426b0379ab0",
       "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
       "url": "https://openai.com/index/ted-taylor-restaurant",
-      "importance_score": 0.8273,
+      "importance_score": 0.8246,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -174,10 +164,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_b4d45cb1791e",
-      "title": "GitHub package firewall in public preview",
-      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
-      "importance_score": 0.8251,
+      "story_id": "story_b7b098dc2662",
+      "title": "Dependabot alerts REST API now includes dependency versions",
+      "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
+      "importance_score": 0.8245,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -222,6 +212,32 @@
         "huggingface"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_b4d45cb1791e",
+      "title": "GitHub package firewall in public preview",
+      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+      "importance_score": 0.8221,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_626c5bb0bff8",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "url": "https://openai.com/index/terminal-x",
+      "importance_score": 0.8184,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_687c4d3aaba7",
@@ -308,19 +324,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_5df9bc2fa0b7",
-      "title": "OpenAI acquires Orchestra Bio",
-      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-      "importance_score": 0.7995,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_8649e06b51ec",
       "title": "How Numan Built an Eval-First AI Health Coach with LangGraph and LangSmith",
       "url": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith",
@@ -348,7 +351,7 @@
       "story_id": "story_0d55ce021a47",
       "title": "SpaceX 财报显示 AI 业务超预期，占收入 52% / SpaceX’s AI business is beating expectations",
       "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations",
-      "importance_score": 0.7745,
+      "importance_score": 0.7713,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -362,7 +365,7 @@
       "story_id": "story_93f048271b17",
       "title": "Anthropic 云合作生变：AWS、Google、微软视其为竞争者 / Anthropic’s cloud partnerships are getting messy",
       "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy",
-      "importance_score": 0.7734,
+      "importance_score": 0.7701,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-21",
