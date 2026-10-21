@@ -1,6 +1,6 @@
 {
   "schema": "wechat_accounts_v1",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "accounts": {
     "doubao": [
       {
@@ -354,20 +354,42 @@
     "zhipu": []
   },
   "last_run": {
-    "at": "2026-10-20T09:09:13.019901Z",
-    "ok": true,
-    "searched_accounts": 7,
-    "candidates": 7,
-    "verified": 7,
-    "added": 5,
+    "at": "2026-10-21T02:38:24.709371Z",
+    "ok": false,
+    "searched_accounts": 0,
+    "candidates": 0,
+    "verified": 0,
+    "added": 0,
     "covered_companies": 7,
     "covered_accounts": 10,
-    "errors": [],
-    "recent_24h": 2,
+    "errors": [
+      {
+        "error": "discovery_failed"
+      },
+      {
+        "error": "discovery_failed"
+      },
+      {
+        "error": "discovery_failed"
+      },
+      {
+        "error": "discovery_failed"
+      },
+      {
+        "error": "discovery_failed"
+      },
+      {
+        "error": "discovery_failed"
+      },
+      {
+        "error": "discovery_failed"
+      }
+    ],
+    "recent_24h": 0,
     "rejected": 0,
-    "collection_state": "complete",
+    "collection_state": "failed",
     "pilot_recent_7d": {
-      "千问APP": 1,
+      "千问APP": 0,
       "通义实验室": 0
     }
   }
