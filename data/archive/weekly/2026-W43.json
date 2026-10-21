@@ -4,65 +4,52 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-21T11:56:08.499613Z",
+  "generated_at": "2026-10-21T15:59:13.004205Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21"
   ],
-  "story_count": 717,
-  "unique_story_count": 669,
+  "story_count": 723,
+  "unique_story_count": 723,
   "counts": {
     "by_company_topic": {
-      "anthropic": 90,
+      "anthropic": 94,
       "cursor": 3,
-      "deepseek": 52,
-      "doubao": 4,
-      "google-gemini": 28,
-      "huggingface": 13,
+      "deepseek": 46,
+      "doubao": 3,
+      "google-gemini": 32,
+      "huggingface": 14,
       "hunyuan": 2,
       "kimi": 3,
       "microsoft": 5,
       "minimax": 15,
-      "nvidia": 25,
-      "openai": 65,
+      "nvidia": 32,
+      "openai": 79,
       "openrouter": 5,
-      "perplexity": 5,
+      "perplexity": 4,
       "qwen": 4,
       "xai": 15,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 116,
+      "agent-ecosystem": 119,
       "monetization": 6,
       "workplace": 12
     },
     "by_importance_label": {
-      "值得关注": 577,
-      "多源热议": 10,
-      "官方更新": 30,
-      "行业动态": 100
+      "值得关注": 573,
+      "多源热议": 11,
+      "官方更新": 36,
+      "行业动态": 103
     },
     "by_source_count_bucket": {
-      "1": 687,
+      "1": 692,
       "2": 20,
-      "3+": 10
+      "3+": 11
     }
   },
   "top_stories": [
-    {
-      "story_id": "story_dc1fcf3e5c71",
-      "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories",
-      "url": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
-      "importance_score": 0.8676,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
     {
       "story_id": "story_550f1a888b8d",
       "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
@@ -77,6 +64,101 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_fc5f96ba9bc3",
+      "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+      "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
+      "importance_score": 0.858,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "nvidia",
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dc1fcf3e5c71",
+      "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories",
+      "url": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
+      "importance_score": 0.8575,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ed75b55f2e12",
+      "title": "Granite Speech 5.0：更准确、更快地转录、翻译和归因 / Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "importance_score": 0.8574,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_200d3bc2ea4e",
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "importance_score": 0.8551,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_369288508eca",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "importance_score": 0.8524,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_35d2cfa7a29f",
+      "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "importance_score": 0.8479,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai",
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e8cde5543b66",
+      "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+      "url": "https://blog.cloudflare.com/webmcp-commerce",
+      "importance_score": 0.8424,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_d023719243dc",
       "title": "Dependabot now supports npm 12, pnpm 11 and 12, and Bun 1.4",
       "url": "https://github.blog/changelog/2026-10-20-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4",
@@ -85,6 +167,19 @@
       "source_count": 1,
       "archive_date": "2026-10-20",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c0dc5550e73f",
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "url": "https://openai.com/index/building-chatgpt-ad-stack",
+      "importance_score": 0.8381,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
@@ -99,17 +194,19 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_2d5f6b176445",
-      "title": "东南亚数字经济规模将达3680亿美元 / Southeast Asia’s digital economy to hit $368 billion",
-      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
-      "importance_score": 0.8245,
+      "story_id": "story_52d208e0dc89",
+      "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索 / Using thousands of AI agents to uncover new leads in biological data",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "importance_score": 0.8252,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
       "company_topics": [
-        "google-gemini"
+        "openai"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_f47486927056",
@@ -151,43 +248,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_1587a1f5ff72",
-      "title": "NVIDIA Cosmos3-H-Dreams：通过生成模拟将临床手术变为现实 / NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-      "importance_score": 0.8195,
+      "story_id": "story_2d5f6b176445",
+      "title": "东南亚数字经济规模将达3680亿美元 / Southeast Asia’s digital economy to hit $368 billion",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
+      "importance_score": 0.8154,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
       "company_topics": [
-        "nvidia",
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7b2ba03c7801",
-      "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源 / Main takeaways from SpaceX’s earnings call today",
-      "url": "https://x.com/rohanpaul_ai/status/2112768460866695334",
-      "importance_score": 0.8141,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "anthropic",
-        "cursor"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8d28dac21b18",
-      "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺 / WSJ saw Anthropic’s draft IPO papers: $16.3B revenue in 6 months, $80.7B loss on paper, and about $450B promised for compute",
-      "url": "https://x.com/rohanpaul_ai/status/2112763999586771238",
-      "importance_score": 0.8134,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "anthropic"
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -201,6 +270,20 @@
       "archive_date": "2026-10-19",
       "company_topics": [
         "minimax"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_1587a1f5ff72",
+      "title": "NVIDIA Cosmos3-H-Dreams：通过生成模拟将临床手术变为现实 / NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+      "importance_score": 0.8116,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "nvidia",
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -236,34 +319,6 @@
       ]
     },
     {
-      "story_id": "story_a92dafcadd98",
-      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
-      "importance_score": 0.8071,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_35462734c1f0",
-      "title": "New Gemini tools for small business owners",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
-      "importance_score": 0.807,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_724b564bb7c8",
       "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话 / How to continue a GitHub Copilot app session in VS Code",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
@@ -280,36 +335,30 @@
       ]
     },
     {
-      "story_id": "story_a59ab3527808",
-      "title": "将分支保护批量迁移到代码仓库的规则集 / Bulk migrate branch protections to rulesets for a repository",
-      "url": "https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository",
-      "importance_score": 0.8031,
-      "importance_label": "官方更新",
-      "source_count": 1,
+      "story_id": "story_7b2ba03c7801",
+      "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源 / Main takeaways from SpaceX’s earnings call today",
+      "url": "https://x.com/rohanpaul_ai/status/2112768460866695334",
+      "importance_score": 0.8048,
+      "importance_label": "行业动态",
+      "source_count": 2,
       "archive_date": "2026-10-21",
-      "company_topics": [],
+      "company_topics": [
+        "anthropic",
+        "cursor"
+      ],
       "lens_topics": []
     },
     {
-      "story_id": "story_9b4c06e45edc",
-      "title": "Updates to GitHub secret scanning",
-      "url": "https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning",
-      "importance_score": 0.8031,
-      "importance_label": "官方更新",
-      "source_count": 1,
+      "story_id": "story_8d28dac21b18",
+      "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺 / WSJ saw Anthropic’s draft IPO papers: $16.3B revenue in 6 months, $80.7B loss on paper, and about $450B promised for compute",
+      "url": "https://x.com/rohanpaul_ai/status/2112763999586771238",
+      "importance_score": 0.8042,
+      "importance_label": "行业动态",
+      "source_count": 2,
       "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b7b098dc2662",
-      "title": "Dependabot alerts REST API now includes dependency versions",
-      "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
-      "importance_score": 0.8014,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
+      "company_topics": [
+        "anthropic"
+      ],
       "lens_topics": []
     },
     {
@@ -337,10 +386,82 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_b4d45cb1791e",
-      "title": "GitHub package firewall in public preview",
-      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
-      "importance_score": 0.7994,
+      "story_id": "story_a92dafcadd98",
+      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
+      "importance_score": 0.7995,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_35462734c1f0",
+      "title": "New Gemini tools for small business owners",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
+      "importance_score": 0.7993,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a59ab3527808",
+      "title": "将分支保护批量迁移到代码仓库的规则集 / Bulk migrate branch protections to rulesets for a repository",
+      "url": "https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository",
+      "importance_score": 0.7952,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9b4c06e45edc",
+      "title": "Updates to GitHub secret scanning",
+      "url": "https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning",
+      "importance_score": 0.7952,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9653c3ba2d7e",
+      "title": "Wiz 披露 LiteLLM PyPI 包供应链攻击，恶意版本 v1.107.0 窃取凭据 / LiteLLM Compromised, Steals Credentials",
+      "url": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
+      "importance_score": 0.7948,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_78236365dbdf",
+      "title": "ChinaTalk 解读中国商务部 AI 技术出口管制新规草案 / MOFCOM's New Rules and the Future of Chinese AI",
+      "url": "https://www.chinatalk.media/p/mofcoms-new-ai-rules",
+      "importance_score": 0.7948,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b7b098dc2662",
+      "title": "Dependabot alerts REST API now includes dependency versions",
+      "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
+      "importance_score": 0.7936,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
@@ -359,6 +480,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b4d45cb1791e",
+      "title": "GitHub package firewall in public preview",
+      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+      "importance_score": 0.7917,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_4617964386d5",
       "title": "美国陆军网络司令部 ECHOTRIBBLE 项目拟将 AI 智能体变成自主扩散的网络武器 / Army Cyber Command's ECHOTRIBBLE would turn AI agents into self-spreading cyberweapons",
       "url": "https://the-decoder.com/army-cyber-commands-echotribble-would-turn-ai-agents-into-self-spreading-cyberweapons",
@@ -367,6 +499,34 @@
       "source_count": 1,
       "archive_date": "2026-10-20",
       "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_382c023f809a",
+      "title": "OpenAI 称其模型协助研究人员在披露前发现 PHP 关键漏洞 / OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-so...",
+      "url": "https://x.com/OpenAI/status/2112907856018309586",
+      "importance_score": 0.7747,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e2be14acc0f5",
+      "title": "OpenAI 披露 GPT-6 Astra 智能体关闭安全监控后撒谎的事件 / OpenAI says an AI agent lied about disabling its safety monitoring system",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+      "importance_score": 0.7744,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": [
         "agent-ecosystem"
       ]
@@ -397,21 +557,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_18b47e779be1",
-      "title": "OpenAI 收购 AI 制药初创 Orchestra Bio，把\"管研发\"的 Agent 收编进生命科学版图",
-      "url": "https://www.aibase.com/news/31783",
-      "importance_score": 0.7633,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_d1eb29f274bd",
       "title": "Google 发布 vLLM 与 SGLang 的 TorchTPU 原生推理引擎 / Announcing New vLLM and SGLang Inference Engines on TPU",
       "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu",
@@ -421,144 +566,6 @@
       "archive_date": "2026-10-20",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_f866fb9579b1",
-      "title": "山姆出手整治\"AI 下架好物\"谣言：数千条假帖引流牟利",
-      "url": "https://www.aibase.com/news/31725",
-      "importance_score": 0.7606,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e40c814da79b",
-      "title": "阿里速卖通联袂天猫推全球增长计划，拿真金白银投 AI 硬件新品牌",
-      "url": "https://www.aibase.com/news/31729",
-      "importance_score": 0.7606,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5806e8a8ca0a",
-      "title": "检方羁押申请揭 OpenAI 录音门新线：嫌疑人被捕前 4 天仍密聊沙特王室",
-      "url": "https://www.aibase.com/news/31730",
-      "importance_score": 0.7606,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_42cc36918f65",
-      "title": "从汽车制造商到全球智能科技公司！奇瑞全球创新大会重磅官宣：首个行业垂域大模型与人形机器人“墨宝”震撼登场",
-      "url": "https://www.aibase.com/news/31731",
-      "importance_score": 0.7606,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3e82f9917712",
-      "title": "OpenAI发布ChatGPT扩展程序重大升级，支持跨标签页上下文读取与自动化操作",
-      "url": "https://www.aibase.com/news/31728",
-      "importance_score": 0.7606,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_15dde2629f34",
-      "title": "游戏公司误退 3.3 万遭拒还，家长持 AI 伪造录音闹庭被训诫",
-      "url": "https://www.aibase.com/news/31726",
-      "importance_score": 0.7606,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-19",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_75f1482a0a43",
-      "title": "DeepSeek 全面开源内部推理框架 DeepInfer",
-      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&mid=2247485884&idx=1&sn=d457981abe7db1f1b5d600fc109dc836",
-      "importance_score": 0.7599,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_de3ff4abf67c",
-      "title": "Anthropic 招股书拆解:营收暴涨1382%，半年却亏掉807亿美元，算力账单压顶",
-      "url": "https://www.aibase.com/news/31780",
-      "importance_score": 0.7587,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1a7bcebe065f",
-      "title": "办公Agent赛道迎新格局 WorkBuddy、百度搭子、千问办公位居前三",
-      "url": "https://www.aibase.com/news/31777",
-      "importance_score": 0.7587,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_16210d66c1b2",
-      "title": "Anthropic 招股书曝光：半年营收 163 亿却亏 807 亿，算力枷锁越套越紧",
-      "url": "https://www.aibase.com/news/31778",
-      "importance_score": 0.7587,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0076046f84db",
-      "title": "Mistral 发布 Voxtral 3 语音 Agent SDK，支持 50 多种语言与工具调用",
-      "url": "https://www.aibase.com/news/31779",
-      "importance_score": 0.7587,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }
