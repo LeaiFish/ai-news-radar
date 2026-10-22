@@ -24,7 +24,7 @@ from scripts.wechat_sources import (DEFAULT_OUTPUT, canonical_evidence_url,
     normalized_name, parse_article, sync, targets, canonical_url, identity, published_datetime, MOBILE_UA)
 
 CONFIG = ROOT / "config/wemprss_sources.json"
-STOP_CODES = {-2010, -2012, -2014, -2041, 401, 403, 429, 499}
+STOP_CODES = {-2010, -2012, -2013, -2014, -2041, 401, 403, 429, 499}
 
 
 def subscriptions(path):
@@ -48,10 +48,44 @@ class CollectionError(ValueError):
 
 class SingleAccountReader:
     """Use the current authorized session once; never rotate accounts on quota errors."""
-    def __init__(self, sdk, get=None):
+    def __init__(self, sdk, get=None, post=None):
         self.sdk, self.get = sdk, get or requests.get
+        self.post = post or requests.post
+        self.startup_error = None
+        self.original_cookie = self.renewed_cookie = getattr(sdk, '_weread_cookies', '')
+
+    def renew_session(self):
+        if not self.original_cookie:
+            raise CollectionError('missing_session')
+        response = self.post('https://weread.qq.com/web/login/renewal',
+            headers=self.sdk._weread_headers(),
+            json={'rq': '%2Fweb%2Fbook%2Fread', 'ql': False},
+            timeout=(5, 15), allow_redirects=False)
+        response.raise_for_status()
+        data = response.json()
+        if not isinstance(data, dict):
+            raise CollectionError('invalid_renewal')
+        code = data.get('errCode', data.get('errcode', 0))
+        if code:
+            raise CollectionError(code if type(code) is int else 'invalid_renewal')
+        if type(data.get('succ')) is not int or data['succ'] != 1:
+            raise CollectionError('invalid_renewal')
+        cookies = {k.strip(): v.strip() for part in self.original_cookie.split(';')
+                   if '=' in part for k, v in [part.split('=', 1)]}
+        original_vid = cookies.get('wr_vid')
+        for cookie in response.cookies:
+            if cookie.name in {'wr_skey', 'wr_rt', 'wr_vid', 'wr_ql', 'wr_gid', 'wr_fp'}:
+                if not cookie.value:
+                    raise CollectionError('invalid_renewal')
+                cookies[cookie.name] = cookie.value
+        if not cookies.get('wr_skey') or not original_vid or cookies.get('wr_vid') != original_vid:
+            raise CollectionError('invalid_renewal')
+        self.renewed_cookie = '; '.join(k + '=' + v for k, v in cookies.items())
+        self.sdk._weread_cookies = self.renewed_cookie
 
     def _weread_http_get(self, url, *, params, include_ticket=False, timeout=(5, 15)):
+        if self.startup_error is not None:
+            raise self.startup_error
         response = self.get(url, params=params,
             headers=self.sdk._weread_headers(include_ticket=include_ticket),
             timeout=timeout, allow_redirects=False)
@@ -216,6 +250,9 @@ def collect(reader, jobs, now, delay=time.sleep, *, public_discovery=None, publi
 
     def failed(name, exc, phase):
         nonlocal private_blocked, public_blocked, list_available
+        if phase != 'public' and getattr(reader, 'startup_error', None) is not None:
+            private_blocked = True
+            phase = 'renewal'
         code = getattr(exc, 'code', None)
         http = getattr(getattr(exc, 'response', None), 'status_code', None)
         if code == -2041 and phase == 'list':
@@ -404,6 +441,50 @@ def merge_result(result, existing, jobs, now):
     return snapshot
 
 
+def persist_renewed_session(original, renewed, path=Path('data/wx.lic')):
+    """Compare and replace only the existing primary session outside the public repo."""
+    import yaml
+    path = path.resolve()
+    if path == ROOT or ROOT in path.parents:
+        raise ValueError('private_session_path_required')
+    document = yaml.safe_load(path.read_text(encoding='utf-8'))
+    auth = document['weread_data']
+    string_format = isinstance(auth, str)
+    if string_format:
+        auth = json.loads(auth)
+    primary = auth['accounts'][0] if isinstance(auth.get('accounts'), list) and auth['accounts'] else auth
+    if primary.get('cookie') != original:
+        raise ValueError('session_changed_concurrently')
+    primary['cookie'] = renewed
+    document['weread_data'] = json.dumps(auth, ensure_ascii=False) if string_format else auth
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile('w', encoding='utf-8', dir=path.parent, delete=False) as handle:
+            temporary = Path(handle.name)
+            os.fchmod(handle.fileno(), 0o600)
+            yaml.safe_dump(document, handle, allow_unicode=True, sort_keys=False)
+        temporary.replace(path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def collect_session(sdk, jobs, now, *, get=None, post=None, save=persist_renewed_session, **kwargs):
+    reader = SingleAccountReader(sdk, get=get, post=post)
+    try:
+        reader.renew_session()
+    except Exception as exc:
+        reader.startup_error = exc
+    result = collect(reader, jobs, now, **kwargs)
+    if result['rows'] and reader.renewed_cookie != reader.original_cookie:
+        try:
+            save(reader.original_cookie, reader.renewed_cookie)
+        except Exception:
+            result['coverage_complete'] = False
+            result['errors'].append({'error': 'wemprss_renewal_persist_failed'})
+    return result
+
+
 def worker(jobs):
     # Upstream resolves private credentials relative to its cwd. Its diagnostics
     # may contain authentication data, so discard them rather than retaining logs.
@@ -413,7 +494,7 @@ def worker(jobs):
         from core.wx.model.weread_mp import MpsWereadMP
         reader = MpsWereadMP()
         reader._load_weread_auth()
-        result = collect(SingleAccountReader(reader), jobs, datetime.now(timezone.utc))
+        result = collect_session(reader, jobs, datetime.now(timezone.utc))
     return result
 
 

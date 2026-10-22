@@ -21,7 +21,7 @@ STATS = ("at", "ok", "searched_accounts", "candidates", "verified", "added", "co
 # Exact codes only: never copy upstream messages, account identifiers or headers.
 PUBLIC_DISCOVERY_ERRORS = frozenset({
     "discovery_failed", "wemprss_stopped_after_auth_or_quota_error", "wemprss_worker_failed",
-    *(f"wemprss_api_{code}" for code in (-2010, -2012, -2014, -2041, 401, 403, 429, 499)),
+    *(f"wemprss_api_{code}" for code in (-2010, -2012, -2013, -2014, -2041, 401, 403, 429, 499)),
     *(f"search_http_{code}" for code in (401, 403, 429, 500, 502, 503, 504)),
     "search_backend_unavailable", "search_rate_limited", "search_provider_error", "search_rpc_error",
     "supplemental_discovery_failed", "pilot_discovery_failed",
@@ -29,6 +29,7 @@ PUBLIC_DISCOVERY_ERRORS = frozenset({
     "wemprss_article_limit", "wemprss_budget_exceeded", "wemprss_list_failed",
     "wemprss_article_failed", "wemprss_public_failed", "wemprss_unknown_publication_date",
     "wemprss_public_discovery_failed", "wemprss_public_discovery_truncated",
+    "wemprss_renewal_failed", "wemprss_renewal_persist_failed",
     *(f"wemprss_http_{code}" for code in (401, 403, 429, 499, 500, 502, 503, 504)),
 })
 
