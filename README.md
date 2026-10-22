@@ -1,3 +1,5 @@
+> 日报周报趋势：使用本机 Codex 订阅核验与提炼，公开采集继续在云端运行；见 [运行说明](docs/TREND_REPORTS.md)。
+
 > 本仓库已迁移为 AI Perspective：本机完整 AIHOT 架构 + GitHub Pages 公开阅读器，默认阻断付费服务。
 > 本机启动、公开数据隔离与定时同步见 [迁移部署说明](docs/migration-aihot-base.md)。下面保留原有免费采集流程说明。
 

@@ -70,7 +70,7 @@
     { id: "openai", name: "ChatGPT", aliases: ["OpenAI", "ChatGPT", "GPT-5", "Sora"] },
     { id: "anthropic", name: "Claude", aliases: ["Anthropic", "Claude"] },
     { id: "google-gemini", name: "Gemini", aliases: ["Gemini", "DeepMind"] },
-    { id: "meta-llama", name: "Llama", aliases: ["Llama", "Meta AI"] },
+    { id: "meta-llama", name: "Meta / Muse", aliases: ["Llama", "Meta AI", "Muse"] },
     { id: "xai", name: "Grok", aliases: ["Grok", "xAI"] },
     { id: "perplexity", name: "Perplexity", aliases: ["Perplexity"] },
     { id: "apple", name: "Apple Intelligence", aliases: ["Apple Intelligence"] },
@@ -338,6 +338,7 @@
 
   function renderJudgments() {
     clear(judgmentGrid);
+    if (globalThis.radarTrendUI?.overview(judgmentGrid, state.month)) return;
     const template = document.getElementById("overviewJudgmentBrief");
     if (!template || template.dataset.month !== state.month) {
       judgmentGrid.append(el("p", "placeholder-line", "本月综合简报待更新。可先查看主题研究中的近期判断。"));
@@ -684,7 +685,7 @@
     return {
       kind,
       id: topic.id,
-      name: topic.name || topic.id,
+      name: topic.id === "meta-llama" ? "Meta / Muse" : (topic.name || topic.id),
       blurb: topic.description || "",
       tags,
       count,
@@ -872,7 +873,7 @@
     return {
       kind,
       id: topic.id,
-      name: topic.name || topic.id,
+      name: topic.id === "meta-llama" ? "Meta / Muse" : (topic.name || topic.id),
       description: topic.description || "",
       group: topic.group,
       windowStories: storiesForTopic(topic).sort((a, b) => String(b.latest_at || "").localeCompare(String(a.latest_at || ""))),
@@ -1187,6 +1188,8 @@
     anthropic: { kind: "org", prefix: "claude" },
     openai: { kind: "org", prefix: "chatgpt" },
     xai: { kind: "org", prefix: "grok" },
+    "google-gemini": { kind: "org", prefix: "gemini" },
+    "meta-llama": { kind: "org", prefix: "metaMuse" },
     monetization: { kind: "trend", prefix: "monetization" },
     "product-entry": { kind: "trend", prefix: "productEntry" },
     "agent-ecosystem": { kind: "trend", prefix: "agentEcosystem" },
@@ -1196,9 +1199,11 @@
   function renderResearchBrief(slot, record, section) {
     const brief = RESEARCH_BRIEFS[record.id];
     if (!brief || record.kind !== brief.kind) return false;
+    if (globalThis.radarTrendUI?.section(slot, record.id, section)) return true;
     const template = document.getElementById(`${brief.prefix}${section}Brief`);
     if (!template) return false;
     slot.append(template.content.cloneNode(true));
+    if (section === "Changes") globalThis.radarTrendUI?.appendDigests(slot, record.id);
     return true;
   }
 
@@ -1375,7 +1380,9 @@
     loadJson("data/stories-merged.json"),
     loadJson("data/topics.json"),
     loadSiteJson("config/topics.json"),
-  ]).then(([briefResult, storiesResult, topicsResult, configResult]) => {
+    loadSiteJson("data/trends/latest.json"),
+  ]).then(([briefResult, storiesResult, topicsResult, configResult, trendsResult]) => {
+    globalThis.radarTrendUI?.set(trendsResult.status === "fulfilled" ? trendsResult.value : null);
     if (briefResult.status === "fulfilled") {
       state.briefItems = briefResult.value.items || [];
       state.generatedAt = briefResult.value.generated_at || state.generatedAt;
