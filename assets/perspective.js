@@ -70,7 +70,7 @@
     { id: "openai", name: "ChatGPT", aliases: ["OpenAI", "ChatGPT", "GPT-5", "Sora"] },
     { id: "anthropic", name: "Claude", aliases: ["Anthropic", "Claude"] },
     { id: "google-gemini", name: "Gemini", aliases: ["Gemini", "DeepMind"] },
-    { id: "meta-llama", name: "Meta / Muse", aliases: ["Llama", "Meta AI", "Muse"] },
+    { id: "meta-llama", name: "Meta / Muse", aliases: ["Llama", "Meta AI", "Meta Muse", "Muse for Small Business", "muse.ai"] },
     { id: "xai", name: "Grok", aliases: ["Grok", "xAI"] },
     { id: "perplexity", name: "Perplexity", aliases: ["Perplexity"] },
     { id: "apple", name: "Apple Intelligence", aliases: ["Apple Intelligence"] },
