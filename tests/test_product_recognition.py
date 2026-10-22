@@ -26,6 +26,10 @@ def record(title, url="https://example.com/post", **fields):
     record("Meta suspends Muse chats sharing feature after it left private details exposed"),
     record("MiniMax Design - 手册与指南", site_id="waytoagi"),
     record("千问办公杀入电商经营！一个Agent接管多平台生意", site_id="opmlrss", source="InfoQ CN"),
+    record("我用 WorkBuddy + ima 把公众号文章做成了知识库。", "https://juejin.cn/post/7698208410021527594", site_id="newsnow"),
+    record("通过 Kimi 把研究资料整理成团队知识库"),
+    record("使用 Claude 将公众号文章收录到知识库"),
+    record("更优成本，更多创意！来看TA们用Seedance 2.5 Draft拍了什么？", "https://mp.weixin.qq.com/s/0NGPK4kZb3FTTcbnXwvJMA", site_id="wechat_bridge"),
     record("How Numan built an eval-first AI health coach with LangGraph and LangSmith",
            "https://www.langchain.com/blog/health-coach", source="LangChain Blog"),
 ])
@@ -50,6 +54,10 @@ def test_dropped_product_function_usage_and_experience_posts_are_kept(row):
     record("Use it now: https://t.co/short Read more:", "https://x.com/OpenRouter/status/1", site_id="x_bridge"),
     record("Happy holidays!", "https://x.com/ViggleAI/status/1", site_id="x_bridge"),
     record("New motion API is now live", "https://viggle.example/post", source="ViggleAI"),
+    record("我用纸质剪报把公众号文章做成了知识库"),
+    record("WorkBuddy 知识库抽奖，关注领取优惠券"),
+    record("我用 WorkBuddy 把图片做成了蛋糕"),
+    record("我用单反拍了什么？"),
 ])
 def test_product_context_does_not_blanket_whitelist_sources_or_promotions(row):
     assert product_context(row) is None
@@ -63,6 +71,7 @@ def test_product_context_does_not_blanket_whitelist_sources_or_promotions(row):
     record("New ChatGPT image editing benchmark"),
     record("New model reaches #1 on Code Arena", "https://x.com/arena/status/1"),
     record("Day 0 support for Beam", "https://vllm.ai/blog/beam"),
+    record("通过 Qwen 把资料整理成知识库的检索评测与推理优化"),
 ])
 def test_evaluation_and_model_technology_do_not_gain_product_priority(row):
     assert editorial_focus(row) == "technical"

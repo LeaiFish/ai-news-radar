@@ -40,6 +40,7 @@ def test_verified_reader_metadata_is_publishable_and_uses_original_date(tmp_path
     assert row["evidence_url"] == EVIDENCE
     assert clean["last_run"]["ok"]
     assert clean["last_run"]["searched_accounts"] == 1
+    assert clean["last_run"]["collector"] == "wemprss"
     path = tmp_path / "snapshot.json"
     import json
     path.write_text(json.dumps(clean))
@@ -77,6 +78,8 @@ def test_auth_failure_stops_requests_and_keeps_verified_history():
     assert not snapshot["last_run"]["ok"]
     assert len(list(eligible_rows(snapshot, NOW))) == 1
     assert snapshot["last_run"]["collection_state"] == "failed"
+    assert public_snapshot(snapshot, NOW)["last_run"]["errors"][0]["error"] in {
+        "wemprss_api_-2012", "wemprss_stopped_after_auth_or_quota_error"}
 
 
 def test_publish_counts_include_remote_history_without_counting_it_as_added():

@@ -18,6 +18,14 @@ REPOSITORY = "git@github.com:LeaiFish/ai-news-radar.git"
 SNAPSHOT = Path("data/bridge/wechat-accounts.json")
 ROOT = Path(__file__).resolve().parents[1]
 STATS = ("at", "ok", "searched_accounts", "candidates", "verified", "added", "covered_companies", "covered_accounts")
+# Exact codes only: never copy upstream messages, account identifiers or headers.
+PUBLIC_DISCOVERY_ERRORS = frozenset({
+    "discovery_failed", "wemprss_stopped_after_auth_or_quota_error", "wemprss_worker_failed",
+    *(f"wemprss_api_{code}" for code in (-2010, -2012, -2014, -2041, 401, 403, 429, 499)),
+    *(f"search_http_{code}" for code in (401, 403, 429, 500, 502, 503, 504)),
+    "search_backend_unavailable", "search_rate_limited", "search_provider_error", "search_rpc_error",
+    "supplemental_discovery_failed", "pilot_discovery_failed",
+})
 
 
 def public_snapshot(payload, now):
@@ -52,8 +60,13 @@ def public_snapshot(payload, now):
     errors = run.get("errors", [])
     if not isinstance(errors, list):
         raise ValueError("invalid_discovery_errors")
-    # Error details remain local; only the count and generic code are published.
-    stats["errors"] = [{"error": "discovery_failed"} for _ in errors]
+    # Known codes aid diagnosis; arbitrary provider text stays local.
+    stats["errors"] = [{"error": error.get("error") if isinstance(error, dict)
+                        and isinstance(error.get("error"), str)
+                        and error["error"] in PUBLIC_DISCOVERY_ERRORS else "discovery_failed"}
+                       for error in errors]
+    if isinstance(run.get("collector"), str) and run["collector"] in {"wemprss", "public_search"}:
+        stats["collector"] = run["collector"]
     for key in ('recent_24h', 'rejected'):
         if type(run.get(key)) is int and run[key] >= 0:
             stats[key] = run[key]

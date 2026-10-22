@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-22",
+  "scope": "Repair bounded product use-case recognition and safe collection diagnostics",
+  "product_rule": {
+    "example": "https://juejin.cn/post/7698208410021527594",
+    "before_ai_related": false,
+    "after_ai_related": true,
+    "after_editorial_focus": "product",
+    "original_date_conflict": "NewsNow reported Oct21; public article reader reported Oct19. Retained as tutorial; not claimed as a newly launched product.",
+    "seven_day_audit": {
+      "source_snapshot_at": "2026-10-22T02:41:26.831221Z",
+      "records_checked": 7389,
+      "rescued_records": 1,
+      "rescued_distinct_urls": 1,
+      "new_drops": 0,
+      "examples": [
+        {
+          "title": "我用 WorkBuddy + ima 把公众号文章做成了知识库。",
+          "url": "https://juejin.cn/post/7698208410021527594",
+          "source": "juejin",
+          "site_id": "newsnow",
+          "published_at": "2026-10-21T15:42:50.407000Z",
+          "after_score": 0.82,
+          "after_focus": "product"
+        }
+      ]
+    },
+    "fresh_verified_intake_example": {
+      "title": "更优成本，更多创意！来看TA们用Seedance 2.5 Draft拍了什么？",
+      "url": "https://mp.weixin.qq.com/s/0NGPK4kZb3FTTcbnXwvJMA",
+      "source_publication_at": "2026-10-21T10:51:00Z",
+      "before_ai_related": false,
+      "after_ai_related": true,
+      "editorial_focus": "product"
+    }
+  },
+  "wechat": {
+    "at": "2026-10-22T03:14:58.049570Z",
+    "collector": "wemprss",
+    "status": "recovered_after_user_reauthorization",
+    "safe_codes": [
+      "wemprss_api_-2012",
+      "wemprss_stopped_after_auth_or_quota_error"
+    ],
+    "renewal_probe": {
+      "attempts": 1,
+      "session_changed": false,
+      "persisted": false,
+      "verified_articles": 0,
+      "error": "wemprss_api_-2012"
+    },
+    "diagnosis": "Saved session and SDK renewal could not read content; a fresh user authorization restored all7 publishers. This supports a session-related cause for this run, without claiming every future -2012 is login expiry.",
+    "retained_public_articles": 44,
+    "recovered_at": "2026-10-22T03:25:07.086649Z",
+    "verified_articles": 7,
+    "recent_24h": 1,
+    "newly_retained_articles": 1
+  },
+  "tests": "489 passed",
+  "deployment": {
+    "status": "pending"
+  },
+  "public_fallback": {
+    "status": "candidate_search_worked_original_verification_failed",
+    "searched_accounts": 24,
+    "total_candidates_discovered": 106,
+    "bounded_candidates_verified": 10,
+    "verified_articles": 0,
+    "rejected_wrong_identity_or_date": 2,
+    "safe_error_counts": {
+      "http_429": 3,
+      "http_404": 5
+    },
+    "note": "No unverified candidates admitted. This was a bounded source probe, not a full106-candidate collection."
+  }
+}

@@ -97,6 +97,7 @@ def merge_result(result, existing, jobs, now):
     snapshot = sync(result, existing, now, verifier=verified,
                     expected_accounts=[r["account_name"] for r in jobs])
     run = snapshot["last_run"]
+    run["collector"] = "wemprss"
     run["collection_state"] = "complete" if run["ok"] else ("partial" if run["verified"] else "failed")
     return snapshot
 

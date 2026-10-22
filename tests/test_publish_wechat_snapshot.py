@@ -39,6 +39,25 @@ def test_invalid_snapshot_fails_before_any_git_or_network(monkeypatch):
         publisher.publish(data)
 
 
+def test_public_diagnostics_keep_only_exact_known_codes_and_collector():
+    data = snapshot()
+    data["last_run"].update(collector="wemprss", errors=[
+        {"error": "wemprss_api_-2012", "message": "PRIVATE", "account": "PRIVATE"},
+        {"error": "wemprss_stopped_after_auth_or_quota_error"},
+        {"error": "wemprss_api_-2012 PRIVATE"},
+        {"error": ["PRIVATE"]}, "PRIVATE",
+    ])
+    clean = publisher.public_snapshot(data, NOW)
+    assert clean["last_run"]["collector"] == "wemprss"
+    assert [e["error"] for e in clean["last_run"]["errors"]] == [
+        "wemprss_api_-2012", "wemprss_stopped_after_auth_or_quota_error",
+        "discovery_failed", "discovery_failed", "discovery_failed",
+    ]
+    assert "PRIVATE" not in json.dumps(clean)
+    data["last_run"]["collector"] = "PRIVATE"
+    assert "collector" not in publisher.public_snapshot(data, NOW)["last_run"]
+
+
 def test_merge_preserves_remote_articles_and_rejects_older_discovery():
     remote = snapshot("https://mp.weixin.qq.com/s/remote")
     incoming = snapshot(at="2026-10-20T02:00:00Z")

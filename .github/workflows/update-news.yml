@@ -89,6 +89,7 @@ jobs:
           path = Path('data/bridge/wechat-accounts.json')
           payload = json.loads(path.read_text(encoding='utf-8'))
           run = payload['last_run']
+          run['collector'] = 'public_search'
           discovery = json.loads(Path(os.environ['RUNNER_TEMP'], 'wechat-candidates.json').read_text(encoding='utf-8'))
           if discovery.get('supplemental_discovery', {}).get('ok') is False:
               run['errors'].append({'error': 'supplemental_discovery_failed'})

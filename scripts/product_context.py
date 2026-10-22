@@ -52,7 +52,8 @@ _USAGE = re.compile(
     r"(?<![a-z])(?:how .{0,80}(?:use|built|build|works)|use cases?|customer stor\w*|tutorials?)(?![a-z])"
     r"|教程|手册|使用指南|上手|使用.{0,2}方法|讲解视频|解决方法|制作模式|应用场景|陪逛|解锁.{0,12}(?:玩法|逛法|用法)"
     r"|comfyui.{0,30}部署"
-    r"|(?:用|使用|部署).{0,45}(?:生成|制作|搭建|完成|实现)|(?:agent|智能体).{0,24}(?:接管|完成|管理)", re.I,
+    r"|(?:用|使用|通过).{0,45}(?:做成|整理成|收录(?:进|到)|存(?:入|进)).{0,16}知识库"
+    r"|(?:用|使用|部署).{0,45}(?:生成|制作|搭建|完成|实现|拍摄|拍了)|(?:agent|智能体).{0,24}(?:接管|完成|管理)", re.I,
 )
 _TECHNICAL = re.compile(
     r"(?<![a-z])(?:benchmarks?|eval(?:uation)?s?|inference|pretraining|training|"

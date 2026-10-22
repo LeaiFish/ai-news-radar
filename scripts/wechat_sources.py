@@ -345,7 +345,7 @@ def load_radar_rows(path, now, window_hours=24):
         refreshed = published_datetime(last_run.get("at"))
         stale = not refreshed or refreshed > now or now - refreshed > timedelta(hours=30)
         status.update(item_count=len(rows), undated_count=missing_date, stale=stale,
-                      discovery={key: last_run.get(key) for key in ("at", "ok", "searched_accounts", "candidates", "verified", "added", "covered_companies", "covered_accounts", 'recent_24h', 'rejected', 'pilot_recent_7d', 'collection_state')},
+                      discovery={key: last_run.get(key) for key in ("at", "ok", "searched_accounts", "candidates", "verified", "added", "covered_companies", "covered_accounts", 'recent_24h', 'rejected', 'pilot_recent_7d', 'collection_state', 'collector')},
                       failed_candidates=len(last_run.get("errors", [])), ok=last_run.get("ok") is True and not stale,
                       error="wechat_snapshot_stale" if stale else (None if last_run.get("ok") is True else "wechat_discovery_incomplete"))
         return rows, status
