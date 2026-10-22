@@ -4,50 +4,50 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-22T10:17:28.987792Z",
+  "generated_at": "2026-10-22T11:58:41.827130Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
     "2026-10-22"
   ],
-  "story_count": 1051,
-  "unique_story_count": 977,
+  "story_count": 1049,
+  "unique_story_count": 993,
   "counts": {
     "by_company_topic": {
-      "anthropic": 145,
+      "anthropic": 148,
       "apple": 1,
       "cursor": 3,
-      "deepseek": 50,
-      "doubao": 5,
+      "deepseek": 51,
+      "doubao": 4,
       "google-gemini": 42,
-      "huggingface": 22,
+      "huggingface": 23,
       "hunyuan": 2,
       "kimi": 4,
       "meta-llama": 3,
-      "microsoft": 8,
+      "microsoft": 6,
       "minimax": 21,
-      "nvidia": 48,
-      "openai": 139,
+      "nvidia": 44,
+      "openai": 133,
       "openrouter": 9,
       "perplexity": 7,
-      "qwen": 7,
+      "qwen": 6,
       "xai": 20,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 185,
+      "agent-ecosystem": 184,
       "monetization": 10,
-      "workplace": 22
+      "workplace": 20
     },
     "by_importance_label": {
-      "值得关注": 843,
+      "值得关注": 842,
       "多源热议": 14,
-      "官方更新": 51,
+      "官方更新": 50,
       "行业动态": 143
     },
     "by_source_count_bucket": {
-      "1": 1005,
+      "1": 1003,
       "2": 31,
       "3+": 15
     }
@@ -63,20 +63,6 @@
       "archive_date": "2026-10-20",
       "company_topics": [
         "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_35d2cfa7a29f",
-      "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
-      "url": "https://openai.com/index/openai-models-google-cloud",
-      "importance_score": 0.8585,
-      "importance_label": "官方更新",
-      "source_count": 3,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai",
-        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -121,6 +107,20 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_35d2cfa7a29f",
+      "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "importance_score": 0.8553,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai",
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_200d3bc2ea4e",
       "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
@@ -136,19 +136,6 @@
       ]
     },
     {
-      "story_id": "story_30ae19eb5cdf",
-      "title": "使用 IBM Granite 时间序列模型进行集合预测 / Ensemble forecasting with IBM Granite time-series models",
-      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-      "importance_score": 0.8538,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_369288508eca",
       "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
       "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
@@ -158,6 +145,19 @@
       "archive_date": "2026-10-21",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_30ae19eb5cdf",
+      "title": "使用 IBM Granite 时间序列模型进行集合预测 / Ensemble forecasting with IBM Granite time-series models",
+      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+      "importance_score": 0.8496,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -267,25 +267,12 @@
       "story_id": "story_0fece06d289b",
       "title": "通过一致的标准实现广泛的访问 / Broad access through consistent standards",
       "url": "https://openai.com/index/broad-access-through-consistent-standards",
-      "importance_score": 0.8206,
+      "importance_score": 0.817,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2b8c03ec1d03",
-      "title": "TorchNeuron 分析（第 1 部分）：AWS Trainium 上的系统级分析。 / Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-      "importance_score": 0.8184,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "huggingface"
       ],
       "lens_topics": []
     },
@@ -303,15 +290,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0fb91e12e23c",
-      "title": "AT&T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&T is rethinking in-house legal work with OpenAI",
-      "url": "https://openai.com/index/att-legal",
-      "importance_score": 0.8122,
+      "story_id": "story_2b8c03ec1d03",
+      "title": "TorchNeuron 分析（第 1 部分）：AWS Trainium 上的系统级分析。 / Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+      "importance_score": 0.815,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
       "company_topics": [
-        "openai"
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -374,6 +361,19 @@
       ]
     },
     {
+      "story_id": "story_0fb91e12e23c",
+      "title": "AT&T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "importance_score": 0.8089,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_724b564bb7c8",
       "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话 / How to continue a GitHub Copilot app session in VS Code",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
@@ -417,17 +417,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d85e988461bd",
-      "title": "GitHub CLI：选择过期、自动刷新的 OAuth 令牌 / GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
-      "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
-      "importance_score": 0.8037,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_00aba4b65dc4",
       "title": "隆重推出 Clairic，一种新的 System One 类提取模型 / Introducing Clairic, a new System One class of extraction models",
       "url": "https://blog.cloudflare.com/clairic-extraction-model",
@@ -435,6 +424,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-20",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d85e988461bd",
+      "title": "GitHub CLI：选择过期、自动刷新的 OAuth 令牌 / GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
+      "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
+      "importance_score": 0.8003,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
       "company_topics": [],
       "lens_topics": []
     },
@@ -476,19 +476,6 @@
       "archive_date": "2026-10-21",
       "company_topics": [
         "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_583019dc6666",
-      "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60",
-      "importance_score": 0.797,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
       ],
       "lens_topics": []
     },
@@ -556,6 +543,19 @@
       "source_count": 1,
       "archive_date": "2026-10-20",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_583019dc6666",
+      "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60",
+      "importance_score": 0.7932,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
