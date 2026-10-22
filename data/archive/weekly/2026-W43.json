@@ -4,21 +4,21 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-22T02:41:26.831221Z",
+  "generated_at": "2026-10-22T03:28:08.711854Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
     "2026-10-22"
   ],
-  "story_count": 1017,
-  "unique_story_count": 873,
+  "story_count": 1022,
+  "unique_story_count": 880,
   "counts": {
     "by_company_topic": {
-      "anthropic": 146,
+      "anthropic": 145,
       "cursor": 4,
       "deepseek": 52,
-      "doubao": 3,
+      "doubao": 4,
       "google-gemini": 43,
       "huggingface": 20,
       "hunyuan": 2,
@@ -26,7 +26,7 @@
       "microsoft": 7,
       "minimax": 21,
       "nvidia": 51,
-      "openai": 133,
+      "openai": 134,
       "openrouter": 9,
       "perplexity": 7,
       "qwen": 8,
@@ -36,17 +36,17 @@
     "by_lens_topic": {
       "agent-ecosystem": 183,
       "monetization": 7,
-      "workplace": 17
+      "workplace": 18
     },
     "by_importance_label": {
-      "值得关注": 821,
+      "值得关注": 823,
       "多源热议": 14,
       "官方更新": 52,
-      "行业动态": 130
+      "行业动态": 133
     },
     "by_source_count_bucket": {
-      "1": 970,
-      "2": 31,
+      "1": 973,
+      "2": 33,
       "3+": 16
     }
   },
@@ -55,7 +55,7 @@
       "story_id": "story_35d2cfa7a29f",
       "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
       "url": "https://openai.com/index/openai-models-google-cloud",
-      "importance_score": 0.8736,
+      "importance_score": 0.872,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-10-22",
@@ -93,21 +93,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_200d3bc2ea4e",
-      "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复 / Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-      "importance_score": 0.8575,
-      "importance_label": "官方更新",
-      "source_count": 3,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_dc1fcf3e5c71",
       "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories",
       "url": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
@@ -132,6 +117,21 @@
         "huggingface"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_200d3bc2ea4e",
+      "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复 / Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "importance_score": 0.8559,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_369288508eca",
@@ -184,19 +184,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0fece06d289b",
-      "title": "通过一致的标准实现广泛的访问 / Broad access through consistent standards",
-      "url": "https://openai.com/index/broad-access-through-consistent-standards",
-      "importance_score": 0.8378,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_1c2bfa5d3821",
       "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
       "url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4",
@@ -208,10 +195,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0fece06d289b",
+      "title": "通过一致的标准实现广泛的访问 / Broad access through consistent standards",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "importance_score": 0.8359,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_2b8c03ec1d03",
       "title": "TorchNeuron 分析（第 1 部分）：AWS Trainium 上的系统级分析。 / Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
       "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-      "importance_score": 0.8344,
+      "importance_score": 0.8327,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -221,23 +221,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0fb91e12e23c",
-      "title": "AT&T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&T is rethinking in-house legal work with OpenAI",
-      "url": "https://openai.com/index/att-legal",
-      "importance_score": 0.8285,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_52d208e0dc89",
       "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索 / Using thousands of AI agents to uncover new leads in biological data",
       "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "importance_score": 0.8283,
+      "importance_score": 0.8268,
       "importance_label": "官方更新",
       "source_count": 2,
       "archive_date": "2026-10-22",
@@ -247,6 +234,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_0fb91e12e23c",
+      "title": "AT&T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "importance_score": 0.8267,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_f47486927056",
@@ -291,7 +291,7 @@
       "story_id": "story_d85e988461bd",
       "title": "GitHub CLI：选择过期、自动刷新的 OAuth 令牌 / GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
       "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
-      "importance_score": 0.8199,
+      "importance_score": 0.8181,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -315,7 +315,7 @@
       "story_id": "story_583019dc6666",
       "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60",
-      "importance_score": 0.815,
+      "importance_score": 0.8131,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -437,19 +437,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a98043caf1bf",
-      "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.",
-      "url": "https://x.com/OpenAI/status/2112945805686604033",
-      "importance_score": 0.8012,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_ea80880e9304",
       "title": "4 tips for styling outfits with Gemini",
       "url": "https://blog.google/products-and-platforms/products/gemini/stylist-outfit-tips-gemini",
@@ -478,6 +465,19 @@
       ]
     },
     {
+      "story_id": "story_a98043caf1bf",
+      "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.",
+      "url": "https://x.com/OpenAI/status/2112945805686604033",
+      "importance_score": 0.7994,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_35462734c1f0",
       "title": "New Gemini tools for small business owners",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
@@ -491,15 +491,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_1677cb208364",
-      "title": "消息称 Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO",
-      "url": "https://www.ithome.com/1/016/243.htm",
-      "importance_score": 0.7966,
+      "story_id": "story_bb01db78f5d1",
+      "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
+      "url": "https://x.com/Khazix0918/status/2113096414469464281",
+      "importance_score": 0.7983,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-22",
       "company_topics": [
-        "anthropic"
+        "openai"
       ],
       "lens_topics": []
     },
@@ -548,6 +548,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_1677cb208364",
+      "title": "消息称 Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO",
+      "url": "https://www.ithome.com/1/016/243.htm",
+      "importance_score": 0.7946,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_b7b098dc2662",
       "title": "Dependabot alerts REST API now includes dependency versions",
       "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
@@ -555,17 +568,6 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8649e06b51ec",
-      "title": "How Numan Built an Eval-First AI Health Coach with LangGraph and LangSmith",
-      "url": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith",
-      "importance_score": 0.7933,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
       "company_topics": [],
       "lens_topics": []
     }
