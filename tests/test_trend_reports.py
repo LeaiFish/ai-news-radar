@@ -7,7 +7,7 @@ import subprocess
 import pytest
 
 from scripts.trend_reports import (IDS, LATEST, REPORT_SCHEMA, archive_path, bind_input,
-                                  digest, iso, load, periods, prepare, public_url,
+                                  digest, event_fits, iso, load, periods, prepare, public_url,
                                   validate_latest, validate_report, write_report)
 from scripts.publish_trend_report import publish
 
@@ -122,6 +122,8 @@ def test_week_is_previous_completed_shanghai_week():
     start, end = periods("weekly", datetime(2026, 10, 26, 3, tzinfo=timezone.utc))
     assert iso(start) == "2026-10-18T16:00:00Z"
     assert iso(end) == "2026-10-25T16:00:00Z"
+    assert not event_fits("2026-10-25", start, end)  # A US Sunday may already be Shanghai Monday.
+    assert event_fits("2026-10-21", start, end)
 
 
 def test_unchanged_preserves_prior_judgment_and_date(tmp_path, report):

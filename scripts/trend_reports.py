@@ -61,8 +61,13 @@ def date_floor(value):
 
 
 def event_fits(value, start, end):
+    if len(value) == 10:
+        # An original calendar date does not establish the publisher's time zone.
+        # Count it only when the whole possible date range lies inside the period.
+        midnight = datetime.fromisoformat(value).replace(tzinfo=UTC)
+        return start <= midnight - timedelta(hours=14) and midnight + timedelta(hours=36) <= end
     at = date_floor(value)
-    return start <= at and (at + timedelta(days=1) <= end if len(value) == 10 else at < end)
+    return start <= at < end
 
 
 def clean(value, limit=1200, empty=False):
