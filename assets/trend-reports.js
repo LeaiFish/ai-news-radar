@@ -56,14 +56,16 @@
     set(value) {
       snapshot = value?.schema === "radar_trends_v1" && value.companies && Object.keys(value.companies).length === 8 && Object.keys(value.companies).every(id => ids.has(id)) ? value : null;
     },
-    overview(slot, month) {
+    overview(slot, month, currentMonth = month) {
       const report = snapshot?.overview;
       if (!report?.content?.themes?.length) return false;
       const date = new Date(report.source_snapshot_at);
       // Use numeric parts rather than browser-specific locale ordering.
       const parts = new Intl.DateTimeFormat("en", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit" }).formatToParts(date);
       const key = `${parts.find(p => p.type === "year").value}-${parts.find(p => p.type === "month").value}`;
-      if (key !== month) return false;
+      // A collector-only month rollover must not erase the last editorial view.
+      // Keep its original date visible in the current view until a new report exists.
+      if (key !== month && month !== currentMonth) return false;
       const article = node("article", "research-brief overview-brief");
       article.append(node("p", "brief-meta", `AI趋势研判 · ${report.kind === "weekly" ? period(report, "周报") : `更新于 ${day(report.generated_at)}`}`));
       const header = node("header", "overview-summary");

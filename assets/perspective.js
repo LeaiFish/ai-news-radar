@@ -338,7 +338,7 @@
 
   function renderJudgments() {
     clear(judgmentGrid);
-    if (globalThis.radarTrendUI?.overview(judgmentGrid, state.month)) return;
+    if (globalThis.radarTrendUI?.overview(judgmentGrid, state.month, state.currentMonth)) return;
     const template = document.getElementById("overviewJudgmentBrief");
     if (!template || template.dataset.month !== state.month) {
       judgmentGrid.append(el("p", "placeholder-line", "本月综合简报待更新。可先查看主题研究中的近期判断。"));

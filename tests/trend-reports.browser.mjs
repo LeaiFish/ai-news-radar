@@ -3,29 +3,36 @@ const { chromium } = await import(process.env.RADAR_PLAYWRIGHT_MODULE || "@playw
 const base = process.env.RADAR_TEST_BASE_URL || "http://127.0.0.1:8093/";
 const browser = await chromium.launch({ headless: true, channel: "chrome" });
 try {
+  const live = await fetch(new URL("data/trends/latest.json", base)).then(r => r.json());
   const page = await browser.newPage();
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
   await page.goto(base);
   await page.locator("#judgmentGrid .overview-theme").first().waitFor();
-  assert.ok(await page.locator("#judgmentGrid").innerText().then(s => s.includes("共同使用")));
-  assert.equal(await page.locator("#judgmentGrid .overview-theme").count(), 3);
+  assert.ok(await page.locator("#judgmentGrid").innerText().then(s => s.includes(live.overview.content.lead)));
+  assert.equal(await page.locator("#judgmentGrid .overview-theme").count(), live.overview.content.themes.length);
   await page.screenshot({ path: "/tmp/radar-trends-home.png", fullPage: true });
   const judgments = {};
   for (const id of ["doubao", "qwen", "hunyuan", "openai", "anthropic", "xai", "google-gemini", "meta-llama"]) {
     console.log(`Checking ${id}`);
     await page.goto(`${base}?space=research&kind=org&id=${id}`);
-    await page.locator("#packDelta .trend-digest").waitFor();
+    await page.locator("#packJudgment .research-brief").waitFor();
     judgments[id] = await page.locator("#packJudgment").innerText();
     assert.ok(judgments[id].length > 80, id);
-    assert.equal(await page.locator("#packDelta .trend-digest").count(), 1, id);
-    assert.ok((await page.locator("#packDelta .trend-digest").innerText()).includes("日报"));
-    assert.equal(await page.locator("#packDelta .trend-digest a[href^='https://']").count() > 0, true, id);
+    const expected = ["daily", "weekly"].filter(k => live.companies[id][k]?.content).length;
+    assert.equal(await page.locator("#packDelta .trend-digest").count(), expected, id);
+    if (expected) assert.ok(await page.locator("#packDelta .trend-digest a[href^='https://']").count() > 0, id);
+    if (live.companies[id].judgment) assert.ok(judgments[id].includes(live.companies[id].judgment.content.headline), id);
     if (id === "meta-llama") assert.match(await page.locator("#packTitle").innerText(), /Muse/);
   }
-  assert.match(judgments.doubao, /在线分享/);
-  assert.match(judgments.openai, /共同改稿/);
-  assert.match(judgments.anthropic, /研究预览/);
+  assert.equal(await page.evaluate(async () => {
+    const latest = await fetch(new URL("data/trends/latest.json", location.href)).then(r => r.json());
+    globalThis.radarTrendUI.set(latest);
+    const slot = document.createElement("div");
+    const current = globalThis.radarTrendUI.overview(slot, "2026-11", "2026-11");
+    const historical = globalThis.radarTrendUI.overview(document.createElement("div"), "2026-09", "2026-11");
+    return current && !historical && slot.textContent.includes(latest.overview.content.lead);
+  }), true, "month rollover must retain the original editorial date");
   // Same renderer, a real-shaped weekly issue, and adversarial prose remain text.
   await page.evaluate(() => {
     const slot = document.getElementById("packDelta");
