@@ -425,22 +425,137 @@
     "zhipu": []
   },
   "last_run": {
-    "at": "2026-10-22T03:30:57.392119Z",
-    "ok": true,
-    "searched_accounts": 7,
-    "candidates": 7,
-    "verified": 7,
+    "at": "2026-10-22T05:28:05.934967Z",
+    "ok": false,
+    "searched_accounts": 0,
+    "candidates": 2,
+    "verified": 0,
     "added": 0,
     "covered_companies": 7,
     "covered_accounts": 10,
-    "errors": [],
+    "errors": [
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_public_failed"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_api_-2012"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_stopped_after_auth_or_quota_error"
+      },
+      {
+        "error": "wemprss_public_failed"
+      }
+    ],
     "collector": "wemprss",
     "recent_24h": 1,
     "rejected": 0,
-    "collection_state": "complete",
+    "collection_state": "failed",
     "pilot_recent_7d": {
-      "千问APP": 1,
+      "千问APP": 0,
       "通义实验室": 0
-    }
+    },
+    "coverage_complete": false,
+    "account_coverage": [
+      {
+        "account_name": "千问APP",
+        "state": "blocked",
+        "list_complete": false,
+        "list_pages": 0,
+        "candidates": 0,
+        "verified": 0,
+        "unverified": 0
+      },
+      {
+        "account_name": "通义实验室",
+        "state": "blocked",
+        "list_complete": false,
+        "list_pages": 0,
+        "candidates": 0,
+        "verified": 0,
+        "unverified": 0
+      },
+      {
+        "account_name": "MiniMax",
+        "state": "blocked",
+        "list_complete": false,
+        "list_pages": 0,
+        "candidates": 0,
+        "verified": 0,
+        "unverified": 0
+      },
+      {
+        "account_name": "火山引擎",
+        "state": "blocked",
+        "list_complete": false,
+        "list_pages": 0,
+        "candidates": 2,
+        "verified": 0,
+        "unverified": 2
+      },
+      {
+        "account_name": "DeepSeek",
+        "state": "blocked",
+        "list_complete": false,
+        "list_pages": 0,
+        "candidates": 0,
+        "verified": 0,
+        "unverified": 0
+      },
+      {
+        "account_name": "腾讯混元",
+        "state": "blocked",
+        "list_complete": false,
+        "list_pages": 0,
+        "candidates": 0,
+        "verified": 0,
+        "unverified": 0
+      },
+      {
+        "account_name": "Kimi智能助手",
+        "state": "blocked",
+        "list_complete": false,
+        "list_pages": 0,
+        "candidates": 0,
+        "verified": 0,
+        "unverified": 0
+      }
+    ]
   }
 }
