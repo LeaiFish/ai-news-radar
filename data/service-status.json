@@ -1,16 +1,30 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T01:35:15.599277Z",
+  "generated_at": "2026-10-22T02:41:26.831221Z",
   "ok": true,
-  "active_count": 0,
+  "active_count": 1,
   "providers": [
     {
       "id": "openai",
       "name": "OpenAI",
       "status_url": "https://status.openai.com/",
       "ok": true,
-      "active_count": 0
+      "active_count": 1
     }
   ],
-  "incidents": []
+  "incidents": [
+    {
+      "id": "01M5GPE9C4E19HE461P8JAMYXD",
+      "provider": "OpenAI",
+      "title": "ChatGPT conversion failures in India, Japan and Korea. And Response API errors",
+      "title_zh": "ChatGPT conversion failures in India, Japan and Korea. And Response API errors",
+      "status": "investigating",
+      "impact": "minor",
+      "started_at": "2026-10-22T02:18:32Z",
+      "updated_at": "2026-10-22T02:18:32Z",
+      "message": "We are investigating the issue for the listed services.",
+      "affected_components": [],
+      "url": "https://status.openai.com/incidents/01M5GPE9C4E19HE461P8JAMYXD"
+    }
+  ]
 }
