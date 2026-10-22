@@ -45,6 +45,14 @@ def normalized_name(value):
     return re.sub(r"\s+", "", str(value or "")).casefold()
 
 
+def retained_account_rows(rows, now):
+    """Keep the latest 20, extending that cap to preserve every valid 24-hour row."""
+    rows = sorted(rows, key=lambda r: (r.get('published') or '', r['verified_at']), reverse=True)
+    recent = sum(bool(published_datetime(r.get('published'))) and
+                 now - timedelta(hours=24) <= published_datetime(r['published']) <= now for r in rows)
+    return rows[:max(20, recent)]
+
+
 def canonical_url(value):
     parsed = urlparse(str(value or ""))
     if parsed.scheme not in {"http", "https"} or parsed.netloc != "mp.weixin.qq.com":
@@ -224,7 +232,7 @@ def eligible_rows(payload, now):
             )} | {"url": url} | ({'account_id': row['account_id']} if row.get('account_id') else {})
 
 
-def sync(payload, existing, now, verifier=verify_candidate, expected_accounts=None):
+def sync(payload, existing, now, verifier=verify_candidate, expected_accounts=None, max_candidates_per_account=10):
     allowed = targets()
     if not isinstance(payload, dict) or not isinstance(payload.get("searches"), list) or not isinstance(payload.get("candidates"), list):
         raise ValueError("invalid_wechat_candidates_schema")
@@ -261,7 +269,7 @@ def sync(payload, existing, now, verifier=verify_candidate, expected_accounts=No
             errors.append({"account_name": name, "error": "not_a_public_wechat_article"})
             continue
         key = (candidate.get("company_id"), name, url)
-        if key in seen or counts.get(name, 0) >= 10:
+        if key in seen or counts.get(name, 0) >= max_candidates_per_account:
             continue
         seen.add(key)
         counts[name] = counts.get(name, 0) + 1
@@ -304,8 +312,7 @@ def sync(payload, existing, now, verifier=verify_candidate, expected_accounts=No
             by_name.setdefault(normalized_name(row["account_name"]), []).append(row)
         accounts[company] = []
         for rows in by_name.values():
-            rows.sort(key=lambda r: (r.get("published") or "", r["verified_at"]), reverse=True)
-            accounts[company].extend(rows[:20])
+            accounts[company].extend(retained_account_rows(rows, now))
     covered_accounts = {normalized_name(row["account_name"]) for rows in accounts.values() for row in rows}
     added = sum((company, r['url']) in new_keys for company, rows in accounts.items() for r in rows)
     fresh = sum(bool(published_datetime(r.get('published'))) and now - timedelta(hours=24) <= published_datetime(r['published']) <= now
@@ -345,7 +352,7 @@ def load_radar_rows(path, now, window_hours=24):
         refreshed = published_datetime(last_run.get("at"))
         stale = not refreshed or refreshed > now or now - refreshed > timedelta(hours=30)
         status.update(item_count=len(rows), undated_count=missing_date, stale=stale,
-                      discovery={key: last_run.get(key) for key in ("at", "ok", "searched_accounts", "candidates", "verified", "added", "covered_companies", "covered_accounts", 'recent_24h', 'rejected', 'pilot_recent_7d', 'collection_state', 'collector')},
+                      discovery={key: last_run.get(key) for key in ("at", "ok", "searched_accounts", "candidates", "verified", "added", "covered_companies", "covered_accounts", 'recent_24h', 'rejected', 'pilot_recent_7d', 'collection_state', 'collector', 'coverage_complete', 'account_coverage')},
                       failed_candidates=len(last_run.get("errors", [])), ok=last_run.get("ok") is True and not stale,
                       error="wechat_snapshot_stale" if stale else (None if last_run.get("ok") is True else "wechat_discovery_incomplete"))
         return rows, status

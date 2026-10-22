@@ -66,7 +66,12 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 WeChat additionally supports the opt-in local `scripts/wechat_wemprss.py` adapter.
 It uses an external private we-mp-rss installation and verifies account names and
 original publication dates from article HTML. Seven configured publisher IDs cover
-six companies; each cover endpoint supplies at most one candidate and may be stale.
+six companies. The local collector now scans list pages and all subarticles first,
+then merges public 24-hour AIHOT leads and cover candidates when list coverage is restricted.
+Original HTML still determines account identity and publication date. Per-account page/candidate
+caps and a runtime budget produce explicit incomplete-coverage diagnostics; a readable cover
+never proves complete or latest coverage. Recent verified rows are protected from the old
+20-row retention cap.
 Only public metadata is published. Login state and bodies stay outside the repo;
 cloud public discovery continues independently. See `WECHAT_SOURCE_BRIDGE.md`.
 

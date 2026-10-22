@@ -7,6 +7,12 @@ from scripts.wechat_wemprss import collect, merge_result
 from scripts.wechat_sources import canonical_evidence_url, eligible_rows, load_radar_rows
 from scripts.publish_wechat_snapshot import public_snapshot, merged_snapshot
 
+@pytest.fixture(autouse=True)
+def no_public_network(monkeypatch):
+    monkeypatch.setattr('scripts.wechat_wemprss.discover_public',
+        lambda *args, **kwargs: {'ok': True, 'truncated': False, 'candidates': []})
+
+
 NOW = datetime(2026, 10, 20, 10, tzinfo=timezone.utc)
 JOB = {"company_id": "deepseek", "account_name": "DeepSeek", "book_id": "MP_WXS_123"}
 URL = "https://mp.weixin.qq.com/s/test__article"
@@ -38,7 +44,8 @@ def test_verified_reader_metadata_is_publishable_and_uses_original_date(tmp_path
     assert row["published"] == "2026-10-15T09:54:00Z"
     assert row["url"] == URL
     assert row["evidence_url"] == EVIDENCE
-    assert clean["last_run"]["ok"]
+    assert not clean["last_run"]["ok"]  # A readable cover does not prove complete list coverage.
+    assert clean["last_run"]["coverage_complete"] is False
     assert clean["last_run"]["searched_accounts"] == 1
     assert clean["last_run"]["collector"] == "wemprss"
     path = tmp_path / "snapshot.json"

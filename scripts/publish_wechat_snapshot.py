@@ -10,9 +10,9 @@ import subprocess
 import tempfile
 
 try:
-    from scripts.wechat_sources import SCHEMA, eligible_rows, normalized_name, published_datetime, targets, canonical_url, canonical_evidence_url
+    from scripts.wechat_sources import SCHEMA, eligible_rows, normalized_name, published_datetime, targets, canonical_url, canonical_evidence_url, retained_account_rows
 except ModuleNotFoundError:
-    from wechat_sources import SCHEMA, eligible_rows, normalized_name, published_datetime, targets, canonical_url, canonical_evidence_url
+    from wechat_sources import SCHEMA, eligible_rows, normalized_name, published_datetime, targets, canonical_url, canonical_evidence_url, retained_account_rows
 
 REPOSITORY = "git@github.com:LeaiFish/ai-news-radar.git"
 SNAPSHOT = Path("data/bridge/wechat-accounts.json")
@@ -25,6 +25,11 @@ PUBLIC_DISCOVERY_ERRORS = frozenset({
     *(f"search_http_{code}" for code in (401, 403, 429, 500, 502, 503, 504)),
     "search_backend_unavailable", "search_rate_limited", "search_provider_error", "search_rpc_error",
     "supplemental_discovery_failed", "pilot_discovery_failed",
+    "wemprss_list_api_-2041", "wemprss_list_backend_unavailable", "wemprss_list_limit",
+    "wemprss_article_limit", "wemprss_budget_exceeded", "wemprss_list_failed",
+    "wemprss_article_failed", "wemprss_public_failed", "wemprss_unknown_publication_date",
+    "wemprss_public_discovery_failed", "wemprss_public_discovery_truncated",
+    *(f"wemprss_http_{code}" for code in (401, 403, 429, 499, 500, 502, 503, 504)),
 })
 
 
@@ -75,6 +80,22 @@ def public_snapshot(payload, now):
     if isinstance(run.get('pilot_recent_7d'), dict):
         stats['pilot_recent_7d'] = {k: v for k, v in run['pilot_recent_7d'].items()
                                     if k in {'千问APP', '通义实验室'} and type(v) is int and v >= 0}
+    if type(run.get('coverage_complete')) is bool:
+        stats['coverage_complete'] = run['coverage_complete']
+    if isinstance(run.get('account_coverage'), list):
+        allowed_names = {name for names in targets().values() for name in names}
+        stats['account_coverage'] = []
+        seen_names = set()
+        for item in run['account_coverage']:
+            if not isinstance(item, dict) or not isinstance(item.get('account_name'), str) or item.get('account_name') not in allowed_names or item['account_name'] in seen_names:
+                continue
+            if item.get('state') not in {'complete', 'fallback', 'blocked', 'limited'} or type(item.get('list_complete')) is not bool:
+                continue
+            counters = ('list_pages', 'candidates', 'verified', 'unverified')
+            if any(type(item.get(k)) is not int or not 0 <= item[k] <= 10000 for k in counters):
+                continue
+            seen_names.add(item['account_name'])
+            stats['account_coverage'].append({k: item[k] for k in ('account_name', 'state', 'list_complete', *counters)})
     updated = payload.get("updated")
     if not isinstance(updated, str) or not published_datetime(updated):
         raise ValueError("invalid_snapshot_date")
@@ -103,7 +124,7 @@ def merged_snapshot(incoming, remote, now):
         for row in indexed.values():
             grouped.setdefault(normalized_name(row["account_name"]), []).append(row)
         incoming["accounts"][company] = [row for name in sorted(grouped)
-            for row in sorted(grouped[name], key=lambda r: (r["published"] or "", r["verified_at"]), reverse=True)[:20]]
+            for row in retained_account_rows(grouped[name], now)]
     # Counts must describe the merged archive, including remote-only history.
     retained = [(company, row) for company, rows in incoming["accounts"].items() for row in rows]
     remote_keys = {(company, row["url"]) for company, rows in remote["accounts"].items() for row in rows}
