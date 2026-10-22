@@ -4,22 +4,22 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-22T06:08:59.912320Z",
+  "generated_at": "2026-10-22T06:35:42.303264Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
     "2026-10-22"
   ],
-  "story_count": 1013,
-  "unique_story_count": 896,
+  "story_count": 1014,
+  "unique_story_count": 900,
   "counts": {
     "by_company_topic": {
       "anthropic": 141,
       "apple": 1,
       "cursor": 3,
       "deepseek": 50,
-      "doubao": 4,
+      "doubao": 5,
       "google-gemini": 41,
       "huggingface": 20,
       "hunyuan": 2,
@@ -27,10 +27,10 @@
       "microsoft": 8,
       "minimax": 21,
       "nvidia": 51,
-      "openai": 135,
+      "openai": 136,
       "openrouter": 9,
-      "perplexity": 7,
-      "qwen": 8,
+      "perplexity": 6,
+      "qwen": 7,
       "xai": 20,
       "zhipu": 2
     },
@@ -40,13 +40,13 @@
       "workplace": 19
     },
     "by_importance_label": {
-      "值得关注": 818,
+      "值得关注": 816,
       "多源热议": 14,
       "官方更新": 51,
-      "行业动态": 130
+      "行业动态": 133
     },
     "by_source_count_bucket": {
-      "1": 969,
+      "1": 970,
       "2": 28,
       "3+": 16
     }
@@ -56,7 +56,7 @@
       "story_id": "story_35d2cfa7a29f",
       "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
       "url": "https://openai.com/index/openai-models-google-cloud",
-      "importance_score": 0.8665,
+      "importance_score": 0.8656,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-10-22",
@@ -199,7 +199,7 @@
       "story_id": "story_0fece06d289b",
       "title": "通过一致的标准实现广泛的访问 / Broad access through consistent standards",
       "url": "https://openai.com/index/broad-access-through-consistent-standards",
-      "importance_score": 0.8297,
+      "importance_score": 0.8287,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -212,7 +212,7 @@
       "story_id": "story_2b8c03ec1d03",
       "title": "TorchNeuron 分析（第 1 部分）：AWS Trainium 上的系统级分析。 / Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
       "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-      "importance_score": 0.8269,
+      "importance_score": 0.826,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -279,7 +279,7 @@
       "story_id": "story_0fb91e12e23c",
       "title": "AT&T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&T is rethinking in-house legal work with OpenAI",
       "url": "https://openai.com/index/att-legal",
-      "importance_score": 0.8209,
+      "importance_score": 0.8199,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -299,17 +299,6 @@
       "company_topics": [
         "google-gemini"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d85e988461bd",
-      "title": "GitHub CLI：选择过期、自动刷新的 OAuth 令牌 / GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
-      "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
-      "importance_score": 0.8123,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -337,6 +326,17 @@
         "nvidia",
         "huggingface"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d85e988461bd",
+      "title": "GitHub CLI：选择过期、自动刷新的 OAuth 令牌 / GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
+      "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
+      "importance_score": 0.8113,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -374,7 +374,7 @@
       "story_id": "story_583019dc6666",
       "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60",
-      "importance_score": 0.8065,
+      "importance_score": 0.8055,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -482,7 +482,7 @@
       "story_id": "story_d6c8641710cd",
       "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告 / National Security Agency (NSA) and world leaders warn of security flaws found in PHP programming language",
       "url": "https://x.com/rohanpaul_ai/status/2113136583985766442",
-      "importance_score": 0.7982,
+      "importance_score": 0.7971,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -495,7 +495,7 @@
       "story_id": "story_b1ad02844395",
       "title": "Kling 4.0 现已上线 OnSolo / Kling 4.0 is now live on OnSolo. #Kling4 #KlingAI",
       "url": "https://x.com/Kling_ai/status/2113142473145078041",
-      "importance_score": 0.7966,
+      "importance_score": 0.7955,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -547,19 +547,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a98043caf1bf",
-      "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.",
-      "url": "https://x.com/OpenAI/status/2112945805686604033",
-      "importance_score": 0.7936,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_b7b098dc2662",
       "title": "Dependabot alerts REST API now includes dependency versions",
       "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
@@ -567,6 +554,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8649e06b51ec",
+      "title": "How Numan Built an Eval-First AI Health Coach with LangGraph and LangSmith",
+      "url": "https://www.langchain.com/blog/how-numan-built-an-eval-first-ai-health-coach-with-langgraph-and-langsmith",
+      "importance_score": 0.7933,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-20",
       "company_topics": [],
       "lens_topics": []
     }
