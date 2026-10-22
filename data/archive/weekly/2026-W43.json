@@ -4,51 +4,52 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-22T15:55:00.041929Z",
+  "generated_at": "2026-10-22T20:33:42.066129Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-23"
   ],
-  "story_count": 1025,
-  "unique_story_count": 1025,
+  "story_count": 1305,
+  "unique_story_count": 1096,
   "counts": {
     "by_company_topic": {
-      "anthropic": 140,
-      "apple": 1,
+      "anthropic": 182,
+      "apple": 2,
       "cursor": 3,
-      "deepseek": 51,
-      "doubao": 4,
-      "google-gemini": 39,
-      "huggingface": 22,
+      "deepseek": 56,
+      "doubao": 6,
+      "google-gemini": 44,
+      "huggingface": 28,
       "hunyuan": 2,
       "kimi": 4,
-      "meta-llama": 2,
-      "microsoft": 6,
+      "meta-llama": 4,
+      "microsoft": 8,
       "minimax": 21,
-      "nvidia": 38,
-      "openai": 121,
-      "openrouter": 9,
-      "perplexity": 7,
-      "qwen": 6,
-      "xai": 20,
+      "nvidia": 47,
+      "openai": 159,
+      "openrouter": 10,
+      "perplexity": 8,
+      "qwen": 8,
+      "xai": 26,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 183,
-      "monetization": 12,
-      "workplace": 18
+      "agent-ecosystem": 246,
+      "monetization": 18,
+      "workplace": 27
     },
     "by_importance_label": {
-      "值得关注": 824,
+      "值得关注": 1051,
       "多源热议": 11,
-      "官方更新": 48,
-      "行业动态": 142
+      "官方更新": 62,
+      "行业动态": 181
     },
     "by_source_count_bucket": {
-      "1": 985,
-      "2": 29,
+      "1": 1254,
+      "2": 40,
       "3+": 11
     }
   },
@@ -135,6 +136,32 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b096e4b4df6f",
+      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "importance_score": 0.849,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_59aa6c306989",
+      "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策 / Build more responsive apps with the Decisions API",
+      "url": "https://openai.com/index/decisions-api",
+      "importance_score": 0.848,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_35d2cfa7a29f",
       "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
       "url": "https://openai.com/index/openai-models-google-cloud",
@@ -159,6 +186,22 @@
       "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_2bb3b3856ddd",
+      "title": "Industry comparisons in the Copilot impact dashboard",
+      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
+      "importance_score": 0.8417,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
       ]
     },
     {
@@ -212,6 +255,28 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_6c65f6b7b543",
+      "title": "更新了 Actions blob 存储的元 API 端点 / Meta API endpoints updated for Actions blob storage",
+      "url": "https://github.blog/changelog/2026-10-22-meta-api-endpoints-updated-for-actions-blob-storage",
+      "importance_score": 0.8381,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_30f439995a89",
+      "title": "现在可以通过数据驻留进行公共监控 / Public monitoring now available with data residency",
+      "url": "https://github.blog/changelog/2026-10-22-public-monitoring-now-available-with-data-residency",
+      "importance_score": 0.838,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_67d8fcb214a4",
       "title": "LangSmith LLM Gateway：代理的运行时控制 / LangSmith LLM Gateway: Runtime Controls for Agents",
       "url": "https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents",
@@ -232,6 +297,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7f1b67315485",
+      "title": "Pull requests: Saved whitespace preferences and improved split view",
+      "url": "https://github.blog/changelog/2026-10-22-pull-requests-saved-whitespace-preferences-and-improved-split-view",
+      "importance_score": 0.836,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
       "company_topics": [],
       "lens_topics": []
     },
@@ -312,6 +388,19 @@
       "archive_date": "2026-10-21",
       "company_topics": [
         "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_03328888af92",
+      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+      "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "importance_score": 0.8138,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -493,87 +582,6 @@
       "lens_topics": [
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_35462734c1f0",
-      "title": "New Gemini tools for small business owners",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
-      "importance_score": 0.7993,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a59ab3527808",
-      "title": "将分支保护批量迁移到代码仓库的规则集 / Bulk migrate branch protections to rulesets for a repository",
-      "url": "https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository",
-      "importance_score": 0.7952,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9b4c06e45edc",
-      "title": "Updates to GitHub secret scanning",
-      "url": "https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning",
-      "importance_score": 0.7952,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9653c3ba2d7e",
-      "title": "Wiz 披露 LiteLLM PyPI 包供应链攻击，恶意版本 v1.107.0 窃取凭据 / LiteLLM Compromised, Steals Credentials",
-      "url": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
-      "importance_score": 0.7948,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_78236365dbdf",
-      "title": "ChinaTalk 解读中国商务部 AI 技术出口管制新规草案 / MOFCOM's New Rules and the Future of Chinese AI",
-      "url": "https://www.chinatalk.media/p/mofcoms-new-ai-rules",
-      "importance_score": 0.7948,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d9251117d437",
-      "title": "404 Media 分析 PHP2Shell 事件如何改变 AI 时代的攻防格局 / AI Is Changing Everything About Hacking. No One Knows What Happens Next",
-      "url": "https://www.404media.co/php2shell-black-october-ai-is-changing-everything-about-hacking-no-one-knows-what-happens-next",
-      "importance_score": 0.7937,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b7b098dc2662",
-      "title": "Dependabot alerts REST API now includes dependency versions",
-      "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
-      "importance_score": 0.7936,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [],
-      "lens_topics": []
     }
   ]
 }
