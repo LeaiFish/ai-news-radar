@@ -4,20 +4,20 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-22T03:28:08.711854Z",
+  "generated_at": "2026-10-22T03:38:51.624056Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
     "2026-10-22"
   ],
-  "story_count": 1022,
-  "unique_story_count": 880,
+  "story_count": 1027,
+  "unique_story_count": 886,
   "counts": {
     "by_company_topic": {
-      "anthropic": 145,
+      "anthropic": 146,
       "cursor": 4,
-      "deepseek": 52,
+      "deepseek": 54,
       "doubao": 4,
       "google-gemini": 43,
       "huggingface": 20,
@@ -39,15 +39,15 @@
       "workplace": 18
     },
     "by_importance_label": {
-      "值得关注": 823,
-      "多源热议": 14,
+      "值得关注": 826,
+      "多源热议": 13,
       "官方更新": 52,
-      "行业动态": 133
+      "行业动态": 136
     },
     "by_source_count_bucket": {
-      "1": 973,
+      "1": 979,
       "2": 33,
-      "3+": 16
+      "3+": 15
     }
   },
   "top_stories": [
@@ -55,7 +55,7 @@
       "story_id": "story_35d2cfa7a29f",
       "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
       "url": "https://openai.com/index/openai-models-google-cloud",
-      "importance_score": 0.872,
+      "importance_score": 0.8716,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-10-22",
@@ -122,7 +122,7 @@
       "story_id": "story_200d3bc2ea4e",
       "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复 / Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-      "importance_score": 0.8559,
+      "importance_score": 0.8556,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-10-22",
@@ -198,7 +198,7 @@
       "story_id": "story_0fece06d289b",
       "title": "通过一致的标准实现广泛的访问 / Broad access through consistent standards",
       "url": "https://openai.com/index/broad-access-through-consistent-standards",
-      "importance_score": 0.8359,
+      "importance_score": 0.8355,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -211,7 +211,7 @@
       "story_id": "story_2b8c03ec1d03",
       "title": "TorchNeuron 分析（第 1 部分）：AWS Trainium 上的系统级分析。 / Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
       "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-      "importance_score": 0.8327,
+      "importance_score": 0.8323,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -224,7 +224,7 @@
       "story_id": "story_52d208e0dc89",
       "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索 / Using thousands of AI agents to uncover new leads in biological data",
       "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "importance_score": 0.8268,
+      "importance_score": 0.8265,
       "importance_label": "官方更新",
       "source_count": 2,
       "archive_date": "2026-10-22",
@@ -239,7 +239,7 @@
       "story_id": "story_0fb91e12e23c",
       "title": "AT&T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&T is rethinking in-house legal work with OpenAI",
       "url": "https://openai.com/index/att-legal",
-      "importance_score": 0.8267,
+      "importance_score": 0.8263,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -291,7 +291,7 @@
       "story_id": "story_d85e988461bd",
       "title": "GitHub CLI：选择过期、自动刷新的 OAuth 令牌 / GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
       "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
-      "importance_score": 0.8181,
+      "importance_score": 0.8177,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -315,7 +315,7 @@
       "story_id": "story_583019dc6666",
       "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687466&idx=1&sn=ba7ba0f3ca50ef789c17b179dd061f60",
-      "importance_score": 0.8131,
+      "importance_score": 0.8126,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -465,19 +465,6 @@
       ]
     },
     {
-      "story_id": "story_a98043caf1bf",
-      "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.",
-      "url": "https://x.com/OpenAI/status/2112945805686604033",
-      "importance_score": 0.7994,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_35462734c1f0",
       "title": "New Gemini tools for small business owners",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
@@ -491,10 +478,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_a98043caf1bf",
+      "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.",
+      "url": "https://x.com/OpenAI/status/2112945805686604033",
+      "importance_score": 0.799,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_bb01db78f5d1",
       "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
       "url": "https://x.com/Khazix0918/status/2113096414469464281",
-      "importance_score": 0.7983,
+      "importance_score": 0.7978,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -551,7 +551,7 @@
       "story_id": "story_1677cb208364",
       "title": "消息称 Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO",
       "url": "https://www.ithome.com/1/016/243.htm",
-      "importance_score": 0.7946,
+      "importance_score": 0.7941,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-22",
