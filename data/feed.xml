@@ -5,7 +5,7 @@
 <link>https://news.learnprompt.pro</link>
 <description>24 小时 AI 更新雷达的策展精选：官方发布、模型上新、高信号讨论。</description>
 <language>zh-cn</language>
-<lastBuildDate>Thu, 22 Oct 2026 00:00:16 +0000</lastBuildDate>
+<lastBuildDate>Thu, 22 Oct 2026 01:20:13 +0000</lastBuildDate>
 <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://news.learnprompt.pro/data/feed.xml"/>
 <item>
 <title>OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud</title>
@@ -16,7 +16,7 @@
 <pubDate>Wed, 21 Oct 2026 18:37:43 +0000</pubDate>
 </item>
 <item>
-<title>Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.</title>
+<title>TorchNeuron 分析（第 1 部分）：AWS Trainium 上的系统级分析。 / Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.</title>
 <link>https://huggingface.co/blog/amazon/profiling-torchneuron-part-1</link>
 <guid isPermaLink="true">https://huggingface.co/blog/amazon/profiling-torchneuron-part-1</guid>
 <description>Hugging Face Blog</description>
@@ -48,12 +48,28 @@
 <pubDate>Wed, 21 Oct 2026 13:00:00 +0000</pubDate>
 </item>
 <item>
+<title>卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月</title>
+<link>https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687466&amp;idx=1&amp;sn=ba7ba0f3ca50ef789c17b179dd061f60</link>
+<guid isPermaLink="true">https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687466&amp;idx=1&amp;sn=ba7ba0f3ca50ef789c17b179dd061f60</guid>
+<description>作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。（公众号：数字生命卡兹克）</description>
+<category>行业动态</category>
+<pubDate>Thu, 22 Oct 2026 00:06:00 +0000</pubDate>
+</item>
+<item>
 <title>Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories</title>
 <link>https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories</link>
 <guid isPermaLink="true">https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories</guid>
 <description>Hugging Face Blog</description>
 <category>官方更新</category>
 <pubDate>Wed, 21 Oct 2026 10:59:42 +0000</pubDate>
+</item>
+<item>
+<title>OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.</title>
+<link>https://x.com/OpenAI/status/2112945805686604033</link>
+<guid isPermaLink="true">https://x.com/OpenAI/status/2112945805686604033</guid>
+<description>OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。（X：OpenAI (@OpenAI)）</description>
+<category>行业动态</category>
+<pubDate>Wed, 21 Oct 2026 16:35:11 +0000</pubDate>
 </item>
 <item>
 <title>东南亚数字经济规模将达3680亿美元 / Southeast Asia’s digital economy to hit $368 billion</title>
@@ -80,14 +96,6 @@
 <pubDate>Wed, 21 Oct 2026 21:00:00 +0000</pubDate>
 </item>
 <item>
-<title>OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.</title>
-<link>https://x.com/OpenAI/status/2112945805686604033</link>
-<guid isPermaLink="true">https://x.com/OpenAI/status/2112945805686604033</guid>
-<description>OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。（X：OpenAI (@OpenAI)）</description>
-<category>行业动态</category>
-<pubDate>Wed, 21 Oct 2026 16:35:11 +0000</pubDate>
-</item>
-<item>
 <title>NVIDIA Kumo Forecast 将预训练时间序列表示与历史模式检索和可解释性相结合 / NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability</title>
 <link>https://huggingface.co/blog/nvidia/kumo-forecast</link>
 <guid isPermaLink="true">https://huggingface.co/blog/nvidia/kumo-forecast</guid>
@@ -110,6 +118,14 @@
 <description>Wiz 披露 10 月 21 日 11:39 UTC 有恶意版本 LiteLLM 1.107.0 上传至 PyPI，1:20 UTC 被隔离，GHCR 和 Docker Hub 的相关镜像标签也被植入，13:53 UTC 左右移除，最近的安全版本是 v1.106.2。（Wiz：Research（安全研究））</description>
 <category>行业动态</category>
 <pubDate>Wed, 21 Oct 2026 13:44:12 +0000</pubDate>
+</item>
+<item>
+<title>Anthropic 推出 Claude Duet：可后台常驻、主动干活的 AI 智能体</title>
+<link>https://www.aibase.com/news/31784</link>
+<guid isPermaLink="true">https://www.aibase.com/news/31784</guid>
+<description>AIbase</description>
+<category>行业动态</category>
+<pubDate>Thu, 22 Oct 2026 01:20:13 +0000</pubDate>
 </item>
 <item>
 <title>OpenAI 与 Google Wiz 用 AI 发现潜伏 20 年的 PHP 严重漏洞，NSA 建议无法立即修复的网站先下线 / PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet</title>
@@ -136,36 +152,20 @@
 <pubDate>Wed, 21 Oct 2026 13:57:43 +0000</pubDate>
 </item>
 <item>
-<title>Granite Speech 5.0：更准确、更快地转录、翻译和归因 / Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster</title>
-<link>https://huggingface.co/blog/ibm-granite/granite-speech-5</link>
-<guid isPermaLink="true">https://huggingface.co/blog/ibm-granite/granite-speech-5</guid>
-<description>Hugging Face Blog</description>
-<category>官方更新</category>
-<pubDate>Wed, 21 Oct 2026 14:58:18 +0000</pubDate>
-</item>
-<item>
-<title>AT&amp;T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&amp;T is rethinking in-house legal work with OpenAI</title>
-<link>https://openai.com/index/att-legal</link>
-<guid isPermaLink="true">https://openai.com/index/att-legal</guid>
-<description>AT&amp;T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.（OpenAI News）</description>
-<category>官方更新</category>
-<pubDate>Wed, 21 Oct 2026 17:00:00 +0000</pubDate>
-</item>
-<item>
-<title>OpenAI 收购 AI 制药初创 Orchestra Bio，把"管研发"的 Agent 收编进生命科学版图</title>
-<link>https://www.aibase.com/news/31783</link>
-<guid isPermaLink="true">https://www.aibase.com/news/31783</guid>
-<description>AIbase</description>
-<category>行业动态</category>
-<pubDate>Wed, 21 Oct 2026 10:16:20 +0000</pubDate>
-</item>
-<item>
 <title>OpenAI 称其模型协助研究人员在披露前发现 PHP 关键漏洞 / OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-so...</title>
 <link>https://x.com/OpenAI/status/2112907856018309586</link>
 <guid isPermaLink="true">https://x.com/OpenAI/status/2112907856018309586</guid>
 <description>OpenAI 宣布其模型协助 Patch the Planet 计划下的研究人员发现影响约 70% 网站的开源语言 PHP 的关键安全漏洞。过去两个月 OpenAI 牵头维护者、研究人员和安全厂商联盟在披露前完成修复，修复涉及 PHP 引擎的大改动，使用 PHP 的网站现可升级版本并应用厂商缓解措施。（X：OpenAI (@OpenAI)）</description>
 <category>行业动态</category>
 <pubDate>Wed, 21 Oct 2026 14:04:23 +0000</pubDate>
+</item>
+<item>
+<title>Granite Speech 5.0：更准确、更快地转录、翻译和归因 / Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster</title>
+<link>https://huggingface.co/blog/ibm-granite/granite-speech-5</link>
+<guid isPermaLink="true">https://huggingface.co/blog/ibm-granite/granite-speech-5</guid>
+<description>Hugging Face Blog</description>
+<category>官方更新</category>
+<pubDate>Wed, 21 Oct 2026 14:58:18 +0000</pubDate>
 </item>
 </channel>
 </rss>
