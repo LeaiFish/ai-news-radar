@@ -590,6 +590,79 @@ html[data-research-view="pack"] #researchCatalog {
   font-weight: 740;
 }
 
+.overview-brief .overview-summary {
+  padding: 18px 20px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+}
+
+.overview-brief .overview-eyebrow {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.overview-brief .overview-lead {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(17px, 1.5vw, 19px);
+  font-weight: 650;
+  line-height: 1.65;
+}
+
+.overview-brief .overview-context {
+  margin: 18px 0 0;
+}
+
+.overview-brief .overview-themes {
+  display: grid;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.overview-brief .overview-theme {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.overview-brief .overview-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--surface-soft);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.overview-brief .overview-theme h3 {
+  margin: 1px 0 10px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.overview-brief .overview-theme-content > p:last-child {
+  margin-bottom: 0;
+}
+
+.overview-brief .overview-watch {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.overview-brief .overview-watch > p:last-child {
+  margin-bottom: 0;
+}
+
 .pack-toc {
   position: sticky;
   top: 8px;
