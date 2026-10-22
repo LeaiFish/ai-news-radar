@@ -4,23 +4,23 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-21T20:38:00.180476Z",
+  "generated_at": "2026-10-22T00:00:16.493481Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
     "2026-10-22"
   ],
-  "story_count": 987,
-  "unique_story_count": 791,
+  "story_count": 985,
+  "unique_story_count": 814,
   "counts": {
     "by_company_topic": {
-      "anthropic": 138,
-      "cursor": 5,
+      "anthropic": 139,
+      "cursor": 4,
       "deepseek": 52,
       "doubao": 3,
-      "google-gemini": 48,
-      "huggingface": 22,
+      "google-gemini": 45,
+      "huggingface": 21,
       "hunyuan": 2,
       "kimi": 3,
       "microsoft": 6,
@@ -28,25 +28,25 @@
       "nvidia": 51,
       "openai": 129,
       "openrouter": 5,
-      "perplexity": 6,
+      "perplexity": 5,
       "qwen": 6,
-      "xai": 19,
+      "xai": 18,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 166,
+      "agent-ecosystem": 176,
       "monetization": 6,
       "workplace": 17
     },
     "by_importance_label": {
-      "值得关注": 782,
+      "值得关注": 796,
       "多源热议": 14,
-      "官方更新": 55,
-      "行业动态": 136
+      "官方更新": 52,
+      "行业动态": 123
     },
     "by_source_count_bucket": {
-      "1": 942,
-      "2": 29,
+      "1": 939,
+      "2": 30,
       "3+": 16
     }
   },
@@ -55,7 +55,7 @@
       "story_id": "story_35d2cfa7a29f",
       "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
       "url": "https://openai.com/index/openai-models-google-cloud",
-      "importance_score": 0.8869,
+      "importance_score": 0.8794,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-10-22",
@@ -69,7 +69,7 @@
       "story_id": "story_200d3bc2ea4e",
       "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复 / Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-      "importance_score": 0.8698,
+      "importance_score": 0.8628,
       "importance_label": "官方更新",
       "source_count": 3,
       "archive_date": "2026-10-22",
@@ -147,23 +147,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_2b8c03ec1d03",
-      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-      "importance_score": 0.8485,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0fb91e12e23c",
-      "title": "How AT&T is rethinking in-house legal work with OpenAI",
-      "url": "https://openai.com/index/att-legal",
-      "importance_score": 0.8428,
+      "story_id": "story_0fece06d289b",
+      "title": "通过一致的标准实现广泛的访问 / Broad access through consistent standards",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "importance_score": 0.8444,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -186,19 +173,17 @@
       ]
     },
     {
-      "story_id": "story_52d208e0dc89",
-      "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索 / Using thousands of AI agents to uncover new leads in biological data",
-      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "importance_score": 0.8403,
+      "story_id": "story_2b8c03ec1d03",
+      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+      "importance_score": 0.8405,
       "importance_label": "官方更新",
-      "source_count": 2,
+      "source_count": 1,
       "archive_date": "2026-10-22",
       "company_topics": [
-        "openai"
+        "huggingface"
       ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_d023719243dc",
@@ -236,10 +221,38 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0fb91e12e23c",
+      "title": "AT&T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "importance_score": 0.8347,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_52d208e0dc89",
+      "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索 / Using thousands of AI agents to uncover new leads in biological data",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "importance_score": 0.8335,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-22",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_d85e988461bd",
-      "title": "GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
+      "title": "GitHub CLI：选择过期、自动刷新的 OAuth 令牌 / GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens",
       "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
-      "importance_score": 0.8341,
+      "importance_score": 0.826,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-22",
@@ -355,19 +368,6 @@
         "agent-ecosystem",
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_8baebbd2c5b5",
-      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-      "url": "https://openai.com/index/empowering-cyber-defenders",
-      "importance_score": 0.8056,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_724b564bb7c8",
@@ -545,7 +545,7 @@
       "story_id": "story_a98043caf1bf",
       "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响 / If you are wondering whether your website is affected, we have packaged a Codex skill to help check.",
       "url": "https://x.com/OpenAI/status/2112945805686604033",
-      "importance_score": 0.7904,
+      "importance_score": 0.7823,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-22",
