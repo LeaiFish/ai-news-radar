@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-23T02:42:01.703438Z",
+  "generated_at": "2026-10-23T06:04:13.558691Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
@@ -12,44 +12,44 @@
     "2026-10-22",
     "2026-10-23"
   ],
-  "story_count": 1312,
-  "unique_story_count": 1165,
+  "story_count": 1295,
+  "unique_story_count": 1181,
   "counts": {
     "by_company_topic": {
-      "anthropic": 175,
-      "apple": 2,
+      "anthropic": 173,
+      "apple": 1,
       "cursor": 4,
-      "deepseek": 58,
+      "deepseek": 57,
       "doubao": 9,
       "google-gemini": 46,
       "huggingface": 30,
       "hunyuan": 3,
       "kimi": 5,
       "meta-llama": 2,
-      "microsoft": 12,
-      "minimax": 27,
+      "microsoft": 11,
+      "minimax": 28,
       "nvidia": 50,
-      "openai": 163,
+      "openai": 160,
       "openrouter": 9,
-      "perplexity": 8,
+      "perplexity": 7,
       "qwen": 8,
       "xai": 26,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 247,
-      "monetization": 18,
-      "workplace": 30
+      "agent-ecosystem": 248,
+      "monetization": 17,
+      "workplace": 29
     },
     "by_importance_label": {
-      "值得关注": 1046,
+      "值得关注": 1039,
       "多源热议": 14,
-      "官方更新": 65,
-      "行业动态": 187
+      "官方更新": 64,
+      "行业动态": 178
     },
     "by_source_count_bucket": {
-      "1": 1258,
-      "2": 40,
+      "1": 1242,
+      "2": 39,
       "3+": 14
     }
   },
@@ -150,21 +150,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_fde7fea26706",
-      "title": "Visual Studio 中的 GitHub Copilot — 9 月更新 / GitHub Copilot in Visual Studio — September update",
-      "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
-      "importance_score": 0.8459,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_e8cde5543b66",
       "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
       "url": "https://blog.cloudflare.com/webmcp-commerce",
@@ -175,22 +160,6 @@
       "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_99e301a8a71e",
-      "title": "使用指标 API 中的自定义技能、代理和 MCP 服务器 / Custom skills, agents, and MCP servers in usage metrics API",
-      "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
-      "importance_score": 0.841,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
       ]
     },
     {
@@ -244,10 +213,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_ea79a79632a0",
-      "title": "Copilot 功能的全局默认设置已全面可用 / Global default for Copilot features generally available",
-      "url": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available",
-      "importance_score": 0.8372,
+      "story_id": "story_fde7fea26706",
+      "title": "Visual Studio 中的 GitHub Copilot — 9 月更新 / GitHub Copilot in Visual Studio — September update",
+      "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
+      "importance_score": 0.8376,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
@@ -255,7 +224,6 @@
         "microsoft"
       ],
       "lens_topics": [
-        "monetization",
         "workplace"
       ]
     },
@@ -273,6 +241,19 @@
       ]
     },
     {
+      "story_id": "story_ce7f81360e67",
+      "title": "OpenAI 与波兰 NSK 合作推进人工智能安全 / OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "importance_score": 0.8369,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_1c2bfa5d3821",
       "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
       "url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4",
@@ -284,30 +265,36 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_b096e4b4df6f",
-      "title": "OlmoEarth v1.3：整个地球最先进的嵌入 / OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-      "importance_score": 0.8347,
+      "story_id": "story_99e301a8a71e",
+      "title": "使用指标 API 中的自定义技能、代理和 MCP 服务器 / Custom skills, agents, and MCP servers in usage metrics API",
+      "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
+      "importance_score": 0.8329,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
       "company_topics": [
-        "huggingface"
+        "microsoft"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
     },
     {
-      "story_id": "story_59aa6c306989",
-      "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策 / Build more responsive apps with the Decisions API",
-      "url": "https://openai.com/index/decisions-api",
-      "importance_score": 0.8331,
+      "story_id": "story_ea79a79632a0",
+      "title": "Copilot 功能的全局默认设置已全面可用 / Global default for Copilot features generally available",
+      "url": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available",
+      "importance_score": 0.8293,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
       "company_topics": [
-        "openai"
+        "microsoft"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "monetization",
+        "workplace"
+      ]
     },
     {
       "story_id": "story_c737801d4d18",
@@ -323,20 +310,30 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_2bb3b3856ddd",
-      "title": "Copilot 影响仪表板中的行业比较 / Industry comparisons in the Copilot impact dashboard",
-      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
+      "story_id": "story_b096e4b4df6f",
+      "title": "OlmoEarth v1.3：整个地球最先进的嵌入 / OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
       "importance_score": 0.8273,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
       "company_topics": [
-        "microsoft"
+        "huggingface"
       ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_59aa6c306989",
+      "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策 / Build more responsive apps with the Decisions API",
+      "url": "https://openai.com/index/decisions-api",
+      "importance_score": 0.8254,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_52d208e0dc89",
@@ -393,10 +390,26 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_2bb3b3856ddd",
+      "title": "Copilot 影响仪表板中的行业比较 / Industry comparisons in the Copilot impact dashboard",
+      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
+      "importance_score": 0.8199,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_6c65f6b7b543",
       "title": "更新了 Actions blob 存储的元 API 端点 / Meta API endpoints updated for Actions blob storage",
       "url": "https://github.blog/changelog/2026-10-22-meta-api-endpoints-updated-for-actions-blob-storage",
-      "importance_score": 0.8233,
+      "importance_score": 0.8157,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
@@ -407,18 +420,7 @@
       "story_id": "story_30f439995a89",
       "title": "现在可以通过数据驻留进行公共监控 / Public monitoring now available with data residency",
       "url": "https://github.blog/changelog/2026-10-22-public-monitoring-now-available-with-data-residency",
-      "importance_score": 0.8232,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7f1b67315485",
-      "title": "拉取请求：保存空白首选项并改进分割视图 / Pull requests: Saved whitespace preferences and improved split view",
-      "url": "https://github.blog/changelog/2026-10-22-pull-requests-saved-whitespace-preferences-and-improved-split-view",
-      "importance_score": 0.8214,
+      "importance_score": 0.8157,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
@@ -436,6 +438,17 @@
       "company_topics": [
         "google-gemini"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7f1b67315485",
+      "title": "拉取请求：保存空白首选项并改进分割视图 / Pull requests: Saved whitespace preferences and improved split view",
+      "url": "https://github.blog/changelog/2026-10-22-pull-requests-saved-whitespace-preferences-and-improved-split-view",
+      "importance_score": 0.8139,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -576,17 +589,6 @@
       "company_topics": [
         "openai"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_00aba4b65dc4",
-      "title": "隆重推出 Clairic，一种新的 System One 类提取模型 / Introducing Clairic, a new System One class of extraction models",
-      "url": "https://blog.cloudflare.com/clairic-extraction-model",
-      "importance_score": 0.8013,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
