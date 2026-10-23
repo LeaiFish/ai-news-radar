@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-23T20:27:10.110557Z",
+  "generated_at": "2026-10-23T23:51:41.942112Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
@@ -13,45 +13,45 @@
     "2026-10-23",
     "2026-10-24"
   ],
-  "story_count": 1529,
-  "unique_story_count": 1339,
+  "story_count": 1519,
+  "unique_story_count": 1364,
   "counts": {
     "by_company_topic": {
-      "anthropic": 205,
+      "anthropic": 198,
       "apple": 1,
       "cursor": 4,
-      "deepseek": 69,
-      "doubao": 10,
-      "google-gemini": 54,
-      "huggingface": 32,
+      "deepseek": 70,
+      "doubao": 9,
+      "google-gemini": 56,
+      "huggingface": 31,
       "hunyuan": 4,
-      "kimi": 16,
+      "kimi": 17,
       "meta-llama": 3,
-      "microsoft": 13,
+      "microsoft": 12,
       "minimax": 45,
       "nvidia": 57,
-      "openai": 189,
+      "openai": 191,
       "openrouter": 10,
       "perplexity": 7,
-      "qwen": 13,
+      "qwen": 14,
       "xai": 31,
       "zhipu": 5
     },
     "by_lens_topic": {
-      "agent-ecosystem": 268,
-      "monetization": 16,
-      "workplace": 35
+      "agent-ecosystem": 258,
+      "monetization": 15,
+      "workplace": 32
     },
     "by_importance_label": {
-      "值得关注": 1204,
-      "多源热议": 18,
+      "值得关注": 1202,
+      "多源热议": 17,
       "官方更新": 77,
-      "行业动态": 230
+      "行业动态": 223
     },
     "by_source_count_bucket": {
-      "1": 1462,
-      "2": 49,
-      "3+": 18
+      "1": 1454,
+      "2": 48,
+      "3+": 17
     }
   },
   "top_stories": [
@@ -109,19 +109,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_9e26901013de",
-      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-      "url": "https://huggingface.co/blog/allenai/litpivot",
-      "importance_score": 0.8554,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-24",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_200d3bc2ea4e",
       "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
@@ -150,19 +137,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3b83797a0a76",
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "importance_score": 0.8512,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-24",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_35d2cfa7a29f",
       "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
       "url": "https://openai.com/index/openai-models-google-cloud",
@@ -173,6 +147,47 @@
       "company_topics": [
         "openai",
         "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9e26901013de",
+      "title": "LitPivot：通过文学景观中的动态情境化发展研究思路 / LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "importance_score": 0.8473,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f72f49ac2b3d",
+      "title": "使用 Teams 中的 GitHub Copilot 将通知转换为代码 / Turn notifications into code with GitHub Copilot in Teams",
+      "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams",
+      "importance_score": 0.846,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_3b83797a0a76",
+      "title": "快速扩展在线存储以服务超过 10 亿 ChatGPT 用户（第二部分） / Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "importance_score": 0.843,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -188,19 +203,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_ea48c9e8ff35",
-      "title": "See what 5 builders are making with Gemini 4 Argon",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders",
-      "importance_score": 0.8408,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-24",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_06ef3f974f31",
@@ -277,10 +279,23 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3844d9781f45",
-      "title": "Enterprise installations for GitHub Apps generally available",
-      "url": "https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available",
-      "importance_score": 0.8305,
+      "story_id": "story_ea48c9e8ff35",
+      "title": "了解 5 位建筑商使用 Gemini 4 Argon 制作了什么 / See what 5 builders are making with Gemini 4 Argon",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders",
+      "importance_score": 0.8327,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e601481ec54f",
+      "title": "EMU deletions fix",
+      "url": "https://github.blog/changelog/2026-10-23-emu-deletions-fix",
+      "importance_score": 0.8316,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-24",
@@ -368,6 +383,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_3844d9781f45",
+      "title": "GitHub 应用程序的企业安装现已普遍可用 / Enterprise installations for GitHub Apps generally available",
+      "url": "https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available",
+      "importance_score": 0.8225,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_fde7fea26706",
       "title": "Visual Studio 中的 GitHub Copilot — 9 月更新 / GitHub Copilot in Visual Studio — September update",
       "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
@@ -403,6 +429,19 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8df94465a5bc",
+      "title": "Codex CLI 0.164.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8135,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
       "company_topics": [
         "openai"
       ],
@@ -547,49 +586,6 @@
       "archive_date": "2026-10-22",
       "company_topics": [
         "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_59aa6c306989",
-      "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策 / Build more responsive apps with the Decisions API",
-      "url": "https://openai.com/index/decisions-api",
-      "importance_score": 0.8053,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_724b564bb7c8",
-      "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话 / How to continue a GitHub Copilot app session in VS Code",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
-      "importance_score": 0.8051,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_7b2ba03c7801",
-      "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源 / Main takeaways from SpaceX’s earnings call today",
-      "url": "https://x.com/rohanpaul_ai/status/2112768460866695334",
-      "importance_score": 0.8048,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "anthropic",
-        "cursor"
       ],
       "lens_topics": []
     }
