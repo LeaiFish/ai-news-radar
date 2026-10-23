@@ -4,53 +4,54 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-23T15:46:35.288902Z",
+  "generated_at": "2026-10-23T20:27:10.110557Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
     "2026-10-22",
-    "2026-10-23"
+    "2026-10-23",
+    "2026-10-24"
   ],
-  "story_count": 1294,
-  "unique_story_count": 1293,
+  "story_count": 1529,
+  "unique_story_count": 1339,
   "counts": {
     "by_company_topic": {
-      "anthropic": 177,
+      "anthropic": 205,
       "apple": 1,
       "cursor": 4,
-      "deepseek": 60,
-      "doubao": 7,
-      "google-gemini": 47,
-      "huggingface": 27,
-      "hunyuan": 3,
-      "kimi": 7,
-      "meta-llama": 2,
-      "microsoft": 10,
-      "minimax": 33,
-      "nvidia": 50,
-      "openai": 163,
-      "openrouter": 9,
+      "deepseek": 69,
+      "doubao": 10,
+      "google-gemini": 54,
+      "huggingface": 32,
+      "hunyuan": 4,
+      "kimi": 16,
+      "meta-llama": 3,
+      "microsoft": 13,
+      "minimax": 45,
+      "nvidia": 57,
+      "openai": 189,
+      "openrouter": 10,
       "perplexity": 7,
-      "qwen": 10,
-      "xai": 27,
-      "zhipu": 3
+      "qwen": 13,
+      "xai": 31,
+      "zhipu": 5
     },
     "by_lens_topic": {
-      "agent-ecosystem": 231,
-      "monetization": 14,
-      "workplace": 26
+      "agent-ecosystem": 268,
+      "monetization": 16,
+      "workplace": 35
     },
     "by_importance_label": {
-      "值得关注": 1031,
-      "多源热议": 15,
-      "官方更新": 62,
-      "行业动态": 186
+      "值得关注": 1204,
+      "多源热议": 18,
+      "官方更新": 77,
+      "行业动态": 230
     },
     "by_source_count_bucket": {
-      "1": 1237,
-      "2": 42,
-      "3+": 15
+      "1": 1462,
+      "2": 49,
+      "3+": 18
     }
   },
   "top_stories": [
@@ -108,6 +109,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_9e26901013de",
+      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "importance_score": 0.8554,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_200d3bc2ea4e",
       "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
@@ -130,6 +144,19 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-21",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3b83797a0a76",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "importance_score": 0.8512,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
       "company_topics": [
         "openai"
       ],
@@ -161,6 +188,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_ea48c9e8ff35",
+      "title": "See what 5 builders are making with Gemini 4 Argon",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders",
+      "importance_score": 0.8408,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_06ef3f974f31",
@@ -233,6 +273,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-19",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3844d9781f45",
+      "title": "Enterprise installations for GitHub Apps generally available",
+      "url": "https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available",
+      "importance_score": 0.8305,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-24",
       "company_topics": [],
       "lens_topics": []
     },
@@ -541,59 +592,6 @@
         "cursor"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_8d28dac21b18",
-      "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺 / WSJ saw Anthropic’s draft IPO papers: $16.3B revenue in 6 months, $80.7B loss on paper, and about $450B promised for compute",
-      "url": "https://x.com/rohanpaul_ai/status/2112763999586771238",
-      "importance_score": 0.8042,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0fb91e12e23c",
-      "title": "AT&T 如何重新考虑与 OpenAI 合作的内部法律工作 / How AT&T is rethinking in-house legal work with OpenAI",
-      "url": "https://openai.com/index/att-legal",
-      "importance_score": 0.8013,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-22",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_00aba4b65dc4",
-      "title": "隆重推出 Clairic，一种新的 System One 类提取模型 / Introducing Clairic, a new System One class of extraction models",
-      "url": "https://blog.cloudflare.com/clairic-extraction-model",
-      "importance_score": 0.8013,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2bb3b3856ddd",
-      "title": "Copilot 影响仪表板中的行业比较 / Industry comparisons in the Copilot impact dashboard",
-      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
-      "importance_score": 0.8006,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
     }
   ]
 }
