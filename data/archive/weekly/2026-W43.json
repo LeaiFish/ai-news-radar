@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "generated_at": "2026-10-22T20:33:42.066129Z",
+  "generated_at": "2026-10-22T23:59:13.650839Z",
   "daily_dates": [
     "2026-10-19",
     "2026-10-20",
@@ -12,45 +12,45 @@
     "2026-10-22",
     "2026-10-23"
   ],
-  "story_count": 1305,
-  "unique_story_count": 1096,
+  "story_count": 1279,
+  "unique_story_count": 1110,
   "counts": {
     "by_company_topic": {
-      "anthropic": 182,
+      "anthropic": 174,
       "apple": 2,
       "cursor": 3,
-      "deepseek": 56,
+      "deepseek": 55,
       "doubao": 6,
-      "google-gemini": 44,
-      "huggingface": 28,
+      "google-gemini": 43,
+      "huggingface": 29,
       "hunyuan": 2,
       "kimi": 4,
-      "meta-llama": 4,
-      "microsoft": 8,
+      "meta-llama": 2,
+      "microsoft": 10,
       "minimax": 21,
       "nvidia": 47,
-      "openai": 159,
-      "openrouter": 10,
+      "openai": 160,
+      "openrouter": 9,
       "perplexity": 8,
       "qwen": 8,
-      "xai": 26,
+      "xai": 22,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 246,
-      "monetization": 18,
-      "workplace": 27
+      "agent-ecosystem": 241,
+      "monetization": 19,
+      "workplace": 28
     },
     "by_importance_label": {
-      "值得关注": 1051,
-      "多源热议": 11,
-      "官方更新": 62,
-      "行业动态": 181
+      "值得关注": 1029,
+      "多源热议": 12,
+      "官方更新": 64,
+      "行业动态": 174
     },
     "by_source_count_bucket": {
-      "1": 1254,
-      "2": 40,
-      "3+": 11
+      "1": 1226,
+      "2": 41,
+      "3+": 12
     }
   },
   "top_stories": [
@@ -136,32 +136,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_b096e4b4df6f",
-      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-      "importance_score": 0.849,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_59aa6c306989",
-      "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策 / Build more responsive apps with the Decisions API",
-      "url": "https://openai.com/index/decisions-api",
-      "importance_score": 0.848,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_35d2cfa7a29f",
       "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden / OpenAI models are coming to Google Cloud",
       "url": "https://openai.com/index/openai-models-google-cloud",
@@ -174,6 +148,38 @@
         "google-gemini"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_99e301a8a71e",
+      "title": "使用指标 API 中的自定义技能、代理和 MCP 服务器 / Custom skills, agents, and MCP servers in usage metrics API",
+      "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
+      "importance_score": 0.8477,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_ea79a79632a0",
+      "title": "Copilot 功能的全局默认设置已全面可用 / Global default for Copilot features generally available",
+      "url": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available",
+      "importance_score": 0.8438,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "monetization",
+        "workplace"
+      ]
     },
     {
       "story_id": "story_e8cde5543b66",
@@ -189,20 +195,17 @@
       ]
     },
     {
-      "story_id": "story_2bb3b3856ddd",
-      "title": "Industry comparisons in the Copilot impact dashboard",
-      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
-      "importance_score": 0.8417,
+      "story_id": "story_b096e4b4df6f",
+      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "importance_score": 0.8408,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
       "company_topics": [
-        "microsoft"
+        "huggingface"
       ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_06ef3f974f31",
@@ -231,6 +234,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_59aa6c306989",
+      "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策 / Build more responsive apps with the Decisions API",
+      "url": "https://openai.com/index/decisions-api",
+      "importance_score": 0.8395,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_d023719243dc",
       "title": "Dependabot now supports npm 12, pnpm 11 and 12, and Bun 1.4",
       "url": "https://github.blog/changelog/2026-10-20-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4",
@@ -252,28 +268,6 @@
       "company_topics": [
         "openai"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6c65f6b7b543",
-      "title": "更新了 Actions blob 存储的元 API 端点 / Meta API endpoints updated for Actions blob storage",
-      "url": "https://github.blog/changelog/2026-10-22-meta-api-endpoints-updated-for-actions-blob-storage",
-      "importance_score": 0.8381,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_30f439995a89",
-      "title": "现在可以通过数据驻留进行公共监控 / Public monitoring now available with data residency",
-      "url": "https://github.blog/changelog/2026-10-22-public-monitoring-now-available-with-data-residency",
-      "importance_score": 0.838,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -301,10 +295,37 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7f1b67315485",
-      "title": "Pull requests: Saved whitespace preferences and improved split view",
-      "url": "https://github.blog/changelog/2026-10-22-pull-requests-saved-whitespace-preferences-and-improved-split-view",
-      "importance_score": 0.836,
+      "story_id": "story_2bb3b3856ddd",
+      "title": "Copilot 影响仪表板中的行业比较 / Industry comparisons in the Copilot impact dashboard",
+      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
+      "importance_score": 0.8335,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_6c65f6b7b543",
+      "title": "更新了 Actions blob 存储的元 API 端点 / Meta API endpoints updated for Actions blob storage",
+      "url": "https://github.blog/changelog/2026-10-22-meta-api-endpoints-updated-for-actions-blob-storage",
+      "importance_score": 0.8297,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_30f439995a89",
+      "title": "现在可以通过数据驻留进行公共监控 / Public monitoring now available with data residency",
+      "url": "https://github.blog/changelog/2026-10-22-public-monitoring-now-available-with-data-residency",
+      "importance_score": 0.8296,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-23",
@@ -322,6 +343,17 @@
       "company_topics": [
         "openai"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7f1b67315485",
+      "title": "拉取请求：保存空白首选项并改进分割视图 / Pull requests: Saved whitespace preferences and improved split view",
+      "url": "https://github.blog/changelog/2026-10-22-pull-requests-saved-whitespace-preferences-and-improved-split-view",
+      "importance_score": 0.8277,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -388,19 +420,6 @@
       "archive_date": "2026-10-21",
       "company_topics": [
         "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_03328888af92",
-      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
-      "url": "https://openai.com/index/uber-chatgpt-work-rollout",
-      "importance_score": 0.8138,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-23",
-      "company_topics": [
-        "openai"
       ],
       "lens_topics": []
     },
@@ -489,6 +508,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_03328888af92",
+      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+      "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "importance_score": 0.8073,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-23",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_724b564bb7c8",
       "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话 / How to continue a GitHub Copilot app session in VS Code",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
@@ -554,34 +586,6 @@
       "archive_date": "2026-10-20",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_ea80880e9304",
-      "title": "4 tips for styling outfits with Gemini",
-      "url": "https://blog.google/products-and-platforms/products/gemini/stylist-outfit-tips-gemini",
-      "importance_score": 0.7999,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-20",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a92dafcadd98",
-      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
-      "importance_score": 0.7995,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-21",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
     }
   ]
 }
