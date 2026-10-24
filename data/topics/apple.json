@@ -9,7 +9,7 @@
   "latest_title": "苹果表示，简单性和 Siri AI 是 HomeView 的杀手级功能",
   "latest_published_at": "2026-10-22T04:28:25Z",
   "items_url": "data/topics/apple.json",
-  "generated_at": "2026-10-24T07:15:24.503274Z",
+  "generated_at": "2026-10-24T08:08:11.563438Z",
   "items": [
     {
       "id": "14dd415badae6fc94de429288d65edf4d8547e09",
@@ -178,7 +178,7 @@
       "title_zh": null,
       "title_en": null,
       "url": "https://machinelearning.apple.com/research/selection-structured-reasoning",
-      "summary": "Multimodal agents commonly generate freeform reasoning before each action. For small models, limited model capacity can result in lengthy reasoning that provides little useful guidance for action generation while incurring substantial inference cost. To address this challenge, w…",
+      "summary": "多模式代理通常在每个动作之前生成自由形式的推理。对于小型模型，有限的模型容量可能会导致冗长的推理，几乎无法为动作生成提供有用的指导，同时会产生大量的推理成本。为了应对这一挑战，我们引入了基于选择的结构化推理（SSR），这是一个将推理重新表述为选择而不是开放式生成的框架。",
       "recommend_reason_zh": null,
       "source": "Apple Machine Learning Research",
       "source_name": "Apple Machine Learning Research",
@@ -194,7 +194,7 @@
       "title_zh": null,
       "title_en": null,
       "url": "https://machinelearning.apple.com/research/plan-retrieve-tool-discovery",
-      "summary": "Tool-augmented LLM agents discover relevant APIs from large registries before planning execution, yet finite context windows prohibit injecting all tool definitions into a single prompt. The dominant approach, which we term Retrieve-then-Plan (RtP), embeds the user query and ret…",
+      "summary": "工具增强的 LLM 代理在计划执行之前从大型注册表中发现相关 API，但有限的上下文窗口禁止将所有工具定义注入到单个提示中。主要方法，我们称之为“检索然后计划”(RtP)，嵌入用户查询并通过近似最近邻搜索检索类似的工具。我们研究了另一种计划然后检索（PtR）范例，其中法学硕士首先生成抽象工具存根（描述需要的假设函数签名）",
       "recommend_reason_zh": null,
       "source": "Apple Machine Learning Research",
       "source_name": "Apple Machine Learning Research",
