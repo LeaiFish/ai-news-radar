@@ -6,11 +6,27 @@
   "item_count": 5,
   "listed_count": 5,
   "recent_item_count": 5,
-  "latest_title": "Kimi 发布开源旗舰模型 K3.1 Pro：2.8T 参数、100万 Token 上下文，实测 3D 与视频动效",
-  "latest_published_at": "2026-10-24T02:08:43Z",
+  "latest_title": "了解 Anthropic 的沙箱运行时：AI 代理的操作系统级沙箱，无容器",
+  "latest_published_at": "2026-10-24T11:12:27Z",
   "items_url": "data/topics/open-source.json",
-  "generated_at": "2026-10-24T09:36:18.044061Z",
+  "generated_at": "2026-10-24T12:39:11.593050Z",
   "items": [
+    {
+      "id": "story_f5af2a2adc77",
+      "story_id": "story_f5af2a2adc77",
+      "title": "了解 Anthropic 的沙箱运行时：AI 代理的操作系统级沙箱，无容器",
+      "title_zh": "了解 Anthropic 的沙箱运行时：AI 代理的操作系统级沙箱，无容器",
+      "title_en": "Meet Anthropic’s sandbox-runtime: OS-Level Sandboxing for AI Agents, No Containers",
+      "url": "https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox",
+      "summary": "Anthropic sandbox-runtime (srt) 是 Claude Code 背后的开源操作系统级沙箱。它通过 macOS 上的 Seatbelt 和 Linux 上的 bubblewrap 限制代理、MCP 服务器和 CLI 工具的文件和网络访问，无需容器。这篇文章《认识 Anthropic 的沙箱运行时：AI 代理的操作系统级沙箱，无容器》首先出现在 MarkTechPost 上。",
+      "recommend_reason_zh": null,
+      "source": "MarkTechPost Research",
+      "source_name": "Curated Media",
+      "site_id": "",
+      "published_at": "2026-10-24T11:12:27Z",
+      "source_count": 1,
+      "curated": false
+    },
     {
       "id": "story_8fb9c900cf1a",
       "story_id": "story_8fb9c900cf1a",
@@ -74,22 +90,6 @@
       "published_at": "2026-10-23T18:31:22Z",
       "source_count": 1,
       "curated": true
-    },
-    {
-      "id": "story_5293d23e3762",
-      "story_id": "story_5293d23e3762",
-      "title": "Anthropic 的 Claude 现在可以自动编写代码并证明其安全",
-      "title_zh": "Anthropic 的 Claude 现在可以自动编写代码并证明其安全",
-      "title_en": "Anthropic's Claude now writes code and proves it safe automatically",
-      "url": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically",
-      "summary": "Anthropic 让 Claude 生成现有代码正确性的数学证明，为 123 个开源库生成了大约 1.8 亿行证明代码。在此过程中，该模型发现了多年测试遗漏的错误。 Anthropic 的目标：使人工智能的形式验证像标准测试一样成为常规。",
-      "recommend_reason_zh": null,
-      "source": "The Decoder AI News",
-      "source_name": "Curated Media",
-      "site_id": "",
-      "published_at": "2026-10-23T11:32:19Z",
-      "source_count": 1,
-      "curated": false
     }
   ]
 }

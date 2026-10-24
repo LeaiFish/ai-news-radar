@@ -3,13 +3,13 @@
   "name": "办公生产力与组织重构",
   "description": "AI 办公产品的进展，以及各家为 AI 做的组织与人事调整？",
   "group": "lens",
-  "item_count": 337,
+  "item_count": 338,
   "listed_count": 80,
   "recent_item_count": 80,
   "latest_title": "使用指标 API 添加了 OpenCode 等工具的使用情况",
   "latest_published_at": "2026-10-23T23:42:03Z",
   "items_url": "data/topics/workplace.json",
-  "generated_at": "2026-10-24T09:36:18.044061Z",
+  "generated_at": "2026-10-24T12:39:11.593050Z",
   "items": [
     {
       "id": "story_84a11f0b50ca",
@@ -41,22 +41,6 @@
       "site_id": "",
       "published_at": "2026-10-23T21:29:58Z",
       "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "story_1296c7a1eab2",
-      "story_id": "story_1296c7a1eab2",
-      "title": "瑞典政府机构将禁止使用ChatGPT和Claude",
-      "title_zh": "瑞典政府机构将禁止使用ChatGPT和Claude",
-      "title_en": null,
-      "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "www.sverigesradio.se",
-      "source_name": "Buzzing",
-      "site_id": "",
-      "published_at": "2026-10-23T16:26:53.619000Z",
-      "source_count": 3,
       "curated": true
     },
     {
@@ -1288,6 +1272,22 @@
       "source_name": "xAI：News（网页）",
       "site_id": "aihot",
       "published_at": "2026-09-28T00:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "291bc67f6050fcadb723324bff88a6f99a6e73f7",
+      "story_id": null,
+      "title": "NVIDIA 发布开源运行时 OpenShell，为 AI Agent 提供权限管控与安全沙箱",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell",
+      "summary": "NVIDIA 推出开源项目 NVIDIA OpenShell 0.1.0，这是一个用于定义和执行 AI Agent 访问权限的运行时。它通过沙箱执行、受控服务访问、凭证管理和形式化策略分析，在 Agent 工作负载外部强制实施权限控制。OpenShell 支持 Codex、Claude Code 等框架，允许团队在不重写 Agent 的情况下限制 API 操作、保护凭证并审查权限变更。Cadence、Slack 和 Gecko Robotics 等组织已在芯片设计、企业自动化和物理 AI 等领域采用该技术。",
+      "recommend_reason_zh": null,
+      "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
+      "source_name": "NVIDIA Technical Blog：Agentic AI / Generative AI",
+      "site_id": "aihot",
+      "published_at": "2026-09-27T16:00:00Z",
       "source_count": 1,
       "curated": true
     }
