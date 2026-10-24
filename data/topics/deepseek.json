@@ -3,13 +3,13 @@
   "name": "DeepSeek",
   "description": "DeepSeek（深度求索）的模型发布、开源权重、推理成本与技术报告。",
   "group": "company",
-  "item_count": 174,
-  "listed_count": 174,
-  "recent_item_count": 145,
+  "item_count": 175,
+  "listed_count": 175,
+  "recent_item_count": 146,
   "latest_title": "DeepSeek 新模型免费白嫖，夯夯夯，赶紧用起来",
   "latest_published_at": "2026-10-24T14:28:12.677000Z",
   "items_url": "data/topics/deepseek.json",
-  "generated_at": "2026-10-24T14:37:29.357505Z",
+  "generated_at": "2026-10-24T19:29:07.800059Z",
   "items": [
     {
       "id": "story_31ab297f7e3d",
@@ -60,17 +60,17 @@
       "curated": false
     },
     {
-      "id": "story_c12249dec60f",
-      "story_id": "story_c12249dec60f",
+      "id": "e108f1addcf47fbe6e9f8b69bc479e4200a7d7f7",
+      "story_id": null,
       "title": "DeepSeek 又出王炸，用 DeepInfer 搭建自己的服务是不是很容易？",
-      "title_zh": "DeepSeek 又出王炸，用 DeepInfer 搭建自己的服务是不是很容易？",
+      "title_zh": null,
       "title_en": null,
       "url": "https://juejin.cn/post/7698799059633979446",
       "summary": "",
       "recommend_reason_zh": null,
       "source": "juejin",
-      "source_name": "NewsNow",
-      "site_id": "",
+      "source_name": "juejin",
+      "site_id": "newsnow",
       "published_at": "2026-10-23T15:31:42.334000Z",
       "source_count": 1,
       "curated": false
@@ -202,6 +202,22 @@
       "published_at": "2026-10-23T02:42:01.703438Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "8c9309cc49a1809092256e246ade0885ec41e761",
+      "story_id": null,
+      "title": "Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Scales to GB300 NVL72",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
+      "summary": "通过 GB300 NVL72 机架上的 P/D 分解和 Wide-EP，vLLM 在 SemiAnalysis AgentX 上以每 GPU 954K 令牌/秒的速度为 DeepSeek-V4.1-Flash 提供服务，P90 为每用户 196 令牌/秒，是我们聚合的单节点结果的 7.9 倍。",
+      "recommend_reason_zh": null,
+      "source": "vLLM Blog",
+      "source_name": "vLLM Blog",
+      "site_id": "official_ai",
+      "published_at": "2026-10-23T00:00:00Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "ee2f72b2a0671ca30215d012deeb9173801eada0",
