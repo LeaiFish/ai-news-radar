@@ -9,7 +9,7 @@
   "latest_title": "AI 坟场：一份持续更新的失败项目和初创公司名单",
   "latest_published_at": "2026-10-24T19:00:00Z",
   "items_url": "data/topics/apple.json",
-  "generated_at": "2026-10-25T07:33:16.360881Z",
+  "generated_at": "2026-10-25T08:16:07.300860Z",
   "items": [
     {
       "id": "story_84ed8409b86a",
@@ -1154,7 +1154,7 @@
       "title_zh": null,
       "title_en": null,
       "url": "https://machinelearning.apple.com/research/normalizing-trajectory-models",
-      "summary": "Diffusion-based models decompose sampling into many small Gaussian denoising steps, an assumption that breaks down when generation is compressed to a few coarse transitions. Existing few-step methods address this through distillation, consistency training, or adversarial objecti…",
+      "summary": "基于扩散的模型将采样分解为许多小的高斯去噪步骤，当生成被压缩为一些粗略过渡时，这一假设就会失效。现有的几步方法通过蒸馏、一致性训练或对抗性目标来解决这个问题，但在这个过程中牺牲了可能性框架。我们引入归一化轨迹模型（NTM），它将每个反向步骤建模为具有精确似然训练的表达条件归一化流。",
       "recommend_reason_zh": null,
       "source": "Apple Machine Learning Research",
       "source_name": "Apple Machine Learning Research",
