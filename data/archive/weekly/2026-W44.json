@@ -1,0 +1,543 @@
+{
+  "schema_version": 1,
+  "iso_week": "2026-W44",
+  "timezone": "Asia/Shanghai",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "generated_at": "2026-10-25T19:36:32.893883Z",
+  "daily_dates": [
+    "2026-10-26"
+  ],
+  "story_count": 90,
+  "unique_story_count": 90,
+  "counts": {
+    "by_company_topic": {
+      "anthropic": 12,
+      "deepseek": 3,
+      "doubao": 1,
+      "google-gemini": 3,
+      "huggingface": 1,
+      "meta-llama": 1,
+      "microsoft": 2,
+      "minimax": 1,
+      "nvidia": 1,
+      "openai": 7,
+      "qwen": 2,
+      "xai": 1
+    },
+    "by_lens_topic": {
+      "agent-ecosystem": 24,
+      "product-entry": 1,
+      "workplace": 4
+    },
+    "by_importance_label": {
+      "值得关注": 84,
+      "多源热议": 5,
+      "官方更新": 1
+    },
+    "by_source_count_bucket": {
+      "1": 82,
+      "2": 3,
+      "3+": 5
+    }
+  },
+  "top_stories": [
+    {
+      "story_id": "story_54658c0be95b",
+      "title": "构建“公司安全带”的五个组成部分 / The five components of building a \"company harness\"",
+      "url": "https://www.langchain.com/blog/components-building-company-harness",
+      "importance_score": 0.8401,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_64bbee8a0c47",
+      "title": "Nvidia 开源 Flora，使机器人视频标签比 GPT-6 Astra 便宜 125 倍 / Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra",
+      "url": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra",
+      "importance_score": 0.6216,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "qwen",
+        "openai",
+        "nvidia"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a2c7a7526952",
+      "title": "It is all propagated. Enjoy some mad codexing tomorrow. Fun week ahead too. https://t.co/qOrzwSeIZZ https://t.co/xKaK95EAly",
+      "url": "https://x.com/thsottiaux/status/2114237083652882932",
+      "importance_score": 0.6215,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ee88337c4344",
+      "title": "谷歌前首席执行官埃里克·施密特称 OpenAI 和 Anthropic 现代殖民贸易公司 / Ex-Google CEO Eric Schmidt calls OpenAI and Anthropic modern colonial trading companies",
+      "url": "https://the-decoder.com/ex-google-ceo-eric-schmidt-calls-openai-and-anthropic-modern-colonial-trading-companies",
+      "importance_score": 0.6213,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_85373df1abdb",
+      "title": "OpenAI 提供高达 90% 的折扣以挖走 Anthropic 的最大客户 / OpenAI offers discounts up to 90 percent to poach Anthropic's biggest customers",
+      "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers",
+      "importance_score": 0.6198,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "deepseek",
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2af9469af177",
+      "title": "阿波罗经济学家表示，人工智能为大多数公司带来了“零财务回报” / AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
+      "importance_score": 0.617,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c970b3831f68",
+      "title": "Anthropic 联合创始人 Jack Clark 将其对人工智能自我改进的预测提前至 2027 年 / Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027",
+      "url": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027",
+      "importance_score": 0.6121,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d9641d288fe8",
+      "title": "Anthropic 表示，由于模型可以单独处理复杂性，因此一个人工智能代理可以击败许多子代理 / Anthropic says one AI agent beats many subagents now that models can handle complexity alone",
+      "url": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone",
+      "importance_score": 0.6111,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_09e0991c4f77",
+      "title": "Meta 正在致力于 Muse 助手的头像共享 / Meta is working on avatar sharing for Muse assistant",
+      "url": "https://www.testingcatalog.com/meta-is-working-on-avatar-sharing-for-muse-assistant",
+      "importance_score": 0.6105,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_915dd2dd5aac",
+      "title": "您应该了解的最热门的人工智能可穿戴设备和小工具 / The hottest AI wearables and gadgets you should know about",
+      "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about",
+      "importance_score": 0.6102,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0280d056878b",
+      "title": "@addyosmani @lydiahallie @_catwu @bcherny @sidbid @jarredsumner @adocomplete @delba_oliveira @connerphillippi @dsp_ https://t.co/4ea5te3d8w @gcemaj @karbon0x for Claude Managed Agents!",
+      "url": "https://x.com/alexalbert__/status/2114145588686233612",
+      "importance_score": 0.6091,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_0a6de8f2b8d6",
+      "title": "Google AI Studio 准备新的托管代理中心 / Google AI Studio prepares new Managed Agents hub",
+      "url": "https://www.testingcatalog.com/google-ai-studio-prepares-new-managed-agents-hub",
+      "importance_score": 0.6086,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_9f2543e27eb3",
+      "title": "r/opensource 刚刚禁止了人工智能、非英语使用者等 / r/opensource just banned AI, non-English speakers, and more",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "importance_score": 0.6001,
+      "importance_label": "值得关注",
+      "source_count": 2,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_117f3058174f",
+      "title": "There’ll be times where you over-guide the AI. It knows better than you and is more intelligent than you. There’ll be times where you under-guide the AI. It can go off-track, have the wrong biases, or miss context. Ho...",
+      "url": "https://x.com/rauchg/status/2114085432749347086",
+      "importance_score": 0.5973,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8962402a7599",
+      "title": "OpenMobile-2 证明开源智能手机代理可以与专有模型相媲美 / OpenMobile-2 proves open-source smartphone agents can rival proprietary models",
+      "url": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models",
+      "importance_score": 0.5936,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_bbdb01817837",
+      "title": "One weird effect of being max AI pilled is that I have started to really treasure IRL time with my family and my friends. Put on some techno, dance with friends, take your kids to the park. Let the agents cook (or not...",
+      "url": "https://x.com/adityaag/status/2114135237806760097",
+      "importance_score": 0.5911,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_105d803d1283",
+      "title": "谷歌的人工智能搜索变革颠覆了在线出版 / Google’s AI search changes upended online publishing",
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "importance_score": 0.5717,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_781ea88c4564",
+      "title": "刚刚，Anthropic公开内部Sub-Agent+Loop最佳实践",
+      "url": "https://waytoagi.feishu.cn/wiki/Cx4fwk5UeimScnkuVpFchV9dnJc?from=from_copylink",
+      "importance_score": 0.5692,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_57ec63ed7e58",
+      "title": "选择正确的多智能体架构",
+      "url": "https://waytoagi.feishu.cn/wiki/F5oawTaaIi6wWrk1BWncA8xznwc?from=from_copylink",
+      "importance_score": 0.5692,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_2d252c639d26",
+      "title": "如何做出好的 Personal Agent产品（一）：产品、团队和技术",
+      "url": "https://waytoagi.feishu.cn/wiki/NJ8swJr4viygJtkiLWnc3G6Hnpb?from=from_copylink",
+      "importance_score": 0.5692,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_0b7e5f189c69",
+      "title": "构建智能体：何时将子智能体整合进主智能体循环",
+      "url": "https://waytoagi.feishu.cn/wiki/IpFRw4RSpiq2yOk9P2Ic2aZLnmf?from=from_copylink",
+      "importance_score": 0.5692,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_9b824b3d3126",
+      "title": "一款问世10年的CNN在皮肤癌诊断方面表现优于前沿的大语言模型",
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "importance_score": 0.5683,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_51c532abbbad",
+      "title": "尼康摄影大赛获奖者因科学家发现人工智能痕迹而被剥夺头衔",
+      "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+      "importance_score": 0.5656,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ddb22b49e22b",
+      "title": "四分之一PR是“AI垃圾”！Linux基金会发布新报告：AI写代码快了52%，开源维护者却更累了",
+      "url": "https://www.infoq.cn/article/9TSuUDxrUSGS26XTA2yB",
+      "importance_score": 0.559,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_13859bf5d4b4",
+      "title": "构建 “公司智能体” 的五个组成部分",
+      "url": "https://waytoagi.feishu.cn/wiki/Edv8wODQnisixzkRiqxc0T4Cneh?from=from_copylink",
+      "importance_score": 0.5456,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_c6b0394ca7c3",
+      "title": "美国反对数据中心的运动可以向国外学习什么 / What the US Movement Against Data Centers Can Learn From Abroad",
+      "url": "https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else",
+      "importance_score": 0.5454,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dd6fdfcd4dea",
+      "title": "AI助理争夺战：解析Muse、Grok Bot与Instinct背后的产品布局、入口生意与盈利难题",
+      "url": "https://waytoagi.feishu.cn/wiki/C6ACwsDTbiksRzkL6g5cN7AFnAh?from=from_copylink",
+      "importance_score": 0.542,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "meta-llama",
+        "xai"
+      ],
+      "lens_topics": [
+        "product-entry"
+      ]
+    },
+    {
+      "story_id": "story_29bedefe1fbf",
+      "title": "多 Agent 协作终极解：实测 YC 开源新作 Agent Relay，让 Claude Code 和 Codex 直接对话",
+      "url": "https://waytoagi.feishu.cn/wiki/BNxBwo0O3idr76kDQNBctk00nMh?from=from_copylink",
+      "importance_score": 0.542,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_369efb591019",
+      "title": "蓝色星球III在人工智能时代保持着粗糙的边缘 / Blue Planet III is keeping the rough edges in the age of AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "importance_score": 0.5413,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_461047623b07",
+      "title": "Cerebras 部署了万亿参数的人工智能模型",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "importance_score": 0.541,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_51e1c09a3d92",
+      "title": "人工智能的使用导致加州大学伯克利分校数学教授认为评分作业“没有意义” / AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+      "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+      "importance_score": 0.5378,
+      "importance_label": "值得关注",
+      "source_count": 2,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_98b3a4608ebd",
+      "title": "1505年纽伦堡骑士的工具书",
+      "url": "https://loeffelholz-codex.org/en",
+      "importance_score": 0.5354,
+      "importance_label": "值得关注",
+      "source_count": 2,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3864a885bd39",
+      "title": "美国媒体、影视和艺术行业已流失20万个工作岗位。其中有多少是受人工智能影响的？",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "importance_score": 0.5286,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_45843157ba03",
+      "title": "科技行业以外尚未出现人工智能带来回报的迹象",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "importance_score": 0.5285,
+      "importance_label": "多源热议",
+      "source_count": 3,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_475d10f4197d",
+      "title": "中国对模仿美国人工智能的依赖程度日益加深",
+      "url": "https://www.economist.com/science-and-technology/2026/10/25/china-increasingly-depends-on-copying-american-ai",
+      "importance_score": 0.5163,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c50678bcae1e",
+      "title": "1Password 现在可以让 AI 代理为您登录帐户，而无需查看您的密码 / 1Password will now let AI agents log in to accounts for you without ever needing to see your password",
+      "url": "https://www.techradar.com/pro/security/1password-will-now-let-ai-agents-log-in-to-accounts-for-you-without-ever-needing-to-see-your-password",
+      "importance_score": 0.5144,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_e3a30cb0b8f7",
+      "title": "数学家解读人工智能的未来 / A Mathematician Reads the AI Future",
+      "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133",
+      "importance_score": 0.513,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3f2b7de0a6ee",
+      "title": "阿波罗表示人工智能在科技行业之外带来了“零财务回报” / Apollo says AI has delivered 'zero financial payoff' outside the tech industry",
+      "url": "https://www.businessinsider.com/apollo-ai-zero-financial-payoff-corporate-america-economic-analysis-2026-10",
+      "importance_score": 0.5117,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_db70888275cb",
+      "title": "14款大模型Java编码能力横评：闭源三强断层领先，开源追赶到哪一步了",
+      "url": "https://juejin.cn/post/7699685792612302883",
+      "importance_score": 0.508,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_40f6f4656b09",
+      "title": "西澳大利亚州因人工智能辅助报告存在缺陷而向德勤寻求退款 / Western Australia seeks refund from Deloitte over flawed AI-aided report",
+      "url": "https://thenextweb.com/news/western-australia-deloitte-refund-ai-university-report",
+      "importance_score": 0.5078,
+      "importance_label": "值得关注",
+      "source_count": 1,
+      "archive_date": "2026-10-26",
+      "company_topics": [],
+      "lens_topics": []
+    }
+  ]
+}

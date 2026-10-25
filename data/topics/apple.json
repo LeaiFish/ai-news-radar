@@ -9,11 +9,11 @@
   "latest_title": "AI 坟场：一份持续更新的失败项目和初创公司名单",
   "latest_published_at": "2026-10-24T19:00:00Z",
   "items_url": "data/topics/apple.json",
-  "generated_at": "2026-10-25T14:58:08.975726Z",
+  "generated_at": "2026-10-25T19:36:32.893883Z",
   "items": [
     {
-      "id": "story_84ed8409b86a",
-      "story_id": "story_84ed8409b86a",
+      "id": "3ede508da580e7d0ad56047926c3578de1a4e5af",
+      "story_id": null,
       "title": "AI 坟场：一份持续更新的失败项目和初创公司名单",
       "title_zh": "AI 坟场：一份持续更新的失败项目和初创公司名单",
       "title_en": "The AI graveyard: a running list of projects and startups that didn’t make it",
@@ -21,11 +21,11 @@
       "summary": "从苹果一再推迟 Siri AI 到 OpenAI 混乱的“超级应用”发布，以下是关闭或未达到预期的 AI 项目。",
       "recommend_reason_zh": null,
       "source": "TechCrunch AI",
-      "source_name": "Curated Media",
-      "site_id": "",
+      "source_name": "TechCrunch AI",
+      "site_id": "curated_media",
       "published_at": "2026-10-24T19:00:00Z",
       "source_count": 1,
-      "curated": false
+      "curated": true
     },
     {
       "id": "14dd415badae6fc94de429288d65edf4d8547e09",
@@ -1458,7 +1458,7 @@
       "title_zh": "自主 ML 工程需要多少强大的代理？",
       "title_en": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?",
       "url": "https://machinelearning.apple.com/research/harness-autonomous-ml-engineering",
-      "summary": "Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasi…",
+      "summary": "最近的自主机器学习工程（MLE）代理在公共排行榜上取得了重大进展。现代 MLE 代理通常受到长周期周期内进展停滞和有限的大语言模型 (LLM) 原语的推动，被部署在日益复杂的机器之上：多代理协调器、专用检索子代理等。虽然此类工具不断扩展，但使用更原始但改进的编码代理——法学硕士可以直接访问执行程序",
       "recommend_reason_zh": null,
       "source": "Apple Machine Learning Research",
       "source_name": "Apple Machine Learning Research",
@@ -1474,7 +1474,7 @@
       "title_zh": "RLTL;DR：通过内化自我产生的反馈来自我改进",
       "title_en": "RLTL;DR: Self-Improvement by Internalizing Self-Generated Feedback",
       "url": "https://machinelearning.apple.com/research/rltl-dr-self-improvement",
-      "summary": "The common paradigm of reinforcement learning with verifiable rewards (RLVR) is to let agents make multiple attempts at a task, and optimize towards the successful ones. This becomes problematic in the realms of self-improvement, where tasks are so difficult that the agent has a…",
+      "summary": "具有可验证奖励的强化学习（RLVR）的常见范式是让智能体对一项任务进行多次尝试，并针对成功的尝试进行优化。这在自我完善领域会成为问题，因为任务非常困难，代理人成功的机会很低甚至没有，而且没有教师模型或示例解决方案可供提炼。在本文中，我们介绍了RLTL;DR。",
       "recommend_reason_zh": null,
       "source": "Apple Machine Learning Research",
       "source_name": "Apple Machine Learning Research",
