@@ -32,7 +32,7 @@ DEFAULT_PAGES_DIR = ROOT / "topics"
 
 TOPIC_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,62}$")
 CJK_RE = re.compile(r"[\u4e00-\u9fff]")
-CURATED_SITE_IDS = {"official_ai", "aihot", "curated_media", "aibreakfast"}
+CURATED_SITE_IDS = {"official_ai", "wechat_bridge", "aihot", "curated_media", "aibreakfast"}
 MAX_SUMMARY_CHARS = 280
 DEFAULT_MAX_ITEMS = 80
 DOMESTIC_TOPIC_IDS = {"doubao", "qwen", "hunyuan", "quark", "kimi", "deepseek", "minimax", "zhipu"}

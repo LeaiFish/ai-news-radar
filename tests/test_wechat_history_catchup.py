@@ -83,3 +83,12 @@ def test_same_original_prefers_official_company_over_media_copy():
     media=add_source_tier_fields({'site_id':'curated_media','source':'IT之家','url':URL,
                                  'title':'千问Go推出我的应用功能','published_at':'2026-10-25T08:05:26Z'})
     assert choose_primary_story_item([media,official],MONDAY,83) is official
+
+
+def test_first_party_archive_is_kept_in_default_curated_projection():
+    from scripts.build_topics import is_curated_record
+    from scripts.update_news import editorial_score
+    original={'site_id':'wechat_bridge','account_verified':True,'source':'公众号：千问APP',
+              'title':TITLE,'url':URL,'published_at':'2026-10-23T02:43:00Z'}
+    assert is_curated_record(original,set())
+    assert editorial_score(original)==0.9

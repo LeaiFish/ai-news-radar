@@ -7110,7 +7110,7 @@ def editorial_score(record: dict[str, Any]) -> float:
     except Exception:
         pass
     site_id = str(record.get("site_id") or "")
-    if site_id == "official_ai":
+    if site_id in {"official_ai", "wechat_bridge"}:
         return 0.9
     if site_id == "aihot":
         return 0.78
