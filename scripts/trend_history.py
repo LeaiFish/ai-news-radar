@@ -167,7 +167,8 @@ def build_history(data_dir,extra_report=None):
     manifest={'schema':'radar_trend_history_v1','latest_report_id':reports[-1]['report_id'] if reports else None,
               'directions':DIRECTIONS,'types':{**TYPES,'unclassified':'未标注'},'stages':STAGES,'baseline_as_of':baseline.get('as_of'),
               'reports':index,'latest_signals':latest_signals}
-    core.clean(json.dumps([manifest,snapshots],ensure_ascii=False),20_000_000)
+    core.clean(json.dumps(manifest,ensure_ascii=False),10_000_000)
+    for snapshot in snapshots.values(): core.clean(json.dumps(snapshot,ensure_ascii=False),2_000_000)
     return manifest,snapshots
 
 

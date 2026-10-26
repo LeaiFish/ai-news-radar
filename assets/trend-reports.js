@@ -50,6 +50,7 @@
       prose(container, report.content, report.evidence);
       slot.append(container);
     }
+    globalThis.radarTrendHistory?.company(slot, id);
     if (row.state === "insufficient") slot.append(node("p", "brief-meta trend-gap", `最近核验 ${day(row.last_checked_at)}：${row.reason}`));
   }
   global.radarTrendUI = {
@@ -78,7 +79,7 @@
         body.append(node("h3", null, theme.headline), node("p", null, theme.summary));
         refs(body, theme, report.evidence); section.append(body); themes.append(section);
       });
-      article.append(themes); slot.append(article); return true;
+      article.append(themes); slot.append(article); globalThis.radarTrendHistory?.overview(slot); return true;
     },
     section(slot, id, section) {
       const report = snapshot?.companies?.[id]?.[section === "Judgment" ? "judgment" : "changes"];
