@@ -6,13 +6,17 @@ on:
       - 'data/trends/**'
       - 'scripts/trend_reports.py'
       - 'scripts/trend_history.py'
+      - 'assets/trend-history.js'
+      - 'assets/trend-reports.js'
+      - 'assets/perspective.js'
+      - 'tests/trend-history.browser.mjs'
       - 'config/trend_directions.json'
       - 'scripts/publish_trend_report.py'
       - 'tests/test_trend_reports.py'
       - 'tests/test_trend_history.py'
       - '.github/workflows/trend-reports.yml'
   pull_request:
-    paths: ['data/trends/**', 'scripts/*trend*', 'tests/test_trend_reports.py', 'tests/test_trend_history.py', 'config/trend_directions.json']
+    paths: ['data/trends/**', 'scripts/*trend*', 'tests/test_trend_reports.py', 'tests/test_trend_history.py', 'config/trend_directions.json', 'assets/trend-history.js', 'assets/trend-reports.js', 'assets/perspective.js', 'tests/trend-history.browser.mjs']
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,7 +24,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -30,6 +34,18 @@ jobs:
       - run: python -m pytest -q tests/test_trend_reports.py tests/test_trend_history.py
       - run: python scripts/trend_reports.py check --data-dir data
       - run: python scripts/trend_history.py --data-dir data --check
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm install --prefix /tmp/radar-history-browser --no-audit --no-fund @playwright/test@1.61.1
+      - run: /tmp/radar-history-browser/node_modules/.bin/playwright install --with-deps chromium
+      - name: Check history and comparison in desktop and mobile browsers
+        env:
+          RADAR_PLAYWRIGHT_MODULE: /tmp/radar-history-browser/node_modules/@playwright/test/index.mjs
+        run: |
+          python -m http.server 8097 --bind 127.0.0.1 >/tmp/radar-history-browser.log 2>&1 &
+          node --test tests/trend-history-contract.node.mjs
+          node tests/trend-history.browser.mjs
       - name: Request Pages for validated editorial data
         if: github.event_name != 'pull_request'
         env:

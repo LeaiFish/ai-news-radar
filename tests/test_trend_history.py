@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 
 from scripts import trend_history as history
-from scripts.trend_reports import IDS, LATEST, ROOT, digest, iso, periods, validate_report, write_report, load, prepare, bind_input
+from scripts.trend_reports import IDS, LATEST, ROOT, digest, iso, periods, validate_report, write_report, load, prepare, bind_input, archive_path
 from test_trend_reports import report, updated
 
 
@@ -21,7 +21,7 @@ def evolution(raw):
 def test_old_replay_never_guesses_type_and_preserves_original_archive(tmp_path, report):
     updated(report)
     write_report(tmp_path, report)
-    archive=tmp_path/'trends/daily'/f"{report['period_end'][:10]}.json"
+    archive=tmp_path/archive_path(validate_report(report))
     before=archive.read_bytes()
     index,snapshots=history.build_history(tmp_path)
     row=snapshots[index['latest_report_id']]['companies']['doubao']
@@ -40,7 +40,7 @@ def test_retrospective_label_is_dated_without_rewriting_issue(tmp_path, report):
     row=snapshots[id]['companies']['doubao']
     assert row['type']=='strengthened' and row['provenance']=='retrospective'
     assert row['classified_at']==report['generated_at']
-    assert 'evolution' not in load(tmp_path/'trends/daily'/f"{report['period_end'][:10]}.json")
+    assert 'evolution' not in load(tmp_path/archive_path(validate_report(report)))
 
 
 def test_insufficient_retains_before_after_and_original_judgment_date(tmp_path, report):
@@ -74,7 +74,7 @@ def test_broken_archive_parent_fails_closed(tmp_path, report):
     updated(report);checked=validate_report(report)
     checked['previous_report_id']='b'*64
     checked['report_id']=digest({k:v for k,v in checked.items() if k!='report_id'})
-    path=tmp_path/'trends/daily/2026-10-26.json';path.parent.mkdir(parents=True);path.write_text(json.dumps(checked))
+    path=tmp_path/archive_path(checked);path.parent.mkdir(parents=True);path.write_text(json.dumps(checked))
     with pytest.raises(ValueError,match='history_parent'): history.build_history(tmp_path)
 
 
