@@ -20,13 +20,6 @@
     if(!cache.has(id))cache.set(id,fetch(new URL(`data/trends/history/${id}.json`,document.baseURI)).then(async r=>{if(!r.ok)throw new Error('history_unavailable');const x=await r.json();if(x.schema!=='radar_trend_history_snapshot_v1'||x.report_id!==id)throw new Error('history_mismatch');return x;}).catch(e=>{cache.delete(id);throw e;}));
     return cache.get(id);
   }
-  function folded(slot,title,cls,render){
-    const d=node('details','trend-history-panel '+cls),s=node('summary',null,title),body=node('div','trend-history-body');d.append(s,body);slot.append(d);
-    let state='idle';
-    async function load(){if(!d.open||state==='loading'||state==='done')return;state='loading';body.replaceChildren(node('p','brief-meta','正在读取历史记录…'));
-      try{await render(body);state='done';}catch{state='idle';body.replaceChildren(node('p','brief-meta','历史暂时无法读取，当前判断保持显示。'));const b=node('button','trend-history-button','重新读取');b.type='button';b.addEventListener('click',load);body.append(b);}}
-    d.addEventListener('toggle',load);return d;
-  }
   function stamp(parent,meta,row){
     const p=node('p','brief-meta',`${day(meta.generated_at)} · ${meta.kind==='weekly'?'周报':'日报'}`);p.append(document.createTextNode(' · '),badge(row.type));parent.append(p);
     if(row.provenance==='retrospective')parent.append(node('p','brief-meta',`回顾标记于 ${day(row.classified_at)}；原始报告未改写。`));
@@ -76,14 +69,31 @@
     async function batch(){more.disabled=true;const rows=metas.slice(shown,shown+8);const loaded=await Promise.all(rows.map(m=>snapshot(m.report_id)));
       rows.forEach((m,i)=>{const record=loaded[i].overview;if(!record)return;const article=node('article','trend-overview-history');article.append(node('h4',null,`${day(m.generated_at)} · ${m.kind==='weekly'?'周报':'日报'}`));
         if(record.provenance==='retrospective')article.append(node('p','brief-meta',`回顾标记 ${day(record.classified_at)}；原始报告未改写。`));
+        if(record.before?.baseline_text)article.append(node('p','trend-history-baseline',`此前首页基线（截至${day(record.before.as_of)}，AI分析草稿）：${record.before.baseline_text}`));
         article.append(node('p',null,record.after.lead));
         for(const t of record.after.themes){const section=node('section','trend-history-theme');section.append(badge(t.type),node('strong',null,t.content.headline),node('p',null,t.reason));const old=record.before?.themes?.find(x=>t.direction_id&&x.direction_id===t.direction_id);
-          if(old)section.append(node('p','brief-meta',`此前：${old.content.headline}`));section.append(node('p',null,t.content.summary));refs(section,t.content,record.after.evidence);article.append(section);}list.append(article);});shown+=rows.length;more.hidden=shown>=metas.length;more.disabled=false;}
+          if(old)section.append(node('p','brief-meta',`此前：${old.content.headline}`),node('p',null,old.content.summary));section.append(node('p',null,t.content.summary));refs(section,t.content,record.after.evidence);article.append(section);}list.append(article);});shown+=rows.length;more.hidden=shown>=metas.length;more.disabled=false;}
     more.addEventListener('click',()=>batch().catch(()=>{more.disabled=false;more.textContent='读取失败，点击重试';}));await batch();
   }
   global.radarTrendHistory={
     set(value,expected){cache.clear();index=value?.schema==='radar_trend_history_v1'&&validId(value.latest_report_id)&&(!expected||value.latest_report_id===expected)&&value.directions&&typeof value.directions==='object'&&value.types&&typeof value.types==='object'&&value.stages&&typeof value.stages==='object'&&Array.isArray(value.reports)&&value.reports.every(r=>r&&validId(r.report_id))?value:null;},
-    company(slot,id){if(!index||!ids.includes(id)||slot.querySelector('.trend-history-company'))return;folded(slot,'判断演变','trend-history-company',body=>companyBody(body,id));},
-    overview(slot){if(!index||slot.querySelector('.trend-history-home'))return;folded(slot,'趋势历史与机构对照','trend-history-home',homeBody);},
+    async page(slot,id){if(!index)throw new Error('history_unavailable');return ids.includes(id)?companyBody(slot,id):homeBody(slot);},
   };
+  if(document.getElementById?.('historyContent')) {
+    const themeKey='aiNewsRadarTheme';
+    function theme(value){const choice=['dark','light','system'].includes(value)?value:'system';document.documentElement.dataset.theme=choice;document.documentElement.style.colorScheme=choice==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):choice;document.querySelectorAll('[data-radar-theme]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.radarTheme===choice)));try{localStorage.setItem(themeKey,choice);}catch{}}
+    let preferred='system';try{preferred=localStorage.getItem(themeKey)||'system';}catch{}theme(preferred);
+    document.querySelectorAll('[data-radar-theme]').forEach(b=>b.addEventListener('click',()=>theme(b.dataset.radarTheme)));
+    const nav=document.getElementById('navToggle'),sidebar=document.getElementById('sidebar'),scrim=document.getElementById('scrim');
+    function navOpen(open){sidebar.classList.toggle('is-open',open);nav.setAttribute('aria-expanded',String(open));scrim.hidden=!open;}
+    nav.addEventListener('click',()=>navOpen(nav.getAttribute('aria-expanded')!=='true'));scrim.addEventListener('click',()=>navOpen(false));
+    const slot=document.getElementById('historyContent'),select=document.getElementById('historyView'),title=document.getElementById('historyTitle');
+    for(const id of ids){const option=node('option',null,names[id]);option.value=id;select.append(option);}
+    const requested=new URL(location.href).searchParams.get('company');if(ids.includes(requested))select.value=requested;
+    async function render(){const id=select.value,body=node('div','trend-history-body history-page-content');slot.replaceChildren(body);title.textContent=ids.includes(id)?`${names[id]} · 判断演变`:'首页趋势与机构对照';
+      const url=new URL(location.href);if(ids.includes(id))url.searchParams.set('company',id);else url.searchParams.delete('company');window.history.replaceState(null,'',url);
+      try{await global.radarTrendHistory.page(body,id);}catch{body.textContent='历史暂时无法读取，请稍后重试。';}}
+    select.addEventListener('change',render);
+    Promise.all(['data/trends/history.json','data/trends/latest.json'].map(async path=>{const r=await fetch(new URL(path,document.baseURI),{signal:AbortSignal.timeout(10000)});if(!r.ok)throw new Error('history_unavailable');return r.json();})).then(async([value,latest])=>{global.radarTrendHistory.set(value,latest.report_id);await render();}).catch(()=>{slot.textContent='历史暂时无法读取，请稍后重试。当前判断可返回竞争概览查看。';});
+  }
 })(globalThis);

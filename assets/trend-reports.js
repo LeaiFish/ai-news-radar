@@ -39,6 +39,14 @@
     const end = label === "周报" ? new Date(Date.parse(value.period_end) - 1).toISOString() : value.period_end;
     return `${label} · ${day(value.period_start)}—${day(end)}`;
   }
+  function historyLink(slot, id) {
+    if (slot.querySelector('.trend-history-entry')) return;
+    const a = node('a', 'trend-history-entry', id ? '查看判断演变 →' : '查看趋势历史与机构对照 →');
+    const url = new URL('history.html', document.baseURI);
+    if (id) url.searchParams.set('company', id);
+    a.href = url.href;
+    slot.append(a);
+  }
   function appendDigests(slot, id) {
     const row = snapshot?.companies?.[id];
     if (!row) return;
@@ -50,7 +58,7 @@
       prose(container, report.content, report.evidence);
       slot.append(container);
     }
-    globalThis.radarTrendHistory?.company(slot, id);
+    historyLink(slot, id);
     if (row.state === "insufficient") slot.append(node("p", "brief-meta trend-gap", `最近核验 ${day(row.last_checked_at)}：${row.reason}`));
   }
   global.radarTrendUI = {
@@ -79,7 +87,7 @@
         body.append(node("h3", null, theme.headline), node("p", null, theme.summary));
         refs(body, theme, report.evidence); section.append(body); themes.append(section);
       });
-      article.append(themes); slot.append(article); globalThis.radarTrendHistory?.overview(slot); return true;
+      article.append(themes); slot.append(article); historyLink(slot); return true;
     },
     section(slot, id, section) {
       const report = snapshot?.companies?.[id]?.[section === "Judgment" ? "judgment" : "changes"];

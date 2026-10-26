@@ -1381,9 +1381,7 @@
     loadJson("data/topics.json"),
     loadSiteJson("config/topics.json"),
     loadSiteJson("data/trends/latest.json"),
-    loadSiteJson("data/trends/history.json"),
-  ]).then(([briefResult, storiesResult, topicsResult, configResult, trendsResult, historyResult]) => {
-    globalThis.radarTrendHistory?.set(historyResult.status === "fulfilled" ? historyResult.value : null, trendsResult.status === "fulfilled" ? trendsResult.value.report_id : "missing");
+  ]).then(([briefResult, storiesResult, topicsResult, configResult, trendsResult]) => {
     globalThis.radarTrendUI?.set(trendsResult.status === "fulfilled" ? trendsResult.value : null);
     if (briefResult.status === "fulfilled") {
       state.briefItems = briefResult.value.items || [];

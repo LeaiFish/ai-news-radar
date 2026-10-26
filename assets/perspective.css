@@ -1137,3 +1137,11 @@ input:focus-visible {
 .trend-comparison-card > a { font-weight:650; font-size:14px; }
 .trend-history-theme { margin:16px 0; padding-left:12px; border-left:2px solid var(--border, #ddd); }
 @media(max-width:650px) { .trend-history-pair, .trend-comparison { grid-template-columns:minmax(0,1fr); } .trend-history-body { padding:0 12px 12px; } }
+
+.trend-history-entry { display:block; width:fit-content; font-size:13px; margin:18px 0 0; color:var(--accent); }
+.history-page-controls { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:20px 0 28px; }
+.history-page-select { font:inherit; background:var(--surface); color:var(--ink); border:1px solid var(--line-soft); border-radius:8px; padding:8px 12px; max-width:100%; }
+#historyContent { min-width:0; border:1px solid var(--line-soft); border-radius:12px; background:var(--surface); }
+.history-page-content { padding:18px 22px; }
+.trend-history-baseline { background:var(--surface-soft); border-radius:8px; padding:12px; font-size:12px; }
+@media(max-width:650px) { .history-page-content { padding:14px; } }
