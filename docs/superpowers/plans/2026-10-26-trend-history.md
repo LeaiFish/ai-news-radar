@@ -14,7 +14,7 @@
 - Old published reports are immutable; retrospective labels are dated sidecar annotations.
 - No automatic semantic classification from wording, number of stories or event status.
 - Unknown dates remain null; evidence gaps are not inactivity; initial/baseline remains an assistant draft.
-- Preserve core homepage hierarchy; all new controls live in folded panels.
+- Preserve core homepage hierarchy; all history controls live on the independent history.html interface.
 
 ## Review Focus
 
@@ -48,13 +48,13 @@
 - [ ] Run targeted tests and `trend_reports.py check`; expected green and unchanged original archive hashes.
 - [ ] Commit scoped publisher, data, workflow and runbook changes.
 
-### Task 3: Folded history and comparable directions
+### Task 3: Dedicated history interface and comparable directions
 
-**Files:** assets/trend-history.js, assets/trend-reports.js, assets/perspective.js, assets/perspective.css, index.html, legacy-radar.html, Dockerfile, scripts/package-public-site.ts, scripts/sync-public-site.py, tests/trend-history.browser.mjs
-**Interfaces:** radarTrendHistory.set(index), company(slot,id), overview(slot), snapshot lazy fetch by safe report id.
+**Files:** history.html, assets/trend-history.js, assets/trend-reports.js, assets/perspective.js, assets/perspective.css, index.html, legacy-radar.html, Dockerfile, scripts/package-public-site.ts, scripts/sync-public-site.py, tests/trend-history.browser.mjs
+**Interfaces:** radarTrendHistory.set(index), page(slot,id), snapshot lazy fetch by safe report id.
 
 - [ ] Write browser checks for company before/after, retrospective marker, direction selection across institutions, missing data, pure text and mobile overflow.
-- [ ] Implement lazy folded UI and connect index load without hiding existing judgments on history failure.
+- [ ] Implement the independent history.html interface with lightweight entry links and connect index load without hiding existing judgments on history failure.
 - [ ] Maintain all explicit deployment asset/data allowlists and cache versions; retain homepage core CSS.
 - [ ] Run browser checks desktop/mobile and inspect screenshots; run relevant Python and syntax checks.
 - [ ] Commit scoped UI and packaging changes, run final independent branch review and fix substantive findings.

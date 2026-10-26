@@ -118,7 +118,7 @@ def build_history(data_dir,extra_report=None):
     states={slug:{'content':{'headline':'初始月度判断','summary':baseline['companies'][slug]['judgment']['text'],'evidence_ids':[]},
                   'generated_at':None,'as_of':baseline['companies'][slug]['as_of'],
                   'sources':baseline['companies'][slug]['judgment']['sources'],'evidence':[], 'review_state':baseline['companies'][slug]['review_state']} for slug in core.IDS}
-    overview=None;snapshots={};index=[];latest_signals={k:{} for k in DIRECTIONS}
+    overview={'baseline_text':baseline['overview']['text'],'as_of':baseline['overview']['as_of'],'lead':'初始月度首页判断','themes':[], 'generated_at':None,'evidence':[]};snapshots={};index=[];latest_signals={k:{} for k in DIRECTIONS}
     for report in reports:
         rid=report['report_id']
         labels=report.get('evolution')
@@ -165,7 +165,7 @@ def build_history(data_dir,extra_report=None):
             meta['overview']=[{'direction_id':t['direction_id'],'type':t['type']} for t in themes]
         snapshots[rid]=snapshot;index.append(meta)
     manifest={'schema':'radar_trend_history_v1','latest_report_id':reports[-1]['report_id'] if reports else None,
-              'directions':DIRECTIONS,'types':{**TYPES,'unclassified':'未标注'},'stages':STAGES,'baseline_as_of':baseline.get('as_of'),
+              'directions':DIRECTIONS,'types':{**TYPES,'unclassified':'未标注'},'stages':STAGES,'baseline_as_of':baseline['overview']['as_of'],
               'reports':index,'latest_signals':latest_signals}
     core.clean(json.dumps(manifest,ensure_ascii=False),10_000_000)
     for snapshot in snapshots.values(): core.clean(json.dumps(snapshot,ensure_ascii=False),2_000_000)
@@ -194,7 +194,7 @@ def history_context(data_dir):
     changes={slug:[] for slug in core.IDS}
     for meta in reversed(manifest['reports']):
         for slug in core.IDS:
-            if meta['companies'][slug]['changed'] and len(changes[slug])<4:
+            if (meta['companies'][slug]['changed'] or meta['companies'][slug]['type'] in {'strengthened','shifted','corrected'}) and len(changes[slug])<4:
                 row=snapshots[meta['report_id']]['companies'][slug]
                 changes[slug].append({'report_id':meta['report_id'],'generated_at':meta['generated_at'],'type':row['type'],
                                      'reason':row['reason'],'before':row['before']['content'],'after':row['after']['content'],'signals':row['signals']})

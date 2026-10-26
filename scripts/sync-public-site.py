@@ -21,7 +21,7 @@ with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
  if not (stage/'index.html').exists():raise SystemExit('Run the free refresh once before syncing')
  if not args.publish:
   out=ROOT/'.local/public-preview/ai-news-radar';out.mkdir(parents=True,exist_ok=True)
-  for name in ['index.html','public-news.json']:shutil.copyfile(stage/name,out/name)
+  for name in ['index.html','history.html','public-news.json']:shutil.copyfile(stage/name,out/name)
   copy_reader(stage,out)
   # Preview includes sanitized editorial history. Publishing keeps the newer remote editorial files.
   for folder,pattern in [('',r'(latest|history)\.json'),('daily',r'\d{4}-\d{2}-\d{2}\.json'),('weekly',r'\d{4}-W\d{2}\.json'),('history',r'[a-f0-9]{64}\.json')]:
@@ -42,9 +42,9 @@ with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
    if current.get('generatedAt','') > data.get('generatedAt',''):
     print('The public site already has a newer news snapshot; skipped stale local export.')
     raise SystemExit(0)
-  for name in ['index.html','public-news.json']:shutil.copyfile(stage/name,checkout/name)
+  for name in ['index.html','history.html','public-news.json']:shutil.copyfile(stage/name,checkout/name)
   copy_reader(stage,checkout)
-  run('git','add','--','index.html','public-news.json','assets/logo.svg','assets/styles.css','assets/sidebar.css','assets/topics.css','assets/perspective.css','assets/perspective.js','assets/public-projection.js','assets/aihot-skin.css','assets/research-analysis.js','assets/trend-reports.js','assets/trend-history.js','config/topics.json',cwd=checkout)
+  run('git','add','--','index.html','history.html','public-news.json','assets/logo.svg','assets/styles.css','assets/sidebar.css','assets/topics.css','assets/perspective.css','assets/perspective.js','assets/public-projection.js','assets/aihot-skin.css','assets/research-analysis.js','assets/trend-reports.js','assets/trend-history.js','config/topics.json',cwd=checkout)
   if subprocess.run(['git','diff','--cached','--quiet'],cwd=checkout).returncode==0:print('No public changes')
   else:
    run('git','-c','user.name=AI Perspective publisher','-c','user.email=publisher@localhost','commit','-m','chore: publish local public-news projection',cwd=checkout)

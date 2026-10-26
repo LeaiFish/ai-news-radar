@@ -108,3 +108,22 @@ def test_online_latest_alone_is_not_history_deployment(monkeypatch):
         return Response({'latest_report_id':'b'*64} if 'history.json' in url else {'report_id':'a'*64})
     monkeypatch.setattr('urllib.request.urlopen',open_)
     assert not verify('a'*64,timeout=.01)
+
+
+def test_homepage_initial_baseline_is_preserved(tmp_path,report):
+    updated(report)
+    report['evidence'][0]['company_ids']=['doubao','openai']
+    report['overview']={'reason':'首次建立结构化首页','lead':'办公成果可交接','themes':[{'headline':'成果可分享','summary':'两家公司围绕已有成果继续工作','company_ids':['doubao','openai'],'evidence_ids':['doubao-1']}]}
+    write_report(tmp_path,report)
+    _,snapshots=history.build_history(tmp_path)
+    before=snapshots[digest(report)]['overview']['before']
+    assert before['baseline_text']==load(ROOT/'config/trend_baseline.json')['overview']['text']
+    assert before['as_of']=='2026-10-19'
+
+
+def test_context_keeps_strengthening_without_resetting_judgment(tmp_path,report):
+    evolution(updated(report))
+    report['companies']['doubao'].update(state='unchanged',judgment=None,changes=None)
+    write_report(tmp_path,report)
+    context=history.history_context(tmp_path)
+    assert context['recent_changes']['doubao'][0]['type']=='strengthened'
