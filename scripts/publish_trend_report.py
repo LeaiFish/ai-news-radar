@@ -30,7 +30,7 @@ def git(*args, cwd=None, check=True):
 def publish(raw, bundle, *, repository=REPOSITORY):
     bind_input(raw, bundle)
     report = validate_report(raw)
-    allowed = {str(Path("data") / LATEST), str(Path("data") / archive_path(report))}
+    allowed = {str(Path("data") / LATEST), str(Path("data") / archive_path(report)), "data/trends/history.json", f"data/trends/history/{report["report_id"]}.json"}
     with tempfile.TemporaryDirectory(prefix="radar-trend-publish-") as folder:
         checkout = Path(folder) / "repo"
         git("clone", "--quiet", "--depth", "1", "--branch", "master", repository, str(checkout))
@@ -60,7 +60,15 @@ def verify(report_id, timeout=1800):
             with urllib.request.urlopen(request, timeout=20) as response:
                 payload = json.loads(response.read(600_000))
             if payload.get("report_id") == report_id:
-                return True
+                base = PUBLIC.rsplit("/", 1)[0]
+                def read_history(path):
+                    request = urllib.request.Request(base + "/" + path + "?report=" + report_id, headers={"Cache-Control": "no-cache"})
+                    with urllib.request.urlopen(request, timeout=20) as response:
+                        return json.loads(response.read(2_000_000))
+                index = read_history("history.json")
+                snapshot = read_history("history/" + report_id + ".json")
+                if index.get("latest_report_id") == snapshot.get("report_id") == report_id:
+                    return True
         except (OSError, ValueError):
             pass
         time.sleep(min(20, max(0, until - time.monotonic())))

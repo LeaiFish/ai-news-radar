@@ -1,0 +1,358 @@
+{
+  "schema": "radar_trend_history_v1",
+  "latest_report_id": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+  "directions": {
+    "ongoing-assistance": "持续任务与主动跟进",
+    "shared-deliverables": "成果共同修改与维护",
+    "merchant-operations": "商家经营任务",
+    "personal-context": "个人资料与场景",
+    "mobile-entry": "移动与随身入口",
+    "enterprise-rollout": "企业部署与管理",
+    "commercialization": "订阅与广告商业化"
+  },
+  "types": {
+    "established": "首次建立",
+    "continued": "延续",
+    "strengthened": "加强",
+    "shifted": "转向",
+    "corrected": "纠偏",
+    "insufficient": "证据不足",
+    "unclassified": "未标注"
+  },
+  "stages": {
+    "announced": "已宣布",
+    "preview": "测试或邀测",
+    "available": "功能可用",
+    "observed": "使用案例",
+    "unknown": "阶段未核验"
+  },
+  "baseline_as_of": null,
+  "reports": [
+    {
+      "report_id": "6e24abff5da1a9c584499588bb53763abd3630041ca5f83a56afcc0374cdedd6",
+      "kind": "daily",
+      "generated_at": "2026-10-22T08:03:37.519525Z",
+      "period_start": "2026-10-21T07:18:36.325722Z",
+      "period_end": "2026-10-22T07:18:36.325722Z",
+      "path": "trends/daily/2026-10-22.json",
+      "companies": {
+        "doubao": {
+          "type": "established",
+          "changed": true,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "qwen": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "merchant-operations",
+            "mobile-entry"
+          ]
+        },
+        "hunyuan": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "openai": {
+          "type": "established",
+          "changed": true,
+          "direction_ids": [
+            "shared-deliverables",
+            "ongoing-assistance"
+          ]
+        },
+        "anthropic": {
+          "type": "established",
+          "changed": true,
+          "direction_ids": [
+            "ongoing-assistance",
+            "shared-deliverables"
+          ]
+        },
+        "xai": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "enterprise-rollout"
+          ]
+        },
+        "google-gemini": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "personal-context"
+          ]
+        },
+        "meta-llama": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "merchant-operations"
+          ]
+        }
+      },
+      "overview": [
+        {
+          "direction_id": "ongoing-assistance",
+          "type": "established"
+        },
+        {
+          "direction_id": "shared-deliverables",
+          "type": "established"
+        },
+        {
+          "direction_id": "merchant-operations",
+          "type": "established"
+        }
+      ]
+    },
+    {
+      "report_id": "13903f996db4584ecf33b3f522a32d84ca9ddfffdbac8aa27921efaf0164eabb",
+      "kind": "daily",
+      "generated_at": "2026-10-23T03:18:15.446393Z",
+      "period_start": "2026-10-22T02:42:01.703438Z",
+      "period_end": "2026-10-23T02:42:01.703438Z",
+      "path": "trends/daily/2026-10-23.json",
+      "companies": {
+        "doubao": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "qwen": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "merchant-operations"
+          ]
+        },
+        "hunyuan": {
+          "type": "insufficient",
+          "changed": false,
+          "direction_ids": []
+        },
+        "openai": {
+          "type": "strengthened",
+          "changed": true,
+          "direction_ids": [
+            "enterprise-rollout"
+          ]
+        },
+        "anthropic": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "ongoing-assistance"
+          ]
+        },
+        "xai": {
+          "type": "strengthened",
+          "changed": true,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "google-gemini": {
+          "type": "strengthened",
+          "changed": true,
+          "direction_ids": [
+            "personal-context"
+          ]
+        },
+        "meta-llama": {
+          "type": "strengthened",
+          "changed": true,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        }
+      },
+      "overview": []
+    },
+    {
+      "report_id": "ff4f5e7f876e88bb6ef2051ad71850f1f6102ab575b7923e9a35b552094f0cd2",
+      "kind": "daily",
+      "generated_at": "2026-10-26T03:20:52.486774Z",
+      "period_start": "2026-10-25T02:42:10.637375Z",
+      "period_end": "2026-10-26T02:42:10.637375Z",
+      "path": "trends/daily/2026-10-26.json",
+      "companies": {
+        "doubao": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": []
+        },
+        "qwen": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": []
+        },
+        "hunyuan": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": []
+        },
+        "openai": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": []
+        },
+        "anthropic": {
+          "type": "strengthened",
+          "changed": true,
+          "direction_ids": [
+            "enterprise-rollout",
+            "ongoing-assistance"
+          ]
+        },
+        "xai": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": []
+        },
+        "google-gemini": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": []
+        },
+        "meta-llama": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": []
+        }
+      },
+      "overview": []
+    },
+    {
+      "report_id": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "kind": "weekly",
+      "generated_at": "2026-10-26T03:27:31.513039Z",
+      "period_start": "2026-10-18T16:00:00Z",
+      "period_end": "2026-10-25T16:00:00Z",
+      "path": "trends/weekly/2026-W43.json",
+      "companies": {
+        "doubao": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "qwen": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "merchant-operations",
+            "mobile-entry"
+          ]
+        },
+        "hunyuan": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "openai": {
+          "type": "strengthened",
+          "changed": true,
+          "direction_ids": [
+            "ongoing-assistance",
+            "shared-deliverables",
+            "enterprise-rollout",
+            "merchant-operations",
+            "commercialization"
+          ]
+        },
+        "anthropic": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables",
+            "enterprise-rollout",
+            "ongoing-assistance"
+          ]
+        },
+        "xai": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables",
+            "enterprise-rollout"
+          ]
+        },
+        "google-gemini": {
+          "type": "strengthened",
+          "changed": true,
+          "direction_ids": [
+            "personal-context",
+            "merchant-operations"
+          ]
+        },
+        "meta-llama": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "merchant-operations",
+            "shared-deliverables"
+          ]
+        }
+      },
+      "overview": [
+        {
+          "direction_id": "ongoing-assistance",
+          "type": "continued"
+        },
+        {
+          "direction_id": "shared-deliverables",
+          "type": "strengthened"
+        },
+        {
+          "direction_id": "merchant-operations",
+          "type": "strengthened"
+        }
+      ]
+    }
+  ],
+  "latest_signals": {
+    "ongoing-assistance": {
+      "openai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "anthropic": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e"
+    },
+    "shared-deliverables": {
+      "doubao": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "hunyuan": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "openai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "anthropic": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "xai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "meta-llama": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e"
+    },
+    "merchant-operations": {
+      "qwen": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "meta-llama": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "openai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "google-gemini": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e"
+    },
+    "personal-context": {
+      "google-gemini": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e"
+    },
+    "mobile-entry": {
+      "qwen": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e"
+    },
+    "enterprise-rollout": {
+      "xai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "openai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "anthropic": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e"
+    },
+    "commercialization": {
+      "openai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e"
+    }
+  }
+}
