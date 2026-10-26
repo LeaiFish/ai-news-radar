@@ -23,8 +23,9 @@ COPY licenses/ licenses/
 COPY NOTICE LICENSE ./
 COPY assets/og-fonts/ assets/og-fonts/
 COPY legacy-radar.html ./
-COPY assets/logo.svg assets/styles.css assets/sidebar.css assets/topics.css assets/perspective.css assets/perspective.js assets/public-projection.js assets/aihot-skin.css assets/research-analysis.js assets/trend-reports.js assets/
-COPY config/topics.json config/source_tiers.json config/focus_sources.json config/
+COPY assets/logo.svg assets/styles.css assets/sidebar.css assets/topics.css assets/perspective.css assets/perspective.js assets/public-projection.js assets/aihot-skin.css assets/research-analysis.js assets/trend-reports.js assets/trend-history.js assets/
+COPY config/topics.json config/source_tiers.json config/focus_sources.json config/trend_baseline.json config/trend_directions.json config/
+COPY data/trends/ data/trends/
 COPY feeds/follow.example.opml feeds/
 COPY requirements.txt ./
 RUN --mount=type=secret,id=proxy_ca sh -c 'if [ -f /run/secrets/proxy_ca ]; then export NODE_EXTRA_CA_CERTS=/run/secrets/proxy_ca; fi; npm ci --no-audit --no-fund ${NPM_REGISTRY:+--registry=$NPM_REGISTRY}'
