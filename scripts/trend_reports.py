@@ -30,6 +30,14 @@ SECRET = re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----|\b(?:gh[pousr]_[A-Za-z0
 BAD_QUERY = frozenset({"token", "access_token", "refresh_token", "api_key", "apikey", "key", "secret", "password", "auth", "authorization", "cookie", "code", "iga_token", "iga_time", "x-signature"})
 
 
+def history_module():
+    try:
+        from scripts import trend_history
+    except ModuleNotFoundError:
+        import trend_history
+    return trend_history
+
+
 def require(condition, code):
     if not condition:
         raise ValueError(code)
@@ -152,6 +160,8 @@ def prepare(data_dir, kind, now=None):
               "source_snapshot_at": iso(as_of), "previous_report_id": previous.get("report_id"),
               "previous_overview": previous.get("overview"), "companies": companies,
               "known_daily_events": daily_event_index(data_dir, as_of),
+              "history_context": history_module().history_context(data_dir),
+              "evolution_contract": {"types": history_module().TYPES, "directions": history_module().DIRECTIONS, "required": True},
               "warning": "候选时间、标题、摘要未经本轮原文核验；原文失败是覆盖缺口。既有判断不是新证据；同一事件多家报道只算一次。"}
     bundle["input_id"] = digest(bundle)
     return bundle
@@ -180,7 +190,7 @@ def daily_event_index(data_dir, as_of):
 
 def validate_report(raw, *, now=None):
     now = now or datetime.now(UTC)
-    keys(raw, "schema kind period_start period_end source_snapshot_at generated_at input_id previous_report_id companies evidence overview", "invalid_report_fields")
+    keys(raw, "schema kind period_start period_end source_snapshot_at generated_at input_id previous_report_id companies evidence overview" + (" evolution" if "evolution" in raw else ""), "invalid_report_fields")
     require(raw["schema"] == REPORT_SCHEMA and raw["kind"] in {"daily", "weekly"}, "invalid_report_schema")
     start, end, source, generated = (stamp(raw[k]) for k in ("period_start", "period_end", "source_snapshot_at", "generated_at"))
     require(start < end <= source <= generated <= now + timedelta(minutes=5), "invalid_report_window")
@@ -256,6 +266,8 @@ def validate_report(raw, *, now=None):
             supported = set().union(*(set(evidence[k]["company_ids"]) for k in theme["evidence_ids"]))
             require(set(theme["company_ids"]) <= supported, "unsupported_overview_company")
             require(any(c in DOMESTIC for c in supported) and any(c not in DOMESTIC for c in supported), "overview_needs_domestic_and_overseas_evidence")
+    if "evolution" in raw:
+        history_module().validate_evolution(raw)
     result = deepcopy(raw)
     result["report_id"] = digest(raw)
     return result
@@ -343,6 +355,8 @@ def archive_path(report):
 def bind_input(raw, bundle):
     require(isinstance(bundle, dict) and bundle.get("schema") == "radar_trend_input_v1", "invalid_input_bundle")
     require(bundle.get("input_id") == digest({k: v for k, v in bundle.items() if k != "input_id"}), "input_bundle_tampered")
+    if bundle.get("evolution_contract", {}).get("required"):
+        require("evolution" in raw, "evolution_required_for_prepared_input")
     for key in ("input_id", "kind", "period_start", "period_end", "source_snapshot_at", "previous_report_id"):
         require(raw.get(key) == bundle.get(key), "report_input_mismatch")
 
@@ -369,11 +383,13 @@ def write_report(data_dir, raw, *, now=None):
                 require(event["event_id"] not in known[slug] and not current_refs <= dated_refs, "already_reported_event_cannot_be_new")
     merged = merge_report(previous, report)
     validate_latest(merged)
+    history = history_module().build_history(data_dir, extra_report=report)
     # Validate everything before mutation; latest is the commit point.
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     temporary = (data_dir / LATEST).with_suffix(".tmp")
     temporary.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n")
+    history_module().write_history(data_dir, history)
     temporary.replace(data_dir / LATEST)
     return {"status": "written", "report_id": report["report_id"], "archive": str(path)}
 
