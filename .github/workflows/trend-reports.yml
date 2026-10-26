@@ -6,6 +6,10 @@ on:
       - 'data/trends/**'
       - 'scripts/trend_reports.py'
       - 'scripts/trend_history.py'
+      - 'history.html'
+      - '.dockerignore'
+      - 'Dockerfile'
+      - 'assets/perspective.css'
       - 'assets/trend-history.js'
       - 'assets/trend-reports.js'
       - 'assets/perspective.js'
@@ -37,6 +41,14 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
+      - name: Verify public history Docker context
+        run: |
+          docker build -f - . <<'DOCKER'
+          FROM scratch
+          COPY data/trends/ /trends/
+          COPY history.html /history.html
+          DOCKER
+      - run: node scripts/package-public-site.ts
       - run: npm install --prefix /tmp/radar-history-browser --no-audit --no-fund @playwright/test@1.61.1
       - run: /tmp/radar-history-browser/node_modules/.bin/playwright install --with-deps chromium
       - name: Check history and comparison in desktop and mobile browsers
@@ -47,7 +59,7 @@ jobs:
           node --test tests/trend-history-contract.node.mjs
           node tests/trend-history.browser.mjs
       - name: Request Pages for validated editorial data
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
