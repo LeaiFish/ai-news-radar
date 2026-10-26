@@ -50,7 +50,7 @@
 
 ### Task 3: Folded history and comparable directions
 
-**Files:** assets/trend-history.js, assets/trend-reports.js, assets/perspective.js, assets/perspective.css, index.html, legacy-radar.html, Dockerfile, scripts/package-public-site.ts, scripts/sync-public-site.mjs, tests/trend-history.browser.mjs
+**Files:** assets/trend-history.js, assets/trend-reports.js, assets/perspective.js, assets/perspective.css, index.html, legacy-radar.html, Dockerfile, scripts/package-public-site.ts, scripts/sync-public-site.py, tests/trend-history.browser.mjs
 **Interfaces:** radarTrendHistory.set(index), company(slot,id), overview(slot), snapshot lazy fetch by safe report id.
 
 - [ ] Write browser checks for company before/after, retrospective marker, direction selection across institutions, missing data, pure text and mobile overflow.
