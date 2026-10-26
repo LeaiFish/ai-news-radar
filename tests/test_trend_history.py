@@ -127,3 +127,4 @@ def test_context_keeps_strengthening_without_resetting_judgment(tmp_path,report)
     write_report(tmp_path,report)
     context=history.history_context(tmp_path)
     assert context['recent_changes']['doubao'][0]['type']=='strengthened'
+    assert context['recent_changes']['doubao'][0]['evidence'][0]['url']=='https://www.doubao.com/work'
