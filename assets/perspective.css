@@ -1108,13 +1108,13 @@ input:focus-visible {
 .timeline-page:disabled { opacity: 0.45; cursor: default; }
 
 /* History is opt-in; preserve the existing monthly judgment hierarchy. */
-.trend-history-panel { margin-top:24px; border:1px solid var(--border, #ddd); border-radius:10px; background:var(--bg, #fff); min-width:0; }
+.trend-history-panel { margin-top:24px; border:1px solid var(--line-soft); border-radius:10px; background:var(--bg, #fff); min-width:0; }
 .trend-history-panel > summary { cursor:pointer; padding:16px 18px; font-weight:650; font-size:14px; }
 .trend-history-body { padding:0 18px 18px; font-size:13px; line-height:1.75; overflow-wrap:anywhere; }
 .trend-history-note { color:var(--muted, #666); font-size:12px; margin:8px 0 14px; }
-.trend-history-record, .trend-overview-history { padding:20px 0; border-top:1px solid var(--border, #ddd); }
+.trend-history-record, .trend-overview-history { padding:20px 0; border-top:1px solid var(--line-soft); }
 .trend-history-pair { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:20px; }
-.trend-history-judgment { min-width:0; background:var(--bg-subtle, #f7f8fa); border-radius:8px; padding:14px; }
+.trend-history-judgment { min-width:0; background:var(--surface-soft); border-radius:8px; padding:14px; }
 .trend-history-judgment h4 { font-size:11px; color:var(--muted, #666); margin:0 0 8px; }
 .trend-history-judgment strong, .trend-history-theme strong { display:block; font-size:14px; line-height:1.6; }
 .trend-history-judgment p { margin:8px 0; }
@@ -1128,14 +1128,14 @@ input:focus-visible {
 .trend-history-reason { font-weight:550; }
 .trend-history-signal { margin:14px 0 4px; }
 .trend-direction-label { display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-weight:600; margin:20px 0 12px; }
-.trend-direction-select, .trend-history-button { font:inherit; color:inherit; background:transparent; border:1px solid var(--border, #ddd); border-radius:6px; padding:7px 10px; max-width:100%; }
+.trend-direction-select, .trend-history-button { font:inherit; color:inherit; background:transparent; border:1px solid var(--line-soft); border-radius:6px; padding:7px 10px; max-width:100%; }
 .trend-history-button { cursor:pointer; margin-top:10px; }
 .trend-history-button[hidden] { display:none; }
 .trend-comparison { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
 .trend-comparison > .trend-history-note { grid-column:1/-1; }
-.trend-comparison-card { min-width:0; padding:14px; border:1px solid var(--border, #ddd); border-radius:8px; }
+.trend-comparison-card { min-width:0; padding:14px; border:1px solid var(--line-soft); border-radius:8px; }
 .trend-comparison-card > a { font-weight:650; font-size:14px; }
-.trend-history-theme { margin:16px 0; padding-left:12px; border-left:2px solid var(--border, #ddd); }
+.trend-history-theme { margin:16px 0; padding-left:12px; border-left:2px solid var(--line-soft); }
 @media(max-width:650px) { .trend-history-pair, .trend-comparison { grid-template-columns:minmax(0,1fr); } .trend-history-body { padding:0 12px 12px; } }
 
 .trend-history-entry { display:block; width:fit-content; font-size:13px; margin:18px 0 0; color:var(--accent); }
