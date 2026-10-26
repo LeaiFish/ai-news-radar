@@ -4,58 +4,75 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-26T17:25:59.751169Z",
+  "generated_at": "2026-10-26T21:38:32.462939Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27"
   ],
-  "story_count": 887,
-  "unique_story_count": 732,
+  "story_count": 928,
+  "unique_story_count": 791,
   "counts": {
     "by_company_topic": {
-      "anthropic": 157,
-      "apple": 3,
+      "anthropic": 171,
+      "apple": 10,
       "cursor": 2,
-      "deepseek": 18,
+      "deepseek": 19,
       "doubao": 6,
       "google-gemini": 28,
       "huggingface": 10,
       "hunyuan": 3,
       "kimi": 21,
       "meta-llama": 6,
-      "microsoft": 13,
+      "microsoft": 14,
       "minimax": 19,
-      "nvidia": 22,
-      "openai": 105,
-      "openrouter": 1,
-      "qwen": 10,
-      "xai": 18,
+      "nvidia": 24,
+      "openai": 122,
+      "openrouter": 2,
+      "qwen": 11,
+      "xai": 16,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 143,
-      "monetization": 21,
+      "agent-ecosystem": 146,
+      "monetization": 24,
       "product-entry": 2,
-      "workplace": 28
+      "workplace": 31
     },
     "by_importance_label": {
-      "值得关注": 770,
-      "多源热议": 18,
-      "官方更新": 40,
-      "行业动态": 59
+      "值得关注": 801,
+      "多源热议": 17,
+      "官方更新": 46,
+      "行业动态": 64
     },
     "by_source_count_bucket": {
-      "1": 841,
-      "2": 28,
-      "3+": 18
+      "1": 879,
+      "2": 32,
+      "3+": 17
     }
   },
   "top_stories": [
     {
+      "story_id": "story_f8d229a3f617",
+      "title": "GPT-6.1 Terra in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot",
+      "importance_score": 0.8539,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "openai",
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_ab5c2a044f11",
       "title": "15 位大学生分享他们最喜欢的Gemini特征 / 15 college students share their favorite Gemini features",
       "url": "https://blog.google/products-and-platforms/products/gemini/college-student-favorite-features",
-      "importance_score": 0.8483,
+      "importance_score": 0.8379,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-27",
@@ -65,17 +82,19 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_688975d54601",
-      "title": "我们最新的人工智能任务：绘制人类大脑图谱 / Our newest AI Quest: Mapping the human brain",
-      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks",
-      "importance_score": 0.8403,
+      "story_id": "story_49bc9e3f47de",
+      "title": "OpenAI 发布 GPT-6.1 Terra，主打高效计算机操作与更低成本 / Introducing GPT-6.1 Terra",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "importance_score": 0.8367,
       "importance_label": "官方更新",
-      "source_count": 1,
+      "source_count": 2,
       "archive_date": "2026-10-27",
       "company_topics": [
-        "google-gemini"
+        "openai"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_b9ba650b2e36",
@@ -85,6 +104,58 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-26",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4660eaf23fef",
+      "title": "ChatGPT’s expanding world of work",
+      "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+      "importance_score": 0.8321,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_688975d54601",
+      "title": "我们最新的人工智能任务：绘制人类大脑图谱 / Our newest AI Quest: Mapping the human brain",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks",
+      "importance_score": 0.8299,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2bed528bbdda",
+      "title": "GPT-6.1 Terra in Work and Codex",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8217,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c3c8258df45d",
+      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "url": "https://openai.com/index/openai-cut-incident-investigation",
+      "importance_score": 0.8177,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
       "company_topics": [
         "openai"
       ],
@@ -117,6 +188,35 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_1e811a537be2",
+      "title": "ChatGPT 产品周报：October 26–30, 2026",
+      "url": "https://learn.chatgpt.com/docs/whats-new#october-2630-2026",
+      "importance_score": 0.8037,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "monetization",
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_76389132aa45",
+      "title": "Meta 向 SEC 申报拟募资 950 亿美元投向 AI 数据中心与超级智能 / Meta filed the announcement with the SEC that it plans to raise $95B in new equity to fund AI data centers and its superintelligence push.",
+      "url": "https://x.com/rohanpaul_ai/status/2114789264936534183",
+      "importance_score": 0.799,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "nvidia"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_54658c0be95b",
       "title": "构建“公司安全带”的五个组成部分 / The five components of building a \"company harness\"",
       "url": "https://www.langchain.com/blog/components-building-company-harness",
@@ -128,6 +228,32 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_489394364d42",
+      "title": "GHARP: Real-Time Gaussian Head Animation from Large-Scale Reconstruction Prior",
+      "url": "https://machinelearning.apple.com/research/gharp-head-animation",
+      "importance_score": 0.7957,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cdfcd9ca2b60",
+      "title": "Anthropic S-1 文件中的五个不寻常细节 / Five weird details from Anthropic’s IPO filing",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+      "importance_score": 0.7893,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_b5388a20531f",
@@ -181,6 +307,53 @@
       "company_topics": [],
       "lens_topics": [
         "monetization"
+      ]
+    },
+    {
+      "story_id": "story_68d9f7344407",
+      "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力 / Day 22/ Terra is back!",
+      "url": "https://x.com/thsottiaux/status/2114800277677092936",
+      "importance_score": 0.7679,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_b7cd9e29b365",
+      "title": "Greg Brockman 称 GPT-6.1 Terra 的电脑操作速度已超过他本人 / computer use with terra has crossed a qualitative threshold where it feels faster at using a computer than what i can do unassisted",
+      "url": "https://x.com/gdb/status/2114814747254432243",
+      "importance_score": 0.7613,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_701e54b2e2ab",
+      "title": "OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output / GPT-6.1 Terra from @OpenAI is live on OpenRouter!",
+      "url": "https://x.com/OpenRouter/status/2114791584755839168",
+      "importance_score": 0.7604,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "openai",
+        "openrouter"
+      ],
+      "lens_topics": [
+        "monetization",
+        "agent-ecosystem"
       ]
     },
     {
@@ -380,19 +553,6 @@
       ]
     },
     {
-      "story_id": "story_8bc0e7316494",
-      "title": "Krea 推出面向 Adobe Premiere 的插件 / introducing Krea for Adobe Premiere.",
-      "url": "https://x.com/krea_ai/status/2114741513867395527",
-      "importance_score": 0.7417,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_672839c1cfa8",
       "title": "何夕2077 AI 深度信号周报 2026 W43：把关权易主与千亿算力",
       "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-10-25-ai-deep-signals-weekly-2026-w43",
@@ -415,153 +575,6 @@
         "anthropic"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_64b29a97df59",
-      "title": "Block 发布全新语音模型 Dessa:打破文字中转桎梏，实现逼真全双工交互",
-      "url": "https://www.aibase.com/news/31856",
-      "importance_score": 0.7395,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4193ace9e9ce",
-      "title": "Kimi 就 K3.1 Pro 限流致歉：全体订阅会员补 25% 额度",
-      "url": "https://www.aibase.com/news/31855",
-      "importance_score": 0.7395,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_3e79de95e41c",
-      "title": "韩国游戏巨头 KRAFTON 放出 Raon-1 mini，叫板 Meta 同档模型",
-      "url": "https://www.aibase.com/news/31857",
-      "importance_score": 0.7395,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3cd097d7c883",
-      "title": "猫王版权方怒告 Anthropic：未经授权拿 274 首歌训 AI",
-      "url": "https://www.aibase.com/news/31854",
-      "importance_score": 0.7395,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8df94465a5bc",
-      "title": "Codex CLI 0.164.0",
-      "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.7377,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ea48c9e8ff35",
-      "title": "了解 5 位建筑商使用 Gemini 4 Argon 制作了什么 / See what 5 builders are making with Gemini 4 Argon",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders",
-      "importance_score": 0.7372,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_84a11f0b50ca",
-      "title": "使用指标 API 添加了 OpenCode 等工具的使用情况 / Usage metrics API adds usage from tools like OpenCode",
-      "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode",
-      "importance_score": 0.7369,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_fd2a466d13d4",
-      "title": "Anthropic Claude 被曝绕过付费墙，偷抓佐治亚州选民数据",
-      "url": "https://www.aibase.com/news/31851",
-      "importance_score": 0.7366,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_e173b1256ed3",
-      "title": "Epic 老大再喷 Steam AI 公示：逼开发者写\"政治声明\"招来网暴",
-      "url": "https://www.aibase.com/news/31850",
-      "importance_score": 0.7366,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6ae24aff93c6",
-      "title": "Claude 被曝绕过付费墙，违规抓取美佐治亚州选民计票数据",
-      "url": "https://www.aibase.com/news/31848",
-      "importance_score": 0.7366,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_5799027c0e77",
-      "title": "Kimi就K3.1Pro限流致歉:全系订阅会员获25%额度补偿",
-      "url": "https://www.aibase.com/news/31853",
-      "importance_score": 0.7366,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
     }
   ]
 }
