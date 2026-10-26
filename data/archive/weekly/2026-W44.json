@@ -4,52 +4,79 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-26T14:19:50.807546Z",
+  "generated_at": "2026-10-26T17:25:59.751169Z",
   "daily_dates": [
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-27"
   ],
-  "story_count": 677,
-  "unique_story_count": 677,
+  "story_count": 887,
+  "unique_story_count": 732,
   "counts": {
     "by_company_topic": {
-      "anthropic": 105,
-      "apple": 2,
+      "anthropic": 157,
+      "apple": 3,
       "cursor": 2,
-      "deepseek": 17,
-      "doubao": 5,
-      "google-gemini": 23,
-      "huggingface": 8,
-      "hunyuan": 2,
-      "kimi": 17,
-      "meta-llama": 4,
-      "microsoft": 11,
-      "minimax": 16,
-      "nvidia": 18,
-      "openai": 88,
+      "deepseek": 18,
+      "doubao": 6,
+      "google-gemini": 28,
+      "huggingface": 10,
+      "hunyuan": 3,
+      "kimi": 21,
+      "meta-llama": 6,
+      "microsoft": 13,
+      "minimax": 19,
+      "nvidia": 22,
+      "openai": 105,
       "openrouter": 1,
-      "qwen": 9,
-      "xai": 14,
+      "qwen": 10,
+      "xai": 18,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 116,
-      "monetization": 13,
+      "agent-ecosystem": 143,
+      "monetization": 21,
       "product-entry": 2,
-      "workplace": 23
+      "workplace": 28
     },
     "by_importance_label": {
-      "值得关注": 600,
-      "多源热议": 15,
-      "官方更新": 33,
-      "行业动态": 29
+      "值得关注": 770,
+      "多源热议": 18,
+      "官方更新": 40,
+      "行业动态": 59
     },
     "by_source_count_bucket": {
-      "1": 637,
-      "2": 25,
-      "3+": 15
+      "1": 841,
+      "2": 28,
+      "3+": 18
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_ab5c2a044f11",
+      "title": "15 位大学生分享他们最喜欢的Gemini特征 / 15 college students share their favorite Gemini features",
+      "url": "https://blog.google/products-and-platforms/products/gemini/college-student-favorite-features",
+      "importance_score": 0.8483,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_688975d54601",
+      "title": "我们最新的人工智能任务：绘制人类大脑图谱 / Our newest AI Quest: Mapping the human brain",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks",
+      "importance_score": 0.8403,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
     {
       "story_id": "story_b9ba650b2e36",
       "title": "How Fanatics and OpenAI streamline the fan experience",
@@ -353,6 +380,19 @@
       ]
     },
     {
+      "story_id": "story_8bc0e7316494",
+      "title": "Krea 推出面向 Adobe Premiere 的插件 / introducing Krea for Adobe Premiere.",
+      "url": "https://x.com/krea_ai/status/2114741513867395527",
+      "importance_score": 0.7417,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_672839c1cfa8",
       "title": "何夕2077 AI 深度信号周报 2026 W43：把关权易主与千亿算力",
       "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-10-25-ai-deep-signals-weekly-2026-w43",
@@ -522,41 +562,6 @@
       "lens_topics": [
         "monetization"
       ]
-    },
-    {
-      "story_id": "story_46a20a5fbd4f",
-      "title": "AI巨头遭猫王版权方索赔 4100 万美元：当传奇音乐遇上大模型侵权风暴",
-      "url": "https://www.aibase.com/news/31849",
-      "importance_score": 0.7366,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_24262f039869",
-      "title": "Grok首发 7 分钟AI版《奥德赛》史诗短片，叫板诺兰传统大制作",
-      "url": "https://www.aibase.com/news/31852",
-      "importance_score": 0.7366,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "xai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e601481ec54f",
-      "title": "EMU deletions fix",
-      "url": "https://github.blog/changelog/2026-10-23-emu-deletions-fix",
-      "importance_score": 0.732,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [],
-      "lens_topics": []
     }
   ]
 }
