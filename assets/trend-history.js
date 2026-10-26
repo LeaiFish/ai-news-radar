@@ -48,7 +48,7 @@
     const box=node('div','trend-comparison');box.append(node('p','trend-history-note','以下是各机构最近归档的同方向线索。阶段与记录日期分开显示，不表示同步发布、效果相同或采用程度排名。'));
     const map=index.latest_signals?.[direction]||{};const latest=index.reports.at(-1);
     const loaded=await Promise.all(ids.map(async id=>map[id]?snapshot(map[id]).catch(()=>null):null));
-    ids.forEach((id,i)=>{const article=node('article','trend-comparison-card'),a=node('a',null,names[id]);const u=new URL(location.href);u.search='';u.searchParams.set('space','research');u.searchParams.set('kind','org');u.searchParams.set('id',id);a.href=u.href;article.append(a);
+    ids.forEach((id,i)=>{const article=node('article','trend-comparison-card'),a=node('a',null,names[id]);const u=new URL('./',document.baseURI);u.search='';u.searchParams.set('space','research');u.searchParams.set('kind','org');u.searchParams.set('id',id);a.href=u.href;article.append(a);
       const snap=loaded[i],row=snap?.companies?.[id],signal=row?.signals?.find(s=>s.direction_id===direction);
       if(signal){article.append(node('p','brief-meta',`判断记录 ${day(snap.generated_at)} · ${index.stages[signal.stage]||'阶段未核验'}`),badge(signal.type),node('p',null,signal.summary));refs(article,signal,row.evidence);
         if(row.provenance==='retrospective')article.append(node('p','brief-meta',`回顾标记 ${day(row.classified_at)}`));

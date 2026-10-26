@@ -17,6 +17,7 @@ try {
  await page.locator('.trend-comparison-card').first().waitFor();
  const comparison=await page.locator('.trend-comparison').innerText();
  for(const text of ['ChatGPT','Gemini','千问','Muse','测试或邀测','使用案例','判断记录'])assert.ok(comparison.includes(text),text);
+ for(const href of await page.locator('.trend-comparison-card > a').evaluateAll(nodes=>nodes.map(a=>a.href)))assert.equal(new URL(href).pathname,new URL(base).pathname,'institution links return to company research, not history.html');
  await page.locator('.trend-overview-history').first().waitFor();
  assert.match(await page.locator('#historyContent').innerText(),/此前首页基线/);
  await page.screenshot({path:'/tmp/radar-history-home.png',fullPage:true});
