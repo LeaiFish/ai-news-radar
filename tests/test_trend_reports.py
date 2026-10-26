@@ -217,7 +217,7 @@ def test_oversized_merge_is_rejected_before_touching_old_snapshot(tmp_path, repo
     assert not (tmp_path / archive_path(validate_report(report))).exists()
 
 
-def test_publisher_only_commits_two_public_paths(tmp_path, report):
+def test_publisher_only_commits_current_public_issue_and_history(tmp_path, report):
     def run(*args, cwd=None):
         return subprocess.run(["git", *args], cwd=cwd, capture_output=True, text=True, check=True).stdout.strip()
     remote = tmp_path / "remote.git"
@@ -238,6 +238,6 @@ def test_publisher_only_commits_two_public_paths(tmp_path, report):
     report["input_id"] = bundle["input_id"]
     result = publish(report, bundle, repository=str(remote))
     paths = set(run("show", "--format=", "--name-only", result["commit"], cwd=remote).splitlines())
-    assert paths == {str(Path("data") / LATEST), str(Path("data") / archive_path(validate_report(report)))}
+    assert paths == {str(Path("data") / LATEST), str(Path("data") / archive_path(validate_report(report))), "data/trends/history.json", f"data/trends/history/{result["report_id"]}.json"}
     assert run("show", "master:README.md", cwd=remote) == "Existing public code"
     assert (caller / ".env").read_text() == "PRIVATE_VALUE=do-not-publish"

@@ -94,3 +94,17 @@ def test_unknown_annotations_or_changed_hash_are_rejected(tmp_path,report):
     write_report(tmp_path,report)
     (tmp_path/'trends/annotations.json').write_text(json.dumps({'schema':'radar_trend_annotations_v1','annotated_at':report['generated_at'],'reports':{'a'*64:evolution(report)['evolution']}}))
     with pytest.raises(ValueError,match='annotation_report'): history.build_history(tmp_path)
+
+
+def test_online_latest_alone_is_not_history_deployment(monkeypatch):
+    from scripts.publish_trend_report import verify
+    class Response:
+        def __init__(self,value): self.value=value
+        def __enter__(self): return self
+        def __exit__(self,*args): pass
+        def read(self,*args): return json.dumps(self.value).encode()
+    def open_(request,**kwargs):
+        url=request.full_url if hasattr(request,'full_url') else request
+        return Response({'latest_report_id':'b'*64} if 'history.json' in url else {'report_id':'a'*64})
+    monkeypatch.setattr('urllib.request.urlopen',open_)
+    assert not verify('a'*64,timeout=.01)

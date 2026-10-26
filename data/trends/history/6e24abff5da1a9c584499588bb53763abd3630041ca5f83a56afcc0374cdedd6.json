@@ -1,0 +1,918 @@
+{
+  "schema": "radar_trend_history_snapshot_v1",
+  "report_id": "6e24abff5da1a9c584499588bb53763abd3630041ca5f83a56afcc0374cdedd6",
+  "previous_report_id": null,
+  "kind": "daily",
+  "generated_at": "2026-10-22T08:03:37.519525Z",
+  "period_start": "2026-10-21T07:18:36.325722Z",
+  "period_end": "2026-10-22T07:18:36.325722Z",
+  "companies": {
+    "doubao": {
+      "before": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 豆包同时拓展生活服务预订和办公任务，两条路径需要分别判断用户习惯。 出行、酒店和缴费服务争取的是咨询之后的操作；豆包工作的任务规划和创作画布，则服务于方案、文件的反复修改。前者依赖服务供给与交易衔接，后者依赖成果质量与修改效率。 生活服务进展 · 豆包工作官网 生活侧应重点看用户是否在豆包内完成方案比较、再发起预订，以及假期结束后是否复购。办公侧则看用户是否继续修改和复用已有成果，以及赠送权益结束后是否付费。酒店订单增长与办公试用领取，分别回答不同问题。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://finance.sina.com.cn/stock/t/2026-09-30/doc-initqqvi2186539.shtml",
+          "https://www.doubao.com/work"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "after": {
+        "content": {
+          "headline": "豆包延续生活服务承接，办公成果进一步走向在线分享和多人使用",
+          "summary": "出行入口接入票务、酒店和打车等伙伴服务；办公侧通过IGA Pages，将生成的网页发布为分享链接，并可进一步支持多人投票、任务认领和费用记录。豆包工作的交付范围由个人制作延伸到成果被他人打开和共同使用，当前证据仍以功能演示为主。",
+          "evidence_ids": [
+            "doubao-travel",
+            "doubao-pages"
+          ]
+        },
+        "generated_at": "2026-10-22T08:03:37.519525Z",
+        "as_of": null,
+        "sources": [],
+        "evidence": [
+          {
+            "id": "doubao-travel",
+            "url": "https://finance.sina.com.cn/stock/t/2026-09-30/doc-initqqvi2186539.shtml",
+            "title": "豆包宣布支持出行服务：一句话订机票、火车票等",
+            "source": "新浪财经转蓝鲸新闻",
+            "published_at": "2026-09-30T12:04:00+08:00",
+            "event_at": "2026-09-30",
+            "verified_at": "2026-10-22T08:03:37.519525Z",
+            "company_ids": [
+              "doubao"
+            ],
+            "level": "media",
+            "date_basis": "original_page",
+            "note": "原文核验。出行入口接入合作伙伴服务，不证明豆包自建履约或用户普遍复购。"
+          },
+          {
+            "id": "doubao-pages",
+            "url": "https://www.pingwest.com/a/318559",
+            "title": "一份旅行手册，豆包做完，IGA Pages 一句话就分享出去",
+            "source": "品玩",
+            "published_at": "2026-10-20T07:29:07Z",
+            "event_at": null,
+            "verified_at": "2026-10-22T08:03:37.519525Z",
+            "company_ids": [
+              "doubao"
+            ],
+            "level": "media",
+            "date_basis": "original_page",
+            "note": "正文与HTML发表时间已核对。与10月22日InfoQ为同一插件事件，不重复计数；功能首发日未确定。演示不证明持续使用；预览链接有时效，需火山引擎账号，数据库按用量计费。"
+          }
+        ],
+        "review_state": "assistant_draft"
+      },
+      "type": "established",
+      "reason": "首次建立结构化判断；此前月度草稿仍作为比较基线。沿用生活服务布局，补入办公成果的在线分享与多人使用环节。",
+      "signals": [
+        {
+          "direction_id": "shared-deliverables",
+          "summary": "IGA Pages将生成网页变为可分享链接，并支持多人填写。",
+          "evidence_ids": [
+            "doubao-pages"
+          ],
+          "type": "strengthened",
+          "stage": "available"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "doubao-pages",
+          "url": "https://www.pingwest.com/a/318559",
+          "title": "一份旅行手册，豆包做完，IGA Pages 一句话就分享出去",
+          "source": "品玩",
+          "published_at": "2026-10-20T07:29:07Z",
+          "event_at": null,
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "doubao"
+          ],
+          "level": "media",
+          "date_basis": "original_page",
+          "note": "正文与HTML发表时间已核对。与10月22日InfoQ为同一插件事件，不重复计数；功能首发日未确定。演示不证明持续使用；预览链接有时效，需火山引擎账号，数据库按用量计费。"
+        },
+        {
+          "id": "doubao-travel",
+          "url": "https://finance.sina.com.cn/stock/t/2026-09-30/doc-initqqvi2186539.shtml",
+          "title": "豆包宣布支持出行服务：一句话订机票、火车票等",
+          "source": "新浪财经转蓝鲸新闻",
+          "published_at": "2026-09-30T12:04:00+08:00",
+          "event_at": "2026-09-30",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "doubao"
+          ],
+          "level": "media",
+          "date_basis": "original_page",
+          "note": "原文核验。出行入口接入合作伙伴服务，不证明豆包自建履约或用户普遍复购。"
+        }
+      ],
+      "provenance": "retrospective",
+      "classified_at": "2026-10-26T07:51:07.566898Z",
+      "state": "updated",
+      "checked_reason": "沿用生活服务布局，补入办公成果的在线分享与多人使用环节。"
+    },
+    "qwen": {
+      "before": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 千问本轮应用扩展有两个具体支点，个人网盘资料与电商经营任务。 接入夸克网盘后，个人已有文件可以直接用于查询和内容生成；电商办公模式则围绕经营数据组织分析与素材制作。手机和穿戴设备扩大了需求发起的场合，但两类任务的价值仍要分别判断。 网盘接入，9 月 28 日 · 千问办公产品更新 · 硬件发布，10 月 13 日 个人场景重点看用户是否反复调用自己的资料，减少重新查找和上传。商家场景则看经营分析的结果能否继续用于素材与投放，而非每一步都重新整理数据。电商版仍有邀测与开放范围限制，现阶段适合跟踪具体任务，尚不宜推断经营收益。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://finance.eastmoney.com/a/202609283885199882.html",
+          "https://learn.qwenwork.cn/whatsnew/",
+          "https://www.infoq.cn/article/xJ8vYf2lCwGWzVizOTSM"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "after": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 千问本轮应用扩展有两个具体支点，个人网盘资料与电商经营任务。 接入夸克网盘后，个人已有文件可以直接用于查询和内容生成；电商办公模式则围绕经营数据组织分析与素材制作。手机和穿戴设备扩大了需求发起的场合，但两类任务的价值仍要分别判断。 网盘接入，9 月 28 日 · 千问办公产品更新 · 硬件发布，10 月 13 日 个人场景重点看用户是否反复调用自己的资料，减少重新查找和上传。商家场景则看经营分析的结果能否继续用于素材与投放，而非每一步都重新整理数据。电商版仍有邀测与开放范围限制，现阶段适合跟踪具体任务，尚不宜推断经营收益。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://finance.eastmoney.com/a/202609283885199882.html",
+          "https://learn.qwenwork.cn/whatsnew/",
+          "https://www.infoq.cn/article/xJ8vYf2lCwGWzVizOTSM"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "type": "continued",
+      "reason": "已复核既有应用主线，尚无足以改判的新增原文证据。",
+      "signals": [
+        {
+          "direction_id": "merchant-operations",
+          "summary": "电商版连接商家后台，个人版入口仍为邀测，企业版暂未开放。",
+          "evidence_ids": [
+            "qwen-work"
+          ],
+          "type": "continued",
+          "stage": "preview"
+        },
+        {
+          "direction_id": "mobile-entry",
+          "summary": "手机接收任务交付，录音设备可语音交办。",
+          "evidence_ids": [
+            "qwen-work"
+          ],
+          "type": "continued",
+          "stage": "available"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "qwen-work",
+          "url": "https://learn.qwenwork.cn/whatsnew/",
+          "title": "千问办公产品新鲜事",
+          "source": "千问办公",
+          "published_at": null,
+          "event_at": null,
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "qwen"
+          ],
+          "level": "official",
+          "date_basis": "undated_document",
+          "note": "页面10月14日/9月30日条目已读，页内未明确完整年份，不补造精确日期。电商版本入口邀测；移动端、录音硬件与技能分享属于既有背景。"
+        }
+      ],
+      "provenance": "retrospective",
+      "classified_at": "2026-10-26T07:51:07.566898Z",
+      "state": "unchanged",
+      "checked_reason": "已复核既有应用主线，尚无足以改判的新增原文证据。"
+    },
+    "hunyuan": {
+      "before": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · 聚焦元宝应用 · AI 分析草稿，待人工确认 元宝本轮更新更集中于记录、整理和转交，生活服务仍包含跳转预订的环节。 录音中的重点提示、结束后的总结，以及向腾讯文档、WorkBuddy 分享，让会议和课堂材料可以继续加工；文件导出则补上了内容交接。旅游和生活技能增加了专用入口，服务完成方式需要逐项区分。 元宝官方版本记录 · 元宝官方技能介绍，10 月 16 日 记录整理这条路径，值得看用户是否愿意先把原始材料交给元宝，再将结果用于后续工作。生活服务则应追踪建议、跳转和预订各自在哪一步完成。两者对应不同的使用理由，不能由技能入口数量推导出完整的个人助理定位。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://apps.apple.com/cn/app/id6480446430",
+          "https://www.sina.cn/news/detail/5354654420435913.html"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "after": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · 聚焦元宝应用 · AI 分析草稿，待人工确认 元宝本轮更新更集中于记录、整理和转交，生活服务仍包含跳转预订的环节。 录音中的重点提示、结束后的总结，以及向腾讯文档、WorkBuddy 分享，让会议和课堂材料可以继续加工；文件导出则补上了内容交接。旅游和生活技能增加了专用入口，服务完成方式需要逐项区分。 元宝官方版本记录 · 元宝官方技能介绍，10 月 16 日 记录整理这条路径，值得看用户是否愿意先把原始材料交给元宝，再将结果用于后续工作。生活服务则应追踪建议、跳转和预订各自在哪一步完成。两者对应不同的使用理由，不能由技能入口数量推导出完整的个人助理定位。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://apps.apple.com/cn/app/id6480446430",
+          "https://www.sina.cn/news/detail/5354654420435913.html"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "type": "continued",
+      "reason": "已复核既有应用主线，尚无足以改判的新增原文证据。",
+      "signals": [
+        {
+          "direction_id": "shared-deliverables",
+          "summary": "材料可导出并转交后续工作；不等同多人共同编辑。",
+          "evidence_ids": [
+            "yuanbao-store"
+          ],
+          "type": "continued",
+          "stage": "available"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "yuanbao-store",
+          "url": "https://apps.apple.com/cn/app/id6480446430",
+          "title": "元宝—腾讯全能AI助手官方应用说明",
+          "source": "腾讯官方App Store说明",
+          "published_at": null,
+          "event_at": null,
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "hunyuan"
+          ],
+          "level": "official",
+          "date_basis": "undated_document",
+          "note": "核对腾讯开发者与应用说明；只能证明当前列出的录音、搜索、精讲等能力，不能将商店说明的读取时间当作发布时间或证明某能力近日首发。"
+        }
+      ],
+      "provenance": "retrospective",
+      "classified_at": "2026-10-26T07:51:07.566898Z",
+      "state": "unchanged",
+      "checked_reason": "已复核既有应用主线，尚无足以改判的新增原文证据。"
+    },
+    "openai": {
+      "before": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 Dots、Space 与 Work 分别承接持续跟进、成果协作和跨设备接续，关键在于任务如何在三者间延续。 Dots 在对话之外推进委托，Space 保留可继续编辑和协作的成果，Work 让用户在电脑、网页和手机之间跟进任务。产品组合的潜在价值，是保留任务背景与修改进度。 OpenAI DevDay 应用更新 · Dots 移动端与上下文更新 应沿同一个任务观察衔接，例如在手机发起委托，回到电脑后继续处理文件，再在已有成果上修改。重点看哪些资料和进度得以保留、哪些仍需重新交代。Dots 的开放条件与 Work 对在线电脑的依赖，也决定了这条路径实际能覆盖哪些步骤。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://learn.chatgpt.com/docs/whats-new/devday-2026",
+          "https://learn.chatgpt.com/docs/whats-new/october-5-9-2026"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "after": {
+        "content": {
+          "headline": "ChatGPT的办公能力进一步覆盖团队共同改稿与定期汇总",
+          "summary": "Dots承接持续委托，Space将报告和演示稿保留为可继续修改的共享成果。团队成员可以共同修改同一份演示稿，留下反馈，再让ChatGPT按意见调整；Team Tasks则承接项目进展等重复汇总工作。这组能力将AI的参与范围延伸到材料生成之后的审阅与修订。",
+          "evidence_ids": [
+            "chatgpt-dots",
+            "chatgpt-slides",
+            "chatgpt-teams"
+          ]
+        },
+        "generated_at": "2026-10-22T08:03:37.519525Z",
+        "as_of": null,
+        "sources": [],
+        "evidence": [
+          {
+            "id": "chatgpt-dots",
+            "url": "https://learn.chatgpt.com/docs/whats-new/devday-2026",
+            "title": "DevDay 2026",
+            "source": "OpenAI官方更新",
+            "published_at": "2026-09-29",
+            "event_at": "2026-09-29",
+            "verified_at": "2026-10-22T08:03:37.519525Z",
+            "company_ids": [
+              "openai"
+            ],
+            "level": "official",
+            "date_basis": "original_page",
+            "note": "已有官方更新确认Dots对话之间持续工作，按条件逐步开放。"
+          },
+          {
+            "id": "chatgpt-slides",
+            "url": "https://learn.chatgpt.com/docs/space/getting-started",
+            "title": "Get started with ChatGPT Space",
+            "source": "OpenAI官方文档",
+            "published_at": null,
+            "event_at": null,
+            "verified_at": "2026-10-22T08:03:37.519525Z",
+            "company_ids": [
+              "openai"
+            ],
+            "level": "official",
+            "date_basis": "undated_document",
+            "note": "当前文档确认同一演示稿的协作修改、评论及导出；未明确首次开放日期，不把10月20日媒体报道当作首发日。"
+          },
+          {
+            "id": "chatgpt-teams",
+            "url": "https://learn.chatgpt.com/docs/enterprise/teams",
+            "title": "Set up and manage teams and Team Tasks",
+            "source": "OpenAI官方文档",
+            "published_at": null,
+            "event_at": null,
+            "verified_at": "2026-10-22T08:03:37.519525Z",
+            "company_ids": [
+              "openai"
+            ],
+            "level": "official",
+            "date_basis": "undated_document",
+            "note": "当前文档确认定时/事件触发与团队账号连接；9月官方更新已介绍该能力，本轮是旧稿补证。"
+          }
+        ],
+        "review_state": "assistant_draft"
+      },
+      "type": "established",
+      "reason": "首次建立结构化判断；此前月度草稿仍作为比较基线。补齐团队改稿与定期汇总的具体能力；不把滚动文档及旧功能误计为新上线。",
+      "signals": [
+        {
+          "direction_id": "shared-deliverables",
+          "summary": "团队可共同修改同一份演示稿。",
+          "evidence_ids": [
+            "chatgpt-slides"
+          ],
+          "type": "strengthened",
+          "stage": "available"
+        },
+        {
+          "direction_id": "ongoing-assistance",
+          "summary": "Dots持续推进委托，团队任务另承接定期汇总。",
+          "evidence_ids": [
+            "chatgpt-dots",
+            "chatgpt-teams"
+          ],
+          "type": "continued",
+          "stage": "available"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "chatgpt-dots",
+          "url": "https://learn.chatgpt.com/docs/whats-new/devday-2026",
+          "title": "DevDay 2026",
+          "source": "OpenAI官方更新",
+          "published_at": "2026-09-29",
+          "event_at": "2026-09-29",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "openai"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "已有官方更新确认Dots对话之间持续工作，按条件逐步开放。"
+        },
+        {
+          "id": "chatgpt-slides",
+          "url": "https://learn.chatgpt.com/docs/space/getting-started",
+          "title": "Get started with ChatGPT Space",
+          "source": "OpenAI官方文档",
+          "published_at": null,
+          "event_at": null,
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "openai"
+          ],
+          "level": "official",
+          "date_basis": "undated_document",
+          "note": "当前文档确认同一演示稿的协作修改、评论及导出；未明确首次开放日期，不把10月20日媒体报道当作首发日。"
+        },
+        {
+          "id": "chatgpt-teams",
+          "url": "https://learn.chatgpt.com/docs/enterprise/teams",
+          "title": "Set up and manage teams and Team Tasks",
+          "source": "OpenAI官方文档",
+          "published_at": null,
+          "event_at": null,
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "openai"
+          ],
+          "level": "official",
+          "date_basis": "undated_document",
+          "note": "当前文档确认定时/事件触发与团队账号连接；9月官方更新已介绍该能力，本轮是旧稿补证。"
+        }
+      ],
+      "provenance": "retrospective",
+      "classified_at": "2026-10-26T07:51:07.566898Z",
+      "state": "updated",
+      "checked_reason": "补齐团队改稿与定期汇总的具体能力；不把滚动文档及旧功能误计为新上线。"
+    },
+    "anthropic": {
+      "before": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 Claude 将修改与审阅放回原文件和代码改动，后台自动化则仍是一条需要配置的独立路径。 Google Workspace 公测支持在已有文件中协作，Claude Code 云端实践让开发任务交回可审阅的改动；Managed Agents 的参考方案则展示定时读取资料和交付简报。三者分别服务办公、开发和自建自动化。 Google Workspace 公测 · Claude Code 云端实践 · 后台自动化参考方案 办公侧应比较同一份文件反复修改时，内容与格式是否准确保留；开发侧看独立任务交回后能否验收。定时简报还要验证来源失效和重复内容的处理成本，不能将开发者参考方案写成所有聊天用户已获得的持续助理能力。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+          "https://claude.dev/blog/claude-code-in-the-cloud/",
+          "https://claude.dev/blog/building-effective-agent-automations/"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "after": {
+        "content": {
+          "headline": "Claude在文件协作之外，增加持续跟进工作的主动助理",
+          "summary": "Google Workspace连接继续承接文档、表格和演示稿的直接修改；10月21日介绍的Duet则把连接应用的日常检查、提醒和后台执行独立成持续对话。Claude同时推进具体文件中的改稿与对话之外的跟进；Duet仍为从美国Pro、Max用户起步的候补研究预览。",
+          "evidence_ids": [
+            "claude-docs",
+            "claude-duet"
+          ]
+        },
+        "generated_at": "2026-10-22T08:03:37.519525Z",
+        "as_of": null,
+        "sources": [],
+        "evidence": [
+          {
+            "id": "claude-docs",
+            "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+            "title": "Claude now works with Google Docs, Sheets, and Slides",
+            "source": "Anthropic",
+            "published_at": "2026-10-06",
+            "event_at": "2026-10-06",
+            "verified_at": "2026-10-22T08:03:37.519525Z",
+            "company_ids": [
+              "anthropic"
+            ],
+            "level": "official",
+            "date_basis": "original_page",
+            "note": "正文日期10月6日；主题池近期重发现的时间不能当作新发布。付费计划公开测试，需相应连接权限。"
+          },
+          {
+            "id": "claude-duet",
+            "url": "https://claude.com/resources/articles/claude-duet",
+            "title": "Introducing Claude Duet",
+            "source": "Anthropic",
+            "published_at": "2026-10-21",
+            "event_at": "2026-10-21",
+            "verified_at": "2026-10-22T08:03:37.519525Z",
+            "company_ids": [
+              "anthropic"
+            ],
+            "level": "official",
+            "date_basis": "original_page",
+            "note": "10月21日发布研究预览，起步为美国Pro/Max订阅用户候补名单；非全面开放。仅原文日精度，不能确定是否严格落在本次滚动24小时内，保守记补证。"
+          }
+        ],
+        "review_state": "assistant_draft"
+      },
+      "type": "established",
+      "reason": "首次建立结构化判断；此前月度草稿仍作为比较基线。Duet研究预览为文件协作之外补充持续主动助理路径，需保留候补开放边界。",
+      "signals": [
+        {
+          "direction_id": "ongoing-assistance",
+          "summary": "Duet以候补研究预览探索主动提醒与后台任务，从美国Pro/Max起步。",
+          "evidence_ids": [
+            "claude-duet"
+          ],
+          "type": "established",
+          "stage": "preview"
+        },
+        {
+          "direction_id": "shared-deliverables",
+          "summary": "Google文件公测支持在原文档、表格及演示稿中修改。",
+          "evidence_ids": [
+            "claude-docs"
+          ],
+          "type": "continued",
+          "stage": "preview"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "claude-docs",
+          "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+          "title": "Claude now works with Google Docs, Sheets, and Slides",
+          "source": "Anthropic",
+          "published_at": "2026-10-06",
+          "event_at": "2026-10-06",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "anthropic"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "正文日期10月6日；主题池近期重发现的时间不能当作新发布。付费计划公开测试，需相应连接权限。"
+        },
+        {
+          "id": "claude-duet",
+          "url": "https://claude.com/resources/articles/claude-duet",
+          "title": "Introducing Claude Duet",
+          "source": "Anthropic",
+          "published_at": "2026-10-21",
+          "event_at": "2026-10-21",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "anthropic"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "10月21日发布研究预览，起步为美国Pro/Max订阅用户候补名单；非全面开放。仅原文日精度，不能确定是否严格落在本次滚动24小时内，保守记补证。"
+        }
+      ],
+      "provenance": "retrospective",
+      "classified_at": "2026-10-26T07:51:07.566898Z",
+      "state": "updated",
+      "checked_reason": "Duet研究预览为文件协作之外补充持续主动助理路径，需保留候补开放边界。"
+    },
+    "xai": {
+      "before": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 Team Bots 与组合订阅扩展的是两种复用，团队共享工作方法，个人复用已有付费权益。 Team Bots 将角色资料、技能和工具供团队共同使用；X Subscription 则把 Grok、Grok Bot、Cursor 与 X Premium 纳入同一计划。Bot 的文件与邮件更新补充了具体工作用途，但这几类动作不能视作同一套能力已经全面互通。 Team Bots 公测 · Grok Bot 产品更新 · X Subscription 发布 团队侧应跟踪共享资料与技能由谁维护，以及多人使用时能否保持一致。订阅侧则看已有用户是否实际使用其他产品，并因此续费。统一计费可以降低交叉试用门槛，是否形成跨产品工作习惯，还要有实际使用路径支持。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://x.ai/news/team-bots",
+          "https://x.ai/changelog/bot",
+          "https://x.ai/news/x-subscription"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "after": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 Team Bots 与组合订阅扩展的是两种复用，团队共享工作方法，个人复用已有付费权益。 Team Bots 将角色资料、技能和工具供团队共同使用；X Subscription 则把 Grok、Grok Bot、Cursor 与 X Premium 纳入同一计划。Bot 的文件与邮件更新补充了具体工作用途，但这几类动作不能视作同一套能力已经全面互通。 Team Bots 公测 · Grok Bot 产品更新 · X Subscription 发布 团队侧应跟踪共享资料与技能由谁维护，以及多人使用时能否保持一致。订阅侧则看已有用户是否实际使用其他产品，并因此续费。统一计费可以降低交叉试用门槛，是否形成跨产品工作习惯，还要有实际使用路径支持。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://x.ai/news/team-bots",
+          "https://x.ai/changelog/bot",
+          "https://x.ai/news/x-subscription"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "type": "continued",
+      "reason": "已复核既有应用主线，尚无足以改判的新增原文证据。",
+      "signals": [
+        {
+          "direction_id": "enterprise-rollout",
+          "summary": "Team Bots共享背景、技能与工具，个人对话仍独立。",
+          "evidence_ids": [
+            "grok-teams"
+          ],
+          "type": "continued",
+          "stage": "preview"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "grok-teams",
+          "url": "https://x.ai/news/team-bots",
+          "title": "Team Bots: shared AI teammates that learn as they work",
+          "source": "xAI",
+          "published_at": "2026-09-28",
+          "event_at": "2026-09-28",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "xai"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "原文核对团队共享文件、应用、技能与独立个人对话边界。属于既有团队协作能力，不视为今天发布。"
+        }
+      ],
+      "provenance": "retrospective",
+      "classified_at": "2026-10-26T07:51:07.566898Z",
+      "state": "unchanged",
+      "checked_reason": "已复核既有应用主线，尚无足以改判的新增原文证据。"
+    },
+    "google-gemini": {
+      "before": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 Gemini 本轮重点是保存和复用做事方法，后台开发另有专门执行入口。 Skills 保存常用指令并支持组合使用，Customize 集中管理技能与应用连接；macOS 端的 Antigravity 则接手需要编写和测试代码的任务。这组更新分别面向重复工作的配置与开发任务的执行。 Connected Apps 官方介绍 · Skills 官方发布 · Gemini 应用更新记录 重复任务应比较第二次、第三次使用时，用户还需补充多少格式、品牌和流程要求，以及多项技能组合是否冲突。开发任务则看计划、构建、测试与交回原型能否衔接。应用连接与开发入口各有可用条件，需要按实际场景验证。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+          "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/",
+          "https://gemini.google/release-notes/"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "after": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 Gemini 本轮重点是保存和复用做事方法，后台开发另有专门执行入口。 Skills 保存常用指令并支持组合使用，Customize 集中管理技能与应用连接；macOS 端的 Antigravity 则接手需要编写和测试代码的任务。这组更新分别面向重复工作的配置与开发任务的执行。 Connected Apps 官方介绍 · Skills 官方发布 · Gemini 应用更新记录 重复任务应比较第二次、第三次使用时，用户还需补充多少格式、品牌和流程要求，以及多项技能组合是否冲突。开发任务则看计划、构建、测试与交回原型能否衔接。应用连接与开发入口各有可用条件，需要按实际场景验证。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+          "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/",
+          "https://gemini.google/release-notes/"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "type": "continued",
+      "reason": "已有主线经官方原文复核；近期Keep与CarPlay候选原文暂未取回，覆盖存在缺口。",
+      "signals": [
+        {
+          "direction_id": "personal-context",
+          "summary": "连接已授权应用以承接既有个人任务，具体服务受范围条件约束。",
+          "evidence_ids": [
+            "gemini-apps"
+          ],
+          "type": "continued",
+          "stage": "available"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "gemini-apps",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+          "title": "A new wave of Connected Apps is rolling out to Gemini",
+          "source": "Google",
+          "published_at": "2026-09-23",
+          "event_at": "2026-09-23",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "google-gemini"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "原文核验项目管理、创作、找房、健身、票务连接；逐步推出。近期Keep/CarPlay报道原文未取回，未据其改判。"
+        }
+      ],
+      "provenance": "retrospective",
+      "classified_at": "2026-10-26T07:51:07.566898Z",
+      "state": "unchanged",
+      "checked_reason": "已有主线经官方原文复核；近期Keep与CarPlay候选原文暂未取回，覆盖存在缺口。"
+    },
+    "meta-llama": {
+      "before": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 Muse 将经营任务建立在商家已有的社交账号与业务工具上，给个人 Agent 提供了更具体的使用场景。 Muse for Small Business 连接社交、店铺与经营工具，用于营销规划、分析和日常管理；应用与 WhatsApp 承接委托，Connect 公布的语音和设备计划则尝试增加随身入口。经营场景与通用生活助手需要分别观察。 Muse 产品定位，9 月发布背景 · Muse for Small Business · Connect 应用与入口更新 这条路线值得验证的是，商家是否会围绕同一业务持续委托，以及已有客户和品牌资料能否减少修改成本。发布内容、联系客户和支出还涉及经营责任。眼镜接入仍属计划，模型发布也不能直接视作 Muse 应用已完成升级；经营增益需要另有使用证据。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+          "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+          "https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "after": {
+        "content": {
+          "headline": "初始月度判断",
+          "summary": "观察期：2026 年 9 月 20 日—10 月 19 日 · AI 分析草稿，待人工确认 Muse 将经营任务建立在商家已有的社交账号与业务工具上，给个人 Agent 提供了更具体的使用场景。 Muse for Small Business 连接社交、店铺与经营工具，用于营销规划、分析和日常管理；应用与 WhatsApp 承接委托，Connect 公布的语音和设备计划则尝试增加随身入口。经营场景与通用生活助手需要分别观察。 Muse 产品定位，9 月发布背景 · Muse for Small Business · Connect 应用与入口更新 这条路线值得验证的是，商家是否会围绕同一业务持续委托，以及已有客户和品牌资料能否减少修改成本。发布内容、联系客户和支出还涉及经营责任。眼镜接入仍属计划，模型发布也不能直接视作 Muse 应用已完成升级；经营增益需要另有使用证据。",
+          "evidence_ids": []
+        },
+        "generated_at": null,
+        "as_of": "2026-10-19",
+        "sources": [
+          "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+          "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+          "https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/"
+        ],
+        "evidence": [],
+        "review_state": "assistant_draft"
+      },
+      "type": "continued",
+      "reason": "已复核既有应用主线，尚无足以改判的新增原文证据。",
+      "signals": [
+        {
+          "direction_id": "merchant-operations",
+          "summary": "连接店铺与经营工具，发布、发送和支出仍需批准。",
+          "evidence_ids": [
+            "muse-business"
+          ],
+          "type": "continued",
+          "stage": "available"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "muse-business",
+          "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+          "title": "The Future Is for Everyone: Muse for Small Business",
+          "source": "Meta",
+          "published_at": "2026-09-29",
+          "event_at": "2026-09-29",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "meta-llama"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "原文9月29日发布、10月8日更新。连接经营工具、广告与店铺等；发布、发送和支出仍需批准。未据此判断经营收益或未来功能已上线。"
+        }
+      ],
+      "provenance": "retrospective",
+      "classified_at": "2026-10-26T07:51:07.566898Z",
+      "state": "unchanged",
+      "checked_reason": "已复核既有应用主线，尚无足以改判的新增原文证据。"
+    }
+  },
+  "overview": {
+    "before": null,
+    "after": {
+      "lead": "个人助理继续推进持续跟进，办公产品补齐成果修改、分享与共同使用，商家工具连接把AI进一步带入经营流程。",
+      "themes": [
+        {
+          "content": {
+            "headline": "个人助理加码持续任务，并扩展移动派活入口",
+            "summary": "Dots在对话之间继续推进委托，Claude Duet以研究预览加入主动提醒与后台工作；千问办公则通过手机与录音设备承接随时派活。这些动作把任务发起、跟进和执行延伸到一次对话之外。",
+            "evidence_ids": [
+              "chatgpt-dots",
+              "claude-duet",
+              "qwen-work"
+            ],
+            "company_ids": [
+              "openai",
+              "anthropic",
+              "qwen"
+            ]
+          },
+          "direction_id": "ongoing-assistance",
+          "type": "established",
+          "reason": "首次建立首页持续任务方向。"
+        },
+        {
+          "content": {
+            "headline": "办公助手将文档、演示稿和网页的修改、交接与共同使用纳入产品",
+            "summary": "Claude可直接修改Google文档、表格和演示稿；ChatGPT支持团队与AI围绕同一份演示稿反复改稿；豆包工作通过IGA Pages发布网页，并可进一步生成供多人填写和投票的页面。产品扩展正沿着成果生成之后的工作展开。",
+            "evidence_ids": [
+              "claude-docs",
+              "chatgpt-slides",
+              "doubao-pages"
+            ],
+            "company_ids": [
+              "anthropic",
+              "openai",
+              "doubao"
+            ]
+          },
+          "direction_id": "shared-deliverables",
+          "type": "established",
+          "reason": "首次建立首页成果协作方向。"
+        },
+        {
+          "content": {
+            "headline": "办公助手向商家经营延伸，连接店铺与营销工具",
+            "summary": "千问办公电商版面向经营看板、素材与文案等场景开放邀测；Muse商家版连接店铺、广告和业务工具，承接分析与内容准备。产品正把通用办公能力放入更具体的经营流程。",
+            "evidence_ids": [
+              "qwen-work",
+              "muse-business"
+            ],
+            "company_ids": [
+              "qwen",
+              "meta-llama"
+            ]
+          },
+          "direction_id": "merchant-operations",
+          "type": "established",
+          "reason": "首次建立首页商家经营方向。"
+        }
+      ],
+      "generated_at": "2026-10-22T08:03:37.519525Z",
+      "evidence": [
+        {
+          "id": "chatgpt-dots",
+          "url": "https://learn.chatgpt.com/docs/whats-new/devday-2026",
+          "title": "DevDay 2026",
+          "source": "OpenAI官方更新",
+          "published_at": "2026-09-29",
+          "event_at": "2026-09-29",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "openai"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "已有官方更新确认Dots对话之间持续工作，按条件逐步开放。"
+        },
+        {
+          "id": "chatgpt-slides",
+          "url": "https://learn.chatgpt.com/docs/space/getting-started",
+          "title": "Get started with ChatGPT Space",
+          "source": "OpenAI官方文档",
+          "published_at": null,
+          "event_at": null,
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "openai"
+          ],
+          "level": "official",
+          "date_basis": "undated_document",
+          "note": "当前文档确认同一演示稿的协作修改、评论及导出；未明确首次开放日期，不把10月20日媒体报道当作首发日。"
+        },
+        {
+          "id": "claude-docs",
+          "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+          "title": "Claude now works with Google Docs, Sheets, and Slides",
+          "source": "Anthropic",
+          "published_at": "2026-10-06",
+          "event_at": "2026-10-06",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "anthropic"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "正文日期10月6日；主题池近期重发现的时间不能当作新发布。付费计划公开测试，需相应连接权限。"
+        },
+        {
+          "id": "claude-duet",
+          "url": "https://claude.com/resources/articles/claude-duet",
+          "title": "Introducing Claude Duet",
+          "source": "Anthropic",
+          "published_at": "2026-10-21",
+          "event_at": "2026-10-21",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "anthropic"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "10月21日发布研究预览，起步为美国Pro/Max订阅用户候补名单；非全面开放。仅原文日精度，不能确定是否严格落在本次滚动24小时内，保守记补证。"
+        },
+        {
+          "id": "doubao-pages",
+          "url": "https://www.pingwest.com/a/318559",
+          "title": "一份旅行手册，豆包做完，IGA Pages 一句话就分享出去",
+          "source": "品玩",
+          "published_at": "2026-10-20T07:29:07Z",
+          "event_at": null,
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "doubao"
+          ],
+          "level": "media",
+          "date_basis": "original_page",
+          "note": "正文与HTML发表时间已核对。与10月22日InfoQ为同一插件事件，不重复计数；功能首发日未确定。演示不证明持续使用；预览链接有时效，需火山引擎账号，数据库按用量计费。"
+        },
+        {
+          "id": "muse-business",
+          "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+          "title": "The Future Is for Everyone: Muse for Small Business",
+          "source": "Meta",
+          "published_at": "2026-09-29",
+          "event_at": "2026-09-29",
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "meta-llama"
+          ],
+          "level": "official",
+          "date_basis": "original_page",
+          "note": "原文9月29日发布、10月8日更新。连接经营工具、广告与店铺等；发布、发送和支出仍需批准。未据此判断经营收益或未来功能已上线。"
+        },
+        {
+          "id": "qwen-work",
+          "url": "https://learn.qwenwork.cn/whatsnew/",
+          "title": "千问办公产品新鲜事",
+          "source": "千问办公",
+          "published_at": null,
+          "event_at": null,
+          "verified_at": "2026-10-22T08:03:37.519525Z",
+          "company_ids": [
+            "qwen"
+          ],
+          "level": "official",
+          "date_basis": "undated_document",
+          "note": "页面10月14日/9月30日条目已读，页内未明确完整年份，不补造精确日期。电商版本入口邀测；移动端、录音硬件与技能分享属于既有背景。"
+        }
+      ]
+    },
+    "provenance": "retrospective",
+    "classified_at": "2026-10-26T07:51:07.566898Z"
+  }
+}

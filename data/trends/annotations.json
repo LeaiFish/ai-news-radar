@@ -1,0 +1,744 @@
+{
+  "schema": "radar_trend_annotations_v1",
+  "annotated_at": "2026-10-26T07:51:07.566898Z",
+  "reports": {
+    "6e24abff5da1a9c584499588bb53763abd3630041ca5f83a56afcc0374cdedd6": {
+      "companies": {
+        "doubao": {
+          "type": "established",
+          "reason": "首次建立结构化判断；此前月度草稿仍作为比较基线。沿用生活服务布局，补入办公成果的在线分享与多人使用环节。",
+          "evidence_ids": [
+            "doubao-pages",
+            "doubao-travel"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "IGA Pages将生成网页变为可分享链接，并支持多人填写。",
+              "evidence_ids": [
+                "doubao-pages"
+              ],
+              "type": "strengthened",
+              "stage": "available"
+            }
+          ]
+        },
+        "qwen": {
+          "type": "continued",
+          "reason": "已复核既有应用主线，尚无足以改判的新增原文证据。",
+          "evidence_ids": [
+            "qwen-work"
+          ],
+          "signals": [
+            {
+              "direction_id": "merchant-operations",
+              "summary": "电商版连接商家后台，个人版入口仍为邀测，企业版暂未开放。",
+              "evidence_ids": [
+                "qwen-work"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            },
+            {
+              "direction_id": "mobile-entry",
+              "summary": "手机接收任务交付，录音设备可语音交办。",
+              "evidence_ids": [
+                "qwen-work"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        },
+        "hunyuan": {
+          "type": "continued",
+          "reason": "已复核既有应用主线，尚无足以改判的新增原文证据。",
+          "evidence_ids": [
+            "yuanbao-store"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "材料可导出并转交后续工作；不等同多人共同编辑。",
+              "evidence_ids": [
+                "yuanbao-store"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        },
+        "openai": {
+          "type": "established",
+          "reason": "首次建立结构化判断；此前月度草稿仍作为比较基线。补齐团队改稿与定期汇总的具体能力；不把滚动文档及旧功能误计为新上线。",
+          "evidence_ids": [
+            "chatgpt-slides",
+            "chatgpt-teams",
+            "chatgpt-dots"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "团队可共同修改同一份演示稿。",
+              "evidence_ids": [
+                "chatgpt-slides"
+              ],
+              "type": "strengthened",
+              "stage": "available"
+            },
+            {
+              "direction_id": "ongoing-assistance",
+              "summary": "Dots持续推进委托，团队任务另承接定期汇总。",
+              "evidence_ids": [
+                "chatgpt-dots",
+                "chatgpt-teams"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        },
+        "anthropic": {
+          "type": "established",
+          "reason": "首次建立结构化判断；此前月度草稿仍作为比较基线。Duet研究预览为文件协作之外补充持续主动助理路径，需保留候补开放边界。",
+          "evidence_ids": [
+            "claude-docs",
+            "claude-duet"
+          ],
+          "signals": [
+            {
+              "direction_id": "ongoing-assistance",
+              "summary": "Duet以候补研究预览探索主动提醒与后台任务，从美国Pro/Max起步。",
+              "evidence_ids": [
+                "claude-duet"
+              ],
+              "type": "established",
+              "stage": "preview"
+            },
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "Google文件公测支持在原文档、表格及演示稿中修改。",
+              "evidence_ids": [
+                "claude-docs"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            }
+          ]
+        },
+        "xai": {
+          "type": "continued",
+          "reason": "已复核既有应用主线，尚无足以改判的新增原文证据。",
+          "evidence_ids": [
+            "grok-teams"
+          ],
+          "signals": [
+            {
+              "direction_id": "enterprise-rollout",
+              "summary": "Team Bots共享背景、技能与工具，个人对话仍独立。",
+              "evidence_ids": [
+                "grok-teams"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            }
+          ]
+        },
+        "google-gemini": {
+          "type": "continued",
+          "reason": "已有主线经官方原文复核；近期Keep与CarPlay候选原文暂未取回，覆盖存在缺口。",
+          "evidence_ids": [
+            "gemini-apps"
+          ],
+          "signals": [
+            {
+              "direction_id": "personal-context",
+              "summary": "连接已授权应用以承接既有个人任务，具体服务受范围条件约束。",
+              "evidence_ids": [
+                "gemini-apps"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        },
+        "meta-llama": {
+          "type": "continued",
+          "reason": "已复核既有应用主线，尚无足以改判的新增原文证据。",
+          "evidence_ids": [
+            "muse-business"
+          ],
+          "signals": [
+            {
+              "direction_id": "merchant-operations",
+              "summary": "连接店铺与经营工具，发布、发送和支出仍需批准。",
+              "evidence_ids": [
+                "muse-business"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        }
+      },
+      "overview": [
+        {
+          "direction_id": "ongoing-assistance",
+          "type": "established",
+          "reason": "首次建立首页持续任务方向。",
+          "evidence_ids": [
+            "chatgpt-dots",
+            "claude-duet",
+            "qwen-work"
+          ]
+        },
+        {
+          "direction_id": "shared-deliverables",
+          "type": "established",
+          "reason": "首次建立首页成果协作方向。",
+          "evidence_ids": [
+            "claude-docs",
+            "chatgpt-slides",
+            "doubao-pages"
+          ]
+        },
+        {
+          "direction_id": "merchant-operations",
+          "type": "established",
+          "reason": "首次建立首页商家经营方向。",
+          "evidence_ids": [
+            "qwen-work",
+            "muse-business"
+          ]
+        }
+      ]
+    },
+    "13903f996db4584ecf33b3f522a32d84ca9ddfffdbac8aa27921efaf0164eabb": {
+      "companies": {
+        "doubao": {
+          "type": "continued",
+          "reason": "复核既有IGA Pages事件，未确认另一项足以改变主线的应用进展；模型试用、市场份额和未核验公众号不作为豆包应用更新。",
+          "evidence_ids": [
+            "doubao-pages"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "继续复核同一IGA Pages事件。",
+              "evidence_ids": [
+                "doubao-pages"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        },
+        "qwen": {
+          "type": "continued",
+          "reason": "官方滚动页复核支持已有移动交办与商家经营主线；缺少本轮可确定首发时间的独立新事件。",
+          "evidence_ids": [
+            "qwenwork-updates"
+          ],
+          "signals": [
+            {
+              "direction_id": "merchant-operations",
+              "summary": "商家连接路线继续保留，电商版入口仍邀测。",
+              "evidence_ids": [
+                "qwenwork-updates"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            }
+          ]
+        },
+        "hunyuan": {
+          "type": "insufficient",
+          "reason": "混元公众号候选原文未能读取，其他近期候选不足以核实元宝应用的独立新变化；保留原判断与原更新时间，不把品牌相关报道直接当成元宝更新。",
+          "evidence_ids": [],
+          "signals": []
+        },
+        "openai": {
+          "type": "strengthened",
+          "reason": "从团队功能补入Uber扩大部署的组织实施证据，未改变协作主线；部署人数不是活跃数。",
+          "evidence_ids": [
+            "chatgpt-uber",
+            "chatgpt-space",
+            "chatgpt-team-tasks"
+          ],
+          "signals": [
+            {
+              "direction_id": "enterprise-rollout",
+              "summary": "Uber宣布由1000人试点扩展到逾3万员工可用；并非已全部活跃使用。",
+              "evidence_ids": [
+                "chatgpt-uber"
+              ],
+              "type": "strengthened",
+              "stage": "announced"
+            }
+          ]
+        },
+        "anthropic": {
+          "type": "continued",
+          "reason": "Duet原文与此前判断一致；auto mode等候选的原始帖子受阻，未据聚合标题扩张已核验的开放范围。",
+          "evidence_ids": [
+            "claude-duet"
+          ],
+          "signals": [
+            {
+              "direction_id": "ongoing-assistance",
+              "summary": "Duet仍为美国Pro/Max候补研究预览，近期再报道不改变首发日。",
+              "evidence_ids": [
+                "claude-duet"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            }
+          ]
+        },
+        "xai": {
+          "type": "strengthened",
+          "reason": "原有团队共享方法进一步延伸到Pages成果的共同编辑与维护。",
+          "evidence_ids": [
+            "grok-bot-0752",
+            "grok-team"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "Pages支持共同编辑、持续维护及按组织权限分享。",
+              "evidence_ids": [
+                "grok-bot-0752"
+              ],
+              "type": "strengthened",
+              "stage": "available"
+            }
+          ]
+        },
+        "google-gemini": {
+          "type": "strengthened",
+          "reason": "在技能与开发背景之外补入车载个人上下文，扩充适用场景而非推翻原方向。",
+          "evidence_ids": [
+            "gemini-car",
+            "gemini-release-notes"
+          ],
+          "signals": [
+            {
+              "direction_id": "personal-context",
+              "summary": "Android Auto渐进接入已授权个人背景；内置Google车型仍待后续。",
+              "evidence_ids": [
+                "gemini-car"
+              ],
+              "type": "strengthened",
+              "stage": "available"
+            }
+          ]
+        },
+        "meta-llama": {
+          "type": "strengthened",
+          "reason": "经营扩展主线保留，新增影响分享可用性的风险约束；并非证实原经营判断错误。",
+          "evidence_ids": [
+            "muse-business",
+            "muse-sharing-pause"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "分享曾因隐私审查暂停，恢复未核实。",
+              "evidence_ids": [
+                "muse-sharing-pause"
+              ],
+              "type": "strengthened",
+              "stage": "unknown"
+            }
+          ]
+        }
+      },
+      "overview": []
+    },
+    "ff4f5e7f876e88bb6ef2051ad71850f1f6102ab575b7923e9a35b552094f0cd2": {
+      "companies": {
+        "doubao": {
+          "type": "continued",
+          "reason": "复核同一IGA Pages事件；新候选多为模型、他家模型接入和使用案例，未核实新的豆包应用发布。",
+          "evidence_ids": [
+            "doubao-pages"
+          ],
+          "signals": []
+        },
+        "qwen": {
+          "type": "continued",
+          "reason": "原文最新栏目仍为月日条目；技术框架、DNA模型与第三方硬件性能不当作千问应用更新。",
+          "evidence_ids": [
+            "qwenwork-updates"
+          ],
+          "signals": []
+        },
+        "hunyuan": {
+          "type": "continued",
+          "reason": "补齐此前未取到的官方版本说明；引用追问是交互细化，尚不足改变录音、内容整理与生态衔接主线。",
+          "evidence_ids": [
+            "yuanbao-2900"
+          ],
+          "signals": []
+        },
+        "openai": {
+          "type": "continued",
+          "reason": "融资、模型价格及他家公司提到OpenAI均不算ChatGPT应用更新；Uber部署事件复核无新成效数据。",
+          "evidence_ids": [
+            "chatgpt-uber"
+          ],
+          "signals": []
+        },
+        "anthropic": {
+          "type": "strengthened",
+          "reason": "补入Enterprise正式开放统一聊天与云端任务，扩大既有工作路径的企业适用范围。",
+          "evidence_ids": [
+            "claude-enterprise-unified",
+            "claude-duet",
+            "claude-docs"
+          ],
+          "signals": [
+            {
+              "direction_id": "enterprise-rollout",
+              "summary": "Enterprise接入统一聊天与Cowork，项目可在云端跨设备继续。",
+              "evidence_ids": [
+                "claude-enterprise-unified"
+              ],
+              "type": "strengthened",
+              "stage": "available"
+            },
+            {
+              "direction_id": "ongoing-assistance",
+              "summary": "Duet保持独立的候补研究预览范围。",
+              "evidence_ids": [
+                "claude-duet"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            }
+          ]
+        },
+        "xai": {
+          "type": "continued",
+          "reason": "补录10月23日正式日志，继续体现任务执行与控制细化，尚不足改写Pages和团队共同工作主线。",
+          "evidence_ids": [
+            "grok-bot-0755",
+            "grok-bot-0752"
+          ],
+          "signals": []
+        },
+        "google-gemini": {
+          "type": "continued",
+          "reason": "体验文章、开发工具预告和其他公司的Gemma模型不算Gemini应用新发布；官方车载范围复核未改变。",
+          "evidence_ids": [
+            "gemini-car"
+          ],
+          "signals": []
+        },
+        "meta-llama": {
+          "type": "continued",
+          "reason": "当前原文仍反映当时分享暂停，未取得恢复证据；第三方Llama项目和模型榜单不作Muse更新。",
+          "evidence_ids": [
+            "muse-sharing-pause"
+          ],
+          "signals": []
+        }
+      },
+      "overview": []
+    },
+    "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e": {
+      "companies": {
+        "doubao": {
+          "type": "continued",
+          "reason": "对照9月20日至10月19日基线和10月22/23日日报复核；延续已有判断，不把插件再报道拆为多个新发布。公众号及候选截断限制仍存在。",
+          "evidence_ids": [
+            "doubao-pages",
+            "doubao-travel"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "生成网页可分享并供多人填写，仍以功能演示为主要证据。",
+              "evidence_ids": [
+                "doubao-pages"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        },
+        "qwen": {
+          "type": "continued",
+          "reason": "首期无前周周报，以此前月度基线比较；原文未给完整年份，保持null，不以近期报道数量推断产品加速或经营收益。",
+          "evidence_ids": [
+            "qwenwork-updates"
+          ],
+          "signals": [
+            {
+              "direction_id": "merchant-operations",
+              "summary": "商家后台连接支持经营分析与素材制作，入口仍邀测。",
+              "evidence_ids": [
+                "qwenwork-updates"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            },
+            {
+              "direction_id": "mobile-entry",
+              "summary": "手机与录音设备承接离开电脑后的交办。",
+              "evidence_ids": [
+                "qwenwork-updates"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        },
+        "hunyuan": {
+          "type": "continued",
+          "reason": "原始版本HTML已核对；混元模型、WorkForge以及搜索基础设施报道不直接当作元宝客户端功能。",
+          "evidence_ids": [
+            "yuanbao-2900"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "本周引用追问细化回答使用，尚不构成共同编辑的新流程。",
+              "evidence_ids": [
+                "yuanbao-2900"
+              ],
+              "type": "continued",
+              "stage": "available"
+            }
+          ]
+        },
+        "openai": {
+          "type": "strengthened",
+          "reason": "持续办公路线补入经营使用和广告扩展，增加新的商业化维度；不把个案或部署规模推为普遍成效。",
+          "evidence_ids": [
+            "chatgpt-uber",
+            "chatgpt-space",
+            "chatgpt-team-tasks",
+            "chatgpt-dots",
+            "chatgpt-slides-oct16",
+            "chatgpt-locked-oct20",
+            "chatgpt-locked-guide",
+            "chatgpt-ads-oct21",
+            "chatgpt-restaurant"
+          ],
+          "signals": [
+            {
+              "direction_id": "ongoing-assistance",
+              "summary": "Dots与Team Tasks延续持续工作及定时、事件触发任务。",
+              "evidence_ids": [
+                "chatgpt-dots",
+                "chatgpt-team-tasks"
+              ],
+              "type": "continued",
+              "stage": "available"
+            },
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "Slides与Space让团队围绕同一成果继续修改。",
+              "evidence_ids": [
+                "chatgpt-space",
+                "chatgpt-slides-oct16"
+              ],
+              "type": "continued",
+              "stage": "available"
+            },
+            {
+              "direction_id": "enterprise-rollout",
+              "summary": "Uber宣布扩大到全公司可用，使用深度仍未披露。",
+              "evidence_ids": [
+                "chatgpt-uber"
+              ],
+              "type": "continued",
+              "stage": "announced"
+            },
+            {
+              "direction_id": "merchant-operations",
+              "summary": "三店加盟商案例展示定价、排班与对账，仍由经理核对。",
+              "evidence_ids": [
+                "chatgpt-restaurant"
+              ],
+              "type": "established",
+              "stage": "observed"
+            },
+            {
+              "direction_id": "commercialization",
+              "summary": "广告再扩26国至89国，累计投放广告主不等同持续投放或收入。",
+              "evidence_ids": [
+                "chatgpt-ads-oct21"
+              ],
+              "type": "established",
+              "stage": "available"
+            }
+          ]
+        },
+        "anthropic": {
+          "type": "continued",
+          "reason": "比较此前月度基线，保留日报刚更新的当前判断日期；重组近30天主题以纳入Duet和Enterprise，未把桌面界面媒体报道当官方首发。",
+          "evidence_ids": [
+            "claude-enterprise-unified",
+            "claude-duet",
+            "claude-docs",
+            "claude-code-cloud",
+            "claude-automations"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "Google文件中可以直接修改与审阅。",
+              "evidence_ids": [
+                "claude-docs"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            },
+            {
+              "direction_id": "enterprise-rollout",
+              "summary": "企业统一体验正式开放，任务在云端跨设备继续。",
+              "evidence_ids": [
+                "claude-enterprise-unified"
+              ],
+              "type": "continued",
+              "stage": "available"
+            },
+            {
+              "direction_id": "ongoing-assistance",
+              "summary": "Duet独立候补预览承接提醒与后台执行。",
+              "evidence_ids": [
+                "claude-duet"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            }
+          ]
+        },
+        "xai": {
+          "type": "continued",
+          "reason": "对照此前数周团队共享、文件交付及组合订阅基线；不将计费互通扩写为上下文全面互通，主判断及原日期保留。",
+          "evidence_ids": [
+            "grok-bot-0755",
+            "grok-bot-0752",
+            "grok-team"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "Pages将报告、备忘录与仪表盘留在可共同修改和维护的页面。",
+              "evidence_ids": [
+                "grok-bot-0752"
+              ],
+              "type": "continued",
+              "stage": "available"
+            },
+            {
+              "direction_id": "enterprise-rollout",
+              "summary": "Team Bots保留团队共享背景和工具，各人的对话仍独立。",
+              "evidence_ids": [
+                "grok-team"
+              ],
+              "type": "continued",
+              "stage": "preview"
+            }
+          ]
+        },
+        "google-gemini": {
+          "type": "strengthened",
+          "reason": "技能、个人场景与开发主线保留，补入商家入口的品牌和经营材料。",
+          "evidence_ids": [
+            "gemini-car",
+            "gemini-release-notes",
+            "gemini-business-oct20"
+          ],
+          "signals": [
+            {
+              "direction_id": "personal-context",
+              "summary": "Android Auto渐进使用授权的个人应用背景。",
+              "evidence_ids": [
+                "gemini-car"
+              ],
+              "type": "continued",
+              "stage": "available"
+            },
+            {
+              "direction_id": "merchant-operations",
+              "summary": "商家入口保存品牌风格、连接经营工具并分析财务材料，公告称随后数日逐步推出。",
+              "evidence_ids": [
+                "gemini-business-oct20"
+              ],
+              "type": "established",
+              "stage": "announced"
+            }
+          ]
+        },
+        "meta-llama": {
+          "type": "continued",
+          "reason": "前期商家连接和应用范围已重读；分享事件沿用既有ID，具体发生时刻未知。未以模型榜单、第三方Llama项目或未分口径用户数推导应用成效。",
+          "evidence_ids": [
+            "muse-sharing-pause",
+            "muse-business",
+            "muse-wonder-scope"
+          ],
+          "signals": [
+            {
+              "direction_id": "merchant-operations",
+              "summary": "商家连接路径保留，发布、发送和支出须批准。",
+              "evidence_ids": [
+                "muse-business"
+              ],
+              "type": "continued",
+              "stage": "available"
+            },
+            {
+              "direction_id": "shared-deliverables",
+              "summary": "分享暂停的恢复状态仍未核实。",
+              "evidence_ids": [
+                "muse-sharing-pause"
+              ],
+              "type": "continued",
+              "stage": "unknown"
+            }
+          ]
+        }
+      },
+      "overview": [
+        {
+          "direction_id": "ongoing-assistance",
+          "type": "continued",
+          "reason": "主动跟进及随身入口方向延续，车载例子不代表全面开放。",
+          "evidence_ids": [
+            "chatgpt-dots",
+            "claude-duet",
+            "qwenwork-updates",
+            "gemini-car"
+          ]
+        },
+        {
+          "direction_id": "shared-deliverables",
+          "type": "strengthened",
+          "reason": "补入Grok Pages等共同修改和维护的具体动作。",
+          "evidence_ids": [
+            "doubao-pages",
+            "chatgpt-space",
+            "grok-bot-0752",
+            "claude-docs"
+          ]
+        },
+        {
+          "direction_id": "merchant-operations",
+          "type": "strengthened",
+          "reason": "补入Gemini商家入口与ChatGPT加盟商案例，未据此推断普遍经营收益。",
+          "evidence_ids": [
+            "qwenwork-updates",
+            "muse-business",
+            "gemini-business-oct20",
+            "chatgpt-restaurant"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -43,3 +43,17 @@ overview 为null，或包含 reason、lead、themes。每条 theme 为卡片加 
 首轮日报已发布：豆包、ChatGPT、Claude三家改判，其余五家保留原判断并提供复核摘要。严格滚动24小时新增计数与历史补证/纠偏分开，不能把这些改判公司数当成新闻新增条数。首期完整周报和首次定时执行仍是未来运行。
 
 本地Python 546项通过；桌面/手机宽度、首页、8个公司页、周报日期和文本安全渲染通过；线上报告ID及脚本内容回读一致。[完整架构与Docker检查](https://github.com/LeaiFish/ai-news-radar/actions/runs/39749164753)通过。新增静态资源需同时维护Docker显式COPY、package-public-site和sync-public-site资源清单。发布前已检查提交路径及凭据特征，未导出或提交任何账号凭据。
+
+## 判断演变与历史对照（2026-10-26起）
+
+继续严格执行以上原文核验、窗口、保密和不可覆盖规则。新prepare输入还包含history_context与evolution_contract。生成日报、周报前读取此前最多8期完整周报及各家公司最近实质变化，比较同一方向的具体产品动作、阶段与边界。没有连续历史就注明缺口，不将旧稿当本轮核验来源。
+
+新增报告须包含evolution，恰含companies（同8个机构）和overview（按本次overview.themes顺序的数组；本期overview为null时为空数组）。每家对象恰含type、reason、evidence_ids、signals。type为established首次建立、continued延续、strengthened加强、shifted转向、corrected纠偏、insufficient证据不足。继续判断时judgment保持null；转向/纠偏须写新判断，并说明原判断哪一部分改变。只有证据不足时允许空引用和空信号。事件的new/supplement/correction与判断类型分开；日期补证不等于主线转向。
+
+signals每项恰含direction_id、type、summary、stage、evidence_ids。固定方向见config/trend_directions.json；同一公司可涉及多个方向。stage为announced已宣布、preview测试或邀测、available功能可用、observed使用案例、unknown阶段未核验，不能当评分或采用效果。引用必须属该公司并包含在该公司evolution.evidence_ids中。未知日期保持null，不在summary补造日期。没有核实的方向不写signal，不能由没有信号推断没有行动。
+
+overview每项恰含direction_id、type、reason、evidence_ids，映射本次实际首页主题，固定ID使改名后仍能追溯同一方向。国内外证据要求继续执行。Python只校验，不根据新闻数、标题相似或事件标签自动判定加强/转向。
+
+apply自动衍生data/trends/history.json和history/<report_id>.json。受控publisher白名单扩展为本期原始归档、latest、历史索引和本期历史快照；仍不提交其他文件。--verify须回读latest、历史索引与本期快照的report_id一致。工作流另外运行python scripts/trend_history.py --data-dir data --check。
+
+已有4期报告的回顾标签保存在annotations.json，明确使用实际annotated_at，不修改原始归档或伪装为当时已标注。新增标签应由Codex回看前后判断与证据后写入；未标注的旧记录按unclassified展示。更多语义、展示与验收要求见docs/TREND_HISTORY.md。

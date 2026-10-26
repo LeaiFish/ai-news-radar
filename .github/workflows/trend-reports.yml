@@ -5,11 +5,14 @@ on:
     paths:
       - 'data/trends/**'
       - 'scripts/trend_reports.py'
+      - 'scripts/trend_history.py'
+      - 'config/trend_directions.json'
       - 'scripts/publish_trend_report.py'
       - 'tests/test_trend_reports.py'
+      - 'tests/test_trend_history.py'
       - '.github/workflows/trend-reports.yml'
   pull_request:
-    paths: ['data/trends/**', 'scripts/*trend*', 'tests/test_trend_reports.py']
+    paths: ['data/trends/**', 'scripts/*trend*', 'tests/test_trend_reports.py', 'tests/test_trend_history.py', 'config/trend_directions.json']
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,8 +27,9 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install pytest
-      - run: python -m pytest -q tests/test_trend_reports.py
+      - run: python -m pytest -q tests/test_trend_reports.py tests/test_trend_history.py
       - run: python scripts/trend_reports.py check --data-dir data
+      - run: python scripts/trend_history.py --data-dir data --check
       - name: Request Pages for validated editorial data
         if: github.event_name != 'pull_request'
         env:
