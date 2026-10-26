@@ -50,7 +50,14 @@ jobs:
           DOCKER
       - run: node scripts/package-public-site.ts
       - run: npm install --prefix /tmp/radar-history-browser --no-audit --no-fund @playwright/test@1.61.1
-      - run: /tmp/radar-history-browser/node_modules/.bin/playwright install --with-deps chromium
+      - name: Use the runner browser or install Chromium when absent
+        run: |
+          if command -v google-chrome >/dev/null 2>&1; then
+            google-chrome --version
+            echo 'RADAR_BROWSER_CHANNEL=chrome' >> "$GITHUB_ENV"
+          else
+            /tmp/radar-history-browser/node_modules/.bin/playwright install --with-deps chromium
+          fi
       - name: Check history and comparison in desktop and mobile browsers
         env:
           RADAR_PLAYWRIGHT_MODULE: /tmp/radar-history-browser/node_modules/@playwright/test/index.mjs

@@ -42,6 +42,12 @@ try {
  });
  await page.goto(new URL('history.html?company=openai',base).href);await page.locator('.trend-history-record').first().waitFor();
  assert.equal(await page.locator('#historyContent img').count(),0);assert.match(await page.locator('#historyContent').innerText(),/<img/);
+ await page.locator('[data-radar-theme="dark"]').click();
+ const colors=await page.locator('.trend-history-judgment').first().evaluate(el=>({bg:getComputedStyle(el).backgroundColor,fg:getComputedStyle(el).color}));
+ const lum=value=>value.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((n,v,i)=>n+v*[.2126,.7152,.0722][i],0);
+ const a=lum(colors.bg),b=lum(colors.fg);assert.ok((Math.max(a,b)+.05)/(Math.min(a,b)+.05)>=4.5,'dark history text contrast');
+ await page.locator('[data-radar-theme="system"]').click();
+
  // Correctly match query parameters too; a history failure stays on its own page.
  await page.route('**/data/trends/history.json*',route=>route.fulfill({status:404,body:'missing'}));
  await page.goto(new URL('history.html',base).href);await page.getByText('历史暂时无法读取，请稍后重试。当前判断可返回竞争概览查看。',{exact:true}).waitFor();
