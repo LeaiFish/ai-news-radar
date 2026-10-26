@@ -549,6 +549,30 @@ def parse_iso(dt_str: str | None) -> datetime | None:
     return dt.astimezone(UTC)
 
 
+def processing_window(now: datetime, base_hours: int, previous_generated_at: str | None = None,
+                      *, catch_up: bool = False, archive_days: int = 35) -> dict[str, Any]:
+    """A processing lookback, never a claim that the user read an earlier run."""
+    hours = max(1, base_hours)
+    start = now - timedelta(hours=hours)
+    reasons: list[str] = []
+    if catch_up:
+        local = now.astimezone(ZoneInfo("Asia/Shanghai"))
+        if local.weekday() == 0:
+            friday = (local - timedelta(days=3)).replace(hour=0, minute=0, second=0, microsecond=0)
+            start = min(start, friday.astimezone(UTC))
+            reasons.append("monday_friday_through_weekend")
+        previous = parse_iso(previous_generated_at)
+        if previous and previous < start:
+            start = previous
+            reasons.append("generation_gap")
+    floor = now - timedelta(hours=max(hours, max(1, archive_days) * 24))
+    truncated = start < floor
+    start = max(start, floor)
+    hours = max(hours, math.ceil((now - start).total_seconds() / 3600))
+    return {"window_hours": hours, "start": iso(start), "end": iso(now),
+            "reasons": reasons, "truncated_to_archive_retention": truncated}
+
+
 def normalize_url(raw_url: str) -> str:
     try:
         parsed = urlparse(raw_url.strip())
@@ -3651,7 +3675,7 @@ SOURCE_TIER_BY_SITE: dict[str, tuple[str, str, int]] = {
     "xapi": ("advanced", "高级源", 4),
     "socialdata_x": ("advanced", "高级源", 4),
     "x_bridge": ("advanced", "高级源", 4),
-    "wechat_bridge": ("advanced", "公众号补充源", 4),
+    "wechat_bridge": ("official", "官方一手源", 0),
     "techurls": ("discussion", "热议参考", 5),
     "buzzing": ("discussion", "热议参考", 5),
     "iris": ("discussion", "热议参考", 5),
@@ -4843,10 +4867,10 @@ def load_x_bridge_items(
 def load_wechat_bridge_items(path, now, window_hours=24):
     rows, status = load_wechat_rows(path, now, window_hours)
     return [RawItem(
-        site_id="wechat_bridge", site_name="官方公众号（补充）",
+        site_id="wechat_bridge", site_name="官方公众号",
         source=f"公众号：{row['account_name']}", title=row["title"], url=row["url"],
         published_at=row["published_at"],
-        meta={"select_tier": "T1_5", "company_id": row["company_id"],
+        meta={"select_tier": "T1", "company_id": row["company_id"],
               "account_name": row["account_name"], "account_verified": True,
               "verified_at": row["verified_at"], "evidence_url": row["evidence_url"]},
     ) for row in rows], status
@@ -7516,6 +7540,7 @@ def build_latest_payloads(latest_payload: dict[str, Any]) -> tuple[dict[str, Any
     all_payload = {
         "generated_at": latest_payload.get("generated_at"),
         "window_hours": latest_payload.get("window_hours"),
+        "processing_window": latest_payload.get("processing_window"),
         "topic_filter": latest_payload.get("topic_filter"),
         "ai_relevance_threshold": latest_payload.get("ai_relevance_threshold"),
         "total_items_raw": latest_payload.get("total_items_raw"),
@@ -7534,6 +7559,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Aggregate AI news updates from multiple sources")
     parser.add_argument("--output-dir", default="data", help="Directory for output JSON files")
     parser.add_argument("--window-hours", type=int, default=24, help="24h window size")
+    parser.add_argument("--catch-up", action="store_true",
+                        help="Include Friday/weekend on Monday and recover gaps since the previous snapshot")
     parser.add_argument("--archive-days", type=int, default=21, help="Keep archive for N days")
     parser.add_argument("--translate-max-new", type=int, default=80, help="Max new EN->ZH title translations per run")
     parser.add_argument(
@@ -7570,6 +7597,15 @@ def main() -> int:
     paid_source_state_path = output_dir / PAID_SOURCE_STATE_FILE
 
     archive = load_archive(archive_path)
+    previous_generated_at = None
+    if archive_path.exists():
+        try:
+            previous_generated_at = json.loads(archive_path.read_text(encoding="utf-8")).get("generated_at")
+        except (ValueError, OSError):
+            pass
+    processing = processing_window(now, args.window_hours, previous_generated_at,
+                                   catch_up=args.catch_up, archive_days=args.archive_days)
+    args.window_hours = processing["window_hours"]
     paid_source_state = load_paid_source_state(paid_source_state_path)
 
     session = create_session()
@@ -7809,7 +7845,7 @@ def main() -> int:
     archive = pruned
 
     # 24h view
-    window_start = now - timedelta(hours=args.window_hours)
+    window_start = parse_iso(processing["start"])
     latest_items_all_raw: list[dict[str, Any]] = []
     for record in archive.values():
         ts = event_time(record)
@@ -7865,10 +7901,12 @@ def main() -> int:
     link_story_follow_ups(stories)
     generated_at = iso(now)
     daily_brief_payload = build_daily_brief_payload(stories, generated_at=generated_at, window_hours=args.window_hours)
+    daily_brief_payload["processing_window"] = processing
     # Copy before tagging so daily-brief items, which share these dicts, stay unchanged.
     stories_for_feed = [dict(story) for story in stories]
     assign_selection_tiers(stories_for_feed, now=now)
     stories_merged_payload = build_stories_payload(stories_for_feed, generated_at=generated_at, window_hours=args.window_hours)
+    stories_merged_payload["processing_window"] = processing
     merge_log_payload = build_merge_log_payload(merge_events, generated_at=generated_at)
 
     # site stats
@@ -7910,6 +7948,7 @@ def main() -> int:
     latest_payload = {
         "generated_at": generated_at,
         "window_hours": args.window_hours,
+        "processing_window": processing,
         "total_items": len(latest_items_ai_dedup),
         "total_items_ai_raw": len(latest_items),
         "total_items_raw": len(latest_items_all_raw),
@@ -7956,6 +7995,7 @@ def main() -> int:
 
     status_payload = {
         "generated_at": generated_at,
+        "processing_window": processing,
         "sites": statuses,
         "successful_sites": sum(1 for s in statuses if s["ok"]),
         "failed_sites": [s["site_id"] for s in statuses if not s["ok"]],
@@ -7970,7 +8010,9 @@ def main() -> int:
         "empty_advanced_sources": empty_advanced_sources,
         "fetched_raw_items": len(raw_items),
         "items_before_topic_filter": len(latest_items_all_raw),
-        "items_in_24h": len(latest_items_ai_dedup),
+        "items_in_24h": sum(bool(event_time(item)) and now - timedelta(hours=24) <= event_time(item) <= now
+                            for item in latest_items_ai_dedup),
+        "items_in_processing_window": len(latest_items_ai_dedup),
         "rss_opml": {
             "enabled": bool(args.rss_opml),
             "path": "configured" if args.rss_opml else None,
@@ -8007,6 +8049,7 @@ def main() -> int:
     latest_all_raw_payload = {
         "generated_at": latest_all_payload.get("generated_at"),
         "window_hours": latest_all_payload.get("window_hours"),
+        "processing_window": processing,
         "topic_filter": latest_all_payload.get("topic_filter"),
         "ai_relevance_threshold": latest_all_payload.get("ai_relevance_threshold"),
         "total_items_raw": len(latest_items_all_raw),

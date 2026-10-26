@@ -67,10 +67,10 @@ WeChat additionally supports the opt-in local `scripts/wechat_wemprss.py` adapte
 It uses an external private we-mp-rss installation and verifies account names and
 original publication dates from article HTML. Seven configured publisher IDs cover
 six companies. The local collector now scans list pages and all subarticles first,
-then merges public 24-hour AIHOT leads and cover candidates when list coverage is restricted.
+then merges public seven-day AIHOT leads and cover candidates when list coverage is restricted.
 Original HTML still determines account identity and publication date. Per-account page/candidate
 caps and a runtime budget produce explicit incomplete-coverage diagnostics; a readable cover
-never proves complete or latest coverage. Recent verified rows are protected from the old
+never proves complete or latest coverage. All verified seven-day rows are protected from the old
 20-row retention cap.
 Only public metadata is published. Login state and bodies stay outside the repo;
 cloud public discovery continues independently. See `WECHAT_SOURCE_BRIDGE.md`.
@@ -212,6 +212,13 @@ and topic deduplication. Gemini and App Store use standard text-fragment links t
 the visible date/version because they offer no native release anchors. This
 prevents successive releases on one page from collapsing into a single item;
 unrelated article fragments are still stripped.
+
+Verified company WeChat accounts are first-party `T1` sources. Ingest every dated,
+verified historical article before applying the display/processing window; preserve
+its original date. Scheduled refreshes use `--catch-up`: on Monday (Asia/Shanghai)
+they include Friday00:00 through the current run, even if weekend jobs ran. A gap
+since the previous snapshot also extends the processing lookback, bounded by archive
+retention and recorded in `processing_window`. This does not mark anything as read.
 
 Source Overlap Check against the 30-day archive (2026-10-20), before the stricter
 application-path filter: Gemini App Blog had 5 recent entries, 20% hard duplicates

@@ -110,7 +110,7 @@ def test_qwen_consumer_account_is_separate_from_the_research_lab(monkeypatch):
     assert result["account_name"] == "千问APP"
 
 
-def test_radar_ingress_only_admits_verified_recent_rows_and_no_secret_keys(tmp_path):
+def test_radar_ingress_archives_verified_history_and_no_secret_keys(tmp_path):
     recent = row(cookie="SECRET", auth_token="SECRET", storage_state={"cookies": []})
     data = snapshot([recent, row(url=URL + "-null", published=None),
                      row(url=URL + "-old", published="2026-10-01T00:00:00Z"),
@@ -120,9 +120,12 @@ def test_radar_ingress_only_admits_verified_recent_rows_and_no_secret_keys(tmp_p
                      row(url=URL + "-wrong-evidence", evidence_url="https://attacker/")])
     data["last_run"]["auth_token"] = "SECRET"
     items, status = load_wechat_bridge_items(save(tmp_path, data), NOW)
-    assert len(items) == 1
+    assert len(items) == 2
     assert items[0].source == "公众号：DeepSeek"
-    assert items[0].meta["select_tier"] == "T1_5"
+    assert items[0].meta["select_tier"] == "T1"
+    assert items[1].published_at == datetime(2026, 10, 1, tzinfo=timezone.utc)
+    assert status["recent_window_item_count"] == 1
+    assert status["historical_item_count"] == 1
     assert status["undated_count"] == 1
     assert "SECRET" not in json.dumps([items[0].meta, status])
 
@@ -148,4 +151,4 @@ def test_verification_evidence_survives_normal_archive_projection(tmp_path):
     assert record["account_name"] == "DeepSeek"
     assert record["account_verified"] is True
     assert record["evidence_url"] == URL
-    assert record["select_tier"] == "T1_5"
+    assert record["select_tier"] == "T1"

@@ -175,7 +175,7 @@ def discover_public(jobs, now, *, deadline=None, clock=time.monotonic, get=None,
             if deadline is not None and clock() >= deadline:
                 limited = True
                 break
-            params = {'mode': 'all', 'window': '24h', 'by': 'published', 'limit': 100}
+            params = {'mode': 'all', 'window': '7d', 'by': 'published', 'limit': 100}
             if cursor:
                 params['cursor'] = cursor
             response = get('https://aihot.news/api/v1/items', params=params, timeout=(5, 15))
@@ -346,7 +346,7 @@ def collect(reader, jobs, now, delay=time.sleep, *, public_discovery=None, publi
                         count += 1
                         row = article(job, review_id)
                         published = published_datetime(row['published']) if row else None
-                        if not published or published >= now - timedelta(hours=24):
+                        if not published or published >= now - timedelta(days=7):
                             all_old = False
                         if published:
                             if last_date and published > last_date:

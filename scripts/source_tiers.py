@@ -1,6 +1,7 @@
 """Selection tiers for the daily 精选 cap.
 
-T1 is official first-party (company blog, changelog, newsroom). T1_5 is an
+T1 is official first-party (company blog, changelog, newsroom, and verified
+company WeChat accounts). T1_5 is an
 official account or near-official channel. T2 is media, personal, aggregator,
 or anything not listed. Unknown sources resolve to T2.
 
@@ -141,6 +142,10 @@ def resolve_select_tier(
 
 
 def item_select_tier(item: dict[str, Any]) -> str:
+    # Migrate already archived verified company posts, including records that
+    # still carry the former T1_5 stamp. Authority is not tied to article age.
+    if item.get("site_id") == "wechat_bridge" and item.get("account_verified") is True:
+        return SELECT_TIER_T1
     return resolve_select_tier(
         site_id=str(item.get("site_id") or ""),
         source=str(item.get("source") or item.get("source_name") or ""),

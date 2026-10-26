@@ -54,3 +54,8 @@ def test_example_opml_select_tier_attribute_is_parsed():
     assert by_title["NVIDIA Generative AI Blog"]["select_tier"] == "T1"
     assert by_title["Simon Willison"]["select_tier"] == "T2"
     assert by_title["宝玉"]["select_tier"] == "T2"
+
+
+def test_verified_company_wechat_history_is_first_party_even_with_old_stamp():
+    assert item_select_tier({'site_id':'wechat_bridge','account_verified':True,'select_tier':'T1_5'})=='T1'
+    assert resolve_select_tier(site_id='wechat_bridge')=='T1'

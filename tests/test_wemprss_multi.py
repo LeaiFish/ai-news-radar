@@ -159,7 +159,7 @@ def test_public_discovery_flattens_pages_and_does_not_trust_list_date():
     assert len(result['candidates'])==2 and result['ok'] and not result['truncated']
     assert 'PRIVATE' not in json.dumps(result)
     assert calls[1]['params']['cursor']=='page2'
-    assert all(c['params']['window']=='24h' and 'headers' not in c for c in calls)
+    assert all(c['params']['window']=='7d' and 'headers' not in c for c in calls)
 
 def test_public_original_does_not_forward_credentials_or_follow_challenge():
     from scripts.wechat_wemprss import verify_public
@@ -198,3 +198,25 @@ def test_public_service_failure_stops_remaining_original_requests():
     assert len(calls)==1
     assert any(e['error']=='wemprss_http_503' for e in result['errors'])
     assert not result['coverage_complete']
+
+
+def test_verified_friday_page_does_not_stop_monday_before_weekend_is_checked():
+    monday=NOW.replace(day=26)
+    reader=Reader(pages=[page('friday'),page('weekend'),{'reviews':[]}],
+                  bodies={'friday':body('friday','2026-10-23 10:00'),
+                          'weekend':body('weekend','2026-10-24 10:00')})
+    result=collect(reader,[JOB],monday,delay=lambda _:None,public_discovery=discover)
+    assert {'AI update friday','AI update weekend'} <= {r['title'] for r in result['rows']}
+    assert len(reader.list_calls)==3
+
+
+def test_public_leads_scan_seven_days_with_existing_caps():
+    from scripts.wechat_wemprss import discover_public
+    calls=[]
+    def get(url,**kwargs):
+        calls.append(kwargs['params'])
+        return SimpleNamespace(raise_for_status=lambda:None,json=lambda:{'schemaVersion':1,'items':[],
+                               'page':{'hasMore':False,'nextCursor':None}})
+    r=discover_public([JOB],NOW,get=get)
+    assert r['ok'] and not r['truncated']
+    assert calls[0]['window']=='7d' and calls[0]['mode']=='all'

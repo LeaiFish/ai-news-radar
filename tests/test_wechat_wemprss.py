@@ -51,7 +51,11 @@ def test_verified_reader_metadata_is_publishable_and_uses_original_date(tmp_path
     path = tmp_path / "snapshot.json"
     import json
     path.write_text(json.dumps(clean))
-    assert load_radar_rows(path, NOW)[0] == []  # historical cover is not today's news
+    rows, status = load_radar_rows(path, NOW)
+    assert len(rows) == 1  # Historical originals are archived, without becoming today's news.
+    assert rows[0]["published"] == "2026-10-15T09:54:00Z"
+    assert status["recent_window_item_count"] == 0
+    assert status["historical_item_count"] == 1
 
 
 @pytest.mark.parametrize("value", [

@@ -46,10 +46,10 @@ def normalized_name(value):
 
 
 def retained_account_rows(rows, now):
-    """Keep the latest 20, extending that cap to preserve every valid 24-hour row."""
+    """Keep the latest 20 and every valid seven-day row for weekend catch-up."""
     rows = sorted(rows, key=lambda r: (r.get('published') or '', r['verified_at']), reverse=True)
     recent = sum(bool(published_datetime(r.get('published'))) and
-                 now - timedelta(hours=24) <= published_datetime(r['published']) <= now for r in rows)
+                 now - timedelta(days=7) <= published_datetime(r['published']) <= now for r in rows)
     return rows[:max(20, recent)]
 
 
@@ -330,7 +330,9 @@ def sync(payload, existing, now, verifier=verify_candidate, expected_accounts=No
 
 
 def load_radar_rows(path, now, window_hours=24):
-    status = {"site_id": "wechat_bridge", "site_name": "官方公众号（补充）", "ok": True,
+    # Ingestion is independent of the reader's window. Verified old articles
+    # belong in the archive even when discovered after a weekend or an outage.
+    status = {"site_id": "wechat_bridge", "site_name": "官方公众号", "ok": True,
               "item_count": 0, "duration_ms": 0, "error": None, "skipped": False}
     path = Path(path)
     if not path.exists():
@@ -339,19 +341,25 @@ def load_radar_rows(path, now, window_hours=24):
         payload = json.loads(path.read_text(encoding="utf-8"))
         rows, seen = [], set()
         missing_date = 0
+        future_date = 0
+        recent_count = 0
         for company, row in eligible_rows(payload, now):
             published = published_datetime(row["published"])
             missing_date += int(published is None)
-            if not published or not now - timedelta(hours=window_hours) <= published <= now or row["url"] in seen:
+            future_date += int(bool(published and published > now))
+            if not published or published > now or row["url"] in seen:
                 continue
             seen.add(row["url"])
+            recent_count += int(published >= now - timedelta(hours=window_hours))
             rows.append(row | {"company_id": company, "published_at": published})
         last_run = payload.get("last_run", {})
         if not isinstance(last_run, dict) or not isinstance(last_run.get("errors", []), list):
             raise ValueError("invalid_wechat_discovery_status")
         refreshed = published_datetime(last_run.get("at"))
         stale = not refreshed or refreshed > now or now - refreshed > timedelta(hours=30)
-        status.update(item_count=len(rows), undated_count=missing_date, stale=stale,
+        status.update(item_count=len(rows), recent_window_item_count=recent_count,
+                      historical_item_count=len(rows) - recent_count,
+                      undated_count=missing_date, future_date_count=future_date, stale=stale,
                       discovery={key: last_run.get(key) for key in ("at", "ok", "searched_accounts", "candidates", "verified", "added", "covered_companies", "covered_accounts", 'recent_24h', 'rejected', 'pilot_recent_7d', 'collection_state', 'collector', 'coverage_complete', 'account_coverage')},
                       failed_candidates=len(last_run.get("errors", [])), ok=last_run.get("ok") is True and not stale,
                       error="wechat_snapshot_stale" if stale else (None if last_run.get("ok") is True else "wechat_discovery_incomplete"))
