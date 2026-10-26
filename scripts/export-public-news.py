@@ -72,7 +72,7 @@ def export():
         if not isinstance(identity,str) or not re.fullmatch(r'[a-zA-Z0-9_-]{1,80}',identity): identity=hashlib.sha256(url.encode()).hexdigest()[:40]
         ids[url]=identity
         items.append({'id':identity,'title':title,'originalTitle':original if original!=title else None,'summary':abstract or None,
-          'source':{'name':text((row.get('source') if row.get('source_name') in ('AI HOT','AIHOT') else row.get('source_name')) or row.get('source') or '未知来源',200)},'links':{'original':url},
+          'source':{'name':text((row.get('source') if row.get('site_id')=='wechat_bridge' or row.get('source_name') in ('AI HOT','AIHOT') else row.get('source_name')) or row.get('source') or '未知来源',200)},'links':{'original':url},
           'publishedAt':at,'discoveredAt':at,'timelineAt':at,'category':None,'tags':[],'reason':None,'score':None,
           'selected':row.get('curated') is True,'channel':'news','x':None,'story':None})
     items.sort(key=lambda row:row['timelineAt'],reverse=True)

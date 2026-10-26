@@ -220,6 +220,18 @@ def record_identity(record: dict[str, Any]) -> str:
     return f"title:{(record.get('title') or '').strip().casefold()}"
 
 
+def primary_item_metadata(record: dict[str, Any]) -> dict[str, Any]:
+    """Recover publisher identity from existing stories whose primary omitted it."""
+    primary = record.get("primary_item")
+    primary = dict(primary) if isinstance(primary, dict) else {}
+    url = record.get("primary_url") or record.get("url") or primary.get("url")
+    source = primary.get("source") or record.get("source")
+    for ref in record.get("sources") or record.get("items") or []:
+        if isinstance(ref, dict) and ref.get("url") == url and (not source or ref.get("source") == source):
+            return {**ref, **primary}
+    return primary
+
+
 def is_curated_record(record: dict[str, Any], curated_ids: set[str]) -> bool:
     story_id = str(record.get("story_id") or "").strip()
     if story_id and story_id in curated_ids:
@@ -227,7 +239,7 @@ def is_curated_record(record: dict[str, Any], curated_ids: set[str]) -> bool:
     site_id = str(record.get("site_id") or "").strip()
     if site_id in CURATED_SITE_IDS:
         return True
-    primary = record.get("primary_item")
+    primary = primary_item_metadata(record)
     if isinstance(primary, dict) and str(primary.get("site_id") or "") in CURATED_SITE_IDS:
         return True
     if int(record.get("source_count") or 0) >= 2:
@@ -260,7 +272,7 @@ def truncate(text: str, limit: int = MAX_SUMMARY_CHARS) -> str:
 
 
 def slim_item(record: dict[str, Any], curated_ids: set[str]) -> dict[str, Any]:
-    primary = record.get("primary_item") if isinstance(record.get("primary_item"), dict) else {}
+    primary = primary_item_metadata(record)
     title = (
         record.get("title_zh")
         or primary.get("title_zh")

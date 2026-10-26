@@ -7285,6 +7285,7 @@ def build_story_record(
         "latest_at": iso(max(times)) if times else None,
         "primary_item": {
             "id": primary.get("id"),
+            "site_id": primary.get("site_id"),
             "title": title,
             "title_zh": primary.get("title_enhanced_zh") or primary.get("title_zh"),
             "title_en": primary.get("title_en"),

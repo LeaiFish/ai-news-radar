@@ -92,3 +92,31 @@ def test_first_party_archive_is_kept_in_default_curated_projection():
               'title':TITLE,'url':URL,'published_at':'2026-10-23T02:43:00Z'}
     assert is_curated_record(original,set())
     assert editorial_score(original)==0.9
+
+
+def test_merged_original_keeps_publisher_and_default_curated_projection(tmp_path):
+    from scripts.update_news import build_story_record
+    from scripts.build_topics import slim_item
+    import importlib.util
+    official=add_source_tier_fields({'id':'original','site_id':'wechat_bridge','source':'公众号：千问APP',
+                                    'site_name':'官方公众号','url':URL,'title':TITLE,
+                                    'published_at':'2026-10-23T02:43:00Z','account_verified':True,
+                                    'company_id':'qwen','account_name':'千问APP'})
+    s=build_story_record('original-story',[official],MONDAY,83)
+    # Old already-published story schema omitted site_id on the primary object.
+    s['primary_item'].pop('site_id',None)
+    projected=slim_item(s,set())
+    assert projected['site_id']=='wechat_bridge' and projected['curated']
+    assert projected['source']=='公众号：千问APP'
+    spec=importlib.util.spec_from_file_location('wechat_export',__import__('pathlib').Path(__file__).parents[1]/'scripts/export-public-news.py')
+    m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+    m.ROOT=tmp_path;m.NEWS=tmp_path/'data'
+    payloads={'config/topics.json':{'groups':[],'topics':[{'id':'qwen','name':'千问','group':'company'}]},
+              'data/topics.json':{'generated_at':MONDAY.isoformat()},
+              'data/topics/qwen.json':{'items':[projected]},'data/latest-24h-all.json':{'items_all':[]},
+              'data/stories-merged.json':{'stories':[]},'data/daily-brief.json':{'items':[]}}
+    for name,p in payloads.items():
+        dest=tmp_path/name;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(json.dumps(p))
+    result=m.export()['items']
+    assert len(result)==1 and result[0]['source']['name']=='公众号：千问APP'
+    assert result[0]['selected'] and result[0]['publishedAt']=='2026-10-23T02:43:00Z'
