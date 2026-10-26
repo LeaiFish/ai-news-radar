@@ -185,10 +185,12 @@ def write_history(data_dir,payload):
 
 def history_context(data_dir):
     manifest,snapshots=build_history(data_dir)
+    def evidence_refs(row):
+        return [{k:e[k] for k in ('id','url','published_at','event_at')} for e in row['evidence']]
     def compact(snapshot):
         return {**{k:snapshot[k] for k in ['report_id','kind','generated_at','period_start','period_end']},
                 'companies':{k:{'type':v['type'],'reason':v['reason'],'judgment':v['after']['content'],
-                               'judgment_updated_at':v['after']['generated_at'],'signals':v['signals']} for k,v in snapshot['companies'].items()},
+                               'judgment_updated_at':v['after']['generated_at'],'signals':v['signals'],'evidence':evidence_refs(v)} for k,v in snapshot['companies'].items()},
                 'overview':snapshot['overview']}
     weekly=[s for s in snapshots.values() if s['kind']=='weekly'][-8:]
     changes={slug:[] for slug in core.IDS}
@@ -197,7 +199,7 @@ def history_context(data_dir):
             if (meta['companies'][slug]['changed'] or meta['companies'][slug]['type'] in {'strengthened','shifted','corrected'}) and len(changes[slug])<4:
                 row=snapshots[meta['report_id']]['companies'][slug]
                 changes[slug].append({'report_id':meta['report_id'],'generated_at':meta['generated_at'],'type':row['type'],
-                                     'reason':row['reason'],'before':row['before']['content'],'after':row['after']['content'],'signals':row['signals']})
+                                     'reason':row['reason'],'before':row['before']['content'],'after':row['after']['content'],'signals':row['signals'],'evidence':evidence_refs(row)})
     return {'previous_weeks':[compact(s) for s in weekly], 'recent_changes':{k:v for k,v in changes.items() if v},
             'warning':'历史只作比较基线，不是本轮已核验事实；缺期不等于无变化。'}
 
