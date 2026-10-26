@@ -273,6 +273,15 @@ CURATED_AI_MEDIA_MAX_AGE_DAYS = 30
 DISCUSSION_FETCH_CAP = int(os.environ.get("DISCUSSION_FETCH_CAP", "50"))
 CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
     {
+        "title": "IT之家",
+        "xml_url": "https://www.ithome.com/rss/",
+        "html_url": "https://www.ithome.com/",
+        "product_priority": True,
+        "max_entries": 8,
+        "max_technical_entries": 2,
+        "select_tier": "T2",
+    },
+    {
         "title": "The Decoder AI News",
         "xml_url": "https://the-decoder.com/feed/",
         "html_url": "https://the-decoder.com/",
@@ -1944,6 +1953,12 @@ def parse_curated_ai_media_feed_items(
             continue
         if not curated_feed_entry_allowed(feed, title, link):
             continue
+        if feed.get("product_priority"):
+            candidate = {"site_id": site_id, "source": feed_title, "title": title, "url": link}
+            if published > now or not score_ai_relevance(candidate)["is_ai_related"]:
+                continue
+            if editorial_focus(candidate) not in {"product", "technical"}:
+                continue
         normalized_url = normalize_url(link)
         if normalized_url in seen_urls:
             continue
@@ -1966,8 +1981,28 @@ def parse_curated_ai_media_feed_items(
                 },
             )
         )
-        if len(out) >= max_entries:
+        if len(out) >= max_entries and not feed.get("product_priority"):
             break
+
+    if feed.get("product_priority"):
+        # Inspect the whole bounded RSS page before applying the cap: a run of
+        # model benchmarks must not crowd out a later product/use-case update.
+        def focus(item: RawItem) -> str:
+            return editorial_focus({"site_id": item.site_id, "source": item.source,
+                                    "title": item.title, "url": item.url})
+
+        out.sort(key=lambda item: (focus(item) != "product", -item.published_at.timestamp()))
+        kept: list[RawItem] = []
+        technical_count = 0
+        for item in out:
+            if focus(item) == "technical":
+                if technical_count >= int(feed.get("max_technical_entries", 2)):
+                    continue
+                technical_count += 1
+            kept.append(item)
+            if len(kept) >= max_entries:
+                break
+        return kept
 
     return out
 

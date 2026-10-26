@@ -38,7 +38,7 @@ _ACTION = re.compile(
     r"(?<![a-z])(?:launch\w*|introduc\w*|releas\w*|roll\w*|add\w*|support\w*|"
     r"availab\w*|live|now|can|run\w*|generat\w*|use|using|built|build|"
     r"fix\w*|suspend\w*|disabl\w*|expos\w*|have)(?![a-z])"
-    r"|上线|新增|推出|更新|发布|支持|接入|开放|可用|生成|完成|暂停|关闭|泄露|修复|接管", re.I,
+    r"|上线|新增|推出|更新|发布|支持|接入|开放|可用|生成|完成|暂停|关闭|泄露|修复|接管|恢复|重置|调整", re.I,
 )
 _CAPABILITY = re.compile(
     r"(?<![a-z])(?:apis?|sdks?|features?|dashboards?|workspaces?|integrations?|"
@@ -46,7 +46,8 @@ _CAPABILITY = re.compile(
     r"editing|memory|connectors?|speech|audio|voice|3d|image editing|"
     r"local(?:ly)?|macs?|windows|desktop app|mobile app|new app)(?![a-z])"
     r"|功能|客户端|协作|共享屏幕|语音|视觉创作|全链路|工作流|多平台|电商经营|"
-    r"本地运行|端侧运行|编辑|导出|上传|权限|隐私|对话|聊天|记忆|连接器|自动化", re.I,
+    r"本地运行|端侧运行|编辑|导出|上传|权限|隐私|对话|聊天|记忆|连接器|自动化|"
+    r"模型切换|模型选择|模型接入|(?:接入|切换).{0,8}模型|桌面应用|移动应用|界面|订阅|会员|额度|限流", re.I,
 )
 _USAGE = re.compile(
     r"(?<![a-z])(?:how .{0,80}(?:use|built|build|works)|use cases?|customer stor\w*|tutorials?)(?![a-z])"

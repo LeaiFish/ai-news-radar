@@ -492,6 +492,7 @@ selection priority.
 | Source | Verified public entry | Intake and bounded capture |
 | --- | --- | --- |
 | Testing Catalog | <https://www.testingcatalog.com/rss/> | Up to 8 recent long-form entries, T2. The RSS is not a complete mirror of its X account. |
+| IT之家 | <https://www.ithome.com/rss/> | Up to 8 dated AI product/use-case articles per refresh, T2; product functionality and user experience come first, with at most 2 technical/evaluation entries after them. Hardware sales, generic AI business headlines, missing/future dates and duplicate canonical URLs are excluded. The public feed holds only 60 recent site-wide articles, so it cannot guarantee historical recovery or complete coverage between polls. |
 | LangChain Blog | <https://www.langchain.com/blog/rss.xml> | Up to 8 recent entries, T1. Product updates and real use cases take priority; engineering and eval articles get internal technical tags. The old `blog.langchain.com/rss/` redirects to HTML. |
 | Meta Engineering Blog | <https://engineering.fb.com/feed/> | Up to 6 entries with AI/ML/model/agent/inference/training/recommendation signals, T1. Complements the existing Meta product Newsroom. |
 | vLLM Blog | <https://vllm.ai/blog/rss.xml> | Up to 4 entries, T1 authority, with an internal `model_technology` tag and lower selection priority. The old `blog.vllm.ai/feed.xml` returned 404. |

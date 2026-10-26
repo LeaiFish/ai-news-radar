@@ -321,6 +321,14 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
             )
 
         if not (trusted_source or research_source or title_has_ai or (title_has_broad_ai and bool(tech_signals))):
+            context = product_context(record)
+            if context:
+                return _result(
+                    is_ai_related=True, score=0.82 if context["kind"] == "product" else 0.72,
+                    label="ai_product_update" if context["kind"] == "product" else _label_for_text(text, bool(tech_signals)),
+                    reason=context["signal"], signals=sorted(set(ai_signals + [context["identity"], context["signal"]])),
+                    noise=noise,
+                )
             return _result(
                 is_ai_related=False,
                 score=source_prior + (0.28 if title_has_broad_ai else 0.0),
