@@ -4,53 +4,67 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-27T13:16:26.021080Z",
+  "generated_at": "2026-10-27T16:43:34.221807Z",
   "daily_dates": [
     "2026-10-26",
-    "2026-10-27"
+    "2026-10-27",
+    "2026-10-28"
   ],
-  "story_count": 968,
-  "unique_story_count": 953,
+  "story_count": 1245,
+  "unique_story_count": 1002,
   "counts": {
     "by_company_topic": {
-      "anthropic": 185,
-      "apple": 10,
+      "anthropic": 243,
+      "apple": 19,
       "cursor": 2,
-      "deepseek": 19,
+      "deepseek": 22,
       "doubao": 5,
-      "google-gemini": 27,
-      "huggingface": 10,
-      "hunyuan": 3,
-      "kimi": 18,
-      "meta-llama": 4,
-      "microsoft": 14,
-      "minimax": 19,
-      "nvidia": 29,
-      "openai": 132,
-      "openrouter": 2,
-      "qwen": 15,
-      "xai": 17,
-      "zhipu": 3
+      "google-gemini": 34,
+      "huggingface": 11,
+      "hunyuan": 4,
+      "kimi": 19,
+      "meta-llama": 5,
+      "microsoft": 17,
+      "minimax": 20,
+      "nvidia": 40,
+      "openai": 173,
+      "openrouter": 3,
+      "qwen": 20,
+      "xai": 22,
+      "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 152,
-      "monetization": 18,
-      "product-entry": 12,
-      "workplace": 34
+      "agent-ecosystem": 189,
+      "monetization": 23,
+      "product-entry": 24,
+      "workplace": 44
     },
     "by_importance_label": {
-      "值得关注": 833,
-      "多源热议": 20,
-      "官方更新": 41,
-      "行业动态": 74
+      "值得关注": 1054,
+      "多源热议": 25,
+      "官方更新": 48,
+      "行业动态": 118
     },
     "by_source_count_bucket": {
-      "1": 915,
-      "2": 32,
-      "3+": 21
+      "1": 1181,
+      "2": 38,
+      "3+": 26
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_74c7e03322b7",
+      "title": "我们可以信任LLM来判断一个研究想法是否新颖吗？ / Can we trust LLMs to judge whether a research idea is novel?",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "importance_score": 0.8667,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
     {
       "story_id": "story_7cb634884910",
       "title": "与学术界合作，增进对科学的理解 / Working with academic communities to build scientific understanding",
@@ -61,6 +75,32 @@
       "archive_date": "2026-10-27",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_529172dc08c8",
+      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
+      "importance_score": 0.8476,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_50d6e60500bb",
+      "title": "Google DeepMind 发布实时交互世界模型 Genie 4 / Genie 4: A new generation of world simulation",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+      "importance_score": 0.8422,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -509,6 +549,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_08edd409f737",
+      "title": "Replit Cloud Agents 开放企业代码库贡献，非技术人员可直接提交经测试的 PR / Anyone can now bring their ideas into the company codebase",
+      "url": "https://replit.com/blog/anyone-can-bring-ideas-to-company-codebase",
+      "importance_score": 0.7524,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_9e7ae5a425be",
       "title": "Gartner 调研：44% 的 CEO 说不清 AI 到底赚没赚钱",
       "url": "https://www.aibase.com/news/31868",
@@ -518,58 +571,6 @@
       "archive_date": "2026-10-26",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_9249f94c8283",
-      "title": "三星电子宣布依托AI将新型半导体材料研发周期由5年缩短至2年",
-      "url": "https://www.aibase.com/news/31867",
-      "importance_score": 0.7518,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4eb5ab6469f8",
-      "title": "Reddit 开源社区 r/opensource 封杀 AI 项目，开发者另起炉灶",
-      "url": "https://www.aibase.com/news/31866",
-      "importance_score": 0.7518,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9e26901013de",
-      "title": "LitPivot：通过文学景观中的动态情境化发展研究思路 / LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-      "url": "https://huggingface.co/blog/allenai/litpivot",
-      "importance_score": 0.7514,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_701e54b2e2ab",
-      "title": "OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output / GPT-6.1 Terra from @OpenAI is live on OpenRouter!",
-      "url": "https://x.com/OpenRouter/status/2114791584755839168",
-      "importance_score": 0.7505,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-27",
-      "company_topics": [
-        "openai",
-        "openrouter"
-      ],
-      "lens_topics": [
-        "monetization",
-        "agent-ecosystem"
-      ]
     }
   ]
 }
