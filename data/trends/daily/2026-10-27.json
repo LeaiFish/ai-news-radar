@@ -1,0 +1,473 @@
+{
+  "kind": "daily",
+  "period_start": "2026-10-26T02:44:16.626346Z",
+  "period_end": "2026-10-27T02:44:16.626346Z",
+  "source_snapshot_at": "2026-10-27T02:44:16.626346Z",
+  "input_id": "30ca77b2c3b8040e0ee75627940e7c12599bf0284845b3c3542430f5fdcaf88e",
+  "previous_report_id": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+  "schema": "radar_trend_report_v1",
+  "generated_at": "2026-10-27T03:14:36.034553Z",
+  "companies": {
+    "doubao": {
+      "state": "unchanged",
+      "reason": "已复核IGA Pages原文，延续既有成果分享判断。无限画布候选未获得足够正文与日期；模型、人事及影视采访不直接视为豆包应用更新。主题池候选有截断，保留主判断及原日期。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "网页分享与多人填写仍支撑既有办公交付路径",
+        "summary": "IGA Pages把生成网页转为分享链接，接入数据库后可供多人填写、投票和认领任务。本轮复核同一演示，未增加新的发布日期或持续使用结论。",
+        "evidence_ids": [
+          "doubao-pages"
+        ]
+      },
+      "events": []
+    },
+    "qwen": {
+      "state": "unchanged",
+      "reason": "官方更新页仍展示商家邀测、移动交办和资料连接。本轮未核实新的千问应用动作；底层模型争议及其他厂商接入不据此改写应用判断。候选截断且文档年份未明，保留旧判断日期。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "商家后台连接与移动交办延续既有路径",
+        "summary": "电商版围绕经营数据、素材和文案组织工作，切换入口仍标邀测；手机和录音设备承接离开电脑后的交办。滚动文档本轮可读，未据此确定新的首发日期。",
+        "evidence_ids": [
+          "qwenwork-updates"
+        ]
+      },
+      "events": []
+    },
+    "hunyuan": {
+      "state": "unchanged",
+      "reason": "2.90.10与2.90.0的引用追问说明重复，沿用既有事件ID；混元同传模型发布不等于元宝客户端已集成。记录整理主判断及日期不变。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "2.90.10延续引用追问，没有新增同一项功能",
+        "summary": "官方版本记录显示2.90.10仍支持选中回答文字后引用提问，功能说明与2.90.0一致。版本本身进入本期时间窗，引用追问继续按同一事件记录。",
+        "evidence_ids": [
+          "yuanbao-29010"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "yuanbao-2900-quote-followup",
+          "status": "continuation",
+          "headline": "引用追问延续到2.90.10",
+          "summary": "2.90.10重复既有引用追问说明，保留原事件ID；本轮不计新的应用功能。",
+          "evidence_ids": [
+            "yuanbao-29010"
+          ]
+        }
+      ]
+    },
+    "openai": {
+      "state": "unchanged",
+      "reason": "官方确认Terra进入ChatGPT Work和Codex，补足持续办公路线的模型供给与订阅容量证据；没有足够材料改写现有办公、经营和广告主线。页面绝对日期未核实，不计日窗新事件。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Terra进入ChatGPT Work与Codex，既有订阅可承接更多任务",
+        "summary": "官方发布页确认Plus、Pro、Enterprise和Edu用户可在ChatGPT Work与Codex使用Terra，并称同等额度能完成更多任务。该变化补足工作任务的供给与成本条件，尚不能证明用户实际完成更多工作。",
+        "evidence_ids": [
+          "chatgpt-terra-availability"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "chatgpt-work-codex-terra-availability",
+          "status": "supplement",
+          "headline": "Terra的工作产品可用范围获官方确认",
+          "summary": "核实ChatGPT Work与Codex中的可用计划和订阅容量说明；绝对日期未核实，本轮保守补证。",
+          "evidence_ids": [
+            "chatgpt-terra-availability"
+          ]
+        }
+      ]
+    },
+    "anthropic": {
+      "state": "unchanged",
+      "reason": "非营利插件将组织资料与政策接到筹款、营销和招聘任务，增加组织落地的具体形态；Enterprise统一体验仍沿用已报道事件。现有工作入口判断不变，10月26日插件因日窗边界保守补证。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Claude把组织资料与政策接到非营利机构的日常任务",
+        "summary": "非营利插件先映射组织资料，再支持筹款研究、提案报告、营销和招聘；符合条件的Team与Enterprise组织自动安装且不另收费。组织部署由通用云端任务继续细化到行业流程，案例仍是厂商材料。",
+        "evidence_ids": [
+          "claude-nonprofits-oct26",
+          "claude-enterprise-unified"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "claude-nonprofits-plugin-oct26",
+          "status": "supplement",
+          "headline": "非营利插件把资料映射与业务技能组合交付",
+          "summary": "插件覆盖组织背景、政策检查、筹款和运营任务。原文仅10月26日日精度且时区未知，临近日窗边界，不计真新增。",
+          "evidence_ids": [
+            "claude-nonprofits-oct26"
+          ]
+        }
+      ]
+    },
+    "xai": {
+      "state": "unchanged",
+      "reason": "官方0.75.8日期为10月24日，本轮晚发现的传播不作为10月26日首发。确认规则卡片、后台收尾和共享边界后，保留成果协作与维护主判断。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Grok Bot把审批规则调整放进对话中的确认卡片",
+        "summary": "0.75.8允许Bot提出增删审批规则，再由用户确认卡片；后台任务收尾和Team Bot共享名单边界也获修正。这些变化补足持续任务的控制环节，发布日期仍按10月24日补录。",
+        "evidence_ids": [
+          "grok-bot-0758"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "grok-bot-0758-review-rule-cards",
+          "status": "supplement",
+          "headline": "0.75.8补入规则确认卡片与后台任务修正",
+          "summary": "原文发布于10月24日；本轮补录控制机制及团队共享限制，未把社交传播时间当首发。",
+          "evidence_ids": [
+            "grok-bot-0758"
+          ]
+        }
+      ]
+    },
+    "google-gemini": {
+      "state": "unchanged",
+      "reason": "官方学生访谈补充已有资料与连接应用的使用方式，没有宣布新功能；访谈对象为品牌学生大使，不作为普遍使用或收益证据。保留技能、出行与商家主判断，候选截断保留缺口。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "学生案例补充个人材料如何进入学习和日程任务",
+        "summary": "Google汇总学生大使利用课程材料生成学习内容，以及将课程安排整理到日历和表格的用法。它补充已有个人资料与应用连接的使用场景，具体使用日期未披露，不计新功能发布。",
+        "evidence_ids": [
+          "gemini-student-cases-oct26"
+        ]
+      },
+      "events": [
+        {
+          "event_id": "gemini-student-context-cases-oct26",
+          "status": "supplement",
+          "headline": "学生访谈补充材料与应用连接的使用场景",
+          "summary": "文章发表在本期窗口内，所述功能及使用行为未给首次发生时间；作为案例补证，不能推导普遍学习成效。",
+          "evidence_ids": [
+            "gemini-student-cases-oct26"
+          ]
+        }
+      ]
+    },
+    "meta-llama": {
+      "state": "unchanged",
+      "reason": "已重读商家版旧发布并确认原始日期；本轮新候选多为模型、第三方项目或非Muse产品。分享功能是否恢复仍未核实，保留原判断与日期，候选截断不视为没有新动作。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "商家资料连接仍是Muse的既有落地路径",
+        "summary": "官方旧文继续支持连接社交、店铺、财务与客户工具的商家任务路径。本轮没有可核验的分享恢复进展，保留既有主判断，不把旧商家案例重新计新。",
+        "evidence_ids": [
+          "muse-business"
+        ]
+      },
+      "events": []
+    }
+  },
+  "evidence": [
+    {
+      "id": "doubao-pages",
+      "url": "https://www.pingwest.com/a/318559",
+      "title": "一份旅行手册，豆包做完，IGA Pages一句话就分享出去",
+      "source": "品玩",
+      "published_at": "2026-10-20T07:29:07Z",
+      "event_at": null,
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "doubao"
+      ],
+      "level": "media",
+      "date_basis": "original_page",
+      "note": "本轮重读正文并核对HTML pubDate。演示说明网页分享及数据库支持多人填写；功能首次开放日未定，预览时效和数据库费用条件仍存在。"
+    },
+    {
+      "id": "qwenwork-updates",
+      "url": "https://learn.qwenwork.cn/whatsnew/",
+      "title": "产品新鲜事 · 职场AI三千问",
+      "source": "千问办公",
+      "published_at": null,
+      "event_at": null,
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "qwen"
+      ],
+      "level": "official",
+      "date_basis": "undated_document",
+      "note": "本轮重读第5期及第4期。正文仅给月日且未明示年份，保持日期为空；HTTP或Reader的Published Time不能代替原文发布日期。电商入口仍标邀测。"
+    },
+    {
+      "id": "yuanbao-29010",
+      "url": "https://apps.apple.com/cn/app/id6480446430",
+      "title": "元宝2.90.10版本记录",
+      "source": "腾讯元宝 App Store",
+      "published_at": "2026-10-26T02:53:09Z",
+      "event_at": "2026-10-26T02:53:09Z",
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "hunyuan"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮核对腾讯开发者、版本正文及HTML版本时间。2.90.10和已收录2.90.0均写引用追问，沿用同一功能事件ID，版本更新不重复计为新功能。"
+    },
+    {
+      "id": "chatgpt-terra-availability",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "title": "Introducing GPT-6.1 Terra",
+      "source": "OpenAI",
+      "published_at": null,
+      "event_at": null,
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "openai"
+      ],
+      "level": "official",
+      "date_basis": "undated_document",
+      "note": "已重读官方原文。页面确认进入ChatGPT Work与Codex及订阅容量说明，但本轮未读取到可核实的绝对发表日期；两日期为空，不用抓取时间补齐。效率与额度对比为厂商描述，非用户任务实测。"
+    },
+    {
+      "id": "claude-enterprise-unified",
+      "url": "https://claude.com/resources/articles/unified-claude-enterprise",
+      "title": "Claude Cowork and chat come together for Enterprise",
+      "source": "Anthropic",
+      "published_at": "2026-10-23",
+      "event_at": "2026-10-23",
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "anthropic"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮重读正文及页面10月23日日期。统一企业体验与云端跨设备工作已在此前日报收录；本轮不重复计新，特定合规配置例外仍保留。"
+    },
+    {
+      "id": "claude-nonprofits-oct26",
+      "url": "https://claude.com/resources/articles/expanding-claude-for-nonprofits",
+      "title": "Expanding Claude for Nonprofits",
+      "source": "Anthropic",
+      "published_at": "2026-10-26",
+      "event_at": "2026-10-26",
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "anthropic"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "正文和HTML均给10月26日日精度，原文时区未知且临近日窗起点，保守记补证。已核对组织资料映射、筹款与运营技能及向非营利Team和Enterprise自动安装；案例与覆盖数字均为厂商自述。"
+    },
+    {
+      "id": "grok-bot-0758",
+      "url": "https://x.ai/changelog/bot",
+      "title": "Grok Bot 0.75.8 — Auto-review rule cards and smarter connectors",
+      "source": "xAI",
+      "published_at": "2026-10-24",
+      "event_at": "2026-10-24",
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "xai"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "官方更新记录明确10月24日，晚于发布日期的社交再传播不改变事件日期。规则变更卡片须用户确认；共享名单限制与连接器修复属产品说明，非独立安全测评。"
+    },
+    {
+      "id": "gemini-student-cases-oct26",
+      "url": "https://blog.google/products-and-platforms/products/gemini/college-student-favorite-features/",
+      "title": "15 college students share their favorite Gemini features",
+      "source": "Google",
+      "published_at": "2026-10-26T16:00:00Z",
+      "event_at": null,
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "google-gemini"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "已核对正文、作者及官方页面发表时间。15位Google Student Ambassadors描述课程材料、学习笔记与已连接应用用法；具体使用时间及这些能力首发时间未给出，不将案例汇总算新功能或代表性效果研究。"
+    },
+    {
+      "id": "muse-business",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+      "title": "The Future Is for Everyone: Muse for Small Business",
+      "source": "Meta",
+      "published_at": "2026-09-29T09:30:04Z",
+      "event_at": "2026-09-29",
+      "verified_at": "2026-10-27T03:14:36.034553Z",
+      "company_ids": [
+        "meta-llama"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮重读商家版官方原文并核对datePublished，未使用10月修改时间替代发表日。连接业务工具及商家访谈属于旧发布证据；本轮未核实分享功能恢复，不更新该状态。"
+    }
+  ],
+  "overview": null,
+  "evolution": {
+    "companies": {
+      "doubao": {
+        "type": "continued",
+        "reason": "已复核IGA Pages原文，延续既有成果分享判断。无限画布候选未获得足够正文与日期；模型、人事及影视采访不直接视为豆包应用更新。主题池候选有截断，保留主判断及原日期。",
+        "evidence_ids": [
+          "doubao-pages"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "生成网页可分享，并通过数据库承接多人填写；仍以功能演示为证据。",
+            "stage": "available",
+            "evidence_ids": [
+              "doubao-pages"
+            ]
+          }
+        ]
+      },
+      "qwen": {
+        "type": "continued",
+        "reason": "官方更新页仍展示商家邀测、移动交办和资料连接。本轮未核实新的千问应用动作；底层模型争议及其他厂商接入不据此改写应用判断。候选截断且文档年份未明，保留旧判断日期。",
+        "evidence_ids": [
+          "qwenwork-updates"
+        ],
+        "signals": [
+          {
+            "direction_id": "merchant-operations",
+            "type": "continued",
+            "summary": "连接商家后台处理经营分析和素材，电商入口仍邀测。",
+            "stage": "preview",
+            "evidence_ids": [
+              "qwenwork-updates"
+            ]
+          },
+          {
+            "direction_id": "mobile-entry",
+            "type": "continued",
+            "summary": "移动端与录音设备保留随身发起和跟进任务的入口。",
+            "stage": "available",
+            "evidence_ids": [
+              "qwenwork-updates"
+            ]
+          }
+        ]
+      },
+      "hunyuan": {
+        "type": "continued",
+        "reason": "2.90.10与2.90.0的引用追问说明重复，沿用既有事件ID；混元同传模型发布不等于元宝客户端已集成。记录整理主判断及日期不变。",
+        "evidence_ids": [
+          "yuanbao-29010"
+        ],
+        "signals": []
+      },
+      "openai": {
+        "type": "strengthened",
+        "reason": "现有持续办公路径增加模型可用范围和订阅容量证据，属于同一路径的加强；保留主判断内容与日期。",
+        "evidence_ids": [
+          "chatgpt-terra-availability"
+        ],
+        "signals": [
+          {
+            "direction_id": "commercialization",
+            "type": "strengthened",
+            "summary": "Terra进入Work与Codex，厂商称同等订阅额度可承接更多任务；实际节省未独立验证。",
+            "stage": "available",
+            "evidence_ids": [
+              "chatgpt-terra-availability"
+            ]
+          }
+        ]
+      },
+      "anthropic": {
+        "type": "strengthened",
+        "reason": "此前企业统一体验补入行业插件，将组织资料与政策直接用于业务流程；组织落地主线加强，尚不足以改写整月判断。",
+        "evidence_ids": [
+          "claude-nonprofits-oct26",
+          "claude-enterprise-unified"
+        ],
+        "signals": [
+          {
+            "direction_id": "enterprise-rollout",
+            "type": "strengthened",
+            "summary": "非营利Team与Enterprise自动安装组织资料、政策和筹款运营技能，组织落地进一步具体化。",
+            "stage": "available",
+            "evidence_ids": [
+              "claude-nonprofits-oct26",
+              "claude-enterprise-unified"
+            ]
+          }
+        ]
+      },
+      "xai": {
+        "type": "continued",
+        "reason": "官方0.75.8日期为10月24日，本轮晚发现的传播不作为10月26日首发。确认规则卡片、后台收尾和共享边界后，保留成果协作与维护主判断。",
+        "evidence_ids": [
+          "grok-bot-0758"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "持续任务增加规则调整确认卡片，并修正后台完成后的后续处理。",
+            "stage": "available",
+            "evidence_ids": [
+              "grok-bot-0758"
+            ]
+          },
+          {
+            "direction_id": "enterprise-rollout",
+            "type": "continued",
+            "summary": "Team Bot修正共享名单、连接器和例行任务读取边界；保留此前团队产品的预览阶段。",
+            "stage": "preview",
+            "evidence_ids": [
+              "grok-bot-0758"
+            ]
+          }
+        ]
+      },
+      "google-gemini": {
+        "type": "continued",
+        "reason": "官方学生访谈补充已有资料与连接应用的使用方式，没有宣布新功能；访谈对象为品牌学生大使，不作为普遍使用或收益证据。保留技能、出行与商家主判断，候选截断保留缺口。",
+        "evidence_ids": [
+          "gemini-student-cases-oct26"
+        ],
+        "signals": [
+          {
+            "direction_id": "personal-context",
+            "type": "continued",
+            "summary": "学生大使展示利用课程材料和已连接应用安排学习与日程；为厂商选择的访谈案例。",
+            "stage": "observed",
+            "evidence_ids": [
+              "gemini-student-cases-oct26"
+            ]
+          }
+        ]
+      },
+      "meta-llama": {
+        "type": "continued",
+        "reason": "已重读商家版旧发布并确认原始日期；本轮新候选多为模型、第三方项目或非Muse产品。分享功能是否恢复仍未核实，保留原判断与日期，候选截断不视为没有新动作。",
+        "evidence_ids": [
+          "muse-business"
+        ],
+        "signals": [
+          {
+            "direction_id": "merchant-operations",
+            "type": "continued",
+            "summary": "商家版连接已有社交、店铺和财务工具，旧发布继续支撑原方向。",
+            "stage": "available",
+            "evidence_ids": [
+              "muse-business"
+            ]
+          }
+        ]
+      }
+    },
+    "overview": []
+  },
+  "report_id": "4198725528cd0658d45022451e9d11386e32d7eb23bb3525f139ce8ad17a9eca"
+}
