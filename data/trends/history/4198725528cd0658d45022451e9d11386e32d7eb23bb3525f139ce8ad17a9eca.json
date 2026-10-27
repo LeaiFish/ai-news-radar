@@ -457,12 +457,12 @@
         ],
         "review_state": "assistant_draft"
       },
-      "type": "strengthened",
-      "reason": "现有持续办公路径增加模型可用范围和订阅容量证据，属于同一路径的加强；保留主判断内容与日期。",
+      "type": "continued",
+      "reason": "按用户收紧标准复核：Terra的可用计划与订阅容量补齐产品信息，未证明核心执行、实际部署或持续使用出现实质进展。",
       "signals": [
         {
           "direction_id": "commercialization",
-          "type": "strengthened",
+          "type": "continued",
           "summary": "Terra进入Work与Codex，厂商称同等订阅额度可承接更多任务；实际节省未独立验证。",
           "stage": "available",
           "evidence_ids": [
@@ -487,10 +487,19 @@
           "note": "已重读官方原文。页面确认进入ChatGPT Work与Codex及订阅容量说明，但本轮未读取到可核实的绝对发表日期；两日期为空，不用抓取时间补齐。效率与额度对比为厂商描述，非用户任务实测。"
         }
       ],
-      "provenance": "report",
-      "classified_at": "2026-10-27T03:14:36.034553Z",
+      "provenance": "review_correction",
+      "classified_at": "2026-10-27T03:26:49.988383Z",
       "state": "unchanged",
-      "checked_reason": "官方确认Terra进入ChatGPT Work和Codex，补足持续办公路线的模型供给与订阅容量证据；没有足够材料改写现有办公、经营和广告主线。页面绝对日期未核实，不计日窗新事件。"
+      "checked_reason": "官方确认Terra进入ChatGPT Work和Codex，补足持续办公路线的模型供给与订阅容量证据；没有足够材料改写现有办公、经营和广告主线。页面绝对日期未核实，不计日窗新事件。",
+      "label_corrections": [
+        {
+          "id": "20261027-openai-strengthening-review",
+          "at": "2026-10-27T03:26:49.988383Z",
+          "from_type": "strengthened",
+          "to_type": "continued",
+          "reason": "按用户收紧标准复核：Terra的可用计划与订阅容量补齐产品信息，未证明核心执行、实际部署或持续使用出现实质进展。"
+        }
+      ]
     },
     "anthropic": {
       "before": {
@@ -617,12 +626,12 @@
         ],
         "review_state": "assistant_draft"
       },
-      "type": "strengthened",
-      "reason": "此前企业统一体验补入行业插件，将组织资料与政策直接用于业务流程；组织落地主线加强，尚不足以改写整月判断。",
+      "type": "continued",
+      "reason": "按同一标准复核：非营利插件目前补充行业技能组合，未证明相较既有企业主线的核心执行、实际部署或持续使用出现实质进展。",
       "signals": [
         {
           "direction_id": "enterprise-rollout",
-          "type": "strengthened",
+          "type": "continued",
           "summary": "非营利Team与Enterprise自动安装组织资料、政策和筹款运营技能，组织落地进一步具体化。",
           "stage": "available",
           "evidence_ids": [
@@ -663,10 +672,19 @@
           "note": "正文和HTML均给10月26日日精度，原文时区未知且临近日窗起点，保守记补证。已核对组织资料映射、筹款与运营技能及向非营利Team和Enterprise自动安装；案例与覆盖数字均为厂商自述。"
         }
       ],
-      "provenance": "report",
-      "classified_at": "2026-10-27T03:14:36.034553Z",
+      "provenance": "review_correction",
+      "classified_at": "2026-10-27T03:26:49.988383Z",
       "state": "unchanged",
-      "checked_reason": "非营利插件将组织资料与政策接到筹款、营销和招聘任务，增加组织落地的具体形态；Enterprise统一体验仍沿用已报道事件。现有工作入口判断不变，10月26日插件因日窗边界保守补证。"
+      "checked_reason": "非营利插件将组织资料与政策接到筹款、营销和招聘任务，增加组织落地的具体形态；Enterprise统一体验仍沿用已报道事件。现有工作入口判断不变，10月26日插件因日窗边界保守补证。",
+      "label_corrections": [
+        {
+          "id": "20261027-anthropic-strengthening-review",
+          "at": "2026-10-27T03:26:49.988383Z",
+          "from_type": "strengthened",
+          "to_type": "continued",
+          "reason": "按同一标准复核：非营利插件目前补充行业技能组合，未证明相较既有企业主线的核心执行、实际部署或持续使用出现实质进展。"
+        }
+      ]
     },
     "xai": {
       "before": {

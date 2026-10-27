@@ -50,6 +50,8 @@ overview 为null，或包含 reason、lead、themes。每条 theme 为卡片加 
 
 新增报告须包含evolution，恰含companies（同8个机构）和overview（按本次overview.themes顺序的数组；本期overview为null时为空数组）。每家对象恰含type、reason、evidence_ids、signals。type为established首次建立、continued延续、strengthened加强、shifted转向、corrected纠偏、insufficient证据不足。继续判断时judgment保持null；转向/纠偏须写新判断，并说明原判断哪一部分改变。只有证据不足时允许空引用和空信号。事件的new/supplement/correction与判断类型分开；日期补证不等于主线转向。
 
+2026-10-27起收紧strengthened：必须对照此前判断，核实核心执行范围、实际部署范围或持续使用的实质进展，说明为什么提高原趋势判断的把握。补齐产品/套餐/额度信息、普通功能和版本更新、行业技能打包、单个厂商案例默认continued；事件可另记supplement或continuation。详细门槛与正反边界见docs/TREND_HISTORY.md“加强的收紧标准”。新prepare的evolution_contract.strengthening_policy要求任何strengthened公司、signal或首页主题额外含strengthening，恰含basis（execution_scope/deployment_scope/sustained_use）、baseline、material_delta、significance、evidence_ids。不能因选择了一个依据类别就认定加强；需由本轮Codex核对原文及基线。结构、引用缺项由apply/publisher拒绝，旧期不补造这些字段。
+
 signals每项恰含direction_id、type、summary、stage、evidence_ids。固定方向见config/trend_directions.json；同一公司可涉及多个方向。stage为announced已宣布、preview测试或邀测、available功能可用、observed使用案例、unknown阶段未核验，不能当评分或采用效果。引用必须属该公司并包含在该公司evolution.evidence_ids中。未知日期保持null，不在summary补造日期。没有核实的方向不写signal，不能由没有信号推断没有行动。
 
 overview每项恰含direction_id、type、reason、evidence_ids，映射本次实际首页主题，固定ID使改名后仍能追溯同一方向。国内外证据要求继续执行。Python只校验，不根据新闻数、标题相似或事件标签自动判定加强/转向。
@@ -57,3 +59,5 @@ overview每项恰含direction_id、type、reason、evidence_ids，映射本次�
 apply自动衍生data/trends/history.json和history/<report_id>.json。受控publisher白名单扩展为本期原始归档、latest、历史索引和本期历史快照；仍不提交其他文件。--verify须回读latest、历史索引与本期快照的report_id一致。工作流另外运行python scripts/trend_history.py --data-dir data --check。
 
 已有4期报告的回顾标签保存在annotations.json，明确使用实际annotated_at，不修改原始归档或伪装为当时已标注。新增标签应由Codex回看前后判断与证据后写入；未标注的旧记录按unclassified展示。更多语义、展示与验收要求见docs/TREND_HISTORY.md。
+
+后续复核已出刊标签只在corrections.json追加带前后标签、原因与实际日期的记录，再重建衍生历史；不改原始报告、事件状态、主判断或原更新时间。未来研判依据history_context中的有效标签，不能直接照搬原始报告中已被更正的strengthened。

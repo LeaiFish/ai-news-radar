@@ -24,7 +24,7 @@ with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
   for name in ['index.html','history.html','public-news.json']:shutil.copyfile(stage/name,out/name)
   copy_reader(stage,out)
   # Preview includes sanitized editorial history. Publishing keeps the newer remote editorial files.
-  for folder,pattern in [('',r'(latest|history)\.json'),('daily',r'\d{4}-\d{2}-\d{2}\.json'),('weekly',r'\d{4}-W\d{2}\.json'),('history',r'[a-f0-9]{64}\.json')]:
+  for folder,pattern in [('',r'(latest|history|corrections)\.json'),('daily',r'\d{4}-\d{2}-\d{2}\.json'),('weekly',r'\d{4}-W\d{2}\.json'),('history',r'[a-f0-9]{64}\.json')]:
    src=stage/'data/trends'/folder;dst=out/'data/trends'/folder
    if src.exists():
     dst.mkdir(parents=True,exist_ok=True)

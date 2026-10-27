@@ -2,6 +2,7 @@
 """Evidence-bound history derived from immutable public reports, never keyword inference."""
 from __future__ import annotations
 from copy import deepcopy
+from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 import re
@@ -13,6 +14,16 @@ except ImportError:
 
 INDEX = Path('trends/history.json')
 ANNOTATIONS = Path('trends/annotations.json')
+CORRECTIONS = Path('trends/corrections.json')
+STRENGTHENING_POLICY = {
+    'version': 2,
+    'required': True,
+    'bases': ['execution_scope', 'deployment_scope', 'sustained_use'],
+    'rule': '相较既有判断，核心任务执行范围、实际部署范围或持续使用证据出现可核实的实质进展，并说明为何提高原趋势的判断把握。',
+    'exclusions': ['补齐产品信息或可用计划', '额度、价格和性能的普通厂商说明', '常规功能、修复和版本更新', '行业模板或技能打包', '单个宣传案例或报道数量增加'],
+    'fallback': '没有足够实质增量时使用continued；事件另记supplement或continuation，不由事件标签推导趋势加强。',
+    'review_fields': ['basis', 'baseline', 'material_delta', 'significance', 'evidence_ids'],
+}
 TYPES = {
     'established': '首次建立', 'continued': '延续', 'strengthened': '加强',
     'shifted': '转向', 'corrected': '纠偏', 'insufficient': '证据不足',
@@ -28,19 +39,44 @@ def _refs(value, evidence, company=None, allow_empty=False):
         core.require(all(company in evidence[k]['company_ids'] for k in value), 'cross_company_evolution')
 
 
+def _strengthening(row, evidence, required=False):
+    review=row.get('strengthening')
+    if review is None:
+        core.require(not required or row['type']!='strengthened','strengthening_review_required')
+        return
+    core.require(row['type']=='strengthened','strengthening_only_for_strengthened')
+    core.keys(review,'basis baseline material_delta significance evidence_ids','invalid_strengthening_review')
+    core.require(review['basis'] in STRENGTHENING_POLICY['bases'],'invalid_strengthening_basis')
+    for key in ('baseline','material_delta','significance'): core.clean(review[key],1200)
+    refs=review['evidence_ids']
+    core.require(isinstance(refs,list) and refs and len(refs)==len(set(refs)) and set(refs)<=set(row['evidence_ids']) and set(refs)<=evidence.keys(),'strengthening_evidence_not_supported')
+
+
+def require_strengthening_reviews(raw):
+    """Require explicit comparison, without pretending to grade semantic importance."""
+    validate_evolution(raw)
+    evidence={e['id']:e for e in raw['evidence']}
+    value=raw['evolution']
+    for row in value['companies'].values():
+        _strengthening(row,evidence,required=True)
+        for signal in row['signals']: _strengthening(signal,evidence,required=True)
+    for row in value['overview']: _strengthening(row,evidence,required=True)
+
+
 def validate_evolution(raw, evolution=None):
     value = raw.get('evolution') if evolution is None else evolution
     core.keys(value, 'companies overview', 'invalid_evolution_fields')
     core.require(isinstance(value['companies'], dict) and set(value['companies'])==set(core.IDS), 'evolution_needs_eight_companies')
     evidence={e['id']:e for e in raw['evidence']}
     for slug,row in value['companies'].items():
-        core.keys(row,'type reason evidence_ids signals','invalid_company_evolution')
+        core.keys(row,'type reason evidence_ids signals'+(' strengthening' if 'strengthening' in row else ''),'invalid_company_evolution')
         core.require(row['type'] in TYPES,'invalid_evolution_type')
         core.clean(row['reason'],600)
         insufficient = row['type']=='insufficient'
         company=raw['companies'][slug]
         core.require(insufficient == (company['state']=='insufficient'),'insufficient_evolution_mismatch')
         _refs(row['evidence_ids'],evidence,slug,allow_empty=insufficient)
+        _strengthening(row,evidence)
         core.require(isinstance(row['signals'],list) and len(row['signals'])<=7,'invalid_direction_signals')
         if insufficient:
             core.require(not row['signals'],'insufficient_cannot_assert_signals')
@@ -50,7 +86,7 @@ def validate_evolution(raw, evolution=None):
             core.require(company['judgment'] is not None,'transition_needs_new_judgment')
         seen=set()
         for signal in row['signals']:
-            core.keys(signal,'direction_id type summary stage evidence_ids','invalid_direction_signal')
+            core.keys(signal,'direction_id type summary stage evidence_ids'+(' strengthening' if 'strengthening' in signal else ''),'invalid_direction_signal')
             direction=signal['direction_id']
             core.require(direction in DIRECTIONS and direction not in seen,'invalid_direction_id')
             seen.add(direction)
@@ -59,17 +95,19 @@ def validate_evolution(raw, evolution=None):
             core.clean(signal['summary'],600)
             _refs(signal['evidence_ids'],evidence,slug)
             core.require(set(signal['evidence_ids'])<=set(row['evidence_ids']),'signal_not_supported_by_evolution')
+            _strengthening(signal,evidence)
     themes=(raw.get('overview') or {}).get('themes',[])
     core.require(isinstance(value['overview'],list) and len(value['overview'])==len(themes),'overview_evolution_mismatch')
     seen=set()
     for row,theme in zip(value['overview'],themes):
-        core.keys(row,'direction_id type reason evidence_ids','invalid_overview_evolution')
+        core.keys(row,'direction_id type reason evidence_ids'+(' strengthening' if 'strengthening' in row else ''),'invalid_overview_evolution')
         core.require(row['direction_id'] in DIRECTIONS and row['direction_id'] not in seen,'invalid_direction_id')
         seen.add(row['direction_id'])
         core.require(row['type'] in TYPES and row['type']!='insufficient','invalid_overview_evolution_type')
         core.clean(row['reason'],600)
         _refs(row['evidence_ids'],evidence)
         core.require(set(row['evidence_ids'])<=set(theme['evidence_ids']),'overview_evolution_unsupported')
+        _strengthening(row,evidence)
     return value
 
 
@@ -114,6 +152,19 @@ def build_history(data_dir,extra_report=None):
     core.clean(json.dumps(annotations,ensure_ascii=False),2_000_000)
     if annotations['annotated_at'] is not None: core.stamp(annotations['annotated_at'])
     core.require(set(annotations['reports'])<={r['report_id'] for r in reports},'annotation_report_missing')
+    correction_file=core.load(data_dir/CORRECTIONS,{'schema':'radar_trend_corrections_v1','corrections':[]})
+    core.keys(correction_file,'schema corrections','invalid_label_corrections')
+    core.require(correction_file['schema']=='radar_trend_corrections_v1' and isinstance(correction_file['corrections'],list),'invalid_label_corrections')
+    core.clean(json.dumps(correction_file,ensure_ascii=False),2_000_000)
+    corrections={};seen_corrections=set();report_ids={r['report_id'] for r in reports}
+    for correction in correction_file['corrections']:
+        core.keys(correction,'id report_id company_id corrected_at reason previous replacement','invalid_label_correction')
+        cid=correction['id']
+        core.require(isinstance(cid,str) and re.fullmatch(r'[a-z0-9_-]{3,100}',cid) and cid not in seen_corrections,'duplicate_or_invalid_label_correction')
+        seen_corrections.add(cid)
+        core.require(correction['report_id'] in report_ids and correction['company_id'] in core.IDS,'label_correction_target_missing')
+        core.stamp(correction['corrected_at']);core.clean(correction['reason'],600)
+        corrections.setdefault(correction['report_id'],[]).append(correction)
     baseline=_baseline(data_dir)
     states={slug:{'content':{'headline':'初始月度判断','summary':baseline['companies'][slug]['judgment']['text'],'evidence_ids':[]},
                   'generated_at':None,'as_of':baseline['companies'][slug]['as_of'],
@@ -127,6 +178,20 @@ def build_history(data_dir,extra_report=None):
         if not labels and rid in annotations['reports']:
             labels=validate_evolution(report,annotations['reports'][rid]);provenance='retrospective';classified=annotations['annotated_at']
             core.require(classified and core.stamp(classified)>=core.stamp(report['generated_at']),'invalid_annotation_time')
+        labels=deepcopy(labels)
+        corrected={}
+        for correction in corrections.get(rid,[]):
+            slug=correction['company_id']
+            core.require(labels and labels['companies'][slug]==correction['previous'],'label_correction_previous_mismatch')
+            minimum=corrected[slug][-1]['at'] if slug in corrected else (classified or report['generated_at'])
+            core.require(core.stamp(minimum)<=core.stamp(correction['corrected_at'])<=datetime.now(timezone.utc)+timedelta(minutes=5),'invalid_label_correction_time')
+            labels['companies'][slug]=deepcopy(correction['replacement'])
+            validate_evolution(report,labels)
+            refs={e['id']:e for e in report['evidence']}
+            _strengthening(labels['companies'][slug],refs,required=True)
+            for signal in labels['companies'][slug]['signals']: _strengthening(signal,refs,required=True)
+            corrected.setdefault(slug,[]).append({'id':correction['id'],'at':correction['corrected_at'],
+                'from_type':correction['previous']['type'],'to_type':correction['replacement']['type'],'reason':correction['reason']})
         evidence={e['id']:e for e in report['evidence']}
         snapshot={'schema':'radar_trend_history_snapshot_v1','report_id':rid,'previous_report_id':report['previous_report_id'],
                   'kind':report['kind'],'generated_at':report['generated_at'],'period_start':report['period_start'],'period_end':report['period_end'],
@@ -150,6 +215,10 @@ def build_history(data_dir,extra_report=None):
                 'reason':label['reason'] if label else '历史未标注判断变化类型；不从文字或新闻条数推断。',
                 'signals':signals,'evidence':[evidence[k] for k in sorted(refs)],'provenance':provenance,'classified_at':classified,
                 'state':row['state'],'checked_reason':row['reason']}
+            if slug in corrected:
+                snapshot['companies'][slug].update(provenance='review_correction',classified_at=corrected[slug][-1]['at'],label_corrections=corrected[slug])
+            if label and 'strengthening' in label:
+                snapshot['companies'][slug]['strengthening']=deepcopy(label['strengthening'])
             meta['companies'][slug]={'type':type_,'changed':bool(card),'direction_ids':[s['direction_id'] for s in signals]}
             for signal in signals: latest_signals[signal['direction_id']][slug]=rid
         if report['overview']:
@@ -200,7 +269,12 @@ def history_context(data_dir):
                 row=snapshots[meta['report_id']]['companies'][slug]
                 changes[slug].append({'report_id':meta['report_id'],'generated_at':meta['generated_at'],'type':row['type'],
                                      'reason':row['reason'],'before':row['before']['content'],'after':row['after']['content'],'signals':row['signals'],'evidence':evidence_refs(row)})
+    corrections=[{'report_id':snapshot['report_id'],'company_id':slug,**correction}
+                 for snapshot in snapshots.values() for slug,row in snapshot['companies'].items()
+                 for correction in row.get('label_corrections',[])]
+    corrections.sort(key=lambda c:core.stamp(c['at']))
     return {'previous_weeks':[compact(s) for s in weekly], 'recent_changes':{k:v for k,v in changes.items() if v},
+            'label_corrections':corrections[-20:],
             'warning':'历史只作比较基线，不是本轮已核验事实；缺期不等于无变化。'}
 
 

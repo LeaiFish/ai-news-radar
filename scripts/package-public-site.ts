@@ -14,7 +14,7 @@ console.log('Previous Radar layout packaged with public-only news.');
 if (await access('data/trends/latest.json').then(()=>true,()=>false)) {
   await rm(`${out}/data/trends`, {recursive:true, force:true});
   await mkdir(`${out}/data/trends`, {recursive:true});
-  for (const name of ['latest.json','history.json']) {
+  for (const name of ['latest.json','history.json','corrections.json']) {
     if (await access(`data/trends/${name}`).then(()=>true,()=>false)) await copyFile(`data/trends/${name}`, `${out}/data/trends/${name}`);
   }
   for (const [folder, pattern] of [['daily',/^\d{4}-\d{2}-\d{2}\.json$/],['weekly',/^\d{4}-W\d{2}\.json$/],['history',/^[a-f0-9]{64}\.json$/]]) {

@@ -24,7 +24,9 @@
     const p=node('p','brief-meta',`${day(meta.generated_at)} · ${meta.kind==='weekly'?'周报':'日报'}`);p.append(document.createTextNode(' · '),badge(row.type));parent.append(p);
     if(row.provenance==='retrospective')parent.append(node('p','brief-meta',`回顾标记于 ${day(row.classified_at)}；原始报告未改写。`));
     if(row.provenance==='unclassified')parent.append(node('p','brief-meta','当时未标注变化类型，保留未标注。'));
+    correctionNotes(parent,row);
   }
+  function correctionNotes(parent,row){for(const correction of row.label_corrections||[])parent.append(node('p','brief-meta trend-label-correction',`复核更正 ${day(correction.at)} · ${label(correction.from_type)} → ${label(correction.to_type)}。${correction.reason} 原始报告保留。`));}
   function judgment(parent,title,value){
     const box=node('section','trend-history-judgment');box.append(node('h4',null,title));
     if(value?.content){box.append(node('strong',null,value.content.headline),node('p',null,value.content.summary));box.append(node('p','brief-meta',value.generated_at?`判断原更新日 ${day(value.generated_at)}`:`基线截至 ${day(value.as_of)} · AI分析草稿`));
@@ -32,14 +34,14 @@
     else box.append(node('p',null,'暂无此前结构化判断。'));
     parent.append(box);
   }
-  function legend(parent){parent.append(node('p','trend-history-note','延续：方向不变；加强：同一路径的证据加深；转向：主要路径或重心改变；纠偏：纠正原判断。首次建立和证据不足单独保留。'));
+  function legend(parent){parent.append(node('p','trend-history-note','延续：方向不变；加强：核心执行、部署范围或持续使用出现实质进展；转向：主要路径或重心改变；纠偏：纠正原判断。补齐信息和普通功能更新归延续。'));
     parent.append(node('p','trend-history-note','判断变化与新闻新增分开记录。只列已有存档；缺期、缺线索不等于没有动作。'));}
   function signalCard(parent,signal,rows){const p=node('p','trend-history-signal',`${index.directions[signal.direction_id]} · ${index.stages[signal.stage]||'阶段未核验'}：${signal.summary}`);parent.append(p);refs(parent,signal,rows);}
   async function companyBody(body,id){
     const list=node('div','trend-history-list');body.replaceChildren();legend(body);body.append(list);const metas=[...index.reports].reverse();let shown=0;
     const more=node('button','trend-history-button','显示更早记录');more.type='button';
     async function batch(){more.disabled=true;const selected=metas.slice(shown,shown+12);const loaded=await Promise.all(selected.map(m=>snapshot(m.report_id)));
-      for(let i=0;i<selected.length;i++){const meta=selected[i],row=loaded[i].companies?.[id];if(!row)continue;const article=node('article','trend-history-record');stamp(article,meta,row);article.append(node('p','trend-history-reason',row.reason));const pair=node('div','trend-history-pair');judgment(pair,'此前判断',row.before);judgment(pair,'当期判断',row.after);article.append(pair);
+      for(let i=0;i<selected.length;i++){const meta=selected[i],row=loaded[i].companies?.[id];if(!row)continue;const article=node('article','trend-history-record');stamp(article,meta,row);if(!row.label_corrections?.some(c=>c.reason===row.reason))article.append(node('p','trend-history-reason',row.reason));const pair=node('div','trend-history-pair');judgment(pair,'此前判断',row.before);judgment(pair,'当期判断',row.after);article.append(pair);
         for(const s of row.signals||[])signalCard(article,s,row.evidence);list.append(article);}
       shown+=selected.length;more.disabled=false;more.hidden=shown>=metas.length;}
     more.addEventListener('click',()=>batch().catch(()=>{more.disabled=false;more.textContent='读取失败，点击重试';}));body.append(more);await batch();
@@ -52,6 +54,7 @@
       const snap=loaded[i],row=snap?.companies?.[id],signal=row?.signals?.find(s=>s.direction_id===direction);
       if(signal){article.append(node('p','brief-meta',`判断记录 ${day(snap.generated_at)} · ${index.stages[signal.stage]||'阶段未核验'}`),badge(signal.type),node('p',null,signal.summary));refs(article,signal,row.evidence);
         if(row.provenance==='retrospective')article.append(node('p','brief-meta',`回顾标记 ${day(row.classified_at)}`));
+        correctionNotes(article,row);
         if(latest?.companies?.[id]?.type==='insufficient')article.append(node('p','brief-meta','最近一期证据不足，以上为此前留存线索。'));
       }else article.append(node('p','brief-meta',map[id]?'该期线索暂时无法读取。':'暂无已归档线索。'));
       box.append(article);});parent.replaceChildren(box);

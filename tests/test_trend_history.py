@@ -87,7 +87,10 @@ def test_prepare_requires_explicit_future_labels_and_has_previous_weeks(tmp_path
     new=deepcopy(report)
     for k in ['kind','period_start','period_end','source_snapshot_at','previous_report_id','input_id']: new[k]=bundle[k]
     with pytest.raises(ValueError,match='evolution_required'): bind_input(new,bundle)
-    evolution(new);bind_input(new,bundle)
+    evolution(new)
+    with pytest.raises(ValueError,match='strengthening_review_required'): bind_input(new,bundle)
+    new['evolution']['companies']['doubao']['strengthening'] = strengthening()
+    bind_input(new,bundle)
 
 
 def test_unknown_annotations_or_changed_hash_are_rejected(tmp_path,report):
@@ -128,3 +131,82 @@ def test_context_keeps_strengthening_without_resetting_judgment(tmp_path,report)
     context=history.history_context(tmp_path)
     assert context['recent_changes']['doubao'][0]['type']=='strengthened'
     assert context['recent_changes']['doubao'][0]['evidence'][0]['url']=='https://www.doubao.com/work'
+
+
+def strengthening():
+    return {'basis':'execution_scope','baseline':'此前仅能交付静态页面',
+            'material_delta':'新增数据库读写、角色权限和持续协作执行链路',
+            'significance':'原有交付只能供人查看，现可独立承接多人长期办理流程',
+            'evidence_ids':['doubao-1']}
+
+
+@pytest.mark.parametrize('target',['company','signal','overview'])
+def test_future_strengthening_requires_material_comparison(tmp_path,report,target):
+    evolution(updated(report))
+    (tmp_path/'topics.json').write_text(json.dumps({'generated_at':report['source_snapshot_at']}))
+    bundle=prepare(tmp_path,'daily')
+    for key in ['kind','period_start','period_end','source_snapshot_at','previous_report_id','input_id']:report[key]=bundle[key]
+    row=report['evolution']['companies']['doubao'];row['strengthening']=strengthening()
+    if target=='signal':
+        row['signals']=[{'direction_id':'shared-deliverables','type':'strengthened','summary':'多人办理流程','stage':'available','evidence_ids':['doubao-1']}]
+        row=row['signals'][0]
+    elif target=='overview':
+        report['evidence'][0]['company_ids']=['doubao','openai']
+        report['overview']={'reason':'重要范围扩展','lead':'成果承接多人业务','themes':[{'headline':'多人办理流程扩展','summary':'两家公司增加完整办理范围','company_ids':['doubao','openai'],'evidence_ids':['doubao-1']}]}
+        report['evolution']['overview']=[{'direction_id':'shared-deliverables','type':'strengthened','reason':'范围扩大','evidence_ids':['doubao-1']}]
+        row=report['evolution']['overview'][0]
+    else:row.pop('strengthening')
+    with pytest.raises(ValueError,match='strengthening_review_required'):bind_input(report,bundle)
+    row['strengthening']=strengthening()
+    bind_input(report,bundle)
+    row['strengthening']['basis']='product_information'
+    with pytest.raises(ValueError,match='invalid_strengthening_basis'):bind_input(report,bundle)
+
+
+def test_strengthening_review_references_must_support_the_label(report):
+    evolution(updated(report))
+    row=report['evolution']['companies']['doubao'];row['strengthening']=strengthening()
+    row['strengthening']['evidence_ids']=['not-cited']
+    with pytest.raises(ValueError,match='strengthening_evidence'):validate_report(report)
+
+
+def correction(report):
+    old=report['evolution']['companies']['doubao']
+    replacement=deepcopy(old);replacement.update(type='continued',reason='补齐信息不足以加强原趋势')
+    return {'id':'review-doubao-1','report_id':digest(report),'company_id':'doubao',
+            'corrected_at':report['generated_at'],'reason':'按用户收紧的标准复核',
+            'previous':deepcopy(old),'replacement':replacement}
+
+
+def store_corrections(tmp_path,rows):
+    (tmp_path/'trends/corrections.json').write_text(json.dumps({'schema':'radar_trend_corrections_v1','corrections':rows}))
+
+
+def test_label_correction_preserves_published_report_and_effective_context(tmp_path,report):
+    evolution(updated(report));report['companies']['doubao'].update(state='unchanged',judgment=None,changes=None)
+    write_report(tmp_path,report)
+    path=tmp_path/archive_path(validate_report(report));before=path.read_bytes()
+    store_corrections(tmp_path,[correction(report)])
+    index,snapshots=history.build_history(tmp_path)
+    row=snapshots[digest(report)]['companies']['doubao']
+    assert row['type']=='continued' and row['provenance']=='review_correction'
+    assert row['label_corrections'][0]['from_type']=='strengthened'
+    assert row['label_corrections'][0]['to_type']=='continued'
+    assert row['before']==row['after'] and path.read_bytes()==before
+    context=history.history_context(tmp_path)
+    assert 'doubao' not in context['recent_changes']
+    assert context['label_corrections'][0]['to_type']=='continued'
+
+
+@pytest.mark.parametrize('mutation',['wrong_previous','early','unknown_report','duplicate','sensitive','changed_judgment','unqualified_strengthening'])
+def test_invalid_correction_fails_closed(tmp_path,report,mutation):
+    evolution(updated(report));report['companies']['doubao'].update(state='unchanged',judgment=None,changes=None)
+    write_report(tmp_path,report);c=correction(report)
+    if mutation=='wrong_previous':c['previous']['reason']='not the archived label'
+    if mutation=='early':c['corrected_at']='2020-01-01T00:00:00Z'
+    if mutation=='unknown_report':c['report_id']='f'*64
+    if mutation=='sensitive':c['reason']='Bearer private-value'
+    if mutation=='changed_judgment':c['replacement']['type']='shifted'
+    if mutation=='unqualified_strengthening':c['replacement']['type']='strengthened'
+    store_corrections(tmp_path,[c,c] if mutation=='duplicate' else [c])
+    with pytest.raises(ValueError):history.build_history(tmp_path)

@@ -161,7 +161,8 @@ def prepare(data_dir, kind, now=None):
               "previous_overview": previous.get("overview"), "companies": companies,
               "known_daily_events": daily_event_index(data_dir, as_of),
               "history_context": history_module().history_context(data_dir),
-              "evolution_contract": {"types": history_module().TYPES, "directions": history_module().DIRECTIONS, "required": True},
+              "evolution_contract": {"types": history_module().TYPES, "directions": history_module().DIRECTIONS, "required": True,
+                                     "strengthening_policy": history_module().STRENGTHENING_POLICY},
               "warning": "候选时间、标题、摘要未经本轮原文核验；原文失败是覆盖缺口。既有判断不是新证据；同一事件多家报道只算一次。"}
     bundle["input_id"] = digest(bundle)
     return bundle
@@ -357,6 +358,8 @@ def bind_input(raw, bundle):
     require(bundle.get("input_id") == digest({k: v for k, v in bundle.items() if k != "input_id"}), "input_bundle_tampered")
     if bundle.get("evolution_contract", {}).get("required"):
         require("evolution" in raw, "evolution_required_for_prepared_input")
+    if bundle.get("evolution_contract", {}).get("strengthening_policy", {}).get("required"):
+        history_module().require_strengthening_reviews(raw)
     for key in ("input_id", "kind", "period_start", "period_end", "source_snapshot_at", "previous_report_id"):
         require(raw.get(key) == bundle.get(key), "report_input_mismatch")
 

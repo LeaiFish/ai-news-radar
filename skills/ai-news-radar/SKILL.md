@@ -175,6 +175,14 @@ or rebuild its crawler unless the user explicitly wants a self-hosted variant.
 
 ## Validate
 
+For daily/weekly trend reports, read `docs/TREND_REPORTS.md` and `docs/TREND_HISTORY.md` first.
+Compare against the existing judgment before labeling `strengthened`: filling product/plan/allowance information,
+routine feature updates, industry skill packaging and isolated promotional cases default to `continued` plus
+event-level `supplement`/`continuation`. A material change to core execution, actual deployment scope or sustained
+use needs the prepared `strengthening_policy` comparison and citations for every strengthened company, signal
+or homepage theme. Do not bypass `bind_input` checks. Use effective history and its dated label corrections;
+never overwrite an issued raw report to revise a classification.
+
 Run the fastest relevant checks:
 
 ```bash

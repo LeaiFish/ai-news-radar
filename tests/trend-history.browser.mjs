@@ -39,10 +39,16 @@ try {
  const index=await fetch(new URL('data/trends/history.json',base)).then(r=>r.json());
  await page.route(`**/data/trends/history/${index.latest_report_id}.json`,async route=>{
   const response=await route.fetch();const x=await response.json();x.companies.openai.reason='<img src=x onerror=alert(1)>';
+  x.companies.openai.type='continued';x.companies.openai.provenance='review_correction';
+  x.companies.openai.label_corrections=[{at:'2026-10-27T04:00:00Z',from_type:'strengthened',to_type:'continued',reason:'补齐产品信息不足以加强趋势'}];
   await route.fulfill({json:x});
  });
  await page.goto(new URL('history.html?company=openai',base).href);await page.locator('.trend-history-record').first().waitFor();
  assert.equal(await page.locator('#historyContent img').count(),0);assert.match(await page.locator('#historyContent').innerText(),/<img/);
+ const corrected=page.locator('.trend-history-record').first();
+ assert.equal(await corrected.locator('.trend-evolution-continued').count(),1);
+ assert.match(await corrected.locator('.trend-label-correction').innerText(),/加强 → 延续/);
+ assert.match(await corrected.locator('.trend-label-correction').innerText(),/原始报告保留/);
  await page.setViewportSize({width:1440,height:1000});
  await page.locator('[data-radar-theme="dark"]').click();
  const colors=await page.locator('.trend-history-judgment').first().evaluate(el=>({bg:getComputedStyle(el).backgroundColor,fg:getComputedStyle(el).color}));

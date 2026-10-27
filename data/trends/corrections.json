@@ -1,0 +1,95 @@
+{
+  "schema": "radar_trend_corrections_v1",
+  "corrections": [
+    {
+      "id": "20261027-openai-strengthening-review",
+      "report_id": "4198725528cd0658d45022451e9d11386e32d7eb23bb3525f139ce8ad17a9eca",
+      "company_id": "openai",
+      "corrected_at": "2026-10-27T03:26:49.988383Z",
+      "reason": "按用户收紧标准复核：Terra的可用计划与订阅容量补齐产品信息，未证明核心执行、实际部署或持续使用出现实质进展。",
+      "previous": {
+        "type": "strengthened",
+        "reason": "现有持续办公路径增加模型可用范围和订阅容量证据，属于同一路径的加强；保留主判断内容与日期。",
+        "evidence_ids": [
+          "chatgpt-terra-availability"
+        ],
+        "signals": [
+          {
+            "direction_id": "commercialization",
+            "type": "strengthened",
+            "summary": "Terra进入Work与Codex，厂商称同等订阅额度可承接更多任务；实际节省未独立验证。",
+            "stage": "available",
+            "evidence_ids": [
+              "chatgpt-terra-availability"
+            ]
+          }
+        ]
+      },
+      "replacement": {
+        "type": "continued",
+        "reason": "按用户收紧标准复核：Terra的可用计划与订阅容量补齐产品信息，未证明核心执行、实际部署或持续使用出现实质进展。",
+        "evidence_ids": [
+          "chatgpt-terra-availability"
+        ],
+        "signals": [
+          {
+            "direction_id": "commercialization",
+            "type": "continued",
+            "summary": "Terra进入Work与Codex，厂商称同等订阅额度可承接更多任务；实际节省未独立验证。",
+            "stage": "available",
+            "evidence_ids": [
+              "chatgpt-terra-availability"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20261027-anthropic-strengthening-review",
+      "report_id": "4198725528cd0658d45022451e9d11386e32d7eb23bb3525f139ce8ad17a9eca",
+      "company_id": "anthropic",
+      "corrected_at": "2026-10-27T03:26:49.988383Z",
+      "reason": "按同一标准复核：非营利插件目前补充行业技能组合，未证明相较既有企业主线的核心执行、实际部署或持续使用出现实质进展。",
+      "previous": {
+        "type": "strengthened",
+        "reason": "此前企业统一体验补入行业插件，将组织资料与政策直接用于业务流程；组织落地主线加强，尚不足以改写整月判断。",
+        "evidence_ids": [
+          "claude-nonprofits-oct26",
+          "claude-enterprise-unified"
+        ],
+        "signals": [
+          {
+            "direction_id": "enterprise-rollout",
+            "type": "strengthened",
+            "summary": "非营利Team与Enterprise自动安装组织资料、政策和筹款运营技能，组织落地进一步具体化。",
+            "stage": "available",
+            "evidence_ids": [
+              "claude-nonprofits-oct26",
+              "claude-enterprise-unified"
+            ]
+          }
+        ]
+      },
+      "replacement": {
+        "type": "continued",
+        "reason": "按同一标准复核：非营利插件目前补充行业技能组合，未证明相较既有企业主线的核心执行、实际部署或持续使用出现实质进展。",
+        "evidence_ids": [
+          "claude-nonprofits-oct26",
+          "claude-enterprise-unified"
+        ],
+        "signals": [
+          {
+            "direction_id": "enterprise-rollout",
+            "type": "continued",
+            "summary": "非营利Team与Enterprise自动安装组织资料、政策和筹款运营技能，组织落地进一步具体化。",
+            "stage": "available",
+            "evidence_ids": [
+              "claude-nonprofits-oct26",
+              "claude-enterprise-unified"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
