@@ -45,7 +45,7 @@ def public_url(value):
             return ipaddress.ip_address(host).is_global
         except ValueError:
             return True
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, AttributeError):
         return False
 
 
@@ -129,9 +129,9 @@ def parse_detail(raw):
 
 
 def sanitize(row):
-    if not isinstance(row, dict) or not case_url(row.get('case_url', '')) or row.get('category') not in {'shopping', 'life', 'office'}:
+    if not isinstance(row, dict) or not case_url(row.get('case_url', '')) or row.get('category') not in ('shopping', 'life', 'office'):
         return None
-    clean = {k: row.get(k) for k in FIELDS}
+    clean = {k: row.get(k) if isinstance(row.get(k), str) else None for k in FIELDS}
     if not public_url(clean.get('original_url')):
         clean['original_url'] = None
     return clean
@@ -147,7 +147,8 @@ def collect(previous=None, now=None, getter=fetch):
         if not candidates:
             raise ValueError('No valid RSS cases')
     except Exception:
-        return {**previous, 'version': 1, 'source_url': FEED, 'last_attempt_at': at,
+        return {'version': 1, 'source_url': FEED, 'last_attempt_at': at,
+                'generated_at': previous.get('generated_at'), 'last_success_at': previous.get('last_success_at'),
                 'status': {'ok': False, 'partial': True, 'error': 'feed_unavailable'}, 'items': list(old.values())}
     failures = 0
     def detail(row):

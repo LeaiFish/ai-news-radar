@@ -59,3 +59,21 @@ def test_detail_failure_preserves_known_case_and_first_discovery():
     assert second['status']['detail_failures'] == 1
     assert second['status']['partial'] is True
     assert 'secret' not in sanitize({**first['items'][0], 'secret': 'do not publish'})
+
+
+def test_cli_refreshes_cases_separately_and_failure_export_has_no_unknown_fields(tmp_path, monkeypatch):
+    import sys
+    from scripts import build_topics, collect_case_leads
+    first = collect(now=NOW, getter=lambda u: feed() if u.endswith('feed.xml') else page())
+    def fail(u): raise RuntimeError('offline')
+    failed = collect({**first, 'raw_body': 'never export'}, NOW, fail)
+    assert 'raw_body' not in failed
+    assert sanitize({'case_url': URL, 'category': []}) is None
+    monkeypatch.setattr(collect_case_leads, 'collect', lambda previous: first)
+    monkeypatch.setattr(sys, 'argv', ['build_topics.py', '--data-dir', str(tmp_path)])
+    assert build_topics.main() == 0
+    import json
+    cases = json.loads((tmp_path / 'case-leads.json').read_text())
+    topic = json.loads((tmp_path / 'topics/product-entry.json').read_text())
+    assert cases['items'][0]['case_url'] == URL
+    assert topic['items'] == []
