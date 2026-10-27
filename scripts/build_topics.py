@@ -693,10 +693,17 @@ def main() -> int:
         action="store_true",
         help="Also write topics/index.html and topics/<id>/index.html stubs",
     )
+    parser.add_argument("--skip-case-leads", action="store_true", help="Skip the separate public case-lead refresh")
     args = parser.parse_args()
 
     config_path = Path(args.config)
     data_dir = Path(args.data_dir)
+    if not args.skip_case_leads:
+        try:
+            from scripts.collect_case_leads import refresh
+        except ModuleNotFoundError:
+            from collect_case_leads import refresh
+        refresh(data_dir / "case-leads.json")
     if args.translate_max_new > 0:
         count = backfill_topic_titles(data_dir, config_path, args.translate_max_new)
         print(f"Translated recent topic headlines: {count}")

@@ -8,6 +8,8 @@ await copyFile('history.html',`${out}/history.html`);
 for (const name of ['logo.svg','styles.css','sidebar.css','topics.css','perspective.css','perspective.js','public-projection.js','aihot-skin.css','research-analysis.js','trend-reports.js','trend-history.js','history.css']) await copyFile(`assets/${name}`,`${out}/assets/${name}`);
 await copyFile('config/topics.json',`${out}/config/topics.json`);
 if (await access('.public-export/public-news.json').then(()=>true,()=>false)) await copyFile('.public-export/public-news.json',`${out}/public-news.json`);
+await mkdir(`${out}/data`,{recursive:true});
+if (await access('data/case-leads.json').then(()=>true,()=>false)) await copyFile('data/case-leads.json',`${out}/data/case-leads.json`);
 await writeFile(`${out}/.nojekyll`,'');
 console.log('Previous Radar layout packaged with public-only news.');
 

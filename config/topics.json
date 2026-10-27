@@ -6,7 +6,7 @@
     {
       "id": "lens",
       "name": "产业透镜",
-      "description": "从收费、入口、Agent 落地与办公组织看产业怎么走",
+      "description": "从商业化、Personal Agent、Agent 生态与办公组织看产业变化",
       "filter": "topics"
     },
     {
@@ -81,8 +81,8 @@
     },
     {
       "id": "product-entry",
-      "name": "产品入口与链路",
-      "description": "国民级 App 的 AI 入口在哪、搜索与助手链路怎么接、谁在抢入口？",
+      "name": "Personal Agent 专题",
+      "description": "跟踪个人 Agent 的多端接入、持续任务与实际代办，覆盖购物、生活事务和办公协作。",
       "group": "lens",
       "pools": ["stories", "brief", "latest", "archive"],
       "keywords": [
@@ -114,9 +114,24 @@
         "浏览器入口",
         "助手入口",
         "国民级",
-        "超级 App"
+        "超级 App",
+        "Personal Agent",
+        "personal assistant",
+        "个人智能体",
+        "个人 Agent",
+        "个人助理",
+        "Claude Cowork",
+        "ChatGPT Agent",
+        "Meta Muse",
+        "Grok Bot",
+        "OpenClaw",
+        "Perplexity Computer",
+        "Perplexity Comet",
+        "Siri AI",
+        "Siri 助手",
+        "Alexa+"
       ],
-      "patterns": ["(搜索|助手|对话|聊天|办公|产品|超级|桌面|系统).{0,8}(入口|搜索框|侧边栏)", "(接入|嵌入|进驻|入驻).{0,8}(搜索|搜一搜|支付宝|浏览器|桌面)", "(入口).{0,6}(争夺|之争|大战)"],
+      "patterns": ["(搜索|助手|对话|聊天|办公|产品|超级|桌面|系统).{0,8}(入口|搜索框|侧边栏)", "(接入|嵌入|进驻|入驻).{0,8}(搜索|搜一搜|支付宝|浏览器|桌面)", "(入口).{0,6}(争夺|之争|大战)", "(Agent|助手|智能体).{0,18}(购物|下单|预订|行程|退货|报销|邮件|日程|代办|定时|记忆|跨应用)", "(购物|下单|预订|行程|退货|报销|邮件|日程|代办|定时|记忆|跨应用).{0,18}(Agent|助手|智能体)"],
       "exclude": ["举报入口", "合规入口", "航道入口"]
     },
     {

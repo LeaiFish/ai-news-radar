@@ -11,6 +11,9 @@ def copy_reader(stage,out):
  (out/'config').mkdir(parents=True,exist_ok=True)
  for name in ASSETS:shutil.copyfile(stage/'assets'/name,out/'assets'/name)
  shutil.copyfile(stage/'config/topics.json',out/'config/topics.json')
+ if (stage/'data/case-leads.json').exists():
+  (out/'data').mkdir(exist_ok=True)
+  shutil.copyfile(stage/'data/case-leads.json',out/'data/case-leads.json')
 def run(*cmd,cwd=ROOT):return subprocess.run(cmd,cwd=cwd,check=True,text=True,capture_output=True).stdout
 with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
  stage=Path(folder)/'site'
@@ -45,6 +48,7 @@ with tempfile.TemporaryDirectory(prefix='radar-public-') as folder:
   for name in ['index.html','history.html','public-news.json']:shutil.copyfile(stage/name,checkout/name)
   copy_reader(stage,checkout)
   run('git','add','--','index.html','history.html','public-news.json','assets/logo.svg','assets/styles.css','assets/sidebar.css','assets/topics.css','assets/perspective.css','assets/perspective.js','assets/public-projection.js','assets/aihot-skin.css','assets/research-analysis.js','assets/trend-reports.js','assets/trend-history.js','config/topics.json',cwd=checkout)
+  if (checkout/'data/case-leads.json').exists():run('git','add','--','data/case-leads.json',cwd=checkout)
   if subprocess.run(['git','diff','--cached','--quiet'],cwd=checkout).returncode==0:print('No public changes')
   else:
    run('git','-c','user.name=AI Perspective publisher','-c','user.email=publisher@localhost','commit','-m','chore: publish local public-news projection',cwd=checkout)

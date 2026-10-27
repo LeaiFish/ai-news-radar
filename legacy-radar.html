@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="./assets/styles.css?v=ui20260923a" />
     <link rel="stylesheet" href="./assets/sidebar.css?v=ui20260923a" />
     <link rel="stylesheet" href="./assets/topics.css?v=ui20260923a" />
-    <link rel="stylesheet" href="./assets/perspective.css?v=historypage20261026" />
+    <link rel="stylesheet" href="./assets/perspective.css?v=cases20261027" />
     <link rel="stylesheet" href="./assets/aihot-skin.css?v=20261013b" />
   </head>
   <body>
@@ -193,7 +193,7 @@
             <footer class="related" id="relatedTopics">
               <span class="related-label">关联研究</span>
               <div class="related-list" id="relatedList">
-                <a class="ai-tag" href="./topics/product-entry/">产品入口与链路</a>
+                <a class="ai-tag" href="./topics/product-entry/">Personal Agent 专题</a>
                 <a class="ai-tag" href="./topics/agent-ecosystem/">Agent 路线与生态</a>
                 <a class="ai-tag" href="./topics/monetization/">付费订阅与商业化</a>
               </div>
@@ -253,6 +253,10 @@
                   <h2>事实与阐述</h2>
                   <div id="packFacts"></div>
                 </section>
+                <section class="pack-section" id="pack-cases" hidden>
+                  <h2>案例线索</h2>
+                  <div id="packCases"></div>
+                </section>
                 <section class="pack-section" id="pack-open">
                   <h2>待验证</h2>
                   <div id="packOpen"></div>
@@ -263,6 +267,7 @@
                 <a href="#pack-judgment">当前判断</a>
                 <a href="#pack-delta">本期变化</a>
                 <a href="#pack-facts">事实与阐述</a>
+                <a href="#pack-cases" id="caseLeadsToc" hidden>案例线索</a>
                 <a href="#pack-open">待验证</a>
                 <p class="nav-label">相关研究</p>
                 <div class="toc-links" id="packRelated"></div>
@@ -294,7 +299,7 @@
         <section class="brief-change">
           <h3>入口竞争开始深入已有场景，能否接住背景资料和后续操作变得更关键。</h3>
           <p>豆包把出行、酒店等服务接入对话，千问连接网盘资料与经营任务，元宝强化录音整理和生活技能。这些动作分别利用服务供给、个人数据和现场信息来承接需求。入口的价值因此需要看整条使用链路：用户是否更容易发起任务，已有资料能否准确参与处理，结果能否顺畅交给下一步。功能入口增多之后，持续复用和实际操作量的变化更值得跟踪。</p>
-          <p class="brief-citations">参考研究：<a href="./?space=research&amp;kind=org&amp;id=doubao">豆包</a> · <a href="./?space=research&amp;kind=org&amp;id=qwen">千问</a> · <a href="./?space=research&amp;kind=org&amp;id=hunyuan">元宝</a> · <a href="./?space=research&amp;kind=trend&amp;id=product-entry">产品入口与链路</a></p>
+          <p class="brief-citations">参考研究：<a href="./?space=research&amp;kind=org&amp;id=doubao">豆包</a> · <a href="./?space=research&amp;kind=org&amp;id=qwen">千问</a> · <a href="./?space=research&amp;kind=org&amp;id=hunyuan">元宝</a> · <a href="./?space=research&amp;kind=trend&amp;id=product-entry">Personal Agent 专题</a></p>
         </section>
         <section class="brief-change">
           <h3>办公与 Agent 竞争向完整交付推进，成果能否继续修改、接续和协作成为分化点。</h3>
@@ -403,6 +408,7 @@
     </template>
     <template id="productEntryJudgmentBrief">
       <div class="research-brief">
+        <p>本专题跟踪个人 Agent 如何接入用户的设备与应用、持续推进任务，以及完成购物、生活事务和办公协作。下方产品动态与案例线索分别呈现，案例保留完成结果和人工介入的边界。</p>
         <p class="brief-meta">观察期：2026 年 9 月 20 日—10 月 19 日 · 公开样本归纳 · AI 分析草稿，待人工确认</p>
         <p><strong>AI 入口的应用价值，越来越取决于能否在用户产生需求的位置接住任务，并把后续操作接下去。</strong>本轮样本中，豆包把出行服务集中进对话入口，Claude 进入正在编辑的 Google 文件，千问则把个人网盘资料和随身设备接到任务发起流程中。入口扩展同时涉及触达位置、可利用的背景信息与交付去向。<span class="brief-citations"><a href="https://finance.sina.com.cn/stock/t/2026-09-30/doc-initqqvi2186539.shtml" target="_blank" rel="noopener noreferrer">豆包出行入口</a> · <a href="https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides" target="_blank" rel="noopener noreferrer">Claude for Google Workspace</a> · <a href="https://finance.eastmoney.com/a/202609283885199882.html" target="_blank" rel="noopener noreferrer">千问网盘接入</a></span></p>
         <p>从这些动作看，值得关注的已包括“能否少一次跳转、少一次复制、少解释一遍背景”。入口出现不等于流量迁移或使用习惯形成，后续仍需看用户是否主动复用、服务是否稳定，以及关键步骤能否在可控范围内完成。</p>
@@ -588,6 +594,6 @@
       </div>
     </template>
     <script src="./assets/trend-reports.js?v=historypage20261026"></script>
-    <script src="./assets/perspective.js?v=historypage20261026"></script>
+    <script src="./assets/perspective.js?v=cases20261027"></script>
   </body>
 </html>

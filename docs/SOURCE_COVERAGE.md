@@ -547,3 +547,31 @@ search remains separate; search failures are not disguised as successful
 aggregator coverage.
 
 WeChat quality checks prioritize recent public API leads and date-filtered search, with bounded transient retries, pilot identity checks and explicit historical-versus-24-hour counts. Partial coverage remains visible as a warning and source-health status; see `WECHAT_SOURCE_BRIDGE.md`.
+
+## Personal Agent case leads (2026-10-27)
+
+`https://agentusecases.ai/feed.xml` is collected by `scripts/collect_case_leads.py`
+into the independent public metadata file `data/case-leads.json`. The existing
+`product-entry` route is now named **Personal Agent 专题**; keeping the route
+preserves bookmarks. The topic covers multi-device access, ongoing tasks and
+practical delegation. Its case panel prioritizes Shopping & Errands, Life Admin
+& Home / Money, Bills & Benefits, and Work & Operations, with separate filters.
+Cases never enter latest-news pools, stories, daily briefs or trend-count inputs.
+
+`collected_at` is the directory RSS publication date; `first_seen_at` is our first
+observation. `original_published_at` is a nullable day taken from the case page's
+explicit Source date, with `date_source=case_directory`. Month/year-only labels
+retain their precision without inventing a day; unknown dates remain null. The
+original source is linked but not fetched by this collector. Dates and outcomes
+are directory-reported metadata, not independent verification or reproduced tests.
+Only selected metadata fields are stored; page bodies and suggested prompts are
+not retained. RSS/detail fetch failures retain previous cases with visible partial
+status. Successful runs retain up to 500 cases collected within 120 days. The RSS
+currently exposes 60 entries, so this is ongoing discovery, not a full directory
+backfill or a guarantee that all new cases are recovered between refreshes.
+
+Both GitHub Actions and the local free cycle invoke this collector through the
+existing `build_topics.py` CLI step; `--skip-case-leads` permits offline topic
+rebuilds. No additional workflow permissions are needed. The static
+packager and local sync explicitly copy only `data/case-leads.json` as an extra
+public artifact, preserving the narrow public export boundary.

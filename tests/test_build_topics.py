@@ -207,7 +207,7 @@ def test_lens_copy_asks_business_questions():
     agent_ecosystem = _config_topic("agent-ecosystem")
     workplace = _config_topic("workplace")
     assert monetization["description"] == "各家怎么收费、谁在抽佣、付费转化与定价在怎么变？"
-    assert product_entry["description"] == "国民级 App 的 AI 入口在哪、搜索与助手链路怎么接、谁在抢入口？"
+    assert product_entry["description"] == "跟踪个人 Agent 的多端接入、持续任务与实际代办，覆盖购物、生活事务和办公协作。"
     assert agent_ecosystem["description"] == "各家 Agent 的产品形态、开放生态与落地场景在怎么演进？"
     assert workplace["description"] == "AI 办公产品的进展，以及各家为 AI 做的组织与人事调整？"
     config = load_topic_config(ROOT / "config" / "topics.json")
@@ -554,3 +554,11 @@ def test_committed_topic_pages_cover_config():
         assert f'data-topic-id="{topic["id"]}"' in html
         assert 'src="../../assets/topics.js' in html
         assert 'src="../../assets/sidebar.js' in html
+
+
+def test_personal_agent_topic_covers_tasks_without_generic_model_noise():
+    topic = _config_topic("product-entry")
+    assert topic["name"] == "Personal Agent 专题"
+    for title in ["Claude Cowork handles recurring inbox tasks", "Meta Muse 个人代办", "AI 助手完成退货与报销", "OpenClaw personal assistant"]:
+        assert record_matches_topic({"title": title}, topic)
+    assert not record_matches_topic({"title": "New GPU training benchmark"}, topic)

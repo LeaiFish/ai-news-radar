@@ -24,5 +24,7 @@ if built.exists():
  shutil.copyfile(built/'index.html',public/'index.html')
  shutil.copytree(built/'assets',public/'assets',dirs_exist_ok=True)
  shutil.copytree(built/'config',public/'config',dirs_exist_ok=True)
+ (public/'data').mkdir(exist_ok=True)
+ shutil.copyfile(news/'case-leads.json',public/'data/case-leads.json')
  (public/'.nojekyll').write_text('')
 print('Free public-news cycle complete')

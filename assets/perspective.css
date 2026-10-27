@@ -1145,3 +1145,8 @@ input:focus-visible {
 .history-page-content { padding:18px 22px; }
 .trend-history-baseline { background:var(--surface-soft); border-radius:8px; padding:12px; font-size:12px; }
 @media(max-width:650px) { .history-page-content { padding:14px; } }
+
+/* Case discovery stays visually separate from the dated news timeline. */
+.case-leads-list { display: grid; gap: 12px; margin-top: 16px; }
+#pack-cases .timeline-pagination { flex-wrap: wrap; }
+#pack-cases .timeline-page[aria-pressed="true"] { font-weight: 700; text-decoration: underline; }

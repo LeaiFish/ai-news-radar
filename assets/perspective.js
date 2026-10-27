@@ -1207,6 +1207,95 @@
     return true;
   }
 
+  async function renderCaseLeads(record, token) {
+    const section = document.getElementById("pack-cases");
+    const toc = document.getElementById("caseLeadsToc");
+    const slot = document.getElementById("packCases");
+    const enabled = record.kind === "trend" && record.id === "product-entry";
+    if (!section || !slot) return;
+    section.hidden = !enabled;
+    if (toc) toc.hidden = !enabled;
+    clear(slot);
+    if (!enabled) return;
+    slot.append(el("p", "placeholder-line", "正在读取案例线索…"));
+    let payload;
+    try {
+      payload = await loadSiteJson("data/case-leads.json");
+      if (!Array.isArray(payload.items)) throw new Error("Invalid cases");
+    } catch {
+      if (token === packToken) {
+        clear(slot);
+        slot.append(el("p", "placeholder-line", "案例线索暂时无法读取。"));
+      }
+      return;
+    }
+    if (token !== packToken) return;
+    clear(slot);
+    slot.append(el("p", "brief-meta", "来自 Agent Use Cases 的公开案例线索，结果按来源报告保留，尚未逐条复测。收录日期按订阅源标注，原帖日期按案例目录标注；未提供时留空。"));
+    if (payload.status?.partial) slot.append(el("p", "placeholder-line", "本轮采集不完整，保留已有线索。"));
+    const groups = [["shopping", "购物"], ["life", "生活事务"], ["office", "办公协作"]];
+    const safeLink = value => {
+      try { const u = new URL(value); return ["https:", "http:"].includes(u.protocol) && !u.username && !u.password; } catch { return false; }
+    };
+    const rows = payload.items.filter(row => row && groups.some(([id]) => id === row.category) && safeLink(row.case_url));
+    const tabs = el("div", "timeline-pagination");
+    tabs.setAttribute("aria-label", "案例方向");
+    slot.append(tabs);
+    const list = el("div", "case-leads-list");
+    slot.append(list);
+    const date = value => {
+      if (!value) return "未提供";
+      const d = new Date(value);
+      return Number.isFinite(d.getTime()) ? d.toLocaleDateString("zh-CN", {timeZone:"Asia/Shanghai"}) : "未提供";
+    };
+    let selected = "all";
+    function draw(page = 1) {
+      clear(list);
+      tabs.querySelectorAll("button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.category === selected)));
+      const rank = {shopping: 0, life: 1, office: 2};
+      const filtered = rows.filter(row => selected === "all" || row.category === selected)
+        .sort((a, b) => rank[a.category] - rank[b.category] || String(b.collected_at).localeCompare(String(a.collected_at)));
+      if (!filtered.length) { list.append(el("p", "placeholder-line", "暂无这个方向的案例线索。")); return; }
+      const size = 12;
+      const pages = Math.ceil(filtered.length / size);
+      filtered.slice((page - 1) * size, page * size).forEach(row => {
+        const card = el("article", "timeline-card");
+        card.append(el("p", "timeline-meta", `${groups.find(([id]) => id === row.category)[1]} · 用户或第三方案例`));
+        const link = el("a", "note-link timeline-title", String(row.title || "案例"));
+        link.href = row.case_url; link.target = "_blank"; link.rel = "noopener noreferrer";
+        card.append(link);
+        if (row.summary) card.append(el("p", "timeline-summary", String(row.summary)));
+        const originalDate = row.original_published_at || row.original_date_label || "未提供";
+        card.append(el("p", "timeline-meta", `收录日期 ${date(row.collected_at)} · 原帖日期 ${originalDate}${row.date_source ? "（目录标注）" : ""}`));
+        if (safeLink(row.original_url)) {
+          const original = el("a", "note-link", "查看原帖");
+          original.href = row.original_url; original.target = "_blank"; original.rel = "noopener noreferrer";
+          card.append(original);
+        }
+        list.append(card);
+      });
+      if (pages > 1) {
+        const nav = el("nav", "timeline-pagination");
+        nav.setAttribute("aria-label", "案例线索分页");
+        for (const [label, target] of [["上一页", page - 1], ["下一页", page + 1]]) {
+          const button = el("button", "timeline-page", label);
+          button.disabled = target < 1 || target > pages;
+          button.addEventListener("click", () => draw(target)); nav.append(button);
+        }
+        nav.append(el("span", "timeline-meta", `${page} / ${pages} · ${filtered.length} 条线索`));
+        list.append(nav);
+      }
+    }
+    [["all", "全部"], ...groups].forEach(([id, label]) => {
+      const count = rows.filter(row => id === "all" || row.category === id).length;
+      const button = el("button", "timeline-page", `${label} ${count}`);
+      button.dataset.category = id;
+      button.addEventListener("click", () => { selected = id; draw(); });
+      tabs.append(button);
+    });
+    draw();
+  }
+
   async function renderPack(kind, id) {
     const deltaLabel = RESEARCH_BRIEFS[id]?.kind === kind ? "近30天变化" : "本期变化";
     document.querySelector("#pack-delta h2").textContent = deltaLabel;
@@ -1220,6 +1309,10 @@
       return;
     }
     const token = ++packToken;
+    const cases = document.getElementById("pack-cases");
+    if (cases) cases.hidden = true;
+    const caseToc = document.getElementById("caseLeadsToc");
+    if (caseToc) caseToc.hidden = true;
     const record = lookupRecord(kind, id);
     if (!record) {
       if (title) title.textContent = "未找到条目";
@@ -1255,6 +1348,7 @@
       if (!beats.length) beats = record.windowStories.map(storyBeat);
     }
     if (token !== packToken) return;
+    renderCaseLeads(record, token);
     renderJudgment(record, beats);
     renderDelta(record);
     renderTimeline(beats);
