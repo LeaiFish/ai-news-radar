@@ -4,51 +4,51 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-27T16:43:34.221807Z",
+  "generated_at": "2026-10-27T21:18:29.105614Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
     "2026-10-28"
   ],
-  "story_count": 1245,
-  "unique_story_count": 1002,
+  "story_count": 1233,
+  "unique_story_count": 1061,
   "counts": {
     "by_company_topic": {
-      "anthropic": 243,
-      "apple": 19,
+      "anthropic": 237,
+      "apple": 13,
       "cursor": 2,
       "deepseek": 22,
       "doubao": 5,
-      "google-gemini": 34,
-      "huggingface": 11,
+      "google-gemini": 36,
+      "huggingface": 12,
       "hunyuan": 4,
       "kimi": 19,
       "meta-llama": 5,
-      "microsoft": 17,
-      "minimax": 20,
-      "nvidia": 40,
-      "openai": 173,
+      "microsoft": 16,
+      "minimax": 19,
+      "nvidia": 39,
+      "openai": 172,
       "openrouter": 3,
       "qwen": 20,
-      "xai": 22,
+      "xai": 21,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 189,
-      "monetization": 23,
-      "product-entry": 24,
-      "workplace": 44
+      "agent-ecosystem": 183,
+      "monetization": 21,
+      "product-entry": 18,
+      "workplace": 42
     },
     "by_importance_label": {
-      "值得关注": 1054,
-      "多源热议": 25,
-      "官方更新": 48,
-      "行业动态": 118
+      "值得关注": 1036,
+      "多源热议": 27,
+      "官方更新": 53,
+      "行业动态": 117
     },
     "by_source_count_bucket": {
-      "1": 1181,
-      "2": 38,
-      "3+": 26
+      "1": 1166,
+      "2": 39,
+      "3+": 28
     }
   },
   "top_stories": [
@@ -56,7 +56,7 @@
       "story_id": "story_74c7e03322b7",
       "title": "我们可以信任LLM来判断一个研究想法是否新颖吗？ / Can we trust LLMs to judge whether a research idea is novel?",
       "url": "https://huggingface.co/blog/allenai/novelty-bench",
-      "importance_score": 0.8667,
+      "importance_score": 0.8552,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -79,23 +79,23 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_529172dc08c8",
-      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
-      "importance_score": 0.8476,
+      "story_id": "story_dcfc8da3dcc9",
+      "title": "Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "importance_score": 0.8498,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
       "company_topics": [
-        "google-gemini"
+        "huggingface"
       ],
       "lens_topics": []
     },
     {
-      "story_id": "story_50d6e60500bb",
-      "title": "Google DeepMind 发布实时交互世界模型 Genie 4 / Genie 4: A new generation of world simulation",
-      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
-      "importance_score": 0.8422,
+      "story_id": "story_529172dc08c8",
+      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
+      "importance_score": 0.8363,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -116,6 +116,48 @@
         "openai"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_9a537d6a9ade",
+      "title": "LangChain 解析自研设计 agent Content Studio 并开源其 harness / How We Built Our Design Agent",
+      "url": "https://www.langchain.com/blog/design-agent",
+      "importance_score": 0.8334,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_50d6e60500bb",
+      "title": "Google DeepMind 发布实时交互世界模型 Genie 4 / Genie 4: A new generation of world simulation",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+      "importance_score": 0.8308,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0578d962325b",
+      "title": "OpenAI 扩大与 Oracle 合作，将 Oracle 应用与数据接入 ChatGPT / OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "importance_score": 0.8264,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_6a3f26655d84",
@@ -146,6 +188,19 @@
         "agent-ecosystem",
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_2814e3bd0b1b",
+      "title": "Codex CLI 0.165.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8183,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_f280b6805186",
@@ -217,6 +272,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_c8afd4d11875",
+      "title": "How Check Point accelerates vulnerability research with Daybreak",
+      "url": "https://openai.com/index/check-point-daybreak",
+      "importance_score": 0.8043,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_5cfb9bcbdf04",
       "title": "Latent Space 解读 Anthropic 提交 S-1：拟以代码 AN 上市纳斯达克，H1 2026 营收 16.3B 美元 / [AINews] Anthropic files for $2T IPO in 2 weeks: 1400% growth rate, 48% of revenue through cloud partners, 85% margin, $1B op profit in Q2, $134B cash in bank and $10B lifetime burn",
       "url": "https://latent.space/p/ainews-anthropic-s1",
@@ -252,6 +320,19 @@
       "archive_date": "2026-10-27",
       "company_topics": [
         "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_58ae6ed1ae16",
+      "title": "CSAM Screening Across OpenRouter",
+      "url": "https://openrouter.ai/blog/announcements/csam-screening",
+      "importance_score": 0.7963,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openrouter"
       ],
       "lens_topics": []
     },
@@ -323,6 +404,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_1208d46c9897",
+      "title": "Anthropic 拟以特殊治理结构抵御 IPO 后股东的安全施压 / Anthropic’s elaborate plan to keep Wall Street at bay",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+      "importance_score": 0.7774,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_f2c9ffc07e2d",
       "title": "Kling 4.0 上线 Runware API，支持 30 秒 1080p 原生音频视频 / Check out the creator guides in the comments to get more out of #Kling4. #KlingAI",
       "url": "https://x.com/Kling_ai/status/2114574035468386746",
@@ -345,6 +439,19 @@
       "archive_date": "2026-10-27",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_71802914a418",
+      "title": "Azeem Azhar 图解 Anthropic S-1 财务数据 / 🔮 Anthropic’s S-1 in charts",
+      "url": "https://www.exponentialview.co/p/anthropics-s-1-in-charts",
+      "importance_score": 0.773,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "anthropic"
       ],
       "lens_topics": []
     },
@@ -469,106 +576,6 @@
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-27",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_11ba7108c08e",
-      "title": "千问App重磅上线三大核心学习功能，精准狙击学生提分痛点",
-      "url": "https://www.aibase.com/news/31899",
-      "importance_score": 0.7568,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_05db419d7df7",
-      "title": "参数直逼2.8T、支持百万上下文：月之暗面发布开源旗舰大模型K3.1 Pro",
-      "url": "https://www.aibase.com/news/31903",
-      "importance_score": 0.7568,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cdfcd9ca2b60",
-      "title": "Anthropic S-1 文件中的五个不寻常细节 / Five weird details from Anthropic’s IPO filing",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
-      "importance_score": 0.7553,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_bd06b8feda55",
-      "title": "OpenAI官宣数学与物理学三大突破：AI攻克百年猜想，携手全球学者开启科学验证新模式",
-      "url": "https://www.aibase.com/news/31897",
-      "importance_score": 0.7527,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9792248868f2",
-      "title": "Gamma5 重塑思考与设计，深度打通20+主流办公工具",
-      "url": "https://www.aibase.com/news/31898",
-      "importance_score": 0.7527,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_53622a64b142",
-      "title": "安全研究员利用生成式AI挖掘PS5高危漏洞获索尼33万元奖励",
-      "url": "https://www.aibase.com/news/31896",
-      "importance_score": 0.7527,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_08edd409f737",
-      "title": "Replit Cloud Agents 开放企业代码库贡献，非技术人员可直接提交经测试的 PR / Anyone can now bring their ideas into the company codebase",
-      "url": "https://replit.com/blog/anyone-can-bring-ideas-to-company-codebase",
-      "importance_score": 0.7524,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_9e7ae5a425be",
-      "title": "Gartner 调研：44% 的 CEO 说不清 AI 到底赚没赚钱",
-      "url": "https://www.aibase.com/news/31868",
-      "importance_score": 0.7518,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-26",
       "company_topics": [],
       "lens_topics": []
     }
