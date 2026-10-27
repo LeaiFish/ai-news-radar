@@ -128,3 +128,32 @@ skills/ai-news-radar/references/v2-method.md
 
 不要直接重构。先做验收报告。
 ```
+
+
+## History page hierarchy (2026-10-27)
+
+The dedicated `history.html` page reads from general to specific:
+
+1. Latest archived overall judgment, its actual report date, and numbered trend headings.
+2. Company progress under a selected direction; the trend shortcuts select and scroll to this section.
+3. Period judgments in reverse order, collapsed by default. Expanded records label previous judgment, current judgment, adjustment reason, and sources. The original homepage baseline has its own disclosure.
+
+Company history remains available through the page selector and `?company=<id>`.
+Its newest record opens initially; older records are collapsed. Source dates,
+retrospective labels, review corrections, missing archives, and unavailable
+files remain distinct. Empty company cards are consolidated into one line.
+
+History styles are scoped to the dedicated page in `assets/history.css`, loaded
+after the shared skin. Include this file in both public packaging and Docker
+asset copies. Data snapshots and the current overview content are unchanged by
+this layout revision.
+
+Validate with `node --check assets/trend-history.js`,
+`node --test tests/trend-history-contract.node.mjs`, and
+`node tests/trend-history.browser.mjs` against a local server on port 8097.
+The browser script accepts `RADAR_TEST_BASE_URL`, `RADAR_PLAYWRIGHT_MODULE`,
+and `RADAR_BROWSER_CHANNEL`; it covers eight company entrances, all seven
+directions at 360/390/768/1440px, collapsed records, baseline access, mobile
+menu, dark text contrast, XSS, and missing-data fallback. Screenshots are saved
+to `/tmp/radar-history-*.png`. Viewport checks simulate screen sizes and do not
+represent a physical phone test.

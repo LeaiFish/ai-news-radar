@@ -1,0 +1,68 @@
+/* Read from the latest judgment into directions, companies, then the archive. */
+html[data-space="history"] .main { max-width: 1460px; min-width: 0; }
+html[data-space="history"] .page-head { margin-bottom: 16px; }
+html[data-space="history"] .space-nav .nav-link { background: transparent; }
+html[data-space="history"] .space-nav [aria-current="page"] { background: color-mix(in srgb, var(--accent) 9%, var(--surface)); font-weight: 600; }
+.history-page-controls { margin: 0 0 28px; gap: 10px; font-size: 13px; color: var(--muted); }
+.history-page-select { min-height: 44px; min-width: 190px; width: auto; flex: 0 1 240px; }
+#historyContent { border: 0; background: transparent; border-radius: 0; }
+.history-page-content { padding: 0; font-size: 14px; }
+.history-section { margin: 0 0 36px; min-width: 0; scroll-margin-top: 24px; }
+.history-section > h2, #historyTitle { font-size: 20px; line-height: 1.5; margin: 0 0 16px; font-weight: 650; }
+.history-latest-summary { padding: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.history-latest-summary > .brief-meta { margin: 0 0 12px; }
+.history-overview-lead { margin: 0 0 24px; font-size: 20px; font-weight: 550; line-height: 1.75; max-width: 54em; }
+.history-theme-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
+.history-theme-card { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; border-top: 1px solid var(--line); padding-top: 16px; }
+.history-theme-meta { display: flex; gap: 12px; align-items: center; }
+.history-theme-number { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.history-theme-card h3 { font-size: 15px; font-weight: 600; line-height: 1.7; margin: 12px 0 8px; }
+.history-theme-link { border: 0; background: transparent; color: var(--accent); padding: 8px 0; min-height: 44px; font: inherit; font-size: 12px; cursor: pointer; margin-top: auto; }
+.history-page-content .trend-direction-label { margin: 0 0 18px; font-size: 13px; font-weight: 500; }
+.history-page-content .trend-direction-select { min-height: 44px; background: var(--surface); min-width: 240px; }
+.history-page-content .trend-comparison { gap: 14px; }
+.history-page-content .trend-comparison-card { padding: 20px; background: var(--surface); border-radius: 10px; }
+.history-page-content .trend-comparison-card > a { font-size: 16px; text-decoration: none; }
+.history-company-summary { margin: 10px 0 14px; }
+.history-comparison-empty { grid-column: 1/-1; margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+.history-page-content .brief-meta { font-size: 12px; color: var(--muted); }
+.history-page-content details > summary { cursor: pointer; min-height: 44px; padding: 11px 0; line-height: 1.65; }
+.history-page-content details > summary:focus-visible, .history-theme-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+.trend-history-details { font-size: 12px; color: var(--muted); border-top: 1px solid var(--line-soft); }
+.history-page-content .trend-history-sources { font-size: 12px; }
+.history-page-content .trend-history-sources li { margin: 8px 0; }
+.history-page-content .trend-overview-history, .history-page-content .trend-history-record { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 0 20px; margin-bottom: 12px; }
+.history-page-content .trend-overview-history > summary, .history-record-heading { font-size: 14px; font-weight: 600; padding: 16px 0 !important; }
+.history-record-heading .trend-evolution-badge { margin-left: 12px; }
+.history-record-content { border-top: 1px solid var(--line-soft); padding: 6px 0 20px; }
+.history-period-lead { font-size: 16px; line-height: 1.8; }
+.history-page-content .trend-history-theme { border-left: 0; padding: 0; margin: 24px 0; }
+.trend-history-theme h3 { font-size: 16px; line-height: 1.7; margin: 8px 0 14px; }
+.history-page-content .trend-history-pair { gap: 14px; }
+.history-page-content .trend-history-judgment { border: 1px solid var(--line-soft); }
+.history-page-content .trend-history-reason { font-size: 13px; margin: 14px 0; }
+.trend-history-guide { margin-top: 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+@media (max-width: 1000px) {
+  .history-theme-grid { grid-template-columns: 1fr; gap: 4px; }
+  .history-theme-card { display: grid; grid-template-columns: auto minmax(0,1fr); column-gap: 16px; padding: 14px 0; }
+  .history-theme-card h3 { margin: 0; }
+  .history-theme-link { grid-column: 2; justify-self: start; margin-top: 0; }
+  .history-theme-meta { align-self: start; padding-top: 3px; }
+}
+@media (max-width: 650px) {
+  html[data-space="history"] .main { padding: 20px 16px 40px; }
+  html[data-space="history"] .nav-toggle { width: auto; min-width: 64px; min-height: 44px; padding: 8px 12px; white-space: nowrap; }
+  .history-page-content { padding: 0; }
+  .history-page-controls { margin-bottom: 24px; }
+  .history-section { margin-bottom: 28px; }
+  .history-section > h2, #historyTitle { font-size: 18px; margin-bottom: 12px; }
+  .history-latest-summary { padding: 18px; }
+  .history-overview-lead { font-size: 18px; margin-bottom: 18px; }
+  .history-theme-card { grid-template-columns: minmax(0,1fr); gap: 6px; }
+  .history-theme-link { grid-column: 1; }
+  .history-theme-card h3 { font-size: 15px; }
+  .history-page-content .trend-direction-label { display: grid; gap: 6px; }
+  .history-page-content .trend-direction-select { min-width: 0; width: 100%; }
+  .history-page-content .trend-comparison-card { padding: 18px; }
+  .history-page-content .trend-overview-history, .history-page-content .trend-history-record { padding: 0 16px; }
+}
