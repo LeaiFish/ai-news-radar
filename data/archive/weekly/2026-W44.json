@@ -4,51 +4,51 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-28T09:26:24.627909Z",
+  "generated_at": "2026-10-28T11:24:23.026072Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
     "2026-10-28"
   ],
-  "story_count": 1259,
-  "unique_story_count": 1195,
+  "story_count": 1254,
+  "unique_story_count": 1222,
   "counts": {
     "by_company_topic": {
-      "anthropic": 236,
-      "apple": 16,
+      "anthropic": 235,
+      "apple": 15,
       "cursor": 4,
-      "deepseek": 22,
-      "doubao": 8,
-      "google-gemini": 43,
+      "deepseek": 23,
+      "doubao": 7,
+      "google-gemini": 44,
       "huggingface": 13,
       "hunyuan": 3,
       "kimi": 18,
       "meta-llama": 7,
       "microsoft": 16,
       "minimax": 22,
-      "nvidia": 38,
-      "openai": 164,
+      "nvidia": 36,
+      "openai": 165,
       "openrouter": 3,
       "qwen": 17,
       "xai": 27,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 201,
+      "agent-ecosystem": 199,
       "monetization": 22,
-      "product-entry": 25,
-      "workplace": 43
+      "product-entry": 24,
+      "workplace": 44
     },
     "by_importance_label": {
-      "值得关注": 1062,
-      "多源热议": 27,
-      "官方更新": 55,
-      "行业动态": 115
+      "值得关注": 1055,
+      "多源热议": 25,
+      "官方更新": 57,
+      "行业动态": 117
     },
     "by_source_count_bucket": {
-      "1": 1187,
+      "1": 1184,
       "2": 44,
-      "3+": 28
+      "3+": 26
     }
   },
   "top_stories": [
@@ -64,6 +64,21 @@
         "openai"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_3e2da8c9fde0",
+      "title": "Legora正在构建法律工作代理操作系统 / Legora is building the agentic operating system for legal work",
+      "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "importance_score": 0.8471,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_b9ba650b2e36",
@@ -82,25 +97,12 @@
       "story_id": "story_74c7e03322b7",
       "title": "Ai2 发布 Old Ideas, Novel Problems 研究与基准，测试 LLM 判断科研想法新颖性的可靠性 / Can we trust LLMs to judge whether a research idea is novel?",
       "url": "https://huggingface.co/blog/allenai/novelty-bench",
-      "importance_score": 0.8284,
+      "importance_score": 0.8244,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
       "company_topics": [
         "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0d7bc7c83924",
-      "title": "Quên：准确知道要忘记什么的人工智能记忆 / Quên: The AI Memory That Knows Exactly What to Forget",
-      "url": "https://www.alibabacloud.com/blog/qu%C3%AAn-the-ai-memory-that-knows-exactly-what-to-forget_603698",
-      "importance_score": 0.8271,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "qwen"
       ],
       "lens_topics": []
     },
@@ -118,10 +120,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0d7bc7c83924",
+      "title": "Quên：准确知道要忘记什么的人工智能记忆 / Quên: The AI Memory That Knows Exactly What to Forget",
+      "url": "https://www.alibabacloud.com/blog/qu%C3%AAn-the-ai-memory-that-knows-exactly-what-to-forget_603698",
+      "importance_score": 0.8227,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_533d85c923c9",
       "title": "GitHub Copilot 支持服务器到服务器身份验证 / GitHub Copilot supports server-to-server authentication",
       "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
-      "importance_score": 0.8237,
+      "importance_score": 0.8195,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -131,34 +146,6 @@
       "lens_topics": [
         "agent-ecosystem",
         "workplace"
-      ]
-    },
-    {
-      "story_id": "story_dcfc8da3dcc9",
-      "title": "Liquid AI 发布 LFM3 系列：一个 1.7B 底座衍生六个 2B 级多模态模型 / Build specialized multimodal models with LFM3",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "importance_score": 0.8225,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c5f3323ac6dc",
-      "title": "Muse 现已在新加坡上市：全球首款专为所有人打造的个人人工智能代理 / Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
-      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
-      "importance_score": 0.8211,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "meta-llama"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
       ]
     },
     {
@@ -179,6 +166,19 @@
       ]
     },
     {
+      "story_id": "story_dcfc8da3dcc9",
+      "title": "Liquid AI 发布 LFM3 系列：一个 1.7B 底座衍生六个 2B 级多模态模型 / Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "importance_score": 0.8185,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_f280b6805186",
       "title": "GitHub Copilot 辅助权限正式可用 / GitHub Copilot assisted permissions generally available",
       "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available",
@@ -194,6 +194,32 @@
       ]
     },
     {
+      "story_id": "story_c5f3323ac6dc",
+      "title": "Muse 现已在新加坡上市：全球首款专为所有人打造的个人人工智能代理 / Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
+      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
+      "importance_score": 0.8167,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "meta-llama"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_20b0af959a42",
+      "title": "How to Use an AI Video Generation API: Submit Jobs, Poll Status, and Store Results",
+      "url": "https://www.siliconflow.com/blog/video-generation-api-async-workflow",
+      "importance_score": 0.8167,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_af8dcec2b7d3",
       "title": "元宝 2.90.10 官方版本更新",
       "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.90.10",
@@ -203,34 +229,6 @@
       "archive_date": "2026-10-26",
       "company_topics": [
         "hunyuan"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ec554f349e47",
-      "title": "Retell 使用 OpenAI 模型帮助支持每月 1 亿次通话 / Retell uses OpenAI models to help power 100M monthly calls",
-      "url": "https://openai.com/index/retell-ai",
-      "importance_score": 0.8099,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_529172dc08c8",
-      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
-      "importance_score": 0.8099,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -245,17 +243,6 @@
       "company_topics": [
         "anthropic"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_44dcb385c991",
-      "title": "From Expertise to Intelligence: NISCO Deploys World's First Swarm-Intelligence Steel Model at Scale",
-      "url": "https://www.huawei.com/en/news/2026/10/nisco-yuanye-steelmodel",
-      "importance_score": 0.8083,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -274,18 +261,32 @@
       ]
     },
     {
-      "story_id": "story_9a537d6a9ade",
-      "title": "LangChain 解析自研设计 agent Content Studio 并开源其 harness / How We Built Our Design Agent",
-      "url": "https://www.langchain.com/blog/design-agent",
+      "story_id": "story_ec554f349e47",
+      "title": "Retell 使用 OpenAI 模型帮助支持每月 1 亿次通话 / Retell uses OpenAI models to help power 100M monthly calls",
+      "url": "https://openai.com/index/retell-ai",
       "importance_score": 0.8061,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
-      "company_topics": [],
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
+        "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_529172dc08c8",
+      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
+      "importance_score": 0.8061,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_ab5c2a044f11",
@@ -299,6 +300,31 @@
         "google-gemini"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_44dcb385c991",
+      "title": "From Expertise to Intelligence: NISCO Deploys World's First Swarm-Intelligence Steel Model at Scale",
+      "url": "https://www.huawei.com/en/news/2026/10/nisco-yuanye-steelmodel",
+      "importance_score": 0.8042,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9a537d6a9ade",
+      "title": "LangChain 解析自研设计 agent Content Studio 并开源其 harness / How We Built Our Design Agent",
+      "url": "https://www.langchain.com/blog/design-agent",
+      "importance_score": 0.8022,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
     },
     {
       "story_id": "story_5cfb9bcbdf04",
@@ -340,30 +366,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_0b8d12acf507",
-      "title": "代理即服务：为个人代理和企业代理提供支持的服务架构 / Agent as a Service: The Service Architecture Powering Personal Agents and Enterprise Agents",
-      "url": "https://www.alibabacloud.com/blog/agent-as-a-service-the-service-architecture-powering-personal-agents-and-enterprise-agents_603695",
-      "importance_score": 0.7911,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_0c2388fcf231",
-      "title": "Your workspace has undead apps",
-      "url": "https://lovable.dev/blog/your-workspace-has-undead-apps",
-      "importance_score": 0.787,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_53c724770993",
       "title": "OpenAI 请外部专家核查其 AI 在数学、计算机科学和物理学领域产出的证明 / OpenAI asks outside experts, including a Nobel laureate, to check proofs its AI produced in math, computer science, and physics",
       "url": "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics",
@@ -377,15 +379,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_121105adc9e4",
-      "title": "Introducing n8n 3.0",
-      "url": "https://blog.n8n.io/introducing-n8n-v3",
-      "importance_score": 0.7859,
+      "story_id": "story_0b8d12acf507",
+      "title": "代理即服务：为个人代理和企业代理提供支持的服务架构 / Agent as a Service: The Service Architecture Powering Personal Agents and Enterprise Agents",
+      "url": "https://www.alibabacloud.com/blog/agent-as-a-service-the-service-architecture-powering-personal-agents-and-enterprise-agents_603695",
+      "importance_score": 0.7867,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
       "company_topics": [],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_70a09f9ddd44",
@@ -401,28 +405,53 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_82908663c452",
-      "title": "Axiom 智能体集群用 24 天完成有限单群分类定理的机器验证 / Verified AI just had its greatest month.",
-      "url": "https://x.com/rohanpaul_ai/status/2115224910603890778",
-      "importance_score": 0.7806,
-      "importance_label": "行业动态",
-      "source_count": 2,
+      "story_id": "story_0c2388fcf231",
+      "title": "Your workspace has undead apps",
+      "url": "https://lovable.dev/blog/your-workspace-has-undead-apps",
+      "importance_score": 0.7833,
+      "importance_label": "官方更新",
+      "source_count": 1,
       "archive_date": "2026-10-28",
       "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "lens_topics": []
     },
     {
-      "story_id": "story_35fa6cf08daa",
-      "title": "家长起诉 OpenAI，指控 GPT-4o 劝导其女儿停用癫痫药物致死 / Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
-      "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication",
-      "importance_score": 0.7797,
+      "story_id": "story_121105adc9e4",
+      "title": "Introducing n8n 3.0",
+      "url": "https://blog.n8n.io/introducing-n8n-v3",
+      "importance_score": 0.7822,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d19ddeb7edba",
+      "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一 / AI agents hacked Anthropic, maker of arguably the most capable AI models for cyberdefense",
+      "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense",
+      "importance_score": 0.7814,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
       "company_topics": [
-        "openai"
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_97b0168eb606",
+      "title": "Anthropic S-1 显示 90% 增量毛利，SemiAnalysis 播客详解其中数字",
+      "url": "https://x.com/SaitoWu/status/2115376256929948006",
+      "importance_score": 0.7808,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "anthropic"
       ],
       "lens_topics": []
     },
@@ -481,6 +510,32 @@
       ]
     },
     {
+      "story_id": "story_82908663c452",
+      "title": "Axiom 智能体集群用 24 天完成有限单群分类定理的机器验证 / Verified AI just had its greatest month.",
+      "url": "https://x.com/rohanpaul_ai/status/2115224910603890778",
+      "importance_score": 0.7762,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_35fa6cf08daa",
+      "title": "家长起诉 OpenAI，指控 GPT-4o 劝导其女儿停用癫痫药物致死 / Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+      "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication",
+      "importance_score": 0.7753,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_4efabe1530c2",
       "title": "OpenAI 宣布 AI 模型取得三项科学突破，涉及局部光滑猜想、指数时间假设与杨–米尔斯理论",
       "url": "https://www.ithome.com/1/018/203.htm",
@@ -490,19 +545,6 @@
       "archive_date": "2026-10-27",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3a9c6235b650",
-      "title": "Anthropic IPO 最大赢家或为 Amazon 而非 VC / VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
-      "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more",
-      "importance_score": 0.7715,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "anthropic"
       ],
       "lens_topics": []
     },
@@ -520,61 +562,28 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d21648743048",
-      "title": "Liquid AI重磅发布LFM3 多模态模型家族，主打高效专用智能",
-      "url": "https://www.aibase.com/news/31927",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7bef45631a41",
-      "title": "外国博主用AI耳机当看诊翻译:“直接听、直接翻，整个交流会顺很多”",
-      "url": "https://www.aibase.com/news/31931",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_79e21315ed07",
-      "title": "豆包公关回应\"15 万群演被喂模型\"：传言严重失实",
-      "url": "https://www.aibase.com/news/31932",
-      "importance_score": 0.7676,
+      "story_id": "story_3a9c6235b650",
+      "title": "Anthropic IPO 最大赢家或为 Amazon 而非 VC / VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+      "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more",
+      "importance_score": 0.7671,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
       "company_topics": [
-        "doubao"
+        "anthropic"
       ],
       "lens_topics": []
     },
     {
-      "story_id": "story_2a612c3ec647",
-      "title": "百度世界大会前夕重磅流出：消息称其将披露世界模型进展",
-      "url": "https://www.aibase.com/news/31928",
-      "importance_score": 0.7676,
+      "story_id": "story_76389132aa45",
+      "title": "Meta 向 SEC 申报拟募资 950 亿美元投向 AI 数据中心与超级智能 / Meta filed the announcement with the SEC that it plans to raise $95B in new equity to fund AI data centers and its superintelligence push.",
+      "url": "https://x.com/rohanpaul_ai/status/2114789264936534183",
+      "importance_score": 0.7642,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2a35071feaa9",
-      "title": "OpenAI被曝将向谷歌采购TPU芯片，算力供应链格局再变",
-      "url": "https://www.aibase.com/news/31933",
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
+      "archive_date": "2026-10-27",
       "company_topics": [
-        "openai"
+        "nvidia"
       ],
       "lens_topics": []
     }
