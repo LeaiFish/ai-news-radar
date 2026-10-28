@@ -4,52 +4,52 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-28T19:38:22.631738Z",
+  "generated_at": "2026-10-28T21:38:48.713171Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
     "2026-10-28",
     "2026-10-29"
   ],
-  "story_count": 1546,
-  "unique_story_count": 1333,
+  "story_count": 1542,
+  "unique_story_count": 1357,
   "counts": {
     "by_company_topic": {
-      "anthropic": 290,
+      "anthropic": 286,
       "apple": 15,
       "cursor": 4,
       "deepseek": 27,
       "doubao": 9,
-      "google-gemini": 67,
-      "huggingface": 17,
+      "google-gemini": 69,
+      "huggingface": 18,
       "hunyuan": 3,
       "kimi": 19,
       "meta-llama": 9,
-      "microsoft": 31,
-      "minimax": 26,
-      "nvidia": 42,
+      "microsoft": 30,
+      "minimax": 24,
+      "nvidia": 43,
       "openai": 197,
-      "openrouter": 5,
-      "qwen": 21,
-      "xai": 33,
+      "openrouter": 6,
+      "qwen": 20,
+      "xai": 32,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 246,
+      "agent-ecosystem": 249,
       "monetization": 24,
-      "product-entry": 33,
+      "product-entry": 32,
       "workplace": 65
     },
     "by_importance_label": {
-      "值得关注": 1268,
-      "多源热议": 29,
+      "值得关注": 1265,
+      "多源热议": 27,
       "官方更新": 85,
-      "行业动态": 164
+      "行业动态": 165
     },
     "by_source_count_bucket": {
-      "1": 1462,
-      "2": 54,
-      "3+": 30
+      "1": 1461,
+      "2": 53,
+      "3+": 28
     }
   },
   "top_stories": [
@@ -57,7 +57,7 @@
       "story_id": "story_f713f4e4a699",
       "title": "NVIDIA 发布开放权重语音模型 Nemotron 3.5 Transcribe 及 Granary v2 数据管线 / NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
       "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-      "importance_score": 0.8813,
+      "importance_score": 0.8765,
       "importance_label": "官方更新",
       "source_count": 2,
       "archive_date": "2026-10-29",
@@ -71,7 +71,7 @@
       "story_id": "story_8b7d832d4a60",
       "title": "在 Gemini 应用程序中通过沉浸式探索深入了解新主题。 / Dive into new topics with immersive explorations in the Gemini app.",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub",
-      "importance_score": 0.8728,
+      "importance_score": 0.8678,
       "importance_label": "官方更新",
       "source_count": 2,
       "archive_date": "2026-10-29",
@@ -94,140 +94,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_bd644657309a",
-      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型 / Gemini 4 Carbon: Our next frontier model",
-      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model",
-      "importance_score": 0.8453,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a4f85859c631",
-      "title": "Route and orchestrate models with GitHub Copilot Fusion",
-      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
-      "importance_score": 0.8428,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_e0adfc587f0f",
-      "title": "GitHub Copilot app, Universe releases",
-      "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases",
-      "importance_score": 0.8426,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_95c7481a0866",
-      "title": "GitHub Enterprise now includes access to GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
-      "importance_score": 0.8424,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_62dac217e32f",
-      "title": "Security extension for the GitHub Copilot app",
-      "url": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
-      "importance_score": 0.8422,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_2afe1633ba5b",
-      "title": "Build shared workflows for your team with Copilot Automations",
-      "url": "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations",
-      "importance_score": 0.8418,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_c7d6d7e6214b",
-      "title": "GitHub Copilot in VS Code, Universe releases",
-      "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases",
-      "importance_score": 0.8417,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_f528ed774de0",
-      "title": "GitHub Copilot Fusion now supports selection of local models",
-      "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
-      "importance_score": 0.8416,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_08cb0d22893e",
-      "title": "Generate and edit images directly in Copilot",
-      "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
-      "importance_score": 0.8416,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_3e2da8c9fde0",
       "title": "Legora正在构建法律工作代理操作系统 / Legora is building the agentic operating system for legal work",
       "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
@@ -243,36 +109,144 @@
       ]
     },
     {
+      "story_id": "story_bd644657309a",
+      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型 / Gemini 4 Carbon: Our next frontier model",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model",
+      "importance_score": 0.8404,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a4f85859c631",
+      "title": "使用 GitHub Copilot Fusion 路由和编排模型 / Route and orchestrate models with GitHub Copilot Fusion",
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+      "importance_score": 0.8379,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_e0adfc587f0f",
+      "title": "GitHub Copilot 应用程序、Universe 发布 / GitHub Copilot app, Universe releases",
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases",
+      "importance_score": 0.8377,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_95c7481a0866",
+      "title": "GitHub Enterprise 现在包含对 GitHub Copilot 的访问 / GitHub Enterprise now includes access to GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+      "importance_score": 0.8375,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_62dac217e32f",
+      "title": "GitHub Copilot 应用程序的安全扩展 / Security extension for the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+      "importance_score": 0.8373,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_2afe1633ba5b",
+      "title": "Build shared workflows for your team with Copilot Automations",
+      "url": "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations",
+      "importance_score": 0.8369,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_c7d6d7e6214b",
+      "title": "GitHub Copilot in VS Code, Universe releases",
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases",
+      "importance_score": 0.8368,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_f528ed774de0",
+      "title": "GitHub Copilot Fusion now supports selection of local models",
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+      "importance_score": 0.8367,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_08cb0d22893e",
+      "title": "Generate and edit images directly in Copilot",
+      "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+      "importance_score": 0.8367,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_b78e91279c0c",
       "title": "The Art of Loop Engineering",
       "url": "https://www.langchain.com/blog/the-art-of-loop-engineering",
-      "importance_score": 0.8392,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_b225c8ebdb1f",
-      "title": "如何使用 OpenWiki 和图表构建基于证据的代理记忆 / How to build evidence-grounded agent memory with OpenWiki and Graphs",
-      "url": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs",
-      "importance_score": 0.8385,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_589ec76c190c",
-      "title": "如何使用托管深度代理中的 Schedules SDK 构建主动、始终在线的代理 / How to Build Proactive, Always-On Agents with the Schedules SDK in Managed Deep Agents",
-      "url": "https://www.langchain.com/blog/proactive-agents",
-      "importance_score": 0.8385,
+      "importance_score": 0.8342,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-29",
@@ -295,10 +269,51 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_b225c8ebdb1f",
+      "title": "如何使用 OpenWiki 和图表构建基于证据的代理记忆 / How to build evidence-grounded agent memory with OpenWiki and Graphs",
+      "url": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs",
+      "importance_score": 0.8335,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_589ec76c190c",
+      "title": "如何使用托管深度代理中的 Schedules SDK 构建主动、始终在线的代理 / How to Build Proactive, Always-On Agents with the Schedules SDK in Managed Deep Agents",
+      "url": "https://www.langchain.com/blog/proactive-agents",
+      "importance_score": 0.8335,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_dc34b00fe1cc",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "importance_score": 0.8314,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_ddd841ca13a0",
       "title": "Smart reports, surveys, and pooled group budgets for Claude Enterprise",
       "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets",
-      "importance_score": 0.8326,
+      "importance_score": 0.8287,
       "importance_label": "官方更新",
       "source_count": 2,
       "archive_date": "2026-10-29",
@@ -311,25 +326,12 @@
       "story_id": "story_6d790823c7e6",
       "title": "Introducing artifacts for legal work",
       "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
-      "importance_score": 0.8326,
+      "importance_score": 0.8287,
       "importance_label": "官方更新",
       "source_count": 2,
       "archive_date": "2026-10-29",
       "company_topics": [
         "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_84a91576d939",
-      "title": "OpenAI 员工撰文探讨 AI 进入企业组织架构的三种方式 / The future of the firm",
-      "url": "https://openai.com/index/the-future-of-the-firm",
-      "importance_score": 0.8286,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "openai"
       ],
       "lens_topics": []
     },
@@ -345,6 +347,34 @@
         "openai"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_84a91576d939",
+      "title": "OpenAI 员工撰文探讨 AI 进入企业组织架构的三种方式 / The future of the firm",
+      "url": "https://openai.com/index/the-future-of-the-firm",
+      "importance_score": 0.8241,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_fea99fd27cc2",
+      "title": "Legora正在构建法律工作代理操作系统 / Legora is building the agentic operating system for legal work",
+      "url": "https://openai.com/index/legora",
+      "importance_score": 0.823,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_74c7e03322b7",
@@ -516,10 +546,23 @@
       ]
     },
     {
+      "story_id": "story_ab5c2a044f11",
+      "title": "15 位大学生分享他们最喜欢的Gemini特征 / 15 college students share their favorite Gemini features",
+      "url": "https://blog.google/products-and-platforms/products/gemini/college-student-favorite-features",
+      "importance_score": 0.8044,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-27",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_a16b1486eeff",
       "title": "OpenRouter 解析 Claude 529 Overloaded 错误及三种修复方法 / Claude 529 Overloaded: What It Means and How to Fix It",
       "url": "https://openrouter.ai/blog/tutorials/claude-529-overloaded",
-      "importance_score": 0.8076,
+      "importance_score": 0.8037,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-29",
@@ -533,7 +576,7 @@
       "story_id": "story_16a7842b102e",
       "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码 / Hit Your Claude Code Usage Limit? How to Keep Coding",
       "url": "https://openrouter.ai/blog/tutorials/claude-code-usage-limit",
-      "importance_score": 0.8076,
+      "importance_score": 0.8037,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-29",
@@ -547,7 +590,7 @@
       "story_id": "story_1426b3e56612",
       "title": "IDC brings Quanta into Claude and adopts Claude across the company",
       "url": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company",
-      "importance_score": 0.8076,
+      "importance_score": 0.8037,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-29",
@@ -557,19 +600,6 @@
       "lens_topics": [
         "product-entry"
       ]
-    },
-    {
-      "story_id": "story_ab5c2a044f11",
-      "title": "15 位大学生分享他们最喜欢的Gemini特征 / 15 college students share their favorite Gemini features",
-      "url": "https://blog.google/products-and-platforms/products/gemini/college-student-favorite-features",
-      "importance_score": 0.8044,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_ec554f349e47",
@@ -585,32 +615,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_5cfb9bcbdf04",
-      "title": "Latent Space 解读 Anthropic 提交 S-1：拟以代码 AN 上市纳斯达克，H1 2026 营收 16.3B 美元 / [AINews] Anthropic files for $2T IPO in 2 weeks: 1400% growth rate, 48% of revenue through cloud partners, 85% margin, $1B op profit in Q2, $134B cash in bank and $10B lifetime burn",
-      "url": "https://latent.space/p/ainews-anthropic-s1",
-      "importance_score": 0.801,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_529172dc08c8",
-      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
-      "importance_score": 0.801,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
     }
   ]
 }
