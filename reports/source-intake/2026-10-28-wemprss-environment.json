@@ -1,8 +1,8 @@
 {
   "schema": "radar_private_task_migration_v1",
   "date": "2026-10-28",
-  "updated_at": "2026-10-28T06:56:39.017506+00:00",
-  "status": "renewal_persistence_reuse_and_native_controlled_run_verified",
+  "updated_at": "2026-10-28T07:16:52.813465+00:00",
+  "status": "renewal_persistence_native_schedule_and_online_readback_verified",
   "private_directory_write_probe": "passed",
   "scheduler_directory_write_probe": "passed",
   "credentials_copied": false,
@@ -51,7 +51,9 @@
     "controlled_run_observed": true,
     "normal_timer_trigger_observed": false,
     "run_at_load": false,
-    "keep_alive": false
+    "keep_alive": false,
+    "calendar_matches_expected": true,
+    "retry_loop_disabled": true
   },
   "duplicate_prevention": {
     "scheduled_process_exclusive_lock": true,
@@ -60,7 +62,8 @@
     "reuse_preserves_collection_time": true,
     "reuse_leaves_session_file_unchanged": true,
     "stale_snapshot_does_not_initiate_private_retry": true,
-    "existing_automation_prompt_unchanged": true
+    "existing_automation_prompt_unchanged": true,
+    "managed_marker_enabled": true
   },
   "coverage": {
     "verified_articles": 6,
@@ -71,7 +74,56 @@
     ]
   },
   "publication": {
-    "status": "pending"
+    "status": "online_verified",
+    "metadata_commit": "86d368c33be09fc724e9c719a2a9336bb3051853",
+    "bridge_online_at": "2026-10-28T06:52:49.459005Z",
+    "initial_news_refresh": {
+      "id": 40647108061,
+      "conclusion": "failure",
+      "reason": "Generated snapshots conflicted with an earlier queued snapshot update"
+    },
+    "replacement_news_refresh": {
+      "id": 40648072839,
+      "conclusion": "success"
+    },
+    "online_readback": {
+      "verified": true,
+      "verified_at": "2026-10-28T07:07:48.892426Z",
+      "bridge_and_source_status_collection_at": "2026-10-28T06:52:49.459005Z",
+      "verified_articles": 6,
+      "renewal_or_persistence_errors": false,
+      "collection_complete": false,
+      "archive_items": 68,
+      "recent_window_items": 1,
+      "historical_items": 67,
+      "source_status_url": "https://leaifish.github.io/ai-news-radar/data/source-status.json"
+    },
+    "pages": {
+      "id": 40648478587,
+      "conclusion": "success",
+      "snapshot_commit": "74432afa198a3359756a61db54b5503044a771c5"
+    }
   },
-  "future_scan_free_guarantee": false
+  "future_scan_free_guarantee": false,
+  "validation": {
+    "python_tests": 617,
+    "python_tests_passed": true,
+    "remote_test_radar": {
+      "id": 40647758091,
+      "conclusion": "success"
+    },
+    "remote_architecture": {
+      "id": 40647758088,
+      "attempt": 2,
+      "conclusion": "success",
+      "initial_failure": "Existing Web search locator expectation failed; failed job rerun passed without source changes."
+    },
+    "source_commit": "2aa13d69bd28099bcef32e286ebabc83ee187491"
+  },
+  "next_observation": {
+    "planned_at": "2026-10-29T10:30:00+08:00",
+    "purpose": "First natural calendar trigger; not yet observed",
+    "requires": "Mac powered on or awake with user logged in and network available"
+  },
+  "reuse_documentation": "docs/WECHAT_SOURCE_BRIDGE.md#本机定时采集与登录态复用2026-10-28"
 }
