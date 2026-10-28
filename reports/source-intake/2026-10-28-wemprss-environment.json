@@ -1,0 +1,77 @@
+{
+  "schema": "radar_private_task_migration_v1",
+  "date": "2026-10-28",
+  "updated_at": "2026-10-28T06:56:39.017506+00:00",
+  "status": "renewal_persistence_reuse_and_native_controlled_run_verified",
+  "private_directory_write_probe": "passed",
+  "scheduler_directory_write_probe": "passed",
+  "credentials_copied": false,
+  "source_base_commit": "6bc20946c6895dda62178d52828d21e048693b36",
+  "real_verification": {
+    "status": "verified_current_run",
+    "private_recovery_verified": true,
+    "at": "2026-10-28T06:44:51.831846+00:00",
+    "verified_articles": 6,
+    "collection_complete": false,
+    "session_store_atomically_replaced": true,
+    "session_store_content_changed": true,
+    "fresh_process_reuse": {
+      "fresh_process": true,
+      "session_loaded_from_existing_store": true,
+      "private_original_verified": true
+    },
+    "future_scan_free_guarantee": false
+  },
+  "native_verification": {
+    "status": "registered_and_controlled_native_run_verified",
+    "at": "2026-10-28T06:53:45.496775+00:00",
+    "native_run_count": 1,
+    "native_result": "partial_source_coverage",
+    "verified_articles": 6,
+    "collection_at": "2026-10-28T06:52:49.459005Z",
+    "session_file_mode_0600": true,
+    "fresh_process_reuse": {
+      "fresh_process": true,
+      "session_loaded_from_existing_store": true,
+      "private_original_verified": true
+    },
+    "daily_schedule": "10:30 Asia/Shanghai",
+    "normal_timer_trigger_observed": false,
+    "future_scan_free_guarantee": false,
+    "credentials_copied": false,
+    "native_session_save_observed": false,
+    "native_session_save_required": false,
+    "native_renewal_and_stored_session_reuse_verified": true,
+    "save_proof_note": "Initial controlled verification observed atomic replacement and readback; native run reused the stored session without a further session change."
+  },
+  "schedule": {
+    "label": "com.ai-news-radar.wemprss",
+    "time": "10:30 Asia/Shanghai",
+    "registered": true,
+    "controlled_run_observed": true,
+    "normal_timer_trigger_observed": false,
+    "run_at_load": false,
+    "keep_alive": false
+  },
+  "duplicate_prevention": {
+    "scheduled_process_exclusive_lock": true,
+    "legacy_1040_entrypoint_reuses_public_snapshot": true,
+    "reuse_live_probe_verified": true,
+    "reuse_preserves_collection_time": true,
+    "reuse_leaves_session_file_unchanged": true,
+    "stale_snapshot_does_not_initiate_private_retry": true,
+    "existing_automation_prompt_unchanged": true
+  },
+  "coverage": {
+    "verified_articles": 6,
+    "complete": false,
+    "limitations": [
+      "List endpoint -2041 remains limited",
+      "Some public candidates remain unverified or truncated"
+    ]
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "future_scan_free_guarantee": false
+}

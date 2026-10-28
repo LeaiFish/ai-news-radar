@@ -584,6 +584,15 @@ def main():
     source = args.source_dir.resolve()
     if source == ROOT or ROOT in source.parents:
         parser.error("private we-mp-rss runtime must be outside this repository")
+    from scripts.wechat_schedule import ScheduleError, reuse_scheduled_snapshot
+    try:
+        scheduled = reuse_scheduled_snapshot(source, args.output, Path(__file__), datetime.now(timezone.utc))
+    except ScheduleError as exc:
+        print(json.dumps({'error': str(exc), 'private_collection_started': False}))
+        return 1
+    if scheduled is not None:
+        print(json.dumps(scheduled['last_run'] | {'scheduled_snapshot_reused': True}, ensure_ascii=False))
+        return 0 if scheduled['last_run']['ok'] else 2
     python = source / ".venv/bin/python"
     try:
         process = subprocess.run([str(python), str(Path(__file__).resolve()), "--worker",
