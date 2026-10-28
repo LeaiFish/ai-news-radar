@@ -125,3 +125,20 @@ def test_rescued_wechat_product_outranks_a_model_leaderboard_in_selected_feed():
     assert stories[1]["editorial_focus"] == "product"
     assert stories[0]["tier"] == "all"
     assert stories[0]["editorial_focus"] == "technical"
+
+
+def test_verified_qwen_study_usage_is_product_evidence_without_literal_ai():
+    row = record('找题、解题、练题，用千问帮你学得更精准',
+                 'https://mp.weixin.qq.com/s/wU1Wxcnwn-GmFwfzS86nvA',
+                 site_id='wechat_bridge', company_id='qwen', account_name='千问APP', account_verified=True)
+    assert score_ai_relevance(row)['is_ai_related']
+    assert editorial_focus(row) == 'product'
+    assert product_context(record('老师帮学生找题、解题、练题')) is None
+
+
+def test_concrete_ai_application_function_does_not_require_an_existing_brand_alias():
+    row = record('新的 AI 助手上线日历插件，支持管理日程')
+    assert score_ai_relevance(row)['is_ai_related']
+    assert editorial_focus(row) == 'product'
+    assert editorial_focus(record('Siri 新增多语言识别基准测试')) == 'technical'
+    assert editorial_focus(record('OpenAI 发布高管助理招聘信息')) != 'product'

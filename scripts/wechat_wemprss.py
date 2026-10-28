@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import contextlib
+import errno
 from datetime import datetime, timedelta, timezone
 import json
 import logging
@@ -44,6 +45,26 @@ class CollectionError(ValueError):
     def __init__(self, code):
         self.code = code
         super().__init__('wemprss_request_failed')
+
+
+SESSION_STORE_ERROR_CODES = frozenset({
+    'wemprss_session_store_unwritable', 'wemprss_session_store_changed',
+    'wemprss_session_store_invalid', 'wemprss_session_store_verify_failed',
+})
+
+
+class SessionStoreError(CollectionError):
+    """Only a fixed, public-safe reason code may leave the private worker."""
+
+
+def session_store_error(exc):
+    if isinstance(exc, SessionStoreError):
+        return exc
+    if isinstance(exc, PermissionError) or (isinstance(exc, OSError) and exc.errno in {errno.EPERM, errno.EACCES, errno.EROFS}):
+        return SessionStoreError('wemprss_session_store_unwritable')
+    if isinstance(exc, ValueError) and str(exc) == 'session_changed_concurrently':
+        return SessionStoreError('wemprss_session_store_changed')
+    return SessionStoreError('wemprss_session_store_invalid')
 
 
 class SingleAccountReader:
@@ -258,6 +279,9 @@ def collect(reader, jobs, now, delay=time.sleep, *, public_discovery=None, publi
         if code == -2041 and phase == 'list':
             list_available = False
             reason = 'wemprss_list_api_-2041'
+        elif isinstance(code, str) and code in SESSION_STORE_ERROR_CODES:
+            private_blocked = True
+            reason = code
         elif isinstance(code, int) and code in STOP_CODES:
             private_blocked = True
             reason = f'wemprss_api_{code}'
@@ -441,20 +465,48 @@ def merge_result(result, existing, jobs, now):
     return snapshot
 
 
-def persist_renewed_session(original, renewed, path=Path('data/wx.lic')):
-    """Compare and replace only the existing primary session outside the public repo."""
+def session_document(original, path):
     import yaml
     path = path.resolve()
     if path == ROOT or ROOT in path.parents:
         raise ValueError('private_session_path_required')
-    document = yaml.safe_load(path.read_text(encoding='utf-8'))
+    content = path.read_bytes()
+    document = yaml.safe_load(content)
     auth = document['weread_data']
     string_format = isinstance(auth, str)
     if string_format:
         auth = json.loads(auth)
     primary = auth['accounts'][0] if isinstance(auth.get('accounts'), list) and auth['accounts'] else auth
-    if primary.get('cookie') != original:
+    if not original or primary.get('cookie') != original:
         raise ValueError('session_changed_concurrently')
+    return path, content, document, auth, primary, string_format
+
+
+def check_session_store(original, path=Path('data/wx.lic')):
+    """Probe the required atomic-write mechanism BEFORE rotating a session.
+
+    The empty probe never contains credentials and never modifies the login file.
+    File-mode bits alone do not prove that an agent sandbox permits a write.
+    """
+    path, *_ = session_document(original, path)
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile('w', dir=path.parent, prefix='.radar-write-check-', delete=False) as handle:
+            temporary = Path(handle.name)
+            os.fchmod(handle.fileno(), 0o600)
+            handle.flush()
+            os.fsync(handle.fileno())
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def persist_renewed_session(original, renewed, path=Path('data/wx.lic')):
+    """Compare and atomically replace only the existing external primary session."""
+    import yaml
+    path, before, document, auth, primary, string_format = session_document(original, path)
+    if not isinstance(renewed, str) or not renewed:
+        raise ValueError('invalid_renewed_session')
     primary['cookie'] = renewed
     document['weread_data'] = json.dumps(auth, ensure_ascii=False) if string_format else auth
     temporary = None
@@ -463,15 +515,32 @@ def persist_renewed_session(original, renewed, path=Path('data/wx.lic')):
             temporary = Path(handle.name)
             os.fchmod(handle.fileno(), 0o600)
             yaml.safe_dump(document, handle, allow_unicode=True, sort_keys=False)
+            handle.flush()
+            os.fsync(handle.fileno())
+        # A refresh elsewhere may have completed while the temporary file was
+        # being written. Preserve that session rather than overwriting it.
+        if path.read_bytes() != before:
+            raise ValueError('session_changed_concurrently')
         temporary.replace(path)
+        try:
+            _, _, saved, *_ = session_document(renewed, path)
+            if saved != document:
+                raise ValueError('saved_document_differs')
+        except (OSError, ValueError, TypeError, KeyError):
+            raise SessionStoreError('wemprss_session_store_verify_failed') from None
     finally:
         if temporary is not None:
             temporary.unlink(missing_ok=True)
 
 
-def collect_session(sdk, jobs, now, *, get=None, post=None, save=persist_renewed_session, **kwargs):
+def collect_session(sdk, jobs, now, *, get=None, post=None, save=persist_renewed_session, prepare=None, **kwargs):
     reader = SingleAccountReader(sdk, get=get, post=post)
     try:
+        if prepare is not None:
+            try:
+                prepare(reader.original_cookie)
+            except Exception as exc:
+                raise session_store_error(exc) from None
         reader.renew_session()
     except Exception as exc:
         reader.startup_error = exc
@@ -479,9 +548,10 @@ def collect_session(sdk, jobs, now, *, get=None, post=None, save=persist_renewed
     if result['rows'] and reader.renewed_cookie != reader.original_cookie:
         try:
             save(reader.original_cookie, reader.renewed_cookie)
-        except Exception:
+        except Exception as exc:
             result['coverage_complete'] = False
             result['errors'].append({'error': 'wemprss_renewal_persist_failed'})
+            result['errors'].append({'error': session_store_error(exc).code})
     return result
 
 
@@ -494,7 +564,7 @@ def worker(jobs):
         from core.wx.model.weread_mp import MpsWereadMP
         reader = MpsWereadMP()
         reader._load_weread_auth()
-        result = collect_session(reader, jobs, datetime.now(timezone.utc))
+        result = collect_session(reader, jobs, datetime.now(timezone.utc), prepare=check_session_store)
     return result
 
 

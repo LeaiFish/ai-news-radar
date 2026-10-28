@@ -68,3 +68,32 @@ def test_same_original_from_aihot_and_ithome_merges_into_one_event():
     stories, _ = merge_story_items(rows, now=NOW, window_hours=72)
     assert len(stories) == 1
     assert len({normalize_url(r['url']) for r in stories[0]['items']}) == 1
+
+
+PRODUCT_EXAMPLES = [
+    '蚂蚁灵光 2.0 发布：全新升级“能管事的 AI 助理”，突破单次对话限制',
+    'Mac 版 Ollama 新增离线生成 AI 语音：数据不出门，速度比原方案最高快 35%',
+    '苹果 Siri AI 即日起支持法语、日语、韩语等语言，繁体中文得等到年底前',
+    '字节跳动旗下即梦 AI 短剧工作室上线，提供自研剧本、图片、分镜模型',
+    '部分微软 Edge 浏览器用户反馈侧边栏 Copilot“失联”，官方称迁移需几天',
+    'OpenAI 开放 ChatGPT 新插件：苹果用户授权后可充当 AI 管家，管理 iCloud 邮件、日程等',
+]
+
+
+def test_real_function_usage_and_availability_titles_survive_the_ithome_gate():
+    rows = parse([item(t, f'https://www.ithome.com/product-{i}') for i, t in enumerate(PRODUCT_EXAMPLES)])
+    assert {r.title for r in rows} == set(PRODUCT_EXAMPLES)
+    assert all(editorial_focus({'site_id':r.site_id, 'source':r.source,
+                               'title':r.title, 'url':r.url}) == 'product' for r in rows)
+
+
+def test_function_rescue_does_not_promote_benchmarks_promotions_or_general_business():
+    rows = parse([
+        item('Ollama 推理评测榜单第一', 'https://www.ithome.com/ollama-eval'),
+        item('Siri 多语言识别基准测试', 'https://www.ithome.com/siri-eval'),
+        item('蚂蚁灵光融资新进展，AI 行业估值提升', 'https://www.ithome.com/funding'),
+        item('苹果 Siri 联名手机壳新品促销', 'https://www.ithome.com/case-sale'),
+        item('生活里的一次灵光乍现，AI 会改变一切', 'https://www.ithome.com/phrase'),
+    ])
+    assert {r.url for r in rows} == {'https://www.ithome.com/ollama-eval', 'https://www.ithome.com/siri-eval'}
+    assert all(editorial_focus({'title':r.title, 'url':r.url}) == 'technical' for r in rows)

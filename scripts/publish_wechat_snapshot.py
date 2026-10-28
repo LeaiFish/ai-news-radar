@@ -30,6 +30,8 @@ PUBLIC_DISCOVERY_ERRORS = frozenset({
     "wemprss_article_failed", "wemprss_public_failed", "wemprss_unknown_publication_date",
     "wemprss_public_discovery_failed", "wemprss_public_discovery_truncated",
     "wemprss_renewal_failed", "wemprss_renewal_persist_failed",
+    "wemprss_session_store_unwritable", "wemprss_session_store_changed",
+    "wemprss_session_store_invalid", "wemprss_session_store_verify_failed",
     *(f"wemprss_http_{code}" for code in (401, 403, 429, 499, 500, 502, 503, 504)),
 })
 

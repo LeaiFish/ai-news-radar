@@ -1,0 +1,104 @@
+{
+  "schema": "radar_source_repair_v1",
+  "date": "2026-10-28",
+  "updated_at": "2026-10-28T05:43:04.905506+00:00",
+  "status": "code_verified_private_store_still_blocked",
+  "ithome": {
+    "status": "local_verified_pending_online",
+    "root_cause": "A general editorial classification was excluded by the product_priority RSS gate even when the title described concrete AI functions, usage or availability.",
+    "repair": "Recognize bounded app functions including task management, offline voice, language support, creative script/storyboard workflows, sidebar migration and mail/calendar plugins; explicit AI-application function statements may qualify without an existing brand alias.",
+    "limits": "Existing8-item and at-most2-technical limits, relevance and authority tiers, commerce/promotion guards, real publication dates and canonical dedup remain.",
+    "real_source_probe": {
+      "at": "2026-10-28T05:36:17.839854+00:00",
+      "http": 200,
+      "kept": [
+        {
+          "title": "腾讯 WorkBuddy 手机远程控制电脑功能上线，实时显示屏幕内容",
+          "url": "https://www.ithome.com/1/018/882.htm",
+          "published_at": "2026-10-28T04:32:32+00:00",
+          "focus": "product"
+        },
+        {
+          "title": "豆包工作功能上新：支持将“录制电脑操作”保存为技能",
+          "url": "https://www.ithome.com/1/018/860.htm",
+          "published_at": "2026-10-28T04:00:26+00:00",
+          "focus": "product"
+        },
+        {
+          "title": "部分微软 Edge 浏览器用户反馈侧边栏 Copilot“失联”，官方称迁移需几天",
+          "url": "https://www.ithome.com/1/018/760.htm",
+          "published_at": "2026-10-28T02:12:40+00:00",
+          "focus": "product"
+        },
+        {
+          "title": "谷歌更新 Android Bench 榜单：自家 Gemini 4 Argon 编程能力大幅落后于 Claude 与 GPT",
+          "url": "https://www.ithome.com/1/018/757.htm",
+          "published_at": "2026-10-28T02:09:56+00:00",
+          "focus": "technical"
+        }
+      ]
+    },
+    "targeted_verified_backfill": {
+      "added": 1,
+      "record": {
+        "id": "44d92e89777e8222b86f4806dcd7a0434c2c1048",
+        "site_id": "curated_media",
+        "site_name": "Curated Media",
+        "source": "IT之家",
+        "title": "部分微软 Edge 浏览器用户反馈侧边栏 Copilot“失联”，官方称迁移需几天",
+        "url": "https://www.ithome.com/1/018/760.htm",
+        "published_at": "2026-10-28T02:12:40Z",
+        "first_seen_at": "2026-10-28T05:40:45.775324Z",
+        "last_seen_at": "2026-10-28T05:40:45.775324Z",
+        "editorial_focus": "product",
+        "editorial_tags": [
+          "product_update"
+        ],
+        "select_tier": "T2"
+      },
+      "original_verified": {
+        "url": "https://www.ithome.com/1/018/760.htm",
+        "http": 200,
+        "title": "部分微软 Edge 浏览器用户反馈侧边栏 Copilot“失联”，官方称迁移需几天",
+        "original_date": "2026/10/28 10:12:40",
+        "body_read": true,
+        "checked_at": "2026-10-28T05:39:10.299422+00:00"
+      },
+      "same_event_checks": {
+        "copilot": "No retained matching sidebar-migration event before import.",
+        "jimeng": "AIbase31900 already covers short-drama studio event; do not add another media record just to close same-URL gap."
+      }
+    },
+    "similar_case": "Verified Qwen study usage title now receives product relevance/focus; it was already in public curated projection and is not a newly missing event."
+  },
+  "session_persistence": {
+    "status": "blocked_by_private_directory_write_access",
+    "root_cause_verified": {
+      "active_sdk_session_matches_primary_license": true,
+      "config_override_present": false,
+      "file_mode": "0600",
+      "same_session_atomic_save_probe": "PermissionError errno1",
+      "new_preflight": "wemprss_session_store_unwritable"
+    },
+    "repair_shipped": "Empty atomic-write preflight before renewal; no private renewal/article requests when preflight fails. Flush/fsync, file-change recheck and atomic replace followed by readback. Safe reason codes distinguish write access, concurrent changes, invalid store and readback failure.",
+    "synthetic_storage_tests": "Successful saved-session readback, old/JSON formats, unrelated settings, concurrent update preservation,0600 permissions and no temp residue passed on writable test storage.",
+    "real_renewal_attempted": false,
+    "authentication_requests_attempted": 0,
+    "real_rotated_session_saved": false,
+    "private_login_file_changed": false,
+    "private_session_recovery_verified": false,
+    "required_external_state": "The existing private session directory must permit atomic writes in the collector execution environment. Code cannot grant that access. Do not relocate credentials into the public repository or repeatedly scan a QR code.",
+    "public_bridge": "Existing verified bridge/history retained. No failed private run was published as recovered.",
+    "no_token_cookie_identity_or_private_path_published": true
+  },
+  "validation": {
+    "python_suite_passed": 610,
+    "targeted_regressions_passed": 73,
+    "source_probe_http": 200,
+    "diff_check": "passed"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "scope": "IT之家 recognition and safe renewal persistence only; no account rotation, QR login, paid service or model API calls."
+}

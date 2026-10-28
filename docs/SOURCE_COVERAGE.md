@@ -603,3 +603,20 @@ requested by the maintainer, not justified by a claim of complete unique coverag
 Lovable's article documents Enterprise project cleanup; its first shipment date
 is unverified. n8n 3.0.0 is Beta; the planned December stable release is not a
 current launch. See `reports/source-intake/2026-10-28-lovable-n8n.json`.
+
+## Product-function filtering repair (2026-10-28)
+
+The IT之家 product-priority path now recognizes concrete app functions and
+usage/availability changes that earlier title rules missed: Lingguang task
+management, Ollama offline voice, Siri language support, Jimeng script/storyboard
+workflows, Copilot sidebar migration, and ChatGPT mail/calendar plugins. A named
+product is not mandatory when the title explicitly identifies an AI application
+and a concrete function. Model/evaluation announcements, generic AI business
+headlines and promotions still do not gain product priority. The existing
+8-item / at-most-2-technical caps, source tiers and URL deduplication remain.
+The same narrow usage evidence recognizes Qwen's verified study instructions.
+
+A source-only HTTP probe and real-title counterexamples cover the repair; see
+`reports/source-intake/2026-10-28-product-renewal-fix.json`. Historical originals
+that have already rolled out of the 60-item RSS are backfilled only after original
+date/content and existing-event checks, retaining their real publication date.

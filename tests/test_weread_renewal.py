@@ -88,7 +88,7 @@ def test_failed_persistence_is_explicit_and_never_logs_credentials(monkeypatch):
  def save(*args):raise PermissionError('PRIVATE')
  result=collect_session(sdk(),[JOB],NOW,post=lambda *a,**k:response({'succ':1},{'wr_skey':'PRIVATE-new'}),save=save)
  assert result['coverage_complete'] is False
- assert result['errors']==[{'error':'wemprss_renewal_persist_failed'}]
+ assert result['errors']==[{'error':'wemprss_renewal_persist_failed'}, {'error':'wemprss_session_store_unwritable'}]
  assert 'PRIVATE' not in json.dumps(result)
 
 
@@ -114,3 +114,72 @@ def test_atomic_session_save_preserves_unrelated_private_data_and_rejects_stale_
  with pytest.raises(ValueError,match='session_changed_concurrently'):
   persist_renewed_session(OLD,'PRIVATE-stale',path)
  assert list(tmp_path.iterdir())==[path]
+
+
+def test_unwritable_session_store_preflight_blocks_rotation_and_private_reads():
+    gets=[];posts=[];saves=[]
+    def prepare(original):
+        assert original==OLD
+        raise PermissionError('PRIVATE runtime path')
+    result=collect_session(sdk(),[JOB],NOW,get=content_get(gets),
+        post=lambda *a,**k:posts.append(1),save=lambda *a:saves.append(1),prepare=prepare,
+        delay=lambda _:None,public_discovery=discovery)
+    assert not posts and not gets and not saves
+    assert any(e['error']=='wemprss_session_store_unwritable' for e in result['errors'])
+    assert not result['coverage_complete']
+    assert 'PRIVATE' not in json.dumps(result)
+    clean=public_snapshot(merge_result(result,None,[JOB],NOW),NOW)
+    assert any(e['error']=='wemprss_session_store_unwritable' for e in clean['last_run']['errors'])
+    assert 'PRIVATE' not in json.dumps(clean)
+
+
+def test_session_store_preflight_checks_atomic_write_before_any_credential_change(tmp_path):
+    from scripts.wechat_wemprss import check_session_store
+    path=tmp_path/'wx.lic';doc={'weread_data':{'cookie':OLD},'unrelated':'PRIVATE'}
+    path.write_text(yaml.safe_dump(doc));before=path.read_bytes()
+    check_session_store(OLD,path)
+    assert path.read_bytes()==before
+    assert list(tmp_path.iterdir())==[path]
+    with pytest.raises(ValueError,match='session_changed_concurrently'):
+        check_session_store('PRIVATE-wrong',path)
+
+
+def test_session_rotation_is_read_back_before_claiming_persistence(tmp_path,monkeypatch):
+    from scripts.wechat_wemprss import check_session_store
+    path=tmp_path/'wx.lic';path.write_text(yaml.safe_dump({'weread_data':{'cookie':OLD}}))
+    check_session_store(OLD,path)
+    persist_renewed_session(OLD,'PRIVATE-new',path)
+    saved=yaml.safe_load(path.read_text())
+    assert saved['weread_data']['cookie']=='PRIVATE-new'
+
+
+def test_write_readback_mismatch_has_safe_failure_code(tmp_path,monkeypatch):
+    from scripts.wechat_wemprss import SessionStoreError
+    path=tmp_path/'wx.lic';path.write_text(yaml.safe_dump({'weread_data':{'cookie':OLD}}))
+    original=path.read_bytes();read=Path.read_bytes;calls=[]
+    def stale_read(p):
+        if p==path:
+            calls.append(1)
+            if len(calls)==3:return original
+        return read(p)
+    monkeypatch.setattr(Path,'read_bytes',stale_read)
+    with pytest.raises(SessionStoreError) as exc:
+        persist_renewed_session(OLD,'PRIVATE-new',path)
+    assert exc.value.code=='wemprss_session_store_verify_failed'
+    assert 'PRIVATE' not in str(exc.value)
+    assert list(tmp_path.iterdir())==[path]
+
+
+def test_concurrent_update_during_temporary_write_is_preserved(tmp_path,monkeypatch):
+    path=tmp_path/'wx.lic';path.write_text(yaml.safe_dump({'weread_data':{'cookie':OLD}}))
+    dump=yaml.safe_dump
+    concurrent={'weread_data':{'cookie':'PRIVATE-concurrent'},'other':'PRIVATE-new-setting'}
+    def intervening_update(document,stream,**kwargs):
+        result=dump(document,stream,**kwargs)
+        path.write_text(dump(concurrent))
+        return result
+    monkeypatch.setattr(yaml,'safe_dump',intervening_update)
+    with pytest.raises(ValueError,match='session_changed_concurrently'):
+        persist_renewed_session(OLD,'PRIVATE-stale',path)
+    assert yaml.safe_load(path.read_text())==concurrent
+    assert list(tmp_path.iterdir())==[path]

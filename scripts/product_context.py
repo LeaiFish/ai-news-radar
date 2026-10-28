@@ -10,9 +10,11 @@ from urllib.parse import urlsplit
 _BRANDS = re.compile(
     r"(?<![a-z0-9])(?:chatgpt|openai|claude|anthropic|gemini|deepseek|copilot|codex|cursor|"
     r"qwen|minimax|kimi|seedance|seedream|viggle|openrouter|perplexity|workbuddy|"
-    r"lovable|langchain|langsmith|krea|genspark|manus|comfyui)(?![a-z0-9])"
-    r"|通义千问|千问|豆包|腾讯元宝|智谱清言|即梦|可灵|海螺AI", re.I,
+    r"lovable|langchain|langsmith|krea|genspark|manus|comfyui|ollama|siri)(?![a-z0-9])"
+    r"|通义千问|千问|豆包|腾讯元宝|智谱清言|即梦|可灵|海螺AI|蚂蚁灵光|灵光(?=\s*\d)", re.I,
 )
+_EXPLICIT_AI_APP = re.compile(r"(?<![a-z0-9])AI[\s-]*(?:助[手理]|应用|工具|插件|管家|assistant\b|app\b|tool\b)|人工智能助[手理]", re.I)
+_EVALUATION_PUBLICATION = re.compile(r"(?:发布|新增|推出|上线).{0,8}(?:评测|榜单|基准测试)")
 _META_MUSE = re.compile(r"(?<![a-z0-9])(?:meta(?:['’]s)?\s+.{0,40}?muse|muse\s+spark)(?![a-z0-9])", re.I)
 _VERSIONED_BRANDS = re.compile(
     r"(?<![a-z0-9])(?:qwen|minimax|kimi|seedance|seedream)[- ]?[mvh]?\d+(?:\.\d+)*(?:-[a-z0-9]+)*(?![a-z0-9])", re.I,
@@ -38,7 +40,7 @@ _ACTION = re.compile(
     r"(?<![a-z])(?:launch\w*|introduc\w*|releas\w*|roll\w*|add\w*|support\w*|"
     r"availab\w*|live|now|can|run\w*|generat\w*|use|using|built|build|"
     r"fix\w*|suspend\w*|disabl\w*|expos\w*|have)(?![a-z])"
-    r"|上线|新增|推出|更新|发布|支持|接入|开放|可用|生成|完成|暂停|关闭|泄露|修复|接管|恢复|重置|调整|试试", re.I,
+    r"|上线|新增|推出|更新|发布|支持|接入|开放|可用|生成|完成|暂停|关闭|泄露|修复|接管|恢复|重置|调整|试试|迁移|失联|不可用|无法使用", re.I,
 )
 _CAPABILITY = re.compile(
     r"(?<![a-z])(?:apis?|sdks?|features?|dashboards?|workspaces?|integrations?|"
@@ -47,12 +49,12 @@ _CAPABILITY = re.compile(
     r"local(?:ly)?|macs?|windows|desktop app|mobile app|new app)(?![a-z])"
     r"|功能|客户端|协作|共享屏幕|语音|视觉创作|全链路|工作流|多平台|电商经营|"
     r"本地运行|端侧运行|编辑|导出|上传|权限|隐私|对话|聊天|记忆|连接器|自动化|"
-    r"模型切换|模型选择|模型接入|(?:接入|切换).{0,8}模型|桌面应用|移动应用|界面|订阅|会员|额度|限流|我的应用|专属应用", re.I,
+    r"模型切换|模型选择|模型接入|(?:接入|切换).{0,8}模型|桌面应用|移动应用|界面|订阅|会员|额度|限流|我的应用|专属应用|AI\s*助[理手]|事务管理|管理事务|管事|短剧工作室|创作工作室|剧本|分镜|故事板|侧边栏|插件|邮件|日历|日程|多语言|法语|日语|韩语|繁体中文", re.I,
 )
 _USAGE = re.compile(
     r"(?<![a-z])(?:how .{0,80}(?:use|built|build|works)|use cases?|customer stor\w*|tutorials?)(?![a-z])"
     r"|教程|手册|使用指南|上手|使用.{0,2}方法|讲解视频|解决方法|制作模式|应用场景|陪逛|解锁.{0,12}(?:玩法|逛法|用法)"
-    r"|comfyui.{0,30}部署"
+    r"|comfyui.{0,30}部署|找题|解题|练题|拍题答疑"
     r"|(?:用|使用|通过).{0,45}(?:做成|整理成|收录(?:进|到)|存(?:入|进)).{0,16}知识库"
     r"|(?:用|使用|部署).{0,45}(?:生成|制作|搭建|完成|实现|拍摄|拍了)|(?:agent|智能体).{0,24}(?:接管|完成|管理)", re.I,
 )
@@ -120,8 +122,12 @@ def product_context(record: dict[str, Any]) -> dict[str, str] | None:
     if official:
         text += " " + title_text({"title": str(record.get("summary") or "")[:500]})
     identity = product_identity(record, text) or official
+    if not identity and _EXPLICIT_AI_APP.search(text):
+        identity = "explicit_ai_application"
     if not identity or _PROMO.search(text):
         return None
+    if _EVALUATION_PUBLICATION.search(text):
+        return {"identity": identity, "kind": "technical", "signal": "known_ai_product_technical_context"}
     technical = _TECHNICAL.search(text)
     if technical and not (_RELEASE.search(text) and _CAPABILITY.search(text)) and not _BUSINESS_CASE.search(text):
         return {"identity": identity, "kind": "technical", "signal": "known_ai_product_technical_context"}
