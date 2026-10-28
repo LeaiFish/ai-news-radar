@@ -53,6 +53,7 @@ def update_fragment(parsed) -> str:
         ("learn.chatgpt.com", "/docs/whats-new"): r"[a-z0-9-]+",
         ("gemini.google", "/release-notes"): r":~:text=\d{4}\.\d{2}\.\d{2}",
         ("apps.apple.com", "/cn/app/id6480446430"): r":~:text=\d+(?:\.\d+){1,3}",
+        ("x.ai", "/changelog/bot"): r"v\d+(?:\.\d+){1,3}",
     }
     pattern = patterns.get((host, path))
     return fragment if pattern and re.fullmatch(pattern, fragment) else ""

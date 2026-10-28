@@ -620,3 +620,44 @@ A source-only HTTP probe and real-title counterexamples cover the repair; see
 `reports/source-intake/2026-10-28-product-renewal-fix.json`. Historical originals
 that have already rolled out of the 60-item RSS are backfilled only after original
 date/content and existing-event checks, retaining their real publication date.
+
+## Focus-source direct tracking audit (2026-10-28)
+
+The original 48 rows in `config/focus_sources.json` now carry an explicit
+`tracking` record. They are a priority catalog, not proof of a subscription:
+14 original website channels have direct public collectors; 19 specified X
+channels have official website/feed alternatives while X itself stays indirect;
+5 verified WeChat channels retain partial coverage; 10 channels still lack a
+stable direct route (8 personal accounts, Perplexity, Xiaomi MiMo).
+See `docs/research/focus-source-coverage-2026-10-28.md` and the source-intake receipt.
+
+Eighteen added public endpoints use the existing `official_ai` article route,
+T1 first-party attribution and independent health entries. RSS/Atom: Cursor
+Changelog, Replit Blog, Gemini Notebook Blog, Apple Developer AI news, OpenBMB
+MiniCPM releases, the specified Hugging Face open-r1 repository's commits, and
+Huawei's group-level AI/cloud press releases. The last two are explicitly
+repository maintenance and a partial institutional alternative, respectively.
+Public dated pages: xAI News, Grok Bot Changelog, Claude Articles, Suno Blog,
+Krea Blog, Luma News, Runway News, SiliconFlow Blog, Alibaba Cloud Blog,
+Viggle Blog and MiniMax Blog. These are capped at six dated items; Viggle reads
+at most eight detail-page metadata records because the index omits dates.
+
+Date parsing uses publication metadata, public server-rendered JSON or each
+article card's own date; it never borrows a neighbour's date or substitutes
+`dateModified`, sitemap modification time or collection time. A changed/challenge
+page fails its own health entry; a valid source with no eligible recent articles
+can be healthy with zero entries. RSS responses are checked as RSS/Atom rather
+than accepting HTTP 200 HTML. Grok Bot's native version anchors survive URL
+normalization. Existing URL/event deduplication still applies. Official pages
+are bounded samples, not exhaustive site backfills.
+
+AIHOT selected-only score>=60 remains unchanged. A separate `aihot_focus` task
+reads all mode (max 10 pages/1,000 records, at most six per configured channel,
+at most two technical items) for exact original-channel URLs, admitting useful
+unselected content without giving it direct-collection provenance. Truncation is
+reported. Personal general commentary is excluded, and copied source names or
+lookalike handles do not qualify. Shared WeChat domains remain on the original
+account/date verification path. Supplemental @bot and @imagine are institutional
+channels; @poteto is a team member's personal account, T2. They do not change the
+original 48-row count. Notebook and ChatGPT's current/legacy handles are matched
+explicitly. No login, cookies, paid API or new permission request was introduced.

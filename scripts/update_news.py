@@ -35,6 +35,13 @@ except ModuleNotFoundError:  # pragma: no cover - direct script execution
     from official_app_updates import APP_SOURCES, fetch_source as fetch_official_app_rows, update_fragment
 
 try:
+    from scripts.focus_official_updates import SOURCES as FOCUS_OFFICIAL_SOURCES, fetch_source as fetch_focus_official_rows
+    from scripts.focus_sources import matched_sources
+except ModuleNotFoundError:
+    from focus_official_updates import SOURCES as FOCUS_OFFICIAL_SOURCES, fetch_source as fetch_focus_official_rows
+    from focus_sources import matched_sources
+
+try:
     from scripts.ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
 except ModuleNotFoundError:  # pragma: no cover - direct `python scripts/update_news.py`
     from ai_relevance import AI_BROAD_RELEVANCE_FLOOR, add_ai_relevance_fields, is_broadly_ai_related, score_ai_relevance
@@ -227,7 +234,27 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, Any], ...] = (
         "max_entries": 4,
         "select_tier": "T1",
     },
+    {"title": "Cursor Changelog", "xml_url": "https://cursor.com/changelog/rss.xml", "html_url": "https://cursor.com/changelog",
+     "status_id": "official_feed_cursor", "product_priority": True, "max_entries": 6, "max_technical_entries": 2, "select_tier": "T1"},
+    {"title": "Replit Blog", "xml_url": "https://blog.replit.com/feed.xml", "html_url": "https://replit.com/blog",
+     "status_id": "official_feed_replit", "product_priority": True, "max_entries": 6, "max_technical_entries": 2, "select_tier": "T1"},
+    {"title": "Gemini Notebook Blog", "xml_url": "https://blog.google/innovation-and-ai/products/gemini-notebook/rss/", "html_url": "https://blog.google/innovation-and-ai/products/gemini-notebook/",
+     "status_id": "official_feed_notebook", "product_priority": True, "max_entries": 6, "max_technical_entries": 2, "select_tier": "T1"},
+    {"title": "Apple Developer News", "xml_url": "https://developer.apple.com/news/rss/news.rss", "html_url": "https://developer.apple.com/news/",
+     "status_id": "official_feed_apple_developer", "include_keywords": "apple intelligence,foundation models,machine learning,core ml,artificial intelligence,swift assist",
+     "max_entries": 6, "select_tier": "T1"},
+    {"title": "OpenBMB MiniCPM Releases", "xml_url": "https://github.com/OpenBMB/MiniCPM/releases.atom", "html_url": "https://github.com/OpenBMB/MiniCPM/releases",
+     "status_id": "official_feed_openbmb", "max_entries": 3, "select_tier": "T1"},
+    {"title": "Hugging Face open-r1 Commits", "xml_url": "https://github.com/huggingface/open-r1/commits/main.atom", "html_url": "https://github.com/huggingface/open-r1",
+     "status_id": "official_feed_open_r1", "max_entries": 3, "select_tier": "T1"},
+    {"title": "Huawei AI Press Releases", "xml_url": "https://www.huawei.com/en/rss-feeds/huawei-updates/rss", "html_url": "https://www.huawei.com/en/news/",
+     "status_id": "official_feed_huawei", "include_keywords": "artificial intelligence,cloud,pangu,ascend,intelligent model,steel model,steelmodel",
+     "max_entries": 4, "select_tier": "T1"},
 )
+# A successful aggregate must not hide a broken focus publisher.
+OFFICIAL_AI_FEEDS = tuple(dict(feed, status_id=feed.get("status_id") or
+                              "official_feed_" + re.sub(r"[^a-z0-9]+", "_", feed["title"].lower()).strip("_"))
+                          for feed in OFFICIAL_AI_FEEDS)
 OFFICIAL_AI_MAX_AGE_DAYS = 45
 # Domestic labs often publish monthly. Keep their posts long enough to reach the
 # archive and topic pages. The 24h view still uses published_at, not this window.
@@ -1887,6 +1914,10 @@ def fetch_feed_as_official_items(
     resp.raise_for_status()
 
     entries: list[dict[str, Any]]
+    if feed.get("status_id"):
+        root = ET.fromstring(resp.content)
+        if root.tag.split("}")[-1] not in {"rss", "feed", "RDF"}:
+            raise ValueError("Expected RSS/Atom from official feed")
     if feedparser is not None:
         parsed = feedparser.parse(resp.content)
         entries = list(parsed.entries)
@@ -2967,7 +2998,7 @@ def parse_aihot_feed_items(feed_content: bytes, now: datetime, feed_url: str = A
     return out
 
 
-def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None) -> list[RawItem]:
+def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None, *, min_score: float = AIHOT_MIN_SCORE) -> list[RawItem]:
     site_id = "aihot"
     site_name = "AI HOT"
     out: list[RawItem] = []
@@ -2987,7 +3018,7 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None) 
             score = float(raw_score)
         except (TypeError, ValueError):
             continue
-        if not math.isfinite(score) or score < AIHOT_MIN_SCORE:
+        if not math.isfinite(score) or score < min_score:
             continue
 
         title = maybe_fix_mojibake(str(first_non_empty(entry.get("title"), entry.get("title_en")) or "").strip())
@@ -3058,6 +3089,62 @@ def fetch_aihot(session: requests.Session, now: datetime) -> list[RawItem]:
             raise ValueError("AIHOT v1 pagination is missing nextCursor")
         if not page.get("hasMore") or not cursor:
             break
+    return out
+
+
+def fetch_aihot_focus(session: requests.Session, now: datetime) -> list[RawItem]:
+    # A separate health entry means all-mode failure cannot discard selected news.
+    # Selected news stays the default. The maintainer's exact public channels
+    # also get bounded all-mode discovery, independent of AIHOT's editorial gate.
+    out = []
+    seen = set()
+    focused = []
+    cursor = ""
+    fetch_aihot_focus.last_coverage = {"pages": 0, "truncated": False, "source": "AIHOT all; indirect coverage"}
+    for page_index in range(10):
+        params = {"mode": "all", "window": "7d", "by": "published", "limit": 100}
+        if cursor:
+            params["cursor"] = cursor
+        response = session.get(AIHOT_ITEMS_API_URL, params=params, timeout=30,
+                               headers={"User-Agent": AIHOT_API_UA, "Accept": "application/json"})
+        response.raise_for_status()
+        payload = response.json()
+        if payload.get("schemaVersion") != 1 or not isinstance(payload.get("page"), dict) or not isinstance(payload.get("items"), list):
+            raise ValueError("Unsupported AIHOT focus response envelope")
+        for item in parse_aihot_api_items(payload, now, min_score=0):
+            # Shared WeChat hosts require the separate original-account verifier.
+            if host_of_url(item.url) == "mp.weixin.qq.com" or not item.published_at or item.published_at > now:
+                continue
+            matches = matched_sources({"url": item.url})
+            if not matches or normalize_url(item.url) in seen:
+                continue
+            row = {"title": item.title, "url": item.url, "source": item.source,
+                   "site_id": item.site_id, "summary": item.meta.get("summary", "")}
+            focus = editorial_focus(row)
+            # Personal commentary/promotions don't become news just by author.
+            if focus == "general" and not score_ai_relevance(row | {"site_id": "", "source": ""})["is_ai_related"]:
+                continue
+            if focus == "general" and all(match.get("identity_kind") in {"personal_account", "team_member_personal_account"} for match in matches):
+                continue
+            focused.append((item, matches[0]["id"], focus))
+        page = payload["page"]
+        fetch_aihot_focus.last_coverage.update(pages=page_index + 1, truncated=bool(page.get("hasMore")))
+        cursor = str(page.get("nextCursor") or "")
+        if page.get("hasMore") and not cursor:
+            raise ValueError("AIHOT focus pagination is missing nextCursor")
+        if not page.get("hasMore"):
+            break
+    counts = {}
+    technical = {}
+    focused.sort(key=lambda x: ({"product": 0, "general": 1, "technical": 2}[x[2]], -x[0].published_at.timestamp()))
+    for item, source_id, focus in focused:
+        key = normalize_url(item.url)
+        if key in seen or counts.get(source_id, 0) >= 6 or (focus == "technical" and technical.get(source_id, 0) >= 2):
+            continue
+        seen.add(key)
+        counts[source_id] = counts.get(source_id, 0) + 1
+        technical[source_id] = technical.get(source_id, 0) + int(focus == "technical")
+        out.append(item)
     return out
 
 
@@ -3239,6 +3326,7 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
         ("aihubtoday", "AI HubToday", fetch_ai_hubtoday),
         ("aibase", "AIbase", fetch_aibase),
         ("aihot", "AI HOT", fetch_aihot),
+        ("aihot_focus", "AIHOT Focus Channels (indirect)", fetch_aihot_focus),
         ("newsnow", "NewsNow", fetch_newsnow),
     ]
     tasks.extend((feed["status_id"], feed["title"],
@@ -3249,6 +3337,14 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
     tasks.extend((spec["id"], spec["title"],
                   lambda session, now, spec=spec: fetch_official_app_source(session, spec, now))
                  for spec in APP_SOURCES)
+    def fetch_focus(session, now, spec):
+        return [RawItem(site_id="official_ai", site_name=spec["title"], source=row["source"],
+                        title=row["title"], url=row["url"], published_at=row["published_at"],
+                        meta={key: row[key] for key in ("summary", "feed_url", "feed_home", "select_tier")})
+                for row in fetch_focus_official_rows(session, spec, now)]
+    tasks.extend((spec["id"], spec["title"],
+                  lambda session, now, spec=spec: fetch_focus(session, now, spec))
+                 for spec in FOCUS_OFFICIAL_SOURCES)
 
     raw_items: list[RawItem] = []
     statuses: list[dict[str, Any]] = []
@@ -3274,6 +3370,8 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
                 "error": error,
             }
         )
+        if fn is fetch_aihot_focus and hasattr(fn, "last_coverage"):
+            statuses[-1]["coverage"] = dict(fn.last_coverage)
 
     return raw_items, statuses
 

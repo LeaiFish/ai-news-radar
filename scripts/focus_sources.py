@@ -17,6 +17,11 @@ def load_sources():
     return json.loads(CATALOG.read_text(encoding="utf-8"))["sources"]
 
 
+@lru_cache(maxsize=1)
+def load_supplemental_sources():
+    return json.loads(CATALOG.read_text(encoding="utf-8")).get("supplemental_sources", [])
+
+
 def url_parts(value):
     parsed = urlparse(str(value or ""))
     host = (parsed.hostname or "").casefold().removeprefix("www.")
@@ -30,7 +35,7 @@ def source_rules():
     return [
         (row, {normalize_name(alias) for alias in row.get("aliases", [])},
          [url_parts(url) for url in row.get("match_urls", [row.get("source_url")]) if url])
-        for row in load_sources()
+        for row in load_sources() + load_supplemental_sources()
     ]
 
 

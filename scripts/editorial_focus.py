@@ -30,6 +30,8 @@ _TECHNICAL = re.compile(
 def editorial_tags(row: dict[str, Any]) -> list[str]:
     source = str(row.get("source") or "").casefold()
     title = str(row.get("title") or "")
+    if source == "hugging face open-r1 commits":
+        return ["model_technology"]  # Repository maintenance is not a product launch.
     url = str(row.get("url") or row.get("primary_url") or "")
     try:
         parsed = urlsplit(url)

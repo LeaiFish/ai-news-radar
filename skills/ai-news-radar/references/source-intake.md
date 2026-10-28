@@ -170,3 +170,15 @@ Inspect `/tmp/ai-news-radar-data/source-status.json`:
 - `failed_sites` is empty or the failure is expected and documented
 - item count is plausible
 - AI-focused view is not flooded with off-topic items
+
+### Focus catalog is not a subscription
+
+For the maintainer's 48 focus channels, inspect each `tracking` record in
+`config/focus_sources.json` and current per-source health, not just catalog
+membership. Distinguish original-channel direct reads, official alternatives,
+verified-but-partial WeChat, and indirect-only coverage. Personal/team-member
+accounts never inherit institutional authority. The 2026-10-28 audit and receipt
+are `docs/research/focus-source-coverage-2026-10-28.md` and
+`reports/source-intake/2026-10-28-focus-direct-tracking.json`. Check live status
+before proposing to reconnect sources already configured there. AIHOT all-mode
+focus discovery is an indirect safety net, not proof of direct X monitoring.

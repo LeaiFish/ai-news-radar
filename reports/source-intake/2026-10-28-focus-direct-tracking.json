@@ -1,0 +1,1629 @@
+{
+  "schema": "focus_source_intake_v1",
+  "at": "2026-10-28T07:47:35.115276+00:00",
+  "status": "implemented_and_tested_pending_online_verification",
+  "focus_sources": 48,
+  "states": {
+    "official_alternative_only": 19,
+    "original_web_direct": 14,
+    "indirect_only": 10,
+    "wechat_verified_partial": 5
+  },
+  "new_direct_endpoints": 18,
+  "sources": [
+    {
+      "id": "focus-01",
+      "name": "suno",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/suno",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_suno",
+          "title": "Suno Blog",
+          "url": "https://suno.com/blog"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-02",
+      "name": "OpenRouter（x）",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/OpenRouter",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_openrouter_blog",
+          "title": "OpenRouter Blog",
+          "url": "https://openrouter.ai/blog/feed.xml"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-03",
+      "name": "OpenRouter（官网）",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://openrouter.ai/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_openrouter_blog",
+          "title": "OpenRouter Blog",
+          "url": "https://openrouter.ai/blog/feed.xml"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-04",
+      "name": "Hugging Face",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://huggingface.co/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_hugging_face_blog",
+          "title": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/feed.xml"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-05",
+      "name": "IT之家",
+      "kind": "website",
+      "identity_kind": "media",
+      "original_url": "https://www.ithome.com/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "curated_media",
+          "title": "IT之家",
+          "url": "https://www.ithome.com/rss/"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-06",
+      "name": "OpenAI Developers",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/OpenAIDevs",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_ai",
+          "title": "OpenAI Codex Changelog",
+          "url": "https://developers.openai.com/codex/changelog"
+        },
+        {
+          "collector_id": "official_feed_openai_skills",
+          "title": "OpenAI Skills",
+          "url": "https://github.com/openai/skills/commits/main.atom"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-07",
+      "name": "OpenAI",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/OpenAI",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_openai_news",
+          "title": "OpenAI News",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-08",
+      "name": "Replit",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/Replit",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_replit",
+          "title": "Replit Blog",
+          "url": "https://blog.replit.com/feed.xml"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-09",
+      "name": "Perplexity",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/perplexity_ai",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "官方changelog及blog返回403；API changelog RSS试读404，不绕过访问限制。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-10",
+      "name": "Cursor",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://cursor.com/cn/home",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_cursor",
+          "title": "Cursor Changelog",
+          "url": "https://cursor.com/changelog/rss.xml"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-11",
+      "name": "GitHub",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://github.com/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_open_r1",
+          "title": "Hugging Face open-r1 Commits",
+          "url": "https://github.com/huggingface/open-r1/commits/main.atom"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "用户样例实际指huggingface/open-r1；直接读取该仓库commit Atom，内部标技术动态，不作模型/产品发布。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-12",
+      "name": "xAI",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://x.ai/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_xai",
+          "title": "xAI News",
+          "url": "https://x.ai/news"
+        },
+        {
+          "collector_id": "official_focus_grok_bot",
+          "title": "Grok Bot Changelog",
+          "url": "https://x.ai/changelog/bot"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-13",
+      "name": "Krea",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/krea_ai",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_krea",
+          "title": "Krea Blog",
+          "url": "https://www.krea.ai/blog"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-14",
+      "name": "千问",
+      "kind": "wechat",
+      "identity_kind": "institution",
+      "original_url": null,
+      "account_name": "千问APP",
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "wechat_verified_partial",
+      "direct_collectors": [
+        {
+          "collector_id": "official_ai",
+          "title": "Qwen Blog",
+          "url": "https://qwen.ai/api/v2/article/retrieval?language=zh-CN&type=qwen_ai"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "已核验公众号桥接仍部分覆盖，不能把官网替代渠道当该公众号全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-15",
+      "name": "腾讯混元",
+      "kind": "wechat",
+      "identity_kind": "institution",
+      "original_url": null,
+      "account_name": "腾讯混元",
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "wechat_verified_partial",
+      "direct_collectors": [
+        {
+          "collector_id": "official_ai",
+          "title": "Hunyuan Blog",
+          "url": "https://api.hunyuan.tencent.com/api/blog/publicList"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "已核验公众号桥接仍部分覆盖，不能把官网替代渠道当该公众号全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-16",
+      "name": "The Verge",
+      "kind": "website",
+      "identity_kind": "media",
+      "original_url": "https://www.theverge.com/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "curated_media",
+          "title": "The Verge",
+          "url": "https://www.theverge.com/rss/index.xml"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-17",
+      "name": "Xiaomi MiMo",
+      "kind": "wechat",
+      "identity_kind": "institution",
+      "original_url": null,
+      "account_name": "Xiaomi MiMo",
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "原公众号未配置；MiMo首页条目缺完整日期且站点sitemap返回404；不编造发布日期。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-18",
+      "name": "Berryxia.AI",
+      "kind": "x",
+      "identity_kind": "personal_account",
+      "original_url": "https://x.com/berryxia",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "指定X账号未建立稳定匿名轮询；AIHOT全量重点补漏仍是间接覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-19",
+      "name": "MiniMax",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/MiniMax_AI",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_minimax",
+          "title": "MiniMax Blog",
+          "url": "https://www.minimax.io/blog"
+        },
+        {
+          "collector_id": "official_ai",
+          "title": "MiniMax Release Notes",
+          "url": "https://platform.minimaxi.com/docs/release-notes.md"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-20",
+      "name": "Hacker News",
+      "kind": "website",
+      "identity_kind": "community",
+      "original_url": "https://news.ycombinator.com/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "hackernews",
+          "title": "Hacker News AI query",
+          "url": "https://hn.algolia.com/api/v1/search_by_date"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-21",
+      "name": "Huawei Cloud",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/HuaweiCloud1",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_huawei",
+          "title": "Huawei AI Press Releases",
+          "url": "https://www.huawei.com/en/rss-feeds/huawei-updates/rss"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。 新RSS来自华为集团，仅云/AI相关条目，不等于Huawei Cloud账号全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-22",
+      "name": "火山引擎",
+      "kind": "wechat",
+      "identity_kind": "institution",
+      "original_url": null,
+      "account_name": "火山引擎",
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "wechat_verified_partial",
+      "direct_collectors": [
+        {
+          "collector_id": "official_ai",
+          "title": "ByteDance Seed Blog",
+          "url": "https://seed.bytedance.com/zh/blog"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "已核验公众号桥接仍部分覆盖，不能把官网替代渠道当该公众号全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-23",
+      "name": "claude",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://claude.com/blog",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_claude",
+          "title": "Claude Articles",
+          "url": "https://claude.com/resources/articles"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-24",
+      "name": "NotebookLM",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/NotebookLM",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_notebook",
+          "title": "Gemini Notebook Blog",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/rss/"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-25",
+      "name": "eric zakariasson",
+      "kind": "x",
+      "identity_kind": "personal_account",
+      "original_url": "https://x.com/ericzakariasson",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "指定X账号未建立稳定匿名轮询；AIHOT全量重点补漏仍是间接覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-26",
+      "name": "Fei-Fei Li",
+      "kind": "x",
+      "identity_kind": "personal_account",
+      "original_url": "https://x.com/drfeifei",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "指定X账号未建立稳定匿名轮询；AIHOT全量重点补漏仍是间接覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-27",
+      "name": "Luma",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/LumaLabsAI",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_luma",
+          "title": "Luma News",
+          "url": "https://lumalabs.ai/news"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-28",
+      "name": "Apple",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://developer.apple.com/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_apple_developer",
+          "title": "Apple Developer News",
+          "url": "https://developer.apple.com/news/rss/news.rss"
+        },
+        {
+          "collector_id": "official_feed_apple_machine_learning_research",
+          "title": "Apple Machine Learning Research",
+          "url": "https://machinelearning.apple.com/rss.xml"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-29",
+      "name": "Viggle AI",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/ViggleAI",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_viggle",
+          "title": "Viggle Blog",
+          "url": "https://viggle.ai/blog"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。 官网列表缺日期，每轮最多读取8个公开文章元数据；无法保证列表之外的回填。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-30",
+      "name": "TechCrunch",
+      "kind": "website",
+      "identity_kind": "media",
+      "original_url": "https://techcrunch.com/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "curated_media",
+          "title": "TechCrunch AI",
+          "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-31",
+      "name": "Kimi",
+      "kind": "wechat",
+      "identity_kind": "institution",
+      "original_url": null,
+      "account_name": "Kimi智能助手",
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "wechat_verified_partial",
+      "direct_collectors": [
+        {
+          "collector_id": "official_ai",
+          "title": "Kimi API Changelog",
+          "url": "https://platform.kimi.com/docs/changelog.md"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "已核验公众号桥接仍部分覆盖，不能把官网替代渠道当该公众号全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-32",
+      "name": "MarkTechPost",
+      "kind": "website",
+      "identity_kind": "media",
+      "original_url": "https://www.marktechpost.com/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "curated_media",
+          "title": "MarkTechPost Research",
+          "url": "https://www.marktechpost.com/feed/"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-33",
+      "name": "ChatGPT",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/ChatGPTapp",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_app_chatgpt",
+          "title": "ChatGPT Product Updates",
+          "url": "https://learn.chatgpt.com/docs/whats-new"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-34",
+      "name": "Runway",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/runwayml",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_runway",
+          "title": "Runway News",
+          "url": "https://runway.com/news"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-35",
+      "name": "Rohan Paul",
+      "kind": "x",
+      "identity_kind": "personal_account",
+      "original_url": "https://x.com/rohanpaul_ai",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "指定X账号未建立稳定匿名轮询；AIHOT全量重点补漏仍是间接覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-36",
+      "name": "Michael Truell",
+      "kind": "x",
+      "identity_kind": "personal_account",
+      "original_url": "https://x.com/mntruell",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "指定X账号未建立稳定匿名轮询；AIHOT全量重点补漏仍是间接覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-37",
+      "name": "Google Gemini",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/GeminiApp",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_app_gemini_blog",
+          "title": "Gemini App Blog",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/rss/"
+        },
+        {
+          "collector_id": "official_app_gemini_notes",
+          "title": "Gemini Release Notes",
+          "url": "https://gemini.google/release-notes/"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-38",
+      "name": "Google AI",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/GoogleAI",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_google_ai_blog",
+          "title": "Google AI Blog",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/rss/"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-39",
+      "name": "Cloudflare Blog",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://blog.cloudflare.com/",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_cloudflare_blog",
+          "title": "Cloudflare Blog",
+          "url": "https://blog.cloudflare.com/tag/ai/rss/"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-40",
+      "name": "OpenBMB",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/OpenBMB",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_feed_openbmb",
+          "title": "OpenBMB MiniCPM Releases",
+          "url": "https://github.com/OpenBMB/MiniCPM/releases.atom"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-41",
+      "name": "通义实验室",
+      "kind": "wechat",
+      "identity_kind": "institution",
+      "original_url": null,
+      "account_name": "通义实验室",
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "wechat_verified_partial",
+      "direct_collectors": [
+        {
+          "collector_id": "official_ai",
+          "title": "Qwen Blog",
+          "url": "https://qwen.ai/api/v2/article/retrieval?language=zh-CN&type=qwen_ai"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "已核验公众号桥接仍部分覆盖，不能把官网替代渠道当该公众号全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-42",
+      "name": "Elon Musk",
+      "kind": "x",
+      "identity_kind": "personal_account",
+      "original_url": "https://x.com/elonmusk",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "指定X账号未建立稳定匿名轮询；AIHOT全量重点补漏仍是间接覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-43",
+      "name": "Alibaba Cloud",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/alibaba_cloud",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_alibaba",
+          "title": "Alibaba Cloud Blog",
+          "url": "https://www.alibabacloud.com/blog"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-44",
+      "name": "anthropic",
+      "kind": "website",
+      "identity_kind": "institution",
+      "original_url": "https://www.anthropic.com/news",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "original_web_direct",
+      "direct_collectors": [
+        {
+          "collector_id": "official_ai",
+          "title": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        }
+      ],
+      "original_channel_direct": true,
+      "boundary": "仅所列官方栏目/AI内容；不是全站全量。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-45",
+      "name": "SiliconFlow",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/SiliconFlowAI",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_focus_siliconflow",
+          "title": "SiliconFlow Blog",
+          "url": "https://www.siliconflow.com/blog"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-46",
+      "name": "Satya Nadella",
+      "kind": "x",
+      "identity_kind": "personal_account",
+      "original_url": "https://x.com/satyanadella",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "指定X账号未建立稳定匿名轮询；AIHOT全量重点补漏仍是间接覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-47",
+      "name": "Logan Kilpatrick",
+      "kind": "x",
+      "identity_kind": "personal_account",
+      "original_url": "https://x.com/OfficialLoganK",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "indirect_only",
+      "direct_collectors": [],
+      "original_channel_direct": false,
+      "boundary": "指定X账号未建立稳定匿名轮询；AIHOT全量重点补漏仍是间接覆盖。",
+      "indirect_route": "aihot_focus"
+    },
+    {
+      "id": "focus-48",
+      "name": "ClaudeDevs",
+      "kind": "x",
+      "identity_kind": "institution",
+      "original_url": "https://x.com/ClaudeDevs",
+      "account_name": null,
+      "audited_at": "2026-10-28T07:47:35.115276+00:00",
+      "state": "official_alternative_only",
+      "direct_collectors": [
+        {
+          "collector_id": "official_ai",
+          "title": "Claude Code Releases",
+          "url": "https://github.com/anthropics/claude-code/releases.atom"
+        },
+        {
+          "collector_id": "official_focus_claude",
+          "title": "Claude Articles",
+          "url": "https://claude.com/resources/articles"
+        }
+      ],
+      "original_channel_direct": false,
+      "boundary": "官方官网/RSS是补充渠道，指定X账号仍仅有聚合/既有快照覆盖。",
+      "indirect_route": "aihot_focus"
+    }
+  ],
+  "supplemental_sources": [
+    {
+      "id": "supplement-grok-bot",
+      "name": "Grok Bot官方账号",
+      "kind": "x",
+      "source_url": "https://x.com/bot",
+      "authority": 1,
+      "aliases": [],
+      "identity_kind": "institution",
+      "capture_route": "aihot_all_focus_indirect"
+    },
+    {
+      "id": "supplement-grok-imagine",
+      "name": "Grok Imagine官方账号",
+      "kind": "x",
+      "source_url": "https://x.com/imagine",
+      "authority": 1,
+      "aliases": [],
+      "identity_kind": "institution",
+      "capture_route": "aihot_all_focus_indirect"
+    },
+    {
+      "id": "supplement-lauren-tan",
+      "name": "Lauren Tan（团队成员个人账号）",
+      "kind": "x",
+      "source_url": "https://x.com/poteto",
+      "authority": 2,
+      "aliases": [],
+      "identity_kind": "team_member_personal_account",
+      "capture_route": "aihot_all_focus_indirect"
+    }
+  ],
+  "boundaries": [
+    "X原账号没有匿名稳定直采，官方网站替代不冒充账号覆盖。",
+    "个人账号仍T2，团队成员身份不等于机构公告。",
+    "AIHOT原精选路径保留，另增独立健康记录的all-mode补漏，最多10页/1000条、每重点渠道6条、技术最多2条。",
+    "全量API仍可能截断；WeChat候选仍须走原文账号核验，不从聚合摘要直接导入。",
+    "无付费接口、Cookie读取、登录绕过、新权限申请。"
+  ],
+  "verification": {
+    "unit_tests": "624 passed; 36 upstream feedparser deprecation warnings",
+    "live_probe": {
+      "at": "2026-10-28T07:44:36.929674+00:00",
+      "sources": 32,
+      "healthy": 32,
+      "zero_item_sources": [
+        "official_feed_openai_skills",
+        "official_feed_openbmb",
+        "official_feed_apple_developer",
+        "official_focus_viggle"
+      ],
+      "results": [
+        {
+          "id": "official_feed_github_changelog",
+          "ok": true,
+          "count": 10,
+          "error": null,
+          "sample": [
+            {
+              "title": "GitHub Copilot supports server-to-server authentication",
+              "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+              "published_at": "2026-10-27T21:36:55+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "GitHub Copilot assisted permissions generally available",
+              "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available",
+              "published_at": "2026-10-26T22:31:30+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_google_ai_blog",
+          "ok": true,
+          "count": 16,
+          "error": null,
+          "sample": [
+            {
+              "title": "Our newest AI Quest: Mapping the human brain",
+              "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+              "published_at": "2026-10-26T16:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Southeast Asia’s digital economy to hit $368 billion",
+              "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+              "published_at": "2026-10-21T04:00:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_openai_skills",
+          "ok": true,
+          "count": 0,
+          "error": null,
+          "sample": [],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_google_deepmind",
+          "ok": true,
+          "count": 14,
+          "error": null,
+          "sample": [
+            {
+              "title": "Genie 4: A new generation of world simulation",
+              "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+              "published_at": "2026-10-27T16:01:38+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Beyond tree cover: mapping the world’s forest types",
+              "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+              "published_at": "2026-10-22T14:30:24+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_openai_news",
+          "ok": true,
+          "count": 107,
+          "error": null,
+          "sample": [
+            {
+              "title": "Retell uses OpenAI models to help power 100M monthly calls",
+              "url": "https://openai.com/index/retell-ai",
+              "published_at": "2026-10-27T15:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+              "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+              "published_at": "2026-10-27T07:00:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_apple_machine_learning_research",
+          "ok": true,
+          "count": 10,
+          "error": null,
+          "sample": [
+            {
+              "title": "GHARP: Real-Time Gaussian Head Animation from Large-Scale Reconstruction Prior",
+              "url": "https://machinelearning.apple.com/research/gharp-head-animation",
+              "published_at": "2026-10-26T00:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
+              "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+              "published_at": "2026-10-15T00:00:00+00:00",
+              "editorial_focus": "technical"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_openrouter_blog",
+          "ok": true,
+          "count": 31,
+          "error": null,
+          "sample": [
+            {
+              "title": "CSAM Screening Across OpenRouter",
+              "url": "https://openrouter.ai/blog/announcements/csam-screening/",
+              "published_at": "2026-10-27T00:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Private Endpoints: Bring Your Fine-Tuned Models and Capacity to OpenRouter",
+              "url": "https://openrouter.ai/blog/announcements/private-endpoints/",
+              "published_at": "2026-10-14T00:00:00+00:00",
+              "editorial_focus": "technical"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_hugging_face_blog",
+          "ok": true,
+          "count": 31,
+          "error": null,
+          "sample": [
+            {
+              "title": "Build specialized multimodal models with LFM3",
+              "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+              "published_at": "2026-10-27T17:16:52+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Can we trust LLMs to judge whether a research idea is novel?",
+              "url": "https://huggingface.co/blog/allenai/novelty-bench",
+              "published_at": "2026-10-27T16:12:42+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_cloudflare_blog",
+          "ok": true,
+          "count": 20,
+          "error": null,
+          "sample": [
+            {
+              "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+              "url": "https://blog.cloudflare.com/webmcp-commerce/",
+              "published_at": "2026-10-21T13:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+              "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+              "published_at": "2026-10-19T19:12:53+00:00",
+              "editorial_focus": "technical"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_github_ai_ml",
+          "ok": true,
+          "count": 10,
+          "error": null,
+          "sample": [
+            {
+              "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+              "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+              "published_at": "2026-10-20T16:05:03+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "How to continue a GitHub Copilot app session in VS Code",
+              "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+              "published_at": "2026-10-19T18:47:22+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_langchain_blog",
+          "ok": true,
+          "count": 8,
+          "error": null,
+          "sample": [
+            {
+              "title": "How We Built Our Design Agent",
+              "url": "https://www.langchain.com/blog/design-agent",
+              "published_at": "2026-10-27T17:05:05+00:00",
+              "editorial_focus": "product"
+            },
+            {
+              "title": "The five components of building a \"company harness\"",
+              "url": "https://www.langchain.com/blog/components-building-company-harness",
+              "published_at": "2026-10-26T15:32:16+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_cursor",
+          "ok": true,
+          "count": 5,
+          "error": null,
+          "sample": [
+            {
+              "title": "Cloud Agent Canvases and Environment Improvements",
+              "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments",
+              "published_at": "2026-10-16T00:00:00+00:00",
+              "editorial_focus": "product"
+            },
+            {
+              "title": "Remote control for local agents",
+              "url": "https://cursor.com/changelog/remote-control-local-agents",
+              "published_at": "2026-10-06T00:00:00+00:00",
+              "editorial_focus": "product"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_vllm_blog",
+          "ok": true,
+          "count": 4,
+          "error": null,
+          "sample": [
+            {
+              "title": "Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Scales to GB300 NVL72",
+              "url": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
+              "published_at": "2026-10-23T00:00:00+00:00",
+              "editorial_focus": "technical"
+            },
+            {
+              "title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s",
+              "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
+              "published_at": "2026-10-23T00:00:00+00:00",
+              "editorial_focus": "technical"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_notebook",
+          "ok": true,
+          "count": 3,
+          "error": null,
+          "sample": [
+            {
+              "title": "How to shape your slides and videos with Gemini Notebook",
+              "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/",
+              "published_at": "2026-10-19T17:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "We’re sharing 3 tips to study smarter with Gemini Notebook.",
+              "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/three-tips-study-gemini-notebook/",
+              "published_at": "2026-10-16T16:00:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_huawei",
+          "ok": true,
+          "count": 1,
+          "error": null,
+          "sample": [
+            {
+              "title": "From Expertise to Intelligence: NISCO Deploys World's First Swarm-Intelligence Steel Model at Scale",
+              "url": "https://www.huawei.com/en/news/2026/10/nisco-yuanye-steelmodel",
+              "published_at": "2026-10-27T18:07:12.566168+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_openbmb",
+          "ok": true,
+          "count": 0,
+          "error": null,
+          "sample": [],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_apple_developer",
+          "ok": true,
+          "count": 0,
+          "error": null,
+          "sample": [],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_open_r1",
+          "ok": true,
+          "count": 3,
+          "error": null,
+          "sample": [
+            {
+              "title": "Say issues and PRs won't be reviewed",
+              "url": "https://github.com/huggingface/open-r1/commit/5b6ff22b3fb7aa069c54866e517f39dfc3160e09",
+              "published_at": "2026-10-02T03:57:37+00:00",
+              "editorial_focus": "technical"
+            },
+            {
+              "title": "Shorten the banner",
+              "url": "https://github.com/huggingface/open-r1/commit/9b16118aedb697dae27ec71b2d88a18ec8407c33",
+              "published_at": "2026-10-02T03:57:16+00:00",
+              "editorial_focus": "technical"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_suno",
+          "ok": true,
+          "count": 5,
+          "error": null,
+          "sample": [
+            {
+              "title": "Behind the Scenes: Make what moves you",
+              "url": "https://suno.com/blog/behind-the-scenes-make-what-moves-you",
+              "published_at": "2026-10-13T19:01:53.802000+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "5 Albums You Can't Miss",
+              "url": "https://suno.com/blog/albums-to-discover",
+              "published_at": "2026-10-05T18:53:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_xai",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "Your next sales teammate should be a Grok Bot",
+              "url": "https://x.ai/news/grok-bot-sales",
+              "published_at": "2026-10-27T00:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Introducing the SpaceX Super Intelligence Partner Network",
+              "url": "https://x.ai/news/partnernetworkannouncement",
+              "published_at": "2026-10-22T00:00:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_grok_bot",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "Grok Bot v0.77.0: Permissions, Vault payments, and question cards",
+              "url": "https://x.ai/changelog/bot#v0.77.0",
+              "published_at": "2026-10-26T00:00:00+00:00",
+              "editorial_focus": "product"
+            },
+            {
+              "title": "Grok Bot v0.75.8: Auto-review rule cards and smarter connectors",
+              "url": "https://x.ai/changelog/bot#v0.75.8",
+              "published_at": "2026-10-24T00:00:00+00:00",
+              "editorial_focus": "product"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_krea",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "Can You Run Seedance 2.5 Locally? Open Source Status",
+              "url": "https://www.krea.ai/blog/can-you-run-seedance-2-5-locally",
+              "published_at": "2026-10-26T00:00:00+00:00",
+              "editorial_focus": "product"
+            },
+            {
+              "title": "How to Use Seedance 2.5: Step-by-Step Tutorial (2026)",
+              "url": "https://www.krea.ai/blog/how-to-use-seedance-2-5",
+              "published_at": "2026-10-26T00:00:00+00:00",
+              "editorial_focus": "product"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_claude",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "Manage costs and demonstrate ROI for Claude Code on Google Cloud",
+              "url": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud",
+              "published_at": "2026-10-27T00:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Claude for Financial Advisors",
+              "url": "https://claude.com/resources/articles/claude-for-financial-advisors",
+              "published_at": "2026-10-27T00:00:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_replit",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "Introducing Replit Solutions Partners",
+              "url": "https://replit.com/blog/introducing-replit-solutions-partners",
+              "published_at": "2026-10-13T17:25:04+00:00",
+              "editorial_focus": "product"
+            },
+            {
+              "title": "Anyone can now bring their ideas into the company codebase",
+              "url": "https://replit.com/blog/anyone-can-bring-ideas-to-company-codebase",
+              "published_at": "2026-10-27T15:30:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_runway",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "Runway Ads Is Generally Available",
+              "url": "https://runway.com/news/company-news/runway-ads",
+              "published_at": "2026-10-27T16:11:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Introducing Runway App Studio",
+              "url": "https://runway.com/news/company-news/introducing-runway-app-studio",
+              "published_at": "2026-10-26T20:31:00+00:00",
+              "editorial_focus": "product"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_luma",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "AI Face Swap for Ads: One Spot, Every Market, No Reshoot",
+              "url": "https://lumalabs.ai/news/ai-face-swap-ads",
+              "published_at": "2026-10-27T07:31:19.662000+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "Reface and Remaker Alternatives for Professional Video",
+              "url": "https://lumalabs.ai/news/reface-remaker-alternatives",
+              "published_at": "2026-10-27T07:22:31.030000+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_alibaba",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "Quên: The AI Memory That Knows Exactly What to Forget",
+              "url": "https://www.alibabacloud.com/blog/qu%C3%AAn-the-ai-memory-that-knows-exactly-what-to-forget_603698",
+              "published_at": "2026-10-28T00:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "From Idea to Incorporated: How Corpus Formation Autopilot Turns Plain Language Into a Company",
+              "url": "https://www.alibabacloud.com/blog/from-idea-to-incorporated-how-corpus-formation-autopilot-turns-plain-language-into-a-company_603697",
+              "published_at": "2026-10-28T00:00:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_minimax",
+          "ok": true,
+          "count": 2,
+          "error": null,
+          "sample": [
+            {
+              "title": "Introducing MiniMax Code Mini App",
+              "url": "https://www.minimax.io/blog/minimax-code-mini-app-1792650729",
+              "published_at": "2026-10-22T00:00:00+00:00",
+              "editorial_focus": "product"
+            },
+            {
+              "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost",
+              "url": "https://www.minimax.io/blog/minimax-m31f",
+              "published_at": "2026-10-19T00:00:00+00:00",
+              "editorial_focus": "technical"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "official_focus_siliconflow",
+          "ok": true,
+          "count": 6,
+          "error": null,
+          "sample": [
+            {
+              "title": "SiliconFlow API Rate Limits and 429 Retry Strategies",
+              "url": "https://www.siliconflow.com/blog/siliconflow-api-rate-limits-rpm-tpm-429",
+              "published_at": "2026-10-13T00:00:00+00:00",
+              "editorial_focus": "general"
+            },
+            {
+              "title": "OpenAI SDK Setup for SiliconFlow API Integration",
+              "url": "https://www.siliconflow.com/blog/openai-sdk-siliconflow-compatibility-checks",
+              "published_at": "2026-10-13T00:00:00+00:00",
+              "editorial_focus": "general"
+            }
+          ],
+          "coverage": null
+        },
+        {
+          "id": "aihot_focus",
+          "ok": true,
+          "count": 73,
+          "error": null,
+          "sample": [
+            {
+              "title": "Grok Imagine 发布官方提示词指南并公开 Odyssey 制作工作流",
+              "url": "https://x.com/elonmusk/status/2115323441738047731",
+              "published_at": "2026-10-28T06:03:03+00:00",
+              "editorial_focus": "product"
+            },
+            {
+              "title": "OpenAI 面向所有 ChatGPT 用户开放 iCloud Mail 与 iCloud Calendar 插件",
+              "url": "https://www.ithome.com/1/018/734.htm",
+              "published_at": "2026-10-28T00:55:45.203000+00:00",
+              "editorial_focus": "product"
+            }
+          ],
+          "coverage": {
+            "pages": 10,
+            "truncated": true,
+            "source": "AIHOT all; indirect coverage"
+          }
+        },
+        {
+          "id": "official_focus_viggle",
+          "ok": true,
+          "count": 0,
+          "error": null,
+          "sample": [],
+          "coverage": null
+        },
+        {
+          "id": "official_feed_meta_engineering_blog",
+          "ok": true,
+          "count": 5,
+          "error": null,
+          "sample": [
+            {
+              "title": "Python Typing Survey 2026: AI Tools and the Shifting Checker Landscape",
+              "url": "https://engineering.fb.com/2026/10/27/developer-tools/python-typing-survey-2026-ai-tools-checker-landscape/",
+              "published_at": "2026-10-27T15:59:24+00:00",
+              "editorial_focus": "technical"
+            },
+            {
+              "title": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+              "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+              "published_at": "2026-10-26T16:00:07+00:00",
+              "editorial_focus": "technical"
+            }
+          ],
+          "coverage": null
+        }
+      ]
+    },
+    "five_prior_gaps_in_probe": {
+      "2115130760009273501": true,
+      "2115159585548021814": true,
+      "2115199172836302964": true,
+      "2115205951649423585": true,
+      "2115323441738047731": true
+    },
+    "diff_check": "passed"
+  },
+  "deployment": {
+    "status": "pending"
+  }
+}

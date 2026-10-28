@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 _BRANDS = re.compile(
     r"(?<![a-z0-9])(?:chatgpt|openai|claude|anthropic|gemini|deepseek|copilot|codex|cursor|"
     r"qwen|minimax|kimi|seedance|seedream|viggle|openrouter|perplexity|workbuddy|"
-    r"lovable|langchain|langsmith|krea|genspark|manus|comfyui|ollama|siri)(?![a-z0-9])"
+    r"lovable|langchain|langsmith|krea|genspark|manus|comfyui|ollama|siri|grok|suno|replit|runway|luma|siliconflow|notebooklm)(?![a-z0-9])"
     r"|通义千问|千问|豆包|腾讯元宝|智谱清言|即梦|可灵|海螺AI|蚂蚁灵光|灵光(?=\s*\d)", re.I,
 )
 _EXPLICIT_AI_APP = re.compile(r"(?<![a-z0-9])AI[\s-]*(?:助[手理]|应用|工具|插件|管家|assistant\b|app\b|tool\b)|人工智能助[手理]", re.I)
@@ -23,6 +23,8 @@ _HANDLES = {
     "viggleai": "viggle", "openrouter": "openrouter", "perplexity_ai": "perplexity",
     "workbuddy_ai": "workbuddy", "chatgpt": "chatgpt", "muse": "meta muse",
     "lovable_dev": "lovable", "krea_ai": "krea", "minimax_ai": "minimax",
+    "cursor_ai": "cursor", "gemini_notebook": "gemini notebook", "notebooklm": "gemini notebook",
+    "imagine": "grok imagine", "bot": "grok bot",
 }
 _DOMAINS = {
     "viggle.ai": "viggle", "docs.viggle.ai": "viggle", "openrouter.ai": "openrouter",
@@ -46,14 +48,14 @@ _CAPABILITY = re.compile(
     r"(?<![a-z])(?:apis?|sdks?|features?|dashboards?|workspaces?|integrations?|"
     r"subscriptions?|endpoints?|transcriptions?|captions?|object detection|pointing|chats?|conversations?|collaborat\w*|"
     r"editing|memory|connectors?|speech|audio|voice|3d|image editing|"
-    r"local(?:ly)?|macs?|windows|desktop app|mobile app|new app)(?![a-z])"
-    r"|功能|客户端|协作|共享屏幕|语音|视觉创作|全链路|工作流|多平台|电商经营|"
+    r"local(?:ly)?|macs?|windows|desktop app|mobile app|new app|app studio|music|video|design mode|annotations?)(?![a-z])"
+    r"|功能|客户端|协作|共享屏幕|语音|音频|录制|视觉创作|全链路|工作流|多平台|电商经营|"
     r"本地运行|端侧运行|编辑|导出|上传|权限|隐私|对话|聊天|记忆|连接器|自动化|"
     r"模型切换|模型选择|模型接入|(?:接入|切换).{0,8}模型|桌面应用|移动应用|界面|订阅|会员|额度|限流|我的应用|专属应用|AI\s*助[理手]|事务管理|管理事务|管事|短剧工作室|创作工作室|剧本|分镜|故事板|侧边栏|插件|邮件|日历|日程|多语言|法语|日语|韩语|繁体中文", re.I,
 )
 _USAGE = re.compile(
-    r"(?<![a-z])(?:how .{0,80}(?:use|built|build|works)|use cases?|customer stor\w*|tutorials?)(?![a-z])"
-    r"|教程|手册|使用指南|上手|使用.{0,2}方法|讲解视频|解决方法|制作模式|应用场景|陪逛|解锁.{0,12}(?:玩法|逛法|用法)"
+    r"(?<![a-z])(?:how .{0,80}(?:use|built|build|works)|use cases?|customer stor\w*|tutorials?|workflows?|walkthroughs?)(?![a-z])"
+    r"|教程|手册|使用指南|用法|制作流程|上手|使用.{0,2}方法|讲解视频|解决方法|制作模式|应用场景|陪逛|解锁.{0,12}(?:玩法|逛法|用法)"
     r"|comfyui.{0,30}部署|找题|解题|练题|拍题答疑"
     r"|(?:用|使用|通过).{0,45}(?:做成|整理成|收录(?:进|到)|存(?:入|进)).{0,16}知识库"
     r"|(?:用|使用|部署).{0,45}(?:生成|制作|搭建|完成|实现|拍摄|拍了)|(?:agent|智能体).{0,24}(?:接管|完成|管理)", re.I,
@@ -106,6 +108,19 @@ def product_identity(record: dict[str, Any], text: str) -> str | None:
 _OFFICIAL_PRODUCT_FEEDS = {
     ("Lovable Blog", "lovable.dev"): "lovable",
     ("n8n Blog", "blog.n8n.io"): "n8n",
+    ("Cursor Changelog", "cursor.com"): "cursor",
+    ("Replit Blog", "replit.com"): "replit",
+    ("Gemini Notebook Blog", "blog.google"): "gemini notebook",
+    ("xAI News", "x.ai"): "grok",
+    ("Grok Bot Changelog", "x.ai"): "grok bot",
+    ("Claude Articles", "claude.com"): "claude",
+    ("Suno Blog", "suno.com"): "suno",
+    ("Krea Blog", "krea.ai"): "krea",
+    ("Luma News", "lumalabs.ai"): "luma",
+    ("Runway News", "runway.com"): "runway",
+    ("SiliconFlow Blog", "siliconflow.com"): "siliconflow",
+    ("Viggle Blog", "viggle.ai"): "viggle",
+    ("MiniMax Blog", "minimax.io"): "minimax",
 }
 _VERSION_RELEASE = re.compile(r"\b(?:introducing|releasing|released|launching)\s+n8n\s+v?\d+\.\d+", re.I)
 
