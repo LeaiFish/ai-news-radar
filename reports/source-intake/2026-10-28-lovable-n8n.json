@@ -1,8 +1,8 @@
 {
   "schema": "radar_source_intake_v1",
   "date": "2026-10-28",
-  "updated_at": "2026-10-28T05:14:39.236368+00:00",
-  "status": "local_verified_pending_publication",
+  "updated_at": "2026-10-28T05:22:43.764493+00:00",
+  "status": "completed_online_verified",
   "user_authorization": "User requested 接入 after Lovable and n8n official RSS recommendations.",
   "sources": [
     {
@@ -161,11 +161,140 @@
     },
     "real_public_feed_probes": "Both source-only requests succeeded; target original URLs preserved, related and product classified, T1.",
     "public_projection_regression": "Both original articles appear exactly once, selected true, under exact publisher name and original date.",
-    "diff_check": "passed"
+    "diff_check": "passed",
+    "online": "Both original articles present exactly once in archive, current raw and public projection; product/T1, selected=true, source-specific names, original dates preserved."
   },
   "publication": {
-    "status": "pending",
-    "isolated_checkout": "/tmp/radar-lovable-n8n-20261028"
+    "commit": "652fdd4c77e481a879154dc542a37e54e078deed",
+    "update_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/40636864165",
+    "test_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/40636864053",
+    "status": "success",
+    "snapshot_commit": "223053d9ca2532d0c09e1d6336e61c30ecbc9555",
+    "generated_at": "2026-10-28T05:15:14.598553Z",
+    "pages_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/40637460699",
+    "architecture_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/40636864050",
+    "all_checks": {
+      "news_refresh": "success",
+      "python_test_workflow": "success",
+      "full_architecture": "success",
+      "snapshot_pages": "success"
+    }
   },
-  "scope": "No IT之家 filtering repair, private WeRead credentials/login/renewal or unrelated workspace changes included."
+  "scope": "No IT之家 filtering repair, private WeRead credentials/login/renewal or unrelated workspace changes included.",
+  "automation_context": {
+    "id": "aihot-radar",
+    "updated": true,
+    "status": "ACTIVE",
+    "existing_schedule_preserved": true,
+    "schedule": "每天北京时间11:00，保持不变"
+  },
+  "online_verification": {
+    "ready": true,
+    "checked_at": "2026-10-28T05:22:11.311896+00:00",
+    "generated_at": "2026-10-28T05:15:14.598553Z",
+    "timestamps": {
+      "status": "2026-10-28T05:15:14.598553Z",
+      "raw": "2026-10-28T05:15:14.598553Z",
+      "archive": "2026-10-28T05:15:14.598553Z",
+      "public": "2026-10-28T05:15:14.598553Z"
+    },
+    "health": [
+      {
+        "site_id": "official_feed_lovable",
+        "site_name": "Lovable Blog",
+        "ok": true,
+        "item_count": 8,
+        "duration_ms": 137,
+        "error": null
+      },
+      {
+        "site_id": "official_feed_n8n",
+        "site_name": "n8n Blog",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 118,
+        "error": null
+      }
+    ],
+    "targets": [
+      {
+        "fragment": "your-workspace-has-undead-apps",
+        "archive_count": 1,
+        "raw_count": 1,
+        "public_count": 1,
+        "archive": [
+          {
+            "title": "Your workspace has undead apps",
+            "url": "https://lovable.dev/blog/your-workspace-has-undead-apps",
+            "source": "Lovable Blog",
+            "site_id": "official_ai",
+            "published_at": "2026-10-27T12:30:00Z",
+            "select_tier": "T1",
+            "editorial_focus": "product"
+          }
+        ],
+        "raw": [
+          {
+            "ai_is_related": true,
+            "ai_score": 0.82,
+            "editorial_focus": "product"
+          }
+        ],
+        "public": [
+          {
+            "title": "Your workspace has undead apps",
+            "originalTitle": null,
+            "links": {
+              "original": "https://lovable.dev/blog/your-workspace-has-undead-apps"
+            },
+            "source": {
+              "name": "Lovable Blog"
+            },
+            "publishedAt": "2026-10-27T12:30:00Z",
+            "selected": true,
+            "summary": "Forgotten projects can stay published, connected to data, and unowned. This Halloween, hunt them down in our free game, and see how Enterprise admins can clean up abandoned projects automatically."
+          }
+        ]
+      },
+      {
+        "fragment": "introducing-n8n-v3",
+        "archive_count": 1,
+        "raw_count": 1,
+        "public_count": 1,
+        "archive": [
+          {
+            "title": "Introducing n8n 3.0",
+            "url": "https://blog.n8n.io/introducing-n8n-v3",
+            "source": "n8n Blog",
+            "site_id": "official_ai",
+            "published_at": "2026-10-27T11:53:21Z",
+            "select_tier": "T1",
+            "editorial_focus": "product"
+          }
+        ],
+        "raw": [
+          {
+            "ai_is_related": true,
+            "ai_score": 0.82,
+            "editorial_focus": "product"
+          }
+        ],
+        "public": [
+          {
+            "title": "Introducing n8n 3.0",
+            "originalTitle": null,
+            "links": {
+              "original": "https://blog.n8n.io/introducing-n8n-v3"
+            },
+            "source": {
+              "name": "n8n Blog"
+            },
+            "publishedAt": "2026-10-27T11:53:21Z",
+            "selected": true,
+            "summary": "n8n 3.0 beta is out, focused on reliability, stability and security. Here’s what’s changing and how to get ready."
+          }
+        ]
+      }
+    ]
+  }
 }
