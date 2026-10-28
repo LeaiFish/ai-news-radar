@@ -4,21 +4,21 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-28T02:21:41.312459Z",
+  "generated_at": "2026-10-28T02:42:06.478119Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
     "2026-10-28"
   ],
-  "story_count": 1231,
-  "unique_story_count": 1117,
+  "story_count": 1234,
+  "unique_story_count": 1120,
   "counts": {
     "by_company_topic": {
       "anthropic": 233,
       "apple": 13,
       "cursor": 2,
       "deepseek": 21,
-      "doubao": 5,
+      "doubao": 6,
       "google-gemini": 40,
       "huggingface": 12,
       "hunyuan": 3,
@@ -27,26 +27,26 @@
       "microsoft": 15,
       "minimax": 21,
       "nvidia": 39,
-      "openai": 160,
+      "openai": 161,
       "openrouter": 2,
       "qwen": 19,
       "xai": 22,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 189,
+      "agent-ecosystem": 190,
       "monetization": 20,
-      "product-entry": 17,
+      "product-entry": 18,
       "workplace": 42
     },
     "by_importance_label": {
-      "值得关注": 1042,
+      "值得关注": 1043,
       "多源热议": 28,
-      "官方更新": 51,
-      "行业动态": 110
+      "官方更新": 52,
+      "行业动态": 111
     },
     "by_source_count_bucket": {
-      "1": 1160,
+      "1": 1163,
       "2": 42,
       "3+": 29
     }
@@ -69,7 +69,7 @@
       "story_id": "story_74c7e03322b7",
       "title": "我们可以信任LLM来判断一个研究想法是否新颖吗？ / Can we trust LLMs to judge whether a research idea is novel?",
       "url": "https://huggingface.co/blog/allenai/novelty-bench",
-      "importance_score": 0.8435,
+      "importance_score": 0.8427,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -82,7 +82,7 @@
       "story_id": "story_533d85c923c9",
       "title": "GitHub Copilot 支持服务器到服务器身份验证 / GitHub Copilot supports server-to-server authentication",
       "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
-      "importance_score": 0.8401,
+      "importance_score": 0.8393,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -95,10 +95,23 @@
       ]
     },
     {
+      "story_id": "story_dcfc8da3dcc9",
+      "title": "使用 LFM3 构建专门的多模式模型 / Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "importance_score": 0.8371,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c5f3323ac6dc",
       "title": "Muse 现已在新加坡上市：全球首款专为所有人打造的个人人工智能代理 / Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
       "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
-      "importance_score": 0.838,
+      "importance_score": 0.8371,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -110,19 +123,6 @@
       ]
     },
     {
-      "story_id": "story_dcfc8da3dcc9",
-      "title": "使用 LFM3 构建专门的多模式模型 / Build specialized multimodal models with LFM3",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "importance_score": 0.8379,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_b9ba650b2e36",
       "title": "How Fanatics and OpenAI streamline the fan experience",
       "url": "https://openai.com/index/fanatics-streamline-fan-experience",
@@ -132,34 +132,6 @@
       "archive_date": "2026-10-26",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ec554f349e47",
-      "title": "Retell uses OpenAI models to help power 100M monthly calls",
-      "url": "https://openai.com/index/retell-ai",
-      "importance_score": 0.8248,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_529172dc08c8",
-      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
-      "importance_score": 0.8248,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -177,10 +149,38 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_ec554f349e47",
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "url": "https://openai.com/index/retell-ai",
+      "importance_score": 0.824,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_529172dc08c8",
+      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
+      "importance_score": 0.824,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_9a537d6a9ade",
       "title": "LangChain 解析自研设计 agent Content Studio 并开源其 harness / How We Built Our Design Agent",
       "url": "https://www.langchain.com/blog/design-agent",
-      "importance_score": 0.8214,
+      "importance_score": 0.8207,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -189,19 +189,6 @@
         "agent-ecosystem",
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_50d6e60500bb",
-      "title": "Google DeepMind 发布实时交互世界模型 Genie 4 / Genie 4: A new generation of world simulation",
-      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
-      "importance_score": 0.819,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_f8d229a3f617",
@@ -219,6 +206,19 @@
         "agent-ecosystem",
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_50d6e60500bb",
+      "title": "Google DeepMind 发布实时交互世界模型 Genie 4 / Genie 4: A new generation of world simulation",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+      "importance_score": 0.8183,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_f280b6805186",
@@ -252,7 +252,7 @@
       "story_id": "story_0578d962325b",
       "title": "OpenAI 扩大与 Oracle 合作，将 Oracle 应用与数据接入 ChatGPT / OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
       "url": "https://openai.com/index/oracle-apps-in-chatgpt",
-      "importance_score": 0.8161,
+      "importance_score": 0.8154,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -334,7 +334,7 @@
       "story_id": "story_82908663c452",
       "title": "Axiom 智能体集群用 24 天完成有限单群分类定理的机器验证 / Verified AI just had its greatest month.",
       "url": "https://x.com/rohanpaul_ai/status/2115224910603890778",
-      "importance_score": 0.7974,
+      "importance_score": 0.7965,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-10-28",
@@ -342,19 +342,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_35fa6cf08daa",
-      "title": "家长起诉 OpenAI，指控 GPT-4o 劝导其女儿停用癫痫药物致死 / Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
-      "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication",
-      "importance_score": 0.7965,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_688975d54601",
@@ -370,10 +357,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_35fa6cf08daa",
+      "title": "家长起诉 OpenAI，指控 GPT-4o 劝导其女儿停用癫痫药物致死 / Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+      "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication",
+      "importance_score": 0.7957,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_3a9c6235b650",
       "title": "Anthropic IPO 最大赢家或为 Amazon 而非 VC / VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
       "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more",
-      "importance_score": 0.7888,
+      "importance_score": 0.7879,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -489,10 +489,24 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_4be50d3b7687",
+      "title": "​Personal Agent走向真实任务，蚂蚁百灵开源 Ling-3.1-flash-1019",
+      "url": "https://www.aibase.com/news/31918",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": [
+        "product-entry",
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_fa4a31add19f",
       "title": "戴上就能AI实时对答！三星首款开放式耳机Galaxy Buds On发布，深度集成Gemini Live",
       "url": "https://www.aibase.com/news/31913",
-      "importance_score": 0.7676,
+      "importance_score": 0.7667,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -505,7 +519,7 @@
       "story_id": "story_91713609458b",
       "title": "AI 让作业变废纸，诺奖级教授退回纸笔考场",
       "url": "https://www.aibase.com/news/31917",
-      "importance_score": 0.7676,
+      "importance_score": 0.7667,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -516,7 +530,7 @@
       "story_id": "story_7893bac9b605",
       "title": "Opera推出WebAI标准，支持浏览器本地运行AI模型",
       "url": "https://www.aibase.com/news/31915",
-      "importance_score": 0.7676,
+      "importance_score": 0.7667,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -527,7 +541,7 @@
       "story_id": "story_6cf092afc013",
       "title": "爆款AI长剧跑通商业闭环！芒果超媒前三季度营收破 93 亿，第三季度净利环比翻近 4 倍",
       "url": "https://www.aibase.com/news/31916",
-      "importance_score": 0.7676,
+      "importance_score": 0.7667,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -538,7 +552,7 @@
       "story_id": "story_3dca0862dabf",
       "title": "Anthropic 兄妹复盘创业：七人同股同权，才是成功的关键",
       "url": "https://www.aibase.com/news/31912",
-      "importance_score": 0.7676,
+      "importance_score": 0.7667,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -551,7 +565,7 @@
       "story_id": "story_20bb83872be0",
       "title": "美国银行发布安全警告:严禁向人工智能助手透露银行密码",
       "url": "https://www.aibase.com/news/31914",
-      "importance_score": 0.7676,
+      "importance_score": 0.7667,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
@@ -562,25 +576,12 @@
       "story_id": "story_1208d46c9897",
       "title": "Anthropic 拟以特殊治理结构抵御 IPO 后股东的安全施压 / Anthropic’s elaborate plan to keep Wall Street at bay",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
-      "importance_score": 0.7655,
+      "importance_score": 0.7647,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-10-28",
       "company_topics": [
         "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_45e262b82d9e",
-      "title": "Gemini 集成 Google SynthID 检测，可识别图片、视频和音频是否为 Google AI 生成 / With Google SynthID detection in Gemini, anyone can easily check if an image, video, or audio file was made with AI from Google.",
-      "url": "https://x.com/GeminiApp/status/2115171788812669225",
-      "importance_score": 0.7648,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "google-gemini"
       ],
       "lens_topics": []
     }
