@@ -1,10 +1,10 @@
 {
   "schema": "radar_source_repair_v1",
   "date": "2026-10-28",
-  "updated_at": "2026-10-28T05:43:04.905506+00:00",
-  "status": "code_verified_private_store_still_blocked",
+  "updated_at": "2026-10-28T06:01:37.667882+00:00",
+  "status": "ithome_online_verified_private_session_write_blocked",
   "ithome": {
-    "status": "local_verified_pending_online",
+    "status": "completed_online_verified",
     "root_cause": "A general editorial classification was excluded by the product_priority RSS gate even when the title described concrete AI functions, usage or availability.",
     "repair": "Recognize bounded app functions including task management, offline voice, language support, creative script/storyboard workflows, sidebar migration and mail/calendar plugins; explicit AI-application function statements may qualify without an existing brand alias.",
     "limits": "Existing8-item and at-most2-technical limits, relevance and authority tiers, commerce/promotion guards, real publication dates and canonical dedup remain.",
@@ -69,7 +69,106 @@
         "jimeng": "AIbase31900 already covers short-drama studio event; do not add another media record just to close same-URL gap."
       }
     },
-    "similar_case": "Verified Qwen study usage title now receives product relevance/focus; it was already in public curated projection and is not a newly missing event."
+    "similar_case": "Verified Qwen study usage title now receives product relevance/focus; it was already in public curated projection and is not a newly missing event.",
+    "online_verification": {
+      "checked_at": "2026-10-28T05:50:12.542880+00:00",
+      "timestamps": {
+        "status": "2026-10-28T05:43:59.472929Z",
+        "raw": "2026-10-28T05:43:59.472929Z",
+        "archive": "2026-10-28T05:43:59.472929Z",
+        "public": "2026-10-28T05:43:59.472929Z"
+      },
+      "targets": [
+        {
+          "url": "https://www.ithome.com/1/018/760.htm",
+          "archive_count": 1,
+          "raw_count": 1,
+          "public_count": 1,
+          "archive": [
+            {
+              "title": "部分微软 Edge 浏览器用户反馈侧边栏 Copilot“失联”，官方称迁移需几天",
+              "published_at": "2026-10-28T02:12:40Z",
+              "site_id": "curated_media",
+              "source": "IT之家",
+              "select_tier": "T2",
+              "editorial_focus": "product"
+            }
+          ],
+          "raw": [
+            {
+              "ai_is_related": true,
+              "ai_score": 0.71,
+              "editorial_focus": "product"
+            }
+          ],
+          "public": [
+            {
+              "title": "部分微软 Edge 浏览器用户反馈侧边栏 Copilot“失联”，官方称迁移需几天",
+              "source": {
+                "name": "Curated Media"
+              },
+              "publishedAt": "2026-10-28T02:12:40Z",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "url": "https://mp.weixin.qq.com/s/wU1Wxcnwn-GmFwfzS86nvA",
+          "archive_count": 1,
+          "raw_count": 1,
+          "public_count": 1,
+          "archive": [
+            {
+              "title": "找题、解题、练题，用千问帮你学得更精准",
+              "published_at": "2026-10-27T05:58:00Z",
+              "site_id": "wechat_bridge",
+              "source": "公众号：千问APP",
+              "select_tier": "T1",
+              "editorial_focus": "product"
+            }
+          ],
+          "raw": [
+            {
+              "ai_is_related": true,
+              "ai_score": 0.82,
+              "editorial_focus": "product"
+            }
+          ],
+          "public": [
+            {
+              "title": "找题、解题、练题，用千问帮你学得更精准",
+              "source": {
+                "name": "公众号：千问APP"
+              },
+              "publishedAt": "2026-10-27T05:58:00Z",
+              "selected": true
+            }
+          ]
+        }
+      ],
+      "ithome_current_raw": [
+        {
+          "title": "腾讯 WorkBuddy 手机远程控制电脑功能上线，实时显示屏幕内容",
+          "url": "https://www.ithome.com/1/018/882.htm",
+          "focus": "product"
+        },
+        {
+          "title": "豆包工作功能上新：支持将“录制电脑操作”保存为技能",
+          "url": "https://www.ithome.com/1/018/860.htm",
+          "focus": "product"
+        },
+        {
+          "title": "部分微软 Edge 浏览器用户反馈侧边栏 Copilot“失联”，官方称迁移需几天",
+          "url": "https://www.ithome.com/1/018/760.htm",
+          "focus": "product"
+        },
+        {
+          "title": "谷歌更新 Android Bench 榜单：自家 Gemini 4 Argon 编程能力大幅落后于 Claude 与 GPT",
+          "url": "https://www.ithome.com/1/018/757.htm",
+          "focus": "technical"
+        }
+      ]
+    }
   },
   "session_persistence": {
     "status": "blocked_by_private_directory_write_access",
@@ -89,16 +188,47 @@
     "private_session_recovery_verified": false,
     "required_external_state": "The existing private session directory must permit atomic writes in the collector execution environment. Code cannot grant that access. Do not relocate credentials into the public repository or repeatedly scan a QR code.",
     "public_bridge": "Existing verified bridge/history retained. No failed private run was published as recovered.",
-    "no_token_cookie_identity_or_private_path_published": true
+    "no_token_cookie_identity_or_private_path_published": true,
+    "code_hardening_status": "complete_and_published"
   },
   "validation": {
     "python_suite_passed": 610,
     "targeted_regressions_passed": 73,
     "source_probe_http": 200,
-    "diff_check": "passed"
+    "diff_check": "passed",
+    "architecture": {
+      "initial": "failure",
+      "failed_step": "Web tests",
+      "evidence": "report-discovery.test.ts: startup listen EADDRINUSE on127.0.0.1; port collision before report panels could run, then cleanup-stop error.",
+      "retry": "success: web, backend, built-site smoke and Docker checks passed on attempt2; no browser/test code changes."
+    }
   },
   "publication": {
-    "status": "pending"
+    "source_commit": "48f51da7d8f291ebe5b3b769dec863e1cd08159e",
+    "status": "news_and_pages_success",
+    "update_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/40639662212",
+    "test_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/40639662133",
+    "snapshot_commit": "f327985b266ea02b3f07eff8ed13ac184f134df4",
+    "pages_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/40640187608",
+    "architecture_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/40639662178",
+    "checks": {
+      "python_workflow": "success",
+      "snapshot_refresh": "success",
+      "pages": "success",
+      "full_architecture_attempt2": "success"
+    }
   },
-  "scope": "IT之家 recognition and safe renewal persistence only; no account rotation, QR login, paid service or model API calls."
+  "scope": "IT之家 recognition and safe renewal persistence only; no account rotation, QR login, paid service or model API calls.",
+  "automation_context": {
+    "aihot-radar": {
+      "updated": true,
+      "status": "ACTIVE",
+      "schedule_preserved": true
+    },
+    "radar": {
+      "updated": true,
+      "status": "ACTIVE",
+      "schedule_preserved": true
+    }
+  }
 }
