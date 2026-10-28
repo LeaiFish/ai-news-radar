@@ -3,13 +3,13 @@
   "name": "DeepSeek",
   "description": "DeepSeek（深度求索）的模型发布、开源权重、推理成本与技术报告。",
   "group": "company",
-  "item_count": 185,
-  "listed_count": 185,
-  "recent_item_count": 152,
+  "item_count": 188,
+  "listed_count": 188,
+  "recent_item_count": 153,
   "latest_title": "下一波“大的”要来了？DeepSeek V5 现身官方代码库，新一代旗舰模型预计 11 月登场",
   "latest_published_at": "2026-10-28T07:12:23.357475Z",
   "items_url": "data/topics/deepseek.json",
-  "generated_at": "2026-10-28T07:12:23.357475Z",
+  "generated_at": "2026-10-28T07:51:49.714134Z",
   "items": [
     {
       "id": "story_fad25f4d90a6",
@@ -25,7 +25,7 @@
       "site_id": "aibase",
       "published_at": "2026-10-28T07:12:23.357475Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_18ba9571d7f5",
@@ -90,6 +90,22 @@
       "published_at": "2026-10-27T04:53:52Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "82f10cc197fd9f5add84875ce7f801db89f6304f",
+      "story_id": null,
+      "title": "DeepSeek V4.1 Flash 上线 Cursor",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://x.com/cursor_ai/status/2114839997568405608",
+      "summary": "DeepSeek V4.1 Flash 现已在 Cursor 上线！ 每个 effort 档位都位于 CursorBench 成本前沿：从每任务 $0.60 到 $0.98，没有模型得分更高。 在 Cursor Settings > Models 中开启。",
+      "recommend_reason_zh": null,
+      "source": "X：Cursor (@cursor_ai)",
+      "source_name": "X：Cursor (@cursor_ai)",
+      "site_id": "aihot",
+      "published_at": "2026-10-26T22:02:01Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "48536b8736eb4c77e4a0d8440d8c7f6ab6f16549",
@@ -2444,6 +2460,22 @@
       "curated": false
     },
     {
+      "id": "9ff0e6c1a66fd5e0071ee86cd5a5a74ae88a4518",
+      "story_id": null,
+      "title": "DeepSeek V4.1 Flash: Architecture, Benchmarks, Pricing, and API Migration",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://www.siliconflow.com/blog/deepseek-v4-1-flash-api-migration",
+      "summary": "2026 年 9 月 28 日 DeepSeek V4.1 Flash：架构、基准、定价和 API 迁移 比较 DeepSeek V4.1 Flash 架构、多模式基准、直接 API 定价、迁移步骤和生产中编码代理的成本控制。 ...",
+      "recommend_reason_zh": null,
+      "source": "SiliconFlow Blog",
+      "source_name": "SiliconFlow Blog",
+      "site_id": "official_ai",
+      "published_at": "2026-09-28T00:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
       "id": "36d5b45751e8080151c9069bb0ff3fd03969a85a",
       "story_id": null,
       "title": "DeepSeek 还没官宣的桌面版，我抢先装上跑了一遍，结果有点炸",
@@ -2588,22 +2620,6 @@
       "curated": false
     },
     {
-      "id": "4571df93fea50a4c9584fb95d7d4eb019533b25d",
-      "story_id": null,
-      "title": "​DeepSeek 传将向联合国安理会闭门通报 AI 潜在风险与安全挑战",
-      "title_zh": null,
-      "title_en": null,
-      "url": "https://www.aibase.com/news/31290",
-      "summary": "人工智能技术的快速发展，正加速从单纯的产业竞争上升为全球安全和地缘政治的核心问题。据路透社援引知情人士报道，中国人工智能初创公司DeepSeek预计将于本周向联合国安理会就人工智能带来的潜在风险和安全挑战提供特别简报。作为全球瞩目的人工智能前沿力量，DeepSeek 邀请...",
-      "recommend_reason_zh": null,
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "site_id": "aibase",
-      "published_at": "2026-09-23T05:59:24.951939Z",
-      "source_count": 1,
-      "curated": false
-    },
-    {
       "id": "b363d6f9cabe2ffdbd8ae0f3d0457e8d4b31cc9c",
       "story_id": null,
       "title": "DeepSeek V4.1 Flash，等等，为什么现在大家都在卷 Flash？",
@@ -2618,6 +2634,38 @@
       "published_at": "2026-09-21T10:21:30.732000Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "fbbfe4f6f48cd53b3ff2ef854fc75cfdb70896da",
+      "story_id": null,
+      "title": "DeepSeek V4 Pro Function Calling: A Python Tutorial for Tool-Using Agents",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://www.siliconflow.com/blog/deepseek-v4-pro-function-calling",
+      "summary": "2026 年 9 月 17 日 DeepSeek V4 Pro 函数调用：工具使用代理的 Python 教程 使用 Python 构建 DeepSeek V4 Pro 工具调用代理。验证函数参数、执行批准的工具、返回结果并安全地处理错误。 ...",
+      "recommend_reason_zh": null,
+      "source": "SiliconFlow Blog",
+      "source_name": "SiliconFlow Blog",
+      "site_id": "official_ai",
+      "published_at": "2026-09-17T00:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "6c3d07856f9dd929ad1ce17e656a798241caa452",
+      "story_id": null,
+      "title": "How to Use DeepSeek V4 Pro in Claude Code: SiliconFlow Setup and Troubleshooting",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://www.siliconflow.com/blog/deepseek-v4-pro-claude-code-siliconflow",
+      "summary": "2026 年 9 月 17 日 如何在 Claude Code 中使用 DeepSeek V4 Pro：SiliconFlow 设置和故障排除 通过设置 Anthropic 基本 URL、映射模型 ID 和测试消息端点，通过 SiliconFlow 将 Claude Code 连接到 DeepSeek V4 Pro。 ...",
+      "recommend_reason_zh": null,
+      "source": "SiliconFlow Blog",
+      "source_name": "SiliconFlow Blog",
+      "site_id": "official_ai",
+      "published_at": "2026-09-17T00:00:00Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "c29a5284d736392e22de776a11ade09866c9eb3f",
