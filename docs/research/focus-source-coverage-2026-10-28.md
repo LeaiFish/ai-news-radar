@@ -2,7 +2,7 @@
 
 本表按原始渠道核对。官网替代、固定快照、聚合发现均不冒充指定账号的持续直采。
 
-当前配置统计：{'official_alternative_only': 19, 'original_web_direct': 14, 'indirect_only': 10, 'wechat_verified_partial': 5}。新增18个官方公开入口，线上验收见对应JSON回执。
+当前配置统计：{'official_alternative_only': 19, 'original_web_direct': 14, 'indirect_only': 10, 'wechat_verified_partial': 5}。新增18个官方公开入口已上线，18项健康记录均正常，五条此前未覆盖材料已在归档及公开投影回读；验收见对应JSON回执。
 
 | 信源 | 原渠道状态 | 直接采集入口／边界 |
 |---|---|---|

@@ -1,7 +1,7 @@
 {
   "schema": "focus_source_intake_v1",
   "at": "2026-10-28T07:47:35.115276+00:00",
-  "status": "implemented_and_tested_pending_online_verification",
+  "status": "deployed_and_public_readback_verified",
   "focus_sources": 48,
   "states": {
     "official_alternative_only": 19,
@@ -976,13 +976,13 @@
   ],
   "boundaries": [
     "X原账号没有匿名稳定直采，官方网站替代不冒充账号覆盖。",
-    "个人账号仍T2，团队成员身份不等于机构公告。",
+    "Lauren Tan个人账号为T2；其他人物保留原独立分级，团队成员身份不等于机构公告。",
     "AIHOT原精选路径保留，另增独立健康记录的all-mode补漏，最多10页/1000条、每重点渠道6条、技术最多2条。",
     "全量API仍可能截断；WeChat候选仍须走原文账号核验，不从聚合摘要直接导入。",
     "无付费接口、Cookie读取、登录绕过、新权限申请。"
   ],
   "verification": {
-    "unit_tests": "624 passed; 36 upstream feedparser deprecation warnings",
+    "unit_tests": "624 passed locally and Python CI passed; architecture CI including Web, backend and Docker passed on retry",
     "live_probe": {
       "at": "2026-10-28T07:44:36.929674+00:00",
       "sources": 32,
@@ -1621,9 +1621,428 @@
       "2115205951649423585": true,
       "2115323441738047731": true
     },
-    "diff_check": "passed"
+    "diff_check": "passed",
+    "online_new_source_statuses": [
+      {
+        "site_id": "official_feed_cursor",
+        "site_name": "Cursor Changelog",
+        "ok": true,
+        "item_count": 5,
+        "duration_ms": 257,
+        "error": null
+      },
+      {
+        "site_id": "official_feed_replit",
+        "site_name": "Replit Blog",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 503,
+        "error": null
+      },
+      {
+        "site_id": "official_feed_notebook",
+        "site_name": "Gemini Notebook Blog",
+        "ok": true,
+        "item_count": 3,
+        "duration_ms": 109,
+        "error": null
+      },
+      {
+        "site_id": "official_feed_apple_developer",
+        "site_name": "Apple Developer News",
+        "ok": true,
+        "item_count": 0,
+        "duration_ms": 303,
+        "error": null
+      },
+      {
+        "site_id": "official_feed_openbmb",
+        "site_name": "OpenBMB MiniCPM Releases",
+        "ok": true,
+        "item_count": 0,
+        "duration_ms": 211,
+        "error": null
+      },
+      {
+        "site_id": "official_feed_open_r1",
+        "site_name": "Hugging Face open-r1 Commits",
+        "ok": true,
+        "item_count": 3,
+        "duration_ms": 213,
+        "error": null
+      },
+      {
+        "site_id": "official_feed_huawei",
+        "site_name": "Huawei AI Press Releases",
+        "ok": true,
+        "item_count": 1,
+        "duration_ms": 288,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_xai",
+        "site_name": "xAI News",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 210,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_grok_bot",
+        "site_name": "Grok Bot Changelog",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 249,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_claude",
+        "site_name": "Claude Articles",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 274,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_suno",
+        "site_name": "Suno Blog",
+        "ok": true,
+        "item_count": 5,
+        "duration_ms": 384,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_krea",
+        "site_name": "Krea Blog",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 504,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_luma",
+        "site_name": "Luma News",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 1341,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_runway",
+        "site_name": "Runway News",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 321,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_siliconflow",
+        "site_name": "SiliconFlow Blog",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 2021,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_alibaba",
+        "site_name": "Alibaba Cloud Blog",
+        "ok": true,
+        "item_count": 6,
+        "duration_ms": 2123,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_viggle",
+        "site_name": "Viggle Blog",
+        "ok": true,
+        "item_count": 0,
+        "duration_ms": 1111,
+        "error": null
+      },
+      {
+        "site_id": "official_focus_minimax",
+        "site_name": "MiniMax Blog",
+        "ok": true,
+        "item_count": 2,
+        "duration_ms": 1102,
+        "error": null
+      }
+    ],
+    "online_targets": {
+      "shared_sales_official": {
+        "raw": [],
+        "archive": [
+          {
+            "title": "xAI 推出 Grok Bot 共享智能体，接管销售全流程",
+            "url": "https://x.ai/news/grok-bot-sales",
+            "source": "xAI：News（网页）",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T00:00:00Z"
+          },
+          {
+            "title": "Your next sales teammate should be a Grok Bot",
+            "url": "https://x.ai/news/grok-bot-sales",
+            "source": "xAI News",
+            "site_id": "official_ai",
+            "select_tier": "T1",
+            "published_at": "2026-10-27T00:00:00Z"
+          }
+        ],
+        "public": [
+          {
+            "title": "xAI 推出 Grok Bot 共享智能体，接管销售全流程",
+            "url": "https://x.ai/news/grok-bot-sales",
+            "source": {
+              "name": "xAI：News（网页）"
+            },
+            "site_id": null,
+            "select_tier": null,
+            "published_at": "2026-10-27T00:00:00Z"
+          }
+        ]
+      },
+      "shared_sales_post": {
+        "raw": [
+          {
+            "title": "Grok Bot 分享销售团队共享机器人用法",
+            "url": "https://x.com/bot/status/2115130760009273501",
+            "source": "X：Grok Bot (@bot)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T17:17:25Z"
+          }
+        ],
+        "archive": [
+          {
+            "title": "Grok Bot 分享销售团队共享机器人用法",
+            "url": "https://x.com/bot/status/2115130760009273501",
+            "source": "X：Grok Bot (@bot)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T17:17:25Z"
+          }
+        ],
+        "public": [
+          {
+            "title": "Grok Bot 分享销售团队共享机器人用法",
+            "url": "https://x.com/bot/status/2115130760009273501",
+            "source": {
+              "name": "X：Grok Bot (@bot)"
+            },
+            "site_id": null,
+            "select_tier": null,
+            "published_at": "2026-10-27T17:17:25Z"
+          }
+        ]
+      },
+      "cursor_annotate": {
+        "raw": [
+          {
+            "title": "Cursor design mode 新增 Annotate 功能",
+            "url": "https://x.com/cursor_ai/status/2115159585548021814",
+            "source": "X：Cursor (@cursor_ai)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T19:11:57Z"
+          }
+        ],
+        "archive": [
+          {
+            "title": "Cursor design mode 新增 Annotate 功能",
+            "url": "https://x.com/cursor_ai/status/2115159585548021814",
+            "source": "X：Cursor (@cursor_ai)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T19:11:57Z"
+          }
+        ],
+        "public": [
+          {
+            "title": "Cursor design mode 新增 Annotate 功能",
+            "url": "https://x.com/cursor_ai/status/2115159585548021814",
+            "source": {
+              "name": "X：Cursor (@cursor_ai)"
+            },
+            "site_id": null,
+            "select_tier": null,
+            "published_at": "2026-10-27T19:11:57Z"
+          }
+        ]
+      },
+      "notebook_audio": {
+        "raw": [
+          {
+            "title": "NotebookLM 移动端支持录制最长 1 小时实时音频并直接用作来源",
+            "url": "https://x.com/Gemini_Notebook/status/2115199172836302964",
+            "source": "X：Gemini Notebook (@Gemini_Notebook)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T21:49:15Z"
+          }
+        ],
+        "archive": [
+          {
+            "title": "NotebookLM 移动端支持录制最长 1 小时实时音频并直接用作来源",
+            "url": "https://x.com/Gemini_Notebook/status/2115199172836302964",
+            "source": "X：Gemini Notebook (@Gemini_Notebook)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T21:49:15Z"
+          }
+        ],
+        "public": [
+          {
+            "title": "NotebookLM 移动端支持录制最长 1 小时实时音频并直接用作来源",
+            "url": "https://x.com/Gemini_Notebook/status/2115199172836302964",
+            "source": {
+              "name": "X：Gemini Notebook (@Gemini_Notebook)"
+            },
+            "site_id": null,
+            "select_tier": null,
+            "published_at": "2026-10-27T21:49:15Z"
+          }
+        ]
+      },
+      "tibot": {
+        "raw": [
+          {
+            "title": "xAI 员工分享 Grok Bot 管理 X 账号用法",
+            "url": "https://x.com/poteto/status/2115205951649423585",
+            "source": "X：Lauren Tan（SpaceXSI，Grok Bot 工程负责人） (@poteto)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T22:16:12Z"
+          }
+        ],
+        "archive": [
+          {
+            "title": "xAI 员工分享 Grok Bot 管理 X 账号用法",
+            "url": "https://x.com/poteto/status/2115205951649423585",
+            "source": "X：Lauren Tan（SpaceXSI，Grok Bot 工程负责人） (@poteto)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-27T22:16:12Z"
+          }
+        ],
+        "public": [
+          {
+            "title": "xAI 员工分享 Grok Bot 管理 X 账号用法",
+            "url": "https://x.com/poteto/status/2115205951649423585",
+            "source": {
+              "name": "X：Lauren Tan（SpaceXSI，Grok Bot 工程负责人） (@poteto)"
+            },
+            "site_id": null,
+            "select_tier": null,
+            "published_at": "2026-10-27T22:16:12Z"
+          }
+        ]
+      },
+      "imagine_guide_repost": {
+        "raw": [
+          {
+            "title": "Grok Imagine",
+            "url": "https://x.com/elonmusk/status/2115323441738047731",
+            "source": "@elonmusk",
+            "site_id": "x_bridge",
+            "select_tier": "T2",
+            "published_at": "2026-10-28T06:03:03Z"
+          },
+          {
+            "title": "Grok Imagine 发布官方提示词指南并公开 Odyssey 制作工作流",
+            "url": "https://x.com/elonmusk/status/2115323441738047731",
+            "source": "X：Elon Musk (@elonmusk, xAI)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-28T06:03:03Z"
+          }
+        ],
+        "archive": [
+          {
+            "title": "Grok Imagine",
+            "url": "https://x.com/elonmusk/status/2115323441738047731",
+            "source": "@elonmusk",
+            "site_id": "x_bridge",
+            "select_tier": "T2",
+            "published_at": "2026-10-28T06:03:03Z"
+          },
+          {
+            "title": "Grok Imagine 发布官方提示词指南并公开 Odyssey 制作工作流",
+            "url": "https://x.com/elonmusk/status/2115323441738047731",
+            "source": "X：Elon Musk (@elonmusk, xAI)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "published_at": "2026-10-28T06:03:03Z"
+          }
+        ],
+        "public": [
+          {
+            "title": "Grok Imagine 发布官方提示词指南并公开 Odyssey 制作工作流",
+            "url": "https://x.com/elonmusk/status/2115323441738047731",
+            "source": {
+              "name": "X：Elon Musk (@elonmusk, xAI)"
+            },
+            "site_id": null,
+            "select_tier": null,
+            "published_at": "2026-10-28T06:03:03Z"
+          }
+        ]
+      },
+      "grok_version": {
+        "raw": [],
+        "archive": [
+          {
+            "title": "Grok Bot v0.77.0: Permissions, Vault payments, and question cards",
+            "url": "https://x.ai/changelog/bot#v0.77.0",
+            "source": "Grok Bot Changelog",
+            "site_id": "official_ai",
+            "select_tier": "T1",
+            "published_at": "2026-10-26T00:00:00Z"
+          }
+        ],
+        "public": [
+          {
+            "title": "Grok Bot v0.77.0: Permissions, Vault payments, and question cards",
+            "url": "https://x.ai/changelog/bot#v0.77.0",
+            "source": {
+              "name": "Grok Bot Changelog"
+            },
+            "site_id": null,
+            "select_tier": null,
+            "published_at": "2026-10-26T00:00:00Z"
+          }
+        ]
+      }
+    },
+    "online_readback_boundary": "The five source materials are present in archive/public. Several have multiple ingestion routes. A direct T1 xAI article exists in archive, while the current public duplicate may retain AIHOT metadata. Direct-collection status is not proof of original X polling."
   },
   "deployment": {
-    "status": "pending"
+    "source_commit": "ecd5aa07f00afb50e73458182ed87fdaa17865f0",
+    "news_run": 40652788701,
+    "python_ci": {
+      "run": 40652788717,
+      "conclusion": "success"
+    },
+    "architecture_ci": {
+      "run": 40652788736,
+      "status": "completed",
+      "initial_failure": "Unchanged apps/web/tests/cache.test.ts:86 compared expiresAt across a one-second boundary; Docker passed.",
+      "conclusion": "success",
+      "attempt": 2
+    },
+    "status": "verified_online",
+    "verified_at": "2026-10-28T08:02:24.049147+00:00",
+    "news_run_conclusion": "success",
+    "snapshot_commit": "d64cf90dcc51a19ec9093ab4f73c7c08ffbadf86",
+    "pages_run": 40653485984,
+    "pages_conclusion": "success",
+    "snapshot_timestamps": {
+      "status": "2026-10-28T07:51:49.714134Z",
+      "raw": "2026-10-28T07:51:49.714134Z",
+      "archive": "2026-10-28T07:51:49.714134Z",
+      "public": "2026-10-28T07:51:49.714134Z"
+    },
+    "new_direct_endpoints_healthy": 18,
+    "new_direct_endpoint_count": 18
   }
 }
