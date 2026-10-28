@@ -3,13 +3,13 @@
   "name": "MCP 与工具调用",
   "description": "模型连接外部世界：MCP 生态、function calling 与工具链集成。",
   "group": "tech",
-  "item_count": 5,
-  "listed_count": 5,
-  "recent_item_count": 5,
+  "item_count": 4,
+  "listed_count": 4,
+  "recent_item_count": 4,
   "latest_title": "如何设计一个实时语音 AI 智能体",
   "latest_published_at": "2026-10-27T16:43:34.221807Z",
   "items_url": "data/topics/mcp.json",
-  "generated_at": "2026-10-27T21:18:29.105614Z",
+  "generated_at": "2026-10-28T01:13:17.832890Z",
   "items": [
     {
       "id": "story_029bc7d6fdd9",
@@ -74,22 +74,6 @@
       "published_at": "2026-10-27T04:31:06Z",
       "source_count": 1,
       "curated": false
-    },
-    {
-      "id": "story_0969e8b7b265",
-      "story_id": "story_0969e8b7b265",
-      "title": "v2.1.311",
-      "title_zh": null,
-      "title_en": null,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "summary": "更改内容 添加了 --hold-idle-file 和 --max-hold-min 到 self-hosted-runner ，以在主机报告处理它保持运行时保持空闲会话 添加了解释性输出样式的提示，当您向 Claude 询问解释时显示 修复了 CLAUDE.md 文件包含很长列表项时在启动时以及读取或编辑文件后的长时间冻结 修复了中断 Claude 在 MCP 服务器未响应资源读取或超时时才生效的问题技能还在下载",
-      "recommend_reason_zh": null,
-      "source": "Claude Code Releases",
-      "source_name": "Curated Media",
-      "site_id": "curated_media",
-      "published_at": "2026-10-26T21:51:23Z",
-      "source_count": 1,
-      "curated": true
     }
   ]
 }

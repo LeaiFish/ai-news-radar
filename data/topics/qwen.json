@@ -3,13 +3,13 @@
   "name": "通义千问 / Qwen",
   "description": "阿里通义千问 Qwen 系列：旗舰模型、开源权重、端侧与多模态迭代。",
   "group": "company",
-  "item_count": 174,
-  "listed_count": 174,
-  "recent_item_count": 114,
+  "item_count": 173,
+  "listed_count": 173,
+  "recent_item_count": 113,
   "latest_title": "研究人员发现，阿里巴巴最新的 Qwen 模型通过公司服务器路由了一些请求",
   "latest_published_at": "2026-10-27T19:45:49Z",
   "items_url": "data/topics/qwen.json",
-  "generated_at": "2026-10-27T21:18:29.105614Z",
+  "generated_at": "2026-10-28T01:13:17.832890Z",
   "items": [
     {
       "id": "story_af76aecb7b33",
@@ -76,8 +76,8 @@
       "curated": false
     },
     {
-      "id": "story_8e1b2ca2dc4b",
-      "story_id": "story_8e1b2ca2dc4b",
+      "id": "1c99643962b2ea375f0d6a9f572d21f040c17406",
+      "story_id": null,
       "title": "Cohere称阿里巴巴的Qwen模型试图向北京发送文件",
       "title_zh": "Cohere称阿里巴巴的Qwen模型试图向北京发送文件",
       "title_en": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing",
@@ -85,27 +85,11 @@
       "summary": "一个人工智能模型表示它不会使用任何工具，然后试图将一些东西发送到北京的服务器，虽然研究人员表示这可能是一个训练怪癖而不是间谍活动，但整件事让人们询问在多大程度上可以信任免费的中国人工智能。",
       "recommend_reason_zh": null,
       "source": "TechCrunch AI",
-      "source_name": "Curated Media",
+      "source_name": "TechCrunch AI",
       "site_id": "curated_media",
       "published_at": "2026-10-27T01:12:21Z",
       "source_count": 1,
       "curated": true
-    },
-    {
-      "id": "story_b9c85ce6d684",
-      "story_id": "story_b9c85ce6d684",
-      "title": "关于一款热门无限制权重AI模型的行为",
-      "title_zh": "关于一款热门无限制权重AI模型的行为",
-      "title_en": null,
-      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
-      "summary": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。",
-      "recommend_reason_zh": null,
-      "source": "cohere.com",
-      "source_name": "Buzzing",
-      "site_id": "buzzing",
-      "published_at": "2026-10-26T22:44:25.645000Z",
-      "source_count": 1,
-      "curated": false
     },
     {
       "id": "87960ff93b9599298161b589385557f39f500463",
@@ -218,6 +202,22 @@
       "published_at": "2026-10-26T10:15:05Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "1b7a61cb6e5ae7ada6b17e4a023e74201fdcce66",
+      "story_id": null,
+      "title": "Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中出现疑似回连行为",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "summary": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。",
+      "recommend_reason_zh": null,
+      "source": "Hacker News：AI 热帖",
+      "source_name": "Hacker News：AI 热帖",
+      "site_id": "aihot",
+      "published_at": "2026-10-26T10:14:20.569000Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "ef5c0b959a4d8a07904f856ac93a8f6d18d3c631",
@@ -2216,22 +2216,6 @@
       "source_name": "@alibaba_cloud",
       "site_id": "x_bridge",
       "published_at": "2026-09-22T09:54:01Z",
-      "source_count": 1,
-      "curated": false
-    },
-    {
-      "id": "4b50c739fa292c5d148b57439ded82d61ccda6b8",
-      "story_id": null,
-      "title": "阿里巴巴任命刘大一恒担任Qwen项目负责人",
-      "title_zh": null,
-      "title_en": null,
-      "url": "https://www.aibase.com/news/31256",
-      "summary": "据两名知情员工透露，阿里巴巴集团已任命高级人工智能研究员刘大一恒为Qwen（统一前文）大型语言模型项目负责人。一位内部人士表示，此次任命是在今年早些时候阿里巴巴内部进行多轮组织重组之后，进一步明确了Qwen团队的管理架构。阿里巴巴年度云大会将于周二开幕。",
-      "recommend_reason_zh": null,
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "site_id": "aibase",
-      "published_at": "2026-09-22T06:14:33.385628Z",
       "source_count": 1,
       "curated": false
     },
