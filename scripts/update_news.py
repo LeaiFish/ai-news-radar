@@ -201,6 +201,26 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, Any], ...] = (
         "select_tier": "T1",
     },
     {
+        "title": "Lovable Blog",
+        "xml_url": "https://lovable.dev/blog/rss.xml",
+        "html_url": "https://lovable.dev/blog",
+        "status_id": "official_feed_lovable",
+        "product_priority": True,
+        "max_entries": 8,
+        "max_technical_entries": 2,
+        "select_tier": "T1",
+    },
+    {
+        "title": "n8n Blog",
+        "xml_url": "https://blog.n8n.io/rss/",
+        "html_url": "https://blog.n8n.io/",
+        "status_id": "official_feed_n8n",
+        "product_priority": True,
+        "max_entries": 6,
+        "max_technical_entries": 2,
+        "select_tier": "T1",
+    },
+    {
         "title": "vLLM Blog",
         "xml_url": "https://vllm.ai/blog/rss.xml",
         "html_url": "https://vllm.ai/blog",
@@ -1874,6 +1894,7 @@ def fetch_feed_as_official_items(
         entries = parse_feed_entries_via_xml(resp.content)
 
     out: list[RawItem] = []
+    seen_urls: set[str] = set()
     include_keywords = [
         keyword.strip().lower()
         for keyword in str(feed.get("include_keywords") or "").split(",")
@@ -1898,10 +1919,18 @@ def fetch_feed_as_official_items(
         if published < now - timedelta(days=OFFICIAL_AI_MAX_AGE_DAYS):
             continue
 
+        if feed.get("product_priority"):
+            if published > now:
+                continue
+            canonical = normalize_url(link)
+            if canonical in seen_urls:
+                continue
+            seen_urls.add(canonical)
+
         out.append(
             RawItem(
                 site_id=site_id,
-                site_name=site_name,
+                site_name=feed_title if feed.get("status_id") else site_name,
                 source=feed_title,
                 title=maybe_fix_mojibake(title),
                 url=link,
@@ -1915,9 +1944,30 @@ def fetch_feed_as_official_items(
             )
         )
 
-        if feed.get("max_entries") and len(out) >= int(feed["max_entries"]):
+        if not feed.get("product_priority") and feed.get("max_entries") and len(out) >= int(feed["max_entries"]):
             break
 
+    if feed.get("product_priority"):
+        # Read the bounded feed before capping, so technical bursts cannot hide
+        # product guidance farther down the page. General posts remain eligible.
+        def focus(item: RawItem) -> str:
+            return editorial_focus({"site_id": item.site_id, "source": item.source,
+                                    "title": item.title, "url": item.url,
+                                    "summary": item.meta.get("summary", "")})
+
+        out.sort(key=lambda item: ({"product": 0, "general": 1, "technical": 2}[focus(item)],
+                                   -item.published_at.timestamp()))
+        kept: list[RawItem] = []
+        technical_count = 0
+        for item in out:
+            if focus(item) == "technical":
+                if technical_count >= int(feed.get("max_technical_entries", 2)):
+                    continue
+                technical_count += 1
+            kept.append(item)
+            if len(kept) >= int(feed.get("max_entries") or 8):
+                break
+        return kept
     return out
 
 
@@ -2431,6 +2481,8 @@ def fetch_official_ai_updates(session: requests.Session, now: datetime) -> list[
     out: list[RawItem] = []
 
     for feed in OFFICIAL_AI_FEEDS:
+        if feed.get("status_id"):
+            continue  # Registered separately so one RSS failure has its own status.
         try:
             out.extend(fetch_feed_as_official_items(session, feed, now))
         except Exception:
@@ -3189,6 +3241,9 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
         ("aihot", "AI HOT", fetch_aihot),
         ("newsnow", "NewsNow", fetch_newsnow),
     ]
+    tasks.extend((feed["status_id"], feed["title"],
+                  lambda session, now, feed=feed: fetch_feed_as_official_items(session, feed, now))
+                 for feed in OFFICIAL_AI_FEEDS if feed.get("status_id"))
     # One status per official application endpoint: a failed Meta feed must not
     # be hidden behind successful OpenAI/Google/lab updates.
     tasks.extend((spec["id"], spec["title"],

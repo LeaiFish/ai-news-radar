@@ -1,0 +1,171 @@
+{
+  "schema": "radar_source_intake_v1",
+  "date": "2026-10-28",
+  "updated_at": "2026-10-28T05:14:39.236368+00:00",
+  "status": "local_verified_pending_publication",
+  "user_authorization": "User requested 接入 after Lovable and n8n official RSS recommendations.",
+  "sources": [
+    {
+      "source": "Lovable Blog",
+      "feed": "https://lovable.dev/blog/rss.xml",
+      "status_id": "official_feed_lovable",
+      "checked_at": "2026-10-28T05:13:39.784162Z",
+      "ok": true,
+      "raw_count": 8,
+      "product_count": 7,
+      "technical_count": 0,
+      "related_count": 7
+    },
+    {
+      "source": "n8n Blog",
+      "feed": "https://blog.n8n.io/rss/",
+      "status_id": "official_feed_n8n",
+      "checked_at": "2026-10-28T05:13:39.784162Z",
+      "ok": true,
+      "raw_count": 6,
+      "product_count": 6,
+      "technical_count": 0,
+      "related_count": 6
+    }
+  ],
+  "target_examples": [
+    {
+      "site_id": "official_ai",
+      "site_name": "Lovable Blog",
+      "source": "Lovable Blog",
+      "title": "Your workspace has undead apps",
+      "url": "https://lovable.dev/blog/your-workspace-has-undead-apps",
+      "published_at": "2026-10-27T12:30:00Z",
+      "summary": "Forgotten projects can stay published, connected to data, and unowned. This Halloween, hunt them down in our free game, and see how Enterprise admins can clean up abandoned projects automatically.",
+      "editorial_focus": "product",
+      "editorial_tags": [
+        "product_update"
+      ],
+      "select_tier": "T1",
+      "ai_is_related": true,
+      "ai_score": 0.82,
+      "ai_label": "ai_product_update",
+      "ai_relevance_reason": "product_function_or_usage"
+    },
+    {
+      "site_id": "official_ai",
+      "site_name": "n8n Blog",
+      "source": "n8n Blog",
+      "title": "Introducing n8n 3.0",
+      "url": "https://blog.n8n.io/introducing-n8n-v3/",
+      "published_at": "2026-10-27T11:53:21Z",
+      "summary": "n8n 3.0 beta is out, focused on reliability, stability and security. Here’s what’s changing and how to get ready.",
+      "editorial_focus": "product",
+      "editorial_tags": [
+        "product_update"
+      ],
+      "select_tier": "T1",
+      "ai_is_related": true,
+      "ai_score": 0.82,
+      "ai_label": "ai_product_update",
+      "ai_relevance_reason": "product_function_or_usage"
+    }
+  ],
+  "priority": {
+    "selection": "Product functions, workflow usage and version/migration guidance before general and technical posts. General is not an exclusion.",
+    "per_run_caps": {
+      "Lovable Blog": 8,
+      "n8n Blog": 6
+    },
+    "max_technical_each": 2,
+    "authority": "official_ai/T1",
+    "independent_health_ids": [
+      "official_feed_lovable",
+      "official_feed_n8n"
+    ],
+    "dedup": "Canonical URL in each source; existing cross-source story merge and URL-unique public export.",
+    "dates": "Original publication times preserved; future/undated rows excluded.",
+    "existing_topics": {
+      "coding": "Lovable",
+      "agent": "n8n"
+    },
+    "new_reader_labels_or_filters": false
+  },
+  "recognition": "Exact official publisher + URL host + official_ai route may use original RSS summary up to500chars for internal product evidence. Raw provider focus is never trusted.",
+  "overlap": {
+    "lovable": {
+      "generated_at": "2026-10-28T05:09:06.246532Z",
+      "candidate": {
+        "site_id": "lovable_candidate",
+        "site_name": "Lovable Blog",
+        "url": "https://lovable.dev/blog/rss.xml",
+        "item_count": 2,
+        "lookback_days": 7
+      },
+      "baseline": {
+        "source_count": 17,
+        "item_count": 7522,
+        "window_days": 7
+      },
+      "overlap": {
+        "duplicate_count": 0,
+        "possible_duplicate_count": 0,
+        "unique_count": 2,
+        "duplicate_rate": 0.0,
+        "unique_rate": 1.0
+      },
+      "top_overlapping_sources": [],
+      "recommendation": {
+        "decision": "watchlist",
+        "reason": "样本少于5条，不建议仅凭重复率直接拒绝；先进入观察列表。",
+        "sample_too_small": true
+      },
+      "matches": [],
+      "possible_matches": []
+    },
+    "n8n": {
+      "generated_at": "2026-10-28T05:09:06.246494Z",
+      "candidate": {
+        "site_id": "n8n_candidate",
+        "site_name": "n8n Blog",
+        "url": "https://blog.n8n.io/rss/",
+        "item_count": 6,
+        "lookback_days": 7
+      },
+      "baseline": {
+        "source_count": 17,
+        "item_count": 7522,
+        "window_days": 7
+      },
+      "overlap": {
+        "duplicate_count": 0,
+        "possible_duplicate_count": 0,
+        "unique_count": 6,
+        "duplicate_rate": 0.0,
+        "unique_rate": 1.0
+      },
+      "top_overlapping_sources": [],
+      "recommendation": {
+        "decision": "accept_default",
+        "reason": "重复率较低，能为默认源补充明显新增信息。",
+        "sample_too_small": false
+      },
+      "matches": [],
+      "possible_matches": []
+    }
+  },
+  "overlap_decision": "n8n0/6 hard duplicates, Lovable0/2. Lovable small sample remains advisory; user explicitly requested direct source addition.",
+  "availability_boundaries": [
+    "Lovable article explains Enterprise cleanup; first launch date unverified. Halloween game uses fictional projects.",
+    "n8n3.0.0 is Beta; stable planned early December is not current availability."
+  ],
+  "validation": {
+    "targeted_tests": "63 passed before topic projection extension; 40 passed after adding exact reader projection tests.",
+    "full_python_suite": {
+      "passed": 601
+    },
+    "real_public_feed_probes": "Both source-only requests succeeded; target original URLs preserved, related and product classified, T1.",
+    "public_projection_regression": "Both original articles appear exactly once, selected true, under exact publisher name and original date.",
+    "diff_check": "passed"
+  },
+  "publication": {
+    "status": "pending",
+    "isolated_checkout": "/tmp/radar-lovable-n8n-20261028"
+  },
+  "scope": "No IT之家 filtering repair, private WeRead credentials/login/renewal or unrelated workspace changes included."
+}

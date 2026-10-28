@@ -99,16 +99,33 @@ def product_identity(record: dict[str, Any], text: str) -> str | None:
     return None
 
 
+# Only dedicated first-party feeds may use their short RSS prose to explain a
+# vague headline. A copied source name or a lookalike host is insufficient.
+_OFFICIAL_PRODUCT_FEEDS = {
+    ("Lovable Blog", "lovable.dev"): "lovable",
+    ("n8n Blog", "blog.n8n.io"): "n8n",
+}
+_VERSION_RELEASE = re.compile(r"\b(?:introducing|releasing|released|launching)\s+n8n\s+v?\d+\.\d+", re.I)
+
+
 def product_context(record: dict[str, Any]) -> dict[str, str] | None:
     """Require a known AI product and a concrete activity, not source trust alone."""
     text = title_text(record)
-    identity = product_identity(record, text)
+    try:
+        host = (urlsplit(str(record.get("url") or "")).hostname or "").lower().removeprefix("www.")
+    except ValueError:
+        host = ""
+    official = (_OFFICIAL_PRODUCT_FEEDS.get((str(record.get("source") or ""), host))
+                if record.get("site_id") == "official_ai" else None)
+    if official:
+        text += " " + title_text({"title": str(record.get("summary") or "")[:500]})
+    identity = product_identity(record, text) or official
     if not identity or _PROMO.search(text):
         return None
     technical = _TECHNICAL.search(text)
     if technical and not (_RELEASE.search(text) and _CAPABILITY.search(text)) and not _BUSINESS_CASE.search(text):
         return {"identity": identity, "kind": "technical", "signal": "known_ai_product_technical_context"}
-    if _USAGE.search(text) or (_ACTION.search(text) and _CAPABILITY.search(text)):
+    if (official and _VERSION_RELEASE.search(text)) or _USAGE.search(text) or (_ACTION.search(text) and _CAPABILITY.search(text)):
         return {"identity": identity, "kind": "product", "signal": "product_function_or_usage"}
     if _TECHNICAL.search(text):
         return {"identity": identity, "kind": "technical", "signal": "known_ai_product_technical_context"}

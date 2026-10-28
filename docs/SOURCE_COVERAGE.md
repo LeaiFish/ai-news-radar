@@ -500,6 +500,8 @@ selection priority.
 | --- | --- | --- |
 | Testing Catalog | <https://www.testingcatalog.com/rss/> | Up to 8 recent long-form entries, T2. The RSS is not a complete mirror of its X account. |
 | IT之家 | <https://www.ithome.com/rss/> | Up to 8 dated AI product/use-case articles per refresh, T2; product functionality and user experience come first, with at most 2 technical/evaluation entries after them. Hardware sales, generic AI business headlines, missing/future dates and duplicate canonical URLs are excluded. The public feed holds only 60 recent site-wide articles, so it cannot guarantee historical recovery or complete coverage between polls. |
+| Lovable Blog | <https://lovable.dev/blog/rss.xml> | Official T1 RSS, up to 8 dated entries per run. Product functionality, workspace administration and usage guidance precede general posts and technical material; at most 2 technical entries. |
+| n8n Blog | <https://blog.n8n.io/rss/> | Official T1 RSS, up to 6 dated entries per run. Workflow usage and version/migration guidance take priority; at most 2 technical entries. Preserve Beta/stable availability in original titles and RSS excerpts. |
 | LangChain Blog | <https://www.langchain.com/blog/rss.xml> | Up to 8 recent entries, T1. Product updates and real use cases take priority; engineering and eval articles get internal technical tags. The old `blog.langchain.com/rss/` redirects to HTML. |
 | Meta Engineering Blog | <https://engineering.fb.com/feed/> | Up to 6 entries with AI/ML/model/agent/inference/training/recommendation signals, T1. Complements the existing Meta product Newsroom. |
 | vLLM Blog | <https://vllm.ai/blog/rss.xml> | Up to 4 entries, T1 authority, with an internal `model_technology` tag and lower selection priority. The old `blog.vllm.ai/feed.xml` returned 404. |
@@ -575,3 +577,29 @@ existing `build_topics.py` CLI step; `--skip-case-leads` permits offline topic
 rebuilds. No additional workflow permissions are needed. The static
 packager and local sync explicitly copy only `data/case-leads.json` as an extra
 public artifact, preserving the narrow public export boundary.
+
+## Lovable and n8n official RSS intake (2026-10-28)
+
+Both feeds have independent source-health entries (`official_feed_lovable` and
+`official_feed_n8n`) while their article records use the existing `official_ai`
+route. A feed returning no dated entries is distinct from an HTTP/parser failure.
+Each capped intake scans its available feed first, prioritizes concrete product
+and workflow guidance, then general posts, then at most two technical posts. It
+deduplicates canonical URLs and excludes missing/future publication dates. General
+focus is not itself an exclusion: narrow title rules can miss useful product prose.
+
+For these two exact official publisher/host pairs only, the existing internal
+product recognition can use the original RSS excerpt (at most 500 characters).
+This preserves the original headline while recognizing vague usage posts such as
+Lovable's “Your workspace has undead apps” and n8n's numbered version announcement.
+Other hosts and copied publisher labels do not get this summary-based rescue.
+Technical evaluation priority and reader-facing filters remain unchanged.
+The existing AI 编码 topic recognizes Lovable, and the Agent topic recognizes
+n8n; no new reader-facing topic or filter is introduced.
+
+The 7-day overlap probe against the current public archive found Lovable 0/2 and
+n8n 0/6 hard duplicates. Lovable is a small sample; its default intake is explicitly
+requested by the maintainer, not justified by a claim of complete unique coverage.
+Lovable's article documents Enterprise project cleanup; its first shipment date
+is unverified. n8n 3.0.0 is Beta; the planned December stable release is not a
+current launch. See `reports/source-intake/2026-10-28-lovable-n8n.json`.
