@@ -4,55 +4,71 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-29T14:24:52.041728Z",
+  "generated_at": "2026-10-29T19:41:53.663409Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
     "2026-10-28",
-    "2026-10-29"
+    "2026-10-29",
+    "2026-10-30"
   ],
-  "story_count": 1572,
-  "unique_story_count": 1557,
+  "story_count": 1868,
+  "unique_story_count": 1637,
   "counts": {
     "by_company_topic": {
-      "anthropic": 279,
-      "apple": 15,
-      "cursor": 5,
-      "deepseek": 31,
-      "doubao": 8,
-      "google-gemini": 81,
-      "huggingface": 20,
-      "hunyuan": 4,
-      "kimi": 22,
-      "meta-llama": 7,
-      "microsoft": 32,
+      "anthropic": 317,
+      "apple": 17,
+      "cursor": 6,
+      "deepseek": 40,
+      "doubao": 9,
+      "google-gemini": 108,
+      "huggingface": 30,
+      "hunyuan": 6,
+      "kimi": 26,
+      "meta-llama": 8,
+      "microsoft": 35,
       "minimax": 23,
-      "nvidia": 48,
-      "openai": 193,
-      "openrouter": 8,
-      "qwen": 20,
-      "xai": 29,
-      "zhipu": 3
+      "nvidia": 60,
+      "openai": 219,
+      "openrouter": 13,
+      "qwen": 22,
+      "xai": 31,
+      "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 257,
-      "monetization": 29,
-      "product-entry": 27,
-      "workplace": 62
+      "agent-ecosystem": 308,
+      "monetization": 36,
+      "product-entry": 30,
+      "workplace": 69
     },
     "by_importance_label": {
-      "值得关注": 1297,
-      "多源热议": 28,
-      "官方更新": 84,
-      "行业动态": 163
+      "值得关注": 1516,
+      "多源热议": 31,
+      "官方更新": 110,
+      "行业动态": 211
     },
     "by_source_count_bucket": {
-      "1": 1483,
-      "2": 58,
-      "3+": 31
+      "1": 1759,
+      "2": 75,
+      "3+": 34
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_863a3ba75e1e",
+      "title": "You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
+      "importance_score": 0.8683,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
     {
       "story_id": "story_f713f4e4a699",
       "title": "NVIDIA 发布开放权重语音模型 Nemotron 3.5 Transcribe 及 Granary v2 数据管线 / NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
@@ -107,6 +123,45 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_c461d6d5cb69",
+      "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则 / An updated Model Spec for more capable and beneficial AI",
+      "url": "https://openai.com/index/updated-model-spec",
+      "importance_score": 0.8451,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ab17deb5dbd6",
+      "title": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision",
+      "importance_score": 0.8431,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "meta-llama"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_73d5d1af7193",
+      "title": "Gemini Notebook makes hundreds of textbooks available to help students learn even more.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks",
+      "importance_score": 0.8426,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_3e2da8c9fde0",
       "title": "Legora正在构建法律工作代理操作系统 / Legora is building the agentic operating system for legal work",
       "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
@@ -122,6 +177,43 @@
       ]
     },
     {
+      "story_id": "story_974720bcc0ac",
+      "title": "Managed Deep Agents v0.10: Browser Use and Async Subagents",
+      "url": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents",
+      "importance_score": 0.8373,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_152dec0b7fa1",
+      "title": "Introducing Ad Studio",
+      "url": "https://www.krea.ai/blog/introducing-ad-studio",
+      "importance_score": 0.8359,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5fa7fb86c68d",
+      "title": "Browser Use in Managed Deep Agents",
+      "url": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents",
+      "importance_score": 0.8355,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_b9ba650b2e36",
       "title": "How Fanatics and OpenAI streamline the fan experience",
       "url": "https://openai.com/index/fanatics-streamline-fan-experience",
@@ -131,6 +223,19 @@
       "archive_date": "2026-10-26",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_bba3a5fb0d2f",
+      "title": "How to use Gemini to update your resume",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/update-resume-with-gemini",
+      "importance_score": 0.832,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -161,6 +266,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_023d6c3fddb5",
+      "title": "OpenAI 详解如何检测前沿模型失准行为 / How we detect frontier model misalignment",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "importance_score": 0.8262,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_6a3f26655d84",
       "title": "Greptile 使用 GPT-6 Astra 使错误检测超越代码审查 / Greptile takes bug detection beyond code review with GPT-6 Astra",
       "url": "https://openai.com/index/greptile-code-review-codex-astra",
@@ -168,6 +288,19 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-27",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dbc9e49de220",
+      "title": "How Ropes & Gray is developing AI for transactional diligence",
+      "url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "importance_score": 0.8218,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
       "company_topics": [
         "openai"
       ],
@@ -293,6 +426,19 @@
       "archive_date": "2026-10-29",
       "company_topics": [
         "qwen"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9628ce64bb0f",
+      "title": "Hugging Face 联合多所高校发起 Project ProtoStar，推动公共资助科研数据 AI-ready 化 / Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+      "url": "https://huggingface.co/blog/announcing-project-protostar",
+      "importance_score": 0.8154,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -447,164 +593,6 @@
       "lens_topics": [
         "workplace"
       ]
-    },
-    {
-      "story_id": "story_e0adfc587f0f",
-      "title": "GitHub Copilot 应用程序、Universe 发布 / GitHub Copilot app, Universe releases",
-      "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases",
-      "importance_score": 0.8021,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_95c7481a0866",
-      "title": "GitHub Enterprise 现在包含对 GitHub Copilot 的访问 / GitHub Enterprise now includes access to GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
-      "importance_score": 0.8019,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_62dac217e32f",
-      "title": "GitHub Copilot 应用程序的安全扩展 / Security extension for the GitHub Copilot app",
-      "url": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
-      "importance_score": 0.8018,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_c7d6d7e6214b",
-      "title": "VS Code 中的 GitHub Copilot、Universe 版本 / GitHub Copilot in VS Code, Universe releases",
-      "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases",
-      "importance_score": 0.8014,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_2afe1633ba5b",
-      "title": "使用 Copilot Automations 为您的团队构建共享工作流程 / Build shared workflows for your team with Copilot Automations",
-      "url": "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations",
-      "importance_score": 0.8014,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_f528ed774de0",
-      "title": "GitHub Copilot Fusion 现在支持选择本地模型 / GitHub Copilot Fusion now supports selection of local models",
-      "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
-      "importance_score": 0.8013,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_08cb0d22893e",
-      "title": "直接在 Copilot 中生成和编辑图像 / Generate and edit images directly in Copilot",
-      "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
-      "importance_score": 0.8013,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_ec554f349e47",
-      "title": "Retell 使用 OpenAI 模型帮助支持每月 1 亿次通话 / Retell uses OpenAI models to help power 100M monthly calls",
-      "url": "https://openai.com/index/retell-ai",
-      "importance_score": 0.801,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_5cfb9bcbdf04",
-      "title": "Latent Space 解读 Anthropic 提交 S-1：拟以代码 AN 上市纳斯达克，H1 2026 营收 16.3B 美元 / [AINews] Anthropic files for $2T IPO in 2 weeks: 1400% growth rate, 48% of revenue through cloud partners, 85% margin, $1B op profit in Q2, $134B cash in bank and $10B lifetime burn",
-      "url": "https://latent.space/p/ainews-anthropic-s1",
-      "importance_score": 0.801,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-10-27",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_529172dc08c8",
-      "title": "Gemini 4 Argon 的 8 个实际应用示例 / 8 examples of Gemini 4 Argon in action",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
-      "importance_score": 0.801,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_44dcb385c991",
-      "title": "From Expertise to Intelligence: NISCO Deploys World's First Swarm-Intelligence Steel Model at Scale",
-      "url": "https://www.huawei.com/en/news/2026/10/nisco-yuanye-steelmodel",
-      "importance_score": 0.799,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-28",
-      "company_topics": [],
-      "lens_topics": []
     }
   ]
 }
