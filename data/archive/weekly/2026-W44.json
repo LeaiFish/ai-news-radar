@@ -4,53 +4,54 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-30T14:15:12.150466Z",
+  "generated_at": "2026-10-30T19:28:01.942349Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
   ],
-  "story_count": 1854,
-  "unique_story_count": 1838,
+  "story_count": 2104,
+  "unique_story_count": 1893,
   "counts": {
     "by_company_topic": {
-      "anthropic": 328,
+      "anthropic": 375,
       "apple": 15,
-      "cursor": 8,
-      "deepseek": 36,
-      "doubao": 11,
-      "google-gemini": 97,
-      "huggingface": 22,
+      "cursor": 15,
+      "deepseek": 41,
+      "doubao": 14,
+      "google-gemini": 116,
+      "huggingface": 24,
       "hunyuan": 6,
-      "kimi": 26,
-      "meta-llama": 9,
-      "microsoft": 34,
-      "minimax": 24,
-      "nvidia": 59,
-      "openai": 212,
-      "openrouter": 12,
-      "qwen": 21,
-      "xai": 33,
+      "kimi": 29,
+      "meta-llama": 10,
+      "microsoft": 35,
+      "minimax": 25,
+      "nvidia": 70,
+      "openai": 232,
+      "openrouter": 14,
+      "qwen": 22,
+      "xai": 37,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 294,
-      "monetization": 38,
-      "product-entry": 31,
-      "workplace": 70
+      "agent-ecosystem": 327,
+      "monetization": 47,
+      "product-entry": 36,
+      "workplace": 74
     },
     "by_importance_label": {
-      "值得关注": 1517,
-      "多源热议": 33,
-      "官方更新": 99,
-      "行业动态": 205
+      "值得关注": 1706,
+      "多源热议": 37,
+      "官方更新": 110,
+      "行业动态": 251
     },
     "by_source_count_bucket": {
-      "1": 1743,
-      "2": 74,
-      "3+": 37
+      "1": 1976,
+      "2": 87,
+      "3+": 41
     }
   },
   "top_stories": [
@@ -77,6 +78,20 @@
       "source_count": 1,
       "archive_date": "2026-10-29",
       "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3b4867ca19cb",
+      "title": "用 NVIDIA Nemotron 开源模型打造万圣节鬼屋 MonsterHouse / nemotron-halloween",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "importance_score": 0.8561,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [
+        "nvidia",
         "huggingface"
       ],
       "lens_topics": []
@@ -148,6 +163,30 @@
       "company_topics": [
         "openai"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_db3a166bf759",
+      "title": "Community safety report and new protections for teens",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "importance_score": 0.8267,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e1092d148f7d",
+      "title": "Throttling vs. Rate Limiting: Backoff Strategies for Workflows",
+      "url": "https://blog.n8n.io/throttling-vs-rate-limiting",
+      "importance_score": 0.8265,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -491,6 +530,17 @@
       ]
     },
     {
+      "story_id": "story_54217e411546",
+      "title": "AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30% / US tech stocks see sharp falls over AI cost fears",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+      "importance_score": 0.805,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-10-31",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c461d6d5cb69",
       "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则 / An updated Model Spec for more capable and beneficial AI",
       "url": "https://openai.com/index/updated-model-spec",
@@ -541,64 +591,6 @@
         "google-gemini"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_ab17deb5dbd6",
-      "title": "未来属于每个人：Meta 和 CNIB 合作支持盲人、聋哑人或视力低下的加拿大人 / The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
-      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision",
-      "importance_score": 0.8024,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "meta-llama"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a4f85859c631",
-      "title": "使用 GitHub Copilot Fusion 路由和编排模型 / Route and orchestrate models with GitHub Copilot Fusion",
-      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
-      "importance_score": 0.8022,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_e0adfc587f0f",
-      "title": "GitHub Copilot 应用程序、Universe 发布 / GitHub Copilot app, Universe releases",
-      "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases",
-      "importance_score": 0.8021,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_95c7481a0866",
-      "title": "GitHub Enterprise 现在包含对 GitHub Copilot 的访问 / GitHub Enterprise now includes access to GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
-      "importance_score": 0.8019,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-29",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
     }
   ]
 }
