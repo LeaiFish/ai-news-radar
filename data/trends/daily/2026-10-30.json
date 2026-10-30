@@ -1,0 +1,351 @@
+{
+  "kind": "daily",
+  "period_start": "2026-10-29T03:17:36.130525Z",
+  "period_end": "2026-10-30T03:17:36.130525Z",
+  "source_snapshot_at": "2026-10-30T03:17:36.130525Z",
+  "input_id": "3b1093a7b469ab0d41e8d55f3029111c0a4748611ae940daf4fb55175bbdc3ee",
+  "previous_report_id": "c2116020086f2c71e946becf8c90fa3c190034f57588c070bb96543f171e8658",
+  "schema": "radar_trend_report_v1",
+  "generated_at": "2026-10-30T03:26:08.691889Z",
+  "companies": {
+    "doubao": {
+      "state": "unchanged",
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "豆包工作为团队与企业订阅接入第三方模型",
+        "summary": "报道介绍Kimi、GLM和DeepSeek模型可按任务选择，使用企业已有积分；管理员可按人员、模型和使用端控制范围。体现企业工具组织方式扩展，未证明持续采用或成本收益。",
+        "evidence_ids": [
+          "doubao-enterprise-models"
+        ]
+      },
+      "events": [
+        {
+          "headline": "豆包工作为团队与企业订阅接入第三方模型",
+          "summary": "报道介绍Kimi、GLM和DeepSeek模型可按任务选择，使用企业已有积分；管理员可按人员、模型和使用端控制范围。体现企业工具组织方式扩展，未证明持续采用或成本收益。",
+          "evidence_ids": [
+            "doubao-enterprise-models"
+          ],
+          "event_id": "doubao-work-enterprise-third-party-models-oct29",
+          "status": "supplement"
+        }
+      ]
+    },
+    "google-gemini": {
+      "state": "unchanged",
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Gemini可在聊天内直接修改生成文件",
+        "summary": "用户可全屏手动编辑文件、选中文字提问或让Gemini修改。PDF预览和编辑支持网页与移动端，文档、表格、演示稿、Markdown、文本及代码目前仅网页端。把文件生成后的修改留在对话中，实际质量和反复使用仍待验证。",
+        "evidence_ids": [
+          "gemini-file-editing"
+        ]
+      },
+      "events": [
+        {
+          "headline": "Gemini可在聊天内直接修改生成文件",
+          "summary": "用户可全屏手动编辑文件、选中文字提问或让Gemini修改。PDF预览和编辑支持网页与移动端，文档、表格、演示稿、Markdown、文本及代码目前仅网页端。把文件生成后的修改留在对话中，实际质量和反复使用仍待验证。",
+          "evidence_ids": [
+            "gemini-file-editing"
+          ],
+          "event_id": "gemini-in-chat-file-editing-oct29",
+          "status": "new"
+        }
+      ]
+    },
+    "qwen": {
+      "state": "unchanged",
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "千问办公执行环境准备延续已报道更新",
+        "summary": "1.4.0仍列出Windows x64本机及沙箱任务自动准备Python与Node.js环境，并优化历史长会话展示；本轮未核实新的经营场景或开放范围变化。",
+        "evidence_ids": [
+          "qwen-desktop-review"
+        ]
+      },
+      "events": []
+    },
+    "hunyuan": {
+      "state": "unchanged",
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "元宝2.90.20沿用引用追问说明",
+        "summary": "版本记录继续说明选中回答文字后引用追问；未核验新增录音整理、交接或生活服务能力，不把混元模型或榜单当元宝应用升级。",
+        "evidence_ids": [
+          "yuanbao-version-review"
+        ]
+      },
+      "events": []
+    },
+    "xai": {
+      "state": "unchanged",
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Grok购物与订阅任务延续既有更新",
+        "summary": "官方0.78.1仍介绍商品卡片、订单跟踪、Shop Pay和试用及订阅模板；订阅修改前确认。常规功能补充未改变既有团队任务与持续维护判断。",
+        "evidence_ids": [
+          "grok-bot-review"
+        ]
+      },
+      "events": []
+    },
+    "meta-llama": {
+      "state": "unchanged",
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Muse当地连接器仍分阶段开放",
+        "summary": "新加坡应用已提供iOS、Android及网页入口；购物、餐饮和出行连接器逐步推出，部分晚于上线。眼镜入口尚待推出，不推定全部交易链路已接通。",
+        "evidence_ids": [
+          "muse-singapore-review"
+        ]
+      },
+      "events": []
+    },
+    "openai": {
+      "state": "insufficient",
+      "reason": "额度调整媒体报道已读，但本轮未完成官方原文交叉核验；榜单、融资与数据中心新闻不能作为ChatGPT应用变化。保留原判断及日期，不推断无变化。",
+      "judgment": null,
+      "changes": null,
+      "digest": null,
+      "events": []
+    },
+    "anthropic": {
+      "state": "insufficient",
+      "reason": "候选中的Gemini文件编辑属于Google，融资与模型排行不能视为Claude应用更新；Claude Code候选原文读取受阻，未绕过，证据不足，保留原判断及日期。",
+      "judgment": null,
+      "changes": null,
+      "digest": null,
+      "events": []
+    }
+  },
+  "evidence": [
+    {
+      "id": "doubao-enterprise-models",
+      "url": "https://www.aibase.com/news/31971",
+      "title": "豆包工作接入第三方模型服务",
+      "source": "AIbase",
+      "published_at": "2026-10-30",
+      "event_at": "2026-10-29",
+      "verified_at": "2026-10-30T03:26:08.691889Z",
+      "company_ids": [
+        "doubao"
+      ],
+      "level": "media",
+      "date_basis": "original_page",
+      "note": "媒体原文转述快科技10月29日消息；未直接核验官方公告和精确开放时刻。团队及企业订阅范围、积分与管理员设置来自报道，不据此推断安全效果或采购收益。日精度跨边界，保守补证。"
+    },
+    {
+      "id": "gemini-file-editing",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
+      "title": "Generate, preview and edit files directly in Gemini",
+      "source": "Google",
+      "published_at": "2026-10-29T16:15:00Z",
+      "event_at": "2026-10-29T16:15:00Z",
+      "verified_at": "2026-10-30T03:26:08.691889Z",
+      "company_ids": [
+        "google-gemini"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "原文及结构化发表时间已核对；event_at记录该功能公告发表时刻，不代表每个账号实际获得功能的时刻。官方称所有用户及支持语言可用，未实测交付质量。"
+    },
+    {
+      "id": "qwen-desktop-review",
+      "url": "https://docs.qwenwork.cn/release-notes/desktop",
+      "title": "千问办公客户端更新日志",
+      "source": "千问办公",
+      "published_at": "2026-10-28",
+      "event_at": "2026-10-28",
+      "verified_at": "2026-10-30T03:26:08.691889Z",
+      "company_ids": [
+        "qwen"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "重读1.4.0及相邻日期条目，与已报道事件相同，不再次计入新增。"
+    },
+    {
+      "id": "yuanbao-version-review",
+      "url": "https://apps.apple.com/cn/app/id6480446430",
+      "title": "元宝版本记录",
+      "source": "Apple App Store / 腾讯",
+      "published_at": null,
+      "event_at": null,
+      "verified_at": "2026-10-30T03:26:08.691889Z",
+      "company_ids": [
+        "hunyuan"
+      ],
+      "level": "official",
+      "date_basis": "undated_document",
+      "note": "产品与开发者已核对；2.90.20仅显示相对时间，未换算绝对日期。引用追问为已报道功能，不能由新版本号推断新功能。"
+    },
+    {
+      "id": "grok-bot-review",
+      "url": "https://x.ai/changelog/bot",
+      "title": "Grok Bot Changelog 0.78.1",
+      "source": "xAI",
+      "published_at": "2026-10-27",
+      "event_at": "2026-10-27",
+      "verified_at": "2026-10-30T03:26:08.691889Z",
+      "company_ids": [
+        "xai"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮重读官方0.78.1段落，和前期同一事件，不重复计数；下单及订阅改变须确认，未验证使用收益。"
+    },
+    {
+      "id": "muse-singapore-review",
+      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
+      "title": "Muse Is Now Available in Singapore",
+      "source": "Meta",
+      "published_at": "2026-10-27",
+      "event_at": null,
+      "verified_at": "2026-10-30T03:26:08.691889Z",
+      "company_ids": [
+        "meta-llama"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮重读官方日期及开放范围；与前期新加坡事件相同，连接器仍逐步推出；分享恢复状态未知。"
+    }
+  ],
+  "overview": null,
+  "evolution": {
+    "companies": {
+      "doubao": {
+        "type": "continued",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "evidence_ids": [
+          "doubao-enterprise-models"
+        ],
+        "signals": [
+          {
+            "direction_id": "enterprise-rollout",
+            "type": "continued",
+            "summary": "报道介绍Kimi、GLM和DeepSeek模型可按任务选择，使用企业已有积分；管理员可按人员、模型和使用端控制范围。体现企业工具组织方式扩展，未证明持续采用或成本收益。",
+            "stage": "available",
+            "evidence_ids": [
+              "doubao-enterprise-models"
+            ]
+          }
+        ]
+      },
+      "google-gemini": {
+        "type": "continued",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "evidence_ids": [
+          "gemini-file-editing"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "用户可全屏手动编辑文件、选中文字提问或让Gemini修改。PDF预览和编辑支持网页与移动端，文档、表格、演示稿、Markdown、文本及代码目前仅网页端。把文件生成后的修改留在对话中，实际质量和反复使用仍待验证。",
+            "stage": "available",
+            "evidence_ids": [
+              "gemini-file-editing"
+            ]
+          }
+        ]
+      },
+      "qwen": {
+        "type": "continued",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "evidence_ids": [
+          "qwen-desktop-review"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "1.4.0仍列出Windows x64本机及沙箱任务自动准备Python与Node.js环境，并优化历史长会话展示；本轮未核实新的经营场景或开放范围变化。",
+            "stage": "available",
+            "evidence_ids": [
+              "qwen-desktop-review"
+            ]
+          }
+        ]
+      },
+      "hunyuan": {
+        "type": "continued",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "evidence_ids": [
+          "yuanbao-version-review"
+        ],
+        "signals": [
+          {
+            "direction_id": "personal-context",
+            "type": "continued",
+            "summary": "版本记录继续说明选中回答文字后引用追问；未核验新增录音整理、交接或生活服务能力，不把混元模型或榜单当元宝应用升级。",
+            "stage": "available",
+            "evidence_ids": [
+              "yuanbao-version-review"
+            ]
+          }
+        ]
+      },
+      "xai": {
+        "type": "continued",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "evidence_ids": [
+          "grok-bot-review"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "官方0.78.1仍介绍商品卡片、订单跟踪、Shop Pay和试用及订阅模板；订阅修改前确认。常规功能补充未改变既有团队任务与持续维护判断。",
+            "stage": "available",
+            "evidence_ids": [
+              "grok-bot-review"
+            ]
+          }
+        ]
+      },
+      "meta-llama": {
+        "type": "continued",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "evidence_ids": [
+          "muse-singapore-review"
+        ],
+        "signals": [
+          {
+            "direction_id": "mobile-entry",
+            "type": "continued",
+            "summary": "新加坡应用已提供iOS、Android及网页入口；购物、餐饮和出行连接器逐步推出，部分晚于上线。眼镜入口尚待推出，不推定全部交易链路已接通。",
+            "stage": "available",
+            "evidence_ids": [
+              "muse-singapore-review"
+            ]
+          }
+        ]
+      },
+      "openai": {
+        "type": "insufficient",
+        "reason": "额度调整媒体报道已读，但本轮未完成官方原文交叉核验；榜单、融资与数据中心新闻不能作为ChatGPT应用变化。保留原判断及日期，不推断无变化。",
+        "evidence_ids": [],
+        "signals": []
+      },
+      "anthropic": {
+        "type": "insufficient",
+        "reason": "候选中的Gemini文件编辑属于Google，融资与模型排行不能视为Claude应用更新；Claude Code候选原文读取受阻，未绕过，证据不足，保留原判断及日期。",
+        "evidence_ids": [],
+        "signals": []
+      }
+    },
+    "overview": []
+  },
+  "report_id": "397df726bb8e3f35235e9d563928eb18435eacf8512b65aee7eb19f579c53844"
+}

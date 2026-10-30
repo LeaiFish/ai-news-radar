@@ -50,32 +50,32 @@
       },
       "changes": null,
       "daily": {
-        "generated_at": "2026-10-29T03:46:22.735525Z",
-        "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-        "period_start": "2026-10-28T03:37:43.060226Z",
-        "period_end": "2026-10-29T03:37:43.060226Z",
+        "generated_at": "2026-10-30T03:26:08.691889Z",
+        "source_snapshot_at": "2026-10-30T03:17:36.130525Z",
+        "period_start": "2026-10-29T03:17:36.130525Z",
+        "period_end": "2026-10-30T03:17:36.130525Z",
         "content": {
-          "headline": "豆包工作可将电脑操作演示存成个人技能",
-          "summary": "用户边操作边讲解后可保存做法供同类任务调用；Mac开启允许锁屏工作后，可继续执行并由手机交办。报道未证明重复任务成功率或持续使用。",
+          "headline": "豆包工作为团队与企业订阅接入第三方模型",
+          "summary": "报道介绍Kimi、GLM和DeepSeek模型可按任务选择，使用企业已有积分；管理员可按人员、模型和使用端控制范围。体现企业工具组织方式扩展，未证明持续采用或成本收益。",
           "evidence_ids": [
-            "doubao-record-skills"
+            "doubao-enterprise-models"
           ]
         },
         "evidence": [
           {
-            "id": "doubao-record-skills",
-            "url": "https://www.ithome.com/1/018/860.htm",
-            "title": "豆包工作功能上新：支持将录制电脑操作保存为技能",
-            "source": "IT之家",
-            "published_at": "2026-10-28T12:00:26+08:00",
-            "event_at": "2026-10-28",
-            "verified_at": "2026-10-29T03:46:22.735525Z",
+            "id": "doubao-enterprise-models",
+            "url": "https://www.aibase.com/news/31971",
+            "title": "豆包工作接入第三方模型服务",
+            "source": "AIbase",
+            "published_at": "2026-10-30",
+            "event_at": "2026-10-29",
+            "verified_at": "2026-10-30T03:26:08.691889Z",
             "company_ids": [
               "doubao"
             ],
             "level": "media",
             "date_basis": "original_page",
-            "note": "媒体原文称当日上午公告，未直接核验公众号账号和精确开放时刻；日精度跨窗口边界，保守补证。锁屏工作需开启设置，未实测效果。"
+            "note": "媒体原文转述快科技10月29日消息；未直接核验官方公告和精确开放时刻。团队及企业订阅范围、积分与管理员设置来自报道，不据此推断安全效果或采购收益。日精度跨边界，保守补证。"
           }
         ]
       },
@@ -125,40 +125,40 @@
           }
         ]
       },
-      "last_checked_at": "2026-10-29T03:46:22.735525Z",
+      "last_checked_at": "2026-10-30T03:26:08.691889Z",
       "state": "unchanged",
-      "reason": "相较此前网页交付，补入个人操作方法复用与离开电脑后的交办；目前主要为功能说明，保留主判断及日期。候选有截断，公告时刻未定，不算本轮真新增。"
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。"
     },
     "qwen": {
       "judgment": null,
       "changes": null,
       "daily": {
-        "generated_at": "2026-10-29T03:46:22.735525Z",
-        "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-        "period_start": "2026-10-28T03:37:43.060226Z",
-        "period_end": "2026-10-29T03:37:43.060226Z",
+        "generated_at": "2026-10-30T03:26:08.691889Z",
+        "source_snapshot_at": "2026-10-30T03:17:36.130525Z",
+        "period_start": "2026-10-29T03:17:36.130525Z",
+        "period_end": "2026-10-30T03:17:36.130525Z",
         "content": {
-          "headline": "千问办公1.4.0补齐Windows任务环境准备",
-          "summary": "Windows x64本机及沙箱任务可自动准备Python与Node.js环境，并改善历史长会话展示和独立反馈入口。属于执行体验优化，未改变商家经营或个人资料的应用主线。",
+          "headline": "千问办公执行环境准备延续已报道更新",
+          "summary": "1.4.0仍列出Windows x64本机及沙箱任务自动准备Python与Node.js环境，并优化历史长会话展示；本轮未核实新的经营场景或开放范围变化。",
           "evidence_ids": [
-            "qwen-desktop-140"
+            "qwen-desktop-review"
           ]
         },
         "evidence": [
           {
-            "id": "qwen-desktop-140",
+            "id": "qwen-desktop-review",
             "url": "https://docs.qwenwork.cn/release-notes/desktop",
             "title": "千问办公客户端更新日志",
             "source": "千问办公",
             "published_at": "2026-10-28",
             "event_at": "2026-10-28",
-            "verified_at": "2026-10-29T03:46:22.735525Z",
+            "verified_at": "2026-10-30T03:26:08.691889Z",
             "company_ids": [
               "qwen"
             ],
             "level": "official",
             "date_basis": "original_page",
-            "note": "原文明确完整年月日；无时区和时刻，临近日窗边界按补证。仅Windows x64任务环境准备，不代表消费端千问App更新。"
+            "note": "重读1.4.0及相邻日期条目，与已报道事件相同，不再次计入新增。"
           }
         ]
       },
@@ -192,40 +192,40 @@
           }
         ]
       },
-      "last_checked_at": "2026-10-29T03:46:22.735525Z",
+      "last_checked_at": "2026-10-30T03:26:08.691889Z",
       "state": "unchanged",
-      "reason": "与此前资料和经营任务判断相比，属于客户端体验补充；日期只有日精度，不计窗口真新增，保留原判断。"
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。"
     },
     "hunyuan": {
       "judgment": null,
       "changes": null,
       "daily": {
-        "generated_at": "2026-10-29T03:46:22.735525Z",
-        "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-        "period_start": "2026-10-28T03:37:43.060226Z",
-        "period_end": "2026-10-29T03:37:43.060226Z",
+        "generated_at": "2026-10-30T03:26:08.691889Z",
+        "source_snapshot_at": "2026-10-30T03:17:36.130525Z",
+        "period_start": "2026-10-29T03:17:36.130525Z",
+        "period_end": "2026-10-30T03:17:36.130525Z",
         "content": {
-          "headline": "元宝版本说明仍延续引用追问",
-          "summary": "本轮官方商店版本说明仍列出选中文字后引用追问。混元模型发布与同传模型开源未被当成元宝客户端功能上线。",
+          "headline": "元宝2.90.20沿用引用追问说明",
+          "summary": "版本记录继续说明选中回答文字后引用追问；未核验新增录音整理、交接或生活服务能力，不把混元模型或榜单当元宝应用升级。",
           "evidence_ids": [
-            "yuanbao-current"
+            "yuanbao-version-review"
           ]
         },
         "evidence": [
           {
-            "id": "yuanbao-current",
+            "id": "yuanbao-version-review",
             "url": "https://apps.apple.com/cn/app/id6480446430",
-            "title": "元宝官方版本历史",
-            "source": "App Store / Tencent",
+            "title": "元宝版本记录",
+            "source": "Apple App Store / 腾讯",
             "published_at": null,
             "event_at": null,
-            "verified_at": "2026-10-29T03:46:22.735525Z",
+            "verified_at": "2026-10-30T03:26:08.691889Z",
             "company_ids": [
               "hunyuan"
             ],
             "level": "official",
             "date_basis": "undated_document",
-            "note": "本轮核对开发者和版本说明；页面给相对日期，不据此反推精确发布时间。当前2.90.10仍说明引用追问，已在历史报道。"
+            "note": "产品与开发者已核对；2.90.20仅显示相对时间，未换算绝对日期。引用追问为已报道功能，不能由新版本号推断新功能。"
           }
         ]
       },
@@ -259,9 +259,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-10-29T03:46:22.735525Z",
+      "last_checked_at": "2026-10-30T03:26:08.691889Z",
       "state": "unchanged",
-      "reason": "复核已报道版本说明，未核实新的应用变化；相对日期不换算成新发布日期，主判断和时间保留。"
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。"
     },
     "openai": {
       "judgment": {
@@ -504,36 +504,7 @@
           }
         ]
       },
-      "daily": {
-        "generated_at": "2026-10-29T03:46:22.735525Z",
-        "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-        "period_start": "2026-10-28T03:37:43.060226Z",
-        "period_end": "2026-10-29T03:37:43.060226Z",
-        "content": {
-          "headline": "Dot开始向美国Pro用户测试短信入口",
-          "summary": "美国Pro用户开始逐步获得iMessage或RCS交办与主动更新；沿用应用内记忆和插件。本人专属短信通道仍为测试，未证明全面开放或普遍使用。",
-          "evidence_ids": [
-            "chatgpt-dot-texting"
-          ]
-        },
-        "evidence": [
-          {
-            "id": "chatgpt-dot-texting",
-            "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-            "title": "ChatGPT release notes: Texting your dot",
-            "source": "OpenAI",
-            "published_at": "2026-10-28",
-            "event_at": "2026-10-28",
-            "verified_at": "2026-10-29T03:46:22.735525Z",
-            "company_ids": [
-              "openai"
-            ],
-            "level": "official",
-            "date_basis": "original_page",
-            "note": "官方10月28日条目，仅日精度、时区未知，窗口边界按补证。美国Pro用户逐步Beta；短信只连接本人，不访问其他短信会话。"
-          }
-        ]
-      },
+      "daily": null,
       "weekly": {
         "generated_at": "2026-10-26T03:27:31.513039Z",
         "source_snapshot_at": "2026-10-26T02:42:10.637375Z",
@@ -660,9 +631,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-10-29T03:46:22.735525Z",
-      "state": "unchanged",
-      "reason": "此前持续办公判断补入离开应用后的交办入口；受地区、订阅和Beta范围限制，保留主判断。API赠送额度另属商业条款，不作应用能力新增。"
+      "last_checked_at": "2026-10-30T03:26:08.691889Z",
+      "state": "insufficient",
+      "reason": "额度调整媒体报道已读，但本轮未完成官方原文交叉核验；榜单、融资与数据中心新闻不能作为ChatGPT应用变化。保留原判断及日期，不推断无变化。"
     },
     "anthropic": {
       "judgment": {
@@ -841,36 +812,7 @@
           }
         ]
       },
-      "daily": {
-        "generated_at": "2026-10-29T03:46:22.735525Z",
-        "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-        "period_start": "2026-10-28T03:37:43.060226Z",
-        "period_end": "2026-10-29T03:37:43.060226Z",
-        "content": {
-          "headline": "政府部署披露仍是既有落地证据",
-          "summary": "官方继续披露政府采购折扣、实施支持及组织使用情况。本轮重读的是已报道公告，未核实Claude消费应用新增功能；研究模型安全实验和IPO信息不作应用更新。",
-          "evidence_ids": [
-            "claude-gsa-review"
-          ]
-        },
-        "evidence": [
-          {
-            "id": "claude-gsa-review",
-            "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-            "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-            "source": "Anthropic",
-            "published_at": "2026-10-27",
-            "event_at": "2026-10-27",
-            "verified_at": "2026-10-29T03:46:22.735525Z",
-            "company_ids": [
-              "anthropic"
-            ],
-            "level": "official",
-            "date_basis": "original_page",
-            "note": "重读官方原文；与昨日已记政府版群体使用披露为同一事件，不重计。使用数据为厂商披露，不证明所有组织成效；另一个插件页面本轮不可读。"
-          }
-        ]
-      },
+      "daily": null,
       "weekly": {
         "generated_at": "2026-10-26T03:27:31.513039Z",
         "source_snapshot_at": "2026-10-26T02:42:10.637375Z",
@@ -933,9 +875,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-10-29T03:46:22.735525Z",
-      "state": "unchanged",
-      "reason": "与昨日政府部署事件重复，只做原文复核；不由重新发现或融资报道推导新变化，保留主判断。"
+      "last_checked_at": "2026-10-30T03:26:08.691889Z",
+      "state": "insufficient",
+      "reason": "候选中的Gemini文件编辑属于Google，融资与模型排行不能视为Claude应用更新；Claude Code候选原文读取受阻，未绕过，证据不足，保留原判断及日期。"
     },
     "xai": {
       "judgment": {
@@ -986,32 +928,32 @@
       },
       "changes": null,
       "daily": {
-        "generated_at": "2026-10-29T03:46:22.735525Z",
-        "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-        "period_start": "2026-10-28T03:37:43.060226Z",
-        "period_end": "2026-10-29T03:37:43.060226Z",
+        "generated_at": "2026-10-30T03:26:08.691889Z",
+        "source_snapshot_at": "2026-10-30T03:17:36.130525Z",
+        "period_start": "2026-10-29T03:17:36.130525Z",
+        "period_end": "2026-10-30T03:17:36.130525Z",
         "content": {
-          "headline": "Grok Bot补入购物卡片和订阅管理模板",
-          "summary": "购物结果可显示价格与店铺卡片，购买须批准，订单后续可跟踪发货；订阅模板支持续费价格检查和取消确认，Vault可连接Shop Pay。",
+          "headline": "Grok购物与订阅任务延续既有更新",
+          "summary": "官方0.78.1仍介绍商品卡片、订单跟踪、Shop Pay和试用及订阅模板；订阅修改前确认。常规功能补充未改变既有团队任务与持续维护判断。",
           "evidence_ids": [
-            "grok-0781"
+            "grok-bot-review"
           ]
         },
         "evidence": [
           {
-            "id": "grok-0781",
+            "id": "grok-bot-review",
             "url": "https://x.ai/changelog/bot",
-            "title": "Grok Bot v0.78.1: Shopping cards and subscription templates",
+            "title": "Grok Bot Changelog 0.78.1",
             "source": "xAI",
             "published_at": "2026-10-27",
             "event_at": "2026-10-27",
-            "verified_at": "2026-10-29T03:46:22.735525Z",
+            "verified_at": "2026-10-30T03:26:08.691889Z",
             "company_ids": [
               "xai"
             ],
             "level": "official",
             "date_basis": "original_page",
-            "note": "官方日志标10月27日，早于本轮窗口；社交再传播不是新发布时间。购物下单与订阅变更须确认，未核实节省费用或使用成效。"
+            "note": "本轮重读官方0.78.1段落，和前期同一事件，不重复计数；下单及订阅改变须确认，未验证使用收益。"
           }
         ]
       },
@@ -1077,9 +1019,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-10-29T03:46:22.735525Z",
+      "last_checked_at": "2026-10-30T03:26:08.691889Z",
       "state": "unchanged",
-      "reason": "相较已有权限和支付确认，补入更具体的购物展示与订阅任务。官方日期为10月27日，属于历史补证；常规功能迭代不足以改写主判断。"
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。"
     },
     "google-gemini": {
       "judgment": {
@@ -1228,32 +1170,32 @@
         ]
       },
       "daily": {
-        "generated_at": "2026-10-29T03:46:22.735525Z",
-        "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-        "period_start": "2026-10-28T03:37:43.060226Z",
-        "period_end": "2026-10-29T03:37:43.060226Z",
+        "generated_at": "2026-10-30T03:26:08.691889Z",
+        "source_snapshot_at": "2026-10-30T03:17:36.130525Z",
+        "period_start": "2026-10-29T03:17:36.130525Z",
+        "period_end": "2026-10-30T03:17:36.130525Z",
         "content": {
-          "headline": "Gemini应用日志仍支持技能与后台开发路径",
-          "summary": "已读应用日志仍说明Customize、连接应用及Mac内Antigravity后台构建。当前候选的模型排名不证明这些应用能力发生新变化。",
+          "headline": "Gemini可在聊天内直接修改生成文件",
+          "summary": "用户可全屏手动编辑文件、选中文字提问或让Gemini修改。PDF预览和编辑支持网页与移动端，文档、表格、演示稿、Markdown、文本及代码目前仅网页端。把文件生成后的修改留在对话中，实际质量和反复使用仍待验证。",
           "evidence_ids": [
-            "gemini-release-review"
+            "gemini-file-editing"
           ]
         },
         "evidence": [
           {
-            "id": "gemini-release-review",
-            "url": "https://gemini.google/release-notes/",
-            "title": "Gemini Apps release notes",
+            "id": "gemini-file-editing",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
+            "title": "Generate, preview and edit files directly in Gemini",
             "source": "Google",
-            "published_at": "2026-10-13",
-            "event_at": "2026-10-13",
-            "verified_at": "2026-10-29T03:46:22.735525Z",
+            "published_at": "2026-10-29T16:15:00Z",
+            "event_at": "2026-10-29T16:15:00Z",
+            "verified_at": "2026-10-30T03:26:08.691889Z",
             "company_ids": [
               "google-gemini"
             ],
             "level": "official",
             "date_basis": "original_page",
-            "note": "本轮读取最新可见10月13日应用日志；属于已有背景，不将Carbon模型榜单或安全模型开放推为Gemini消费应用更新。"
+            "note": "原文及结构化发表时间已核对；event_at记录该功能公告发表时刻，不代表每个账号实际获得功能的时刻。官方称所有用户及支持语言可用，未实测交付质量。"
           }
         ]
       },
@@ -1319,9 +1261,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-10-29T03:46:22.735525Z",
+      "last_checked_at": "2026-10-30T03:26:08.691889Z",
       "state": "unchanged",
-      "reason": "本轮重读已有应用范围；未核实最新模型报道转化为消费应用更新。候选截断，保留判断和日期。"
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。"
     },
     "meta-llama": {
       "judgment": {
@@ -1372,13 +1314,13 @@
       },
       "changes": null,
       "daily": {
-        "generated_at": "2026-10-29T03:46:22.735525Z",
-        "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-        "period_start": "2026-10-28T03:37:43.060226Z",
-        "period_end": "2026-10-29T03:37:43.060226Z",
+        "generated_at": "2026-10-30T03:26:08.691889Z",
+        "source_snapshot_at": "2026-10-30T03:17:36.130525Z",
+        "period_start": "2026-10-29T03:17:36.130525Z",
+        "period_end": "2026-10-30T03:17:36.130525Z",
         "content": {
-          "headline": "Muse新加坡连接器继续逐步开放",
-          "summary": "官方仍说明当地购物与出行连接器逐步推出，部分体验晚于上线；iOS、Android与网页可用，眼镜入口尚待推出。新市场上线不证明全部交易已接通。",
+          "headline": "Muse当地连接器仍分阶段开放",
+          "summary": "新加坡应用已提供iOS、Android及网页入口；购物、餐饮和出行连接器逐步推出，部分晚于上线。眼镜入口尚待推出，不推定全部交易链路已接通。",
           "evidence_ids": [
             "muse-singapore-review"
           ]
@@ -1386,18 +1328,18 @@
         "evidence": [
           {
             "id": "muse-singapore-review",
-            "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+            "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
             "title": "Muse Is Now Available in Singapore",
             "source": "Meta",
             "published_at": "2026-10-27",
             "event_at": null,
-            "verified_at": "2026-10-29T03:46:22.735525Z",
+            "verified_at": "2026-10-30T03:26:08.691889Z",
             "company_ids": [
               "meta-llama"
             ],
             "level": "official",
             "date_basis": "original_page",
-            "note": "页面显示10月27日；本轮未另核对结构化UTC时间，采用可见日精度，不覆盖旧证据日期。与昨日新加坡上线同一事件，无再次新增；不能据此判断分享问题恢复。"
+            "note": "本轮重读官方日期及开放范围；与前期新加坡事件相同，连接器仍逐步推出；分享恢复状态未知。"
           }
         ]
       },
@@ -1463,9 +1405,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-10-29T03:46:22.735525Z",
+      "last_checked_at": "2026-10-30T03:26:08.691889Z",
       "state": "unchanged",
-      "reason": "已报道的新加坡上线原文复核，无新的部署或持续使用证据；离职创业报道不属于Muse更新，分享恢复状态仍未知。"
+      "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。"
     }
   },
   "overview": {
@@ -1698,287 +1640,225 @@
   },
   "daily": {
     "kind": "daily",
-    "period_start": "2026-10-28T03:37:43.060226Z",
-    "period_end": "2026-10-29T03:37:43.060226Z",
-    "source_snapshot_at": "2026-10-29T03:37:43.060226Z",
-    "input_id": "9d573a466fc0a3c67b4038537870a9984221bf9442b883592080a68172f349e4",
-    "previous_report_id": "7a85ac17f6642148131d2729a59817355edcfb3d98c5dc44c13a227767a0838f",
+    "period_start": "2026-10-29T03:17:36.130525Z",
+    "period_end": "2026-10-30T03:17:36.130525Z",
+    "source_snapshot_at": "2026-10-30T03:17:36.130525Z",
+    "input_id": "3b1093a7b469ab0d41e8d55f3029111c0a4748611ae940daf4fb55175bbdc3ee",
+    "previous_report_id": "c2116020086f2c71e946becf8c90fa3c190034f57588c070bb96543f171e8658",
     "schema": "radar_trend_report_v1",
-    "generated_at": "2026-10-29T03:46:22.735525Z",
+    "generated_at": "2026-10-30T03:26:08.691889Z",
     "companies": {
       "doubao": {
         "state": "unchanged",
-        "reason": "相较此前网页交付，补入个人操作方法复用与离开电脑后的交办；目前主要为功能说明，保留主判断及日期。候选有截断，公告时刻未定，不算本轮真新增。",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "豆包工作可将电脑操作演示存成个人技能",
-          "summary": "用户边操作边讲解后可保存做法供同类任务调用；Mac开启允许锁屏工作后，可继续执行并由手机交办。报道未证明重复任务成功率或持续使用。",
+          "headline": "豆包工作为团队与企业订阅接入第三方模型",
+          "summary": "报道介绍Kimi、GLM和DeepSeek模型可按任务选择，使用企业已有积分；管理员可按人员、模型和使用端控制范围。体现企业工具组织方式扩展，未证明持续采用或成本收益。",
           "evidence_ids": [
-            "doubao-record-skills"
+            "doubao-enterprise-models"
           ]
         },
         "events": [
           {
-            "headline": "豆包工作可将电脑操作演示存成个人技能",
-            "summary": "用户边操作边讲解后可保存做法供同类任务调用；Mac开启允许锁屏工作后，可继续执行并由手机交办。报道未证明重复任务成功率或持续使用。",
+            "headline": "豆包工作为团队与企业订阅接入第三方模型",
+            "summary": "报道介绍Kimi、GLM和DeepSeek模型可按任务选择，使用企业已有积分；管理员可按人员、模型和使用端控制范围。体现企业工具组织方式扩展，未证明持续采用或成本收益。",
             "evidence_ids": [
-              "doubao-record-skills"
+              "doubao-enterprise-models"
             ],
-            "event_id": "doubao-work-record-computer-skills-oct28",
-            "status": "supplement"
-          }
-        ]
-      },
-      "qwen": {
-        "state": "unchanged",
-        "reason": "与此前资料和经营任务判断相比，属于客户端体验补充；日期只有日精度，不计窗口真新增，保留原判断。",
-        "judgment": null,
-        "changes": null,
-        "digest": {
-          "headline": "千问办公1.4.0补齐Windows任务环境准备",
-          "summary": "Windows x64本机及沙箱任务可自动准备Python与Node.js环境，并改善历史长会话展示和独立反馈入口。属于执行体验优化，未改变商家经营或个人资料的应用主线。",
-          "evidence_ids": [
-            "qwen-desktop-140"
-          ]
-        },
-        "events": [
-          {
-            "headline": "千问办公1.4.0补齐Windows任务环境准备",
-            "summary": "Windows x64本机及沙箱任务可自动准备Python与Node.js环境，并改善历史长会话展示和独立反馈入口。属于执行体验优化，未改变商家经营或个人资料的应用主线。",
-            "evidence_ids": [
-              "qwen-desktop-140"
-            ],
-            "event_id": "qwenwork-desktop-140-oct28",
-            "status": "supplement"
-          }
-        ]
-      },
-      "hunyuan": {
-        "state": "unchanged",
-        "reason": "复核已报道版本说明，未核实新的应用变化；相对日期不换算成新发布日期，主判断和时间保留。",
-        "judgment": null,
-        "changes": null,
-        "digest": {
-          "headline": "元宝版本说明仍延续引用追问",
-          "summary": "本轮官方商店版本说明仍列出选中文字后引用追问。混元模型发布与同传模型开源未被当成元宝客户端功能上线。",
-          "evidence_ids": [
-            "yuanbao-current"
-          ]
-        },
-        "events": []
-      },
-      "openai": {
-        "state": "unchanged",
-        "reason": "此前持续办公判断补入离开应用后的交办入口；受地区、订阅和Beta范围限制，保留主判断。API赠送额度另属商业条款，不作应用能力新增。",
-        "judgment": null,
-        "changes": null,
-        "digest": {
-          "headline": "Dot开始向美国Pro用户测试短信入口",
-          "summary": "美国Pro用户开始逐步获得iMessage或RCS交办与主动更新；沿用应用内记忆和插件。本人专属短信通道仍为测试，未证明全面开放或普遍使用。",
-          "evidence_ids": [
-            "chatgpt-dot-texting"
-          ]
-        },
-        "events": [
-          {
-            "headline": "Dot开始向美国Pro用户测试短信入口",
-            "summary": "美国Pro用户开始逐步获得iMessage或RCS交办与主动更新；沿用应用内记忆和插件。本人专属短信通道仍为测试，未证明全面开放或普遍使用。",
-            "evidence_ids": [
-              "chatgpt-dot-texting"
-            ],
-            "event_id": "chatgpt-dot-texting-beta-oct28",
-            "status": "supplement"
-          }
-        ]
-      },
-      "anthropic": {
-        "state": "unchanged",
-        "reason": "与昨日政府部署事件重复，只做原文复核；不由重新发现或融资报道推导新变化，保留主判断。",
-        "judgment": null,
-        "changes": null,
-        "digest": {
-          "headline": "政府部署披露仍是既有落地证据",
-          "summary": "官方继续披露政府采购折扣、实施支持及组织使用情况。本轮重读的是已报道公告，未核实Claude消费应用新增功能；研究模型安全实验和IPO信息不作应用更新。",
-          "evidence_ids": [
-            "claude-gsa-review"
-          ]
-        },
-        "events": []
-      },
-      "xai": {
-        "state": "unchanged",
-        "reason": "相较已有权限和支付确认，补入更具体的购物展示与订阅任务。官方日期为10月27日，属于历史补证；常规功能迭代不足以改写主判断。",
-        "judgment": null,
-        "changes": null,
-        "digest": {
-          "headline": "Grok Bot补入购物卡片和订阅管理模板",
-          "summary": "购物结果可显示价格与店铺卡片，购买须批准，订单后续可跟踪发货；订阅模板支持续费价格检查和取消确认，Vault可连接Shop Pay。",
-          "evidence_ids": [
-            "grok-0781"
-          ]
-        },
-        "events": [
-          {
-            "headline": "Grok Bot补入购物卡片和订阅管理模板",
-            "summary": "购物结果可显示价格与店铺卡片，购买须批准，订单后续可跟踪发货；订阅模板支持续费价格检查和取消确认，Vault可连接Shop Pay。",
-            "evidence_ids": [
-              "grok-0781"
-            ],
-            "event_id": "grok-bot-0781-shopping-subscriptions",
+            "event_id": "doubao-work-enterprise-third-party-models-oct29",
             "status": "supplement"
           }
         ]
       },
       "google-gemini": {
         "state": "unchanged",
-        "reason": "本轮重读已有应用范围；未核实最新模型报道转化为消费应用更新。候选截断，保留判断和日期。",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "Gemini应用日志仍支持技能与后台开发路径",
-          "summary": "已读应用日志仍说明Customize、连接应用及Mac内Antigravity后台构建。当前候选的模型排名不证明这些应用能力发生新变化。",
+          "headline": "Gemini可在聊天内直接修改生成文件",
+          "summary": "用户可全屏手动编辑文件、选中文字提问或让Gemini修改。PDF预览和编辑支持网页与移动端，文档、表格、演示稿、Markdown、文本及代码目前仅网页端。把文件生成后的修改留在对话中，实际质量和反复使用仍待验证。",
           "evidence_ids": [
-            "gemini-release-review"
+            "gemini-file-editing"
+          ]
+        },
+        "events": [
+          {
+            "headline": "Gemini可在聊天内直接修改生成文件",
+            "summary": "用户可全屏手动编辑文件、选中文字提问或让Gemini修改。PDF预览和编辑支持网页与移动端，文档、表格、演示稿、Markdown、文本及代码目前仅网页端。把文件生成后的修改留在对话中，实际质量和反复使用仍待验证。",
+            "evidence_ids": [
+              "gemini-file-editing"
+            ],
+            "event_id": "gemini-in-chat-file-editing-oct29",
+            "status": "new"
+          }
+        ]
+      },
+      "qwen": {
+        "state": "unchanged",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "judgment": null,
+        "changes": null,
+        "digest": {
+          "headline": "千问办公执行环境准备延续已报道更新",
+          "summary": "1.4.0仍列出Windows x64本机及沙箱任务自动准备Python与Node.js环境，并优化历史长会话展示；本轮未核实新的经营场景或开放范围变化。",
+          "evidence_ids": [
+            "qwen-desktop-review"
+          ]
+        },
+        "events": []
+      },
+      "hunyuan": {
+        "state": "unchanged",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "judgment": null,
+        "changes": null,
+        "digest": {
+          "headline": "元宝2.90.20沿用引用追问说明",
+          "summary": "版本记录继续说明选中回答文字后引用追问；未核验新增录音整理、交接或生活服务能力，不把混元模型或榜单当元宝应用升级。",
+          "evidence_ids": [
+            "yuanbao-version-review"
+          ]
+        },
+        "events": []
+      },
+      "xai": {
+        "state": "unchanged",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+        "judgment": null,
+        "changes": null,
+        "digest": {
+          "headline": "Grok购物与订阅任务延续既有更新",
+          "summary": "官方0.78.1仍介绍商品卡片、订单跟踪、Shop Pay和试用及订阅模板；订阅修改前确认。常规功能补充未改变既有团队任务与持续维护判断。",
+          "evidence_ids": [
+            "grok-bot-review"
           ]
         },
         "events": []
       },
       "meta-llama": {
         "state": "unchanged",
-        "reason": "已报道的新加坡上线原文复核，无新的部署或持续使用证据；离职创业报道不属于Muse更新，分享恢复状态仍未知。",
+        "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "Muse新加坡连接器继续逐步开放",
-          "summary": "官方仍说明当地购物与出行连接器逐步推出，部分体验晚于上线；iOS、Android与网页可用，眼镜入口尚待推出。新市场上线不证明全部交易已接通。",
+          "headline": "Muse当地连接器仍分阶段开放",
+          "summary": "新加坡应用已提供iOS、Android及网页入口；购物、餐饮和出行连接器逐步推出，部分晚于上线。眼镜入口尚待推出，不推定全部交易链路已接通。",
           "evidence_ids": [
             "muse-singapore-review"
           ]
         },
         "events": []
+      },
+      "openai": {
+        "state": "insufficient",
+        "reason": "额度调整媒体报道已读，但本轮未完成官方原文交叉核验；榜单、融资与数据中心新闻不能作为ChatGPT应用变化。保留原判断及日期，不推断无变化。",
+        "judgment": null,
+        "changes": null,
+        "digest": null,
+        "events": []
+      },
+      "anthropic": {
+        "state": "insufficient",
+        "reason": "候选中的Gemini文件编辑属于Google，融资与模型排行不能视为Claude应用更新；Claude Code候选原文读取受阻，未绕过，证据不足，保留原判断及日期。",
+        "judgment": null,
+        "changes": null,
+        "digest": null,
+        "events": []
       }
     },
     "evidence": [
       {
-        "id": "doubao-record-skills",
-        "url": "https://www.ithome.com/1/018/860.htm",
-        "title": "豆包工作功能上新：支持将录制电脑操作保存为技能",
-        "source": "IT之家",
-        "published_at": "2026-10-28T12:00:26+08:00",
-        "event_at": "2026-10-28",
-        "verified_at": "2026-10-29T03:46:22.735525Z",
+        "id": "doubao-enterprise-models",
+        "url": "https://www.aibase.com/news/31971",
+        "title": "豆包工作接入第三方模型服务",
+        "source": "AIbase",
+        "published_at": "2026-10-30",
+        "event_at": "2026-10-29",
+        "verified_at": "2026-10-30T03:26:08.691889Z",
         "company_ids": [
           "doubao"
         ],
         "level": "media",
         "date_basis": "original_page",
-        "note": "媒体原文称当日上午公告，未直接核验公众号账号和精确开放时刻；日精度跨窗口边界，保守补证。锁屏工作需开启设置，未实测效果。"
+        "note": "媒体原文转述快科技10月29日消息；未直接核验官方公告和精确开放时刻。团队及企业订阅范围、积分与管理员设置来自报道，不据此推断安全效果或采购收益。日精度跨边界，保守补证。"
       },
       {
-        "id": "qwen-desktop-140",
-        "url": "https://docs.qwenwork.cn/release-notes/desktop",
-        "title": "千问办公客户端更新日志",
-        "source": "千问办公",
-        "published_at": "2026-10-28",
-        "event_at": "2026-10-28",
-        "verified_at": "2026-10-29T03:46:22.735525Z",
-        "company_ids": [
-          "qwen"
-        ],
-        "level": "official",
-        "date_basis": "original_page",
-        "note": "原文明确完整年月日；无时区和时刻，临近日窗边界按补证。仅Windows x64任务环境准备，不代表消费端千问App更新。"
-      },
-      {
-        "id": "yuanbao-current",
-        "url": "https://apps.apple.com/cn/app/id6480446430",
-        "title": "元宝官方版本历史",
-        "source": "App Store / Tencent",
-        "published_at": null,
-        "event_at": null,
-        "verified_at": "2026-10-29T03:46:22.735525Z",
-        "company_ids": [
-          "hunyuan"
-        ],
-        "level": "official",
-        "date_basis": "undated_document",
-        "note": "本轮核对开发者和版本说明；页面给相对日期，不据此反推精确发布时间。当前2.90.10仍说明引用追问，已在历史报道。"
-      },
-      {
-        "id": "chatgpt-dot-texting",
-        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "title": "ChatGPT release notes: Texting your dot",
-        "source": "OpenAI",
-        "published_at": "2026-10-28",
-        "event_at": "2026-10-28",
-        "verified_at": "2026-10-29T03:46:22.735525Z",
-        "company_ids": [
-          "openai"
-        ],
-        "level": "official",
-        "date_basis": "original_page",
-        "note": "官方10月28日条目，仅日精度、时区未知，窗口边界按补证。美国Pro用户逐步Beta；短信只连接本人，不访问其他短信会话。"
-      },
-      {
-        "id": "claude-gsa-review",
-        "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-        "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-        "source": "Anthropic",
-        "published_at": "2026-10-27",
-        "event_at": "2026-10-27",
-        "verified_at": "2026-10-29T03:46:22.735525Z",
-        "company_ids": [
-          "anthropic"
-        ],
-        "level": "official",
-        "date_basis": "original_page",
-        "note": "重读官方原文；与昨日已记政府版群体使用披露为同一事件，不重计。使用数据为厂商披露，不证明所有组织成效；另一个插件页面本轮不可读。"
-      },
-      {
-        "id": "grok-0781",
-        "url": "https://x.ai/changelog/bot",
-        "title": "Grok Bot v0.78.1: Shopping cards and subscription templates",
-        "source": "xAI",
-        "published_at": "2026-10-27",
-        "event_at": "2026-10-27",
-        "verified_at": "2026-10-29T03:46:22.735525Z",
-        "company_ids": [
-          "xai"
-        ],
-        "level": "official",
-        "date_basis": "original_page",
-        "note": "官方日志标10月27日，早于本轮窗口；社交再传播不是新发布时间。购物下单与订阅变更须确认，未核实节省费用或使用成效。"
-      },
-      {
-        "id": "gemini-release-review",
-        "url": "https://gemini.google/release-notes/",
-        "title": "Gemini Apps release notes",
+        "id": "gemini-file-editing",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
+        "title": "Generate, preview and edit files directly in Gemini",
         "source": "Google",
-        "published_at": "2026-10-13",
-        "event_at": "2026-10-13",
-        "verified_at": "2026-10-29T03:46:22.735525Z",
+        "published_at": "2026-10-29T16:15:00Z",
+        "event_at": "2026-10-29T16:15:00Z",
+        "verified_at": "2026-10-30T03:26:08.691889Z",
         "company_ids": [
           "google-gemini"
         ],
         "level": "official",
         "date_basis": "original_page",
-        "note": "本轮读取最新可见10月13日应用日志；属于已有背景，不将Carbon模型榜单或安全模型开放推为Gemini消费应用更新。"
+        "note": "原文及结构化发表时间已核对；event_at记录该功能公告发表时刻，不代表每个账号实际获得功能的时刻。官方称所有用户及支持语言可用，未实测交付质量。"
+      },
+      {
+        "id": "qwen-desktop-review",
+        "url": "https://docs.qwenwork.cn/release-notes/desktop",
+        "title": "千问办公客户端更新日志",
+        "source": "千问办公",
+        "published_at": "2026-10-28",
+        "event_at": "2026-10-28",
+        "verified_at": "2026-10-30T03:26:08.691889Z",
+        "company_ids": [
+          "qwen"
+        ],
+        "level": "official",
+        "date_basis": "original_page",
+        "note": "重读1.4.0及相邻日期条目，与已报道事件相同，不再次计入新增。"
+      },
+      {
+        "id": "yuanbao-version-review",
+        "url": "https://apps.apple.com/cn/app/id6480446430",
+        "title": "元宝版本记录",
+        "source": "Apple App Store / 腾讯",
+        "published_at": null,
+        "event_at": null,
+        "verified_at": "2026-10-30T03:26:08.691889Z",
+        "company_ids": [
+          "hunyuan"
+        ],
+        "level": "official",
+        "date_basis": "undated_document",
+        "note": "产品与开发者已核对；2.90.20仅显示相对时间，未换算绝对日期。引用追问为已报道功能，不能由新版本号推断新功能。"
+      },
+      {
+        "id": "grok-bot-review",
+        "url": "https://x.ai/changelog/bot",
+        "title": "Grok Bot Changelog 0.78.1",
+        "source": "xAI",
+        "published_at": "2026-10-27",
+        "event_at": "2026-10-27",
+        "verified_at": "2026-10-30T03:26:08.691889Z",
+        "company_ids": [
+          "xai"
+        ],
+        "level": "official",
+        "date_basis": "original_page",
+        "note": "本轮重读官方0.78.1段落，和前期同一事件，不重复计数；下单及订阅改变须确认，未验证使用收益。"
       },
       {
         "id": "muse-singapore-review",
-        "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+        "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
         "title": "Muse Is Now Available in Singapore",
         "source": "Meta",
         "published_at": "2026-10-27",
         "event_at": null,
-        "verified_at": "2026-10-29T03:46:22.735525Z",
+        "verified_at": "2026-10-30T03:26:08.691889Z",
         "company_ids": [
           "meta-llama"
         ],
         "level": "official",
         "date_basis": "original_page",
-        "note": "页面显示10月27日；本轮未另核对结构化UTC时间，采用可见日精度，不覆盖旧证据日期。与昨日新加坡上线同一事件，无再次新增；不能据此判断分享问题恢复。"
+        "note": "本轮重读官方日期及开放范围；与前期新加坡事件相同，连接器仍逐步推出；分享恢复状态未知。"
       }
     ],
     "overview": null,
@@ -1986,123 +1866,97 @@
       "companies": {
         "doubao": {
           "type": "continued",
-          "reason": "相较此前网页交付，补入个人操作方法复用与离开电脑后的交办；目前主要为功能说明，保留主判断及日期。候选有截断，公告时刻未定，不算本轮真新增。",
+          "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
           "evidence_ids": [
-            "doubao-record-skills"
-          ],
-          "signals": [
-            {
-              "direction_id": "ongoing-assistance",
-              "type": "continued",
-              "summary": "用户边操作边讲解后可保存做法供同类任务调用；Mac开启允许锁屏工作后，可继续执行并由手机交办。报道未证明重复任务成功率或持续使用。",
-              "stage": "available",
-              "evidence_ids": [
-                "doubao-record-skills"
-              ]
-            }
-          ]
-        },
-        "qwen": {
-          "type": "continued",
-          "reason": "与此前资料和经营任务判断相比，属于客户端体验补充；日期只有日精度，不计窗口真新增，保留原判断。",
-          "evidence_ids": [
-            "qwen-desktop-140"
-          ],
-          "signals": [
-            {
-              "direction_id": "ongoing-assistance",
-              "type": "continued",
-              "summary": "Windows x64本机及沙箱任务可自动准备Python与Node.js环境，并改善历史长会话展示和独立反馈入口。属于执行体验优化，未改变商家经营或个人资料的应用主线。",
-              "stage": "available",
-              "evidence_ids": [
-                "qwen-desktop-140"
-              ]
-            }
-          ]
-        },
-        "hunyuan": {
-          "type": "continued",
-          "reason": "复核已报道版本说明，未核实新的应用变化；相对日期不换算成新发布日期，主判断和时间保留。",
-          "evidence_ids": [
-            "yuanbao-current"
-          ],
-          "signals": []
-        },
-        "openai": {
-          "type": "continued",
-          "reason": "此前持续办公判断补入离开应用后的交办入口；受地区、订阅和Beta范围限制，保留主判断。API赠送额度另属商业条款，不作应用能力新增。",
-          "evidence_ids": [
-            "chatgpt-dot-texting"
-          ],
-          "signals": [
-            {
-              "direction_id": "mobile-entry",
-              "type": "continued",
-              "summary": "美国Pro用户开始逐步获得iMessage或RCS交办与主动更新；沿用应用内记忆和插件。本人专属短信通道仍为测试，未证明全面开放或普遍使用。",
-              "stage": "preview",
-              "evidence_ids": [
-                "chatgpt-dot-texting"
-              ]
-            }
-          ]
-        },
-        "anthropic": {
-          "type": "continued",
-          "reason": "与昨日政府部署事件重复，只做原文复核；不由重新发现或融资报道推导新变化，保留主判断。",
-          "evidence_ids": [
-            "claude-gsa-review"
+            "doubao-enterprise-models"
           ],
           "signals": [
             {
               "direction_id": "enterprise-rollout",
               "type": "continued",
-              "summary": "官方继续披露政府采购折扣、实施支持及组织使用情况。本轮重读的是已报道公告，未核实Claude消费应用新增功能；研究模型安全实验和IPO信息不作应用更新。",
-              "stage": "observed",
-              "evidence_ids": [
-                "claude-gsa-review"
-              ]
-            }
-          ]
-        },
-        "xai": {
-          "type": "continued",
-          "reason": "相较已有权限和支付确认，补入更具体的购物展示与订阅任务。官方日期为10月27日，属于历史补证；常规功能迭代不足以改写主判断。",
-          "evidence_ids": [
-            "grok-0781"
-          ],
-          "signals": [
-            {
-              "direction_id": "ongoing-assistance",
-              "type": "continued",
-              "summary": "购物结果可显示价格与店铺卡片，购买须批准，订单后续可跟踪发货；订阅模板支持续费价格检查和取消确认，Vault可连接Shop Pay。",
+              "summary": "报道介绍Kimi、GLM和DeepSeek模型可按任务选择，使用企业已有积分；管理员可按人员、模型和使用端控制范围。体现企业工具组织方式扩展，未证明持续采用或成本收益。",
               "stage": "available",
               "evidence_ids": [
-                "grok-0781"
+                "doubao-enterprise-models"
               ]
             }
           ]
         },
         "google-gemini": {
           "type": "continued",
-          "reason": "本轮重读已有应用范围；未核实最新模型报道转化为消费应用更新。候选截断，保留判断和日期。",
+          "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
           "evidence_ids": [
-            "gemini-release-review"
+            "gemini-file-editing"
+          ],
+          "signals": [
+            {
+              "direction_id": "shared-deliverables",
+              "type": "continued",
+              "summary": "用户可全屏手动编辑文件、选中文字提问或让Gemini修改。PDF预览和编辑支持网页与移动端，文档、表格、演示稿、Markdown、文本及代码目前仅网页端。把文件生成后的修改留在对话中，实际质量和反复使用仍待验证。",
+              "stage": "available",
+              "evidence_ids": [
+                "gemini-file-editing"
+              ]
+            }
+          ]
+        },
+        "qwen": {
+          "type": "continued",
+          "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+          "evidence_ids": [
+            "qwen-desktop-review"
           ],
           "signals": [
             {
               "direction_id": "ongoing-assistance",
               "type": "continued",
-              "summary": "已读应用日志仍说明Customize、连接应用及Mac内Antigravity后台构建。当前候选的模型排名不证明这些应用能力发生新变化。",
+              "summary": "1.4.0仍列出Windows x64本机及沙箱任务自动准备Python与Node.js环境，并优化历史长会话展示；本轮未核实新的经营场景或开放范围变化。",
               "stage": "available",
               "evidence_ids": [
-                "gemini-release-review"
+                "qwen-desktop-review"
+              ]
+            }
+          ]
+        },
+        "hunyuan": {
+          "type": "continued",
+          "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+          "evidence_ids": [
+            "yuanbao-version-review"
+          ],
+          "signals": [
+            {
+              "direction_id": "personal-context",
+              "type": "continued",
+              "summary": "版本记录继续说明选中回答文字后引用追问；未核验新增录音整理、交接或生活服务能力，不把混元模型或榜单当元宝应用升级。",
+              "stage": "available",
+              "evidence_ids": [
+                "yuanbao-version-review"
+              ]
+            }
+          ]
+        },
+        "xai": {
+          "type": "continued",
+          "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
+          "evidence_ids": [
+            "grok-bot-review"
+          ],
+          "signals": [
+            {
+              "direction_id": "ongoing-assistance",
+              "type": "continued",
+              "summary": "官方0.78.1仍介绍商品卡片、订单跟踪、Shop Pay和试用及订阅模板；订阅修改前确认。常规功能补充未改变既有团队任务与持续维护判断。",
+              "stage": "available",
+              "evidence_ids": [
+                "grok-bot-review"
               ]
             }
           ]
         },
         "meta-llama": {
           "type": "continued",
-          "reason": "已报道的新加坡上线原文复核，无新的部署或持续使用证据；离职创业报道不属于Muse更新，分享恢复状态仍未知。",
+          "reason": "本轮原文复核支持既有方向；未证明核心执行、实际部署或持续使用的实质跃迁，保留判断及原日期。候选有截断，不代表全量覆盖。",
           "evidence_ids": [
             "muse-singapore-review"
           ],
@@ -2110,18 +1964,30 @@
             {
               "direction_id": "mobile-entry",
               "type": "continued",
-              "summary": "官方仍说明当地购物与出行连接器逐步推出，部分体验晚于上线；iOS、Android与网页可用，眼镜入口尚待推出。新市场上线不证明全部交易已接通。",
+              "summary": "新加坡应用已提供iOS、Android及网页入口；购物、餐饮和出行连接器逐步推出，部分晚于上线。眼镜入口尚待推出，不推定全部交易链路已接通。",
               "stage": "available",
               "evidence_ids": [
                 "muse-singapore-review"
               ]
             }
           ]
+        },
+        "openai": {
+          "type": "insufficient",
+          "reason": "额度调整媒体报道已读，但本轮未完成官方原文交叉核验；榜单、融资与数据中心新闻不能作为ChatGPT应用变化。保留原判断及日期，不推断无变化。",
+          "evidence_ids": [],
+          "signals": []
+        },
+        "anthropic": {
+          "type": "insufficient",
+          "reason": "候选中的Gemini文件编辑属于Google，融资与模型排行不能视为Claude应用更新；Claude Code候选原文读取受阻，未绕过，证据不足，保留原判断及日期。",
+          "evidence_ids": [],
+          "signals": []
         }
       },
       "overview": []
     },
-    "report_id": "c2116020086f2c71e946becf8c90fa3c190034f57588c070bb96543f171e8658"
+    "report_id": "397df726bb8e3f35235e9d563928eb18435eacf8512b65aee7eb19f579c53844"
   },
   "weekly": {
     "kind": "weekly",
@@ -2968,7 +2834,7 @@
     },
     "report_id": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e"
   },
-  "report_id": "c2116020086f2c71e946becf8c90fa3c190034f57588c070bb96543f171e8658",
-  "updated_at": "2026-10-29T03:46:22.735525Z",
-  "source_snapshot_at": "2026-10-29T03:37:43.060226Z"
+  "report_id": "397df726bb8e3f35235e9d563928eb18435eacf8512b65aee7eb19f579c53844",
+  "updated_at": "2026-10-30T03:26:08.691889Z",
+  "source_snapshot_at": "2026-10-30T03:17:36.130525Z"
 }
