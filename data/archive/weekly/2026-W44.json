@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-30T19:28:01.942349Z",
+  "generated_at": "2026-10-30T21:29:37.570740Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
@@ -13,45 +13,45 @@
     "2026-10-30",
     "2026-10-31"
   ],
-  "story_count": 2104,
-  "unique_story_count": 1893,
+  "story_count": 2106,
+  "unique_story_count": 1916,
   "counts": {
     "by_company_topic": {
-      "anthropic": 375,
+      "anthropic": 376,
       "apple": 15,
       "cursor": 15,
       "deepseek": 41,
       "doubao": 14,
-      "google-gemini": 116,
-      "huggingface": 24,
+      "google-gemini": 117,
+      "huggingface": 23,
       "hunyuan": 6,
       "kimi": 29,
-      "meta-llama": 10,
+      "meta-llama": 9,
       "microsoft": 35,
-      "minimax": 25,
-      "nvidia": 70,
-      "openai": 232,
+      "minimax": 24,
+      "nvidia": 72,
+      "openai": 234,
       "openrouter": 14,
       "qwen": 22,
-      "xai": 37,
+      "xai": 38,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 327,
+      "agent-ecosystem": 331,
       "monetization": 47,
       "product-entry": 36,
       "workplace": 74
     },
     "by_importance_label": {
-      "值得关注": 1706,
-      "多源热议": 37,
+      "值得关注": 1711,
+      "多源热议": 36,
       "官方更新": 110,
-      "行业动态": 251
+      "行业动态": 249
     },
     "by_source_count_bucket": {
-      "1": 1976,
+      "1": 1979,
       "2": 87,
-      "3+": 41
+      "3+": 40
     }
   },
   "top_stories": [
@@ -78,20 +78,6 @@
       "source_count": 1,
       "archive_date": "2026-10-29",
       "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3b4867ca19cb",
-      "title": "用 NVIDIA Nemotron 开源模型打造万圣节鬼屋 MonsterHouse / nemotron-halloween",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "importance_score": 0.8561,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-31",
-      "company_topics": [
-        "nvidia",
         "huggingface"
       ],
       "lens_topics": []
@@ -138,6 +124,20 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_3b4867ca19cb",
+      "title": "用 NVIDIA Nemotron 开源模型打造万圣节鬼屋 MonsterHouse / nemotron-halloween",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "importance_score": 0.851,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [
+        "nvidia",
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_3e2da8c9fde0",
       "title": "Legora正在构建法律工作代理操作系统 / Legora is building the agentic operating system for legal work",
       "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
@@ -163,30 +163,6 @@
       "company_topics": [
         "openai"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_db3a166bf759",
-      "title": "Community safety report and new protections for teens",
-      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "importance_score": 0.8267,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-31",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e1092d148f7d",
-      "title": "Throttling vs. Rate Limiting: Backoff Strategies for Workflows",
-      "url": "https://blog.n8n.io/throttling-vs-rate-limiting",
-      "importance_score": 0.8265,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-31",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -239,6 +215,30 @@
       "company_topics": [
         "qwen"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_db3a166bf759",
+      "title": "Community safety report and new protections for teens",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "importance_score": 0.8223,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e1092d148f7d",
+      "title": "Throttling vs. Rate Limiting: Backoff Strategies for Workflows",
+      "url": "https://blog.n8n.io/throttling-vs-rate-limiting",
+      "importance_score": 0.8215,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -530,17 +530,6 @@
       ]
     },
     {
-      "story_id": "story_54217e411546",
-      "title": "AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30% / US tech stocks see sharp falls over AI cost fears",
-      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
-      "importance_score": 0.805,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-10-31",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_c461d6d5cb69",
       "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则 / An updated Model Spec for more capable and beneficial AI",
       "url": "https://openai.com/index/updated-model-spec",
@@ -589,6 +578,19 @@
       "archive_date": "2026-10-30",
       "company_topics": [
         "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ab17deb5dbd6",
+      "title": "未来属于每个人：Meta 和 CNIB 合作支持盲人、聋哑人或视力低下的加拿大人 / The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision",
+      "importance_score": 0.8024,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "meta-llama"
       ],
       "lens_topics": []
     }
