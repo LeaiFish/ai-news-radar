@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-30T11:26:51.600678Z",
+  "generated_at": "2026-10-30T14:15:12.150466Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
@@ -12,24 +12,24 @@
     "2026-10-29",
     "2026-10-30"
   ],
-  "story_count": 1853,
-  "unique_story_count": 1810,
+  "story_count": 1854,
+  "unique_story_count": 1838,
   "counts": {
     "by_company_topic": {
-      "anthropic": 331,
+      "anthropic": 328,
       "apple": 15,
       "cursor": 8,
-      "deepseek": 37,
+      "deepseek": 36,
       "doubao": 11,
-      "google-gemini": 98,
-      "huggingface": 25,
+      "google-gemini": 97,
+      "huggingface": 22,
       "hunyuan": 6,
       "kimi": 26,
       "meta-llama": 9,
       "microsoft": 34,
       "minimax": 24,
-      "nvidia": 60,
-      "openai": 213,
+      "nvidia": 59,
+      "openai": 212,
       "openrouter": 12,
       "qwen": 21,
       "xai": 33,
@@ -38,19 +38,19 @@
     "by_lens_topic": {
       "agent-ecosystem": 294,
       "monetization": 38,
-      "product-entry": 32,
+      "product-entry": 31,
       "workplace": 70
     },
     "by_importance_label": {
-      "值得关注": 1512,
-      "多源热议": 34,
-      "官方更新": 101,
-      "行业动态": 206
+      "值得关注": 1517,
+      "多源热议": 33,
+      "官方更新": 99,
+      "行业动态": 205
     },
     "by_source_count_bucket": {
       "1": 1743,
-      "2": 72,
-      "3+": 38
+      "2": 74,
+      "3+": 37
     }
   },
   "top_stories": [
@@ -67,21 +67,6 @@
         "huggingface"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_863a3ba75e1e",
-      "title": "您现在可以直接在 Gemini 中生成、预览和编辑文档、PDF、演示文稿、电子表格等。 / You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
-      "importance_score": 0.8584,
-      "importance_label": "官方更新",
-      "source_count": 3,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
     },
     {
       "story_id": "story_46b030e91541",
@@ -108,6 +93,21 @@
         "google-gemini"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_863a3ba75e1e",
+      "title": "您现在可以直接在 Gemini 中生成、预览和编辑文档、PDF、演示文稿、电子表格等。 / You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
+      "importance_score": 0.853,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_7cb634884910",
@@ -151,19 +151,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_867b4ac556eb",
-      "title": "Sentinel Qwen Ensemble：不会虚张声势的自主法医调查员 / Sentinel Qwen Ensemble: The Autonomous Forensic Investigator That Can't Bluff",
-      "url": "https://www.alibabacloud.com/blog/sentinel-qwen-ensemble-the-autonomous-forensic-investigator-that-cant-bluff_603707",
-      "importance_score": 0.8286,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_dd4d49cee6e1",
       "title": "Hugging Face 发布 AnySpeechRecognizer 与 AnyDecisionModel 两个 Swift 开源包 / Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
       "url": "https://huggingface.co/blog/anydecisionmodel",
@@ -190,47 +177,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e51fe302e60e",
-      "title": "什么是AI网关？它如何管理多个 LLM API / What Is an AI Gateway? How It Manages Multiple LLM APIs",
-      "url": "https://www.siliconflow.com/blog/ai-gateway-multiple-llm-apis",
-      "importance_score": 0.8246,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cd576a808e86",
-      "title": "OpenRouter 用真实会话数据拆解 Claude Code 成本：Opus 5.5 短会话中位数 $0.31 / How Much Does Claude Code Cost? Real Session Costs by Model",
-      "url": "https://openrouter.ai/blog/insights/claude-code-cost",
-      "importance_score": 0.8246,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "anthropic",
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4be980d8ec55",
-      "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个 / Claude Opus vs Sonnet vs Haiku: Which Should You Use?",
-      "url": "https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku",
-      "importance_score": 0.8246,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "anthropic",
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_6a3f26655d84",
       "title": "Greptile 使用 GPT-6 Astra 使错误检测超越代码审查 / Greptile takes bug detection beyond code review with GPT-6 Astra",
       "url": "https://openai.com/index/greptile-code-review-codex-astra",
@@ -244,17 +190,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_108b5ea9e583",
-      "title": "停机坪：五名人工智能特工谈判风暴，一名调解员签署裁决 / Tarmac: Five AI Agents Negotiate the Storm, and One Mediator Signs the Ruling",
-      "url": "https://www.alibabacloud.com/blog/tarmac-five-ai-agents-negotiate-the-storm-and-one-mediator-signs-the-ruling_603706",
-      "importance_score": 0.8226,
+      "story_id": "story_867b4ac556eb",
+      "title": "Sentinel Qwen Ensemble：不会虚张声势的自主法医调查员 / Sentinel Qwen Ensemble: The Autonomous Forensic Investigator That Can't Bluff",
+      "url": "https://www.alibabacloud.com/blog/sentinel-qwen-ensemble-the-autonomous-forensic-investigator-that-cant-bluff_603707",
+      "importance_score": 0.8225,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-30",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_74c7e03322b7",
@@ -284,6 +230,47 @@
       "lens_topics": [
         "agent-ecosystem",
         "workplace"
+      ]
+    },
+    {
+      "story_id": "story_e51fe302e60e",
+      "title": "什么是AI网关？它如何管理多个 LLM API / What Is an AI Gateway? How It Manages Multiple LLM APIs",
+      "url": "https://www.siliconflow.com/blog/ai-gateway-multiple-llm-apis",
+      "importance_score": 0.8185,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cd576a808e86",
+      "title": "OpenRouter 用真实会话数据拆解 Claude Code 成本：Opus 5.5 短会话中位数 $0.31 / How Much Does Claude Code Cost? Real Session Costs by Model",
+      "url": "https://openrouter.ai/blog/insights/claude-code-cost",
+      "importance_score": 0.8185,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "anthropic",
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4be980d8ec55",
+      "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个 / Claude Opus vs Sonnet vs Haiku: Which Should You Use?",
+      "url": "https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku",
+      "importance_score": 0.8185,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "anthropic",
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
       ]
     },
     {
@@ -352,6 +339,19 @@
         "hunyuan"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_108b5ea9e583",
+      "title": "停机坪：五名人工智能特工谈判风暴，一名调解员签署裁决 / Tarmac: Five AI Agents Negotiate the Storm, and One Mediator Signs the Ruling",
+      "url": "https://www.alibabacloud.com/blog/tarmac-five-ai-agents-negotiate-the-storm-and-one-mediator-signs-the-ruling_603706",
+      "importance_score": 0.8165,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_d23773463e39",
@@ -450,19 +450,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_c461d6d5cb69",
-      "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则 / An updated Model Spec for more capable and beneficial AI",
-      "url": "https://openai.com/index/updated-model-spec",
-      "importance_score": 0.8099,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_56f084cc3595",
       "title": "Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克 / Anthropic files S-1 with the SEC for proposed initial public offering",
       "url": "https://www.anthropic.com/news/s1-sec",
@@ -491,32 +478,6 @@
       ]
     },
     {
-      "story_id": "story_ab17deb5dbd6",
-      "title": "未来属于每个人：Meta 和 CNIB 合作支持盲人、聋哑人或视力低下的加拿大人 / The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
-      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision",
-      "importance_score": 0.8079,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "meta-llama"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_73d5d1af7193",
-      "title": "Gemini Notebook 提供数百本教科书，帮助学生学习更多内容。 / Gemini Notebook makes hundreds of textbooks available to help students learn even more.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks",
-      "importance_score": 0.8079,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_682d911db2c6",
       "title": "我们如何打造浪链的付费媒体代理 / How We Built LangChain’s Paid Media Agent",
       "url": "https://www.langchain.com/blog/paid-media-agent",
@@ -528,6 +489,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_c461d6d5cb69",
+      "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则 / An updated Model Spec for more capable and beneficial AI",
+      "url": "https://openai.com/index/updated-model-spec",
+      "importance_score": 0.8044,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_ab5c2a044f11",
@@ -552,6 +526,32 @@
       "archive_date": "2026-10-29",
       "company_topics": [
         "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_73d5d1af7193",
+      "title": "Gemini Notebook 提供数百本教科书，帮助学生学习更多内容。 / Gemini Notebook makes hundreds of textbooks available to help students learn even more.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks",
+      "importance_score": 0.8025,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ab17deb5dbd6",
+      "title": "未来属于每个人：Meta 和 CNIB 合作支持盲人、聋哑人或视力低下的加拿大人 / The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision",
+      "importance_score": 0.8024,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "meta-llama"
       ],
       "lens_topics": []
     },
@@ -586,16 +586,18 @@
       ]
     },
     {
-      "story_id": "story_974720bcc0ac",
-      "title": "托管深度代理 v0.10：浏览器使用和异步子代理 / Managed Deep Agents v0.10: Browser Use and Async Subagents",
-      "url": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents",
-      "importance_score": 0.802,
+      "story_id": "story_95c7481a0866",
+      "title": "GitHub Enterprise 现在包含对 GitHub Copilot 的访问 / GitHub Enterprise now includes access to GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+      "importance_score": 0.8019,
       "importance_label": "官方更新",
       "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [],
+      "archive_date": "2026-10-29",
+      "company_topics": [
+        "microsoft"
+      ],
       "lens_topics": [
-        "agent-ecosystem"
+        "workplace"
       ]
     }
   ]
