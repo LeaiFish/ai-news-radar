@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-30T07:12:19.019953Z",
+  "generated_at": "2026-10-30T09:28:51.979398Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
@@ -12,24 +12,24 @@
     "2026-10-29",
     "2026-10-30"
   ],
-  "story_count": 1853,
-  "unique_story_count": 1762,
+  "story_count": 1866,
+  "unique_story_count": 1792,
   "counts": {
     "by_company_topic": {
-      "anthropic": 334,
+      "anthropic": 331,
       "apple": 15,
-      "cursor": 5,
+      "cursor": 8,
       "deepseek": 39,
-      "doubao": 10,
+      "doubao": 11,
       "google-gemini": 101,
       "huggingface": 25,
       "hunyuan": 6,
-      "kimi": 28,
+      "kimi": 27,
       "meta-llama": 9,
       "microsoft": 35,
       "minimax": 24,
-      "nvidia": 58,
-      "openai": 216,
+      "nvidia": 60,
+      "openai": 213,
       "openrouter": 12,
       "qwen": 22,
       "xai": 33,
@@ -37,38 +37,23 @@
     },
     "by_lens_topic": {
       "agent-ecosystem": 297,
-      "monetization": 37,
+      "monetization": 38,
       "product-entry": 31,
       "workplace": 71
     },
     "by_importance_label": {
-      "值得关注": 1517,
-      "多源热议": 33,
-      "官方更新": 99,
-      "行业动态": 204
+      "值得关注": 1526,
+      "多源热议": 34,
+      "官方更新": 100,
+      "行业动态": 206
     },
     "by_source_count_bucket": {
-      "1": 1743,
-      "2": 73,
-      "3+": 37
+      "1": 1756,
+      "2": 72,
+      "3+": 38
     }
   },
   "top_stories": [
-    {
-      "story_id": "story_863a3ba75e1e",
-      "title": "您现在可以直接在 Gemini 中生成、预览和编辑文档、PDF、演示文稿、电子表格等。 / You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
-      "importance_score": 0.867,
-      "importance_label": "官方更新",
-      "source_count": 3,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
     {
       "story_id": "story_f713f4e4a699",
       "title": "NVIDIA 发布开放权重语音模型 Nemotron 3.5 Transcribe 及 Granary v2 数据管线 / NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
@@ -82,6 +67,21 @@
         "huggingface"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_863a3ba75e1e",
+      "title": "您现在可以直接在 Gemini 中生成、预览和编辑文档、PDF、演示文稿、电子表格等。 / You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
+      "importance_score": 0.8623,
+      "importance_label": "官方更新",
+      "source_count": 3,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_46b030e91541",
@@ -138,49 +138,6 @@
       ]
     },
     {
-      "story_id": "story_867b4ac556eb",
-      "title": "Sentinel Qwen Ensemble: The Autonomous Forensic Investigator That Can't Bluff",
-      "url": "https://www.alibabacloud.com/blog/sentinel-qwen-ensemble-the-autonomous-forensic-investigator-that-cant-bluff_603707",
-      "importance_score": 0.8382,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_cd576a808e86",
-      "title": "OpenRouter 用真实会话数据拆解 Claude Code 成本：Opus 5.5 短会话中位数 $0.31 / How Much Does Claude Code Cost? Real Session Costs by Model",
-      "url": "https://openrouter.ai/blog/insights/claude-code-cost",
-      "importance_score": 0.8342,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "anthropic",
-        "openrouter"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4be980d8ec55",
-      "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个 / Claude Opus vs Sonnet vs Haiku: Which Should You Use?",
-      "url": "https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku",
-      "importance_score": 0.8342,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "anthropic",
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_b9ba650b2e36",
       "title": "How Fanatics and OpenAI streamline the fan experience",
       "url": "https://openai.com/index/fanatics-streamline-fan-experience",
@@ -194,10 +151,64 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_867b4ac556eb",
+      "title": "Sentinel Qwen Ensemble：不会虚张声势的自主法医调查员 / Sentinel Qwen Ensemble: The Autonomous Forensic Investigator That Can't Bluff",
+      "url": "https://www.alibabacloud.com/blog/sentinel-qwen-ensemble-the-autonomous-forensic-investigator-that-cant-bluff_603707",
+      "importance_score": 0.833,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e51fe302e60e",
+      "title": "What Is an AI Gateway? How It Manages Multiple LLM APIs",
+      "url": "https://www.siliconflow.com/blog/ai-gateway-multiple-llm-apis",
+      "importance_score": 0.829,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cd576a808e86",
+      "title": "OpenRouter 用真实会话数据拆解 Claude Code 成本：Opus 5.5 短会话中位数 $0.31 / How Much Does Claude Code Cost? Real Session Costs by Model",
+      "url": "https://openrouter.ai/blog/insights/claude-code-cost",
+      "importance_score": 0.829,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "anthropic",
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4be980d8ec55",
+      "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个 / Claude Opus vs Sonnet vs Haiku: Which Should You Use?",
+      "url": "https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku",
+      "importance_score": 0.829,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "anthropic",
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_108b5ea9e583",
-      "title": "Tarmac: Five AI Agents Negotiate the Storm, and One Mediator Signs the Ruling",
+      "title": "停机坪：五名人工智能特工谈判风暴，一名调解员签署裁决 / Tarmac: Five AI Agents Negotiate the Storm, and One Mediator Signs the Ruling",
       "url": "https://www.alibabacloud.com/blog/tarmac-five-ai-agents-negotiate-the-storm-and-one-mediator-signs-the-ruling_603706",
-      "importance_score": 0.8322,
+      "importance_score": 0.827,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-30",
@@ -276,19 +287,6 @@
       ]
     },
     {
-      "story_id": "story_c461d6d5cb69",
-      "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则 / An updated Model Spec for more capable and beneficial AI",
-      "url": "https://openai.com/index/updated-model-spec",
-      "importance_score": 0.8186,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_539cd8a5a740",
       "title": "OpenRouter 实测 13 种提示注入攻击，讲解 Armor 与 Guardrails 防御方法 / How to Prevent Prompt Injection: 13 Attacks, Tested",
       "url": "https://openrouter.ai/blog/tutorials/prevent-prompt-injection",
@@ -356,32 +354,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_ab17deb5dbd6",
-      "title": "未来属于每个人：Meta 和 CNIB 合作支持盲人、聋哑人或视力低下的加拿大人 / The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
-      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision",
-      "importance_score": 0.8166,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "meta-llama"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_73d5d1af7193",
-      "title": "Gemini Notebook 提供数百本教科书，帮助学生学习更多内容。 / Gemini Notebook makes hundreds of textbooks available to help students learn even more.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks",
-      "importance_score": 0.8165,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_d23773463e39",
       "title": "Apache RocketMQ 的 AI 演进：LiteTopic 为百万级多代理会话协作提供支持 / Apache RocketMQ's Evolution for AI: LiteTopic Powers Million-Scale Multi-Agent Session Collaboration",
       "url": "https://www.alibabacloud.com/blog/apache-rocketmqs-evolution-for-ai-litetopic-powers-million-scale-multi-agent-session-collaboration_603703",
@@ -404,6 +376,19 @@
       "archive_date": "2026-10-29",
       "company_topics": [
         "qwen"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c461d6d5cb69",
+      "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则 / An updated Model Spec for more capable and beneficial AI",
+      "url": "https://openai.com/index/updated-model-spec",
+      "importance_score": 0.8139,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -433,6 +418,32 @@
       "archive_date": "2026-10-28",
       "company_topics": [
         "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ab17deb5dbd6",
+      "title": "未来属于每个人：Meta 和 CNIB 合作支持盲人、聋哑人或视力低下的加拿大人 / The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision",
+      "importance_score": 0.8119,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "meta-llama"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_73d5d1af7193",
+      "title": "Gemini Notebook 提供数百本教科书，帮助学生学习更多内容。 / Gemini Notebook makes hundreds of textbooks available to help students learn even more.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks",
+      "importance_score": 0.8118,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [
+        "google-gemini"
       ],
       "lens_topics": []
     },
@@ -478,43 +489,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_974720bcc0ac",
-      "title": "托管深度代理 v0.10：浏览器使用和异步子代理 / Managed Deep Agents v0.10: Browser Use and Async Subagents",
-      "url": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents",
-      "importance_score": 0.8107,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_152dec0b7fa1",
-      "title": "Introducing Ad Studio",
-      "url": "https://www.krea.ai/blog/introducing-ad-studio",
-      "importance_score": 0.8096,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5fa7fb86c68d",
-      "title": "托管深度代理中的浏览器使用 / Browser Use in Managed Deep Agents",
-      "url": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents",
-      "importance_score": 0.8093,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_56f084cc3595",
       "title": "Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克 / Anthropic files S-1 with the SEC for proposed initial public offering",
       "url": "https://www.anthropic.com/news/s1-sec",
@@ -543,30 +517,17 @@
       ]
     },
     {
-      "story_id": "story_bba3a5fb0d2f",
-      "title": "How to use Gemini to update your resume",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/update-resume-with-gemini",
-      "importance_score": 0.8075,
+      "story_id": "story_974720bcc0ac",
+      "title": "托管深度代理 v0.10：浏览器使用和异步子代理 / Managed Deep Agents v0.10: Browser Use and Async Subagents",
+      "url": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents",
+      "importance_score": 0.806,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-30",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7e64c33361e8",
-      "title": "元宝 2.90.20 官方版本更新",
-      "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.90.20",
-      "importance_score": 0.8067,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "hunyuan"
-      ],
-      "lens_topics": []
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_682d911db2c6",
@@ -582,6 +543,30 @@
       ]
     },
     {
+      "story_id": "story_152dec0b7fa1",
+      "title": "Introducing Ad Studio",
+      "url": "https://www.krea.ai/blog/introducing-ad-studio",
+      "importance_score": 0.8049,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5fa7fb86c68d",
+      "title": "托管深度代理中的浏览器使用 / Browser Use in Managed Deep Agents",
+      "url": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents",
+      "importance_score": 0.8046,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-30",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_ab5c2a044f11",
       "title": "15 位大学生分享他们最喜欢的Gemini特征 / 15 college students share their favorite Gemini features",
       "url": "https://blog.google/products-and-platforms/products/gemini/college-student-favorite-features",
@@ -589,6 +574,19 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-27",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_bd644657309a",
+      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型 / Gemini 4 Carbon: Our next frontier model",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model",
+      "importance_score": 0.8042,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-29",
       "company_topics": [
         "google-gemini"
       ],
