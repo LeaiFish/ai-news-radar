@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-30T21:29:37.570740Z",
+  "generated_at": "2026-10-31T02:28:16.981032Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
@@ -13,44 +13,44 @@
     "2026-10-30",
     "2026-10-31"
   ],
-  "story_count": 2106,
-  "unique_story_count": 1916,
+  "story_count": 2090,
+  "unique_story_count": 1952,
   "counts": {
     "by_company_topic": {
-      "anthropic": 376,
-      "apple": 15,
-      "cursor": 15,
+      "anthropic": 366,
+      "apple": 16,
+      "cursor": 16,
       "deepseek": 41,
       "doubao": 14,
-      "google-gemini": 117,
+      "google-gemini": 113,
       "huggingface": 23,
       "hunyuan": 6,
       "kimi": 29,
       "meta-llama": 9,
       "microsoft": 35,
       "minimax": 24,
-      "nvidia": 72,
+      "nvidia": 71,
       "openai": 234,
       "openrouter": 14,
-      "qwen": 22,
+      "qwen": 23,
       "xai": 38,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 331,
-      "monetization": 47,
-      "product-entry": 36,
-      "workplace": 74
+      "agent-ecosystem": 326,
+      "monetization": 45,
+      "product-entry": 35,
+      "workplace": 72
     },
     "by_importance_label": {
-      "值得关注": 1711,
+      "值得关注": 1714,
       "多源热议": 36,
-      "官方更新": 110,
-      "行业动态": 249
+      "官方更新": 105,
+      "行业动态": 235
     },
     "by_source_count_bucket": {
-      "1": 1979,
-      "2": 87,
+      "1": 1967,
+      "2": 83,
       "3+": 40
     }
   },
@@ -124,10 +124,25 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_3e2da8c9fde0",
+      "title": "Legora正在构建法律工作代理操作系统 / Legora is building the agentic operating system for legal work",
+      "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "importance_score": 0.8405,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-28",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_3b4867ca19cb",
       "title": "用 NVIDIA Nemotron 开源模型打造万圣节鬼屋 MonsterHouse / nemotron-halloween",
       "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "importance_score": 0.851,
+      "importance_score": 0.8392,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-31",
@@ -138,15 +153,28 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3e2da8c9fde0",
-      "title": "Legora正在构建法律工作代理操作系统 / Legora is building the agentic operating system for legal work",
-      "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
-      "importance_score": 0.8405,
+      "story_id": "story_dd428456b107",
+      "title": "Open-Weight vs Closed-Weight Models: What's the Difference?",
+      "url": "https://openrouter.ai/blog/insights/open-weight-vs-closed-weight-models",
+      "importance_score": 0.8377,
       "importance_label": "官方更新",
       "source_count": 1,
-      "archive_date": "2026-10-28",
+      "archive_date": "2026-10-31",
       "company_topics": [
-        "openai"
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_203e88b3d338",
+      "title": "OpenRouter 教程：用 Agent SDK 搭建常驻 AI Agent 监控 Hacker News / How to Build Your Own Always-On AI Agent",
+      "url": "https://openrouter.ai/blog/tutorials/build-always-on-ai-agent",
+      "importance_score": 0.8377,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [
+        "openrouter"
       ],
       "lens_topics": [
         "agent-ecosystem"
@@ -215,30 +243,6 @@
       "company_topics": [
         "qwen"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_db3a166bf759",
-      "title": "Community safety report and new protections for teens",
-      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "importance_score": 0.8223,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-31",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e1092d148f7d",
-      "title": "Throttling vs. Rate Limiting: Backoff Strategies for Workflows",
-      "url": "https://blog.n8n.io/throttling-vs-rate-limiting",
-      "importance_score": 0.8215,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-31",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -448,6 +452,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_db3a166bf759",
+      "title": "Community safety report and new protections for teens",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "importance_score": 0.8119,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c5f3323ac6dc",
       "title": "Muse 现已在新加坡上市：全球首款专为所有人打造的个人人工智能代理 / Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
       "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
@@ -485,6 +502,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-28",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e1092d148f7d",
+      "title": "节流与速率限制：工作流的退避策略 / Throttling vs. Rate Limiting: Backoff Strategies for Workflows",
+      "url": "https://blog.n8n.io/throttling-vs-rate-limiting",
+      "importance_score": 0.8099,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
       "company_topics": [],
       "lens_topics": []
     },
@@ -565,32 +593,6 @@
       "archive_date": "2026-10-29",
       "company_topics": [
         "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_73d5d1af7193",
-      "title": "Gemini Notebook 提供数百本教科书，帮助学生学习更多内容。 / Gemini Notebook makes hundreds of textbooks available to help students learn even more.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks",
-      "importance_score": 0.8025,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ab17deb5dbd6",
-      "title": "未来属于每个人：Meta 和 CNIB 合作支持盲人、聋哑人或视力低下的加拿大人 / The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
-      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision",
-      "importance_score": 0.8024,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-30",
-      "company_topics": [
-        "meta-llama"
       ],
       "lens_topics": []
     }
