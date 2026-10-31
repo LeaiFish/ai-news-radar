@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "generated_at": "2026-10-31T09:24:47.180427Z",
+  "generated_at": "2026-10-31T10:57:51.809868Z",
   "daily_dates": [
     "2026-10-26",
     "2026-10-27",
@@ -13,13 +13,13 @@
     "2026-10-30",
     "2026-10-31"
   ],
-  "story_count": 2049,
-  "unique_story_count": 1981,
+  "story_count": 2041,
+  "unique_story_count": 1989,
   "counts": {
     "by_company_topic": {
       "anthropic": 359,
       "apple": 17,
-      "cursor": 13,
+      "cursor": 12,
       "deepseek": 37,
       "doubao": 11,
       "google-gemini": 112,
@@ -30,28 +30,28 @@
       "microsoft": 35,
       "minimax": 24,
       "nvidia": 66,
-      "openai": 234,
+      "openai": 233,
       "openrouter": 14,
       "qwen": 24,
       "xai": 39,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 324,
+      "agent-ecosystem": 327,
       "monetization": 43,
       "product-entry": 35,
       "workplace": 71
     },
     "by_importance_label": {
-      "值得关注": 1693,
-      "多源热议": 35,
-      "官方更新": 104,
-      "行业动态": 217
+      "值得关注": 1688,
+      "多源热议": 34,
+      "官方更新": 103,
+      "行业动态": 216
     },
     "by_source_count_bucket": {
-      "1": 1926,
+      "1": 1919,
       "2": 84,
-      "3+": 39
+      "3+": 38
     }
   },
   "top_stories": [
@@ -191,20 +191,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3b4867ca19cb",
-      "title": "用 NVIDIA Nemotron 开源模型打造万圣节鬼屋 MonsterHouse / nemotron-halloween",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "importance_score": 0.824,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-31",
-      "company_topics": [
-        "nvidia",
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_867b4ac556eb",
       "title": "Sentinel Qwen Ensemble：不会虚张声势的自主法医调查员 / Sentinel Qwen Ensemble: The Autonomous Forensic Investigator That Can't Bluff",
       "url": "https://www.alibabacloud.com/blog/sentinel-qwen-ensemble-the-autonomous-forensic-investigator-that-cant-bluff_603707",
@@ -218,32 +204,18 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_dd428456b107",
-      "title": "OpenRouter 解析开源权重与闭源权重模型差异及选择方法 / Open-Weight vs Closed-Weight Models: What's the Difference?",
-      "url": "https://openrouter.ai/blog/insights/open-weight-vs-closed-weight-models",
-      "importance_score": 0.8211,
+      "story_id": "story_3b4867ca19cb",
+      "title": "用 NVIDIA Nemotron 开源模型打造万圣节鬼屋 MonsterHouse / nemotron-halloween",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "importance_score": 0.8208,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-10-31",
       "company_topics": [
-        "openrouter"
+        "nvidia",
+        "huggingface"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_203e88b3d338",
-      "title": "OpenRouter 教程：用 Agent SDK 搭建常驻 AI Agent 监控 Hacker News / How to Build Your Own Always-On AI Agent",
-      "url": "https://openrouter.ai/blog/tutorials/build-always-on-ai-agent",
-      "importance_score": 0.8211,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-10-31",
-      "company_topics": [
-        "openrouter"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     },
     {
       "story_id": "story_74c7e03322b7",
@@ -341,6 +313,34 @@
         "openrouter"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_dd428456b107",
+      "title": "OpenRouter 解析开源权重与闭源权重模型差异及选择方法 / Open-Weight vs Closed-Weight Models: What's the Difference?",
+      "url": "https://openrouter.ai/blog/insights/open-weight-vs-closed-weight-models",
+      "importance_score": 0.8176,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_203e88b3d338",
+      "title": "OpenRouter 教程：用 Agent SDK 搭建常驻 AI Agent 监控 Hacker News / How to Build Your Own Always-On AI Agent",
+      "url": "https://openrouter.ai/blog/tutorials/build-always-on-ai-agent",
+      "importance_score": 0.8176,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-10-31",
+      "company_topics": [
+        "openrouter"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_f280b6805186",
