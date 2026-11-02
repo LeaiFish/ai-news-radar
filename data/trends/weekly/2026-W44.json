@@ -1,0 +1,477 @@
+{
+  "kind": "weekly",
+  "period_start": "2026-10-25T16:00:00Z",
+  "period_end": "2026-11-01T16:00:00Z",
+  "source_snapshot_at": "2026-11-02T02:47:33.315033Z",
+  "input_id": "a647114fdd48d98d9a2ce50c81f07e852d9fbb5ffff5640327596a46956ce9cb",
+  "previous_report_id": "2c93d2b7f68e7e2765c8c9aa9d6c526a357da5d2e8e810198cbf732ed517bb00",
+  "schema": "radar_trend_report_v1",
+  "generated_at": "2026-11-02T03:18:49.374686+00:00",
+  "companies": {
+    "doubao": {
+      "state": "unchanged",
+      "reason": "本轮原文支持延续；未证明足以改变主线的核心执行、部署范围或持续使用进展。候选截断，不代表全量。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "豆包本周继续降低办公体验门槛",
+        "summary": "前周强调网页成果分享与多人填写；本周补录签到与试用额度，支持先体验文档、表格和浏览器任务。额度活动未提供留存、付费或成果协作采用证据，保留原判断。",
+        "evidence_ids": [
+          "doubao-allowance"
+        ]
+      },
+      "events": [
+        {
+          "headline": "豆包本周继续降低办公体验门槛",
+          "summary": "前周强调网页成果分享与多人填写；本周补录签到与试用额度，支持先体验文档、表格和浏览器任务。额度活动未提供留存、付费或成果协作采用证据，保留原判断。",
+          "evidence_ids": [
+            "doubao-allowance"
+          ],
+          "event_id": "doubao-free-allowance-oct30",
+          "status": "continuation"
+        }
+      ]
+    },
+    "qwen": {
+      "state": "unchanged",
+      "reason": "比较前一期完整周报与此前月度基线，延续原判断；仅有一期前周档案，连续历史有限。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "千问办公本周补齐Windows任务环境准备",
+        "summary": "前周关注移动交办和商家资料；本周1.4.0为Windows本机及沙箱任务自动准备Python和Node.js环境，并优化长会话。属于任务运行体验完善，未证明经营链路或使用效果跃迁。",
+        "evidence_ids": [
+          "qwen-desktop"
+        ]
+      },
+      "events": [
+        {
+          "headline": "千问办公本周补齐Windows任务环境准备",
+          "summary": "前周关注移动交办和商家资料；本周1.4.0为Windows本机及沙箱任务自动准备Python和Node.js环境，并优化长会话。属于任务运行体验完善，未证明经营链路或使用效果跃迁。",
+          "evidence_ids": [
+            "qwen-desktop"
+          ],
+          "event_id": "qwenwork-desktop-140-oct28",
+          "status": "continuation"
+        }
+      ]
+    },
+    "hunyuan": {
+      "state": "unchanged",
+      "reason": "比较前一期完整周报与此前月度基线，延续原判断；仅有一期前周档案，连续历史有限。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "元宝本周沿用引用追问，11月2日纪要更新留待下周",
+        "summary": "与前周2.90.0比较，2.90.20仍是选中回答后引用追问，未新增可核验的完整任务流程；本轮读到的2.91.10发生在本周结束后，不能纳入本周变化。",
+        "evidence_ids": [
+          "yuanbao-quote"
+        ]
+      },
+      "events": [
+        {
+          "headline": "元宝本周沿用引用追问，11月2日纪要更新留待下周",
+          "summary": "与前周2.90.0比较，2.90.20仍是选中回答后引用追问，未新增可核验的完整任务流程；本轮读到的2.91.10发生在本周结束后，不能纳入本周变化。",
+          "evidence_ids": [
+            "yuanbao-quote"
+          ],
+          "event_id": "yuanbao-2900-quote-followup",
+          "status": "continuation"
+        }
+      ]
+    },
+    "openai": {
+      "state": "unchanged",
+      "reason": "本轮原文支持延续；未证明足以改变主线的核心执行、部署范围或持续使用进展。候选截断，不代表全量。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "ChatGPT延续持续工作主线，本周补充账号与额度条件",
+        "summary": "对照前周持续委托和团队成果协作，本轮官方更新确认移动端双账号切换与Work、Codex额度调整；这些是访问条件和操作体验变化，不能单独支撑任务执行范围加强。",
+        "evidence_ids": [
+          "chatgpt-notes"
+        ]
+      },
+      "events": [
+        {
+          "headline": "ChatGPT延续持续工作主线，本周补充账号与额度条件",
+          "summary": "对照前周持续委托和团队成果协作，本轮官方更新确认移动端双账号切换与Work、Codex额度调整；这些是访问条件和操作体验变化，不能单独支撑任务执行范围加强。",
+          "evidence_ids": [
+            "chatgpt-notes"
+          ],
+          "event_id": "chatgpt-mobile-account-switching-oct30",
+          "status": "continuation"
+        }
+      ]
+    },
+    "xai": {
+      "state": "unchanged",
+      "reason": "本轮原文支持延续；未证明足以改变主线的核心执行、部署范围或持续使用进展。候选截断，不代表全量。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Grok本周把购物与订阅管理做成具体任务入口",
+        "summary": "前周关注Pages维护及资料审批；本周10月27日版本加入购物卡片、订单跟踪及试用取消提醒等模板，关键变更仍须确认。任务种类增加未直接证明完整执行可靠性或普遍采用。",
+        "evidence_ids": [
+          "grok-notes"
+        ]
+      },
+      "events": [
+        {
+          "headline": "Grok本周把购物与订阅管理做成具体任务入口",
+          "summary": "前周关注Pages维护及资料审批；本周10月27日版本加入购物卡片、订单跟踪及试用取消提醒等模板，关键变更仍须确认。任务种类增加未直接证明完整执行可靠性或普遍采用。",
+          "evidence_ids": [
+            "grok-notes"
+          ],
+          "event_id": "grok-bot-0781-shopping-subscriptions",
+          "status": "continuation"
+        }
+      ]
+    },
+    "google-gemini": {
+      "state": "unchanged",
+      "reason": "比较前一期完整周报与此前月度基线，延续原判断；仅有一期前周档案，连续历史有限。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Gemini将成果修改进一步收回聊天内",
+        "summary": "对照前周技能复用与场景资料主线，本周文件生成后可直接预览、手改及让Gemini继续修改。PDF支持网页与移动端，其他格式仅网页；这是成果编辑路径完善，未证明采用效果。漫画隐藏入口的发现晚于上海周末截止，不计本周。",
+        "evidence_ids": [
+          "gemini-inline"
+        ]
+      },
+      "events": [
+        {
+          "headline": "Gemini将成果修改进一步收回聊天内",
+          "summary": "对照前周技能复用与场景资料主线，本周文件生成后可直接预览、手改及让Gemini继续修改。PDF支持网页与移动端，其他格式仅网页；这是成果编辑路径完善，未证明采用效果。漫画隐藏入口的发现晚于上海周末截止，不计本周。",
+          "evidence_ids": [
+            "gemini-inline"
+          ],
+          "event_id": "gemini-in-chat-file-editing-oct29",
+          "status": "continuation"
+        }
+      ]
+    },
+    "meta-llama": {
+      "state": "unchanged",
+      "reason": "本轮原文支持延续；未证明足以改变主线的核心执行、部署范围或持续使用进展。候选截断，不代表全量。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Muse本周扩展新加坡服务入口，公告日期纠偏",
+        "summary": "对照前周商家工具与分享隐私边界，10月27日公告确认新加坡入口与当地购物出行伙伴，连接器渐进开放。日期由此前10月28日纠正，不重复计新；分享恢复与持续使用仍缺证据。",
+        "evidence_ids": [
+          "muse-singapore"
+        ]
+      },
+      "events": [
+        {
+          "headline": "Muse本周扩展新加坡服务入口，公告日期纠偏",
+          "summary": "对照前周商家工具与分享隐私边界，10月27日公告确认新加坡入口与当地购物出行伙伴，连接器渐进开放。日期由此前10月28日纠正，不重复计新；分享恢复与持续使用仍缺证据。",
+          "evidence_ids": [
+            "muse-singapore"
+          ],
+          "event_id": "muse-singapore-launch",
+          "status": "correction"
+        }
+      ]
+    },
+    "anthropic": {
+      "state": "unchanged",
+      "reason": "比较前一期完整周报与此前月度基线，延续原判断；仅有一期前周档案，连续历史有限。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Claude将组织资料映射与筹款技能组合为非营利插件",
+        "summary": "前周主线是文件协作、企业云端任务与Duet预览；本周非营利插件先映射组织资料位置，再支持筹款、政策查询和报告。行业技能组合尚不足以证明核心执行或部署范围跃迁；厂商组织数披露未形成可比持续使用序列。",
+        "evidence_ids": [
+          "claude-nonprofits"
+        ]
+      },
+      "events": [
+        {
+          "headline": "Claude将组织资料映射与筹款技能组合为非营利插件",
+          "summary": "前周主线是文件协作、企业云端任务与Duet预览；本周非营利插件先映射组织资料位置，再支持筹款、政策查询和报告。行业技能组合尚不足以证明核心执行或部署范围跃迁；厂商组织数披露未形成可比持续使用序列。",
+          "evidence_ids": [
+            "claude-nonprofits"
+          ],
+          "event_id": "claude-nonprofits-plugin-oct26",
+          "status": "continuation"
+        }
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "doubao-allowance",
+      "url": "https://www.ithome.com/1/020/224.htm",
+      "title": "豆包免费额度活动",
+      "source": "IT之家",
+      "published_at": "2026-10-30T17:14:29+08:00",
+      "event_at": "2026-10-30",
+      "verified_at": "2026-11-02T03:17:03.411314+00:00",
+      "company_ids": [
+        "doubao"
+      ],
+      "level": "media",
+      "date_basis": "original_page",
+      "note": "原文日期与产品核对；旧日活动补录，不推断转化。"
+    },
+    {
+      "id": "chatgpt-notes",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "title": "ChatGPT release notes",
+      "source": "OpenAI",
+      "published_at": "2026-10-30",
+      "event_at": "2026-10-30",
+      "verified_at": "2026-11-02T03:17:03.411314+00:00",
+      "company_ids": [
+        "openai"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮重读10月30日与29日段落；额度不视为任务能力跃迁。"
+    },
+    {
+      "id": "grok-notes",
+      "url": "https://x.ai/changelog/bot",
+      "title": "Grok Bot v0.78.1",
+      "source": "xAI",
+      "published_at": "2026-10-27",
+      "event_at": "2026-10-27",
+      "verified_at": "2026-11-02T03:17:03.411314+00:00",
+      "company_ids": [
+        "xai"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮重读，复用已知事件ID，未把重复版本算新。"
+    },
+    {
+      "id": "muse-singapore",
+      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
+      "title": "Muse Is Now Available in Singapore",
+      "source": "Meta",
+      "published_at": "2026-10-27",
+      "event_at": "2026-10-27",
+      "verified_at": "2026-11-02T03:17:03.411314+00:00",
+      "company_ids": [
+        "meta-llama"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "可见原文日期为10月27日，纠正此前10月28日；本地连接器渐进开放，复用旧事件ID。"
+    },
+    {
+      "id": "qwen-desktop",
+      "url": "https://docs.qwenwork.cn/release-notes/desktop",
+      "title": "千问办公本周补齐Windows任务环境准备",
+      "source": "千问办公",
+      "published_at": "2026-10-28",
+      "event_at": "2026-10-28",
+      "verified_at": "2026-11-02T03:18:49.374686+00:00",
+      "company_ids": [
+        "qwen"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮独立重读原文；与前周及月度基线比较，复用已报道事件，不计日窗新增。"
+    },
+    {
+      "id": "yuanbao-quote",
+      "url": "https://apps.apple.com/cn/app/id6480446430",
+      "title": "元宝本周沿用引用追问，11月2日纪要更新留待下周",
+      "source": "腾讯 / App Store",
+      "published_at": "2026-10-29",
+      "event_at": "2026-10-29",
+      "verified_at": "2026-11-02T03:18:49.374686+00:00",
+      "company_ids": [
+        "hunyuan"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮独立重读原文；与前周及月度基线比较，复用已报道事件，不计日窗新增。"
+    },
+    {
+      "id": "claude-nonprofits",
+      "url": "https://claude.com/resources/articles/expanding-claude-for-nonprofits",
+      "title": "Claude将组织资料映射与筹款技能组合为非营利插件",
+      "source": "Anthropic",
+      "published_at": "2026-10-26",
+      "event_at": "2026-10-26",
+      "verified_at": "2026-11-02T03:18:49.374686+00:00",
+      "company_ids": [
+        "anthropic"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮独立重读原文；与前周及月度基线比较，复用已报道事件，不计日窗新增。"
+    },
+    {
+      "id": "gemini-inline",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+      "title": "Gemini将成果修改进一步收回聊天内",
+      "source": "Google",
+      "published_at": "2026-10-29T16:15:00Z",
+      "event_at": "2026-10-29T16:15:00Z",
+      "verified_at": "2026-11-02T03:18:49.374686+00:00",
+      "company_ids": [
+        "google-gemini"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮独立重读原文；与前周及月度基线比较，复用已报道事件，不计日窗新增。"
+    }
+  ],
+  "overview": null,
+  "evolution": {
+    "companies": {
+      "doubao": {
+        "type": "continued",
+        "reason": "与10月19日至25日前周及此前月度判断比较，具体动作未达到改判门槛；此前仅一期完整周报，历史不连续。",
+        "evidence_ids": [
+          "doubao-allowance"
+        ],
+        "signals": [
+          {
+            "direction_id": "commercialization",
+            "type": "continued",
+            "summary": "前周强调网页成果分享与多人填写；本周补录签到与试用额度，支持先体验文档、表格和浏览器任务。额度活动未提供留存、付费或成果协作采用证据，保留原判断。",
+            "stage": "available",
+            "evidence_ids": [
+              "doubao-allowance"
+            ]
+          }
+        ]
+      },
+      "qwen": {
+        "type": "continued",
+        "reason": "未核实足以改判的核心执行、部署或持续使用跃迁。",
+        "evidence_ids": [
+          "qwen-desktop"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "前周关注移动交办和商家资料；本周1.4.0为Windows本机及沙箱任务自动准备Python和Node.js环境，并优化长会话。属于任务运行体验完善，未证明经营链路或使用效果跃迁。",
+            "stage": "available",
+            "evidence_ids": [
+              "qwen-desktop"
+            ]
+          }
+        ]
+      },
+      "hunyuan": {
+        "type": "continued",
+        "reason": "未核实足以改判的核心执行、部署或持续使用跃迁。",
+        "evidence_ids": [
+          "yuanbao-quote"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "与前周2.90.0比较，2.90.20仍是选中回答后引用追问，未新增可核验的完整任务流程；本轮读到的2.91.10发生在本周结束后，不能纳入本周变化。",
+            "stage": "available",
+            "evidence_ids": [
+              "yuanbao-quote"
+            ]
+          }
+        ]
+      },
+      "openai": {
+        "type": "continued",
+        "reason": "与10月19日至25日前周及此前月度判断比较，具体动作未达到改判门槛；此前仅一期完整周报，历史不连续。",
+        "evidence_ids": [
+          "chatgpt-notes"
+        ],
+        "signals": [
+          {
+            "direction_id": "mobile-entry",
+            "type": "continued",
+            "summary": "对照前周持续委托和团队成果协作，本轮官方更新确认移动端双账号切换与Work、Codex额度调整；这些是访问条件和操作体验变化，不能单独支撑任务执行范围加强。",
+            "stage": "available",
+            "evidence_ids": [
+              "chatgpt-notes"
+            ]
+          }
+        ]
+      },
+      "xai": {
+        "type": "continued",
+        "reason": "与10月19日至25日前周及此前月度判断比较，具体动作未达到改判门槛；此前仅一期完整周报，历史不连续。",
+        "evidence_ids": [
+          "grok-notes"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "前周关注Pages维护及资料审批；本周10月27日版本加入购物卡片、订单跟踪及试用取消提醒等模板，关键变更仍须确认。任务种类增加未直接证明完整执行可靠性或普遍采用。",
+            "stage": "available",
+            "evidence_ids": [
+              "grok-notes"
+            ]
+          }
+        ]
+      },
+      "google-gemini": {
+        "type": "continued",
+        "reason": "未核实足以改判的核心执行、部署或持续使用跃迁。",
+        "evidence_ids": [
+          "gemini-inline"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "对照前周技能复用与场景资料主线，本周文件生成后可直接预览、手改及让Gemini继续修改。PDF支持网页与移动端，其他格式仅网页；这是成果编辑路径完善，未证明采用效果。漫画隐藏入口的发现晚于上海周末截止，不计本周。",
+            "stage": "available",
+            "evidence_ids": [
+              "gemini-inline"
+            ]
+          }
+        ]
+      },
+      "meta-llama": {
+        "type": "continued",
+        "reason": "与10月19日至25日前周及此前月度判断比较，具体动作未达到改判门槛；此前仅一期完整周报，历史不连续。",
+        "evidence_ids": [
+          "muse-singapore"
+        ],
+        "signals": [
+          {
+            "direction_id": "mobile-entry",
+            "type": "continued",
+            "summary": "对照前周商家工具与分享隐私边界，10月27日公告确认新加坡入口与当地购物出行伙伴，连接器渐进开放。日期由此前10月28日纠正，不重复计新；分享恢复与持续使用仍缺证据。",
+            "stage": "available",
+            "evidence_ids": [
+              "muse-singapore"
+            ]
+          }
+        ]
+      },
+      "anthropic": {
+        "type": "continued",
+        "reason": "未核实足以改判的核心执行、部署或持续使用跃迁。",
+        "evidence_ids": [
+          "claude-nonprofits"
+        ],
+        "signals": [
+          {
+            "direction_id": "enterprise-rollout",
+            "type": "continued",
+            "summary": "前周主线是文件协作、企业云端任务与Duet预览；本周非营利插件先映射组织资料位置，再支持筹款、政策查询和报告。行业技能组合尚不足以证明核心执行或部署范围跃迁；厂商组织数披露未形成可比持续使用序列。",
+            "stage": "available",
+            "evidence_ids": [
+              "claude-nonprofits"
+            ]
+          }
+        ]
+      }
+    },
+    "overview": []
+  },
+  "report_id": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75"
+}
