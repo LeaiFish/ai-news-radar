@@ -6,11 +6,27 @@
   "item_count": 4,
   "listed_count": 4,
   "recent_item_count": 4,
-  "latest_title": "NVIDIA 开源 Auto Ontology：为 AI 智能体 SQL 提供语义层",
-  "latest_published_at": "2026-11-02T07:47:12Z",
+  "latest_title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
+  "latest_published_at": "2026-11-02T20:00:00Z",
   "items_url": "data/topics/mcp.json",
-  "generated_at": "2026-11-02T18:26:34.535023Z",
+  "generated_at": "2026-11-02T22:48:53.492787Z",
   "items": [
+    {
+      "id": "story_e5a033ee7acf",
+      "story_id": "story_e5a033ee7acf",
+      "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
+      "title_zh": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
+      "title_en": "Training activation classifiers for safety and alignment",
+      "url": "https://alignment.openai.com/training-activation-classifiers",
+      "summary": "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。 实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。",
+      "recommend_reason_zh": null,
+      "source": "OpenAI：Alignment 研究博客（RSS）",
+      "source_name": "AI HOT",
+      "site_id": "aihot",
+      "published_at": "2026-11-02T20:00:00Z",
+      "source_count": 1,
+      "curated": true
+    },
     {
       "id": "story_8adff5a047d9",
       "story_id": "story_8adff5a047d9",
@@ -56,22 +72,6 @@
       "source_name": "NewsNow",
       "site_id": "newsnow",
       "published_at": "2026-11-02T02:48:56.900000Z",
-      "source_count": 1,
-      "curated": false
-    },
-    {
-      "id": "story_9ad16ff09773",
-      "story_id": "story_9ad16ff09773",
-      "title": "Skill、MCP、Workflow、Rules、Memory 有什么区别？拿几次真实开发任务讲清楚",
-      "title_zh": "Skill、MCP、Workflow、Rules、Memory 有什么区别？拿几次真实开发任务讲清楚",
-      "title_en": null,
-      "url": "https://juejin.cn/post/7702438435236446227",
-      "summary": "",
-      "recommend_reason_zh": null,
-      "source": "juejin",
-      "source_name": "NewsNow",
-      "site_id": "newsnow",
-      "published_at": "2026-11-01T18:41:12.936000Z",
       "source_count": 1,
       "curated": false
     }
