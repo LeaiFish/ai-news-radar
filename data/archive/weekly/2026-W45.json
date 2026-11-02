@@ -4,51 +4,105 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-02T13:36:40.447431Z",
+  "generated_at": "2026-11-02T18:26:34.535023Z",
   "daily_dates": [
-    "2026-11-02"
+    "2026-11-02",
+    "2026-11-03"
   ],
-  "story_count": 744,
-  "unique_story_count": 744,
+  "story_count": 968,
+  "unique_story_count": 812,
   "counts": {
     "by_company_topic": {
-      "anthropic": 125,
-      "apple": 3,
-      "cursor": 10,
-      "deepseek": 19,
+      "anthropic": 158,
+      "apple": 4,
+      "cursor": 12,
+      "deepseek": 27,
       "doubao": 3,
-      "google-gemini": 46,
+      "google-gemini": 51,
       "huggingface": 3,
-      "hunyuan": 4,
+      "hunyuan": 6,
       "kimi": 4,
       "meta-llama": 3,
-      "microsoft": 6,
-      "minimax": 3,
-      "nvidia": 19,
-      "openai": 84,
-      "openrouter": 8,
-      "qwen": 6,
-      "xai": 22
+      "microsoft": 7,
+      "minimax": 5,
+      "nvidia": 23,
+      "openai": 113,
+      "openrouter": 9,
+      "qwen": 8,
+      "xai": 32
     },
     "by_lens_topic": {
-      "agent-ecosystem": 113,
-      "monetization": 16,
-      "product-entry": 12,
-      "workplace": 16
+      "agent-ecosystem": 148,
+      "monetization": 21,
+      "product-entry": 19,
+      "workplace": 21
     },
     "by_importance_label": {
-      "值得关注": 668,
-      "多源热议": 13,
-      "官方更新": 29,
-      "行业动态": 34
+      "值得关注": 843,
+      "多源热议": 17,
+      "官方更新": 37,
+      "行业动态": 71
     },
     "by_source_count_bucket": {
-      "1": 695,
-      "2": 35,
-      "3+": 14
+      "1": 905,
+      "2": 45,
+      "3+": 18
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_2f92924aff59",
+      "title": "Runway Dev is in Claude Code, Codex and Cursor",
+      "url": "https://runway.com/news/developers/runway-dev-plugins-for-coding-agents",
+      "importance_score": 0.8593,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "anthropic",
+        "cursor"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f47b50344903",
+      "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰 / Introducing the Grid Protectors Program",
+      "url": "https://openai.com/index/grid-protectors-program",
+      "importance_score": 0.8433,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0e2e48e223fc",
+      "title": "我们于 2026 年 10 月公布的最新 AI 新闻 / The latest AI news we announced in October 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
+      "importance_score": 0.8422,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b86e981c547a",
+      "title": "LifeVal",
+      "url": "https://openai.com/index/lifeval",
+      "importance_score": 0.8351,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
     {
       "story_id": "story_fad26580730c",
       "title": "DeepSeek V4 Pro on SiliconFlow: Reasoning Levels, Pricing and Long-Task Cost",
@@ -85,6 +139,32 @@
       "archive_date": "2026-11-02",
       "company_topics": [
         "hunyuan"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dd2a9d48d3ac",
+      "title": "Anthropic 更新 IPO 文件首次披露第三季度财报，从盈利 9.74 亿美元转为亏损 5.67 亿美元 / Anthropic published an updated IPO filing today with its third-quarter results for the first time.",
+      "url": "https://x.com/rohanpaul_ai/status/2117285920500273582",
+      "importance_score": 0.7944,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9b74d50c372b",
+      "title": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元 / Anthropic grows revenue twelvefold but posts $23 billion loss",
+      "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss",
+      "importance_score": 0.7775,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "anthropic"
       ],
       "lens_topics": []
     },
@@ -476,80 +556,6 @@
       "archive_date": "2026-11-02",
       "company_topics": [
         "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_474819007eac",
-      "title": "美团龙猫发布 LongCat-2.5:1.6万亿参数原生多模态模型",
-      "url": "https://www.aibase.com/news/32006",
-      "importance_score": 0.7411,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_45440d2d84c7",
-      "title": "AI生成的文字也将自带“防伪标签”：SpaceXAI宣布 11 月 7 日起为Grok全系列模型添加隐形水印",
-      "url": "https://www.aibase.com/news/31999",
-      "importance_score": 0.7411,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [
-        "xai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0d5495790012",
-      "title": "DeepSeek开源Super-agent架构:以经典计算机系统思想突破单会话智能体瓶颈",
-      "url": "https://www.aibase.com/news/32001",
-      "importance_score": 0.7411,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [
-        "deepseek"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_bcf77cc88543",
-      "title": "思科给 27 岁工程师\"无限 Token\"：放手去重写 98% 的旧代码",
-      "url": "https://www.aibase.com/news/31997",
-      "importance_score": 0.738,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3b4ecfa657de",
-      "title": "沙特阿美掏出 175 亿，把国家级AI公司拉进石油帝国",
-      "url": "https://www.aibase.com/news/31996",
-      "importance_score": 0.738,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_dd428456b107",
-      "title": "OpenRouter 解析开源权重与闭源权重模型差异及选择方法 / Open-Weight vs Closed-Weight Models: What's the Difference?",
-      "url": "https://openrouter.ai/blog/insights/open-weight-vs-closed-weight-models",
-      "importance_score": 0.7379,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [
-        "openrouter"
       ],
       "lens_topics": []
     }
