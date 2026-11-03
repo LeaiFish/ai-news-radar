@@ -4,20 +4,20 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-02T23:53:38.703286Z",
+  "generated_at": "2026-11-03T01:15:54.223735Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03"
   ],
-  "story_count": 989,
-  "unique_story_count": 868,
+  "story_count": 996,
+  "unique_story_count": 890,
   "counts": {
     "by_company_topic": {
       "anthropic": 171,
       "apple": 4,
-      "cursor": 12,
+      "cursor": 13,
       "deepseek": 27,
-      "doubao": 3,
+      "doubao": 4,
       "google-gemini": 50,
       "huggingface": 3,
       "hunyuan": 6,
@@ -26,29 +26,29 @@
       "microsoft": 9,
       "minimax": 4,
       "nvidia": 25,
-      "openai": 118,
-      "openrouter": 9,
+      "openai": 121,
+      "openrouter": 11,
       "perplexity": 1,
-      "qwen": 9,
-      "xai": 31,
+      "qwen": 11,
+      "xai": 32,
       "zhipu": 1
     },
     "by_lens_topic": {
-      "agent-ecosystem": 153,
+      "agent-ecosystem": 155,
       "monetization": 20,
       "product-entry": 22,
       "workplace": 24
     },
     "by_importance_label": {
-      "值得关注": 863,
-      "多源热议": 19,
-      "官方更新": 45,
-      "行业动态": 62
+      "值得关注": 871,
+      "多源热议": 22,
+      "官方更新": 39,
+      "行业动态": 64
     },
     "by_source_count_bucket": {
-      "1": 923,
-      "2": 46,
-      "3+": 20
+      "1": 930,
+      "2": 43,
+      "3+": 23
     }
   },
   "top_stories": [
@@ -56,7 +56,7 @@
       "story_id": "story_2f92924aff59",
       "title": "Runway Dev 位于 Claude Code、Codex 和 Cursor 中 / Runway Dev is in Claude Code, Codex and Cursor",
       "url": "https://runway.com/news/developers/runway-dev-plugins-for-coding-agents",
-      "importance_score": 0.8463,
+      "importance_score": 0.8432,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -70,7 +70,7 @@
       "story_id": "story_5608a60ecd33",
       "title": "托管深度代理：交付生产深度代理的最快方式 / Managed Deep Agents: the fastest way to ship a production deep agent",
       "url": "https://www.langchain.com/blog/introducing-managed-deep-agents",
-      "importance_score": 0.8403,
+      "importance_score": 0.8369,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -83,7 +83,7 @@
       "story_id": "story_3762d45ec3c7",
       "title": "Scaling Git at OpenAI",
       "url": "https://openai.com/index/scaling-git-at-openai",
-      "importance_score": 0.8315,
+      "importance_score": 0.8283,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -96,7 +96,7 @@
       "story_id": "story_f47b50344903",
       "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰 / Introducing the Grid Protectors Program",
       "url": "https://openai.com/index/grid-protectors-program",
-      "importance_score": 0.8303,
+      "importance_score": 0.8272,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -109,7 +109,7 @@
       "story_id": "story_0e2e48e223fc",
       "title": "我们于 2026 年 10 月公布的最新 AI 新闻 / The latest AI news we announced in October 2026",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
-      "importance_score": 0.8287,
+      "importance_score": 0.8255,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -119,25 +119,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_b73a72317963",
-      "title": "Make long-running agents faster with message threads",
-      "url": "https://claude.com/resources/articles/message-threads",
-      "importance_score": 0.8245,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_b86e981c547a",
       "title": "LifeVal",
       "url": "https://openai.com/index/lifeval",
-      "importance_score": 0.8232,
+      "importance_score": 0.8203,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -173,23 +158,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a3b0835af79f",
-      "title": "Qodo builds context into AI code review with Codex",
-      "url": "https://openai.com/index/qodo-codex-plugin",
-      "importance_score": 0.8135,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_1d2b0f6f33d3",
       "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付 / Anthropic has committed $895.4B to computing and infrastructure, with $447.5B due before 2031.",
       "url": "https://x.com/rohanpaul_ai/status/2117368258571784296",
-      "importance_score": 0.8034,
+      "importance_score": 0.8,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -197,21 +169,6 @@
         "anthropic"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_db5d2a22a058",
-      "title": "Giving every team a data scientist with Grok Bot",
-      "url": "https://x.ai/news/data-bot",
-      "importance_score": 0.7995,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "xai"
-      ],
-      "lens_topics": [
-        "product-entry"
-      ]
     },
     {
       "story_id": "story_5f65899417c7",
@@ -227,21 +184,23 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d76dd4451cd3",
-      "title": "How antrofrog Made No Ordinary Love, and How to Make an AI Animation Like It",
-      "url": "https://www.krea.ai/blog/how-antrofrog-made-no-ordinary-love",
-      "importance_score": 0.7915,
+      "story_id": "story_834935505607",
+      "title": "Claude Messages API 公测 Message threads 服务端会话缓存 / Message threads are now in public beta on the Messages API.",
+      "url": "https://x.com/ClaudeDevs/status/2117332449382510884",
+      "importance_score": 0.7897,
       "importance_label": "官方更新",
-      "source_count": 1,
+      "source_count": 2,
       "archive_date": "2026-11-03",
-      "company_topics": [],
+      "company_topics": [
+        "anthropic"
+      ],
       "lens_topics": []
     },
     {
       "story_id": "story_dd2a9d48d3ac",
       "title": "Anthropic 更新 IPO 文件首次披露第三季度财报，从盈利 9.74 亿美元转为亏损 5.67 亿美元 / Anthropic published an updated IPO filing today with its third-quarter results for the first time.",
       "url": "https://x.com/rohanpaul_ai/status/2117285920500273582",
-      "importance_score": 0.7813,
+      "importance_score": 0.7781,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -279,11 +238,89 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_834935505607",
-      "title": "Claude Messages API 公测 Message threads 服务端会话缓存 / Message threads are now in public beta on the Messages API.",
-      "url": "https://x.com/ClaudeDevs/status/2117332449382510884",
-      "importance_score": 0.768,
-      "importance_label": "官方更新",
+      "story_id": "story_d50bda7dc1a6",
+      "title": "Anthropic修订S-1文件:AI可能很快达到递归式自我改进阈值",
+      "url": "https://www.aibase.com/news/32029",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b9770a8bc833",
+      "title": "千问办公个人会员月卡登陆李佳琦直播间，半小时售出10万份",
+      "url": "https://www.aibase.com/news/32027",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_abcc214fad39",
+      "title": "美国数据中心年耗水近190亿加仑，AI算力扩张催生水冷监测新需求",
+      "url": "https://www.aibase.com/news/32032",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_83a81155469d",
+      "title": "OpenAI重磅宣布：前美国陆军部长丹·德里斯科尔出任高级顾问",
+      "url": "https://www.aibase.com/news/32031",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5ef4104a81e7",
+      "title": "宇树A2夺得登泰山机器人竞速赛冠军，B2负重74公斤获亚军",
+      "url": "https://www.aibase.com/news/32033",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_41270af63f64",
+      "title": "马斯克表示 Grok Bot 暂无法实现无限量使用，付费用户周额度消耗引发关注",
+      "url": "https://www.aibase.com/news/32028",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "xai"
+      ],
+      "lens_topics": [
+        "product-entry"
+      ]
+    },
+    {
+      "story_id": "story_1bba94603466",
+      "title": "​从 2 万亿到 1.5 万亿：Anthropic 上市前夜，公开市场给 AI 泼了盆冷水",
+      "url": "https://www.aibase.com/news/32030",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
       "company_topics": [
@@ -295,7 +332,7 @@
       "story_id": "story_16771212d574",
       "title": "纽约时报等出版方起诉 Brave 浏览器非法抓取内容训练 AI 并绕过付费墙 / The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
       "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-      "importance_score": 0.7656,
+      "importance_score": 0.7623,
       "importance_label": "行业动态",
       "source_count": 2,
       "archive_date": "2026-11-03",
@@ -305,10 +342,25 @@
       ]
     },
     {
+      "story_id": "story_ae50c0a948ab",
+      "title": "DeepSeek Harness 养鱼教程：在 QQ、微信、飞书养大肥鱼并放上 B 站抖音直播",
+      "url": "https://mp.weixin.qq.com/s/-LcRUPe5OYBRjiTEzYXKog",
+      "importance_score": 0.7621,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_9b74d50c372b",
       "title": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元 / Anthropic grows revenue twelvefold but posts $23 billion loss",
       "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss",
-      "importance_score": 0.7642,
+      "importance_score": 0.761,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -503,66 +555,12 @@
       "story_id": "story_584bf95e7f87",
       "title": "Anthropic 在 S-1A 中披露可能很快达到自身 RSI 定义 / Anthropic warns that it’s very close to RSI capability, aka self-building AI",
       "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai",
-      "importance_score": 0.7514,
+      "importance_score": 0.7479,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
       "company_topics": [
         "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3b4867ca19cb",
-      "title": "用 NVIDIA Nemotron 开源模型打造万圣节鬼屋 MonsterHouse / nemotron-halloween",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "importance_score": 0.7478,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [
-        "nvidia",
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a891662933e1",
-      "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498763&idx=1&sn=279f8fb4e43a987fdc0aa2af0b0f7958",
-      "importance_score": 0.7467,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [
-        "hunyuan"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_f99be6e7fc1d",
-      "title": "双十一Token首次作为独立品类上架电商平台，AI算力开始面向大众销售",
-      "url": "https://www.aibase.com/news/32010",
-      "importance_score": 0.743,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e184bb3daaa2",
-      "title": "OpenAI宣布12月起ChatGPT与Codex共享使用额度，Instant chat不受影响",
-      "url": "https://www.aibase.com/news/32012",
-      "importance_score": 0.743,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [
-        "openai"
       ],
       "lens_topics": []
     }
