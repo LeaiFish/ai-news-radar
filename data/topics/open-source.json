@@ -9,7 +9,7 @@
   "latest_title": "8GB显存也能玩转128K超长上下文！开源本地大模型工具Strata 0.2. 10 发布",
   "latest_published_at": "2026-11-03T06:58:46.502669Z",
   "items_url": "data/topics/open-source.json",
-  "generated_at": "2026-11-03T07:19:52.535938Z",
+  "generated_at": "2026-11-03T07:57:52.399386Z",
   "items": [
     {
       "id": "story_3fe4e225a6ff",
@@ -25,7 +25,7 @@
       "site_id": "aibase",
       "published_at": "2026-11-03T06:58:46.502669Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_81855bcd7574",
@@ -42,6 +42,22 @@
       "published_at": "2026-11-03T06:58:46.502669Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "story_966ba9d36033",
+      "story_id": "story_966ba9d36033",
+      "title": "OpenAI 推出 Pando：Git 后端将推送延迟中位数降低约 80%",
+      "title_zh": "OpenAI 推出 Pando：Git 后端将推送延迟中位数降低约 80%",
+      "title_en": "OpenAI Introduces Pando: A Git Backend That Cuts Median Push Latency ~80%",
+      "url": "https://www.marktechpost.com/2026/11/02/openai-pando-git-backend-monorepo",
+      "summary": "OpenAI 推出 Git 后端 Pando，已承载其 monorepo 全部开发流量，推送延迟中位数降低近 80%（约 5 倍）。 该后端用 Rust 编写，10 周达到生产可用，每日处理近 1 PB Git 数据，单小时峰值超 57 TB。 Pando 暂不开源，OpenAI 表示正在探索共享该技术的方式。",
+      "recommend_reason_zh": null,
+      "source": "MarkTechPost（RSS）",
+      "source_name": "AI HOT",
+      "site_id": "aihot",
+      "published_at": "2026-11-03T05:51:06Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "story_84bdb0bd3fbc",
@@ -138,22 +154,6 @@
       "published_at": "2026-11-02T10:37:29.766148Z",
       "source_count": 1,
       "curated": false
-    },
-    {
-      "id": "story_8adff5a047d9",
-      "story_id": "story_8adff5a047d9",
-      "title": "NVIDIA 开源 Auto Ontology：为 AI 智能体 SQL 提供语义层",
-      "title_zh": "NVIDIA 开源 Auto Ontology：为 AI 智能体 SQL 提供语义层",
-      "title_en": "NVIDIA Releases Auto Ontology: An Open Semantic Layer That Grounds AI Agent SQL",
-      "url": "https://www.marktechpost.com/2026/11/01/nvidia-auto-ontology-open-source-semantic-layer-ai-agents",
-      "summary": "NVIDIA 发布了 Auto Ontology，这是一个 Apache 2.0 库，可以从企业元数据生成语义层。它将代理 SQL 置于经过认证的定义中，并通过 MCP、CLI 和 API 提供上下文。 NVIDIA 发布自动本体论：支持 AI Agent SQL 的开放语义层一文首先出现在 MarkTechPost 上。",
-      "recommend_reason_zh": null,
-      "source": "MarkTechPost（RSS）",
-      "source_name": "AI HOT",
-      "site_id": "aihot",
-      "published_at": "2026-11-02T07:47:12Z",
-      "source_count": 1,
-      "curated": true
     }
   ]
 }
