@@ -1,0 +1,446 @@
+{
+  "kind": "daily",
+  "period_start": "2026-11-02T03:06:39.369195Z",
+  "period_end": "2026-11-03T03:06:39.369195Z",
+  "source_snapshot_at": "2026-11-03T03:06:39.369195Z",
+  "input_id": "7e45235f044c96f85bae20413db999eaec9393ff3d83e63c756d3c9e06c6cf64",
+  "previous_report_id": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75",
+  "schema": "radar_trend_report_v1",
+  "generated_at": "2026-11-03T03:13:45.715520Z",
+  "companies": {
+    "doubao": {
+      "state": "unchanged",
+      "reason": "本轮原文复核延续既有方向，未达到实质改判门槛；保留判断与原日期。 候选池有截断；本次补采未刷新公众号，不声称完整覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "豆包继续用试用额度引导办公任务体验",
+        "summary": "签到与任务体验提供额度，赠送额度有期限及能力限制；促销不能证明付费留存。",
+        "evidence_ids": [
+          "doubao-allowance"
+        ]
+      },
+      "events": []
+    },
+    "qwen": {
+      "state": "unchanged",
+      "reason": "本轮原文复核延续既有方向，未达到实质改判门槛；保留判断与原日期。 候选池有截断；本次补采未刷新公众号，不声称完整覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "千问办公会员进入直播销售",
+        "summary": "媒体报道11月2日晚个人会员月卡进入李佳琦直播间；销售渠道扩展不能推导持续使用、经营收益或任务质量。",
+        "evidence_ids": [
+          "qwen-livestream"
+        ]
+      },
+      "events": [
+        {
+          "headline": "千问办公会员进入直播销售",
+          "summary": "媒体报道11月2日晚个人会员月卡进入李佳琦直播间；销售渠道扩展不能推导持续使用、经营收益或任务质量。",
+          "evidence_ids": [
+            "qwen-livestream"
+          ],
+          "event_id": "qwenwork-livestream-membership-nov2",
+          "status": "supplement"
+        }
+      ]
+    },
+    "hunyuan": {
+      "state": "unchanged",
+      "reason": "本轮原文复核延续既有方向，未达到实质改判门槛；保留判断与原日期。 候选池有截断；本次补采未刷新公众号，不声称完整覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "元宝结构化纪要延续昨日版本",
+        "summary": "2.91.10继续列出录音结束后的图文纪要；本轮复核同一版本，不计新的上线。",
+        "evidence_ids": [
+          "yuanbao-minutes"
+        ]
+      },
+      "events": []
+    },
+    "anthropic": {
+      "state": "unchanged",
+      "reason": "本轮原文复核延续既有方向，未达到实质改判门槛；保留判断与原日期。 候选池有截断；本次补采未刷新公众号，不声称完整覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Claude补齐长会话传输与定时任务保护",
+        "summary": "消息线程公测减少长会话重复传输；Claude Code新版本增加定时任务连接器提醒。前者补证，后者为本窗新版本，均保留既有判断。",
+        "evidence_ids": [
+          "claude-threads",
+          "claude-317"
+        ]
+      },
+      "events": [
+        {
+          "headline": "Claude消息线程减少长任务的重复传输",
+          "summary": "消息线程进入API公测；后续轮次仅传增量，Claude Code多数用户已默认启用。计费与限制未因此改变，长任务路径延续。",
+          "evidence_ids": [
+            "claude-threads"
+          ],
+          "event_id": "claude-message-threads-nov2",
+          "status": "supplement"
+        },
+        {
+          "headline": "Claude Code补充定时任务连接器提醒",
+          "summary": "v2.1.317提醒用户检查定时任务意外附带的连接器，并补充账号邮箱外传前确认；属于执行保护完善，主判断延续。",
+          "evidence_ids": [
+            "claude-317"
+          ],
+          "event_id": "claude-code-21317-scheduled-task-guards",
+          "status": "new"
+        }
+      ]
+    },
+    "xai": {
+      "state": "unchanged",
+      "reason": "本轮原文复核延续既有方向，未达到实质改判门槛；保留判断与原日期。 候选池有截断；本次补采未刷新公众号，不声称完整覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Grok Data Bot补入共享分析方法案例",
+        "summary": "内部Team Bot可查询数据仓库、生成图表及仪表盘，并在Slack定时报告；团队维护技能、审核共享记忆，延续协作成果路径。",
+        "evidence_ids": [
+          "grok-data-bot"
+        ]
+      },
+      "events": [
+        {
+          "headline": "Grok Data Bot补入共享分析方法案例",
+          "summary": "内部Team Bot可查询数据仓库、生成图表及仪表盘，并在Slack定时报告；团队维护技能、审核共享记忆，延续协作成果路径。",
+          "evidence_ids": [
+            "grok-data-bot"
+          ],
+          "event_id": "grok-data-bot-internal-analytics",
+          "status": "supplement"
+        }
+      ]
+    },
+    "google-gemini": {
+      "state": "unchanged",
+      "reason": "本轮原文复核延续既有方向，未达到实质改判门槛；保留判断与原日期。 候选池有截断；本次补采未刷新公众号，不声称完整覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Gemini聊天内改文件延续既有交付路径",
+        "summary": "聊天内可预览并修改生成文件；PDF支持网页和移动端，其他列举格式限网页端。本轮复核不重复计新。",
+        "evidence_ids": [
+          "gemini-edit"
+        ]
+      },
+      "events": []
+    },
+    "meta-llama": {
+      "state": "unchanged",
+      "reason": "本轮原文复核延续既有方向，未达到实质改判门槛；保留判断与原日期。 候选池有截断；本次补采未刷新公众号，不声称完整覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Muse新加坡连接器保持分阶段开放",
+        "summary": "当地生活与出行连接器分阶段推出，部分体验晚于发布；敏感发送与购买需确认，未证明所有连接能力已同时可用。",
+        "evidence_ids": [
+          "muse-singapore"
+        ]
+      },
+      "events": []
+    },
+    "openai": {
+      "state": "insufficient",
+      "reason": "ChatGPT界面合并候选原文访问失败；其余候选多为数据中心、融资人事、第三方模型实验，不能支撑应用更新。本轮证据不足，保留原判断和日期。补采后额度活动收尾报道亦未成功读取。 候选池有截断；本次补采未刷新公众号，不声称完整覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": null,
+      "events": []
+    }
+  },
+  "evidence": [
+    {
+      "id": "doubao-allowance",
+      "url": "https://www.ithome.com/1/020/224.htm",
+      "title": "豆包再次面向用户推出免费额度活动",
+      "source": "IT之家",
+      "published_at": "2026-10-30T17:14:29+08:00",
+      "event_at": "2026-10-30",
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "doubao"
+      ],
+      "level": "media",
+      "date_basis": "original_page",
+      "note": "已核对原文日期和豆包工作产品归属；与既有事件一致，不重复计新。"
+    },
+    {
+      "id": "qwen-desktop",
+      "url": "https://docs.qwenwork.cn/release-notes/desktop",
+      "title": "客户端更新日志 · 千问办公1.4.0",
+      "source": "千问办公",
+      "published_at": "2026-10-28",
+      "event_at": "2026-10-28",
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "qwen"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "官方版本记录仍为10月28日；榜单和第三方使用Qwen不当作应用更新。"
+    },
+    {
+      "id": "yuanbao-minutes",
+      "url": "https://apps.apple.com/cn/app/id6480446430",
+      "title": "元宝官方版本历史 · 2.91.10",
+      "source": "App Store / Tencent",
+      "published_at": null,
+      "event_at": null,
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "hunyuan"
+      ],
+      "level": "official",
+      "date_basis": "undated_document",
+      "note": "当前可见相对日期不换算绝对时间；开发者与版本内容已核对。混元科研工具不直接算元宝功能。"
+    },
+    {
+      "id": "claude-threads",
+      "url": "https://claude.com/resources/articles/message-threads",
+      "title": "Make long-running agents faster with message threads",
+      "source": "Anthropic",
+      "published_at": "2026-11-02",
+      "event_at": "2026-11-02",
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "anthropic"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "仅日精度且时区未知，保守补证；公测不等于全部生产场景开放，厂商延迟统计不代表普遍收益。"
+    },
+    {
+      "id": "grok-data-bot",
+      "url": "https://x.ai/news/data-bot",
+      "title": "Giving every team a data scientist with Grok Bot",
+      "source": "xAI",
+      "published_at": "2026-11-02",
+      "event_at": null,
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "xai"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "官方案例称数月前开始探索，未给上线日；页面日期仅按日保留。内部厂商案例不证明普遍部署或可比收益。"
+    },
+    {
+      "id": "gemini-edit",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+      "title": "Edit and preview documents directly in Gemini",
+      "source": "Google",
+      "published_at": "2026-10-29",
+      "event_at": "2026-10-29",
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "google-gemini"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "重读既有事件；正文只按日记录，不重新推算精确时间。月度汇总页访问不足，未用其标题算更新。"
+    },
+    {
+      "id": "muse-singapore",
+      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+      "title": "Muse Is Now Available in Singapore",
+      "source": "Meta",
+      "published_at": "2026-10-27",
+      "event_at": "2026-10-27",
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "meta-llama"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "沿用已纠偏的10月27日，不再次记纠偏或新增；第三方推理引擎及前员工创业排除。"
+    },
+    {
+      "id": "claude-317",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+      "title": "Claude Code v2.1.317",
+      "source": "Anthropic / GitHub",
+      "published_at": "2026-11-03T01:25:46Z",
+      "event_at": "2026-11-03T01:25:46Z",
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "anthropic"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "GitHub官方仓库正文及release published_at核对；常规保护与修复不等于执行能力跃迁。"
+    },
+    {
+      "id": "qwen-livestream",
+      "url": "https://www.aibase.com/news/32027",
+      "title": "千问办公个人会员月卡登陆李佳琦直播间",
+      "source": "AIbase",
+      "published_at": "2026-11-03",
+      "event_at": "2026-11-02",
+      "verified_at": "2026-11-03T03:13:45.715520Z",
+      "company_ids": [
+        "qwen"
+      ],
+      "level": "media",
+      "date_basis": "original_page",
+      "note": "原文发表11月3日，事件为11月2日晚；仅日精度，保守补证。销量为媒体转述，非核验使用量或留存。"
+    }
+  ],
+  "overview": null,
+  "evolution": {
+    "companies": {
+      "doubao": {
+        "type": "continued",
+        "reason": "与月度基线及此前两期完整周报比较，当前动作未证明核心执行、部署范围或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "doubao-allowance"
+        ],
+        "signals": [
+          {
+            "direction_id": "commercialization",
+            "type": "continued",
+            "summary": "签到与任务体验提供额度，赠送额度有期限及能力限制；促销不能证明付费留存。",
+            "stage": "available",
+            "evidence_ids": [
+              "doubao-allowance"
+            ]
+          }
+        ]
+      },
+      "qwen": {
+        "type": "continued",
+        "reason": "与月度基线及此前两期完整周报比较，当前动作未证明核心执行、部署范围或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "qwen-desktop",
+          "qwen-livestream"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "1.4.0为Windows任务准备Python与Node.js环境，并改善长会话展示；未发现可核实的新版本。",
+            "stage": "available",
+            "evidence_ids": [
+              "qwen-desktop"
+            ]
+          },
+          {
+            "direction_id": "commercialization",
+            "type": "continued",
+            "summary": "媒体报道11月2日晚个人会员月卡进入李佳琦直播间；销售渠道扩展不能推导持续使用、经营收益或任务质量。",
+            "stage": "available",
+            "evidence_ids": [
+              "qwen-livestream"
+            ]
+          }
+        ]
+      },
+      "hunyuan": {
+        "type": "continued",
+        "reason": "与月度基线及此前两期完整周报比较，当前动作未证明核心执行、部署范围或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "yuanbao-minutes"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "2.91.10继续列出录音结束后的图文纪要；本轮复核同一版本，不计新的上线。",
+            "stage": "available",
+            "evidence_ids": [
+              "yuanbao-minutes"
+            ]
+          }
+        ]
+      },
+      "anthropic": {
+        "type": "continued",
+        "reason": "与月度基线及此前两期完整周报比较，当前动作未证明核心执行、部署范围或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "claude-threads",
+          "claude-317"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "消息线程公测优化长会话传输，Claude Code版本完善定时任务连接器提醒；属于现有持续任务路径优化。",
+            "stage": "available",
+            "evidence_ids": [
+              "claude-threads",
+              "claude-317"
+            ]
+          }
+        ]
+      },
+      "xai": {
+        "type": "continued",
+        "reason": "与月度基线及此前两期完整周报比较，当前动作未证明核心执行、部署范围或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "grok-data-bot"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "内部Team Bot可查询数据仓库、生成图表及仪表盘，并在Slack定时报告；团队维护技能、审核共享记忆，延续协作成果路径。",
+            "stage": "observed",
+            "evidence_ids": [
+              "grok-data-bot"
+            ]
+          }
+        ]
+      },
+      "google-gemini": {
+        "type": "continued",
+        "reason": "与月度基线及此前两期完整周报比较，当前动作未证明核心执行、部署范围或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "gemini-edit"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "聊天内可预览并修改生成文件；PDF支持网页和移动端，其他列举格式限网页端。本轮复核不重复计新。",
+            "stage": "available",
+            "evidence_ids": [
+              "gemini-edit"
+            ]
+          }
+        ]
+      },
+      "meta-llama": {
+        "type": "continued",
+        "reason": "与月度基线及此前两期完整周报比较，当前动作未证明核心执行、部署范围或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "muse-singapore"
+        ],
+        "signals": [
+          {
+            "direction_id": "personal-context",
+            "type": "continued",
+            "summary": "当地生活与出行连接器分阶段推出，部分体验晚于发布；敏感发送与购买需确认，未证明所有连接能力已同时可用。",
+            "stage": "available",
+            "evidence_ids": [
+              "muse-singapore"
+            ]
+          }
+        ]
+      },
+      "openai": {
+        "type": "insufficient",
+        "reason": "ChatGPT界面合并候选原文访问失败；其余候选多为数据中心、融资人事、第三方模型实验，不能支撑应用更新。本轮证据不足，保留原判断和日期。",
+        "evidence_ids": [],
+        "signals": []
+      }
+    },
+    "overview": []
+  },
+  "report_id": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29"
+}

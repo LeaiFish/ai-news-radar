@@ -1,6 +1,6 @@
 {
   "schema": "radar_trend_history_v1",
-  "latest_report_id": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75",
+  "latest_report_id": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
   "directions": {
     "ongoing-assistance": "持续任务与主动跟进",
     "shared-deliverables": "成果修改、分享与维护",
@@ -710,25 +710,91 @@
         }
       },
       "overview": []
+    },
+    {
+      "report_id": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
+      "kind": "daily",
+      "generated_at": "2026-11-03T03:13:45.715520Z",
+      "period_start": "2026-11-02T03:06:39.369195Z",
+      "period_end": "2026-11-03T03:06:39.369195Z",
+      "path": "trends/daily/2026-11-03.json",
+      "companies": {
+        "doubao": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "commercialization"
+          ]
+        },
+        "qwen": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "ongoing-assistance",
+            "commercialization"
+          ]
+        },
+        "hunyuan": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "anthropic": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "ongoing-assistance"
+          ]
+        },
+        "xai": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "google-gemini": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "shared-deliverables"
+          ]
+        },
+        "meta-llama": {
+          "type": "continued",
+          "changed": false,
+          "direction_ids": [
+            "personal-context"
+          ]
+        },
+        "openai": {
+          "type": "insufficient",
+          "changed": false,
+          "direction_ids": []
+        }
+      },
+      "overview": []
     }
   ],
   "latest_signals": {
     "ongoing-assistance": {
       "openai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
-      "anthropic": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "anthropic": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
       "xai": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75",
       "doubao": "c2116020086f2c71e946becf8c90fa3c190034f57588c070bb96543f171e8658",
-      "qwen": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75",
+      "qwen": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
       "google-gemini": "c2116020086f2c71e946becf8c90fa3c190034f57588c070bb96543f171e8658"
     },
     "shared-deliverables": {
       "doubao": "7a85ac17f6642148131d2729a59817355edcfb3d98c5dc44c13a227767a0838f",
-      "hunyuan": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75",
+      "hunyuan": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
       "openai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
       "anthropic": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
-      "xai": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
+      "xai": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
       "meta-llama": "77aaf274648ca22da198ee09bd7b5851f10398d5089e770c70997bf1ccfc609e",
-      "google-gemini": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75"
+      "google-gemini": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29"
     },
     "merchant-operations": {
       "qwen": "4198725528cd0658d45022451e9d11386e32d7eb23bb3525f139ce8ad17a9eca",
@@ -740,7 +806,8 @@
       "google-gemini": "4198725528cd0658d45022451e9d11386e32d7eb23bb3525f139ce8ad17a9eca",
       "qwen": "7a85ac17f6642148131d2729a59817355edcfb3d98c5dc44c13a227767a0838f",
       "openai": "7a85ac17f6642148131d2729a59817355edcfb3d98c5dc44c13a227767a0838f",
-      "hunyuan": "397df726bb8e3f35235e9d563928eb18435eacf8512b65aee7eb19f579c53844"
+      "hunyuan": "397df726bb8e3f35235e9d563928eb18435eacf8512b65aee7eb19f579c53844",
+      "meta-llama": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29"
     },
     "mobile-entry": {
       "qwen": "2c93d2b7f68e7e2765c8c9aa9d6c526a357da5d2e8e810198cbf732ed517bb00",
@@ -755,7 +822,8 @@
     },
     "commercialization": {
       "openai": "7a85ac17f6642148131d2729a59817355edcfb3d98c5dc44c13a227767a0838f",
-      "doubao": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75"
+      "doubao": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
+      "qwen": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29"
     }
   }
 }
