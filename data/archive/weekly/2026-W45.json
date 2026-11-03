@@ -4,54 +4,86 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-03T12:51:21.490114Z",
+  "generated_at": "2026-11-03T16:18:27.235022Z",
   "daily_dates": [
     "2026-11-02",
-    "2026-11-03"
+    "2026-11-03",
+    "2026-11-04"
   ],
-  "story_count": 1013,
-  "unique_story_count": 1004,
+  "story_count": 1294,
+  "unique_story_count": 1053,
   "counts": {
     "by_company_topic": {
-      "anthropic": 176,
-      "apple": 8,
-      "cursor": 13,
-      "deepseek": 30,
-      "doubao": 5,
-      "google-gemini": 50,
-      "huggingface": 5,
-      "hunyuan": 6,
-      "kimi": 5,
+      "anthropic": 220,
+      "apple": 14,
+      "cursor": 15,
+      "deepseek": 40,
+      "doubao": 7,
+      "google-gemini": 55,
+      "huggingface": 8,
+      "hunyuan": 8,
+      "kimi": 6,
       "meta-llama": 3,
-      "microsoft": 8,
-      "minimax": 4,
-      "nvidia": 26,
-      "openai": 128,
-      "openrouter": 10,
-      "perplexity": 1,
-      "qwen": 11,
-      "xai": 33,
-      "zhipu": 2
+      "microsoft": 11,
+      "minimax": 5,
+      "nvidia": 32,
+      "openai": 173,
+      "openrouter": 12,
+      "perplexity": 2,
+      "qwen": 18,
+      "xai": 41,
+      "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 159,
-      "monetization": 21,
-      "product-entry": 28,
-      "workplace": 21
+      "agent-ecosystem": 204,
+      "monetization": 26,
+      "product-entry": 42,
+      "workplace": 28
     },
     "by_importance_label": {
-      "值得关注": 875,
-      "多源热议": 19,
-      "官方更新": 46,
-      "行业动态": 73
+      "值得关注": 1094,
+      "多源热议": 25,
+      "官方更新": 63,
+      "行业动态": 112
     },
     "by_source_count_bucket": {
-      "1": 945,
-      "2": 48,
-      "3+": 20
+      "1": 1203,
+      "2": 65,
+      "3+": 26
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_4408f5c55929",
+      "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
+      "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
+      "importance_score": 0.8591,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_46598a98a79d",
+      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
+      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+      "importance_score": 0.8491,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
     {
       "story_id": "story_aa1d1403b32a",
       "title": "Heimstaden 正在利用人工智能改变住宅房地产管理 / Heimstaden is changing residential real estate management with AI",
@@ -195,6 +227,21 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_7b2c335e0421",
+      "title": "千问办公客户端更新：千问办公 1.5.0",
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-11-03",
+      "importance_score": 0.8062,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_f47b50344903",
       "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰 / Introducing the Grid Protectors Program",
       "url": "https://openai.com/index/grid-protectors-program",
@@ -300,6 +347,17 @@
       "company_topics": [
         "openrouter"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b0aab3d344a5",
+      "title": "Apple 财报显示其以轻资产方式从 AI 浪潮中多渠道获利 / Apple is all in on AI — its own and everyone else’s",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "importance_score": 0.7663,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -515,57 +573,6 @@
       "archive_date": "2026-11-03",
       "company_topics": [
         "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6f30c8d895dd",
-      "title": "何夕2077 AI 深度信号周报 2026 W44：核验赤字与算力地租",
-      "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-11-01-ai-deep-signals-weekly-2026-w44",
-      "importance_score": 0.7536,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_41b60a5105eb",
-      "title": "Addy Osmani 谈 Agent 时代如何保持批判性思维 / Critical thinking when agents do the work",
-      "url": "https://x.com/addyosmani/status/2117512471930167377",
-      "importance_score": 0.7531,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_81855bcd7574",
-      "title": "阿里把千问\"开\"出 470 款模型，蔡崇信：开源才是 AI 普及的钥匙",
-      "url": "https://www.aibase.com/news/32046",
-      "importance_score": 0.753,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6289c90601b2",
-      "title": "QuestMobile:豆包、DeepSeek月人均使用次数超其他AI应用",
-      "url": "https://www.aibase.com/news/32048",
-      "importance_score": 0.753,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "doubao",
-        "deepseek"
       ],
       "lens_topics": []
     }
