@@ -395,6 +395,15 @@ CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
 AIBREAKFAST_JINA_URL = "https://r.jina.ai/https://aibreakfast.beehiiv.com/"
 AIHOT_ITEMS_API_URL = "https://aihot.news/api/v1/items"
 AIHOT_MIN_SCORE = 60
+# Original-read correction from the 2026-11-03 coverage audit. This exact post
+# is item 14 of Muse's already-shipped recap thread, not a newly dated launch.
+# Keep the post's publishedAt; the capability's first-release date is unknown.
+AIHOT_VERIFIED_RECAPS = {
+    "https://x.com/Muse/status/2117349439278858715": {
+        "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+        "summary": "Muse官方回顾已上线能力，介绍与自己的Muse一起玩Minecraft的使用方式；功能首次上线时间未核验，文章日期仅为回顾帖发表时间。",
+    },
+}
 AIHOT_API_TAKE = 100
 AIHOT_API_MAX_PAGES = 5
 AIHOT_API_UA = "AI-News-Radar/0.8 aihot-api/2.0.0"
@@ -2068,6 +2077,7 @@ def parse_curated_ai_media_feed_items(
         if normalized_url in seen_urls:
             continue
         seen_urls.add(normalized_url)
+
         out.append(
             RawItem(
                 site_id=site_id,
@@ -3031,6 +3041,10 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None, 
             continue
         seen_urls.add(normalized_url)
 
+        recap = AIHOT_VERIFIED_RECAPS.get(normalized_url)
+        if recap:
+            title = recap["title"]
+
         published = parse_iso(str(entry.get("publishedAt") or "")) or parse_date_any(entry.get("publishedAt"), now)
         source_value = entry.get("source")
         if isinstance(source_value, dict):
@@ -3051,9 +3065,9 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None, 
                     "aihot_score": score_value,
                     "aihot_category": entry.get("category"),
                     "aihot_selected": bool(entry.get("selected")),
-                    "provided_title_zh": entry.get("title"),
+                    "provided_title_zh": recap["title"] if recap else entry.get("title"),
                     "provided_title_en": entry.get("originalTitle") or entry.get("title_en"),
-                    "summary": entry.get("summary"),
+                    "summary": recap["summary"] if recap else entry.get("summary"),
                 },
             )
         )

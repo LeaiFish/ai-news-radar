@@ -1,0 +1,105 @@
+{
+  "schema": "source_filter_repair_v1",
+  "at": "2026-11-03T06:39:46.432755+00:00",
+  "status": "local_verified_not_published",
+  "authorized_scope": [
+    "Luma concrete product-function recognition",
+    "Exact supplemental @Muse institutional channel",
+    "Preserve recap meaning and post date; first release remains unknown",
+    "Verify same-event deduplication without merging unrelated features"
+  ],
+  "changes": {
+    "product_context": "Exact @LumaLabsAI identity plus Expression Sheet/角色表情表 capabilities; narrow Minecraft-with-Muse usage pattern. Existing technical/promotional gates preserved.",
+    "focus_config": "supplement-meta-muse, exact https://x.com/Muse; aliases empty; original 48 sources unchanged.",
+    "verified_recap_correction": "Only https://x.com/Muse/status/2117349439278858715; Chinese title and summary say recap, bilingual input corrected. Unrelated Muse posts unchanged.",
+    "event_deduplication": "Existing canonical-URL/high-title-similarity story merger retained. Same-original duplicate and same-event media-copy tests produce one event, separate capability remains separate."
+  },
+  "evidence": {
+    "comparison": "reports/source-comparison/2026-11-03.json",
+    "luma_original": "https://x.com/LumaLabsAI/status/2117445978320163139",
+    "muse_original": "https://x.com/Muse/status/2117349439278858715",
+    "originals_read_in_prior_comparison": true,
+    "muse_post_published_at": "2026-11-02T20:13:39Z",
+    "muse_capability_first_released_at": null,
+    "muse_date_boundary": "Publication time is the recap post date, not a new launch date."
+  },
+  "source_only_offline_probe": {
+    "at": "2026-11-03T06:39:02.863859+00:00",
+    "mode": "offline_source_only_cached_public_7d_sample",
+    "input_count": 1000,
+    "input_truncated": true,
+    "eligible_before_fix": 84,
+    "eligible_after_fix": 86,
+    "page_count": 10,
+    "coverage": {
+      "pages": 10,
+      "truncated": true,
+      "source": "AIHOT all; indirect coverage"
+    }
+  },
+  "recovered_originals": [
+    {
+      "id": "vj161nhmrb22aj6hz2cjt2t01",
+      "title": "Luma 推出 Expression Sheet 角色表情表",
+      "url": "https://x.com/LumaLabsAI/status/2117445978320163139",
+      "published_at": "2026-11-03T02:37:16+00:00",
+      "site_id": "aihot"
+    },
+    {
+      "id": "obvmf4h9tv0uygj655an7hkyf",
+      "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+      "url": "https://x.com/Muse/status/2117349439278858715",
+      "published_at": "2026-11-02T20:13:39+00:00",
+      "site_id": "aihot"
+    }
+  ],
+  "validation": {
+    "new_regressions": "7 passed; failed before implementation; passed after fix including final bilingual/date check",
+    "related_suite": "77 passed",
+    "full_python_suite": "577 passed, 36 existing feedparser deprecation warnings",
+    "compile": "py_compile passed",
+    "whitespace": "git diff --check passed on touched tracked files",
+    "dedup_scope": "Canonical original and same-event near-identical title; no claim arbitrary multilingual rewrites or long-range recaps can all be automatically merged.",
+    "budget_scope": "Selected score >=60 unchanged; all-mode max10pages, six/channel, technical max2 unchanged; truncated state retained."
+  },
+  "files": [
+    {
+      "path": "scripts/product_context.py",
+      "sha256": "714df11b6ade73f0f9f62780e7884e80fe3185bda7034f32578ed04f303d9049"
+    },
+    {
+      "path": "scripts/update_news.py",
+      "sha256": "e5be7652cfcc121300bc5913cc8d083e6e22bff0fb5efe4c6b9c90c44ce4914a"
+    },
+    {
+      "path": "config/focus_sources.json",
+      "sha256": "64a0155ab356aaa04e24c5a84b230badb786e47f9372d69910b5660e04b6c982"
+    },
+    {
+      "path": "tests/test_luma_muse_intake.py",
+      "sha256": "032bb69c0b0497f7cb41ccffea59dd91831a3da112015cde3de4264a53f5bf31"
+    },
+    {
+      "path": "docs/SOURCE_COVERAGE.md",
+      "sha256": "ece2a331fbb58fa792f7f409ad69a7df2f416f37bb75bf828a878e6158e0c7c6"
+    }
+  ],
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "online_missing_items_resolved": false,
+    "boundary": "Source-only replay is local acceptance; current live archive/projection is not changed by this repair."
+  },
+  "actions": {
+    "full_generation": false,
+    "private_collection": false,
+    "credential_reads": false,
+    "reader_labels_added": false,
+    "preexisting_workspace_changes_preserved": true
+  },
+  "reuse_review": {
+    "updated": "docs/SOURCE_COVERAGE.md#luma-function-recognition-and-muse-channel-2026-11-03",
+    "verified_boundary": "Exact source identity, product-use evidence, recap dates and existing event merge."
+  }
+}

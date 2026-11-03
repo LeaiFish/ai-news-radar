@@ -661,3 +661,30 @@ account/date verification path. Supplemental @bot and @imagine are institutional
 channels; @poteto is a team member's personal account, T2. They do not change the
 original 48-row count. Notebook and ChatGPT's current/legacy handles are matched
 explicitly. No login, cookies, paid API or new permission request was introduced.
+
+## Luma function recognition and Muse channel (2026-11-03)
+
+Luma's Expression Sheet / 角色表情表 is recognized as concrete creative-tool
+functionality when paired with a product action. The exact `@LumaLabsAI` URL
+can establish product identity for a headline that omits Luma. Greetings,
+promotions and model evaluations do not acquire product priority from the account.
+
+`@Muse` is a supplemental institutional channel matched by its exact original
+X URL, with no publisher-name aliases. The original 48-row list stays intact.
+Discovery uses the existing AIHOT all-mode collector and retains indirect
+provenance, page limits, per-channel caps and technical budgets. Meta's official
+website remains a separate alternative; this addition is not direct X polling.
+
+The verified Minecraft post is item 14 in an already-shipped capability recap.
+An exact-original correction in `AIHOT_VERIFIED_RECAPS` preserves “回顾” in its
+Chinese title and summary, including the bilingual-title input. `published_at`
+remains the post's 2026-11-02 publication time; the feature's first-release date
+is unknown. This correction does not relabel unrelated Muse posts or fill an
+unknown date with collection time. Product focus means useful product material,
+not proof of a new launch. Existing canonical-URL and title-based event merging
+is retained; same-brand posts alone do not form a single event.
+
+Regression tests exercise real headlines, impostor accounts, unknown dates,
+selected/all overlap, same-event media copies and distinct features. Local
+verification and publication status are recorded separately in
+`reports/source-intake/2026-11-03-luma-muse.json`.
