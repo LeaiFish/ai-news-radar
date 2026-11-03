@@ -4,60 +4,86 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-03T16:18:27.235022Z",
+  "generated_at": "2026-11-03T20:31:03.303168Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
     "2026-11-04"
   ],
-  "story_count": 1294,
-  "unique_story_count": 1053,
+  "story_count": 1288,
+  "unique_story_count": 1132,
   "counts": {
     "by_company_topic": {
-      "anthropic": 220,
-      "apple": 14,
-      "cursor": 15,
-      "deepseek": 40,
+      "anthropic": 212,
+      "apple": 18,
+      "cursor": 13,
+      "deepseek": 36,
       "doubao": 7,
-      "google-gemini": 55,
-      "huggingface": 8,
+      "google-gemini": 59,
+      "huggingface": 11,
       "hunyuan": 8,
       "kimi": 6,
       "meta-llama": 3,
       "microsoft": 11,
       "minimax": 5,
-      "nvidia": 32,
-      "openai": 173,
-      "openrouter": 12,
-      "perplexity": 2,
-      "qwen": 18,
-      "xai": 41,
-      "zhipu": 4
+      "nvidia": 31,
+      "openai": 170,
+      "openrouter": 11,
+      "perplexity": 1,
+      "qwen": 20,
+      "xai": 39,
+      "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 204,
-      "monetization": 26,
-      "product-entry": 42,
+      "agent-ecosystem": 200,
+      "monetization": 27,
+      "product-entry": 39,
       "workplace": 28
     },
     "by_importance_label": {
-      "值得关注": 1094,
+      "值得关注": 1076,
       "多源热议": 25,
-      "官方更新": 63,
-      "行业动态": 112
+      "官方更新": 71,
+      "行业动态": 116
     },
     "by_source_count_bucket": {
-      "1": 1203,
-      "2": 65,
+      "1": 1201,
+      "2": 61,
       "3+": 26
     }
   },
   "top_stories": [
     {
+      "story_id": "story_ca1ade1b3eb8",
+      "title": "StateBench：测试语言模型如何在长文档中追踪状态变化 / StateBench: Testing how language models track state changes over long documents",
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "importance_score": 0.8517,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b15c6d459b33",
+      "title": "IBM Research 发布 Palette：用 20B 开源模型按你的设计语言生成幻灯片 / Palette: teaching a small model to build decks in your design language",
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "importance_score": 0.8501,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_4408f5c55929",
       "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
       "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
-      "importance_score": 0.8591,
+      "importance_score": 0.8485,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -69,19 +95,16 @@
       ]
     },
     {
-      "story_id": "story_46598a98a79d",
-      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
-      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
-      "importance_score": 0.8491,
+      "story_id": "story_3e75208cf987",
+      "title": "LangSmith BYOC 现已在 AWS、Azure 和 Google Cloud 上推出 / LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
+      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
+      "importance_score": 0.8402,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
-      "company_topics": [
-        "microsoft"
-      ],
+      "company_topics": [],
       "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
+        "agent-ecosystem"
       ]
     },
     {
@@ -98,6 +121,22 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_46598a98a79d",
+      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
+      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+      "importance_score": 0.8387,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_5d294462667a",
       "title": "Hugging Face 提出 Model Integration Contracts 用小型模型 fixture 在 CPU 捕获回归 / Transformers Model Integration Contracts",
       "url": "https://huggingface.co/blog/transformers-mic",
@@ -107,6 +146,32 @@
       "archive_date": "2026-11-03",
       "company_topics": [
         "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4ff814a9f8cb",
+      "title": "How We Optimized Browser Use for Deep Agents",
+      "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
+      "importance_score": 0.8369,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_fbd820eb18a9",
+      "title": "Accelerating engineering for the physical world",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "importance_score": 0.8312,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -135,6 +200,19 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
+    },
+    {
+      "story_id": "story_e53a6dd32ac3",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "url": "https://openai.com/index/cisco-cyber",
+      "importance_score": 0.8222,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_fad26580730c",
@@ -188,6 +266,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_7ee3fbdb08d6",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "importance_score": 0.8138,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_5608a60ecd33",
       "title": "托管深度代理：交付生产深度代理的最快方式 / Managed Deep Agents: the fastest way to ship a production deep agent",
       "url": "https://www.langchain.com/blog/introducing-managed-deep-agents",
@@ -227,19 +318,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7b2c335e0421",
-      "title": "千问办公客户端更新：千问办公 1.5.0",
-      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-11-03",
-      "importance_score": 0.8062,
+      "story_id": "story_5ab1c1c739d8",
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "importance_score": 0.8058,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [
-        "qwen"
+        "openai"
       ],
-      "lens_topics": [
-        "workplace"
-      ]
+      "lens_topics": []
     },
     {
       "story_id": "story_f47b50344903",
@@ -266,6 +355,21 @@
         "google-gemini"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_7b2c335e0421",
+      "title": "千问办公客户端更新：千问办公 1.5.0",
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-11-03",
+      "importance_score": 0.7978,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_5f65899417c7",
@@ -309,6 +413,47 @@
       ]
     },
     {
+      "story_id": "story_459b130c13c2",
+      "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺 / Running Dry",
+      "url": "https://www.wheresyoured.at/running-dry",
+      "importance_score": 0.7774,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_39eedde8ead2",
+      "title": "国行 Apple 智能与 Siri 随 iOS 27.3 开发者预览版上线，iPhone 15 Pro 及更新机型可用",
+      "url": "https://www.ithome.com/1/021/861.htm",
+      "importance_score": 0.776,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "qwen",
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d120b55debad",
+      "title": "Anthropic S-1 新披露显示算力成本占比升至 58%，利润率承压 / Anthropic is still grappling with the economics of compute",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute",
+      "importance_score": 0.774,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_1d2b0f6f33d3",
       "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付 / Anthropic has committed $895.4B to computing and infrastructure, with $447.5B due before 2031.",
       "url": "https://x.com/rohanpaul_ai/status/2117368258571784296",
@@ -318,6 +463,19 @@
       "archive_date": "2026-11-03",
       "company_topics": [
         "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_aa75690ca1ff",
+      "title": "OpenAI 称 ChatGPT 搜索量已达 Google 的 20% / OpenAI says ChatGPT is catching up to Google in search",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "importance_score": 0.7715,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -347,17 +505,6 @@
       "company_topics": [
         "openrouter"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b0aab3d344a5",
-      "title": "Apple 财报显示其以轻资产方式从 AI 浪潮中多渠道获利 / Apple is all in on AI — its own and everyone else’s",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
-      "importance_score": 0.7663,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -426,155 +573,19 @@
       ]
     },
     {
-      "story_id": "story_ed7ab6871012",
-      "title": "ChatGPT 要能主动挂断危险对话，屡犯者直接封号",
-      "url": "https://www.aibase.com/news/32025",
-      "importance_score": 0.76,
-      "importance_label": "行业动态",
+      "story_id": "story_acbb19ffb2f0",
+      "title": "Claude Code 优化闲置会话压缩并在 Pro/Max 增加用量提醒 / Coming back to an old session got lighter on your usage.",
+      "url": "https://x.com/ClaudeDevs/status/2117670659715375344",
+      "importance_score": 0.7603,
+      "importance_label": "官方更新",
       "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ba3b1e222937",
-      "title": "韩国史上最大预算案：820 万亿韩元，AI 与半导体成绝对主角",
-      "url": "https://www.aibase.com/news/32021",
-      "importance_score": 0.76,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9467d9ce31bc",
-      "title": "六步实现音视频联合生成！Pika基于MiniMax H3 重磅开源Pika H3 Flex",
-      "url": "https://www.aibase.com/news/32024",
-      "importance_score": 0.76,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [
-        "minimax"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_49a04fe2aa63",
-      "title": "破解AI长期记忆瓶颈，阿里云赋能Personal Agent迈向深度个性化",
-      "url": "https://www.aibase.com/news/32023",
-      "importance_score": 0.76,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": [
-        "product-entry",
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_41401e58132a",
-      "title": "蚂蚁阿福获世界互联网大会领先科技奖  成为首个获得该奖的健康AI应用",
-      "url": "https://www.aibase.com/news/32026",
-      "importance_score": 0.76,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2e0994bf6e75",
-      "title": "北京出台智能眼镜消费政策：购新补贴15%，单件最高500元",
-      "url": "https://www.aibase.com/news/32020",
-      "importance_score": 0.76,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-02",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c714a7741af1",
-      "title": "商汤正式发布日日新SenseNova 6.8 Flash，主打真实任务执行与设计协作",
-      "url": "https://www.aibase.com/news/32049",
-      "importance_score": 0.7553,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9b692c13ddce",
-      "title": "App Store 分级新规下月生效，AI 虚拟恋人正式被苹果关进\"成人区\"",
-      "url": "https://www.aibase.com/news/32050",
-      "importance_score": 0.7553,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8885e13a3293",
-      "title": "算力成本高昂难以承受？传SpaceX悄悄削减Grok Bot配额，马斯克坦言营利失衡",
-      "url": "https://www.aibase.com/news/32052",
-      "importance_score": 0.7553,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "xai"
-      ],
-      "lens_topics": [
-        "product-entry"
-      ]
-    },
-    {
-      "story_id": "story_4deba44ebf5f",
-      "title": "Kimi 不再只写方案：直接上手改 Unity、虚幻工程做游戏原型",
-      "url": "https://www.aibase.com/news/32051",
-      "importance_score": 0.7553,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d62bec225063",
-      "title": "Mistral Large 4 以开放权重发布并附技术报告 / The story of how Le Chonk was built, told by the team behind it.",
-      "url": "https://x.com/MistralAI/status/2117562068220195097",
-      "importance_score": 0.7551,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_dd2a9d48d3ac",
-      "title": "Anthropic 更新 IPO 文件首次披露第三季度财报，从盈利 9.74 亿美元转为亏损 5.67 亿美元 / Anthropic published an updated IPO filing today with its third-quarter results for the first time.",
-      "url": "https://x.com/rohanpaul_ai/status/2117285920500273582",
-      "importance_score": 0.7538,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
+      "archive_date": "2026-11-04",
       "company_topics": [
         "anthropic"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "monetization"
+      ]
     }
   ]
 }
