@@ -4,52 +4,52 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-03T20:31:03.303168Z",
+  "generated_at": "2026-11-03T22:18:39.031800Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
     "2026-11-04"
   ],
-  "story_count": 1288,
-  "unique_story_count": 1132,
+  "story_count": 1299,
+  "unique_story_count": 1156,
   "counts": {
     "by_company_topic": {
-      "anthropic": 212,
-      "apple": 18,
+      "anthropic": 210,
+      "apple": 20,
       "cursor": 13,
       "deepseek": 36,
       "doubao": 7,
-      "google-gemini": 59,
+      "google-gemini": 60,
       "huggingface": 11,
       "hunyuan": 8,
       "kimi": 6,
       "meta-llama": 3,
-      "microsoft": 11,
+      "microsoft": 10,
       "minimax": 5,
-      "nvidia": 31,
-      "openai": 170,
-      "openrouter": 11,
+      "nvidia": 32,
+      "openai": 172,
+      "openrouter": 10,
       "perplexity": 1,
-      "qwen": 20,
+      "qwen": 21,
       "xai": 39,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 200,
-      "monetization": 27,
-      "product-entry": 39,
+      "agent-ecosystem": 203,
+      "monetization": 28,
+      "product-entry": 40,
       "workplace": 28
     },
     "by_importance_label": {
-      "值得关注": 1076,
-      "多源热议": 25,
-      "官方更新": 71,
-      "行业动态": 116
+      "值得关注": 1085,
+      "多源热议": 26,
+      "官方更新": 73,
+      "行业动态": 115
     },
     "by_source_count_bucket": {
-      "1": 1201,
-      "2": 61,
-      "3+": 26
+      "1": 1210,
+      "2": 62,
+      "3+": 27
     }
   },
   "top_stories": [
@@ -57,7 +57,7 @@
       "story_id": "story_ca1ade1b3eb8",
       "title": "StateBench：测试语言模型如何在长文档中追踪状态变化 / StateBench: Testing how language models track state changes over long documents",
       "url": "https://huggingface.co/blog/allenai/statebench",
-      "importance_score": 0.8517,
+      "importance_score": 0.8473,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -70,7 +70,7 @@
       "story_id": "story_b15c6d459b33",
       "title": "IBM Research 发布 Palette：用 20B 开源模型按你的设计语言生成幻灯片 / Palette: teaching a small model to build decks in your design language",
       "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "importance_score": 0.8501,
+      "importance_score": 0.8457,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -83,7 +83,7 @@
       "story_id": "story_4408f5c55929",
       "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
       "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
-      "importance_score": 0.8485,
+      "importance_score": 0.8442,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -95,10 +95,10 @@
       ]
     },
     {
-      "story_id": "story_3e75208cf987",
-      "title": "LangSmith BYOC 现已在 AWS、Azure 和 Google Cloud 上推出 / LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
-      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
-      "importance_score": 0.8402,
+      "story_id": "story_fa9b2c6b49bd",
+      "title": "为什么人类洞察力是构建更好代理的战略优势 / Why human insight is a strategic advantage for building better agents",
+      "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
+      "importance_score": 0.8427,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -121,22 +121,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_46598a98a79d",
-      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
-      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
-      "importance_score": 0.8387,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_5d294462667a",
       "title": "Hugging Face 提出 Model Integration Contracts 用小型模型 fixture 在 CPU 捕获回归 / Transformers Model Integration Contracts",
       "url": "https://huggingface.co/blog/transformers-mic",
@@ -150,10 +134,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_4ff814a9f8cb",
-      "title": "How We Optimized Browser Use for Deep Agents",
-      "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
-      "importance_score": 0.8369,
+      "story_id": "story_3e75208cf987",
+      "title": "LangSmith BYOC 现已在 AWS、Azure 和 Google Cloud 上推出 / LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
+      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
+      "importance_score": 0.8357,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -163,17 +147,33 @@
       ]
     },
     {
-      "story_id": "story_fbd820eb18a9",
-      "title": "Accelerating engineering for the physical world",
-      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-      "importance_score": 0.8312,
+      "story_id": "story_46598a98a79d",
+      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
+      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+      "importance_score": 0.8344,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [
-        "openai"
+        "microsoft"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_4ff814a9f8cb",
+      "title": "我们如何优化深度代理的浏览器使用 / How We Optimized Browser Use for Deep Agents",
+      "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
+      "importance_score": 0.8325,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_3762d45ec3c7",
@@ -202,10 +202,10 @@
       ]
     },
     {
-      "story_id": "story_e53a6dd32ac3",
-      "title": "How Cisco defends at machine speed with OpenAI",
-      "url": "https://openai.com/index/cisco-cyber",
-      "importance_score": 0.8222,
+      "story_id": "story_fbd820eb18a9",
+      "title": "Accelerating engineering for the physical world",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "importance_score": 0.8271,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -253,6 +253,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_e53a6dd32ac3",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "url": "https://openai.com/index/cisco-cyber",
+      "importance_score": 0.8184,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_e2ecfff8e8ae",
       "title": "元宝 2.91.10 官方版本更新",
       "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.91.10",
@@ -269,7 +282,7 @@
       "story_id": "story_7ee3fbdb08d6",
       "title": "CWE-bench v2: More coverage, quality, and transparency",
       "url": "https://huggingface.co/blog/cwe-bench",
-      "importance_score": 0.8138,
+      "importance_score": 0.8104,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -318,19 +331,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_5ab1c1c739d8",
-      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-      "importance_score": 0.8058,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_f47b50344903",
       "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰 / Introducing the Grid Protectors Program",
       "url": "https://openai.com/index/grid-protectors-program",
@@ -338,6 +338,19 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5ab1c1c739d8",
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "importance_score": 0.8024,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
       "company_topics": [
         "openai"
       ],
@@ -357,21 +370,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7b2c335e0421",
-      "title": "千问办公客户端更新：千问办公 1.5.0",
-      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-11-03",
-      "importance_score": 0.7978,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_5f65899417c7",
       "title": "Hyra 2.0: The Next Step for Auto Research",
       "url": "https://hunyuan.tencent.com/blog/hyra2",
@@ -383,6 +381,21 @@
         "hunyuan"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_7b2c335e0421",
+      "title": "千问办公客户端更新：千问办公 1.5.0",
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-11-03",
+      "importance_score": 0.7944,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "qwen"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_84bdb0bd3fbc",
@@ -413,47 +426,6 @@
       ]
     },
     {
-      "story_id": "story_459b130c13c2",
-      "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺 / Running Dry",
-      "url": "https://www.wheresyoured.at/running-dry",
-      "importance_score": 0.7774,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_39eedde8ead2",
-      "title": "国行 Apple 智能与 Siri 随 iOS 27.3 开发者预览版上线，iPhone 15 Pro 及更新机型可用",
-      "url": "https://www.ithome.com/1/021/861.htm",
-      "importance_score": 0.776,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "qwen",
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d120b55debad",
-      "title": "Anthropic S-1 新披露显示算力成本占比升至 58%，利润率承压 / Anthropic is still grappling with the economics of compute",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute",
-      "importance_score": 0.774,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_1d2b0f6f33d3",
       "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付 / Anthropic has committed $895.4B to computing and infrastructure, with $447.5B due before 2031.",
       "url": "https://x.com/rohanpaul_ai/status/2117368258571784296",
@@ -467,15 +439,43 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_aa75690ca1ff",
-      "title": "OpenAI 称 ChatGPT 搜索量已达 Google 的 20% / OpenAI says ChatGPT is catching up to Google in search",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "story_id": "story_459b130c13c2",
+      "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺 / Running Dry",
+      "url": "https://www.wheresyoured.at/running-dry",
+      "importance_score": 0.773,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_39eedde8ead2",
+      "title": "国行 Apple 智能与 Siri 随 iOS 27.3 开发者预览版上线，iPhone 15 Pro 及更新机型可用",
+      "url": "https://www.ithome.com/1/021/861.htm",
       "importance_score": 0.7715,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [
-        "openai"
+        "qwen",
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d120b55debad",
+      "title": "Anthropic S-1 新披露显示算力成本占比升至 58%，利润率承压 / Anthropic is still grappling with the economics of compute",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute",
+      "importance_score": 0.7696,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "anthropic"
       ],
       "lens_topics": []
     },
@@ -504,6 +504,19 @@
       "archive_date": "2026-11-02",
       "company_topics": [
         "openrouter"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_aa75690ca1ff",
+      "title": "OpenAI 称 ChatGPT 搜索量已达 Google 的 20% / OpenAI says ChatGPT is catching up to Google in search",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "importance_score": 0.767,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -570,21 +583,6 @@
       ],
       "lens_topics": [
         "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_acbb19ffb2f0",
-      "title": "Claude Code 优化闲置会话压缩并在 Pro/Max 增加用量提醒 / Coming back to an old session got lighter on your usage.",
-      "url": "https://x.com/ClaudeDevs/status/2117670659715375344",
-      "importance_score": 0.7603,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
       ]
     }
   ]
