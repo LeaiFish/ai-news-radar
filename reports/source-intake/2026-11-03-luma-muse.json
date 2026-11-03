@@ -1,7 +1,7 @@
 {
   "schema": "source_filter_repair_v1",
   "at": "2026-11-03T06:39:46.432755+00:00",
-  "status": "local_verified_not_published",
+  "status": "published_and_live_verified",
   "authorized_scope": [
     "Luma concrete product-function recognition",
     "Exact supplemental @Muse institutional channel",
@@ -60,7 +60,8 @@
     "compile": "py_compile passed",
     "whitespace": "git diff --check passed on touched tracked files",
     "dedup_scope": "Canonical original and same-event near-identical title; no claim arbitrary multilingual rewrites or long-range recaps can all be automatically merged.",
-    "budget_scope": "Selected score >=60 unchanged; all-mode max10pages, six/channel, technical max2 unchanged; truncated state retained."
+    "budget_scope": "Selected score >=60 unchanged; all-mode max10pages, six/channel, technical max2 unchanged; truncated state retained.",
+    "clean_release_python_suite": "637 passed, 36 existing feedparser deprecation warnings"
   },
   "files": [
     {
@@ -85,21 +86,272 @@
     }
   ],
   "publication": {
-    "committed": false,
-    "pushed": false,
-    "deployed": false,
-    "online_missing_items_resolved": false,
-    "boundary": "Source-only replay is local acceptance; current live archive/projection is not changed by this repair."
+    "committed": true,
+    "pushed": true,
+    "deployed": true,
+    "online_missing_items_resolved": true,
+    "source_commit": "23d94deee3995fb238801e1e7cedde63918b87eb",
+    "snapshot_commit": "3f7cf5c450e8746bc9b651b2912cf693aafe2020",
+    "source_commit_url": "https://github.com/LeaiFish/ai-news-radar/commit/23d94deee3995fb238801e1e7cedde63918b87eb",
+    "test_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41593247712",
+    "architecture_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41593247714",
+    "news_generation_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41593247710",
+    "pages_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41593931093",
+    "all_required_runs": "success",
+    "snapshot_generated_at": "2026-11-03T06:58:46.502669Z",
+    "live_readback_at": "2026-11-03T07:05:30.811283+00:00",
+    "site": "https://leaifish.github.io/ai-news-radar/feed/?nav=all",
+    "boundary": "Observed actual raw/archive/public records and rendered reader cards; article publication time is not feature-first-release time."
   },
   "actions": {
-    "full_generation": false,
+    "full_generation": true,
     "private_collection": false,
     "credential_reads": false,
     "reader_labels_added": false,
-    "preexisting_workspace_changes_preserved": true
+    "preexisting_workspace_changes_preserved": true,
+    "full_generation_route": "Existing RADAR_FREE_ONLY=1 cloud workflow; refresh_wechat skipped, no private renewal or local private collection."
   },
   "reuse_review": {
     "updated": "docs/SOURCE_COVERAGE.md#luma-function-recognition-and-muse-channel-2026-11-03",
     "verified_boundary": "Exact source identity, product-use evidence, recap dates and existing event merge."
+  },
+  "live_acceptance": {
+    "checked_at": "2026-11-03T07:05:30.811283+00:00",
+    "snapshots": {
+      "raw": "2026-11-03T06:58:46.502669Z",
+      "filtered": "2026-11-03T06:58:46.502669Z",
+      "archive": "2026-11-03T06:58:46.502669Z",
+      "public": "2026-11-03T06:58:46.502669Z",
+      "stories": "2026-11-03T06:58:46.502669Z",
+      "status": "2026-11-03T06:58:46.502669Z"
+    },
+    "items": {
+      "luma": {
+        "url": "https://x.com/LumaLabsAI/status/2117445978320163139",
+        "layers": {
+          "raw": {
+            "count": 1,
+            "records": [
+              {
+                "id": "c35ceedfab8c01b69d4b9432f066014fa7a4e708",
+                "title": "Luma 推出 Expression Sheet 角色表情表",
+                "title_zh": null,
+                "url": "https://x.com/LumaLabsAI/status/2117445978320163139",
+                "published_at": "2026-11-03T02:37:16Z",
+                "publishedAt": null,
+                "timelineAt": null,
+                "site_id": "aihot",
+                "editorial_focus": "product",
+                "select_tier": "T2",
+                "original_url": "https://x.com/LumaLabsAI/status/2117445978320163139"
+              }
+            ]
+          },
+          "filtered": {
+            "count": 1,
+            "records": [
+              {
+                "id": "c35ceedfab8c01b69d4b9432f066014fa7a4e708",
+                "title": "Luma 推出 Expression Sheet 角色表情表",
+                "title_zh": "Luma 推出 Expression Sheet 角色表情表",
+                "url": "https://x.com/LumaLabsAI/status/2117445978320163139",
+                "published_at": "2026-11-03T02:37:16Z",
+                "publishedAt": null,
+                "timelineAt": null,
+                "site_id": "aihot",
+                "editorial_focus": "product",
+                "select_tier": "T2",
+                "original_url": "https://x.com/LumaLabsAI/status/2117445978320163139"
+              }
+            ]
+          },
+          "archive": {
+            "count": 1,
+            "records": [
+              {
+                "id": "c35ceedfab8c01b69d4b9432f066014fa7a4e708",
+                "title": "Luma 推出 Expression Sheet 角色表情表",
+                "title_zh": null,
+                "url": "https://x.com/LumaLabsAI/status/2117445978320163139",
+                "published_at": "2026-11-03T02:37:16Z",
+                "publishedAt": null,
+                "timelineAt": null,
+                "site_id": "aihot",
+                "editorial_focus": "product",
+                "select_tier": "T2",
+                "original_url": "https://x.com/LumaLabsAI/status/2117445978320163139"
+              }
+            ]
+          },
+          "public": {
+            "count": 1,
+            "records": [
+              {
+                "id": "c35ceedfab8c01b69d4b9432f066014fa7a4e708",
+                "title": "Luma 推出 Expression Sheet 角色表情表",
+                "title_zh": null,
+                "url": null,
+                "published_at": null,
+                "publishedAt": "2026-11-03T02:37:16Z",
+                "timelineAt": "2026-11-03T02:37:16Z",
+                "site_id": null,
+                "editorial_focus": null,
+                "select_tier": null,
+                "original_url": "https://x.com/LumaLabsAI/status/2117445978320163139"
+              }
+            ]
+          }
+        },
+        "story_matches": [
+          {
+            "story_id": "story_118807578da4",
+            "title": "Luma 推出 Expression Sheet 角色表情表",
+            "earliest_at": "2026-11-03T02:37:16Z",
+            "latest_at": "2026-11-03T02:37:16Z",
+            "item_count": 1
+          }
+        ],
+        "public_story_matches": [
+          {
+            "publicId": "1b0d02e1-eb5b-53d0-8c8e-4259e0380471",
+            "title": "Luma 推出 Expression Sheet 角色表情表",
+            "itemIds": [
+              "c35ceedfab8c01b69d4b9432f066014fa7a4e708"
+            ],
+            "selected": false
+          }
+        ]
+      },
+      "muse": {
+        "url": "https://x.com/Muse/status/2117349439278858715",
+        "layers": {
+          "raw": {
+            "count": 1,
+            "records": [
+              {
+                "id": "1e77ffe8e6124b28f5c3bcc376db715efc16a2ad",
+                "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+                "title_zh": null,
+                "url": "https://x.com/Muse/status/2117349439278858715",
+                "published_at": "2026-11-02T20:13:39Z",
+                "publishedAt": null,
+                "timelineAt": null,
+                "site_id": "aihot",
+                "editorial_focus": "product",
+                "select_tier": "T2",
+                "original_url": "https://x.com/Muse/status/2117349439278858715"
+              }
+            ]
+          },
+          "filtered": {
+            "count": 1,
+            "records": [
+              {
+                "id": "1e77ffe8e6124b28f5c3bcc376db715efc16a2ad",
+                "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+                "title_zh": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+                "url": "https://x.com/Muse/status/2117349439278858715",
+                "published_at": "2026-11-02T20:13:39Z",
+                "publishedAt": null,
+                "timelineAt": null,
+                "site_id": "aihot",
+                "editorial_focus": "product",
+                "select_tier": "T2",
+                "original_url": "https://x.com/Muse/status/2117349439278858715"
+              }
+            ]
+          },
+          "archive": {
+            "count": 1,
+            "records": [
+              {
+                "id": "1e77ffe8e6124b28f5c3bcc376db715efc16a2ad",
+                "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+                "title_zh": null,
+                "url": "https://x.com/Muse/status/2117349439278858715",
+                "published_at": "2026-11-02T20:13:39Z",
+                "publishedAt": null,
+                "timelineAt": null,
+                "site_id": "aihot",
+                "editorial_focus": "product",
+                "select_tier": "T2",
+                "original_url": "https://x.com/Muse/status/2117349439278858715"
+              }
+            ]
+          },
+          "public": {
+            "count": 1,
+            "records": [
+              {
+                "id": "story_f983c27d4629",
+                "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+                "title_zh": null,
+                "url": null,
+                "published_at": null,
+                "publishedAt": "2026-11-02T20:13:39Z",
+                "timelineAt": "2026-11-02T20:13:39Z",
+                "site_id": null,
+                "editorial_focus": null,
+                "select_tier": null,
+                "original_url": "https://x.com/Muse/status/2117349439278858715"
+              }
+            ]
+          }
+        },
+        "story_matches": [
+          {
+            "story_id": "story_f983c27d4629",
+            "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+            "earliest_at": "2026-11-02T20:13:39Z",
+            "latest_at": "2026-11-02T20:13:39Z",
+            "item_count": 1
+          }
+        ],
+        "public_story_matches": [
+          {
+            "publicId": "325c80e7-700d-5f7c-9eed-d984e7ec7342",
+            "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+            "itemIds": [
+              "story_f983c27d4629"
+            ],
+            "selected": false
+          }
+        ]
+      }
+    },
+    "same_event_archive_candidates": {
+      "luma": [
+        {
+          "title": "Luma 推出 Expression Sheet 角色表情表",
+          "url": "https://x.com/LumaLabsAI/status/2117445978320163139",
+          "published_at": "2026-11-03T02:37:16Z",
+          "site_id": "aihot"
+        }
+      ],
+      "muse": [
+        {
+          "title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+          "url": "https://x.com/Muse/status/2117349439278858715",
+          "published_at": "2026-11-02T20:13:39Z",
+          "site_id": "aihot"
+        }
+      ]
+    },
+    "no_original_body_or_excerpt_retained": true
+  },
+  "reader_ui_acceptance": {
+    "checked_at": "2026-11-03T07:07:14.037790+00:00",
+    "route": "https://leaifish.github.io/ai-news-radar/feed/?nav=all",
+    "snapshot_display_time_beijing": "11/03 14:58",
+    "luma_search": "Expression Sheet",
+    "luma_result_count": 1,
+    "luma_display_publication_beijing": "11/03 10:37",
+    "muse_search": "Muse已上线能力回顾",
+    "muse_result_count": 1,
+    "muse_display_publication_beijing": "11/03 04:13",
+    "muse_title": "Muse已上线能力回顾：与智能体一起玩Minecraft",
+    "muse_summary_explicit_unknown_first_release": true,
+    "dedup_toggle_enabled": true,
+    "not_promoted_to_selected": true
   }
 }
