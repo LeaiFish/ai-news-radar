@@ -4,29 +4,29 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-03T10:12:51.044870Z",
+  "generated_at": "2026-11-03T12:51:21.490114Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03"
   ],
-  "story_count": 1011,
-  "unique_story_count": 978,
+  "story_count": 1013,
+  "unique_story_count": 1004,
   "counts": {
     "by_company_topic": {
-      "anthropic": 173,
-      "apple": 7,
+      "anthropic": 176,
+      "apple": 8,
       "cursor": 13,
       "deepseek": 30,
-      "doubao": 6,
+      "doubao": 5,
       "google-gemini": 50,
-      "huggingface": 4,
+      "huggingface": 5,
       "hunyuan": 6,
       "kimi": 5,
       "meta-llama": 3,
       "microsoft": 8,
-      "minimax": 5,
-      "nvidia": 25,
-      "openai": 127,
+      "minimax": 4,
+      "nvidia": 26,
+      "openai": 128,
       "openrouter": 10,
       "perplexity": 1,
       "qwen": 11,
@@ -34,21 +34,21 @@
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 160,
+      "agent-ecosystem": 159,
       "monetization": 21,
-      "product-entry": 29,
-      "workplace": 22
+      "product-entry": 28,
+      "workplace": 21
     },
     "by_importance_label": {
       "值得关注": 875,
-      "多源热议": 20,
-      "官方更新": 45,
-      "行业动态": 71
+      "多源热议": 19,
+      "官方更新": 46,
+      "行业动态": 73
     },
     "by_source_count_bucket": {
-      "1": 943,
-      "2": 47,
-      "3+": 21
+      "1": 945,
+      "2": 48,
+      "3+": 20
     }
   },
   "top_stories": [
@@ -56,7 +56,7 @@
       "story_id": "story_aa1d1403b32a",
       "title": "Heimstaden 正在利用人工智能改变住宅房地产管理 / Heimstaden is changing residential real estate management with AI",
       "url": "https://openai.com/index/heimstaden",
-      "importance_score": 0.8463,
+      "importance_score": 0.8398,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -69,7 +69,7 @@
       "story_id": "story_5d294462667a",
       "title": "Hugging Face 提出 Model Integration Contracts 用小型模型 fixture 在 CPU 捕获回归 / Transformers Model Integration Contracts",
       "url": "https://huggingface.co/blog/transformers-mic",
-      "importance_score": 0.8433,
+      "importance_score": 0.8375,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -82,7 +82,7 @@
       "story_id": "story_3762d45ec3c7",
       "title": "OpenAI 中的 Git 扩展 / Scaling Git at OpenAI",
       "url": "https://openai.com/index/scaling-git-at-openai",
-      "importance_score": 0.8344,
+      "importance_score": 0.8292,
       "importance_label": "官方更新",
       "source_count": 2,
       "archive_date": "2026-11-03",
@@ -93,9 +93,9 @@
     },
     {
       "story_id": "story_c95c4e70e17c",
-      "title": "Friday, 21:47, Checkout Is Slow Again: Twenty Minutes of Troubleshooting with CMS MCP",
+      "title": "星期五，21:47，结帐再次变慢：使用 CMS MCP 进行 20 分钟故障排除 / Friday, 21:47, Checkout Is Slow Again: Twenty Minutes of Troubleshooting with CMS MCP",
       "url": "https://www.alibabacloud.com/blog/friday-2147-checkout-is-slow-again-twenty-minutes-of-troubleshooting-with-cms-mcp_603721",
-      "importance_score": 0.8333,
+      "importance_score": 0.8275,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -103,31 +103,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_0009b69b0839",
-      "title": "日报：质量控制层 AI 视频缺失 / Dailies: The Quality-Control Layer AI Video Was Missing",
-      "url": "https://www.alibabacloud.com/blog/dailies-the-quality-control-layer-ai-video-was-missing_603720",
-      "importance_score": 0.8253,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2f92924aff59",
-      "title": "Runway Dev 位于 Claude Code、Codex 和 Cursor 中 / Runway Dev is in Claude Code, Codex and Cursor",
-      "url": "https://runway.com/news/developers/runway-dev-plugins-for-coding-agents",
-      "importance_score": 0.8244,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "anthropic",
-        "cursor"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_fad26580730c",
@@ -139,6 +114,31 @@
       "archive_date": "2026-11-02",
       "company_topics": [
         "deepseek"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0009b69b0839",
+      "title": "日报：质量控制层 AI 视频缺失 / Dailies: The Quality-Control Layer AI Video Was Missing",
+      "url": "https://www.alibabacloud.com/blog/dailies-the-quality-control-layer-ai-video-was-missing_603720",
+      "importance_score": 0.8195,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2f92924aff59",
+      "title": "Runway Dev 位于 Claude Code、Codex 和 Cursor 中 / Runway Dev is in Claude Code, Codex and Cursor",
+      "url": "https://runway.com/news/developers/runway-dev-plugins-for-coding-agents",
+      "importance_score": 0.8193,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "anthropic",
+        "cursor"
       ],
       "lens_topics": []
     },
@@ -159,7 +159,7 @@
       "story_id": "story_5608a60ecd33",
       "title": "托管深度代理：交付生产深度代理的最快方式 / Managed Deep Agents: the fastest way to ship a production deep agent",
       "url": "https://www.langchain.com/blog/introducing-managed-deep-agents",
-      "importance_score": 0.8159,
+      "importance_score": 0.8102,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -172,7 +172,7 @@
       "story_id": "story_f6a787bee313",
       "title": "准备下一次安全冲刺以强化 OpenAI / Preparing our next security sprint to harden OpenAI",
       "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "importance_score": 0.8144,
+      "importance_score": 0.8091,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -185,7 +185,7 @@
       "story_id": "story_5f8be3ab19ec",
       "title": "用更大的错误赏金奖励防御者 / Rewarding defenders with bigger bug bounties",
       "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "importance_score": 0.8144,
+      "importance_score": 0.8091,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -198,7 +198,7 @@
       "story_id": "story_f47b50344903",
       "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰 / Introducing the Grid Protectors Program",
       "url": "https://openai.com/index/grid-protectors-program",
-      "importance_score": 0.8084,
+      "importance_score": 0.8033,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -211,7 +211,7 @@
       "story_id": "story_0e2e48e223fc",
       "title": "我们于 2026 年 10 月公布的最新 AI 新闻 / The latest AI news we announced in October 2026",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
-      "importance_score": 0.8059,
+      "importance_score": 0.8006,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -237,7 +237,7 @@
       "story_id": "story_84bdb0bd3fbc",
       "title": "Qwen Memory Agent：将内存视为可测量的工程问题 / Qwen Memory Agent: Treating Memory as a Measurable Engineering Problem",
       "url": "https://www.alibabacloud.com/blog/qwen-memory-agent-treating-memory-as-a-measurable-engineering-problem_603719",
-      "importance_score": 0.7893,
+      "importance_score": 0.7835,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -249,25 +249,25 @@
       ]
     },
     {
+      "story_id": "story_0467f0bb636f",
+      "title": "Teaching Agents to Decide: From JEV Integration to the Full Harness Decision Flow",
+      "url": "https://www.alibabacloud.com/blog/teaching-agents-to-decide-from-jev-integration-to-the-full-harness-decision-flow_603722",
+      "importance_score": 0.7835,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_1d2b0f6f33d3",
       "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付 / Anthropic has committed $895.4B to computing and infrastructure, with $447.5B due before 2031.",
       "url": "https://x.com/rohanpaul_ai/status/2117368258571784296",
-      "importance_score": 0.7794,
+      "importance_score": 0.7737,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_834935505607",
-      "title": "Claude Messages API 公测 Message threads 服务端会话缓存 / Message threads are now in public beta on the Messages API.",
-      "url": "https://x.com/ClaudeDevs/status/2117332449382510884",
-      "importance_score": 0.7697,
-      "importance_label": "官方更新",
-      "source_count": 2,
       "archive_date": "2026-11-03",
       "company_topics": [
         "anthropic"
@@ -303,10 +303,23 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_834935505607",
+      "title": "Claude Messages API 公测 Message threads 服务端会话缓存 / Message threads are now in public beta on the Messages API.",
+      "url": "https://x.com/ClaudeDevs/status/2117332449382510884",
+      "importance_score": 0.7643,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_a6428b15d16b",
       "title": "联合国副秘书长点赞!千问AI耳夹式耳机亮相乌镇互联网大会",
       "url": "https://www.aibase.com/news/32057",
-      "importance_score": 0.7676,
+      "importance_score": 0.7609,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -319,7 +332,7 @@
       "story_id": "story_87193ddcb49b",
       "title": "苹果Apple Watch迎来Audio Intelligence，对话摘要与实时倒带功能开启Beta测试",
       "url": "https://www.aibase.com/news/32054",
-      "importance_score": 0.7676,
+      "importance_score": 0.7609,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -332,7 +345,7 @@
       "story_id": "story_5c950af68297",
       "title": "电动车退烧、AI 储能烧起来：LG 新能源把产能挪向数据中心",
       "url": "https://www.aibase.com/news/32058",
-      "importance_score": 0.7676,
+      "importance_score": 0.7609,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -343,7 +356,7 @@
       "story_id": "story_2c304998d0ff",
       "title": "腾讯混元重磅发布Hyra 2.0，让AI Agent全面参与科学大模型与硬核研发",
       "url": "https://www.aibase.com/news/32055",
-      "importance_score": 0.7676,
+      "importance_score": 0.7609,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -353,56 +366,6 @@
       "lens_topics": [
         "agent-ecosystem"
       ]
-    },
-    {
-      "story_id": "story_c714a7741af1",
-      "title": "商汤正式发布日日新SenseNova 6.8 Flash，主打真实任务执行与设计协作",
-      "url": "https://www.aibase.com/news/32049",
-      "importance_score": 0.7618,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9b692c13ddce",
-      "title": "App Store 分级新规下月生效，AI 虚拟恋人正式被苹果关进\"成人区\"",
-      "url": "https://www.aibase.com/news/32050",
-      "importance_score": 0.7618,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8885e13a3293",
-      "title": "算力成本高昂难以承受？传SpaceX悄悄削减Grok Bot配额，马斯克坦言营利失衡",
-      "url": "https://www.aibase.com/news/32052",
-      "importance_score": 0.7618,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "xai"
-      ],
-      "lens_topics": [
-        "product-entry"
-      ]
-    },
-    {
-      "story_id": "story_4deba44ebf5f",
-      "title": "Kimi 不再只写方案：直接上手改 Unity、虚幻工程做游戏原型",
-      "url": "https://www.aibase.com/news/32051",
-      "importance_score": 0.7618,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": []
     },
     {
       "story_id": "story_ed7ab6871012",
@@ -478,61 +441,75 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_41b60a5105eb",
-      "title": "Addy Osmani 谈 Agent 时代如何保持批判性思维 / Critical thinking when agents do the work",
-      "url": "https://x.com/addyosmani/status/2117512471930167377",
-      "importance_score": 0.7595,
+      "story_id": "story_c714a7741af1",
+      "title": "商汤正式发布日日新SenseNova 6.8 Flash，主打真实任务执行与设计协作",
+      "url": "https://www.aibase.com/news/32049",
+      "importance_score": 0.7553,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9b692c13ddce",
+      "title": "App Store 分级新规下月生效，AI 虚拟恋人正式被苹果关进\"成人区\"",
+      "url": "https://www.aibase.com/news/32050",
+      "importance_score": 0.7553,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8885e13a3293",
+      "title": "算力成本高昂难以承受？传SpaceX悄悄削减Grok Bot配额，马斯克坦言营利失衡",
+      "url": "https://www.aibase.com/news/32052",
+      "importance_score": 0.7553,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "xai"
+      ],
+      "lens_topics": [
+        "product-entry"
+      ]
+    },
+    {
+      "story_id": "story_4deba44ebf5f",
+      "title": "Kimi 不再只写方案：直接上手改 Unity、虚幻工程做游戏原型",
+      "url": "https://www.aibase.com/news/32051",
+      "importance_score": 0.7553,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "kimi"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d62bec225063",
+      "title": "Mistral Large 4 以开放权重发布并附技术报告 / The story of how Le Chonk was built, told by the team behind it.",
+      "url": "https://x.com/MistralAI/status/2117562068220195097",
+      "importance_score": 0.7551,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "huggingface"
+      ],
       "lens_topics": [
         "agent-ecosystem"
       ]
     },
     {
-      "story_id": "story_81855bcd7574",
-      "title": "阿里把千问\"开\"出 470 款模型，蔡崇信：开源才是 AI 普及的钥匙",
-      "url": "https://www.aibase.com/news/32046",
-      "importance_score": 0.7594,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6289c90601b2",
-      "title": "QuestMobile:豆包、DeepSeek月人均使用次数超其他AI应用",
-      "url": "https://www.aibase.com/news/32048",
-      "importance_score": 0.7594,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "doubao",
-        "deepseek"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3fe4e225a6ff",
-      "title": "8GB显存也能玩转128K超长上下文！开源本地大模型工具Strata 0.2. 10 发布",
-      "url": "https://www.aibase.com/news/32047",
-      "importance_score": 0.7594,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_dd2a9d48d3ac",
       "title": "Anthropic 更新 IPO 文件首次披露第三季度财报，从盈利 9.74 亿美元转为亏损 5.67 亿美元 / Anthropic published an updated IPO filing today with its third-quarter results for the first time.",
       "url": "https://x.com/rohanpaul_ai/status/2117285920500273582",
-      "importance_score": 0.759,
+      "importance_score": 0.7538,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
@@ -553,15 +530,42 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_ce5baf5ed029",
-      "title": "Claude Code搭载Opus 5. 5 正式封杀复刻特定现有游戏",
-      "url": "https://www.aibase.com/news/32009",
-      "importance_score": 0.7529,
+      "story_id": "story_41b60a5105eb",
+      "title": "Addy Osmani 谈 Agent 时代如何保持批判性思维 / Critical thinking when agents do the work",
+      "url": "https://x.com/addyosmani/status/2117512471930167377",
+      "importance_score": 0.7531,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-11-02",
+      "archive_date": "2026-11-03",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_81855bcd7574",
+      "title": "阿里把千问\"开\"出 470 款模型，蔡崇信：开源才是 AI 普及的钥匙",
+      "url": "https://www.aibase.com/news/32046",
+      "importance_score": 0.753,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
       "company_topics": [
-        "anthropic"
+        "qwen"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6289c90601b2",
+      "title": "QuestMobile:豆包、DeepSeek月人均使用次数超其他AI应用",
+      "url": "https://www.aibase.com/news/32048",
+      "importance_score": 0.753,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [
+        "doubao",
+        "deepseek"
       ],
       "lens_topics": []
     }
