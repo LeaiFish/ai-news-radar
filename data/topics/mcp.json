@@ -3,13 +3,13 @@
   "name": "MCP 与工具调用",
   "description": "模型连接外部世界：MCP 生态、function calling 与工具链集成。",
   "group": "tech",
-  "item_count": 9,
-  "listed_count": 9,
-  "recent_item_count": 9,
+  "item_count": 6,
+  "listed_count": 6,
+  "recent_item_count": 6,
   "latest_title": "对话式导购 + RAG + MCP 智能商品推荐系统",
   "latest_published_at": "2026-11-04T16:12:28.836000Z",
   "items_url": "data/topics/mcp.json",
-  "generated_at": "2026-11-04T16:22:04.305137Z",
+  "generated_at": "2026-11-04T20:50:45.197459Z",
   "items": [
     {
       "id": "story_e0e67a6c5d71",
@@ -106,54 +106,6 @@
       "published_at": "2026-11-04T07:12:17.225371Z",
       "source_count": 1,
       "curated": false
-    },
-    {
-      "id": "story_ad48990393c5",
-      "story_id": "story_ad48990393c5",
-      "title": "Claude 推出企业托管授权 EMA",
-      "title_zh": "Claude 推出企业托管授权 EMA",
-      "title_en": "Enterprise-managed auth (EMA) lets admins connect plugins for their entire organization through their identity provider, so members don’t...",
-      "url": "https://x.com/ClaudeDevs/status/2117680638488965129",
-      "summary": "企业托管授权（EMA）让管理员可以通过其身份提供商为整个组织连接插件，成员无需自行搜索、登录并授权每个插件。 它构建于 MCP 的开放扩展之上。 https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization",
-      "recommend_reason_zh": null,
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "source_name": "AI HOT",
-      "site_id": "aihot",
-      "published_at": "2026-11-03T18:09:43Z",
-      "source_count": 2,
-      "curated": true
-    },
-    {
-      "id": "story_69fec2269059",
-      "story_id": "story_69fec2269059",
-      "title": "Claude 支持登录时自动连接插件",
-      "title_zh": "Claude 支持登录时自动连接插件",
-      "title_en": "Users can now auto-connect plugins when they log in to Claude, with MCP servers that accept Claude as a trusted issuer.",
-      "url": "https://x.com/ClaudeDevs/status/2117680635561312732",
-      "summary": "用户现在登录 Claude 时即可自动连接插件，前提是 MCP 服务器接受 Claude 作为可信签发方。 如果你正在为 Claude 构建插件，请添加相应支持，让用户更快上手，并保持连接而无需重新授权。",
-      "recommend_reason_zh": null,
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "source_name": "AI HOT",
-      "site_id": "aihot",
-      "published_at": "2026-11-03T18:09:42Z",
-      "source_count": 2,
-      "curated": true
-    },
-    {
-      "id": "story_de06866265a8",
-      "story_id": "story_de06866265a8",
-      "title": "Claude 云端会话与 API 额度更新",
-      "title_zh": "Claude 云端会话与 API 额度更新",
-      "title_en": "And a few smaller ones:",
-      "url": "https://x.com/ClaudeDevs/status/2117670664262009016",
-      "summary": "还有几个较小的更新： - 云端会话现在会在你还在输入提示词时就开始设置，因此你点击发送后的等待时间更短 - 你可以点击云端会话 diff 中的任意一行并留下评论，它会随你的下一条消息一起发送给 Claude - Max、Ultra 和 Team 套餐现在每月包含 API 额度，可用于通过 Claude API 和 Agent SDK 进行构建 - 支持该功能的 MCP 服务器可以在任务进行中向你提出后续问题，并在后台运行长时间任务",
-      "recommend_reason_zh": null,
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "source_name": "AI HOT",
-      "site_id": "aihot",
-      "published_at": "2026-11-03T17:30:05Z",
-      "source_count": 1,
-      "curated": true
     }
   ]
 }
