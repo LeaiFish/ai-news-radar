@@ -4,56 +4,70 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-04T13:03:50.001003Z",
+  "generated_at": "2026-11-04T16:22:04.305137Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
-    "2026-11-04"
+    "2026-11-04",
+    "2026-11-05"
   ],
-  "story_count": 1308,
-  "unique_story_count": 1299,
+  "story_count": 1598,
+  "unique_story_count": 1342,
   "counts": {
     "by_company_topic": {
-      "anthropic": 216,
-      "apple": 18,
-      "cursor": 14,
-      "deepseek": 31,
-      "doubao": 9,
-      "google-gemini": 65,
-      "huggingface": 8,
-      "hunyuan": 10,
-      "kimi": 5,
+      "anthropic": 256,
+      "apple": 28,
+      "cursor": 15,
+      "deepseek": 32,
+      "doubao": 13,
+      "google-gemini": 81,
+      "huggingface": 10,
+      "hunyuan": 13,
+      "kimi": 6,
       "meta-llama": 3,
-      "microsoft": 12,
+      "microsoft": 16,
       "minimax": 4,
-      "nvidia": 34,
-      "openai": 164,
-      "openrouter": 12,
-      "perplexity": 2,
-      "quark": 1,
-      "qwen": 19,
-      "xai": 40,
+      "nvidia": 43,
+      "openai": 197,
+      "openrouter": 14,
+      "perplexity": 3,
+      "quark": 2,
+      "qwen": 27,
+      "xai": 47,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 193,
-      "monetization": 28,
-      "product-entry": 38,
-      "workplace": 31
+      "agent-ecosystem": 234,
+      "monetization": 36,
+      "product-entry": 49,
+      "workplace": 41
     },
     "by_importance_label": {
-      "值得关注": 1100,
-      "多源热议": 26,
-      "官方更新": 64,
-      "行业动态": 118
+      "值得关注": 1320,
+      "多源热议": 33,
+      "官方更新": 83,
+      "行业动态": 162
     },
     "by_source_count_bucket": {
-      "1": 1216,
-      "2": 65,
-      "3+": 27
+      "1": 1482,
+      "2": 82,
+      "3+": 34
     }
   },
   "top_stories": [
+    {
+      "story_id": "story_a5ecfede95e9",
+      "title": "OpenAI 宣布收购 Code Storage 背后公司 Pierre / OpenAI to acquire Pierre Computer Company, Inc.",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
+      "importance_score": 0.8472,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
     {
       "story_id": "story_aa1d1403b32a",
       "title": "Heimstaden 正在利用人工智能改变住宅房地产管理 / Heimstaden is changing residential real estate management with AI",
@@ -77,6 +91,19 @@
       "archive_date": "2026-11-03",
       "company_topics": [
         "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_909e1b342a31",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "importance_score": 0.8352,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -119,6 +146,19 @@
       ],
       "lens_topics": [
         "workplace"
+      ]
+    },
+    {
+      "story_id": "story_d40fe62b52cf",
+      "title": "How we built Lovable, and why we keep rebuilding it",
+      "url": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+      "importance_score": 0.8242,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
       ]
     },
     {
@@ -290,6 +330,20 @@
       "archive_date": "2026-11-04",
       "company_topics": [],
       "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_1c2015ed5c92",
+      "title": "See the agents, set the terms: new visibility and control for personal agents",
+      "url": "https://blog.cloudflare.com/personal-agents-visibility-control",
+      "importance_score": 0.8079,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [],
+      "lens_topics": [
+        "product-entry",
         "agent-ecosystem"
       ]
     },
@@ -520,69 +574,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_834935505607",
-      "title": "Claude Messages API 公测 Message threads 服务端会话缓存 / Message threads are now in public beta on the Messages API.",
-      "url": "https://x.com/ClaudeDevs/status/2117332449382510884",
-      "importance_score": 0.7643,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a6428b15d16b",
-      "title": "联合国副秘书长点赞!千问AI耳夹式耳机亮相乌镇互联网大会",
-      "url": "https://www.aibase.com/news/32057",
-      "importance_score": 0.7609,
+      "story_id": "story_573d98cc339b",
+      "title": "Google 计划对限制 AI 的学校关闭 Search 引发强烈反弹 / Google faces backlash for plan that would turn off Search for schools that restrict AI",
+      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai",
+      "importance_score": 0.7674,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_87193ddcb49b",
-      "title": "苹果Apple Watch迎来Audio Intelligence，对话摘要与实时倒带功能开启Beta测试",
-      "url": "https://www.aibase.com/news/32054",
-      "importance_score": 0.7609,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5c950af68297",
-      "title": "电动车退烧、AI 储能烧起来：LG 新能源把产能挪向数据中心",
-      "url": "https://www.aibase.com/news/32058",
-      "importance_score": 0.7609,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
+      "archive_date": "2026-11-05",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_2c304998d0ff",
-      "title": "腾讯混元重磅发布Hyra 2.0，让AI Agent全面参与科学大模型与硬核研发",
-      "url": "https://www.aibase.com/news/32055",
-      "importance_score": 0.7609,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "hunyuan"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }
