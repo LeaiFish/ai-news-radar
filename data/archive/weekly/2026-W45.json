@@ -4,70 +4,55 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-04T03:18:39.295347Z",
+  "generated_at": "2026-11-04T07:12:17.225371Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
     "2026-11-04"
   ],
-  "story_count": 1305,
-  "unique_story_count": 1224,
+  "story_count": 1309,
+  "unique_story_count": 1255,
   "counts": {
     "by_company_topic": {
-      "anthropic": 212,
+      "anthropic": 217,
       "apple": 21,
       "cursor": 13,
-      "deepseek": 33,
+      "deepseek": 31,
       "doubao": 8,
-      "google-gemini": 62,
+      "google-gemini": 63,
       "huggingface": 9,
-      "hunyuan": 8,
+      "hunyuan": 10,
       "kimi": 6,
       "meta-llama": 3,
       "microsoft": 11,
-      "minimax": 5,
-      "nvidia": 32,
+      "minimax": 4,
+      "nvidia": 33,
       "openai": 168,
       "openrouter": 12,
       "perplexity": 2,
-      "qwen": 20,
+      "qwen": 21,
       "xai": 41,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 193,
-      "monetization": 27,
-      "product-entry": 41,
-      "workplace": 28
+      "agent-ecosystem": 192,
+      "monetization": 28,
+      "product-entry": 40,
+      "workplace": 29
     },
     "by_importance_label": {
-      "值得关注": 1102,
+      "值得关注": 1107,
       "多源热议": 26,
-      "官方更新": 64,
-      "行业动态": 113
+      "官方更新": 65,
+      "行业动态": 111
     },
     "by_source_count_bucket": {
-      "1": 1216,
-      "2": 62,
+      "1": 1219,
+      "2": 63,
       "3+": 27
     }
   },
   "top_stories": [
-    {
-      "story_id": "story_e2a9defc33ad",
-      "title": "Copilot 使用 API 中的 BYOK 和企业自定义模型 / BYOK and enterprise custom models in the Copilot usage API",
-      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
-      "importance_score": 0.8449,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
     {
       "story_id": "story_aa1d1403b32a",
       "title": "Heimstaden 正在利用人工智能改变住宅房地产管理 / Heimstaden is changing residential real estate management with AI",
@@ -95,57 +80,18 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_ca1ade1b3eb8",
-      "title": "StateBench：测试语言模型如何在长文档中追踪状态变化 / StateBench: Testing how language models track state changes over long documents",
-      "url": "https://huggingface.co/blog/allenai/statebench",
-      "importance_score": 0.8357,
+      "story_id": "story_e2a9defc33ad",
+      "title": "Copilot 使用 API 中的 BYOK 和企业自定义模型 / BYOK and enterprise custom models in the Copilot usage API",
+      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+      "importance_score": 0.8355,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b15c6d459b33",
-      "title": "IBM Research 发布 Palette：用 20B 开源模型按你的设计语言生成幻灯片 / Palette: teaching a small model to build decks in your design language",
-      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "importance_score": 0.8342,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4408f5c55929",
-      "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
-      "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
-      "importance_score": 0.8328,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "huggingface"
+        "microsoft"
       ],
       "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_fa9b2c6b49bd",
-      "title": "为什么人类洞察力是构建更好代理的战略优势 / Why human insight is a strategic advantage for building better agents",
-      "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
-      "importance_score": 0.8302,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
+        "workplace"
       ]
     },
     {
@@ -175,39 +121,51 @@
       ]
     },
     {
-      "story_id": "story_3e75208cf987",
-      "title": "LangSmith BYOC 现已在 AWS、Azure 和 Google Cloud 上推出 / LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
-      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
-      "importance_score": 0.8237,
+      "story_id": "story_ca1ade1b3eb8",
+      "title": "StateBench：测试语言模型如何在长文档中追踪状态变化 / StateBench: Testing how language models track state changes over long documents",
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "importance_score": 0.8272,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
-      "company_topics": [],
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b15c6d459b33",
+      "title": "IBM Research 发布 Palette：用 20B 开源模型按你的设计语言生成幻灯片 / Palette: teaching a small model to build decks in your design language",
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "importance_score": 0.8258,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4408f5c55929",
+      "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
+      "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
+      "importance_score": 0.8244,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "huggingface"
+      ],
       "lens_topics": [
         "agent-ecosystem"
       ]
     },
     {
-      "story_id": "story_46598a98a79d",
-      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
-      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
-      "importance_score": 0.8231,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_4ff814a9f8cb",
-      "title": "我们如何优化深度代理的浏览器使用 / How We Optimized Browser Use for Deep Agents",
-      "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
-      "importance_score": 0.8207,
+      "story_id": "story_fa9b2c6b49bd",
+      "title": "为什么人类洞察力是构建更好代理的战略优势 / Why human insight is a strategic advantage for building better agents",
+      "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
+      "importance_score": 0.8211,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -255,17 +213,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_4e7bf3741e96",
-      "title": "Krea 3 Technical Report",
-      "url": "https://www.krea.ai/blog/krea-3-technical-report",
-      "importance_score": 0.8169,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_e2ecfff8e8ae",
       "title": "元宝 2.91.10 官方版本更新",
       "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.91.10",
@@ -279,17 +226,46 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_fbd820eb18a9",
-      "title": "Accelerating engineering for the physical world",
-      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-      "importance_score": 0.8163,
+      "story_id": "story_3e75208cf987",
+      "title": "LangSmith BYOC 现已在 AWS、Azure 和 Google Cloud 上推出 / LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
+      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
+      "importance_score": 0.815,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_46598a98a79d",
+      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
+      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+      "importance_score": 0.8148,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [
-        "openai"
+        "microsoft"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_4ff814a9f8cb",
+      "title": "我们如何优化深度代理的浏览器使用 / How We Optimized Browser Use for Deep Agents",
+      "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
+      "importance_score": 0.8122,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_5608a60ecd33",
@@ -331,27 +307,40 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e53a6dd32ac3",
-      "title": "How Cisco defends at machine speed with OpenAI",
-      "url": "https://openai.com/index/cisco-cyber",
-      "importance_score": 0.8082,
+      "story_id": "story_966d44efcb15",
+      "title": "Introducing Hy4",
+      "url": "https://hunyuan.tencent.com/blog/hy4",
+      "importance_score": 0.8085,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "hunyuan"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4e7bf3741e96",
+      "title": "Krea 3 Technical Report",
+      "url": "https://www.krea.ai/blog/krea-3-technical-report",
+      "importance_score": 0.8085,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_fbd820eb18a9",
+      "title": "Accelerating engineering for the physical world",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "importance_score": 0.8084,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [
         "openai"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_22ef94695194",
-      "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80% / AMD reported its 3Q-2026 earnings and it now expects revenue to grow more than 80% in 2027, ahead of the 77% analysts had modeled.",
-      "url": "https://x.com/rohanpaul_ai/status/2117757237557088263",
-      "importance_score": 0.8033,
-      "importance_label": "行业动态",
-      "source_count": 2,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -362,6 +351,19 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_e53a6dd32ac3",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "url": "https://openai.com/index/cisco-cyber",
+      "importance_score": 0.8007,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
       "company_topics": [
         "openai"
       ],
@@ -388,6 +390,30 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-02",
+      "company_topics": [
+        "hunyuan"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_22ef94695194",
+      "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80% / AMD reported its 3Q-2026 earnings and it now expects revenue to grow more than 80% in 2027, ahead of the 77% analysts had modeled.",
+      "url": "https://x.com/rohanpaul_ai/status/2117757237557088263",
+      "importance_score": 0.794,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_adfaf69f13a1",
+      "title": "腾讯混元 Hy4 正式发布，首次引入视觉与电脑操作能力",
+      "url": "https://mp.weixin.qq.com/s/JrQeiqx3PXBDSGish2IzwA",
+      "importance_score": 0.7853,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
       "company_topics": [
         "hunyuan"
       ],
@@ -435,21 +461,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_acbb19ffb2f0",
-      "title": "Claude Code 优化闲置会话压缩并在 Pro/Max 增加用量提醒 / Coming back to an old session got lighter on your usage.",
-      "url": "https://x.com/ClaudeDevs/status/2117670659715375344",
-      "importance_score": 0.7692,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
       "story_id": "story_863a3ba75e1e",
       "title": "您现在可以直接在 Gemini 中生成、预览和编辑文档、PDF、演示文稿、电子表格等。 / You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
@@ -478,9 +489,55 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e94cf2cf6933",
-      "title": "Claude 给自己发\"身份证\"：Anthropic 用零知识证明斩断套壳灰产",
-      "url": "https://www.aibase.com/news/32073",
+      "story_id": "story_fe5260413302",
+      "title": "中国开源AI凭什么火遍全球？乌镇峰会揭秘：调用量连续 27 周超越美国，成海外企业和开发者的香饽饽",
+      "url": "https://www.aibase.com/news/32074",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d1c528ec18fc",
+      "title": "腾讯 Hy4 正式版亮相：挤进最强开源阵营，主打\"真干活\"",
+      "url": "https://www.aibase.com/news/32078",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "hunyuan"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ca1ba37ff72a",
+      "title": "创作者最怕的\"版权申诉\"，YouTube 用 AI 配乐一键化解",
+      "url": "https://www.aibase.com/news/32075",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a7cf180a5c88",
+      "title": "微软为Outlook引入小型AI模型，优化邮件搜索排序",
+      "url": "https://www.aibase.com/news/32080",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_82841d997380",
+      "title": "Anthropic 杀手级验真系统 FlashProve 正式开源：17 秒精准戳破“套壳模型”，验身速度飙升 5000 倍",
+      "url": "https://www.aibase.com/news/32079",
       "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
@@ -491,10 +548,10 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d5a11f311a4b",
-      "title": "国内首个三晋文化大模型“晋问AI”正式上线，数字人“晋豆”同步亮相",
-      "url": "https://www.aibase.com/news/32068",
-      "importance_score": 0.7669,
+      "story_id": "story_47237af9f73d",
+      "title": "普林斯顿AI Lab推出SSoN基准，人类准确率83.3%而大模型最高仅39.7%",
+      "url": "https://www.aibase.com/news/32081",
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -502,81 +559,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_ab1a735365a9",
-      "title": "2027 年起K- 12 学生账户AI与搜索服务将默认关闭，禁用AI将连带失去传统搜索",
-      "url": "https://www.aibase.com/news/32066",
-      "importance_score": 0.7669,
+      "story_id": "story_462cb09740a4",
+      "title": "谷歌给美国中小学出\"二选一\"：开 AI 搜索，或关掉搜索",
+      "url": "https://www.aibase.com/news/32077",
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_a59e4fdd3dc3",
-      "title": "苹果 AI 加速进入中国市场，Siri、视觉智能整合千问",
-      "url": "https://www.aibase.com/news/32065",
-      "importance_score": 0.7669,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "qwen",
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8dd7876f1226",
-      "title": "消息称字节跳动大面积限制员工自费使用第三方AI工具",
-      "url": "https://www.aibase.com/news/32070",
-      "importance_score": 0.7669,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "doubao"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8d95549e19ab",
-      "title": "AI与组织效率驱动调整 Canva启动大规模重组",
-      "url": "https://www.aibase.com/news/32072",
-      "importance_score": 0.7669,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_7e3d8e9999eb",
-      "title": "阿里云发布AI投研工作台Qovest:99元/月开放个人邀测",
-      "url": "https://www.aibase.com/news/32069",
-      "importance_score": 0.7669,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7c577d849d53",
-      "title": "Anthropic产品团队出现人事变动，Claude Code负责人离开",
-      "url": "https://www.aibase.com/news/32071",
-      "importance_score": 0.7669,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
     }
   ]
 }
