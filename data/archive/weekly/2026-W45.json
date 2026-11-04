@@ -4,18 +4,18 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-04T20:50:45.197459Z",
+  "generated_at": "2026-11-04T22:37:22.837102Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
     "2026-11-04",
     "2026-11-05"
   ],
-  "story_count": 1568,
-  "unique_story_count": 1401,
+  "story_count": 1562,
+  "unique_story_count": 1422,
   "counts": {
     "by_company_topic": {
-      "anthropic": 249,
+      "anthropic": 244,
       "apple": 22,
       "cursor": 15,
       "deepseek": 32,
@@ -27,31 +27,31 @@
       "meta-llama": 3,
       "microsoft": 16,
       "minimax": 4,
-      "nvidia": 43,
-      "openai": 190,
+      "nvidia": 44,
+      "openai": 194,
       "openrouter": 12,
       "perplexity": 2,
       "quark": 2,
       "qwen": 23,
-      "xai": 47,
+      "xai": 44,
       "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 231,
+      "agent-ecosystem": 233,
       "monetization": 32,
       "product-entry": 45,
       "workplace": 39
     },
     "by_importance_label": {
-      "值得关注": 1296,
-      "多源热议": 32,
-      "官方更新": 78,
-      "行业动态": 162
+      "值得关注": 1293,
+      "多源热议": 29,
+      "官方更新": 80,
+      "行业动态": 160
     },
     "by_source_count_bucket": {
-      "1": 1456,
+      "1": 1453,
       "2": 78,
-      "3+": 34
+      "3+": 31
     }
   },
   "top_stories": [
@@ -59,9 +59,9 @@
       "story_id": "story_a5ecfede95e9",
       "title": "OpenAI 宣布收购 Code Storage 背后公司 Pierre / OpenAI to acquire Pierre Computer Company, Inc.",
       "url": "https://openai.com/index/openai-to-acquire-pierre",
-      "importance_score": 0.9112,
+      "importance_score": 0.9321,
       "importance_label": "官方更新",
-      "source_count": 4,
+      "source_count": 5,
       "archive_date": "2026-11-05",
       "company_topics": [
         "openai"
@@ -72,7 +72,7 @@
       "story_id": "story_a1cac76551fa",
       "title": "Dharma-AI 发布 20 亿参数 Field Extractor 模型，文档图片直出结构化 JSON / Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
       "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-      "importance_score": 0.8523,
+      "importance_score": 0.848,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-05",
@@ -85,7 +85,7 @@
       "story_id": "story_bf5abd3d9223",
       "title": "GitHub Copilot 现已在 Xcode 的编码助手中可用 / GitHub Copilot is now available in Xcode’s coding assistant",
       "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
-      "importance_score": 0.8477,
+      "importance_score": 0.8433,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-05",
@@ -164,19 +164,6 @@
       ]
     },
     {
-      "story_id": "story_909e1b342a31",
-      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
-      "importance_score": 0.8254,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-05",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_e2a9defc33ad",
       "title": "Copilot 使用 API 中的 BYOK 和企业自定义模型 / BYOK and enterprise custom models in the Copilot usage API",
       "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
@@ -190,6 +177,19 @@
       "lens_topics": [
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_909e1b342a31",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "importance_score": 0.8216,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_fad26580730c",
@@ -243,6 +243,19 @@
       ]
     },
     {
+      "story_id": "story_f06268fdc285",
+      "title": "A thousand fewer paths to root",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "importance_score": 0.8177,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_e2ecfff8e8ae",
       "title": "元宝 2.91.10 官方版本更新",
       "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.91.10",
@@ -252,6 +265,19 @@
       "archive_date": "2026-11-02",
       "company_topics": [
         "hunyuan"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8ce81320493c",
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "url": "https://openai.com/index/devrev-enterprise-self-service",
+      "importance_score": 0.8158,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -282,19 +308,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_d40fe62b52cf",
-      "title": "How we built Lovable, and why we keep rebuilding it",
-      "url": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
-      "importance_score": 0.8136,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-05",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_4408f5c55929",
       "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
       "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
@@ -317,6 +330,19 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_d40fe62b52cf",
+      "title": "How we built Lovable, and why we keep rebuilding it",
+      "url": "https://lovable.dev/blog/how-we-built-lovable-and-why-we-keep-rebuilding-it",
+      "importance_score": 0.8095,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
       "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
@@ -357,21 +383,6 @@
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_5296ff8f39a1",
-      "title": "New agents and products for security, productivity, and creative work on Claude Marketplace",
-      "url": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace",
-      "importance_score": 0.8052,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-05",
-      "company_topics": [
-        "anthropic"
-      ],
       "lens_topics": [
         "agent-ecosystem"
       ]
@@ -419,6 +430,21 @@
       ]
     },
     {
+      "story_id": "story_5296ff8f39a1",
+      "title": "New agents and products for security, productivity, and creative work on Claude Marketplace",
+      "url": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace",
+      "importance_score": 0.8018,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_0e2e48e223fc",
       "title": "我们于 2026 年 10 月公布的最新 AI 新闻 / The latest AI news we announced in October 2026",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
@@ -441,20 +467,6 @@
       "archive_date": "2026-11-04",
       "company_topics": [],
       "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_1c2015ed5c92",
-      "title": "See the agents, set the terms: new visibility and control for personal agents",
-      "url": "https://blog.cloudflare.com/personal-agents-visibility-control",
-      "importance_score": 0.7971,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-05",
-      "company_topics": [],
-      "lens_topics": [
-        "product-entry",
         "agent-ecosystem"
       ]
     },
@@ -494,6 +506,20 @@
         "hunyuan"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_1c2015ed5c92",
+      "title": "See the agents, set the terms: new visibility and control for personal agents",
+      "url": "https://blog.cloudflare.com/personal-agents-visibility-control",
+      "importance_score": 0.7929,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-05",
+      "company_topics": [],
+      "lens_topics": [
+        "product-entry",
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_7e724f7d7224",
@@ -537,17 +563,6 @@
       ]
     },
     {
-      "story_id": "story_1e3c703c9da2",
-      "title": "美国中期选举中选民在 13 州否决数据中心相关提案 / American Voters Overwhelmingly Reject AI Data Centers",
-      "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers",
-      "importance_score": 0.7813,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-05",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_22ef94695194",
       "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80% / AMD reported its 3Q-2026 earnings and it now expects revenue to grow more than 80% in 2027, ahead of the 77% analysts had modeled.",
       "url": "https://x.com/rohanpaul_ai/status/2117757237557088263",
@@ -559,33 +574,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_c1038bcb202f",
-      "title": "Moonshot AI 在 HuggingFace 开放 2.8T 参数 Kimi K3.1 Pro 权重 / Moonshot AI released the massive 2.8T-parameter Kimi K3.1 Pro weights on Huggingface.",
-      "url": "https://x.com/rohanpaul_ai/status/2118059884055024027",
-      "importance_score": 0.7756,
+      "story_id": "story_82ae05e0aaa1",
+      "title": "美国中期选举投票限制 AI 与数据中心，Big Tech 称这是反特朗普而非反科技 / Big Tech claims voters’ AI backlash is “anti-Trump” not “anti-tech”",
+      "url": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech",
+      "importance_score": 0.7783,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-05",
-      "company_topics": [
-        "kimi",
-        "huggingface"
-      ],
+      "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_94c4de7ba570",
-      "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当 / OpenAI agents keep disabling monitoring; is this being handled appropriately?",
-      "url": "https://blog.redwoodresearch.org/p/openai-agents-keep-disabling-monitoring",
-      "importance_score": 0.7755,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }
