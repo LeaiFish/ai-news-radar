@@ -1,0 +1,436 @@
+{
+  "kind": "daily",
+  "period_start": "2026-11-03T03:02:17.957517Z",
+  "period_end": "2026-11-04T03:02:17.957517Z",
+  "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
+  "input_id": "e96ed6945643d317a98284ce2ba0067a266428e93cdc6555222b9fa50d4130cd",
+  "previous_report_id": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
+  "schema": "radar_trend_report_v1",
+  "generated_at": "2026-11-04T03:12:09.545417+00:00",
+  "companies": {
+    "doubao": {
+      "state": "unchanged",
+      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "豆包办公试用活动延续",
+        "summary": "新用户体验套餐及签到额度仍用于降低办公体验门槛；本轮重读旧活动，不据此推断留存或付费转化。",
+        "evidence_ids": [
+          "doubao-allowance"
+        ]
+      },
+      "events": []
+    },
+    "qwen": {
+      "state": "unchanged",
+      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "千问进入国行Apple智能开发者预览体验",
+        "summary": "IT之家实测国行iOS 27.3开发者预览版出现Apple智能入口，并说明Siri、写作工具与视觉智能可调用千问。苹果官网确认整合关系，但仍写首批核心功能今年稍晚推出；当前保留开发者测试范围，不写正式全面开放或使用成效。",
+        "evidence_ids": [
+          "qwen-apple-beta",
+          "apple-qwen-integration"
+        ]
+      },
+      "events": [
+        {
+          "headline": "千问进入国行Apple智能开发者预览体验",
+          "summary": "IT之家实测国行iOS 27.3开发者预览版出现Apple智能入口，并说明Siri、写作工具与视觉智能可调用千问。苹果官网确认整合关系，但仍写首批核心功能今年稍晚推出；当前保留开发者测试范围，不写正式全面开放或使用成效。",
+          "evidence_ids": [
+            "qwen-apple-beta",
+            "apple-qwen-integration"
+          ],
+          "event_id": "qwen-apple-intelligence-ios273-beta",
+          "status": "supplement"
+        }
+      ]
+    },
+    "hunyuan": {
+      "state": "unchanged",
+      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "元宝继续提供结构化图文纪要",
+        "summary": "2.91.10仍列出录音结束后生成结构化图文纪要；相对日期不换算绝对日期，同一版本不重复计新。混元科研工具不直接计入元宝客户端更新。",
+        "evidence_ids": [
+          "yuanbao-minutes"
+        ]
+      },
+      "events": []
+    },
+    "openai": {
+      "state": "unchanged",
+      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "ChatGPT移动端双账号切换继续渐进推出",
+        "summary": "官方记录仍为10月30日的iOS与Android双账号切换，各账号的聊天、记忆与订阅独立。补齐原文复核，不作为今日新增；搜索量与人事报道不直接算应用更新。",
+        "evidence_ids": [
+          "chatgpt-account"
+        ]
+      },
+      "events": []
+    },
+    "anthropic": {
+      "state": "unchanged",
+      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Claude Code补齐会话恢复与权限交互修复",
+        "summary": "2.1.318修复继续会话时丢失先前对话、权限提示误接收按键及恢复工作流重复运行已完成代理等问题。属于任务可靠性修复，未证明核心任务范围或持续使用出现跃迁。",
+        "evidence_ids": [
+          "claude-code-318"
+        ]
+      },
+      "events": [
+        {
+          "headline": "Claude Code补齐会话恢复与权限交互修复",
+          "summary": "2.1.318修复继续会话时丢失先前对话、权限提示误接收按键及恢复工作流重复运行已完成代理等问题。属于任务可靠性修复，未证明核心任务范围或持续使用出现跃迁。",
+          "evidence_ids": [
+            "claude-code-318"
+          ],
+          "event_id": "claude-code-21318-session-permission-fixes",
+          "status": "new"
+        }
+      ]
+    },
+    "xai": {
+      "state": "unchanged",
+      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Grok购物卡片仍保留订单审批",
+        "summary": "官方0.78.1仍列出购物卡片、订单追踪与订阅管理，订单和修改保留确认。本轮未核实社交候选中的代打电话新发布，不将旧购物说明重复算新。",
+        "evidence_ids": [
+          "grok-shopping"
+        ]
+      },
+      "events": []
+    },
+    "google-gemini": {
+      "state": "unchanged",
+      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Gemini聊天内文件修改延续既有开放范围",
+        "summary": "原文确认聊天内生成、预览与修改文件；PDF支持网页和移动端，其他列明格式支持网页。本轮复核10月29日旧更新，不重复算新，也不推断使用成效。",
+        "evidence_ids": [
+          "gemini-files"
+        ]
+      },
+      "events": []
+    },
+    "meta-llama": {
+      "state": "unchanged",
+      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+      "judgment": null,
+      "changes": null,
+      "digest": {
+        "headline": "Muse新加坡连接器保持渐进推出边界",
+        "summary": "原文日期仍为10月27日，新加坡本地购物、出行等连接器渐进推出，部分体验晚于发布可用。敏感发送和购买保留确认；本轮无新增地区或持续使用证据。",
+        "evidence_ids": [
+          "muse-singapore"
+        ]
+      },
+      "events": []
+    }
+  },
+  "evidence": [
+    {
+      "id": "doubao-allowance",
+      "url": "https://www.ithome.com/1/020/224.htm",
+      "title": "豆包办公试用活动延续",
+      "source": "IT之家",
+      "published_at": "2026-10-30T17:14:29+08:00",
+      "event_at": "2026-10-30",
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "doubao"
+      ],
+      "level": "media",
+      "date_basis": "original_page",
+      "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+    },
+    {
+      "id": "qwen-apple-beta",
+      "url": "https://www.ithome.com/1/021/861.htm",
+      "title": "千问进入国行Apple智能开发者预览体验",
+      "source": "IT之家",
+      "published_at": "2026-11-04T03:08:12+08:00",
+      "event_at": "2026-11-04",
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "qwen"
+      ],
+      "level": "media",
+      "date_basis": "original_page",
+      "note": "原文日期为北京时间；媒体实测与官网整合说明交叉核对。官网无公告日期，不能用当前读取时间替代上线时间。"
+    },
+    {
+      "id": "apple-qwen-integration",
+      "url": "https://www.apple.com.cn/apple-intelligence/",
+      "title": "Apple智能：千问整合一体",
+      "source": "Apple",
+      "published_at": null,
+      "event_at": null,
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "qwen"
+      ],
+      "level": "official",
+      "date_basis": "undated_document",
+      "note": "官网确认Siri、视觉智能和写作工具可选择千问；页面仍称首批核心功能今年稍晚推出，不证明正式全面开放。"
+    },
+    {
+      "id": "yuanbao-minutes",
+      "url": "https://apps.apple.com/cn/app/id6480446430",
+      "title": "元宝继续提供结构化图文纪要",
+      "source": "腾讯 / App Store",
+      "published_at": null,
+      "event_at": null,
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "hunyuan"
+      ],
+      "level": "official",
+      "date_basis": "undated_document",
+      "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+    },
+    {
+      "id": "chatgpt-account",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "title": "ChatGPT移动端双账号切换继续渐进推出",
+      "source": "OpenAI",
+      "published_at": "2026-10-30",
+      "event_at": "2026-10-30",
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "openai"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+    },
+    {
+      "id": "claude-code-318",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+      "title": "Claude Code补齐会话恢复与权限交互修复",
+      "source": "Anthropic",
+      "published_at": "2026-11-04T00:01:03Z",
+      "event_at": "2026-11-04T00:01:03Z",
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "anthropic"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "官方GitHub release正文及公开API published_at交叉核对；不把代码修复等同已验证的运行成效。"
+    },
+    {
+      "id": "grok-shopping",
+      "url": "https://x.ai/changelog/bot",
+      "title": "Grok购物卡片仍保留订单审批",
+      "source": "xAI",
+      "published_at": "2026-10-27",
+      "event_at": "2026-10-27",
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "xai"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+    },
+    {
+      "id": "gemini-files",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
+      "title": "Gemini聊天内文件修改延续既有开放范围",
+      "source": "Google",
+      "published_at": "2026-10-29",
+      "event_at": "2026-10-29",
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "google-gemini"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+    },
+    {
+      "id": "muse-singapore",
+      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
+      "title": "Muse新加坡连接器保持渐进推出边界",
+      "source": "Meta",
+      "published_at": "2026-10-27",
+      "event_at": "2026-10-27",
+      "verified_at": "2026-11-04T03:12:09.545417+00:00",
+      "company_ids": [
+        "meta-llama"
+      ],
+      "level": "official",
+      "date_basis": "original_page",
+      "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+    }
+  ],
+  "overview": null,
+  "evolution": {
+    "companies": {
+      "doubao": {
+        "type": "continued",
+        "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "doubao-allowance"
+        ],
+        "signals": [
+          {
+            "direction_id": "commercialization",
+            "type": "continued",
+            "summary": "新用户体验套餐及签到额度仍用于降低办公体验门槛；本轮重读旧活动，不据此推断留存或付费转化。",
+            "stage": "available",
+            "evidence_ids": [
+              "doubao-allowance"
+            ]
+          }
+        ]
+      },
+      "qwen": {
+        "type": "continued",
+        "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "qwen-apple-beta",
+          "apple-qwen-integration"
+        ],
+        "signals": [
+          {
+            "direction_id": "mobile-entry",
+            "type": "continued",
+            "summary": "IT之家实测国行iOS 27.3开发者预览版出现Apple智能入口，并说明Siri、写作工具与视觉智能可调用千问。苹果官网确认整合关系，但仍写首批核心功能今年稍晚推出；当前保留开发者测试范围，不写正式全面开放或使用成效。",
+            "stage": "preview",
+            "evidence_ids": [
+              "qwen-apple-beta",
+              "apple-qwen-integration"
+            ]
+          }
+        ]
+      },
+      "hunyuan": {
+        "type": "continued",
+        "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "yuanbao-minutes"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "2.91.10仍列出录音结束后生成结构化图文纪要；相对日期不换算绝对日期，同一版本不重复计新。混元科研工具不直接计入元宝客户端更新。",
+            "stage": "available",
+            "evidence_ids": [
+              "yuanbao-minutes"
+            ]
+          }
+        ]
+      },
+      "openai": {
+        "type": "continued",
+        "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "chatgpt-account"
+        ],
+        "signals": [
+          {
+            "direction_id": "mobile-entry",
+            "type": "continued",
+            "summary": "官方记录仍为10月30日的iOS与Android双账号切换，各账号的聊天、记忆与订阅独立。补齐原文复核，不作为今日新增；搜索量与人事报道不直接算应用更新。",
+            "stage": "available",
+            "evidence_ids": [
+              "chatgpt-account"
+            ]
+          }
+        ]
+      },
+      "anthropic": {
+        "type": "continued",
+        "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "claude-code-318"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "2.1.318修复继续会话时丢失先前对话、权限提示误接收按键及恢复工作流重复运行已完成代理等问题。属于任务可靠性修复，未证明核心任务范围或持续使用出现跃迁。",
+            "stage": "available",
+            "evidence_ids": [
+              "claude-code-318"
+            ]
+          }
+        ]
+      },
+      "xai": {
+        "type": "continued",
+        "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "grok-shopping"
+        ],
+        "signals": [
+          {
+            "direction_id": "ongoing-assistance",
+            "type": "continued",
+            "summary": "官方0.78.1仍列出购物卡片、订单追踪与订阅管理，订单和修改保留确认。本轮未核实社交候选中的代打电话新发布，不将旧购物说明重复算新。",
+            "stage": "available",
+            "evidence_ids": [
+              "grok-shopping"
+            ]
+          }
+        ]
+      },
+      "google-gemini": {
+        "type": "continued",
+        "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "gemini-files"
+        ],
+        "signals": [
+          {
+            "direction_id": "shared-deliverables",
+            "type": "continued",
+            "summary": "原文确认聊天内生成、预览与修改文件；PDF支持网页和移动端，其他列明格式支持网页。本轮复核10月29日旧更新，不重复算新，也不推断使用成效。",
+            "stage": "available",
+            "evidence_ids": [
+              "gemini-files"
+            ]
+          }
+        ]
+      },
+      "meta-llama": {
+        "type": "continued",
+        "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+        "evidence_ids": [
+          "muse-singapore"
+        ],
+        "signals": [
+          {
+            "direction_id": "mobile-entry",
+            "type": "continued",
+            "summary": "原文日期仍为10月27日，新加坡本地购物、出行等连接器渐进推出，部分体验晚于发布可用。敏感发送和购买保留确认；本轮无新增地区或持续使用证据。",
+            "stage": "available",
+            "evidence_ids": [
+              "muse-singapore"
+            ]
+          }
+        ]
+      }
+    },
+    "overview": []
+  },
+  "report_id": "416736d02d43a612fb6d4e578d52683de408c9645e1e12640c1f4499720aa9c8"
+}
