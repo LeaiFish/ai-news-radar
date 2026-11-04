@@ -4,60 +4,75 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-03T22:18:39.031800Z",
+  "generated_at": "2026-11-04T01:11:46.005054Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
     "2026-11-04"
   ],
-  "story_count": 1299,
-  "unique_story_count": 1156,
+  "story_count": 1315,
+  "unique_story_count": 1202,
   "counts": {
     "by_company_topic": {
-      "anthropic": 210,
-      "apple": 20,
+      "anthropic": 211,
+      "apple": 21,
       "cursor": 13,
-      "deepseek": 36,
+      "deepseek": 34,
       "doubao": 7,
-      "google-gemini": 60,
-      "huggingface": 11,
+      "google-gemini": 62,
+      "huggingface": 9,
       "hunyuan": 8,
       "kimi": 6,
       "meta-llama": 3,
-      "microsoft": 10,
+      "microsoft": 11,
       "minimax": 5,
-      "nvidia": 32,
-      "openai": 172,
-      "openrouter": 10,
-      "perplexity": 1,
-      "qwen": 21,
-      "xai": 39,
-      "zhipu": 3
+      "nvidia": 30,
+      "openai": 173,
+      "openrouter": 12,
+      "perplexity": 2,
+      "qwen": 20,
+      "xai": 42,
+      "zhipu": 2
     },
     "by_lens_topic": {
-      "agent-ecosystem": 203,
+      "agent-ecosystem": 199,
       "monetization": 28,
-      "product-entry": 40,
-      "workplace": 28
+      "product-entry": 42,
+      "workplace": 27
     },
     "by_importance_label": {
-      "值得关注": 1085,
+      "值得关注": 1118,
       "多源热议": 26,
-      "官方更新": 73,
-      "行业动态": 115
+      "官方更新": 64,
+      "行业动态": 107
     },
     "by_source_count_bucket": {
-      "1": 1210,
-      "2": 62,
+      "1": 1224,
+      "2": 64,
       "3+": 27
     }
   },
   "top_stories": [
     {
+      "story_id": "story_e2a9defc33ad",
+      "title": "Copilot 使用 API 中的 BYOK 和企业自定义模型 / BYOK and enterprise custom models in the Copilot usage API",
+      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+      "importance_score": 0.8503,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_ca1ade1b3eb8",
       "title": "StateBench：测试语言模型如何在长文档中追踪状态变化 / StateBench: Testing how language models track state changes over long documents",
       "url": "https://huggingface.co/blog/allenai/statebench",
-      "importance_score": 0.8473,
+      "importance_score": 0.8405,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -65,47 +80,6 @@
         "huggingface"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_b15c6d459b33",
-      "title": "IBM Research 发布 Palette：用 20B 开源模型按你的设计语言生成幻灯片 / Palette: teaching a small model to build decks in your design language",
-      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "importance_score": 0.8457,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4408f5c55929",
-      "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
-      "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
-      "importance_score": 0.8442,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_fa9b2c6b49bd",
-      "title": "为什么人类洞察力是构建更好代理的战略优势 / Why human insight is a strategic advantage for building better agents",
-      "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
-      "importance_score": 0.8427,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     },
     {
       "story_id": "story_aa1d1403b32a",
@@ -117,6 +91,19 @@
       "archive_date": "2026-11-03",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b15c6d459b33",
+      "title": "IBM Research 发布 Palette：用 20B 开源模型按你的设计语言生成幻灯片 / Palette: teaching a small model to build decks in your design language",
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "importance_score": 0.839,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -134,39 +121,25 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3e75208cf987",
-      "title": "LangSmith BYOC 现已在 AWS、Azure 和 Google Cloud 上推出 / LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
-      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
-      "importance_score": 0.8357,
+      "story_id": "story_4408f5c55929",
+      "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
+      "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
+      "importance_score": 0.8375,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
-      "company_topics": [],
+      "company_topics": [
+        "huggingface"
+      ],
       "lens_topics": [
         "agent-ecosystem"
       ]
     },
     {
-      "story_id": "story_46598a98a79d",
-      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
-      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
-      "importance_score": 0.8344,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_4ff814a9f8cb",
-      "title": "我们如何优化深度代理的浏览器使用 / How We Optimized Browser Use for Deep Agents",
-      "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
-      "importance_score": 0.8325,
+      "story_id": "story_fa9b2c6b49bd",
+      "title": "为什么人类洞察力是构建更好代理的战略优势 / Why human insight is a strategic advantage for building better agents",
+      "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
+      "importance_score": 0.8354,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -189,6 +162,35 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_3e75208cf987",
+      "title": "LangSmith BYOC 现已在 AWS、Azure 和 Google Cloud 上推出 / LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
+      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
+      "importance_score": 0.8287,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_46598a98a79d",
+      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
+      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+      "importance_score": 0.8278,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "microsoft"
+      ],
+      "lens_topics": [
+        "agent-ecosystem",
+        "workplace"
+      ]
+    },
+    {
       "story_id": "story_c95c4e70e17c",
       "title": "星期五，21:47，结帐再次变慢：使用 CMS MCP 进行 20 分钟故障排除 / Friday, 21:47, Checkout Is Slow Again: Twenty Minutes of Troubleshooting with CMS MCP",
       "url": "https://www.alibabacloud.com/blog/friday-2147-checkout-is-slow-again-twenty-minutes-of-troubleshooting-with-cms-mcp_603721",
@@ -202,10 +204,34 @@
       ]
     },
     {
+      "story_id": "story_4ff814a9f8cb",
+      "title": "我们如何优化深度代理的浏览器使用 / How We Optimized Browser Use for Deep Agents",
+      "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
+      "importance_score": 0.8256,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_4e7bf3741e96",
+      "title": "Krea 3 Technical Report",
+      "url": "https://www.krea.ai/blog/krea-3-technical-report",
+      "importance_score": 0.8216,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_fbd820eb18a9",
       "title": "Accelerating engineering for the physical world",
       "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-      "importance_score": 0.8271,
+      "importance_score": 0.8208,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
@@ -253,19 +279,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e53a6dd32ac3",
-      "title": "How Cisco defends at machine speed with OpenAI",
-      "url": "https://openai.com/index/cisco-cyber",
-      "importance_score": 0.8184,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_e2ecfff8e8ae",
       "title": "元宝 2.91.10 官方版本更新",
       "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.91.10",
@@ -279,15 +292,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7ee3fbdb08d6",
-      "title": "CWE-bench v2: More coverage, quality, and transparency",
-      "url": "https://huggingface.co/blog/cwe-bench",
-      "importance_score": 0.8104,
+      "story_id": "story_e53a6dd32ac3",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "url": "https://openai.com/index/cisco-cyber",
+      "importance_score": 0.8124,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [
-        "huggingface"
+        "openai"
       ],
       "lens_topics": []
     },
@@ -331,6 +344,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_22ef94695194",
+      "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80% / AMD reported its 3Q-2026 earnings and it now expects revenue to grow more than 80% in 2027, ahead of the 77% analysts had modeled.",
+      "url": "https://x.com/rohanpaul_ai/status/2117757237557088263",
+      "importance_score": 0.8086,
+      "importance_label": "行业动态",
+      "source_count": 2,
+      "archive_date": "2026-11-04",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_f47b50344903",
       "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰 / Introducing the Grid Protectors Program",
       "url": "https://openai.com/index/grid-protectors-program",
@@ -338,19 +362,6 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5ab1c1c739d8",
-      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-      "importance_score": 0.8024,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
       "company_topics": [
         "openai"
       ],
@@ -383,21 +394,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_7b2c335e0421",
-      "title": "千问办公客户端更新：千问办公 1.5.0",
-      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-11-03",
-      "importance_score": 0.7944,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "qwen"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
       "story_id": "story_84bdb0bd3fbc",
       "title": "Qwen Memory Agent：将内存视为可测量的工程问题 / Qwen Memory Agent: Treating Memory as a Measurable Engineering Problem",
       "url": "https://www.alibabacloud.com/blog/qwen-memory-agent-treating-memory-as-a-measurable-engineering-problem_603719",
@@ -426,6 +422,21 @@
       ]
     },
     {
+      "story_id": "story_acbb19ffb2f0",
+      "title": "Claude Code 优化闲置会话压缩并在 Pro/Max 增加用量提醒 / Coming back to an old session got lighter on your usage.",
+      "url": "https://x.com/ClaudeDevs/status/2117670659715375344",
+      "importance_score": 0.7741,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
       "story_id": "story_1d2b0f6f33d3",
       "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付 / Anthropic has committed $895.4B to computing and infrastructure, with $447.5B due before 2031.",
       "url": "https://x.com/rohanpaul_ai/status/2117368258571784296",
@@ -433,47 +444,6 @@
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-03",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_459b130c13c2",
-      "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺 / Running Dry",
-      "url": "https://www.wheresyoured.at/running-dry",
-      "importance_score": 0.773,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "openai",
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_39eedde8ead2",
-      "title": "国行 Apple 智能与 Siri 随 iOS 27.3 开发者预览版上线，iPhone 15 Pro 及更新机型可用",
-      "url": "https://www.ithome.com/1/021/861.htm",
-      "importance_score": 0.7715,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "qwen",
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d120b55debad",
-      "title": "Anthropic S-1 新披露显示算力成本占比升至 58%，利润率承压 / Anthropic is still grappling with the economics of compute",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute",
-      "importance_score": 0.7696,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
       "company_topics": [
         "anthropic"
       ],
@@ -508,15 +478,82 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_aa75690ca1ff",
-      "title": "OpenAI 称 ChatGPT 搜索量已达 Google 的 20% / OpenAI says ChatGPT is catching up to Google in search",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
-      "importance_score": 0.767,
+      "story_id": "story_efa31e635cc5",
+      "title": "Anthropic发布开源系统FlashProve:通过密码学指纹实现AI模型身份可验证",
+      "url": "https://www.aibase.com/news/32061",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_85a34f88a0d7",
+      "title": "挑战搜索巨头初见成效：OpenAI官方证实，ChatGPT搜索查询量已达谷歌的20%",
+      "url": "https://www.aibase.com/news/32060",
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "source_count": 1,
       "archive_date": "2026-11-04",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_794978ef681c",
+      "title": "藏在卫生纸里的录音器，扯出 OpenAI 多年安全积弊",
+      "url": "https://www.aibase.com/news/32062",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_5d284baa8c5a",
+      "title": "OpenAI重磅宣布聘请前优步总裁吉尔·黑泽尔贝克担任首席企业事务官",
+      "url": "https://www.aibase.com/news/32059",
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_459b130c13c2",
+      "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺 / Running Dry",
+      "url": "https://www.wheresyoured.at/running-dry",
+      "importance_score": 0.7661,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_39eedde8ead2",
+      "title": "国行 Apple 智能与 Siri 随 iOS 27.3 开发者预览版上线，iPhone 15 Pro 及更新机型可用",
+      "url": "https://www.ithome.com/1/021/861.htm",
+      "importance_score": 0.7645,
+      "importance_label": "行业动态",
+      "source_count": 1,
+      "archive_date": "2026-11-04",
+      "company_topics": [
+        "qwen",
+        "apple"
       ],
       "lens_topics": []
     },
@@ -534,56 +571,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a6428b15d16b",
-      "title": "联合国副秘书长点赞!千问AI耳夹式耳机亮相乌镇互联网大会",
-      "url": "https://www.aibase.com/news/32057",
-      "importance_score": 0.7609,
+      "story_id": "story_d120b55debad",
+      "title": "Anthropic S-1 新披露显示算力成本占比升至 58%，利润率承压 / Anthropic is still grappling with the economics of compute",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute",
+      "importance_score": 0.7628,
       "importance_label": "行业动态",
       "source_count": 1,
-      "archive_date": "2026-11-03",
+      "archive_date": "2026-11-04",
       "company_topics": [
-        "qwen"
+        "anthropic"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_87193ddcb49b",
-      "title": "苹果Apple Watch迎来Audio Intelligence，对话摘要与实时倒带功能开启Beta测试",
-      "url": "https://www.aibase.com/news/32054",
-      "importance_score": 0.7609,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5c950af68297",
-      "title": "电动车退烧、AI 储能烧起来：LG 新能源把产能挪向数据中心",
-      "url": "https://www.aibase.com/news/32058",
-      "importance_score": 0.7609,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2c304998d0ff",
-      "title": "腾讯混元重磅发布Hyra 2.0，让AI Agent全面参与科学大模型与硬核研发",
-      "url": "https://www.aibase.com/news/32055",
-      "importance_score": 0.7609,
-      "importance_label": "行业动态",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "hunyuan"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     }
   ]
 }
