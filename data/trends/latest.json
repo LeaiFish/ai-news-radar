@@ -50,13 +50,13 @@
       },
       "changes": null,
       "daily": {
-        "generated_at": "2026-11-04T03:12:09.545417+00:00",
-        "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-        "period_start": "2026-11-03T03:02:17.957517Z",
-        "period_end": "2026-11-04T03:02:17.957517Z",
+        "generated_at": "2026-11-05T03:18:29.000828+00:00",
+        "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+        "period_start": "2026-11-04T03:11:51.914682Z",
+        "period_end": "2026-11-05T03:11:51.914682Z",
         "content": {
-          "headline": "豆包办公试用活动延续",
-          "summary": "新用户体验套餐及签到额度仍用于降低办公体验门槛；本轮重读旧活动，不据此推断留存或付费转化。",
+          "headline": "豆包办公延续试用与签到额度",
+          "summary": "新用户试用和签到额度继续降低办公体验门槛；重读旧活动，不计新事件，也不推断付费转化。",
           "evidence_ids": [
             "doubao-allowance"
           ]
@@ -65,17 +65,17 @@
           {
             "id": "doubao-allowance",
             "url": "https://www.ithome.com/1/020/224.htm",
-            "title": "豆包办公试用活动延续",
+            "title": "豆包办公延续试用与签到额度",
             "source": "IT之家",
             "published_at": "2026-10-30T17:14:29+08:00",
             "event_at": "2026-10-30",
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
+            "verified_at": "2026-11-05T03:18:29.000828+00:00",
             "company_ids": [
               "doubao"
             ],
             "level": "media",
             "date_basis": "original_page",
-            "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+            "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
           }
         ]
       },
@@ -109,56 +109,40 @@
           }
         ]
       },
-      "last_checked_at": "2026-11-04T03:12:09.545417+00:00",
+      "last_checked_at": "2026-11-05T03:18:29.000828+00:00",
       "state": "unchanged",
-      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。"
+      "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。"
     },
     "qwen": {
       "judgment": null,
       "changes": null,
       "daily": {
-        "generated_at": "2026-11-04T03:12:09.545417+00:00",
-        "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-        "period_start": "2026-11-03T03:02:17.957517Z",
-        "period_end": "2026-11-04T03:02:17.957517Z",
+        "generated_at": "2026-11-05T03:18:29.000828+00:00",
+        "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+        "period_start": "2026-11-04T03:11:51.914682Z",
+        "period_end": "2026-11-05T03:11:51.914682Z",
         "content": {
-          "headline": "千问进入国行Apple智能开发者预览体验",
-          "summary": "IT之家实测国行iOS 27.3开发者预览版出现Apple智能入口，并说明Siri、写作工具与视觉智能可调用千问。苹果官网确认整合关系，但仍写首批核心功能今年稍晚推出；当前保留开发者测试范围，不写正式全面开放或使用成效。",
+          "headline": "千问接入国行Apple智能仍属开发者预览",
+          "summary": "复核已报道的开发者预览，不视作全面开放。家电公众号遇到验证码，未接受该候选事实。",
           "evidence_ids": [
-            "qwen-apple-beta",
-            "apple-qwen-integration"
+            "qwen-apple-beta"
           ]
         },
         "evidence": [
           {
             "id": "qwen-apple-beta",
             "url": "https://www.ithome.com/1/021/861.htm",
-            "title": "千问进入国行Apple智能开发者预览体验",
+            "title": "千问接入国行Apple智能仍属开发者预览",
             "source": "IT之家",
             "published_at": "2026-11-04T03:08:12+08:00",
             "event_at": "2026-11-04",
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
+            "verified_at": "2026-11-05T03:18:29.000828+00:00",
             "company_ids": [
               "qwen"
             ],
             "level": "media",
             "date_basis": "original_page",
-            "note": "原文日期为北京时间；媒体实测与官网整合说明交叉核对。官网无公告日期，不能用当前读取时间替代上线时间。"
-          },
-          {
-            "id": "apple-qwen-integration",
-            "url": "https://www.apple.com.cn/apple-intelligence/",
-            "title": "Apple智能：千问整合一体",
-            "source": "Apple",
-            "published_at": null,
-            "event_at": null,
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
-            "company_ids": [
-              "qwen"
-            ],
-            "level": "official",
-            "date_basis": "undated_document",
-            "note": "官网确认Siri、视觉智能和写作工具可选择千问；页面仍称首批核心功能今年稍晚推出，不证明正式全面开放。"
+            "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
           }
         ]
       },
@@ -192,21 +176,21 @@
           }
         ]
       },
-      "last_checked_at": "2026-11-04T03:12:09.545417+00:00",
+      "last_checked_at": "2026-11-05T03:18:29.000828+00:00",
       "state": "unchanged",
-      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。"
+      "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。"
     },
     "hunyuan": {
       "judgment": null,
       "changes": null,
       "daily": {
-        "generated_at": "2026-11-04T03:12:09.545417+00:00",
-        "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-        "period_start": "2026-11-03T03:02:17.957517Z",
-        "period_end": "2026-11-04T03:02:17.957517Z",
+        "generated_at": "2026-11-05T03:18:29.000828+00:00",
+        "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+        "period_start": "2026-11-04T03:11:51.914682Z",
+        "period_end": "2026-11-05T03:11:51.914682Z",
         "content": {
           "headline": "元宝继续提供结构化图文纪要",
-          "summary": "2.91.10仍列出录音结束后生成结构化图文纪要；相对日期不换算绝对日期，同一版本不重复计新。混元科研工具不直接计入元宝客户端更新。",
+          "summary": "2.91.10仍列出录音结束后生成结构化图文纪要；相对日期不换算绝对日期，旧版本不重复计新。混元模型发布不能直接视为元宝应用更新。",
           "evidence_ids": [
             "yuanbao-minutes"
           ]
@@ -219,13 +203,13 @@
             "source": "腾讯 / App Store",
             "published_at": null,
             "event_at": null,
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
+            "verified_at": "2026-11-05T03:18:29.000828+00:00",
             "company_ids": [
               "hunyuan"
             ],
             "level": "official",
             "date_basis": "undated_document",
-            "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+            "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
           }
         ]
       },
@@ -259,9 +243,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-11-04T03:12:09.545417+00:00",
+      "last_checked_at": "2026-11-05T03:18:29.000828+00:00",
       "state": "unchanged",
-      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。"
+      "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。"
     },
     "openai": {
       "judgment": {
@@ -505,32 +489,32 @@
         ]
       },
       "daily": {
-        "generated_at": "2026-11-04T03:12:09.545417+00:00",
-        "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-        "period_start": "2026-11-03T03:02:17.957517Z",
-        "period_end": "2026-11-04T03:02:17.957517Z",
+        "generated_at": "2026-11-05T03:18:29.000828+00:00",
+        "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+        "period_start": "2026-11-04T03:11:51.914682Z",
+        "period_end": "2026-11-05T03:11:51.914682Z",
         "content": {
-          "headline": "ChatGPT移动端双账号切换继续渐进推出",
-          "summary": "官方记录仍为10月30日的iOS与Android双账号切换，各账号的聊天、记忆与订阅独立。补齐原文复核，不作为今日新增；搜索量与人事报道不直接算应用更新。",
+          "headline": "ChatGPT补入GIF制作与跨对话参考图复用",
+          "summary": "11月4日官方记录列出GIF制作逐步推出，可调整播放速度并分享；保存参考图可在后续对话再次调用。相较此前持续办公判断，这是创作与素材复用功能补充，未证明核心任务路径或使用规模跃迁。公告只有日期，保守补证，不计本日真实新增。",
           "evidence_ids": [
-            "chatgpt-account"
+            "chatgpt-images26"
           ]
         },
         "evidence": [
           {
-            "id": "chatgpt-account",
+            "id": "chatgpt-images26",
             "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-            "title": "ChatGPT移动端双账号切换继续渐进推出",
+            "title": "ChatGPT补入GIF制作与跨对话参考图复用",
             "source": "OpenAI",
-            "published_at": "2026-10-30",
-            "event_at": "2026-10-30",
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
+            "published_at": "2026-11-04",
+            "event_at": "2026-11-04",
+            "verified_at": "2026-11-05T03:18:29.000828+00:00",
             "company_ids": [
               "openai"
             ],
             "level": "official",
             "date_basis": "original_page",
-            "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+            "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
           }
         ]
       },
@@ -564,9 +548,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-11-04T03:12:09.545417+00:00",
+      "last_checked_at": "2026-11-05T03:18:29.000828+00:00",
       "state": "unchanged",
-      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。"
+      "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。"
     },
     "anthropic": {
       "judgment": {
@@ -746,32 +730,32 @@
         ]
       },
       "daily": {
-        "generated_at": "2026-11-04T03:12:09.545417+00:00",
-        "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-        "period_start": "2026-11-03T03:02:17.957517Z",
-        "period_end": "2026-11-04T03:02:17.957517Z",
+        "generated_at": "2026-11-05T03:18:29.000828+00:00",
+        "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+        "period_start": "2026-11-04T03:11:51.914682Z",
+        "period_end": "2026-11-05T03:11:51.914682Z",
         "content": {
-          "headline": "Claude Code补齐会话恢复与权限交互修复",
-          "summary": "2.1.318修复继续会话时丢失先前对话、权限提示误接收按键及恢复工作流重复运行已完成代理等问题。属于任务可靠性修复，未证明核心任务范围或持续使用出现跃迁。",
+          "headline": "Claude Code延续会话恢复与权限修复",
+          "summary": "官方最新版本仍为2.1.318，会话恢复、权限提示和后台任务修复已在昨日记录，本轮不重复计新，也不据例行修复加强判断。",
           "evidence_ids": [
-            "claude-code-318"
+            "claude-code318"
           ]
         },
         "evidence": [
           {
-            "id": "claude-code-318",
+            "id": "claude-code318",
             "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
-            "title": "Claude Code补齐会话恢复与权限交互修复",
-            "source": "Anthropic",
+            "title": "Claude Code延续会话恢复与权限修复",
+            "source": "Anthropic / GitHub",
             "published_at": "2026-11-04T00:01:03Z",
             "event_at": "2026-11-04T00:01:03Z",
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
+            "verified_at": "2026-11-05T03:18:29.000828+00:00",
             "company_ids": [
               "anthropic"
             ],
             "level": "official",
             "date_basis": "original_page",
-            "note": "官方GitHub release正文及公开API published_at交叉核对；不把代码修复等同已验证的运行成效。"
+            "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
           }
         ]
       },
@@ -805,9 +789,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-11-04T03:12:09.545417+00:00",
+      "last_checked_at": "2026-11-05T03:18:29.000828+00:00",
       "state": "unchanged",
-      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。"
+      "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。"
     },
     "xai": {
       "judgment": {
@@ -858,13 +842,13 @@
       },
       "changes": null,
       "daily": {
-        "generated_at": "2026-11-04T03:12:09.545417+00:00",
-        "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-        "period_start": "2026-11-03T03:02:17.957517Z",
-        "period_end": "2026-11-04T03:02:17.957517Z",
+        "generated_at": "2026-11-05T03:18:29.000828+00:00",
+        "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+        "period_start": "2026-11-04T03:11:51.914682Z",
+        "period_end": "2026-11-05T03:11:51.914682Z",
         "content": {
-          "headline": "Grok购物卡片仍保留订单审批",
-          "summary": "官方0.78.1仍列出购物卡片、订单追踪与订阅管理，订单和修改保留确认。本轮未核实社交候选中的代打电话新发布，不将旧购物说明重复算新。",
+          "headline": "Grok购物与订阅仍保留用户确认",
+          "summary": "官方更新页仍列0.78.1购物卡片、订单跟踪和订阅模板，购买及变更保留确认。电话功能候选未完成官方原文核验，不进入已确认事实。",
           "evidence_ids": [
             "grok-shopping"
           ]
@@ -873,17 +857,17 @@
           {
             "id": "grok-shopping",
             "url": "https://x.ai/changelog/bot",
-            "title": "Grok购物卡片仍保留订单审批",
+            "title": "Grok购物与订阅仍保留用户确认",
             "source": "xAI",
             "published_at": "2026-10-27",
             "event_at": "2026-10-27",
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
+            "verified_at": "2026-11-05T03:18:29.000828+00:00",
             "company_ids": [
               "xai"
             ],
             "level": "official",
             "date_basis": "original_page",
-            "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+            "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
           }
         ]
       },
@@ -917,9 +901,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-11-04T03:12:09.545417+00:00",
+      "last_checked_at": "2026-11-05T03:18:29.000828+00:00",
       "state": "unchanged",
-      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。"
+      "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。"
     },
     "google-gemini": {
       "judgment": {
@@ -1068,32 +1052,32 @@
         ]
       },
       "daily": {
-        "generated_at": "2026-11-04T03:12:09.545417+00:00",
-        "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-        "period_start": "2026-11-03T03:02:17.957517Z",
-        "period_end": "2026-11-04T03:02:17.957517Z",
+        "generated_at": "2026-11-05T03:18:29.000828+00:00",
+        "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+        "period_start": "2026-11-04T03:11:51.914682Z",
+        "period_end": "2026-11-05T03:11:51.914682Z",
         "content": {
-          "headline": "Gemini聊天内文件修改延续既有开放范围",
-          "summary": "原文确认聊天内生成、预览与修改文件；PDF支持网页和移动端，其他列明格式支持网页。本轮复核10月29日旧更新，不重复算新，也不推断使用成效。",
+          "headline": "Gemini补齐Gems迁移为技能的时间与能力边界",
+          "summary": "相较此前Skills保存和组合做事方法的判断，帮助页补齐迁移安排：成年个人账号11月17日Gems转为只读，12月17日移除；工作及教育账号在2027年另行迁移。技能当前尚不支持Canvas、Deep Research等功能，部分知识文件受格式与总量限制。文档发表时间未知，计划日期不当作已发生或本日新增。",
           "evidence_ids": [
-            "gemini-files"
+            "gemini-gems-migration"
           ]
         },
         "evidence": [
           {
-            "id": "gemini-files",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
-            "title": "Gemini聊天内文件修改延续既有开放范围",
+            "id": "gemini-gems-migration",
+            "url": "https://support.google.com/gemini/answer/18560919",
+            "title": "Gemini补齐Gems迁移为技能的时间与能力边界",
             "source": "Google",
-            "published_at": "2026-10-29",
-            "event_at": "2026-10-29",
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
+            "published_at": null,
+            "event_at": null,
+            "verified_at": "2026-11-05T03:18:29.000828+00:00",
             "company_ids": [
               "google-gemini"
             ],
             "level": "official",
-            "date_basis": "original_page",
-            "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+            "date_basis": "undated_document",
+            "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
           }
         ]
       },
@@ -1127,9 +1111,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-11-04T03:12:09.545417+00:00",
+      "last_checked_at": "2026-11-05T03:18:29.000828+00:00",
       "state": "unchanged",
-      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。"
+      "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。"
     },
     "meta-llama": {
       "judgment": {
@@ -1180,13 +1164,13 @@
       },
       "changes": null,
       "daily": {
-        "generated_at": "2026-11-04T03:12:09.545417+00:00",
-        "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-        "period_start": "2026-11-03T03:02:17.957517Z",
-        "period_end": "2026-11-04T03:02:17.957517Z",
+        "generated_at": "2026-11-05T03:18:29.000828+00:00",
+        "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+        "period_start": "2026-11-04T03:11:51.914682Z",
+        "period_end": "2026-11-05T03:11:51.914682Z",
         "content": {
-          "headline": "Muse新加坡连接器保持渐进推出边界",
-          "summary": "原文日期仍为10月27日，新加坡本地购物、出行等连接器渐进推出，部分体验晚于发布可用。敏感发送和购买保留确认；本轮无新增地区或持续使用证据。",
+          "headline": "Muse新加坡开放延续既有地域扩展",
+          "summary": "重读新加坡开放与本地品牌连接公告，沿用已纠正的10月27日可见原文日期，不用元数据10月28日重复计新。地域开放不证明持续采用，分享恢复状态仍未核实。",
           "evidence_ids": [
             "muse-singapore"
           ]
@@ -1195,17 +1179,17 @@
           {
             "id": "muse-singapore",
             "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
-            "title": "Muse新加坡连接器保持渐进推出边界",
+            "title": "Muse新加坡开放延续既有地域扩展",
             "source": "Meta",
             "published_at": "2026-10-27",
             "event_at": "2026-10-27",
-            "verified_at": "2026-11-04T03:12:09.545417+00:00",
+            "verified_at": "2026-11-05T03:18:29.000828+00:00",
             "company_ids": [
               "meta-llama"
             ],
             "level": "official",
             "date_basis": "original_page",
-            "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+            "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
           }
         ]
       },
@@ -1239,9 +1223,9 @@
           }
         ]
       },
-      "last_checked_at": "2026-11-04T03:12:09.545417+00:00",
+      "last_checked_at": "2026-11-05T03:18:29.000828+00:00",
       "state": "unchanged",
-      "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。"
+      "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。"
     }
   },
   "overview": {
@@ -1474,22 +1458,22 @@
   },
   "daily": {
     "kind": "daily",
-    "period_start": "2026-11-03T03:02:17.957517Z",
-    "period_end": "2026-11-04T03:02:17.957517Z",
-    "source_snapshot_at": "2026-11-04T03:02:17.957517Z",
-    "input_id": "e96ed6945643d317a98284ce2ba0067a266428e93cdc6555222b9fa50d4130cd",
-    "previous_report_id": "888c754e893fb4b7776af0888f4c00a7d1dea6555945f732653f53ba8ca61e29",
+    "period_start": "2026-11-04T03:11:51.914682Z",
+    "period_end": "2026-11-05T03:11:51.914682Z",
+    "source_snapshot_at": "2026-11-05T03:11:51.914682Z",
+    "input_id": "3fb34b9f0e48d4b1e4bc925dc895c6939e719cdff2768a78c34be7a30d0047a5",
+    "previous_report_id": "416736d02d43a612fb6d4e578d52683de408c9645e1e12640c1f4499720aa9c8",
     "schema": "radar_trend_report_v1",
-    "generated_at": "2026-11-04T03:12:09.545417+00:00",
+    "generated_at": "2026-11-05T03:18:29.000828+00:00",
     "companies": {
       "doubao": {
         "state": "unchanged",
-        "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+        "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "豆包办公试用活动延续",
-          "summary": "新用户体验套餐及签到额度仍用于降低办公体验门槛；本轮重读旧活动，不据此推断留存或付费转化。",
+          "headline": "豆包办公延续试用与签到额度",
+          "summary": "新用户试用和签到额度继续降低办公体验门槛；重读旧活动，不计新事件，也不推断付费转化。",
           "evidence_ids": [
             "doubao-allowance"
           ]
@@ -1498,38 +1482,26 @@
       },
       "qwen": {
         "state": "unchanged",
-        "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+        "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "千问进入国行Apple智能开发者预览体验",
-          "summary": "IT之家实测国行iOS 27.3开发者预览版出现Apple智能入口，并说明Siri、写作工具与视觉智能可调用千问。苹果官网确认整合关系，但仍写首批核心功能今年稍晚推出；当前保留开发者测试范围，不写正式全面开放或使用成效。",
+          "headline": "千问接入国行Apple智能仍属开发者预览",
+          "summary": "复核已报道的开发者预览，不视作全面开放。家电公众号遇到验证码，未接受该候选事实。",
           "evidence_ids": [
-            "qwen-apple-beta",
-            "apple-qwen-integration"
+            "qwen-apple-beta"
           ]
         },
-        "events": [
-          {
-            "headline": "千问进入国行Apple智能开发者预览体验",
-            "summary": "IT之家实测国行iOS 27.3开发者预览版出现Apple智能入口，并说明Siri、写作工具与视觉智能可调用千问。苹果官网确认整合关系，但仍写首批核心功能今年稍晚推出；当前保留开发者测试范围，不写正式全面开放或使用成效。",
-            "evidence_ids": [
-              "qwen-apple-beta",
-              "apple-qwen-integration"
-            ],
-            "event_id": "qwen-apple-intelligence-ios273-beta",
-            "status": "supplement"
-          }
-        ]
+        "events": []
       },
       "hunyuan": {
         "state": "unchanged",
-        "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+        "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
           "headline": "元宝继续提供结构化图文纪要",
-          "summary": "2.91.10仍列出录音结束后生成结构化图文纪要；相对日期不换算绝对日期，同一版本不重复计新。混元科研工具不直接计入元宝客户端更新。",
+          "summary": "2.91.10仍列出录音结束后生成结构化图文纪要；相对日期不换算绝对日期，旧版本不重复计新。混元模型发布不能直接视为元宝应用更新。",
           "evidence_ids": [
             "yuanbao-minutes"
           ]
@@ -1538,50 +1510,50 @@
       },
       "openai": {
         "state": "unchanged",
-        "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+        "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "ChatGPT移动端双账号切换继续渐进推出",
-          "summary": "官方记录仍为10月30日的iOS与Android双账号切换，各账号的聊天、记忆与订阅独立。补齐原文复核，不作为今日新增；搜索量与人事报道不直接算应用更新。",
+          "headline": "ChatGPT补入GIF制作与跨对话参考图复用",
+          "summary": "11月4日官方记录列出GIF制作逐步推出，可调整播放速度并分享；保存参考图可在后续对话再次调用。相较此前持续办公判断，这是创作与素材复用功能补充，未证明核心任务路径或使用规模跃迁。公告只有日期，保守补证，不计本日真实新增。",
           "evidence_ids": [
-            "chatgpt-account"
-          ]
-        },
-        "events": []
-      },
-      "anthropic": {
-        "state": "unchanged",
-        "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
-        "judgment": null,
-        "changes": null,
-        "digest": {
-          "headline": "Claude Code补齐会话恢复与权限交互修复",
-          "summary": "2.1.318修复继续会话时丢失先前对话、权限提示误接收按键及恢复工作流重复运行已完成代理等问题。属于任务可靠性修复，未证明核心任务范围或持续使用出现跃迁。",
-          "evidence_ids": [
-            "claude-code-318"
+            "chatgpt-images26"
           ]
         },
         "events": [
           {
-            "headline": "Claude Code补齐会话恢复与权限交互修复",
-            "summary": "2.1.318修复继续会话时丢失先前对话、权限提示误接收按键及恢复工作流重复运行已完成代理等问题。属于任务可靠性修复，未证明核心任务范围或持续使用出现跃迁。",
+            "headline": "ChatGPT补入GIF制作与跨对话参考图复用",
+            "summary": "11月4日官方记录列出GIF制作逐步推出，可调整播放速度并分享；保存参考图可在后续对话再次调用。相较此前持续办公判断，这是创作与素材复用功能补充，未证明核心任务路径或使用规模跃迁。公告只有日期，保守补证，不计本日真实新增。",
             "evidence_ids": [
-              "claude-code-318"
+              "chatgpt-images26"
             ],
-            "event_id": "claude-code-21318-session-permission-fixes",
-            "status": "new"
+            "event_id": "chatgpt-images26-gif-saved-references",
+            "status": "supplement"
           }
         ]
       },
-      "xai": {
+      "anthropic": {
         "state": "unchanged",
-        "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+        "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "Grok购物卡片仍保留订单审批",
-          "summary": "官方0.78.1仍列出购物卡片、订单追踪与订阅管理，订单和修改保留确认。本轮未核实社交候选中的代打电话新发布，不将旧购物说明重复算新。",
+          "headline": "Claude Code延续会话恢复与权限修复",
+          "summary": "官方最新版本仍为2.1.318，会话恢复、权限提示和后台任务修复已在昨日记录，本轮不重复计新，也不据例行修复加强判断。",
+          "evidence_ids": [
+            "claude-code318"
+          ]
+        },
+        "events": []
+      },
+      "xai": {
+        "state": "unchanged",
+        "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
+        "judgment": null,
+        "changes": null,
+        "digest": {
+          "headline": "Grok购物与订阅仍保留用户确认",
+          "summary": "官方更新页仍列0.78.1购物卡片、订单跟踪和订阅模板，购买及变更保留确认。电话功能候选未完成官方原文核验，不进入已确认事实。",
           "evidence_ids": [
             "grok-shopping"
           ]
@@ -1590,26 +1562,36 @@
       },
       "google-gemini": {
         "state": "unchanged",
-        "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+        "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "Gemini聊天内文件修改延续既有开放范围",
-          "summary": "原文确认聊天内生成、预览与修改文件；PDF支持网页和移动端，其他列明格式支持网页。本轮复核10月29日旧更新，不重复算新，也不推断使用成效。",
+          "headline": "Gemini补齐Gems迁移为技能的时间与能力边界",
+          "summary": "相较此前Skills保存和组合做事方法的判断，帮助页补齐迁移安排：成年个人账号11月17日Gems转为只读，12月17日移除；工作及教育账号在2027年另行迁移。技能当前尚不支持Canvas、Deep Research等功能，部分知识文件受格式与总量限制。文档发表时间未知，计划日期不当作已发生或本日新增。",
           "evidence_ids": [
-            "gemini-files"
+            "gemini-gems-migration"
           ]
         },
-        "events": []
+        "events": [
+          {
+            "headline": "Gemini补齐Gems迁移为技能的时间与能力边界",
+            "summary": "相较此前Skills保存和组合做事方法的判断，帮助页补齐迁移安排：成年个人账号11月17日Gems转为只读，12月17日移除；工作及教育账号在2027年另行迁移。技能当前尚不支持Canvas、Deep Research等功能，部分知识文件受格式与总量限制。文档发表时间未知，计划日期不当作已发生或本日新增。",
+            "evidence_ids": [
+              "gemini-gems-migration"
+            ],
+            "event_id": "gemini-gems-to-skills-transition",
+            "status": "supplement"
+          }
+        ]
       },
       "meta-llama": {
         "state": "unchanged",
-        "reason": "与此前判断及两期完整周报比较，本轮证据未达到重要改判门槛，保留原判断与日期。候选池有截断，未声称全量覆盖。",
+        "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
         "judgment": null,
         "changes": null,
         "digest": {
-          "headline": "Muse新加坡连接器保持渐进推出边界",
-          "summary": "原文日期仍为10月27日，新加坡本地购物、出行等连接器渐进推出，部分体验晚于发布可用。敏感发送和购买保留确认；本轮无新增地区或持续使用证据。",
+          "headline": "Muse新加坡开放延续既有地域扩展",
+          "summary": "重读新加坡开放与本地品牌连接公告，沿用已纠正的10月27日可见原文日期，不用元数据10月28日重复计新。地域开放不证明持续采用，分享恢复状态仍未核实。",
           "evidence_ids": [
             "muse-singapore"
           ]
@@ -1621,47 +1603,32 @@
       {
         "id": "doubao-allowance",
         "url": "https://www.ithome.com/1/020/224.htm",
-        "title": "豆包办公试用活动延续",
+        "title": "豆包办公延续试用与签到额度",
         "source": "IT之家",
         "published_at": "2026-10-30T17:14:29+08:00",
         "event_at": "2026-10-30",
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
+        "verified_at": "2026-11-05T03:18:29.000828+00:00",
         "company_ids": [
           "doubao"
         ],
         "level": "media",
         "date_basis": "original_page",
-        "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+        "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
       },
       {
         "id": "qwen-apple-beta",
         "url": "https://www.ithome.com/1/021/861.htm",
-        "title": "千问进入国行Apple智能开发者预览体验",
+        "title": "千问接入国行Apple智能仍属开发者预览",
         "source": "IT之家",
         "published_at": "2026-11-04T03:08:12+08:00",
         "event_at": "2026-11-04",
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
+        "verified_at": "2026-11-05T03:18:29.000828+00:00",
         "company_ids": [
           "qwen"
         ],
         "level": "media",
         "date_basis": "original_page",
-        "note": "原文日期为北京时间；媒体实测与官网整合说明交叉核对。官网无公告日期，不能用当前读取时间替代上线时间。"
-      },
-      {
-        "id": "apple-qwen-integration",
-        "url": "https://www.apple.com.cn/apple-intelligence/",
-        "title": "Apple智能：千问整合一体",
-        "source": "Apple",
-        "published_at": null,
-        "event_at": null,
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
-        "company_ids": [
-          "qwen"
-        ],
-        "level": "official",
-        "date_basis": "undated_document",
-        "note": "官网确认Siri、视觉智能和写作工具可选择千问；页面仍称首批核心功能今年稍晚推出，不证明正式全面开放。"
+        "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
       },
       {
         "id": "yuanbao-minutes",
@@ -1670,88 +1637,88 @@
         "source": "腾讯 / App Store",
         "published_at": null,
         "event_at": null,
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
+        "verified_at": "2026-11-05T03:18:29.000828+00:00",
         "company_ids": [
           "hunyuan"
         ],
         "level": "official",
         "date_basis": "undated_document",
-        "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+        "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
       },
       {
-        "id": "chatgpt-account",
+        "id": "chatgpt-images26",
         "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "title": "ChatGPT移动端双账号切换继续渐进推出",
+        "title": "ChatGPT补入GIF制作与跨对话参考图复用",
         "source": "OpenAI",
-        "published_at": "2026-10-30",
-        "event_at": "2026-10-30",
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
+        "published_at": "2026-11-04",
+        "event_at": "2026-11-04",
+        "verified_at": "2026-11-05T03:18:29.000828+00:00",
         "company_ids": [
           "openai"
         ],
         "level": "official",
         "date_basis": "original_page",
-        "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+        "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
       },
       {
-        "id": "claude-code-318",
+        "id": "claude-code318",
         "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
-        "title": "Claude Code补齐会话恢复与权限交互修复",
-        "source": "Anthropic",
+        "title": "Claude Code延续会话恢复与权限修复",
+        "source": "Anthropic / GitHub",
         "published_at": "2026-11-04T00:01:03Z",
         "event_at": "2026-11-04T00:01:03Z",
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
+        "verified_at": "2026-11-05T03:18:29.000828+00:00",
         "company_ids": [
           "anthropic"
         ],
         "level": "official",
         "date_basis": "original_page",
-        "note": "官方GitHub release正文及公开API published_at交叉核对；不把代码修复等同已验证的运行成效。"
+        "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
       },
       {
         "id": "grok-shopping",
         "url": "https://x.ai/changelog/bot",
-        "title": "Grok购物卡片仍保留订单审批",
+        "title": "Grok购物与订阅仍保留用户确认",
         "source": "xAI",
         "published_at": "2026-10-27",
         "event_at": "2026-10-27",
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
+        "verified_at": "2026-11-05T03:18:29.000828+00:00",
         "company_ids": [
           "xai"
         ],
         "level": "official",
         "date_basis": "original_page",
-        "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+        "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
       },
       {
-        "id": "gemini-files",
-        "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly",
-        "title": "Gemini聊天内文件修改延续既有开放范围",
+        "id": "gemini-gems-migration",
+        "url": "https://support.google.com/gemini/answer/18560919",
+        "title": "Gemini补齐Gems迁移为技能的时间与能力边界",
         "source": "Google",
-        "published_at": "2026-10-29",
-        "event_at": "2026-10-29",
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
+        "published_at": null,
+        "event_at": null,
+        "verified_at": "2026-11-05T03:18:29.000828+00:00",
         "company_ids": [
           "google-gemini"
         ],
         "level": "official",
-        "date_basis": "original_page",
-        "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+        "date_basis": "undated_document",
+        "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
       },
       {
         "id": "muse-singapore",
         "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
-        "title": "Muse新加坡连接器保持渐进推出边界",
+        "title": "Muse新加坡开放延续既有地域扩展",
         "source": "Meta",
         "published_at": "2026-10-27",
         "event_at": "2026-10-27",
-        "verified_at": "2026-11-04T03:12:09.545417+00:00",
+        "verified_at": "2026-11-05T03:18:29.000828+00:00",
         "company_ids": [
           "meta-llama"
         ],
         "level": "official",
         "date_basis": "original_page",
-        "note": "本轮原文复核，既有事件不重复计新；未验证持续使用或普遍收益。"
+        "note": "本轮读取公开原文，核对产品与日期；仅日精度不补小时，滚动文档不以页面更新时间替代发表时间。未核实持续使用或普遍收益。"
       }
     ],
     "overview": null,
@@ -1759,7 +1726,7 @@
       "companies": {
         "doubao": {
           "type": "continued",
-          "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+          "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
           "evidence_ids": [
             "doubao-allowance"
           ],
@@ -1767,7 +1734,7 @@
             {
               "direction_id": "commercialization",
               "type": "continued",
-              "summary": "新用户体验套餐及签到额度仍用于降低办公体验门槛；本轮重读旧活动，不据此推断留存或付费转化。",
+              "summary": "新用户试用和签到额度继续降低办公体验门槛；重读旧活动，不计新事件，也不推断付费转化。",
               "stage": "available",
               "evidence_ids": [
                 "doubao-allowance"
@@ -1777,27 +1744,25 @@
         },
         "qwen": {
           "type": "continued",
-          "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+          "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
           "evidence_ids": [
-            "qwen-apple-beta",
-            "apple-qwen-integration"
+            "qwen-apple-beta"
           ],
           "signals": [
             {
               "direction_id": "mobile-entry",
               "type": "continued",
-              "summary": "IT之家实测国行iOS 27.3开发者预览版出现Apple智能入口，并说明Siri、写作工具与视觉智能可调用千问。苹果官网确认整合关系，但仍写首批核心功能今年稍晚推出；当前保留开发者测试范围，不写正式全面开放或使用成效。",
+              "summary": "复核已报道的开发者预览，不视作全面开放。家电公众号遇到验证码，未接受该候选事实。",
               "stage": "preview",
               "evidence_ids": [
-                "qwen-apple-beta",
-                "apple-qwen-integration"
+                "qwen-apple-beta"
               ]
             }
           ]
         },
         "hunyuan": {
           "type": "continued",
-          "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+          "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
           "evidence_ids": [
             "yuanbao-minutes"
           ],
@@ -1805,7 +1770,7 @@
             {
               "direction_id": "shared-deliverables",
               "type": "continued",
-              "summary": "2.91.10仍列出录音结束后生成结构化图文纪要；相对日期不换算绝对日期，同一版本不重复计新。混元科研工具不直接计入元宝客户端更新。",
+              "summary": "2.91.10仍列出录音结束后生成结构化图文纪要；相对日期不换算绝对日期，旧版本不重复计新。混元模型发布不能直接视为元宝应用更新。",
               "stage": "available",
               "evidence_ids": [
                 "yuanbao-minutes"
@@ -1815,43 +1780,43 @@
         },
         "openai": {
           "type": "continued",
-          "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+          "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
           "evidence_ids": [
-            "chatgpt-account"
+            "chatgpt-images26"
           ],
           "signals": [
             {
-              "direction_id": "mobile-entry",
+              "direction_id": "shared-deliverables",
               "type": "continued",
-              "summary": "官方记录仍为10月30日的iOS与Android双账号切换，各账号的聊天、记忆与订阅独立。补齐原文复核，不作为今日新增；搜索量与人事报道不直接算应用更新。",
+              "summary": "11月4日官方记录列出GIF制作逐步推出，可调整播放速度并分享；保存参考图可在后续对话再次调用。相较此前持续办公判断，这是创作与素材复用功能补充，未证明核心任务路径或使用规模跃迁。公告只有日期，保守补证，不计本日真实新增。",
               "stage": "available",
               "evidence_ids": [
-                "chatgpt-account"
+                "chatgpt-images26"
               ]
             }
           ]
         },
         "anthropic": {
           "type": "continued",
-          "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+          "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
           "evidence_ids": [
-            "claude-code-318"
+            "claude-code318"
           ],
           "signals": [
             {
               "direction_id": "ongoing-assistance",
               "type": "continued",
-              "summary": "2.1.318修复继续会话时丢失先前对话、权限提示误接收按键及恢复工作流重复运行已完成代理等问题。属于任务可靠性修复，未证明核心任务范围或持续使用出现跃迁。",
+              "summary": "官方最新版本仍为2.1.318，会话恢复、权限提示和后台任务修复已在昨日记录，本轮不重复计新，也不据例行修复加强判断。",
               "stage": "available",
               "evidence_ids": [
-                "claude-code-318"
+                "claude-code318"
               ]
             }
           ]
         },
         "xai": {
           "type": "continued",
-          "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+          "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
           "evidence_ids": [
             "grok-shopping"
           ],
@@ -1859,7 +1824,7 @@
             {
               "direction_id": "ongoing-assistance",
               "type": "continued",
-              "summary": "官方0.78.1仍列出购物卡片、订单追踪与订阅管理，订单和修改保留确认。本轮未核实社交候选中的代打电话新发布，不将旧购物说明重复算新。",
+              "summary": "官方更新页仍列0.78.1购物卡片、订单跟踪和订阅模板，购买及变更保留确认。电话功能候选未完成官方原文核验，不进入已确认事实。",
               "stage": "available",
               "evidence_ids": [
                 "grok-shopping"
@@ -1869,25 +1834,25 @@
         },
         "google-gemini": {
           "type": "continued",
-          "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+          "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
           "evidence_ids": [
-            "gemini-files"
+            "gemini-gems-migration"
           ],
           "signals": [
             {
-              "direction_id": "shared-deliverables",
+              "direction_id": "personal-context",
               "type": "continued",
-              "summary": "原文确认聊天内生成、预览与修改文件；PDF支持网页和移动端，其他列明格式支持网页。本轮复核10月29日旧更新，不重复算新，也不推断使用成效。",
+              "summary": "相较此前Skills保存和组合做事方法的判断，帮助页补齐迁移安排：成年个人账号11月17日Gems转为只读，12月17日移除；工作及教育账号在2027年另行迁移。技能当前尚不支持Canvas、Deep Research等功能，部分知识文件受格式与总量限制。文档发表时间未知，计划日期不当作已发生或本日新增。",
               "stage": "available",
               "evidence_ids": [
-                "gemini-files"
+                "gemini-gems-migration"
               ]
             }
           ]
         },
         "meta-llama": {
           "type": "continued",
-          "reason": "本轮具体产品动作延续已有方向；常规版本、开放信息与功能复核不构成核心执行或持续使用的实质跃迁。",
+          "reason": "对照此前判断及两期完整周报，本轮证据未达到核心执行、部署范围或持续使用的重要改判门槛；保留原判断与日期。候选截断，不代表完整覆盖。",
           "evidence_ids": [
             "muse-singapore"
           ],
@@ -1895,7 +1860,7 @@
             {
               "direction_id": "mobile-entry",
               "type": "continued",
-              "summary": "原文日期仍为10月27日，新加坡本地购物、出行等连接器渐进推出，部分体验晚于发布可用。敏感发送和购买保留确认；本轮无新增地区或持续使用证据。",
+              "summary": "重读新加坡开放与本地品牌连接公告，沿用已纠正的10月27日可见原文日期，不用元数据10月28日重复计新。地域开放不证明持续采用，分享恢复状态仍未核实。",
               "stage": "available",
               "evidence_ids": [
                 "muse-singapore"
@@ -1906,7 +1871,7 @@
       },
       "overview": []
     },
-    "report_id": "416736d02d43a612fb6d4e578d52683de408c9645e1e12640c1f4499720aa9c8"
+    "report_id": "7322ef2d24d8893959c23ae2d7830fb0f2922c293e95508751627c8820f62d26"
   },
   "weekly": {
     "kind": "weekly",
@@ -2385,7 +2350,7 @@
     },
     "report_id": "6819b2541a89c9beba6b91bebaa7f6e41ac5bd30823af16907fb9f62d4b10f75"
   },
-  "report_id": "416736d02d43a612fb6d4e578d52683de408c9645e1e12640c1f4499720aa9c8",
-  "updated_at": "2026-11-04T03:12:09.545417+00:00",
-  "source_snapshot_at": "2026-11-04T03:02:17.957517Z"
+  "report_id": "7322ef2d24d8893959c23ae2d7830fb0f2922c293e95508751627c8820f62d26",
+  "updated_at": "2026-11-05T03:18:29.000828+00:00",
+  "source_snapshot_at": "2026-11-05T03:11:51.914682Z"
 }
