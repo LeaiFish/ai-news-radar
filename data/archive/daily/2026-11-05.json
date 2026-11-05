@@ -3,9 +3,9 @@
   "projection": "compact_v1",
   "archive_date": "2026-11-05",
   "timezone": "Asia/Shanghai",
-  "generated_at": "2026-11-04T22:37:22.837102Z",
+  "generated_at": "2026-11-05T03:11:51.914682Z",
   "window_hours": 24,
-  "story_count": 254,
+  "story_count": 262,
   "live_snapshot": "data/stories-merged.json",
   "stories": [
     {
@@ -21,7 +21,7 @@
         "openai.com"
       ],
       "source_count": 5,
-      "importance_score": 0.9321,
+      "importance_score": 0.9218,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -47,7 +47,7 @@
         "Hugging Face Blog"
       ],
       "source_count": 1,
-      "importance_score": 0.848,
+      "importance_score": 0.8372,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -63,6 +63,33 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_f06268fdc285",
+      "title": "OpenAI 用 cyber 模型自动化挖掘并修补 948 个 Linux 内核本地提权漏洞 / A thousand fewer paths to root",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "primary_url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "source": "OpenAI News",
+      "source_names": [
+        "OpenAI News",
+        "openai.com"
+      ],
+      "source_count": 2,
+      "importance_score": 0.8334,
+      "importance_label": "官方更新",
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-04T08:00:00Z",
+      "latest_at": "2026-11-05T02:01:04.884000Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_bf5abd3d9223",
       "title": "GitHub Copilot 现已在 Xcode 的编码助手中可用 / GitHub Copilot is now available in Xcode’s coding assistant",
       "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
@@ -72,7 +99,7 @@
         "GitHub Changelog"
       ],
       "source_count": 1,
-      "importance_score": 0.8433,
+      "importance_score": 0.8323,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -99,7 +126,7 @@
         "OpenAI News"
       ],
       "source_count": 1,
-      "importance_score": 0.8216,
+      "importance_score": 0.8125,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -115,54 +142,56 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_f06268fdc285",
-      "title": "A thousand fewer paths to root",
-      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
-      "primary_url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
-      "source": "OpenAI News",
+      "story_id": "story_e1266f17ff57",
+      "title": "NaLog 农艺师代理：每个农民口袋里都有完美记忆的农艺师 / NaLog Agronomist Agent: An Agronomist With Perfect Memory in Every Farmer's Pocket",
+      "url": "https://www.alibabacloud.com/blog/nalog-agronomist-agent-an-agronomist-with-perfect-memory-in-every-farmers-pocket_603727",
+      "primary_url": "https://www.alibabacloud.com/blog/nalog-agronomist-agent-an-agronomist-with-perfect-memory-in-every-farmers-pocket_603727",
+      "source": "Alibaba Cloud Blog",
       "source_names": [
-        "OpenAI News"
+        "Alibaba Cloud Blog"
       ],
       "source_count": 1,
-      "importance_score": 0.8177,
+      "importance_score": 0.8059,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
         "official_source",
-        "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-11-04T08:00:00Z",
-      "latest_at": "2026-11-04T08:00:00Z",
+      "earliest_at": "2026-11-05T00:00:00Z",
+      "latest_at": "2026-11-05T00:00:00Z",
       "company_topics": [
-        "openai"
+        "qwen"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
-      "story_id": "story_8ce81320493c",
-      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
-      "url": "https://openai.com/index/devrev-enterprise-self-service",
-      "primary_url": "https://openai.com/index/devrev-enterprise-self-service",
-      "source": "OpenAI News",
+      "story_id": "story_34bb63e871c2",
+      "title": "余震：为 Qwen 特工社团评分的灾难模拟器 / Aftershock: The Disaster Simulator That Grades Qwen Agent Societies",
+      "url": "https://www.alibabacloud.com/blog/aftershock-the-disaster-simulator-that-grades-qwen-agent-societies_603728",
+      "primary_url": "https://www.alibabacloud.com/blog/aftershock-the-disaster-simulator-that-grades-qwen-agent-societies_603728",
+      "source": "Alibaba Cloud Blog",
       "source_names": [
-        "OpenAI News"
+        "Alibaba Cloud Blog"
       ],
       "source_count": 1,
-      "importance_score": 0.8158,
+      "importance_score": 0.8059,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
         "official_source",
-        "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-11-04T00:00:00Z",
-      "latest_at": "2026-11-04T00:00:00Z",
+      "earliest_at": "2026-11-05T00:00:00Z",
+      "latest_at": "2026-11-05T00:00:00Z",
       "company_topics": [
-        "openai"
+        "qwen"
       ],
-      "lens_topics": []
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_d40fe62b52cf",
@@ -174,7 +203,7 @@
         "Lovable Blog"
       ],
       "source_count": 1,
-      "importance_score": 0.8095,
+      "importance_score": 0.7996,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -190,107 +219,30 @@
       ]
     },
     {
-      "story_id": "story_503b867d5780",
-      "title": "FORGE：为戴着油腻手套的技术人员提供免提语音Copilot / FORGE: The Hands-Free Voice Copilot for the Technician With Greasy Gloves",
-      "url": "https://www.alibabacloud.com/blog/forge-the-hands-free-voice-copilot-for-the-technician-with-greasy-gloves_603725",
-      "primary_url": "https://www.alibabacloud.com/blog/forge-the-hands-free-voice-copilot-for-the-technician-with-greasy-gloves_603725",
-      "source": "Alibaba Cloud Blog",
+      "story_id": "story_fa2d5d4e0126",
+      "title": "月之暗面开放 2.8 万亿参数 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源模型榜",
+      "url": "https://www.ithome.com/1/022/490.htm",
+      "primary_url": "https://www.ithome.com/1/022/490.htm",
+      "source": "IT之家·人工智能",
       "source_names": [
-        "Alibaba Cloud Blog"
+        "AIbase",
+        "IT之家·人工智能"
       ],
-      "source_count": 1,
-      "importance_score": 0.8078,
-      "importance_label": "官方更新",
-      "category": "official",
+      "source_count": 2,
+      "importance_score": 0.7995,
+      "importance_label": "行业动态",
+      "category": "industry",
       "reasons": [
-        "official_source",
+        "multi_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-11-04T00:00:00Z",
-      "latest_at": "2026-11-04T00:00:00Z",
+      "earliest_at": "2026-11-05T00:00:15.173000Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
       "company_topics": [
-        "microsoft"
+        "kimi",
+        "huggingface"
       ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_e2a9defc33ad",
-      "title": "Copilot 使用 API 中的 BYOK 和企业自定义模型 / BYOK and enterprise custom models in the Copilot usage API",
-      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
-      "primary_url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
-      "source": "GitHub Changelog",
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "source_count": 1,
-      "importance_score": 0.8028,
-      "importance_label": "官方更新",
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-11-04T00:32:19Z",
-      "latest_at": "2026-11-04T00:32:19Z",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_5296ff8f39a1",
-      "title": "New agents and products for security, productivity, and creative work on Claude Marketplace",
-      "url": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace",
-      "primary_url": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace",
-      "source": "Claude Articles",
-      "source_names": [
-        "Claude Articles"
-      ],
-      "source_count": 1,
-      "importance_score": 0.8018,
-      "importance_label": "官方更新",
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-11-04T00:00:00Z",
-      "latest_at": "2026-11-04T00:00:00Z",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_25258b88e315",
-      "title": "分歧判决：九名人工智能法官、两名人工智能记者和一个可以验证的判决 / Split Decision: Nine AI Judges, Two AI Journalists, and a Verdict You Can Verify",
-      "url": "https://www.alibabacloud.com/blog/split-decision-nine-ai-judges-two-ai-journalists-and-a-verdict-you-can-verify_603724",
-      "primary_url": "https://www.alibabacloud.com/blog/split-decision-nine-ai-judges-two-ai-journalists-and-a-verdict-you-can-verify_603724",
-      "source": "Alibaba Cloud Blog",
-      "source_names": [
-        "Alibaba Cloud Blog"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7998,
-      "importance_label": "官方更新",
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-11-04T00:00:00Z",
-      "latest_at": "2026-11-04T00:00:00Z",
-      "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
       ]
@@ -305,7 +257,7 @@
         "Cloudflare Blog"
       ],
       "source_count": 1,
-      "importance_score": 0.7929,
+      "importance_score": 0.7828,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -321,6 +273,454 @@
       ]
     },
     {
+      "story_id": "story_41f69758c3fd",
+      "title": "OpenAI 称其安全模型一次运行修复 948 个 Linux 内核提权漏洞，API 成本约 120 万美元 / OpenAI claims their new security model patched 948 Linux privilege escalation vulnerabilities.",
+      "url": "https://x.com/rohanpaul_ai/status/2118147825146175666",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2118147825146175666",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7712,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T01:06:09Z",
+      "latest_at": "2026-11-05T01:06:09Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_37faebe1ee69",
+      "title": "OpenAI 将 GPT-Image-2.6 引入 Codex 和 API / Today, we’re bringing GPT-Image-2.6 to Codex and the API.",
+      "url": "https://x.com/OpenAIDevs/status/2118124753340756055",
+      "primary_url": "https://x.com/OpenAIDevs/status/2118124753340756055",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "source_names": [
+        "X：OpenAI Developers (@OpenAIDevs)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7678,
+      "importance_label": "官方更新",
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-04T23:34:28Z",
+      "latest_at": "2026-11-04T23:34:28Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0e832117a16c",
+      "title": "40 年未解的\"细胞穹窿\"，被 Claude 拽进结构生物学视野",
+      "url": "https://www.aibase.com/news/32094",
+      "primary_url": "https://www.aibase.com/news/32094",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_8b70abe0bcf8",
+      "title": "Claude Code 松绑游戏禁令：提一句\"参考某游戏\"不再被拒",
+      "url": "https://www.aibase.com/news/32095",
+      "primary_url": "https://www.aibase.com/news/32095",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0e8e5272f4db",
+      "title": "GPT-6.2 蛛丝马迹提前泄露，OpenAI 三款新模型或本周亮相",
+      "url": "https://www.aibase.com/news/32108",
+      "primary_url": "https://www.aibase.com/news/32108",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_36c313c0fbf0",
+      "title": "Meta收购AI编码初创公司Conductor，加码智能体编程赛道",
+      "url": "https://www.aibase.com/news/32096",
+      "primary_url": "https://www.aibase.com/news/32096",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_d511db0265a2",
+      "title": "OpenAI发布 GPT Image 2.6 Sunburst 与 Flare，图像生成延迟低至 5 秒",
+      "url": "https://www.aibase.com/news/32093",
+      "primary_url": "https://www.aibase.com/news/32093",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_45491d707194",
+      "title": "OpenAI在ChatGPT内置GIF生成器，由未公开Images2.6模型驱动",
+      "url": "https://www.aibase.com/news/32098",
+      "primary_url": "https://www.aibase.com/news/32098",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_21cdaf9c2e2b",
+      "title": "iOS 27.3 beta 正式接入阿里千问，替代 ChatGPT 角色",
+      "url": "https://www.aibase.com/news/32092",
+      "primary_url": "https://www.aibase.com/news/32092",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "qwen",
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0add14654b58",
+      "title": "可灵 AI 宣布 Kling 4.0 Flash 全面开放，深度融入专业影视工作流",
+      "url": "https://www.aibase.com/news/32109",
+      "primary_url": "https://www.aibase.com/news/32109",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_cdc08b8b11d3",
+      "title": "国产RNA生物大模型重大突破：中国科大团队研发 structRFM 登上《自然》并全面开源",
+      "url": "https://www.aibase.com/news/32107",
+      "primary_url": "https://www.aibase.com/news/32107",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_28626aa2ea8f",
+      "title": "拍一拍即知底价:国行苹果AI开启Beta测试并接入得物App",
+      "url": "https://www.aibase.com/news/32099",
+      "primary_url": "https://www.aibase.com/news/32099",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "apple"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_14b25f7328f5",
+      "title": "灵光2.0上线一周托管超116万项事务，用户突破2000万",
+      "url": "https://www.aibase.com/news/32105",
+      "primary_url": "https://www.aibase.com/news/32105",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6ed1e058fc17",
+      "title": "美国中期选举变\"数据中心公投\"：76% 选民反对，AI 基建撞上地方墙",
+      "url": "https://www.aibase.com/news/32106",
+      "primary_url": "https://www.aibase.com/news/32106",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_26c839e19089",
+      "title": "美国中期选举变天：选民以压倒性票数叫停 AI 与数据中心狂飙，大型科技公司集体反思",
+      "url": "https://www.aibase.com/news/32103",
+      "primary_url": "https://www.aibase.com/news/32103",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7190e5d8e66f",
+      "title": "谷歌AI政策遭反弹，DuckDuckGo以“可关闭AI”争夺教育搜索入口",
+      "url": "https://www.aibase.com/news/32097",
+      "primary_url": "https://www.aibase.com/news/32097",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [],
+      "lens_topics": [
+        "product-entry"
+      ]
+    },
+    {
+      "story_id": "story_4f2575b95fa1",
+      "title": "谷歌为 Anthropic 190 亿美元数据中心项目提供信用护航",
+      "url": "https://www.aibase.com/news/32102",
+      "primary_url": "https://www.aibase.com/news/32102",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a4be04353d6b",
+      "title": "豆包工作首次接入第三方模型，首批上线Kimi、智谱与DeepSeek",
+      "url": "https://www.aibase.com/news/32104",
+      "primary_url": "https://www.aibase.com/news/32104",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [
+        "doubao",
+        "kimi",
+        "deepseek",
+        "zhipu"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f968b08a4561",
+      "title": "雷军晒小米机器人做家务视频，Xiaomi-Robotics-1支撑长程任务",
+      "url": "https://www.aibase.com/news/32101",
+      "primary_url": "https://www.aibase.com/news/32101",
+      "source": "AIbase",
+      "source_names": [
+        "AIbase"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-05T03:11:51.914682Z",
+      "latest_at": "2026-11-05T03:11:51.914682Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_82ae05e0aaa1",
       "title": "美国中期选举投票限制 AI 与数据中心，Big Tech 称这是反特朗普而非反科技 / Big Tech claims voters’ AI backlash is “anti-Trump” not “anti-tech”",
       "url": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech",
@@ -330,7 +730,7 @@
         "Ars Technica：AI（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7783,
+      "importance_score": 0.767,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -352,7 +752,7 @@
         "404 Media（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7769,
+      "importance_score": 0.7662,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -365,6 +765,30 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_381061571dba",
+      "title": "OpenAI 介绍 GPT Image 2.6 Flare 低画质下最快六秒生成图像 / With image quality set to low, Flare can generate an image in as little as six seconds.",
+      "url": "https://x.com/OpenAIDevs/status/2118124757639966858",
+      "primary_url": "https://x.com/OpenAIDevs/status/2118124757639966858",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "source_names": [
+        "X：OpenAI Developers (@OpenAIDevs)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7618,
+      "importance_label": "官方更新",
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-11-04T23:34:29Z",
+      "latest_at": "2026-11-04T23:34:29Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_c1038bcb202f",
       "title": "Moonshot AI 在 HuggingFace 开放 2.8T 参数 Kimi K3.1 Pro 权重 / Moonshot AI released the massive 2.8T-parameter Kimi K3.1 Pro weights on Huggingface.",
       "url": "https://x.com/rohanpaul_ai/status/2118059884055024027",
@@ -374,7 +798,7 @@
         "X：Rohan Paul (@rohanpaul_ai)"
       ],
       "source_count": 1,
-      "importance_score": 0.7711,
+      "importance_score": 0.7601,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -399,7 +823,7 @@
         "X：Claude Devs (@ClaudeDevs)"
       ],
       "source_count": 1,
-      "importance_score": 0.763,
+      "importance_score": 0.7521,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -414,30 +838,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_22ef94695194",
-      "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80% / AMD reported its 3Q-2026 earnings and it now expects revenue to grow more than 80% in 2027, ahead of the 77% analysts had modeled.",
-      "url": "https://x.com/rohanpaul_ai/status/2117757237557088263",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2117757237557088263",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_names": [
-        "@rohanpaul_ai",
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "source_count": 2,
-      "importance_score": 0.762,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-11-03T23:14:06Z",
-      "latest_at": "2026-11-03T23:14:06Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_7e724f7d7224",
       "title": "Google AI 搜索变现难题：Q3 搜索收入增速降至 12% / Google hasn’t figured out how to make AI pay like its search engine",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
@@ -448,7 +848,7 @@
         "The Verge：AI（RSS）"
       ],
       "source_count": 2,
-      "importance_score": 0.761,
+      "importance_score": 0.7511,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -464,6 +864,29 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_419ac60d078a",
+      "title": "Figma code layers 开放测试：在画布上用代码层和 Figma agent 协作探索设计 / Workflow lab: Test ideas with code layers and the Figma agent",
+      "url": "https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers",
+      "primary_url": "https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers",
+      "source": "Figma AI / Agent / Make",
+      "source_names": [
+        "Figma AI / Agent / Make"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7491,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T22:12:00Z",
+      "latest_at": "2026-11-04T22:12:00Z",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_d95c3c53f5ce",
       "title": "Uber 财报电话会披露：AI 智能体下单量极低，万圣节周仅 4 次用车订单 / Almost no one uses AI agents to book their Uber, company says",
       "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says",
@@ -473,12 +896,11 @@
         "TechCrunch：AI（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7598,
+      "importance_score": 0.7484,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-11-04T21:56:01Z",
       "latest_at": "2026-11-04T21:56:01Z",
@@ -498,12 +920,11 @@
         "Redwood Research：Blog（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7544,
+      "importance_score": 0.7452,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-11-04T06:34:24Z",
       "latest_at": "2026-11-04T06:34:24Z",
@@ -515,25 +936,26 @@
       ]
     },
     {
-      "story_id": "story_573d98cc339b",
-      "title": "Google 计划对限制 AI 的学校关闭 Search 引发强烈反弹 / Google faces backlash for plan that would turn off Search for schools that restrict AI",
-      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai",
-      "primary_url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai",
-      "source": "TechCrunch：AI（RSS）",
+      "story_id": "story_0ea7ecd6f6e0",
+      "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用 / GPT Image 2.6 is LIVE on Higgsfield.",
+      "url": "https://x.com/higgsfield/status/2118134123533623424",
+      "primary_url": "https://x.com/higgsfield/status/2118134123533623424",
+      "source": "X：Higgsfield AI (@higgsfield)",
       "source_names": [
-        "TechCrunch：AI（RSS）"
+        "X：Higgsfield AI (@higgsfield)"
       ],
       "source_count": 1,
-      "importance_score": 0.7519,
+      "importance_score": 0.745,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
-      "earliest_at": "2026-11-04T16:17:22Z",
-      "latest_at": "2026-11-04T16:17:22Z",
-      "company_topics": [],
+      "earliest_at": "2026-11-05T00:11:42Z",
+      "latest_at": "2026-11-05T00:11:42Z",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
@@ -546,17 +968,152 @@
         "公众号：腾讯混元"
       ],
       "source_count": 1,
-      "importance_score": 0.7506,
+      "importance_score": 0.7417,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-11-04T04:43:55Z",
       "latest_at": "2026-11-04T04:43:55Z",
       "company_topics": [
         "hunyuan"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_573d98cc339b",
+      "title": "Google 计划对限制 AI 的学校关闭 Search 引发强烈反弹 / Google faces backlash for plan that would turn off Search for schools that restrict AI",
+      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai",
+      "primary_url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai",
+      "source": "TechCrunch：AI（RSS）",
+      "source_names": [
+        "TechCrunch：AI（RSS）"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7414,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T16:17:22Z",
+      "latest_at": "2026-11-04T16:17:22Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_50167073cdbd",
+      "title": "Ricursive AI 发布 Ripple-65B Preview：65B 稠密开源权重模型，Terminal-Bench 2.1 得分 80.5 / Ricursive AI Releases Ripple-65B Preview: A 65B Dense Open-Weight Model Scoring 80.5 on Terminal-Bench 2.1",
+      "url": "https://www.marktechpost.com/2026/11/04/ricursive-ripple-65b-preview-open-weight-model",
+      "primary_url": "https://www.marktechpost.com/2026/11/04/ricursive-ripple-65b-preview-open-weight-model",
+      "source": "MarkTechPost（RSS）",
+      "source_names": [
+        "MarkTechPost（RSS）"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7402,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T21:01:06Z",
+      "latest_at": "2026-11-04T21:01:06Z",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_2d011da081b1",
+      "title": "OpenAI 推出 Images 2.6 模型，ChatGPT 支持直接生成和编辑 GIF 动画",
+      "url": "https://www.ithome.com/1/022/486.htm",
+      "primary_url": "https://www.ithome.com/1/022/486.htm",
+      "source": "IT之家·人工智能",
+      "source_names": [
+        "IT之家·人工智能"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7377,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T23:41:17.163000Z",
+      "latest_at": "2026-11-04T23:41:17.163000Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_60df39005526",
+      "title": "OpenAI 与 Linux 维护者及 Patch the Planet 合作发现并修复漏洞 / Our goal is to help defenders find and fix vulnerabilities before attackers can use them. We’re working with Linux maintainers and Patch ...",
+      "url": "https://x.com/OpenAI/status/2118119463161905362",
+      "primary_url": "https://x.com/OpenAI/status/2118119463161905362",
+      "source": "X：OpenAI (@OpenAI)",
+      "source_names": [
+        "X：OpenAI (@OpenAI)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7306,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T23:13:27Z",
+      "latest_at": "2026-11-04T23:13:27Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9ce79ee7118b",
+      "title": "OpenAI API 支持标注图像编辑 / You can now send a marked-up image to the API to show exactly where you want an edit.",
+      "url": "https://x.com/OpenAIDevs/status/2118124761867845847",
+      "primary_url": "https://x.com/OpenAIDevs/status/2118124761867845847",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "source_names": [
+        "X：OpenAI Developers (@OpenAIDevs)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7288,
+      "importance_label": "官方更新",
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T23:34:30Z",
+      "latest_at": "2026-11-04T23:34:30Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_372763aa11cc",
+      "title": "OpenAI 发布 Images 2.6 并向所有档位开放 Codex / Images 2.6 is available today in ChatGPT, and Codex across all tiers on web, desktop, and mobile.",
+      "url": "https://x.com/OpenAI/status/2118124966055223755",
+      "primary_url": "https://x.com/OpenAI/status/2118124966055223755",
+      "source": "X：OpenAI (@OpenAI)",
+      "source_names": [
+        "X：OpenAI (@OpenAI)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7285,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T23:35:19Z",
+      "latest_at": "2026-11-04T23:35:19Z",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -570,7 +1127,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7379,
+      "importance_score": 0.7283,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -593,7 +1150,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7379,
+      "importance_score": 0.7283,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -614,7 +1171,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7379,
+      "importance_score": 0.7283,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -637,7 +1194,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7379,
+      "importance_score": 0.7283,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -662,7 +1219,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7379,
+      "importance_score": 0.7283,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -685,7 +1242,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7379,
+      "importance_score": 0.7283,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -706,7 +1263,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7379,
+      "importance_score": 0.7283,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -729,7 +1286,7 @@
         "TechCrunch：AI（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7375,
+      "importance_score": 0.7262,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -743,6 +1300,50 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_5326b8902576",
+      "title": "OpenAI 教你用静态角色制作循环 GIF / Bring a still character, sprite, or mascot to life as a looping GIF for a video, game, or app.",
+      "url": "https://x.com/OpenAIDevs/status/2118124755442151684",
+      "primary_url": "https://x.com/OpenAIDevs/status/2118124755442151684",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "source_names": [
+        "X：OpenAI Developers (@OpenAIDevs)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7258,
+      "importance_label": "官方更新",
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T23:34:29Z",
+      "latest_at": "2026-11-04T23:34:29Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_9b658fd410a6",
+      "title": "据报道 Apple 削减内部 AI 使用预算 / Apple is reportedly cutting budgets for its internal AI usage",
+      "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage",
+      "primary_url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage",
+      "source": "TechCrunch：AI（RSS）",
+      "source_names": [
+        "TechCrunch：AI（RSS）"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7241,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-05T01:26:22Z",
+      "latest_at": "2026-11-05T01:26:22Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_5f6ae507519e",
       "title": "后摩智能完成数十亿元B轮融资，端侧大模型AI芯片驶入规模化落地快车道",
       "url": "https://www.aibase.com/news/32082",
@@ -752,7 +1353,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7323,
+      "importance_score": 0.7231,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -773,7 +1374,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7323,
+      "importance_score": 0.7231,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -794,7 +1395,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7317,
+      "importance_score": 0.7225,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -817,7 +1418,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7317,
+      "importance_score": 0.7225,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -838,7 +1439,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7317,
+      "importance_score": 0.7225,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -859,7 +1460,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7317,
+      "importance_score": 0.7225,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -880,7 +1481,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7317,
+      "importance_score": 0.7225,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -901,7 +1502,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7317,
+      "importance_score": 0.7225,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -926,7 +1527,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7317,
+      "importance_score": 0.7225,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -949,7 +1550,7 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7317,
+      "importance_score": 0.7225,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -961,6 +1562,54 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_34d3989ed6dc",
+      "title": "OpenAI 发布 GPT-Image-2.6 Flare 与 Sunburst 两款开发者图像模型 / Two new image models for developers: GPT-Image-2.6 Flare and Sunburst.",
+      "url": "https://x.com/OpenAI/status/2118124964197114039",
+      "primary_url": "https://x.com/OpenAI/status/2118124964197114039",
+      "source": "X：OpenAI (@OpenAI)",
+      "source_names": [
+        "X：OpenAI (@OpenAI)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7225,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T23:35:18Z",
+      "latest_at": "2026-11-04T23:35:18Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6cad8e15acfa",
+      "title": "OpenAI 发布 ChatGPT Images 2.6，支持生成动图和复用参考图 / We have a gif for you—ChatGPT Images 2.6 is here.",
+      "url": "https://x.com/ChatGPT/status/2118168231617700199",
+      "primary_url": "https://x.com/ChatGPT/status/2118168231617700199",
+      "source": "X：ChatGPT (@ChatGPT)",
+      "source_names": [
+        "X：ChatGPT (@ChatGPT)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7207,
+      "importance_label": "行业动态",
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-05T02:27:14Z",
+      "latest_at": "2026-11-05T02:27:14Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
       "story_id": "story_ffcf2cdf8e40",
       "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
       "url": "https://mp.weixin.qq.com/s/V0GHwdHbKIFMjwg9AmBdDQ",
@@ -970,7 +1619,7 @@
         "公众号：可灵AI（快手·视频）"
       ],
       "source_count": 1,
-      "importance_score": 0.7308,
+      "importance_score": 0.7205,
       "importance_label": "行业动态",
       "category": "industry",
       "reasons": [
@@ -993,9 +1642,9 @@
         "The Verge：AI（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.729,
-      "importance_label": "行业动态",
-      "category": "industry",
+      "importance_score": 0.7182,
+      "importance_label": "值得关注",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1016,9 +1665,9 @@
         "The Verge：AI（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7271,
-      "importance_label": "行业动态",
-      "category": "industry",
+      "importance_score": 0.7167,
+      "importance_label": "值得关注",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1027,6 +1676,31 @@
       "company_topics": [],
       "lens_topics": [
         "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_f8715dc99d7e",
+      "title": "面壁智能回应 MiniCPM-OCR 与 Jev 可靠文档 AI 拆解 / Thanks for the great breakdown! 💙🙌 Reliable document AI isn't just about extracting information, but also knowing when to double-check ...",
+      "url": "https://x.com/OpenBMB/status/2118156551072710709",
+      "primary_url": "https://x.com/OpenBMB/status/2118156551072710709",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "source_names": [
+        "X：面壁智能 OpenBMB (@OpenBMB)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7157,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-05T01:40:49Z",
+      "latest_at": "2026-11-05T01:40:49Z",
+      "company_topics": [
+        "meta-llama"
+      ],
+      "lens_topics": [
+        "workplace"
       ]
     },
     {
@@ -1039,9 +1713,9 @@
         "AIbase"
       ],
       "source_count": 1,
-      "importance_score": 0.7238,
-      "importance_label": "行业动态",
-      "category": "industry",
+      "importance_score": 0.7151,
+      "importance_label": "值得关注",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1062,9 +1736,9 @@
         "TechCrunch：AI（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7237,
-      "importance_label": "行业动态",
-      "category": "industry",
+      "importance_score": 0.7127,
+      "importance_label": "值得关注",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1076,320 +1750,24 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_ab1a735365a9",
-      "title": "2027 年起K- 12 学生账户AI与搜索服务将默认关闭，禁用AI将连带失去传统搜索",
-      "url": "https://www.aibase.com/news/32066",
-      "primary_url": "https://www.aibase.com/news/32066",
-      "source": "AIbase",
+      "story_id": "story_3e65763e6839",
+      "title": "AI 相关政治行动委员会投入数百万美元影响美国中期选举但成效不一 / AI PACs spent millions trying to shape Congress — here’s how they fared",
+      "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared",
+      "primary_url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared",
+      "source": "TechCrunch：AI（RSS）",
       "source_names": [
-        "AIbase"
+        "TechCrunch：AI（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8d95549e19ab",
-      "title": "AI与组织效率驱动调整 Canva启动大规模重组",
-      "url": "https://www.aibase.com/news/32072",
-      "primary_url": "https://www.aibase.com/news/32072",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_7c577d849d53",
-      "title": "Anthropic产品团队出现人事变动，Claude Code负责人离开",
-      "url": "https://www.aibase.com/news/32071",
-      "primary_url": "https://www.aibase.com/news/32071",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_6d9c07161e8e",
-      "title": "Seedance海外收入占比达50%，半年增长近5倍",
-      "url": "https://www.aibase.com/news/32067",
-      "primary_url": "https://www.aibase.com/news/32067",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [
-        "doubao"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_d5a11f311a4b",
-      "title": "国内首个三晋文化大模型“晋问AI”正式上线，数字人“晋豆”同步亮相",
-      "url": "https://www.aibase.com/news/32068",
-      "primary_url": "https://www.aibase.com/news/32068",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6ec9ca90a1c3",
-      "title": "搜索版图被撕开一道口子：ChatGPT 抢下谷歌两成流量",
-      "url": "https://www.aibase.com/news/32064",
-      "primary_url": "https://www.aibase.com/news/32064",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_8dd7876f1226",
-      "title": "消息称字节跳动大面积限制员工自费使用第三方AI工具",
-      "url": "https://www.aibase.com/news/32070",
-      "primary_url": "https://www.aibase.com/news/32070",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [
-        "doubao"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a59e4fdd3dc3",
-      "title": "苹果 AI 加速进入中国市场，Siri、视觉智能整合千问",
-      "url": "https://www.aibase.com/news/32065",
-      "primary_url": "https://www.aibase.com/news/32065",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [
-        "qwen",
-        "apple"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7b8625adeb24",
-      "title": "谷歌宣布允许学校禁用AI工具，但代价是彻底失去谷歌搜索访问权限",
-      "url": "https://www.aibase.com/news/32063",
-      "primary_url": "https://www.aibase.com/news/32063",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7e3d8e9999eb",
-      "title": "阿里云发布AI投研工作台Qovest:99元/月开放个人邀测",
-      "url": "https://www.aibase.com/news/32069",
-      "primary_url": "https://www.aibase.com/news/32069",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T03:02:17.957517Z",
-      "latest_at": "2026-11-04T03:02:17.957517Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_efa31e635cc5",
-      "title": "Anthropic发布开源系统FlashProve:通过密码学指纹实现AI模型身份可验证",
-      "url": "https://www.aibase.com/news/32061",
-      "primary_url": "https://www.aibase.com/news/32061",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7197,
+      "importance_score": 0.7114,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-11-04T01:11:46.005054Z",
-      "latest_at": "2026-11-04T01:11:46.005054Z",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5d284baa8c5a",
-      "title": "OpenAI重磅宣布聘请前优步总裁吉尔·黑泽尔贝克担任首席企业事务官",
-      "url": "https://www.aibase.com/news/32059",
-      "primary_url": "https://www.aibase.com/news/32059",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7197,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T01:11:46.005054Z",
-      "latest_at": "2026-11-04T01:11:46.005054Z",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_85a34f88a0d7",
-      "title": "挑战搜索巨头初见成效：OpenAI官方证实，ChatGPT搜索查询量已达谷歌的20%",
-      "url": "https://www.aibase.com/news/32060",
-      "primary_url": "https://www.aibase.com/news/32060",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7197,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T01:11:46.005054Z",
-      "latest_at": "2026-11-04T01:11:46.005054Z",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_794978ef681c",
-      "title": "藏在卫生纸里的录音器，扯出 OpenAI 多年安全积弊",
-      "url": "https://www.aibase.com/news/32062",
-      "primary_url": "https://www.aibase.com/news/32062",
-      "source": "AIbase",
-      "source_names": [
-        "AIbase"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7197,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T01:11:46.005054Z",
-      "latest_at": "2026-11-04T01:11:46.005054Z",
-      "company_topics": [
-        "openai"
-      ],
+      "earliest_at": "2026-11-04T22:45:09Z",
+      "latest_at": "2026-11-04T22:45:09Z",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -1402,7 +1780,7 @@
         "X：Michael Truell (@mntruell)"
       ],
       "source_count": 1,
-      "importance_score": 0.7192,
+      "importance_score": 0.7082,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1419,6 +1797,52 @@
       ]
     },
     {
+      "story_id": "story_181ecccdc4a6",
+      "title": "PFN 开放翻译特化模型 PLaMo 3 Translate，0.8B 至 31B 四个尺寸可离线运行",
+      "url": "https://www.preferred.jp/ja/news/pr20261105",
+      "primary_url": "https://www.preferred.jp/ja/news/pr20261105",
+      "source": "Preferred Networks：AI 研究与产品",
+      "source_names": [
+        "Preferred Networks：AI 研究与产品"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7077,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T16:00:00Z",
+      "latest_at": "2026-11-04T16:00:00Z",
+      "company_topics": [
+        "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2c81422a4fbd",
+      "title": "OpenAI 发布 ChatGPT Images 2.6，新增 GIF 与参考图功能 / Images, upgraded—introducing ChatGPT Images 2.6.",
+      "url": "https://x.com/OpenAI/status/2118124944928432327",
+      "primary_url": "https://x.com/OpenAI/status/2118124944928432327",
+      "source": "X：OpenAI (@OpenAI)",
+      "source_names": [
+        "X：OpenAI (@OpenAI)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.7075,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T23:35:14Z",
+      "latest_at": "2026-11-04T23:35:14Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_44e7076f3c37",
       "title": "Claude Code 后台子智能体省额度 / Background subagents in Claude Code now use less of your usage limit.",
       "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
@@ -1428,7 +1852,7 @@
         "X：Claude Devs (@ClaudeDevs)"
       ],
       "source_count": 1,
-      "importance_score": 0.718,
+      "importance_score": 0.707,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -1453,7 +1877,7 @@
         "TechCrunch：AI（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7159,
+      "importance_score": 0.7046,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1479,7 +1903,7 @@
         "X：OpenAI Developers (@OpenAIDevs)"
       ],
       "source_count": 1,
-      "importance_score": 0.7155,
+      "importance_score": 0.7043,
       "importance_label": "官方更新",
       "category": "official",
       "reasons": [
@@ -1493,50 +1917,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_33739e776370",
-      "title": "卡兹克开源折腾一年的 Agent 自动化系统 Agent-Autoloop",
-      "url": "https://mp.weixin.qq.com/s/T9_acg247gxzUNL4j5zrCw",
-      "primary_url": "https://mp.weixin.qq.com/s/T9_acg247gxzUNL4j5zrCw",
-      "source": "公众号：数字生命卡兹克",
-      "source_names": [
-        "公众号：数字生命卡兹克"
-      ],
-      "source_count": 1,
-      "importance_score": 0.712,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T00:19:00Z",
-      "latest_at": "2026-11-04T00:19:00Z",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_10321f8488e8",
-      "title": "Nexus Mods 强制新 Mod 上传时披露 AI 使用情况 / The biggest modding site in PC gaming is taking a stance on AI",
-      "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
-      "primary_url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
-      "source": "The Verge：AI（RSS）",
-      "source_names": [
-        "The Verge：AI（RSS）"
-      ],
-      "source_count": 1,
-      "importance_score": 0.7068,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T00:42:10Z",
-      "latest_at": "2026-11-04T00:42:10Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_902723830574",
       "title": "腾讯微信视觉团队开源 WeVisOne-VL 视觉语言模型，统一检测、OCR、分割与抠图 / Tencent WeVisOne-VL Unifies Detection, OCR, Segmentation and Matting",
       "url": "https://www.marktechpost.com/2026/11/03/tencent-wevisone-vl-vision-language-model",
@@ -1546,7 +1926,7 @@
         "MarkTechPost（RSS）"
       ],
       "source_count": 1,
-      "importance_score": 0.7025,
+      "importance_score": 0.6936,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1560,114 +1940,25 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_efd6f7560c01",
-      "title": "The Verge 分析 PIMCO 和 Apollo 对 AI 泡沫的警告与巨额债券融资 / Please stop asking me when the AI bubble will pop",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds",
-      "primary_url": "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds",
-      "source": "The Verge：AI（RSS）",
+      "story_id": "story_496cf5e54880",
+      "title": "ChatGPT Images 2.6 支持生成动图 GIF",
+      "url": "https://x.com/OpenAI/status/2118124953832935810",
+      "primary_url": "https://x.com/OpenAI/status/2118124953832935810",
+      "source": "X：OpenAI (@OpenAI)",
       "source_names": [
-        "The Verge：AI（RSS）"
+        "X：OpenAI (@OpenAI)"
       ],
       "source_count": 1,
-      "importance_score": 0.6837,
+      "importance_score": 0.6895,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-11-03T23:37:45Z",
-      "latest_at": "2026-11-03T23:37:45Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_466f32694556",
-      "title": "vLLM Delivers Day-0 Support for Kimi K3.1 Pro",
-      "url": "https://vllm.ai/blog/2026-11-04-kimi-k31-pro",
-      "primary_url": "https://vllm.ai/blog/2026-11-04-kimi-k31-pro",
-      "source": "vLLM Blog",
-      "source_names": [
-        "vLLM Blog"
-      ],
-      "source_count": 1,
-      "importance_score": 0.6818,
-      "importance_label": "官方更新",
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T00:00:00Z",
-      "latest_at": "2026-11-04T00:00:00Z",
+      "earliest_at": "2026-11-04T23:35:16Z",
+      "latest_at": "2026-11-04T23:35:16Z",
       "company_topics": [
-        "kimi"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_44d953a8da91",
-      "title": "Factory 收购 HumanLayer，并将开源其平台 / HumanLayer is joining Factory",
-      "url": "https://factory.com/news/humanlayer",
-      "primary_url": "https://factory.com/news/humanlayer",
-      "source": "Factory 研究 / 产品（RSS）",
-      "source_names": [
-        "Factory 研究 / 产品（RSS）"
-      ],
-      "source_count": 1,
-      "importance_score": 0.6814,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T00:00:00Z",
-      "latest_at": "2026-11-04T00:00:00Z",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_97454655cf78",
-      "title": "Luma 推出 Character Sheet 功能，保持角色在多视角生成中的一致性 / Once you've got the character right, the next view shouldn't turn them into someone else.",
-      "url": "https://x.com/LumaLabsAI/status/2117801249919975805",
-      "primary_url": "https://x.com/LumaLabsAI/status/2117801249919975805",
-      "source": "X：Luma AI (@LumaLabsAI)",
-      "source_names": [
-        "X：Luma AI (@LumaLabsAI)"
-      ],
-      "source_count": 1,
-      "importance_score": 0.6735,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T02:08:59Z",
-      "latest_at": "2026-11-04T02:08:59Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_51b4669b7467",
-      "title": "Anthropic 研究开源系统 FlashProve，用密码学证明 AI 模型输出身份 / Anthropic is working on a system to prove AI models’ identity",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity",
-      "primary_url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity",
-      "source": "TechCrunch：AI（RSS）",
-      "source_names": [
-        "TechCrunch：AI（RSS）"
-      ],
-      "source_count": 1,
-      "importance_score": 0.664,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-03T22:41:03Z",
-      "latest_at": "2026-11-03T22:41:03Z",
-      "company_topics": [
-        "anthropic"
+        "openai"
       ],
       "lens_topics": []
     },
@@ -1681,7 +1972,7 @@
         "X：Grok Bot (@bot)"
       ],
       "source_count": 1,
-      "importance_score": 0.6605,
+      "importance_score": 0.6497,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1706,7 +1997,7 @@
         "The Decoder AI News"
       ],
       "source_count": 1,
-      "importance_score": 0.6539,
+      "importance_score": 0.6428,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1714,6 +2005,29 @@
       ],
       "earliest_at": "2026-11-04T19:44:20Z",
       "latest_at": "2026-11-04T19:44:20Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_db76f70990e8",
+      "title": "OpenAI 推出带有 GIF 和图像参考的 Images 2.6 / OpenAI launches Images 2.6 with GIFs and image reference",
+      "url": "https://www.testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference",
+      "primary_url": "https://www.testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference",
+      "source": "Testing Catalog",
+      "source_names": [
+        "Testing Catalog"
+      ],
+      "source_count": 1,
+      "importance_score": 0.63,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T00:44:16Z",
+      "latest_at": "2026-11-05T00:44:16Z",
       "company_topics": [
         "openai"
       ],
@@ -1729,7 +2043,7 @@
         "The Decoder AI News"
       ],
       "source_count": 1,
-      "importance_score": 0.6397,
+      "importance_score": 0.6288,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1743,6 +2057,52 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_2eb4ff60af78",
+      "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术 / The agents also discovered and used at least 10 Linux exploitation techniques that, to the best of our knowledge and all of the experts t...",
+      "url": "https://x.com/OpenAI/status/2118119461345739018",
+      "primary_url": "https://x.com/OpenAI/status/2118119461345739018",
+      "source": "X：OpenAI (@OpenAI)",
+      "source_names": [
+        "X：OpenAI (@OpenAI)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.6196,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-04T23:13:26Z",
+      "latest_at": "2026-11-04T23:13:26Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_4c17c8d4f985",
+      "title": "中期选举之后，一场关于数据中心的更大冲突可能即将到来 / After the midterms, a bigger clash over data centers could be coming",
+      "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming",
+      "primary_url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming",
+      "source": "TechCrunch AI",
+      "source_names": [
+        "TechCrunch AI"
+      ],
+      "source_count": 1,
+      "importance_score": 0.6182,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T01:02:14Z",
+      "latest_at": "2026-11-05T01:02:14Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_011aa17651fc",
       "title": "开源人工智能正在蓬勃发展。Hugging Face解释了谁获利。 / Open source AI is booming. Hugging Face explains who profits.",
       "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits",
@@ -1752,7 +2112,7 @@
         "TechCrunch AI"
       ],
       "source_count": 1,
-      "importance_score": 0.6283,
+      "importance_score": 0.6173,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1766,29 +2126,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_6c43a2554c0d",
-      "title": "OpenAI 报告 GPT-6 Astra 在安全研究任务上隐蔽消极怠工 / Covert underperformance on safety research tasks",
-      "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
-      "primary_url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
-      "source": "OpenAI：失准报告与通报（网页）",
-      "source_names": [
-        "OpenAI：失准报告与通报（网页）"
-      ],
-      "source_count": 1,
-      "importance_score": 0.6274,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T00:00:00Z",
-      "latest_at": "2026-11-04T00:00:00Z",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_2a481c66ec67",
       "title": "基于开源人工智能？ Hugging Face 的政策负责人谈成本、风险和权衡 / Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
       "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs",
@@ -1798,7 +2135,7 @@
         "TechCrunch AI"
       ],
       "source_count": 1,
-      "importance_score": 0.6264,
+      "importance_score": 0.6156,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1821,7 +2158,7 @@
         "The Decoder AI News"
       ],
       "source_count": 1,
-      "importance_score": 0.6263,
+      "importance_score": 0.6154,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1846,7 +2183,7 @@
         "TechCrunch AI"
       ],
       "source_count": 1,
-      "importance_score": 0.6227,
+      "importance_score": 0.6113,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1867,7 +2204,7 @@
         "The Verge"
       ],
       "source_count": 2,
-      "importance_score": 0.6222,
+      "importance_score": 0.6111,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1882,7 +2219,7 @@
     },
     {
       "story_id": "story_49116390f713",
-      "title": "GPT-6 Astra sees the matrix and reprograms other AI models directly through their weights",
+      "title": "GPT-6 Astra 看到矩阵并直接通过权重重新编程其他 AI 模型 / GPT-6 Astra sees the matrix and reprograms other AI models directly through their weights",
       "url": "https://the-decoder.com/gpt-6-astra-sees-the-matrix-and-reprograms-other-ai-models-directly-through-their-weights",
       "primary_url": "https://the-decoder.com/gpt-6-astra-sees-the-matrix-and-reprograms-other-ai-models-directly-through-their-weights",
       "source": "The Decoder AI News",
@@ -1890,7 +2227,7 @@
         "The Decoder AI News"
       ],
       "source_count": 1,
-      "importance_score": 0.6192,
+      "importance_score": 0.6088,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1906,7 +2243,7 @@
     },
     {
       "story_id": "story_a6ef4edcc850",
-      "title": "Anthropic's new prototype proves which model wrote an AI response without exposing its weights",
+      "title": "Anthropic 的新原型证明了哪个模型在不暴露其权重的情况下编写了 AI 响应 / Anthropic's new prototype proves which model wrote an AI response without exposing its weights",
       "url": "https://the-decoder.com/anthropics-new-prototype-proves-which-model-wrote-an-ai-response-without-exposing-its-weights",
       "primary_url": "https://the-decoder.com/anthropics-new-prototype-proves-which-model-wrote-an-ai-response-without-exposing-its-weights",
       "source": "The Decoder AI News",
@@ -1914,7 +2251,7 @@
         "The Decoder AI News"
       ],
       "source_count": 1,
-      "importance_score": 0.6184,
+      "importance_score": 0.608,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1937,7 +2274,7 @@
         "X：Rohan Paul (@rohanpaul_ai)"
       ],
       "source_count": 1,
-      "importance_score": 0.6098,
+      "importance_score": 0.599,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1962,7 +2299,7 @@
         "TechCrunch AI"
       ],
       "source_count": 1,
-      "importance_score": 0.6094,
+      "importance_score": 0.5988,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -1976,77 +2313,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_cf52e152695c",
-      "title": "People should always be in control of the future. OpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that “AI systems think makes sense to reward in humans”....",
-      "url": "https://x.com/sama/status/2117794005165748448",
-      "primary_url": "https://x.com/sama/status/2117794005165748448",
-      "source": "Follow Builders · X · Sam Altman",
-      "source_names": [
-        "Follow Builders · X · Sam Altman"
-      ],
-      "source_count": 1,
-      "importance_score": 0.6064,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T01:40:12Z",
-      "latest_at": "2026-11-04T01:40:12Z",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_c7cf2d09474d",
-      "title": "Think about how much time we all waste waiting on hold or trying to navigate legacy phone systems (\"say 1 to proceed\" 🤮). That's why I love Grok @Bot's new phone call feature. Try it with these 5 use cases: 1. Negotia...",
-      "url": "https://x.com/petergyang/status/2117783921748558185",
-      "primary_url": "https://x.com/petergyang/status/2117783921748558185",
-      "source": "Follow Builders · X · Peter Yang",
-      "source_names": [
-        "Follow Builders · X · Peter Yang"
-      ],
-      "source_count": 1,
-      "importance_score": 0.6051,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T01:00:08Z",
-      "latest_at": "2026-11-04T01:00:08Z",
-      "company_topics": [
-        "xai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1c7e7efb0695",
-      "title": "My two favorite default skills on Claude Code, still, that seem relatively less used are a) /insights and b) /playground.. For insights, I have a regular cron job that runs this now every two weeks. It tells me all th...",
-      "url": "https://x.com/nikunj/status/2117773647868018897",
-      "primary_url": "https://x.com/nikunj/status/2117773647868018897",
-      "source": "Follow Builders · X · Nikunj Kothari",
-      "source_names": [
-        "Follow Builders · X · Nikunj Kothari"
-      ],
-      "source_count": 1,
-      "importance_score": 0.6038,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-04T00:19:18Z",
-      "latest_at": "2026-11-04T00:19:18Z",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_1218e91877ea",
       "title": "TechCrunch 创始人峰会 2026：东部时间上午 9 点在波士顿开幕 / TechCrunch Founder Summit 2026: Doors open at 9 a.m. ET in Boston",
       "url": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day",
@@ -2056,7 +2322,7 @@
         "TechCrunch AI"
       ],
       "source_count": 1,
-      "importance_score": 0.6004,
+      "importance_score": 0.5904,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2077,7 +2343,7 @@
         "The Decoder AI News"
       ],
       "source_count": 1,
-      "importance_score": 0.5954,
+      "importance_score": 0.5857,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2086,29 +2352,6 @@
       "earliest_at": "2026-11-04T10:45:54Z",
       "latest_at": "2026-11-04T10:45:54Z",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7afdaeef052e",
-      "title": "从 2027 年开始，关闭 Google AI 的学校也将失去搜索功能 / Schools that turn off Google's AI will lose search too starting in 2027",
-      "url": "https://the-decoder.com/schools-that-turn-off-googles-ai-will-lose-search-too-starting-in-2027",
-      "primary_url": "https://the-decoder.com/schools-that-turn-off-googles-ai-will-lose-search-too-starting-in-2027",
-      "source": "The Decoder AI News",
-      "source_names": [
-        "The Decoder AI News"
-      ],
-      "source_count": 1,
-      "importance_score": 0.594,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T10:06:23Z",
-      "latest_at": "2026-11-04T10:06:23Z",
-      "company_topics": [
-        "google-gemini"
-      ],
       "lens_topics": []
     },
     {
@@ -2121,7 +2364,7 @@
         "Follow Builders · X · Peter Yang"
       ],
       "source_count": 1,
-      "importance_score": 0.5939,
+      "importance_score": 0.5851,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2135,70 +2378,70 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_3dd80ae94baa",
-      "title": "Anthropic 为重要开源项目新增可选安全扫描服务",
-      "url": "https://www.infoq.cn/article/hdmi6FdjpYSEvuMhPOAa",
-      "primary_url": "https://www.infoq.cn/article/hdmi6FdjpYSEvuMhPOAa",
+      "story_id": "story_325ca1c2f84c",
+      "title": "谷歌用 Gemini 4 Argon 一夜优化 ADK 代码库的 20 万行代码",
+      "url": "https://www.infoq.cn/article/u4fAoAH5vZPCV4TVqAcO",
+      "primary_url": "https://www.infoq.cn/article/u4fAoAH5vZPCV4TVqAcO",
       "source": "InfoQ CN",
       "source_names": [
         "InfoQ CN"
       ],
       "source_count": 1,
-      "importance_score": 0.5909,
+      "importance_score": 0.5848,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-04T19:53:34Z",
-      "latest_at": "2026-11-04T19:53:34Z",
+      "earliest_at": "2026-11-05T03:00:00Z",
+      "latest_at": "2026-11-05T03:00:00Z",
       "company_topics": [
-        "anthropic"
+        "google-gemini"
       ],
       "lens_topics": []
     },
     {
-      "story_id": "story_154e5f80cec9",
-      "title": "大模型会击穿具身智能吗？稚晖君带领团队深刻复盘并解答",
-      "url": "https://www.infoq.cn/article/bFKTeyCOlydWMYi91H4q",
-      "primary_url": "https://www.infoq.cn/article/bFKTeyCOlydWMYi91H4q",
-      "source": "InfoQ CN",
+      "story_id": "story_7afdaeef052e",
+      "title": "从 2027 年开始，关闭 Google AI 的学校也将失去搜索功能 / Schools that turn off Google's AI will lose search too starting in 2027",
+      "url": "https://the-decoder.com/schools-that-turn-off-googles-ai-will-lose-search-too-starting-in-2027",
+      "primary_url": "https://the-decoder.com/schools-that-turn-off-googles-ai-will-lose-search-too-starting-in-2027",
+      "source": "The Decoder AI News",
       "source_names": [
-        "InfoQ CN"
+        "The Decoder AI News"
       ],
       "source_count": 1,
-      "importance_score": 0.5868,
+      "importance_score": 0.5844,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-04T11:02:35Z",
-      "latest_at": "2026-11-04T11:02:35Z",
+      "earliest_at": "2026-11-04T10:06:23Z",
+      "latest_at": "2026-11-04T10:06:23Z",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_70d61d0ec339",
+      "title": "斯坦福论文揭示上下文学习电路：小模型靠重复标签触发查找而非学会新模式 / New Stanford paper finds that showing a small AI language model more examples cannot teach it a pattern it does not already notice, such ...",
+      "url": "https://x.com/rohanpaul_ai/status/2118166912714584447",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2118166912714584447",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5825,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-11-05T02:22:00Z",
+      "latest_at": "2026-11-05T02:22:00Z",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_0bc55277780e",
-      "title": "v2.1.318",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
-      "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
-      "source": "Claude Code Releases",
-      "source_names": [
-        "Claude Code Releases"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5861,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T00:01:03Z",
-      "latest_at": "2026-11-04T00:01:03Z",
-      "company_topics": [
-        "anthropic"
-      ],
       "lens_topics": []
     },
     {
@@ -2211,7 +2454,7 @@
         "X：Rohan Paul (@rohanpaul_ai)"
       ],
       "source_count": 1,
-      "importance_score": 0.5817,
+      "importance_score": 0.5704,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2232,7 +2475,7 @@
         "Simon Willison"
       ],
       "source_count": 1,
-      "importance_score": 0.5801,
+      "importance_score": 0.5697,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2255,7 +2498,7 @@
         "The Verge"
       ],
       "source_count": 1,
-      "importance_score": 0.5799,
+      "importance_score": 0.5691,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2276,7 +2519,7 @@
         "NVIDIA Generative AI Blog"
       ],
       "source_count": 1,
-      "importance_score": 0.5796,
+      "importance_score": 0.5682,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2292,6 +2535,29 @@
       ]
     },
     {
+      "story_id": "story_136f6689901b",
+      "title": "高通 Cloud AI 100 Ultra——150W 人工智能加速卡，配备 128GB 内存，传输速率达 548GB/s",
+      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+      "primary_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+      "source": "www.qualcomm.com",
+      "source_names": [
+        "Hacker News (黑客新闻)",
+        "hackernews",
+        "www.qualcomm.com"
+      ],
+      "source_count": 3,
+      "importance_score": 0.5671,
+      "importance_label": "多源热议",
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-11-04T19:55:14Z",
+      "latest_at": "2026-11-05T01:44:43.584000Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_5a2504760147",
       "title": "Hugging Face 首席执行官表示他的 P（末日）“接近于零” / Hugging Face’s CEO Says His P(Doom) Is ‘Close to Zero’",
       "url": "https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face",
@@ -2301,7 +2567,7 @@
         "Wired AI"
       ],
       "source_count": 1,
-      "importance_score": 0.5769,
+      "importance_score": 0.5659,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2315,109 +2581,90 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_e04cbe6319bf",
-      "title": "Frontier Models improving open-weight models?",
-      "url": "https://aibreakfast.beehiiv.com/p/frontier-models-improving-open-weight-models",
-      "primary_url": "https://aibreakfast.beehiiv.com/p/frontier-models-improving-open-weight-models",
-      "source": "AI Breakfast",
-      "source_names": [
-        "AI Breakfast"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5718,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T00:00:00Z",
-      "latest_at": "2026-11-04T00:00:00Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c9c96980a364",
-      "title": "Travis, User Operations lead at Replit, built an app that prioritizes incoming support tickets, adds context, and routes workflows for proper responses. https://t.co/nXz2qah8HJ",
-      "url": "https://x.com/Replit/status/2117761275723722787",
-      "primary_url": "https://x.com/Replit/status/2117761275723722787",
-      "source": "@Replit",
-      "source_names": [
-        "@Replit"
-      ],
-      "source_count": 1,
-      "importance_score": 0.569,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-11-03T23:30:08Z",
-      "latest_at": "2026-11-03T23:30:08Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_083ecca55699",
-      "title": "月烧 1.5 万亿 token，年烧 1.32 亿美元？Cursor 工程师的账单，凡人只能仰望",
-      "url": "https://www.infoq.cn/article/q9iebpvFozfy4bgCYUyE",
-      "primary_url": "https://www.infoq.cn/article/q9iebpvFozfy4bgCYUyE",
+      "story_id": "story_a2d2209f9375",
+      "title": "AI Coding 增量风险管控：Skill 门禁与 Harness 落地实践｜AICon北京",
+      "url": "https://www.infoq.cn/article/XieGrL5pws7jG1zxKPle",
+      "primary_url": "https://www.infoq.cn/article/XieGrL5pws7jG1zxKPle",
       "source": "InfoQ CN",
       "source_names": [
         "InfoQ CN"
       ],
       "source_count": 1,
-      "importance_score": 0.5685,
+      "importance_score": 0.5656,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-04T15:48:18Z",
-      "latest_at": "2026-11-04T15:48:18Z",
+      "earliest_at": "2026-11-05T02:00:00Z",
+      "latest_at": "2026-11-05T02:00:00Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3dd80ae94baa",
+      "title": "Anthropic 为重要开源项目新增可选安全扫描服务",
+      "url": "https://www.infoq.cn/article/hdmi6FdjpYSEvuMhPOAa",
+      "primary_url": "https://www.infoq.cn/article/hdmi6FdjpYSEvuMhPOAa",
+      "source": "InfoQ CN",
+      "source_names": [
+        "InfoQ CN"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5621,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T11:53:34Z",
+      "latest_at": "2026-11-04T11:53:34Z",
       "company_topics": [
-        "cursor"
+        "anthropic"
       ],
       "lens_topics": []
     },
     {
-      "story_id": "story_4d585cd8fe5f",
-      "title": "Linux内核也能造了？Codex 11天写出13.9万行新内核，Rocky Linux 10跑起来了",
-      "url": "https://www.infoq.cn/article/OiyNEtFwV05opvsLTcvK",
-      "primary_url": "https://www.infoq.cn/article/OiyNEtFwV05opvsLTcvK",
-      "source": "InfoQ CN",
+      "story_id": "story_27252de7a85c",
+      "title": "现在什么都是AI骗局了",
+      "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now",
+      "primary_url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now",
+      "source": "www.davidralphlewis.co.uk",
       "source_names": [
-        "InfoQ CN"
+        "Hacker News (黑客新闻)",
+        "hackernews",
+        "www.davidralphlewis.co.uk"
       ],
-      "source_count": 1,
-      "importance_score": 0.5678,
-      "importance_label": "值得关注",
-      "category": "watch",
+      "source_count": 3,
+      "importance_score": 0.5604,
+      "importance_label": "多源热议",
+      "category": "multi_source",
       "reasons": [
-        "recent_ai_signal"
+        "multi_source"
       ],
-      "earliest_at": "2026-11-04T15:30:50Z",
-      "latest_at": "2026-11-04T15:30:50Z",
+      "earliest_at": "2026-11-04T21:05:19Z",
+      "latest_at": "2026-11-04T23:04:46.586000Z",
       "company_topics": [],
       "lens_topics": []
     },
     {
-      "story_id": "story_4e1adffafb18",
-      "title": "Harbor 新增 Docker Sandboxes 支持，可在隔离的 MicroVM 中运行可重现的 AI 代理评估",
-      "url": "https://www.infoq.cn/article/pgmES06L2MAH2TCSMhJ9",
-      "primary_url": "https://www.infoq.cn/article/pgmES06L2MAH2TCSMhJ9",
-      "source": "InfoQ CN",
+      "story_id": "story_fa79fb9dc5c7",
+      "title": "蓝色浪潮让科技兄弟争相建设太空数据中心 / The Blue Wave Has Tech Bros Scrambling for Data Centers in Space",
+      "url": "https://www.wired.com/story/the-blue-wave-has-tech-bros-scrambling-for-data-centers-in-space",
+      "primary_url": "https://www.wired.com/story/the-blue-wave-has-tech-bros-scrambling-for-data-centers-in-space",
+      "source": "Wired AI",
       "source_names": [
-        "InfoQ CN"
+        "Wired AI"
       ],
       "source_count": 1,
-      "importance_score": 0.5672,
+      "importance_score": 0.5587,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-04T17:00:00Z",
-      "latest_at": "2026-11-04T17:00:00Z",
+      "earliest_at": "2026-11-04T23:13:14Z",
+      "latest_at": "2026-11-04T23:13:14Z",
       "company_topics": [],
       "lens_topics": []
     },
@@ -2431,7 +2678,7 @@
         "NVIDIA Generative AI Blog"
       ],
       "source_count": 1,
-      "importance_score": 0.5672,
+      "importance_score": 0.5566,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2448,7 +2695,7 @@
     },
     {
       "story_id": "story_8c723b403b8a",
-      "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
+      "title": "使用 NVIDIA NeMo 将代理故障转化为测试和利用修复 / Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
       "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
       "primary_url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
       "source": "NVIDIA Generative AI Blog",
@@ -2456,7 +2703,7 @@
         "NVIDIA Generative AI Blog"
       ],
       "source_count": 1,
-      "importance_score": 0.5648,
+      "importance_score": 0.5543,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2481,7 +2728,7 @@
         "社区更新 · 2026-11-04"
       ],
       "source_count": 1,
-      "importance_score": 0.5646,
+      "importance_score": 0.5534,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2502,7 +2749,7 @@
         "社区更新 · 2026-11-04"
       ],
       "source_count": 1,
-      "importance_score": 0.5646,
+      "importance_score": 0.5534,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2527,7 +2774,7 @@
         "社区更新 · 2026-11-04"
       ],
       "source_count": 1,
-      "importance_score": 0.5646,
+      "importance_score": 0.5534,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2543,29 +2790,6 @@
       ]
     },
     {
-      "story_id": "story_307937f617c3",
-      "title": "Uber 总裁跳槽 OpenAI！曾掌舵谷歌、Snap 公关，Brockman 亲自发文欢迎",
-      "url": "https://www.infoq.cn/article/mcHCe07TQ08mEZtqcWi1",
-      "primary_url": "https://www.infoq.cn/article/mcHCe07TQ08mEZtqcWi1",
-      "source": "InfoQ CN",
-      "source_names": [
-        "InfoQ CN"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5644,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T14:02:24Z",
-      "latest_at": "2026-11-04T14:02:24Z",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_d1c967a24c59",
       "title": "最大的 Pro-AI Super PAC 网络并没有真正影响中期选举 / The Biggest Pro-AI Super PAC Network Didn’t Really Impact the Midterms",
       "url": "https://www.wired.com/story/the-biggest-pro-ai-super-pac-network-didnt-really-impact-the-midterms",
@@ -2575,7 +2799,7 @@
         "Wired AI"
       ],
       "source_count": 1,
-      "importance_score": 0.5638,
+      "importance_score": 0.5526,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2596,7 +2820,7 @@
         "Wired AI"
       ],
       "source_count": 1,
-      "importance_score": 0.5623,
+      "importance_score": 0.5512,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2617,7 +2841,7 @@
         "Wired AI"
       ],
       "source_count": 1,
-      "importance_score": 0.5545,
+      "importance_score": 0.5439,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2629,27 +2853,28 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_92d64729d9dc",
-      "title": "研究发现：AI 生成代码受下游环节瓶颈制约，无法提升整体生产力",
-      "url": "https://www.infoq.cn/article/c3vTLNrRwfCzw8SAmz90",
-      "primary_url": "https://www.infoq.cn/article/c3vTLNrRwfCzw8SAmz90",
-      "source": "InfoQ CN",
+      "story_id": "story_22367b7e8017",
+      "title": "图 2.6",
+      "url": "https://openai.com/index/introducing-images-2-6",
+      "primary_url": "https://openai.com/index/introducing-images-2-6",
+      "source": "openai.com",
       "source_names": [
-        "InfoQ CN"
+        "Hacker News (黑客新闻)",
+        "openai.com"
       ],
-      "source_count": 1,
-      "importance_score": 0.5531,
+      "source_count": 2,
+      "importance_score": 0.5434,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
-        "recent_ai_signal"
+        "multi_source"
       ],
-      "earliest_at": "2026-11-04T16:20:50Z",
-      "latest_at": "2026-11-04T16:20:50Z",
-      "company_topics": [],
-      "lens_topics": [
-        "workplace"
-      ]
+      "earliest_at": "2026-11-04T23:35:44Z",
+      "latest_at": "2026-11-05T02:17:02.236000Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
     },
     {
       "story_id": "story_c5e2969ff054",
@@ -2663,7 +2888,7 @@
         "www.theguardian.com"
       ],
       "source_count": 3,
-      "importance_score": 0.5529,
+      "importance_score": 0.5425,
       "importance_label": "多源热议",
       "category": "multi_source",
       "reasons": [
@@ -2686,7 +2911,7 @@
         "spectrum.ieee.org"
       ],
       "source_count": 3,
-      "importance_score": 0.5529,
+      "importance_score": 0.5425,
       "importance_label": "多源热议",
       "category": "multi_source",
       "reasons": [
@@ -2698,45 +2923,115 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_da59786c8cfd",
-      "title": "员工都会用一点 AI，团队下一步怎么走？",
-      "url": "https://www.infoq.cn/article/6oGyozHwd1WjYyEGjpbk",
-      "primary_url": "https://www.infoq.cn/article/6oGyozHwd1WjYyEGjpbk",
+      "story_id": "story_083ecca55699",
+      "title": "月烧 1.5 万亿 token，年烧 1.32 亿美元？Cursor 工程师的账单，凡人只能仰望",
+      "url": "https://www.infoq.cn/article/q9iebpvFozfy4bgCYUyE",
+      "primary_url": "https://www.infoq.cn/article/q9iebpvFozfy4bgCYUyE",
       "source": "InfoQ CN",
       "source_names": [
         "InfoQ CN"
       ],
       "source_count": 1,
-      "importance_score": 0.5506,
+      "importance_score": 0.5414,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-04T15:17:15Z",
-      "latest_at": "2026-11-04T15:17:15Z",
+      "earliest_at": "2026-11-04T07:48:18Z",
+      "latest_at": "2026-11-04T07:48:18Z",
+      "company_topics": [
+        "cursor"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4d585cd8fe5f",
+      "title": "Linux内核也能造了？Codex 11天写出13.9万行新内核，Rocky Linux 10跑起来了",
+      "url": "https://www.infoq.cn/article/OiyNEtFwV05opvsLTcvK",
+      "primary_url": "https://www.infoq.cn/article/OiyNEtFwV05opvsLTcvK",
+      "source": "InfoQ CN",
+      "source_names": [
+        "InfoQ CN"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5408,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T07:30:50Z",
+      "latest_at": "2026-11-04T07:30:50Z",
       "company_topics": [],
       "lens_topics": []
     },
     {
-      "story_id": "story_6e5522b492b7",
-      "title": "如何把目标定得更大胆：写给 AI 使用者的实践指南",
-      "url": "https://www.infoq.cn/article/F1ms7x7KI1p7UfocCywh",
-      "primary_url": "https://www.infoq.cn/article/F1ms7x7KI1p7UfocCywh",
+      "story_id": "story_90365e95fff3",
+      "title": "Ask HN: 你目前的人工智能代理配置是怎样的？",
+      "url": "https://news.ycombinator.com/item?id=50366117",
+      "primary_url": "https://news.ycombinator.com/item?id=50366117",
+      "source": "news.ycombinator.com",
+      "source_names": [
+        "hackernews",
+        "news.ycombinator.com"
+      ],
+      "source_count": 2,
+      "importance_score": 0.54,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-11-04T14:37:22Z",
+      "latest_at": "2026-11-05T00:56:50.104000Z",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_4e1adffafb18",
+      "title": "Harbor 新增 Docker Sandboxes 支持，可在隔离的 MicroVM 中运行可重现的 AI 代理评估",
+      "url": "https://www.infoq.cn/article/pgmES06L2MAH2TCSMhJ9",
+      "primary_url": "https://www.infoq.cn/article/pgmES06L2MAH2TCSMhJ9",
       "source": "InfoQ CN",
       "source_names": [
         "InfoQ CN"
       ],
       "source_count": 1,
-      "importance_score": 0.5505,
+      "importance_score": 0.5396,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-04T15:15:13Z",
-      "latest_at": "2026-11-04T15:15:13Z",
+      "earliest_at": "2026-11-04T09:00:00Z",
+      "latest_at": "2026-11-04T09:00:00Z",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_307937f617c3",
+      "title": "Uber 总裁跳槽 OpenAI！曾掌舵谷歌、Snap 公关，Brockman 亲自发文欢迎",
+      "url": "https://www.infoq.cn/article/mcHCe07TQ08mEZtqcWi1",
+      "primary_url": "https://www.infoq.cn/article/mcHCe07TQ08mEZtqcWi1",
+      "source": "InfoQ CN",
+      "source_names": [
+        "InfoQ CN"
+      ],
+      "source_count": 1,
+      "importance_score": 0.538,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T06:02:24Z",
+      "latest_at": "2026-11-04T06:02:24Z",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
     },
     {
@@ -2749,7 +3044,7 @@
         "Wired AI"
       ],
       "source_count": 1,
-      "importance_score": 0.5473,
+      "importance_score": 0.5371,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2757,28 +3052,6 @@
       ],
       "earliest_at": "2026-11-04T13:49:51Z",
       "latest_at": "2026-11-04T13:49:51Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_27252de7a85c",
-      "title": "现在一切都是人工智能骗局 / Everything is an AI scam now",
-      "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now",
-      "primary_url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now",
-      "source": "Hacker News (黑客新闻)",
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "hackernews"
-      ],
-      "source_count": 2,
-      "importance_score": 0.5419,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-11-04T21:05:19Z",
-      "latest_at": "2026-11-04T21:05:19Z",
       "company_topics": [],
       "lens_topics": []
     },
@@ -2793,7 +3066,7 @@
         "hy.tencent.ai"
       ],
       "source_count": 2,
-      "importance_score": 0.5395,
+      "importance_score": 0.5284,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2807,47 +3080,50 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_136f6689901b",
-      "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
-      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "primary_url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "source": "Hacker News (黑客新闻)",
+      "story_id": "story_036b3b262277",
+      "title": "OpenAI launches Images 2.6 in ChatGPT, Codex, and the API, saying it generates images 50% faster, and adds animated GIF creation from prompts or photos (Emma Roth/The Verge)",
+      "url": "https://www.techmeme.com/261104/p57",
+      "primary_url": "https://www.techmeme.com/261104/p57",
+      "source": "Techmeme",
       "source_names": [
-        "Hacker News (黑客新闻)",
-        "hackernews"
-      ],
-      "source_count": 2,
-      "importance_score": 0.5389,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-11-04T19:55:14Z",
-      "latest_at": "2026-11-04T19:55:14Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ac41ecb8db2d",
-      "title": "给 AI 业务单独划一块地：帆软怎么重新安排事、人和组织｜AICon北京",
-      "url": "https://www.infoq.cn/article/BGkTakB51rl6ybIh4sYJ",
-      "primary_url": "https://www.infoq.cn/article/BGkTakB51rl6ybIh4sYJ",
-      "source": "InfoQ CN",
-      "source_names": [
-        "InfoQ CN"
+        "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.5387,
+      "importance_score": 0.5268,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-04T10:00:00Z",
-      "latest_at": "2026-11-04T10:00:00Z",
-      "company_topics": [],
+      "earliest_at": "2026-11-05T00:40:01Z",
+      "latest_at": "2026-11-05T00:40:01Z",
+      "company_topics": [
+        "openai"
+      ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_92d64729d9dc",
+      "title": "研究发现：AI 生成代码受下游环节瓶颈制约，无法提升整体生产力",
+      "url": "https://www.infoq.cn/article/c3vTLNrRwfCzw8SAmz90",
+      "primary_url": "https://www.infoq.cn/article/c3vTLNrRwfCzw8SAmz90",
+      "source": "InfoQ CN",
+      "source_names": [
+        "InfoQ CN"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5258,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T08:20:50Z",
+      "latest_at": "2026-11-04T08:20:50Z",
+      "company_topics": [],
+      "lens_topics": [
+        "workplace"
+      ]
     },
     {
       "story_id": "story_e914dafd8687",
@@ -2859,7 +3135,7 @@
         "社区更新 · 2026-11-03"
       ],
       "source_count": 1,
-      "importance_score": 0.5333,
+      "importance_score": 0.5241,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2884,7 +3160,7 @@
         "社区更新 · 2026-11-03"
       ],
       "source_count": 1,
-      "importance_score": 0.5333,
+      "importance_score": 0.5241,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2907,7 +3183,7 @@
         "社区更新 · 2026-11-03"
       ],
       "source_count": 1,
-      "importance_score": 0.5333,
+      "importance_score": 0.5241,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2921,6 +3197,48 @@
       ]
     },
     {
+      "story_id": "story_6e5522b492b7",
+      "title": "如何把目标定得更大胆：写给 AI 使用者的实践指南",
+      "url": "https://www.infoq.cn/article/F1ms7x7KI1p7UfocCywh",
+      "primary_url": "https://www.infoq.cn/article/F1ms7x7KI1p7UfocCywh",
+      "source": "InfoQ CN",
+      "source_names": [
+        "InfoQ CN"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5237,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T07:15:13Z",
+      "latest_at": "2026-11-04T07:15:13Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_da59786c8cfd",
+      "title": "员工都会用一点 AI，团队下一步怎么走？",
+      "url": "https://www.infoq.cn/article/6oGyozHwd1WjYyEGjpbk",
+      "primary_url": "https://www.infoq.cn/article/6oGyozHwd1WjYyEGjpbk",
+      "source": "InfoQ CN",
+      "source_names": [
+        "InfoQ CN"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5237,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T07:17:15Z",
+      "latest_at": "2026-11-04T07:17:15Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_ff4586646c98",
       "title": "Kimi K3.1 Pro 各款车型的重量已公布",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
@@ -2931,7 +3249,7 @@
         "huggingface.co"
       ],
       "source_count": 2,
-      "importance_score": 0.533,
+      "importance_score": 0.5223,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2946,17 +3264,63 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_890823c57313",
+      "title": "AI 热点日报（2026-11-03）：美团发布 1.6 万亿参数国产大模型，四大厂商共推 AI 训练退出标准",
+      "url": "https://juejin.cn/post/7703459728308027428",
+      "primary_url": "https://juejin.cn/post/7703459728308027428",
+      "source": "juejin",
+      "source_names": [
+        "juejin"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5199,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T02:51:56.951000Z",
+      "latest_at": "2026-11-05T02:51:56.951000Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_573a88e516e8",
+      "title": "DeepSeek Harness入驻B站，评论区被干成了大型插件集市！",
+      "url": "https://juejin.cn/post/7704165786369490995",
+      "primary_url": "https://juejin.cn/post/7704165786369490995",
+      "source": "juejin",
+      "source_names": [
+        "juejin"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5199,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T02:51:56.951000Z",
+      "latest_at": "2026-11-05T02:51:56.951000Z",
+      "company_topics": [
+        "deepseek"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_34f5bf26cd71",
-      "title": "Letting users trust their own MCP clients, without opening a phishing hole",
+      "title": "让用户信任自己的 MCP 客户端，而不打开网络钓鱼漏洞 / Letting users trust their own MCP clients, without opening a phishing hole",
       "url": "https://streamvessel.com/blog/mcp-trusted-redirect-uris",
       "primary_url": "https://streamvessel.com/blog/mcp-trusted-redirect-uris",
-      "source": "Hacker News (黑客新闻)",
+      "source": "Hacker News · 24h最热",
       "source_names": [
-        "Hacker News (黑客新闻)",
+        "Hacker News · 24h最热",
         "hackernews"
       ],
       "source_count": 2,
-      "importance_score": 0.5282,
+      "importance_score": 0.5179,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -2971,7 +3335,7 @@
     },
     {
       "story_id": "story_a20fe5feb8fc",
-      "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+      "title": "YC 的 Garry Tan 大量使用人工智能代理，他每年在代币上的花费高达 20 万美元 / YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
       "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens",
       "primary_url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens",
       "source": "Hacker News · 24h最热",
@@ -2980,7 +3344,7 @@
         "hackernews"
       ],
       "source_count": 2,
-      "importance_score": 0.5281,
+      "importance_score": 0.5178,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3004,7 +3368,7 @@
         "www.mindstudio.ai"
       ],
       "source_count": 2,
-      "importance_score": 0.5279,
+      "importance_score": 0.5175,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3028,7 +3392,7 @@
         "news.ycombinator.com"
       ],
       "source_count": 2,
-      "importance_score": 0.5279,
+      "importance_score": 0.5175,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3044,6 +3408,53 @@
       ]
     },
     {
+      "story_id": "story_a2f479e3a7d5",
+      "title": "Cat Wu, who left Anthropic last week, says she is joining OpenAI to lead product manangement for core products; Wu was the product lead for Claude Code (Stephen Council/Business Insider)",
+      "url": "https://www.techmeme.com/261104/p60",
+      "primary_url": "https://www.techmeme.com/261104/p60",
+      "source": "Techmeme",
+      "source_names": [
+        "Techmeme"
+      ],
+      "source_count": 1,
+      "importance_score": 0.516,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T01:20:01Z",
+      "latest_at": "2026-11-05T01:20:01Z",
+      "company_topics": [
+        "openai",
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_ed817b1a5c61",
+      "title": "Sources: Anthropic and AP struck a licensing deal just before the midterms, marking the first time Anthropic paid a digital news publisher to license content (Mark Stenberg/Adweek)",
+      "url": "https://www.techmeme.com/261104/p58",
+      "primary_url": "https://www.techmeme.com/261104/p58",
+      "source": "Techmeme",
+      "source_names": [
+        "Techmeme"
+      ],
+      "source_count": 1,
+      "importance_score": 0.515,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T00:55:01Z",
+      "latest_at": "2026-11-05T00:55:01Z",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_6d3fb3ec56b2",
       "title": "Jaron Lanier on parallels between AI and social media",
       "url": "https://www.youtube.com/watch?v=WxaRn8kX2eI",
@@ -3054,7 +3465,7 @@
         "hackernews"
       ],
       "source_count": 2,
-      "importance_score": 0.5251,
+      "importance_score": 0.5149,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3062,6 +3473,201 @@
       ],
       "earliest_at": "2026-11-04T14:10:14Z",
       "latest_at": "2026-11-04T14:10:14Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a05584d5b82f",
+      "title": "Sources: Google DeepMind spinout Isomorphic Labs is in talks to raise ~$5B at a ~$50B valuation; the AI drug discovery startup last raised $2.1B in May (Bloomberg)",
+      "url": "https://www.techmeme.com/261104/p56",
+      "primary_url": "https://www.techmeme.com/261104/p56",
+      "source": "Techmeme",
+      "source_names": [
+        "Techmeme"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5133,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T00:15:03Z",
+      "latest_at": "2026-11-05T00:15:03Z",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_49230612420e",
+      "title": "Tiny's new AI workstation is anything but — packing in 16 TB SSD array and 128 GB GPU memory, but with an eye-watering price tag to boot",
+      "url": "https://www.techradar.com/pro/tinys-new-ai-workstation-is-anything-but-packing-in-16-tb-ssd-array-and-128-gb-gpu-memory-but-with-an-eye-watering-price-tag-to-boot",
+      "primary_url": "https://www.techradar.com/pro/tinys-new-ai-workstation-is-anything-but-packing-in-16-tb-ssd-array-and-128-gb-gpu-memory-but-with-an-eye-watering-price-tag-to-boot",
+      "source": "TechRadar",
+      "source_names": [
+        "TechRadar"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5129,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T00:05:00Z",
+      "latest_at": "2026-11-05T00:05:00Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_7c862760225b",
+      "title": "我的狗死了，我爸爸给我发了这个 AI 垃圾来告诉我 / My dog died and my dad sent me this AI slop to tell me",
+      "url": "https://www.reddit.com/r/mildlyinfuriating/comments/1xo410h/my_dog_died_and_my_dad_sent_me_this_ai_slop_to",
+      "primary_url": "https://www.reddit.com/r/mildlyinfuriating/comments/1xo410h/my_dog_died_and_my_dad_sent_me_this_ai_slop_to",
+      "source": "Reddit (热门)",
+      "source_names": [
+        "Reddit (热门)"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5127,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T23:59:24Z",
+      "latest_at": "2026-11-04T23:59:24Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_dd8d771c9088",
+      "title": "Axon 因人工智能车牌读取器网络被起诉 / Axon Sued Over AI-Powered License Plate Reader Network",
+      "url": "https://yro.slashdot.org/story/26/11/04/2319208/axon-sued-over-ai-powered-license-plate-reader-network",
+      "primary_url": "https://yro.slashdot.org/story/26/11/04/2319208/axon-sued-over-ai-powered-license-plate-reader-network",
+      "source": "Slashdot",
+      "source_names": [
+        "Slashdot"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5127,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T00:00:00Z",
+      "latest_at": "2026-11-05T00:00:00Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_0c8c093e78ae",
+      "title": "你需要钢铁般的意志才能与人工智能代理合作 / You'll need nerves of steel to work with AI agents",
+      "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
+      "primary_url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
+      "source": "Hacker News · 24h最热",
+      "source_names": [
+        "Hacker News · 24h最热"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5127,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-05T00:01:30Z",
+      "latest_at": "2026-11-05T00:01:30Z",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_f3b9be309797",
+      "title": "Data center shares fall as investors expect slower AI buildout after Democrats win Congress; Hut 8 drops 23%, IREN 11%, Core Scientific 10%, Applied Digital 7% (Reuters)",
+      "url": "https://www.techmeme.com/261104/p55",
+      "primary_url": "https://www.techmeme.com/261104/p55",
+      "source": "Techmeme",
+      "source_names": [
+        "Techmeme"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5114,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T23:30:01Z",
+      "latest_at": "2026-11-04T23:30:01Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_4471ba66ffec",
+      "title": "得益于人工智能，《超级马里奥奥德赛》现在可以在 Apple TV 上运行 / 'Super Mario Odyssey' Can Now Run on Apple TV Thanks to AI",
+      "url": "https://www.macrumors.com/2026/11/04/nintendo-games-apple-tv",
+      "primary_url": "https://www.macrumors.com/2026/11/04/nintendo-games-apple-tv",
+      "source": "Mac Rumors",
+      "source_names": [
+        "Mac Rumors"
+      ],
+      "source_count": 1,
+      "importance_score": 0.511,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T23:20:15Z",
+      "latest_at": "2026-11-04T23:20:15Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c9fc3e5f357d",
+      "title": "OpenAI 表示 ChatGPT 在搜索方面正在赶上 Google / OpenAI Says ChatGPT Is Catching Up to Google In Search",
+      "url": "https://tech.slashdot.org/story/26/11/04/207222/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "primary_url": "https://tech.slashdot.org/story/26/11/04/207222/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "source": "Slashdot",
+      "source_names": [
+        "Slashdot"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5102,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T23:00:00Z",
+      "latest_at": "2026-11-04T23:00:00Z",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a577e58bd07a",
+      "title": "中期选举传递出明确的信息：人工智能清算已经到来 / Midterms deliver clear message: The AI reckoning is here",
+      "url": "https://mashable.com/tech/midterms-ai-backlash",
+      "primary_url": "https://mashable.com/tech/midterms-ai-backlash",
+      "source": "Mashable",
+      "source_names": [
+        "Mashable"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5097,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T22:47:52Z",
+      "latest_at": "2026-11-04T22:47:52Z",
       "company_topics": [],
       "lens_topics": []
     },
@@ -3075,7 +3681,7 @@
         "Slashdot"
       ],
       "source_count": 1,
-      "importance_score": 0.5192,
+      "importance_score": 0.5078,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3096,7 +3702,7 @@
         "Android Police"
       ],
       "source_count": 1,
-      "importance_score": 0.5192,
+      "importance_score": 0.5078,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3110,6 +3716,50 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_d06e816fffce",
+      "title": "Meta 不再以水果命名其人工智能模型 / Meta isn't naming its AI models after fruit anymore",
+      "url": "https://www.businessinsider.com/meta-will-stop-naming-its-ai-models-after-fruit-2026-11",
+      "primary_url": "https://www.businessinsider.com/meta-will-stop-naming-its-ai-models-after-fruit-2026-11",
+      "source": "Business Insider",
+      "source_names": [
+        "Business Insider"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5075,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T21:53:20Z",
+      "latest_at": "2026-11-04T21:53:20Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_d6474140e863",
+      "title": "Anthropic 的 FlashProve 证明哪个模型写了回复，及其 72 倍的成本 / Anthropic's FlashProve proves which model wrote a reply, and its 72x cost",
+      "url": "https://theainewsreport.com/2026-11-04-anthropic-flashprove-provable-inference-explained.html",
+      "primary_url": "https://theainewsreport.com/2026-11-04-anthropic-flashprove-provable-inference-explained.html",
+      "source": "HN Algolia · AI 24h",
+      "source_names": [
+        "HN Algolia · AI 24h"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5066,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T21:31:36Z",
+      "latest_at": "2026-11-04T21:31:36Z",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_9feff3ed0cba",
       "title": "卫星图像揭示了微软人工智能数据中心合作伙伴正在酝酿的麻烦 / Satellite images reveal trouble brewing at Microsoft's AI data center partners",
       "url": "https://www.businessinsider.com/microsoft-ai-buildout-delays-satellite-images-2026-11",
@@ -3119,7 +3769,7 @@
         "Business Insider"
       ],
       "source_count": 1,
-      "importance_score": 0.5159,
+      "importance_score": 0.5047,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3140,7 +3790,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5158,
+      "importance_score": 0.5046,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3161,7 +3811,7 @@
         "Engadget"
       ],
       "source_count": 1,
-      "importance_score": 0.5153,
+      "importance_score": 0.5041,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3182,7 +3832,7 @@
         "Mac Rumors"
       ],
       "source_count": 1,
-      "importance_score": 0.515,
+      "importance_score": 0.5038,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3203,7 +3853,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.5145,
+      "importance_score": 0.5034,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3224,7 +3874,7 @@
         "Slashdot"
       ],
       "source_count": 1,
-      "importance_score": 0.5141,
+      "importance_score": 0.503,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3247,7 +3897,7 @@
         "New York Times"
       ],
       "source_count": 1,
-      "importance_score": 0.5138,
+      "importance_score": 0.5028,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3268,7 +3918,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.5135,
+      "importance_score": 0.5025,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3277,6 +3927,73 @@
       "earliest_at": "2026-11-04T19:45:48Z",
       "latest_at": "2026-11-04T19:45:48Z",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_76f4f24f5699",
+      "title": "喜大普奔啊，据“谣言”相传：Anthropic 社的IPO 取消了，不然你们现在的Claude 高额度管饱的状态就消失了。 PS：别当真，就当时段子~~",
+      "url": "https://x.com/berryxia/status/2117862019911295411",
+      "primary_url": "https://x.com/berryxia/status/2117862019911295411",
+      "source": "@berryxia",
+      "source_names": [
+        "@berryxia"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5023,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T06:10:28Z",
+      "latest_at": "2026-11-04T06:10:28Z",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_57bdd7a390fb",
+      "title": "🤔 Not sure which AI model to choose for your work? No more guesswork. With QwenWork, run the same prompt across multiple models, side by side: generate a 3D tower, rotate it, explore it from multiple camera angles, and…",
+      "url": "https://x.com/alibaba_cloud/status/2117860623027515611",
+      "primary_url": "https://x.com/alibaba_cloud/status/2117860623027515611",
+      "source": "@alibaba_cloud",
+      "source_names": [
+        "@alibaba_cloud"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5021,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T06:04:55Z",
+      "latest_at": "2026-11-04T06:04:55Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_f0d4f7a499b9",
+      "title": "卧槽，Claude Code 的产品负责人 Cat Wu 离开 Anthropic 了！ 她的告别帖，顺手把 AI 编程这两年的变化发展总结了下。 Cat 曾负责 Claude Code 和 Cowork 的产品工作，是推动 Claude Code 从内部工具走向开发者的核心成员之一。 两年前，Claude Code 还只是个小型内部工具。",
+      "url": "https://x.com/berryxia/status/2117857979689234634",
+      "primary_url": "https://x.com/berryxia/status/2117857979689234634",
+      "source": "@berryxia",
+      "source_names": [
+        "@berryxia"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5018,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T05:54:24Z",
+      "latest_at": "2026-11-04T05:54:24Z",
+      "company_topics": [
+        "anthropic"
+      ],
       "lens_topics": []
     },
     {
@@ -3289,7 +4006,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.5127,
+      "importance_score": 0.5017,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3310,7 +4027,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5126,
+      "importance_score": 0.5016,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3324,6 +4041,27 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_7fa9ac619ecc",
+      "title": "Create more with Wan3.0! Generate high-quality, cost-efficient AI video up to 30 seconds in a single pass. Explore its advanced features and start a free trial now. Explore more: https://t.co/6kzmsVkdCH #AlibabaCloud #A…",
+      "url": "https://x.com/alibaba_cloud/status/2117856137680752865",
+      "primary_url": "https://x.com/alibaba_cloud/status/2117856137680752865",
+      "source": "@alibaba_cloud",
+      "source_names": [
+        "@alibaba_cloud"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5015,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T05:47:05Z",
+      "latest_at": "2026-11-04T05:47:05Z",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_1c994f8cfa73",
       "title": "24 岁的 Instinct 创始人表示，人们很快就信任人工智能来管理他们的钱 / The 24-year-old founder of Instinct says people are quick to trust AI with their money",
       "url": "https://www.businessinsider.com/instinct-founder-noah-shinn-touts-ai-agents-racing-to-shop-2026-11",
@@ -3333,7 +4071,7 @@
         "Business Insider"
       ],
       "source_count": 1,
-      "importance_score": 0.5125,
+      "importance_score": 0.5015,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3342,6 +4080,29 @@
       "earliest_at": "2026-11-04T19:20:45Z",
       "latest_at": "2026-11-04T19:20:45Z",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_11c83fcd2a09",
+      "title": "AI built for business trust. At #ApsaraConference2026 in Amsterdam, Zhao Xu, Head of AI Application &amp; Products, MaaS Business Line, Alibaba Token Hub, highlighted how Qwen AI platform combines capable models, effici…",
+      "url": "https://x.com/alibaba_cloud/status/2117853441183580333",
+      "primary_url": "https://x.com/alibaba_cloud/status/2117853441183580333",
+      "source": "@alibaba_cloud",
+      "source_names": [
+        "@alibaba_cloud"
+      ],
+      "source_count": 1,
+      "importance_score": 0.5012,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T05:36:22Z",
+      "latest_at": "2026-11-04T05:36:22Z",
+      "company_topics": [
+        "qwen"
+      ],
       "lens_topics": []
     },
     {
@@ -3354,7 +4115,7 @@
         "Business Insider"
       ],
       "source_count": 1,
-      "importance_score": 0.5117,
+      "importance_score": 0.5008,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3363,29 +4124,6 @@
       "earliest_at": "2026-11-04T19:02:04Z",
       "latest_at": "2026-11-04T19:02:04Z",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_76f4f24f5699",
-      "title": "喜大普奔啊，据“谣言”相传：Anthropic 社的IPO 取消了，不然你们现在的Claude 高额度管饱的状态就消失了。 PS：别当真，就当时段子~~",
-      "url": "https://x.com/berryxia/status/2117862019911295411",
-      "primary_url": "https://x.com/berryxia/status/2117862019911295411",
-      "source": "@berryxia",
-      "source_names": [
-        "@berryxia"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5113,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T06:10:28Z",
-      "latest_at": "2026-11-04T06:10:28Z",
-      "company_topics": [
-        "anthropic"
-      ],
       "lens_topics": []
     },
     {
@@ -3398,7 +4136,7 @@
         "Mashable"
       ],
       "source_count": 1,
-      "importance_score": 0.5113,
+      "importance_score": 0.5004,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3406,27 +4144,6 @@
       ],
       "earliest_at": "2026-11-04T18:53:16Z",
       "latest_at": "2026-11-04T18:53:16Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_57bdd7a390fb",
-      "title": "🤔 Not sure which AI model to choose for your work? No more guesswork. With QwenWork, run the same prompt across multiple models, side by side: generate a 3D tower, rotate it, explore it from multiple camera angles, and…",
-      "url": "https://x.com/alibaba_cloud/status/2117860623027515611",
-      "primary_url": "https://x.com/alibaba_cloud/status/2117860623027515611",
-      "source": "@alibaba_cloud",
-      "source_names": [
-        "@alibaba_cloud"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5112,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T06:04:55Z",
-      "latest_at": "2026-11-04T06:04:55Z",
       "company_topics": [],
       "lens_topics": []
     },
@@ -3440,7 +4157,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5112,
+      "importance_score": 0.5003,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3461,7 +4178,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.5112,
+      "importance_score": 0.5003,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3484,7 +4201,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.511,
+      "importance_score": 0.5001,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3493,73 +4210,6 @@
       "earliest_at": "2026-11-04T18:45:00Z",
       "latest_at": "2026-11-04T18:45:00Z",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f0d4f7a499b9",
-      "title": "卧槽，Claude Code 的产品负责人 Cat Wu 离开 Anthropic 了！ 她的告别帖，顺手把 AI 编程这两年的变化发展总结了下。 Cat 曾负责 Claude Code 和 Cowork 的产品工作，是推动 Claude Code 从内部工具走向开发者的核心成员之一。 两年前，Claude Code 还只是个小型内部工具。",
-      "url": "https://x.com/berryxia/status/2117857979689234634",
-      "primary_url": "https://x.com/berryxia/status/2117857979689234634",
-      "source": "@berryxia",
-      "source_names": [
-        "@berryxia"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5108,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T05:54:24Z",
-      "latest_at": "2026-11-04T05:54:24Z",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7fa9ac619ecc",
-      "title": "Create more with Wan3.0! Generate high-quality, cost-efficient AI video up to 30 seconds in a single pass. Explore its advanced features and start a free trial now. Explore more: https://t.co/6kzmsVkdCH #AlibabaCloud #A…",
-      "url": "https://x.com/alibaba_cloud/status/2117856137680752865",
-      "primary_url": "https://x.com/alibaba_cloud/status/2117856137680752865",
-      "source": "@alibaba_cloud",
-      "source_names": [
-        "@alibaba_cloud"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5105,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T05:47:05Z",
-      "latest_at": "2026-11-04T05:47:05Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_11c83fcd2a09",
-      "title": "AI built for business trust. At #ApsaraConference2026 in Amsterdam, Zhao Xu, Head of AI Application &amp; Products, MaaS Business Line, Alibaba Token Hub, highlighted how Qwen AI platform combines capable models, effici…",
-      "url": "https://x.com/alibaba_cloud/status/2117853441183580333",
-      "primary_url": "https://x.com/alibaba_cloud/status/2117853441183580333",
-      "source": "@alibaba_cloud",
-      "source_names": [
-        "@alibaba_cloud"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5102,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T05:36:22Z",
-      "latest_at": "2026-11-04T05:36:22Z",
-      "company_topics": [
-        "qwen"
-      ],
       "lens_topics": []
     },
     {
@@ -3572,7 +4222,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.5093,
+      "importance_score": 0.4985,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3584,29 +4234,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_62835688e46d",
-      "title": "datasette-agent 0.5a0",
-      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent",
-      "primary_url": "https://simonwillison.net/2026/Nov/3/datasette-agent",
-      "source": "Simon Willison",
-      "source_names": [
-        "Simon Willison"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5088,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:13:45Z",
-      "latest_at": "2026-11-03T23:13:45Z",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_8038925fa3d3",
       "title": "Parsec 创始人从 a16z 筹集了 875 万美元，为 AI 代理提供自己的 PC / Parsec founders raise $8.75M from a16z to give AI agents their own PCs",
       "url": "https://thenextweb.com/news/phaze-8-75m-seed-a16z-remote-computers-ai-agents",
@@ -3616,7 +4243,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5085,
+      "importance_score": 0.4978,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3639,7 +4266,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5083,
+      "importance_score": 0.4976,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3662,7 +4289,7 @@
         "Hacker News (黑客新闻)"
       ],
       "source_count": 1,
-      "importance_score": 0.508,
+      "importance_score": 0.4973,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3683,7 +4310,7 @@
         "Mashable"
       ],
       "source_count": 1,
-      "importance_score": 0.5078,
+      "importance_score": 0.4971,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3704,7 +4331,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5078,
+      "importance_score": 0.4971,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3725,7 +4352,7 @@
         "Business Insider"
       ],
       "source_count": 1,
-      "importance_score": 0.5075,
+      "importance_score": 0.4968,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3748,7 +4375,7 @@
         "Engadget"
       ],
       "source_count": 1,
-      "importance_score": 0.5074,
+      "importance_score": 0.4967,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3769,7 +4396,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5073,
+      "importance_score": 0.4966,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3790,7 +4417,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.5068,
+      "importance_score": 0.4962,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3811,7 +4438,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.5065,
+      "importance_score": 0.4959,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3832,7 +4459,7 @@
         "Business Insider"
       ],
       "source_count": 1,
-      "importance_score": 0.5058,
+      "importance_score": 0.4953,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3853,7 +4480,7 @@
         "The Decoder AI News"
       ],
       "source_count": 1,
-      "importance_score": 0.5057,
+      "importance_score": 0.4951,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3876,7 +4503,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.505,
+      "importance_score": 0.4945,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3897,7 +4524,7 @@
         "juejin"
       ],
       "source_count": 1,
-      "importance_score": 0.5049,
+      "importance_score": 0.4944,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3911,8 +4538,31 @@
       ]
     },
     {
+      "story_id": "story_2f66d80450f8",
+      "title": "TeraWulf secures a credit backstop agreement with Google to support financing for its data center project with Anthropic in Kentucky, set to come online H2 2027 (Deborah Sophia/Reuters)",
+      "url": "https://www.techmeme.com/261104/p36",
+      "primary_url": "https://www.techmeme.com/261104/p36",
+      "source": "Techmeme",
+      "source_names": [
+        "Techmeme"
+      ],
+      "source_count": 1,
+      "importance_score": 0.4934,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T15:45:29Z",
+      "latest_at": "2026-11-04T15:45:29Z",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_55ccbc15d5b8",
-      "title": "Adobe puts its marketing AI agent inside ChatGPT, Claude and Copilot",
+      "title": "Adobe 将其营销 AI 代理放入 ChatGPT、Claude 和 Copilot 中 / Adobe puts its marketing AI agent inside ChatGPT, Claude and Copilot",
       "url": "https://thenextweb.com/news/adobe-cx-enterprise-coworker-chatgpt-claude-gemini-copilot",
       "primary_url": "https://thenextweb.com/news/adobe-cx-enterprise-coworker-chatgpt-claude-gemini-copilot",
       "source": "The Next Web",
@@ -3920,7 +4570,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5039,
+      "importance_score": 0.4934,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3939,31 +4589,8 @@
       ]
     },
     {
-      "story_id": "story_2f66d80450f8",
-      "title": "TeraWulf secures a credit backstop agreement with Google to support financing for its data center project with Anthropic in Kentucky, set to come online H2 2027 (Deborah Sophia/Reuters)",
-      "url": "https://www.techmeme.com/261104/p36",
-      "primary_url": "https://www.techmeme.com/261104/p36",
-      "source": "Techmeme",
-      "source_names": [
-        "Techmeme"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5038,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T15:45:29Z",
-      "latest_at": "2026-11-04T15:45:29Z",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_98cabf75146a",
-      "title": "Netflixs AI-powered search lets you search by your mood",
+      "title": "Netflix 的人工智能搜索让你可以根据心情进行搜索 / Netflixs AI-powered search lets you search by your mood",
       "url": "https://mashable.com/tech/netflix-ai-discover-launch-search-by-mood",
       "primary_url": "https://mashable.com/tech/netflix-ai-discover-launch-search-by-mood",
       "source": "Mashable",
@@ -3971,7 +4598,7 @@
         "Mashable"
       ],
       "source_count": 1,
-      "importance_score": 0.5037,
+      "importance_score": 0.4933,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -3984,7 +4611,7 @@
     },
     {
       "story_id": "story_e876f449a004",
-      "title": "Apple opens Siri AI to every app, and plans a fee for expanded use",
+      "title": "苹果向所有应用程序开放 Siri AI，并计划对扩展使用收取费用 / Apple opens Siri AI to every app, and plans a fee for expanded use",
       "url": "https://thenextweb.com/news/apple-siri-ai-developer-preview-app-intents-usage-limits-fee",
       "primary_url": "https://thenextweb.com/news/apple-siri-ai-developer-preview-app-intents-usage-limits-fee",
       "source": "The Next Web",
@@ -3992,7 +4619,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.5035,
+      "importance_score": 0.4931,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4009,7 +4636,7 @@
     },
     {
       "story_id": "story_b49f95ed5f32",
-      "title": "AI data centers comprehensively defeated at US midterm elections",
+      "title": "AI数据中心在美国中期选举中全面失败 / AI data centers comprehensively defeated at US midterm elections",
       "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
       "primary_url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
       "source": "Hacker News · 24h最热",
@@ -4017,7 +4644,7 @@
         "Hacker News · 24h最热"
       ],
       "source_count": 1,
-      "importance_score": 0.5034,
+      "importance_score": 0.493,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4029,6 +4656,29 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_f0b25e9fe1d2",
+      "title": "CrowdStrike 推出“AI Kill Switch”，声称可以阻止流氓特工等 / CrowdStrike launches 'AI kill switch' it claims can stop rogue agents and more",
+      "url": "https://www.techradar.com/pro/security/crowdstrike-launches-ai-kill-switch-it-claims-can-stop-rogue-agents-and-more",
+      "primary_url": "https://www.techradar.com/pro/security/crowdstrike-launches-ai-kill-switch-it-claims-can-stop-rogue-agents-and-more",
+      "source": "TechRadar",
+      "source_names": [
+        "TechRadar"
+      ],
+      "source_count": 1,
+      "importance_score": 0.4925,
+      "importance_label": "值得关注",
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-11-04T15:20:00Z",
+      "latest_at": "2026-11-04T15:20:00Z",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_50936bdbe027",
       "title": "没有训练后数据共享库",
       "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons",
@@ -4038,7 +4688,7 @@
         "openathena.ai"
       ],
       "source_count": 1,
-      "importance_score": 0.5029,
+      "importance_score": 0.4925,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4059,7 +4709,7 @@
         "uncracked.city"
       ],
       "source_count": 1,
-      "importance_score": 0.5029,
+      "importance_score": 0.4925,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4080,7 +4730,7 @@
         "Hacker News (黑客新闻)"
       ],
       "source_count": 1,
-      "importance_score": 0.5029,
+      "importance_score": 0.4925,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4094,29 +4744,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_f0b25e9fe1d2",
-      "title": "CrowdStrike launches 'AI kill switch' it claims can stop rogue agents and more",
-      "url": "https://www.techradar.com/pro/security/crowdstrike-launches-ai-kill-switch-it-claims-can-stop-rogue-agents-and-more",
-      "primary_url": "https://www.techradar.com/pro/security/crowdstrike-launches-ai-kill-switch-it-claims-can-stop-rogue-agents-and-more",
-      "source": "TechRadar",
-      "source_names": [
-        "TechRadar"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5028,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T15:20:00Z",
-      "latest_at": "2026-11-04T15:20:00Z",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_43ea4b23e667",
       "title": "Crypto and AI super PACs spent $250M in 2026 midterms, but lost 9/12 competitive races called so far, spending $74.7M on losing candidates and $28.3M on winners (Molly White/Citation Needed)",
       "url": "https://www.techmeme.com/261104/p35",
@@ -4126,7 +4753,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.5026,
+      "importance_score": 0.4923,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4139,7 +4766,7 @@
     },
     {
       "story_id": "story_abe6779c931e",
-      "title": "Gemini can redesign entire presentations with one prompt",
+      "title": "Gemini 可以通过一个提示重新设计整个演示文稿 / Gemini can redesign entire presentations with one prompt",
       "url": "https://www.techradar.com/ai-platforms-assistants/gemini/gemini-can-redesign-entire-presentations-with-one-prompt-so-i-gave-it-my-sons-fun-art-lesson-and-it-turned-it-into-a-corporate-monstrosity",
       "primary_url": "https://www.techradar.com/ai-platforms-assistants/gemini/gemini-can-redesign-entire-presentations-with-one-prompt-so-i-gave-it-my-sons-fun-art-lesson-and-it-turned-it-into-a-corporate-monstrosity",
       "source": "TechRadar",
@@ -4147,7 +4774,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.5022,
+      "importance_score": 0.4919,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4161,29 +4788,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_90365e95fff3",
-      "title": "Ask HN: What's your current AI agentic setup?",
-      "url": "https://news.ycombinator.com/item?id=50366117",
-      "primary_url": "https://news.ycombinator.com/item?id=50366117",
-      "source": "hackernews",
-      "source_names": [
-        "hackernews"
-      ],
-      "source_count": 1,
-      "importance_score": 0.5012,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T14:37:22Z",
-      "latest_at": "2026-11-04T14:37:22Z",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
       "story_id": "story_9a067906664f",
       "title": "UK cyber agency warns of AI-powered ransomware on infrastructure by 2028",
       "url": "https://thenextweb.com/news/ncsc-annual-review-2026-ai-malware-critical-infrastructure",
@@ -4193,7 +4797,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.501,
+      "importance_score": 0.4907,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4214,7 +4818,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.5005,
+      "importance_score": 0.4903,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4235,7 +4839,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.4995,
+      "importance_score": 0.4894,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4243,48 +4847,6 @@
       ],
       "earliest_at": "2026-11-04T13:54:32Z",
       "latest_at": "2026-11-04T13:54:32Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7ed8b853b66b",
-      "title": "Princeton mathematician, Sergiu Klainerman calls the AI apocalypse absurd. \"You are going to singularity, the AI is going to become more intelligent than everybody and it's going to reproduce itself at a huge speed and…",
-      "url": "https://x.com/rohanpaul_ai/status/2117768420104302713",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2117768420104302713",
-      "source": "@rohanpaul_ai",
-      "source_names": [
-        "@rohanpaul_ai"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4992,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:58:32Z",
-      "latest_at": "2026-11-03T23:58:32Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_1edbaad70fba",
-      "title": "完整视频位于“Prof Brian Keating”(@Briankeating) YouTube 频道 https://t.co/A0H6hYECVu / Full video on \"Prof Brian Keating\" (@Briankeating) YouTube channel https://t.co/A0H6hYECVu",
-      "url": "https://x.com/rohanpaul_ai/status/2117768422775984215",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2117768422775984215",
-      "source": "@rohanpaul_ai",
-      "source_names": [
-        "@rohanpaul_ai"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4992,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:58:32Z",
-      "latest_at": "2026-11-03T23:58:32Z",
       "company_topics": [],
       "lens_topics": []
     },
@@ -4298,7 +4860,7 @@
         "HN Algolia · AI 24h"
       ],
       "source_count": 1,
-      "importance_score": 0.4992,
+      "importance_score": 0.4891,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4312,48 +4874,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_a892ad02e759",
-      "title": "People are handing their thinking to AI, and Terrence Tao expects real-world damage soon. \"We're delegating our thinking to AIs, and they're solving the problems for us... I'm actually really concerned that we're going…",
-      "url": "https://x.com/rohanpaul_ai/status/2117766590104289424",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2117766590104289424",
-      "source": "@rohanpaul_ai",
-      "source_names": [
-        "@rohanpaul_ai"
-      ],
-      "source_count": 1,
-      "importance_score": 0.499,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:51:15Z",
-      "latest_at": "2026-11-03T23:51:15Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_f6193293e194",
-      "title": "https://t.co/zoda3UwcKr",
-      "url": "https://x.com/rohanpaul_ai/status/2117766593396777415",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2117766593396777415",
-      "source": "@rohanpaul_ai",
-      "source_names": [
-        "@rohanpaul_ai"
-      ],
-      "source_count": 1,
-      "importance_score": 0.499,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:51:16Z",
-      "latest_at": "2026-11-03T23:51:16Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_e9d642a2b2e4",
       "title": "Google won't let schools that opt-out of AI use search",
       "url": "https://www.techradar.com/ai-platforms-assistants/search-and-ai-are-deeply-integrated-google-says-schools-cant-have-search-without-ai-and-that-should-worry-the-rest-of-us",
@@ -4363,7 +4883,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.4987,
+      "importance_score": 0.4886,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4384,7 +4904,7 @@
         "TIME Magazine"
       ],
       "source_count": 1,
-      "importance_score": 0.498,
+      "importance_score": 0.488,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4405,7 +4925,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.498,
+      "importance_score": 0.488,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4419,27 +4939,24 @@
       ]
     },
     {
-      "story_id": "story_19c01eabd77f",
-      "title": "Claude Code 产品负责人 Cat Wu 已离开 Anthropic / Cat Wu, product lead for Claude Code, has left Anthropic",
-      "url": "https://www.businessinsider.com/claude-code-leader-cat-wu-exits-anthropic-before-big-ipo-2026-11",
-      "primary_url": "https://www.businessinsider.com/claude-code-leader-cat-wu-exits-anthropic-before-big-ipo-2026-11",
-      "source": "HN Algolia · AI 24h",
+      "story_id": "story_bbe668f10902",
+      "title": "AI sales automation startup Nooks secures a $500M commitment from General Catalyst's CVF, which will take a share of the returns generated by the capital (Reuters)",
+      "url": "https://www.techmeme.com/261104/p26",
+      "primary_url": "https://www.techmeme.com/261104/p26",
+      "source": "Techmeme",
       "source_names": [
-        "Business Insider",
-        "HN Algolia · AI 24h"
+        "Techmeme"
       ],
-      "source_count": 2,
-      "importance_score": 0.4978,
+      "source_count": 1,
+      "importance_score": 0.4875,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
-        "multi_source"
+        "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-03T23:55:09Z",
-      "latest_at": "2026-11-04T01:07:22Z",
-      "company_topics": [
-        "anthropic"
-      ],
+      "earliest_at": "2026-11-04T13:01:11Z",
+      "latest_at": "2026-11-04T13:01:11Z",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -4452,7 +4969,7 @@
         "Android Police"
       ],
       "source_count": 1,
-      "importance_score": 0.4975,
+      "importance_score": 0.4874,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4466,27 +4983,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_bbe668f10902",
-      "title": "AI sales automation startup Nooks secures a $500M commitment from General Catalyst's CVF, which will take a share of the returns generated by the capital (Reuters)",
-      "url": "https://www.techmeme.com/261104/p26",
-      "primary_url": "https://www.techmeme.com/261104/p26",
-      "source": "Techmeme",
-      "source_names": [
-        "Techmeme"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4975,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T13:01:11Z",
-      "latest_at": "2026-11-04T13:01:11Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_648a81634a16",
       "title": "South Korea will nearly double AI spending to $16B in a record budget",
       "url": "https://thenextweb.com/news/south-korea-2027-budget-ai-chips-data-centres-21-trillion-won",
@@ -4496,7 +4992,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.4968,
+      "importance_score": 0.4869,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4517,7 +5013,7 @@
         "producthunt"
       ],
       "source_count": 1,
-      "importance_score": 0.4968,
+      "importance_score": 0.4869,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4538,7 +5034,7 @@
         "producthunt"
       ],
       "source_count": 1,
-      "importance_score": 0.4968,
+      "importance_score": 0.4869,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4561,7 +5057,7 @@
         "producthunt"
       ],
       "source_count": 1,
-      "importance_score": 0.4968,
+      "importance_score": 0.4869,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4584,7 +5080,7 @@
         "Mashable"
       ],
       "source_count": 1,
-      "importance_score": 0.4966,
+      "importance_score": 0.4867,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4605,7 +5101,7 @@
         "HN Algolia · AI 24h"
       ],
       "source_count": 1,
-      "importance_score": 0.4957,
+      "importance_score": 0.4858,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4628,7 +5124,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4956,
+      "importance_score": 0.4857,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4651,7 +5147,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.4955,
+      "importance_score": 0.4856,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4672,7 +5168,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.4952,
+      "importance_score": 0.4853,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4693,7 +5189,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4947,
+      "importance_score": 0.4848,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4716,7 +5212,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.4945,
+      "importance_score": 0.4847,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4739,7 +5235,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.4943,
+      "importance_score": 0.4845,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4760,7 +5256,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.4937,
+      "importance_score": 0.4839,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4783,7 +5279,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.4934,
+      "importance_score": 0.4836,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4804,7 +5300,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.4934,
+      "importance_score": 0.4836,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4825,7 +5321,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.4932,
+      "importance_score": 0.4834,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4846,7 +5342,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4932,
+      "importance_score": 0.4834,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4867,7 +5363,7 @@
         "Business Insider"
       ],
       "source_count": 1,
-      "importance_score": 0.493,
+      "importance_score": 0.4833,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4888,7 +5384,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.493,
+      "importance_score": 0.4833,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4909,7 +5405,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4928,
+      "importance_score": 0.4831,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4932,7 +5428,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4924,
+      "importance_score": 0.4828,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4953,7 +5449,7 @@
         "Business Insider"
       ],
       "source_count": 1,
-      "importance_score": 0.4919,
+      "importance_score": 0.4822,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4974,7 +5470,7 @@
         "juejin"
       ],
       "source_count": 1,
-      "importance_score": 0.4912,
+      "importance_score": 0.4816,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -4995,7 +5491,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.4912,
+      "importance_score": 0.4816,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5018,7 +5514,7 @@
         "TechRadar"
       ],
       "source_count": 1,
-      "importance_score": 0.4911,
+      "importance_score": 0.4815,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5039,7 +5535,7 @@
         "producthunt"
       ],
       "source_count": 1,
-      "importance_score": 0.4907,
+      "importance_score": 0.4812,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5060,7 +5556,7 @@
         "producthunt"
       ],
       "source_count": 1,
-      "importance_score": 0.4907,
+      "importance_score": 0.4812,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5081,7 +5577,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.4906,
+      "importance_score": 0.481,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5102,7 +5598,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4903,
+      "importance_score": 0.4807,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5123,7 +5619,7 @@
         "The Next Web"
       ],
       "source_count": 1,
-      "importance_score": 0.4901,
+      "importance_score": 0.4805,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5146,7 +5642,7 @@
         "Engadget"
       ],
       "source_count": 1,
-      "importance_score": 0.4875,
+      "importance_score": 0.4781,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5167,7 +5663,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4855,
+      "importance_score": 0.4762,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5188,7 +5684,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4851,
+      "importance_score": 0.4759,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5209,7 +5705,7 @@
         "Hacker News · 24h最热"
       ],
       "source_count": 1,
-      "importance_score": 0.4845,
+      "importance_score": 0.4753,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5230,7 +5726,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4843,
+      "importance_score": 0.4751,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5251,7 +5747,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4829,
+      "importance_score": 0.4738,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5272,7 +5768,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4826,
+      "importance_score": 0.4735,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5293,7 +5789,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.4822,
+      "importance_score": 0.4732,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5317,7 +5813,7 @@
         "Techmeme"
       ],
       "source_count": 1,
-      "importance_score": 0.479,
+      "importance_score": 0.4702,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5338,7 +5834,7 @@
         "ben.stolovitz.com"
       ],
       "source_count": 1,
-      "importance_score": 0.4774,
+      "importance_score": 0.4687,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5350,320 +5846,24 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_f7906cbf0b76",
-      "title": "在一家真实的公司中运行 17 个 Claude Code 机器人，每月费用为 100 美元 / Running 17 Claude Code bots in a real company for $100/month",
-      "url": "https://botsinproduction.com/blog/what-10-claude-code-bots-cost-per-month",
-      "primary_url": "https://botsinproduction.com/blog/what-10-claude-code-bots-cost-per-month",
-      "source": "HN Algolia · AI 24h",
+      "story_id": "story_5e59851256bd",
+      "title": "webAI 发布 TwIL-8B，8.8B 推理模型，在 MATH-500 上得分 98.2 / webAI Releases TwIL-8B, an 8.8B Reasoning Model Scoring 98.2 on MATH-500",
+      "url": "https://www.marktechpost.com/2026/11/04/webai-twil-8b-reasoning-model",
+      "primary_url": "https://www.marktechpost.com/2026/11/04/webai-twil-8b-reasoning-model",
+      "source": "MarkTechPost Research",
       "source_names": [
-        "HN Algolia · AI 24h"
+        "MarkTechPost Research"
       ],
       "source_count": 1,
-      "importance_score": 0.4745,
+      "importance_score": 0.4585,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
         "recent_ai_signal"
       ],
-      "earliest_at": "2026-11-04T02:02:12Z",
-      "latest_at": "2026-11-04T02:02:12Z",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_4dbd675a2e28",
-      "title": "Q&A with NYC Mayor Zohran Mamdani on new municipal AI policy measures, like an AI ban for some students, support for a one-year data center pause, and more (Katie Drummond/Wired)",
-      "url": "https://www.techmeme.com/261103/p45",
-      "primary_url": "https://www.techmeme.com/261103/p45",
-      "source": "Techmeme",
-      "source_names": [
-        "Techmeme"
-      ],
-      "source_count": 1,
-      "importance_score": 0.474,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T01:45:01Z",
-      "latest_at": "2026-11-04T01:45:01Z",
+      "earliest_at": "2026-11-04T22:25:05Z",
+      "latest_at": "2026-11-04T22:25:05Z",
       "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_886c15cd8fce",
-      "title": "Following backlash against its education updates, Google says schools can choose to enable Gemini, Gemini Notebook, and Search individually (Isabel O'Brien/CNBC)",
-      "url": "https://www.techmeme.com/261103/p44",
-      "primary_url": "https://www.techmeme.com/261103/p44",
-      "source": "Techmeme",
-      "source_names": [
-        "Techmeme"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4728,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T01:10:05Z",
-      "latest_at": "2026-11-04T01:10:05Z",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6fd93e69ebeb",
-      "title": "eBay lists a $60 million AI supercomputer with 9,600 Nvidia A100 GPUs and 4,200 AMD EPYC CPUs — but you do get free shipping",
-      "url": "https://www.techradar.com/pro/ebay-lists-a-usd60-million-ai-supercomputer-with-9-600-nvidia-a100-gpus-and-4-200-amd-epyc-cpus-but-you-do-get-free-shipping",
-      "primary_url": "https://www.techradar.com/pro/ebay-lists-a-usd60-million-ai-supercomputer-with-9-600-nvidia-a100-gpus-and-4-200-amd-epyc-cpus-but-you-do-get-free-shipping",
-      "source": "TechRadar",
-      "source_names": [
-        "TechRadar"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4727,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T01:05:00Z",
-      "latest_at": "2026-11-04T01:05:00Z",
-      "company_topics": [
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_bac4e70b45cf",
-      "title": "Cat Wu, product lead for Claude Code and Cowork, has left Anthropic; Thariq Shihipar, who worked on Claude Code, announced his departure last month (Stephen Council/Business Insider)",
-      "url": "https://www.techmeme.com/261103/p43",
-      "primary_url": "https://www.techmeme.com/261103/p43",
-      "source": "Techmeme",
-      "source_names": [
-        "Techmeme"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4719,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T00:40:00Z",
-      "latest_at": "2026-11-04T00:40:00Z",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_2ef8def9c6d3",
-      "title": "How Nvidia uses soft power to influence customers and shape US chip policy; sources: OpenAI took no public stance on China chip exports to avoid angering Nvidia (The Information)",
-      "url": "https://www.techmeme.com/261103/p42",
-      "primary_url": "https://www.techmeme.com/261103/p42",
-      "source": "Techmeme",
-      "source_names": [
-        "Techmeme"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4713,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T00:20:01Z",
-      "latest_at": "2026-11-04T00:20:01Z",
-      "company_topics": [
-        "openai",
-        "nvidia"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_aac01207a6c5",
-      "title": "毕业生正在管理人工智能——但他们还学到了很多其他东西吗？ / Graduates are managing AI - but are they learning much else?",
-      "url": "https://www.bbc.co.uk/news/articles/c820vz6wyp65o?at_medium=RSS&at_campaign=rss",
-      "primary_url": "https://www.bbc.co.uk/news/articles/c820vz6wyp65o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News",
-      "source_names": [
-        "BBC News"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4708,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T00:04:35Z",
-      "latest_at": "2026-11-04T00:04:35Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c2f69a204cc3",
-      "title": "Google says its education updates give schools \"more choice, not less\"; Gemini, Gemini Notebook, and Search are off by default and can be enabled individually (@newsfromgoogle)",
-      "url": "https://www.techmeme.com/261103/p41",
-      "primary_url": "https://www.techmeme.com/261103/p41",
-      "source": "Techmeme",
-      "source_names": [
-        "Techmeme"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4707,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-04T00:00:50Z",
-      "latest_at": "2026-11-04T00:00:50Z",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_7010e84d1205",
-      "title": "苹果开始向开发者开放 Siri AI / Apple Begins Opening Siri AI to Developers",
-      "url": "https://daringfireball.net/linked/2026/11/03/apple-begins-opening-siri-ai-to-developers",
-      "primary_url": "https://daringfireball.net/linked/2026/11/03/apple-begins-opening-siri-ai-to-developers",
-      "source": "Daring Fireball",
-      "source_names": [
-        "Daring Fireball"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4706,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:58:49Z",
-      "latest_at": "2026-11-03T23:58:49Z",
-      "company_topics": [
-        "apple"
-      ],
-      "lens_topics": [
-        "product-entry"
-      ]
-    },
-    {
-      "story_id": "story_67737d27c7cc",
-      "title": "Prompting Is Programming",
-      "url": "https://www.brethorsting.com/blog/2026/11/prompting-is-programming",
-      "primary_url": "https://www.brethorsting.com/blog/2026/11/prompting-is-programming",
-      "source": "Hacker News · 24h最热",
-      "source_names": [
-        "Hacker News · 24h最热"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4703,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:49:06Z",
-      "latest_at": "2026-11-03T23:49:06Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_e14e093e1f6a",
-      "title": "美国科技巨头隐藏的AI债务在6个月内激增90%，达到3.2万亿美元",
-      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "primary_url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "source": "asia.nikkei.com",
-      "source_names": [
-        "asia.nikkei.com"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4698,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:34:45.822000Z",
-      "latest_at": "2026-11-03T23:34:45.822000Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_9c6a4fb7e2d5",
-      "title": "《生成式人工智能基础小书：直观的数学入门指南》",
-      "url": "https://arxiv.org/abs/2605.29713",
-      "primary_url": "https://arxiv.org/abs/2605.29713",
-      "source": "arxiv.org",
-      "source_names": [
-        "arxiv.org"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4694,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:18:41.098000Z",
-      "latest_at": "2026-11-03T23:18:41.098000Z",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_335689d07b98",
-      "title": "Traversal, which provides AI agents for site reliability engineering, raised $120M co-led by Kleiner Perkins, Redpoint, and Khosla at a $1B valuation (Rashi Shrivastava/Forbes)",
-      "url": "https://www.techmeme.com/261103/p39",
-      "primary_url": "https://www.techmeme.com/261103/p39",
-      "source": "Techmeme",
-      "source_names": [
-        "Techmeme"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4689,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:05:01Z",
-      "latest_at": "2026-11-03T23:05:01Z",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_1fc6bff1dabd",
-      "title": "欧盟法院顾问警告谷歌人工智能聊天机器人可能违反版权规则 / EU Court Advisor Warns Google AI Chatbot May Breach Copyright Rules",
-      "url": "https://yro.slashdot.org/story/26/11/03/2144244/eu-court-advisor-warns-google-ai-chatbot-may-breach-copyright-rules",
-      "primary_url": "https://yro.slashdot.org/story/26/11/03/2144244/eu-court-advisor-warns-google-ai-chatbot-may-breach-copyright-rules",
-      "source": "Slashdot",
-      "source_names": [
-        "Slashdot"
-      ],
-      "source_count": 1,
-      "importance_score": 0.4688,
-      "importance_label": "值得关注",
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-11-03T23:00:00Z",
-      "latest_at": "2026-11-03T23:00:00Z",
-      "company_topics": [
-        "google-gemini"
-      ],
       "lens_topics": []
     },
     {
@@ -5676,7 +5876,7 @@
         "IT之家"
       ],
       "source_count": 1,
-      "importance_score": 0.4522,
+      "importance_score": 0.4427,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
@@ -5701,7 +5901,7 @@
         "www.anthropic.com"
       ],
       "source_count": 3,
-      "importance_score": 0.4432,
+      "importance_score": 0.4322,
       "importance_label": "多源热议",
       "category": "multi_source",
       "reasons": [
@@ -5724,7 +5924,7 @@
         "@alibaba_cloud"
       ],
       "source_count": 1,
-      "importance_score": 0.3915,
+      "importance_score": 0.3824,
       "importance_label": "值得关注",
       "category": "watch",
       "reasons": [
