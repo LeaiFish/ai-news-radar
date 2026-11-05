@@ -3,13 +3,13 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 1327,
-  "listed_count": 1327,
-  "recent_item_count": 1094,
+  "item_count": 1328,
+  "listed_count": 1328,
+  "recent_item_count": 1095,
   "latest_title": "40 年未解的\"细胞穹窿\"，被 Claude 拽进结构生物学视野",
   "latest_published_at": "2026-11-05T03:11:51.914682Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-11-05T03:11:51.914682Z",
+  "generated_at": "2026-11-05T03:25:26.009854Z",
   "items": [
     {
       "id": "story_0e832117a16c",
@@ -25,7 +25,7 @@
       "site_id": "aibase",
       "published_at": "2026-11-05T03:11:51.914682Z",
       "source_count": 1,
-      "curated": true
+      "curated": false
     },
     {
       "id": "story_8b70abe0bcf8",
@@ -72,6 +72,22 @@
       "source_name": "TechURLs",
       "site_id": "techurls",
       "published_at": "2026-11-05T01:20:01Z",
+      "source_count": 1,
+      "curated": false
+    },
+    {
+      "id": "story_7995e59a62ea",
+      "story_id": "story_7995e59a62ea",
+      "title": "Cat Wu 从 Anthropic 加盟 OpenAI，实现产品领先的巨大成功",
+      "title_zh": "Cat Wu 从 Anthropic 加盟 OpenAI，实现产品领先的巨大成功",
+      "title_en": "Cat Wu joins OpenAI from Anthropic in huge product-lead coup",
+      "url": "https://www.businessinsider.com/cat-wu-joins-openai-from-anthropic-product-lead-coup-2026-11",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "Business Insider",
+      "source_name": "TechURLs",
+      "site_id": "techurls",
+      "published_at": "2026-11-05T00:57:29Z",
       "source_count": 1,
       "curated": false
     },
@@ -194,7 +210,7 @@
       "title_zh": "Anthropic 的文本水印在几个旧的 Claude 模型上很容易被绕过",
       "title_en": "Anthropic's text watermark is easy to bypass on several older Claude models",
       "url": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models",
-      "summary": "Anthropic is rolling out text watermarks to four more Claude models ahead of the EU AI Act's December deadline. But on older models like Claude Opus 4.6 and Sonnet 4.6, API users can disable the watermark by changing a single sampling parameter. Anthropic's response to the looph…",
+      "summary": "在欧盟人工智能法案 12 月截止日期之前，Anthropic 正在向另外四个 Claude 模型推出文本水印。但在 Claude Opus 4.6 和 Sonnet 4.6 等旧型号上，API 用户可以通过更改单个采样参数来禁用水印。 Anthropic 对漏洞的反应是什么？",
       "recommend_reason_zh": null,
       "source": "The Decoder AI News",
       "source_name": "Curated Media",
@@ -242,7 +258,7 @@
       "title_zh": "Anthropic 的新原型证明了哪个模型在不暴露其权重的情况下编写了 AI 响应",
       "title_en": "Anthropic's new prototype proves which model wrote an AI response without exposing its weights",
       "url": "https://the-decoder.com/anthropics-new-prototype-proves-which-model-wrote-an-ai-response-without-exposing-its-weights",
-      "summary": "Anthropic has released FlashProve, a research prototype that uses cryptography to verify whether an AI response actually came from the claimed model. The system still has significant limitations. The article Anthropic's new prototype proves which model wrote an AI response witho…",
+      "summary": "Anthropic 发布了 FlashProve，这是一种研究原型，它使用密码学来验证人工智能响应是否确实来自所声称的模型。该系统仍然存在很大的局限性。文章《Anthropic 的新原型证明了哪个模型在不暴露其权重的情况下编写了 AI 响应》首先出现在 The Decoder 上。",
       "recommend_reason_zh": null,
       "source": "The Decoder AI News",
       "source_name": "Curated Media",
@@ -254,8 +270,8 @@
     {
       "id": "story_5b97dceebd61",
       "story_id": "story_5b97dceebd61",
-      "title": "Tell HN: Claude Code queries raw GitHub token on startup",
-      "title_zh": null,
+      "title": "告诉 HN：Claude Code 在启动时查询原始 GitHub 令牌",
+      "title_zh": "告诉 HN：Claude Code 在启动时查询原始 GitHub 令牌",
       "title_en": "Tell HN: Claude Code queries raw GitHub token on startup",
       "url": "https://news.ycombinator.com/item?id=50365442",
       "summary": "",
@@ -412,10 +428,10 @@
       "curated": false
     },
     {
-      "id": "story_e94cf2cf6933",
-      "story_id": "story_e94cf2cf6933",
+      "id": "040260493ae6687c9548b3fa2322c47c4aa6c257",
+      "story_id": null,
       "title": "Claude 给自己发\"身份证\"：Anthropic 用零知识证明斩断套壳灰产",
-      "title_zh": "Claude 给自己发\"身份证\"：Anthropic 用零知识证明斩断套壳灰产",
+      "title_zh": null,
       "title_en": null,
       "url": "https://www.aibase.com/news/32073",
       "summary": "花高价买低配车型曾经是大车型供应链中最隐蔽的灰色地带。 Anthropic 与零知识证明研究人员合作开源了 FlashProve。验证分为三个步骤：在启动之前，在单个 H100 上大约需要 39 分钟来生成权重的“指纹”ID 并公开；每次对话后，GPU 都会生成约 19 MB 的证明；用户在普通 CPU 上运行 cp_verify 并确定...",
