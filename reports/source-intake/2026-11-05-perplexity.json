@@ -1,6 +1,6 @@
 {
   "schema": "radar_source_intake_v1",
-  "status": "local_verified_ready_to_publish",
+  "status": "published_and_live_verified",
   "comparison": "reports/source-comparison/2026-11-05.json",
   "original_posts": [
     {
@@ -57,7 +57,293 @@
     ]
   },
   "publication": {
-    "deployed": false,
-    "live_verified": false
+    "deployed": true,
+    "live_verified": true,
+    "source_commit": "f9e3aaa8c9f0ad3c2340480e058714cf9d01dd69",
+    "news_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41977348751",
+    "test_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41977348680",
+    "architecture_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41977348730",
+    "data_commit": "536ed6a6efa11e5e4d84a8af0c3a5ccb0beb729c",
+    "pages_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41977901423",
+    "news_result": "success",
+    "test_result": "success",
+    "architecture_result": "success",
+    "pages_result": "success"
+  },
+  "live_verification": {
+    "checked_at": "2026-11-05T06:04:36.450789+00:00",
+    "timestamps": {
+      "status": "2026-11-05T05:58:47.020884Z",
+      "raw": "2026-11-05T05:58:47.020884Z",
+      "filtered": "2026-11-05T05:58:47.020884Z",
+      "all": "2026-11-05T05:58:47.020884Z",
+      "archive": "2026-11-05T05:58:47.020884Z",
+      "public": "2026-11-05T05:58:47.020884Z",
+      "stories": "2026-11-05T05:58:47.020884Z"
+    },
+    "focus_health": {
+      "site_id": "aihot_focus",
+      "site_name": "AIHOT Focus Channels (indirect)",
+      "ok": true,
+      "item_count": 87,
+      "duration_ms": 35067,
+      "error": null,
+      "coverage": {
+        "pages": 10,
+        "truncated": true,
+        "source": "AIHOT all; indirect coverage"
+      }
+    },
+    "layers": {
+      "raw": {
+        "founder_quote_count": 0,
+        "case": [
+          {
+            "id": "92ad58c69f37ebbc44bae6f3e96186952351a33f",
+            "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+            "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+            "source": "X：Perplexity (@perplexity_ai)",
+            "site_id": "aihot",
+            "select_tier": "T1_5",
+            "source_tier": "official",
+            "editorial_focus": "product",
+            "published_at": "2026-11-04T17:39:47Z",
+            "timeline_at": null,
+            "case_context_present": true,
+            "fast_search_context_present": false
+          }
+        ],
+        "fast_search": [
+          {
+            "id": "38dd1f23b414cba2f534b75450ad9f09189c8b11",
+            "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+            "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+            "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "source_tier": "ai_vertical",
+            "editorial_focus": "product",
+            "published_at": "2026-11-04T21:31:09Z",
+            "timeline_at": null,
+            "case_context_present": false,
+            "fast_search_context_present": true
+          }
+        ]
+      },
+      "filtered": {
+        "founder_quote_count": 0,
+        "case": [
+          {
+            "id": "92ad58c69f37ebbc44bae6f3e96186952351a33f",
+            "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+            "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+            "source": "X：Perplexity (@perplexity_ai)",
+            "site_id": "aihot",
+            "select_tier": "T1_5",
+            "source_tier": "official",
+            "editorial_focus": "product",
+            "published_at": "2026-11-04T17:39:47Z",
+            "timeline_at": null,
+            "case_context_present": true,
+            "fast_search_context_present": false
+          }
+        ],
+        "fast_search": [
+          {
+            "id": "38dd1f23b414cba2f534b75450ad9f09189c8b11",
+            "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+            "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+            "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "source_tier": "ai_vertical",
+            "editorial_focus": "product",
+            "published_at": "2026-11-04T21:31:09Z",
+            "timeline_at": null,
+            "case_context_present": false,
+            "fast_search_context_present": true
+          }
+        ]
+      },
+      "all": {
+        "founder_quote_count": 0,
+        "case": [
+          {
+            "id": "92ad58c69f37ebbc44bae6f3e96186952351a33f",
+            "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+            "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+            "source": "X：Perplexity (@perplexity_ai)",
+            "site_id": "aihot",
+            "select_tier": "T1_5",
+            "source_tier": "official",
+            "editorial_focus": "product",
+            "published_at": "2026-11-04T17:39:47Z",
+            "timeline_at": null,
+            "case_context_present": true,
+            "fast_search_context_present": false
+          }
+        ],
+        "fast_search": [
+          {
+            "id": "38dd1f23b414cba2f534b75450ad9f09189c8b11",
+            "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+            "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+            "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "source_tier": "ai_vertical",
+            "editorial_focus": "product",
+            "published_at": "2026-11-04T21:31:09Z",
+            "timeline_at": null,
+            "case_context_present": false,
+            "fast_search_context_present": true
+          }
+        ]
+      },
+      "archive": {
+        "founder_quote_count": 0,
+        "case": [
+          {
+            "id": "92ad58c69f37ebbc44bae6f3e96186952351a33f",
+            "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+            "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+            "source": "X：Perplexity (@perplexity_ai)",
+            "site_id": "aihot",
+            "select_tier": "T1_5",
+            "source_tier": null,
+            "editorial_focus": "product",
+            "published_at": "2026-11-04T17:39:47Z",
+            "timeline_at": null,
+            "case_context_present": true,
+            "fast_search_context_present": false
+          }
+        ],
+        "fast_search": [
+          {
+            "id": "38dd1f23b414cba2f534b75450ad9f09189c8b11",
+            "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+            "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+            "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+            "site_id": "aihot",
+            "select_tier": "T2",
+            "source_tier": null,
+            "editorial_focus": "product",
+            "published_at": "2026-11-04T21:31:09Z",
+            "timeline_at": null,
+            "case_context_present": false,
+            "fast_search_context_present": true
+          }
+        ]
+      },
+      "public": {
+        "founder_quote_count": 0,
+        "case": [
+          {
+            "id": "story_287672ff35c9",
+            "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+            "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+            "source": "X：Perplexity (@perplexity_ai)",
+            "site_id": null,
+            "select_tier": null,
+            "source_tier": null,
+            "editorial_focus": null,
+            "published_at": "2026-11-04T17:39:47Z",
+            "timeline_at": "2026-11-04T17:39:47Z",
+            "case_context_present": true,
+            "fast_search_context_present": false
+          }
+        ],
+        "fast_search": [
+          {
+            "id": "story_de466f8caa5a",
+            "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+            "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+            "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+            "site_id": null,
+            "select_tier": null,
+            "source_tier": null,
+            "editorial_focus": null,
+            "published_at": "2026-11-04T21:31:09Z",
+            "timeline_at": "2026-11-04T21:31:09Z",
+            "case_context_present": false,
+            "fast_search_context_present": true
+          }
+        ]
+      }
+    },
+    "events": {
+      "case": [
+        {
+          "id": "story_287672ff35c9",
+          "items": 1
+        }
+      ],
+      "fast_search": [
+        {
+          "id": "story_de466f8caa5a",
+          "items": 1
+        }
+      ]
+    },
+    "errors": [],
+    "public_event_matches": {
+      "case": [
+        {
+          "id": "story_287672ff35c9",
+          "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+          "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+          "source": "X：Perplexity (@perplexity_ai)",
+          "site_id": null,
+          "select_tier": null,
+          "source_tier": null,
+          "editorial_focus": null,
+          "published_at": "2026-11-04T17:39:47Z",
+          "timeline_at": "2026-11-04T17:39:47Z",
+          "case_context_present": true,
+          "fast_search_context_present": false
+        }
+      ],
+      "fast_search": [
+        {
+          "id": "story_de466f8caa5a",
+          "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+          "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+          "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+          "site_id": null,
+          "select_tier": null,
+          "source_tier": null,
+          "editorial_focus": null,
+          "published_at": "2026-11-04T21:31:09Z",
+          "timeline_at": "2026-11-04T21:31:09Z",
+          "case_context_present": false,
+          "fast_search_context_present": true
+        }
+      ]
+    }
+  },
+  "reader_acceptance": {
+    "checked_at": "2026-11-05T06:05:32.193839+00:00",
+    "url": "https://leaifish.github.io/ai-news-radar/feed/?nav=all",
+    "method": "rendered reader search and accessibility readback",
+    "snapshot_beijing": "2026-11-05 13:58",
+    "cards": [
+      {
+        "search": "Get Maine Lobster",
+        "visible_cards": 1,
+        "visible_publication_beijing": "2026-11-05 01:39",
+        "case_context_visible": true,
+        "canonical_company_post_visible": true
+      },
+      {
+        "search": "Fast Search",
+        "visible_cards": 1,
+        "visible_publication_beijing": "2026-11-05 05:31",
+        "founder_personal_attribution_visible": true
+      }
+    ]
+  },
+  "reuse_review": {
+    "updated": "docs/SOURCE_COVERAGE.md",
+    "verified_boundary": "Case and its quote share a canonical company post. Personal attribution remains separate from first-party company sources."
   }
 }
