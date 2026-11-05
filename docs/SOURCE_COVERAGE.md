@@ -744,3 +744,11 @@ folded into its primary post, retaining the primary URL and date even if only
 the reply appears in the current sample. This applies to the two known post
 IDs, not every thread or every feature from Google. Other events continue using
 the existing URL/title merge rules. See `reports/source-intake/2026-11-05-product-posts.json`.
+
+The Get Maine Lobster customer case uses Perplexity's company post as the
+canonical record. The founder's verified quote post joins that same record.
+The separate Fast Search and Decisions API item matches only its verified
+original URL and uses the founder's personal X attribution and T2 tier.
+Both dates refer to the original posts. Case results are Perplexity's reported
+comparison and retain the test budget and relative spend. See
+`reports/source-intake/2026-11-05-perplexity.json`.

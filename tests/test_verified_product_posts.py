@@ -96,3 +96,49 @@ def test_same_event_media_copy_merges_and_distinct_feature_stays_separate():
     distinct = original | {'id': 'distinct', 'url': 'https://x.com/Google/status/123', 'title': 'Gemini 新增团队协作权限管理'}
     stories, _ = merge_story_items([original, media, distinct], NOW, 24)
     assert sorted(s['item_count'] for s in stories) == [1, 2]
+
+
+PERPLEXITY_CASE = 'https://x.com/perplexity_ai/status/2118035494898704781'
+PERPLEXITY_QUOTE = 'https://x.com/AravSrinivas/status/2118037327796973770'
+PERPLEXITY_FAST = 'https://x.com/AravSrinivas/status/2118093720243560711'
+
+
+def test_customer_case_and_founder_quote_share_the_company_original():
+    original = entry('Perplexity Computer 助龙虾商广告增效', PERPLEXITY_CASE,
+                     '2026-11-04T17:39:47Z', score=40)
+    quote = entry('Perplexity智能体广告投放胜过广告公司', PERPLEXITY_QUOTE,
+                  '2026-11-04T17:47:04Z', score=62)
+    [raw] = collect([quote], [original])
+    [selected] = parse_aihot_api_items({'items': [quote]}, NOW)
+    record = row(raw)
+    assert record['id'] == row(selected)['id']
+    assert raw.url == PERPLEXITY_CASE and raw.source == 'X：Perplexity (@perplexity_ai)'
+    assert raw.published_at == datetime(2026, 11, 4, 17, 39, 47, tzinfo=timezone.utc)
+    assert record['ai_is_related'] and record['editorial_focus'] == 'product'
+    assert '客户案例' in record['title'] and '上线' not in record['title']
+    assert '测试预算' in record['summary'] and '今天首次上线' not in record['summary']
+
+
+def test_fast_search_exact_post_is_personal_and_distinct_from_commerce_case():
+    from scripts.source_tiers import attach_select_tier
+    from scripts.update_news import source_tier_for_record
+
+    items = collect([
+        entry('Perplexity 将 Fast Search 接入 Decisions API', PERPLEXITY_FAST,
+              '2026-11-04T21:31:09Z', score=47),
+        entry('Perplexity Computer 助龙虾商广告增效', PERPLEXITY_CASE,
+              '2026-11-04T17:39:47Z', score=40),
+        entry('Perplexity 新增协作功能', 'https://x.com/AravSrinivas/status/9'),
+    ])
+    assert {raw.url for raw in items} == {PERPLEXITY_CASE, PERPLEXITY_FAST}
+    raw = next(raw for raw in items if raw.url == PERPLEXITY_FAST)
+    [source] = matched_sources({'url': raw.url})
+    assert source['identity_kind'] == 'personal_account'
+    record = row(raw)
+    attach_select_tier(record, site_id=raw.site_id, source=raw.source, meta=raw.meta)
+    assert record['select_tier'] == 'T2' and source_tier_for_record(raw.site_id, raw.source) is None
+    assert '创始人个人账号' in raw.source and '官方' not in raw.source
+    assert raw.published_at == datetime(2026, 11, 4, 21, 31, 9, tzinfo=timezone.utc)
+    assert 'web_grounding' in record['summary']
+    stories, _ = merge_story_items([row(item) for item in items], NOW, 24)
+    assert len(stories) == 2

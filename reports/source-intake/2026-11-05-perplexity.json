@@ -1,0 +1,63 @@
+{
+  "schema": "radar_source_intake_v1",
+  "status": "local_verified_ready_to_publish",
+  "comparison": "reports/source-comparison/2026-11-05.json",
+  "original_posts": [
+    {
+      "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+      "published_at": "2026-11-04T21:31:09+00:00",
+      "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+      "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+      "site_id": "aihot"
+    },
+    {
+      "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+      "published_at": "2026-11-04T17:39:47+00:00",
+      "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+      "source": "X：Perplexity (@perplexity_ai)",
+      "site_id": "aihot"
+    }
+  ],
+  "canonical_case_url": "https://x.com/perplexity_ai/status/2118035494898704781",
+  "same_event_founder_quote": "https://x.com/AravSrinivas/status/2118037327796973770",
+  "case_original_evidence": "https://www.perplexity.ai/hub/customers/get-maine-lobster",
+  "case_date_boundary": "Customer case and reported campaign comparison, dated by its company post.",
+  "fast_search_source": "Verified founder personal account, T2, exact original URL only.",
+  "source_only_probe": {
+    "checked_at": "2026-11-05T05:57:34.969922+00:00",
+    "matched": [
+      {
+        "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+        "published_at": "2026-11-04T21:31:09+00:00",
+        "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+        "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+        "site_id": "aihot"
+      },
+      {
+        "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+        "published_at": "2026-11-04T17:39:47+00:00",
+        "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+        "source": "X：Perplexity (@perplexity_ai)",
+        "site_id": "aihot"
+      }
+    ],
+    "coverage": {
+      "pages": 10,
+      "truncated": true,
+      "source": "AIHOT all; indirect coverage"
+    }
+  },
+  "verification": {
+    "full_python_suite": "653 passed",
+    "diff_check": "passed",
+    "regressions": [
+      "Canonical case identity across quote, primary, pages and selected/all paths",
+      "Only the verified Fast Search post is admitted and attributed to a personal account",
+      "The two events remain distinct"
+    ]
+  },
+  "publication": {
+    "deployed": false,
+    "live_verified": false
+  }
+}

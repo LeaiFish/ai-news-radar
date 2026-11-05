@@ -451,9 +451,26 @@ AIHOT_VERIFIED_PRODUCT_POSTS = {
         "original_title": "Voice Remixing for Gemini 3.8 Flash TTS",
         "summary": "Google 说明 Voice Remixing 已可在 AI Studio 和 Gemini API 使用，可用提示词调整音色、音高、速度和口音。AI Studio 可并排试听三个版本，继续调整并保存复用。日期为官方原帖发表时间，功能首次上线日期未核验。",
     },
+    "/perplexity_ai/status/2118035494898704781": {
+        "url": "https://x.com/perplexity_ai/status/2118035494898704781",
+        "source": "X：Perplexity (@perplexity_ai)",
+        "published_at": "2026-11-04T17:39:47Z",
+        "title": "Perplexity Computer 客户案例：用智能体制作并投放电商广告",
+        "original_title": "Get Maine Lobster triples ad revenue with Perplexity",
+        "summary": "在 Perplexity 提供 3 万美元测试预算的客户案例中，Computer 为 Get Maine Lobster 分析 Meta 和 Shopify 数据、制作广告素材，并交由商家在 Slack 审核后投放。Perplexity 报告，本次测试的广告支出为对照投放的 2.1 倍，广告收入为 3.5 倍，广告支出回报率高 63%。",
+    },
+    "/aravsrinivas/status/2118093720243560711": {
+        "url": "https://x.com/AravSrinivas/status/2118093720243560711",
+        "source": "X：Aravind Srinivas（Perplexity 创始人个人账号） (@AravSrinivas)",
+        "published_at": "2026-11-04T21:31:09Z",
+        "title": "Perplexity Fast Search 接入 Decisions API，支持联网批量决策",
+        "original_title": "Perplexity is integrating Fast Search into the Decisions API",
+        "summary": "Perplexity 创始人 Aravind Srinivas 在个人账号介绍将 Fast Search 接入 Decisions API，让批量决策可先用网页搜索补充信息。他引用的开发者账号说明，设置 web_grounding 模式后，每个问题会运行一次搜索。",
+    },
 }
-AIHOT_VERIFIED_THREAD_REPLIES = {
+AIHOT_VERIFIED_POST_ALIASES = {
     "/google/status/2118027061948547270": "/google/status/2118027058794148099",
+    "/aravsrinivas/status/2118037327796973770": "/perplexity_ai/status/2118035494898704781",
 }
 AIHOT_API_TAKE = 100
 AIHOT_API_MAX_PAGES = 5
@@ -3100,9 +3117,9 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None, 
         verified_post = None
         if x_post:
             path = x_post[1].lower()
-            verified_post = AIHOT_VERIFIED_PRODUCT_POSTS.get(AIHOT_VERIFIED_THREAD_REPLIES.get(path, path))
+            verified_post = AIHOT_VERIFIED_PRODUCT_POSTS.get(AIHOT_VERIFIED_POST_ALIASES.get(path, path))
         if verified_post:
-            # The reply and primary produce the same archive identity even when
+            # The alias and original produce the same archive identity even when
             # fetched on different pages or through selected/all independently.
             link = verified_post["url"]
             title = verified_post["title"]
