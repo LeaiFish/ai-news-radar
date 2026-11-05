@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-05T16:30:05.307404Z",
+  "generated_at": "2026-11-05T21:07:16.381671Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
@@ -12,47 +12,47 @@
     "2026-11-05",
     "2026-11-06"
   ],
-  "story_count": 1890,
-  "unique_story_count": 1638,
+  "story_count": 1919,
+  "unique_story_count": 1732,
   "counts": {
     "by_company_topic": {
-      "anthropic": 273,
-      "apple": 28,
-      "cursor": 16,
-      "deepseek": 39,
-      "doubao": 15,
-      "google-gemini": 85,
-      "huggingface": 27,
+      "anthropic": 281,
+      "apple": 29,
+      "cursor": 17,
+      "deepseek": 40,
+      "doubao": 16,
+      "google-gemini": 95,
+      "huggingface": 22,
       "hunyuan": 15,
-      "kimi": 18,
-      "meta-llama": 5,
-      "microsoft": 15,
+      "kimi": 16,
+      "meta-llama": 6,
+      "microsoft": 14,
       "minimax": 6,
       "nvidia": 48,
-      "openai": 290,
-      "openrouter": 12,
+      "openai": 301,
+      "openrouter": 13,
       "perplexity": 6,
       "quark": 1,
       "qwen": 30,
-      "xai": 48,
+      "xai": 45,
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 290,
-      "monetization": 40,
-      "product-entry": 53,
-      "workplace": 44
+      "agent-ecosystem": 295,
+      "monetization": 49,
+      "product-entry": 50,
+      "workplace": 45
     },
     "by_importance_label": {
-      "值得关注": 1539,
-      "多源热议": 31,
-      "官方更新": 120,
-      "行业动态": 200
+      "值得关注": 1546,
+      "多源热议": 29,
+      "官方更新": 135,
+      "行业动态": 209
     },
     "by_source_count_bucket": {
-      "1": 1773,
-      "2": 84,
-      "3+": 33
+      "1": 1798,
+      "2": 90,
+      "3+": 31
     }
   },
   "top_stories": [
@@ -66,6 +66,20 @@
       "archive_date": "2026-11-05",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3ce30504df16",
+      "title": "NVIDIA 发布 Cosmos 3 四个开源权重模型用于交互式世界模拟 / New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "importance_score": 0.8561,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "nvidia",
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -92,6 +106,47 @@
       "archive_date": "2026-11-05",
       "company_topics": [],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_b36352b2bf8b",
+      "title": "Transform a quick drawing into a live app with Gemini.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini",
+      "importance_score": 0.8416,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_6b1555ab30d9",
+      "title": "Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒 / Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "importance_score": 0.8416,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
+      "story_id": "story_edbbcaa3919d",
+      "title": "Agents Are Going Async",
+      "url": "https://www.langchain.com/blog/agents-are-going-async",
+      "importance_score": 0.8413,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_43de237be8c1",
@@ -131,6 +186,17 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_64bf0679f81c",
+      "title": "全球品牌最佳企业人工智能视频平台 / Best Enterprise AI Video Platforms for Global Brands",
+      "url": "https://lumalabs.ai/news/enterprise-ai-video-platforms-global-brands",
+      "importance_score": 0.8379,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_5d294462667a",
       "title": "Hugging Face 提出 Model Integration Contracts 用小型模型 fixture 在 CPU 捕获回归 / Transformers Model Integration Contracts",
       "url": "https://huggingface.co/blog/transformers-mic",
@@ -140,6 +206,19 @@
       "archive_date": "2026-11-03",
       "company_topics": [
         "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_da5de4569932",
+      "title": "给你的缪斯一个声音 / Give Your Muse a Voice",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars",
+      "importance_score": 0.8374,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "meta-llama"
       ],
       "lens_topics": []
     },
@@ -157,6 +236,50 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_2bf0270bd084",
+      "title": "适合品牌团队的最佳人工智能营销活动生成器 / Best AI Campaign Generators for Brand Teams",
+      "url": "https://lumalabs.ai/news/ai-campaign-generators-brand-teams",
+      "importance_score": 0.8369,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a315df037341",
+      "title": "最佳商业人工智能视频生成器 / Best AI Video Generators for Business",
+      "url": "https://lumalabs.ai/news/ai-video-generators-business",
+      "importance_score": 0.8362,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_83984dc45d0c",
+      "title": "Best Generative AI Tools for Marketing and Advertising Teams",
+      "url": "https://lumalabs.ai/news/generative-ai-tools-marketing-advertising-teams",
+      "importance_score": 0.8353,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_881149e691cb",
+      "title": "Best AI Creative Tools for Advertising Agencies",
+      "url": "https://lumalabs.ai/news/ai-creative-tools-advertising-agencies",
+      "importance_score": 0.8346,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_372285a884db",
       "title": "Kling 3.0 替代方案：专业工作室工作流程的 6 种模型 / Kling 3.0 Alternatives: 6 Models for Professional Studio Workflows",
       "url": "https://lumalabs.ai/news/kling-3.0-alternatives",
@@ -164,6 +287,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-05",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b999cb2b7464",
+      "title": "Best AI Creative Platforms for Brands and Agencies",
+      "url": "https://lumalabs.ai/news/ai-creative-platforms-brands-agencies",
+      "importance_score": 0.8333,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
       "company_topics": [],
       "lens_topics": []
     },
@@ -190,6 +324,64 @@
         "doubao"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_c4e6d017dd84",
+      "title": "OpenAI 发布 GPT-6 Cyber 网络安全模型 / GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "importance_score": 0.8311,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_cbeec1005a5e",
+      "title": "Introducing Personal Finance in Claude",
+      "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+      "importance_score": 0.8297,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b87db7dc54c0",
+      "title": "More visibility and control over Claude Enterprise for security teams",
+      "url": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+      "importance_score": 0.8297,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_566b96ba44b2",
+      "title": "Cursor 推出应用构建功能，描述需求即可构建、部署并分享在线应用 / Build Live Apps in Cursor",
+      "url": "https://cursor.com/changelog/build-live-apps",
+      "importance_score": 0.8297,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "cursor"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_3762d45ec3c7",
@@ -243,6 +435,17 @@
       "company_topics": [
         "openai"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c6ee67edd3d6",
+      "title": "Real-Time Video at Batch Size One",
+      "url": "https://runway.com/news/research/real-time-video-at-batch-size-one",
+      "importance_score": 0.8229,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -359,219 +562,6 @@
       "company_topics": [
         "hunyuan"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a1cac76551fa",
-      "title": "Dharma-AI 发布 20 亿参数 Field Extractor 模型，文档图片直出结构化 JSON / Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
-      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-      "importance_score": 0.8159,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-05",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_ca1ade1b3eb8",
-      "title": "StateBench：测试语言模型如何在长文档中追踪状态变化 / StateBench: Testing how language models track state changes over long documents",
-      "url": "https://huggingface.co/blog/allenai/statebench",
-      "importance_score": 0.8152,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_b15c6d459b33",
-      "title": "IBM Research 发布 Palette：用 20B 开源模型按你的设计语言生成幻灯片 / Palette: teaching a small model to build decks in your design language",
-      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "importance_score": 0.8139,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4408f5c55929",
-      "title": "相同的模型，不同的工具：CUGA、Hermes 和 Deep Agent — 何时选择 CUGA？ / Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
-      "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
-      "importance_score": 0.8127,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "huggingface"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_bf5abd3d9223",
-      "title": "GitHub Copilot 现已在 Xcode 的编码助手中可用 / GitHub Copilot is now available in Xcode’s coding assistant",
-      "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
-      "importance_score": 0.8106,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-05",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_5608a60ecd33",
-      "title": "托管深度代理：交付生产深度代理的最快方式 / Managed Deep Agents: the fastest way to ship a production deep agent",
-      "url": "https://www.langchain.com/blog/introducing-managed-deep-agents",
-      "importance_score": 0.8102,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_f6a787bee313",
-      "title": "准备下一次安全冲刺以强化 OpenAI / Preparing our next security sprint to harden OpenAI",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "importance_score": 0.8091,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5f8be3ab19ec",
-      "title": "用更大的错误赏金奖励防御者 / Rewarding defenders with bigger bug bounties",
-      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "importance_score": 0.8091,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_fa9b2c6b49bd",
-      "title": "为什么人类洞察力是构建更好代理的战略优势 / Why human insight is a strategic advantage for building better agents",
-      "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
-      "importance_score": 0.8084,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_f47b50344903",
-      "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰 / Introducing the Grid Protectors Program",
-      "url": "https://openai.com/index/grid-protectors-program",
-      "importance_score": 0.8033,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_46598a98a79d",
-      "title": "GitHub Copilot 现已在 JetBrains Air 中可用 / GitHub Copilot is now available in JetBrains Air",
-      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
-      "importance_score": 0.8033,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "agent-ecosystem",
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_3e75208cf987",
-      "title": "LangSmith BYOC 现已在 AWS、Azure 和 Google Cloud 上推出 / LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
-      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
-      "importance_score": 0.8028,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_0e2e48e223fc",
-      "title": "我们于 2026 年 10 月公布的最新 AI 新闻 / The latest AI news we announced in October 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
-      "importance_score": 0.8006,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4ff814a9f8cb",
-      "title": "我们如何优化深度代理的浏览器使用 / How We Optimized Browser Use for Deep Agents",
-      "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
-      "importance_score": 0.8001,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_966d44efcb15",
-      "title": "Introducing Hy4",
-      "url": "https://hunyuan.tencent.com/blog/hy4",
-      "importance_score": 0.7968,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [
-        "hunyuan"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_4e7bf3741e96",
-      "title": "Krea 3 Technical Report",
-      "url": "https://www.krea.ai/blog/krea-3-technical-report",
-      "importance_score": 0.7968,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-04",
-      "company_topics": [],
       "lens_topics": []
     }
   ]
