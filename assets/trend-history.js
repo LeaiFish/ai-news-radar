@@ -33,7 +33,7 @@
   }
   function legend(parent){
     const details=disclosure(parent,'判断标记与归档说明','trend-history-guide');
-    details.append(node('p','trend-history-note','延续：方向不变；加强：核心执行、部署范围或持续使用出现实质进展；转向：主要路径或重心改变；纠偏：纠正原判断。补齐信息和普通功能更新归延续。'));
+    details.append(node('p','trend-history-note','延续：方向不变；加强：核心执行、部署范围或持续使用出现实质进展；转向：主要路径或重心改变；纠偏：纠正原判断。补齐信息和普通功能更新可归延续，正文仍可吸收新进展。'));
     details.append(node('p','trend-history-note','判断变化与新闻新增分开记录。只列已有存档；缺期、缺线索不等于没有动作。机构线索按各自最新记录展示，不表示同步发布、效果相同或采用程度排名。'));
   }
   function signalCard(parent,signal,rows){const p=node('p','trend-history-signal',`${index.directions[signal.direction_id]} · ${index.stages[signal.stage]||'阶段未核验'}：${signal.summary}`);parent.append(p);refs(parent,signal,rows);}
@@ -44,7 +44,7 @@
     async function batch(){more.disabled=true;const selected=metas.slice(shown,shown+12);const loaded=await Promise.all(selected.map(m=>snapshot(m.report_id)));
       for(let i=0;i<selected.length;i++){const meta=selected[i],row=loaded[i].companies?.[id];if(!row)continue;
         const article=node('details','trend-history-record');article.open=found++===0;
-        const heading=node('summary','history-record-heading');heading.append(node('span',null,`${day(meta.generated_at)} · ${meta.kind==='weekly'?'周报':'日报'}`),badge(row.type));article.append(heading);
+        const heading=node('summary','history-record-heading');heading.append(node('span',null,`${day(meta.generated_at)} · ${meta.kind==='weekly'?'周报':'日报'}${meta.revision_of?'修订':''}`),badge(row.type));article.append(heading);
         const content=node('div','history-record-content');
         if(row.provenance==='retrospective')content.append(node('p','brief-meta',`回顾标记于 ${day(row.classified_at)}；原始报告未改写。`));
         if(row.provenance==='unclassified')content.append(node('p','brief-meta','当时未标注变化类型，保留未标注。'));correctionNotes(content,row);
@@ -75,7 +75,7 @@
     parent.replaceChildren(box);
   }
   function overviewRecord(parent,meta,record){
-    const article=disclosure(parent,`${day(meta.generated_at)} · ${meta.kind==='weekly'?'周报':'日报'}`,'trend-overview-history');
+    const article=disclosure(parent,`${day(meta.generated_at)} · ${meta.kind==='weekly'?'周报':'日报'}${meta.revision_of?'修订':''}`,'trend-overview-history');
     const content=node('div','history-record-content');article.append(content);
     content.append(node('p','history-period-lead',record.after.lead));
     if(record.provenance==='retrospective')content.append(node('p','brief-meta',`回顾标记 ${day(record.classified_at)}；原始报告未改写。`));

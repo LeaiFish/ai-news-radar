@@ -26,6 +26,12 @@ DOMESTIC = frozenset(IDS[:3])
 LATEST = Path("trends/latest.json")
 REPORT_SCHEMA = "radar_trend_report_v1"
 LATEST_SCHEMA = "radar_trends_v1"
+JUDGMENT_CONTENT_POLICY = {
+    "required": True,
+    "rule": "先比较已核验产品进展与当前正文，再判断方向标签；continued允许state=updated并提交新judgment。新增能力、流程、入口或重要条件须吸收进正文；不以缺少采用效果为由冻结功能事实。",
+    "retain": "只有已覆盖、无关、无重要信息增量或核验不足时保留正文，并在content_review说明具体原因；无新内容不刷新判断日期。",
+    "review_fields": ["decision", "reason", "event_ids"],
+}
 SECRET = re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----|\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9_-]{20,})|\beyJ[A-Za-z0-9_-]{12,}\.[A-Za-z0-9_-]{12,}\.[A-Za-z0-9_-]{12,}|\bBearer\s+\S+|(?:access_token|refresh_token|client_secret|authorization|password|cookie)\s*[:=]\s*\S+", re.I)
 BAD_QUERY = frozenset({"token", "access_token", "refresh_token", "api_key", "apikey", "key", "secret", "password", "auth", "authorization", "cookie", "code", "iga_token", "iga_time", "x-signature"})
 
@@ -123,7 +129,7 @@ def periods(kind, as_of):
     return (monday - timedelta(days=7)).astimezone(UTC), monday.astimezone(UTC)
 
 
-def prepare(data_dir, kind, now=None):
+def prepare(data_dir, kind, now=None, *, revision=False):
     now = now or datetime.now(UTC)
     hub = load(data_dir / "topics.json")
     as_of = stamp(hub["generated_at"])
@@ -131,6 +137,7 @@ def prepare(data_dir, kind, now=None):
     start, end = periods(kind, as_of)
     baseline = load(ROOT / "config/trend_baseline.json")
     previous = load(data_dir / LATEST, {})
+    known_events = daily_event_index(data_dir, as_of)
     companies = {}
     for slug in IDS:
         data = load(data_dir / "topics" / f"{slug}.json", {"items": []})
@@ -153,17 +160,33 @@ def prepare(data_dir, kind, now=None):
         rows.sort(key=lambda r: (r["editorial_focus"] == "product", r["reported_at_unverified"] or ""), reverse=True)
         # Reserve both recent and older context; never treat this cap as full coverage.
         fresh = [r for r in rows if r["reported_at_unverified"] and start <= stamp(r["reported_at_unverified"]) < end]
-        selected = list({r["url"]: r for r in fresh[:16] + rows[:12]}.values())
+        prior = previous.get("companies", {}).get(slug) or {}
+        judgment = prior.get("judgment") or {}
+        judgment_at = stamp(judgment["source_snapshot_at"]) if judgment else date_floor(baseline["companies"][slug]["as_of"])
+        cited = {canonical(e["url"]) for e in judgment.get("evidence", [])}
+        reported = {ref["url"] for event in known_events[slug].values()
+                    if stamp(event["first_report_end"]) > judgment_at for ref in event["dated_refs"]}
+        backlog = [r for r in rows if r["reported_at_unverified"] and stamp(r["reported_at_unverified"]) > judgment_at and r["url"] not in cited]
+        # Reserve older unabsorbed progress so a busy recent day cannot keep
+        # pushing it outside the writer's candidate cap indefinitely.
+        backlog.sort(key=lambda r: (r["url"] not in reported, r["editorial_focus"] != "product", r["reported_at_unverified"]))
+        selected = list({r["url"]: r for r in fresh[:16] + rows[:12] + backlog[:12]}.values())
         companies[slug] = {"baseline": baseline["companies"][slug], "previous": previous.get("companies", {}).get(slug),
-                           "candidate_count": len(rows), "candidates_truncated": len(selected) < len(rows), "candidates": selected}
+                           "candidate_count": len(rows), "candidates_truncated": len(selected) < len(rows), "candidates": selected,
+                           "judgment_backlog_urls": [r["url"] for r in backlog[:12]]}
     bundle = {"schema": "radar_trend_input_v1", "kind": kind, "period_start": iso(start), "period_end": iso(end),
               "source_snapshot_at": iso(as_of), "previous_report_id": previous.get("report_id"),
               "previous_overview": previous.get("overview"), "companies": companies,
-              "known_daily_events": daily_event_index(data_dir, as_of),
+              "known_daily_events": known_events,
               "history_context": history_module().history_context(data_dir),
               "evolution_contract": {"types": history_module().TYPES, "directions": history_module().DIRECTIONS, "required": True,
-                                     "strengthening_policy": history_module().STRENGTHENING_POLICY},
+                                     "strengthening_policy": history_module().STRENGTHENING_POLICY,
+                                     "judgment_content_policy": JUDGMENT_CONTENT_POLICY},
               "warning": "候选时间、标题、摘要未经本轮原文核验；原文失败是覆盖缺口。既有判断不是新证据；同一事件多家报道只算一次。"}
+    if revision:
+        original = load(data_dir / issue_path({"kind": kind, "period_end": iso(end)}))
+        require(original is not None, "revision_requires_published_issue")
+        bundle["revision_of"] = original["report_id"]
     bundle["input_id"] = digest(bundle)
     return bundle
 
@@ -171,8 +194,11 @@ def prepare(data_dir, kind, now=None):
 def daily_event_index(data_dir, as_of):
     """Stable event ids and dated original refs across overlapping daily windows."""
     result = {slug: {} for slug in IDS}
-    for path in sorted((data_dir / "trends" / "daily").glob("????-??-??.json")):
+    paths = list((data_dir / "trends" / "daily").glob("????-??-??.json")) + list((data_dir / "trends" / "revisions").glob("*.json"))
+    for path in sorted(paths):
         archived = load(path)
+        if archived["kind"] != "daily":
+            continue
         if stamp(archived["period_end"]) < as_of - timedelta(days=35):
             continue
         raw = {k: v for k, v in archived.items() if k != "report_id"}
@@ -191,7 +217,7 @@ def daily_event_index(data_dir, as_of):
 
 def validate_report(raw, *, now=None):
     now = now or datetime.now(UTC)
-    keys(raw, "schema kind period_start period_end source_snapshot_at generated_at input_id previous_report_id companies evidence overview" + (" evolution" if "evolution" in raw else ""), "invalid_report_fields")
+    keys(raw, "schema kind period_start period_end source_snapshot_at generated_at input_id previous_report_id companies evidence overview" + (" evolution" if "evolution" in raw else "") + (" revision_of" if "revision_of" in raw else ""), "invalid_report_fields")
     require(raw["schema"] == REPORT_SCHEMA and raw["kind"] in {"daily", "weekly"}, "invalid_report_schema")
     start, end, source, generated = (stamp(raw[k]) for k in ("period_start", "period_end", "source_snapshot_at", "generated_at"))
     require(start < end <= source <= generated <= now + timedelta(minutes=5), "invalid_report_window")
@@ -199,6 +225,8 @@ def validate_report(raw, *, now=None):
     require((start, end) == periods(raw["kind"], source), "invalid_period_bounds")
     require(isinstance(raw["input_id"], str) and re.fullmatch(r"[a-f0-9]{64}", raw["input_id"]), "invalid_input_id")
     require(raw["previous_report_id"] is None or re.fullmatch(r"[a-f0-9]{64}", str(raw["previous_report_id"])), "invalid_parent_id")
+    if "revision_of" in raw:
+        require(isinstance(raw["revision_of"], str) and re.fullmatch(r"[a-f0-9]{64}", raw["revision_of"]), "invalid_revision_id")
     evidence = {}
     require(isinstance(raw["evidence"], list) and len(raw["evidence"]) <= 100, "invalid_evidence")
     for item in raw["evidence"]:
@@ -347,10 +375,16 @@ def merge_report(previous, report):
     return state
 
 
-def archive_path(report):
+def issue_path(report):
     end = stamp(report["period_end"]).astimezone(SH)
     key = end.date().isoformat() if report["kind"] == "daily" else "%04d-W%02d" % (end - timedelta(days=1)).isocalendar()[:2]
     return Path("trends") / report["kind"] / f"{key}.json"
+
+
+def archive_path(report):
+    if "revision_of" in report:
+        return Path("trends/revisions") / f"{report.get('report_id') or digest(report)}.json"
+    return issue_path(report)
 
 
 def bind_input(raw, bundle):
@@ -360,6 +394,15 @@ def bind_input(raw, bundle):
         require("evolution" in raw, "evolution_required_for_prepared_input")
     if bundle.get("evolution_contract", {}).get("strengthening_policy", {}).get("required"):
         history_module().require_strengthening_reviews(raw)
+    if bundle.get("evolution_contract", {}).get("judgment_content_policy", {}).get("required"):
+        for slug in IDS:
+            require("content_review" in raw["evolution"]["companies"][slug], "judgment_content_review_required")
+            card = raw["companies"][slug]["judgment"]
+            previous = bundle["companies"][slug].get("previous") or {}
+            previous_card = (previous.get("judgment") or {}).get("content")
+            if card and previous_card:
+                require(any(card[k] != previous_card[k] for k in ("headline", "summary")), "judgment_text_unchanged")
+    require(raw.get("revision_of") == bundle.get("revision_of"), "report_revision_mismatch")
     for key in ("input_id", "kind", "period_start", "period_end", "source_snapshot_at", "previous_report_id"):
         require(raw.get(key) == bundle.get(key), "report_input_mismatch")
 
@@ -372,6 +415,9 @@ def write_report(data_dir, raw, *, now=None):
         return {"status": "unchanged", "report_id": report["report_id"]}
     existing = load(path)
     require(existing is None or existing == report, "issue_already_published")
+    if "revision_of" in report:
+        original = load(data_dir / issue_path(report))
+        require(original is not None and original.get("report_id") == report["revision_of"], "revision_target_mismatch")
     if report["kind"] == "daily":
         known = daily_event_index(data_dir, stamp(report["source_snapshot_at"]))
         evidence = {e["id"]: e for e in report["evidence"]}
@@ -405,10 +451,11 @@ def main():
     p.add_argument("--output", type=Path)
     p.add_argument("--report", type=Path)
     p.add_argument("--input", type=Path)
+    p.add_argument("--revision", action="store_true", help="Append a dated revision without replacing the published issue")
     args = p.parse_args()
     if args.command == "prepare":
         require(args.output is not None, "output_required")
-        result = prepare(args.data_dir, args.kind)
+        result = prepare(args.data_dir, args.kind, revision=args.revision)
         args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
         print(json.dumps({k: result[k] for k in ("input_id", "kind", "source_snapshot_at", "previous_report_id")}, ensure_ascii=False))
     elif args.command == "check":

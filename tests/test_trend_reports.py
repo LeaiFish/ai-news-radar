@@ -241,3 +241,14 @@ def test_publisher_only_commits_current_public_issue_and_history(tmp_path, repor
     assert paths == {str(Path("data") / LATEST), str(Path("data") / archive_path(validate_report(report))), "data/trends/history.json", f"data/trends/history/{result["report_id"]}.json"}
     assert run("show", "master:README.md", cwd=remote) == "Existing public code"
     assert (caller / ".env").read_text() == "PRIVATE_VALUE=do-not-publish"
+    # The same publisher appends an explicit revision and preserves the issue.
+    issue = archive_path(validate_report(report))
+    original = run("show", f"master:data/{issue}", cwd=remote)
+    report.update(previous_report_id=result["report_id"], revision_of=result["report_id"])
+    bundle.update(previous_report_id=result["report_id"], revision_of=result["report_id"])
+    bundle["input_id"] = digest({k: v for k, v in bundle.items() if k != "input_id"})
+    report["input_id"] = bundle["input_id"]
+    revised = publish(report, bundle, repository=str(remote))
+    paths = set(run("show", "--format=", "--name-only", revised["commit"], cwd=remote).splitlines())
+    assert paths == {str(Path("data") / LATEST), str(Path("data") / archive_path(validate_report(report))), "data/trends/history.json", f"data/trends/history/{revised['report_id']}.json"}
+    assert run("show", f"master:data/{issue}", cwd=remote) == original

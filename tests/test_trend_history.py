@@ -18,6 +18,15 @@ def evolution(raw):
     return raw
 
 
+def content_reviews(raw):
+    for slug,company in raw['companies'].items():
+        raw['evolution']['companies'][slug]['content_review']={
+            'decision':'insufficient' if company['state']=='insufficient' else 'revised' if company['judgment'] else 'retained',
+            'reason':'将已核验进展并入正文' if company['judgment'] else '本轮没有核实未覆盖的产品进展',
+            'event_ids':[e['event_id'] for e in company['events']]}
+    return raw
+
+
 def test_old_replay_never_guesses_type_and_preserves_original_archive(tmp_path, report):
     updated(report)
     write_report(tmp_path, report)
@@ -29,6 +38,75 @@ def test_old_replay_never_guesses_type_and_preserves_original_archive(tmp_path, 
     assert row['after']['content']==report['companies']['doubao']['judgment']
     assert row['after']['generated_at']==report['generated_at']
     assert archive.read_bytes()==before
+
+
+def test_continued_direction_can_absorb_product_progress(tmp_path, report):
+    evolution(updated(report))
+    report['evolution']['companies']['doubao']['type']='continued'
+    write_report(tmp_path, report)
+    first=digest(report)
+    original=(tmp_path/archive_path(validate_report(report))).read_bytes()
+    revised=deepcopy(report)
+    revised.update(previous_report_id=first, revision_of=first)
+    revised['companies']['doubao']['judgment']['summary']='网页可分享；电脑操作还可录制为技能并反复执行。'
+    revised['companies']['doubao']['events'][0]['status']='supplement'
+    result=write_report(tmp_path,revised)
+    latest=load(tmp_path/LATEST)
+    assert latest['companies']['doubao']['judgment']['content']==revised['companies']['doubao']['judgment']
+    assert (tmp_path/archive_path(validate_report(report))).read_bytes()==original
+    assert archive_path(validate_report(revised))==Path('trends/revisions')/f'{result["report_id"]}.json'
+    index,snapshots=history.build_history(tmp_path)
+    assert len(index['reports'])==2
+    row=snapshots[result['report_id']]['companies']['doubao']
+    assert row['type']=='continued'
+    assert row['before']['content']!=row['after']['content']
+    assert index['reports'][-1]['revision_of']==first
+    assert write_report(tmp_path,revised)['status']=='unchanged'
+
+
+def test_new_input_requires_content_review_and_rejects_cosmetic_date_refresh(tmp_path, report):
+    evolution(updated(report)); report['evolution']['companies']['doubao']['type']='continued'
+    write_report(tmp_path,report)
+    (tmp_path/'topics.json').write_text(json.dumps({'generated_at':report['source_snapshot_at']}))
+    bundle=prepare(tmp_path,'daily',revision=True)
+    revised=deepcopy(report)
+    revised.update({k:bundle[k] for k in ['input_id','previous_report_id','revision_of']})
+    with pytest.raises(ValueError,match='content_review_required'):bind_input(revised,bundle)
+    content_reviews(revised)
+    with pytest.raises(ValueError,match='judgment_text_unchanged'):bind_input(revised,bundle)
+    revised['companies']['doubao']['judgment']['summary']+=' 可录制电脑操作并复用。'
+    bind_input(revised,bundle)
+    review=revised['evolution']['companies']['doubao']['content_review']
+    review['event_ids']=[]
+    with pytest.raises(ValueError,match='content_review_must_cover_events'):bind_input(revised,bundle)
+
+
+def test_revision_rejects_wrong_target_and_is_in_next_event_dedupe(tmp_path, report):
+    evolution(updated(report)); report['evolution']['companies']['doubao']['type']='continued'
+    write_report(tmp_path,report)
+    parent=digest(report)
+    revised=deepcopy(report);revised.update(previous_report_id=parent,revision_of='b'*64)
+    revised['companies']['doubao']['events'][0].update(event_id='doubao-computer',status='supplement')
+    before=(tmp_path/LATEST).read_bytes()
+    with pytest.raises(ValueError,match='revision_target_mismatch'):write_report(tmp_path,revised)
+    assert (tmp_path/LATEST).read_bytes()==before
+    revised['revision_of']=parent
+    write_report(tmp_path,revised)
+    from scripts.trend_reports import daily_event_index
+    assert 'doubao-computer' in daily_event_index(tmp_path,datetime.now(timezone.utc))['doubao']
+
+
+def test_older_unabsorbed_progress_survives_a_busy_news_day(tmp_path,report):
+    updated(report);write_report(tmp_path,report)
+    source=datetime.fromisoformat(report['source_snapshot_at'].replace('Z','+00:00'))+timedelta(days=5)
+    (tmp_path/'topics.json').write_text(json.dumps({'generated_at':iso(source)}))
+    (tmp_path/'topics').mkdir()
+    rows=[{'url':f'https://example.com/{i}','title':f'产品进展{i}','published_at':iso(source-timedelta(hours=i))} for i in range(40)]
+    older={'url':'https://example.com/important-skills','title':'录制电脑操作保存为技能','published_at':iso(source-timedelta(days=3))}
+    (tmp_path/'topics/doubao.json').write_text(json.dumps({'items':rows+[older]}))
+    bundle=prepare(tmp_path,'daily',now=source)
+    assert older['url'] in [c['url'] for c in bundle['companies']['doubao']['candidates']]
+    assert older['url'] in bundle['companies']['doubao']['judgment_backlog_urls']
 
 
 def test_retrospective_label_is_dated_without_rewriting_issue(tmp_path, report):
@@ -58,14 +136,13 @@ def test_insufficient_retains_before_after_and_original_judgment_date(tmp_path, 
     assert row['after']['generated_at']==report['generated_at']
 
 
-@pytest.mark.parametrize('mutation', ['unknown_direction','cross_company','no_evidence','continued_rewrite','sensitive'])
+@pytest.mark.parametrize('mutation', ['unknown_direction','cross_company','no_evidence','sensitive'])
 def test_invalid_evolution_cannot_publish(report,mutation):
     evolution(updated(report)); c=report['evolution']['companies']['doubao']
     c['signals']=[{'direction_id':'shared-deliverables','type':'strengthened','summary':'网页可以分享','stage':'available','evidence_ids':['doubao-1']}]
     if mutation=='unknown_direction': c['signals'][0]['direction_id']='made-up'
     if mutation=='cross_company': report['evidence'][0]['company_ids']=['qwen']
     if mutation=='no_evidence': c['evidence_ids']=[]
-    if mutation=='continued_rewrite': c['type']='continued'
     if mutation=='sensitive': c['reason']='Bearer private-value'
     with pytest.raises(ValueError): validate_report(report)
 
@@ -90,6 +167,8 @@ def test_prepare_requires_explicit_future_labels_and_has_previous_weeks(tmp_path
     evolution(new)
     with pytest.raises(ValueError,match='strengthening_review_required'): bind_input(new,bundle)
     new['evolution']['companies']['doubao']['strengthening'] = strengthening()
+    content_reviews(new)
+    new['companies']['doubao']['judgment']['summary']+=' 电脑操作可保存为技能。'
     bind_input(new,bundle)
 
 
@@ -158,6 +237,7 @@ def test_future_strengthening_requires_material_comparison(tmp_path,report,targe
     else:row.pop('strengthening')
     with pytest.raises(ValueError,match='strengthening_review_required'):bind_input(report,bundle)
     row['strengthening']=strengthening()
+    content_reviews(report)
     bind_input(report,bundle)
     row['strengthening']['basis']='product_information'
     with pytest.raises(ValueError,match='invalid_strengthening_basis'):bind_input(report,bundle)

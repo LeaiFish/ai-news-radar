@@ -69,7 +69,7 @@ def validate_evolution(raw, evolution=None):
     core.require(isinstance(value['companies'], dict) and set(value['companies'])==set(core.IDS), 'evolution_needs_eight_companies')
     evidence={e['id']:e for e in raw['evidence']}
     for slug,row in value['companies'].items():
-        core.keys(row,'type reason evidence_ids signals'+(' strengthening' if 'strengthening' in row else ''),'invalid_company_evolution')
+        core.keys(row,'type reason evidence_ids signals'+(' strengthening' if 'strengthening' in row else '')+(' content_review' if 'content_review' in row else ''),'invalid_company_evolution')
         core.require(row['type'] in TYPES,'invalid_evolution_type')
         core.clean(row['reason'],600)
         insufficient = row['type']=='insufficient'
@@ -80,8 +80,16 @@ def validate_evolution(raw, evolution=None):
         core.require(isinstance(row['signals'],list) and len(row['signals'])<=7,'invalid_direction_signals')
         if insufficient:
             core.require(not row['signals'],'insufficient_cannot_assert_signals')
-        if row['type']=='continued':
-            core.require(company['judgment'] is None,'continued_cannot_rewrite_judgment')
+        # Direction and content revision are independent: continued may absorb
+        # verified product progress without claiming the trend strengthened.
+        if 'content_review' in row:
+            review=row['content_review']
+            core.keys(review,'decision reason event_ids','invalid_content_review')
+            core.clean(review['reason'],600)
+            expected='insufficient' if insufficient else 'revised' if company['judgment'] else 'retained'
+            core.require(review['decision']==expected,'content_review_decision_mismatch')
+            event_ids=review['event_ids']
+            core.require(isinstance(event_ids,list) and len(event_ids)==len(set(event_ids)) and set(event_ids)=={e['event_id'] for e in company['events']},'content_review_must_cover_events')
         if row['type'] in {'shifted','corrected','established'}:
             core.require(company['judgment'] is not None,'transition_needs_new_judgment')
         seen=set()
@@ -113,7 +121,7 @@ def validate_evolution(raw, evolution=None):
 
 def _ordered(data_dir,extra_report=None):
     reports={}
-    for kind,pattern in [('daily','????-??-??.json'),('weekly','????-W??.json')]:
+    for kind,pattern in [('daily','????-??-??.json'),('weekly','????-W??.json'),('revisions','*.json')]:
         for path in (data_dir/'trends'/kind).glob(pattern):
             stored=core.load(path)
             raw={k:v for k,v in stored.items() if k!='report_id'}
@@ -123,6 +131,10 @@ def _ordered(data_dir,extra_report=None):
             reports[checked['report_id']]=checked
     if extra_report:
         reports[extra_report['report_id']]=extra_report
+    for report in reports.values():
+        if 'revision_of' in report:
+            original=reports.get(report['revision_of'])
+            core.require(original is not None and 'revision_of' not in original and core.issue_path(original)==core.issue_path(report),'history_revision_target_mismatch')
     result=[];parent=None
     while reports:
         children=[r for r in reports.values() if r['previous_report_id']==parent]
@@ -198,6 +210,8 @@ def build_history(data_dir,extra_report=None):
                   'companies':{},'overview':None}
         meta={k:snapshot[k] for k in ['report_id','kind','generated_at','period_start','period_end']}
         meta.update(path=core.archive_path(report).as_posix(),companies={},overview=[])
+        if 'revision_of' in report:
+            snapshot['revision_of']=meta['revision_of']=report['revision_of']
         for slug,row in report['companies'].items():
             before=deepcopy(states[slug]);card=row['judgment']
             if card:
