@@ -1,7 +1,7 @@
 {
   "schema": "official_source_intake_v1",
   "at": "2026-11-05T03:47:03.720440+00:00",
-  "status": "local_verified_ready_to_publish",
+  "status": "published_and_live_verified",
   "user_request": "补入Claude-to-MLflow指南，检查Databricks官方Blog稳定接入；产品功能/使用方式优先，同事件去重，指南日期不冒充功能首发。",
   "source": {
     "name": "Databricks Blog",
@@ -150,7 +150,14 @@
       "independent failure status on invalid HTML feed"
     ],
     "compile": "passed",
-    "diff_check": "passed"
+    "diff_check": "passed",
+    "historical_24h_boundary": "Guide is older than current 24h window: raw/filtered current-window count zero is expected. Archive/public/topic each contain one record at original publication time.",
+    "unrelated_full_architecture_check": {
+      "result": "55 web tests passed; 1 failed",
+      "test": "apps/web/tests/navigation-performance.test.ts:88 SSR list and visited query variants return offline without another read",
+      "failure": "expected list article link after offline back navigation; timed out after 1500ms",
+      "scope": "No apps/web code modified in this source integration. Source-specific/Python tests, news generation, Pages deployment and live data/reader acceptance passed; navigation failure remains unresolved."
+    }
   },
   "files": [
     {
@@ -175,10 +182,22 @@
     }
   ],
   "publication": {
-    "committed": false,
-    "pushed": false,
-    "deployed": false,
-    "live_verified": false
+    "committed": true,
+    "pushed": true,
+    "deployed": true,
+    "live_verified": true,
+    "source_commit": "99c1fa9ae146ed7c9354cdb3b257098c5b45b57b",
+    "source_commit_url": "https://github.com/LeaiFish/ai-news-radar/commit/99c1fa9ae146ed7c9354cdb3b257098c5b45b57b",
+    "news_generation_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41963796801",
+    "test_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41963796831",
+    "architecture_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41963796926",
+    "data_commit": "b9b03626515b5518c5ae7dcd3d164e1a2dcc7103",
+    "data_commit_url": "https://github.com/LeaiFish/ai-news-radar/commit/b9b03626515b5518c5ae7dcd3d164e1a2dcc7103",
+    "news_generation_result": "success",
+    "test_result": "success",
+    "pages_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41964377433",
+    "pages_result": "success",
+    "architecture_result": "failure"
   },
   "actions": {
     "private_credentials_or_login_used": false,
@@ -190,5 +209,116 @@
   "reuse_review": {
     "updated": "docs/SOURCE_COVERAGE.md#databricks-official-rss-and-dated-usage-guide-2026-11-05",
     "boundary": "Official footer RSS discovery, AI-only product/use budget, historical guide dates and event dedup."
+  },
+  "live_verification": {
+    "checked_at": "2026-11-05T03:55:10.574768+00:00",
+    "target": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+    "timestamps": {
+      "status": "2026-11-05T03:48:00.380963Z",
+      "archive": "2026-11-05T03:48:00.380963Z",
+      "public": "2026-11-05T03:48:00.380963Z",
+      "claude_topic": "2026-11-05T03:48:00.380963Z",
+      "raw": "2026-11-05T03:48:00.380963Z",
+      "filtered": "2026-11-05T03:48:00.380963Z"
+    },
+    "health": {
+      "site_id": "official_feed_databricks",
+      "site_name": "Databricks Blog",
+      "ok": true,
+      "item_count": 5,
+      "duration_ms": 365,
+      "error": null
+    },
+    "layers": {
+      "archive": {
+        "count": 1,
+        "records": [
+          {
+            "id": "14e33c61bbed9c4e18d4934693d4b8ef8221169f",
+            "title": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+            "url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+            "published_at": "2026-11-03T21:00:00Z",
+            "publishedAt": null,
+            "timelineAt": null,
+            "site_id": "official_ai",
+            "source": "Databricks Blog",
+            "select_tier": "T1",
+            "editorial_focus": "product",
+            "original_url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+            "guide_summary_present": true,
+            "first_release_boundary_present": true
+          }
+        ]
+      },
+      "public": {
+        "count": 1,
+        "records": [
+          {
+            "id": "14e33c61bbed9c4e18d4934693d4b8ef8221169f",
+            "title": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+            "url": null,
+            "published_at": null,
+            "publishedAt": "2026-11-03T21:00:00Z",
+            "timelineAt": "2026-11-03T21:00:00Z",
+            "site_id": null,
+            "source": {
+              "name": "Databricks Blog"
+            },
+            "select_tier": null,
+            "editorial_focus": null,
+            "original_url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+            "guide_summary_present": true,
+            "first_release_boundary_present": true
+          }
+        ]
+      },
+      "claude_topic": {
+        "count": 1,
+        "records": [
+          {
+            "id": "14e33c61bbed9c4e18d4934693d4b8ef8221169f",
+            "title": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+            "url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+            "published_at": "2026-11-03T21:00:00Z",
+            "publishedAt": null,
+            "timelineAt": null,
+            "site_id": "official_ai",
+            "source": "Databricks Blog",
+            "select_tier": null,
+            "editorial_focus": null,
+            "original_url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+            "guide_summary_present": true,
+            "first_release_boundary_present": true
+          }
+        ]
+      },
+      "raw": {
+        "count": 0,
+        "records": []
+      },
+      "filtered": {
+        "count": 0,
+        "records": []
+      }
+    },
+    "same_event_candidates": [
+      {
+        "id": "14e33c61bbed9c4e18d4934693d4b8ef8221169f",
+        "title": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+        "url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+        "published_at": "2026-11-03T21:00:00Z",
+        "site_id": "official_ai"
+      }
+    ]
+  },
+  "reader_acceptance": {
+    "checked_at": "2026-11-05T03:56:18.589604+00:00",
+    "url": "https://leaifish.github.io/ai-news-radar/topics/anthropic/",
+    "rendered_title": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+    "date_group": "11月4日 · 星期三",
+    "time": "05:00",
+    "rendered_summary_has_guide_and_unknown_first_release_boundary": true,
+    "topic_updated_at_beijing": "2026-11-05 11:48",
+    "method": "CUA browser rendered accessibility tree"
   }
 }
