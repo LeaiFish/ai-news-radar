@@ -1,6 +1,6 @@
 {
   "schema": "radar_source_intake_v1",
-  "status": "local_verified_ready_to_publish",
+  "status": "published_and_live_verified",
   "comparison_gap": "grok-bot-team-usage-filter",
   "original": {
     "url": "https://x.com/poteto/status/2116576229319233596",
@@ -49,7 +49,109 @@
     "diff_check": "passed"
   },
   "publication": {
-    "deployed": false,
-    "live_verified": false
+    "deployed": true,
+    "live_verified": true,
+    "source_commit": "40f2e861879c5e7fee74766df12d0b196081a725",
+    "news_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41981144931",
+    "test_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41981144939",
+    "architecture_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41981144916",
+    "data_commit": "492ff2cc9c928cff6609895c35d2844af66f33bb",
+    "pages_run": "https://github.com/LeaiFish/ai-news-radar/actions/runs/41981851968",
+    "news_result": "success",
+    "test_result": "success",
+    "pages_result": "success",
+    "architecture_result": "success",
+    "architecture_attempts": 2,
+    "first_attempt": "Web navigation fixture timed out waiting for the article link"
+  },
+  "live_verification": {
+    "checked_at": "2026-11-05T06:40:02.029473+00:00",
+    "timestamps": {
+      "status": "2026-11-05T06:33:10.263078Z",
+      "raw": "2026-11-05T06:33:10.263078Z",
+      "filtered": "2026-11-05T06:33:10.263078Z",
+      "archive": "2026-11-05T06:33:10.263078Z",
+      "topic": "2026-11-05T06:33:10.263078Z",
+      "public": "2026-11-05T06:33:10.263078Z"
+    },
+    "focus_health": {
+      "site_id": "aihot_focus",
+      "site_name": "AIHOT Focus Channels (indirect)",
+      "ok": true,
+      "item_count": 88,
+      "duration_ms": 35225,
+      "error": null,
+      "coverage": {
+        "pages": 10,
+        "truncated": true,
+        "source": "AIHOT all; indirect coverage"
+      }
+    },
+    "layers": {
+      "raw": {
+        "matches": [],
+        "same_event_alias_count": 0
+      },
+      "filtered": {
+        "matches": [],
+        "same_event_alias_count": 0
+      },
+      "archive": {
+        "matches": [
+          {
+            "url": "https://x.com/poteto/status/2116576229319233596",
+            "id": "bdb9232252123c742f3f5aa216f0b0210224d918",
+            "title": "Grok Bot 团队用法：分工、复用技能与自动化",
+            "published": "2026-10-31T17:01:11Z",
+            "timeline": null,
+            "source": "X：Lauren Tan（Grok Bot 团队成员个人账号） (@poteto)",
+            "tier": "T2",
+            "summary_context": true
+          }
+        ],
+        "same_event_alias_count": 0
+      },
+      "topic": {
+        "matches": [
+          {
+            "url": "https://x.com/poteto/status/2116576229319233596",
+            "id": "bdb9232252123c742f3f5aa216f0b0210224d918",
+            "title": "Grok Bot 团队用法：分工、复用技能与自动化",
+            "published": "2026-10-31T17:01:11Z",
+            "timeline": null,
+            "source": "X：Lauren Tan（Grok Bot 团队成员个人账号） (@poteto)",
+            "tier": null,
+            "summary_context": true
+          }
+        ],
+        "same_event_alias_count": 0
+      },
+      "public": {
+        "matches": [
+          {
+            "url": "https://x.com/poteto/status/2116576229319233596",
+            "id": "bdb9232252123c742f3f5aa216f0b0210224d918",
+            "title": "Grok Bot 团队用法：分工、复用技能与自动化",
+            "published": "2026-10-31T17:01:11Z",
+            "timeline": "2026-10-31T17:01:11Z",
+            "source": "X：Lauren Tan（Grok Bot 团队成员个人账号） (@poteto)",
+            "tier": null,
+            "summary_context": true
+          }
+        ],
+        "same_event_alias_count": 0
+      }
+    },
+    "errors": []
+  },
+  "reader_acceptance": {
+    "url": "https://leaifish.github.io/ai-news-radar/topics/xai/",
+    "method": "rendered topic accessibility readback",
+    "snapshot_beijing": "2026-11-05 14:33",
+    "visible_publication_beijing": "2026-11-01 01:01",
+    "guide_cards": 1,
+    "duplicate_cards": 0,
+    "team_member_personal_attribution_visible": true,
+    "main_post_date_boundary_visible": true
   }
 }
