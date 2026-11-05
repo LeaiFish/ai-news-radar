@@ -1,0 +1,55 @@
+{
+  "schema": "radar_source_intake_v1",
+  "status": "local_verified_ready_to_publish",
+  "comparison_gap": "grok-bot-team-usage-filter",
+  "original": {
+    "url": "https://x.com/poteto/status/2116576229319233596",
+    "title": "Grok Bot 团队用法：分工、复用技能与自动化",
+    "source": "X：Lauren Tan（Grok Bot 团队成员个人账号） (@poteto)",
+    "published_at": "2026-10-31T17:01:11+00:00"
+  },
+  "same_event_originals": [
+    "https://x.com/poteto/status/2116580481236115933",
+    "https://x.com/indigox/status/2116690187006971959"
+  ],
+  "same_event_reporting": [
+    "https://grokbot.guru/poteto-guide-build-and-manage-a-bot-team/",
+    "https://thegrokbotguide.com/tips/small-strong-bot-team/"
+  ],
+  "previously_covered_distinct_events": [
+    "https://x.ai/news/team-bots",
+    "https://x.ai/news/grok-bot-sales"
+  ],
+  "before_online_snapshot": "2026-11-05T05:58:47.020884Z",
+  "before_matching_event_counts": {
+    "archive": 0,
+    "public": 0
+  },
+  "date_semantics": "Main post publication time. The guide describes practical usage and belongs in the historical xAI / Grok topic.",
+  "attribution": "Grok Bot team member Lauren Tan, personal account, T2.",
+  "source_only_probe": {
+    "checked_at": "2026-11-05T06:31:45.148793+00:00",
+    "coverage": {
+      "pages": 10,
+      "truncated": true,
+      "source": "AIHOT all; indirect coverage"
+    },
+    "matches": [
+      {
+        "url": "https://x.com/poteto/status/2116576229319233596",
+        "title": "Grok Bot 团队用法：分工、复用技能与自动化",
+        "source": "X：Lauren Tan（Grok Bot 团队成员个人账号） (@poteto)",
+        "published_at": "2026-10-31T17:01:11+00:00"
+      }
+    ]
+  },
+  "verification": {
+    "full_python_suite": "654 passed before adding the verified quote alias",
+    "targeted_tests_with_quote_alias": "8 passed",
+    "diff_check": "passed"
+  },
+  "publication": {
+    "deployed": false,
+    "live_verified": false
+  }
+}

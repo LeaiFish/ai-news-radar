@@ -142,3 +142,30 @@ def test_fast_search_exact_post_is_personal_and_distinct_from_commerce_case():
     assert 'web_grounding' in record['summary']
     stories, _ = merge_story_items([row(item) for item in items], NOW, 24)
     assert len(stories) == 2
+
+
+GROK_TEAM = 'https://x.com/poteto/status/2116576229319233596'
+GROK_ROUTINES = 'https://x.com/poteto/status/2116580481236115933'
+
+
+def test_grok_bot_team_guide_merges_routine_reply_at_the_original_date():
+    from scripts.source_tiers import attach_select_tier
+
+    primary = entry('Grok Bot 工程负责人分享创建高质量 bot 与管理 bot 团队的方法',
+                    GROK_TEAM, '2026-10-31T17:01:11Z', score=61)
+    reply = entry('xAI 工程师分享 Grok Bot 使用技巧：routines 与自动化',
+                  GROK_ROUTINES, '2026-10-31T17:18:05Z', score=43)
+    unrelated = entry('Some thoughts about managing projects', 'https://x.com/poteto/status/99')
+    retelling = entry('Grok Bot 团队管理小指南：少而精、存技能、用语音',
+                      'https://x.com/indigox/status/2116690187006971959', '2026-11-01T00:34:01Z')
+    [raw] = collect([retelling, unrelated], [reply], [primary])
+    [selected] = parse_aihot_api_items({'items': [primary]}, NOW)
+    record = row(raw)
+    attach_select_tier(record, site_id=raw.site_id, source=raw.source, meta=raw.meta)
+    assert record['id'] == row(selected)['id']
+    assert raw.url == GROK_TEAM and raw.site_id == 'aihot'
+    assert raw.published_at == datetime(2026, 10, 31, 17, 1, 11, tzinfo=timezone.utc)
+    assert record['select_tier'] == 'T2' and '个人账号' in raw.source
+    assert record['ai_is_related'] and record['editorial_focus'] == 'product'
+    assert '用法' in record['title'] and '上线' not in record['title']
+    assert all(term in record['summary'] for term in ('技能', 'Slack', 'Routines', 'Notion'))

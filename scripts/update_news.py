@@ -467,8 +467,18 @@ AIHOT_VERIFIED_PRODUCT_POSTS = {
         "original_title": "Perplexity is integrating Fast Search into the Decisions API",
         "summary": "Perplexity 创始人 Aravind Srinivas 在个人账号介绍将 Fast Search 接入 Decisions API，让批量决策可先用网页搜索补充信息。他引用的开发者账号说明，设置 web_grounding 模式后，每个问题会运行一次搜索。",
     },
+    "/poteto/status/2116576229319233596": {
+        "url": "https://x.com/poteto/status/2116576229319233596",
+        "source": "X：Lauren Tan（Grok Bot 团队成员个人账号） (@poteto)",
+        "published_at": "2026-10-31T17:01:11Z",
+        "title": "Grok Bot 团队用法：分工、复用技能与自动化",
+        "original_title": "A short Grok Bot guide on how I create high quality bots and manage my team",
+        "summary": "Lauren Tan 在个人账号分享如何用少量 Bot 分工，把重复任务的操作要求存成可复用技能，并在团队方案中通过 Slack 共享 Bot。她在同一串帖举例用 Routines 定时检查缺陷，或在收到客户邮件时总结反馈并写入 Notion。日期为指南主帖发表时间。",
+    },
 }
 AIHOT_VERIFIED_POST_ALIASES = {
+    "/poteto/status/2116580481236115933": "/poteto/status/2116576229319233596",
+    "/indigox/status/2116690187006971959": "/poteto/status/2116576229319233596",
     "/google/status/2118027061948547270": "/google/status/2118027058794148099",
     "/aravsrinivas/status/2118037327796973770": "/perplexity_ai/status/2118035494898704781",
 }

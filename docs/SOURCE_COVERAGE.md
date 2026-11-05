@@ -752,3 +752,8 @@ original URL and uses the founder's personal X attribution and T2 tier.
 Both dates refer to the original posts. Case results are Perplexity's reported
 comparison and retain the test budget and relative spend. See
 `reports/source-intake/2026-11-05-perplexity.json`.
+
+Lauren Tan's Grok Bot team guide keeps the original main post as its source.
+The verified routines reply and quote post join that guide. Its publication
+time is the main post's timestamp, and its source stays a team member's
+personal account. Older guides remain available via the xAI / Grok topic.
