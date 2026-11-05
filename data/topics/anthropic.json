@@ -3,13 +3,13 @@
   "name": "Anthropic / Claude",
   "description": "Anthropic 与 Claude 系列：模型发布、Claude Code、安全研究与公司进展。",
   "group": "company",
-  "item_count": 1328,
-  "listed_count": 1328,
-  "recent_item_count": 1095,
+  "item_count": 1329,
+  "listed_count": 1329,
+  "recent_item_count": 1096,
   "latest_title": "40 年未解的\"细胞穹窿\"，被 Claude 拽进结构生物学视野",
   "latest_published_at": "2026-11-05T03:11:51.914682Z",
   "items_url": "data/topics/anthropic.json",
-  "generated_at": "2026-11-05T03:25:26.009854Z",
+  "generated_at": "2026-11-05T03:48:00.380963Z",
   "items": [
     {
       "id": "story_0e832117a16c",
@@ -682,6 +682,22 @@
       "published_at": "2026-11-03T21:10:03Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "14e33c61bbed9c4e18d4934693d4b8ef8221169f",
+      "story_id": null,
+      "title": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+      "summary": "Databricks官方指南介绍创建实验、配置Claude原生OpenTelemetry导出、检查模型与工具调用追踪的流程，用于排查智能体失败并评估修改效果。原生追踪能力10月已有公测说明；本文为接入用法指南，功能首次上线日期未核验。文中的MLflow Issues仍为Beta。",
+      "recommend_reason_zh": null,
+      "source": "Databricks Blog",
+      "source_name": "Databricks Blog",
+      "site_id": "official_ai",
+      "published_at": "2026-11-03T21:00:00Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "143d83763356878c839cc0386a60288f422e3d64",
