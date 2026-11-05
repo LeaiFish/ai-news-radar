@@ -49,7 +49,7 @@ _CAPABILITY = re.compile(
     r"(?<![a-z])(?:apis?|sdks?|features?|dashboards?|workspaces?|integrations?|"
     r"subscriptions?|endpoints?|transcriptions?|captions?|object detection|pointing|chats?|conversations?|collaborat\w*|"
     r"editing|memory|connectors?|speech|audio|voice|3d|image editing|observability|tracing|"
-    r"local(?:ly)?|macs?|windows|desktop app|mobile app|new app|app studio|music|video|design mode|annotations?|expression sheets?)(?![a-z])"
+    r"local(?:ly)?|macs?|windows|desktop app|mobile app|new app|app studio|music|video|design mode|annotations?|expression sheets?|photo reframe|viggle remake)(?![a-z])"
     r"|功能|客户端|协作|共享屏幕|语音|音频|录制|视觉创作|全链路|工作流|多平台|电商经营|"
     r"本地运行|端侧运行|编辑|导出|上传|权限|隐私|对话|聊天|记忆|连接器|自动化|"
     r"模型切换|模型选择|模型接入|(?:接入|切换).{0,8}模型|桌面应用|移动应用|界面|订阅|会员|额度|限流|我的应用|专属应用|AI\s*助[理手]|事务管理|管理事务|管事|短剧工作室|创作工作室|剧本|分镜|故事板|角色表情表|侧边栏|插件|邮件|日历|日程|多语言|法语|日语|韩语|繁体中文", re.I,

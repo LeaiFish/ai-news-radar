@@ -726,3 +726,21 @@ matches; this bounded sample supports intake without proving complete uniqueness
 Tests cover caps, technical bursts, impostor hosts, missing/future dates,
 historical public projection and same-event merging. Validation and live
 acceptance are tracked in `reports/source-intake/2026-11-05-databricks.json`.
+
+## Verified creative product usage and Google account (2026-11-05)
+
+Photo Reframe and Viggle Remake are concrete product capabilities when the
+headline describes an action. Evaluations still retain technical priority.
+The exact `@Google` X channel joins the supplemental institution list without
+publisher-name aliases or changes to the original 48 sources. Discovery stays
+indirect through AIHOT all mode, under the same page, relevance and channel
+budgets; this does not add a direct X collector or change the selected score gate.
+
+Three original-read posts use evidence-based Chinese titles and summaries.
+Their original timestamps are post publication times; they do not establish
+when a feature first shipped. Viggle's weights announcement is noted separately
+from the video-editing workflow. The verified Google Voice Remixing reply is
+folded into its primary post, retaining the primary URL and date even if only
+the reply appears in the current sample. This applies to the two known post
+IDs, not every thread or every feature from Google. Other events continue using
+the existing URL/title merge rules. See `reports/source-intake/2026-11-05-product-posts.json`.

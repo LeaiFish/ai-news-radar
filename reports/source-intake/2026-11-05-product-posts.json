@@ -1,0 +1,77 @@
+{
+  "schema": "radar_source_intake_v1",
+  "at": "2026-11-05T05:28:01.069296+00:00",
+  "status": "local_verified_ready_to_publish",
+  "request": "Restore Luma Photo Reframe and Viggle Remake product recognition, match exact official @Google, merge the verified Voice Remixing thread and preserve original post dates.",
+  "comparison": "reports/source-comparison/2026-11-05.json",
+  "original_posts": [
+    {
+      "url": "https://x.com/LumaLabsAI/status/2118161379731677274",
+      "source": "X：Luma AI (@LumaLabsAI)",
+      "title": "Luma Photo Reframe 用法：让一张图适配多种版式",
+      "published_at": "2026-11-05T02:00:01+00:00",
+      "site_id": "aihot"
+    },
+    {
+      "url": "https://x.com/Google/status/2118027058794148099",
+      "source": "X：Google (@Google)",
+      "title": "Gemini Voice Remixing 用法：用提示词调音并保存声音",
+      "published_at": "2026-11-04T17:06:16+00:00",
+      "site_id": "aihot"
+    },
+    {
+      "url": "https://x.com/ViggleAI/status/2118012913793290414",
+      "source": "X：Viggle AI (@ViggleAI)",
+      "title": "Viggle Remake 用法：替换角色、背景并逐镜头修改",
+      "published_at": "2026-11-04T16:10:04+00:00",
+      "site_id": "aihot"
+    }
+  ],
+  "same_event_reply": "https://x.com/Google/status/2118027061948547270",
+  "reply_published_at": "2026-11-04T17:06:17Z",
+  "canonical_post": "https://x.com/Google/status/2118027058794148099",
+  "date_boundary": "Post publication dates only; no inferred first feature release dates.",
+  "original_verification": "Anonymous agent-reach public original, official handle and publication metadata; full bodies not retained in report.",
+  "source_only_probe": {
+    "checked_at": "2026-11-05T05:27:07.156003+00:00",
+    "source": "https://aihot.news/api/v1/items",
+    "focus_total": 85,
+    "coverage": {
+      "pages": 10,
+      "truncated": true,
+      "source": "AIHOT all; indirect coverage"
+    },
+    "matched": [
+      {
+        "url": "https://x.com/LumaLabsAI/status/2118161379731677274",
+        "source": "X：Luma AI (@LumaLabsAI)",
+        "title": "Luma Photo Reframe 用法：让一张图适配多种版式",
+        "published_at": "2026-11-05T02:00:01+00:00",
+        "site_id": "aihot"
+      },
+      {
+        "url": "https://x.com/Google/status/2118027058794148099",
+        "source": "X：Google (@Google)",
+        "title": "Gemini Voice Remixing 用法：用提示词调音并保存声音",
+        "published_at": "2026-11-04T17:06:16+00:00",
+        "site_id": "aihot"
+      },
+      {
+        "url": "https://x.com/ViggleAI/status/2118012913793290414",
+        "source": "X：Viggle AI (@ViggleAI)",
+        "title": "Viggle Remake 用法：替换角色、背景并逐镜头修改",
+        "published_at": "2026-11-04T16:10:04+00:00",
+        "site_id": "aihot"
+      }
+    ]
+  },
+  "verification": {
+    "new_regressions": 5,
+    "full_python_suite": "651 passed",
+    "diff_check": "passed"
+  },
+  "publication": {
+    "deployed": false,
+    "live_verified": false
+  }
+}

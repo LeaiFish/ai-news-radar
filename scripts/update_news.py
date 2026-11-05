@@ -424,6 +424,37 @@ AIHOT_VERIFIED_RECAPS = {
         "summary": "Muse官方回顾已上线能力，介绍与自己的Muse一起玩Minecraft的使用方式；功能首次上线时间未核验，文章日期仅为回顾帖发表时间。",
     },
 }
+# Original-read product posts. The timestamps are original post publication
+# times; the summaries deliberately do not assign a first feature release date.
+AIHOT_VERIFIED_PRODUCT_POSTS = {
+    "/lumalabsai/status/2118161379731677274": {
+        "url": "https://x.com/LumaLabsAI/status/2118161379731677274",
+        "source": "X：Luma AI (@LumaLabsAI)",
+        "published_at": "2026-11-05T02:00:01Z",
+        "title": "Luma Photo Reframe 用法：让一张图适配多种版式",
+        "original_title": "Reframe it in Luma.",
+        "summary": "Luma 演示如何补全图片周围区域，把同一张图适配社交帖、唱片封面、商店页面和海报等版式。日期为用法帖发表时间，功能首次上线日期未核验。",
+    },
+    "/viggleai/status/2118012913793290414": {
+        "url": "https://x.com/ViggleAI/status/2118012913793290414",
+        "source": "X：Viggle AI (@ViggleAI)",
+        "published_at": "2026-11-04T16:10:04Z",
+        "title": "Viggle Remake 用法：替换角色、背景并逐镜头修改",
+        "original_title": "Introducing Viggle Remake.",
+        "summary": "Viggle 介绍用 Remake 替换角色、物体、背景或风格，并通过对话继续修改镜头；原帖同时宣布开放权重。日期为官方介绍帖发表时间，功能首次上线日期未核验。",
+    },
+    "/google/status/2118027058794148099": {
+        "url": "https://x.com/Google/status/2118027058794148099",
+        "source": "X：Google (@Google)",
+        "published_at": "2026-11-04T17:06:16Z",
+        "title": "Gemini Voice Remixing 用法：用提示词调音并保存声音",
+        "original_title": "Voice Remixing for Gemini 3.8 Flash TTS",
+        "summary": "Google 说明 Voice Remixing 已可在 AI Studio 和 Gemini API 使用，可用提示词调整音色、音高、速度和口音。AI Studio 可并排试听三个版本，继续调整并保存复用。日期为官方原帖发表时间，功能首次上线日期未核验。",
+    },
+}
+AIHOT_VERIFIED_THREAD_REPLIES = {
+    "/google/status/2118027061948547270": "/google/status/2118027058794148099",
+}
 AIHOT_API_TAKE = 100
 AIHOT_API_MAX_PAGES = 5
 AIHOT_API_UA = "AI-News-Radar/0.8 aihot-api/2.0.0"
@@ -3063,6 +3094,18 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None, 
         link = str(links.get("original") or entry.get("url") or "").strip()
         if not title or not link:
             continue
+        x_post = re.fullmatch(
+            r"https?://(?:www\.)?(?:x|twitter)\.com(/[a-z0-9_]+/status/\d+)/?(?:[?#].*)?", link, re.I
+        )
+        verified_post = None
+        if x_post:
+            path = x_post[1].lower()
+            verified_post = AIHOT_VERIFIED_PRODUCT_POSTS.get(AIHOT_VERIFIED_THREAD_REPLIES.get(path, path))
+        if verified_post:
+            # The reply and primary produce the same archive identity even when
+            # fetched on different pages or through selected/all independently.
+            link = verified_post["url"]
+            title = verified_post["title"]
         normalized_url = normalize_url(link)
         if normalized_url in seen_urls:
             continue
@@ -3077,6 +3120,9 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None, 
         if isinstance(source_value, dict):
             source_value = source_value.get("name")
         source = maybe_fix_mojibake(str(first_non_empty(source_value, site_name)))
+        if verified_post:
+            published = parse_iso(verified_post["published_at"])
+            source = verified_post["source"]
         score_value: int | float = int(score) if score.is_integer() else score
         out.append(
             RawItem(
@@ -3092,9 +3138,9 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None, 
                     "aihot_score": score_value,
                     "aihot_category": entry.get("category"),
                     "aihot_selected": bool(entry.get("selected")),
-                    "provided_title_zh": recap["title"] if recap else entry.get("title"),
-                    "provided_title_en": entry.get("originalTitle") or entry.get("title_en"),
-                    "summary": recap["summary"] if recap else entry.get("summary"),
+                    "provided_title_zh": title if verified_post or recap else entry.get("title"),
+                    "provided_title_en": verified_post["original_title"] if verified_post else (entry.get("originalTitle") or entry.get("title_en")),
+                    "summary": (verified_post or recap or {}).get("summary", entry.get("summary")),
                 },
             )
         )
