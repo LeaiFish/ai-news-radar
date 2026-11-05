@@ -3,13 +3,13 @@
   "name": "通义千问 / Qwen",
   "description": "阿里通义千问 Qwen 系列：旗舰模型、开源权重、端侧与多模态迭代。",
   "group": "company",
-  "item_count": 196,
-  "listed_count": 196,
-  "recent_item_count": 142,
+  "item_count": 197,
+  "listed_count": 197,
+  "recent_item_count": 143,
   "latest_title": "千问AI Office升级端内编辑与模板能力，Word、Excel、PPT均可按需修改",
   "latest_published_at": "2026-11-05T05:58:47.020884Z",
   "items_url": "data/topics/qwen.json",
-  "generated_at": "2026-11-05T07:56:31.534523Z",
+  "generated_at": "2026-11-05T10:12:07.615788Z",
   "items": [
     {
       "id": "story_ab6b782bbecd",
@@ -26,6 +26,22 @@
       "published_at": "2026-11-05T05:58:47.020884Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "story_25efaf8f9309",
+      "story_id": "story_25efaf8f9309",
+      "title": "千问 AI Office 能力升级了啊，厉娜",
+      "title_zh": "千问 AI Office 能力升级了啊，厉娜",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s/rnZNsItyRfShzIyf7y-y1g",
+      "summary": "",
+      "recommend_reason_zh": null,
+      "source": "公众号：千问APP",
+      "source_name": "官方公众号",
+      "site_id": "wechat_bridge",
+      "published_at": "2026-11-05T04:04:00Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "story_21cdaf9c2e2b",
@@ -124,13 +140,13 @@
       "curated": false
     },
     {
-      "id": "f68eb52a7e4eb7aac47b9211457ad06fb9326693",
+      "id": "b75cbd8eed8249f95379581c7a622c38ea5eb079",
       "story_id": null,
-      "title": "腾讯微信视觉团队开源 WeVisOne-VL 视觉语言模型，统一检测、OCR、分割与抠图",
+      "title": "腾讯 WeChat Vision 团队开源 WeVisOne-VL 视觉语言模型，统一检测、OCR、分割与抠图",
       "title_zh": null,
       "title_en": null,
       "url": "https://www.marktechpost.com/2026/11/03/tencent-wevisone-vl-vision-language-model",
-      "summary": "腾讯微信视觉团队发布开源视觉语言模型 WeVisOne-VL，提供 2B（2.44B 参数）和 4B（4.83B 参数）两个规格，基于 Qwen3-VL，单一模型覆盖检测、指代、计数、pointing、OCR、分割与 alpha matting，并内置 9.6M 参数像素解码器以输出 mask 和 matte，无需单独的 SAM。",
+      "summary": "腾讯 WeChat Vision 团队发布开源视觉语言模型 WeVisOne-VL，提供 2B（2.44B 参数）和 4B（4.83B 参数）两个版本，基于 Qwen3-VL，单个模型即可完成检测、指代、计数、指向、OCR、分割和 alpha matting，像素输出由 9.6M 参数解码器生成，无需单独的 SAM，缺失目标时输出 None 而非猜测框。",
       "recommend_reason_zh": null,
       "source": "MarkTechPost（RSS）",
       "source_name": "MarkTechPost（RSS）",
