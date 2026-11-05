@@ -228,6 +228,26 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, Any], ...] = (
         "select_tier": "T1",
     },
     {
+        "title": "Databricks Blog",
+        "xml_url": "https://www.databricks.com/feed",
+        "html_url": "https://www.databricks.com/blog",
+        "status_id": "official_feed_databricks",
+        "product_priority": True,
+        "published_only": True,
+        "include_pattern": r"\b(?:ai|artificial intelligence|machine learning|agents?|llms?|claude|mlflow|genie)\b",
+        "max_entries": 6,
+        "max_technical_entries": 2,
+        "select_tier": "T1",
+        # Original and RSS dates agree. This is a dated integration guide;
+        # Claude native OTel's earlier beta is not a new November launch.
+        "article_context": {
+            "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow": {
+                "title_zh": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+                "summary": "Databricks官方指南介绍创建实验、配置Claude原生OpenTelemetry导出、检查模型与工具调用追踪的流程，用于排查智能体失败并评估修改效果。原生追踪能力10月已有公测说明；本文为接入用法指南，功能首次上线日期未核验。文中的MLflow Issues仍为Beta。",
+            },
+        },
+    },
+    {
         "title": "vLLM Blog",
         "xml_url": "https://vllm.ai/blog/rss.xml",
         "html_url": "https://vllm.ai/blog",
@@ -1949,9 +1969,14 @@ def fetch_feed_as_official_items(
             haystack = f"{title} {link}".lower()
             if not any(keyword in haystack for keyword in include_keywords):
                 continue
+        summary = feed_entry_summary(entry)
+        if feed.get("include_pattern") and not re.search(
+            feed["include_pattern"], f"{title} {link} {summary}", re.I
+        ):
+            continue
         published = (
             parse_date_any(entry.get("published"), now)
-            or parse_date_any(entry.get("updated"), now)
+            or (parse_date_any(entry.get("updated"), now) if not feed.get("published_only") else None)
             or parse_date_any(entry.get("pubDate"), now)
         )
         if not published:
@@ -1967,16 +1992,18 @@ def fetch_feed_as_official_items(
                 continue
             seen_urls.add(canonical)
 
+        context = feed.get("article_context", {}).get(normalize_url(link), {})
         out.append(
             RawItem(
                 site_id=site_id,
                 site_name=feed_title if feed.get("status_id") else site_name,
                 source=feed_title,
-                title=maybe_fix_mojibake(title),
+                title=maybe_fix_mojibake(context.get("title_zh") or title),
                 url=link,
                 published_at=published,
                 meta={
-                    "summary": feed_entry_summary(entry),
+                    "summary": context.get("summary") or summary,
+                    **({"provided_title_zh": context["title_zh"], "provided_title_en": title} if context else {}),
                     "feed_url": feed_url,
                     "feed_home": feed.get("html_url") or "",
                     "select_tier": feed.get("select_tier") or "",

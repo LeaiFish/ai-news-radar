@@ -48,7 +48,7 @@ _ACTION = re.compile(
 _CAPABILITY = re.compile(
     r"(?<![a-z])(?:apis?|sdks?|features?|dashboards?|workspaces?|integrations?|"
     r"subscriptions?|endpoints?|transcriptions?|captions?|object detection|pointing|chats?|conversations?|collaborat\w*|"
-    r"editing|memory|connectors?|speech|audio|voice|3d|image editing|"
+    r"editing|memory|connectors?|speech|audio|voice|3d|image editing|observability|tracing|"
     r"local(?:ly)?|macs?|windows|desktop app|mobile app|new app|app studio|music|video|design mode|annotations?|expression sheets?)(?![a-z])"
     r"|功能|客户端|协作|共享屏幕|语音|音频|录制|视觉创作|全链路|工作流|多平台|电商经营|"
     r"本地运行|端侧运行|编辑|导出|上传|权限|隐私|对话|聊天|记忆|连接器|自动化|"
@@ -124,6 +124,7 @@ _OFFICIAL_PRODUCT_FEEDS = {
     ("SiliconFlow Blog", "siliconflow.com"): "siliconflow",
     ("Viggle Blog", "viggle.ai"): "viggle",
     ("MiniMax Blog", "minimax.io"): "minimax",
+    ("Databricks Blog", "databricks.com"): "databricks",
 }
 _VERSION_RELEASE = re.compile(r"\b(?:introducing|releasing|released|launching)\s+n8n\s+v?\d+\.\d+", re.I)
 
@@ -139,6 +140,12 @@ def product_context(record: dict[str, Any]) -> dict[str, str] | None:
                 if record.get("site_id") == "official_ai" else None)
     if official:
         text += " " + title_text({"title": str(record.get("summary") or "")[:500]})
+    # Databricks publishes general database/SQL news too. Its verified RSS
+    # identity can rescue AI product prose only, never all platform tutorials.
+    if official == "databricks" and not re.search(
+        r"\b(?:ai|artificial intelligence|machine learning|agents?|llms?|claude|mlflow|genie)\b", text, re.I
+    ):
+        official = None
     identity = product_identity(record, text) or official
     if not identity and _EXPLICIT_AI_APP.search(text):
         identity = "explicit_ai_application"

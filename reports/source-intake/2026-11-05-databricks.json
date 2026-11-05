@@ -1,0 +1,194 @@
+{
+  "schema": "official_source_intake_v1",
+  "at": "2026-11-05T03:47:03.720440+00:00",
+  "status": "local_verified_ready_to_publish",
+  "user_request": "补入Claude-to-MLflow指南，检查Databricks官方Blog稳定接入；产品功能/使用方式优先，同事件去重，指南日期不冒充功能首发。",
+  "source": {
+    "name": "Databricks Blog",
+    "source_url": "https://www.databricks.com/blog",
+    "rss_url": "https://www.databricks.com/feed",
+    "discovery": "Public Blog footer RSS link; old /blog/feed endpoint was404.",
+    "status_id": "official_feed_databricks",
+    "article_site_id": "official_ai",
+    "select_tier": "T1",
+    "limits": {
+      "max_items": 6,
+      "max_technical_items": 2,
+      "feed_current_entries": 10,
+      "full_site_backfill": false
+    },
+    "selection": "AI-context boundary regex, concrete product/function/use first, general AI next, pure technical at most2; generic SQL posts excluded.",
+    "date_rule": "Explicit RSS publication required; no updated-only fallback, future dates or collection-time substitution."
+  },
+  "stability_observations": {
+    "direct_blog_html_initial": {
+      "name": "blog",
+      "url": "https://www.databricks.com/blog",
+      "checked_at": "2026-11-05T03:37:02.070712+00:00",
+      "error": "ConnectionError"
+    },
+    "rss_first_read": {
+      "url": "https://www.databricks.com/feed",
+      "checked_at": "2026-11-05T03:38:15.092815+00:00",
+      "discovered_from": "https://www.databricks.com/blog public RSS links",
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/feed",
+      "content_type": "application/xml",
+      "bytes": 6406,
+      "etag": "W/\"7d044a711907853f65676960e0e24816\"",
+      "last_modified": "Thu, 05 Nov 2026 01:52:02 GMT",
+      "entries": 10,
+      "bozo": false,
+      "title": "Databricks"
+    },
+    "rss_second_read_overlap_at": "2026-11-05T03:39:50.073681Z",
+    "rss_third_read_source_only_at": "2026-11-05T03:44:07.414735+00:00",
+    "observed_successful_rss_reads": 3,
+    "boundary": "Anonymous XML reads work in these observations; ten rolling entries and an earlier HTML connection failure do not prove permanent uptime or exhaustive historical recovery."
+  },
+  "guide": {
+    "original_url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+    "title": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+    "original_published_at": "2026-11-03T21:00:00Z",
+    "publication_beijing": "2026-11-04T05:00:00+08:00",
+    "article_original_read": "2026-11-05T03:37:02.071658+00:00",
+    "source_date_matches_rss": true,
+    "original_body_stored_in_repository": false,
+    "classification": "integration_usage_guide",
+    "capability_first_released_at": null,
+    "boundary": "Claude原生OTel十月已有公测说明，本篇指南日期不表示功能首发；MLflow Issues为Beta。",
+    "archive_and_display": "Outside current24h; retain in history and existing Claude/Agent topic/public projection without changing publication time."
+  },
+  "overlap_check": {
+    "generated_at": "2026-11-05T03:39:50.073681Z",
+    "candidate": {
+      "site_id": "databricks_candidate",
+      "site_name": "Databricks Blog",
+      "url": "https://www.databricks.com/feed",
+      "item_count": 10,
+      "lookback_days": 7
+    },
+    "baseline": {
+      "source_count": 17,
+      "item_count": 7150,
+      "window_days": 7
+    },
+    "overlap": {
+      "duplicate_count": 0,
+      "possible_duplicate_count": 0,
+      "unique_count": 10,
+      "duplicate_rate": 0.0,
+      "unique_rate": 1.0
+    },
+    "top_overlapping_sources": [],
+    "recommendation": {
+      "decision": "accept_default",
+      "reason": "重复率较低，能为默认源补充明显新增信息。",
+      "sample_too_small": false
+    },
+    "matches": [],
+    "possible_matches": []
+  },
+  "source_only_probe": {
+    "at": "2026-11-05T03:44:07.414735+00:00",
+    "endpoint": "https://www.databricks.com/feed",
+    "items": [
+      {
+        "title": "接入与排障指南：将Claude追踪接入Databricks MLflow",
+        "url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+        "published_at": "2026-11-03T21:00:00+00:00",
+        "select_tier": "T1",
+        "focus": "product",
+        "ai_related": true
+      },
+      {
+        "title": "The Enterprise Case for Open-Weight Models on Databricks",
+        "url": "https://www.databricks.com/blog/enterprise-case-open-weight-models-databricks",
+        "published_at": "2026-11-04T20:00:00+00:00",
+        "select_tier": "T1",
+        "focus": "general",
+        "ai_related": false
+      },
+      {
+        "title": "Databricks and SAP unleash end-to-end data & AI capabilities to level up enterprise AI transformation",
+        "url": "https://www.databricks.com/blog/databricks-and-sap-unleash-end-end-data-ai-capabilities-level-enterprise-ai-transformation",
+        "published_at": "2026-10-30T21:00:00+00:00",
+        "select_tier": "T1",
+        "focus": "general",
+        "ai_related": true
+      },
+      {
+        "title": "Wealth Management Client Onboarding Needs More Than AI",
+        "url": "https://www.databricks.com/blog/wealth-management-client-onboarding-needs-more-ai",
+        "published_at": "2026-10-30T19:40:00+00:00",
+        "select_tier": "T1",
+        "focus": "general",
+        "ai_related": true
+      },
+      {
+        "title": "Deliberate decisions and enterprise AI value",
+        "url": "https://www.databricks.com/blog/deliberate-decisions-and-enterprise-ai-value",
+        "published_at": "2026-10-30T19:30:00+00:00",
+        "select_tier": "T1",
+        "focus": "general",
+        "ai_related": true
+      }
+    ],
+    "count": 5
+  },
+  "verification": {
+    "new_regressions": "6 passed",
+    "full_python_suite": "643 passed;74 feedparser deprecation warnings",
+    "scenarios": [
+      "same guide canonical URL and same-event media copy merge once",
+      "unrelated capability remains separate",
+      "historical guide survives public topic projection with original date",
+      "missing/future/updated-only dates rejected",
+      "AI word boundary avoids maintain/constraints",
+      "exact publisher+host summary recognition",
+      "six total/two technical cap and product preference",
+      "independent failure status on invalid HTML feed"
+    ],
+    "compile": "passed",
+    "diff_check": "passed"
+  },
+  "files": [
+    {
+      "path": "scripts/update_news.py",
+      "sha256": "20a4f5777db662be66fe943dc9b4c024dbba849049d40737cdac4f02e4249b34"
+    },
+    {
+      "path": "scripts/product_context.py",
+      "sha256": "df424bfe78ee57a33fbcf03b2f48c6d7fb3944dc019b8b8b60208f027f76c1e7"
+    },
+    {
+      "path": "config/source_tiers.json",
+      "sha256": "6abcc02b3887b21c213a59c27357c4d7cd9fcd414a71335b64ef34ef5a0cba4c"
+    },
+    {
+      "path": "tests/test_databricks_feed.py",
+      "sha256": "c090120638ad2b6a8a2e1bd7862dd5364e4a34d025c1696d54ddafa5aff0710a"
+    },
+    {
+      "path": "docs/SOURCE_COVERAGE.md",
+      "sha256": "83c50779edb842b0e23f88dd40b6bbd4250309cdfeb81ac35671738de4a1ac9a"
+    }
+  ],
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "live_verified": false
+  },
+  "actions": {
+    "private_credentials_or_login_used": false,
+    "paid_or_model_api_used": false,
+    "private_opml_read_or_committed": false,
+    "reader_filters_or_labels_added": false,
+    "unrelated_workspace_changes_preserved": true
+  },
+  "reuse_review": {
+    "updated": "docs/SOURCE_COVERAGE.md#databricks-official-rss-and-dated-usage-guide-2026-11-05",
+    "boundary": "Official footer RSS discovery, AI-only product/use budget, historical guide dates and event dedup."
+  }
+}

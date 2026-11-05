@@ -688,3 +688,41 @@ Regression tests exercise real headlines, impostor accounts, unknown dates,
 selected/all overlap, same-event media copies and distinct features. Local
 verification and publication status are recorded separately in
 `reports/source-intake/2026-11-03-luma-muse.json`.
+
+## Databricks official RSS and dated usage guide (2026-11-05)
+
+The official Blog footer links to `https://www.databricks.com/feed` (RSS).
+`/blog/feed` is a different, invalid endpoint. Repeated anonymous reads and the
+source-only probe returned valid XML. The current feed exposes ten rolling
+entries, spanning October 29–November 5; this is not a full Blog backfill or
+a guarantee that every article survives between polls. An earlier Blog HTML
+connection failure is recorded separately from successful RSS reads.
+
+This feed requires an explicit publication date; an Atom `updated` timestamp
+alone cannot supply a date or turn a modified article into a new release.
+
+`official_feed_databricks` has independent health reporting. Article records
+use `official_ai`, source `Databricks Blog`, T1. Intake requires an AI/agent/
+Claude/MLflow/Genie signal in the title, URL or short original RSS excerpt,
+using word boundaries so “maintain” and “constraints” do not match “AI”. It
+scans the available feed before applying a six-item cap, prioritizing product
+functionality and usage, then general AI material, then at most two technical
+posts. Generic SQL/database posts are excluded. Short excerpt-based product
+recognition is bound to this exact publisher/host and still requires AI context.
+
+The Claude-to-MLflow article is retained as “接入与排障指南”, with its verified
+RSS/original publication time `2026-11-03T21:00:00Z`. The exact-original editorial
+context explains that Claude native OTel had an earlier public beta and that
+this guide's date is not evidence of a first feature launch. No launch date is
+invented. Since the guide is already outside the latest 24-hour window, it is
+archived and projected through its existing Claude/Agent topics. It does not
+acquire today's date to appear as fresh news.
+
+Canonical-URL and high-title-similarity event merging remain in place. Copies
+of this guide form one event; an earlier general OTel announcement and this
+later integration tutorial are related materials, not two feature launches.
+The seven-day overlap probe observed 0/10 hard duplicates and 0 possible
+matches; this bounded sample supports intake without proving complete uniqueness.
+Tests cover caps, technical bursts, impostor hosts, missing/future dates,
+historical public projection and same-event merging. Validation and live
+acceptance are tracked in `reports/source-intake/2026-11-05-databricks.json`.
