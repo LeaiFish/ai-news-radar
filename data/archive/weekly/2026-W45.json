@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-05T21:07:16.381671Z",
+  "generated_at": "2026-11-05T22:40:30.970879Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
@@ -12,13 +12,13 @@
     "2026-11-05",
     "2026-11-06"
   ],
-  "story_count": 1919,
-  "unique_story_count": 1732,
+  "story_count": 1927,
+  "unique_story_count": 1754,
   "counts": {
     "by_company_topic": {
-      "anthropic": 281,
-      "apple": 29,
-      "cursor": 17,
+      "anthropic": 285,
+      "apple": 30,
+      "cursor": 19,
       "deepseek": 40,
       "doubao": 16,
       "google-gemini": 95,
@@ -38,20 +38,20 @@
       "zhipu": 4
     },
     "by_lens_topic": {
-      "agent-ecosystem": 295,
+      "agent-ecosystem": 293,
       "monetization": 49,
-      "product-entry": 50,
+      "product-entry": 51,
       "workplace": 45
     },
     "by_importance_label": {
-      "值得关注": 1546,
+      "值得关注": 1554,
       "多源热议": 29,
       "官方更新": 135,
       "行业动态": 209
     },
     "by_source_count_bucket": {
-      "1": 1798,
-      "2": 90,
+      "1": 1805,
+      "2": 91,
       "3+": 31
     }
   },
@@ -73,7 +73,7 @@
       "story_id": "story_3ce30504df16",
       "title": "NVIDIA 发布 Cosmos 3 四个开源权重模型用于交互式世界模拟 / New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
       "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "importance_score": 0.8561,
+      "importance_score": 0.8522,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-06",
@@ -106,47 +106,6 @@
       "archive_date": "2026-11-05",
       "company_topics": [],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_b36352b2bf8b",
-      "title": "Transform a quick drawing into a live app with Gemini.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini",
-      "importance_score": 0.8416,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_6b1555ab30d9",
-      "title": "Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒 / Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "importance_score": 0.8416,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [
-        "google-gemini"
-      ],
-      "lens_topics": [
-        "monetization"
-      ]
-    },
-    {
-      "story_id": "story_edbbcaa3919d",
-      "title": "Agents Are Going Async",
-      "url": "https://www.langchain.com/blog/agents-are-going-async",
-      "importance_score": 0.8413,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
     },
     {
       "story_id": "story_43de237be8c1",
@@ -186,15 +145,32 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_64bf0679f81c",
-      "title": "全球品牌最佳企业人工智能视频平台 / Best Enterprise AI Video Platforms for Global Brands",
-      "url": "https://lumalabs.ai/news/enterprise-ai-video-platforms-global-brands",
-      "importance_score": 0.8379,
+      "story_id": "story_b36352b2bf8b",
+      "title": "使用 Gemini 将快速绘图转变为实时应用程序。 / Transform a quick drawing into a live app with Gemini.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini",
+      "importance_score": 0.8378,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-06",
-      "company_topics": [],
+      "company_topics": [
+        "google-gemini"
+      ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_6b1555ab30d9",
+      "title": "Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒 / Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "importance_score": 0.8378,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
     },
     {
       "story_id": "story_5d294462667a",
@@ -210,17 +186,17 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_da5de4569932",
-      "title": "给你的缪斯一个声音 / Give Your Muse a Voice",
-      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars",
-      "importance_score": 0.8374,
+      "story_id": "story_edbbcaa3919d",
+      "title": "Agents Are Going Async",
+      "url": "https://www.langchain.com/blog/agents-are-going-async",
+      "importance_score": 0.8373,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-06",
-      "company_topics": [
-        "meta-llama"
-      ],
-      "lens_topics": []
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_93a42f4b345c",
@@ -236,50 +212,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_2bf0270bd084",
-      "title": "适合品牌团队的最佳人工智能营销活动生成器 / Best AI Campaign Generators for Brand Teams",
-      "url": "https://lumalabs.ai/news/ai-campaign-generators-brand-teams",
-      "importance_score": 0.8369,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_a315df037341",
-      "title": "最佳商业人工智能视频生成器 / Best AI Video Generators for Business",
-      "url": "https://lumalabs.ai/news/ai-video-generators-business",
-      "importance_score": 0.8362,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_83984dc45d0c",
-      "title": "Best Generative AI Tools for Marketing and Advertising Teams",
-      "url": "https://lumalabs.ai/news/generative-ai-tools-marketing-advertising-teams",
-      "importance_score": 0.8353,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_881149e691cb",
-      "title": "Best AI Creative Tools for Advertising Agencies",
-      "url": "https://lumalabs.ai/news/ai-creative-tools-advertising-agencies",
-      "importance_score": 0.8346,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_372285a884db",
       "title": "Kling 3.0 替代方案：专业工作室工作流程的 6 种模型 / Kling 3.0 Alternatives: 6 Models for Professional Studio Workflows",
       "url": "https://lumalabs.ai/news/kling-3.0-alternatives",
@@ -291,14 +223,27 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_b999cb2b7464",
-      "title": "Best AI Creative Platforms for Brands and Agencies",
-      "url": "https://lumalabs.ai/news/ai-creative-platforms-brands-agencies",
-      "importance_score": 0.8333,
+      "story_id": "story_64bf0679f81c",
+      "title": "全球品牌最佳企业人工智能视频平台 / Best Enterprise AI Video Platforms for Global Brands",
+      "url": "https://lumalabs.ai/news/enterprise-ai-video-platforms-global-brands",
+      "importance_score": 0.834,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-06",
       "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_da5de4569932",
+      "title": "给你的缪斯一个声音 / Give Your Muse a Voice",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars",
+      "importance_score": 0.8335,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "meta-llama"
+      ],
       "lens_topics": []
     },
     {
@@ -309,6 +254,17 @@
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-05",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_2bf0270bd084",
+      "title": "适合品牌团队的最佳人工智能营销活动生成器 / Best AI Campaign Generators for Brand Teams",
+      "url": "https://lumalabs.ai/news/ai-campaign-generators-brand-teams",
+      "importance_score": 0.8331,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
       "company_topics": [],
       "lens_topics": []
     },
@@ -326,62 +282,48 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_c4e6d017dd84",
-      "title": "OpenAI 发布 GPT-6 Cyber 网络安全模型 / GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-      "url": "https://openai.com/index/introducing-gpt-6-cyber",
-      "importance_score": 0.8311,
+      "story_id": "story_a315df037341",
+      "title": "最佳商业人工智能视频生成器 / Best AI Video Generators for Business",
+      "url": "https://lumalabs.ai/news/ai-video-generators-business",
+      "importance_score": 0.8324,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-06",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_cbeec1005a5e",
-      "title": "Introducing Personal Finance in Claude",
-      "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
-      "importance_score": 0.8297,
-      "importance_label": "官方更新",
-      "source_count": 2,
-      "archive_date": "2026-11-06",
-      "company_topics": [
-        "anthropic"
-      ],
+      "company_topics": [],
       "lens_topics": []
     },
     {
-      "story_id": "story_b87db7dc54c0",
-      "title": "More visibility and control over Claude Enterprise for security teams",
-      "url": "https://claude.com/resources/articles/claude-enterprise-security-updates",
-      "importance_score": 0.8297,
+      "story_id": "story_83984dc45d0c",
+      "title": "营销和广告团队的最佳生成人工智能工具 / Best Generative AI Tools for Marketing and Advertising Teams",
+      "url": "https://lumalabs.ai/news/generative-ai-tools-marketing-advertising-teams",
+      "importance_score": 0.8315,
       "importance_label": "官方更新",
-      "source_count": 2,
+      "source_count": 1,
       "archive_date": "2026-11-06",
-      "company_topics": [
-        "anthropic"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "company_topics": [],
+      "lens_topics": []
     },
     {
-      "story_id": "story_566b96ba44b2",
-      "title": "Cursor 推出应用构建功能，描述需求即可构建、部署并分享在线应用 / Build Live Apps in Cursor",
-      "url": "https://cursor.com/changelog/build-live-apps",
-      "importance_score": 0.8297,
+      "story_id": "story_881149e691cb",
+      "title": "广告公司最佳人工智能创意工具 / Best AI Creative Tools for Advertising Agencies",
+      "url": "https://lumalabs.ai/news/ai-creative-tools-advertising-agencies",
+      "importance_score": 0.8308,
       "importance_label": "官方更新",
-      "source_count": 2,
+      "source_count": 1,
       "archive_date": "2026-11-06",
-      "company_topics": [
-        "cursor"
-      ],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b999cb2b7464",
+      "title": "品牌和机构最佳人工智能创意平台 / Best AI Creative Platforms for Brands and Agencies",
+      "url": "https://lumalabs.ai/news/ai-creative-platforms-brands-agencies",
+      "importance_score": 0.8296,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
     },
     {
       "story_id": "story_3762d45ec3c7",
@@ -395,6 +337,21 @@
         "openai"
       ],
       "lens_topics": []
+    },
+    {
+      "story_id": "story_c4e6d017dd84",
+      "title": "OpenAI 发布 GPT-6 Cyber 网络安全模型 / GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "importance_score": 0.8277,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
     },
     {
       "story_id": "story_c95c4e70e17c",
@@ -425,6 +382,49 @@
       ]
     },
     {
+      "story_id": "story_cbeec1005a5e",
+      "title": "Introducing Personal Finance in Claude",
+      "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+      "importance_score": 0.8267,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_b87db7dc54c0",
+      "title": "More visibility and control over Claude Enterprise for security teams",
+      "url": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+      "importance_score": 0.8267,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "anthropic"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_566b96ba44b2",
+      "title": "Cursor 推出应用构建功能，描述需求即可构建、部署并分享在线应用 / Build Live Apps in Cursor",
+      "url": "https://cursor.com/changelog/build-live-apps",
+      "importance_score": 0.8267,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "cursor"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
       "story_id": "story_44fc9c8ae05c",
       "title": "Setting a new standard for responsible AI infrastructure",
       "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
@@ -435,17 +435,6 @@
       "company_topics": [
         "openai"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c6ee67edd3d6",
-      "title": "Real-Time Video at Batch Size One",
-      "url": "https://runway.com/news/research/real-time-video-at-batch-size-one",
-      "importance_score": 0.8229,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -499,6 +488,17 @@
         "anthropic",
         "cursor"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c6ee67edd3d6",
+      "title": "Real-Time Video at Batch Size One",
+      "url": "https://runway.com/news/research/real-time-video-at-batch-size-one",
+      "importance_score": 0.8192,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
       "lens_topics": []
     },
     {
