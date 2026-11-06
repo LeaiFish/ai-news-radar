@@ -4,55 +4,56 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-06T15:57:36.059965Z",
+  "generated_at": "2026-11-06T20:28:11.271198Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
     "2026-11-04",
     "2026-11-05",
-    "2026-11-06"
+    "2026-11-06",
+    "2026-11-07"
   ],
-  "story_count": 1874,
-  "unique_story_count": 1864,
+  "story_count": 2115,
+  "unique_story_count": 1916,
   "counts": {
     "by_company_topic": {
-      "anthropic": 280,
-      "apple": 24,
-      "cursor": 20,
-      "deepseek": 38,
-      "doubao": 13,
-      "google-gemini": 99,
-      "huggingface": 23,
-      "hunyuan": 15,
-      "kimi": 14,
-      "meta-llama": 6,
+      "anthropic": 313,
+      "apple": 25,
+      "cursor": 26,
+      "deepseek": 42,
+      "doubao": 14,
+      "google-gemini": 112,
+      "huggingface": 27,
+      "hunyuan": 16,
+      "kimi": 16,
+      "meta-llama": 10,
       "microsoft": 14,
       "minimax": 5,
-      "nvidia": 50,
-      "openai": 261,
-      "openrouter": 14,
-      "perplexity": 10,
+      "nvidia": 58,
+      "openai": 294,
+      "openrouter": 16,
+      "perplexity": 17,
       "quark": 1,
-      "qwen": 26,
-      "xai": 45,
+      "qwen": 27,
+      "xai": 46,
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 287,
-      "monetization": 47,
-      "product-entry": 51,
-      "workplace": 42
+      "agent-ecosystem": 329,
+      "monetization": 53,
+      "product-entry": 60,
+      "workplace": 45
     },
     "by_importance_label": {
-      "值得关注": 1517,
-      "多源热议": 32,
-      "官方更新": 126,
-      "行业动态": 199
+      "值得关注": 1694,
+      "多源热议": 35,
+      "官方更新": 147,
+      "行业动态": 239
     },
     "by_source_count_bucket": {
-      "1": 1749,
-      "2": 91,
-      "3+": 34
+      "1": 1972,
+      "2": 106,
+      "3+": 37
     }
   },
   "top_stories": [
@@ -131,6 +132,19 @@
       "lens_topics": []
     },
     {
+      "story_id": "story_0dae31a5d2ec",
+      "title": "专为您设计 Muse 应用程序 / Design the Muse App, Just for You",
+      "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app",
+      "importance_score": 0.8377,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-07",
+      "company_topics": [
+        "meta-llama"
+      ],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_5d294462667a",
       "title": "Hugging Face 提出 Model Integration Contracts 用小型模型 fixture 在 CPU 捕获回归 / Transformers Model Integration Contracts",
       "url": "https://huggingface.co/blog/transformers-mic",
@@ -189,6 +203,33 @@
       "company_topics": [
         "doubao"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_a0f903861e21",
+      "title": "Cursor 推出与智能体的实时语音聊天 / Voice Chat with Agents",
+      "url": "https://cursor.com/changelog/voice-chat",
+      "importance_score": 0.8309,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-07",
+      "company_topics": [
+        "apple",
+        "cursor"
+      ],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_445fcc74e896",
+      "title": "How public sector organizations can govern AI at scale",
+      "url": "https://www.databricks.com/blog/how-public-sector-organizations-can-govern-ai-scale",
+      "importance_score": 0.8309,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-07",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -283,6 +324,19 @@
       "archive_date": "2026-11-06",
       "company_topics": [
         "huggingface"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_988830a31ba1",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "importance_score": 0.8223,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-07",
+      "company_topics": [
+        "openai"
       ],
       "lens_topics": []
     },
@@ -514,56 +568,6 @@
       "title": "Luma 与 Higgsfield：哪个更适合品牌和代理视频？ / Luma vs Higgsfield: Which Is Better for Brand and Agency Video?",
       "url": "https://lumalabs.ai/news/luma-vs-higgsfield",
       "importance_score": 0.8118,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c1c6e69155d5",
-      "title": "最佳 AI 图像到视频模型：8 种工具比较和排名 / Best AI Image-to-Video Models: 8 Tools Compared and Ranked",
-      "url": "https://lumalabs.ai/news/ai-image-video-models",
-      "importance_score": 0.8112,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_bf5abd3d9223",
-      "title": "GitHub Copilot 现已在 Xcode 的编码助手中可用 / GitHub Copilot is now available in Xcode’s coding assistant",
-      "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
-      "importance_score": 0.8106,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-05",
-      "company_topics": [
-        "microsoft"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
-    },
-    {
-      "story_id": "story_5608a60ecd33",
-      "title": "托管深度代理：交付生产深度代理的最快方式 / Managed Deep Agents: the fastest way to ship a production deep agent",
-      "url": "https://www.langchain.com/blog/introducing-managed-deep-agents",
-      "importance_score": 0.8102,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-03",
-      "company_topics": [],
-      "lens_topics": [
-        "agent-ecosystem"
-      ]
-    },
-    {
-      "story_id": "story_3fd5041851ea",
-      "title": "哪些 AI 视频模型可以一次性生成更长的视频？ / Which AI Video Models Can Generate Longer Videos in a Single Pass?",
-      "url": "https://lumalabs.ai/news/ai-video-models-generate-longer-videos",
-      "importance_score": 0.8101,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-06",
