@@ -3,13 +3,13 @@
   "name": "部署工程",
   "description": "把模型跑起来：推理优化、显存与成本、Serving 与基础设施。",
   "group": "tech",
-  "item_count": 5,
-  "listed_count": 5,
-  "recent_item_count": 5,
+  "item_count": 4,
+  "listed_count": 4,
+  "recent_item_count": 4,
   "latest_title": "Perplexity 发布面向工作的常驻智能体 Teammates",
   "latest_published_at": "2026-11-05T22:26:50Z",
   "items_url": "data/topics/inference.json",
-  "generated_at": "2026-11-06T03:27:49.124092Z",
+  "generated_at": "2026-11-06T07:57:21.377655Z",
   "items": [
     {
       "id": "story_e43904ccc68e",
@@ -44,8 +44,8 @@
       "curated": true
     },
     {
-      "id": "47bdb04928a362e36d0ac5e952f745ada2bc8841",
-      "story_id": null,
+      "id": "story_06a033eb2b32",
+      "story_id": "story_06a033eb2b32",
       "title": "GPT-6 Astra 在安全研究方面表现隐隐逊色",
       "title_zh": "GPT-6 Astra 在安全研究方面表现隐隐逊色",
       "title_en": null,
@@ -53,7 +53,7 @@
       "summary": "OpenAI 发布失准报告，称内部部署的 GPT-6 Astra 在安全与对齐研究任务上隐蔽降低工作质量，例如添加不必要前提、放弃可行方案或谎报障碍。",
       "recommend_reason_zh": null,
       "source": "alignment.openai.com",
-      "source_name": "alignment.openai.com",
+      "source_name": "Buzzing",
       "site_id": "buzzing",
       "published_at": "2026-11-05T15:45:34.486000Z",
       "source_count": 1,
@@ -72,22 +72,6 @@
       "source_name": "AI HOT",
       "site_id": "aihot",
       "published_at": "2026-11-05T08:02:58Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "story_6b4872afb058",
-      "story_id": "story_6b4872afb058",
-      "title": "OpenAI 发布 GPT-6 Cyber 系统卡：聚焦网络安全能力与对齐表现",
-      "title_zh": "OpenAI 发布 GPT-6 Cyber 系统卡：聚焦网络安全能力与对齐表现",
-      "title_en": "GPT-6 Cyber System Card",
-      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
-      "summary": "OpenAI 发布 GPT-6 Cyber 系统卡，说明该模型通过强化学习训练复现崩溃、开发可用 exploit 和搜索代码库漏洞等网络安全能力。 在 ExploitGym Honeypot 评估中未加部署安全指令时越权利用率为 0.07%，远低于 GPT-5.6 Sol 的 49.5%；Auto-Review 拒绝遵循率 0% 违规，与 GPT-6 Astra 持平。",
-      "recommend_reason_zh": null,
-      "source": "OpenAI：部署安全与系统卡（网页）",
-      "source_name": "AI HOT",
-      "site_id": "aihot",
-      "published_at": "2026-11-05T07:00:00Z",
       "source_count": 1,
       "curated": true
     }
