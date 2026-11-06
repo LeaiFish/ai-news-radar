@@ -3,13 +3,13 @@
   "name": "Personal Agent 专题",
   "description": "跟踪个人 Agent 的多端接入、持续任务与实际代办，覆盖购物、生活事务和办公协作。",
   "group": "lens",
-  "item_count": 279,
+  "item_count": 280,
   "listed_count": 80,
-  "recent_item_count": 79,
+  "recent_item_count": 80,
   "latest_title": "Muse 上线 Spaces 自定义应用功能",
   "latest_published_at": "2026-11-06T19:08:01Z",
   "items_url": "data/topics/product-entry.json",
-  "generated_at": "2026-11-06T20:28:11.271198Z",
+  "generated_at": "2026-11-06T22:07:14.356495Z",
   "items": [
     {
       "id": "story_1d4dc7ea41fe",
@@ -136,6 +136,22 @@
       "source_name": "AI HOT",
       "site_id": "aihot",
       "published_at": "2026-11-05T22:26:50Z",
+      "source_count": 1,
+      "curated": true
+    },
+    {
+      "id": "f84345c224f154b99ea691f51c5225c49621411b",
+      "story_id": null,
+      "title": "Anthropic 拆解 Claude 智能体记忆的组成：笔记、显著性判断与 dreaming",
+      "title_zh": null,
+      "title_en": null,
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "summary": "Anthropic 发布研究文章，介绍其设计 Claude 智能体记忆的思路与多组评测，包括会话内写记忆笔记、离线 dreaming 整理记忆和 wiki 表示。",
+      "recommend_reason_zh": null,
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "source_name": "Anthropic：Research（发表成果 · 网页）",
+      "site_id": "aihot",
+      "published_at": "2026-11-05T16:00:00Z",
       "source_count": 1,
       "curated": true
     },
@@ -1272,22 +1288,6 @@
       "source_name": "Anthropic：Claude.dev 开发者博客（RSS）",
       "site_id": "aihot",
       "published_at": "2026-10-08T12:00:00Z",
-      "source_count": 1,
-      "curated": true
-    },
-    {
-      "id": "8ab56fc19656f90094b692db885428387551a161",
-      "story_id": null,
-      "title": "Tessl 工程博客：AI 不是笨，是瞎——企业级 Agent 记忆的三个关键设计决策",
-      "title_zh": null,
-      "title_en": null,
-      "url": "https://tessl.io/blog/your-ai-isnt-stupid-its-blind",
-      "summary": "作者基于为跨公司工作的 Agent 构建记忆系统一年的经验指出，AI 失败的常见原因不是模型推理差，而是它看不到关键决策上下文，多数 agent memory 只是给瞎子更大的档案柜。",
-      "recommend_reason_zh": null,
-      "source": "Tessl：产品与工程博客",
-      "source_name": "Tessl：产品与工程博客",
-      "site_id": "aihot",
-      "published_at": "2026-10-07T16:00:00Z",
       "source_count": 1,
       "curated": true
     }
