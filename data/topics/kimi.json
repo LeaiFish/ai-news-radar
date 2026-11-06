@@ -3,13 +3,13 @@
   "name": "Kimi / 月之暗面",
   "description": "月之暗面 Kimi 系列：长上下文、K 系列开源模型与产品演进。",
   "group": "company",
-  "item_count": 89,
-  "listed_count": 89,
-  "recent_item_count": 78,
+  "item_count": 90,
+  "listed_count": 90,
+  "recent_item_count": 79,
   "latest_title": "月之暗面放大招！Kimi Hosted Agents 正式发布",
   "latest_published_at": "2026-11-06T07:57:21.377655Z",
   "items_url": "data/topics/kimi.json",
-  "generated_at": "2026-11-06T13:00:05.776018Z",
+  "generated_at": "2026-11-06T15:57:36.059965Z",
   "items": [
     {
       "id": "story_396c88518dec",
@@ -26,6 +26,22 @@
       "published_at": "2026-11-06T07:57:21.377655Z",
       "source_count": 1,
       "curated": false
+    },
+    {
+      "id": "story_e187c52ec205",
+      "story_id": "story_e187c52ec205",
+      "title": "Zero Mismatch, Simple Async RL: REINFORCE Zero, DeepSeek-V4.1 and Kimi K3.1",
+      "title_zh": null,
+      "title_en": "Zero Mismatch, Simple Async RL: REINFORCE Zero, DeepSeek-V4.1 and Kimi K3.1",
+      "url": "https://vllm.ai/blog/2026-11-06-zero-mismatch-async-rl",
+      "summary": "异步强化学习使用过时的权重进行训练。逐位对齐部署和训练内核，并且未剪辑的重要性采样可以纠正这种滞后。加上 DeepSeek-V4.1-Flash、Kimi K3.1 和 AMD MI355X 的零失配 RL。",
+      "recommend_reason_zh": null,
+      "source": "vLLM Blog",
+      "source_name": "vLLM Blog",
+      "site_id": "official_ai",
+      "published_at": "2026-11-06T00:00:00Z",
+      "source_count": 1,
+      "curated": true
     },
     {
       "id": "story_1dfed17ab58e",

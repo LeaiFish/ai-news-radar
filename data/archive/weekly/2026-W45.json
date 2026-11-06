@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "generated_at": "2026-11-06T13:00:05.776018Z",
+  "generated_at": "2026-11-06T15:57:36.059965Z",
   "daily_dates": [
     "2026-11-02",
     "2026-11-03",
@@ -12,25 +12,25 @@
     "2026-11-05",
     "2026-11-06"
   ],
-  "story_count": 1887,
-  "unique_story_count": 1871,
+  "story_count": 1874,
+  "unique_story_count": 1864,
   "counts": {
     "by_company_topic": {
-      "anthropic": 283,
-      "apple": 25,
+      "anthropic": 280,
+      "apple": 24,
       "cursor": 20,
       "deepseek": 38,
       "doubao": 13,
-      "google-gemini": 97,
-      "huggingface": 22,
+      "google-gemini": 99,
+      "huggingface": 23,
       "hunyuan": 15,
-      "kimi": 13,
+      "kimi": 14,
       "meta-llama": 6,
       "microsoft": 14,
       "minimax": 5,
-      "nvidia": 49,
-      "openai": 265,
-      "openrouter": 13,
+      "nvidia": 50,
+      "openai": 261,
+      "openrouter": 14,
       "perplexity": 10,
       "quark": 1,
       "qwen": 26,
@@ -38,20 +38,20 @@
       "zhipu": 3
     },
     "by_lens_topic": {
-      "agent-ecosystem": 294,
-      "monetization": 49,
+      "agent-ecosystem": 287,
+      "monetization": 47,
       "product-entry": 51,
-      "workplace": 43
+      "workplace": 42
     },
     "by_importance_label": {
-      "值得关注": 1531,
+      "值得关注": 1517,
       "多源热议": 32,
-      "官方更新": 123,
-      "行业动态": 201
+      "官方更新": 126,
+      "行业动态": 199
     },
     "by_source_count_bucket": {
-      "1": 1763,
-      "2": 90,
+      "1": 1749,
+      "2": 91,
       "3+": 34
     }
   },
@@ -157,19 +157,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_6a48686fb246",
-      "title": "Codex CLI 0.167.0",
-      "url": "https://developers.openai.com/codex/changelog",
-      "importance_score": 0.8352,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_372285a884db",
       "title": "Kling 3.0 替代方案：专业工作室工作流程的 6 种模型 / Kling 3.0 Alternatives: 6 Models for Professional Studio Workflows",
       "url": "https://lumalabs.ai/news/kling-3.0-alternatives",
@@ -218,15 +205,15 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_88b16767209b",
-      "title": "埃及语和尼日利亚英语加入 Open ASR 排行榜 / Egyptian and Nigerian English join the Open ASR Leaderboard",
-      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-      "importance_score": 0.8292,
+      "story_id": "story_6a48686fb246",
+      "title": "Codex CLI 0.167.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "importance_score": 0.8289,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-06",
       "company_topics": [
-        "huggingface"
+        "openai"
       ],
       "lens_topics": []
     },
@@ -259,6 +246,21 @@
       ]
     },
     {
+      "story_id": "story_6b1555ab30d9",
+      "title": "Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒 / Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "importance_score": 0.8262,
+      "importance_label": "官方更新",
+      "source_count": 2,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "google-gemini"
+      ],
+      "lens_topics": [
+        "monetization"
+      ]
+    },
+    {
       "story_id": "story_44fc9c8ae05c",
       "title": "Setting a new standard for responsible AI infrastructure",
       "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
@@ -268,6 +270,19 @@
       "archive_date": "2026-11-05",
       "company_topics": [
         "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_88b16767209b",
+      "title": "埃及语和尼日利亚英语加入 Open ASR 排行榜 / Egyptian and Nigerian English join the Open ASR Leaderboard",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "importance_score": 0.8229,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "huggingface"
       ],
       "lens_topics": []
     },
@@ -287,33 +302,6 @@
       ]
     },
     {
-      "story_id": "story_65d1d501dd25",
-      "title": "Cult.fit 通过 Codex 增强运营能力 / Cult.fit builds operational muscle with Codex",
-      "url": "https://openai.com/index/cultfit-builds-with-codex",
-      "importance_score": 0.8208,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [
-        "openai"
-      ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3ce30504df16",
-      "title": "NVIDIA 发布 Cosmos 3 四个开源权重模型用于交互式世界模拟 / New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "importance_score": 0.82,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [
-        "nvidia",
-        "huggingface"
-      ],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_fad26580730c",
       "title": "DeepSeek V4 Pro on SiliconFlow: Reasoning Levels, Pricing and Long-Task Cost",
       "url": "https://www.siliconflow.com/blog/deepseek-v4-pro-reasoning-levels",
@@ -325,21 +313,6 @@
         "deepseek"
       ],
       "lens_topics": []
-    },
-    {
-      "story_id": "story_313afc872d9f",
-      "title": "元宝 2.92.0 官方版本更新",
-      "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.92.0",
-      "importance_score": 0.8198,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [
-        "hunyuan"
-      ],
-      "lens_topics": [
-        "workplace"
-      ]
     },
     {
       "story_id": "story_0009b69b0839",
@@ -364,17 +337,6 @@
         "anthropic",
         "cursor"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_5e60dd7d3974",
-      "title": "一旦人工智能进入生产，研发组织将如何变化 / How R&D Organizations Change Once AI Enters Production",
-      "url": "https://www.alibabacloud.com/blog/how-r%26d-organizations-change-once-ai-enters-production_603737",
-      "importance_score": 0.8192,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -428,28 +390,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_617c3ed48dac",
-      "title": "Luma 与 Higgsfield：哪个更适合品牌和代理视频？ / Luma vs Higgsfield: Which Is Better for Brand and Agency Video?",
-      "url": "https://lumalabs.ai/news/luma-vs-higgsfield",
-      "importance_score": 0.8182,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_c1c6e69155d5",
-      "title": "最佳 AI 图像到视频模型：8 种工具比较和排名 / Best AI Image-to-Video Models: 8 Tools Compared and Ranked",
-      "url": "https://lumalabs.ai/news/ai-image-video-models",
-      "importance_score": 0.8176,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_e2ecfff8e8ae",
       "title": "元宝 2.91.10 官方版本更新",
       "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.91.10",
@@ -460,17 +400,6 @@
       "company_topics": [
         "hunyuan"
       ],
-      "lens_topics": []
-    },
-    {
-      "story_id": "story_3fd5041851ea",
-      "title": "哪些 AI 视频模型可以一次性生成更长的视频？ / Which AI Video Models Can Generate Longer Videos in a Single Pass?",
-      "url": "https://lumalabs.ai/news/ai-video-models-generate-longer-videos",
-      "importance_score": 0.8165,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -487,17 +416,6 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_8f663b8bbac0",
-      "title": "最好的开源人工智能视频模型和制作工具 / The Best Open-Source AI Video Models and Production Tools",
-      "url": "https://lumalabs.ai/news/open-source-ai-video-models-production-tools",
-      "importance_score": 0.8157,
-      "importance_label": "官方更新",
-      "source_count": 1,
-      "archive_date": "2026-11-06",
-      "company_topics": [],
-      "lens_topics": []
-    },
-    {
       "story_id": "story_ca1ade1b3eb8",
       "title": "StateBench：测试语言模型如何在长文档中追踪状态变化 / StateBench: Testing how language models track state changes over long documents",
       "url": "https://huggingface.co/blog/allenai/statebench",
@@ -511,14 +429,30 @@
       "lens_topics": []
     },
     {
-      "story_id": "story_9befe75db364",
-      "title": "看起来不像人工智能的 UGC 广告的最佳人工智能视频模型 / The Best AI Video Models for UGC Ads That Don't Look Like AI",
-      "url": "https://lumalabs.ai/news/best-ai-video-models-ugc-ads",
-      "importance_score": 0.8146,
+      "story_id": "story_65d1d501dd25",
+      "title": "Cult.fit 通过 Codex 增强运营能力 / Cult.fit builds operational muscle with Codex",
+      "url": "https://openai.com/index/cultfit-builds-with-codex",
+      "importance_score": 0.8149,
       "importance_label": "官方更新",
       "source_count": 1,
       "archive_date": "2026-11-06",
-      "company_topics": [],
+      "company_topics": [
+        "openai"
+      ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_3ce30504df16",
+      "title": "NVIDIA 发布 Cosmos 3 四个开源权重模型用于交互式世界模拟 / New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "importance_score": 0.8141,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "nvidia",
+        "huggingface"
+      ],
       "lens_topics": []
     },
     {
@@ -532,6 +466,32 @@
       "company_topics": [
         "huggingface"
       ],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_313afc872d9f",
+      "title": "元宝 2.92.0 官方版本更新",
+      "url": "https://apps.apple.com/cn/app/id6480446430#:~:text=2.92.0",
+      "importance_score": 0.8132,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [
+        "hunyuan"
+      ],
+      "lens_topics": [
+        "workplace"
+      ]
+    },
+    {
+      "story_id": "story_5e60dd7d3974",
+      "title": "一旦人工智能进入生产，研发组织将如何变化 / How R&D Organizations Change Once AI Enters Production",
+      "url": "https://www.alibabacloud.com/blog/how-r%26d-organizations-change-once-ai-enters-production_603737",
+      "importance_score": 0.8129,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
       "lens_topics": []
     },
     {
@@ -550,6 +510,28 @@
       ]
     },
     {
+      "story_id": "story_617c3ed48dac",
+      "title": "Luma 与 Higgsfield：哪个更适合品牌和代理视频？ / Luma vs Higgsfield: Which Is Better for Brand and Agency Video?",
+      "url": "https://lumalabs.ai/news/luma-vs-higgsfield",
+      "importance_score": 0.8118,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
+      "story_id": "story_c1c6e69155d5",
+      "title": "最佳 AI 图像到视频模型：8 种工具比较和排名 / Best AI Image-to-Video Models: 8 Tools Compared and Ranked",
+      "url": "https://lumalabs.ai/news/ai-image-video-models",
+      "importance_score": 0.8112,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
+    },
+    {
       "story_id": "story_bf5abd3d9223",
       "title": "GitHub Copilot 现已在 Xcode 的编码助手中可用 / GitHub Copilot is now available in Xcode’s coding assistant",
       "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
@@ -563,6 +545,30 @@
       "lens_topics": [
         "workplace"
       ]
+    },
+    {
+      "story_id": "story_5608a60ecd33",
+      "title": "托管深度代理：交付生产深度代理的最快方式 / Managed Deep Agents: the fastest way to ship a production deep agent",
+      "url": "https://www.langchain.com/blog/introducing-managed-deep-agents",
+      "importance_score": 0.8102,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-03",
+      "company_topics": [],
+      "lens_topics": [
+        "agent-ecosystem"
+      ]
+    },
+    {
+      "story_id": "story_3fd5041851ea",
+      "title": "哪些 AI 视频模型可以一次性生成更长的视频？ / Which AI Video Models Can Generate Longer Videos in a Single Pass?",
+      "url": "https://lumalabs.ai/news/ai-video-models-generate-longer-videos",
+      "importance_score": 0.8101,
+      "importance_label": "官方更新",
+      "source_count": 1,
+      "archive_date": "2026-11-06",
+      "company_topics": [],
+      "lens_topics": []
     }
   ]
 }
