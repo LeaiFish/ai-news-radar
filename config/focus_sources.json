@@ -1624,6 +1624,28 @@
       "aliases": [],
       "identity_kind": "team_member_personal_account",
       "capture_route": "aihot_all_focus_indirect"
+    },
+    {
+      "id": "supplement-claude-duet-verified-post",
+      "name": "Claude Duet 已核验个人原帖",
+      "kind": "x",
+      "source_url": "https://x.com/davidsuttonca/status/2118785613436698719",
+      "match_urls": [
+        "https://x.com/davidsuttonca/status/2118785613436698719",
+        "https://x.com/adocomplete/status/2118806752611434984"
+      ],
+      "authority": 2,
+      "aliases": [],
+      "identity_kind": "personal_account",
+      "capture_route": "aihot_all_focus_indirect",
+      "tracking": {
+        "audited_at": "2026-11-09",
+        "state": "indirect_only",
+        "direct_collectors": [],
+        "original_channel_direct": false,
+        "indirect_route": "aihot_focus",
+        "boundary": "仅已核验原帖及同事件引用；个人账号不冒充机构官方，不开放整个个人时间线。"
+      }
     }
   ]
 }

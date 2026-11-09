@@ -38,14 +38,18 @@ def ensure(root, timeout=1800, *, run=None, now=None, monotonic=None, sleep=None
     sleep = sleep or time.sleep
     end = monotonic() + timeout
     run = run or subprocess.run
-    def command(*args):
+    def command(*args, stage="command"):
         remaining = end - monotonic()
         if remaining <= 0:
             raise RuntimeError('snapshot_gate_timeout')
         result = run(list(args), cwd=root, capture_output=True, text=True,
                      timeout=min(40, remaining), check=False)
         if result.returncode:
-            raise RuntimeError('snapshot_operation_failed')
+            # Classify only fixed known failures; never echo raw stderr, tokens,
+            # credential-helper output or local paths to the user.
+            if args[:3] == ('gh', 'workflow', 'run') and 'Actions has been disabled' in (getattr(result, 'stderr', '') or ''):
+                raise RuntimeError('snapshot_actions_disabled_contact_github_support')
+            raise RuntimeError('snapshot_operation_failed:' + stage)
         return result.stdout.strip()
 
     # Refuse the owner's worktree, dirty checkouts and a different repository.
@@ -61,8 +65,8 @@ def ensure(root, timeout=1800, *, run=None, now=None, monotonic=None, sleep=None
 
     dispatched = False
     while monotonic() < end:
-        command('git', 'fetch', '--quiet', '--depth', '1', 'origin', 'master')
-        payload = json.loads(command('git', 'show', 'origin/master:data/topics.json'))
+        command('git', 'fetch', '--quiet', '--depth', '1', 'origin', 'master', stage='fetch')
+        payload = json.loads(command('git', 'show', 'origin/master:data/topics.json', stage='read_snapshot'))
         stamp = payload.get('generated_at')
         if qualified(stamp, now()):
             command('git', 'checkout', '--quiet', '--detach', 'origin/master')
@@ -70,12 +74,12 @@ def ensure(root, timeout=1800, *, run=None, now=None, monotonic=None, sleep=None
                     'fallback_dispatched': dispatched}
         runs = json.loads(command('gh', 'run', 'list', '--repo', REPO,
                                  '--workflow', WORKFLOW, '--branch', 'master', '--limit', '30',
-                                 '--json', 'status'))
+                                 '--json', 'status', stage='list_runs'))
         if not dispatched and not any(r['status'] != 'completed' for r in runs):
             # Existing workflow stays free-only; do not repeat the long WeChat
             # discovery in this deadline-bound recovery. Its coverage stays partial.
             command('gh', 'workflow', 'run', WORKFLOW, '--repo', REPO,
-                    '--ref', 'master', '-f', 'refresh_wechat=false')
+                    '--ref', 'master', '-f', 'refresh_wechat=false', stage='dispatch')
             dispatched = True
             print(json.dumps({'status': 'fallback_dispatched', 'wechat_refresh': False}), flush=True)
         sleep(min(50, max(0, end - monotonic())))

@@ -427,6 +427,22 @@ AIHOT_VERIFIED_RECAPS = {
 # Original-read product posts. The timestamps are original post publication
 # times; the summaries deliberately do not assign a first feature release date.
 AIHOT_VERIFIED_PRODUCT_POSTS = {
+    "/davidsuttonca/status/2118785613436698719": {
+        "url": "https://x.com/davidsuttonca/status/2118785613436698719",
+        "source": "X：David Sutton（个人账号） (@davidsuttonca)",
+        "published_at": "2026-11-06T19:20:30Z",
+        "title": "Claude Duet 用法：在手机查看和管理 Claude Code 会话",
+        "original_title": "Claude Duet: now with Claude Code sessions",
+        "summary": "David Sutton 在个人账号介绍，可在 Claude Duet 手机端查看正在运行的 Claude Code 会话、批准修改并发送更新，覆盖电脑或云端的会话。Ado 的后续引用帖归并到此原文。日期为原帖发表时间；首次上线日期及完整套餐、地区条件未核验。",
+    },
+    "https://www.ithome.com/1/023/414.htm": {
+        "url": "https://www.ithome.com/1/023/414.htm",
+        "source": "IT之家",
+        "published_at": "2026-11-06T08:57:38Z",
+        "title": "豆包工作个人版取消 5 小时额度限制，周额度仍按套餐执行",
+        "original_title": "豆包工作个人版取消 5 小时额度限制",
+        "summary": "IT之家11月6日报道，豆包工作个人版取消5小时短周期额度限制，用户可在套餐周额度内安排使用；周额度及其他规则仍以对应套餐为准，可在设置的订阅与额度管理查看。此项是使用条件调整，不代表无限额度。",
+    },
     "/lumalabsai/status/2118161379731677274": {
         "url": "https://x.com/LumaLabsAI/status/2118161379731677274",
         "source": "X：Luma AI (@LumaLabsAI)",
@@ -477,6 +493,7 @@ AIHOT_VERIFIED_PRODUCT_POSTS = {
     },
 }
 AIHOT_VERIFIED_POST_ALIASES = {
+    "/adocomplete/status/2118806752611434984": "/davidsuttonca/status/2118785613436698719",
     "/poteto/status/2116580481236115933": "/poteto/status/2116576229319233596",
     "/indigox/status/2116690187006971959": "/poteto/status/2116576229319233596",
     "/google/status/2118027061948547270": "/google/status/2118027058794148099",
@@ -3128,6 +3145,10 @@ def parse_aihot_api_items(payload: dict[str, Any], now: datetime | None = None, 
         if x_post:
             path = x_post[1].lower()
             verified_post = AIHOT_VERIFIED_PRODUCT_POSTS.get(AIHOT_VERIFIED_POST_ALIASES.get(path, path))
+        if verified_post is None:
+            # Exact original media article only; never infer first publication
+            # from a later aggregate discovery date or a shared URL path.
+            verified_post = AIHOT_VERIFIED_PRODUCT_POSTS.get(normalize_url(link))
         if verified_post:
             # The alias and original produce the same archive identity even when
             # fetched on different pages or through selected/all independently.
