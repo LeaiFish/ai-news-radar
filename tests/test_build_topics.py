@@ -22,6 +22,21 @@ from scripts.build_topics import (
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def test_reviewed_history_stays_in_matching_rolling_topic_only():
+    guide={'id':'guide','title':'Devin Review guide','url':'https://example.com/guide',
+           'published_at':'2026-11-05T17:11:17Z','curated':True}
+    pools={'archive':[guide,dict(guide,id='noise',url='https://example.com/noise',curated=False),
+                       dict(guide,id='other',title='Unrelated announcement',url='https://example.com/other')],
+           'latest':[guide]}
+    rows,count=match_topic_items({'id':'coding','keywords':['Devin'],'pools':['latest']},pools,set(),20)
+    assert count==1
+    assert rows[0]['curated'] is True
+    assert rows[0]['published_at']=='2026-11-05T17:11:17Z'
+    pools['latest']=[]
+    historical,count=match_topic_items({'id':'coding','keywords':['Devin'],'pools':['latest']},pools,set(),20)
+    assert count==1 and historical[0]['url']=='https://example.com/guide'
+
+
 def test_archive_topic_titles_reuse_translation_cache(tmp_path):
     (tmp_path / "archive.json").write_text(json.dumps({"items": [
         {"title": "Kimi update", "url": "https://example.com/kimi"}

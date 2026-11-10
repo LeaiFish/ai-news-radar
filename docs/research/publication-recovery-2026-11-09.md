@@ -73,5 +73,9 @@ Explicitly curated archive rows now survive the rolling latest pool in the
 public projection for its existing 30-day retention. The archive as a whole is
 not exported; public-field, URL, privacy and date gates still apply. This keeps
 verified products without dedicated company topics readable in history.
+Matching existing topics also retain these explicitly curated archive records,
+so the records are reachable in the actual topic reader rather than only JSON.
+Uncurated archive rows do not broaden rolling topic pools, and canonical-URL
+deduplication and original publication dates remain unchanged.
 The existing public-only scheduled WeChat snapshot from November 10 is reused,
 preserving its partial coverage status. No private collection or renewal runs.

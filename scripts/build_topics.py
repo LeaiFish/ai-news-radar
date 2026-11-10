@@ -233,6 +233,8 @@ def primary_item_metadata(record: dict[str, Any]) -> dict[str, Any]:
 
 
 def is_curated_record(record: dict[str, Any], curated_ids: set[str]) -> bool:
+    if record.get("curated") is True:
+        return True
     story_id = str(record.get("story_id") or "").strip()
     if story_id and story_id in curated_ids:
         return True
@@ -385,10 +387,17 @@ def match_topic_items(
     curated_ids: set[str],
     max_items: int,
 ) -> tuple[list[dict[str, Any]], int]:
-    wanted_pools = topic.get("pools") or ["stories", "brief", "latest"]
+    wanted_pools = list(topic.get("pools") or ["stories", "brief", "latest"])
+    # A reviewed historical backfill must remain reachable through an existing
+    # matching topic even when that topic normally uses rolling recent pools.
+    curated_history = [row for row in pools.get("archive", []) if row.get("curated") is True]
+    topic_pools = pools
+    if "archive" not in wanted_pools and curated_history:
+        topic_pools = {**pools, "curated_history": curated_history}
+        wanted_pools.append("curated_history")
     merged: dict[str, dict[str, Any]] = {}
     for pool_name in wanted_pools:
-        for record in pools.get(pool_name, []):
+        for record in topic_pools.get(pool_name, []):
             if not record_matches_topic(record, topic):
                 continue
             slim = slim_item(record, curated_ids)
