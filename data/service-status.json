@@ -1,18 +1,31 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T03:32:07.797281Z",
+  "generated_at": "2026-11-10T04:59:58.375938Z",
   "ok": true,
-  "active_count": 1,
+  "active_count": 2,
   "providers": [
     {
       "id": "openai",
       "name": "OpenAI",
       "status_url": "https://status.openai.com/",
       "ok": true,
-      "active_count": 1
+      "active_count": 2
     }
   ],
   "incidents": [
+    {
+      "id": "01M71W79MAGEXEX93QTVTBYJ4K",
+      "provider": "OpenAI",
+      "title": "Incorrect cost data in Costs API exports",
+      "title_zh": "Incorrect cost data in Costs API exports",
+      "status": "monitoring",
+      "impact": "none",
+      "started_at": "2026-11-10T04:42:21Z",
+      "updated_at": "2026-11-10T04:42:21Z",
+      "message": "We have identified an issue causing incorrect cost data in Costs API exports published between November 6 and 9. We are working to correct the affected records and will provide an update once recovery is confirmed.",
+      "affected_components": [],
+      "url": "https://status.openai.com/incidents/01M71W79MAGEXEX93QTVTBYJ4K"
+    },
     {
       "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
       "provider": "OpenAI",
