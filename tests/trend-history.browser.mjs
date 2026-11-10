@@ -40,7 +40,14 @@ try {
   await link.click();await page.locator('.trend-history-record').first().waitFor();
   assert.equal(await page.locator('#historyView').inputValue(),id);
   assert.equal(await page.locator('.trend-history-record[open]').count(),1);
-  for(const summary of (await page.locator('.trend-history-record > summary').all()).slice(1))await summary.click();
+  // Retrospective labels can be on an older page as daily issues accumulate.
+  const more=page.getByRole('button',{name:'显示更早记录',exact:true});
+  while(await more.isVisible()) {
+   const before=await page.locator('.trend-history-record').count();
+   await more.click();
+   await page.waitForFunction(count=>document.querySelectorAll('.trend-history-record').length>count,before);
+  }
+  for(const summary of await page.locator('.trend-history-record:not([open]) > summary').all())await summary.click();
   const text=await page.locator('#historyContent').innerText();
   for(const term of ['回顾标记','此前判断','当期判断'])assert.ok(text.includes(term),`${id} ${term}`);
   if(id==='openai'){assert.match(text,/广告/);assert.match(text,/加强/);await page.screenshot({path:'/tmp/radar-history-company.png',fullPage:true});}
