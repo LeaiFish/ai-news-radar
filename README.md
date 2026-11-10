@@ -1,3 +1,5 @@
+> 已迁移至独立仓库 [LeaiFish/ai-perspective](https://github.com/LeaiFish/ai-perspective)，[打开新站](https://leaifish.github.io/ai-perspective/)。本仓库保留原有代码、数据、Git 历史、议题、PR 与运行记录，后续采集和发布由新仓库负责。
+
 > 日报周报趋势：使用本机 Codex 订阅核验与提炼，公开采集继续在云端运行；见 [运行说明](docs/TREND_REPORTS.md)。
 
 > 本仓库已迁移为 AI Perspective：本机完整 AIHOT 架构 + GitHub Pages 公开阅读器，默认阻断付费服务。
