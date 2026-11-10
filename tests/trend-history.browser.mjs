@@ -47,7 +47,7 @@ try {
    await more.click();
    await page.waitForFunction(count=>document.querySelectorAll('.trend-history-record').length>count,before);
   }
-  for(const summary of await page.locator('.trend-history-record:not([open]) > summary').all())await summary.click();
+  for(const summary of (await page.locator('.trend-history-record > summary').all()).slice(1))await summary.click();
   const text=await page.locator('#historyContent').innerText();
   for(const term of ['回顾标记','此前判断','当期判断'])assert.ok(text.includes(term),`${id} ${term}`);
   if(id==='openai'){assert.match(text,/广告/);assert.match(text,/加强/);await page.screenshot({path:'/tmp/radar-history-company.png',fullPage:true});}
