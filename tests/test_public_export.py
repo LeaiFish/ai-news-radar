@@ -34,3 +34,28 @@ def test_public_reader_entry_references_only_existing_reader_assets():
     for url in urls:
         assert url.startswith('./assets/')
         assert (root/url.split('?')[0].removeprefix('./')).is_file()
+
+
+def test_curated_history_survives_latest_window_with_public_safety(monkeypatch, tmp_path):
+    import json
+    (tmp_path/'topics').mkdir()
+    (tmp_path/'archive.json').write_text(json.dumps({'items':[
+        {'id':'kept','title':'Verified product guide','url':'https://example.com/guide','published_at':'2026-11-06T03:00:00Z','curated':True},
+        {'id':'noise','title':'Uncurated history','url':'https://example.com/noise','published_at':'2026-11-06T03:00:00Z'},
+        {'id':'old','title':'Old guide','url':'https://example.com/old','published_at':'2026-09-01T00:00:00Z','curated':True},
+        {'id':'unsafe','title':'Unsafe history','url':'https://example.com/unsafe','published_at':'2026-11-06T03:00:00Z','curated':True,'private':True},
+        {'id':'local','title':'Local history','url':'http://localhost/guide','published_at':'2026-11-06T03:00:00Z','curated':True},
+        {'id':'dup','title':'Duplicate guide','url':'https://example.com/guide','published_at':'2026-11-06T03:00:00Z','curated':True},
+    ]}))
+    payloads={'config/topics.json':{'topics':[],'groups':[]},
+              'data/topics.json':{'generated_at':'2026-11-10T03:00:00Z'},
+              'data/news-summary-cache.json':{},'data/title-zh-cache.json':{},
+              'data/latest-24h-all.json':{'items_all':[]},
+              'data/stories-merged.json':{'stories':[]},'data/daily-brief.json':{'items':[]},
+              'data/archive.json':json.loads((tmp_path/'archive.json').read_text())}
+    monkeypatch.setattr(module,'NEWS',tmp_path)
+    monkeypatch.setattr(module,'load',lambda key:payloads[key])
+    data=module.export()
+    assert [row['id'] for row in data['items']]==['kept']
+    assert data['items'][0]['publishedAt']=='2026-11-06T03:00:00Z'
+    assert data['generatedAt']=='2026-11-10T03:00:00Z'

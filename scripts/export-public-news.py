@@ -29,7 +29,7 @@ def public_url(value):
 def text(value, limit): return value[:limit] if isinstance(value,str) else ''
 def load(relative):
     path = NEWS/relative[5:] if relative.startswith('data/') else ROOT/relative
-    if not path.exists() and relative in ('data/news-summary-cache.json','data/title-zh-cache.json'): return {}
+    if not path.exists() and relative in ('data/news-summary-cache.json','data/title-zh-cache.json','data/archive.json'): return {}
     return json.loads(path.read_text())
 def export():
     config=load('config/topics.json'); hub=load('data/topics.json')
@@ -52,6 +52,15 @@ def export():
     for story in merged:
         for row in story.get('items',[]):
             if safe_row(row): rows.setdefault(row.get('url'),row)
+    # Explicitly curated historical backfills remain readable after rolling out
+    # of the latest pool, including products without a dedicated company topic.
+    # The archive as a whole is intentionally not a public export input.
+    archive=load('data/archive.json')
+    archived=archive.get('items',[])
+    if isinstance(archived,dict): archived=archived.values()
+    for row in archived:
+        if isinstance(row,dict) and row.get('curated') is True and safe_row(row):
+            rows.setdefault(row.get('url'),row)
     items=[]; ids={}
     for url,row in rows.items():
         if not public_url(url): continue

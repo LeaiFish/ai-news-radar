@@ -55,3 +55,23 @@ After GitHub restores Actions, use the existing workflow with
 Wait for the news and Pages runs, then compare generation timestamps across
 raw/archive/public layers and inspect the two reader cards before declaring
 online acceptance. A successful code push alone is not deployment.
+
+## 2026-11-10 recovery and fixed-window backfill
+
+News run `42750019910` and Pages run `42751572629` succeeded. The first
+recovered full snapshot is `2026-11-10T03:32:07.797281Z`; this proves actual
+execution and publication, separately from the ordinary Actions settings.
+
+The generation-gap lookback starts at the prior successful snapshot, so it
+does not repair earlier filtering omissions. Original pages were rechecked for
+the November 6–9 Beijing review window: IT之家's CaoCao/12580 pilot, Cognition's
+Devin Review 2.0/Autofix thread, Sierra Accelerators, and the ClaudeDevs cloud
+environment guide. They are bounded historical backfills, with original dates;
+Autofix availability and the cloud guide are not labelled first feature launches.
+
+Explicitly curated archive rows now survive the rolling latest pool in the
+public projection for its existing 30-day retention. The archive as a whole is
+not exported; public-field, URL, privacy and date gates still apply. This keeps
+verified products without dedicated company topics readable in history.
+The existing public-only scheduled WeChat snapshot from November 10 is reused,
+preserving its partial coverage status. No private collection or renewal runs.
