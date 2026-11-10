@@ -79,3 +79,29 @@ Uncurated archive rows do not broaden rolling topic pools, and canonical-URL
 deduplication and original publication dates remain unchanged.
 The existing public-only scheduled WeChat snapshot from November 10 is reused,
 preserving its partial coverage status. No private collection or renewal runs.
+
+## Fork re-enable and complete refresh, November 10
+
+The authenticated Actions page showed `Workflows on this fork have been
+disabled`, explaining that GitHub had paused the fork to reduce unused compute.
+The page's `I understand my workflows, go ahead and re-enable them` button
+restored dispatch and displayed `Actions Enabled`. Enabling an individual
+workflow and reapplying the existing repository permissions had not restored
+dispatch. This observed fork confirmation differs from the account/repository
+restrictions that require Support; inspect the actual page before classifying
+an active-workflow/HTTP-422 mismatch. No permanent exemption was established.
+
+The public-only recovery did not finish the separate WeChat collection or
+generate editorial judgments. The November 10 daily report was subsequently
+prepared from the qualified snapshot, checked, published, and read back as
+`40b6821788b87b4afd42fd78fa5359261f2b9353aca905e11b26cfa2dd25b219` in latest,
+the history index, and its immutable history snapshot. Seven judgment texts
+were revised and Gemini retained; all direction labels continued. W45 remains
+a local review draft rather than a published weekly issue.
+
+Accumulating more than twelve reports also exposed a browser-test assumption:
+the early retrospective labels had moved beyond the first company-history
+page. The check now loads older pages before expanding and checking records;
+the existing label, before/after, mobile, and injection checks remain. Trend
+validation run `42754007847` passed. A complete news/WeChat refresh must run on
+the current revision so the reviewed backfill-retention fixes are preserved.
